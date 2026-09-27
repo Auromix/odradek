@@ -1,0 +1,74 @@
+{
+  "revision": "R4-LINK67-01",
+  "sources": {
+    "M5x25": {
+      "part": "Accu SSC-M5-25-12.9",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16048-SSC-M5-25-12-9",
+      "head_D_H_mm": [
+        8.72,
+        5
+      ],
+      "full_thread": true,
+      "mass_g": 4.8
+    },
+    "M3x40": {
+      "part": "Accu SSC-M3-40-12.9",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16011-SSC-M3-40-12-9",
+      "head_D_H_mm": [
+        5.68,
+        3
+      ],
+      "minimum_thread_mm": 18,
+      "mass_g": 3.1
+    },
+    "vendor": {
+      "url": "https://www.myactuator.com/downloads-rhseries",
+      "files": [
+        "RH-17-100-E-B-D 3D-A.STEP",
+        "RH-14-100-E-N-D 3D-A0.STEP"
+      ]
+    }
+  },
+  "original_parts": [
+    {
+      "id": "ODR-L67-OUT-R4",
+      "qty": 1,
+      "candidate_material": "6061-T6",
+      "mass_kg": 0.10382549001083495
+    },
+    {
+      "id": "ODR-L67-CARRIER-R4",
+      "qty": 1,
+      "candidate_material": "6061-T6",
+      "mass_kg": 0.13101243954366054
+    },
+    {
+      "id": "ODR-L67-FRONT-R4",
+      "qty": 1,
+      "candidate_material": "6061-T6",
+      "mass_kg": 0.013218084240761145
+    }
+  ],
+  "screws": [
+    {
+      "source": "M5x25",
+      "qty": 4,
+      "nominal_engagement_mm": 13,
+      "blind_bottom_clearance_mm": 6
+    },
+    {
+      "source": "M3x40",
+      "qty": 4,
+      "nominal_engagement_mm": 14,
+      "rear_protrusion_mm": 2.5
+    },
+    {
+      "source": "J6_output_M3_length_TBD",
+      "qty": 16
+    }
+  ],
+  "known_eight_screws_mass_kg": 0.0316,
+  "all_hardware_mass_budget_kg": 0.1,
+  "no_purchase_made": true,
+  "preload_selected": false
+}
