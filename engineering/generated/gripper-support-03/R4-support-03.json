@@ -1,0 +1,5007 @@
+{
+  "revision": "R4-support-03",
+  "license": "CC-BY-NC-4.0",
+  "status": "local mechanical integration study; NOT manufacturing or payload release",
+  "source_layout_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "baseline_script_sha256": "3d1cc5ec33bdb4cf68e412e8676dac04077358a9d6e99f2c47702b4fe2d3ee4f",
+  "changed_region": "root x<=25mm only; LED window clipped to x>=25; root R70 and z0/50 unchanged",
+  "dimensions_mm": {
+    "tenon_D": 10,
+    "tenon_L": 10.8,
+    "hub_D": 24,
+    "hub_L": 10,
+    "hub_bore": 10,
+    "key": [
+      3,
+      3,
+      8
+    ],
+    "shaft_key_depth": 1.8,
+    "hub_key_depth": 1.4,
+    "shaft_end_recess": 0.2,
+    "shoulder_spacer": [
+      16,
+      10.1,
+      1
+    ],
+    "end_washer": [
+      18,
+      4.3,
+      1.5
+    ],
+    "fork_tongue_width": 18,
+    "fork_gap": 6,
+    "cheek_thickness": 4,
+    "blade_change_end_x": 25,
+    "flare_start_x": 24,
+    "M3_hole_centers": [
+      [
+        21,
+        -4.5
+      ],
+      [
+        21,
+        4.5
+      ]
+    ],
+    "M3_hole_D": 3.4,
+    "LED_start_clip_x": 25
+  },
+  "mechanics": {
+    "cases": [
+      {
+        "torque_Nm": 3.7,
+        "key_tangential_N": 740.0,
+        "key_shear_MPa": 30.833333333333332,
+        "hub_key_bearing_MPa": 77.08333333333334,
+        "tenon_annular_torsion_MPa": 19.339024283744262,
+        "fork_cap_force_at_10mm_couple_N": 370.0,
+        "cap_cantilever_stress_MPa": 53.958333333333336,
+        "cap_cantilever_deflection_mm": 0.006295138888888889,
+        "M3_pair_external_tension_each_N": 185.0,
+        "M3_external_increment_MPa": 36.779324055666,
+        "neck_gross_bending_MPa": 11.326530612244897,
+        "tongue_hole_net_bending_MPa": 55.05952380952381,
+        "shoulder_pressure_at_500N_MPa": 15.161223442905008
+      },
+      {
+        "torque_Nm": 5.0,
+        "key_tangential_N": 1000.0,
+        "key_shear_MPa": 41.666666666666664,
+        "hub_key_bearing_MPa": 104.16666666666667,
+        "tenon_annular_torsion_MPa": 26.13381659965441,
+        "fork_cap_force_at_10mm_couple_N": 500.0,
+        "cap_cantilever_stress_MPa": 72.91666666666667,
+        "cap_cantilever_deflection_mm": 0.008506944444444444,
+        "M3_pair_external_tension_each_N": 250.0,
+        "M3_external_increment_MPa": 49.70178926441351,
+        "neck_gross_bending_MPa": 15.306122448979592,
+        "tongue_hole_net_bending_MPa": 74.4047619047619,
+        "shoulder_pressure_at_500N_MPa": 15.161223442905008
+      }
+    ],
+    "assumptions": "gross static screens only; caps 6061 candidate E=70GPa, exact material temper/plate certificate not frozen; key material and engagement, notch factors, bolt preload/relaxation, prying, fatigue and tolerances unqualified",
+    "limit": "5Nm is a load-screen input; selected 22GPT 3.7Nm gearhead does not deliver 5Nm and 90-degree losses reduce the output further"
+  },
+  "component_geometry": [
+    {
+      "finger": "UR",
+      "part": "output_tenon_D10",
+      "material": "steel",
+      "mass_g": 5.347352705384816,
+      "volume_mm3": 681.1914274375563,
+      "center_mm": [
+        0.24680287101148313,
+        0.7102339359624107,
+        -3.481306847210317e-16
+      ],
+      "bounds_mm": [
+        [
+          -5.0,
+          -4.8,
+          -5.0
+        ],
+        [
+          5.0,
+          6.000000000000001,
+          5.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "shoulder_spacer",
+      "material": "steel",
+      "mass_g": 0.9494061859753488,
+      "volume_mm3": 120.9434631815731,
+      "center_mm": [
+        5.879671515059141e-16,
+        5.500000000000001,
+        9.399998539064269e-16
+      ],
+      "bounds_mm": [
+        [
+          -8.0,
+          5.0,
+          -8.0
+        ],
+        [
+          8.0,
+          6.0,
+          8.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "M2x6_keeper_screw_0",
+      "material": "steel",
+      "mass_g": 0.3260250608115879,
+      "volume_mm3": 41.53185488045706,
+      "center_mm": [
+        18.500000000000004,
+        6.98530976337431e-17,
+        -7.084568835098335
+      ],
+      "bounds_mm": [
+        [
+          16.6,
+          -1.9,
+          -9.9
+        ],
+        [
+          20.4,
+          1.9,
+          -1.9000000000000004
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "M2x6_keeper_screw_1",
+      "material": "steel",
+      "mass_g": 0.3260250608115879,
+      "volume_mm3": 41.53185488045706,
+      "center_mm": [
+        22.5,
+        6.985309763374334e-17,
+        -7.084568835098335
+      ],
+      "bounds_mm": [
+        [
+          20.6,
+          -1.9,
+          -9.9
+        ],
+        [
+          24.4,
+          1.9,
+          -1.9000000000000004
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "nut_keeper_sheet",
+      "material": "steel",
+      "mass_g": 0.4584156949081561,
+      "volume_mm3": 58.39690380995619,
+      "center_mm": [
+        21.038734017781934,
+        0.0,
+        -7.649999999999999
+      ],
+      "bounds_mm": [
+        [
+          17.0,
+          -9.0,
+          -7.9
+        ],
+        [
+          25.0,
+          9.0,
+          -7.4
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "keyed_hub_lower_fork",
+      "material": "aluminum",
+      "mass_g": 14.023701656183073,
+      "volume_mm3": 5193.963576364101,
+      "center_mm": [
+        4.991987069208798,
+        -3.5524578126613435e-16,
+        -0.05572521311347484
+      ],
+      "bounds_mm": [
+        [
+          -12.0,
+          -9.0,
+          -12.0
+        ],
+        [
+          25.0,
+          9.0,
+          12.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "removable_upper_fork",
+      "material": "aluminum",
+      "mass_g": 1.7478892201923104,
+      "volume_mm3": 647.3663778490038,
+      "center_mm": [
+        19.88780136776282,
+        -4.3903592158802666e-17,
+        8.0
+      ],
+      "bounds_mm": [
+        [
+          15.0,
+          -9.0,
+          6.0
+        ],
+        [
+          25.0,
+          9.0,
+          10.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "metal_blade_with_narrow_tongue",
+      "material": "aluminum",
+      "mass_g": 54.01243348743132,
+      "volume_mm3": 20004.604995344933,
+      "center_mm": [
+        65.96381103964029,
+        3.6229337727185926e-16,
+        3.0000000000000004
+      ],
+      "bounds_mm": [
+        [
+          15.0,
+          -23.0,
+          0.0
+        ],
+        [
+          140.0,
+          23.0,
+          6.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "parallel_key_3x3x8",
+      "material": "steel",
+      "mass_g": 0.5651999999999999,
+      "volume_mm3": 72.0,
+      "center_mm": [
+        -4.699999999999999,
+        2.4671622769447922e-17,
+        2.4671622769447922e-17
+      ],
+      "bounds_mm": [
+        [
+          -6.2,
+          -4.0,
+          -1.5
+        ],
+        [
+          -3.2,
+          4.0,
+          1.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "end_washer_D18",
+      "material": "steel",
+      "mass_g": 2.825375841392253,
+      "volume_mm3": 359.9204893493316,
+      "center_mm": [
+        6.269069873588086e-16,
+        -5.75,
+        -8.488913118816598e-16
+      ],
+      "bounds_mm": [
+        [
+          -9.0,
+          -6.5,
+          -9.0
+        ],
+        [
+          9.0,
+          -5.0,
+          9.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "M4x10_end_screw_envelope",
+      "material": "steel",
+      "mass_g": 2.194873707430509,
+      "volume_mm3": 279.6017461694916,
+      "center_mm": [
+        1.7054701914339455e-16,
+        -5.353932584269662,
+        -5.0825343224385786e-17
+      ],
+      "bounds_mm": [
+        [
+          -3.5,
+          -10.5,
+          -3.5
+        ],
+        [
+          3.5,
+          3.5,
+          3.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "M3x20_fork_screw_0",
+      "material": "steel",
+      "mass_g": 1.6692754390078939,
+      "volume_mm3": 212.64655273985912,
+      "center_mm": [
+        20.999999999999996,
+        -4.5,
+        3.854570637119113
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          -7.25,
+          -10.0
+        ],
+        [
+          23.75,
+          -1.75,
+          13.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "M3_washer_0",
+      "material": "steel",
+      "mass_g": 0.11541583090758183,
+      "volume_mm3": 14.702653618800234,
+      "center_mm": [
+        21.000000000000004,
+        -4.499999999999999,
+        -4.25
+      ],
+      "bounds_mm": [
+        [
+          17.5,
+          -8.0,
+          -4.5
+        ],
+        [
+          24.5,
+          -1.0,
+          -4.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "M3_hexnut_0",
+      "material": "steel",
+      "mass_g": 0.3603844252851179,
+      "volume_mm3": 45.90884398536534,
+      "center_mm": [
+        21.0,
+        -4.500000000000001,
+        -5.700000000000001
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          -7.675426480542943,
+          -6.9
+        ],
+        [
+          23.75,
+          -1.3245735194570598,
+          -4.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "M3x20_fork_screw_1",
+      "material": "steel",
+      "mass_g": 1.6692754390078939,
+      "volume_mm3": 212.64655273985912,
+      "center_mm": [
+        20.999999999999996,
+        4.5,
+        3.854570637119113
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          1.75,
+          -10.0
+        ],
+        [
+          23.75,
+          7.25,
+          13.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "M3_washer_1",
+      "material": "steel",
+      "mass_g": 0.11541583090758183,
+      "volume_mm3": 14.702653618800234,
+      "center_mm": [
+        21.000000000000004,
+        4.499999999999999,
+        -4.25
+      ],
+      "bounds_mm": [
+        [
+          17.5,
+          1.0,
+          -4.5
+        ],
+        [
+          24.5,
+          8.0,
+          -4.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "M3_hexnut_1",
+      "material": "steel",
+      "mass_g": 0.360384425285118,
+      "volume_mm3": 45.90884398536535,
+      "center_mm": [
+        21.000000000000004,
+        4.500000000000001,
+        -5.7
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          1.3245735194570576,
+          -6.9
+        ],
+        [
+          23.75,
+          7.675426480542942,
+          -4.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "LED_window_placeholder",
+      "material": "optical_placeholder",
+      "mass_g": 1.717990316883116,
+      "volume_mm3": 1431.6585974025968,
+      "center_mm": [
+        68.5720829619541,
+        5.558642720374228e-16,
+        6.3
+      ],
+      "bounds_mm": [
+        [
+          25.0,
+          -16.56,
+          6.0
+        ],
+        [
+          131.6,
+          16.56,
+          6.6
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "original_wedge_pad_0",
+      "material": "optical_placeholder",
+      "mass_g": 0.5399999999999999,
+      "volume_mm3": 450.0,
+      "center_mm": [
+        112.56081752907436,
+        -3.6800000000000006,
+        8.579201308768162
+      ],
+      "bounds_mm": [
+        [
+          104.48568191626643,
+          -6.18,
+          6.0
+        ],
+        [
+          122.48568191626643,
+          -1.1800000000000002,
+          12.541440645320113
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UR",
+      "part": "original_wedge_pad_1",
+      "material": "optical_placeholder",
+      "mass_g": 0.5399999999999999,
+      "volume_mm3": 450.0,
+      "center_mm": [
+        112.56081752907434,
+        3.68,
+        8.579201308768162
+      ],
+      "bounds_mm": [
+        [
+          104.48568191626643,
+          1.1799999999999997,
+          6.0
+        ],
+        [
+          122.48568191626643,
+          6.18,
+          12.541440645320113
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "output_tenon_D10",
+      "material": "steel",
+      "mass_g": 5.347352705384816,
+      "volume_mm3": 681.1914274375563,
+      "center_mm": [
+        0.24680287101148313,
+        0.7102339359624107,
+        -3.481306847210317e-16
+      ],
+      "bounds_mm": [
+        [
+          -5.0,
+          -4.8,
+          -5.0
+        ],
+        [
+          5.0,
+          6.000000000000001,
+          5.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "shoulder_spacer",
+      "material": "steel",
+      "mass_g": 0.9494061859753488,
+      "volume_mm3": 120.9434631815731,
+      "center_mm": [
+        5.879671515059141e-16,
+        5.500000000000001,
+        9.399998539064269e-16
+      ],
+      "bounds_mm": [
+        [
+          -8.0,
+          5.0,
+          -8.0
+        ],
+        [
+          8.0,
+          6.0,
+          8.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "M2x6_keeper_screw_0",
+      "material": "steel",
+      "mass_g": 0.3260250608115879,
+      "volume_mm3": 41.53185488045706,
+      "center_mm": [
+        18.500000000000004,
+        6.98530976337431e-17,
+        -7.084568835098335
+      ],
+      "bounds_mm": [
+        [
+          16.6,
+          -1.9,
+          -9.9
+        ],
+        [
+          20.4,
+          1.9,
+          -1.9000000000000004
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "M2x6_keeper_screw_1",
+      "material": "steel",
+      "mass_g": 0.3260250608115879,
+      "volume_mm3": 41.53185488045706,
+      "center_mm": [
+        22.5,
+        6.985309763374334e-17,
+        -7.084568835098335
+      ],
+      "bounds_mm": [
+        [
+          20.6,
+          -1.9,
+          -9.9
+        ],
+        [
+          24.4,
+          1.9,
+          -1.9000000000000004
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "nut_keeper_sheet",
+      "material": "steel",
+      "mass_g": 0.4584156949081561,
+      "volume_mm3": 58.39690380995619,
+      "center_mm": [
+        21.038734017781934,
+        0.0,
+        -7.649999999999999
+      ],
+      "bounds_mm": [
+        [
+          17.0,
+          -9.0,
+          -7.9
+        ],
+        [
+          25.0,
+          9.0,
+          -7.4
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "keyed_hub_lower_fork",
+      "material": "aluminum",
+      "mass_g": 14.023701656183073,
+      "volume_mm3": 5193.963576364101,
+      "center_mm": [
+        4.991987069208798,
+        -3.5524578126613435e-16,
+        -0.05572521311347484
+      ],
+      "bounds_mm": [
+        [
+          -12.0,
+          -9.0,
+          -12.0
+        ],
+        [
+          25.0,
+          9.0,
+          12.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "removable_upper_fork",
+      "material": "aluminum",
+      "mass_g": 1.7478892201923104,
+      "volume_mm3": 647.3663778490038,
+      "center_mm": [
+        19.88780136776282,
+        -4.3903592158802666e-17,
+        8.0
+      ],
+      "bounds_mm": [
+        [
+          15.0,
+          -9.0,
+          6.0
+        ],
+        [
+          25.0,
+          9.0,
+          10.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "metal_blade_with_narrow_tongue",
+      "material": "aluminum",
+      "mass_g": 54.01243348743132,
+      "volume_mm3": 20004.604995344933,
+      "center_mm": [
+        65.96381103964029,
+        3.6229337727185926e-16,
+        3.0000000000000004
+      ],
+      "bounds_mm": [
+        [
+          15.0,
+          -23.0,
+          0.0
+        ],
+        [
+          140.0,
+          23.0,
+          6.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "parallel_key_3x3x8",
+      "material": "steel",
+      "mass_g": 0.5651999999999999,
+      "volume_mm3": 72.0,
+      "center_mm": [
+        -4.699999999999999,
+        2.4671622769447922e-17,
+        2.4671622769447922e-17
+      ],
+      "bounds_mm": [
+        [
+          -6.2,
+          -4.0,
+          -1.5
+        ],
+        [
+          -3.2,
+          4.0,
+          1.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "end_washer_D18",
+      "material": "steel",
+      "mass_g": 2.825375841392253,
+      "volume_mm3": 359.9204893493316,
+      "center_mm": [
+        6.269069873588086e-16,
+        -5.75,
+        -8.488913118816598e-16
+      ],
+      "bounds_mm": [
+        [
+          -9.0,
+          -6.5,
+          -9.0
+        ],
+        [
+          9.0,
+          -5.0,
+          9.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "M4x10_end_screw_envelope",
+      "material": "steel",
+      "mass_g": 2.194873707430509,
+      "volume_mm3": 279.6017461694916,
+      "center_mm": [
+        1.7054701914339455e-16,
+        -5.353932584269662,
+        -5.0825343224385786e-17
+      ],
+      "bounds_mm": [
+        [
+          -3.5,
+          -10.5,
+          -3.5
+        ],
+        [
+          3.5,
+          3.5,
+          3.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "M3x20_fork_screw_0",
+      "material": "steel",
+      "mass_g": 1.6692754390078939,
+      "volume_mm3": 212.64655273985912,
+      "center_mm": [
+        20.999999999999996,
+        -4.5,
+        3.854570637119113
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          -7.25,
+          -10.0
+        ],
+        [
+          23.75,
+          -1.75,
+          13.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "M3_washer_0",
+      "material": "steel",
+      "mass_g": 0.11541583090758183,
+      "volume_mm3": 14.702653618800234,
+      "center_mm": [
+        21.000000000000004,
+        -4.499999999999999,
+        -4.25
+      ],
+      "bounds_mm": [
+        [
+          17.5,
+          -8.0,
+          -4.5
+        ],
+        [
+          24.5,
+          -1.0,
+          -4.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "M3_hexnut_0",
+      "material": "steel",
+      "mass_g": 0.3603844252851179,
+      "volume_mm3": 45.90884398536534,
+      "center_mm": [
+        21.0,
+        -4.500000000000001,
+        -5.700000000000001
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          -7.675426480542943,
+          -6.9
+        ],
+        [
+          23.75,
+          -1.3245735194570598,
+          -4.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "M3x20_fork_screw_1",
+      "material": "steel",
+      "mass_g": 1.6692754390078939,
+      "volume_mm3": 212.64655273985912,
+      "center_mm": [
+        20.999999999999996,
+        4.5,
+        3.854570637119113
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          1.75,
+          -10.0
+        ],
+        [
+          23.75,
+          7.25,
+          13.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "M3_washer_1",
+      "material": "steel",
+      "mass_g": 0.11541583090758183,
+      "volume_mm3": 14.702653618800234,
+      "center_mm": [
+        21.000000000000004,
+        4.499999999999999,
+        -4.25
+      ],
+      "bounds_mm": [
+        [
+          17.5,
+          1.0,
+          -4.5
+        ],
+        [
+          24.5,
+          8.0,
+          -4.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "M3_hexnut_1",
+      "material": "steel",
+      "mass_g": 0.360384425285118,
+      "volume_mm3": 45.90884398536535,
+      "center_mm": [
+        21.000000000000004,
+        4.500000000000001,
+        -5.7
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          1.3245735194570576,
+          -6.9
+        ],
+        [
+          23.75,
+          7.675426480542942,
+          -4.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "LED_window_placeholder",
+      "material": "optical_placeholder",
+      "mass_g": 1.717990316883116,
+      "volume_mm3": 1431.6585974025968,
+      "center_mm": [
+        68.5720829619541,
+        5.558642720374228e-16,
+        6.3
+      ],
+      "bounds_mm": [
+        [
+          25.0,
+          -16.56,
+          6.0
+        ],
+        [
+          131.6,
+          16.56,
+          6.6
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "original_wedge_pad_0",
+      "material": "optical_placeholder",
+      "mass_g": 0.5399999999999999,
+      "volume_mm3": 450.0,
+      "center_mm": [
+        112.56081752907436,
+        -3.6800000000000006,
+        8.579201308768162
+      ],
+      "bounds_mm": [
+        [
+          104.48568191626643,
+          -6.18,
+          6.0
+        ],
+        [
+          122.48568191626643,
+          -1.1800000000000002,
+          12.541440645320113
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "UL",
+      "part": "original_wedge_pad_1",
+      "material": "optical_placeholder",
+      "mass_g": 0.5399999999999999,
+      "volume_mm3": 450.0,
+      "center_mm": [
+        112.56081752907434,
+        3.68,
+        8.579201308768162
+      ],
+      "bounds_mm": [
+        [
+          104.48568191626643,
+          1.1799999999999997,
+          6.0
+        ],
+        [
+          122.48568191626643,
+          6.18,
+          12.541440645320113
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "output_tenon_D10",
+      "material": "steel",
+      "mass_g": 5.347352705384816,
+      "volume_mm3": 681.1914274375563,
+      "center_mm": [
+        0.24680287101148313,
+        0.7102339359624107,
+        -3.481306847210317e-16
+      ],
+      "bounds_mm": [
+        [
+          -5.0,
+          -4.8,
+          -5.0
+        ],
+        [
+          5.0,
+          6.000000000000001,
+          5.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "shoulder_spacer",
+      "material": "steel",
+      "mass_g": 0.9494061859753488,
+      "volume_mm3": 120.9434631815731,
+      "center_mm": [
+        5.879671515059141e-16,
+        5.500000000000001,
+        9.399998539064269e-16
+      ],
+      "bounds_mm": [
+        [
+          -8.0,
+          5.0,
+          -8.0
+        ],
+        [
+          8.0,
+          6.0,
+          8.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "M2x6_keeper_screw_0",
+      "material": "steel",
+      "mass_g": 0.3260250608115879,
+      "volume_mm3": 41.53185488045706,
+      "center_mm": [
+        18.500000000000004,
+        6.98530976337431e-17,
+        -7.084568835098335
+      ],
+      "bounds_mm": [
+        [
+          16.6,
+          -1.9,
+          -9.9
+        ],
+        [
+          20.4,
+          1.9,
+          -1.9000000000000004
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "M2x6_keeper_screw_1",
+      "material": "steel",
+      "mass_g": 0.3260250608115879,
+      "volume_mm3": 41.53185488045706,
+      "center_mm": [
+        22.5,
+        6.985309763374334e-17,
+        -7.084568835098335
+      ],
+      "bounds_mm": [
+        [
+          20.6,
+          -1.9,
+          -9.9
+        ],
+        [
+          24.4,
+          1.9,
+          -1.9000000000000004
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "nut_keeper_sheet",
+      "material": "steel",
+      "mass_g": 0.4584156949081561,
+      "volume_mm3": 58.39690380995619,
+      "center_mm": [
+        21.038734017781934,
+        0.0,
+        -7.649999999999999
+      ],
+      "bounds_mm": [
+        [
+          17.0,
+          -9.0,
+          -7.9
+        ],
+        [
+          25.0,
+          9.0,
+          -7.4
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "keyed_hub_lower_fork",
+      "material": "aluminum",
+      "mass_g": 14.023701656183073,
+      "volume_mm3": 5193.963576364101,
+      "center_mm": [
+        4.991987069208798,
+        -3.5524578126613435e-16,
+        -0.05572521311347484
+      ],
+      "bounds_mm": [
+        [
+          -12.0,
+          -9.0,
+          -12.0
+        ],
+        [
+          25.0,
+          9.0,
+          12.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "removable_upper_fork",
+      "material": "aluminum",
+      "mass_g": 1.7478892201923104,
+      "volume_mm3": 647.3663778490038,
+      "center_mm": [
+        19.88780136776282,
+        -4.3903592158802666e-17,
+        8.0
+      ],
+      "bounds_mm": [
+        [
+          15.0,
+          -9.0,
+          6.0
+        ],
+        [
+          25.0,
+          9.0,
+          10.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "metal_blade_with_narrow_tongue",
+      "material": "aluminum",
+      "mass_g": 27.31711383028847,
+      "volume_mm3": 10117.449566773506,
+      "center_mm": [
+        50.099942436766774,
+        1.7192164939008728e-15,
+        3.0
+      ],
+      "bounds_mm": [
+        [
+          15.0,
+          -16.833333333333332,
+          0.0
+        ],
+        [
+          100.0,
+          16.833333333333343,
+          6.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "parallel_key_3x3x8",
+      "material": "steel",
+      "mass_g": 0.5651999999999999,
+      "volume_mm3": 72.0,
+      "center_mm": [
+        -4.699999999999999,
+        2.4671622769447922e-17,
+        2.4671622769447922e-17
+      ],
+      "bounds_mm": [
+        [
+          -6.2,
+          -4.0,
+          -1.5
+        ],
+        [
+          -3.2,
+          4.0,
+          1.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "end_washer_D18",
+      "material": "steel",
+      "mass_g": 2.825375841392253,
+      "volume_mm3": 359.9204893493316,
+      "center_mm": [
+        6.269069873588086e-16,
+        -5.75,
+        -8.488913118816598e-16
+      ],
+      "bounds_mm": [
+        [
+          -9.0,
+          -6.5,
+          -9.0
+        ],
+        [
+          9.0,
+          -5.0,
+          9.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "M4x10_end_screw_envelope",
+      "material": "steel",
+      "mass_g": 2.194873707430509,
+      "volume_mm3": 279.6017461694916,
+      "center_mm": [
+        1.7054701914339455e-16,
+        -5.353932584269662,
+        -5.0825343224385786e-17
+      ],
+      "bounds_mm": [
+        [
+          -3.5,
+          -10.5,
+          -3.5
+        ],
+        [
+          3.5,
+          3.5,
+          3.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "M3x20_fork_screw_0",
+      "material": "steel",
+      "mass_g": 1.6692754390078939,
+      "volume_mm3": 212.64655273985912,
+      "center_mm": [
+        20.999999999999996,
+        -4.5,
+        3.854570637119113
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          -7.25,
+          -10.0
+        ],
+        [
+          23.75,
+          -1.75,
+          13.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "M3_washer_0",
+      "material": "steel",
+      "mass_g": 0.11541583090758183,
+      "volume_mm3": 14.702653618800234,
+      "center_mm": [
+        21.000000000000004,
+        -4.499999999999999,
+        -4.25
+      ],
+      "bounds_mm": [
+        [
+          17.5,
+          -8.0,
+          -4.5
+        ],
+        [
+          24.5,
+          -1.0,
+          -4.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "M3_hexnut_0",
+      "material": "steel",
+      "mass_g": 0.3603844252851179,
+      "volume_mm3": 45.90884398536534,
+      "center_mm": [
+        21.0,
+        -4.500000000000001,
+        -5.700000000000001
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          -7.675426480542943,
+          -6.9
+        ],
+        [
+          23.75,
+          -1.3245735194570598,
+          -4.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "M3x20_fork_screw_1",
+      "material": "steel",
+      "mass_g": 1.6692754390078939,
+      "volume_mm3": 212.64655273985912,
+      "center_mm": [
+        20.999999999999996,
+        4.5,
+        3.854570637119113
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          1.75,
+          -10.0
+        ],
+        [
+          23.75,
+          7.25,
+          13.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "M3_washer_1",
+      "material": "steel",
+      "mass_g": 0.11541583090758183,
+      "volume_mm3": 14.702653618800234,
+      "center_mm": [
+        21.000000000000004,
+        4.499999999999999,
+        -4.25
+      ],
+      "bounds_mm": [
+        [
+          17.5,
+          1.0,
+          -4.5
+        ],
+        [
+          24.5,
+          8.0,
+          -4.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "M3_hexnut_1",
+      "material": "steel",
+      "mass_g": 0.360384425285118,
+      "volume_mm3": 45.90884398536535,
+      "center_mm": [
+        21.000000000000004,
+        4.500000000000001,
+        -5.7
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          1.3245735194570576,
+          -6.9
+        ],
+        [
+          23.75,
+          7.675426480542942,
+          -4.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "LED_window_placeholder",
+      "material": "optical_placeholder",
+      "mass_g": 0.8378207999999996,
+      "volume_mm3": 698.1839999999997,
+      "center_mm": [
+        52.990890653466714,
+        -3.775678695152433e-17,
+        6.300000000000001
+      ],
+      "bounds_mm": [
+        [
+          25.0,
+          -12.840000000000003,
+          5.999999999999999
+        ],
+        [
+          94.0,
+          12.840000000000003,
+          6.6
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "original_wedge_pad_0",
+      "material": "optical_placeholder",
+      "mass_g": 0.5399999999999999,
+      "volume_mm3": 450.0,
+      "center_mm": [
+        64.50995334640079,
+        -2.88,
+        8.756397649828012
+      ],
+      "bounds_mm": [
+        [
+          57.17401302626281,
+          -5.38,
+          6.0
+        ],
+        [
+          75.17401302626281,
+          -0.3799999999999999,
+          13.773432799770044
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LL",
+      "part": "original_wedge_pad_1",
+      "material": "optical_placeholder",
+      "mass_g": 0.5399999999999999,
+      "volume_mm3": 450.0,
+      "center_mm": [
+        64.50995334640079,
+        2.88,
+        8.756397649828013
+      ],
+      "bounds_mm": [
+        [
+          57.17401302626281,
+          0.3799999999999999,
+          6.0
+        ],
+        [
+          75.17401302626281,
+          5.38,
+          13.773432799770044
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "output_tenon_D10",
+      "material": "steel",
+      "mass_g": 5.347352705384816,
+      "volume_mm3": 681.1914274375563,
+      "center_mm": [
+        0.24680287101148313,
+        0.7102339359624107,
+        -3.481306847210317e-16
+      ],
+      "bounds_mm": [
+        [
+          -5.0,
+          -4.8,
+          -5.0
+        ],
+        [
+          5.0,
+          6.000000000000001,
+          5.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "shoulder_spacer",
+      "material": "steel",
+      "mass_g": 0.9494061859753488,
+      "volume_mm3": 120.9434631815731,
+      "center_mm": [
+        5.879671515059141e-16,
+        5.500000000000001,
+        9.399998539064269e-16
+      ],
+      "bounds_mm": [
+        [
+          -8.0,
+          5.0,
+          -8.0
+        ],
+        [
+          8.0,
+          6.0,
+          8.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "M2x6_keeper_screw_0",
+      "material": "steel",
+      "mass_g": 0.3260250608115879,
+      "volume_mm3": 41.53185488045706,
+      "center_mm": [
+        18.500000000000004,
+        6.98530976337431e-17,
+        -7.084568835098335
+      ],
+      "bounds_mm": [
+        [
+          16.6,
+          -1.9,
+          -9.9
+        ],
+        [
+          20.4,
+          1.9,
+          -1.9000000000000004
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "M2x6_keeper_screw_1",
+      "material": "steel",
+      "mass_g": 0.3260250608115879,
+      "volume_mm3": 41.53185488045706,
+      "center_mm": [
+        22.5,
+        6.985309763374334e-17,
+        -7.084568835098335
+      ],
+      "bounds_mm": [
+        [
+          20.6,
+          -1.9,
+          -9.9
+        ],
+        [
+          24.4,
+          1.9,
+          -1.9000000000000004
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "nut_keeper_sheet",
+      "material": "steel",
+      "mass_g": 0.4584156949081561,
+      "volume_mm3": 58.39690380995619,
+      "center_mm": [
+        21.038734017781934,
+        0.0,
+        -7.649999999999999
+      ],
+      "bounds_mm": [
+        [
+          17.0,
+          -9.0,
+          -7.9
+        ],
+        [
+          25.0,
+          9.0,
+          -7.4
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "keyed_hub_lower_fork",
+      "material": "aluminum",
+      "mass_g": 14.023701656183073,
+      "volume_mm3": 5193.963576364101,
+      "center_mm": [
+        4.991987069208798,
+        -3.5524578126613435e-16,
+        -0.05572521311347484
+      ],
+      "bounds_mm": [
+        [
+          -12.0,
+          -9.0,
+          -12.0
+        ],
+        [
+          25.0,
+          9.0,
+          12.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "removable_upper_fork",
+      "material": "aluminum",
+      "mass_g": 1.7478892201923104,
+      "volume_mm3": 647.3663778490038,
+      "center_mm": [
+        19.88780136776282,
+        -4.3903592158802666e-17,
+        8.0
+      ],
+      "bounds_mm": [
+        [
+          15.0,
+          -9.0,
+          6.0
+        ],
+        [
+          25.0,
+          9.0,
+          10.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "metal_blade_with_narrow_tongue",
+      "material": "aluminum",
+      "mass_g": 27.31711383028847,
+      "volume_mm3": 10117.449566773506,
+      "center_mm": [
+        50.099942436766774,
+        1.7192164939008728e-15,
+        3.0
+      ],
+      "bounds_mm": [
+        [
+          15.0,
+          -16.833333333333332,
+          0.0
+        ],
+        [
+          100.0,
+          16.833333333333343,
+          6.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "parallel_key_3x3x8",
+      "material": "steel",
+      "mass_g": 0.5651999999999999,
+      "volume_mm3": 72.0,
+      "center_mm": [
+        -4.699999999999999,
+        2.4671622769447922e-17,
+        2.4671622769447922e-17
+      ],
+      "bounds_mm": [
+        [
+          -6.2,
+          -4.0,
+          -1.5
+        ],
+        [
+          -3.2,
+          4.0,
+          1.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "end_washer_D18",
+      "material": "steel",
+      "mass_g": 2.825375841392253,
+      "volume_mm3": 359.9204893493316,
+      "center_mm": [
+        6.269069873588086e-16,
+        -5.75,
+        -8.488913118816598e-16
+      ],
+      "bounds_mm": [
+        [
+          -9.0,
+          -6.5,
+          -9.0
+        ],
+        [
+          9.0,
+          -5.0,
+          9.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "M4x10_end_screw_envelope",
+      "material": "steel",
+      "mass_g": 2.194873707430509,
+      "volume_mm3": 279.6017461694916,
+      "center_mm": [
+        1.7054701914339455e-16,
+        -5.353932584269662,
+        -5.0825343224385786e-17
+      ],
+      "bounds_mm": [
+        [
+          -3.5,
+          -10.5,
+          -3.5
+        ],
+        [
+          3.5,
+          3.5,
+          3.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "M3x20_fork_screw_0",
+      "material": "steel",
+      "mass_g": 1.6692754390078939,
+      "volume_mm3": 212.64655273985912,
+      "center_mm": [
+        20.999999999999996,
+        -4.5,
+        3.854570637119113
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          -7.25,
+          -10.0
+        ],
+        [
+          23.75,
+          -1.75,
+          13.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "M3_washer_0",
+      "material": "steel",
+      "mass_g": 0.11541583090758183,
+      "volume_mm3": 14.702653618800234,
+      "center_mm": [
+        21.000000000000004,
+        -4.499999999999999,
+        -4.25
+      ],
+      "bounds_mm": [
+        [
+          17.5,
+          -8.0,
+          -4.5
+        ],
+        [
+          24.5,
+          -1.0,
+          -4.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "M3_hexnut_0",
+      "material": "steel",
+      "mass_g": 0.3603844252851179,
+      "volume_mm3": 45.90884398536534,
+      "center_mm": [
+        21.0,
+        -4.500000000000001,
+        -5.700000000000001
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          -7.675426480542943,
+          -6.9
+        ],
+        [
+          23.75,
+          -1.3245735194570598,
+          -4.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "M3x20_fork_screw_1",
+      "material": "steel",
+      "mass_g": 1.6692754390078939,
+      "volume_mm3": 212.64655273985912,
+      "center_mm": [
+        20.999999999999996,
+        4.5,
+        3.854570637119113
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          1.75,
+          -10.0
+        ],
+        [
+          23.75,
+          7.25,
+          13.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "M3_washer_1",
+      "material": "steel",
+      "mass_g": 0.11541583090758183,
+      "volume_mm3": 14.702653618800234,
+      "center_mm": [
+        21.000000000000004,
+        4.499999999999999,
+        -4.25
+      ],
+      "bounds_mm": [
+        [
+          17.5,
+          1.0,
+          -4.5
+        ],
+        [
+          24.5,
+          8.0,
+          -4.0
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "M3_hexnut_1",
+      "material": "steel",
+      "mass_g": 0.360384425285118,
+      "volume_mm3": 45.90884398536535,
+      "center_mm": [
+        21.000000000000004,
+        4.500000000000001,
+        -5.7
+      ],
+      "bounds_mm": [
+        [
+          18.25,
+          1.3245735194570576,
+          -6.9
+        ],
+        [
+          23.75,
+          7.675426480542942,
+          -4.5
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "LED_window_placeholder",
+      "material": "optical_placeholder",
+      "mass_g": 0.8378207999999996,
+      "volume_mm3": 698.1839999999997,
+      "center_mm": [
+        52.990890653466714,
+        -3.775678695152433e-17,
+        6.300000000000001
+      ],
+      "bounds_mm": [
+        [
+          25.0,
+          -12.840000000000003,
+          5.999999999999999
+        ],
+        [
+          94.0,
+          12.840000000000003,
+          6.6
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "original_wedge_pad_0",
+      "material": "optical_placeholder",
+      "mass_g": 0.5399999999999999,
+      "volume_mm3": 450.0,
+      "center_mm": [
+        64.50995334640079,
+        -2.88,
+        8.756397649828012
+      ],
+      "bounds_mm": [
+        [
+          57.17401302626281,
+          -5.38,
+          6.0
+        ],
+        [
+          75.17401302626281,
+          -0.3799999999999999,
+          13.773432799770044
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    },
+    {
+      "finger": "LR",
+      "part": "original_wedge_pad_1",
+      "material": "optical_placeholder",
+      "mass_g": 0.5399999999999999,
+      "volume_mm3": 450.0,
+      "center_mm": [
+        64.50995334640079,
+        2.88,
+        8.756397649828013
+      ],
+      "bounds_mm": [
+        [
+          57.17401302626281,
+          0.3799999999999999,
+          6.0
+        ],
+        [
+          75.17401302626281,
+          5.38,
+          13.773432799770044
+        ]
+      ],
+      "valid": true,
+      "solids": 1
+    }
+  ],
+  "carrier_slots": [
+    {
+      "part": "UR_side_plate_input_-1",
+      "before_mm3": 5856.000000000002,
+      "after_mm3": 4731.61065788307,
+      "saved_g": 3.035851223715715
+    },
+    {
+      "part": "UR_side_plate_output_-1",
+      "before_mm3": 2880.0000000000005,
+      "after_mm3": 2325.840734641021,
+      "saved_g": 1.496230016469245
+    },
+    {
+      "part": "UR_side_plate_input_1",
+      "before_mm3": 5856.000000000001,
+      "after_mm3": 4731.61065788307,
+      "saved_g": 3.0358512237157127
+    },
+    {
+      "part": "UR_side_plate_output_1",
+      "before_mm3": 2880.000000000001,
+      "after_mm3": 2325.8407346410227,
+      "saved_g": 1.4962300164692413
+    },
+    {
+      "part": "UL_side_plate_input_-1",
+      "before_mm3": 5856.0,
+      "after_mm3": 4731.61065788307,
+      "saved_g": 3.03585122371571
+    },
+    {
+      "part": "UL_side_plate_output_-1",
+      "before_mm3": 2879.9999999999995,
+      "after_mm3": 2325.8407346410204,
+      "saved_g": 1.4962300164692437
+    },
+    {
+      "part": "UL_side_plate_input_1",
+      "before_mm3": 5855.999999999999,
+      "after_mm3": 4731.610657883069,
+      "saved_g": 3.0358512237157127
+    },
+    {
+      "part": "UL_side_plate_output_1",
+      "before_mm3": 2880.0000000000005,
+      "after_mm3": 2325.8407346410213,
+      "saved_g": 1.4962300164692437
+    },
+    {
+      "part": "LL_side_plate_input_-1",
+      "before_mm3": 5856.000000000002,
+      "after_mm3": 4731.610657883073,
+      "saved_g": 3.0358512237157074
+    },
+    {
+      "part": "LL_side_plate_output_-1",
+      "before_mm3": 2880.0,
+      "after_mm3": 2325.84073464102,
+      "saved_g": 1.4962300164692464
+    },
+    {
+      "part": "LL_side_plate_input_1",
+      "before_mm3": 5856.0,
+      "after_mm3": 4731.610657883068,
+      "saved_g": 3.0358512237157176
+    },
+    {
+      "part": "LL_side_plate_output_1",
+      "before_mm3": 2880.000000000001,
+      "after_mm3": 2325.8407346410218,
+      "saved_g": 1.4962300164692437
+    },
+    {
+      "part": "LR_side_plate_input_-1",
+      "before_mm3": 5856.000000000001,
+      "after_mm3": 4731.61065788307,
+      "saved_g": 3.0358512237157127
+    },
+    {
+      "part": "LR_side_plate_output_-1",
+      "before_mm3": 2879.9999999999995,
+      "after_mm3": 2325.8407346410195,
+      "saved_g": 1.4962300164692464
+    },
+    {
+      "part": "LR_side_plate_input_1",
+      "before_mm3": 5855.999999999999,
+      "after_mm3": 4731.6106578830695,
+      "saved_g": 3.03585122371571
+    },
+    {
+      "part": "LR_side_plate_output_1",
+      "before_mm3": 2880.0000000000005,
+      "after_mm3": 2325.8407346410213,
+      "saved_g": 1.4962300164692437
+    }
+  ],
+  "carrier_slot_saving_g": 36.25664992147965,
+  "motion": [
+    {
+      "finger": "UR",
+      "region": "new narrow root conservative containing proxy",
+      "range_deg": [
+        0,
+        114
+      ],
+      "moving_radius_bound_mm": 28.178005607210743,
+      "distance_tests": 807,
+      "sampled_angles": 58,
+      "minimum_sampled_distance_mm": 0.9999999999999899,
+      "minimum_sampled_q_deg": 112.0,
+      "nearest_part": "UR_output_KM1",
+      "continuous_clearance_lower_bound_mm": 0.5082072675905813,
+      "certified": true,
+      "failures": [],
+      "certified_intervals": [
+        {
+          "a": 112.0,
+          "b": 114.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 110.0,
+          "b": 112.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 108.0,
+          "b": 110.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 106.0,
+          "b": 108.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 104.0,
+          "b": 106.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 102.0,
+          "b": 104.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 100.0,
+          "b": 102.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 98.0,
+          "b": 100.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 96.0,
+          "b": 98.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 94.0,
+          "b": 96.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 92.0,
+          "b": 94.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 90.0,
+          "b": 92.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 88.0,
+          "b": 90.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 86.0,
+          "b": 88.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 84.0,
+          "b": 86.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 82.0,
+          "b": 84.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 80.0,
+          "b": 82.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 78.0,
+          "b": 80.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 76.0,
+          "b": 78.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 74.0,
+          "b": 76.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 72.0,
+          "b": 74.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 70.0,
+          "b": 72.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 68.0,
+          "b": 70.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 66.0,
+          "b": 68.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 64.0,
+          "b": 66.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 62.0,
+          "b": 64.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 60.0,
+          "b": 62.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 58.0,
+          "b": 60.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 56.0,
+          "b": 58.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 54.0,
+          "b": 56.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 52.0,
+          "b": 54.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 50.0,
+          "b": 52.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 48.0,
+          "b": 50.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 46.0,
+          "b": 48.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 44.0,
+          "b": 46.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 42.0,
+          "b": 44.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 40.0,
+          "b": 42.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 38.0,
+          "b": 40.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 36.0,
+          "b": 38.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 34.0,
+          "b": 36.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 32.0,
+          "b": 34.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 30.0,
+          "b": 32.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 28.0,
+          "b": 30.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 26.0,
+          "b": 28.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 24.0,
+          "b": 26.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 22.0,
+          "b": 24.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 20.0,
+          "b": 22.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 18.0,
+          "b": 20.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 16.0,
+          "b": 18.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 14.0,
+          "b": 16.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 12.0,
+          "b": 14.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 10.0,
+          "b": 12.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 8.0,
+          "b": 10.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 6.0,
+          "b": 8.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 4.0,
+          "b": 6.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 2.0,
+          "b": 4.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        },
+        {
+          "a": 0.0,
+          "b": 2.0,
+          "clearance_lower_bound_mm": 0.5082072675905813
+        }
+      ],
+      "allowed_interface": "own output thread bay face at u=6 meets new integral \u00d810 tenon and spacer; original motor/gear/bearings retain support02 envelope limitations"
+    },
+    {
+      "finger": "UR",
+      "region": "unchanged distal",
+      "range_deg": [
+        0,
+        114
+      ],
+      "moving_radius_bound_mm": 140.12851244482687,
+      "distance_tests": 431,
+      "sampled_angles": 58,
+      "minimum_sampled_distance_mm": 2.914077946795582,
+      "minimum_sampled_q_deg": 4.0,
+      "nearest_part": "UR_side_plate_output_1",
+      "continuous_clearance_lower_bound_mm": 0.4684050704273517,
+      "certified": true,
+      "failures": [],
+      "certified_intervals": [
+        {
+          "a": 112.0,
+          "b": 114.0,
+          "clearance_lower_bound_mm": 2.554327123631765
+        },
+        {
+          "a": 110.0,
+          "b": 112.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 108.0,
+          "b": 110.0,
+          "clearance_lower_bound_mm": 2.5543271236317695
+        },
+        {
+          "a": 106.0,
+          "b": 108.0,
+          "clearance_lower_bound_mm": 2.5543271236317695
+        },
+        {
+          "a": 104.0,
+          "b": 106.0,
+          "clearance_lower_bound_mm": 2.554327123631767
+        },
+        {
+          "a": 102.0,
+          "b": 104.0,
+          "clearance_lower_bound_mm": 2.554327123631767
+        },
+        {
+          "a": 100.0,
+          "b": 102.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 98.0,
+          "b": 100.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 96.0,
+          "b": 98.0,
+          "clearance_lower_bound_mm": 2.5543271236317686
+        },
+        {
+          "a": 94.0,
+          "b": 96.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 92.0,
+          "b": 94.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 90.0,
+          "b": 92.0,
+          "clearance_lower_bound_mm": 2.5543271236317695
+        },
+        {
+          "a": 88.0,
+          "b": 90.0,
+          "clearance_lower_bound_mm": 2.5543271236317695
+        },
+        {
+          "a": 86.0,
+          "b": 88.0,
+          "clearance_lower_bound_mm": 2.554327123631767
+        },
+        {
+          "a": 84.0,
+          "b": 86.0,
+          "clearance_lower_bound_mm": 2.554327123631767
+        },
+        {
+          "a": 82.0,
+          "b": 84.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 80.0,
+          "b": 82.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 78.0,
+          "b": 80.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 76.0,
+          "b": 78.0,
+          "clearance_lower_bound_mm": 2.5543271236317686
+        },
+        {
+          "a": 74.0,
+          "b": 76.0,
+          "clearance_lower_bound_mm": 2.5543271236317695
+        },
+        {
+          "a": 72.0,
+          "b": 74.0,
+          "clearance_lower_bound_mm": 2.5543271236317695
+        },
+        {
+          "a": 70.0,
+          "b": 72.0,
+          "clearance_lower_bound_mm": 2.5543271236317686
+        },
+        {
+          "a": 68.0,
+          "b": 70.0,
+          "clearance_lower_bound_mm": 2.5543271236317686
+        },
+        {
+          "a": 66.0,
+          "b": 68.0,
+          "clearance_lower_bound_mm": 2.5543271236317686
+        },
+        {
+          "a": 64.0,
+          "b": 66.0,
+          "clearance_lower_bound_mm": 2.554327123631765
+        },
+        {
+          "a": 62.0,
+          "b": 64.0,
+          "clearance_lower_bound_mm": 2.554327123631765
+        },
+        {
+          "a": 60.0,
+          "b": 62.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 58.0,
+          "b": 60.0,
+          "clearance_lower_bound_mm": 2.554327123631764
+        },
+        {
+          "a": 56.0,
+          "b": 58.0,
+          "clearance_lower_bound_mm": 2.554327123631764
+        },
+        {
+          "a": 54.0,
+          "b": 56.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 52.0,
+          "b": 54.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 50.0,
+          "b": 52.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 48.0,
+          "b": 50.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 46.0,
+          "b": 48.0,
+          "clearance_lower_bound_mm": 2.554327123631759
+        },
+        {
+          "a": 44.0,
+          "b": 46.0,
+          "clearance_lower_bound_mm": 2.554327123631759
+        },
+        {
+          "a": 42.0,
+          "b": 44.0,
+          "clearance_lower_bound_mm": 2.554327123631757
+        },
+        {
+          "a": 40.0,
+          "b": 42.0,
+          "clearance_lower_bound_mm": 2.554327123631757
+        },
+        {
+          "a": 38.0,
+          "b": 40.0,
+          "clearance_lower_bound_mm": 2.5543271236317615
+        },
+        {
+          "a": 36.0,
+          "b": 38.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 34.0,
+          "b": 36.0,
+          "clearance_lower_bound_mm": 2.554327123631758
+        },
+        {
+          "a": 32.0,
+          "b": 34.0,
+          "clearance_lower_bound_mm": 2.554327123631758
+        },
+        {
+          "a": 30.0,
+          "b": 32.0,
+          "clearance_lower_bound_mm": 2.554327123631758
+        },
+        {
+          "a": 28.0,
+          "b": 30.0,
+          "clearance_lower_bound_mm": 2.554327123631758
+        },
+        {
+          "a": 26.0,
+          "b": 28.0,
+          "clearance_lower_bound_mm": 2.5543271236317597
+        },
+        {
+          "a": 24.0,
+          "b": 26.0,
+          "clearance_lower_bound_mm": 2.5543271236317633
+        },
+        {
+          "a": 22.0,
+          "b": 24.0,
+          "clearance_lower_bound_mm": 2.554327123631756
+        },
+        {
+          "a": 20.0,
+          "b": 22.0,
+          "clearance_lower_bound_mm": 2.554327123631756
+        },
+        {
+          "a": 18.0,
+          "b": 20.0,
+          "clearance_lower_bound_mm": 2.5543271236317624
+        },
+        {
+          "a": 16.0,
+          "b": 18.0,
+          "clearance_lower_bound_mm": 2.554327123631756
+        },
+        {
+          "a": 14.0,
+          "b": 16.0,
+          "clearance_lower_bound_mm": 2.189250158207094
+        },
+        {
+          "a": 12.0,
+          "b": 14.0,
+          "clearance_lower_bound_mm": 1.5850181451611656
+        },
+        {
+          "a": 10.0,
+          "b": 12.0,
+          "clearance_lower_bound_mm": 1.06810769729853
+        },
+        {
+          "a": 8.0,
+          "b": 10.0,
+          "clearance_lower_bound_mm": 0.6828753953171978
+        },
+        {
+          "a": 6.0,
+          "b": 8.0,
+          "clearance_lower_bound_mm": 0.4823074459928649
+        },
+        {
+          "a": 4.0,
+          "b": 6.0,
+          "clearance_lower_bound_mm": 0.4684050704273517
+        },
+        {
+          "a": 2.0,
+          "b": 4.0,
+          "clearance_lower_bound_mm": 0.4684050704273517
+        },
+        {
+          "a": 0.0,
+          "b": 2.0,
+          "clearance_lower_bound_mm": 0.49792993580662026
+        }
+      ],
+      "allowed_interface": "own output thread bay face at u=6 meets new integral \u00d810 tenon and spacer; original motor/gear/bearings retain support02 envelope limitations"
+    },
+    {
+      "finger": "UL",
+      "region": "new narrow root conservative containing proxy",
+      "range_deg": [
+        0,
+        114
+      ],
+      "moving_radius_bound_mm": 28.178005607210743,
+      "distance_tests": 807,
+      "sampled_angles": 58,
+      "minimum_sampled_distance_mm": 0.9999999999999999,
+      "minimum_sampled_q_deg": 112.0,
+      "nearest_part": "UL_output_KM1",
+      "continuous_clearance_lower_bound_mm": 0.5082072675905913,
+      "certified": true,
+      "failures": [],
+      "certified_intervals": [
+        {
+          "a": 112.0,
+          "b": 114.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 110.0,
+          "b": 112.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 108.0,
+          "b": 110.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 106.0,
+          "b": 108.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 104.0,
+          "b": 106.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 102.0,
+          "b": 104.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 100.0,
+          "b": 102.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 98.0,
+          "b": 100.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 96.0,
+          "b": 98.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 94.0,
+          "b": 96.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 92.0,
+          "b": 94.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 90.0,
+          "b": 92.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 88.0,
+          "b": 90.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 86.0,
+          "b": 88.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 84.0,
+          "b": 86.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 82.0,
+          "b": 84.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 80.0,
+          "b": 82.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 78.0,
+          "b": 80.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 76.0,
+          "b": 78.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 74.0,
+          "b": 76.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 72.0,
+          "b": 74.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 70.0,
+          "b": 72.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 68.0,
+          "b": 70.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 66.0,
+          "b": 68.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 64.0,
+          "b": 66.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 62.0,
+          "b": 64.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 60.0,
+          "b": 62.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 58.0,
+          "b": 60.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 56.0,
+          "b": 58.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 54.0,
+          "b": 56.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 52.0,
+          "b": 54.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 50.0,
+          "b": 52.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 48.0,
+          "b": 50.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 46.0,
+          "b": 48.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 44.0,
+          "b": 46.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 42.0,
+          "b": 44.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 40.0,
+          "b": 42.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 38.0,
+          "b": 40.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 36.0,
+          "b": 38.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 34.0,
+          "b": 36.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 32.0,
+          "b": 34.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 30.0,
+          "b": 32.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 28.0,
+          "b": 30.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 26.0,
+          "b": 28.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 24.0,
+          "b": 26.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 22.0,
+          "b": 24.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 20.0,
+          "b": 22.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 18.0,
+          "b": 20.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 16.0,
+          "b": 18.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 14.0,
+          "b": 16.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 12.0,
+          "b": 14.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 10.0,
+          "b": 12.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 8.0,
+          "b": 10.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 6.0,
+          "b": 8.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 4.0,
+          "b": 6.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 2.0,
+          "b": 4.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        },
+        {
+          "a": 0.0,
+          "b": 2.0,
+          "clearance_lower_bound_mm": 0.5082072675905913
+        }
+      ],
+      "allowed_interface": "own output thread bay face at u=6 meets new integral \u00d810 tenon and spacer; original motor/gear/bearings retain support02 envelope limitations"
+    },
+    {
+      "finger": "UL",
+      "region": "unchanged distal",
+      "range_deg": [
+        0,
+        114
+      ],
+      "moving_radius_bound_mm": 140.12851244482687,
+      "distance_tests": 431,
+      "sampled_angles": 58,
+      "minimum_sampled_distance_mm": 2.9140779467956137,
+      "minimum_sampled_q_deg": 4.0,
+      "nearest_part": "UL_side_plate_output_1",
+      "continuous_clearance_lower_bound_mm": 0.4684050704273832,
+      "certified": true,
+      "failures": [],
+      "certified_intervals": [
+        {
+          "a": 112.0,
+          "b": 114.0,
+          "clearance_lower_bound_mm": 2.5543271236317615
+        },
+        {
+          "a": 110.0,
+          "b": 112.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 108.0,
+          "b": 110.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 106.0,
+          "b": 108.0,
+          "clearance_lower_bound_mm": 2.554327123631765
+        },
+        {
+          "a": 104.0,
+          "b": 106.0,
+          "clearance_lower_bound_mm": 2.554327123631765
+        },
+        {
+          "a": 102.0,
+          "b": 104.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 100.0,
+          "b": 102.0,
+          "clearance_lower_bound_mm": 2.5543271236317686
+        },
+        {
+          "a": 98.0,
+          "b": 100.0,
+          "clearance_lower_bound_mm": 2.554327123631767
+        },
+        {
+          "a": 96.0,
+          "b": 98.0,
+          "clearance_lower_bound_mm": 2.554327123631767
+        },
+        {
+          "a": 94.0,
+          "b": 96.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 92.0,
+          "b": 94.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 90.0,
+          "b": 92.0,
+          "clearance_lower_bound_mm": 2.5543271236317695
+        },
+        {
+          "a": 88.0,
+          "b": 90.0,
+          "clearance_lower_bound_mm": 2.5543271236317695
+        },
+        {
+          "a": 86.0,
+          "b": 88.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 84.0,
+          "b": 86.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 82.0,
+          "b": 84.0,
+          "clearance_lower_bound_mm": 2.5543271236317686
+        },
+        {
+          "a": 80.0,
+          "b": 82.0,
+          "clearance_lower_bound_mm": 2.5543271236317686
+        },
+        {
+          "a": 78.0,
+          "b": 80.0,
+          "clearance_lower_bound_mm": 2.5543271236317686
+        },
+        {
+          "a": 76.0,
+          "b": 78.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 74.0,
+          "b": 76.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 72.0,
+          "b": 74.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 70.0,
+          "b": 72.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 68.0,
+          "b": 70.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 66.0,
+          "b": 68.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 64.0,
+          "b": 66.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 62.0,
+          "b": 64.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 60.0,
+          "b": 62.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 58.0,
+          "b": 60.0,
+          "clearance_lower_bound_mm": 2.554327123631765
+        },
+        {
+          "a": 56.0,
+          "b": 58.0,
+          "clearance_lower_bound_mm": 2.554327123631765
+        },
+        {
+          "a": 54.0,
+          "b": 56.0,
+          "clearance_lower_bound_mm": 2.5543271236317624
+        },
+        {
+          "a": 52.0,
+          "b": 54.0,
+          "clearance_lower_bound_mm": 2.5543271236317624
+        },
+        {
+          "a": 50.0,
+          "b": 52.0,
+          "clearance_lower_bound_mm": 2.554327123631764
+        },
+        {
+          "a": 48.0,
+          "b": 50.0,
+          "clearance_lower_bound_mm": 2.5543271236317677
+        },
+        {
+          "a": 46.0,
+          "b": 48.0,
+          "clearance_lower_bound_mm": 2.5543271236317553
+        },
+        {
+          "a": 44.0,
+          "b": 46.0,
+          "clearance_lower_bound_mm": 2.5543271236317553
+        },
+        {
+          "a": 42.0,
+          "b": 44.0,
+          "clearance_lower_bound_mm": 2.554327123631764
+        },
+        {
+          "a": 40.0,
+          "b": 42.0,
+          "clearance_lower_bound_mm": 2.5543271236317624
+        },
+        {
+          "a": 38.0,
+          "b": 40.0,
+          "clearance_lower_bound_mm": 2.5543271236317624
+        },
+        {
+          "a": 36.0,
+          "b": 38.0,
+          "clearance_lower_bound_mm": 2.554327123631757
+        },
+        {
+          "a": 34.0,
+          "b": 36.0,
+          "clearance_lower_bound_mm": 2.554327123631757
+        },
+        {
+          "a": 32.0,
+          "b": 34.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 30.0,
+          "b": 32.0,
+          "clearance_lower_bound_mm": 2.5543271236317615
+        },
+        {
+          "a": 28.0,
+          "b": 30.0,
+          "clearance_lower_bound_mm": 2.554327123631759
+        },
+        {
+          "a": 26.0,
+          "b": 28.0,
+          "clearance_lower_bound_mm": 2.554327123631759
+        },
+        {
+          "a": 24.0,
+          "b": 26.0,
+          "clearance_lower_bound_mm": 2.554327123631764
+        },
+        {
+          "a": 22.0,
+          "b": 24.0,
+          "clearance_lower_bound_mm": 2.554327123631766
+        },
+        {
+          "a": 20.0,
+          "b": 22.0,
+          "clearance_lower_bound_mm": 2.5543271236317597
+        },
+        {
+          "a": 18.0,
+          "b": 20.0,
+          "clearance_lower_bound_mm": 2.5543271236317597
+        },
+        {
+          "a": 16.0,
+          "b": 18.0,
+          "clearance_lower_bound_mm": 2.554327123631759
+        },
+        {
+          "a": 14.0,
+          "b": 16.0,
+          "clearance_lower_bound_mm": 2.1892501582071073
+        },
+        {
+          "a": 12.0,
+          "b": 14.0,
+          "clearance_lower_bound_mm": 1.585018145161186
+        },
+        {
+          "a": 10.0,
+          "b": 12.0,
+          "clearance_lower_bound_mm": 1.0681076972985473
+        },
+        {
+          "a": 8.0,
+          "b": 10.0,
+          "clearance_lower_bound_mm": 0.6828753953172289
+        },
+        {
+          "a": 6.0,
+          "b": 8.0,
+          "clearance_lower_bound_mm": 0.482307445992888
+        },
+        {
+          "a": 4.0,
+          "b": 6.0,
+          "clearance_lower_bound_mm": 0.4684050704273832
+        },
+        {
+          "a": 2.0,
+          "b": 4.0,
+          "clearance_lower_bound_mm": 0.4684050704273832
+        },
+        {
+          "a": 0.0,
+          "b": 2.0,
+          "clearance_lower_bound_mm": 0.4979299358066518
+        }
+      ],
+      "allowed_interface": "own output thread bay face at u=6 meets new integral \u00d810 tenon and spacer; original motor/gear/bearings retain support02 envelope limitations"
+    },
+    {
+      "finger": "LL",
+      "region": "new narrow root conservative containing proxy",
+      "range_deg": [
+        0,
+        126
+      ],
+      "moving_radius_bound_mm": 28.178005607210743,
+      "distance_tests": 877,
+      "sampled_angles": 64,
+      "minimum_sampled_distance_mm": 0.9999999999999879,
+      "minimum_sampled_q_deg": 124.0,
+      "nearest_part": "LL_output_KM1",
+      "continuous_clearance_lower_bound_mm": 0.5082072675905793,
+      "certified": true,
+      "failures": [],
+      "certified_intervals": [
+        {
+          "a": 124.0,
+          "b": 126.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 122.0,
+          "b": 124.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 120.0,
+          "b": 122.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 118.0,
+          "b": 120.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 116.0,
+          "b": 118.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 114.0,
+          "b": 116.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 112.0,
+          "b": 114.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 110.0,
+          "b": 112.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 108.0,
+          "b": 110.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 106.0,
+          "b": 108.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 104.0,
+          "b": 106.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 102.0,
+          "b": 104.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 100.0,
+          "b": 102.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 98.0,
+          "b": 100.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 96.0,
+          "b": 98.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 94.0,
+          "b": 96.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 92.0,
+          "b": 94.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 90.0,
+          "b": 92.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 88.0,
+          "b": 90.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 86.0,
+          "b": 88.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 84.0,
+          "b": 86.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 82.0,
+          "b": 84.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 80.0,
+          "b": 82.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 78.0,
+          "b": 80.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 76.0,
+          "b": 78.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 74.0,
+          "b": 76.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 72.0,
+          "b": 74.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 70.0,
+          "b": 72.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 68.0,
+          "b": 70.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 66.0,
+          "b": 68.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 64.0,
+          "b": 66.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 62.0,
+          "b": 64.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 60.0,
+          "b": 62.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 58.0,
+          "b": 60.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 56.0,
+          "b": 58.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 54.0,
+          "b": 56.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 52.0,
+          "b": 54.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 50.0,
+          "b": 52.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 48.0,
+          "b": 50.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 46.0,
+          "b": 48.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 44.0,
+          "b": 46.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 42.0,
+          "b": 44.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 40.0,
+          "b": 42.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 38.0,
+          "b": 40.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 36.0,
+          "b": 38.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 34.0,
+          "b": 36.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 32.0,
+          "b": 34.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 30.0,
+          "b": 32.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 28.0,
+          "b": 30.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 26.0,
+          "b": 28.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 24.0,
+          "b": 26.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 22.0,
+          "b": 24.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 20.0,
+          "b": 22.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 18.0,
+          "b": 20.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 16.0,
+          "b": 18.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 14.0,
+          "b": 16.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 12.0,
+          "b": 14.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 10.0,
+          "b": 12.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 8.0,
+          "b": 10.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 6.0,
+          "b": 8.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 4.0,
+          "b": 6.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 2.0,
+          "b": 4.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        },
+        {
+          "a": 0.0,
+          "b": 2.0,
+          "clearance_lower_bound_mm": 0.5082072675905793
+        }
+      ],
+      "allowed_interface": "own output thread bay face at u=6 meets new integral \u00d810 tenon and spacer; original motor/gear/bearings retain support02 envelope limitations"
+    },
+    {
+      "finger": "LL",
+      "region": "unchanged distal",
+      "range_deg": [
+        0,
+        126
+      ],
+      "moving_radius_bound_mm": 100.17983829094555,
+      "distance_tests": 416,
+      "sampled_angles": 64,
+      "minimum_sampled_distance_mm": 2.9140779467956124,
+      "minimum_sampled_q_deg": 4.0,
+      "nearest_part": "LL_side_plate_output_1",
+      "continuous_clearance_lower_bound_mm": 1.1656321166610188,
+      "certified": true,
+      "failures": [],
+      "certified_intervals": [
+        {
+          "a": 124.0,
+          "b": 126.0,
+          "clearance_lower_bound_mm": 3.2515541698653845
+        },
+        {
+          "a": 122.0,
+          "b": 124.0,
+          "clearance_lower_bound_mm": 3.2515541698653845
+        },
+        {
+          "a": 120.0,
+          "b": 122.0,
+          "clearance_lower_bound_mm": 3.2515541698653996
+        },
+        {
+          "a": 118.0,
+          "b": 120.0,
+          "clearance_lower_bound_mm": 3.2515541698653996
+        },
+        {
+          "a": 116.0,
+          "b": 118.0,
+          "clearance_lower_bound_mm": 3.2515541698653987
+        },
+        {
+          "a": 114.0,
+          "b": 116.0,
+          "clearance_lower_bound_mm": 3.2515541698653916
+        },
+        {
+          "a": 112.0,
+          "b": 114.0,
+          "clearance_lower_bound_mm": 3.2515541698653916
+        },
+        {
+          "a": 110.0,
+          "b": 112.0,
+          "clearance_lower_bound_mm": 3.251554169865395
+        },
+        {
+          "a": 108.0,
+          "b": 110.0,
+          "clearance_lower_bound_mm": 3.25155416986539
+        },
+        {
+          "a": 106.0,
+          "b": 108.0,
+          "clearance_lower_bound_mm": 3.25155416986539
+        },
+        {
+          "a": 104.0,
+          "b": 106.0,
+          "clearance_lower_bound_mm": 3.2515541698653987
+        },
+        {
+          "a": 102.0,
+          "b": 104.0,
+          "clearance_lower_bound_mm": 3.2515541698653987
+        },
+        {
+          "a": 100.0,
+          "b": 102.0,
+          "clearance_lower_bound_mm": 3.2515541698653925
+        },
+        {
+          "a": 98.0,
+          "b": 100.0,
+          "clearance_lower_bound_mm": 3.2515541698653925
+        },
+        {
+          "a": 96.0,
+          "b": 98.0,
+          "clearance_lower_bound_mm": 3.2515541698654085
+        },
+        {
+          "a": 94.0,
+          "b": 96.0,
+          "clearance_lower_bound_mm": 3.2515541698654102
+        },
+        {
+          "a": 92.0,
+          "b": 94.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 90.0,
+          "b": 92.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 88.0,
+          "b": 90.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 86.0,
+          "b": 88.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 84.0,
+          "b": 86.0,
+          "clearance_lower_bound_mm": 3.2515541698654102
+        },
+        {
+          "a": 82.0,
+          "b": 84.0,
+          "clearance_lower_bound_mm": 3.2515541698654102
+        },
+        {
+          "a": 80.0,
+          "b": 82.0,
+          "clearance_lower_bound_mm": 3.2515541698653943
+        },
+        {
+          "a": 78.0,
+          "b": 80.0,
+          "clearance_lower_bound_mm": 3.2515541698653943
+        },
+        {
+          "a": 76.0,
+          "b": 78.0,
+          "clearance_lower_bound_mm": 3.2515541698653996
+        },
+        {
+          "a": 74.0,
+          "b": 76.0,
+          "clearance_lower_bound_mm": 3.2515541698653996
+        },
+        {
+          "a": 72.0,
+          "b": 74.0,
+          "clearance_lower_bound_mm": 3.2515541698654022
+        },
+        {
+          "a": 70.0,
+          "b": 72.0,
+          "clearance_lower_bound_mm": 3.2515541698654022
+        },
+        {
+          "a": 68.0,
+          "b": 70.0,
+          "clearance_lower_bound_mm": 3.2515541698654014
+        },
+        {
+          "a": 66.0,
+          "b": 68.0,
+          "clearance_lower_bound_mm": 3.2515541698654014
+        },
+        {
+          "a": 64.0,
+          "b": 66.0,
+          "clearance_lower_bound_mm": 3.2515541698653996
+        },
+        {
+          "a": 62.0,
+          "b": 64.0,
+          "clearance_lower_bound_mm": 3.251554169865396
+        },
+        {
+          "a": 60.0,
+          "b": 62.0,
+          "clearance_lower_bound_mm": 3.251554169865396
+        },
+        {
+          "a": 58.0,
+          "b": 60.0,
+          "clearance_lower_bound_mm": 3.2515541698654085
+        },
+        {
+          "a": 56.0,
+          "b": 58.0,
+          "clearance_lower_bound_mm": 3.251554169865397
+        },
+        {
+          "a": 54.0,
+          "b": 56.0,
+          "clearance_lower_bound_mm": 3.251554169865397
+        },
+        {
+          "a": 52.0,
+          "b": 54.0,
+          "clearance_lower_bound_mm": 3.2515541698654085
+        },
+        {
+          "a": 50.0,
+          "b": 52.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 48.0,
+          "b": 50.0,
+          "clearance_lower_bound_mm": 3.251554169865404
+        },
+        {
+          "a": 46.0,
+          "b": 48.0,
+          "clearance_lower_bound_mm": 3.2515541698654022
+        },
+        {
+          "a": 44.0,
+          "b": 46.0,
+          "clearance_lower_bound_mm": 3.2515541698654022
+        },
+        {
+          "a": 42.0,
+          "b": 44.0,
+          "clearance_lower_bound_mm": 3.251554169865405
+        },
+        {
+          "a": 40.0,
+          "b": 42.0,
+          "clearance_lower_bound_mm": 3.251554169865405
+        },
+        {
+          "a": 38.0,
+          "b": 40.0,
+          "clearance_lower_bound_mm": 3.251554169865405
+        },
+        {
+          "a": 36.0,
+          "b": 38.0,
+          "clearance_lower_bound_mm": 3.251554169865396
+        },
+        {
+          "a": 34.0,
+          "b": 36.0,
+          "clearance_lower_bound_mm": 3.251554169865396
+        },
+        {
+          "a": 32.0,
+          "b": 34.0,
+          "clearance_lower_bound_mm": 3.2515541698654085
+        },
+        {
+          "a": 30.0,
+          "b": 32.0,
+          "clearance_lower_bound_mm": 3.2515541698654085
+        },
+        {
+          "a": 28.0,
+          "b": 30.0,
+          "clearance_lower_bound_mm": 3.2515541698654093
+        },
+        {
+          "a": 26.0,
+          "b": 28.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 24.0,
+          "b": 26.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 22.0,
+          "b": 24.0,
+          "clearance_lower_bound_mm": 3.2515541698654102
+        },
+        {
+          "a": 20.0,
+          "b": 22.0,
+          "clearance_lower_bound_mm": 3.251554169865406
+        },
+        {
+          "a": 18.0,
+          "b": 20.0,
+          "clearance_lower_bound_mm": 3.2515541698654022
+        },
+        {
+          "a": 16.0,
+          "b": 18.0,
+          "clearance_lower_bound_mm": 3.2515541698654022
+        },
+        {
+          "a": 14.0,
+          "b": 16.0,
+          "clearance_lower_bound_mm": 2.886477204440748
+        },
+        {
+          "a": 12.0,
+          "b": 14.0,
+          "clearance_lower_bound_mm": 2.282245191394823
+        },
+        {
+          "a": 10.0,
+          "b": 12.0,
+          "clearance_lower_bound_mm": 1.7653347435321842
+        },
+        {
+          "a": 8.0,
+          "b": 10.0,
+          "clearance_lower_bound_mm": 1.3801024415508636
+        },
+        {
+          "a": 6.0,
+          "b": 8.0,
+          "clearance_lower_bound_mm": 1.1795344922265365
+        },
+        {
+          "a": 4.0,
+          "b": 6.0,
+          "clearance_lower_bound_mm": 1.1656321166610188
+        },
+        {
+          "a": 2.0,
+          "b": 4.0,
+          "clearance_lower_bound_mm": 1.1656321166610188
+        },
+        {
+          "a": 0.0,
+          "b": 2.0,
+          "clearance_lower_bound_mm": 1.1951569820402883
+        }
+      ],
+      "allowed_interface": "own output thread bay face at u=6 meets new integral \u00d810 tenon and spacer; original motor/gear/bearings retain support02 envelope limitations"
+    },
+    {
+      "finger": "LR",
+      "region": "new narrow root conservative containing proxy",
+      "range_deg": [
+        0,
+        126
+      ],
+      "moving_radius_bound_mm": 28.178005607210743,
+      "distance_tests": 877,
+      "sampled_angles": 64,
+      "minimum_sampled_distance_mm": 0.999999999999998,
+      "minimum_sampled_q_deg": 124.0,
+      "nearest_part": "LR_output_KM1",
+      "continuous_clearance_lower_bound_mm": 0.5082072675905893,
+      "certified": true,
+      "failures": [],
+      "certified_intervals": [
+        {
+          "a": 124.0,
+          "b": 126.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 122.0,
+          "b": 124.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 120.0,
+          "b": 122.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 118.0,
+          "b": 120.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 116.0,
+          "b": 118.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 114.0,
+          "b": 116.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 112.0,
+          "b": 114.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 110.0,
+          "b": 112.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 108.0,
+          "b": 110.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 106.0,
+          "b": 108.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 104.0,
+          "b": 106.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 102.0,
+          "b": 104.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 100.0,
+          "b": 102.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 98.0,
+          "b": 100.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 96.0,
+          "b": 98.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 94.0,
+          "b": 96.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 92.0,
+          "b": 94.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 90.0,
+          "b": 92.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 88.0,
+          "b": 90.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 86.0,
+          "b": 88.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 84.0,
+          "b": 86.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 82.0,
+          "b": 84.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 80.0,
+          "b": 82.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 78.0,
+          "b": 80.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 76.0,
+          "b": 78.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 74.0,
+          "b": 76.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 72.0,
+          "b": 74.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 70.0,
+          "b": 72.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 68.0,
+          "b": 70.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 66.0,
+          "b": 68.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 64.0,
+          "b": 66.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 62.0,
+          "b": 64.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 60.0,
+          "b": 62.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 58.0,
+          "b": 60.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 56.0,
+          "b": 58.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 54.0,
+          "b": 56.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 52.0,
+          "b": 54.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 50.0,
+          "b": 52.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 48.0,
+          "b": 50.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 46.0,
+          "b": 48.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 44.0,
+          "b": 46.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 42.0,
+          "b": 44.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 40.0,
+          "b": 42.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 38.0,
+          "b": 40.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 36.0,
+          "b": 38.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 34.0,
+          "b": 36.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 32.0,
+          "b": 34.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 30.0,
+          "b": 32.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 28.0,
+          "b": 30.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 26.0,
+          "b": 28.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 24.0,
+          "b": 26.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 22.0,
+          "b": 24.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 20.0,
+          "b": 22.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 18.0,
+          "b": 20.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 16.0,
+          "b": 18.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 14.0,
+          "b": 16.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 12.0,
+          "b": 14.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 10.0,
+          "b": 12.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 8.0,
+          "b": 10.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 6.0,
+          "b": 8.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 4.0,
+          "b": 6.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 2.0,
+          "b": 4.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        },
+        {
+          "a": 0.0,
+          "b": 2.0,
+          "clearance_lower_bound_mm": 0.5082072675905893
+        }
+      ],
+      "allowed_interface": "own output thread bay face at u=6 meets new integral \u00d810 tenon and spacer; original motor/gear/bearings retain support02 envelope limitations"
+    },
+    {
+      "finger": "LR",
+      "region": "unchanged distal",
+      "range_deg": [
+        0,
+        126
+      ],
+      "moving_radius_bound_mm": 100.17983829094555,
+      "distance_tests": 416,
+      "sampled_angles": 64,
+      "minimum_sampled_distance_mm": 2.9140779467956124,
+      "minimum_sampled_q_deg": 4.0,
+      "nearest_part": "LR_side_plate_output_1",
+      "continuous_clearance_lower_bound_mm": 1.1656321166610188,
+      "certified": true,
+      "failures": [],
+      "certified_intervals": [
+        {
+          "a": 124.0,
+          "b": 126.0,
+          "clearance_lower_bound_mm": 3.2515541698653943
+        },
+        {
+          "a": 122.0,
+          "b": 124.0,
+          "clearance_lower_bound_mm": 3.2515541698653943
+        },
+        {
+          "a": 120.0,
+          "b": 122.0,
+          "clearance_lower_bound_mm": 3.2515541698654076
+        },
+        {
+          "a": 118.0,
+          "b": 120.0,
+          "clearance_lower_bound_mm": 3.251554169865403
+        },
+        {
+          "a": 116.0,
+          "b": 118.0,
+          "clearance_lower_bound_mm": 3.251554169865395
+        },
+        {
+          "a": 114.0,
+          "b": 116.0,
+          "clearance_lower_bound_mm": 3.251554169865395
+        },
+        {
+          "a": 112.0,
+          "b": 114.0,
+          "clearance_lower_bound_mm": 3.251554169865396
+        },
+        {
+          "a": 110.0,
+          "b": 112.0,
+          "clearance_lower_bound_mm": 3.251554169865389
+        },
+        {
+          "a": 108.0,
+          "b": 110.0,
+          "clearance_lower_bound_mm": 3.251554169865389
+        },
+        {
+          "a": 106.0,
+          "b": 108.0,
+          "clearance_lower_bound_mm": 3.2515541698653987
+        },
+        {
+          "a": 104.0,
+          "b": 106.0,
+          "clearance_lower_bound_mm": 3.2515541698653996
+        },
+        {
+          "a": 102.0,
+          "b": 104.0,
+          "clearance_lower_bound_mm": 3.2515541698653996
+        },
+        {
+          "a": 100.0,
+          "b": 102.0,
+          "clearance_lower_bound_mm": 3.2515541698653943
+        },
+        {
+          "a": 98.0,
+          "b": 100.0,
+          "clearance_lower_bound_mm": 3.2515541698653943
+        },
+        {
+          "a": 96.0,
+          "b": 98.0,
+          "clearance_lower_bound_mm": 3.2515541698654093
+        },
+        {
+          "a": 94.0,
+          "b": 96.0,
+          "clearance_lower_bound_mm": 3.2515541698654005
+        },
+        {
+          "a": 92.0,
+          "b": 94.0,
+          "clearance_lower_bound_mm": 3.2515541698654005
+        },
+        {
+          "a": 90.0,
+          "b": 92.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 88.0,
+          "b": 90.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 86.0,
+          "b": 88.0,
+          "clearance_lower_bound_mm": 3.2515541698654067
+        },
+        {
+          "a": 84.0,
+          "b": 86.0,
+          "clearance_lower_bound_mm": 3.2515541698654093
+        },
+        {
+          "a": 82.0,
+          "b": 84.0,
+          "clearance_lower_bound_mm": 3.2515541698654093
+        },
+        {
+          "a": 80.0,
+          "b": 82.0,
+          "clearance_lower_bound_mm": 3.2515541698653925
+        },
+        {
+          "a": 78.0,
+          "b": 80.0,
+          "clearance_lower_bound_mm": 3.2515541698653925
+        },
+        {
+          "a": 76.0,
+          "b": 78.0,
+          "clearance_lower_bound_mm": 3.2515541698653996
+        },
+        {
+          "a": 74.0,
+          "b": 76.0,
+          "clearance_lower_bound_mm": 3.2515541698653996
+        },
+        {
+          "a": 72.0,
+          "b": 74.0,
+          "clearance_lower_bound_mm": 3.251554169865403
+        },
+        {
+          "a": 70.0,
+          "b": 72.0,
+          "clearance_lower_bound_mm": 3.251554169865403
+        },
+        {
+          "a": 68.0,
+          "b": 70.0,
+          "clearance_lower_bound_mm": 3.2515541698653925
+        },
+        {
+          "a": 66.0,
+          "b": 68.0,
+          "clearance_lower_bound_mm": 3.2515541698653925
+        },
+        {
+          "a": 64.0,
+          "b": 66.0,
+          "clearance_lower_bound_mm": 3.2515541698653925
+        },
+        {
+          "a": 62.0,
+          "b": 64.0,
+          "clearance_lower_bound_mm": 3.2515541698653925
+        },
+        {
+          "a": 60.0,
+          "b": 62.0,
+          "clearance_lower_bound_mm": 3.2515541698654014
+        },
+        {
+          "a": 58.0,
+          "b": 60.0,
+          "clearance_lower_bound_mm": 3.251554169865406
+        },
+        {
+          "a": 56.0,
+          "b": 58.0,
+          "clearance_lower_bound_mm": 3.251554169865397
+        },
+        {
+          "a": 54.0,
+          "b": 56.0,
+          "clearance_lower_bound_mm": 3.251554169865397
+        },
+        {
+          "a": 52.0,
+          "b": 54.0,
+          "clearance_lower_bound_mm": 3.2515541698653987
+        },
+        {
+          "a": 50.0,
+          "b": 52.0,
+          "clearance_lower_bound_mm": 3.2515541698653987
+        },
+        {
+          "a": 48.0,
+          "b": 50.0,
+          "clearance_lower_bound_mm": 3.2515541698654005
+        },
+        {
+          "a": 46.0,
+          "b": 48.0,
+          "clearance_lower_bound_mm": 3.2515541698654022
+        },
+        {
+          "a": 44.0,
+          "b": 46.0,
+          "clearance_lower_bound_mm": 3.2515541698654022
+        },
+        {
+          "a": 42.0,
+          "b": 44.0,
+          "clearance_lower_bound_mm": 3.251554169865405
+        },
+        {
+          "a": 40.0,
+          "b": 42.0,
+          "clearance_lower_bound_mm": 3.251554169865405
+        },
+        {
+          "a": 38.0,
+          "b": 40.0,
+          "clearance_lower_bound_mm": 3.251554169865397
+        },
+        {
+          "a": 36.0,
+          "b": 38.0,
+          "clearance_lower_bound_mm": 3.251554169865397
+        },
+        {
+          "a": 34.0,
+          "b": 36.0,
+          "clearance_lower_bound_mm": 3.251554169865397
+        },
+        {
+          "a": 32.0,
+          "b": 34.0,
+          "clearance_lower_bound_mm": 3.251554169865396
+        },
+        {
+          "a": 30.0,
+          "b": 32.0,
+          "clearance_lower_bound_mm": 3.251554169865396
+        },
+        {
+          "a": 28.0,
+          "b": 30.0,
+          "clearance_lower_bound_mm": 3.251554169865403
+        },
+        {
+          "a": 26.0,
+          "b": 28.0,
+          "clearance_lower_bound_mm": 3.251554169865403
+        },
+        {
+          "a": 24.0,
+          "b": 26.0,
+          "clearance_lower_bound_mm": 3.251554169865403
+        },
+        {
+          "a": 22.0,
+          "b": 24.0,
+          "clearance_lower_bound_mm": 3.2515541698654005
+        },
+        {
+          "a": 20.0,
+          "b": 22.0,
+          "clearance_lower_bound_mm": 3.2515541698654005
+        },
+        {
+          "a": 18.0,
+          "b": 20.0,
+          "clearance_lower_bound_mm": 3.251554169865404
+        },
+        {
+          "a": 16.0,
+          "b": 18.0,
+          "clearance_lower_bound_mm": 3.2515541698654014
+        },
+        {
+          "a": 14.0,
+          "b": 16.0,
+          "clearance_lower_bound_mm": 2.88647720444075
+        },
+        {
+          "a": 12.0,
+          "b": 14.0,
+          "clearance_lower_bound_mm": 2.282245191394823
+        },
+        {
+          "a": 10.0,
+          "b": 12.0,
+          "clearance_lower_bound_mm": 1.7653347435321878
+        },
+        {
+          "a": 8.0,
+          "b": 10.0,
+          "clearance_lower_bound_mm": 1.3801024415508636
+        },
+        {
+          "a": 6.0,
+          "b": 8.0,
+          "clearance_lower_bound_mm": 1.1795344922265316
+        },
+        {
+          "a": 4.0,
+          "b": 6.0,
+          "clearance_lower_bound_mm": 1.1656321166610188
+        },
+        {
+          "a": 2.0,
+          "b": 4.0,
+          "clearance_lower_bound_mm": 1.1656321166610188
+        },
+        {
+          "a": 0.0,
+          "b": 2.0,
+          "clearance_lower_bound_mm": 1.1951569820402883
+        }
+      ],
+      "allowed_interface": "own output thread bay face at u=6 meets new integral \u00d810 tenon and spacer; original motor/gear/bearings retain support02 envelope limitations"
+    }
+  ],
+  "tool_approach": [
+    {
+      "finger": "UR",
+      "tool": "M4_3mm_hex",
+      "intersections": [
+        {
+          "part": "LR_input_bearing_journal",
+          "volume_mm3": 94.73830919627468
+        },
+        {
+          "part": "LR_input_thread_bay",
+          "volume_mm3": 5.443284825511684
+        },
+        {
+          "part": "LR_input_rear_spacer",
+          "volume_mm3": 73.56652275391089
+        },
+        {
+          "part": "LR_input_MB1_allowance",
+          "volume_mm3": 17.75379342467857
+        },
+        {
+          "part": "LR_input_bearing_B",
+          "volume_mm3": 222.4042320175362
+        },
+        {
+          "part": "LR_input_housing",
+          "volume_mm3": 41.17442329407211
+        },
+        {
+          "part": "LR_input_housing_rear_cap",
+          "volume_mm3": 56.89103204123365
+        },
+        {
+          "part": "LR_side_plate_input_-1",
+          "volume_mm3": 75.60083518038654
+        },
+        {
+          "part": "LR_motor_rail_-1",
+          "volume_mm3": 2.8121358145177116
+        }
+      ],
+      "passes": false,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "UR",
+      "tool": "M3_0_2p5mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "UR",
+      "tool": "M3_1_2p5mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "UL",
+      "tool": "M4_3mm_hex",
+      "intersections": [
+        {
+          "part": "LL_input_bearing_journal",
+          "volume_mm3": 94.7384761880069
+        },
+        {
+          "part": "LL_input_thread_bay",
+          "volume_mm3": 5.443264953260971
+        },
+        {
+          "part": "LL_input_rear_spacer",
+          "volume_mm3": 73.56682490408558
+        },
+        {
+          "part": "LL_input_MB1_allowance",
+          "volume_mm3": 17.75380266131769
+        },
+        {
+          "part": "LL_input_bearing_B",
+          "volume_mm3": 222.4054598441761
+        },
+        {
+          "part": "LL_input_housing",
+          "volume_mm3": 41.17446737697148
+        },
+        {
+          "part": "LL_input_housing_rear_cap",
+          "volume_mm3": 56.89101270670577
+        },
+        {
+          "part": "LL_side_plate_input_-1",
+          "volume_mm3": 75.6008351803496
+        },
+        {
+          "part": "LL_motor_rail_-1",
+          "volume_mm3": 2.812135814518242
+        }
+      ],
+      "passes": false,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "UL",
+      "tool": "M3_0_2p5mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "UL",
+      "tool": "M3_1_2p5mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "LL",
+      "tool": "M4_3mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "LL",
+      "tool": "M3_0_2p5mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "LL",
+      "tool": "M3_1_2p5mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "LR",
+      "tool": "M4_3mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "LR",
+      "tool": "M3_0_2p5mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    },
+    {
+      "finger": "LR",
+      "tool": "M3_1_2p5mm_hex",
+      "intersections": [],
+      "passes": true,
+      "scope": "straight external shank approach in q=0 pose; target screw omitted; socket recess, handle sweep and final armor absent"
+    }
+  ],
+  "self_checks": {
+    "UR_distal_unchanged": true,
+    "UL_distal_unchanged": true,
+    "LL_distal_unchanged": true,
+    "LR_distal_unchanged": true,
+    "all_root_solids_valid": true,
+    "M4_clamps_hub_not_shaft": true,
+    "key_top_clearance_0p2": true,
+    "mass_slot_reverse": true,
+    "UR_root_proxy_contains_actual": true,
+    "UL_root_proxy_contains_actual": true,
+    "LL_root_proxy_contains_actual": true,
+    "LR_root_proxy_contains_actual": true,
+    "STEP_round_trip_valid": true,
+    "STEP_solid_count_matches": true
+  },
+  "export_solids": 252,
+  "import_solids": 252
+}

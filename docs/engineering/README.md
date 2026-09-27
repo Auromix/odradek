@@ -17,6 +17,7 @@
 | 材料与梁 | [截面筛选](structure-screening.md) | 6061-T6 闭口矩形梁与双管比较；不含完整连接柔度 |
 | 底座 | [开腔底座及倾覆计算](base-structure-study.md) | 5种原创零件、8件装配、4页图；固定到桌架的候选，未承载放行 |
 | 直线指驱动候选 | [LINEAR-01](linear-finger-drive-study.md) | 独立曲柄正逆解／速度／夹力；轻量但速度和20%占空比受限，未选定 |
+| 窄根可拆接口 | [SUPPORT-03](gripper-root-support-study.md) | 真实键轴、叉、螺钉与捕获螺母；完整名义角域避让通过，公差/强度未放行 |
 | 指轴支承 | [单指双支承与四组反例](gripper-shaft-support-study.md) | 修正带轮真实宽度，否定旧紧凑切向布局；正在重新布置传动 |
 | 接口 | [试装片](interface-coupon-guide.md)／[J1与J7安装](mount-interface-study.md) | 原厂真实孔位、逐实体避让、原创尺寸图；螺纹有效起点等未冻结 |
 | 打印台架 | [单指手动台架](../../engineering/generated/finger-fixture/README.md) | 四件打印件与五页图纸，无动力无载 |

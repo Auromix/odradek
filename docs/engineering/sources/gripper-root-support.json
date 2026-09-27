@@ -1,0 +1,43 @@
+{
+  "revision": "R4-support-03",
+  "checked_on": "2026-09-27",
+  "license": "CC-BY-NC-4.0",
+  "scope": "New root key, fastener envelopes and local mechanics. Existing miter, bearings, gearbox and coupling inherit separately verified support02 sources.",
+  "sources": [
+    {
+      "id": "NBK-PARALLEL-KEY",
+      "publisher": "NBK",
+      "url": "https://www.nbk1560.com/images/en/product/technical_data/key_keymizo/key_keymizo_1.pdf",
+      "locator": "PDF page 1, upper table: parallel key (not lower taper-key table), excerpt JIS B 1301:1996",
+      "used": "3x3 key at shaft diameter over 8 through 10 mm; shaft depth 1.8 mm; hub depth 1.4 mm; nominal lengths 6-36 mm. Our square-ended 8 mm custom key and exact fits are a proposal, not a purchased SKU.",
+      "retrieved_pdf_sha256": "0de88ee2eab08d935e7cb753bbf545c24e52c914ab04c57584c0975b28741da4"
+    },
+    {
+      "id": "UNBRAKO-SHCS",
+      "publisher": "Unbrako",
+      "url": "https://www.unbrako.com/images/downloads/Unbrako_US_Product_Guide.pdf",
+      "locator": "PDF page 17, printed 17: Socket Head Cap Screws Metric",
+      "used": "M3 head diameter 5.5 mm, height 3 mm, hex 2.5 mm; M4 head diameter 7 mm, height 4 mm, hex 3 mm. Candidate M3x20/M4x10 lengths, no claim of complete procurement or preload qualification.",
+      "retrieved_pdf_sha256": "b05bbc5ab9c347275a8023eab64b02da3700f9c102d5429b09f94e7b491e57a7"
+    },
+    {
+      "id": "BOELLHOFF-M3-NUT",
+      "publisher": "Böllhoff",
+      "url": "https://eshop.boellhoff.de/out/media/pdf/DIN_934_Edelstahl_A2___en.pdf",
+      "locator": "PDF page 1, M3 row",
+      "used": "M3 DIN934 nut envelope: AF 5.5 maximum, height 2.4 maximum, pitch 0.5. Manufacturer source says DIN934 withdrawn/similar ISO4032; CAD uses conservative sharp-corner regular hex 6.351 mm across corners. A2 candidate not strength/preload qualified."
+    },
+    {
+      "id": "6061-E-REFERENCE",
+      "publisher": "thyssenkrupp Materials UK",
+      "url": "https://d2zo35mdb530wx.cloudfront.net/_legacy/UCPthyssenkruppBAMXUK/assets.files/material-data-sheets/aluminium/aluminium-6061.pdf",
+      "locator": "PDF page 3; also locally documented in structure-screening.md",
+      "used": "E=70 GPa and density 2700 kg/m3 engineering guidance. Extrusion yield values are not transferred as guaranteed strength of a machined fork billet; stock form, temper and certificates remain required."
+    },
+    {
+      "id": "SUPPORT02-INHERITED",
+      "local_reference": "gripper-miter-support.json",
+      "used": "KHK MMSB1.5-20, SKF7201 BECBP/KM1/MB1, NBK MJC20 and FAULHABER 22GPT HT sources and limitations remain unchanged."
+    }
+  ]
+}

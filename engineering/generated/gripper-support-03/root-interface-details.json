@@ -1,0 +1,2678 @@
+{
+  "revision": "R4-support-03",
+  "mass": {
+    "drive_root_hardware_g": 2707.5794532961004,
+    "drive_CoM_head_mm": [
+      -5.626441076789541e-15,
+      32.46622024571343,
+      -19.041695955429468
+    ],
+    "metal_blades_g": 162.6590946354396,
+    "baseline_drive_g": 2687.325793526885,
+    "drive_delta_g": 20.253659769215574,
+    "complete_head_budget_g": [
+      3577.23854793154,
+      4252.23854793154
+    ],
+    "allowances": [
+      {
+        "item": "four current metal blades, measured CAD volume x 2700 kg/m3",
+        "low_g": 162.6590946354396,
+        "high_g": 162.6590946354396
+      },
+      {
+        "item": "soft pads, adhesives and pad screws (supersede old unresolved pad proxy masses)",
+        "low_g": 25,
+        "high_g": 60
+      },
+      {
+        "item": "unmodeled gear keys, fixed-carrier screws, shims; root hardware now counted explicitly",
+        "low_g": 20,
+        "high_g": 70
+      },
+      {
+        "item": "factory motor combination adapter",
+        "low_g": 20,
+        "high_g": 50
+      },
+      {
+        "item": "LEDs, diffusers, central display, thermal spreaders",
+        "low_g": 100,
+        "high_g": 220
+      },
+      {
+        "item": "two cameras",
+        "low_g": 72,
+        "high_g": 72
+      },
+      {
+        "item": "camera mounts and on-head boards",
+        "low_g": 80,
+        "high_g": 160
+      },
+      {
+        "item": "covers, armor, lubricant, seals",
+        "low_g": 180,
+        "high_g": 330
+      },
+      {
+        "item": "rear carrier and detachable wrist",
+        "low_g": 150,
+        "high_g": 300
+      },
+      {
+        "item": "local connectors/wiring",
+        "low_g": 60,
+        "high_g": 120
+      }
+    ],
+    "locations": [
+      {
+        "item": "UR_input_gear_front_washer",
+        "mass_g": 2.196507531959916,
+        "center_head_mm": [
+          20.631751173762485,
+          92.57608137906871,
+          -10.750000000000005
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_gear_front_bolt_allowance",
+        "mass_g": 0.9971138622340485,
+        "center_head_mm": [
+          20.631751173762485,
+          92.5760813790687,
+          -8.6
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_gear_seat",
+        "mass_g": 14.648932384423844,
+        "center_head_mm": [
+          20.63175117376248,
+          92.5760813790687,
+          -19.750000000000004
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_shaft_shoulder",
+        "mass_g": 3.69047051627459,
+        "center_head_mm": [
+          20.631751173762485,
+          92.57608137906871,
+          -29.000000000000004
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_bearing_journal",
+        "mass_g": 19.531909845898458,
+        "center_head_mm": [
+          20.63175117376248,
+          92.57608137906868,
+          -40.99999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_thread_bay",
+        "mass_g": 5.326884503426852,
+        "center_head_mm": [
+          20.63175117376249,
+          92.57608137906871,
+          -55.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_rear_spacer",
+        "mass_g": 1.9148423484656398,
+        "center_head_mm": [
+          20.631751173762478,
+          92.57608137906868,
+          -51.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_housing",
+        "mass_g": 24.429024474314232,
+        "center_head_mm": [
+          20.63175117376249,
+          92.57608137906874,
+          -40.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_housing_front_lip",
+        "mass_g": 2.683852786484718,
+        "center_head_mm": [
+          20.63175117376249,
+          92.5760813790687,
+          -29.25
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_housing_rear_cap",
+        "mass_g": 3.4607784671945154,
+        "center_head_mm": [
+          20.631751173762495,
+          92.57608137906871,
+          -51.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_gear_front_washer",
+        "mass_g": 2.1965075319599174,
+        "center_head_mm": [
+          26.797697864536225,
+          83.77019690296203,
+          -4.748804011226878e-17
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_gear_front_bolt_allowance",
+        "mass_g": 0.9971138622340484,
+        "center_head_mm": [
+          25.564508526381477,
+          85.53137379818338,
+          -8.987008815711258e-17
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_gear_seat",
+        "mass_g": 14.64893238442385,
+        "center_head_mm": [
+          31.95988579169564,
+          76.39782850436112,
+          -5.023593662806148e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_shaft_shoulder",
+        "mass_g": 3.69047051627459,
+        "center_head_mm": [
+          37.26546782794282,
+          68.82067209468794,
+          -3.849147812810598e-17
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_bearing_journal",
+        "mass_g": 19.53190984589847,
+        "center_head_mm": [
+          44.14838506415537,
+          58.99084756322002,
+          -5.765421144903646e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_thread_bay",
+        "mass_g": 5.326884503426855,
+        "center_head_mm": [
+          52.17845517307001,
+          47.52271894317415,
+          -3.861664513859879e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_rear_spacer",
+        "mass_g": 1.9148423484656425,
+        "center_head_mm": [
+          49.88414942766583,
+          50.799327120330126,
+          -6.448359423640553e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_housing",
+        "mass_g": 24.42902447431423,
+        "center_head_mm": [
+          43.57480862780429,
+          59.80999960750903,
+          -1.707991963304772e-15
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_housing_front_lip",
+        "mass_g": 2.683852786484717,
+        "center_head_mm": [
+          37.408861937030586,
+          68.6158840836157,
+          -1.8577415084444773e-15
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_output_housing_rear_cap",
+        "mass_g": 3.4607784671945163,
+        "center_head_mm": [
+          49.88414942766584,
+          50.79932712033011,
+          -1.6039732125832265e-15
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_input_coupler_tenon",
+        "mass_g": 6.781913140936966,
+        "center_head_mm": [
+          20.631751173762478,
+          92.57608137906868,
+          -63.49999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_motor_flange",
+        "mass_g": 4.43518269861356,
+        "center_head_mm": [
+          20.631751173762485,
+          92.5760813790687,
+          -94.30000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_side_plate_input_-1",
+        "mass_g": 12.775348776284291,
+        "center_head_mm": [
+          18.86350384576452,
+          60.23246436355412,
+          -40.000000000000014
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_side_plate_output_-1",
+        "mass_g": 6.279769983530756,
+        "center_head_mm": [
+          27.191767742024492,
+          48.33847088048812,
+          -13.000000000000002
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_motor_rail_-1",
+        "mass_g": 2.6762399999999995,
+        "center_head_mm": [
+          8.344470509427612,
+          83.97243483380304,
+          -72.65
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_side_plate_input_1",
+        "mass_g": 12.775348776284291,
+        "center_head_mm": [
+          51.6295856173242,
+          83.17552181759598,
+          -40.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_side_plate_output_1",
+        "mass_g": 6.279769983530762,
+        "center_head_mm": [
+          59.95784951358415,
+          71.28152833453,
+          -12.999999999999996
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_motor_rail_1",
+        "mass_g": 2.6762400000000004,
+        "center_head_mm": [
+          32.919031838097375,
+          101.1797279243344,
+          -72.65
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_gear_front_washer",
+        "mass_g": 2.196507531959916,
+        "center_head_mm": [
+          -20.6317511737625,
+          92.57608137906871,
+          -10.750000000000005
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_gear_front_bolt_allowance",
+        "mass_g": 0.9971138622340485,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -8.6
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_gear_seat",
+        "mass_g": 14.648932384423844,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -19.750000000000004
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_shaft_shoulder",
+        "mass_g": 3.690470516274591,
+        "center_head_mm": [
+          -20.6317511737625,
+          92.5760813790687,
+          -29.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_bearing_journal",
+        "mass_g": 19.531909845898458,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.57608137906868,
+          -40.99999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_thread_bay",
+        "mass_g": 5.326884503426852,
+        "center_head_mm": [
+          -20.6317511737625,
+          92.57608137906871,
+          -55.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_rear_spacer",
+        "mass_g": 1.9148423484656398,
+        "center_head_mm": [
+          -20.6317511737625,
+          92.57608137906868,
+          -51.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_housing",
+        "mass_g": 24.429024474314218,
+        "center_head_mm": [
+          -20.6317511737625,
+          92.57608137906873,
+          -40.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_housing_front_lip",
+        "mass_g": 2.683852786484718,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -29.25
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_housing_rear_cap",
+        "mass_g": 3.4607784671945154,
+        "center_head_mm": [
+          -20.631751173762485,
+          92.5760813790687,
+          -50.999999999999986
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_gear_front_washer",
+        "mass_g": 2.1965075319599174,
+        "center_head_mm": [
+          -26.797697864536243,
+          83.77019690296201,
+          -1.6067558111224735e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_gear_front_bolt_allowance",
+        "mass_g": 0.9971138622340482,
+        "center_head_mm": [
+          -25.564508526381495,
+          85.53137379818338,
+          -8.758652518242293e-17
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_gear_seat",
+        "mass_g": 14.648932384423848,
+        "center_head_mm": [
+          -31.959885791695655,
+          76.39782850436112,
+          -4.449148642706773e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_shaft_shoulder",
+        "mass_g": 3.69047051627459,
+        "center_head_mm": [
+          -37.26546782794283,
+          68.82067209468794,
+          4.2924633837941733e-17
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_bearing_journal",
+        "mass_g": 19.53190984589846,
+        "center_head_mm": [
+          -44.14838506415538,
+          58.99084756322002,
+          -3.7854772438298e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_thread_bay",
+        "mass_g": 5.326884503426854,
+        "center_head_mm": [
+          -52.17845517307001,
+          47.522718943174134,
+          -5.322820887175523e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_rear_spacer",
+        "mass_g": 1.914842348465636,
+        "center_head_mm": [
+          -49.88414942766584,
+          50.799327120330105,
+          -3.2915366157521133e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_housing",
+        "mass_g": 24.429024474314247,
+        "center_head_mm": [
+          -43.574808627804316,
+          59.809999607509006,
+          -7.550213717344979e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_housing_front_lip",
+        "mass_g": 2.683852786484722,
+        "center_head_mm": [
+          -37.4088619370306,
+          68.61588408361568,
+          1.516895509034462e-16
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_output_housing_rear_cap",
+        "mass_g": 3.4607784671945154,
+        "center_head_mm": [
+          -49.88414942766584,
+          50.799327120330105,
+          -2.054179692021823e-15
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_input_coupler_tenon",
+        "mass_g": 6.781913140936966,
+        "center_head_mm": [
+          -20.631751173762492,
+          92.57608137906868,
+          -63.49999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_motor_flange",
+        "mass_g": 4.43518269861356,
+        "center_head_mm": [
+          -20.6317511737625,
+          92.5760813790687,
+          -94.30000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_side_plate_input_-1",
+        "mass_g": 12.775348776284291,
+        "center_head_mm": [
+          -18.86350384576452,
+          60.232464363554115,
+          -39.999999999999986
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_side_plate_output_-1",
+        "mass_g": 6.279769983530755,
+        "center_head_mm": [
+          -27.1917677420245,
+          48.3384708804881,
+          -13.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_motor_rail_-1",
+        "mass_g": 2.6762400000000004,
+        "center_head_mm": [
+          -8.344470509427616,
+          83.972434833803,
+          -72.65
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_side_plate_input_1",
+        "mass_g": 12.775348776284286,
+        "center_head_mm": [
+          -51.629585617324175,
+          83.17552181759592,
+          -39.999999999999986
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_side_plate_output_1",
+        "mass_g": 6.279769983530758,
+        "center_head_mm": [
+          -59.95784951358415,
+          71.2815283345299,
+          -12.999999999999998
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UL_motor_rail_1",
+        "mass_g": 2.6762400000000004,
+        "center_head_mm": [
+          -32.91903183809738,
+          101.17972792433439,
+          -72.65
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_gear_front_washer",
+        "mass_g": 2.1965075319599157,
+        "center_head_mm": [
+          -94.75230867899738,
+          -4.24264068711927,
+          39.25
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_gear_front_bolt_allowance",
+        "mass_g": 0.9971138622340481,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          41.4
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_gear_seat",
+        "mass_g": 14.648932384423844,
+        "center_head_mm": [
+          -94.75230867899738,
+          -4.242640687119271,
+          30.250000000000007
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_shaft_shoulder",
+        "mass_g": 3.690470516274591,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          21.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_bearing_journal",
+        "mass_g": 19.531909845898458,
+        "center_head_mm": [
+          -94.75230867899738,
+          -4.24264068711927,
+          9.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_thread_bay",
+        "mass_g": 5.326884503426852,
+        "center_head_mm": [
+          -94.75230867899738,
+          -4.242640687119271,
+          -5.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_rear_spacer",
+        "mass_g": 1.9148423484656398,
+        "center_head_mm": [
+          -94.75230867899738,
+          -4.242640687119268,
+          -1.0000000000000004
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_housing",
+        "mass_g": 24.42902447431424,
+        "center_head_mm": [
+          -94.75230867899738,
+          -4.242640687119269,
+          9.999999999999998
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_housing_front_lip",
+        "mass_g": 2.6838527864847173,
+        "center_head_mm": [
+          -94.75230867899735,
+          -4.242640687119265,
+          20.75
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_housing_rear_cap",
+        "mass_g": 3.4607784671945154,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.242640687119267,
+          -0.9999999999999997
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_gear_front_washer",
+        "mass_g": 2.196507531959915,
+        "center_head_mm": [
+          -87.15091078124199,
+          -11.844038584874655,
+          50.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_gear_front_bolt_allowance",
+        "mass_g": 0.9971138622340482,
+        "center_head_mm": [
+          -88.67119036079308,
+          -10.323759005323579,
+          50.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_gear_seat",
+        "mass_g": 14.648932384423846,
+        "center_head_mm": [
+          -80.78694975056308,
+          -18.207999615553586,
+          50.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_shaft_shoulder",
+        "mass_g": 3.6904705162745897,
+        "center_head_mm": [
+          -74.2462120245875,
+          -24.748737341529154,
+          50.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_bearing_journal",
+        "mass_g": 19.53190984589846,
+        "center_head_mm": [
+          -65.76093065034893,
+          -33.234018715767725,
+          50.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_thread_bay",
+        "mass_g": 5.326884503426853,
+        "center_head_mm": [
+          -55.86143571373727,
+          -43.133513652379385,
+          50.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_rear_spacer",
+        "mass_g": 1.9148423484656407,
+        "center_head_mm": [
+          -58.68986283848344,
+          -40.30508652763319,
+          49.99999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_housing",
+        "mass_g": 24.42902447431424,
+        "center_head_mm": [
+          -66.46803743153544,
+          -32.52691193458116,
+          49.999999999999986
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_housing_front_lip",
+        "mass_g": 2.683852786484731,
+        "center_head_mm": [
+          -74.06943532929085,
+          -24.925514036825778,
+          49.99999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_output_housing_rear_cap",
+        "mass_g": 3.4607784671945234,
+        "center_head_mm": [
+          -58.689862838483435,
+          -40.3050865276332,
+          49.99999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_input_coupler_tenon",
+        "mass_g": 6.781913140936966,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          -13.5
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_motor_flange",
+        "mass_g": 4.435182698613561,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.242640687119268,
+          -44.3
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_side_plate_input_-1",
+        "mass_g": 12.775348776284298,
+        "center_head_mm": [
+          -62.59301095548977,
+          -8.117667163164995,
+          10.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_side_plate_output_-1",
+        "mass_g": 6.2797699835307546,
+        "center_head_mm": [
+          -52.32590180780452,
+          -18.384776310850235,
+          37.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_motor_rail_-1",
+        "mass_g": 2.6762399999999995,
+        "center_head_mm": [
+          -84.14570696119917,
+          6.363961030678942,
+          -22.650000000000006
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_side_plate_input_1",
+        "mass_g": 12.775348776284284,
+        "center_head_mm": [
+          -90.8772822029517,
+          -36.40193841062688,
+          10.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_side_plate_output_1",
+        "mass_g": 6.279769983530759,
+        "center_head_mm": [
+          -80.61017305526644,
+          -46.66904755831213,
+          37.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LL_motor_rail_1",
+        "mass_g": 2.6762399999999995,
+        "center_head_mm": [
+          -105.3589103967956,
+          -14.849242404917483,
+          -22.650000000000006
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_gear_front_washer",
+        "mass_g": 2.1965075319599157,
+        "center_head_mm": [
+          94.75230867899738,
+          -4.242640687119305,
+          39.25
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_gear_front_bolt_allowance",
+        "mass_g": 0.9971138622340481,
+        "center_head_mm": [
+          94.75230867899735,
+          -4.242640687119305,
+          41.4
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_gear_seat",
+        "mass_g": 14.648932384423844,
+        "center_head_mm": [
+          94.75230867899735,
+          -4.242640687119305,
+          30.250000000000007
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_shaft_shoulder",
+        "mass_g": 3.69047051627459,
+        "center_head_mm": [
+          94.75230867899738,
+          -4.242640687119305,
+          21.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_bearing_journal",
+        "mass_g": 19.531909845898458,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119305,
+          9.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_thread_bay",
+        "mass_g": 5.326884503426852,
+        "center_head_mm": [
+          94.75230867899738,
+          -4.242640687119306,
+          -5.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_rear_spacer",
+        "mass_g": 1.9148423484656403,
+        "center_head_mm": [
+          94.75230867899735,
+          -4.242640687119303,
+          -0.9999999999999998
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_housing",
+        "mass_g": 24.429024474314232,
+        "center_head_mm": [
+          94.75230867899741,
+          -4.2426406871193025,
+          10.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_housing_front_lip",
+        "mass_g": 2.683852786484718,
+        "center_head_mm": [
+          94.75230867899741,
+          -4.2426406871193025,
+          20.75
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_housing_rear_cap",
+        "mass_g": 3.4607784671945154,
+        "center_head_mm": [
+          94.7523086789974,
+          -4.242640687119303,
+          -0.9999999999999997
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_gear_front_washer",
+        "mass_g": 2.1965075319599143,
+        "center_head_mm": [
+          87.150910781242,
+          -11.84403858487469,
+          50.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_gear_front_bolt_allowance",
+        "mass_g": 0.9971138622340481,
+        "center_head_mm": [
+          88.67119036079308,
+          -10.32375900532361,
+          49.99999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_gear_seat",
+        "mass_g": 14.64893238442384,
+        "center_head_mm": [
+          80.78694975056308,
+          -18.20799961555362,
+          50.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_shaft_shoulder",
+        "mass_g": 3.690470516274589,
+        "center_head_mm": [
+          74.24621202458749,
+          -24.748737341529182,
+          50.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_bearing_journal",
+        "mass_g": 19.531909845898458,
+        "center_head_mm": [
+          65.76093065034893,
+          -33.23401871576774,
+          49.99999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_thread_bay",
+        "mass_g": 5.326884503426852,
+        "center_head_mm": [
+          55.86143571373725,
+          -43.1335136523794,
+          50.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_rear_spacer",
+        "mass_g": 1.9148423484656407,
+        "center_head_mm": [
+          58.689862838483435,
+          -40.30508652763323,
+          50.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_housing",
+        "mass_g": 24.42902447431424,
+        "center_head_mm": [
+          66.46803743153545,
+          -32.5269119345812,
+          50.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_housing_front_lip",
+        "mass_g": 2.6838527864847124,
+        "center_head_mm": [
+          74.06943532929084,
+          -24.925514036825817,
+          49.99999999999999
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_output_housing_rear_cap",
+        "mass_g": 3.460778467194513,
+        "center_head_mm": [
+          58.689862838483435,
+          -40.30508652763323,
+          50.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_input_coupler_tenon",
+        "mass_g": 6.781913140936968,
+        "center_head_mm": [
+          94.75230867899735,
+          -4.242640687119305,
+          -13.499999999999998
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_motor_flange",
+        "mass_g": 4.435182698613561,
+        "center_head_mm": [
+          94.75230867899738,
+          -4.242640687119305,
+          -44.3
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_side_plate_input_-1",
+        "mass_g": 12.775348776284291,
+        "center_head_mm": [
+          62.59301095548972,
+          -8.117667163165011,
+          9.999999999999998
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_side_plate_output_-1",
+        "mass_g": 6.279769983530753,
+        "center_head_mm": [
+          52.32590180780452,
+          -18.384776310850253,
+          37.00000000000001
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_motor_rail_-1",
+        "mass_g": 2.6762399999999986,
+        "center_head_mm": [
+          84.14570696119915,
+          6.3639610306789125,
+          -22.650000000000006
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_side_plate_input_1",
+        "mass_g": 12.775348776284288,
+        "center_head_mm": [
+          90.87728220295169,
+          -36.401938410626926,
+          10.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_side_plate_output_1",
+        "mass_g": 6.279769983530758,
+        "center_head_mm": [
+          80.6101730552664,
+          -46.66904755831216,
+          37.0
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "LR_motor_rail_1",
+        "mass_g": 2.6762399999999986,
+        "center_head_mm": [
+          105.35891039679558,
+          -14.849242404917522,
+          -22.650000000000006
+        ],
+        "basis": "current native cut geometry x density"
+      },
+      {
+        "item": "UR_gearhead",
+        "mass_g": 109,
+        "center_head_mm": [
+          20.63175117376248,
+          92.5760813790687,
+          -117.1
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "UR_motor",
+        "mass_g": 28.9,
+        "center_head_mm": [
+          20.63175117376248,
+          92.5760813790687,
+          -146.3
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "UR_encoder",
+        "mass_g": 13.5,
+        "center_head_mm": [
+          20.63175117376248,
+          92.5760813790687,
+          -159.55
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "UR_input_gear",
+        "mass_g": 52,
+        "center_head_mm": [
+          20.63175117376248,
+          92.57608137906868,
+          -17.39179819512507
+        ],
+        "basis": "catalog mass distributed over nominal gear envelope, not tooth-resolved CoM"
+      },
+      {
+        "item": "UR_input_bearing_A",
+        "mass_g": 36,
+        "center_head_mm": [
+          20.63175117376248,
+          92.5760813790687,
+          -35.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "UR_input_bearing_B",
+        "mass_g": 36,
+        "center_head_mm": [
+          20.63175117376248,
+          92.5760813790687,
+          -45.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "UR_input_KM1",
+        "mass_g": 6,
+        "center_head_mm": [
+          20.63175117376248,
+          92.5760813790687,
+          -55.0
+        ],
+        "basis": "catalog mass at nominal nut centroid"
+      },
+      {
+        "item": "UR_input_MB1",
+        "mass_g": 2,
+        "center_head_mm": [
+          20.63175117376248,
+          92.5760813790687,
+          -52.5
+        ],
+        "basis": "catalog mass at simplified washer centroid; bent tabs omitted"
+      },
+      {
+        "item": "UR_output_gear",
+        "mass_g": 52,
+        "center_head_mm": [
+          30.607276804258877,
+          78.3295543336704,
+          0.0
+        ],
+        "basis": "catalog mass distributed over nominal gear envelope, not tooth-resolved CoM"
+      },
+      {
+        "item": "UR_output_bearing_A",
+        "mass_g": 36,
+        "center_head_mm": [
+          40.706926446049096,
+          63.90575982895398,
+          0.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "UR_output_bearing_B",
+        "mass_g": 36,
+        "center_head_mm": [
+          46.44269080955955,
+          55.714239386064065,
+          0.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "UR_output_KM1",
+        "mass_g": 6,
+        "center_head_mm": [
+          52.17845517307001,
+          47.52271894317415,
+          0.0
+        ],
+        "basis": "catalog mass at nominal nut centroid"
+      },
+      {
+        "item": "UR_output_MB1",
+        "mass_g": 2,
+        "center_head_mm": [
+          50.744514082192396,
+          49.57059905389663,
+          0.0
+        ],
+        "basis": "catalog mass at simplified washer centroid; bent tabs omitted"
+      },
+      {
+        "item": "UR_coupling",
+        "mass_g": 16,
+        "center_head_mm": [
+          20.63175117376248,
+          92.5760813790687,
+          -74.0
+        ],
+        "basis": "NBK reference mass at nominal coupling centroid"
+      },
+      {
+        "item": "UL_gearhead",
+        "mass_g": 109,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -117.1
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "UL_motor",
+        "mass_g": 28.9,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -146.3
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "UL_encoder",
+        "mass_g": 13.5,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -159.55
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "UL_input_gear",
+        "mass_g": 52,
+        "center_head_mm": [
+          -20.6317511737625,
+          92.57608137906868,
+          -17.39179819512507
+        ],
+        "basis": "catalog mass distributed over nominal gear envelope, not tooth-resolved CoM"
+      },
+      {
+        "item": "UL_input_bearing_A",
+        "mass_g": 36,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -35.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "UL_input_bearing_B",
+        "mass_g": 36,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -45.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "UL_input_KM1",
+        "mass_g": 6,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -55.0
+        ],
+        "basis": "catalog mass at nominal nut centroid"
+      },
+      {
+        "item": "UL_input_MB1",
+        "mass_g": 2,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -52.5
+        ],
+        "basis": "catalog mass at simplified washer centroid; bent tabs omitted"
+      },
+      {
+        "item": "UL_output_gear",
+        "mass_g": 52,
+        "center_head_mm": [
+          -30.607276804258888,
+          78.3295543336704,
+          0.0
+        ],
+        "basis": "catalog mass distributed over nominal gear envelope, not tooth-resolved CoM"
+      },
+      {
+        "item": "UL_output_bearing_A",
+        "mass_g": 36,
+        "center_head_mm": [
+          -40.7069264460491,
+          63.905759828953975,
+          0.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "UL_output_bearing_B",
+        "mass_g": 36,
+        "center_head_mm": [
+          -46.442690809559565,
+          55.71423938606406,
+          0.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "UL_output_KM1",
+        "mass_g": 6,
+        "center_head_mm": [
+          -52.17845517307002,
+          47.52271894317414,
+          0.0
+        ],
+        "basis": "catalog mass at nominal nut centroid"
+      },
+      {
+        "item": "UL_output_MB1",
+        "mass_g": 2,
+        "center_head_mm": [
+          -50.74451408219241,
+          49.57059905389662,
+          0.0
+        ],
+        "basis": "catalog mass at simplified washer centroid; bent tabs omitted"
+      },
+      {
+        "item": "UL_coupling",
+        "mass_g": 16,
+        "center_head_mm": [
+          -20.631751173762495,
+          92.5760813790687,
+          -74.0
+        ],
+        "basis": "NBK reference mass at nominal coupling centroid"
+      },
+      {
+        "item": "LL_gearhead",
+        "mass_g": 109,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          -67.1
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "LL_motor",
+        "mass_g": 28.9,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          -96.3
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "LL_encoder",
+        "mass_g": 13.5,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          -109.55
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "LL_input_gear",
+        "mass_g": 52,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          32.60820180487493
+        ],
+        "basis": "catalog mass distributed over nominal gear envelope, not tooth-resolved CoM"
+      },
+      {
+        "item": "LL_input_bearing_A",
+        "mass_g": 36,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          15.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "LL_input_bearing_B",
+        "mass_g": 36,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          5.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "LL_input_KM1",
+        "mass_g": 6,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          -5.0
+        ],
+        "basis": "catalog mass at nominal nut centroid"
+      },
+      {
+        "item": "LL_input_MB1",
+        "mass_g": 2,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          -2.5
+        ],
+        "basis": "catalog mass at simplified washer centroid; bent tabs omitted"
+      },
+      {
+        "item": "LL_output_gear",
+        "mass_g": 52,
+        "center_head_mm": [
+          -82.45445023819647,
+          -16.540499127920167,
+          50.00000000000001
+        ],
+        "basis": "catalog mass distributed over nominal gear envelope, not tooth-resolved CoM"
+      },
+      {
+        "item": "LL_output_bearing_A",
+        "mass_g": 36,
+        "center_head_mm": [
+          -70.0035713374682,
+          -28.991378028648437,
+          50.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "LL_output_bearing_B",
+        "mass_g": 36,
+        "center_head_mm": [
+          -62.932503525602726,
+          -36.06244584051392,
+          50.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "LL_output_KM1",
+        "mass_g": 6,
+        "center_head_mm": [
+          -55.86143571373726,
+          -43.13351365237939,
+          50.0
+        ],
+        "basis": "catalog mass at nominal nut centroid"
+      },
+      {
+        "item": "LL_output_MB1",
+        "mass_g": 2,
+        "center_head_mm": [
+          -57.62920266670363,
+          -41.36574669941302,
+          50.0
+        ],
+        "basis": "catalog mass at simplified washer centroid; bent tabs omitted"
+      },
+      {
+        "item": "LL_coupling",
+        "mass_g": 16,
+        "center_head_mm": [
+          -94.75230867899737,
+          -4.24264068711927,
+          -24.0
+        ],
+        "basis": "NBK reference mass at nominal coupling centroid"
+      },
+      {
+        "item": "LR_gearhead",
+        "mass_g": 109,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119305,
+          -67.1
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "LR_motor",
+        "mass_g": 28.9,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119305,
+          -96.3
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "LR_encoder",
+        "mass_g": 13.5,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119305,
+          -109.55
+        ],
+        "basis": "catalog mass assigned to nominal axial sub-envelope centroid; not vendor measured CoM"
+      },
+      {
+        "item": "LR_input_gear",
+        "mass_g": 52,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119304,
+          32.60820180487493
+        ],
+        "basis": "catalog mass distributed over nominal gear envelope, not tooth-resolved CoM"
+      },
+      {
+        "item": "LR_input_bearing_A",
+        "mass_g": 36,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119305,
+          15.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "LR_input_bearing_B",
+        "mass_g": 36,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119305,
+          5.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "LR_input_KM1",
+        "mass_g": 6,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119305,
+          -5.0
+        ],
+        "basis": "catalog mass at nominal nut centroid"
+      },
+      {
+        "item": "LR_input_MB1",
+        "mass_g": 2,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119305,
+          -2.5
+        ],
+        "basis": "catalog mass at simplified washer centroid; bent tabs omitted"
+      },
+      {
+        "item": "LR_output_gear",
+        "mass_g": 52,
+        "center_head_mm": [
+          82.45445023819647,
+          -16.540499127920196,
+          50.00000000000001
+        ],
+        "basis": "catalog mass distributed over nominal gear envelope, not tooth-resolved CoM"
+      },
+      {
+        "item": "LR_output_bearing_A",
+        "mass_g": 36,
+        "center_head_mm": [
+          70.0035713374682,
+          -28.991378028648462,
+          50.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "LR_output_bearing_B",
+        "mass_g": 36,
+        "center_head_mm": [
+          62.93250352560272,
+          -36.06244584051393,
+          50.0
+        ],
+        "basis": "catalog mass at annular native envelope centroid"
+      },
+      {
+        "item": "LR_output_KM1",
+        "mass_g": 6,
+        "center_head_mm": [
+          55.861435713737244,
+          -43.133513652379406,
+          50.0
+        ],
+        "basis": "catalog mass at nominal nut centroid"
+      },
+      {
+        "item": "LR_output_MB1",
+        "mass_g": 2,
+        "center_head_mm": [
+          57.62920266670361,
+          -41.365746699413044,
+          50.0
+        ],
+        "basis": "catalog mass at simplified washer centroid; bent tabs omitted"
+      },
+      {
+        "item": "LR_coupling",
+        "mass_g": 16,
+        "center_head_mm": [
+          94.75230867899737,
+          -4.242640687119305,
+          -24.0
+        ],
+        "basis": "NBK reference mass at nominal coupling centroid"
+      },
+      {
+        "item": "UR_output_tenon_D10",
+        "mass_g": 5.347352705384816,
+        "center_head_mm": [
+          57.13543872658997,
+          40.873700436376225,
+          -7.966586081069299e-16
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_shoulder_spacer",
+        "mass_g": 0.9494061859753488,
+        "center_head_mm": [
+          54.18597270029868,
+          44.65568678816267,
+          1.3512497899904864e-15
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_M2x6_keeper_screw_0",
+        "mass_g": 0.3260250608115879,
+        "center_head_mm": [
+          72.49495591957576,
+          50.76151461706757,
+          -7.084568835098331
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_M2x6_keeper_screw_1",
+        "mass_g": 0.3260250608115879,
+        "center_head_mm": [
+          75.77156409673174,
+          53.055820362471756,
+          -7.084568835098331
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_nut_keeper_sheet",
+        "mass_g": 0.4584156949081561,
+        "center_head_mm": [
+          74.57456508014783,
+          52.217672627830105,
+          -7.649999999999999
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_keyed_hub_lower_fork",
+        "mass_g": 14.023701656183073,
+        "center_head_mm": [
+          61.429839513035965,
+          43.01363669804048,
+          -0.05572521311347611
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_removable_upper_fork",
+        "mass_g": 1.7478892201923104,
+        "center_head_mm": [
+          73.63177624704575,
+          51.55752477995209,
+          8.000000000000002
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_parallel_key_3x3x8",
+        "mass_g": 0.5651999999999999,
+        "center_head_mm": [
+          53.49062849207116,
+          37.4545412937233,
+          2.4671622769447922e-17
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_end_washer_D18",
+        "mass_g": 2.825375841392253,
+        "center_head_mm": [
+          60.638707609247945,
+          35.440226289911514,
+          9.1305170173318e-16
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_M4x10_end_screw_envelope",
+        "mass_g": 2.194873707430509,
+        "center_head_mm": [
+          60.41153267237856,
+          35.76466572318328,
+          2.7953938773412165e-16
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_M3x20_fork_screw_0",
+        "mass_g": 1.6692754390078939,
+        "center_head_mm": [
+          77.12392999387794,
+          48.50927150864472,
+          3.854570637119109
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_M3_washer_0",
+        "mass_g": 0.11541583090758183,
+        "center_head_mm": [
+          77.12392999387798,
+          48.509271508644716,
+          -4.249999999999999
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_M3_hexnut_0",
+        "mass_g": 0.3603844252851179,
+        "center_head_mm": [
+          77.12392999387797,
+          48.50927150864472,
+          -5.699999999999999
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_M3x20_fork_screw_1",
+        "mass_g": 1.6692754390078939,
+        "center_head_mm": [
+          71.96174206671854,
+          55.881639907245656,
+          3.854570637119109
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_M3_washer_1",
+        "mass_g": 0.11541583090758183,
+        "center_head_mm": [
+          71.96174206671854,
+          55.881639907245656,
+          -4.249999999999999
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UR_M3_hexnut_1",
+        "mass_g": 0.360384425285118,
+        "center_head_mm": [
+          71.96174206671854,
+          55.881639907245656,
+          -5.7
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_output_tenon_D10",
+        "mass_g": 5.347352705384816,
+        "center_head_mm": [
+          -57.13543872658998,
+          40.87370043637622,
+          -1.9297131587532846e-16
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_shoulder_spacer",
+        "mass_g": 0.9494061859753488,
+        "center_head_mm": [
+          -54.18597270029869,
+          44.65568678816267,
+          -3.5249994521491024e-15
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_M2x6_keeper_screw_0",
+        "mass_g": 0.3260250608115879,
+        "center_head_mm": [
+          -72.4949559195758,
+          50.76151461706756,
+          -7.084568835098332
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_M2x6_keeper_screw_1",
+        "mass_g": 0.3260250608115879,
+        "center_head_mm": [
+          -75.77156409673175,
+          53.055820362471756,
+          -7.084568835098332
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_nut_keeper_sheet",
+        "mass_g": 0.4584156949081561,
+        "center_head_mm": [
+          -74.57456508014786,
+          52.2176726278301,
+          -7.649999999999998
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_keyed_hub_lower_fork",
+        "mass_g": 14.023701656183073,
+        "center_head_mm": [
+          -61.429839513035965,
+          43.013636698040486,
+          -0.05572521311347521
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_removable_upper_fork",
+        "mass_g": 1.7478892201923104,
+        "center_head_mm": [
+          -73.63177624704579,
+          51.55752477995208,
+          8.0
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_parallel_key_3x3x8",
+        "mass_g": 0.5651999999999999,
+        "center_head_mm": [
+          -53.490628492071174,
+          37.454541293723295,
+          2.4671622769447922e-17
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_end_washer_D18",
+        "mass_g": 2.825375841392253,
+        "center_head_mm": [
+          -60.63870760924795,
+          35.44022628991151,
+          3.8989775371308806e-16
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_M4x10_end_screw_envelope",
+        "mass_g": 2.194873707430509,
+        "center_head_mm": [
+          -60.41153267237858,
+          35.76466572318327,
+          1.9059503709144668e-16
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_M3x20_fork_screw_0",
+        "mass_g": 1.6692754390078939,
+        "center_head_mm": [
+          -77.12392999387797,
+          48.50927150864471,
+          3.854570637119107
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_M3_washer_0",
+        "mass_g": 0.11541583090758183,
+        "center_head_mm": [
+          -77.12392999387798,
+          48.509271508644716,
+          -4.25
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_M3_hexnut_0",
+        "mass_g": 0.3603844252851179,
+        "center_head_mm": [
+          -77.12392999387798,
+          48.509271508644716,
+          -5.7
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_M3x20_fork_screw_1",
+        "mass_g": 1.6692754390078939,
+        "center_head_mm": [
+          -71.96174206671856,
+          55.881639907245635,
+          3.854570637119107
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_M3_washer_1",
+        "mass_g": 0.11541583090758183,
+        "center_head_mm": [
+          -71.96174206671856,
+          55.881639907245635,
+          -4.249999999999999
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "UL_M3_hexnut_1",
+        "mass_g": 0.360384425285118,
+        "center_head_mm": [
+          -71.96174206671857,
+          55.88163990724565,
+          -5.7
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_output_tenon_D10",
+        "mass_g": 5.347352705384816,
+        "center_head_mm": [
+          -50.174201899114706,
+          -49.169779434419034,
+          50.00000000000001
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_shoulder_spacer",
+        "mass_g": 0.9494061859753488,
+        "center_head_mm": [
+          -53.38656197958433,
+          -45.6083873865323,
+          50.0
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_M2x6_keeper_screw_0",
+        "mass_g": 0.3260250608115879,
+        "center_head_mm": [
+          -62.578950135009464,
+          -62.57895013500945,
+          42.91543116490167
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_M2x6_keeper_screw_1",
+        "mass_g": 0.3260250608115879,
+        "center_head_mm": [
+          -65.40737725975565,
+          -65.40737725975562,
+          42.915431164901676
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_nut_keeper_sheet",
+        "mass_g": 0.4584156949081561,
+        "center_head_mm": [
+          -64.37410617461207,
+          -64.37410617461202,
+          42.35000000000001
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_keyed_hub_lower_fork",
+        "mass_g": 14.023701656183073,
+        "center_head_mm": [
+          -53.02734259129154,
+          -53.02734259129151,
+          49.94427478688653
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_removable_upper_fork",
+        "mass_g": 1.7478892201923104,
+        "center_head_mm": [
+          -63.560273893094525,
+          -63.560273893094504,
+          58.00000000000001
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_parallel_key_3x3x8",
+        "mass_g": 0.5651999999999999,
+        "center_head_mm": [
+          -46.17407281148156,
+          -46.17407281148155,
+          50.0
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_end_washer_D18",
+        "mass_g": 2.825375841392253,
+        "center_head_mm": [
+          -45.43161069123569,
+          -53.56333867488098,
+          50.0
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_M4x10_end_screw_envelope",
+        "mass_g": 2.194873707430509,
+        "center_head_mm": [
+          -45.71167264670564,
+          -53.28327671941102,
+          50.0
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_M3x20_fork_screw_0",
+        "mass_g": 1.6692754390078939,
+        "center_head_mm": [
+          -61.16473657263637,
+          -67.52869760331527,
+          53.85457063711912
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_M3_washer_0",
+        "mass_g": 0.11541583090758183,
+        "center_head_mm": [
+          -61.16473657263637,
+          -67.52869760331531,
+          45.750000000000014
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_M3_hexnut_0",
+        "mass_g": 0.3603844252851179,
+        "center_head_mm": [
+          -61.16473657263636,
+          -67.52869760331527,
+          44.29999999999998
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_M3x20_fork_screw_1",
+        "mass_g": 1.6692754390078939,
+        "center_head_mm": [
+          -67.5286976033153,
+          -61.164736572636365,
+          53.85457063711912
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_M3_washer_1",
+        "mass_g": 0.11541583090758183,
+        "center_head_mm": [
+          -67.52869760331531,
+          -61.164736572636365,
+          45.75
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LL_M3_hexnut_1",
+        "mass_g": 0.360384425285118,
+        "center_head_mm": [
+          -67.52869760331531,
+          -61.16473657263635,
+          44.300000000000004
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_output_tenon_D10",
+        "mass_g": 5.347352705384816,
+        "center_head_mm": [
+          50.17420189911466,
+          -49.169779434419034,
+          49.999999999999986
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_shoulder_spacer",
+        "mass_g": 0.9494061859753488,
+        "center_head_mm": [
+          53.38656197958431,
+          -45.60838738653232,
+          49.999999999999986
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_M2x6_keeper_screw_0",
+        "mass_g": 0.3260250608115879,
+        "center_head_mm": [
+          62.57895013500943,
+          -62.57895013500945,
+          42.91543116490166
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_M2x6_keeper_screw_1",
+        "mass_g": 0.3260250608115879,
+        "center_head_mm": [
+          65.40737725975565,
+          -65.40737725975566,
+          42.915431164901676
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_nut_keeper_sheet",
+        "mass_g": 0.4584156949081561,
+        "center_head_mm": [
+          64.374106174612,
+          -64.37410617461202,
+          42.349999999999994
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_keyed_hub_lower_fork",
+        "mass_g": 14.023701656183073,
+        "center_head_mm": [
+          53.02734259129154,
+          -53.027342591291564,
+          49.94427478688655
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_removable_upper_fork",
+        "mass_g": 1.7478892201923104,
+        "center_head_mm": [
+          63.560273893094504,
+          -63.56027389309453,
+          58.000000000000014
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_parallel_key_3x3x8",
+        "mass_g": 0.5651999999999999,
+        "center_head_mm": [
+          46.174072811481544,
+          -46.174072811481565,
+          50.00000000000001
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_end_washer_D18",
+        "mass_g": 2.825375841392253,
+        "center_head_mm": [
+          45.43161069123566,
+          -53.56333867488099,
+          50.000000000000014
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_M4x10_end_screw_envelope",
+        "mass_g": 2.194873707430509,
+        "center_head_mm": [
+          45.711672646705615,
+          -53.28327671941102,
+          50.0
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_M3x20_fork_screw_0",
+        "mass_g": 1.6692754390078939,
+        "center_head_mm": [
+          61.16473657263634,
+          -67.52869760331531,
+          53.85457063711912
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_M3_washer_0",
+        "mass_g": 0.11541583090758183,
+        "center_head_mm": [
+          61.16473657263635,
+          -67.5286976033153,
+          45.750000000000014
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_M3_hexnut_0",
+        "mass_g": 0.3603844252851179,
+        "center_head_mm": [
+          61.16473657263632,
+          -67.5286976033153,
+          44.3
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_M3x20_fork_screw_1",
+        "mass_g": 1.6692754390078939,
+        "center_head_mm": [
+          67.52869760331527,
+          -61.16473657263637,
+          53.85457063711912
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_M3_washer_1",
+        "mass_g": 0.11541583090758183,
+        "center_head_mm": [
+          67.52869760331528,
+          -61.16473657263638,
+          45.750000000000014
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      },
+      {
+        "item": "LR_M3_hexnut_1",
+        "mass_g": 0.360384425285118,
+        "center_head_mm": [
+          67.5286976033153,
+          -61.164736572636386,
+          44.29999999999999
+        ],
+        "basis": "native geometry x density; nominal fastener envelope mass, no measured value"
+      }
+    ],
+    "exclusions": "holds/brakes, measured factory combination, final fixed mounting fasteners, design optimization; LED/pad volume proxies are excluded from physical mass and replaced with allowances"
+  },
+  "contacts": {
+    "designed_contact_pairs": [
+      {
+        "a": "keyed_hub_lower_fork",
+        "b": "metal_blade_with_narrow_tongue",
+        "minimum_distance_mm": 0.0,
+        "positive_intersection_mm3": 0.0
+      },
+      {
+        "a": "removable_upper_fork",
+        "b": "metal_blade_with_narrow_tongue",
+        "minimum_distance_mm": 0.0,
+        "positive_intersection_mm3": 0.0
+      },
+      {
+        "a": "parallel_key_3x3x8",
+        "b": "keyed_hub_lower_fork",
+        "minimum_distance_mm": 0.0,
+        "positive_intersection_mm3": 0.0
+      },
+      {
+        "a": "parallel_key_3x3x8",
+        "b": "output_tenon_D10",
+        "minimum_distance_mm": 0.0,
+        "positive_intersection_mm3": 0.0
+      },
+      {
+        "a": "end_washer_D18",
+        "b": "keyed_hub_lower_fork",
+        "minimum_distance_mm": 0.0,
+        "positive_intersection_mm3": 0.0
+      },
+      {
+        "a": "shoulder_spacer",
+        "b": "keyed_hub_lower_fork",
+        "minimum_distance_mm": 0.0,
+        "positive_intersection_mm3": 0.0
+      }
+    ],
+    "all_intra_root_positive_intersections": [
+      {
+        "a": "LED_window_placeholder",
+        "b": "original_wedge_pad_0",
+        "intersection_mm3": 52.74311686744171
+      },
+      {
+        "a": "LED_window_placeholder",
+        "b": "original_wedge_pad_1",
+        "intersection_mm3": 52.74311686744174
+      }
+    ],
+    "contact_area_reference_mm2": {
+      "each_cheek_to_tongue": 161.841594462251,
+      "shaft_shoulder_to_spacer": 32.97886888105886,
+      "spacer_to_hub": 120.94346318157307
+    },
+    "note": "CAD zero distance plus zero overlap confirms nominal contact, not contact pressure/preload. Contact areas exclude holes where stated; edge radii and tolerances pending.",
+    "new_root_positive_intersections": [],
+    "inherited_distal_placeholder_intersections": [
+      {
+        "a": "LED_window_placeholder",
+        "b": "original_wedge_pad_0",
+        "intersection_mm3": 52.74311686744171
+      },
+      {
+        "a": "LED_window_placeholder",
+        "b": "original_wedge_pad_1",
+        "intersection_mm3": 52.74311686744174
+      }
+    ]
+  },
+  "assembly_access": [
+    {
+      "finger": "UR",
+      "tool": "M4_3mm_hex",
+      "in_full_head": false,
+      "on_separate_module": true,
+      "required_sequence": "preassemble upper hub before lower modules; remove lower module for upper hub replacement"
+    },
+    {
+      "finger": "UR",
+      "tool": "M3_0_2p5mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    },
+    {
+      "finger": "UR",
+      "tool": "M3_1_2p5mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    },
+    {
+      "finger": "UL",
+      "tool": "M4_3mm_hex",
+      "in_full_head": false,
+      "on_separate_module": true,
+      "required_sequence": "preassemble upper hub before lower modules; remove lower module for upper hub replacement"
+    },
+    {
+      "finger": "UL",
+      "tool": "M3_0_2p5mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    },
+    {
+      "finger": "UL",
+      "tool": "M3_1_2p5mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    },
+    {
+      "finger": "LL",
+      "tool": "M4_3mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    },
+    {
+      "finger": "LL",
+      "tool": "M3_0_2p5mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    },
+    {
+      "finger": "LL",
+      "tool": "M3_1_2p5mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    },
+    {
+      "finger": "LR",
+      "tool": "M4_3mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    },
+    {
+      "finger": "LR",
+      "tool": "M3_0_2p5mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    },
+    {
+      "finger": "LR",
+      "tool": "M3_1_2p5mm_hex",
+      "in_full_head": true,
+      "on_separate_module": true,
+      "required_sequence": "external approach clear in modeled q0 head"
+    }
+  ],
+  "independent_root_motion": {
+    "root_sphere_radii_mm": [
+      34.440448762830236,
+      34.440448762830236,
+      30.730459012372584,
+      30.730459012372584
+    ],
+    "root_root_pairs": [
+      {
+        "a": "UR",
+        "b": "UL",
+        "sphere_gap_mm": 45.80038867479838
+      },
+      {
+        "a": "UR",
+        "b": "LL",
+        "sphere_gap_mm": 82.98818232567365
+      },
+      {
+        "a": "UR",
+        "b": "LR",
+        "sphere_gap_mm": 37.77688413343447
+      },
+      {
+        "a": "UL",
+        "b": "LL",
+        "sphere_gap_mm": 37.776884133434415
+      },
+      {
+        "a": "UL",
+        "b": "LR",
+        "sphere_gap_mm": 82.98818232567365
+      },
+      {
+        "a": "LL",
+        "b": "LR",
+        "sphere_gap_mm": 37.53403134137148
+      }
+    ],
+    "root_other_distal_pairs": [
+      {
+        "root": "UR",
+        "distal": "UL",
+        "minimum_sample_gap_mm": 56.823533797213905,
+        "independent_continuous_lower_bound_mm": 54.37031932702263,
+        "passed": true
+      },
+      {
+        "root": "UR",
+        "distal": "LL",
+        "minimum_sample_gap_mm": 94.74623242893807,
+        "independent_continuous_lower_bound_mm": 92.98444821981525,
+        "passed": true
+      },
+      {
+        "root": "UR",
+        "distal": "LR",
+        "minimum_sample_gap_mm": 58.45755072505333,
+        "independent_continuous_lower_bound_mm": 56.695766515930515,
+        "passed": true
+      },
+      {
+        "root": "UL",
+        "distal": "UR",
+        "minimum_sample_gap_mm": 56.823533797213905,
+        "independent_continuous_lower_bound_mm": 54.37031932702263,
+        "passed": true
+      },
+      {
+        "root": "UL",
+        "distal": "LL",
+        "minimum_sample_gap_mm": 58.457550725053316,
+        "independent_continuous_lower_bound_mm": 56.6957665159305,
+        "passed": true
+      },
+      {
+        "root": "UL",
+        "distal": "LR",
+        "minimum_sample_gap_mm": 94.74623242893807,
+        "independent_continuous_lower_bound_mm": 92.98444821981525,
+        "passed": true
+      },
+      {
+        "root": "LL",
+        "distal": "UR",
+        "minimum_sample_gap_mm": 63.53376162395262,
+        "independent_continuous_lower_bound_mm": 61.080547153761344,
+        "passed": true
+      },
+      {
+        "root": "LL",
+        "distal": "UL",
+        "minimum_sample_gap_mm": 27.66411906067173,
+        "independent_continuous_lower_bound_mm": 25.210904590480457,
+        "passed": true
+      },
+      {
+        "root": "LL",
+        "distal": "LR",
+        "minimum_sample_gap_mm": 44.09768493834694,
+        "independent_continuous_lower_bound_mm": 42.33590072922412,
+        "passed": true
+      },
+      {
+        "root": "LR",
+        "distal": "UR",
+        "minimum_sample_gap_mm": 27.66411906067175,
+        "independent_continuous_lower_bound_mm": 25.210904590480478,
+        "passed": true
+      },
+      {
+        "root": "LR",
+        "distal": "UL",
+        "minimum_sample_gap_mm": 63.53376162395262,
+        "independent_continuous_lower_bound_mm": 61.080547153761344,
+        "passed": true
+      },
+      {
+        "root": "LR",
+        "distal": "LL",
+        "minimum_sample_gap_mm": 44.09768493834692,
+        "independent_continuous_lower_bound_mm": 42.33590072922411,
+        "passed": true
+      }
+    ],
+    "all_passed": true,
+    "scope": "all independent q in upper 0..114 lower 0..126 for any new root vs other roots/distals; unchanged distal vs distal separation remains the baseline geometric question"
+  }
+}
