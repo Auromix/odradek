@@ -1,0 +1,49 @@
+{
+  "revision": "CAM-CABLE02",
+  "accessed": "2026-09-27",
+  "manufacturing_release": false,
+  "source_records": [
+    {
+      "id": "rosenberger",
+      "url": "https://www.rosenberger.com/fileadmin/content/headquarter/Downloads/_Other/HySpeedVision_Flyer.pdf",
+      "raw_sha256": "8ee280b7cbf131ab88ae178ce2651643849476610639e6aa04c67d1cc5f3ebc4",
+      "R_dynamic_reference_mm": 75,
+      "OD_reference_mm": 3.1,
+      "single_semicircle_width_without_clearance_mm": 153.1
+    },
+    {
+      "id": "basler_doc",
+      "url": "https://docs.baslerweb.com/basler-cable-gmsl-fakra-z-1x-f-f",
+      "raw_sha256": "adf5d11c1429876b261e866f5db6617da19cdadb3f79b3ed855165b3e795317e",
+      "R_dynamic_reference_mm": 34.5,
+      "OD_reference_mm": 3.45,
+      "single_semicircle_width_without_clearance_mm": 72.45
+    },
+    {
+      "id": "basler_shop",
+      "url": "https://www.baslerweb.com/en/shop/cable-gmsl-fakra-z-1x-f-f-3m/",
+      "raw_sha256": "2edeea55c44e2aa6e08d8950a89b5321aa902e5a62e81b75a54e3b2874a0456e",
+      "R_dynamic_reference_mm": null,
+      "OD_reference_mm": null,
+      "single_semicircle_width_without_clearance_mm": null
+    },
+    {
+      "id": "oki",
+      "url": "https://www.okidensen.co.jp/en/prod/cable/movable/index_fakra.html",
+      "raw_sha256": "5decead49c25d5ae7a03d611b8e9e6bbc47e53607eb5a3b5f0185d843e51c103",
+      "R_dynamic_reference_mm": 37,
+      "OD_reference_mm": 3,
+      "single_semicircle_width_without_clearance_mm": 77
+    }
+  ],
+  "known_conflicts": [
+    "Basler same2200002798: documentdynamic yes vs shopstatic",
+    "Rosenberger URL cached oldCG02 vs directlydownloadedCG03; use rawPDFhash above",
+    "OKI PZPZ naming vs JacktoJack picture title; final mating definition unresolved"
+  ],
+  "limitations": [
+    "No cable or channel qualification; no combined flex/torsion extrapolation",
+    "Semicircle width is a chosen geometric construction, not a universal3D lower bound",
+    "Manufacturer content retained in private work only"
+  ]
+}

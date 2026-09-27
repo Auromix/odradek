@@ -1,6 +1,7 @@
 # J3 → J4 闭口梁连接候选（R4-LINK34-01）
 
-SPDX-License-Identifier: CC-BY-NC-4.0  
+SPDX-License-Identifier: CC-BY-NC-4.0
+
 Required Notice: Odradek — Auromix contributors (https://github.com/Auromix/odradek)
 
 本研究保留 J3 `[0,55,220] mm / +Z` 和 J4 `[0,0,400] mm / −Y`，用六个原创金属零件连接两个 RH20 关节。它沿用已完成 L56 的“输出板—实体插头—闭口梁—实体插头—整体后环脚—前环”结构，但孔阵、板宽、跨度、螺钉堆叠与装配路径都按 RH20 重新建立。**候选未制造放行，未承载验证**；原厂输出 M3 全长仍受有效牙起止证据缺口限制。
