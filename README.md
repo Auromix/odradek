@@ -12,7 +12,7 @@ Odradek is an independent Auromix robotics project sharing design material for n
 
 ![Parameter-derived R4 assembly](engineering/generated/layout/odradek-r4-inspect.png)
 
-The render exposes actual catalog-sized joint and drive envelopes; connections, shaft supports, and cable paths remain under development. Its old base plate has a documented J1 housing interference and must be replaced by the separate mount/base study, not fabricated as shown.
+The render exposes catalog-sized joint envelopes and provisional drive placeholders. The [base study](docs/engineering/base-structure-study.md) resolves the old solid plate's J1 interference in a separate candidate. The [supported-drive study](docs/engineering/gripper-shaft-support-study.md) rejects the old compact motor arrangement after real pulley widths, bearings and couplings are added. These corrections are not yet merged into the total assembly; do not fabricate it as shown.
 
 | Package | Evidence and scope |
 |---|---|

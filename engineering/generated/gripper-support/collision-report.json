@@ -1,0 +1,442 @@
+{
+  "revision": "R4-support-01",
+  "source_layout_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "obb": {
+    "scope": "inter-module conservative OBB screen only; exact solid tests are separate",
+    "pairs_tested": 4704,
+    "required_projection_gap_mm": 1,
+    "passes": false,
+    "minimum_projection_gap_mm": -14.810204093003629,
+    "flagged_pairs": [
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_bearing_bridge_B",
+        "projection_gap_mm": -1.735767927740799
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_motor",
+        "projection_gap_mm": -8.288839396127688
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_coupling",
+        "projection_gap_mm": 0.15087947255586798
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -11.065662346919803
+      },
+      {
+        "a": "UR_output_retention_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -0.7057835794650824
+      },
+      {
+        "a": "UR_output_shaft",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -3.182653948161885
+      },
+      {
+        "a": "UR_output_pulley_hub",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -1.1443004487612
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor",
+        "projection_gap_mm": -12.30073941207629
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_shaft",
+        "projection_gap_mm": 0.5907586221881838
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_coupling",
+        "projection_gap_mm": -3.849120527444125
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -14.810204093003629
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_bridge_0",
+        "projection_gap_mm": 0.46848213470402733
+      },
+      {
+        "a": "UR_bearing_bridge_B",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": -1.7357679277408025
+      },
+      {
+        "a": "UR_bearing_bridge_B",
+        "b": "UL_bearing_bridge_B",
+        "projection_gap_mm": -6.748143493108131
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_motor",
+        "projection_gap_mm": -8.288839396127692
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_coupling",
+        "projection_gap_mm": 0.15087947255586442
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -11.065662346919842
+      },
+      {
+        "a": "UL_output_retention_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -0.7057835794650718
+      },
+      {
+        "a": "UL_output_shaft",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -3.1826539481618923
+      },
+      {
+        "a": "UL_output_pulley_hub",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -1.144300448761232
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor",
+        "projection_gap_mm": -12.300739412076261
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_shaft",
+        "projection_gap_mm": 0.5907586221881687
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_coupling",
+        "projection_gap_mm": -3.8491205274441356
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -14.810204093003618
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_bridge_1",
+        "projection_gap_mm": 0.46848213470399
+      },
+      {
+        "a": "LL_input_bearing_B",
+        "b": "LR_input_bearing_B",
+        "projection_gap_mm": -4.374228540641916
+      },
+      {
+        "a": "LL_input_bearing_B",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": -6.374228540641927
+      },
+      {
+        "a": "LL_input_retention_B",
+        "b": "LR_input_retention_B",
+        "projection_gap_mm": -0.8036872142552074
+      },
+      {
+        "a": "LL_input_retention_B",
+        "b": "LR_input_shaft",
+        "projection_gap_mm": 0.7220512580673066
+      },
+      {
+        "a": "LL_input_shaft",
+        "b": "LR_input_retention_B",
+        "projection_gap_mm": 0.7220512580673075
+      },
+      {
+        "a": "LL_input_shaft",
+        "b": "LR_input_shaft",
+        "projection_gap_mm": -0.6531487419326858
+      },
+      {
+        "a": "LL_input_pulley_flange",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": 0.07763156000347493
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_input_bearing_B",
+        "projection_gap_mm": -6.374228540641923
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_input_pulley_flange",
+        "projection_gap_mm": 0.07763156000346161
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": -11.922368439996536
+      }
+    ]
+  },
+  "cad_qa": {
+    "component_count": 112,
+    "all_shapes_valid": true,
+    "step_roundtrip_valid": true,
+    "step_solid_count": 112,
+    "exact_envelope_intersections_for_obb_flags": [
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_bearing_bridge_B",
+        "projection_gap_mm": -1.735767927740799,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.6416484317591373
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_motor",
+        "projection_gap_mm": -8.288839396127688,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.0
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_coupling",
+        "projection_gap_mm": 0.15087947255586798,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.3673588951916504
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -11.065662346919803,
+        "envelope_intersection_volume_mm3": 70.48890519943846,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UR_output_retention_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -0.7057835794650824,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.1206550034883485
+      },
+      {
+        "a": "UR_output_shaft",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -3.182653948161885,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.006425737910593
+      },
+      {
+        "a": "UR_output_pulley_hub",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -1.1443004487612,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.8787553574101619
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor",
+        "projection_gap_mm": -12.30073941207629,
+        "envelope_intersection_volume_mm3": 668.5737288963418,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_shaft",
+        "projection_gap_mm": 0.5907586221881838,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.4596040679553473
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_coupling",
+        "projection_gap_mm": -3.849120527444125,
+        "envelope_intersection_volume_mm3": 3.1062243216049,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -14.810204093003629,
+        "envelope_intersection_volume_mm3": 134.308133528459,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_bridge_0",
+        "projection_gap_mm": 0.46848213470402733,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.6501816392495758
+      },
+      {
+        "a": "UR_bearing_bridge_B",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": -1.7357679277408025,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.641648431759154
+      },
+      {
+        "a": "UR_bearing_bridge_B",
+        "b": "UL_bearing_bridge_B",
+        "projection_gap_mm": -6.748143493108131,
+        "envelope_intersection_volume_mm3": 185.76052127995865,
+        "envelope_distance_mm": 2.1388847413025116e-16
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_motor",
+        "projection_gap_mm": -8.288839396127692,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.0
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_coupling",
+        "projection_gap_mm": 0.15087947255586442,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.3673588951916424
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -11.065662346919842,
+        "envelope_intersection_volume_mm3": 70.48890519943855,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UL_output_retention_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -0.7057835794650718,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.120655003488352
+      },
+      {
+        "a": "UL_output_shaft",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -3.1826539481618923,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.0064257379105914
+      },
+      {
+        "a": "UL_output_pulley_hub",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -1.144300448761232,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.8787553574101418
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor",
+        "projection_gap_mm": -12.300739412076261,
+        "envelope_intersection_volume_mm3": 668.5737308189471,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_shaft",
+        "projection_gap_mm": 0.5907586221881687,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.4596040679553213
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_coupling",
+        "projection_gap_mm": -3.8491205274441356,
+        "envelope_intersection_volume_mm3": 3.106224327586402,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -14.810204093003618,
+        "envelope_intersection_volume_mm3": 134.3081335284589,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_bridge_1",
+        "projection_gap_mm": 0.46848213470399,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.6501816392495512
+      },
+      {
+        "a": "LL_input_bearing_B",
+        "b": "LR_input_bearing_B",
+        "projection_gap_mm": -4.374228540641916,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.9294581097889267
+      },
+      {
+        "a": "LL_input_bearing_B",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": -6.374228540641927,
+        "envelope_intersection_volume_mm3": 67.98330060944123,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "LL_input_retention_B",
+        "b": "LR_input_retention_B",
+        "projection_gap_mm": -0.8036872142552074,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.2022503159247107
+      },
+      {
+        "a": "LL_input_retention_B",
+        "b": "LR_input_shaft",
+        "projection_gap_mm": 0.7220512580673066,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.663453440703297
+      },
+      {
+        "a": "LL_input_shaft",
+        "b": "LR_input_retention_B",
+        "projection_gap_mm": 0.7220512580673075,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.6634534407033033
+      },
+      {
+        "a": "LL_input_shaft",
+        "b": "LR_input_shaft",
+        "projection_gap_mm": -0.6531487419326858,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.8130587435596297
+      },
+      {
+        "a": "LL_input_pulley_flange",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": 0.07763156000347493,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.07763156000347479
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_input_bearing_B",
+        "projection_gap_mm": -6.374228540641923,
+        "envelope_intersection_volume_mm3": 67.98330074717737,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_input_pulley_flange",
+        "projection_gap_mm": 0.07763156000346161,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.0776315600034729
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": -11.922368439996536,
+        "envelope_intersection_volume_mm3": 996.9336082906058,
+        "envelope_distance_mm": 0.0
+      }
+    ],
+    "scope": "nominal envelopes with bearing holes; NOT full machine geometry, not load approval"
+  }
+}

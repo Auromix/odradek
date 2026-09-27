@@ -1,0 +1,5144 @@
+{
+  "revision": "R4-support-01",
+  "license": "CC-BY-NC-4.0",
+  "status": "NOT RELEASED; previous compact drive envelope invalidated",
+  "source_layout_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "parameters": {
+    "revision": "R4-support-01",
+    "motor_body_length_mm": 70.1,
+    "motor_body_diameter_mm": 22.0,
+    "motor_shaft_length_mm": 16.3,
+    "motor_shaft_diameter_mm": 6.0,
+    "coupling_diameter_mm": 20.0,
+    "coupling_length_mm": 30.0,
+    "coupling_insertion_mm": 10.0,
+    "bearing_d_mm": 10.0,
+    "bearing_D_mm": 26.0,
+    "bearing_B_mm": 8.0,
+    "pulley_L_mm": 20.6248,
+    "pulley_W_mm": 10.16,
+    "pulley_E_mm": 7.772399999999999,
+    "pulley_flange_D_mm": 31.75,
+    "pulley_hub_D_mm": 19.7104,
+    "pulley_tooth_OD_mm": 27.8892,
+    "belt_width_mm": 9.0,
+    "belt_thickness_allowance_mm": 3.0,
+    "pulley_teeth": 30,
+    "pitch_mm": 3.0,
+    "center_distance_mm": 45.0,
+    "axis_z_difference_mm": 25.0,
+    "belt_plane_u_mm": 2.5,
+    "bearing_to_pulley_gap_mm": 2.0,
+    "plate_thickness_mm": 10.0,
+    "retention_bay_mm": 4.0,
+    "coupling_to_retention_gap_mm": 1.0,
+    "shaft_diameter_mm": 10.0,
+    "input_shaft_length_mm": 65.0,
+    "output_shaft_length_mm": 67.0,
+    "head_diameter_reference_mm": 210.0,
+    "required_projection_gap_mm": 1.0
+  },
+  "local_stack_mm": {
+    "pulley_limits": [
+      -14.198599999999999,
+      6.426200000000001
+    ],
+    "flange_limits": [
+      -6.426200000000001,
+      6.426200000000001
+    ],
+    "hub_limits": [
+      -14.198599999999999,
+      -6.426200000000001
+    ],
+    "bearing_A": [
+      -24.1986,
+      -16.1986
+    ],
+    "bearing_B": [
+      8.426200000000001,
+      16.4262
+    ],
+    "plate_A": [
+      -26.1986,
+      -16.1986
+    ],
+    "plate_B": [
+      8.426200000000001,
+      18.4262
+    ],
+    "retention_A": [
+      -30.1986,
+      -26.1986
+    ],
+    "retention_B": [
+      18.4262,
+      22.4262
+    ],
+    "coupling": [
+      -61.1986,
+      -31.1986
+    ],
+    "motor_body": [
+      -137.59859999999998,
+      -67.4986
+    ],
+    "motor_shaft": [
+      -67.4986,
+      -51.1986
+    ],
+    "input_shaft": [
+      -41.1986,
+      23.8014
+    ],
+    "output_shaft": [
+      -32.1986,
+      34.8014
+    ],
+    "finger_hub": [
+      23.4262,
+      33.4262
+    ],
+    "bearing_centers": [
+      -20.1986,
+      12.426200000000001
+    ]
+  },
+  "mechanics": {
+    "pitch_diameter_mm": 28.64788975654116,
+    "belt_pitch_length_mm": 180.0,
+    "torque_screen_Nm": 3.7,
+    "tension_difference_N": 258.3087292951608,
+    "tension_cases": [
+      {
+        "resultant_N": 400,
+        "tight_N": 329.1543646475804,
+        "slack_N": 70.8456353524196
+      },
+      {
+        "resultant_N": 600,
+        "tight_N": 429.1543646475804,
+        "slack_N": 170.8456353524196
+      },
+      {
+        "resultant_N": 800,
+        "tight_N": 529.1543646475805,
+        "slack_N": 270.8456353524196
+      }
+    ],
+    "input_shaft": [
+      {
+        "belt_resultant_N": 258.3087292951608,
+        "example_contact_N": 0,
+        "bearing_A_reaction_N": 98.3851527662247,
+        "bearing_B_reaction_N": 159.92357652893608,
+        "max_bending_Nmm": 1987.2423466638663,
+        "bending_MPa": 20.2418843259579,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 38.4059461566345,
+        "belt_plane_deflection_mm": 0.001652210685932484,
+        "SKF_static_ratio_C0_over_max_radial": 12.255853968131857,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      },
+      {
+        "belt_resultant_N": 400,
+        "example_contact_N": 0,
+        "bearing_A_reaction_N": 152.35281135823055,
+        "bearing_B_reaction_N": 247.64718864176945,
+        "max_bending_Nmm": 3077.3134955003557,
+        "bending_MPa": 31.345257872145964,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 45.2527127384887,
+        "belt_plane_deflection_mm": 0.0025585053829823273,
+        "SKF_static_ratio_C0_over_max_radial": 7.914485162337984,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      },
+      {
+        "belt_resultant_N": 600,
+        "example_contact_N": 0,
+        "bearing_A_reaction_N": 228.52921703734586,
+        "bearing_B_reaction_N": 371.47078296265414,
+        "max_bending_Nmm": 4615.970243250534,
+        "bending_MPa": 47.01788680821895,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 57.23604195811706,
+        "belt_plane_deflection_mm": 0.003837758074473491,
+        "SKF_static_ratio_C0_over_max_radial": 5.276323441558656,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      },
+      {
+        "belt_resultant_N": 800,
+        "example_contact_N": 0,
+        "bearing_A_reaction_N": 304.7056227164611,
+        "bearing_B_reaction_N": 495.2943772835389,
+        "max_bending_Nmm": 6154.626991000711,
+        "bending_MPa": 62.69051574429193,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 70.67802758570843,
+        "belt_plane_deflection_mm": 0.0051170107659646545,
+        "SKF_static_ratio_C0_over_max_radial": 3.957242581168992,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      }
+    ],
+    "output_shaft_with_50N_overhung_example": [
+      {
+        "belt_resultant_N": 400,
+        "example_contact_N": -50,
+        "bearing_A_reaction_N": 176.87403447683974,
+        "bearing_B_reaction_N": 173.12596552316026,
+        "max_bending_Nmm": 3572.607872783895,
+        "bending_MPa": 36.390284971685,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 48.882876955446186,
+        "belt_plane_deflection_mm": null,
+        "SKF_static_ratio_C0_over_max_radial": 11.081332575452993,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      },
+      {
+        "belt_resultant_N": 400,
+        "example_contact_N": 50,
+        "bearing_A_reaction_N": 127.8315882396214,
+        "bearing_B_reaction_N": 322.1684117603786,
+        "max_bending_Nmm": 2582.0191182168164,
+        "bending_MPa": 26.300230772606927,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 41.91640439986746,
+        "belt_plane_deflection_mm": null,
+        "SKF_static_ratio_C0_over_max_radial": 6.0837745987890415,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      },
+      {
+        "belt_resultant_N": 600,
+        "example_contact_N": -50,
+        "bearing_A_reaction_N": 253.05044015595496,
+        "bearing_B_reaction_N": 296.94955984404504,
+        "max_bending_Nmm": 5111.264620534072,
+        "bending_MPa": 52.06291390775797,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 61.447781275547015,
+        "belt_plane_deflection_mm": null,
+        "SKF_static_ratio_C0_over_max_radial": 6.600447567692549,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      },
+      {
+        "belt_resultant_N": 600,
+        "example_contact_N": 50,
+        "bearing_A_reaction_N": 204.0079939187367,
+        "bearing_B_reaction_N": 445.9920060812633,
+        "max_bending_Nmm": 4120.675865966995,
+        "bending_MPa": 41.97285970867991,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 53.16957561656265,
+        "belt_plane_deflection_mm": null,
+        "SKF_static_ratio_C0_over_max_radial": 4.394697602815043,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      },
+      {
+        "belt_resultant_N": 800,
+        "example_contact_N": -50,
+        "bearing_A_reaction_N": 329.22684583507026,
+        "bearing_B_reaction_N": 420.77315416492974,
+        "max_bending_Nmm": 6649.92136828425,
+        "bending_MPa": 67.73554284383096,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 75.18900573534209,
+        "belt_plane_deflection_mm": null,
+        "SKF_static_ratio_C0_over_max_radial": 4.658091849727994,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      },
+      {
+        "belt_resultant_N": 800,
+        "example_contact_N": 50,
+        "bearing_A_reaction_N": 280.184399597852,
+        "bearing_B_reaction_N": 569.815600402148,
+        "max_bending_Nmm": 5659.332613717173,
+        "bending_MPa": 57.6454886447529,
+        "torsional_MPa": 18.84394526208041,
+        "von_mises_gross_MPa": 66.24413317580044,
+        "belt_plane_deflection_mm": null,
+        "SKF_static_ratio_C0_over_max_radial": 3.439709264921367,
+        "note": "gross circular shaft; no keyway/groove/fit/axial/impact/fatigue allowance; no acceptance"
+      }
+    ],
+    "shaft_E_MPa_assumption": 205000,
+    "key_shear_MPa": 41.111111111111114,
+    "key_bearing_MPa": 82.22222222222223,
+    "key_note": "3x3x6 mm effective rectangular key assumption; material and notch details pending",
+    "NBK_nominal_torque_ceiling_Nm_at_30C": 6,
+    "NBK_nominal_ratio_to_screen": 1.6216216216216215,
+    "NBK_60C_elastomer_rating_Nm": 4.199999999999999,
+    "NBK_twist_deg_at_3_7Nm": 2.436717059751777,
+    "screening_only": true
+  },
+  "coordinates": [
+    {
+      "finger": "UR",
+      "phi_deg": 35,
+      "axis_u": [
+        -0.573576436351046,
+        0.8191520442889918,
+        0.0
+      ],
+      "root_anchor_mm": [
+        57.34064310022943,
+        40.15035054457322,
+        0.0
+      ],
+      "driver_belt_plane_center_mm": [
+        25.256839035303,
+        20.736965555772052,
+        -25.0
+      ],
+      "hinge_belt_plane_center_mm": [
+        55.90670200935181,
+        42.1982306552957,
+        0.0
+      ],
+      "motor_front_center_mm": [
+        63.97244548198772,
+        -34.554650620872884,
+        -25.0
+      ],
+      "motor_center_mm": [
+        84.07629957609187,
+        -63.26592977320205,
+        -25.0
+      ],
+      "finger_hub_center_mm": [
+        39.60210351434971,
+        65.48361049666345,
+        0.0
+      ],
+      "motor_retraction_from_previous_mm": 59.3486,
+      "exact_motor_cylinder_radial_diameter_mm": 283.90946976376966
+    },
+    {
+      "finger": "UL",
+      "phi_deg": 145,
+      "axis_u": [
+        0.5735764363510459,
+        0.8191520442889919,
+        -0.0
+      ],
+      "root_anchor_mm": [
+        -57.340643100229435,
+        40.150350544573215,
+        0.0
+      ],
+      "driver_belt_plane_center_mm": [
+        -25.256839035303003,
+        20.73696555577205,
+        -25.0
+      ],
+      "hinge_belt_plane_center_mm": [
+        -55.90670200935182,
+        42.198230655295696,
+        0.0
+      ],
+      "motor_front_center_mm": [
+        -63.97244548198771,
+        -34.55465062087289,
+        -25.0
+      ],
+      "motor_center_mm": [
+        -84.07629957609187,
+        -63.26592977320206,
+        -25.0
+      ],
+      "finger_hub_center_mm": [
+        -39.602103514349714,
+        65.48361049666343,
+        0.0
+      ],
+      "motor_retraction_from_previous_mm": 59.3486,
+      "exact_motor_cylinder_radial_diameter_mm": 283.90946976376966
+    },
+    {
+      "finger": "LL",
+      "phi_deg": 225,
+      "axis_u": [
+        0.7071067811865475,
+        -0.7071067811865477,
+        0.0
+      ],
+      "root_anchor_mm": [
+        -49.497474683058336,
+        -49.49747468305832,
+        50.0
+      ],
+      "driver_belt_plane_center_mm": [
+        -21.272194619446054,
+        -24.807728525378785,
+        25.0
+      ],
+      "hinge_belt_plane_center_mm": [
+        -47.72970773009197,
+        -51.26524163602469,
+        50.0
+      ],
+      "motor_front_center_mm": [
+        -69.00091240004434,
+        22.920989255219517,
+        25.0
+      ],
+      "motor_center_mm": [
+        -93.78500508063283,
+        47.70508193580802,
+        25.0
+      ],
+      "finger_hub_center_mm": [
+        -27.62934894672693,
+        -71.36560041938974,
+        50.0
+      ],
+      "motor_retraction_from_previous_mm": 59.3486,
+      "exact_motor_cylinder_radial_diameter_mm": 283.90946976376966
+    },
+    {
+      "finger": "LR",
+      "phi_deg": 315,
+      "axis_u": [
+        -0.7071067811865477,
+        -0.7071067811865474,
+        -0.0
+      ],
+      "root_anchor_mm": [
+        49.497474683058314,
+        -49.497474683058336,
+        50.0
+      ],
+      "driver_belt_plane_center_mm": [
+        21.272194619446044,
+        -24.807728525378792,
+        25.0
+      ],
+      "hinge_belt_plane_center_mm": [
+        47.729707730091945,
+        -51.265241636024705,
+        50.0
+      ],
+      "motor_front_center_mm": [
+        69.00091240004434,
+        22.92098925521949,
+        25.0
+      ],
+      "motor_center_mm": [
+        93.78500508063284,
+        47.70508193580797,
+        25.0
+      ],
+      "finger_hub_center_mm": [
+        27.629348946726903,
+        -71.36560041938974,
+        50.0
+      ],
+      "motor_retraction_from_previous_mm": 59.3486,
+      "exact_motor_cylinder_radial_diameter_mm": 283.90946976376966
+    }
+  ],
+  "envelope": {
+    "coaxial_obb_enclosing_diameter_mm": 286.63827312674323,
+    "z_min_mm": -48.579594572257115,
+    "z_max_mm": 73.57959457225712,
+    "depth_mm": 122.15918914451424,
+    "aabb_min_mm": [
+      -129.35769796218588,
+      -100.72848528311562,
+      -48.579594572257115
+    ],
+    "aabb_max_mm": [
+      129.3576979621859,
+      83.27777481736106,
+      73.57959457225712
+    ]
+  },
+  "collisions": {
+    "scope": "inter-module conservative OBB screen only; exact solid tests are separate",
+    "pairs_tested": 4704,
+    "required_projection_gap_mm": 1,
+    "passes": false,
+    "minimum_projection_gap_mm": -14.810204093003629,
+    "flagged_pairs": [
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_bearing_bridge_B",
+        "projection_gap_mm": -1.735767927740799
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_motor",
+        "projection_gap_mm": -8.288839396127688
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_coupling",
+        "projection_gap_mm": 0.15087947255586798
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -11.065662346919803
+      },
+      {
+        "a": "UR_output_retention_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -0.7057835794650824
+      },
+      {
+        "a": "UR_output_shaft",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -3.182653948161885
+      },
+      {
+        "a": "UR_output_pulley_hub",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -1.1443004487612
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor",
+        "projection_gap_mm": -12.30073941207629
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_shaft",
+        "projection_gap_mm": 0.5907586221881838
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_coupling",
+        "projection_gap_mm": -3.849120527444125
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -14.810204093003629
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_bridge_0",
+        "projection_gap_mm": 0.46848213470402733
+      },
+      {
+        "a": "UR_bearing_bridge_B",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": -1.7357679277408025
+      },
+      {
+        "a": "UR_bearing_bridge_B",
+        "b": "UL_bearing_bridge_B",
+        "projection_gap_mm": -6.748143493108131
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_motor",
+        "projection_gap_mm": -8.288839396127692
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_coupling",
+        "projection_gap_mm": 0.15087947255586442
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -11.065662346919842
+      },
+      {
+        "a": "UL_output_retention_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -0.7057835794650718
+      },
+      {
+        "a": "UL_output_shaft",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -3.1826539481618923
+      },
+      {
+        "a": "UL_output_pulley_hub",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -1.144300448761232
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor",
+        "projection_gap_mm": -12.300739412076261
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_shaft",
+        "projection_gap_mm": 0.5907586221881687
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_coupling",
+        "projection_gap_mm": -3.8491205274441356
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -14.810204093003618
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_bridge_1",
+        "projection_gap_mm": 0.46848213470399
+      },
+      {
+        "a": "LL_input_bearing_B",
+        "b": "LR_input_bearing_B",
+        "projection_gap_mm": -4.374228540641916
+      },
+      {
+        "a": "LL_input_bearing_B",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": -6.374228540641927
+      },
+      {
+        "a": "LL_input_retention_B",
+        "b": "LR_input_retention_B",
+        "projection_gap_mm": -0.8036872142552074
+      },
+      {
+        "a": "LL_input_retention_B",
+        "b": "LR_input_shaft",
+        "projection_gap_mm": 0.7220512580673066
+      },
+      {
+        "a": "LL_input_shaft",
+        "b": "LR_input_retention_B",
+        "projection_gap_mm": 0.7220512580673075
+      },
+      {
+        "a": "LL_input_shaft",
+        "b": "LR_input_shaft",
+        "projection_gap_mm": -0.6531487419326858
+      },
+      {
+        "a": "LL_input_pulley_flange",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": 0.07763156000347493
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_input_bearing_B",
+        "projection_gap_mm": -6.374228540641923
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_input_pulley_flange",
+        "projection_gap_mm": 0.07763156000346161
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": -11.922368439996536
+      }
+    ]
+  },
+  "self_checks": {
+    "belt_length_reverse": true,
+    "tension_torque_reverse": true,
+    "gates_inch_to_mm": true,
+    "motor_shaft_engagement": true,
+    "independent_shaft_engagement": true,
+    "two_bearings_each_of_two_shafts_per_finger": true,
+    "center_distances": true,
+    "force_moment_equilibrium": true,
+    "SI_mm_deflection_cross_check": true,
+    "input_shaft_covers_supports": true,
+    "output_shaft_covers_finger_hub": true
+  },
+  "exclusions": [
+    "full fingers/yokes and their motion",
+    "optical core/cameras/display",
+    "wires, fasteners and covers",
+    "motor combined drawing",
+    "manufacturing fits and tolerances",
+    "holding brake and payload rating"
+  ],
+  "parts": [
+    {
+      "name": "UR_motor",
+      "group": 0,
+      "center": [
+        84.07629957609187,
+        -63.26592977320205,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        35.04999999999999,
+        11.0,
+        11.0
+      ],
+      "kind": "motor",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -137.59859999999998,
+        -67.4986
+      ]
+    },
+    {
+      "name": "UR_motor_shaft",
+      "group": 0,
+      "center": [
+        59.29779752572669,
+        -27.878561459917606,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        8.149999999999999,
+        3.0,
+        3.0
+      ],
+      "kind": "motor_shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -67.4986,
+        -51.1986
+      ]
+    },
+    {
+      "name": "UR_coupling",
+      "group": 0,
+      "center": [
+        51.75526738771043,
+        -17.106712077517365,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        15.0,
+        10.0,
+        10.0
+      ],
+      "kind": "coupling",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -61.1986,
+        -31.1986
+      ]
+    },
+    {
+      "name": "UR_input_bearing_A",
+      "group": 0,
+      "center": [
+        36.84228004258324,
+        4.191241073996423,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -24.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "UR_input_retention_A",
+      "group": 0,
+      "center": [
+        41.4308915333916,
+        -2.3619752803155123,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -30.1986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "UR_input_bearing_B",
+      "group": 0,
+      "center": [
+        18.12946352191763,
+        30.915912688515924,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        8.426200000000001,
+        16.4262
+      ]
+    },
+    {
+      "name": "UR_input_retention_B",
+      "group": 0,
+      "center": [
+        13.540852031109262,
+        37.46912904282786,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        18.4262,
+        22.4262
+      ]
+    },
+    {
+      "name": "UR_input_shaft",
+      "group": 0,
+      "center": [
+        30.246151024546208,
+        13.611489583319829,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        32.5,
+        5.0,
+        5.0
+      ],
+      "kind": "shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -41.1986,
+        23.8014
+      ]
+    },
+    {
+      "name": "UR_input_pulley_flange",
+      "group": 0,
+      "center": [
+        25.256839035303,
+        20.736965555772052,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        6.426200000000001,
+        15.875,
+        15.875
+      ],
+      "kind": "pulley_flange",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -6.426200000000001,
+        6.426200000000001
+      ]
+    },
+    {
+      "name": "UR_input_pulley_hub",
+      "group": 0,
+      "center": [
+        31.171788677529527,
+        12.289542014246253,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        3.886199999999999,
+        9.8552,
+        9.8552
+      ],
+      "kind": "pulley_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -14.198599999999999,
+        -6.426200000000001
+      ]
+    },
+    {
+      "name": "UR_output_bearing_A",
+      "group": 0,
+      "center": [
+        67.49214301663204,
+        25.652506173520074,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -24.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "UR_output_retention_A",
+      "group": 0,
+      "center": [
+        72.08075450744042,
+        19.09928981920814,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -30.1986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "UR_output_bearing_B",
+      "group": 0,
+      "center": [
+        48.779326495966444,
+        52.377177788039575,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        8.426200000000001,
+        16.4262
+      ]
+    },
+    {
+      "name": "UR_output_retention_B",
+      "group": 0,
+      "center": [
+        44.190715005158076,
+        58.93039414235151,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        18.4262,
+        22.4262
+      ]
+    },
+    {
+      "name": "UR_output_shaft",
+      "group": 0,
+      "center": [
+        55.16024963508456,
+        43.2642751257334,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        33.5,
+        5.0,
+        5.0
+      ],
+      "kind": "shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -32.1986,
+        34.8014
+      ]
+    },
+    {
+      "name": "UR_output_pulley_flange",
+      "group": 0,
+      "center": [
+        55.90670200935181,
+        42.1982306552957,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        6.426200000000001,
+        15.875,
+        15.875
+      ],
+      "kind": "pulley_flange",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -6.426200000000001,
+        6.426200000000001
+      ]
+    },
+    {
+      "name": "UR_output_pulley_hub",
+      "group": 0,
+      "center": [
+        61.821651651578335,
+        33.7508071137699,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        3.886199999999999,
+        9.8552,
+        9.8552
+      ],
+      "kind": "pulley_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -14.198599999999999,
+        -6.426200000000001
+      ]
+    },
+    {
+      "name": "UR_finger_metal_hub",
+      "group": 0,
+      "center": [
+        39.60210351434971,
+        65.48361049666345,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        5.0,
+        12.0,
+        12.0
+      ],
+      "kind": "finger_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        23.4262,
+        33.4262
+      ]
+    },
+    {
+      "name": "UR_bearing_bridge_A",
+      "group": 0,
+      "center": [
+        52.740787965958695,
+        14.102721579469257,
+        -12.5
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        5.0,
+        39.5,
+        17.0
+      ],
+      "kind": "bridge_plate",
+      "shape": "box",
+      "limits_u_mm": [
+        -26.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "UR_bearing_bridge_B",
+      "group": 0,
+      "center": [
+        32.88081857259099,
+        42.46569728256674,
+        -12.5
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        5.0,
+        39.5,
+        17.0
+      ],
+      "kind": "bridge_plate",
+      "shape": "box",
+      "limits_u_mm": [
+        8.426200000000001,
+        18.4262
+      ]
+    },
+    {
+      "name": "UR_central_tie",
+      "group": 0,
+      "center": [
+        42.81080326927484,
+        28.284209431018,
+        -12.5
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        12.3124,
+        2.0,
+        5.0
+      ],
+      "kind": "tie",
+      "shape": "box",
+      "limits_u_mm": [
+        -16.1986,
+        8.426200000000001
+      ]
+    },
+    {
+      "name": "UR_motor_flange",
+      "group": 0,
+      "center": [
+        63.39886904563667,
+        -33.73549857658389,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        1.0,
+        17.0,
+        17.0
+      ],
+      "kind": "motor_mount",
+      "shape": "cylinder",
+      "bore_mm": 10.5,
+      "limits_u_mm": [
+        -67.4986,
+        -65.4986
+      ]
+    },
+    {
+      "name": "UR_motor_bridge_0",
+      "group": 0,
+      "center": [
+        44.728248599245966,
+        -21.599812498274936,
+        -12.52780871075353
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        19.65,
+        5.0,
+        2.0
+      ],
+      "kind": "motor_mount",
+      "shape": "box",
+      "limits_u_mm": [
+        -65.4986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "UR_motor_bridge_1",
+      "group": 0,
+      "center": [
+        58.38078267072917,
+        -12.040205225757498,
+        -37.47219128924647
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        19.65,
+        5.0,
+        2.0
+      ],
+      "kind": "motor_mount",
+      "shape": "box",
+      "limits_u_mm": [
+        -65.4986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "UR_belt_drive_cover",
+      "group": 0,
+      "center": [
+        25.256839035303,
+        20.736965555772052,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        15.82394487827058,
+        15.82394487827058
+      ],
+      "kind": "belt_cover",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "UR_belt_hinge_cover",
+      "group": 0,
+      "center": [
+        55.90670200935181,
+        42.1982306552957,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        15.82394487827058,
+        15.82394487827058
+      ],
+      "kind": "belt_cover",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "UR_belt_span_0",
+      "group": 0,
+      "center": [
+        34.06316567270619,
+        26.903221851218735,
+        -0.5899346307724702
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        22.5,
+        1.5
+      ],
+      "kind": "belt_cover",
+      "shape": "box",
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "UR_belt_span_1",
+      "group": 0,
+      "center": [
+        47.100375371948616,
+        36.03197435984902,
+        -24.41006536922753
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.6811080660899737,
+          0.4550844690494399
+        ],
+        [
+          0.8191520442889918,
+          0.4769170022116367,
+          0.3186535757505812
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        22.5,
+        1.5
+      ],
+      "kind": "belt_cover",
+      "shape": "box",
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "UL_motor",
+      "group": 1,
+      "center": [
+        -84.07629957609187,
+        -63.26592977320206,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        35.04999999999999,
+        11.0,
+        11.0
+      ],
+      "kind": "motor",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -137.59859999999998,
+        -67.4986
+      ]
+    },
+    {
+      "name": "UL_motor_shaft",
+      "group": 1,
+      "center": [
+        -59.297797525726686,
+        -27.878561459917616,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        8.149999999999999,
+        3.0,
+        3.0
+      ],
+      "kind": "motor_shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -67.4986,
+        -51.1986
+      ]
+    },
+    {
+      "name": "UL_coupling",
+      "group": 1,
+      "center": [
+        -51.75526738771043,
+        -17.106712077517376,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        15.0,
+        10.0,
+        10.0
+      ],
+      "kind": "coupling",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -61.1986,
+        -31.1986
+      ]
+    },
+    {
+      "name": "UL_input_bearing_A",
+      "group": 1,
+      "center": [
+        -36.84228004258324,
+        4.191241073996416,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -24.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "UL_input_retention_A",
+      "group": 1,
+      "center": [
+        -41.4308915333916,
+        -2.3619752803155194,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -30.1986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "UL_input_bearing_B",
+      "group": 1,
+      "center": [
+        -18.129463521917636,
+        30.91591268851592,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        8.426200000000001,
+        16.4262
+      ]
+    },
+    {
+      "name": "UL_input_retention_B",
+      "group": 1,
+      "center": [
+        -13.540852031109267,
+        37.46912904282786,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        18.4262,
+        22.4262
+      ]
+    },
+    {
+      "name": "UL_input_shaft",
+      "group": 1,
+      "center": [
+        -30.246151024546208,
+        13.611489583319823,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        32.5,
+        5.0,
+        5.0
+      ],
+      "kind": "shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -41.1986,
+        23.8014
+      ]
+    },
+    {
+      "name": "UL_input_pulley_flange",
+      "group": 1,
+      "center": [
+        -25.256839035303003,
+        20.73696555577205,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        6.426200000000001,
+        15.875,
+        15.875
+      ],
+      "kind": "pulley_flange",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -6.426200000000001,
+        6.426200000000001
+      ]
+    },
+    {
+      "name": "UL_input_pulley_hub",
+      "group": 1,
+      "center": [
+        -31.171788677529527,
+        12.289542014246248,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        3.886199999999999,
+        9.8552,
+        9.8552
+      ],
+      "kind": "pulley_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -14.198599999999999,
+        -6.426200000000001
+      ]
+    },
+    {
+      "name": "UL_output_bearing_A",
+      "group": 1,
+      "center": [
+        -67.49214301663206,
+        25.652506173520063,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -24.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "UL_output_retention_A",
+      "group": 1,
+      "center": [
+        -72.08075450744042,
+        19.099289819208128,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -30.1986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "UL_output_bearing_B",
+      "group": 1,
+      "center": [
+        -48.77932649596645,
+        52.37717778803957,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        8.426200000000001,
+        16.4262
+      ]
+    },
+    {
+      "name": "UL_output_retention_B",
+      "group": 1,
+      "center": [
+        -44.19071500515808,
+        58.9303941423515,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        18.4262,
+        22.4262
+      ]
+    },
+    {
+      "name": "UL_output_shaft",
+      "group": 1,
+      "center": [
+        -55.16024963508457,
+        43.26427512573339,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        33.5,
+        5.0,
+        5.0
+      ],
+      "kind": "shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -32.1986,
+        34.8014
+      ]
+    },
+    {
+      "name": "UL_output_pulley_flange",
+      "group": 1,
+      "center": [
+        -55.90670200935182,
+        42.198230655295696,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        6.426200000000001,
+        15.875,
+        15.875
+      ],
+      "kind": "pulley_flange",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -6.426200000000001,
+        6.426200000000001
+      ]
+    },
+    {
+      "name": "UL_output_pulley_hub",
+      "group": 1,
+      "center": [
+        -61.82165165157834,
+        33.750807113769895,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        3.886199999999999,
+        9.8552,
+        9.8552
+      ],
+      "kind": "pulley_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -14.198599999999999,
+        -6.426200000000001
+      ]
+    },
+    {
+      "name": "UL_finger_metal_hub",
+      "group": 1,
+      "center": [
+        -39.602103514349714,
+        65.48361049666343,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        5.0,
+        12.0,
+        12.0
+      ],
+      "kind": "finger_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        23.4262,
+        33.4262
+      ]
+    },
+    {
+      "name": "UL_bearing_bridge_A",
+      "group": 1,
+      "center": [
+        -52.740787965958695,
+        14.102721579469248,
+        -12.5
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        5.0,
+        39.5,
+        17.0
+      ],
+      "kind": "bridge_plate",
+      "shape": "box",
+      "limits_u_mm": [
+        -26.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "UL_bearing_bridge_B",
+      "group": 1,
+      "center": [
+        -32.880818572591,
+        42.46569728256674,
+        -12.5
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        5.0,
+        39.5,
+        17.0
+      ],
+      "kind": "bridge_plate",
+      "shape": "box",
+      "limits_u_mm": [
+        8.426200000000001,
+        18.4262
+      ]
+    },
+    {
+      "name": "UL_central_tie",
+      "group": 1,
+      "center": [
+        -42.81080326927484,
+        28.28420943101799,
+        -12.5
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        12.3124,
+        2.0,
+        5.0
+      ],
+      "kind": "tie",
+      "shape": "box",
+      "limits_u_mm": [
+        -16.1986,
+        8.426200000000001
+      ]
+    },
+    {
+      "name": "UL_motor_flange",
+      "group": 1,
+      "center": [
+        -63.398869045636665,
+        -33.73549857658391,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        1.0,
+        17.0,
+        17.0
+      ],
+      "kind": "motor_mount",
+      "shape": "cylinder",
+      "bore_mm": 10.5,
+      "limits_u_mm": [
+        -67.4986,
+        -65.4986
+      ]
+    },
+    {
+      "name": "UL_motor_bridge_0",
+      "group": 1,
+      "center": [
+        -58.38078267072917,
+        -12.04020522575751,
+        -37.47219128924647
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        19.65,
+        5.0,
+        2.0
+      ],
+      "kind": "motor_mount",
+      "shape": "box",
+      "limits_u_mm": [
+        -65.4986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "UL_motor_bridge_1",
+      "group": 1,
+      "center": [
+        -44.728248599245966,
+        -21.599812498274943,
+        -12.52780871075353
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        19.65,
+        5.0,
+        2.0
+      ],
+      "kind": "motor_mount",
+      "shape": "box",
+      "limits_u_mm": [
+        -65.4986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "UL_belt_drive_cover",
+      "group": 1,
+      "center": [
+        -25.256839035303003,
+        20.73696555577205,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        15.82394487827058,
+        15.82394487827058
+      ],
+      "kind": "belt_cover",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "UL_belt_hinge_cover",
+      "group": 1,
+      "center": [
+        -55.90670200935182,
+        42.198230655295696,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        15.82394487827058,
+        15.82394487827058
+      ],
+      "kind": "belt_cover",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "UL_belt_span_0",
+      "group": 1,
+      "center": [
+        -47.10037537194862,
+        36.031974359849016,
+        -24.41006536922753
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        22.5,
+        1.5
+      ],
+      "kind": "belt_cover",
+      "shape": "box",
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "UL_belt_span_1",
+      "group": 1,
+      "center": [
+        -34.0631656727062,
+        26.90322185121873,
+        -0.5899346307724702
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.6811080660899737,
+          0.45508446904943994
+        ],
+        [
+          0.8191520442889919,
+          0.4769170022116366,
+          -0.31865357575058106
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        22.5,
+        1.5
+      ],
+      "kind": "belt_cover",
+      "shape": "box",
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "LL_motor",
+      "group": 2,
+      "center": [
+        -93.78500508063283,
+        47.70508193580802,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        35.04999999999999,
+        11.0,
+        11.0
+      ],
+      "kind": "motor",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -137.59859999999998,
+        -67.4986
+      ]
+    },
+    {
+      "name": "LL_motor_shaft",
+      "group": 2,
+      "center": [
+        -63.237992133373986,
+        17.158068988549154,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        8.149999999999999,
+        3.0,
+        3.0
+      ],
+      "kind": "motor_shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -67.4986,
+        -51.1986
+      ]
+    },
+    {
+      "name": "LL_coupling",
+      "group": 2,
+      "center": [
+        -53.939537960770885,
+        7.85961481594606,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        15.0,
+        10.0,
+        10.0
+      ],
+      "kind": "coupling",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -61.1986,
+        -31.1986
+      ]
+    },
+    {
+      "name": "LL_input_bearing_A",
+      "group": 2,
+      "center": [
+        -35.55476164992065,
+        -10.525161494904184,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -24.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "LL_input_retention_A",
+      "group": 2,
+      "center": [
+        -41.21161589941303,
+        -4.868307245411803,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -30.1986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "LL_input_bearing_B",
+      "group": 2,
+      "center": [
+        -12.485544335065777,
+        -33.594378809759064,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        8.426200000000001,
+        16.4262
+      ]
+    },
+    {
+      "name": "LL_input_retention_B",
+      "group": 2,
+      "center": [
+        -6.828690085573397,
+        -39.25123305925145,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        18.4262,
+        22.4262
+      ]
+    },
+    {
+      "name": "LL_input_shaft",
+      "group": 2,
+      "center": [
+        -27.423033666275355,
+        -18.65688947854948,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        32.5,
+        5.0,
+        5.0
+      ],
+      "kind": "shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -41.1986,
+        23.8014
+      ]
+    },
+    {
+      "name": "LL_input_pulley_flange",
+      "group": 2,
+      "center": [
+        -21.272194619446054,
+        -24.807728525378785,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        6.426200000000001,
+        15.875,
+        15.875
+      ],
+      "kind": "pulley_flange",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -6.426200000000001,
+        6.426200000000001
+      ]
+    },
+    {
+      "name": "LL_input_pulley_hub",
+      "group": 2,
+      "center": [
+        -28.564162589754208,
+        -17.51576055507063,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        3.886199999999999,
+        9.8552,
+        9.8552
+      ],
+      "kind": "pulley_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -14.198599999999999,
+        -6.426200000000001
+      ]
+    },
+    {
+      "name": "LL_output_bearing_A",
+      "group": 2,
+      "center": [
+        -62.01227476056656,
+        -36.98267460555009,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -24.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "LL_output_retention_A",
+      "group": 2,
+      "center": [
+        -67.66912901005894,
+        -31.325820356057708,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -30.1986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "LL_output_bearing_B",
+      "group": 2,
+      "center": [
+        -38.94305744571169,
+        -60.05189192040497,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        8.426200000000001,
+        16.4262
+      ]
+    },
+    {
+      "name": "LL_output_retention_B",
+      "group": 2,
+      "center": [
+        -33.28620319621931,
+        -65.70874616989735,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        18.4262,
+        22.4262
+      ]
+    },
+    {
+      "name": "LL_output_shaft",
+      "group": 2,
+      "center": [
+        -46.809478965055796,
+        -52.18547040106086,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        33.5,
+        5.0,
+        5.0
+      ],
+      "kind": "shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -32.1986,
+        34.8014
+      ]
+    },
+    {
+      "name": "LL_output_pulley_flange",
+      "group": 2,
+      "center": [
+        -47.72970773009197,
+        -51.26524163602469,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        6.426200000000001,
+        15.875,
+        15.875
+      ],
+      "kind": "pulley_flange",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -6.426200000000001,
+        6.426200000000001
+      ]
+    },
+    {
+      "name": "LL_output_pulley_hub",
+      "group": 2,
+      "center": [
+        -55.02167570040012,
+        -43.97327366571653,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        3.886199999999999,
+        9.8552,
+        9.8552
+      ],
+      "kind": "pulley_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -14.198599999999999,
+        -6.426200000000001
+      ]
+    },
+    {
+      "name": "LL_finger_metal_hub",
+      "group": 2,
+      "center": [
+        -27.62934894672693,
+        -71.36560041938974,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        5.0,
+        12.0,
+        12.0
+      ],
+      "kind": "finger_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        23.4262,
+        33.4262
+      ]
+    },
+    {
+      "name": "LL_bearing_bridge_A",
+      "group": 2,
+      "center": [
+        -49.49062498643015,
+        -23.04681126904059,
+        37.5
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        5.0,
+        39.5,
+        17.0
+      ],
+      "kind": "bridge_plate",
+      "shape": "box",
+      "limits_u_mm": [
+        -26.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "LL_bearing_bridge_B",
+      "group": 2,
+      "center": [
+        -25.007194109202185,
+        -47.53024214626856,
+        37.5
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        5.0,
+        39.5,
+        17.0
+      ],
+      "kind": "bridge_plate",
+      "shape": "box",
+      "limits_u_mm": [
+        8.426200000000001,
+        18.4262
+      ]
+    },
+    {
+      "name": "LL_central_tie",
+      "group": 2,
+      "center": [
+        -37.24890954781617,
+        -35.288526707654576,
+        37.5
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        12.3124,
+        2.0,
+        5.0
+      ],
+      "kind": "tie",
+      "shape": "box",
+      "limits_u_mm": [
+        -16.1986,
+        8.426200000000001
+      ]
+    },
+    {
+      "name": "LL_motor_flange",
+      "group": 2,
+      "center": [
+        -68.29380561885779,
+        22.21388247403297,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        1.0,
+        17.0,
+        17.0
+      ],
+      "kind": "motor_mount",
+      "shape": "cylinder",
+      "bore_mm": 10.5,
+      "limits_u_mm": [
+        -67.4986,
+        -65.4986
+      ]
+    },
+    {
+      "name": "LL_motor_bridge_0",
+      "group": 2,
+      "center": [
+        -47.7994940774677,
+        13.50468395241866,
+        37.472191289246474
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        19.65,
+        5.0,
+        2.0
+      ],
+      "kind": "motor_mount",
+      "shape": "box",
+      "limits_u_mm": [
+        -65.4986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "LL_motor_bridge_1",
+      "group": 2,
+      "center": [
+        -59.58460709724349,
+        1.7195709326428679,
+        12.527808710753527
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        19.65,
+        5.0,
+        2.0
+      ],
+      "kind": "motor_mount",
+      "shape": "box",
+      "limits_u_mm": [
+        -65.4986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "LL_belt_drive_cover",
+      "group": 2,
+      "center": [
+        -21.272194619446054,
+        -24.807728525378785,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        4.5,
+        15.82394487827058,
+        15.82394487827058
+      ],
+      "kind": "belt_cover",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "LL_belt_hinge_cover",
+      "group": 2,
+      "center": [
+        -47.72970773009197,
+        -51.26524163602469,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        4.5,
+        15.82394487827058,
+        15.82394487827058
+      ],
+      "kind": "belt_cover",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "LL_belt_span_0",
+      "group": 2,
+      "center": [
+        -28.8739741987871,
+        -32.409508104719826,
+        49.41006536922753
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        4.5,
+        22.5,
+        1.5
+      ],
+      "kind": "belt_cover",
+      "shape": "box",
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "LL_belt_span_1",
+      "group": 2,
+      "center": [
+        -40.12792815075093,
+        -43.66346205668365,
+        25.58993463077247
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.5879447357921314,
+          -0.3928371006591932
+        ],
+        [
+          -0.7071067811865477,
+          -0.5879447357921312,
+          -0.39283710065919303
+        ],
+        [
+          0.0,
+          0.5555555555555556,
+          -0.8314794192830982
+        ]
+      ],
+      "half": [
+        4.5,
+        22.5,
+        1.5
+      ],
+      "kind": "belt_cover",
+      "shape": "box",
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "LR_motor",
+      "group": 3,
+      "center": [
+        93.78500508063284,
+        47.70508193580797,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        35.04999999999999,
+        11.0,
+        11.0
+      ],
+      "kind": "motor",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -137.59859999999998,
+        -67.4986
+      ]
+    },
+    {
+      "name": "LR_motor_shaft",
+      "group": 3,
+      "center": [
+        63.23799213337398,
+        17.158068988549132,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        8.149999999999999,
+        3.0,
+        3.0
+      ],
+      "kind": "motor_shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -67.4986,
+        -51.1986
+      ]
+    },
+    {
+      "name": "LR_coupling",
+      "group": 3,
+      "center": [
+        53.93953796077089,
+        7.859614815946031,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        15.0,
+        10.0,
+        10.0
+      ],
+      "kind": "coupling",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -61.1986,
+        -31.1986
+      ]
+    },
+    {
+      "name": "LR_input_bearing_A",
+      "group": 3,
+      "center": [
+        35.55476164992064,
+        -10.525161494904198,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -24.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "LR_input_retention_A",
+      "group": 3,
+      "center": [
+        41.211615899413026,
+        -4.86830724541182,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -30.1986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "LR_input_bearing_B",
+      "group": 3,
+      "center": [
+        12.485544335065764,
+        -33.594378809759064,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        8.426200000000001,
+        16.4262
+      ]
+    },
+    {
+      "name": "LR_input_retention_B",
+      "group": 3,
+      "center": [
+        6.828690085573383,
+        -39.25123305925145,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        18.4262,
+        22.4262
+      ]
+    },
+    {
+      "name": "LR_input_shaft",
+      "group": 3,
+      "center": [
+        27.423033666275344,
+        -18.65688947854949,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        32.5,
+        5.0,
+        5.0
+      ],
+      "kind": "shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -41.1986,
+        23.8014
+      ]
+    },
+    {
+      "name": "LR_input_pulley_flange",
+      "group": 3,
+      "center": [
+        21.272194619446044,
+        -24.807728525378792,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        6.426200000000001,
+        15.875,
+        15.875
+      ],
+      "kind": "pulley_flange",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -6.426200000000001,
+        6.426200000000001
+      ]
+    },
+    {
+      "name": "LR_input_pulley_hub",
+      "group": 3,
+      "center": [
+        28.564162589754197,
+        -17.515760555070642,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        3.886199999999999,
+        9.8552,
+        9.8552
+      ],
+      "kind": "pulley_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -14.198599999999999,
+        -6.426200000000001
+      ]
+    },
+    {
+      "name": "LR_output_bearing_A",
+      "group": 3,
+      "center": [
+        62.01227476056655,
+        -36.98267460555011,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -24.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "LR_output_retention_A",
+      "group": 3,
+      "center": [
+        67.66912901005892,
+        -31.325820356057733,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -30.1986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "LR_output_bearing_B",
+      "group": 3,
+      "center": [
+        38.943057445711666,
+        -60.051891920404984,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.0,
+        13.0,
+        13.0
+      ],
+      "kind": "bearing",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        8.426200000000001,
+        16.4262
+      ]
+    },
+    {
+      "name": "LR_output_retention_B",
+      "group": 3,
+      "center": [
+        33.28620319621928,
+        -65.70874616989735,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        2.0,
+        6.1,
+        6.1
+      ],
+      "kind": "retention_allowance",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        18.4262,
+        22.4262
+      ]
+    },
+    {
+      "name": "LR_output_shaft",
+      "group": 3,
+      "center": [
+        46.809478965055774,
+        -52.185470401060876,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        33.5,
+        5.0,
+        5.0
+      ],
+      "kind": "shaft",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -32.1986,
+        34.8014
+      ]
+    },
+    {
+      "name": "LR_output_pulley_flange",
+      "group": 3,
+      "center": [
+        47.729707730091945,
+        -51.265241636024705,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        6.426200000000001,
+        15.875,
+        15.875
+      ],
+      "kind": "pulley_flange",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -6.426200000000001,
+        6.426200000000001
+      ]
+    },
+    {
+      "name": "LR_output_pulley_hub",
+      "group": 3,
+      "center": [
+        55.0216757004001,
+        -43.973273665716555,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        3.886199999999999,
+        9.8552,
+        9.8552
+      ],
+      "kind": "pulley_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        -14.198599999999999,
+        -6.426200000000001
+      ]
+    },
+    {
+      "name": "LR_finger_metal_hub",
+      "group": 3,
+      "center": [
+        27.629348946726903,
+        -71.36560041938974,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        5.0,
+        12.0,
+        12.0
+      ],
+      "kind": "finger_hub",
+      "shape": "cylinder",
+      "bore_mm": 10,
+      "limits_u_mm": [
+        23.4262,
+        33.4262
+      ]
+    },
+    {
+      "name": "LR_bearing_bridge_A",
+      "group": 3,
+      "center": [
+        49.49062498643014,
+        -23.046811269040607,
+        37.5
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        5.0,
+        39.5,
+        17.0
+      ],
+      "kind": "bridge_plate",
+      "shape": "box",
+      "limits_u_mm": [
+        -26.1986,
+        -16.1986
+      ]
+    },
+    {
+      "name": "LR_bearing_bridge_B",
+      "group": 3,
+      "center": [
+        25.007194109202167,
+        -47.53024214626858,
+        37.5
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        5.0,
+        39.5,
+        17.0
+      ],
+      "kind": "bridge_plate",
+      "shape": "box",
+      "limits_u_mm": [
+        8.426200000000001,
+        18.4262
+      ]
+    },
+    {
+      "name": "LR_central_tie",
+      "group": 3,
+      "center": [
+        37.248909547816154,
+        -35.28852670765459,
+        37.5
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        12.3124,
+        2.0,
+        5.0
+      ],
+      "kind": "tie",
+      "shape": "box",
+      "limits_u_mm": [
+        -16.1986,
+        8.426200000000001
+      ]
+    },
+    {
+      "name": "LR_motor_flange",
+      "group": 3,
+      "center": [
+        68.2938056188578,
+        22.213882474032943,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        1.0,
+        17.0,
+        17.0
+      ],
+      "kind": "motor_mount",
+      "shape": "cylinder",
+      "bore_mm": 10.5,
+      "limits_u_mm": [
+        -67.4986,
+        -65.4986
+      ]
+    },
+    {
+      "name": "LR_motor_bridge_0",
+      "group": 3,
+      "center": [
+        59.58460709724349,
+        1.7195709326428439,
+        12.52780871075353
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        19.65,
+        5.0,
+        2.0
+      ],
+      "kind": "motor_mount",
+      "shape": "box",
+      "limits_u_mm": [
+        -65.4986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "LR_motor_bridge_1",
+      "group": 3,
+      "center": [
+        47.7994940774677,
+        13.50468395241864,
+        37.47219128924647
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        19.65,
+        5.0,
+        2.0
+      ],
+      "kind": "motor_mount",
+      "shape": "box",
+      "limits_u_mm": [
+        -65.4986,
+        -26.1986
+      ]
+    },
+    {
+      "name": "LR_belt_drive_cover",
+      "group": 3,
+      "center": [
+        21.272194619446044,
+        -24.807728525378792,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        15.82394487827058,
+        15.82394487827058
+      ],
+      "kind": "belt_cover",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "LR_belt_hinge_cover",
+      "group": 3,
+      "center": [
+        47.729707730091945,
+        -51.265241636024705,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        15.82394487827058,
+        15.82394487827058
+      ],
+      "kind": "belt_cover",
+      "shape": "cylinder",
+      "bore_mm": 0,
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "LR_belt_span_0",
+      "group": 3,
+      "center": [
+        40.127928150750904,
+        -43.66346205668367,
+        25.58993463077247
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        22.5,
+        1.5
+      ],
+      "kind": "belt_cover",
+      "shape": "box",
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    },
+    {
+      "name": "LR_belt_span_1",
+      "group": 3,
+      "center": [
+        28.87397419878708,
+        -32.40950810471983,
+        49.41006536922753
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.5879447357921311,
+          -0.392837100659193
+        ],
+        [
+          -0.7071067811865474,
+          -0.5879447357921314,
+          0.3928371006591932
+        ],
+        [
+          -0.0,
+          0.5555555555555556,
+          0.8314794192830981
+        ]
+      ],
+      "half": [
+        4.5,
+        22.5,
+        1.5
+      ],
+      "kind": "belt_cover",
+      "shape": "box",
+      "limits_u_mm": [
+        -4.5,
+        4.5
+      ]
+    }
+  ],
+  "cad_qa": {
+    "component_count": 112,
+    "all_shapes_valid": true,
+    "step_roundtrip_valid": true,
+    "step_solid_count": 112,
+    "exact_envelope_intersections_for_obb_flags": [
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_bearing_bridge_B",
+        "projection_gap_mm": -1.735767927740799,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.6416484317591373
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_motor",
+        "projection_gap_mm": -8.288839396127688,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.0
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_coupling",
+        "projection_gap_mm": 0.15087947255586798,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.3673588951916504
+      },
+      {
+        "a": "UR_output_bearing_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -11.065662346919803,
+        "envelope_intersection_volume_mm3": 70.48890519943846,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UR_output_retention_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -0.7057835794650824,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.1206550034883485
+      },
+      {
+        "a": "UR_output_shaft",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -3.182653948161885,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.006425737910593
+      },
+      {
+        "a": "UR_output_pulley_hub",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -1.1443004487612,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.8787553574101619
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor",
+        "projection_gap_mm": -12.30073941207629,
+        "envelope_intersection_volume_mm3": 668.5737288963418,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_shaft",
+        "projection_gap_mm": 0.5907586221881838,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.4596040679553473
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_coupling",
+        "projection_gap_mm": -3.849120527444125,
+        "envelope_intersection_volume_mm3": 3.1062243216049,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_flange",
+        "projection_gap_mm": -14.810204093003629,
+        "envelope_intersection_volume_mm3": 134.308133528459,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UR_bearing_bridge_A",
+        "b": "LR_motor_bridge_0",
+        "projection_gap_mm": 0.46848213470402733,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.6501816392495758
+      },
+      {
+        "a": "UR_bearing_bridge_B",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": -1.7357679277408025,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.641648431759154
+      },
+      {
+        "a": "UR_bearing_bridge_B",
+        "b": "UL_bearing_bridge_B",
+        "projection_gap_mm": -6.748143493108131,
+        "envelope_intersection_volume_mm3": 185.76052127995865,
+        "envelope_distance_mm": 2.1388847413025116e-16
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_motor",
+        "projection_gap_mm": -8.288839396127692,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.0
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_coupling",
+        "projection_gap_mm": 0.15087947255586442,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.3673588951916424
+      },
+      {
+        "a": "UL_output_bearing_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -11.065662346919842,
+        "envelope_intersection_volume_mm3": 70.48890519943855,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UL_output_retention_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -0.7057835794650718,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.120655003488352
+      },
+      {
+        "a": "UL_output_shaft",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -3.1826539481618923,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 3.0064257379105914
+      },
+      {
+        "a": "UL_output_pulley_hub",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -1.144300448761232,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.8787553574101418
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor",
+        "projection_gap_mm": -12.300739412076261,
+        "envelope_intersection_volume_mm3": 668.5737308189471,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_shaft",
+        "projection_gap_mm": 0.5907586221881687,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.4596040679553213
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_coupling",
+        "projection_gap_mm": -3.8491205274441356,
+        "envelope_intersection_volume_mm3": 3.106224327586402,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_flange",
+        "projection_gap_mm": -14.810204093003618,
+        "envelope_intersection_volume_mm3": 134.3081335284589,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "UL_bearing_bridge_A",
+        "b": "LL_motor_bridge_1",
+        "projection_gap_mm": 0.46848213470399,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.6501816392495512
+      },
+      {
+        "a": "LL_input_bearing_B",
+        "b": "LR_input_bearing_B",
+        "projection_gap_mm": -4.374228540641916,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.9294581097889267
+      },
+      {
+        "a": "LL_input_bearing_B",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": -6.374228540641927,
+        "envelope_intersection_volume_mm3": 67.98330060944123,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "LL_input_retention_B",
+        "b": "LR_input_retention_B",
+        "projection_gap_mm": -0.8036872142552074,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.2022503159247107
+      },
+      {
+        "a": "LL_input_retention_B",
+        "b": "LR_input_shaft",
+        "projection_gap_mm": 0.7220512580673066,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.663453440703297
+      },
+      {
+        "a": "LL_input_shaft",
+        "b": "LR_input_retention_B",
+        "projection_gap_mm": 0.7220512580673075,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 2.6634534407033033
+      },
+      {
+        "a": "LL_input_shaft",
+        "b": "LR_input_shaft",
+        "projection_gap_mm": -0.6531487419326858,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 1.8130587435596297
+      },
+      {
+        "a": "LL_input_pulley_flange",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": 0.07763156000347493,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.07763156000347479
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_input_bearing_B",
+        "projection_gap_mm": -6.374228540641923,
+        "envelope_intersection_volume_mm3": 67.98330074717737,
+        "envelope_distance_mm": 0.0
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_input_pulley_flange",
+        "projection_gap_mm": 0.07763156000346161,
+        "envelope_intersection_volume_mm3": 0.0,
+        "envelope_distance_mm": 0.0776315600034729
+      },
+      {
+        "a": "LL_bearing_bridge_B",
+        "b": "LR_bearing_bridge_B",
+        "projection_gap_mm": -11.922368439996536,
+        "envelope_intersection_volume_mm3": 996.9336082906058,
+        "envelope_distance_mm": 0.0
+      }
+    ],
+    "scope": "nominal envelopes with bearing holes; NOT full machine geometry, not load approval"
+  }
+}

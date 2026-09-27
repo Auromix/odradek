@@ -1,0 +1,214 @@
+{
+  "revision": "R4-support-01",
+  "license": "CC-BY-NC-4.0",
+  "notice": "License covers original study, not manufacturer documents; no manufacturer PDFs redistributed.",
+  "sources": [
+    {
+      "id": "GS-01",
+      "manufacturer": "FAULHABER",
+      "title": "22GPT HT gearhead datasheet",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_22GPT_HT_FCH.pdf",
+      "locator": "PDF pp.1–2; drawing and KS options p.2; edition 2026-07-28",
+      "facts": {
+        "four_stage_continuous_torque_Nm": 3.7,
+        "radial_load_at_10mm_from_mounting_face_N": 300,
+        "shaft_nominal_diameter_mm": 6,
+        "shaft_diameter_deviation_mm": [
+          -0.018,
+          -0.01
+        ],
+        "shaft_extension_mm": 16.3,
+        "KS1": "round plain shaft; L3=16.3 mm",
+        "mounting": "6 x M2, 3 mm deep; max tightening 35 Ncm"
+      },
+      "limits": [
+        "300 N is specified at 10 mm; not a universal moment/load envelope",
+        "KS1 and final motor/gear/encoder combined drawing must be confirmed; 70.1 mm is project estimate"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verification": "online official text; selected PDFs additionally inspected locally",
+      "verified_pdf_sha256": "09692c2688b2d4fc6c33e3a03228a4d851786bd604d04a20b2ac42634ea67447"
+    },
+    {
+      "id": "GS-02",
+      "manufacturer": "SKF",
+      "title": "Rolling bearings catalogue 17000/1 EN",
+      "url": "https://cdn.skfmediahub.skf.com/api/public/0901d196802809de/pdf_preview_medium/0901d196802809de_pdf_preview_medium.pdf",
+      "locator": "Printed pp.264–265 (PDF pp.266–267), 6000-2RSH; printed p.142 (PDF p.144), rotating/oscillating ring load fits",
+      "facts": {
+        "part": "6000-2RSH",
+        "d_D_B_mm": [
+          10,
+          26,
+          8
+        ],
+        "C_N": 4750,
+        "C0_N": 1960,
+        "mass_kg": 0.019,
+        "da_min_max_mm": [
+          12,
+          12.5
+        ],
+        "Da_max_mm": 24,
+        "ra_max_mm": 0.3,
+        "fit_rule": "ring subjected to rotating or oscillating load normally needs adequate interference"
+      },
+      "limits": [
+        "C and C0 are individual bearing catalogue ratings, not gripper payload ratings",
+        "L10 full-rotation formula does not establish oscillatory gripper life"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verification": "online official text; selected PDFs additionally inspected locally",
+      "verified_pdf_sha256": "65e0919bee24975b9563ca0d9adf721a9e7efcf6d0fa32c18b8d119d37b190b2"
+    },
+    {
+      "id": "GS-03",
+      "manufacturer": "NBK",
+      "title": "MJC-20CS-EGR dimensional product table",
+      "url": "https://www.nbk1560.com/en/products/coupling/couplicon/jaw_type/MJC-CS-EGR/MJC-20CS-EGR/?SelectedLanguage=en",
+      "locator": "Dimension Drawing; specifications; standard bores 6 and 10 mm",
+      "facts": {
+        "configured_part": "MJC-20CS-EGR-6-10",
+        "OD_mm": 20,
+        "length_mm": 30,
+        "hub_L_mm": 10,
+        "rated_torque_Nm": 6,
+        "max_torque_Nm": 12,
+        "torsional_stiffness_Nm_per_rad": 87,
+        "lateral_misalignment_mm": 0.08,
+        "angular_misalignment_deg": 1,
+        "axial_misalignment_mm": [
+          0,
+          0.8
+        ],
+        "mass_at_max_bores_g": 16,
+        "6mm_hub_clamp_screw": "M2.5; tightening 1 Nm",
+        "10mm_hub_clamp_screw": "M2; tightening .5 Nm"
+      },
+      "limits": [
+        "Configured from official bore matrix and product code convention; checkout/stock not verified",
+        "16 g is maximum-bore reference, not certified mass of the 6/10 mm variant"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verification": "online official text; selected PDFs additionally inspected locally"
+    },
+    {
+      "id": "GS-04",
+      "manufacturer": "NBK",
+      "title": "MJC-CS family technical catalogue",
+      "url": "https://www.nbk1560.com/images/en/product/jaw_type/MJC-CS-EGR/MJC-CS-EGR_1.pdf",
+      "locator": "PDF p.1 Easy Fit properties; p.3 dimension/performance/temperature table; p.4 slip table and test conditions",
+      "facts": {
+        "MJC20CS_slip_6mm_Nm": 6.4,
+        "MJC20CS_slip_10mm_Nm": 6,
+        "slip_test_conditions": "shaft h7; hardness 34–40 HRC; specified clamp screw tightening torque",
+        "temperature_factor_40_to_60C": 0.7,
+        "easy_fit_zero_backlash_claim": false
+      },
+      "limits": [
+        "FAULHABER -0.018 mm lower shaft limit is outside the h7 test basis at nominal 6 mm",
+        "MJC30CS 6 mm bore slip value is only 4 Nm; do not use elastomer 16 Nm as connection rating",
+        "Jaw coupling compliance/reaction force remains; isolation is not mathematically zero lateral force"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verification": "online official text; selected PDFs additionally inspected locally",
+      "verified_pdf_sha256": "fe7b9d1fdcc333cf3498070a03c2c679bdbfaa73247c6000e38f4f8f10ca26d6"
+    },
+    {
+      "id": "GS-05",
+      "manufacturer": "Gates",
+      "title": "Light Power and Precision Drive Design Manual",
+      "url": "https://www.gates.com/content/dam/documents-library/catalogs/light-power-and-precision-manual.pdf",
+      "download_url": "https://assets.gates.com/content/dam/documents-library/catalogs/light-power-and-precision-manual.pdf",
+      "locator": "Printed p.31 (PDF p.33): Type 6F drawing; printed p.32 (PDF p.34): 3MR-30S-09 row under GT3 / 3MGT-09",
+      "facts": {
+        "part": "3MR-30S-09",
+        "type": "6F",
+        "teeth": 30,
+        "pitch_diameter_in": 1.128,
+        "tooth_OD_in": 1.098,
+        "flange_reference_OD_in": 1.25,
+        "W_in": 0.4,
+        "L_total_in": 0.812,
+        "H_hub_diameter_in": 0.776,
+        "E_hub_projection_in": 0.306,
+        "plain_bore_min_in": 0.25,
+        "plain_bore_max_in": 0.563,
+        "material": "clear anodized aluminum",
+        "mass_lb": 0.05,
+        "stock_set_screws": "2 x 8-32, 90 degrees"
+      },
+      "limits": [
+        "W is the tooth working face between flanges; L is overall axial length; E is projecting hub length",
+        "Bore stocked at minimum; 10 mm bore and positive torque connection need machining and acceptance",
+        "Flange OD is reference; not a manufacturing tolerance model",
+        "Set screw count is not a 3.7 Nm proof"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verification": "online official text; selected PDFs additionally inspected locally",
+      "verified_pdf_sha256": "ef9f602173dbaec8483c81e17f4a9c90046ccd5f737c5cb10f1bf41c40912cdc"
+    },
+    {
+      "id": "GS-06",
+      "manufacturer": "Gates",
+      "title": "Industrial Power Transmission Product Catalog",
+      "url": "https://www.gates.com/content/dam/documents-library/catalogs/power-transmission-catalog.pdf",
+      "locator": "PowerGrip GT sprockets 3MR-09; PowerGrip GT3 3MGT-09 belt table",
+      "facts": {
+        "pulley_part": "3MR-30S-09",
+        "pulley_product_no": "7843-6011",
+        "belt_part": "180-3MGT-09",
+        "belt_product_no": "9400-4060",
+        "belt_teeth": 60,
+        "belt_pitch_length_mm": 180,
+        "belt_width_mm": 9
+      },
+      "limits": [
+        "Orderability is catalog existence, not a current inventory/lead-time promise",
+        "The nominal 45 mm centre distance requires assembly/tension adjustment; fixed 45 mm is not a prescribed tension"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verification": "online official text; selected PDFs additionally inspected locally"
+    },
+    {
+      "id": "GS-07",
+      "manufacturer": "MISUMI",
+      "title": "Driving shafts — straight type",
+      "url": "https://jp.misumi-ec.com/vona2/detail/110300098640/",
+      "locator": "KZAF10 model list, specification table and alterations",
+      "facts": {
+        "base_candidates": [
+          "KZAF10-65",
+          "KZAF10-67"
+        ],
+        "D_mm": 10,
+        "length_range_mm": [
+          50,
+          300
+        ],
+        "length_increment_mm": 0.5,
+        "material": "S45C",
+        "surface_hardness": "induction hardened, >=50 HRC",
+        "shaft_tolerance": "h6",
+        "alteration_options": [
+          "keyway position/length KA/HA",
+          "retaining ring grooves TA/TB"
+        ]
+      },
+      "limits": [
+        "Exact alterations and current order strings not submitted to configuration validator",
+        "h6 is not an interference-fit release for rotating/oscillating bearing inner rings",
+        "Hardness >=50 HRC is outside NBK slip test hardness 34–40 HRC; no automatic torque qualification"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verification": "online official text; selected PDFs additionally inspected locally"
+    }
+  ]
+}

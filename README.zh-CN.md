@@ -12,7 +12,7 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 
 ![由实际布局参数生成的 R4 装配](engineering/generated/layout/odradek-r4-inspect.png)
 
-图中采用目录尺寸的关节及驱动包络，承力连接、轴支承与线束尚在深化。旧底板占位已发现与 J1 后壳干涉，必须采用后续独立安装／底座研究修正，不能照图直接制造。
+图中采用目录尺寸的关节和不完整的驱动占位。[独立底座候选](docs/engineering/base-structure-study.md)已避开旧实心底板与 J1 后壳的冲突；[双支承传动研究](docs/engineering/gripper-shaft-support-study.md)则发现加入真实轮宽、轴承及联轴器后，旧紧凑驱动布置不能成立。这些修订还没有汇入完整总装，不能照图直接制造。
 
 | 入口 | 内容与范围 |
 |---|---|

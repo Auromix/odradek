@@ -10,12 +10,15 @@
 | 本体数学 | [运动学与动力学](arm-mathematics.md)／[静力独立审查](arm-screening-review.md) | 解析回归、独立重量叉乘、质心敏感性；非实机额定值 |
 | 夹爪数学 | [当前抓取 LP 审查](grasp-screening-review.md)／[独立角域分离](petal-certificate-review.md) | 72 个条件接触场景；16 实体独立角域闭合证明，不含完整支承 |
 | 材料与梁 | [截面筛选](structure-screening.md) | 6061-T6 闭口矩形梁与双管比较；不含完整连接柔度 |
+| 底座 | [开腔底座及倾覆计算](base-structure-study.md) | 5种原创零件、8件装配、4页图；固定到桌架的候选，未承载放行 |
+| 指轴支承 | [单指双支承与四组反例](gripper-shaft-support-study.md) | 修正带轮真实宽度，否定旧紧凑切向布局；正在重新布置传动 |
 | 接口 | [试装片](interface-coupon-guide.md)／[J1与J7安装](mount-interface-study.md) | 原厂真实孔位、逐实体避让、原创尺寸图；螺纹有效起点等未冻结 |
 | 打印台架 | [单指手动台架](../../engineering/generated/finger-fixture/README.md) | 四件打印件与五页图纸，无动力无载 |
 | 元件 | [主 BOM](hardware/bom.csv)／[BOM口径](hardware/bom-notes.md) | 候选、blocked 和 TBD 逐项区分，不是一键采购整机表 |
 | 电气 | [架构](electrical-architecture.svg)／[线束](harness-and-connectors.md) | 7本体＋4指伺服＋1头IO，共12从站；视频独立GMSL候选 |
 | 光学台架 | [采购和搭建](hardware/optical-bench-build.md) | 双鱼眼、Duo采集、AGX Orin及固定驱动链，尚未实装 |
 | 单轴台架 | [采购和搭建](hardware/single-axis-bench-build.md) | IPC、电源、原厂通信转接及未放行针脚/保护项 |
+| 灯光与IO | [609点LED与控制/功率](hardware/head-lighting-io-selection.md) | 真实圆形点阵与四片LED坐标，MCU/ESC/电源候选；不是完整PCB |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
 | 放行差距 | [发布检查清单](release-checklist.md) | 对应证据和实际未完成事项 |
 
