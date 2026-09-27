@@ -8451,10 +8451,10 @@
     }
   },
   "reproduction": {
-    "script_filename": "pack.py",
-    "script_sha256": "28ae47c5d58dbc42230bf25404c6c6c506ff6904e3463da92963dcc8da8e4782",
+    "script_filename": "engineering/legacy/pack.py",
+    "script_sha256": "a7da958089ebbca2ce20fb9756f764c7dfd93f173605180e91bd29eb3d7f9ff0",
     "runtime": "Python 3 + NumPy; no optimization library required",
-    "execution": "python3 pack.py --output gripper-drive-packaging.json",
+    "execution": "python engineering/legacy/pack.py --output /path/to/numeric-report.json; source and reproduction metadata are separate annotations",
     "randomness": "none",
     "qa": [
       "SAT separated/touching/intersecting axis-aligned cases",
@@ -8462,7 +8462,8 @@
       "45 mm pulley separation all four drives",
       "front face and shaft length coordinate assertions",
       "explicit common point proves failed parent layout pulley-cylinder overlap"
-    ]
+    ],
+    "historical_scope": "Numeric envelope study with assumed 14 mm total pulley width; not final catalog geometry. Header/path changed; computation unchanged."
   },
   "sources": [
     {
