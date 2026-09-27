@@ -1,0 +1,245 @@
+{
+  "revision": "RAISED-ARM-TABLE01",
+  "assumed_table_surface_world_Z_mm": 0,
+  "method": "Transform all eight corners of each home actual-BREP containing AABB; min world Z is a conservative support lower bound for that pose. This is not an interpolated trajectory check.",
+  "poses": {
+    "zero_open": {
+      "angles_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "L23_output_adapter",
+        "z_lower_bound_mm": 149.0
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    },
+    "inspect_open": {
+      "angles_deg": [
+        0,
+        -25,
+        0,
+        -95,
+        0,
+        -15,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "L23_output_adapter",
+        "z_lower_bound_mm": 126.35395865106145
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    },
+    "reach_open": {
+      "angles_deg": [
+        0,
+        65,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "L23_output_adapter",
+        "z_lower_bound_mm": 121.51706339810193
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    },
+    "shoulder_plus_90_open": {
+      "angles_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "HEAD_UR_metal_blade_with_narrow_tongue",
+        "z_lower_bound_mm": 20.771515101932863
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    },
+    "shoulder_minus_90_open": {
+      "angles_deg": [
+        0,
+        -90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "HEAD_UL_metal_blade_with_narrow_tongue",
+        "z_lower_bound_mm": 20.771515101928856
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    },
+    "zero_closed": {
+      "angles_deg": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "L23_output_adapter",
+        "z_lower_bound_mm": 149.0
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    },
+    "inspect_closed": {
+      "angles_deg": [
+        0,
+        -25,
+        0,
+        -95,
+        0,
+        -15,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "L23_output_adapter",
+        "z_lower_bound_mm": 126.35395865106145
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    },
+    "reach_closed": {
+      "angles_deg": [
+        0,
+        65,
+        0,
+        10,
+        0,
+        10,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "L23_output_adapter",
+        "z_lower_bound_mm": 121.51706339810193
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    },
+    "shoulder_plus_90_closed": {
+      "angles_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "HEAD_UR_P16_envelope_case",
+        "z_lower_bound_mm": 102.21614191793853
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    },
+    "shoulder_minus_90_closed": {
+      "angles_deg": [
+        0,
+        -90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "part_count": 728,
+      "minimum": {
+        "part": "J1",
+        "z_lower_bound_mm": 1.9999998000000005
+      },
+      "moving_after_J2_minimum": {
+        "part": "HEAD_UL_P16_envelope_case",
+        "z_lower_bound_mm": 102.21614191793853
+      },
+      "all_part_bounds_positive": true,
+      "potentially_below_plane": []
+    }
+  },
+  "source_hashes": {
+    "engineering/generated/integrated-collision-study/poses.json": "4cd20a5c254a9d1d197f98f5d9a83c913cc1b973315303adda1ca098e0e7ba2b",
+    "engineering/generated/raised-arm-integration01/assembly-parameters.json": "e200f2f084e3626a9f489bfa9806a816f7020e952810ce754fea9a2828fc1227",
+    "engineering/generated/raised-arm-integration01/collision-poses.json": "a2a61ec2afc8a60ec94070f160227d31ba525e9d396101730c3e7f200ab6be18",
+    "engineering/generated/shoulder-raise-01/part-placements.json": "1f735370b9ad30c2dbff91338658504f2a109fb523f2badc39832e4d9f2beedc",
+    "engineering/generated/shoulder-raise-01/RAISE01-L12-output_adapter.step": "37ee25b310971806a75f86b1f394ed4135c1c7c2b34b84d2b47497b53ae31d96",
+    "engineering/generated/shoulder-raise-01/RAISE01-L12-rear_fork.step": "4f84e228b9b8dc8b619b1671f2d340c8d05ae91a9be1d6722b5a2cc20ddf862c",
+    "engineering/generated/shoulder-raise-01/RAISE01-L12-front_ring.step": "adbb052f3a0f8c6b4476561f7dcd56d6ecac86dffe443b47147cdb575140409f",
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+    "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73"
+  },
+  "generator_sha256": "9922441caacad1d67fa28003f26deeb757791273c24077fc792eb626b4664f37",
+  "manufacturing_release": false,
+  "omissions": [
+    "Actual tabletop geometry, mounting cutouts and backing plate interaction are separate; base anchor solids excluded deliberately",
+    "No object or tools, arm/base detailed fasteners, wiring or guards",
+    "No deflection, tolerance or motion-path margin; no real environment reconstruction"
+  ]
+}
