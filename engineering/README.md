@@ -53,6 +53,8 @@ blender --background --factory-startup --python engineering/build_blender.py
 
 Blender 保存 7＋4 层级和 360 帧几何演示，另输出三视角渲染。原生层级 TCP 与独立矩阵计算在三姿态下检查到小于 0.001 mm。动画不含真实速度、加速度、控制或抓取轨迹资格验证。
 
+新增 LINK56、固定底座及 CONTACT-02 的[原生分组件检查包](../docs/engineering/subassembly-blender-review.md)独立保存为 `generated/component-reviews/odradek-r4-subassemblies.blend`，含三个场景和五张渲染。使用 `export_component_reviews.py --output /tmp/odradek-component-meshes.json` 从已有 STEP 导出，然后由 Blender 执行 `blender_component_reviews.py -- --mesh-json /tmp/odradek-component-meshes.json`。它没有将三个研究机械集成为新整臂。
+
 ## 无动力打印件与接口研究
 
 ```sh

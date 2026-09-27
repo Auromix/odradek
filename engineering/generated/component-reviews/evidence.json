@@ -1,0 +1,115 @@
+{
+  "revision": "R4-SUBASSEMBLY-REVIEW-01",
+  "scene_names": [
+    "01_LINK56_connection",
+    "02_anchored_base",
+    "03_CONTACT02_four_axes"
+  ],
+  "product_meshes_per_scene": {
+    "01_LINK56_connection": 6,
+    "02_anchored_base": 8,
+    "03_CONTACT02_four_axes": 23
+  },
+  "finger_pivot_checks": [
+    {
+      "finger": "UR",
+      "q_deg": 0,
+      "vertex_error_mm": 0.0
+    },
+    {
+      "finger": "UR",
+      "q_deg": 97.79071733445441,
+      "vertex_error_mm": 2.071095875186042e-06
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "vertex_error_mm": 8.40017869953953e-06
+    },
+    {
+      "finger": "UL",
+      "q_deg": 0,
+      "vertex_error_mm": 0.0
+    },
+    {
+      "finger": "UL",
+      "q_deg": 97.79071733445441,
+      "vertex_error_mm": 5.285630126569082e-06
+    },
+    {
+      "finger": "UL",
+      "q_deg": 109.0,
+      "vertex_error_mm": 1.6253127733587021e-06
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0,
+      "vertex_error_mm": 0.0
+    },
+    {
+      "finger": "LL",
+      "q_deg": 102.2192953611798,
+      "vertex_error_mm": 0.0
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "vertex_error_mm": 7.450580596923828e-06
+    },
+    {
+      "finger": "LR",
+      "q_deg": 0,
+      "vertex_error_mm": 0.0
+    },
+    {
+      "finger": "LR",
+      "q_deg": 102.2192953611798,
+      "vertex_error_mm": 0.0
+    },
+    {
+      "finger": "LR",
+      "q_deg": 122.0,
+      "vertex_error_mm": 7.450580596923828e-06
+    }
+  ],
+  "source_hashes": {
+    "engineering/generated/link56-study/ODR-L56-OUT-R4.step": "d4ddce09c985ed17978c6c8e4baa65a5bc8b2780bcdab693d9af9b195ed92965",
+    "engineering/generated/link56-study/ODR-L56-LOW-R4.step": "f5b6168a2005bd274f9386dc0c7b23eeb6a0fe19f41401d2d6940995ef25e367",
+    "engineering/generated/link56-study/ODR-L56-TUBE-R4.step": "35a80d7d70bfbb8b2a5d24be0702b658f70a10f099952dc56542c6800a15b04b",
+    "engineering/generated/link56-study/ODR-L56-UP-R4.step": "13e21bbd8f7b9f6566bc8ad91f43ec0085669b843efdc033fad297ab42345e76",
+    "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step": "08a125b854dbdffdbca9b843cda446130092543cab7ed2964e1aed518bd17145",
+    "engineering/generated/link56-study/ODR-L56-FRONT-R4.step": "3cad09838550cd2e8d6bbfce6e722ada0054e7755feb1f67246dbdf90f583d70",
+    "engineering/generated/base-study/ODR-BASE-PLATE-R4.step": "97bbcd885fe5cea8cd74aacd8eb150622f1dc56e09b0c0cea6322a2810675b20",
+    "engineering/generated/base-study/ODR-BASE-BACK-R4.step": "59499632981755fd0b4fe84cabf4dda7d4bebc2d012192d536028b529855e49c",
+    "engineering/generated/base-study/ODR-J1-REAR-R4.step": "7b52cd9b4a93ee41660389e3281e1349e1f164a02faf75878208bf55bbc655dd",
+    "engineering/generated/base-study/ODR-J1-FRONT-R4.step": "d73426f29a7c4ffe79cadf635e4b472202bb56d10bc95d1ad02a1b0ec37e9ade",
+    "engineering/generated/base-study/ODR-BASE-LEG-R4.step": "1f3deba121cb3b49ceda8bd063d0ae4568f9fe5c6c224d04d23c7902ab716ad5",
+    "engineering/generated/contact02-study/parts-step/UR_structure.step": "c24354f135b3b75d945ff13449613fb45736c3ec2b605c9b71042d5a8732e917",
+    "engineering/generated/contact02-study/parts-step/UR_light.step": "147d591a894c9764916482cfcf9503ef2c71f6e88a1df746e9f23c8516818491",
+    "engineering/generated/contact02-study/parts-step/UR_pad_minus.step": "af1950b1cda174f11ced5ee9be2376c6f5d7a07d5a95de35cecbfd5032840888",
+    "engineering/generated/contact02-study/parts-step/UR_pad_plus.step": "58871fe1a29d01836251bb988fd9988269098ffcb7b66407aed43ec924fcf3c5",
+    "engineering/generated/contact02-study/parts-step/UL_structure.step": "ca66434cf8d05675cad02b2854b4bf104c390b21e915bb026362a247d83c368a",
+    "engineering/generated/contact02-study/parts-step/UL_light.step": "cddd632ebff0c0e5e1045d7682a56afbecf3c63fde28793ec3b6468d898e0c6a",
+    "engineering/generated/contact02-study/parts-step/UL_pad_minus.step": "d3fdf6324f0dc950ddab0d9a19bbaa5b23e17e80ea775a8929df643e0cd73ba4",
+    "engineering/generated/contact02-study/parts-step/UL_pad_plus.step": "a61b8a5a701c73f601737e3103c91cb79d39c88436337227319a09697bbad58d",
+    "engineering/generated/contact02-study/parts-step/LL_structure.step": "3cd5404a23277abfb2ec15c0dc823a90c216711c5228b643531123b23a794323",
+    "engineering/generated/contact02-study/parts-step/LL_light.step": "a4290bc272a3e054658b7706bea4a41567c48d0f098d1da80d529258bb7d6626",
+    "engineering/generated/contact02-study/parts-step/LL_pad_minus.step": "1144890740a3cefc28cfc7a5046a49dbb1a48e61fda4e5977767e42d3e405820",
+    "engineering/generated/contact02-study/parts-step/LL_pad_plus.step": "868b005b65476bda0d3e54bd61b00700bb36944bbcb71098f70ce8042fc2609d",
+    "engineering/generated/contact02-study/parts-step/LR_structure.step": "7c406196b40e97a4de14a414bba2ba4cd30c7d47d6196c4f81426ddc127ddca8",
+    "engineering/generated/contact02-study/parts-step/LR_light.step": "98c806238775e6f97245ff14ef4b906b9627326fbdb605a042647075821a81ce",
+    "engineering/generated/contact02-study/parts-step/LR_pad_minus.step": "ca9ab0775c53d3494f78af9104d1d378d80c7577110bc0afc98087d770bbcaa0",
+    "engineering/generated/contact02-study/parts-step/LR_pad_plus.step": "d7a834d60d28553f8dad7c6266d99f1a80341be33d0823c5ef770e93dfee98c5",
+    "engineering/generated/layout/parts-step/HEAD_screen.step": "0725014b9287fab8596181ac50e451655092410b3854a63269bc166246b22a6e",
+    "engineering/generated/layout/parts-step/CAM_-1_module.step": "a7c0dc91d1d0ac0e6088b45771e24b9be6880764595b44d14463dc2730b5384d",
+    "engineering/generated/layout/parts-step/CAM_-1_lens.step": "e66e31b9b2d2d82cbbc1882f3051f3795fdd40b81f2cca75982ded17ff63bc3f",
+    "engineering/generated/layout/parts-step/CAM_1_module.step": "2ed0db0c53067c1dca378a0eb4524434d3aaa5d1fcf252dc44cefeb3928b98f6",
+    "engineering/generated/layout/parts-step/CAM_1_lens.step": "2834c5df77f5604a20a943bd9fa6cf8ad6687aa49e33716637a2e81f8ca77828",
+    "engineering/generated/layout/parts-step/HEAD_front_core.step": "2b26eac887e35b94878a3f22d4d995ab6abbd98d6dcba6b14e987cb83ecf4664"
+  },
+  "export_generator_sha256": "d4579dd69543cb3954c59c2b00c072c72594c0626ec0fa9562c62b69d2f27b0f",
+  "blender_generator_sha256": "17f3374ad04e05263481d6762fa58fa8bafaa298a65785b579af8fbd5f0ed442",
+  "units": "mesh m; display mm",
+  "manufacturing_release": false,
+  "integration_status": "Independent review scenes, not a mechanically integrated new arm assembly"
+}

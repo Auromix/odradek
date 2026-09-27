@@ -19,6 +19,7 @@ The render exposes catalog-sized joint envelopes and provisional drive placehold
 | [Engineering index](docs/engineering/README.md) | Requirements, assumptions, source records, and release checklist |
 | [R4 layout and grasp](docs/engineering/r4-layout-and-grasp.md) | Same-parameter geometry, closure proof, conditional contact calculations, and optical sightlines |
 | [Blender assembly](engineering/generated/layout/odradek-r4-layout.blend) / [STEP](engineering/generated/layout/odradek-layout.step) | 7 arm pivots and 4 independent fingers; layout, not production assembly |
+| [New subassembly Blender scenes](docs/engineering/subassembly-blender-review.md) | Native LINK56, anchored base and four-finger contact review; five renders, not an integrated new arm |
 | [A3 review drawings](engineering/generated/layout/ODR-R4-assembly-review.pdf) | Axes, dimensions, and orthographic mesh views |
 | [Manual finger fixture](engineering/generated/finger-fixture/README.md) / [joint interface coupons](docs/engineering/interface-coupon-guide.md) | Unpowered printable geometry checks with dimensions |
 | [Hardware BOM](docs/engineering/hardware/bom.csv) / [optical bench](docs/engineering/hardware/optical-bench-build.md) | Sourced component candidates and a concrete dual-fisheye bench chain |
