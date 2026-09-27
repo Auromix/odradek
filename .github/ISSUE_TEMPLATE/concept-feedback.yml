@@ -1,0 +1,32 @@
+name: Concept feedback / 概念反馈
+description: Discuss a candidate, pose, or light-petal behavior.
+title: "[Concept] "
+body:
+  - type: dropdown
+    id: candidate
+    attributes:
+      label: Candidate / 候选
+      options:
+        - A FIELD
+        - B FRAME
+        - C SHELL
+        - Attention and behavior
+        - Shared architecture
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: Observation / 观察
+      description: Identify the image, pose, and practical or visual issue.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal and evidence / 建议与依据
+      description: Distinguish design preference, engineering hypothesis, and test evidence.
+  - type: textarea
+    id: validation
+    attributes:
+      label: What needs validation / 待验证内容
