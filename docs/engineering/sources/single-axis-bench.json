@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "revision": "SA-BENCH-01",
+  "checked_on": "2026-09-27",
+  "scope": "One fixed RH17, no arm, tool or workpiece; proposed electrical bench, not authorized for energization",
+  "status_semantics": {
+    "selected-for-single-axis-bench": "Exact design choice for this bench only; not proof of compatibility, purchasing, wiring completion or safe energization",
+    "candidate": "Specific part under evaluation; application ratings/configuration unresolved",
+    "blocked": "Mandatory unresolved hardware/interface; prevents applicable energization gate",
+    "TBD": "No exact part or existing resource established"
+  },
+  "sources": [
+    {
+      "id": "SA01",
+      "title": "MYACTUATOR RH original documentation archive",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_be98b58973d34f7aaa50bdf3f2aa12ed.zip",
+      "locator": "RH User Manual V1.4 §§5–8; RH-17 product manual 260805; EtherCAT control protocol V2.0_260425",
+      "verified_fact": "48 V nominal / 55 V maximum module input; brake takes power from module DC input; RH17 has RES interface; ECAT actual pin assignment follows product labels. Factory harness order codes and regeneration ratings unresolved.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA02",
+      "title": "Beckhoff C6015-0040 configuration",
+      "url": "https://www.beckhoff.com/en-us/products/ipc/pcs/c60xx-ultra-compact-industrial-pcs/c6015-0040.html",
+      "locator": "Options and technical data",
+      "verified_fact": "C9900-C657 2-core X7213RE / 8 GB; C9900-H855 80 GB SSD; C9900-M602 DIN mounting; two 100/1000/2500BASE-T ports.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA03",
+      "title": "Beckhoff TwinCAT/BSD ordering",
+      "url": "https://www.beckhoff.com/en-us/products/ipc/software-and-tools/operating-systems/c9900-s6xx-cxxxxx-0185.html",
+      "locator": "Ordering information",
+      "verified_fact": "C9900-S602 platform 40 includes C601x up to two cores in all generations.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA04",
+      "title": "Beckhoff TC1250",
+      "url": "https://www.beckhoff.com/en-us/products/automation/twincat/tcxxxx-twincat-3-base/tc1250.html",
+      "locator": "Product description and operating systems",
+      "verified_fact": "TC1250 combines PLC and NC PTP 10; includes TC1200 + TF5000; TwinCAT/BSD listed. Current catalog template TC1250-0v40; v field and build to be quoted.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA05",
+      "title": "Beckhoff C6015 technical data",
+      "url": "https://infosys.beckhoff.com/content/1033/c6015/9021305867.html",
+      "locator": "Technical data",
+      "verified_fact": "22–30 V DC, NEC Class 2 supply. Actual selected configuration power and X101 pin numbering to be confirmed against shipped generation manual.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA06",
+      "title": "Keysight E36232A product",
+      "url": "https://www.keysight.com/us/en/product/E36232A/200w-autoranging-power-supply-60v-10a.html",
+      "locator": "Product",
+      "verified_fact": "Single-channel 0–60 V / 0–10 A / 200 W autoranging supply. No regenerative-sink claim made.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA07",
+      "title": "Keysight E36200 data sheet",
+      "url": "https://www.keysight.com/content/dam/keysight/en/doc/ungate/data-sheets/5992-3747.pdf",
+      "locator": "5992-3747EN, 2026-03-03, pp.9–13",
+      "verified_fact": "CV/CC, OVP/OCP and slew controls. INH is pin 3; common pin 4 chassis-grounded; +16.5/-5 V maximum digital-pin rating. Includes output and digital mating terminal blocks.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA08",
+      "title": "Keysight E36200 programming guide",
+      "url": "https://www.keysight.com/ga/en/assets/9018-04839/programming-guides/9018-04839.pdf",
+      "locator": "OUTPut:INHibit:MODE",
+      "verified_fact": "LATChing/LIVE/OFF modes; INH configuration and power-cycle/re-arm behavior require bench verification.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA09",
+      "title": "PULS ML60.242",
+      "url": "https://products.pulspower.com/uk/ml60-242.html",
+      "locator": "Output technical data (use body, not misleading 3 A page title)",
+      "verified_fact": "24 V / 2.5 A / 60 W; NEC Class 2; 250 g. Selected auxiliary branch only, pending IPC boot-load budget.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA10",
+      "title": "PULS ML60.242 data sheet",
+      "url": "https://products.pulspower.com/uk/mwdownloads/download/link/id/1451/",
+      "locator": "Data sheet rev.1.5",
+      "verified_fact": "Installation, loading, backfeed and protection conditions govern enclosed integration.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA11",
+      "title": "Phoenix UK 5-HESI",
+      "url": "https://www.phoenixcontact.com/en-gb/products/fuse-terminal-block-uk-5-hesi-3004100",
+      "locator": "3004100 technical data",
+      "verified_fact": "Fuse holder 5×20/25/30 mm, rated 6.3 A. Does not include the fuse or establish its DC interruption rating.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA12",
+      "title": "Littelfuse 477 fuse data sheet",
+      "url": "https://www.littelfuse.com/assetdocs/littelfuse-fuse-477-datasheet-pdf?assetguid=624AC410-146D-47DC-9971-CDAAA78F2C78",
+      "locator": "477 series electrical characteristics and ordering",
+      "verified_fact": "0477004.MXP: time-lag 4 A, 5×20 mm, 400 V DC rated. Candidate only; inrush/I²t/fault coordination unresolved.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA13",
+      "title": "Schneider C60H-DC",
+      "url": "https://www.se.com/in/en/product/A9N61524/miniature-circuit-breaker-c60h-2-poles-4-a-c-curve/",
+      "locator": "A9N61524",
+      "verified_fact": "2-pole 4 A C-curve DC circuit breaker. Polarity, trip curve, backfeed and isolation application require final circuit review.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA14",
+      "title": "Phoenix UT 2,5",
+      "url": "https://www.phoenixcontact.com/en-nl/products/feed-through-terminal-block-ut-25-3044076",
+      "locator": "3044076 and accessories",
+      "verified_fact": "Feed-through terminal; D-UT 2,5/10 3047028 end cover and CLIPFIX 35-5 3022276 end bracket.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA15",
+      "title": "Phoenix UT 2,5-PE",
+      "url": "https://www.phoenixcontact.com/gb/products/3044092/pdf",
+      "locator": "3044092",
+      "verified_fact": "Protective conductor terminal; bonding and conductor section still circuit-dependent.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA16",
+      "title": "Schneider XALK178G",
+      "url": "https://iportal.se.com/Contents/docs/SQD-XALK178G.PDF",
+      "locator": "Complete emergency-stop control station",
+      "verified_fact": "Twist-release mushroom station with 2 NC + 1 NO; control contacts, not direct 48 V motor-load switching.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA17",
+      "title": "Pilz PNOZ s5",
+      "url": "https://www.pilz.com/en-INT/eshop/product/750105",
+      "locator": "750105",
+      "verified_fact": "24 V DC safety relay, 2 immediate NO + 2 delayed NO. Component selection does not certify complete bench.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA18",
+      "title": "Pilz PNOZ s5 operating manual",
+      "url": "https://www.pilz.com/download/open/PNOZ_s5_Operat_Man_21397-EN-17.pdf",
+      "locator": "21397-EN-17",
+      "verified_fact": "Input wiring, monitored start, contact limits and delay settings must follow selected operating mode; delay not frozen.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA19",
+      "title": "Omron G9EJ-1-E data sheet",
+      "url": "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g9ej-1-e.pdf",
+      "locator": "J195-E1-05, pp.1–5",
+      "verified_fact": "G9EJ-1-E-UVD DC24: SPST-NO, 24 V coil, polarized power contacts, 15 A at 400 V DC resistive; 45 g. Coil suppression requires varistor or diode plus Zener, not diode alone. No mirror-contact claim.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA20",
+      "title": "Phoenix PLC-RSC-24DC/21AU",
+      "url": "https://www.phoenixcontact.com/en-us/products/relay-module-plc-rsc-24dc21au-2966265",
+      "locator": "2966265",
+      "verified_fact": "24 V coil, gold small-signal contact. Actual low-current PSU inhibit interface and contact wetting to be qualified.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA21",
+      "title": "Mean Well RSP-1000",
+      "url": "https://www.meanwell.com/Upload/PDF/RSP-1000/RSP-1000-SPEC.PDF",
+      "locator": "RSP-1000-48 output table",
+      "verified_fact": "48 V / 21 A / 1008 W whole-arm candidate. Not the selected first-axis supply.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    },
+    {
+      "id": "SA22",
+      "title": "Beckhoff EtherCAT RJ45 patch cable",
+      "url": "https://www.beckhoff.com/en-au/products/i-o/accessories/pre-assembled-cables/ethercat-and-fieldbus-cables/zk1090-9191-0xxx.html",
+      "locator": "Ordering and physical specifications",
+      "verified_fact": "ZK1090-9191-0010: 1 m, RJ45 male both ends, shielded Cat.5 PUR 4×2×AWG26; fixed installation; 5.9±0.2 mm OD, fixed bend radius 5×OD.",
+      "accessed": "2026-09-27",
+      "source_type": "manufacturer-primary"
+    }
+  ],
+  "bench_calculations": {
+    "nominal_bus_V": 48,
+    "module_absolute_ceiling_V": 55,
+    "reference_capacitance_F": 0.001,
+    "reference_cap_energy_J": 1.1520000000000001,
+    "additional_cap_energy_to_55V_J": 0.3605,
+    "psu_nameplate_power_W": 200,
+    "arithmetic_current_at_48V_A": 4.166666666666667,
+    "warning": "These arithmetic examples are not operating setpoints, safe energy limits, verified fault-current limits, or a regeneration solution."
+  },
+  "unclosed_release_gates": [
+    "G1 exact RH harness/ESI/firmware identity",
+    "G2 IPC/aux power and mains enclosure",
+    "G3 power protection/inrush/discharge/probes",
+    "G4 hardwired stop and brake response",
+    "G5 regeneration and voltage margin",
+    "G6 EtherCAT integration and fail behavior",
+    "G7 metal fixture/output guard and motion envelope"
+  ]
+}
