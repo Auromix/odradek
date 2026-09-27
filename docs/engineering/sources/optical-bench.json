@@ -1,0 +1,336 @@
+{
+  "revision": "OB-01",
+  "status": "selected-for-optical-bench",
+  "date": "2026-09-27",
+  "scope": "Stationary dual independent monocular optical bench; not an arm electrical or dynamic harness release.",
+  "physical_validation": "not_performed",
+  "purchased": false,
+  "primary_chain": {
+    "camera": {
+      "pn": "ZED-414012",
+      "qty": 2
+    },
+    "capture": {
+      "pn": "ACC-210000",
+      "qty": 1
+    },
+    "host": {
+      "pn": "945-13730-0050-000",
+      "qty": 1
+    },
+    "fanout": {
+      "pn": "CBL-320500",
+      "qty": 1,
+      "purchase_qty": 0,
+      "included_with": "ACC-210000",
+      "length_m": 0.5
+    },
+    "extensions": {
+      "pn": "CBL-310100",
+      "qty": 2,
+      "length_m_each": 1.5,
+      "gender": "M-F",
+      "usage": "stationary_only"
+    },
+    "nominal_path_length_m_each": 2.0,
+    "port_mapping": {
+      "camera_A": 0,
+      "camera_B": 1
+    },
+    "power": "Bundled NVIDIA USB-C PSU to J24; AGX J509 to Duo J501 powers card; camera PoC; no extra board PSU or FPC."
+  },
+  "fixed_software_matrix": {
+    "host_os": "Ubuntu22.04 x86_64",
+    "sdk_manager": "2.4.1",
+    "jetpack": "6.2.2",
+    "l4t": "36.5.0",
+    "target_os": "Ubuntu22.04",
+    "cuda": "12.6",
+    "kernel_series": "5.15.185-tegra non-RT",
+    "gmsl_driver_package": "stereolabs-zedlink-duo",
+    "gmsl_driver_version": "1.4.3-LI-MAX96712-L4T36.5.0",
+    "zed_sdk": "5.5.0",
+    "capture_api": "sl::CameraOne",
+    "initial_mode": "1920x1200@30 fps per camera"
+  },
+  "artifacts": [
+    {
+      "role": "gmsl_driver",
+      "source_id": "OB-S19",
+      "url": "https://download.stereolabs.com/drivers/zedx/1.4.3/R36.5/stereolabs-zedlink-duo_1.4.3-LI-MAX96712-L4T36.5.0_arm64.deb",
+      "resolved_url": "https://stereolabs.sfo2.cdn.digitaloceanspaces.com/utils/drivers/ZEDX/1.4.3/R36.5/stereolabs-zedlink-duo_1.4.3-LI-MAX96712-L4T36.5.0_arm64.deb",
+      "filename": "stereolabs-zedlink-duo_1.4.3-LI-MAX96712-L4T36.5.0_arm64.deb",
+      "http_status": 200,
+      "content_length_bytes": 1654184,
+      "sha256": "c6963e0b999557df6ffc9d62f8bb8ac00af15618e21b5fdd18fa3ae239b582ac",
+      "inspection": "downloaded into memory; Debian metadata only; no execution",
+      "package_architecture": "arm64",
+      "pre_depends": "nvidia-l4t-core (>>36.5-0), nvidia-l4t-core (<<36.6-0)",
+      "depends": "device-tree-compiler; kernel >=5.15.185 and <5.15.186 (package metadata also has RT alternatives; preinst rejects RT for this non-RT package)"
+    },
+    {
+      "role": "zed_sdk",
+      "source_id": "OB-S21",
+      "url": "https://download.stereolabs.com/zedsdk/5.5/l4t36.5/jetsons",
+      "resolved_url": "https://stereolabs.sfo2.cdn.digitaloceanspaces.com/zedsdk/5.5/ZED_SDK_Tegra_L4T36.5_v5.5.0.zstd.run",
+      "filename": "ZED_SDK_Tegra_L4T36.5_v5.5.0.zstd.run",
+      "http_status": 200,
+      "content_length_bytes": 85706046,
+      "sha256": null,
+      "inspection": "HTTP HEAD only; SDK not downloaded; record checksum at installation"
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "OB-T01",
+      "topic": "actual dual capture, timestamps, thermals, drops",
+      "closure": "hardware10 min dual30 fps test; separate60 fps test"
+    },
+    {
+      "id": "OB-T02",
+      "topic": "fisheye intrinsic/extrinsic calibration and useful shared field",
+      "closure": "measured calibration and optical occlusion images; no depth promise"
+    },
+    {
+      "id": "OB-T03",
+      "topic": "robot dynamic coax and final camera mount",
+      "closure": "separate arm engineering work; not a blocker for stationary bench"
+    }
+  ],
+  "sources": [
+    {
+      "id": "OB-S01",
+      "publisher": "Stereolabs",
+      "title": "ZED X One S product",
+      "url": "https://www.stereolabs.com/store/products/zed-x-one-s",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "ZED-414012 fisheye SKU; camera only in box; F-F cable and mounts are extra options; GMSL2 PoC."
+    },
+    {
+      "id": "OB-S02",
+      "publisher": "Stereolabs",
+      "title": "ZED X One specifications",
+      "url": "https://docs.stereolabs.com/docs/products/cameras/zedxone/specifications",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "ZED X One S fisheye body 25x25x34.2 mm and 36 g; typical 0.89 W; minimum SDK 4.2. No fisheye IP69K claim."
+    },
+    {
+      "id": "OB-S03",
+      "publisher": "Stereolabs",
+      "title": "ZED Link Capture Card Duo product",
+      "url": "https://www.stereolabs.com/store/products/zed-link-capture-card",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "ACC-210000; includes 0.5 m 1-to-4 M-F cable plus 3 M2.5x20 screws and 3 16 mm spacers; J501 direct AGX connector."
+    },
+    {
+      "id": "OB-S04",
+      "publisher": "Stereolabs",
+      "title": "Duo on AGX Orin setup",
+      "url": "https://docs.stereolabs.com/docs/products/embedded/zed-link-capture-card/gmsl2/zed-link-duo/jetson-orin-agx-devkit-setup",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Board powered by official AGX devkit; direct camera connector mounting; power off before connecting. Ports 0/1 Group A, 2/3 Group B. Up to 2 S cameras/group HD1200@60."
+    },
+    {
+      "id": "OB-S05",
+      "publisher": "NVIDIA",
+      "title": "Jetson regional developer kit part numbers",
+      "url": "https://developer.nvidia.com/embedded/faq",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "AGX Orin 64GB complete devkit 945-13730-0050-000 region US/CA/CN/TW/JP; 0055 and 0057 are regional variants."
+    },
+    {
+      "id": "OB-S06",
+      "publisher": "NVIDIA",
+      "title": "AGX Orin quick start",
+      "url": "https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/quick_start.html",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Complete kit includes module/carrier/Wi-Fi/USB-C PSU/USB A-C cable. Headless initial setup supported. Do not follow latest JP7 version from this mutable hardware guide for this pinned JP6 bench."
+    },
+    {
+      "id": "OB-S07",
+      "publisher": "NVIDIA",
+      "title": "AGX Orin hardware layout",
+      "url": "https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/hardware_layout.html",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "J509 camera connector; J24 above DC jack; J40 next to 40-pin for flashing; eMMC default storage. No DP over USB-C."
+    },
+    {
+      "id": "OB-S08",
+      "publisher": "NVIDIA",
+      "title": "AGX Orin how-to",
+      "url": "https://docs.nvidia.com/jetson/agx-orin-devkit/user-guide/latest/howto.html",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "USB PD source ratings include 20 V 4.5 A; bundled PSU; recovery instructions; USB device virtual Ethernet and serial."
+    },
+    {
+      "id": "OB-S09",
+      "publisher": "Stereolabs",
+      "title": "GMSL2 cable selection guide",
+      "url": "https://support.stereolabs.com/articles/6548481498-what-type-of-gmsl2-cable-should-i-use-with-my-zed-x-camera",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Camera connector male; Duo uses four-wire male to four female fanout; extensions require M-F. Couplings affect signal integrity; not a robot flex qualification."
+    },
+    {
+      "id": "OB-S10",
+      "publisher": "Stereolabs",
+      "title": "GMSL2 1-to-4 M-F cable",
+      "url": "https://www.stereolabs.com/store/products/gmsl2-1-to-4-fakra-cable",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "CBL-320500; 0.5 m; RTK031; FAKRA universal Z."
+    },
+    {
+      "id": "OB-S11",
+      "publisher": "Stereolabs",
+      "title": "GMSL2 M-F extension cable",
+      "url": "https://www.stereolabs.com/store/products/gmsl2-cable-extender",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "1.5 m variant CBL-310100; M-F; RTK031; universal Z. No dynamic bend/twist rating established."
+    },
+    {
+      "id": "OB-S12",
+      "publisher": "Stereolabs",
+      "title": "Camera mount for ZED X One S",
+      "url": "https://www.stereolabs.com/store/products/camera-mount-for-zed-x-one-s",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Plate ACC-151200; 22x20x6.2 mm; bottom 1/4-20 UNC; includes screw kit."
+    },
+    {
+      "id": "OB-S13",
+      "publisher": "Manfrotto",
+      "title": "PIXI Mini Tripod black",
+      "url": "https://www.manfrotto.com/global-uk/pixi-mini-tripod-black-mtpixi-b/",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "MTPIXI-B; fixed 1/4-20 male screw; 1 kg rated payload; +/-35 deg tilt. Selected only for independent static camera stands."
+    },
+    {
+      "id": "OB-S14",
+      "publisher": "Stereolabs",
+      "title": "Enclosure for Orin AGX devkit",
+      "url": "https://www.stereolabs.com/store/products/enclosure-for-orin-agx-devkit",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "ACC-221000; optional enclosure recommended by AGX Duo guide."
+    },
+    {
+      "id": "OB-S15",
+      "publisher": "NVIDIA",
+      "title": "JetPack 6.2.2",
+      "url": "https://developer.nvidia.com/embedded/jetpack-sdk-622",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "JP6.2.2 includes Jetson Linux36.5, Ubuntu22.04, kernel5.15 and CUDA12.6."
+    },
+    {
+      "id": "OB-S16",
+      "publisher": "NVIDIA",
+      "title": "SDK Manager compatibility",
+      "url": "https://developer.nvidia.com/sdk-manager",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "SDK Manager2.4.1; JP6.2.x supports Ubuntu22.04 x86_64; archived-versions selector."
+    },
+    {
+      "id": "OB-S17",
+      "publisher": "NVIDIA",
+      "title": "SDK Manager system requirements",
+      "url": "https://docs.nvidia.com/sdk-manager/system-requirements/index.html",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "8 GB RAM; minimum27 GB host and16 GB target free disk for full Jetson SDK; USB data connection."
+    },
+    {
+      "id": "OB-S18",
+      "publisher": "Stereolabs",
+      "title": "ZED X GMSL2 drivers",
+      "url": "https://www.stereolabs.com/developers/drivers",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Duo download row JP6.2.2/L4T36.5; latest GMSL1.4.3; exact linked artifact recorded separately."
+    },
+    {
+      "id": "OB-S19",
+      "publisher": "Stereolabs",
+      "title": "Duo1.4.3 L4T36.5.0 package",
+      "url": "https://download.stereolabs.com/drivers/zedx/1.4.3/R36.5/stereolabs-zedlink-duo_1.4.3-LI-MAX96712-L4T36.5.0_arm64.deb",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Read-only in-memory ar/tar inspection: package stereolabs-zedlink-duo; version1.4.3-LI-MAX96712-L4T36.5.0; arm64; dependencies and SHA256 recorded. No scripts executed."
+    },
+    {
+      "id": "OB-S20",
+      "publisher": "Stereolabs",
+      "title": "SDK5.5 release",
+      "url": "https://www.stereolabs.com/developers/release",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "5.5.0 dated2026-09-17; Orin JP6.2.2 L4T36.5 CUDA12.6 installer row."
+    },
+    {
+      "id": "OB-S21",
+      "publisher": "Stereolabs",
+      "title": "SDK5.5 L4T36.5 download endpoint",
+      "url": "https://download.stereolabs.com/zedsdk/5.5/l4t36.5/jetsons",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "HTTP HEAD200 resolves to exact5.5.0 installer; content length85,706,046 bytes. SDK binary not downloaded or executed."
+    },
+    {
+      "id": "OB-S22",
+      "publisher": "Stereolabs",
+      "title": "Install ZED Link driver",
+      "url": "https://www.stereolabs.com/docs/products/embedded/zed-link-capture-card/gmsl2/install-and-upgrade-the-drivers",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Board/L4T driver selection; dpkg installation; reboot; zed_x_daemon. Older illustrative filenames not used."
+    },
+    {
+      "id": "OB-S23",
+      "publisher": "Stereolabs",
+      "title": "Install SDK on Jetson",
+      "url": "https://www.stereolabs.com/docs/development/zed-sdk/linux/work-with-nvidia-jetson",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Install correct L4T-specific Tegra package after JetPack; SDK installer checks L4T; CUDA supplied by JetPack."
+    },
+    {
+      "id": "OB-S24",
+      "publisher": "Stereolabs",
+      "title": "Monocular setup",
+      "url": "https://docs.stereolabs.com/docs/products/cameras/zedxone/monocular-vision",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Official NVIDIA devkit plus ZED Link supported; CameraOne monocular capture and calibration workflow."
+    },
+    {
+      "id": "OB-S25",
+      "publisher": "Stereolabs",
+      "title": "CameraOne C++ API",
+      "url": "https://www.stereolabs.com/docs/api/classsl_1_1CameraOne.html",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "getDeviceList, open, grab, retrieveImage, getCurrentFPS, getTimestamp and getFrameDroppedCount."
+    },
+    {
+      "id": "OB-S26",
+      "publisher": "Stereolabs",
+      "title": "GMSL2 power requirements",
+      "url": "https://www.stereolabs.com/docs/products/embedded/zed-link-capture-card/gmsl2/gmsl-2-power-requirements",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_primary",
+      "supports": "Duo typical0.32 W max0.34 W; camera table lists GS, not S, so its max is not imported as S maximum."
+    }
+  ]
+}
