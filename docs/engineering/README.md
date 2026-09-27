@@ -52,6 +52,7 @@
 | 整臂真实实体筛查 | [六态与LINK67连续转动](integrated-collision-study.md) | zero/inspect两种指态无新增交叠；历史reach肩部有3对真实碰撞，不可执行；LINK67自身对J6/L56覆盖q6±100，尚非完整联合运动域 |
 | 现状肩部几何边界 | [SHOULDER-DOMAIN01](shoulder-domain-01.md) | q2±25局部连续下界1.245mm、±20为2.643mm；首次阻塞约±27.42°，不改实机控制限位 |
 | 肩部抬升候选 | [SHOULDER-RAISE01](shoulder-raise-study.md) | J2及下游抬高35mm、加长真实后叉；局部q2±90连续域最小4mm，增重0.127kg；整臂联动/结构刚度未放行 |
+| 加高肩架受力初筛 | [SHOULDER-RAISE-STRENGTH01](shoulder-raise-strength-study.md) | 真实77.8mm跨度、13状态反力、孔组/净截面/梁族参照；识别薄曲环与铝牙边缘问题，未做FEA或承载放行 |
 | 完整末端载体 | [P16-CARRIER-01](p16-carrier-study.md) | 四轴承座/P16基叉/J7后架/双鱼眼前架及236实体端态；2.727kg已建模型，根部小间隙与腕旋转仍需修订 |
 | 灯爪近根修订 | [P16-CARRIER-02](p16-carrier02-study.md) | 四路同轴支承全角域名义间隙1mm；增厚钢桥、孔后截面和反力已计算，2.747kg已建模型；延伸件/正式灯板待合并 |
 | 四瓣整头集成 | [HEAD-INTEGRATED03](head-integrated03-study.md) | CARRIER02＋灯腔/软垫保持＋FPL机械快照＋EXT24；两态各697实体、17项连续检查，计量模型2.802kg、规划2.987～3.252kg；电气路由/线束/护壳未定版 |
