@@ -57,6 +57,7 @@
 | 四瓣整头集成 | [HEAD-INTEGRATED03](head-integrated03-study.md) | CARRIER02＋灯腔/软垫保持＋FPL机械快照＋EXT24；两态各697实体、17项连续检查，计量模型2.802kg、规划2.987～3.252kg；电气路由/线束/护壳未定版 |
 | 整头质量与惯量 | [HEAD-MASS04](head-mass04-study.md) | 262项聚合为13个刚体、重2.802kg；精确实体积分与目录惯量代理分列，P16质量分配/未知185～450g预算明确，不重复旧L7占位 |
 | 灯光与IO | [609点LED与控制/功率](hardware/head-lighting-io-selection.md) | 真实圆形点阵与四片LED坐标，MCU/ESC/电源候选；不是完整PCB |
+| 末端控制板空间 | [HEAD-CTRL-VOLUME01](head-control-volume01.md) | 56×64×30mm完整电子装配预留，固定件最小2mm、四指/P16连续分离；实际PCB/插头/支架/热路径尚未集成 |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
 | 放行差距 | [发布检查清单](release-checklist.md) | 对应证据和实际未完成事项 |
 

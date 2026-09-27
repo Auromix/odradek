@@ -1,0 +1,782 @@
+{
+  "revision": "HEAD-CTRL-VOLUME01",
+  "head_coordinate_frame": "HEAD03 face origin, +Z towards object; unaffected by rigid parent shoulder raise",
+  "bbox_head_mm": [
+    [
+      -28,
+      -32,
+      -113
+    ],
+    [
+      28,
+      32,
+      -83
+    ]
+  ],
+  "volume_is": "Reservation for the whole installed electronics package, including connectors/supports/thermal and insulation; not a PCB or metallic part",
+  "provisional_board_outline_limit_mm": [
+    50,
+    58
+  ],
+  "stack_levels_candidate_z_mm": [
+    -109,
+    -94
+  ],
+  "board_candidate_thickness_mm": 1.6,
+  "connector_warning": "A50x58 substrate leaves only3mm per side within56x64. Side-facing mated plug/strain relief often exceeds this. Reduce board outline or route axially inside volume; exact connector package must fit before layout release.",
+  "fixed_objects": 125,
+  "fixed_gap_checks": [
+    {
+      "part": "main_carrier",
+      "gap_mm": 9.0,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_existing_adapter",
+      "gap_mm": 41.0,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_bearing_A",
+      "gap_mm": 73.14760419489157,
+      "representation": "bearing ring envelope"
+    },
+    {
+      "part": "UR_bearing_B",
+      "gap_mm": 71.92792575516755,
+      "representation": "bearing ring envelope"
+    },
+    {
+      "part": "UR_bearing_outer_cap",
+      "gap_mm": 68.13455895659152,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M3_cap_bolt_0",
+      "gap_mm": 106.26942822696685,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M3_cap_washer_0",
+      "gap_mm": 106.38301121721551,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M3_cap_bolt_1",
+      "gap_mm": 98.45295488063307,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M3_cap_washer_1",
+      "gap_mm": 98.63320313638981,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M3_cap_bolt_2",
+      "gap_mm": 71.28348022310948,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M3_cap_washer_2",
+      "gap_mm": 72.29446158656131,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M3_cap_bolt_3",
+      "gap_mm": 81.6897489760477,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M3_cap_washer_3",
+      "gap_mm": 82.44787710997254,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_bearing_A",
+      "gap_mm": 73.14760419489096,
+      "representation": "bearing ring envelope"
+    },
+    {
+      "part": "UL_bearing_B",
+      "gap_mm": 71.92792575516637,
+      "representation": "bearing ring envelope"
+    },
+    {
+      "part": "UL_bearing_outer_cap",
+      "gap_mm": 68.13455895659132,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M3_cap_bolt_0",
+      "gap_mm": 106.26942822696549,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M3_cap_washer_0",
+      "gap_mm": 106.38301121721533,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M3_cap_bolt_1",
+      "gap_mm": 98.45295488063303,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M3_cap_washer_1",
+      "gap_mm": 98.63320313638981,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M3_cap_bolt_2",
+      "gap_mm": 71.28348022310942,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M3_cap_washer_2",
+      "gap_mm": 72.29446158656131,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M3_cap_bolt_3",
+      "gap_mm": 81.68974897604595,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M3_cap_washer_3",
+      "gap_mm": 82.44787710997232,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_bearing_A",
+      "gap_mm": 122.78129123693806,
+      "representation": "bearing ring envelope"
+    },
+    {
+      "part": "LL_bearing_B",
+      "gap_mm": 121.00411658151859,
+      "representation": "bearing ring envelope"
+    },
+    {
+      "part": "LL_bearing_outer_cap",
+      "gap_mm": 117.27312004592356,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M3_cap_bolt_0",
+      "gap_mm": 154.64768621881333,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M3_cap_washer_0",
+      "gap_mm": 154.91813929755403,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M3_cap_bolt_1",
+      "gap_mm": 149.02433706328557,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M3_cap_washer_1",
+      "gap_mm": 148.6188602446355,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M3_cap_bolt_2",
+      "gap_mm": 121.5248424586683,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M3_cap_washer_2",
+      "gap_mm": 121.48167825307014,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M3_cap_bolt_3",
+      "gap_mm": 128.34802983460202,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M3_cap_washer_3",
+      "gap_mm": 129.09223874796893,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_bearing_A",
+      "gap_mm": 122.78129123693952,
+      "representation": "bearing ring envelope"
+    },
+    {
+      "part": "LR_bearing_B",
+      "gap_mm": 121.00411658151859,
+      "representation": "bearing ring envelope"
+    },
+    {
+      "part": "LR_bearing_outer_cap",
+      "gap_mm": 117.27312004592392,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M3_cap_bolt_0",
+      "gap_mm": 154.64768621881498,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M3_cap_washer_0",
+      "gap_mm": 154.91813929755665,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M3_cap_bolt_1",
+      "gap_mm": 149.02433706328662,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M3_cap_washer_1",
+      "gap_mm": 148.61886024463726,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M3_cap_bolt_2",
+      "gap_mm": 121.5248424586696,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M3_cap_washer_2",
+      "gap_mm": 121.4816782530723,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M3_cap_bolt_3",
+      "gap_mm": 128.348029834604,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M3_cap_washer_3",
+      "gap_mm": 129.09223874797203,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_to_carrier_M4x40_0",
+      "gap_mm": 4.200000000000003,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_M4_washer_0",
+      "gap_mm": 8.200000000000003,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_to_carrier_M4x40_1",
+      "gap_mm": 4.200000000000003,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_M4_washer_1",
+      "gap_mm": 8.200000000000003,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_to_carrier_M4x40_2",
+      "gap_mm": 4.200000000000003,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_M4_washer_2",
+      "gap_mm": 8.200000000000003,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_to_carrier_M4x40_3",
+      "gap_mm": 4.200000000000003,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_M4_washer_3",
+      "gap_mm": 8.200000000000003,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "display_including_candidate_GH_keepout",
+      "gap_mm": 72.0,
+      "representation": "original conservative envelope"
+    },
+    {
+      "part": "camera_-1_physical_keepout",
+      "gap_mm": 37.183612560446534,
+      "representation": "original conservative envelope"
+    },
+    {
+      "part": "camera_-1_FAKRA_unmated_reservation",
+      "gap_mm": 12.140350108643707,
+      "representation": "original conservative envelope"
+    },
+    {
+      "part": "camera_-1_M2x6_-10.5_-10.5",
+      "gap_mm": 69.1433065716987,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "camera_-1_M2x6_-10.5_10.5",
+      "gap_mm": 66.84583274495233,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "camera_-1_M2x6_10.5_-10.5",
+      "gap_mm": 69.1433065716987,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "camera_-1_M2x6_10.5_10.5",
+      "gap_mm": 66.84583274495233,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "camera_1_physical_keepout",
+      "gap_mm": 37.18361256045702,
+      "representation": "original conservative envelope"
+    },
+    {
+      "part": "camera_1_FAKRA_unmated_reservation",
+      "gap_mm": 10.983612560458456,
+      "representation": "original conservative envelope"
+    },
+    {
+      "part": "camera_1_M2x6_-10.5_-10.5",
+      "gap_mm": 66.84583274495269,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "camera_1_M2x6_-10.5_10.5",
+      "gap_mm": 69.14330657170103,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "camera_1_M2x6_10.5_-10.5",
+      "gap_mm": 66.84583274495269,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "camera_1_M2x6_10.5_10.5",
+      "gap_mm": 69.14330657170103,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_column_-35.0_-22.0",
+      "gap_mm": 2.0,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_tierod_-35.0_-22.0",
+      "gap_mm": 5.5,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_washer_rear_-35.0_-22.0",
+      "gap_mm": 17.356554957709783,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_nut_rear_-35.0_-22.0",
+      "gap_mm": 17.913050064287717,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_washer_front_-35.0_-22.0",
+      "gap_mm": 72.0850192481073,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_nut_front_-35.0_-22.0",
+      "gap_mm": 72.60080827790885,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_column_-35.0_22.0",
+      "gap_mm": 2.0,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_tierod_-35.0_22.0",
+      "gap_mm": 5.5,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_washer_rear_-35.0_22.0",
+      "gap_mm": 17.356554957709783,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_nut_rear_-35.0_22.0",
+      "gap_mm": 17.913050064287717,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_washer_front_-35.0_22.0",
+      "gap_mm": 72.0850192481073,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_nut_front_-35.0_22.0",
+      "gap_mm": 72.60080827790885,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_column_35.0_-22.0",
+      "gap_mm": 2.0,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_tierod_35.0_-22.0",
+      "gap_mm": 5.5,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_washer_rear_35.0_-22.0",
+      "gap_mm": 17.356554957709783,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_nut_rear_35.0_-22.0",
+      "gap_mm": 17.913050064289212,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_washer_front_35.0_-22.0",
+      "gap_mm": 72.0850192481073,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_nut_front_35.0_-22.0",
+      "gap_mm": 72.60080827790922,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_column_35.0_22.0",
+      "gap_mm": 2.0,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_tierod_35.0_22.0",
+      "gap_mm": 5.5,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_washer_rear_35.0_22.0",
+      "gap_mm": 17.356554957709783,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_nut_rear_35.0_22.0",
+      "gap_mm": 17.913050064289212,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_washer_front_35.0_22.0",
+      "gap_mm": 72.0850192481073,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "optic_M3_nut_front_35.0_22.0",
+      "gap_mm": 72.60080827790922,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "removable_optical_frame",
+      "gap_mm": 68.0,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_base_bracket",
+      "gap_mm": 26.844053904470545,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_base_SBSM_pin",
+      "gap_mm": 29.54871580607281,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_base_M3_retention_washer",
+      "gap_mm": 29.72806487444347,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_base_M3_retention_nut",
+      "gap_mm": 29.27621743558771,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_base_lug_spacer_-1",
+      "gap_mm": 40.65686312455714,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_base_lug_spacer_1",
+      "gap_mm": 32.380147638084125,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M4_base_bolt_-10",
+      "gap_mm": 38.32696986433616,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UR_M4_base_bolt_10",
+      "gap_mm": 51.516430265658634,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_base_bracket",
+      "gap_mm": 26.844053904467675,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_base_SBSM_pin",
+      "gap_mm": 29.54871580606843,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_base_M3_retention_washer",
+      "gap_mm": 29.72806487443685,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_base_M3_retention_nut",
+      "gap_mm": 29.27621743558039,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_base_lug_spacer_-1",
+      "gap_mm": 40.65686312454836,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_base_lug_spacer_1",
+      "gap_mm": 32.38014763808221,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M4_base_bolt_-10",
+      "gap_mm": 38.326969864330316,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "UL_M4_base_bolt_10",
+      "gap_mm": 51.51643026565174,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_base_bracket",
+      "gap_mm": 12.57476367254293,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_base_SBSM_pin",
+      "gap_mm": 27.331461426220333,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_base_M3_retention_washer",
+      "gap_mm": 25.830922897726065,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_base_M3_retention_nut",
+      "gap_mm": 26.370028444667987,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_base_lug_spacer_-1",
+      "gap_mm": 32.58272502527026,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_base_lug_spacer_1",
+      "gap_mm": 26.675153897868253,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M4_base_bolt_-10",
+      "gap_mm": 19.71654149450226,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LL_M4_base_bolt_10",
+      "gap_mm": 37.021001025615945,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_base_bracket",
+      "gap_mm": 12.57476367254293,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_base_SBSM_pin",
+      "gap_mm": 27.33146142622628,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_base_M3_retention_washer",
+      "gap_mm": 25.83092289773205,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_base_M3_retention_nut",
+      "gap_mm": 26.37002844466865,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_base_lug_spacer_-1",
+      "gap_mm": 32.58272502527037,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_base_lug_spacer_1",
+      "gap_mm": 26.67515389787041,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M4_base_bolt_-10",
+      "gap_mm": 19.71654149450263,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "LR_M4_base_bolt_10",
+      "gap_mm": 37.021001025618304,
+      "representation": "original nominal solid"
+    },
+    {
+      "part": "J7_extension24",
+      "gap_mm": 17.0,
+      "representation": "original nominal solid"
+    }
+  ],
+  "minimum_fixed_nominal_gap_mm": 2.0,
+  "rotor_support_plane_proofs": [
+    {
+      "finger": "UR",
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "rotor_z_lower_bound_mm": -31.483402845020237,
+      "volume_z_upper_mm": -83,
+      "continuous_z_gap_bound_mm": 51.51659715497976
+    },
+    {
+      "finger": "UL",
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "rotor_z_lower_bound_mm": -31.483402845020237,
+      "volume_z_upper_mm": -83,
+      "continuous_z_gap_bound_mm": 51.51659715497976
+    },
+    {
+      "finger": "LL",
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "rotor_z_lower_bound_mm": 18.516597154979763,
+      "volume_z_upper_mm": -83,
+      "continuous_z_gap_bound_mm": 101.51659715497976
+    },
+    {
+      "finger": "LR",
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "rotor_z_lower_bound_mm": 18.516597154979763,
+      "volume_z_upper_mm": -83,
+      "continuous_z_gap_bound_mm": 101.51659715497976
+    }
+  ],
+  "actuator_continuous_proofs": [
+    {
+      "finger": "UR",
+      "certified": true,
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "velocity_bound_mm_per_rad": 88.77031071275465,
+      "sample_count": 29,
+      "minimum_sample_mm": 25.86958747064544,
+      "minimum_sample_q": 0.0,
+      "continuous_lower_bound_mm": 22.770919070733513,
+      "failures": []
+    },
+    {
+      "finger": "UL",
+      "certified": true,
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "velocity_bound_mm_per_rad": 88.77031071275465,
+      "sample_count": 29,
+      "minimum_sample_mm": 25.86958747064544,
+      "minimum_sample_q": 0.0,
+      "continuous_lower_bound_mm": 22.770919070733513,
+      "failures": []
+    },
+    {
+      "finger": "LL",
+      "certified": true,
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "velocity_bound_mm_per_rad": 88.77031071275465,
+      "sample_count": 32,
+      "minimum_sample_mm": 18.497469602172707,
+      "minimum_sample_q": 0.0,
+      "continuous_lower_bound_mm": 15.398801202260781,
+      "failures": []
+    },
+    {
+      "finger": "LR",
+      "certified": true,
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "velocity_bound_mm_per_rad": 88.77031071275465,
+      "sample_count": 32,
+      "minimum_sample_mm": 18.49746960217271,
+      "minimum_sample_q": 0.0,
+      "continuous_lower_bound_mm": 15.398801202260785,
+      "failures": []
+    }
+  ],
+  "source_hashes": {
+    "engineering/head_control_volume_study.py": "9c214981f6ea58a2b3b95716ac72ca130de2842a9ef63b276aa1425d2dc6e8f6",
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+    "engineering/generated/head-integrated-03/motion.json": "dd7b6c1c608be0cf46c886f4a54afe8e665d9827b8c4ae241939e3956469af9d",
+    "engineering/generated/contact02-study/study.json": "d36f825a731eab458aa1c5945404023d3b075768ddd8b21d928a0b42b86e4ea9",
+    "engineering/p16_packaging_study.py": "3903d14a5b081574b8e9a7bfde7c74705b6ec68933f7084133b53b998987f68d",
+    "engineering/gripper_root_support_study.py": "3ef2cbe6f1987f35a54fca22a0fb538ee502545ede5d4a58a4e7e06ef30dd732",
+    "engineering/generated/p16-packaging-study/study.json": "228790dd98a640948d8ff5a74b1465b575aa504c577874a6264dfaef6a2b797c",
+    "engineering/studies/link_interface_tools.py": "335a99418ecf6a4df08a9923e775e83ac4f882d18896e9e14796a50e740964fa",
+    "engineering/screen_integrated_collisions.py": "72373f83c60555e45fb2d3297789b793996c372fb9159a1972dad0aace154e1b"
+  },
+  "reservation_step_sha256": "69e56f0ad5ed22aa6160051f586d02620b29d66c41c3f36ab861eb016db3885b",
+  "visual_artifacts": {
+    "allocation.png": "4b5726f95eefe76a34a447dafdd65f90e1839f0f178a6c4cdc9661cf3ec3c182",
+    "allocation.svg": "d7e211825621e807d8aa736f2790e2daa9225db31532b9364c51af146e5301c2"
+  },
+  "manufacturing_release": false,
+  "board_outline_frozen": false,
+  "exclusions": [
+    "Actual PCBs/components/fasteners/heat spreader and harness do not exist in this reservation",
+    "No connector insertion path, screw tool path, insulation or loaded tolerance stack checked",
+    "No air cooling or heat dissipation qualification",
+    "Wires leaving reservation and head detach/mating interface still unbuilt",
+    "No full-arm motion or payload approval"
+  ]
+}
