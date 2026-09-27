@@ -1,0 +1,220 @@
+{
+  "revision": "HEAD-CTRL02",
+  "maturity": "reviewable schematic and pin assignment; no flashable firmware, ESI or SII image",
+  "slave_topology": {
+    "RH_arm": 7,
+    "head_LAN9252": 1,
+    "total": 8,
+    "condition": "P16 DC option selected; not combined with old 4 BLDC EtherCAT drive option"
+  },
+  "MCU": {
+    "part": "STM32G474VET6",
+    "first_light_clock": "HSI16 16MHz, no PLL",
+    "option_bytes_require_readback": [
+      "NRST_MODE retains reset input/output",
+      "nSWBOOT0/nBOOT0 policy reviewed with PB8 jumper",
+      "watchdog run/stop/debug behavior"
+    ]
+  },
+  "motor": {
+    "drive": "DRV8874PWPR",
+    "PWM": {
+      "timer": "TIM4",
+      "channels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "GPIO": [
+        "PD12",
+        "PD13",
+        "PD14",
+        "PD15"
+      ],
+      "AF": 2,
+      "PSC": 0,
+      "ARR": 799,
+      "frequency_Hz_nominal": 20000
+    },
+    "PH_EN_mode": true,
+    "IMODE": "intentional HiZ",
+    "native_nSLEEP": "SLEEP_REQ[n] AND MCU_ARM AND EXT_PERMIT AND SYS_RESET_N AND ESC_RESET_N",
+    "EN_zero": "both output legs low: electrical braking",
+    "nSLEEP_zero": "high impedance: coasting, not mechanical holding",
+    "nFAULT": "GPIO polling on PD4..7; native driver protections act independently",
+    "duty_limit": "P16 catalogue20%; thermal averaging interval and continuous breathing not validated"
+  },
+  "ADC": {
+    "ADC1_sequence": [
+      {
+        "channel": 6,
+        "net": "M1_POT_ADC"
+      },
+      {
+        "channel": 7,
+        "net": "M2_POT_ADC"
+      },
+      {
+        "channel": 8,
+        "net": "M3_POT_ADC"
+      },
+      {
+        "channel": 9,
+        "net": "M4_POT_ADC"
+      },
+      {
+        "channel": 1,
+        "net": "M1_I_ADC"
+      },
+      {
+        "channel": 2,
+        "net": "M2_I_ADC"
+      },
+      {
+        "channel": 3,
+        "net": "M3_I_ADC"
+      },
+      {
+        "channel": 4,
+        "net": "M4_I_ADC"
+      }
+    ],
+    "ADC3_sequence": [
+      {
+        "channel": 4,
+        "net": "NTC_P1"
+      },
+      {
+        "channel": 6,
+        "net": "NTC_P2"
+      },
+      {
+        "channel": 2,
+        "net": "NTC_P3"
+      },
+      {
+        "channel": 14,
+        "net": "NTC_P4"
+      },
+      {
+        "channel": 3,
+        "net": "NTC_C"
+      },
+      {
+        "channel": 15,
+        "net": "VM_ADC"
+      },
+      {
+        "channel": 16,
+        "net": "VLED_ADC"
+      }
+    ],
+    "target_scan_rate_Hz": 500,
+    "sampling_time_candidate_cycles": 247.5,
+    "initial_trigger": "software-triggered periodic sequence; exact DMA/DMAMUX request setup remains firmware implementation",
+    "VDDA_VREF": "same3V3_A as pot excitation; internalVREFBUF disabled",
+    "current_ADC_filter_s_approx": 0.00034024,
+    "current_reading_not_force_sensor": true,
+    "ADC_reference_temperature_gain_and_pot_endpoints_calibration_required": true,
+    "isolation_select": "SYS_RESET_N directly; noMCUrequestorlogicgateinlow-voltagepath"
+  },
+  "EtherCAT": {
+    "SPI": "SPI1 AF5 onPA5/6/7, PA4GPIO CS",
+    "initial_SPI_Hz": 2000000,
+    "CHIP_MODE_strap": "00 two-port copper",
+    "SII_PDI_type": "0x80 SPI, loaded to PDI Control register0x0140; do NOT treat0x0140 asEEPROMoffset",
+    "SII_PDI_configuration": "TBD stack-specific validimage",
+    "EEPROM": "24FC512-I/SN address0x50, WP defaultsHigh",
+    "clock": "ASTX-H12-25.000MHZ-T 25MHzHCMOS, OSCI pin1; OSCO pin2NC",
+    "reset": "TPS3808 SYS_RESET_N drivesSN74LVC2G07 twoindependentopen-drainbranches MCU_RESET_N andESC_RESET_N; MCUwatchdog/debug resetdoesnotinjectshortpulseintoLAN. PC9open-drainassertsESCreset>=1ms withARM0 andmonitorsreset.",
+    "IRQ": "open-drain activeLow reset default, PC7/EXTI7",
+    "SYNC0": "PC6/EXTI6 input",
+    "SYNC1": "PC8/EXTI8 input",
+    "identity_ESI_PDO_watchdog_DC_stack": "TBD beforeoperatingnetwork, no invented vendorID or productionESI"
+  },
+  "LED": {
+    "SPI": "SPI2 AF5 onPB13/14/15",
+    "frequency_Hz_candidate": 2000000,
+    "chip_select_GPIO": [
+      "PE2",
+      "PE3",
+      "PE4",
+      "PE5",
+      "PE6",
+      "PC10"
+    ],
+    "logical_CS_order": [
+      "upper_right",
+      "upper_left",
+      "lower_left",
+      "lower_right",
+      "central_A",
+      "central_B"
+    ],
+    "VSYNC": "PC11 through33ohm",
+    "VIO": "PC12 request AND reset drivesTPS22919; no GPIO supplycurrent",
+    "individual_power_requests": [
+      "PB2",
+      "PB10",
+      "PB11",
+      "PB12",
+      "PC13"
+    ],
+    "start_current_mA": 3,
+    "full_current_mA_after_thermal_check": 20,
+    "before_VIO_on": "MCUbus outputs loworHiZ, CS HiZ; switchVIOon; waitrailvalid; setCSoutputHigh; initializeallPWMblack beforeenablingdisplay",
+    "before_VIO_off": "displayblack then allSPI/CS/VSYNC HiZorLow; disableVLED andVIO; nohotplug",
+    "MISO": "singleCS selected; perFPL33ohm atdriver output; central must replicate source damping",
+    "NTC": "petals already47k pullup/1k output/100nF; central must implement samecontract, nohostduplicatepullup",
+    "six_driver_bandwidth": "2376byte fullframe payload57.024% of2MHz at60Hz, excludingheaders/readback/jitter"
+  },
+  "startup": [
+    "KeepEXT_PERMITopen andmotor12V disconnected for firstlogic/ESC tests.",
+    "Applyqualified3.3Vlogic; observeallrailsandclockstablebefore resetrelease.",
+    "InitializeGPIOODR low beforeoutput; CSremainHiZ untilVIOvalid; TIM4disabled/CCR0.",
+    "Readresetcauseandbootoptions, keepARM0, holdPC9ESC_RESET_Nlow>=1ms thenrelease; waitchipREADY; ADCisolationautomaticallyenabledbygoodsupply, wait>=2msfiltersettlingbeforevalidatingrails.",
+    "Readpots andtemperature; invalid, open, out-of-range or unknownposition prohibitsmotion.",
+    "ValidatecorrectSII/PDI, EEPROMchecksum, stackstate and watchdog; demonstrate loss-of-link handling withmotorsdisconnected.",
+    "Onlyafterseparatebenchprotection/regenerationreview andcalibration, establishEXT_PERMIT+ARM andenable oneSLEEP_REQ; noautomaticblindhoming.",
+    "Sampledsoftwarefault, watchdogexpiry orpermitloss clearsARM andSLEEPrequests; definecoast/brake/hold by measuredapplicationrisk, notby nSLEEP name.",
+    "AnyESCresetfall latchessoftwareinhibit; neverautomaticallyresume whenESCreset rises. MCUresetreturnsallARM/SLEEP requeststolow; bootrequiresnewvalidatedsession. Actualresetsequencingmustbeoscilloscopeverified."
+  ],
+  "power_domain_boundaries": [
+    "48V RH bus is not connected to HEAD-CTRL02.",
+    "RH B brakes are fed insideRH from moduleDC; RH14 N/J7 has nobrake. Noexternal24Vbrakepin.",
+    "12V P16 supply,3.3Vlogic and3.3VLED are separateexternally regulated/current-limited inputs withcommonGND.",
+    "CameraGMSL2/data/PoC bypass thisMCU/ESC board; no camera interface invented here.",
+    "NoonboardTVS or1mFcapacitor claim to handle unknownregeneration; motoroperation blockeduntilenergy/sink/fuse/wiringverified."
+  ],
+  "physical_split": {
+    "suggestion": "logic+ESC layer andfourdriver+power layer",
+    "MCAD_reservation_reference": "engineering/generated/head-control-volume01/study.json",
+    "reservation_mm": {
+      "x": [
+        -28,
+        28
+      ],
+      "y": [
+        -32,
+        32
+      ],
+      "z": [
+        -113,
+        -83
+      ]
+    },
+    "provisional_board_max_mm": [
+      50,
+      58
+    ],
+    "not_defined": [
+      "boardoutlines",
+      "board-to-boardconnector",
+      "componentplacement",
+      "fullmatedconnectorandwireenvelopes",
+      "thermalbridges",
+      "insulationmounts"
+    ]
+  }
+}

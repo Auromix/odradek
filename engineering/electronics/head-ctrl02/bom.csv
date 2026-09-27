@@ -1,0 +1,243 @@
+ref,value,mpn,footprint,source_url,group,selection_status,note,qty,unit_mass_g,budget,functional_reference
+U1,STM32G474VET6,STM32G474VET6,Package_QFP:LQFP-100_14x14mm_P0.5mm,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,MCU,candidate,"512k Flash/128k SRAM; HSI16 clock first-light, no HSE crystal fitted",1,TBD,TBD; no procurement quote,U1
+C1,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C1
+C2,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C2
+C3,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C3
+C4,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C4
+C5,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C5
+C6,10uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,,1,TBD,TBD; no procurement quote,C6
+C7,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C7
+FB1,220ohm@100MHz,BLM18EG221SN1D,Inductor_SMD:L_0603_1608Metric,https://www.murata.com/en-us/products/productdetail?partno=BLM18EG221SN1%23,MCU,candidate,Filter not galvanic isolation,1,TBD,TBD; no procurement quote,FB1
+C8,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C8
+C9,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,,1,TBD,TBD; no procurement quote,C9
+C10,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MCU,TBD,At VREF+ pin36; internal VREFBUF disabled,1,TBD,TBD; no procurement quote,C10
+R1,10k,TBD,Resistor_SMD:R_0603_1608Metric,,MCU,TBD,1%,1,TBD,TBD; no procurement quote,R1
+JP1,BOOT only while motors inhibited,TBD,Jumper:Jumper_2_Open,,MCU,TBD,,1,TBD,TBD; no procurement quote,JP1
+R2,10k,TBD,Resistor_SMD:R_0603_1608Metric,,MCU,TBD,1%,1,TBD,TBD; no procurement quote,R2
+R3,33,TBD,Resistor_SMD:R_0603_1608Metric,,MCU,TBD,1% Tune after real loom SI measurements,1,TBD,TBD; no procurement quote,R3
+R4,33,TBD,Resistor_SMD:R_0603_1608Metric,,MCU,TBD,1% Tune after real loom SI measurements,1,TBD,TBD; no procurement quote,R4
+R5,33,TBD,Resistor_SMD:R_0603_1608Metric,,MCU,TBD,1% Tune after real loom SI measurements,1,TBD,TBD; no procurement quote,R5
+R6,33,TBD,Resistor_SMD:R_0603_1608Metric,,MCU,TBD,1% Tune after real loom SI measurements,1,TBD,TBD; no procurement quote,R6
+R7,33,TBD,Resistor_SMD:R_0603_1608Metric,,MCU,TBD,1% Tune after real loom SI measurements,1,TBD,TBD; no procurement quote,R7
+R8,33,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1% At LAN SO source,1,TBD,TBD; no procurement quote,R8
+R9,0,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1% Each FPL board already has its own 33ohm MISO resistor,1,TBD,TBD; no procurement quote,R9
+R10,10k,TBD,Resistor_SMD:R_0603_1608Metric,,MCU,TBD,1%,1,TBD,TBD; no procurement quote,R10
+U3,TPS3808G33DBVR,TPS3808G33DBVR,Package_TO_SOT_SMD:SOT-23-6,https://www.ti.com/lit/ds/symlink/tps3808.pdf,RESET,candidate,CT via100k toVDD:180..420ms reset delay; exceeds LAN minimum25ms after rails valid if rails settle within150ms,1,TBD,TBD; no procurement quote,U3
+R11,100k,TBD,Resistor_SMD:R_0603_1608Metric,,RESET,TBD,1%,1,TBD,TBD; no procurement quote,R11
+R12,10k,TBD,Resistor_SMD:R_0603_1608Metric,,RESET,TBD,1%,1,TBD,TBD; no procurement quote,R12
+R13,10k,TBD,Resistor_SMD:R_0603_1608Metric,,RESET,TBD,1%,1,TBD,TBD; no procurement quote,R13
+JP2,MANUAL_RESET,TBD,Jumper:Jumper_2_Open,,RESET,TBD,,1,TBD,TBD; no procurement quote,JP2
+C11,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,RESET,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C11
+U4,SN74LVC1G08DBVR,SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf,INHIBIT,candidate,,1,TBD,TBD; no procurement quote,U4
+C12,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,INHIBIT,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C12
+U5,SN74LVC1G08DBVR,SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf,INHIBIT,candidate,,1,TBD,TBD; no procurement quote,U5
+C13,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,INHIBIT,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C13
+U6,SN74LVC1G08DBVR,SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf,INHIBIT,candidate,,1,TBD,TBD; no procurement quote,U6
+C14,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,INHIBIT,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C14
+U7,SN74LVC1G08DBVR,SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf,INHIBIT,candidate,,1,TBD,TBD; no procurement quote,U7
+C15,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,INHIBIT,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C15
+R14,47k,TBD,Resistor_SMD:R_0603_1608Metric,,INHIBIT,TBD,1%,1,TBD,TBD; no procurement quote,R14
+R15,47k,TBD,Resistor_SMD:R_0603_1608Metric,,INHIBIT,TBD,1%,1,TBD,TBD; no procurement quote,R15
+R16,47k,TBD,Resistor_SMD:R_0603_1608Metric,,INHIBIT,TBD,1%,1,TBD,TBD; no procurement quote,R16
+U8,SN74LVC08APWR,SN74LVC08APWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf,INHIBIT,candidate,,1,TBD,TBD; no procurement quote,U8
+C16,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,INHIBIT,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C16
+U23,SN74LVC2G07DCKR,SN74LVC2G07DCKR,Package_TO_SOT_SMD:SC-70-6,https://www.ti.com/lit/ds/symlink/sn74lvc2g07.pdf,RESET,candidate,Twoindependentopen-drainresetbranches; MCUshortresetpulsedoesnotdisturbLAN. PC9canholdESCresetwithoutresettingitself.,1,TBD,TBD; no procurement quote,U23
+C17,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,RESET,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C17
+R17,10k,TBD,Resistor_SMD:R_0603_1608Metric,,RESET,TBD,1%,1,TBD,TBD; no procurement quote,R17
+R18,10k,TBD,Resistor_SMD:R_0603_1608Metric,,RESET,TBD,1%,1,TBD,TBD; no procurement quote,R18
+U2,LAN9252I/PT,LAN9252I/PT,HEAD:LAN9252_TQFP64_EP_candidate,https://ww1.microchip.com/downloads/aemDocuments/documents/UNG/ProductDocuments/DataSheets/LAN9252-Data-Sheet-DS00001909.pdf,ESC,candidate,"Two-port copper. CHIP_MODE=00; SPI PDI=0x80 in SII, not set by CHIP_MODE straps. Footprint must be verified before PCB.",1,TBD,TBD; no procurement quote,U2
+R19,10k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1%,1,TBD,TBD; no procurement quote,R19
+R20,10k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1%,1,TBD,TBD; no procurement quote,R20
+R21,10k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1%,1,TBD,TBD; no procurement quote,R21
+R22,10k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1%,1,TBD,TBD; no procurement quote,R22
+R23,10k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1%,1,TBD,TBD; no procurement quote,R23
+R24,10k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1%,1,TBD,TBD; no procurement quote,R24
+R25,12.1k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1% At pin57,1,TBD,TBD; no procurement quote,R25
+FB2,220ohm@100MHz,BLM18EG221SN1D,Inductor_SMD:L_0603_1608Metric,https://www.murata.com/en-us/products/productdetail?partno=BLM18EG221SN1%23,ESC,candidate,"Verify bead-current, ESR and power-sequence measurements",1,TBD,TBD; no procurement quote,FB2
+FB3,220ohm@100MHz,BLM18EG221SN1D,Inductor_SMD:L_0603_1608Metric,https://www.murata.com/en-us/products/productdetail?partno=BLM18EG221SN1%23,ESC,candidate,"Verify bead-current, ESR and power-sequence measurements",1,TBD,TBD; no procurement quote,FB3
+FB4,220ohm@100MHz,BLM18EG221SN1D,Inductor_SMD:L_0603_1608Metric,https://www.murata.com/en-us/products/productdetail?partno=BLM18EG221SN1%23,ESC,candidate,"Verify bead-current, ESR and power-sequence measurements",1,TBD,TBD; no procurement quote,FB4
+C18,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C18
+C19,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C19
+C20,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C20
+C21,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C21
+C22,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C22
+C23,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C23
+C24,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,,1,TBD,TBD; no procurement quote,C24
+C25,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C25
+C26,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C26
+C27,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C27
+C28,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,,1,TBD,TBD; no procurement quote,C28
+C29,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C29
+C30,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C30
+R26,0.10,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1% Series ESR provision for1uF at pin6; verify effective ESR per LAN DS4.1.1,1,TBD,TBD; no procurement quote,R26
+C31,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,Effective ESR target0.1ohm requires regulator stability verification,1,TBD,TBD; no procurement quote,C31
+C32,470pF 50V C0G,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,Parallel at pin6,1,TBD,TBD; no procurement quote,C32
+C33,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C33
+C34,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C34
+Y1,25MHz HCMOS TCXO,ASTX-H12-25.000MHZ-T,Oscillator:Oscillator_SMD_2.5x2.0mm,https://abracon.com/Oscillators/ASTX-H12.pdf,ESC,candidate,Catalogue ordering candidate; lifecycle/current quote unverified.0..70C board limit;3V3rail±3%.6ppm arithmetic budget through first year; measure loaded VOL<0.35V.,1,TBD,TBD; no procurement quote,Y1
+R27,33,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1% At oscillator source; no load capacitors; OSCO and OSCVDD12 leftNC per internal-regulator external-clock case,1,TBD,TBD; no procurement quote,R27
+C35,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,At TCXO,1,TBD,TBD; no procurement quote,C35
+C36,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C36
+U9,24FC512-I/SN,24FC512-I/SN,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA512-24LC512-24FC512-512-Kbit-I2C-Serial-EEPROM-DS20001754.pdf,ESC,candidate,A0=0x50; WP high by default; fit service jumper only to program verified SII; ESI/vendor ID not yet issued,1,TBD,TBD; no procurement quote,U9
+R28,4.7k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1%,1,TBD,TBD; no procurement quote,R28
+R29,4.7k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1%,1,TBD,TBD; no procurement quote,R29
+R30,10k,TBD,Resistor_SMD:R_0603_1608Metric,,ESC,TBD,1%,1,TBD,TBD; no procurement quote,R30
+JP3,EEPROM_WRITE_ENABLE,TBD,Jumper:Jumper_2_Open,,ESC,TBD,,1,TBD,TBD; no procurement quote,JP3
+C37,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ESC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C37
+J1,100BASE-TX isolated magjack,J0011D01BNL,HEAD:J0011D01BNL_candidate,https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/BoardDesignFiles/lan9252-hbispigpio-evb-rev-b.pdf,ETHERNET,candidate,Bench connector only; board/plug/metal fit not proved. 0..70C catalog. No direct RH SH1.0 wiring assumption.,1,TBD,TBD; no procurement quote,J_ECA
+R31,49.9,TBD,Resistor_SMD:R_0603_1608Metric,,ETHERNET,TBD,1% Source EVB p5; 100ohm diff controlled pairs,1,TBD,TBD; no procurement quote,R31
+R32,49.9,TBD,Resistor_SMD:R_0603_1608Metric,,ETHERNET,TBD,1% Source EVB p5; 100ohm diff controlled pairs,1,TBD,TBD; no procurement quote,R32
+R33,49.9,TBD,Resistor_SMD:R_0603_1608Metric,,ETHERNET,TBD,1% Source EVB p5; 100ohm diff controlled pairs,1,TBD,TBD; no procurement quote,R33
+R34,49.9,TBD,Resistor_SMD:R_0603_1608Metric,,ETHERNET,TBD,1% Source EVB p5; 100ohm diff controlled pairs,1,TBD,TBD; no procurement quote,R34
+C38,22nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ETHERNET,TBD,At magnetics CT,1,TBD,TBD; no procurement quote,C38
+J2,100BASE-TX isolated magjack,J0011D01BNL,HEAD:J0011D01BNL_candidate,https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/BoardDesignFiles/lan9252-hbispigpio-evb-rev-b.pdf,ETHERNET,candidate,Bench connector only; board/plug/metal fit not proved. 0..70C catalog. No direct RH SH1.0 wiring assumption.,1,TBD,TBD; no procurement quote,J_ECB
+R35,49.9,TBD,Resistor_SMD:R_0603_1608Metric,,ETHERNET,TBD,1% Source EVB p5; 100ohm diff controlled pairs,1,TBD,TBD; no procurement quote,R35
+R36,49.9,TBD,Resistor_SMD:R_0603_1608Metric,,ETHERNET,TBD,1% Source EVB p5; 100ohm diff controlled pairs,1,TBD,TBD; no procurement quote,R36
+R37,49.9,TBD,Resistor_SMD:R_0603_1608Metric,,ETHERNET,TBD,1% Source EVB p5; 100ohm diff controlled pairs,1,TBD,TBD; no procurement quote,R37
+R38,49.9,TBD,Resistor_SMD:R_0603_1608Metric,,ETHERNET,TBD,1% Source EVB p5; 100ohm diff controlled pairs,1,TBD,TBD; no procurement quote,R38
+C39,22nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ETHERNET,TBD,At magnetics CT,1,TBD,TBD; no procurement quote,C39
+R39,0,TBD,Resistor_SMD:R_0603_1608Metric,,ETHERNET,TBD,1% Bench-only bond link. EMC/PE/isolation scheme must be reviewed; not protective-earth conductor,1,TBD,TBD; no procurement quote,R39
+U10,2.5V reference,REF3125AIDBZR,Package_TO_SOT_SMD:SOT-23,https://www.ti.com/lit/gpn/REF31,MOTOR,candidate,Local analog 2.5V; not MCU VREF+. Guarded startup before motor enable,1,TBD,TBD; no procurement quote,U10
+C40,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR,TBD,,1,TBD,TBD; no procurement quote,C40
+C41,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR,TBD,Verify REF31 output-cap ESR/load stability,1,TBD,TBD; no procurement quote,C41
+U11,DRV8874PWPR,DRV8874PWPR,Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm,https://www.ti.com/lit/ds/symlink/drv8874.pdf,MOTOR1,candidate,"PMODE=0 PH/EN; IMODE intentionalHiZ selects fixed off-time + latched OCP. OUT2 is motor output, neverGND.",1,TBD,TBD; no procurement quote,U11
+R40,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,1%,1,TBD,TBD; no procurement quote,R40
+R41,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,1%,1,TBD,TBD; no procurement quote,R41
+R42,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,1%,1,TBD,TBD; no procurement quote,R42
+R43,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,1%,1,TBD,TBD; no procurement quote,R43
+R44,10k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,1%,1,TBD,TBD; no procurement quote,R44
+C42,100nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR1,TBD,AtVM,1,TBD,TBD; no procurement quote,C42
+C43,22nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR1,TBD,Charge pump flying cap,1,TBD,TBD; no procurement quote,C43
+C44,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR1,TBD,BetweenVCP andVM; NOT toGND,1,TBD,TBD; no procurement quote,C44
+C45,10uF 25V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR1,TBD,Derated effective capacitance must be verified,1,TBD,TBD; no procurement quote,C45
+R45,6.49k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,0.1% Threshold resistor; sensing-branch loading included in calculations.json,1,TBD,TBD; no procurement quote,R45
+R46,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,0.1% Divider upper,1,TBD,TBD; no procurement quote,R46
+R47,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,"0.1% Divider lower, even if TMUX off",1,TBD,TBD; no procurement quote,R47
+R48,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,0.1% Leakage discharge:2uA*100k=0.2V nominal,1,TBD,TBD; no procurement quote,R48
+C46,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR1,TBD,"Filtered diagnostic only, ~0.5ms tau",1,TBD,TBD; no procurement quote,C46
+R49,1k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,1% ADCseries; 1Mohm wiper-open discharge is a calibrated load,1,TBD,TBD; no procurement quote,R49
+R50,1M,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR1,TBD,"1% Wiper-open decay to0; ~10msRC, not independent contact diagnosis",1,TBD,TBD; no procurement quote,R50
+C47,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR1,TBD,Pot contact noise; open-pot detection needs supervised excitation/test,1,TBD,TBD; no procurement quote,C47
+J3,"Motor pair, local board",B2P-VH(LF)(SN),Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,https://www.jst-mfg.com/product/pdf/eng/eVH.pdf,MOTOR1,candidate,VHR-2N+SVH-21T-P1.1 candidate. Does not mate directly to unverified P16 OEM5pin housing; build keyed adapter harness after OEM pin1 verification,1,TBD,TBD; no procurement quote,J_M1
+J4,"Pot feedback, local board",BM03B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM03B-GHS-TBT_1x03-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,MOTOR1,candidate,GHR-03V-S+SSHL-002T-P0.2 candidate; prevent swap with power supply connectors,1,TBD,TBD; no procurement quote,J_P1
+U12,DRV8874PWPR,DRV8874PWPR,Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm,https://www.ti.com/lit/ds/symlink/drv8874.pdf,MOTOR2,candidate,"PMODE=0 PH/EN; IMODE intentionalHiZ selects fixed off-time + latched OCP. OUT2 is motor output, neverGND.",1,TBD,TBD; no procurement quote,U12
+R51,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,1%,1,TBD,TBD; no procurement quote,R51
+R52,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,1%,1,TBD,TBD; no procurement quote,R52
+R53,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,1%,1,TBD,TBD; no procurement quote,R53
+R54,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,1%,1,TBD,TBD; no procurement quote,R54
+R55,10k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,1%,1,TBD,TBD; no procurement quote,R55
+C48,100nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR2,TBD,AtVM,1,TBD,TBD; no procurement quote,C48
+C49,22nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR2,TBD,Charge pump flying cap,1,TBD,TBD; no procurement quote,C49
+C50,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR2,TBD,BetweenVCP andVM; NOT toGND,1,TBD,TBD; no procurement quote,C50
+C51,10uF 25V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR2,TBD,Derated effective capacitance must be verified,1,TBD,TBD; no procurement quote,C51
+R56,6.49k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,0.1% Threshold resistor; sensing-branch loading included in calculations.json,1,TBD,TBD; no procurement quote,R56
+R57,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,0.1% Divider upper,1,TBD,TBD; no procurement quote,R57
+R58,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,"0.1% Divider lower, even if TMUX off",1,TBD,TBD; no procurement quote,R58
+R59,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,0.1% Leakage discharge:2uA*100k=0.2V nominal,1,TBD,TBD; no procurement quote,R59
+C52,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR2,TBD,"Filtered diagnostic only, ~0.5ms tau",1,TBD,TBD; no procurement quote,C52
+R60,1k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,1% ADCseries; 1Mohm wiper-open discharge is a calibrated load,1,TBD,TBD; no procurement quote,R60
+R61,1M,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR2,TBD,"1% Wiper-open decay to0; ~10msRC, not independent contact diagnosis",1,TBD,TBD; no procurement quote,R61
+C53,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR2,TBD,Pot contact noise; open-pot detection needs supervised excitation/test,1,TBD,TBD; no procurement quote,C53
+J5,"Motor pair, local board",B2P-VH(LF)(SN),Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,https://www.jst-mfg.com/product/pdf/eng/eVH.pdf,MOTOR2,candidate,VHR-2N+SVH-21T-P1.1 candidate. Does not mate directly to unverified P16 OEM5pin housing; build keyed adapter harness after OEM pin1 verification,1,TBD,TBD; no procurement quote,J_M2
+J6,"Pot feedback, local board",BM03B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM03B-GHS-TBT_1x03-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,MOTOR2,candidate,GHR-03V-S+SSHL-002T-P0.2 candidate; prevent swap with power supply connectors,1,TBD,TBD; no procurement quote,J_P2
+U13,DRV8874PWPR,DRV8874PWPR,Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm,https://www.ti.com/lit/ds/symlink/drv8874.pdf,MOTOR3,candidate,"PMODE=0 PH/EN; IMODE intentionalHiZ selects fixed off-time + latched OCP. OUT2 is motor output, neverGND.",1,TBD,TBD; no procurement quote,U13
+R62,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,1%,1,TBD,TBD; no procurement quote,R62
+R63,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,1%,1,TBD,TBD; no procurement quote,R63
+R64,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,1%,1,TBD,TBD; no procurement quote,R64
+R65,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,1%,1,TBD,TBD; no procurement quote,R65
+R66,10k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,1%,1,TBD,TBD; no procurement quote,R66
+C54,100nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR3,TBD,AtVM,1,TBD,TBD; no procurement quote,C54
+C55,22nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR3,TBD,Charge pump flying cap,1,TBD,TBD; no procurement quote,C55
+C56,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR3,TBD,BetweenVCP andVM; NOT toGND,1,TBD,TBD; no procurement quote,C56
+C57,10uF 25V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR3,TBD,Derated effective capacitance must be verified,1,TBD,TBD; no procurement quote,C57
+R67,6.49k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,0.1% Threshold resistor; sensing-branch loading included in calculations.json,1,TBD,TBD; no procurement quote,R67
+R68,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,0.1% Divider upper,1,TBD,TBD; no procurement quote,R68
+R69,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,"0.1% Divider lower, even if TMUX off",1,TBD,TBD; no procurement quote,R69
+R70,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,0.1% Leakage discharge:2uA*100k=0.2V nominal,1,TBD,TBD; no procurement quote,R70
+C58,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR3,TBD,"Filtered diagnostic only, ~0.5ms tau",1,TBD,TBD; no procurement quote,C58
+R71,1k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,1% ADCseries; 1Mohm wiper-open discharge is a calibrated load,1,TBD,TBD; no procurement quote,R71
+R72,1M,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR3,TBD,"1% Wiper-open decay to0; ~10msRC, not independent contact diagnosis",1,TBD,TBD; no procurement quote,R72
+C59,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR3,TBD,Pot contact noise; open-pot detection needs supervised excitation/test,1,TBD,TBD; no procurement quote,C59
+J7,"Motor pair, local board",B2P-VH(LF)(SN),Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,https://www.jst-mfg.com/product/pdf/eng/eVH.pdf,MOTOR3,candidate,VHR-2N+SVH-21T-P1.1 candidate. Does not mate directly to unverified P16 OEM5pin housing; build keyed adapter harness after OEM pin1 verification,1,TBD,TBD; no procurement quote,J_M3
+J8,"Pot feedback, local board",BM03B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM03B-GHS-TBT_1x03-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,MOTOR3,candidate,GHR-03V-S+SSHL-002T-P0.2 candidate; prevent swap with power supply connectors,1,TBD,TBD; no procurement quote,J_P3
+U14,DRV8874PWPR,DRV8874PWPR,Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm,https://www.ti.com/lit/ds/symlink/drv8874.pdf,MOTOR4,candidate,"PMODE=0 PH/EN; IMODE intentionalHiZ selects fixed off-time + latched OCP. OUT2 is motor output, neverGND.",1,TBD,TBD; no procurement quote,U14
+R73,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,1%,1,TBD,TBD; no procurement quote,R73
+R74,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,1%,1,TBD,TBD; no procurement quote,R74
+R75,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,1%,1,TBD,TBD; no procurement quote,R75
+R76,47k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,1%,1,TBD,TBD; no procurement quote,R76
+R77,10k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,1%,1,TBD,TBD; no procurement quote,R77
+C60,100nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR4,TBD,AtVM,1,TBD,TBD; no procurement quote,C60
+C61,22nF 50V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR4,TBD,Charge pump flying cap,1,TBD,TBD; no procurement quote,C61
+C62,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR4,TBD,BetweenVCP andVM; NOT toGND,1,TBD,TBD; no procurement quote,C62
+C63,10uF 25V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR4,TBD,Derated effective capacitance must be verified,1,TBD,TBD; no procurement quote,C63
+R78,6.49k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,0.1% Threshold resistor; sensing-branch loading included in calculations.json,1,TBD,TBD; no procurement quote,R78
+R79,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,0.1% Divider upper,1,TBD,TBD; no procurement quote,R79
+R80,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,"0.1% Divider lower, even if TMUX off",1,TBD,TBD; no procurement quote,R80
+R81,100k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,0.1% Leakage discharge:2uA*100k=0.2V nominal,1,TBD,TBD; no procurement quote,R81
+C64,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR4,TBD,"Filtered diagnostic only, ~0.5ms tau",1,TBD,TBD; no procurement quote,C64
+R82,1k,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,1% ADCseries; 1Mohm wiper-open discharge is a calibrated load,1,TBD,TBD; no procurement quote,R82
+R83,1M,TBD,Resistor_SMD:R_0603_1608Metric,,MOTOR4,TBD,"1% Wiper-open decay to0; ~10msRC, not independent contact diagnosis",1,TBD,TBD; no procurement quote,R83
+C65,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,MOTOR4,TBD,Pot contact noise; open-pot detection needs supervised excitation/test,1,TBD,TBD; no procurement quote,C65
+J9,"Motor pair, local board",B2P-VH(LF)(SN),Connector_JST:JST_VH_B2P-VH_1x02_P3.96mm_Vertical,https://www.jst-mfg.com/product/pdf/eng/eVH.pdf,MOTOR4,candidate,VHR-2N+SVH-21T-P1.1 candidate. Does not mate directly to unverified P16 OEM5pin housing; build keyed adapter harness after OEM pin1 verification,1,TBD,TBD; no procurement quote,J_M4
+J10,"Pot feedback, local board",BM03B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM03B-GHS-TBT_1x03-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,MOTOR4,candidate,GHR-03V-S+SSHL-002T-P0.2 candidate; prevent swap with power supply connectors,1,TBD,TBD; no procurement quote,J_P4
+U15,TMUX1511PWR,TMUX1511PWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,https://www.ti.com/lit/ds/symlink/tmux1511.pdf,ADC,candidate,IPOFF max±2uA atVDD0; powered-off input0..3.6V; not surge-rated isolation,1,TBD,TBD; no procurement quote,U15
+C66,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ADC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C66
+R84,100k,TBD,Resistor_SMD:R_0603_1608Metric,,ADC,TBD,0.1% VMdivider upper; VM must remain≤15V under all admitted bench operation,1,TBD,TBD; no procurement quote,R84
+R85,20k,TBD,Resistor_SMD:R_0603_1608Metric,,ADC,TBD,0.1% VMdivider lower,1,TBD,TBD; no procurement quote,R85
+R86,100k,TBD,Resistor_SMD:R_0603_1608Metric,,ADC,TBD,0.1% Leakage discharge,1,TBD,TBD; no procurement quote,R86
+C67,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ADC,TBD,,1,TBD,TBD; no procurement quote,C67
+U16,TMUX1511PWR,TMUX1511PWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,https://www.ti.com/lit/ds/symlink/tmux1511.pdf,ADC,candidate,IPOFF max±2uA atVDD0; powered-off input0..3.6V; not surge-rated isolation,1,TBD,TBD; no procurement quote,U16
+C68,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ADC,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C68
+R87,100k,TBD,Resistor_SMD:R_0603_1608Metric,,ADC,TBD,"0.1% ADCdivider upper, isolated beforeMCU",1,TBD,TBD; no procurement quote,R87
+R88,100k,TBD,Resistor_SMD:R_0603_1608Metric,,ADC,TBD,0.1% ADCdivider lower,1,TBD,TBD; no procurement quote,R88
+R89,100k,TBD,Resistor_SMD:R_0603_1608Metric,,ADC,TBD,0.1% Powered-off leakage discharge,1,TBD,TBD; no procurement quote,R89
+C69,10nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,ADC,TBD,,1,TBD,TBD; no procurement quote,C69
+U17,TPS22919DCKR,TPS22919DCKR,Package_TO_SOT_SMD:SC-70-6,https://www.ti.com/lit/ds/symlink/tps22919.pdf,LED,candidate,CommonVIO enable; all bus outputs low/highZ beforedisable. QOD connected. MCU does not supply VIO current.,1,TBD,TBD; no procurement quote,U17
+C70,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C70
+C71,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,,1,TBD,TBD; no procurement quote,C71
+U18,TPS22919DCKR,TPS22919DCKR,Package_TO_SOT_SMD:SC-70-6,https://www.ti.com/lit/ds/symlink/tps22919.pdf,LED,candidate,Individual rail switch; self-protection is not coordinated 1A GH wire/fuse protection,1,TBD,TBD; no procurement quote,U18
+C72,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C72
+C73,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,,1,TBD,TBD; no procurement quote,C73
+R90,47k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R90
+U19,TPS22919DCKR,TPS22919DCKR,Package_TO_SOT_SMD:SC-70-6,https://www.ti.com/lit/ds/symlink/tps22919.pdf,LED,candidate,Individual rail switch; self-protection is not coordinated 1A GH wire/fuse protection,1,TBD,TBD; no procurement quote,U19
+C74,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C74
+C75,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,,1,TBD,TBD; no procurement quote,C75
+R91,47k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R91
+U20,TPS22919DCKR,TPS22919DCKR,Package_TO_SOT_SMD:SC-70-6,https://www.ti.com/lit/ds/symlink/tps22919.pdf,LED,candidate,Individual rail switch; self-protection is not coordinated 1A GH wire/fuse protection,1,TBD,TBD; no procurement quote,U20
+C76,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C76
+C77,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,,1,TBD,TBD; no procurement quote,C77
+R92,47k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R92
+U21,TPS22919DCKR,TPS22919DCKR,Package_TO_SOT_SMD:SC-70-6,https://www.ti.com/lit/ds/symlink/tps22919.pdf,LED,candidate,Individual rail switch; self-protection is not coordinated 1A GH wire/fuse protection,1,TBD,TBD; no procurement quote,U21
+C78,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C78
+C79,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,,1,TBD,TBD; no procurement quote,C79
+R93,47k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R93
+U22,TPS22919DCKR,TPS22919DCKR,Package_TO_SOT_SMD:SC-70-6,https://www.ti.com/lit/ds/symlink/tps22919.pdf,LED,candidate,Individual rail switch; self-protection is not coordinated 1A GH wire/fuse protection,1,TBD,TBD; no procurement quote,U22
+C80,100nF 16V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,One directly at each indicated supply pin; final DC bias/MPN pending,1,TBD,TBD; no procurement quote,C80
+C81,1uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,LED,TBD,,1,TBD,TBD; no procurement quote,C81
+R94,47k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R94
+R95,33,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R95
+R96,10k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R96
+R97,33,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R97
+R98,10k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R98
+R99,33,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R99
+R100,10k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R100
+R101,33,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R101
+R102,10k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R102
+R103,33,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R103
+R104,10k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R104
+R105,33,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R105
+R106,10k,TBD,Resistor_SMD:R_0603_1608Metric,,LED,TBD,1%,1,TBD,TBD; no procurement quote,R106
+J11,FPL01-compatible GH10,BM10B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM10B-GHS-TBT_1x10-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,LED,candidate,MatingGHR-10V-S/SSHL-002T-P0.2; FPLhead pin10 already47k/1k/100nF; no duplicatepullup. Fullmatedheight/exitMCADpending,1,TBD,TBD; no procurement quote,J_L1
+J12,FPL01-compatible GH10,BM10B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM10B-GHS-TBT_1x10-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,LED,candidate,MatingGHR-10V-S/SSHL-002T-P0.2; FPLhead pin10 already47k/1k/100nF; no duplicatepullup. Fullmatedheight/exitMCADpending,1,TBD,TBD; no procurement quote,J_L2
+J13,FPL01-compatible GH10,BM10B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM10B-GHS-TBT_1x10-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,LED,candidate,MatingGHR-10V-S/SSHL-002T-P0.2; FPLhead pin10 already47k/1k/100nF; no duplicatepullup. Fullmatedheight/exitMCADpending,1,TBD,TBD; no procurement quote,J_L3
+J14,FPL01-compatible GH10,BM10B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM10B-GHS-TBT_1x10-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,LED,candidate,MatingGHR-10V-S/SSHL-002T-P0.2; FPLhead pin10 already47k/1k/100nF; no duplicatepullup. Fullmatedheight/exitMCADpending,1,TBD,TBD; no procurement quote,J_L4
+J15,Central285LED/2LP5860,BM12B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM12B-GHS-TBT_1x12-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,LED,candidate,CentralPCBA notyetdesigned; inputreturn mustreplicate47k+10kNTC+1k+100nF contract. MISOtri-stateverifieddevice; singleCS atatime.,1,TBD,TBD; no procurement quote,J_C
+J16,12V motor supply input,B6P-VH(LF)(SN),Connector_JST:JST_VH_B6P-VH_1x06_P3.96mm_Vertical,https://www.jst-mfg.com/product/pdf/eng/eVH.pdf,POWER,candidate,Sixpositions distinguishfrom2pinmotorports; VHR-6N candidate. Externalfuse/disconnect/regensink mandatorybeforemotoroperation; no onboardsurgeclampclaimed,1,TBD,TBD; no procurement quote,J_VM
+J17,3.3V regulated logic input,B3P-VH(LF)(SN),Connector_JST:JST_VH_B3P-VH_1x03_P3.96mm_Vertical,https://www.jst-mfg.com/product/pdf/eng/eVH.pdf,POWER,candidate,"External3.3V±3%,1Aplanning; no24V/5V directly. MatchingVHR-3Nandcrimpneeded; mechanicalmistake-proofingpending",1,TBD,TBD; no procurement quote,J_LOGIC
+J18,3.3V regulated LED input,B4P-VH(LF)(SN),Connector_JST:JST_VH_B4P-VH_1x04_P3.96mm_Vertical,https://www.jst-mfg.com/product/pdf/eng/eVH.pdf,POWER,candidate,"External3.3V±3%,3Aplanningseparatefromlogic; mustnotprecedelogic, nohotplug",1,TBD,TBD; no procurement quote,J_LED
+C82,1000uF 25V aluminium,TBD,TBD aluminiumcase after ripple/ESR selection,,POWER,TBD,"Illustrativebulk, package/ESR/rippleMPNTBD;12→15V storesonly0.0405J, notregenapproval",1,TBD,TBD; no procurement quote,C82
+C83,22uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,POWER,TBD,EffectiveDCbias/inrushpending,1,TBD,TBD; no procurement quote,C83
+C84,22uF 10V X7R,TBD,Capacitor_SMD:C_0603_1608Metric,,POWER,TBD,,1,TBD,TBD; no procurement quote,C84
+J19,local 3.3V prototype interlock,BM02B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,INHIBIT,candidate,"Not24Vinput,notSTO; externalcontactrequiresqualifiedlevelinterface; pulldowninhibitsonopen",1,TBD,TBD; no procurement quote,J_PERMIT
+J20,ARM Cortex SWD10,TBD keyed1.27mm,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical,,MCU,candidate,"VTREFsenseonly, do not power board from debug probe; wiring ARM10 standard, exactlockcandidateTBD",1,TBD,TBD; no procurement quote,J_SWD
+J21,3.3V debug UART,BM04B-GHS-TBT(LF)(SN),Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical,https://www.jst-mfg.com/product/index.php?lang=2&series=105,MCU,candidate,VTREFsenseonly; no RS232voltages; debugleadremovedbeforepoweroff,1,TBD,TBD; no procurement quote,J_UART

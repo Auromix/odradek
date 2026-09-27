@@ -1,0 +1,214 @@
+{
+  "revision": "HEAD-CTRL02",
+  "license_scope": "Original facts/analysis only; third-party datasheets not copied into repo",
+  "sources": [
+    {
+      "id": "stm",
+      "url": "https://www.st.com/resource/en/datasheet/stm32g474ve.pdf",
+      "accessed": "2026-09-27",
+      "document": "DS12288 Rev6 Nov2021 Tables12/13 pp56-77",
+      "evidence_scope": "LQFP100 actualpin numbers; AF5SPI1/2; AF2TIM4; ADC1/3 channels; power/debug/BOOT0.",
+      "downloaded_sha256": null,
+      "access_method": "web primary-source PDF/table read; localdownload unavailable",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "lan",
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/UNG/ProductDocuments/DataSheets/LAN9252-Data-Sheet-DS00001909.pdf",
+      "accessed": "2026-09-27",
+      "document": "DS00001909C 2024 Tables3-2,8IRQ,14PDI,18clock/reset",
+      "evidence_scope": "64TQFP-EP; SPI13/17/19/50; internalrailfiltering; coppermode00; PDI0x80; EEPROMandclockrequirements.",
+      "downloaded_sha256": "e1a7c0c1a023a5947e117ba5ec740451daee6b27e136740714e83cc92b80e05b",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "lanref",
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/BoardDesignFiles/lan9252-hbispigpio-evb-rev-b.pdf",
+      "accessed": "2026-09-27",
+      "document": "EVB-LAN9252-HBI&SPI+GPIO RevB 2015 pp4/5",
+      "evidence_scope": "Original redraw of copper interface pinfacts,49.9ohm terminations,CTbias andmagjackcandidate.",
+      "downloaded_sha256": "d9e024fc61ee414a4f03f9167c9027cffa4190b6bb4b6ac0bf9e0dcbeb360ae2",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "drv",
+      "url": "https://www.ti.com/lit/ds/symlink/drv8874.pdf",
+      "accessed": "2026-09-27",
+      "document": "SLVSF66A Dec2019 pp3-6,12-18",
+      "evidence_scope": "PH/EN,PMODE,IMODE,chargepumpcaps,currentgain/tolerance,IPROPIabsolute stressratings.",
+      "downloaded_sha256": "fa2b0d0bdf49088299ee167675542b4c3b16b7c8e384ce03af93ffafafa6c80a",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "ref",
+      "url": "https://www.ti.com/lit/gpn/REF31",
+      "accessed": "2026-09-27",
+      "document": "SBVS046E Apr2026 pp3/4",
+      "evidence_scope": "REF3125AIDBZR IN1/OUT2/GND3;2.5V referencecandidate.",
+      "downloaded_sha256": "1fd81fb15648b7b69fb9cc14760b4949877fc63eff3632228815f40c79e164f9",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "mux",
+      "url": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+      "accessed": "2026-09-27",
+      "document": "SCDS390B Mar2025 pp3/4/6",
+      "evidence_scope": "TMUX1511PWR TSSOP14;4SPST;RONmax4.5ohm; VDD0offleak\u00b12uA; poweredoffinput0..3.6V.",
+      "downloaded_sha256": "c32b83722e3717c554dc8f68da05d9e02aa44087043d7b820f5e113713adbfcb",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "quad",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf",
+      "accessed": "2026-09-27",
+      "document": "SCAS290 family official current PDF",
+      "evidence_scope": "SN74LVC08APWR quadAND pinmap; ordinarylogic, not safetysystem.",
+      "downloaded_sha256": "e5af3b29e61782a243d18a2e0a24e0f8bbda23a4c46cdea98b01dae91a96e97d",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "and",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "accessed": "2026-09-27",
+      "document": "SCES217AA Aug2026 p3",
+      "evidence_scope": "SN74LVC1G08DBVR SOT23-5 pinmap; GPIOrequest hardwareAND.",
+      "downloaded_sha256": "30b963cc44233cf3ca35c891ff987c8323a2244ecc765e23296ec96ca4b42666",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "super",
+      "url": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+      "accessed": "2026-09-27",
+      "document": "SBVS050N Aug2026 pp3/4/7",
+      "evidence_scope": "G33threshold3.07V; CTvia40k..200ktoVDD delay180..420ms; open-drainreset.",
+      "downloaded_sha256": "74d889c0f68af88032f1633c26381817cc03e10d9fd3b4c177a044ad3ed86eed",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "switch",
+      "url": "https://www.ti.com/lit/ds/symlink/tps22919.pdf",
+      "accessed": "2026-09-27",
+      "document": "SLVSEN5B May2019 p3",
+      "evidence_scope": "TPS22919DCKR pin1IN/2GND/3ON/4NC/5QOD/6OUT;1.5Aclass; noGHfusecoordinationclaim.",
+      "downloaded_sha256": "743c59b01fb0891d2d0f1faba779161cd2d2b6c18edf68e6d5b3279016240c84",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "xtal",
+      "url": "https://abracon.com/Oscillators/ASTX-H12.pdf",
+      "accessed": "2026-09-27",
+      "document": "ASTX-H12 RevMay13 2015 pp1/2",
+      "evidence_scope": "3.3VHCMOS25MHzorderingcandidate; pin1OE/2GND/3OUT/4VDD; firstyearppm arithmetic; lifecycle notverified.",
+      "downloaded_sha256": null,
+      "access_method": "web primary-source PDF/table read; localdownload unavailable",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "eeprom",
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA512-24LC512-24FC512-512-Kbit-I2C-Serial-EEPROM-DS20001754.pdf",
+      "accessed": "2026-09-27",
+      "document": "DS20001754 24FC512 family",
+      "evidence_scope": "24FC512-I/SN addressstraps andWP; SIIimage notprovided.",
+      "downloaded_sha256": "896397700656e4acfee3d72e3a76d6e4a2877084b17e6370d9923136dbbe3471",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "gh",
+      "url": "https://www.jst-mfg.com/product/index.php?lang=2&series=105",
+      "accessed": "2026-09-27",
+      "document": "JST GH official product catalogue/table",
+      "evidence_scope": "BM03/04/10/12 GHS headers, GHRhousings, SSHL-002T-P0.2. 1.25mmpitch; matingenvelopes notMCADcertified.",
+      "downloaded_sha256": "b1dcb317b6b9a4fbbedd2dbf42c64c95306a252d23de8933b85fcf161240b722",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "vh",
+      "url": "https://www.jst-mfg.com/product/pdf/eng/eVH.pdf",
+      "accessed": "2026-09-27",
+      "document": "JST VH official catalogue pp2/3",
+      "evidence_scope": "B2P/B3P/B4P/B6P-VH plusVHR housings andSVH crimp. Powerinput uses6positions; fullmating/clearancereviewpending.",
+      "downloaded_sha256": "d51e669c597988b20c0963daf5bef7356cbd2104c1f867e9107c6fa6cd2b899c",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "lp",
+      "url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+      "accessed": "2026-09-27",
+      "document": "SLVSEA7 LP5860 official",
+      "evidence_scope": "SixSPI slaves withindependentCS; VIO_EN is asupply; pinoutmatchesFPL01contract.",
+      "downloaded_sha256": "2d0234bb32de821d8c3ba9208bf5e1fae3f43d4570b1e42697d0ef791f70e771",
+      "access_method": "web primary-source read plus local PDF text/render",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "pulse",
+      "url": "https://www.pulseelectronics.com/wp-content/uploads/2020/12/Ethernet-Connector-Module-Selector-Guide-f.pdf",
+      "accessed": "2026-09-27",
+      "document": "Pulse Ethernet Connector Module SelectorGuide",
+      "evidence_scope": "J0011D01BNL 100BASE-TXintegratedmagjack;0..70C;13.59mmheight21.34mmlength; benchcandidateonly.",
+      "downloaded_sha256": null,
+      "access_method": "web primary-source PDF/table read; localdownload unavailable",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "murata",
+      "url": "https://www.murata.com/en-us/products/productdetail?partno=BLM18EG221SN1%23",
+      "accessed": "2026-09-27",
+      "document": "Murata BLM18EG221SN1 family",
+      "evidence_scope": "BLM18EG221SN1D identified inofficialEVB andMurataofficialfamily; currentproductionstatusnotasserted",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "vh-index",
+      "url": "https://www.jst-mfg.com/product/index.php?lang=2&series=262",
+      "accessed": "2026-09-27",
+      "document": "JSTVH currentpartlist",
+      "evidence_scope": "B2P/3P/4P/6P-VH listed; LF/SN appearsonlabels",
+      "redistributed_vendor_document": false
+    },
+    {
+      "id": "resetbuf",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g07.pdf",
+      "accessed": "2026-09-27",
+      "document": "SCES308L May2015 p3",
+      "evidence_scope": "SN74LVC2G07DCKR pin1A1/2GND/3A2/4Y2/5VCC/6Y1; twoopen-drainbuffers isolateMCUandESCresetbranches",
+      "downloaded_sha256": "71bbb2fc452e2949b332c030b004b094ba679ac8cce27123f806a0a6b1fde660",
+      "redistributed_vendor_document": false
+    }
+  ],
+  "repo_inputs": [
+    {
+      "path": "docs/engineering/p16-control-interface.md",
+      "sha256": "74dda5adb42d4dd199aeea8ec25297edd634a28a74bfd794cd3368ad49439500"
+    },
+    {
+      "path": "docs/engineering/rh-operation-evidence.md",
+      "sha256": "951a363280a8f414cc13df4307c5a6f56e63b8d217964dccd9be862b745861ec"
+    },
+    {
+      "path": "engineering/electronics/final-petal-fpl01/upper/netlist.json",
+      "sha256": "921d354b830f4695f8121afea933fcb1475de5f76998c7a4bf9bcbfd926d5084"
+    },
+    {
+      "path": "engineering/generated/head-control-volume01/study.json",
+      "sha256": "189a46da0e24e15d5c46c00a334dbf1fd404f25d393f40af8fa03c072d5c01e7"
+    }
+  ],
+  "notes": [
+    "STofficialPDF wasread throughweb; directdownload failed, so no fabricatedlocalhash.",
+    "JST eGH/eVH PDF font extraction/render omittedsome text inlocaltool; officialwebparsed tablesandpriorFPL pinfacts used,notclaimingalllocalfontglyphsread.",
+    "MicrochipEVB p5 wasactually renderedandvisually checked locally; diagram is not redistributed."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "revision": "HEAD-CTRL02",
+  "status": "schematic candidate only",
+  "components": 242,
+  "pins": 907,
+  "mcu_package_pins": 100,
+  "connected_pins_compared": 833,
+  "pin_net_differences": [],
+  "unexpected_native_nets": [],
+  "erc_violations": 0,
+  "erc_exclusions": [],
+  "native_default_ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "af_adc_assertions": "pass: independently enumerated selected ST Table12/13 cases",
+  "driver_pin_assertions": "pass",
+  "FPL01_GH10_pin_contract": "pass",
+  "PCB_created": false,
+  "DRC_run": false,
+  "assigned_footprints": 0,
+  "candidate_footprint_metadata": true,
+  "no_hardware_tests": true,
+  "sources_read_scope": "officialdatasheets+existingrepoP16/RH/FPL; not vendor schematic review",
+  "sha256": {
+    "build.py": "c7871812cedeaaebad9dfd79d3d9d587f42821fcc4e8d9a267926b498b51aadd",
+    "pinmux.csv": "d373ef3991e9f54e4f8c2b5e8a11eb88a07170f4f5affa0078dce378bc7fb0c7",
+    "bom.csv": "a88487d60b68f323abc8a4e286604ff93b24958e765c41b227afb29216d30f55",
+    "pin-net.csv": "7f6b36e3357a53053ce60be758de6a00d82e2d30c061d8472f48bca083046902",
+    "netlist.json": "887c8df0b4877c83e677dae2443531caed6e0a1074c929b654f5c71033e1c59e",
+    "calculations.json": "706f545869286e4f05e3c6df150ec5415166874b0bef3e43e4a93f08dec57f5b",
+    "sources.json": "376c5af76e6327c6a8100eddec269c44418dc7205600fd667aa82f4aa6db5caa",
+    "control-contract.json": "b4893499a3035f1ebf338a3481d6ee035e50ecfc7a09d256e39068d629e42365",
+    "verify.py": "eadaa761fc435fac936e020eb632f0f46721758df11646a0d160dcd5b2b2760e",
+    "rebuild.py": "061901c464adb2890158b126beb1d39d316999046830ee528ab8a4756541b522",
+    "kicad/head.kicad_sch": "49637cb3d9c106b65dd96acf2ac61b72eceace0a0d720e1ed58ae6c18bde705a",
+    "kicad/head.net.xml": "f21e7cb53368ea27192da754b195d28631cb40a30867ef6ce9aadbb8a0fe90a4",
+    "kicad/checks/erc.json": "aa853c7b81033d1da3d01f613b7c3f555e34e03404b1caae27f2ad96b1d64d67"
+  },
+  "FPL_source_sha256": "921d354b830f4695f8121afea933fcb1475de5f76998c7a4bf9bcbfd926d5084"
+}

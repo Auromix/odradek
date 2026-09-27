@@ -1,0 +1,70 @@
+{
+  "revision": "HEAD-CTRL02",
+  "ipropi": {
+    "RIPROPI_ohm": 6490,
+    "divider_top_ohm": 100000,
+    "divider_bottom_ohm": 100000,
+    "adc_discharge_ohm": 100000,
+    "switch_Ron_bound_ohm": 4.5,
+    "enabled_effective_R_ohm": 6220.846717302257,
+    "enabled_ADC_ratio": 0.33332333363332434,
+    "enabled_Itrip_A": 0.89305456443794,
+    "Itrip_corners_A": [
+      0.8216193286418414,
+      0.9760951327559989
+    ],
+    "disabled_effective_R_ohm": 6286.018693399195,
+    "disabled_Itrip_A": 0.8837955829481254,
+    "input_stress_check_V": 5.75,
+    "not_operating_setpoint": true,
+    "off_switch_input_max_V": 2.8778749999999995,
+    "on_ADC_max_V": 1.9166091683916149,
+    "ADC_poweroff_leakage_bound_V": 0.20019999999999996,
+    "filter_cap_F": 1e-08,
+    "nominal_ADC_time_constant_s": 0.0003402649699370122,
+    "limitations": [
+      "DRV absmax5.75V is NOT a continuous operating target nor proof against arbitrary failure",
+      "TMUX IPoff bound specified VDD=0; supply-ramp/negative transient verification required",
+      "Current filter is diagnostic; native driverchopping/OCP independent",
+      "All resistorloads counted; priorP16CTRL01 6.19k baselineunchanged"
+    ]
+  },
+  "vm": {
+    "max_admitted_V": 15,
+    "divider_top": 100000,
+    "divider_bottom": 20000,
+    "discharge": 100000,
+    "enabled_ratio": 0.14285714285714285,
+    "off_ratio": 0.16666666666666666,
+    "off_source_max_V": 2.5,
+    "bulk_nominal_F": 0.001,
+    "energy_12_to_15_J": 0.0405
+  },
+  "lighting": {
+    "petal_baseline_W": 2.264,
+    "central_baseline_VLED_A": 0.5182,
+    "power_input_peak_A": 1.6,
+    "first_light_mA_perLED": 3,
+    "full20mA_requires_thermal_validation": true,
+    "all6_frame_bytes": 2376,
+    "SPI2_Hz": 2000000,
+    "payload_fraction_at60Hz": 0.57024
+  },
+  "reset": {
+    "supervisor_min_s": 0.18,
+    "LAN_after_all_rails_valid_min_s": 0.025,
+    "allowed_rail_and_clock_settling_after_logic_threshold_s": 0.155,
+    "requires_measurement": true
+  },
+  "clock": {
+    "MCU_source": "internalHSI16",
+    "MCU_Hz": 16000000,
+    "TIM4_ARR": 799,
+    "TIM4_PSC": 0,
+    "PWM_Hz": 20000,
+    "ESC_TCXO": "ASTX-H12-25.000MHZ-T",
+    "catalogue_first_year_sum_ppm": 6,
+    "overall_ETHERCAT_budget_ppm": 25,
+    "actualclock_load_validation": false
+  }
+}

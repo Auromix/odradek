@@ -1,0 +1,101 @@
+package_pin,pad_name,net,direction,peripheral,alternate_function,default_state,note,source,table
+1,PE2,LED_CS0_MCU,output,GPIO,,"external10k to switchedVIO; MCUhighZ untilVIOvalid, thenODR1 beforeoutput",,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+2,PE3,LED_CS1_MCU,output,GPIO,,"external10k to switchedVIO; MCUhighZ untilVIOvalid, thenODR1 beforeoutput",,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+3,PE4,LED_CS2_MCU,output,GPIO,,"external10k to switchedVIO; MCUhighZ untilVIOvalid, thenODR1 beforeoutput",,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+4,PE5,LED_CS3_MCU,output,GPIO,,"external10k to switchedVIO; MCUhighZ untilVIOvalid, thenODR1 beforeoutput",,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+5,PE6,LED_CS4_MCU,output,GPIO,,"external10k to switchedVIO; MCUhighZ untilVIOvalid, thenODR1 beforeoutput",,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+6,VBAT,3V3_LOGIC,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+7,PC13,LED_PWR4_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,PC13 sources gate input only; no LED current,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+8,PC14,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+9,PC15,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+10,PF9,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+11,PF10,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+12,PF0,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+13,PF1,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+14,PG10_NRST,MCU_RESET_N,open_collector,NRST,,"Keepresetfunction; separateopen-drainsupervisorbuffer+debug, notshortedtoLAN",,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+15,PC0,M1_POT_ADC,input,ADC1_IN6,,analog/no pull,Pot exciter and VREF+ use the same 3V3_A; 1k/10nF filter,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+16,PC1,M2_POT_ADC,input,ADC1_IN7,,analog/no pull,Pot exciter and VREF+ use the same 3V3_A; 1k/10nF filter,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+17,PC2,M3_POT_ADC,input,ADC1_IN8,,analog/no pull,Pot exciter and VREF+ use the same 3V3_A; 1k/10nF filter,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+18,PC3,M4_POT_ADC,input,ADC1_IN9,,analog/no pull,Pot exciter and VREF+ use the same 3V3_A; 1k/10nF filter,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+19,PF2,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+20,PA0,M1_I_ADC,input,ADC1_IN1,,analog/no pull,100k divider + TMUX1511 + 100k discharge/10nF; RIPROPI 6.49k,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+21,PA1,M2_I_ADC,input,ADC1_IN2,,analog/no pull,100k divider + TMUX1511 + 100k discharge/10nF; RIPROPI 6.49k,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+22,PA2,M3_I_ADC,input,ADC1_IN3,,analog/no pull,100k divider + TMUX1511 + 100k discharge/10nF; RIPROPI 6.49k,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+23,VSS,GND,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+24,VDD,3V3_LOGIC,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+25,PA3,M4_I_ADC,input,ADC1_IN4,,analog/no pull,100k divider + TMUX1511 + 100k discharge/10nF; RIPROPI 6.49k,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+26,PA4,ESC_CS_N,output,GPIO,,10k pullup to 3V3_LOGIC; high before SPI init,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+27,PA5,ESC_SCK_MCU,output,SPI1,AF5,low/high-Z until peer powered; 33ohm source damping candidate,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+28,PA6,ESC_MISO_MCU,input,SPI1,AF5,low/high-Z until peer powered; 33ohm source damping candidate,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+29,PA7,ESC_MOSI_MCU,output,SPI1,AF5,low/high-Z until peer powered; 33ohm source damping candidate,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+30,PC4,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+31,PC5,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+32,PB0,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+33,PB1,EXT_PERMIT,input,GPIO monitor,,47k external pulldown; ONLY 0/3.3V local interlock,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+34,PB2,LED_PWR0_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,PC13 sources gate input only; no LED current,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+35,VSSA,GND,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+36,VREF+,3V3_A,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+37,VDDA,3V3_A,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+38,PE7,NTC_P1,input,ADC3_IN4,,analog/no pull,No duplicate NTC pullup; VM isolated through fifth TMUX channel,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+39,PE8,NTC_P2,input,ADC3_IN6,,analog/no pull,No duplicate NTC pullup; VM isolated through fifth TMUX channel,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+40,PE9,NTC_P3,input,ADC3_IN2,,analog/no pull,No duplicate NTC pullup; VM isolated through fifth TMUX channel,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+41,PE10,NTC_P4,input,ADC3_IN14,,analog/no pull,No duplicate NTC pullup; VM isolated through fifth TMUX channel,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+42,PE11,VM_ADC,input,ADC3_IN15,,analog/no pull,No duplicate NTC pullup; VM isolated through fifth TMUX channel,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+43,PE12,VLED_ADC,input,ADC3_IN16,,analog/no pull,No duplicate NTC pullup; VM isolated through fifth TMUX channel,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+44,PE13,NTC_C,input,ADC3_IN3,,analog/no pull,No duplicate NTC pullup; VM isolated through fifth TMUX channel,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+45,PE14,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+46,PE15,MCU_ARM,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+47,PB10,LED_PWR1_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,PC13 sources gate input only; no LED current,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+48,VSS,GND,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+49,VDD,3V3_LOGIC,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+50,PB11,LED_PWR2_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,PC13 sources gate input only; no LED current,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+51,PB12,LED_PWR3_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,PC13 sources gate input only; no LED current,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+52,PB13,LED_SCK_MCU,output,SPI2,AF5,low/high-Z until peer powered; 33ohm source damping candidate,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+53,PB14,LED_MISO_MCU,input,SPI2,AF5,low/high-Z until peer powered; 33ohm source damping candidate,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+54,PB15,LED_MOSI_MCU,output,SPI2,AF5,low/high-Z until peer powered; 33ohm source damping candidate,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+55,PD8,M1_PH,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+56,PD9,M2_PH,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+57,PD10,M3_PH,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+58,PD11,M4_PH,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+59,PD12,M1_EN,output,TIM4_CH1,AF2,47k pulldown; timer disabled then CCR=0/ARR=799 at 16MHz before AF,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+60,PD13,M2_EN,output,TIM4_CH2,AF2,47k pulldown; timer disabled then CCR=0/ARR=799 at 16MHz before AF,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+61,PD14,M3_EN,output,TIM4_CH3,AF2,47k pulldown; timer disabled then CCR=0/ARR=799 at 16MHz before AF,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+62,PD15,M4_EN,output,TIM4_CH4,AF2,47k pulldown; timer disabled then CCR=0/ARR=799 at 16MHz before AF,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+63,VSS,GND,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+64,VDD,3V3_LOGIC,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+65,PC6,ESC_SYNC0,input,EXTI6,,input/no pull,TIM3_CH1 AF2 also legal but not selected; no simultaneous EXTI/timer claim,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+66,PC7,ESC_IRQ_N,input,EXTI7,,10k pullup; IRQ default open-drain active-low,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+67,PC8,ESC_SYNC1,input,EXTI8,,input/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+68,PC9,ESC_RESET_N,open_collector,GPIO open-drain + EXTI9,,external10kpullup; ODR1=>released; bootassertLow>=1ms withARM0,SeparatefromMCUNRST; fallrequireslatchedmotioninhibit beforefirmwareallowre-arm,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+69,PA8,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+70,PA9,DEBUG_TX,output,USART1_TX,AF7,GPIO high-Z until UART init,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+71,PA10,DEBUG_RX,input,USART1_RX,AF7,10k pullup; do not backpower unpowered logic,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+72,PA11,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+73,PA12,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+74,VSS,GND,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+75,VDD,3V3_LOGIC,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+76,PA13,SWDIO,bidirectional,SWD,AF0,"reset debug function, internal pullup",,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+77,PA14,SWCLK,input,SWD,AF0,"reset debug function, internal pulldown",,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+78,PA15,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+79,PC10,LED_CS5_MCU,output,GPIO,,"external10k to switchedVIO; MCUhighZ untilVIOvalid, thenODR1 beforeoutput",,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+80,PC11,LED_VSYNC_MCU,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+81,PC12,LED_IO_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+82,PD0,M1_SLEEP_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+83,PD1,M2_SLEEP_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+84,PD2,M3_SLEEP_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+85,PD3,M4_SLEEP_REQ,output,GPIO,,external pulldown; configure ODR=0 before output,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+86,PD4,M1_FAULT_N,input,GPIO polling,,10k pullup; poll; no EXTI6/7 conflict,"Fast fault handling remains in DRV8874, polling is not a safety function",https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+87,PD5,M2_FAULT_N,input,GPIO polling,,10k pullup; poll; no EXTI6/7 conflict,"Fast fault handling remains in DRV8874, polling is not a safety function",https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+88,PD6,M3_FAULT_N,input,GPIO polling,,10k pullup; poll; no EXTI6/7 conflict,"Fast fault handling remains in DRV8874, polling is not a safety function",https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+89,PD7,M4_FAULT_N,input,GPIO polling,,10k pullup; poll; no EXTI6/7 conflict,"Fast fault handling remains in DRV8874, polling is not a safety function",https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+90,PB3,SWO,output,TRACE,AF0,optional SWO; no JTAG use,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+91,PB4,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+92,PB5,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+93,PB6,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+94,PB7,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+95,PB8_BOOT0,BOOT0,input,BOOT,,10k pulldown; open jumper to 3V3,Audit nSWBOOT0/nBOOT0 option bytes; not determined by wiring alone,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+96,PB9,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+97,PE0,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+98,PE1,NC,bidirectional,unused,,NC; firmware analog/no pull,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+99,VSS,GND,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
+100,VDD,3V3_LOGIC,power_in,power,,supply,,https://www.st.com/resource/en/datasheet/stm32g474ve.pdf,DS12288 Rev6 Table12/13
