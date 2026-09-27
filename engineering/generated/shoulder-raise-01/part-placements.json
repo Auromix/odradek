@@ -1,0 +1,429 @@
+{
+  "revision": "SHOULDER-RAISE01",
+  "candidate_raise_mm": 35,
+  "not_baseline": true,
+  "original_L12_instances": {
+    "output_adapter": {
+      "file": "RAISE01-L12-output_adapter.step",
+      "sha256": "37ee25b310971806a75f86b1f394ed4135c1c7c2b34b84d2b47497b53ae31d96",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          105.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "STEP_reimport_volume_difference_mm3": 6.752088665962219e-09,
+      "preceding_joints": 1,
+      "material": "6061_uniform_candidate",
+      "mass_kg": 0.263796748987852,
+      "com_world_m": [
+        8.031440440711014e-07,
+        -0.01577590975471502,
+        0.11108789238394913
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          0.00034602870133660756,
+          -7.59011871060513e-09,
+          -9.418075415713277e-10
+        ],
+        [
+          -7.59011871060513e-09,
+          0.0004898589770492128,
+          1.4535847190220412e-05
+        ],
+        [
+          -9.418075415713277e-10,
+          1.4535847190220412e-05,
+          0.0008217755536874252
+        ]
+      ],
+      "density_kg_mm3": 2.7e-06,
+      "volume_mm3": 97702.49962513037,
+      "mass_measured": false
+    },
+    "rear_fork": {
+      "file": "RAISE01-L12-rear_fork.step",
+      "sha256": "4f84e228b9b8dc8b619b1671f2d340c8d05ae91a9be1d6722b5a2cc20ddf862c",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -59.7
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          113.2
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "STEP_reimport_volume_difference_mm3": 3.987224772572517e-09,
+      "preceding_joints": 1,
+      "material": "6061_uniform_candidate",
+      "mass_kg": 0.3732946111080241,
+      "com_world_m": [
+        -3.466567215129344e-13,
+        -0.046291025555384786,
+        0.18230875259851598
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          0.0006768524660285839,
+          -8.293052560928132e-16,
+          2.93602783446196e-15
+        ],
+        [
+          -8.293052560928132e-16,
+          0.0015297217465561378,
+          7.24886471987114e-05
+        ],
+        [
+          2.93602783446196e-15,
+          7.24886471987114e-05,
+          0.0009454370197251354
+        ]
+      ],
+      "density_kg_mm3": 2.7e-06,
+      "volume_mm3": 138257.26337334226,
+      "mass_measured": false
+    },
+    "front_ring": {
+      "file": "RAISE01-L12-front_ring.step",
+      "sha256": "adbb052f3a0f8c6b4476561f7dcd56d6ecac86dffe443b47147cdb575140409f",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -15.5
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          205.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "STEP_reimport_volume_difference_mm3": 2.02817318495363e-09,
+      "preceding_joints": 1,
+      "material": "6061_uniform_candidate",
+      "mass_kg": 0.03436145867516432,
+      "com_world_m": [
+        -1.9989033663724103e-12,
+        -0.013499999999999998,
+        0.20499999999800048
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          4.4337701193676865e-05,
+          -3.683453549498724e-23,
+          3.3005117116885644e-21
+        ],
+        [
+          -3.683453549498724e-23,
+          8.858377183088997e-05,
+          6.2864273786544795e-22
+        ],
+        [
+          3.3005117116885644e-21,
+          6.2864273786544795e-22,
+          4.4337701193680226e-05
+        ]
+      ],
+      "density_kg_mm3": 2.7e-06,
+      "volume_mm3": 12726.466175986785,
+      "mass_measured": false
+    }
+  },
+  "old_L12_properties": {
+    "output_adapter": {
+      "material": "6061_uniform_candidate",
+      "mass_kg": 0.263796748987852,
+      "com_world_m": [
+        8.031440440711014e-07,
+        -0.01577590975471502,
+        0.11108789238394913
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          0.00034602870133660756,
+          -7.59011871060513e-09,
+          -9.418075415713277e-10
+        ],
+        [
+          -7.59011871060513e-09,
+          0.0004898589770492128,
+          1.4535847190220412e-05
+        ],
+        [
+          -9.418075415713277e-10,
+          1.4535847190220412e-05,
+          0.0008217755536874252
+        ]
+      ],
+      "density_kg_mm3": 2.7e-06,
+      "volume_mm3": 97702.49962513037,
+      "mass_measured": false
+    },
+    "rear_fork": {
+      "material": "6061_uniform_candidate",
+      "mass_kg": 0.24643486107854787,
+      "com_world_m": [
+        -4.2011991968340116e-13,
+        -0.05004093406056603,
+        0.16623647105216247
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          0.00037382408949977606,
+          -3.128788007838513e-16,
+          8.9252772159305e-16
+        ],
+        [
+          -3.128788007838513e-16,
+          0.0008406647863564455,
+          2.0993404200754932e-05
+        ],
+        [
+          8.9252772159305e-16,
+          2.0993404200754932e-05,
+          0.0005017247059006515
+        ]
+      ],
+      "density_kg_mm3": 2.7e-06,
+      "volume_mm3": 91272.17076983255,
+      "mass_measured": false
+    },
+    "front_ring": {
+      "material": "6061_uniform_candidate",
+      "mass_kg": 0.03436145867516432,
+      "com_world_m": [
+        -1.9989072433392675e-12,
+        -0.0135,
+        0.16999999999800047
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          4.433770119367687e-05,
+          -9.945324565716562e-23,
+          -4.891488966384616e-21
+        ],
+        [
+          -9.945324565716562e-23,
+          8.858377183089e-05,
+          -2.3402208171502174e-21
+        ],
+        [
+          -4.891488966384616e-21,
+          -2.3402208171502174e-21,
+          4.4337701193680226e-05
+        ]
+      ],
+      "density_kg_mm3": 2.7e-06,
+      "volume_mm3": 12726.466175986785,
+      "mass_measured": false
+    }
+  },
+  "L12_original_metal_mass_kg": 0.6714528187710403,
+  "old_L12_original_metal_mass_kg": 0.5445930687415642,
+  "added_original_metal_mass_kg": 0.12685975002947614,
+  "new_L12_original_aggregate": {
+    "mass_kg": 0.6714528187710403,
+    "com_world_m": [
+      3.155345897458149e-07,
+      -0.032624338103632126,
+      0.1554891064201353
+    ],
+    "inertia_about_COM_world_axes_kg_m2": [
+      [
+        0.0020971998324174376,
+        -1.1159742388567437e-08,
+        8.465344857766963e-09
+      ],
+      [
+        -1.1159742388567437e-08,
+        0.0029809708777088395,
+        0.0003886585955081465
+      ],
+      [
+        8.465344857766963e-09,
+        0.0003886585955081465,
+        0.001968724856398828
+      ]
+    ],
+    "mass_basis": "Uniform nominal6061 CAD; no fasteners or OEM mass in this aggregate."
+  },
+  "old_L12_original_aggregate": {
+    "mass_kg": 0.5445930687415642,
+    "com_world_m": [
+      3.8903656278058683e-07,
+      -0.031137642038624118,
+      0.13976038046777667
+    ],
+    "inertia_about_COM_world_axes_kg_m2": [
+      [
+        0.0013462294474979267,
+        -1.0844760643092613e-08,
+        5.13294611750712e-09
+      ],
+      [
+        -1.0844760643092613e-08,
+        0.0018401459419707226,
+        0.00025673106887738384
+      ],
+      [
+        5.13294611750712e-09,
+        0.00025673106887738384,
+        0.0015288385096909201
+      ]
+    ],
+    "mass_basis": "Uniform nominal6061 CAD; no fasteners or OEM mass in this aggregate."
+  },
+  "fasteners": {
+    "unchanged_catalog_selected_mass_kg": 0.0852,
+    "unchanged_whole_L12_hardware_planning_budget_kg": 0.2,
+    "caution": "0.0852kg is12 selected screws only; do not add it to the0.20kg whole-fastener budget.16 outputM4 remain unselected. No measured fastener inertia."
+  },
+  "all_other_local_geometry_unchanged": true,
+  "derived_joint_home_origins_mm": {
+    "J1": [
+      0.0,
+      0.0,
+      105.2
+    ],
+    "J2": [
+      0,
+      0,
+      205
+    ],
+    "J3": [
+      0,
+      55,
+      255
+    ],
+    "J4": [
+      0,
+      0,
+      435
+    ],
+    "J5": [
+      0,
+      -55,
+      485
+    ],
+    "J6": [
+      0,
+      0,
+      640
+    ],
+    "J7": [
+      0,
+      55,
+      675
+    ]
+  },
+  "derived_head_face_world_mm": [
+    0,
+    55,
+    839
+  ],
+  "source_hashes": {
+    "engineering/parameters/r4-layout.json": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "engineering/generated/link12-study/part-placements.json": "ec50f20f19d5b4c1ffda70de8ce85851eef93836d98d599be5a13b425a5d3c8d",
+    "engineering/generated/link12-study/evidence.json": "3005afc00aaca2a880e40f3b085c3c036b73ae5258395979032844a1b1b7894c",
+    "engineering/generated/link12-study/ODR-L12-OUT-R4.step": "5cb2206e5ee2b195654731b9a0177d37cc103243504ba638212547854aa644f4",
+    "engineering/generated/link12-study/ODR-L12-FORK-R4.step": "1b2197f7409f905a2fb1724596efff74e07df5887d520a8257ffeb03c5ab960d",
+    "engineering/generated/link12-study/ODR-L12-FRONT-R4.step": "1d66911f77ee8d19cf9521a38cf80228629e811a3c2cadcb2995ff2da56971b4",
+    "engineering/generated/link23-study/part-placements.json": "8daa948492858dfd8a2c7100c97836ccea951c89f81fc408d65348f62d4f6fd6",
+    "engineering/generated/link23-study/evidence.json": "7d34edde71076430f423679228d805ca77359bc39f7b174ddc14948de159e11c",
+    "engineering/generated/link23-study/ODR-L23-OUT-R4.step": "2fa94dcb62dd206426afea83a01996ff347b2a0b3b5f2baa901d161a69958598",
+    "engineering/generated/link23-study/ODR-L23-CARRIER-R4.step": "748b7ebd940c72bae6fcc894c23743ddcdedad027145b8de0f4ccc689c01c74a",
+    "engineering/generated/link23-study/ODR-L23-FRONT-R4.step": "46d0e3c171fdb22a3ed4754a8411a104039976d423712aae665c864658329f0a",
+    "engineering/generated/link34-study/part-placements.json": "b352bb6bb82f1480c435b7dc1352d2af983e575d54d9662136966cd64420be85",
+    "engineering/generated/link34-study/evidence.json": "46af9fde3d5990b27e2199b4095c7dc19d4ac71546e73b57b839d651d6b721f5",
+    "engineering/generated/link34-study/ODR-L34-OUT-R4.step": "087ade434f0c2f238316abcc1caf5b77350b8fac716d007d126620f99bb527fe",
+    "engineering/generated/link34-study/ODR-L34-LOW-R4.step": "5192234cd1bef2d369a50fc8651ab6a2b55caeb3d836aece9b2cb1328712a431",
+    "engineering/generated/link34-study/ODR-L34-TUBE-R4.step": "a49486f95f25fb21d5d7993cbd6e9fbf6bade0e637e215018d05a7ff7ccdbf9d",
+    "engineering/generated/link34-study/ODR-L34-UP-R4.step": "da02499c7fd87d4637c33bed4a85702a3373bea07112e52c04eb23881ed46050",
+    "engineering/generated/link34-study/ODR-L34-CARRIER-R4.step": "7d58debca1d857925f8dd1a80067ff93f9aa543f21dfc6e911a1c143fb934bb5",
+    "engineering/generated/link34-study/ODR-L34-FRONT-R4.step": "91c308a6e308a1beb6bb7a10089c599b119ebf9daf66ed40062f47d0e7279aba",
+    "engineering/generated/link45-study/part-placements.json": "4eea6c767ac94da05a445574d701498671115a166a147539fd2e103676dcc587",
+    "engineering/generated/link45-study/evidence.json": "f7be8c3d63bf1b1b7b6d99368904253a1e5eb517c5df001d815dccb7e63d240b",
+    "engineering/generated/link45-study/ODR-L45-OUT-R4.step": "12b5dff7735ff53d9fea43c87a840fd920965ad5bdcc77294cded0b388bc4a6c",
+    "engineering/generated/link45-study/ODR-L45-CARRIER-R4.step": "4a6f7302ecdeeb8fa2411bd02544dbb4036eb073b8b7bafc8f0610037f14bae3",
+    "engineering/generated/link45-study/ODR-L45-FRONT-R4.step": "7759763be2a7f0b8a85d28a181c9fbd69df44865f4e1ceb1a948fd0c5b67302f",
+    "engineering/generated/link56-study/part-placements.json": "fb6329f3fdee45c3459e102a374ea117e69edb24a0233355f06f130c6103ae9e",
+    "engineering/generated/link56-study/evidence.json": "2e668b28467d1ccb7c8610df0c1279fdb0915246830167a4cbc86a5b81baab47",
+    "engineering/generated/link56-study/ODR-L56-OUT-R4.step": "d4ddce09c985ed17978c6c8e4baa65a5bc8b2780bcdab693d9af9b195ed92965",
+    "engineering/generated/link56-study/ODR-L56-LOW-R4.step": "f5b6168a2005bd274f9386dc0c7b23eeb6a0fe19f41401d2d6940995ef25e367",
+    "engineering/generated/link56-study/ODR-L56-TUBE-R4.step": "35a80d7d70bfbb8b2a5d24be0702b658f70a10f099952dc56542c6800a15b04b",
+    "engineering/generated/link56-study/ODR-L56-UP-R4.step": "13e21bbd8f7b9f6566bc8ad91f43ec0085669b843efdc033fad297ab42345e76",
+    "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step": "08a125b854dbdffdbca9b843cda446130092543cab7ed2964e1aed518bd17145",
+    "engineering/generated/link56-study/ODR-L56-FRONT-R4.step": "3cad09838550cd2e8d6bbfce6e722ada0054e7755feb1f67246dbdf90f583d70",
+    "engineering/generated/link67-study/part-placements.json": "29b202dbebb974e62aa57107afe236bd1f3d5bff15ae3ae546ad8b9424979297",
+    "engineering/generated/link67-study/evidence.json": "a969db963b3a5d69a3dfb192eff33f64d824d20b5505f62b54c55446a3db66d7",
+    "engineering/generated/link67-study/ODR-L67-OUT-R4.step": "cbd340a1bdcd539a2d2dac47f2ac7b6ca9859b18877d85477b1f3f218b23ec50",
+    "engineering/generated/link67-study/ODR-L67-CARRIER-R4.step": "6db1857a6e49b65e654696349d24964fbac2309fe268716470cdef165bdc4ef1",
+    "engineering/generated/link67-study/ODR-L67-FRONT-R4.step": "fa53b24ae942a6da9981ee28cc6328675d508faa08c5cff8aa322c8dfb0c0acb",
+    "engineering/generated/base-study/ODR-BASE-ORIGINAL-ASSEMBLY.step": "acde0f22c491c1ec3b67691ef50b871f15bb1c48adbc67139923a41e810ce982",
+    "docs/engineering/sources/rh-interface-extraction.json": "49dbfa4aca9501ffa83e884226b287b909095688f2e1adfc24cab7d1e278026d",
+    "engineering/shoulder_raise_study.py": "410f1af346eb04d9a98872c8717d70042286c4acad68f1d05c51152c854f84f1",
+    "engineering/build_layout.py": "9c21a65d2c7873809faf4f7ee733efb8a0e699758190046d73f5e2d1d0e44d2c",
+    "engineering/build_link12_study.py": "2d85bca175331bc9e6ae75bcff167556f77458a97e5d434a896eb606d85dbb32",
+    "engineering/build_link23_study.py": "a31d2b6ef669885f5c5ee0bfabdd6ebdde5d54d695e882255795a3070b37de27",
+    "engineering/build_link56_study.py": "c1119f288c0a9169764dc047ae3aa17be86ed97b62994e5917a02ea3f28fec40",
+    "engineering/mount_interface_study.py": "facf67a020fd1fd546e501705e2048b9925cfc5e7260bb270c969a73b80a5f79",
+    "engineering/screen_integrated_collisions.py": "72373f83c60555e45fb2d3297789b793996c372fb9159a1972dad0aace154e1b",
+    "engineering/studies/link_interface_tools.py": "335a99418ecf6a4df08a9923e775e83ac4f882d18896e9e14796a50e740964fa",
+    "engineering/head_mass04_study.py": "af397b2aca71a952bfd6593fdcc1ef4c42a57a3826b1e0900e3e8809c4f2806b",
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a"
+  },
+  "shift_contract": "J1 andBASE and L12output adapter stay. L12rear fork is rebuilt and front ring translated. All L23..L67 local STEP geometry and J2..J7 OEM rigid geometry remain unchanged, homeworld transforms shift+dzZ. Entire HEAD03 homeface also+dz; no shared parameter edits.",
+  "manufacturing_release": false
+}

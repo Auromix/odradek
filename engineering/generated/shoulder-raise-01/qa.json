@@ -1,0 +1,125 @@
+{
+  "generator_sha256": "410f1af346eb04d9a98872c8717d70042286c4acad68f1d05c51152c854f84f1",
+  "unit_checks": {
+    "box_volume_mm3": 6000.0,
+    "box_expected_inertia_kg_m2": [
+      [
+        0.00021666666666666666,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.00016666666666666666,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        8.333333333333333e-05
+      ]
+    ],
+    "box_calculated_inertia_kg_m2": [
+      [
+        0.00021666666666666666,
+        -2.4432394156922697e-23,
+        7.325974439492181e-23
+      ],
+      [
+        -2.4432394156922697e-23,
+        0.00016666666666666666,
+        1.4651948878984345e-22
+      ],
+      [
+        7.325974439492181e-23,
+        1.4651948878984345e-22,
+        8.333333333333333e-05
+      ]
+    ],
+    "box_error_kg_m2": 1.4651948878984345e-22,
+    "translation_invariance_error_m2": 7.325974439492173e-23,
+    "rotation_covariance_error_m2": 1.3552527156068805e-20,
+    "double_size_same_mass_inertia_ratio": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "double_size_fixed_density_mass_ratio": 8.0,
+    "fixed_density_inertia_ratio": 32.0
+  },
+  "source_integrity": {
+    "engineering/parameters/r4-layout.json": true,
+    "engineering/generated/link12-study/part-placements.json": true,
+    "engineering/generated/link12-study/evidence.json": true,
+    "engineering/generated/link12-study/ODR-L12-OUT-R4.step": true,
+    "engineering/generated/link12-study/ODR-L12-FORK-R4.step": true,
+    "engineering/generated/link12-study/ODR-L12-FRONT-R4.step": true,
+    "engineering/generated/link23-study/part-placements.json": true,
+    "engineering/generated/link23-study/evidence.json": true,
+    "engineering/generated/link23-study/ODR-L23-OUT-R4.step": true,
+    "engineering/generated/link23-study/ODR-L23-CARRIER-R4.step": true,
+    "engineering/generated/link23-study/ODR-L23-FRONT-R4.step": true,
+    "engineering/generated/link34-study/part-placements.json": true,
+    "engineering/generated/link34-study/evidence.json": true,
+    "engineering/generated/link34-study/ODR-L34-OUT-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-LOW-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-TUBE-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-UP-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-CARRIER-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-FRONT-R4.step": true,
+    "engineering/generated/link45-study/part-placements.json": true,
+    "engineering/generated/link45-study/evidence.json": true,
+    "engineering/generated/link45-study/ODR-L45-OUT-R4.step": true,
+    "engineering/generated/link45-study/ODR-L45-CARRIER-R4.step": true,
+    "engineering/generated/link45-study/ODR-L45-FRONT-R4.step": true,
+    "engineering/generated/link56-study/part-placements.json": true,
+    "engineering/generated/link56-study/evidence.json": true,
+    "engineering/generated/link56-study/ODR-L56-OUT-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-LOW-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-TUBE-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-UP-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-FRONT-R4.step": true,
+    "engineering/generated/link67-study/part-placements.json": true,
+    "engineering/generated/link67-study/evidence.json": true,
+    "engineering/generated/link67-study/ODR-L67-OUT-R4.step": true,
+    "engineering/generated/link67-study/ODR-L67-CARRIER-R4.step": true,
+    "engineering/generated/link67-study/ODR-L67-FRONT-R4.step": true,
+    "engineering/generated/base-study/ODR-BASE-ORIGINAL-ASSEMBLY.step": true,
+    "docs/engineering/sources/rh-interface-extraction.json": true,
+    "engineering/shoulder_raise_study.py": true,
+    "engineering/build_layout.py": true,
+    "engineering/build_link12_study.py": true,
+    "engineering/build_link23_study.py": true,
+    "engineering/build_link56_study.py": true,
+    "engineering/mount_interface_study.py": true,
+    "engineering/screen_integrated_collisions.py": true,
+    "engineering/studies/link_interface_tools.py": true,
+    "engineering/head_mass04_study.py": true,
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": true
+  },
+  "nominal_continuous_local_q2_domain_passed": true,
+  "all_static_interfaces_and_known_hardware_checked": true,
+  "continuous_J2_assembly_envelope_passed": true,
+  "other_three_insertions_are_discrete_only": true,
+  "net_slice_reverse_check_passed": true,
+  "baseline_files_unchanged": true,
+  "manufacturing_release": false,
+  "full_arm_trajectory_qualified": false,
+  "artifacts": {
+    "shoulder-raise-01.png": "43c5afb955a612c80cd375c96066f864defaaa57d206cded796506ac50b5f7d2",
+    "static-interfaces.json": "98a86ed57813391fafb3ab5bcd143d6dc91e6708a2c893d8d32a52e04c3e085e",
+    "full-rotation-envelope.step": "1368e22ee881194711a3dcb360701eb27c67aa6506e53fe997e43cb6cac3776c",
+    "shoulder-raise-01.svg": "5fed639ba85e61f440fcf6797490e992808b3676685e91965c9d86124fbd09b1",
+    "assembly-transform-contract.json": "8386218196d4859205b7dcd84b2c02c8831693ec05baa4c07f08c9ec2d59d6c3",
+    "RAISE01-L12-output_adapter.step": "37ee25b310971806a75f86b1f394ed4135c1c7c2b34b84d2b47497b53ae31d96",
+    "geometry-decision.json": "fe3bb48da63468c92718f45d155751e79db56074628417cc05e45abd2d937b4b",
+    "net-sections.json": "40b8f52fcb9f7098f70b24c619c7846761b1ca1217a308b4f40dc33d9f5faf3d",
+    "RAISE01-L12-front_ring.step": "adbb052f3a0f8c6b4476561f7dcd56d6ecac86dffe443b47147cdb575140409f",
+    "exposed-J2-interface-envelope.step": "44497ae0da86195edbde63e0c84dc4141102120a7274755b268ba5652050ea00",
+    "part-placements.json": "1f735370b9ad30c2dbff91338658504f2a109fb523f2badc39832e4d9f2beedc",
+    "RAISE01-L12-rear_fork.step": "4f84e228b9b8dc8b619b1671f2d340c8d05ae91a9be1d6722b5a2cc20ddf862c",
+    "SHOULDER-RAISE01-original-L12-assembly.step": "cd2c00e34025d11101830ec63845841c0f1de7c02da1254a51d22311a9f357d8",
+    "assembly-paths.json": "ae3bf27fbd6b6bf0a073a9360ac9f9e24af656efe2bcbb8e7389ebd3079ba411"
+  }
+}
