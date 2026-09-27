@@ -1,0 +1,57 @@
+{
+  "revision": "SHOULDER-DOMAIN01",
+  "all_sources_and_generator_hashes_match": true,
+  "partition_and_lipschitz_bound_independently_recomputed": true,
+  "maximum_bound_arithmetic_error_mm": 0.0,
+  "certificates": [
+    {
+      "interval_deg": [
+        -25,
+        25
+      ],
+      "leaves": 18,
+      "proved_minimum_clearance_mm": 1.2451694775791324
+    },
+    {
+      "interval_deg": [
+        -20,
+        20
+      ],
+      "leaves": 12,
+      "proved_minimum_clearance_mm": 2.642918997631309
+    },
+    {
+      "interval_deg": [
+        -27.36943359375,
+        27.36943359375
+      ],
+      "leaves": 26,
+      "proved_minimum_clearance_mm": 0.020241855801115913
+    }
+  ],
+  "own_J2_containment_solids": 50,
+  "main_fixed_originals_and_OEM_objects": 12,
+  "main_moving_originals_and_OEM_objects": 4,
+  "distance_samples": 129,
+  "fixed_q1_deg": 0,
+  "all_other_geometry_home_except_q2": true,
+  "no_complete_external_hardware_qualification": true,
+  "source_sha256": {
+    "engineering/studies/shoulder_domain.py": "463d5103834622f7e8fa56daeda5cccf4bb88da30e432111730ccbbee568922d",
+    "engineering/studies/render_shoulder_domain.py": "5f91877acdcb8c1944161fe91738670ccaf583956582962adb1308a247422b83",
+    "engineering/screen_integrated_collisions.py": "72373f83c60555e45fb2d3297789b793996c372fb9159a1972dad0aace154e1b"
+  },
+  "output_sha256": {
+    "study.json": "114a57f1dc6445db1b0624e96f89c492becfb11b162d5814766cd361a4432dd8",
+    "shoulder-domain.png": "6bb72469791ab4d636c71b4ca44d87df08159d39aff83bccbbdd32b606e47690"
+  },
+  "runtime": {
+    "cadquery": "2.8.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "visual_review": "Final1980x1080PNG inspected; Chinese text, axis labels and 4-item legend readable without overlap. Initial legend overlap corrected. Black points and continuous bounds explicitly distinguished.",
+  "manufacturing_release": false,
+  "full_arm_domain_qualified": false,
+  "controller_limits_modified": false
+}

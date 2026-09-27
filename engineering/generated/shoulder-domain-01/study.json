@@ -1,0 +1,3530 @@
+{
+  "revision": "SHOULDER-DOMAIN01",
+  "sources_sha256": {
+    "engineering/parameters/r4-layout.json": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "engineering/generated/link12-study/part-placements.json": "ec50f20f19d5b4c1ffda70de8ce85851eef93836d98d599be5a13b425a5d3c8d",
+    "engineering/generated/link12-study/evidence.json": "3005afc00aaca2a880e40f3b085c3c036b73ae5258395979032844a1b1b7894c",
+    "engineering/generated/link12-study/ODR-L12-OUT-R4.step": "5cb2206e5ee2b195654731b9a0177d37cc103243504ba638212547854aa644f4",
+    "engineering/generated/link12-study/ODR-L12-FORK-R4.step": "1b2197f7409f905a2fb1724596efff74e07df5887d520a8257ffeb03c5ab960d",
+    "engineering/generated/link12-study/ODR-L12-FRONT-R4.step": "1d66911f77ee8d19cf9521a38cf80228629e811a3c2cadcb2995ff2da56971b4",
+    "engineering/generated/link23-study/part-placements.json": "8daa948492858dfd8a2c7100c97836ccea951c89f81fc408d65348f62d4f6fd6",
+    "engineering/generated/link23-study/evidence.json": "7d34edde71076430f423679228d805ca77359bc39f7b174ddc14948de159e11c",
+    "engineering/generated/link23-study/ODR-L23-OUT-R4.step": "2fa94dcb62dd206426afea83a01996ff347b2a0b3b5f2baa901d161a69958598",
+    "engineering/generated/link23-study/ODR-L23-CARRIER-R4.step": "748b7ebd940c72bae6fcc894c23743ddcdedad027145b8de0f4ccc689c01c74a",
+    "engineering/generated/link23-study/ODR-L23-FRONT-R4.step": "46d0e3c171fdb22a3ed4754a8411a104039976d423712aae665c864658329f0a",
+    "engineering/generated/link34-study/part-placements.json": "b352bb6bb82f1480c435b7dc1352d2af983e575d54d9662136966cd64420be85",
+    "engineering/generated/link34-study/evidence.json": "46af9fde3d5990b27e2199b4095c7dc19d4ac71546e73b57b839d651d6b721f5",
+    "engineering/generated/link34-study/ODR-L34-OUT-R4.step": "087ade434f0c2f238316abcc1caf5b77350b8fac716d007d126620f99bb527fe",
+    "engineering/generated/link34-study/ODR-L34-LOW-R4.step": "5192234cd1bef2d369a50fc8651ab6a2b55caeb3d836aece9b2cb1328712a431",
+    "engineering/generated/link34-study/ODR-L34-TUBE-R4.step": "a49486f95f25fb21d5d7993cbd6e9fbf6bade0e637e215018d05a7ff7ccdbf9d",
+    "engineering/generated/link34-study/ODR-L34-UP-R4.step": "da02499c7fd87d4637c33bed4a85702a3373bea07112e52c04eb23881ed46050",
+    "engineering/generated/link34-study/ODR-L34-CARRIER-R4.step": "7d58debca1d857925f8dd1a80067ff93f9aa543f21dfc6e911a1c143fb934bb5",
+    "engineering/generated/link34-study/ODR-L34-FRONT-R4.step": "91c308a6e308a1beb6bb7a10089c599b119ebf9daf66ed40062f47d0e7279aba",
+    "engineering/generated/link45-study/part-placements.json": "4eea6c767ac94da05a445574d701498671115a166a147539fd2e103676dcc587",
+    "engineering/generated/link45-study/evidence.json": "f7be8c3d63bf1b1b7b6d99368904253a1e5eb517c5df001d815dccb7e63d240b",
+    "engineering/generated/link45-study/ODR-L45-OUT-R4.step": "12b5dff7735ff53d9fea43c87a840fd920965ad5bdcc77294cded0b388bc4a6c",
+    "engineering/generated/link45-study/ODR-L45-CARRIER-R4.step": "4a6f7302ecdeeb8fa2411bd02544dbb4036eb073b8b7bafc8f0610037f14bae3",
+    "engineering/generated/link45-study/ODR-L45-FRONT-R4.step": "7759763be2a7f0b8a85d28a181c9fbd69df44865f4e1ceb1a948fd0c5b67302f",
+    "engineering/generated/link56-study/part-placements.json": "fb6329f3fdee45c3459e102a374ea117e69edb24a0233355f06f130c6103ae9e",
+    "engineering/generated/link56-study/evidence.json": "2e668b28467d1ccb7c8610df0c1279fdb0915246830167a4cbc86a5b81baab47",
+    "engineering/generated/link56-study/ODR-L56-OUT-R4.step": "d4ddce09c985ed17978c6c8e4baa65a5bc8b2780bcdab693d9af9b195ed92965",
+    "engineering/generated/link56-study/ODR-L56-LOW-R4.step": "f5b6168a2005bd274f9386dc0c7b23eeb6a0fe19f41401d2d6940995ef25e367",
+    "engineering/generated/link56-study/ODR-L56-TUBE-R4.step": "35a80d7d70bfbb8b2a5d24be0702b658f70a10f099952dc56542c6800a15b04b",
+    "engineering/generated/link56-study/ODR-L56-UP-R4.step": "13e21bbd8f7b9f6566bc8ad91f43ec0085669b843efdc033fad297ab42345e76",
+    "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step": "08a125b854dbdffdbca9b843cda446130092543cab7ed2964e1aed518bd17145",
+    "engineering/generated/link56-study/ODR-L56-FRONT-R4.step": "3cad09838550cd2e8d6bbfce6e722ada0054e7755feb1f67246dbdf90f583d70",
+    "engineering/generated/link67-study/part-placements.json": "29b202dbebb974e62aa57107afe236bd1f3d5bff15ae3ae546ad8b9424979297",
+    "engineering/generated/link67-study/evidence.json": "a969db963b3a5d69a3dfb192eff33f64d824d20b5505f62b54c55446a3db66d7",
+    "engineering/generated/link67-study/ODR-L67-OUT-R4.step": "cbd340a1bdcd539a2d2dac47f2ac7b6ca9859b18877d85477b1f3f218b23ec50",
+    "engineering/generated/link67-study/ODR-L67-CARRIER-R4.step": "6db1857a6e49b65e654696349d24964fbac2309fe268716470cdef165bdc4ef1",
+    "engineering/generated/link67-study/ODR-L67-FRONT-R4.step": "fa53b24ae942a6da9981ee28cc6328675d508faa08c5cff8aa322c8dfb0c0acb",
+    "engineering/generated/base-study/ODR-BASE-ORIGINAL-ASSEMBLY.step": "acde0f22c491c1ec3b67691ef50b871f15bb1c48adbc67139923a41e810ce982",
+    "docs/engineering/sources/rh-interface-extraction.json": "49dbfa4aca9501ffa83e884226b287b909095688f2e1adfc24cab7d1e278026d",
+    "engineering/studies/shoulder_domain.py": "463d5103834622f7e8fa56daeda5cccf4bb88da30e432111730ccbbee568922d",
+    "engineering/screen_integrated_collisions.py": "72373f83c60555e45fb2d3297789b793996c372fb9159a1972dad0aace154e1b",
+    "engineering/build_layout.py": "9c21a65d2c7873809faf4f7ee733efb8a0e699758190046d73f5e2d1d0e44d2c",
+    "engineering/mount_interface_study.py": "facf67a020fd1fd546e501705e2048b9925cfc5e7260bb270c969a73b80a5f79",
+    "engineering/studies/link_interface_tools.py": "335a99418ecf6a4df08a9923e775e83ac4f882d18896e9e14796a50e740964fa"
+  },
+  "vendor_sources": {
+    "RH25-B": {
+      "filename": "RH-25-100-E-B-D 3D-A0.STEP",
+      "sha256": "d844bc7dfe5c398b0447ea0d93eef77b7cb1bdaa0dbabd603031482c1909f07e",
+      "solid_count": 42,
+      "local_only": true
+    },
+    "RH20-B": {
+      "filename": "RH-20-100-E-B-D 3D A.STEP",
+      "sha256": "de9f070ac232257b3e9d2c2920260aab8d0f8893ced026bff00da49906fafb04",
+      "solid_count": 47,
+      "local_only": true
+    },
+    "RH17-B": {
+      "filename": "RH-17-100-E-B-D 3D-A.STEP",
+      "sha256": "02424efbc162b8832f1bf4d73cf9af45d0c45d8385cadb8685e1670e2b07ae33",
+      "solid_count": 34,
+      "local_only": true
+    },
+    "RH14-N": {
+      "filename": "RH-14-100-E-N-D 3D-A0.STEP",
+      "sha256": "6b0acdb82140b487be079b5515718157d16d512f3a584ac5439fe55380e7b595",
+      "solid_count": 32,
+      "local_only": true
+    }
+  },
+  "moving": [
+    "L23_output_adapter",
+    "L23_rear_carrier",
+    "L23_front_ring",
+    "J3"
+  ],
+  "stationary": [
+    "L12_output_adapter",
+    "L12_rear_fork",
+    "L12_front_ring",
+    "BASE_base_plate",
+    "BASE_backing_plate",
+    "BASE_rear_ring",
+    "BASE_front_ring",
+    "BASE_leg_1",
+    "BASE_leg_2",
+    "BASE_leg_3",
+    "BASE_leg_4",
+    "J1"
+  ],
+  "own_J2_interface": {
+    "J2_invariant_envelope_R_mm": 85,
+    "axial_Y_mm": [
+      0,
+      110
+    ],
+    "central_void_R_Y_mm": [
+      34.8,
+      0,
+      2.5
+    ],
+    "actual_moving_per_solid_containment": [
+      {
+        "part": "L23_output_adapter",
+        "solid": 0,
+        "outside_mm3": 0
+      },
+      {
+        "part": "L23_rear_carrier",
+        "solid": 0,
+        "outside_mm3": 0
+      },
+      {
+        "part": "L23_front_ring",
+        "solid": 0,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 0,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 1,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 2,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 3,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 4,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 5,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 6,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 7,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 8,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 9,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 10,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 11,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 12,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 13,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 14,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 15,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 16,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 17,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 18,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 19,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 20,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 21,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 22,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 23,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 24,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 25,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 26,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 27,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 28,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 29,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 30,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 31,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 32,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 33,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 34,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 35,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 36,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 37,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 38,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 39,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 40,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 41,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 42,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 43,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 44,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 45,
+        "outside_mm3": 0
+      },
+      {
+        "part": "J3",
+        "solid": 46,
+        "outside_mm3": 0
+      }
+    ],
+    "envelope_to_actual_J2": {
+      "solid_pair_intersection_sum_mm3": 0,
+      "events": [],
+      "pair_count": 42,
+      "boolean_count": 1,
+      "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+    },
+    "rotation_speed_distance_bound_mm_per_rad": 86.55634003352961
+  },
+  "samples": [
+    {
+      "q2_deg": -90.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 1364.570060863478,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 1364.570060863478
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 27.47368618070974,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 27.47368618070974
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 1070.4864877675934,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 1067.025647998646
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 13,
+              "intersection_mm3": 3.460839768947349
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 2,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 2003.260497114777,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 2003.260497114777
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 9,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": -75.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 872.2659924255635,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 837.3338460324779
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 21,
+              "intersection_mm3": 12.635287243602354
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 18.47464915429618
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 37,
+              "intersection_mm3": 3.8222099951870305
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 5.860140399850305,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 5.860140399850305
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 1121.3576861064098,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 1078.5203095117934
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 13,
+              "intersection_mm3": 0.06340202944580398
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 19,
+              "intersection_mm3": 1.4980992619687798
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 20,
+              "intersection_mm3": 28.945439990522313
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 22,
+              "intersection_mm3": 1.9960557460170072
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 23,
+              "intersection_mm3": 5.094674143035181
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 5.239705423627427
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 815.2948118801075,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 815.2948118801075
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 26,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": -65.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 774.1780008552673,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 774.1780008552673
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 848.7561935955512,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 784.8802747116441
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 19,
+              "intersection_mm3": 3.6418741790107796
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 20,
+              "intersection_mm3": 32.02445069266715
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 21,
+              "intersection_mm3": 0.0843199496094981
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 22,
+              "intersection_mm3": 4.036237651357581
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 23,
+              "intersection_mm3": 8.416145635137962
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 24,
+              "intersection_mm3": 0.09317446547893249
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 15.579716310645185
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 13,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 483.3962173971297,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 483.3962173971297
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 29,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": -60.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 849.6625041191519,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 848.0064084193089
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 1.6560956998430139
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 673.6298135491741,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 639.2895464715472
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 19,
+              "intersection_mm3": 1.574853783549701
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 20,
+              "intersection_mm3": 22.898224706359496
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 22,
+              "intersection_mm3": 1.9119591566754321
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 23,
+              "intersection_mm3": 4.74055685012636
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 3.2146725809159062
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 451.97960424919063,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 451.97960424919063
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 27,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": -45.0,
+      "events": [
+        {
+          "moving": "J3",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 1.979771961737966,
+          "events": [
+            {
+              "a_solid": 4,
+              "b_solid": 0,
+              "intersection_mm3": 1.979771961737966
+            }
+          ],
+          "pair_count": 47,
+          "boolean_count": 3,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 198.18591023433547,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 194.88723992121078
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 3.298670313124676
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 7,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 92.19163585360704,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 92.19163585360704
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 16.742054609109836,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 16.742054609109836
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 2,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 531.194062901113,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 531.194062901113
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 14,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": -30.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 20.264771235035145,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 20.264771235035145
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 5,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": -25.0,
+      "events": [],
+      "solid_pair_count": 2650,
+      "booleans": 5,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": 0.0,
+      "events": [],
+      "solid_pair_count": 2650,
+      "booleans": 4,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": 25.0,
+      "events": [],
+      "solid_pair_count": 2650,
+      "booleans": 5,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": 30.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 20.80902224946944,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 20.80902224946944
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 5,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": 45.0,
+      "events": [
+        {
+          "moving": "J3",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 1.9797719617394605,
+          "events": [
+            {
+              "a_solid": 4,
+              "b_solid": 0,
+              "intersection_mm3": 1.9797719617394605
+            }
+          ],
+          "pair_count": 47,
+          "boolean_count": 3,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 198.18591148436002,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 194.88724082218394
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 3.298670662176083
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 7,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 92.32657712310501,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 92.32657712310501
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 16.742055143632196,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 16.742055143632196
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 2,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 532.248419474163,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 532.248419474163
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 14,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": 60.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 849.5677117575844,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 848.0063400459524
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 1.561157279084199
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 37,
+              "intersection_mm3": 0.00021443254792366317
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 670.0577437810759,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 619.2511113728029
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 13,
+              "intersection_mm3": 16.35019976509514
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 19,
+              "intersection_mm3": 1.5748537816513075
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 20,
+              "intersection_mm3": 23.01439013146371
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 22,
+              "intersection_mm3": 1.9119591543936472
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 23,
+              "intersection_mm3": 4.740556849166391
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 3.2146727265028265
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 450.76320448445256,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 450.76320448445256
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 27,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": 65.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 774.1774541300002,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 774.1774541300002
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 848.5711442488944,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 779.8920502173702
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 13,
+              "intersection_mm3": 4.819136540641863
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 19,
+              "intersection_mm3": 3.6418741780571082
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 20,
+              "intersection_mm3": 32.00848921042018
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 21,
+              "intersection_mm3": 0.08431995107258698
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 22,
+              "intersection_mm3": 4.036237650178623
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 23,
+              "intersection_mm3": 8.416145631614402
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 24,
+              "intersection_mm3": 0.09317446544167413
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 15.579716404097704
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 13,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 482.9015525716129,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 482.9015525716129
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 29,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": 75.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 864.5569456832633,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 837.3345611294517
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 21,
+              "intersection_mm3": 9.279627252297471
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 17.942757301514114
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 5.884161397105772,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 5.884161397105772
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 1121.0116720460182,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 1078.3449367073633
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 19,
+              "intersection_mm3": 1.4980992635623909
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 20,
+              "intersection_mm3": 28.838200954595074
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 22,
+              "intersection_mm3": 1.9960557440764608
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 23,
+              "intersection_mm3": 5.094674127510771
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 26,
+              "intersection_mm3": 5.239705248910265
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 11,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 813.9375394312631,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 813.9375394312631
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 27,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    },
+    {
+      "q2_deg": 90.0,
+      "events": [
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 1364.5700611091747,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 1364.5700611091747
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_output_adapter",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 27.47368618024982,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 27.47368618024982
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "J1",
+          "solid_pair_intersection_sum_mm3": 1070.478402782331,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 2,
+              "intersection_mm3": 1066.7135315005125
+            },
+            {
+              "a_solid": 0,
+              "b_solid": 13,
+              "intersection_mm3": 3.764871281818489
+            }
+          ],
+          "pair_count": 42,
+          "boolean_count": 2,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        },
+        {
+          "moving": "L23_rear_carrier",
+          "stationary": "L12_output_adapter",
+          "solid_pair_intersection_sum_mm3": 2002.9792558682532,
+          "events": [
+            {
+              "a_solid": 0,
+              "b_solid": 0,
+              "intersection_mm3": 2002.9792558682532
+            }
+          ],
+          "pair_count": 1,
+          "boolean_count": 1,
+          "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3"
+        }
+      ],
+      "solid_pair_count": 2650,
+      "booleans": 9,
+      "minimum_distance_mm": null,
+      "nearest_part_pair": null
+    }
+  ],
+  "scope": "J2 single-axis relative L23/J3 versus J1/BASE/L12. No L34 onwards, no fingers/cables/objects/hardware or coupled q3 domain qualification. Original motors/baseline limits unchanged.",
+  "hardware_qualified": false,
+  "continuous": {
+    "displacement_bound_mm_per_rad": 86.55634003352961,
+    "distance_method": "Exact per-solid BREP distance and Boolean common at each midpoint; no mesh-distance or projection proxy.",
+    "proof": "Moving point velocity magnitude <= R about fixed J2, so Hausdorff displacement over half interval <= R*deltaRadians. Subtract this from exact midpoint minimum distance. All accepted closed leaves cover the entire specified interval.",
+    "certificates": [
+      {
+        "interval_deg": [
+          -25,
+          25
+        ],
+        "required_nominal_clearance_mm": 1.0,
+        "leaves": [
+          {
+            "interval_deg": [
+              -25,
+              -24.21875
+            ],
+            "midpoint_deg": -24.609375,
+            "midpoint_distance_mm": 1.83528397838416,
+            "rotation_displacement_bound_mm": 0.5901145008050276,
+            "continuous_distance_lower_bound_mm": 1.2451694775791324
+          },
+          {
+            "interval_deg": [
+              -24.21875,
+              -23.4375
+            ],
+            "midpoint_deg": -23.828125,
+            "midpoint_distance_mm": 2.0670561275786548,
+            "rotation_displacement_bound_mm": 0.5901145008050276,
+            "continuous_distance_lower_bound_mm": 1.4769416267736273
+          },
+          {
+            "interval_deg": [
+              -23.4375,
+              -21.875
+            ],
+            "midpoint_deg": -22.65625,
+            "midpoint_distance_mm": 2.4343729645819114,
+            "rotation_displacement_bound_mm": 1.1802290016100552,
+            "continuous_distance_lower_bound_mm": 1.2541439629718563
+          },
+          {
+            "interval_deg": [
+              -21.875,
+              -20.3125
+            ],
+            "midpoint_deg": -21.09375,
+            "midpoint_distance_mm": 2.9605832580684077,
+            "rotation_displacement_bound_mm": 1.1802290016100552,
+            "continuous_distance_lower_bound_mm": 1.7803542564583525
+          },
+          {
+            "interval_deg": [
+              -20.3125,
+              -18.75
+            ],
+            "midpoint_deg": -19.53125,
+            "midpoint_distance_mm": 3.5280953714214136,
+            "rotation_displacement_bound_mm": 1.1802290016100552,
+            "continuous_distance_lower_bound_mm": 2.347866369811358
+          },
+          {
+            "interval_deg": [
+              -18.75,
+              -15.625
+            ],
+            "midpoint_deg": -17.1875,
+            "midpoint_distance_mm": 4.455872941393639,
+            "rotation_displacement_bound_mm": 2.3604580032201103,
+            "continuous_distance_lower_bound_mm": 2.0954149381735285
+          },
+          {
+            "interval_deg": [
+              -15.625,
+              -12.5
+            ],
+            "midpoint_deg": -14.0625,
+            "midpoint_distance_mm": 5.833273145266745,
+            "rotation_displacement_bound_mm": 2.3604580032201103,
+            "continuous_distance_lower_bound_mm": 3.472815142046634
+          },
+          {
+            "interval_deg": [
+              -12.5,
+              -6.25
+            ],
+            "midpoint_deg": -9.375,
+            "midpoint_distance_mm": 7.515637195706289,
+            "rotation_displacement_bound_mm": 4.720916006440221,
+            "continuous_distance_lower_bound_mm": 2.7947211892660686
+          },
+          {
+            "interval_deg": [
+              -6.25,
+              0.0
+            ],
+            "midpoint_deg": -3.125,
+            "midpoint_distance_mm": 7.51563719570629,
+            "rotation_displacement_bound_mm": 4.720916006440221,
+            "continuous_distance_lower_bound_mm": 2.7947211892660695
+          },
+          {
+            "interval_deg": [
+              0.0,
+              6.25
+            ],
+            "midpoint_deg": 3.125,
+            "midpoint_distance_mm": 7.515637209168042,
+            "rotation_displacement_bound_mm": 4.720916006440221,
+            "continuous_distance_lower_bound_mm": 2.794721202727821
+          },
+          {
+            "interval_deg": [
+              6.25,
+              12.5
+            ],
+            "midpoint_deg": 9.375,
+            "midpoint_distance_mm": 7.515637209168041,
+            "rotation_displacement_bound_mm": 4.720916006440221,
+            "continuous_distance_lower_bound_mm": 2.7947212027278203
+          },
+          {
+            "interval_deg": [
+              12.5,
+              15.625
+            ],
+            "midpoint_deg": 14.0625,
+            "midpoint_distance_mm": 5.833273145267273,
+            "rotation_displacement_bound_mm": 2.3604580032201103,
+            "continuous_distance_lower_bound_mm": 3.4728151420471627
+          },
+          {
+            "interval_deg": [
+              15.625,
+              18.75
+            ],
+            "midpoint_deg": 17.1875,
+            "midpoint_distance_mm": 4.455872941394136,
+            "rotation_displacement_bound_mm": 2.3604580032201103,
+            "continuous_distance_lower_bound_mm": 2.095414938174026
+          },
+          {
+            "interval_deg": [
+              18.75,
+              20.3125
+            ],
+            "midpoint_deg": 19.53125,
+            "midpoint_distance_mm": 3.5280953712485315,
+            "rotation_displacement_bound_mm": 1.1802290016100552,
+            "continuous_distance_lower_bound_mm": 2.347866369638476
+          },
+          {
+            "interval_deg": [
+              20.3125,
+              21.875
+            ],
+            "midpoint_deg": 21.09375,
+            "midpoint_distance_mm": 2.9605832580672655,
+            "rotation_displacement_bound_mm": 1.1802290016100552,
+            "continuous_distance_lower_bound_mm": 1.7803542564572103
+          },
+          {
+            "interval_deg": [
+              21.875,
+              23.4375
+            ],
+            "midpoint_deg": 22.65625,
+            "midpoint_distance_mm": 2.4343729645822094,
+            "rotation_displacement_bound_mm": 1.1802290016100552,
+            "continuous_distance_lower_bound_mm": 1.2541439629721542
+          },
+          {
+            "interval_deg": [
+              23.4375,
+              24.21875
+            ],
+            "midpoint_deg": 23.828125,
+            "midpoint_distance_mm": 2.0670561275794648,
+            "rotation_displacement_bound_mm": 0.5901145008050276,
+            "continuous_distance_lower_bound_mm": 1.4769416267744373
+          },
+          {
+            "interval_deg": [
+              24.21875,
+              25
+            ],
+            "midpoint_deg": 24.609375,
+            "midpoint_distance_mm": 1.8352839783846961,
+            "rotation_displacement_bound_mm": 0.5901145008050276,
+            "continuous_distance_lower_bound_mm": 1.2451694775796684
+          }
+        ],
+        "minimum_certified_clearance_mm": 1.2451694775791324,
+        "no_gaps_in_interval_partition": true,
+        "sample_queries": 35
+      },
+      {
+        "interval_deg": [
+          -20,
+          20
+        ],
+        "required_nominal_clearance_mm": 2.0,
+        "leaves": [
+          {
+            "interval_deg": [
+              -20,
+              -18.75
+            ],
+            "midpoint_deg": -19.375,
+            "midpoint_distance_mm": 3.5871021989193532,
+            "rotation_displacement_bound_mm": 0.9441832012880441,
+            "continuous_distance_lower_bound_mm": 2.642918997631309
+          },
+          {
+            "interval_deg": [
+              -18.75,
+              -17.5
+            ],
+            "midpoint_deg": -18.125,
+            "midpoint_distance_mm": 4.073821151049664,
+            "rotation_displacement_bound_mm": 0.9441832012880441,
+            "continuous_distance_lower_bound_mm": 3.12963794976162
+          },
+          {
+            "interval_deg": [
+              -17.5,
+              -15.0
+            ],
+            "midpoint_deg": -16.25,
+            "midpoint_distance_mm": 4.852393651387944,
+            "rotation_displacement_bound_mm": 1.8883664025760882,
+            "continuous_distance_lower_bound_mm": 2.9640272488118553
+          },
+          {
+            "interval_deg": [
+              -15.0,
+              -10.0
+            ],
+            "midpoint_deg": -12.5,
+            "midpoint_distance_mm": 6.580985023046101,
+            "rotation_displacement_bound_mm": 3.7767328051521765,
+            "continuous_distance_lower_bound_mm": 2.8042522178939246
+          },
+          {
+            "interval_deg": [
+              -10.0,
+              -5.0
+            ],
+            "midpoint_deg": -7.5,
+            "midpoint_distance_mm": 7.51563719570629,
+            "rotation_displacement_bound_mm": 3.7767328051521765,
+            "continuous_distance_lower_bound_mm": 3.7389043905541137
+          },
+          {
+            "interval_deg": [
+              -5.0,
+              0.0
+            ],
+            "midpoint_deg": -2.5,
+            "midpoint_distance_mm": 7.5156371957062635,
+            "rotation_displacement_bound_mm": 3.7767328051521765,
+            "continuous_distance_lower_bound_mm": 3.738904390554087
+          },
+          {
+            "interval_deg": [
+              0.0,
+              5.0
+            ],
+            "midpoint_deg": 2.5,
+            "midpoint_distance_mm": 7.515637209168041,
+            "rotation_displacement_bound_mm": 3.7767328051521765,
+            "continuous_distance_lower_bound_mm": 3.7389044040158645
+          },
+          {
+            "interval_deg": [
+              5.0,
+              10.0
+            ],
+            "midpoint_deg": 7.5,
+            "midpoint_distance_mm": 7.515637209168055,
+            "rotation_displacement_bound_mm": 3.7767328051521765,
+            "continuous_distance_lower_bound_mm": 3.7389044040158788
+          },
+          {
+            "interval_deg": [
+              10.0,
+              15.0
+            ],
+            "midpoint_deg": 12.5,
+            "midpoint_distance_mm": 6.580985023046594,
+            "rotation_displacement_bound_mm": 3.7767328051521765,
+            "continuous_distance_lower_bound_mm": 2.8042522178944176
+          },
+          {
+            "interval_deg": [
+              15.0,
+              17.5
+            ],
+            "midpoint_deg": 16.25,
+            "midpoint_distance_mm": 4.8523936513883985,
+            "rotation_displacement_bound_mm": 1.8883664025760882,
+            "continuous_distance_lower_bound_mm": 2.96402724881231
+          },
+          {
+            "interval_deg": [
+              17.5,
+              18.75
+            ],
+            "midpoint_deg": 18.125,
+            "midpoint_distance_mm": 4.073821151051923,
+            "rotation_displacement_bound_mm": 0.9441832012880441,
+            "continuous_distance_lower_bound_mm": 3.1296379497638784
+          },
+          {
+            "interval_deg": [
+              18.75,
+              20
+            ],
+            "midpoint_deg": 19.375,
+            "midpoint_distance_mm": 3.587102198920847,
+            "rotation_displacement_bound_mm": 0.9441832012880441,
+            "continuous_distance_lower_bound_mm": 2.642918997632803
+          }
+        ],
+        "minimum_certified_clearance_mm": 2.642918997631309,
+        "no_gaps_in_interval_partition": true,
+        "sample_queries": 23
+      },
+      {
+        "interval_deg": [
+          -27.36943359375,
+          27.36943359375
+        ],
+        "required_nominal_clearance_mm": 0.01,
+        "leaves": [
+          {
+            "interval_deg": [
+              -27.36943359375,
+              -27.31597766876221
+            ],
+            "midpoint_deg": -27.342705631256102,
+            "midpoint_distance_mm": 0.06061960490734464,
+            "rotation_displacement_bound_mm": 0.040377749106228725,
+            "continuous_distance_lower_bound_mm": 0.020241855801115913
+          },
+          {
+            "interval_deg": [
+              -27.31597766876221,
+              -27.262521743774414
+            ],
+            "midpoint_deg": -27.28924970626831,
+            "midpoint_distance_mm": 0.10162936265876965,
+            "rotation_displacement_bound_mm": 0.04037774910623141,
+            "continuous_distance_lower_bound_mm": 0.06125161355253824
+          },
+          {
+            "interval_deg": [
+              -27.262521743774414,
+              -27.155609893798825
+            ],
+            "midpoint_deg": -27.20906581878662,
+            "midpoint_distance_mm": 0.1632397899288094,
+            "rotation_displacement_bound_mm": 0.08075549821246282,
+            "continuous_distance_lower_bound_mm": 0.08248429171634657
+          },
+          {
+            "interval_deg": [
+              -27.155609893798825,
+              -26.941786193847655
+            ],
+            "midpoint_deg": -27.04869804382324,
+            "midpoint_distance_mm": 0.28680504807240936,
+            "rotation_displacement_bound_mm": 0.16151099642492026,
+            "continuous_distance_lower_bound_mm": 0.1252940516474891
+          },
+          {
+            "interval_deg": [
+              -26.941786193847655,
+              -26.514138793945314
+            ],
+            "midpoint_deg": -26.727962493896484,
+            "midpoint_distance_mm": 0.535309785976466,
+            "rotation_displacement_bound_mm": 0.3230219928498405,
+            "continuous_distance_lower_bound_mm": 0.21228779312662543
+          },
+          {
+            "interval_deg": [
+              -26.514138793945314,
+              -25.658843994140625
+            ],
+            "midpoint_deg": -26.08649139404297,
+            "midpoint_distance_mm": 1.0377888178356756,
+            "rotation_displacement_bound_mm": 0.6460439856996865,
+            "continuous_distance_lower_bound_mm": 0.3917448321359891
+          },
+          {
+            "interval_deg": [
+              -25.658843994140625,
+              -23.948254394531247
+            ],
+            "midpoint_deg": -24.803549194335936,
+            "midpoint_distance_mm": 1.7793116244080707,
+            "rotation_displacement_bound_mm": 1.292087971399373,
+            "continuous_distance_lower_bound_mm": 0.48722365300869774
+          },
+          {
+            "interval_deg": [
+              -23.948254394531247,
+              -22.237664794921873
+            ],
+            "midpoint_deg": -23.09295959472656,
+            "midpoint_distance_mm": 2.2947391870951463,
+            "rotation_displacement_bound_mm": 1.2920879713993703,
+            "continuous_distance_lower_bound_mm": 1.002651215695776
+          },
+          {
+            "interval_deg": [
+              -22.237664794921873,
+              -20.5270751953125
+            ],
+            "midpoint_deg": -21.382369995117188,
+            "midpoint_distance_mm": 2.8602613710900973,
+            "rotation_displacement_bound_mm": 1.2920879713993703,
+            "continuous_distance_lower_bound_mm": 1.568173399690727
+          },
+          {
+            "interval_deg": [
+              -20.5270751953125,
+              -17.10589599609375
+            ],
+            "midpoint_deg": -18.816485595703124,
+            "midpoint_distance_mm": 3.8013573788561814,
+            "rotation_displacement_bound_mm": 2.5841759427987405,
+            "continuous_distance_lower_bound_mm": 1.217181436057441
+          },
+          {
+            "interval_deg": [
+              -17.10589599609375,
+              -13.684716796875
+            ],
+            "midpoint_deg": -15.395306396484376,
+            "midpoint_distance_mm": 5.226409604697594,
+            "rotation_displacement_bound_mm": 2.584175942798742,
+            "continuous_distance_lower_bound_mm": 2.642233661898852
+          },
+          {
+            "interval_deg": [
+              -13.684716796875,
+              -6.8423583984375
+            ],
+            "midpoint_deg": -10.26353759765625,
+            "midpoint_distance_mm": 7.515637209168041,
+            "rotation_displacement_bound_mm": 5.168351885597483,
+            "continuous_distance_lower_bound_mm": 2.347285323570558
+          },
+          {
+            "interval_deg": [
+              -6.8423583984375,
+              0.0
+            ],
+            "midpoint_deg": -3.42117919921875,
+            "midpoint_distance_mm": 7.515637195706278,
+            "rotation_displacement_bound_mm": 5.168351885597483,
+            "continuous_distance_lower_bound_mm": 2.347285310108795
+          },
+          {
+            "interval_deg": [
+              0.0,
+              6.8423583984375
+            ],
+            "midpoint_deg": 3.42117919921875,
+            "midpoint_distance_mm": 7.515637195706292,
+            "rotation_displacement_bound_mm": 5.168351885597483,
+            "continuous_distance_lower_bound_mm": 2.347285310108809
+          },
+          {
+            "interval_deg": [
+              6.8423583984375,
+              13.684716796875
+            ],
+            "midpoint_deg": 10.26353759765625,
+            "midpoint_distance_mm": 7.51563719570629,
+            "rotation_displacement_bound_mm": 5.168351885597483,
+            "continuous_distance_lower_bound_mm": 2.3472853101088074
+          },
+          {
+            "interval_deg": [
+              13.684716796875,
+              17.10589599609375
+            ],
+            "midpoint_deg": 15.395306396484376,
+            "midpoint_distance_mm": 5.226409604698034,
+            "rotation_displacement_bound_mm": 2.584175942798742,
+            "continuous_distance_lower_bound_mm": 2.6422336618992923
+          },
+          {
+            "interval_deg": [
+              17.10589599609375,
+              20.5270751953125
+            ],
+            "midpoint_deg": 18.816485595703124,
+            "midpoint_distance_mm": 3.8013573788565793,
+            "rotation_displacement_bound_mm": 2.5841759427987405,
+            "continuous_distance_lower_bound_mm": 1.2171814360578388
+          },
+          {
+            "interval_deg": [
+              20.5270751953125,
+              22.237664794921873
+            ],
+            "midpoint_deg": 21.382369995117188,
+            "midpoint_distance_mm": 2.860261371089667,
+            "rotation_displacement_bound_mm": 1.2920879713993703,
+            "continuous_distance_lower_bound_mm": 1.5681733996902967
+          },
+          {
+            "interval_deg": [
+              22.237664794921873,
+              23.948254394531247
+            ],
+            "midpoint_deg": 23.09295959472656,
+            "midpoint_distance_mm": 2.294739187095445,
+            "rotation_displacement_bound_mm": 1.2920879713993703,
+            "continuous_distance_lower_bound_mm": 1.002651215696075
+          },
+          {
+            "interval_deg": [
+              23.948254394531247,
+              25.658843994140625
+            ],
+            "midpoint_deg": 24.803549194335936,
+            "midpoint_distance_mm": 1.7793116244080953,
+            "rotation_displacement_bound_mm": 1.292087971399373,
+            "continuous_distance_lower_bound_mm": 0.4872236530087224
+          },
+          {
+            "interval_deg": [
+              25.658843994140625,
+              26.514138793945314
+            ],
+            "midpoint_deg": 26.08649139404297,
+            "midpoint_distance_mm": 1.0377888178356756,
+            "rotation_displacement_bound_mm": 0.6460439856996865,
+            "continuous_distance_lower_bound_mm": 0.3917448321359891
+          },
+          {
+            "interval_deg": [
+              26.514138793945314,
+              26.941786193847655
+            ],
+            "midpoint_deg": 26.727962493896484,
+            "midpoint_distance_mm": 0.535309785976466,
+            "rotation_displacement_bound_mm": 0.3230219928498405,
+            "continuous_distance_lower_bound_mm": 0.21228779312662543
+          },
+          {
+            "interval_deg": [
+              26.941786193847655,
+              27.155609893798825
+            ],
+            "midpoint_deg": 27.04869804382324,
+            "midpoint_distance_mm": 0.28680504807240936,
+            "rotation_displacement_bound_mm": 0.16151099642492026,
+            "continuous_distance_lower_bound_mm": 0.1252940516474891
+          },
+          {
+            "interval_deg": [
+              27.155609893798825,
+              27.262521743774414
+            ],
+            "midpoint_deg": 27.20906581878662,
+            "midpoint_distance_mm": 0.1632397899288094,
+            "rotation_displacement_bound_mm": 0.08075549821246282,
+            "continuous_distance_lower_bound_mm": 0.08248429171634657
+          },
+          {
+            "interval_deg": [
+              27.262521743774414,
+              27.31597766876221
+            ],
+            "midpoint_deg": 27.28924970626831,
+            "midpoint_distance_mm": 0.10162936265876965,
+            "rotation_displacement_bound_mm": 0.04037774910623141,
+            "continuous_distance_lower_bound_mm": 0.06125161355253824
+          },
+          {
+            "interval_deg": [
+              27.31597766876221,
+              27.36943359375
+            ],
+            "midpoint_deg": 27.342705631256102,
+            "midpoint_distance_mm": 0.06061960490734464,
+            "rotation_displacement_bound_mm": 0.040377749106228725,
+            "continuous_distance_lower_bound_mm": 0.020241855801115913
+          }
+        ],
+        "minimum_certified_clearance_mm": 0.020241855801115913,
+        "no_gaps_in_interval_partition": true,
+        "sample_queries": 51
+      }
+    ],
+    "local_contact_transitions": [
+      {
+        "sign": -1,
+        "magnitude_free_point_deg": 27.41943359375,
+        "magnitude_contact_or_overlap_point_deg": 27.421875,
+        "free_point": {
+          "q2_deg": -27.41943359375,
+          "events": [],
+          "solid_pair_count": 49,
+          "booleans": 5,
+          "minimum_distance_mm": 0.0018456222195055716,
+          "nearest_part_pair": [
+            "L23_output_adapter",
+            "L12_output_adapter"
+          ]
+        },
+        "contact_or_overlap_point": {
+          "q2_deg": -27.421875,
+          "events": [],
+          "solid_pair_count": 49,
+          "booleans": 5,
+          "minimum_distance_mm": 0.0,
+          "nearest_part_pair": [
+            "L23_output_adapter",
+            "L12_output_adapter"
+          ]
+        },
+        "interpretation": "Local transition in25..30deg, not by itself a proof of no earlier contact."
+      },
+      {
+        "sign": 1,
+        "magnitude_free_point_deg": 27.41943359375,
+        "magnitude_contact_or_overlap_point_deg": 27.421875,
+        "free_point": {
+          "q2_deg": 27.41943359375,
+          "events": [],
+          "solid_pair_count": 49,
+          "booleans": 5,
+          "minimum_distance_mm": 0.0018456222195055716,
+          "nearest_part_pair": [
+            "L23_output_adapter",
+            "L12_output_adapter"
+          ]
+        },
+        "contact_or_overlap_point": {
+          "q2_deg": 27.421875,
+          "events": [],
+          "solid_pair_count": 49,
+          "booleans": 5,
+          "minimum_distance_mm": 0.0,
+          "nearest_part_pair": [
+            "L23_output_adapter",
+            "L12_output_adapter"
+          ]
+        },
+        "interpretation": "Local transition in25..30deg, not by itself a proof of no earlier contact."
+      }
+    ],
+    "first_obstruction_from_zero_magnitude_brackets_deg": {
+      "negative": [
+        27.36943359375,
+        27.421875
+      ],
+      "positive": [
+        27.36943359375,
+        27.421875
+      ]
+    },
+    "distance_samples": [
+      {
+        "q2_deg": 0.0,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 4,
+        "minimum_distance_mm": 7.515637209168042,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": -12.5,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 3,
+        "minimum_distance_mm": 6.580985023046101,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -18.75,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.8272089172857022,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -21.875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.692290203251944,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -23.4375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.186879494246538,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -24.21875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.9498558064382652,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -24.609375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.83528397838416,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -23.828125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.0670561275786548,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -22.65625,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.4343729645819114,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -20.3125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.2392022477588185,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -21.09375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.9605832580684077,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -19.53125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.5280953714214136,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -15.625,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 5.124726814843669,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -17.1875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.455872941393639,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -14.0625,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 5.833273145266745,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -6.25,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637195706276,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": -9.375,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637195706289,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": -3.125,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.51563719570629,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 12.5,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 3,
+        "minimum_distance_mm": 6.580985023046594,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 6.25,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637209168041,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 3.125,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637209168042,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 9.375,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637209168041,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 18.75,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.8272089172860575,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 15.625,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 5.124726814844124,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 14.0625,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 5.833273145267273,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 17.1875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.455872941394136,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 21.875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.6922902032522966,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 20.3125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.23920224775725,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 19.53125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.5280953712485315,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 21.09375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.9605832580672655,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 23.4375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.186879494246668,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 22.65625,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.4343729645822094,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 24.21875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.9498558064385512,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 23.828125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.0670561275794648,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 24.609375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.8352839783846961,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -10.0,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.5156371957062635,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": -15.0,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 5.403411102039726,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -17.5,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.326909555813755,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -19.375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.5871021989193532,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -18.125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.073821151049664,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -16.25,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.852393651387944,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -5.0,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637209168041,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": -7.5,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.51563719570629,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": -2.5,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.5156371957062635,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 10.0,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637195706278,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 5.0,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637209168041,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 2.5,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637209168041,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 7.5,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637209168055,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 15.0,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 5.403411102040196,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 17.5,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.326909555814446,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 16.25,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.8523936513883985,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 18.125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.073821151051923,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 19.375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.587102198920847,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -25.0,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.7233459688002368,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -30.0,
+        "events": [
+          {
+            "moving": "L23_output_adapter",
+            "stationary": "L12_output_adapter",
+            "solid_pair_intersection_sum_mm3": 20.264771235035145,
+            "events": [
+              {
+                "a_solid": 0,
+                "b_solid": 0,
+                "intersection_mm3": 20.264771235035145
+              }
+            ],
+            "pair_count": 1,
+            "boolean_count": 1,
+            "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+            "minimum_BREP_surface_distance_mm": 0.0,
+            "nearest_pair": [
+              0,
+              0
+            ]
+          }
+        ],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.5,
+        "events": [
+          {
+            "moving": "L23_output_adapter",
+            "stationary": "L12_output_adapter",
+            "solid_pair_intersection_sum_mm3": 0.026153944505155114,
+            "events": [
+              {
+                "a_solid": 0,
+                "b_solid": 0,
+                "intersection_mm3": 0.026153944505155114
+              }
+            ],
+            "pair_count": 1,
+            "boolean_count": 1,
+            "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+            "minimum_BREP_surface_distance_mm": 0.0,
+            "nearest_pair": [
+              0,
+              0
+            ]
+          }
+        ],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -26.25,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.9090187164998866,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -26.875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.4211585414784338,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.1875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.17982979489282513,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.34375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.05981890611667495,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.421875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.0,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.3828125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.029884406543274622,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.40234375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.014927399723063672,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.412109375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.007451457815108142,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.4169921875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.00371412733169052,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.41943359375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.0018456222195055716,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 25.0,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.7233459688005492,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 30.0,
+        "events": [
+          {
+            "moving": "L23_output_adapter",
+            "stationary": "L12_output_adapter",
+            "solid_pair_intersection_sum_mm3": 20.80902224946944,
+            "events": [
+              {
+                "a_solid": 0,
+                "b_solid": 0,
+                "intersection_mm3": 20.80902224946944
+              }
+            ],
+            "pair_count": 1,
+            "boolean_count": 1,
+            "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+            "minimum_BREP_surface_distance_mm": 0.0,
+            "nearest_pair": [
+              0,
+              0
+            ]
+          }
+        ],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.5,
+        "events": [
+          {
+            "moving": "L23_output_adapter",
+            "stationary": "L12_output_adapter",
+            "solid_pair_intersection_sum_mm3": 0.026153944505151162,
+            "events": [
+              {
+                "a_solid": 0,
+                "b_solid": 0,
+                "intersection_mm3": 0.026153944505151162
+              }
+            ],
+            "pair_count": 1,
+            "boolean_count": 1,
+            "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+            "minimum_BREP_surface_distance_mm": 0.0,
+            "nearest_pair": [
+              0,
+              0
+            ]
+          }
+        ],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 26.25,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.9090187164998866,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 26.875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.4211585414784338,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.1875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.17982979489282513,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.34375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.05981890611667495,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.421875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.0,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.3828125,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.029884406543274622,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.40234375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.014927399723063672,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.412109375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.007451457815108142,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.4169921875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.00371412733169052,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.41943359375,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.0018456222195055716,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -13.684716796875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 3,
+        "minimum_distance_mm": 6.010486497305527,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -20.527075195312,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.161652166084616,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -23.948254394531,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 2.030733814760044,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -25.658843994141,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.3768010757730877,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -26.514138793945,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.7019944277187449,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -26.941786193848,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.3694366121493715,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.155609893799,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.20437721639900985,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.262521743774,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.12215340412952003,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.315977668762,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.08111809476355347,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.342705631256,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.06061960490734464,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.289249706268,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.10162936265876965,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.209065818787,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.1632397899288094,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -27.048698043823,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.28680504807240936,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -26.727962493896,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.535309785976466,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -26.086491394043,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.0377888178356756,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -24.803549194336,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.7793116244080707,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -22.237664794922,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.571268912474369,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -23.092959594727,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.2947391870951463,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -21.382369995117,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.8602613710900973,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -17.105895996094,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.489814394370079,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -18.816485595703,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.8013573788561814,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -15.395306396484,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 5.226409604697594,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": -6.842358398437,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.51563719570629,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": -10.263537597656,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637209168041,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": -3.421179199219,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637195706278,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 13.684716796875,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 3,
+        "minimum_distance_mm": 6.0104864973145835,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 6.842358398437,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637209168043,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 3.421179199219,
+        "events": [],
+        "solid_pair_count": 90,
+        "booleans": 3,
+        "minimum_distance_mm": 7.515637195706292,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 10.263537597656,
+        "events": [],
+        "solid_pair_count": 91,
+        "booleans": 3,
+        "minimum_distance_mm": 7.51563719570629,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "J1"
+        ]
+      },
+      {
+        "q2_deg": 20.527075195312,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.161652166081451,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 17.105895996094,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 4.489814394370553,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 15.395306396484,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 5.226409604698034,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 18.816485595703,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 3.8013573788565793,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 23.948254394531,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 2.0307338147596994,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 22.237664794922,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.5712689124752006,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 21.382369995117,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.860261371089667,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 23.092959594727,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 4,
+        "minimum_distance_mm": 2.294739187095445,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 25.658843994141,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.3768010757730877,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 24.803549194336,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.7793116244080953,
+        "nearest_part_pair": [
+          "J3",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 26.514138793945,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.7019944277187449,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 26.086491394043,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 1.0377888178356756,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 26.941786193848,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.3694366121493715,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 26.727962493896,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.535309785976466,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.155609893799,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.20437721639900985,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.048698043823,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.28680504807240936,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.262521743774,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.12215340412952003,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.209065818787,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.1632397899288094,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.315977668762,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.08111809476355347,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.289249706268,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.10162936265876965,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      },
+      {
+        "q2_deg": 27.342705631256,
+        "events": [],
+        "solid_pair_count": 49,
+        "booleans": 5,
+        "minimum_distance_mm": 0.06061960490734464,
+        "nearest_part_pair": [
+          "L23_output_adapter",
+          "L12_output_adapter"
+        ]
+      }
+    ],
+    "recommended_research_domain_deg": [
+      -25,
+      25
+    ],
+    "recommendation_status": "Derived nominal local shoulder-only domain with >=1mm proved geometric separation to specified objects; not an executable full-arm limit or tolerance/load/cable approval."
+  },
+  "generator_sha256": "463d5103834622f7e8fa56daeda5cccf4bb88da30e432111730ccbbee568922d"
+}
