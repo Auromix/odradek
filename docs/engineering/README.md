@@ -10,6 +10,7 @@
 | 本体数学 | [运动学与动力学](arm-mathematics.md)／[静力独立审查](arm-screening-review.md) | 解析回归、独立重量叉乘、质心敏感性；非实机额定值 |
 | 夹爪数学 | [当前抓取 LP 审查](grasp-screening-review.md)／[独立角域分离](petal-certificate-review.md) | 72 个条件接触场景；16 实体独立角域闭合证明，不含完整支承 |
 | 实际物体接触 | [有限双垫研究](finite-pad-contact-study.md) | 八点共享四个指轴；Ø80 圆柱先碰骨架/灯窗，接触结构待修正 |
+| 片尖接触鞋 | [CONTACT-02](distal-contact-study.md) | 150/100 mm 长短片、64 项实体复核；改善指定圆柱接触，驱动力矩仍需匹配 |
 | 接触材料试片 | [双型四腔浇注模具](contact-pad-prototype.md) | STEP/STL/DXF/两页图纸；未打印/浇注，不含保持结构或承载资格 |
 | 六段承力连接 | [真实接口与空间审查](link-connection-plan.md) | 全部接触面/孔阵；发现肩部螺钉及两段旧梁干涉 |
 | 末端质量影响 | [3.5–4.5 kg 敏感性](head-mass-sensitivity.md) | 2 kg净物体另计；局部搜索及全域保守界，不替代动态/热选型 |
@@ -22,6 +23,7 @@
 | 电气 | [架构](electrical-architecture.svg)／[线束](harness-and-connectors.md) | 7本体＋4指伺服＋1头IO，共12从站；视频独立GMSL候选 |
 | 光学台架 | [采购和搭建](hardware/optical-bench-build.md) | 双鱼眼、Duo采集、AGX Orin及固定驱动链，尚未实装 |
 | 单轴台架 | [采购和搭建](hardware/single-axis-bench-build.md) | IPC、电源、原厂通信转接及未放行针脚/保护项 |
+| 上灯片电子样片 | [113 LED 元件级电路](hardware/upper-petal-prototype.md) | 134 器件、317 针、36 网及扫描配置；独立电测设计，未布线放行 |
 | 灯光与IO | [609点LED与控制/功率](hardware/head-lighting-io-selection.md) | 真实圆形点阵与四片LED坐标，MCU/ESC/电源候选；不是完整PCB |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
 | 放行差距 | [发布检查清单](release-checklist.md) | 对应证据和实际未完成事项 |
