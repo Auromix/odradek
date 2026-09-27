@@ -1,7 +1,7 @@
 {
   "revision": "ULP-01",
-  "status": "pin-level consistency and data mapping passed; NO ECAD ERC/DRC performed",
-  "kicad_availability": "not found in PATH, /Applications, /opt/homebrew/bin, /usr/local/bin on this host; no installation attempted",
+  "status": "this generator validates pin-level consistency and data mapping only; actual ECAD results are maintained separately in kicad/checks/verification.json",
+  "kicad_availability": "historical initial lookup: absent from PATH and standard application locations. Subsequent local KiCad 10.0.6 install verified; current actual CLI/ERC/DRC results are in kicad/checks/verification.json; runtime hashes in kicad/toolchain-plan.json",
   "component_count": 134,
   "LED_count": 113,
   "connected_net_count": 36,
@@ -28,7 +28,7 @@
   ],
   "input_hashes": {
     "docs/engineering/sources/head-lighting-io.json": "a62f763618d7668981d72b29970b15f334cc846ce05fa102dfbcc9fec728be7c",
-    "engineering/electronics/upper-petal-prototype/build.py": "fa99a6032695409b499c5a01143ee5013947554319a054897ae6dcf10142fa89"
+    "engineering/electronics/upper-petal-prototype/build.py": "b0509e52daf0dfdabbeaa60cfde4a7846fdb54dadecf8e79987eb6a657f75fa7"
   },
   "output_hashes": {
     "bom.csv": "5e034262bbc32939f391a386f5d71ed1b8a8a882c2a69a98740eff9d909cace0",

@@ -1,0 +1,215 @@
+{
+  "status": "actual rebuild and gates passed",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "../build.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"components\": 134, \"pins\": 317, \"nets\": 39, \"leds\": 113, \"nominal_area_mm2\": 2552.816, \"status\": \"review package generated, not fabrication release\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "../build_firmware_example.py"
+      ],
+      "returncode": 0,
+      "stdout": "Generated ULP02 host-independent init/readback/frame example; not target firmware\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "build_ecad.py"
+      ],
+      "returncode": 0,
+      "stdout": "Generated native schematic 138 symbols including 4 external-power flags\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "build_board.py"
+      ],
+      "returncode": 0,
+      "stdout": "Generated native unrouted PCB, 134 components; source LED coordinates unchanged\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3.9",
+        "prepare_native.py"
+      ],
+      "returncode": 0,
+      "stdout": "Canonical footprints, GND zone, DSN export True\n",
+      "stderr": "04:35:19\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n04:35:19\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "checks/upper-petal.xml",
+        "upper-petal.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    {
+      "command": [
+        "python3.9",
+        "finalize_native.py"
+      ],
+      "returncode": 0,
+      "stdout": "Synchronized footprint identities, source fields, NC nets; GND refilled: upper-petal.kicad_pcb\n",
+      "stderr": "04:35:20\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n04:35:20\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+    },
+    {
+      "command": [
+        "python3.9",
+        "replay_routing.py"
+      ],
+      "returncode": 0,
+      "stdout": "Replayed source-matched routing snapshot; actual KiCad checks remain required\n",
+      "stderr": "04:35:21\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n04:35:21\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+    },
+    {
+      "command": [
+        "python3",
+        "check_ecad.py",
+        "--kicad-cli",
+        "kicad-cli"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"commands\": {\n    \"version\": 0,\n    \"export_netlist\": 0,\n    \"erc\": 0,\n    \"drc\": 0\n  },\n  \"netlist_comparison\": {\n    \"expected_pin_records\": 317,\n    \"exported_pin_records\": 317,\n    \"mismatches\": [],\n    \"unexpected\": [],\n    \"passed\": true\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3.9",
+        "review_native_board.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"parts\": 134,\n  \"pins\": 317,\n  \"LEDs\": 113,\n  \"issues\": [],\n  \"vias\": 227,\n  \"segments\": {\n    \"F.Cu\": 374,\n    \"B.Cu\": 258,\n    \"In1.Cu\": 168\n  }\n}\n",
+      "stderr": "04:35:24\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n04:35:24\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+    },
+    {
+      "command": [
+        "clang",
+        "-std=c99",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-fsyntax-only",
+        "../ulp02_example.c"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "export",
+        "svg",
+        "--output",
+        "plots/schematic",
+        "upper-petal.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to 'plots/schematic/upper-petal.svg'.\nDone.\n",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "svg",
+        "--layers",
+        "F.Cu,In1.Cu,In2.Cu,B.Cu,F.SilkS,B.SilkS,F.Fab,B.Fab",
+        "--common-layers",
+        "Edge.Cuts",
+        "--page-size-mode",
+        "2",
+        "--exclude-drawing-sheet",
+        "--mode-multi",
+        "--output",
+        "plots",
+        "upper-petal.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to 'plots/upper-petal-F_Cu.svg'.\nPlotted to 'plots/upper-petal-In1_Cu.svg'.\nPlotted to 'plots/upper-petal-In2_Cu.svg'.\nPlotted to 'plots/upper-petal-B_Cu.svg'.\nPlotted to 'plots/upper-petal-F_Silkscreen.svg'.\nPlotted to 'plots/upper-petal-B_Silkscreen.svg'.\nPlotted to 'plots/upper-petal-F_Fab.svg'.\nPlotted to 'plots/upper-petal-B_Fab.svg'.\nDone.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.Mask,B.Mask,F.SilkS,B.SilkS,Edge.Cuts",
+        "--output",
+        "fabrication-review/gerber",
+        "upper-petal.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to 'fabrication-review/gerber/upper-petal-F_Cu.gtl'.\nPlotted to 'fabrication-review/gerber/upper-petal-In1_Cu.g1'.\nPlotted to 'fabrication-review/gerber/upper-petal-In2_Cu.g2'.\nPlotted to 'fabrication-review/gerber/upper-petal-B_Cu.gbl'.\nPlotted to 'fabrication-review/gerber/upper-petal-F_Paste.gtp'.\nPlotted to 'fabrication-review/gerber/upper-petal-B_Paste.gbp'.\nPlotted to 'fabrication-review/gerber/upper-petal-F_Silkscreen.gto'.\nPlotted to 'fabrication-review/gerber/upper-petal-B_Silkscreen.gbo'.\nPlotted to 'fabrication-review/gerber/upper-petal-F_Mask.gts'.\nPlotted to 'fabrication-review/gerber/upper-petal-B_Mask.gbs'.\nPlotted to 'fabrication-review/gerber/upper-petal-Edge_Cuts.gm1'.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "export",
+        "drill",
+        "--format",
+        "excellon",
+        "--excellon-units",
+        "mm",
+        "--generate-report",
+        "--report-path",
+        "fabrication-review/drill-report.txt",
+        "--generate-map",
+        "--map-format",
+        "svg",
+        "--output",
+        "fabrication-review/gerber",
+        "upper-petal.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Created file 'fabrication-review/gerber/upper-petal.drl'\nCreated file 'fabrication-review/gerber/upper-petal-drl_map.svg'.\nDone.\n",
+      "stderr": ""
+    }
+  ],
+  "compiler_syntax_check_run": true,
+  "hardware_execution": false,
+  "fabrication_release": false,
+  "artifact_hashes": {
+    "fabrication-review/gerber/upper-petal-B_Cu.gbl": "62d6cd4addfcefeb82cc10eb696c27a162aa35bc940b7488ac3489bf21fd775a",
+    "fabrication-review/gerber/upper-petal-B_Mask.gbs": "e594188f45c11b2a01945536204b60f5e05af7419ec8fead3cf3a66853525ca3",
+    "fabrication-review/gerber/upper-petal-B_Paste.gbp": "81cd5dab47371266e0f840ebadc4707b202d619b4b03608b14cae2035868d705",
+    "fabrication-review/gerber/upper-petal-B_Silkscreen.gbo": "d7d1b22cdd5cacba08384ba5f6d349b52d273650250da306c5c61f3cc16cda6d",
+    "fabrication-review/gerber/upper-petal-Edge_Cuts.gm1": "d980ced07a44505991272b8fce8f8fd4aa10af8746ba287dd2735f011cecf017",
+    "fabrication-review/gerber/upper-petal-F_Cu.gtl": "c5537c852c1bdc510e0b81fa1da37ad8c3484df709a51c0505cc4e947f7563e6",
+    "fabrication-review/gerber/upper-petal-F_Mask.gts": "3b77f92674e4bb2a8ba895f5800cbafa48cd4024198e61cb0e13cf9d0a84b5d2",
+    "fabrication-review/gerber/upper-petal-F_Paste.gtp": "22f5f11b597e4a3832bf7ea949a5de065fe20ddf26cf3bfa9378cf57ad4c223b",
+    "fabrication-review/gerber/upper-petal-F_Silkscreen.gto": "827d9a0fc2765ec8bd0cd757ae6042270fec00cba3c1adfff6285433335ada04",
+    "fabrication-review/gerber/upper-petal-In1_Cu.g1": "16088d23836d9f02bb0e8d6676b2ca503be82374fa86eb1b2ed213b7b97f07a8",
+    "fabrication-review/gerber/upper-petal-In2_Cu.g2": "1112129cefbaa7d0b4f980377206135658cd3bd256ae992da0bcb1513e2bbebd",
+    "fabrication-review/gerber/upper-petal-job.gbrjob": "7e1875507c16c060011ea45bba66bc8d93d4b0c7a0614a6d1edd3c133c40a541",
+    "fabrication-review/gerber/upper-petal.drl": "4239fbe49080fc5ed0f3dc208c9004933c59636fe6a8c69b2ee764e07689890b",
+    "routing-plan.json": "7acbe4425cd3797a969b67edfcead8616d3b40aae31fe11052593063946baf2c",
+    "upper-petal.kicad_pcb": "36102f57db01ce2a9137aa0122abc02840c6b96341fb690977859080787d03d0",
+    "upper-petal.kicad_sch": "4c238ac484d56229bab8a7bdb4cbf142b2a268e50877db4d3959c7a4a645d716"
+  }
+}

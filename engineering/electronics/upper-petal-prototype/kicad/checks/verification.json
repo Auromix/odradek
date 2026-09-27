@@ -1,0 +1,143 @@
+{
+  "commands": {
+    "version": {
+      "command": [
+        "kicad-cli",
+        "version"
+      ],
+      "returncode": 0,
+      "stdout": "10.0.6\n",
+      "stderr": ""
+    },
+    "export_netlist": {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "checks/upper-petal.xml",
+        "upper-petal.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    "erc": {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--exit-code-violations",
+        "-o",
+        "checks/erc.json",
+        "upper-petal.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Found 0 violations\nSaved ERC Report to checks/erc.json\n",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    "drc": {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "drc",
+        "--schematic-parity",
+        "--format",
+        "json",
+        "--exit-code-violations",
+        "-o",
+        "checks/drc.json",
+        "upper-petal.kicad_pcb"
+      ],
+      "returncode": 5,
+      "stdout": "Found 0 violations\nFound 274 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to checks/drc.json\n",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    }
+  },
+  "netlist_comparison": {
+    "expected_pin_records": 317,
+    "exported_pin_records": 317,
+    "mismatches": [],
+    "unexpected": [],
+    "passed": true
+  },
+  "input_hashes": {
+    "upper-petal.kicad_sch": "d3e4fde4690c30c9af3b3c46252914a73fc5a6e7de55f2a6ab5aa94b435d2379",
+    "upper-petal.kicad_pcb": "2db019b751cfc5ec68245427e31ce3c09bf9c7d6fbfdfe2a868bedd26334912b",
+    "upper-petal.kicad_pro": "e6c8ec1ca14eb4542039a99174ae27326142b4a7d4b75f38508fa33a78272a13",
+    "build_ecad.py": "48609175d4d632a774af192058e22ed528e51855c8ec3658a91c65d21f4277d9",
+    "build_board.py": "1f91c4956879da9c0b7bbfc7a9d3a9a1324ad0fac2d4e040a921553c4cdaab4d",
+    "check_ecad.py": "f0a56eef622cb81a4948625375f6fce3a4d21ff7e4bc7de44b3fc19785995cf5",
+    "finalize_native.py": "063c1abb2359002e3b72e73f1355924c6cf16003c3d2133d43916bbc936357b5",
+    "review_native_board.py": "5a7860446d4ddcaa72581f3c45efc5eb5c97111052bd19d641bff21f46ab0178",
+    "../netlist.json": "ab2bf41dc702a2a0df5ac1f9b432250a77633f31affa62966c546d793c7d9d5e",
+    "ULP.pretty/C0603.kicad_mod": "9e777fd309d8d43d1c3de69a7308518e93a879430fc43e06bb1a911070b1fae6",
+    "ULP.pretty/C0805.kicad_mod": "b83f886ac05fb631fe63890907f0723c4bb5e27a45e4d3ea9e39e1f68176a543",
+    "ULP.pretty/JST_GH_10_TOP.kicad_mod": "7e163fd9a65fac4ebc0a4ab3b4cc115ae7b23dbc61257823027dfeb886310d5a",
+    "ULP.pretty/NTC0603.kicad_mod": "1ca6c51a0469b484862535442dfdc33288d298ea6805c8b808b05b3943231fc5",
+    "ULP.pretty/R0603.kicad_mod": "9b2d8d98e60942002f66c908d698948a05a4ed079fc68a923f4fd5e7fdac31af",
+    "ULP.pretty/TI_RKP0040B.kicad_mod": "c57d616017be6213a1754930d3cb45fce3a99d66e5f1affb9788479dde6620ae",
+    "ULP.pretty/WE_150060YS75000.kicad_mod": "573eaec7c5023652802b7a9346a09febd5257ccab26d761133628e16efe3462d"
+  },
+  "report_counts": {
+    "erc": {
+      "violations": 0
+    },
+    "drc": {
+      "violations": 0,
+      "unconnected_items": 274,
+      "schematic_parity": 0
+    }
+  },
+  "ignored_default_checks": {
+    "erc": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "Four connection points are joined together",
+        "key": "four_way_junction"
+      },
+      {
+        "description": "SPICE model issue",
+        "key": "simulation_model_issue"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ],
+    "drc": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ]
+  },
+  "digital_checks_all_passed": false,
+  "fabrication_release": false,
+  "status": "Actual tool results; engineering/thermal/manufacturing validation separate",
+  "report_sanitization": "Only absolute current-project directory prefix is removed from XML and stdout/stderr; electrical records and check findings unchanged."
+}

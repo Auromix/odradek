@@ -1,0 +1,42 @@
+{
+  "status": "KiCad 10.0.6 native build, source parity, ERC/DRC all passed. Final routes use deterministic buses and native-shape paths; Freerouting retained only as historical trial tool, not required for replay.",
+  "checked_disk_available_GiB": 1024,
+  "host_arch": "arm64",
+  "scope": "local work runtime only; no /Applications or system settings modified",
+  "tools": [
+    {
+      "name": "KiCad",
+      "version": "10.0.6",
+      "url": "https://mirrors.mit.edu/kicad/osx/stable/kicad-unified-universal-10.0.6.dmg",
+      "official_index": "https://www.kicad.org/download/macos/",
+      "size_bytes": 1404303659,
+      "expected_sha256": "ef4dcd4278c46d3efcd28c8db273d5957d68efda028f6bf79b4811fc5302dc68",
+      "verified_sha256": "ef4dcd4278c46d3efcd28c8db273d5957d68efda028f6bf79b4811fc5302dc68"
+    },
+    {
+      "name": "Freerouting",
+      "version": "2.4.1",
+      "url": "https://github.com/freerouting/freerouting/releases/download/v2.4.1/freerouting-2.4.1.jar",
+      "size_bytes": 64076787,
+      "expected_sha256": "251101c3eeac22d7e7dfcf6796603279e5d1000283eb82d8f093780f7afc6aa9",
+      "purpose": "local DSN route candidate, no cloud; -da and API off; final DRC must be KiCad",
+      "verified_sha256": "251101c3eeac22d7e7dfcf6796603279e5d1000283eb82d8f093780f7afc6aa9"
+    },
+    {
+      "name": "Temurin JRE",
+      "version": "25.0.4.1+1",
+      "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jre_aarch64_mac_hotspot_25.0.4.1_1.tar.gz",
+      "size_bytes": 56208642,
+      "expected_sha256": "5b02bcc908da092e7e00b9772d4f9bbb87f44a60b7c90f7cf5a91a1d98f37e1b",
+      "verified_sha256": "5b02bcc908da092e7e00b9772d4f9bbb87f44a60b7c90f7cf5a91a1d98f37e1b"
+    }
+  ],
+  "verification": {
+    "kicad_cli_version": "10.0.6",
+    "pcbnew_GetBuildVersion": "10.0.6",
+    "codesign_verify_deep_strict_returncode": 0,
+    "all_download_sha256_match": true,
+    "runtime_location": "workspace work/r4-runtime; read-only DMG mount; no global installation",
+    "freerouting_java_requirement": "Java 25; Temurin 25 local JRE used; analytics/API disabled"
+  }
+}

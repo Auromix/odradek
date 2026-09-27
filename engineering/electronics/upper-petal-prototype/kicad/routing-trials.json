@@ -1,0 +1,55 @@
+{
+  "status": "Historical ULP-01. No route candidate passed full native DRC. Superseded by ULP-02 physical-adjacency matrix study; XY unchanged.",
+  "same_source_netlist": "ab2bf41dc702a2a0df5ac1f9b432250a77633f31affa62966c546d793c7d9d5e",
+  "min_clearance_mm": 0.15,
+  "no_LED_coordinate_changes": true,
+  "variants": [
+    {
+      "input": "upper-petal-routing.dsn",
+      "sha256": "59308326940452e3958d17f96c64964a609794ddff16632047bfc90fe2a8e55a",
+      "routable_layers": "F,In1,B",
+      "route_via_diameter_mm": 0.6,
+      "route_via_drill_mm": 0.3,
+      "autoroute_max_passes": 20,
+      "initial_thermal_vias_mm": {
+        "diameter": 0.6,
+        "drill": 0.3
+      },
+      "status": "20-pass trial completed; router retained 56 unrouted. Not selected."
+    },
+    {
+      "input": "upper-petal-4layer.dsn",
+      "sha256": "abd89f843ff8756eb2c8ab8773ba81c37a4b110c1872e79decc568e0f8b971d9",
+      "routable_layers": "F,In1,In2,B",
+      "route_via_diameter_mm": 0.6,
+      "route_via_drill_mm": 0.3,
+      "autoroute_max_passes": 20,
+      "initial_thermal_vias_mm": {
+        "diameter": 0.6,
+        "drill": 0.3
+      },
+      "status": "Stopped after pass17 (39 unrouted in router log), to focus on explicit fanouts and reserved GND. No native-board pass or fabrication release."
+    },
+    {
+      "input": "upper-petal-finevia.dsn",
+      "sha256": "578632aa2860243a2dd6f9df9e9be3632673a672055406b36a19f1774b4ebecc",
+      "routable_layers": "F,In1,In2,B",
+      "route_via_diameter_mm": 0.5,
+      "route_via_drill_mm": 0.25,
+      "autoroute_max_passes": 10,
+      "initial_thermal_vias_mm": {
+        "diameter": 0.6,
+        "drill": 0.3
+      },
+      "status": "Completed; native KiCad:33 unconnected,7 sub-0.15mm track-width errors,6 dangling vias. Not selected."
+    },
+    {
+      "input": "upper-petal-led-routing.dsn",
+      "status": "Stopped owned local router after parent approved ULP-02 mapping. Last observed pass3:77 unrouted; no completed SES or native pass. All226 LED escapes and33QFN exits had individually checked geometry, but legacy net mapping remained unsuitable.",
+      "routable_layers": "F,In1,B",
+      "route_via_diameter_mm": 0.5,
+      "route_via_drill_mm": 0.25,
+      "automatic_neckdown": false
+    }
+  ]
+}

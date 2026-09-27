@@ -1,0 +1,92 @@
+{
+  "board_outline_reference_mm": [
+    [
+      18.2,
+      -11.04
+    ],
+    [
+      33.6,
+      -16.56
+    ],
+    [
+      100.8,
+      -9.200000000000001
+    ],
+    [
+      131.6,
+      -3.68
+    ],
+    [
+      131.6,
+      3.68
+    ],
+    [
+      100.8,
+      9.200000000000001
+    ],
+    [
+      33.6,
+      16.56
+    ],
+    [
+      18.2,
+      11.04
+    ]
+  ],
+  "outline_area_mm2": 2552.816,
+  "board_outline_status": "same visible-window polygon as planning reference; no mounting/routing release",
+  "board_stack_candidate": "4 layers, 0.8 mm finished FR4; stackup/impedance/fab tolerance not ordered",
+  "LED_land_envelope_area_mm2": 216.96,
+  "populated_by_row": {
+    "0": 12,
+    "1": 14,
+    "2": 14,
+    "3": 14,
+    "4": 12,
+    "5": 10,
+    "6": 10,
+    "7": 10,
+    "8": 10,
+    "9": 6,
+    "10": 1
+  },
+  "I_peak_mA_20mA": 280,
+  "I_avg_upper_mA_20mA": 205.45454545454547,
+  "I_avg_with_1us_blanking_mA_20mA": 182.62626262626264,
+  "P_VLED_upper_W": 0.678,
+  "P_LED_typ_electrical_W": 0.41090909090909095,
+  "P_U1_stage_typ_W": 0.2670909090909091,
+  "logic_allocation_W_not_max_spec": 0.05,
+  "total_board_planning_W": 0.728,
+  "uniform_area_heat_flux_W_cm2": 0.02851752731101654,
+  "bulk_cap_nominal_uF": 44,
+  "worst_8us_pulse_droop_mV_C_only_nominal44uF": 50.909090909090914,
+  "droop_mV_Ceff20uF_assumption": 112.0,
+  "NTC_bias_R_ohm": 47000,
+  "NTC_25C_bias_uA": 57.89473684210526,
+  "NTC_25C_voltage_V": 0.5789473684210527,
+  "NTC_25C_self_heating_power_mW": 0.0335180055401662,
+  "NTC_all_R_nominal_max_power_mW": 0.057925531914893615,
+  "NTC_ADC_RC_tau_25C_ms": 0.9245614035087719,
+  "front_LED_height_max_mm": 0.8,
+  "back_IC_max_mm": 1.0,
+  "back_bulk_cap_max_mm": 1.45,
+  "GH_header_body_depth_mm": 4.25,
+  "GH_header_body_height_mm": 4.05,
+  "GH_header_standoff_reference_mm": 0.15,
+  "GH_mated_reference_height_mm": 7.3,
+  "bare_board_LED_and_bulk_cap_stack_mm": 3.05,
+  "mated_root_stack_excluding_wire_bend_mm": 8.9,
+  "front_diffuser_gap_and_sheet_assumption_mm": 1.4,
+  "root_stack_with_front_assumption_mm": 10.3,
+  "excludes": [
+    "solder stand-off",
+    "PCB thickness tolerance",
+    "insulation to metal",
+    "wire bend/extraction clearance",
+    "mounting hardware",
+    "actual PCB routing and thermal field"
+  ],
+  "NTC_height_max_mm": 0.95,
+  "NTC_body_and_land_status": "Murata JEWB01BR-5300G p5 gives body and reflow ranges; library overlay still required"
+}

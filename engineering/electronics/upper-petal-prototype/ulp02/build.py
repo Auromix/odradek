@@ -2,7 +2,7 @@
 # Required Notice: Odradek - Auromix contributors (https://github.com/Auromix/odradek)
 """Build a tool-neutral circuit review package, NOT a routed PCB or Gerber.
 
-The source pixel coordinates and SW/CS allocation are immutable inputs. This
+The source pixel coordinates are immutable; the physical-adjacency SW/CS map is ULP-02. This
 script creates every component/pin connection, initialization bytes and drawings.
 """
 import csv
@@ -13,7 +13,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parent
-ROOT = OUT.parents[2]
+ROOT = OUT.parents[3]
 PIXEL_SOURCE = ROOT/'docs/engineering/sources/head-lighting-io.json'
 DS = 'https://www.ti.com/lit/ds/symlink/lp5860.pdf'
 TRM = 'https://www.ti.com/lit/pdf/SNVU786'
@@ -54,8 +54,8 @@ def line(s, x1, y1, x2, y2):
 
 
 def draw_schematic(components, pins):
-    s = svg_start(1500, 1350, 'UPPER PETAL / COMPONENT CIRCUIT - ULP-01',
-                  'HLIO-R03 electrical coupon. Repeated LEDs are on matrix sheet. NO ERC / PCB / GERBER RELEASE.')
+    s = svg_start(1500, 1350, 'UPPER PETAL / COMPONENT CIRCUIT - ULP-02',
+                  'HLIO-R03 electrical coupon. Repeated LEDs are on matrix sheet. Tool-neutral drawing; native KiCad checks are separate. No fabrication release.')
     byref = {c['ref']: c for c in components}
     s.append('<rect class="box" x="420" y="125" width="590" height="500"/>')
     text(s, 585, 112, 'U1  LP5860RKPR  RKP0040B', 18)
@@ -94,14 +94,14 @@ def draw_schematic(components, pins):
 
 
 def draw_matrix(pixels):
-    s=svg_start(1670, 1340, 'UPPER PETAL / 113 DISCRETE LED CONNECTIONS',
+    s=svg_start(2100, 1340, 'UPPER PETAL / 113 DISCRETE LED CONNECTIONS',
                 'Each cell has named SW anode and CS cathode nets; no connection is implied between adjacent cells.')
     mapping={(p['sw'],p['cs']):p for p in pixels}
     text(s,30,92,'D pin 2 = A (+); D pin 1 = K (-), polarity mark. SW = high-side source; CS = current sink.',15)
-    for cs in range(11): text(s,90+cs*143,125,f'CS{cs}',14)
+    for cs in range(14): text(s,90+cs*143,125,f'CS{cs}',14)
     for sw in range(11):
         text(s,20,180+sw*102,f'SW{sw}',14)
-        for cs in range(11):
+        for cs in range(14):
             x=85+cs*143;y=175+sw*102;p=mapping.get((sw,cs))
             if not p:
                 text(s,x,y,'NOT FITTED',10);continue
@@ -111,13 +111,18 @@ def draw_matrix(pixels):
             line(s,x+44,y-9,x+44,y+9);line(s,x+44,y,x+72,y)
             text(s,x,y+20,f'2/A:SW{sw}',10);text(s,x,y+36,f'1/K:CS{cs}',10)
             text(s,x,y+52,f'XY {p["x_mm"]},{p["y_mm"]} mm',10)
-    text(s,30,1310,'Unused sites are explicitly OFF in the register masks. U1 CS11...CS17 are floating pins.',14)
+    text(s,30,1310,'Unused sites are explicitly OFF in the register masks. U1 CS14...CS17 are floating pins.',14)
     s.append('</svg>');(OUT/'schematic-led-matrix.svg').write_text('\n'.join(s))
 
 
 def main():
     data=json.loads(PIXEL_SOURCE.read_text());panel=next(p for p in data['pixel_maps'] if p['panel']=='UR')
     pixels=[dict(p,ref=f'D{i}') for i,p in enumerate(panel['drivers'][0]['pixels'],1)]
+    xs=sorted({p['x_mm'] for p in pixels});ys=sorted({p['y_mm'] for p in pixels})
+    oldmap=[dict(p) for p in pixels]
+    for p in pixels:
+        ix=xs.index(p['x_mm']);iy=ys.index(p['y_mm']);p.update(sw=ix//2,cs=iy+7*(ix%2))
+    save('mapping-revision.json',{'revision':'ULP-02','coordinates_unchanged':True,'formula':'SW=floor(x-column-index/2); CS=y-row-index+7*(x-column-index modulo 2)','x_columns_mm':xs,'y_rows_mm':ys,'previous_ULP01_map':oldmap,'new_map':pixels})
     assert len(pixels)==113 and len({(p['sw'],p['cs']) for p in pixels})==113
     components=[];pins=[]
     def component(ref,mpn,value,footprint,source,side='B',xy=None,note=''):
@@ -133,11 +138,11 @@ def main():
              'ADDR0_MISO':'MISO_IC','ADDR1_SS':'SS_N','VIO_EN':'VIO_EN','VCC':'VCC_3V3','VLED':'VLED_3V3'}
     for num,name in sorted(names.items()):
         net=name if name.startswith(('CS','SW')) else special[name]
-        if name.startswith('CS') and int(name[2:])>10: net=None
+        if name.startswith('CS') and int(name[2:])>13: net=None
         role='power_in' if name in ['VCC','VLED','VIO_EN','AGND','EP_GND'] else ('output' if name.startswith(('CS','SW')) or name in ['VCAP','ADDR0_MISO'] else 'input')
         pin('U1',num,name,net,role)
     for p in pixels:
-        component(p['ref'],'150060YS75000','Yellow 590nm','WE_150060YS75000',LED,'F',(p['x_mm'],p['y_mm']),f'SW{p["sw"]}/CS{p["cs"]}; no change from HLIO-01')
+        component(p['ref'],'150060YS75000','Yellow 590nm','WE_150060YS75000',LED,'F',(p['x_mm'],p['y_mm']),f'SW{p["sw"]}/CS{p["cs"]}; physical-adjacency ULP-02 mapping; HLIO-R03 XY unchanged')
         pin(p['ref'],1,'K',f'CS{p["cs"]}');pin(p['ref'],2,'A',f'SW{p["sw"]}')
     jnets=['VLED_3V3','GND','VCC_3V3','SCLK','MOSI','MISO_HOST','SS_N','VSYNC','VIO_EN','NTC_RETURN']
     component('J1','BM10B-GHS-TBT(LF)(SN)','10pin GH top-entry','JST_GH_10_TOP',GH,xy=(24,0),note='Backside; candidate rotation 90 deg; mated height 7.3 mm excludes wire bend')
@@ -169,7 +174,7 @@ def main():
     assert len({(p['ref'],p['pin']) for p in pins})==len(pins)
     assert set(p['ref'] for p in pins)==set(c['ref'] for c in components)
     assert all(len(n)>1 for n in nets.values())
-    assert len([p for p in pins if p['net'] is None])==7
+    assert len([p for p in pins if p['net'] is None])==4
     for p in pixels:
         lp=[n for n in pins if n['ref']==p['ref']]
         assert lp[0]['pin']=='1' and lp[0]['net']==f'CS{p["cs"]}'
@@ -181,9 +186,9 @@ def main():
         {'item':'Host source terminations','quantity':3,'manufacturer_part_number':'CRCW060333R0FKEA','source_url':RES,'status':'candidate','notes':'33 ohm at host SCLK/MOSI/VSYNC sources, not on petal; tune by scope'},
         {'item':'Harness wire','quantity':10,'manufacturer_part_number':'TBD','source_url':GH,'status':'blocked','notes':'AWG26 candidate, insulation OD 0.76-1.0 mm within GH range; exact flexible wire/length/current derating not frozen'},
         {'item':'Host','quantity':1,'manufacturer_part_number':'NUCLEO-G474RE','source_url':'https://www.st.com/en/evaluation-tools/nucleo-g474re.html','status':'external-candidate','notes':'3.3V SPI+ADC host; pin allocation and firmware still need separate verification'},
-        {'item':'Protected regulated 3.3V LED supply','quantity':1,'manufacturer_part_number':'TBD','source_url':DS,'status':'blocked','notes':'external supply, not Nucleo GPIO; >=0.275 A transient capability is 25% planning margin above 0.220 A; set current limit after inrush/cable review'},
+        {'item':'Protected regulated 3.3V LED supply','quantity':1,'manufacturer_part_number':'TBD','source_url':DS,'status':'blocked','notes':'external supply, not Nucleo GPIO; >=0.350 A transient capability is 25% planning margin above 0.280 A; set current limit after inrush/cable review'},
         {'item':'Regulated 3.3V logic supply/VIO control','quantity':1,'manufacturer_part_number':'TBD','source_url':DS,'status':'blocked','notes':'VIO input-current/host-drive budget must be checked; common reference GND; power-order coordination required'}])
-    save('netlist.json',{'format':'tool-neutral pin-level netlist; not an ECAD export','revision':'ULP-01',
+    save('netlist.json',{'format':'tool-neutral pin-level netlist; not an ECAD export','revision':'ULP-02',
          'components':components,'pins':pins,'nets':dict(nets),'no_connect_pins':[p for p in pins if p['net'] is None]})
     csvwrite('led-placement-reference.csv',[dict(p,side='F',rotation_deg=0,cathode_pin=1,anode_pin=2,
         dot_index=18*p['sw']+p['cs'],dc_address=f'0x{0x100+18*p["sw"]+p["cs"]:03X}',
@@ -206,7 +211,7 @@ def main():
         (0x000,[1],'enable only after readback; remain dark, wait >=100us')]
     operations=[{'register':f'0x{a:03X}','length':len(b),'bytes':b,'spi_write_header':spi_header(a),
                  'spi_read_header':spi_header(a,False),'reason':note} for a,b,note in config]
-    save('register-plan.json',{'revision':'ULP-01','not_executed_on_hardware':True,'SPI':{'mode':0,'msb_first':True,'initial_hz':100000,'target_hz_after_signal_test':2000000,
+    save('register-plan.json',{'revision':'ULP-02','not_executed_on_hardware':True,'SPI':{'mode':0,'msb_first':True,'initial_hz':100000,'target_hz_after_signal_test':2000000,
         'header_formula':'[(addr>>2), ((addr&3)<<6) | (write ? 0x20 : 0)]'},
         'power_up':['hold VIO_EN low; all host SPI/VSYNC outputs low or high-Z; external pullups disabled',
                     'apply regulated VCC/VLED, then raise VIO_EN to same 3.3V IO reference; wait >=500us',
@@ -227,8 +232,8 @@ def main():
       'P_LED_typ_electrical_W':113*.020/11*2.,'P_U1_stage_typ_W':113*.020/11*(3.3-2.),
       'logic_allocation_W_not_max_spec':.050,'total_board_planning_W':.728,
       'uniform_area_heat_flux_W_cm2':.728/(area/100),'bulk_cap_nominal_uF':44,
-      'worst_8us_pulse_droop_mV_C_only_nominal44uF':.220*8e-6/(44e-6)*1000,
-      'droop_mV_Ceff20uF_assumption':.220*8e-6/(20e-6)*1000,
+      'worst_8us_pulse_droop_mV_C_only_nominal44uF':.280*8e-6/(44e-6)*1000,
+      'droop_mV_Ceff20uF_assumption':.280*8e-6/(20e-6)*1000,
       'NTC_bias_R_ohm':47000,'NTC_25C_bias_uA':3.3/57000*1e6,
       'NTC_25C_voltage_V':3.3*10000/57000,
       'NTC_25C_self_heating_power_mW':(3.3/57000)**2*10000*1000,
@@ -268,8 +273,8 @@ def main():
                         'source':GH+' (pages 2-3)',
                         'status':'public catalogue geometry visually checked using PDFium: pin1 upper right in manufacturer mounting-side view; signal length 5.6-3.9=1.7; complete model drawing/production library review still required'},
        'routing':{'layers_candidate':4,'finished_thickness_mm':.8,'external_copper_oz_candidate':1,'min_trace_clearance_mm_candidate':[.15,.15],
-          'SW_width_mm_min_candidate':.5,'VLED_GND_trunk_mm_min_candidate':.8,'CS_width_mm_min_candidate':.2,
-          'exceptions':'short QFN escapes may be 0.15 mm; expand immediately; no thermal-current approval inferred',
+          'SW_distribution_width_mm_candidate':.5,'SW_escape_width_mm_candidate':.15,'VLED_GND_trunk_goal_mm':.8,'CS_distribution_width_mm_candidate':.2,'CS_escape_width_mm_candidate':.15,
+          'exceptions':'QFN escapes may be 0.15 mm; several scan interconnects also use 0.15/0.20 mm. Actual width/length/resistance audit governs; no thermal-current approval inferred',
           'planes':'continuous GND reference; VLED distribution separated from NTC trace; no isolated AGND island',
           'critical':'local decouplers same side as U1, shortest direct pad loops and nearby return vias; current SW traces wider than CS; keep all non-LED parts behind board',
           'contact_reserve':panel['contact_reserve_mm'],'no_LED_coordinate_changes':True,
@@ -286,7 +291,7 @@ def main():
         x,y=xy(p['x_mm'],p['y_mm']);s.append(f'<rect x="{x-12}" y="{y-4}" width="24" height="8" fill="#f3b54a" stroke="#aa741e"/>')
     for ref,x,y,w,h in [('J1',24,0,8,19),('U1',43,0,6,6),('rear passives',55,0,26,13),('NTC',76,0,4,4)]:
         xx,yy=xy(x-w/2,y+h/2);s.append(f'<rect x="{xx}" y="{yy}" width="{w*10}" height="{h*10}" fill="none" stroke="#1b7b89" stroke-dasharray="5 3"/>');text(s,xx,yy-6,ref,12)
-    text(s,35,514,f'Reference polygon area {area:.2f} mm2. No mounting holes. Preserve all 113 SW/CS identities.',15)
+    text(s,35,514,f'Reference polygon area {area:.2f} mm2. No mounting holes. 113 XY fixed; use ULP-02 electrical mapping only.',15)
     text(s,35,541,'Contact band is a physical integration hold: do not place PCB over the gripping pad or treat the light as a load path.',15)
     s.append('</svg>');(OUT/'placement-reference.svg').write_text('\n'.join(s))
     sources=[{'id':'U1-DS','url':DS,'checked':'61-page Rev A; pin table, SPI, timing, current and package drawings'},
@@ -301,12 +306,12 @@ def main():
         *[{'id':p,'url':TDK+p,'checked':'official indexed part data; bulk capacitor also in TI EVM BOM'} for p in ['C2012X5R1V226M125AC','C1608X7R1E105K080AB','C1608X7R1H104K080AA','C1608C0G1H102J080AA']]]
     save('sources.json',{'accessed':'2026-09-27','sources':sources,'input_pixel_source_sha256':digest(PIXEL_SOURCE)})
     output_files=[p for p in OUT.iterdir() if p.suffix in ['.json','.csv','.svg'] and p.name!='verification.json']
-    save('verification.json',{'revision':'ULP-01','status':'this generator validates pin-level consistency and data mapping only; actual ECAD results are maintained separately in kicad/checks/verification.json',
+    save('verification.json',{'revision':'ULP-02','status':'this generator validates pin-level consistency and data mapping only; actual ECAD results are maintained separately in kicad/checks/verification.json',
        'kicad_availability':'historical initial lookup: absent from PATH and standard application locations. Subsequent local KiCad 10.0.6 install verified; current actual CLI/ERC/DRC results are in kicad/checks/verification.json; runtime hashes in kicad/toolchain-plan.json',
        'component_count':len(components),'LED_count':len(pixels),'connected_net_count':len(nets),'pin_records':len(pins),'U1_float_pins':[p['pin'] for p in pins if p['ref']=='U1' and p['net'] is None],
-       'checks':['all component pins unique and enumerated','all connected nets have at least two nodes','113 unique unmodified SW/CS coordinates','each LED pin2=A=SW and pin1=K=CS','all40U1 pins+EP41 covered','7unusedCS pins explicitly NC','unused LED sites OFF/DC0/PWM0','16bit row-major SRAM address mapping','SPI address headers stay10bit'],
-       'input_hashes':{'docs/engineering/sources/head-lighting-io.json':digest(PIXEL_SOURCE),'engineering/electronics/upper-petal-prototype/build.py':digest(Path(__file__))},
-       'output_hashes':{p.name:digest(p) for p in sorted(output_files)},'not_done':['actual schematic capture','ERC','PCB routing','DRC','Gerber','stencil','assembler polarity check','electrical bring-up','thermal tests','mechanical integration']})
+       'checks':['all component pins unique and enumerated','all connected nets have at least two nodes','113 unchanged XY positions, unique physical-adjacency SW/CS mapping','each LED pin2=A=SW and pin1=K=CS','all40U1 pins+EP41 covered','4unusedCS pins explicitly NC','unused LED sites OFF/DC0/PWM0','16bit row-major SRAM address mapping','SPI address headers stay10bit'],
+       'input_hashes':{'docs/engineering/sources/head-lighting-io.json':digest(PIXEL_SOURCE),'engineering/electronics/upper-petal-prototype/ulp02/build.py':digest(Path(__file__))},
+       'output_hashes':{p.name:digest(p) for p in sorted(output_files)},'not_done':['for native ECAD state see kicad/checks/verification.json','Gerber','stencil','assembler polarity check','electrical bring-up','thermal tests','mechanical integration']})
     print(json.dumps({'components':len(components),'pins':len(pins),'nets':len(nets),'leds':113,'nominal_area_mm2':area,'status':'review package generated, not fabrication release'}))
 
 

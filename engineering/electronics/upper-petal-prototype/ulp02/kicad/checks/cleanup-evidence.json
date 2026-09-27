@@ -1,0 +1,72 @@
+{
+  "method": "remove only native-reported dangling tracks/vias; each iteration required zero geometry errors and zero missing connections; no waived rules",
+  "rounds": [
+    {
+      "cycle": 0,
+      "removed": [
+        {
+          "uuid": "6657500d-260a-4082-a927-f6d16f322d09",
+          "net": "SW3",
+          "kind": "track"
+        },
+        {
+          "uuid": "bfcc4164-77c8-46fe-a94d-0508fc47fce4",
+          "net": "SW1",
+          "kind": "track"
+        },
+        {
+          "uuid": "a3c3adc5-7ab6-45e6-9996-e69fca02ef78",
+          "net": "SW0",
+          "kind": "track"
+        },
+        {
+          "uuid": "1047363c-5dac-4330-8722-0038c874a8da",
+          "net": "CS2",
+          "kind": "track"
+        },
+        {
+          "uuid": "97b28bbd-c3c5-44b6-8c7f-34d36e2d4fc5",
+          "net": "SW4",
+          "kind": "track"
+        },
+        {
+          "uuid": "6c96ace1-7d21-40ff-87ab-1f3fcd085fce",
+          "net": "CS1",
+          "kind": "track"
+        },
+        {
+          "uuid": "bcffeb3f-0da3-4949-b3f1-c861bc978f1f",
+          "net": "CS1",
+          "kind": "track"
+        },
+        {
+          "uuid": "076be291-5896-479f-807a-a65577605f6f",
+          "net": "IFS",
+          "kind": "track"
+        },
+        {
+          "uuid": "a738a9b6-be48-45ad-8060-63ed38b5c3f3",
+          "net": "VSYNC",
+          "kind": "track"
+        }
+      ]
+    },
+    {
+      "cycle": 1,
+      "removed": [
+        {
+          "uuid": "c64fca47-79c2-4123-9576-473b0594b21d",
+          "net": "SW0",
+          "kind": "track"
+        }
+      ]
+    }
+  ],
+  "final_native_drc": "checks/cleanup-2-drc.json",
+  "final_counts": {
+    "violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity": 0
+  },
+  "board_sha256": "c7c879a55d709b68dc670d9d4e98f612bf079a32c3efc93b9b66c6aca764b6b5"
+}

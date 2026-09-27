@@ -1,0 +1,54 @@
+{
+  "revision": "ULP-02",
+  "status": "this generator validates pin-level consistency and data mapping only; actual ECAD results are maintained separately in kicad/checks/verification.json",
+  "kicad_availability": "historical initial lookup: absent from PATH and standard application locations. Subsequent local KiCad 10.0.6 install verified; current actual CLI/ERC/DRC results are in kicad/checks/verification.json; runtime hashes in kicad/toolchain-plan.json",
+  "component_count": 134,
+  "LED_count": 113,
+  "connected_net_count": 39,
+  "pin_records": 317,
+  "U1_float_pins": [
+    "27",
+    "28",
+    "29",
+    "30"
+  ],
+  "checks": [
+    "all component pins unique and enumerated",
+    "all connected nets have at least two nodes",
+    "113 unchanged XY positions, unique physical-adjacency SW/CS mapping",
+    "each LED pin2=A=SW and pin1=K=CS",
+    "all40U1 pins+EP41 covered",
+    "4unusedCS pins explicitly NC",
+    "unused LED sites OFF/DC0/PWM0",
+    "16bit row-major SRAM address mapping",
+    "SPI address headers stay10bit"
+  ],
+  "input_hashes": {
+    "docs/engineering/sources/head-lighting-io.json": "a62f763618d7668981d72b29970b15f334cc846ce05fa102dfbcc9fec728be7c",
+    "engineering/electronics/upper-petal-prototype/ulp02/build.py": "191fe33142f1e23bc0db9c51fbc86d5f97f648b0bae26c710c1f2ed05f367ad6"
+  },
+  "output_hashes": {
+    "bom.csv": "2abdc0cee7dfced342a093d70139dc8460a92ef10d60384d4fa1f2825996dc5b",
+    "external-interface-bom.csv": "4709c923eefa4a0db2b794903b84c042780d7dc88e14697c35ef5f00fce4bd71",
+    "footprint-constraints.json": "2f9fb65a67373f45d8bef3f2501e8258eadf355cdb9d7f515ea97c797b925a32",
+    "led-placement-reference.csv": "64d1b1454a660d490402933945930dfd0f624fce990f5303fd5aca6d287c6af6",
+    "mapping-revision.json": "7db39b611e0e692709e10694d2aaffaa1ada87e74df7beed9abb941b0e138ee2",
+    "mechanical-power-budget.json": "b57ee8e1e4be3fa044c94ebf8ca6c016e2dde7981003740e307b8b2ebaaf6b4d",
+    "netlist.json": "a235d66aac190b8236f3bcb499c986468f88017758b1bca41553042e0ed45be1",
+    "pin-net.csv": "4ac4c4af31d48d7e31f69f8682ef77d6737077479c7a542bfeba992413063ee0",
+    "placement-reference.svg": "959babe8f7ae3fdfc7d19e64969e44e0a854fee3ebb649aa9a68fcef671e0236",
+    "register-plan.json": "0c6a16d429918b391631063e4bd6511bc89b59c71785a3f1b22931ddb722550d",
+    "schematic-control.svg": "96a60246f66c4aaab79a67c2ffa4b3ec5896a61ebe347f30422ba49839461a3e",
+    "schematic-led-matrix.svg": "37620635f727ec8303eb688da40f22987c5acd1b41e26c08416e660b13bf505d",
+    "sources.json": "73d4279cfb1af1e2cd577d027e1b29235568b5b8c578c93f334053b546e0e4c5"
+  },
+  "not_done": [
+    "for native ECAD state see kicad/checks/verification.json",
+    "Gerber",
+    "stencil",
+    "assembler polarity check",
+    "electrical bring-up",
+    "thermal tests",
+    "mechanical integration"
+  ]
+}

@@ -1,4 +1,6 @@
-# 上灯片电路样片 ULP-01
+# 上灯片电路样片 ULP-01（历史版本）
+
+当前已布线候选为 [ULP-02](upper-petal-ulp02.md)。本页保留 ULP-01 的旧映射和 220 mA 预算，不得与 ULP-02 的新地址、CS11…13 和 280 mA 峰值混用。
 
 **2026-09-27 · HLIO-R03 独立电测样片 · 元件级电路审查包，尚未 PCB 制造放行。**
 
@@ -20,7 +22,7 @@
 | [external-interface-bom.csv](../../../engineering/electronics/upper-petal-prototype/external-interface-bom.csv) | 板外插壳、接点、源端串阻、供电和主控边界，不计入 134 件 |
 | [verification.json](../../../engineering/electronics/upper-petal-prototype/verification.json)、[sources.json](../../../engineering/electronics/upper-petal-prototype/sources.json) | 输入/输出 hash、数据一致性检查和原厂证据 |
 
-从仓库根运行 `python3 engineering/electronics/upper-petal-prototype/build.py` 可重建。这是数字连接关系和地址的检查，**不是 ECAD ERC/DRC**。本机初始未检测到 KiCad；官方 macOS 10.0.6 临时工具环境正在独立准备。尚无受检 `.kicad_sch`、已布线 PCB、Gerber 或钢网文件。
+从仓库根运行 `python3 engineering/electronics/upper-petal-prototype/build.py` 可重建。这是数字连接关系和地址的检查，**不是 ECAD ERC/DRC**。初查未找到 KiCad 后，已在工作目录建立官方 KiCad 10.0.6 临时环境，校验下载 SHA256 与应用签名。原生 [KiCad 子项目](../../../engineering/electronics/upper-petal-prototype/kicad/README.md) 已通过真实 ERC、317 针 XML 比对和原理图/PCB 一致性检查；布线结果与未连接项以 [实际检查报告](../../../engineering/electronics/upper-petal-prototype/kicad/checks/verification.json) 为准。仍未制造放行，不能由 ERC 通过推导布线完整、温升合格或装机可用。
 
 ## 极性、矩阵及供电
 
@@ -79,7 +81,7 @@ J1 = **BM10B-GHS-TBT(LF)(SN)**，线端为 **GHR-10V-S + 10×SSHL-002T-P0.2**。
 
 ## 制造前检查与当前边界
 
-已经完成逐针连接、113 点极性/唯一映射、33 个掩码字节回解、198 个 DC/396 个 PWM 字节及 10-bit SPI 地址头自洽检查。134 件均有明确物料号；外部供电和线材仍明示 TBD。下一步需完成真实 ECAD 捕获、独立网表比对、封装图形复核、布线及 ERC/DRC。
+已经完成逐针连接、113 点极性/唯一映射、33 个掩码字节回解、198 个 DC/396 个 PWM 字节及 10-bit SPI 地址头自洽检查。134 件均有明确物料号；外部供电和线材仍明示 TBD。真实 ECAD 捕获、独立网表比对和 ERC 已在 KiCad 子项目执行；布线及最终 DRC 结果见其报告。封装生产库、供电/温升和装机条件仍需闭合。
 
 JST 完整型号图面现由厂商要求提交公司/联系方式并邮件发放；本任务没有提交表单或外联。公开目录已通过 PDFium 目检，明确固定片坐标、针 1 朝向与 0.6×1.7 mm 信号焊盘；1.7=5.6−3.9 mm。4.25 mm 是横向深度，壳体高度为 4.05 mm 加约 0.15 mm 座高。完整型号受控图及生产库仍需复核，不能冒充已获厂商确认。NTC 现已取得官方网页可读的完整规格和 land 范围，仍需图形/实际库叠图。光学扩散、20 mA 电热降额、焊接温度曲线、温度阈值及实际固件均未验收。
 

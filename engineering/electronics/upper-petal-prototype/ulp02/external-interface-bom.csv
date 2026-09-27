@@ -1,0 +1,8 @@
+item,quantity,manufacturer_part_number,source_url,status,notes
+Cable housing,1,GHR-10V-S,https://www.jst-mfg.com/product/pdf/eng/eGH.pdf,candidate,one petal-side housing; host end is bench-specific
+Crimp contacts,10,SSHL-002T-P0.2,https://www.jst-mfg.com/product/pdf/eng/eGH.pdf,candidate,correct crimp tooling/height and pull test required; no hand-solder substitution into crimp barrel
+Host source terminations,3,CRCW060333R0FKEA,https://www.vishay.com/docs/20035/dcrcwe3.pdf,candidate,"33 ohm at host SCLK/MOSI/VSYNC sources, not on petal; tune by scope"
+Harness wire,10,TBD,https://www.jst-mfg.com/product/pdf/eng/eGH.pdf,blocked,"AWG26 candidate, insulation OD 0.76-1.0 mm within GH range; exact flexible wire/length/current derating not frozen"
+Host,1,NUCLEO-G474RE,https://www.st.com/en/evaluation-tools/nucleo-g474re.html,external-candidate,3.3V SPI+ADC host; pin allocation and firmware still need separate verification
+Protected regulated 3.3V LED supply,1,TBD,https://www.ti.com/lit/ds/symlink/lp5860.pdf,blocked,"external supply, not Nucleo GPIO; >=0.350 A transient capability is 25% planning margin above 0.280 A; set current limit after inrush/cable review"
+Regulated 3.3V logic supply/VIO control,1,TBD,https://www.ti.com/lit/ds/symlink/lp5860.pdf,blocked,VIO input-current/host-drive budget must be checked; common reference GND; power-order coordination required

@@ -59,6 +59,8 @@ Blender 保存 7＋4 层级和 360 帧几何演示，另输出三视角渲染。
 
 ## 无动力打印件与接口研究
 
+独立上灯片 [ULP-02原生KiCad](electronics/upper-petal-prototype/ulp02/kicad/README.md)含真实四层PCB、原理图、重放布线、逐针核对和C99例程。执行其 `rebuild.py --kicad-cli /path/to/kicad-cli --kicad-python /path/to/kicad-python` 可从源完整重建并实际运行ERC/DRC、317针网表和113灯点校验，再导出Gerber/钻孔审查文件。已在KiCad10.0.6独立重跑成功；这是电测样片，不是已经适配CONTACT02的正式灯板。
+
 ```sh
 python engineering/build_interface_coupons.py --font /path/to/Chinese-font.ttf
 python engineering/build_finger_fixture.py --font /path/to/Chinese-font.ttf
