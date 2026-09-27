@@ -1,0 +1,1864 @@
+{
+  "joints": [
+    {
+      "id": "J1",
+      "model": "RH25-B",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "origin_mm": [
+        0,
+        0,
+        105.2
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 110,
+      "length_mm": 105.2,
+      "bore_mm": 22,
+      "mass_kg": 2.74,
+      "rated_torque_Nm": 108,
+      "peak_torque_Nm": 157,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.1052
+      ]
+    },
+    {
+      "id": "J2",
+      "model": "RH25-B",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "origin_mm": [
+        0,
+        0,
+        170
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 110,
+      "length_mm": 105.2,
+      "bore_mm": 22,
+      "mass_kg": 2.74,
+      "rated_torque_Nm": 108,
+      "peak_torque_Nm": 157,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.17
+      ]
+    },
+    {
+      "id": "J3",
+      "model": "RH20-B",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "origin_mm": [
+        0,
+        55,
+        220
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 90,
+      "length_mm": 97.4,
+      "bore_mm": 12,
+      "mass_kg": 1.75,
+      "rated_torque_Nm": 50,
+      "peak_torque_Nm": 80,
+      "origin_m": [
+        0.0,
+        0.055,
+        0.22
+      ]
+    },
+    {
+      "id": "J4",
+      "model": "RH20-B",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "origin_mm": [
+        0,
+        0,
+        400
+      ],
+      "limit_deg": [
+        -120,
+        120
+      ],
+      "diameter_mm": 90,
+      "length_mm": 97.4,
+      "bore_mm": 12,
+      "mass_kg": 1.75,
+      "rated_torque_Nm": 50,
+      "peak_torque_Nm": 80,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "id": "J5",
+      "model": "RH17-B",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "origin_mm": [
+        0,
+        -55,
+        450
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 80,
+      "length_mm": 104,
+      "bore_mm": 12,
+      "mass_kg": 1.28,
+      "rated_torque_Nm": 35,
+      "peak_torque_Nm": 54,
+      "origin_m": [
+        0.0,
+        -0.055,
+        0.45
+      ]
+    },
+    {
+      "id": "J6",
+      "model": "RH17-B",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "origin_mm": [
+        0,
+        0,
+        605
+      ],
+      "limit_deg": [
+        -100,
+        100
+      ],
+      "diameter_mm": 80,
+      "length_mm": 104,
+      "bore_mm": 12,
+      "mass_kg": 1.28,
+      "rated_torque_Nm": 35,
+      "peak_torque_Nm": 54,
+      "origin_m": [
+        0.0,
+        0.0,
+        0.605
+      ]
+    },
+    {
+      "id": "J7",
+      "model": "RH14-N",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "origin_mm": [
+        0,
+        55,
+        640
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 70,
+      "length_mm": 81.7,
+      "bore_mm": 10,
+      "mass_kg": 0.78,
+      "rated_torque_Nm": 11,
+      "peak_torque_Nm": 28,
+      "origin_m": [
+        0.0,
+        0.055,
+        0.64
+      ]
+    }
+  ],
+  "bodies": [
+    {
+      "id": "J1_mass_proxy",
+      "mass_kg": 2.74,
+      "preceding_joints": 0,
+      "com_home_m": [
+        0.0,
+        0.0,
+        0.0546
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.004599099133333334,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.004599099133333334,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00414425
+        ]
+      ]
+    },
+    {
+      "id": "J2_mass_proxy",
+      "mass_kg": 2.74,
+      "preceding_joints": 1,
+      "com_home_m": [
+        0.0,
+        -0.0506,
+        0.17
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.004599099133333334,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.004599099133333334,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00414425
+        ]
+      ]
+    },
+    {
+      "id": "J3_mass_proxy",
+      "mass_kg": 1.75,
+      "preceding_joints": 2,
+      "com_home_m": [
+        0.0,
+        0.055,
+        0.1733
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0022694233333333336,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0022694233333333336,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.001771875
+        ]
+      ]
+    },
+    {
+      "id": "J4_mass_proxy",
+      "mass_kg": 1.75,
+      "preceding_joints": 3,
+      "com_home_m": [
+        0.0,
+        0.046700000000000005,
+        0.4
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0022694233333333336,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0022694233333333336,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.001771875
+        ]
+      ]
+    },
+    {
+      "id": "L4_budget",
+      "mass_kg": 0.35,
+      "preceding_joints": 4,
+      "com_home_m": [
+        0.0,
+        -0.0275,
+        0.42500000000000004
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00016114583333333326,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.00016114583333333326,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00016114583333333326
+        ]
+      ]
+    },
+    {
+      "id": "J5_mass_proxy",
+      "mass_kg": 1.28,
+      "preceding_joints": 4,
+      "com_home_m": [
+        0.0,
+        -0.055,
+        0.4
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0016657066666666668,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0016657066666666668,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0010240000000000002
+        ]
+      ]
+    },
+    {
+      "id": "J6_mass_proxy",
+      "mass_kg": 1.28,
+      "preceding_joints": 5,
+      "com_home_m": [
+        0.0,
+        -0.05,
+        0.605
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0016657066666666668,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0016657066666666668,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0010240000000000002
+        ]
+      ]
+    },
+    {
+      "id": "J7_mass_proxy",
+      "mass_kg": 0.78,
+      "preceding_joints": 6,
+      "com_home_m": [
+        0.0,
+        0.055,
+        0.60115
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0006727428500000001,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0006727428500000001,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.00047775000000000015
+        ]
+      ]
+    },
+    {
+      "id": "L7_budget",
+      "mass_kg": 0.15,
+      "preceding_joints": 7,
+      "com_home_m": [
+        0.0,
+        0.055,
+        0.645
+      ],
+      "inertia_com_kg_m2": [
+        [
+          5e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          5e-06
+        ]
+      ]
+    },
+    {
+      "id": "head_budget",
+      "mass_kg": 4.5,
+      "preceding_joints": 7,
+      "com_home_m": [
+        0.0,
+        0.055,
+        0.784
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.014400000000000001,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.014400000000000001,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.014400000000000001
+        ]
+      ]
+    },
+    {
+      "id": "net_object",
+      "mass_kg": 2.0,
+      "preceding_joints": 7,
+      "com_home_m": [
+        0.0,
+        0.055,
+        0.914
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0005333333333333334,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0005333333333333334,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0005333333333333334
+        ]
+      ]
+    },
+    {
+      "id": "L12_output_adapter",
+      "mass_kg": 0.263796748987852,
+      "preceding_joints": 1,
+      "com_home_m": [
+        8.031440440704311e-07,
+        -0.015775909754715014,
+        0.11108789238394913
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00034602870133660735,
+          -7.590118710589138e-09,
+          -9.41807541592799e-10
+        ],
+        [
+          -7.590118710589138e-09,
+          0.0004898589770492127,
+          1.4535847190220377e-05
+        ],
+        [
+          -9.41807541592799e-10,
+          1.4535847190220377e-05,
+          0.0008217755536874256
+        ]
+      ],
+      "mass_source": "engineering/generated/link12-study/ODR-L12-OUT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L12_rear_fork",
+      "mass_kg": 0.24643486107854784,
+      "preceding_joints": 1,
+      "com_home_m": [
+        -4.201224706323016e-13,
+        -0.050040934060566034,
+        0.16623647105216235
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00037382408949977833,
+          -3.128924165983628e-16,
+          8.924704921766516e-16
+        ],
+        [
+          -3.128924165983628e-16,
+          0.0008406647863564482,
+          2.0993404200754648e-05
+        ],
+        [
+          8.924704921766516e-16,
+          2.0993404200754648e-05,
+          0.0005017247059006517
+        ]
+      ],
+      "mass_source": "engineering/generated/link12-study/ODR-L12-FORK-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L12_front_ring",
+      "mass_kg": 0.03436145867516432,
+      "preceding_joints": 1,
+      "com_home_m": [
+        -1.9989072969378873e-12,
+        -0.0135,
+        0.16999999999800047
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          4.433770119367687e-05,
+          3.47704280563146e-21,
+          -6.261871021706611e-23
+        ],
+        [
+          3.47704280563146e-21,
+          4.4337701193680226e-05,
+          2.9467628355738786e-23
+        ],
+        [
+          -6.261871021706611e-23,
+          2.9467628355738786e-23,
+          8.858377183089e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link12-study/ODR-L12-FRONT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L12_hardware_reserve",
+      "mass_kg": 0.2,
+      "preceding_joints": 1,
+      "com_home_m": [
+        3.890365627791045e-07,
+        -0.03113764203862412,
+        0.13976038046777667
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          8.333333333333336e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.333333333333336e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          8.333333333333336e-05
+        ]
+      ],
+      "mass_source": "Unweighed hardware allowance at metalCOM;50mm cube inertia proxy"
+    },
+    {
+      "id": "L23_output_adapter",
+      "mass_kg": 0.18449891391273454,
+      "preceding_joints": 2,
+      "com_home_m": [
+        1.2824656960904344e-10,
+        0.006372512707422981,
+        0.16999999994169132
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00014167206325870721,
+          -7.039827245420766e-09,
+          1.7396068028425834e-14
+        ],
+        [
+          -7.039827245420766e-09,
+          0.0003675739498256059,
+          1.8923860983916127e-15
+        ],
+        [
+          1.7396068028425834e-14,
+          1.8923860983916127e-15,
+          0.0004980913497567952
+        ]
+      ],
+      "mass_source": "engineering/generated/link23-study/ODR-L23-OUT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L23_rear_carrier",
+      "mass_kg": 0.1869306922266225,
+      "preceding_joints": 2,
+      "com_home_m": [
+        -1.5626260925207822e-15,
+        0.04478008629994384,
+        0.1736591779109528
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00016306852290253024,
+          -8.252509568580973e-18,
+          -7.546819991438325e-19
+        ],
+        [
+          -8.252509568580973e-18,
+          0.0003684981865509677,
+          -5.430024701865198e-06
+        ],
+        [
+          -7.546819991438325e-19,
+          -5.430024701865198e-06,
+          0.0004937480548720496
+        ]
+      ],
+      "mass_source": "engineering/generated/link23-study/ODR-L23-CARRIER-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L23_front_ring",
+      "mass_kg": 0.027379847055608843,
+      "preceding_joints": 2,
+      "com_home_m": [
+        7.206295131261169e-16,
+        0.05500000000000001,
+        0.2105
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          2.295753872520524e-05,
+          -1.7680577002452406e-22,
+          8.963070285970868e-23
+        ],
+        [
+          -1.7680577002452406e-22,
+          2.295753872520695e-05,
+          -9.454197424929602e-23
+        ],
+        [
+          8.963070285970868e-23,
+          -9.454197424929602e-23,
+          4.584206452493059e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link23-study/ODR-L23-FRONT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L23_hardware_reserve",
+      "mass_kg": 0.15,
+      "preceding_joints": 2,
+      "com_home_m": [
+        5.932928681678947e-11,
+        0.027713449876741875,
+        0.17449562175747263
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          6.250000000000001e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.250000000000001e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          6.250000000000001e-05
+        ]
+      ],
+      "mass_source": "Unweighed hardware allowance at metalCOM;50mm cube inertia proxy"
+    },
+    {
+      "id": "L34_output_adapter",
+      "mass_kg": 0.09983803010646097,
+      "preceding_joints": 3,
+      "com_home_m": [
+        1.2820397898550092e-15,
+        0.055,
+        0.224
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          7.839237848507204e-05,
+          4.321918822824838e-21,
+          6.139089236967266e-23
+        ],
+        [
+          4.321918822824838e-21,
+          7.794899169086939e-05,
+          -1.227817847393453e-23
+        ],
+        [
+          6.139089236967266e-23,
+          -1.227817847393453e-23,
+          0.00015527643118813916
+        ]
+      ],
+      "mass_source": "engineering/generated/link34-study/ODR-L34-OUT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L34_lower_block",
+      "mass_kg": 0.23263620014879044,
+      "preceding_joints": 3,
+      "com_home_m": [
+        -2.7452579751931044e-16,
+        0.054999999999999986,
+        0.23660125953477995
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0001023076783165171,
+          2.6901489036391547e-20,
+          -2.0239885263621502e-19
+        ],
+        [
+          2.6901489036391547e-20,
+          0.00014782500642629106,
+          2.337015221653067e-20
+        ],
+        [
+          -2.0239885263621502e-19,
+          2.337015221653067e-20,
+          0.00022924903005844762
+        ]
+      ],
+      "mass_source": "engineering/generated/link34-study/ODR-L34-LOW-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L34_closed_beam",
+      "mass_kg": 0.13906700052999013,
+      "preceding_joints": 3,
+      "com_home_m": [
+        -7.047722270176252e-18,
+        0.05499999999999999,
+        0.28400000000000003
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.000132570342355278,
+          2.1179857867537075e-20,
+          7.943367563711917e-21
+        ],
+        [
+          2.1179857867537075e-20,
+          0.0001641925339577969,
+          1.0678331818780825e-20
+        ],
+        [
+          7.943367563711917e-21,
+          1.0678331818780825e-20,
+          0.00010211084188737295
+        ]
+      ],
+      "mass_source": "engineering/generated/link34-study/ODR-L34-TUBE-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L34_upper_block",
+      "mass_kg": 0.24623366660479945,
+      "preceding_joints": 3,
+      "com_home_m": [
+        -1.156406881560379e-16,
+        0.05471339119323795,
+        0.331403860948047
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00010595857703901738,
+          5.403972160025437e-20,
+          3.3682370680815073e-20
+        ],
+        [
+          5.403972160025437e-20,
+          0.0001523253615809395,
+          -3.1079252210160365e-07
+        ],
+        [
+          3.3682370680815073e-20,
+          -3.1079252210160365e-07,
+          0.0002356981534537575
+        ]
+      ],
+      "mass_source": "engineering/generated/link34-study/ODR-L34-UP-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L34_rear_carrier",
+      "mass_kg": 0.2968070081784698,
+      "preceding_joints": 3,
+      "com_home_m": [
+        2.2116746432608448e-16,
+        0.05068144086664259,
+        0.365949680749727
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00042079269219795056,
+          3.652715791460122e-19,
+          3.782049441419618e-18
+        ],
+        [
+          3.652715791460122e-19,
+          0.0005633996363182466,
+          3.84366839211042e-05
+        ],
+        [
+          3.782049441419618e-18,
+          3.84366839211042e-05,
+          0.00033641628751129263
+        ]
+      ],
+      "mass_source": "engineering/generated/link34-study/ODR-L34-CARRIER-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L34_front_ring",
+      "mass_kg": 0.04040866010857697,
+      "preceding_joints": 3,
+      "com_home_m": [
+        1.1698231764585138e-15,
+        0.0095,
+        0.4
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          3.801016073906737e-05,
+          -1.5028490452095908e-21,
+          -1.4917986845825094e-22
+        ],
+        [
+          -1.5028490452095908e-21,
+          3.801016073907026e-05,
+          -4.911271389573815e-24
+        ],
+        [
+          -1.4917986845825094e-22,
+          -4.911271389573815e-24,
+          7.591256505118145e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link34-study/ODR-L34-FRONT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L34_hardware_reserve",
+      "mass_kg": 0.15,
+      "preceding_joints": 3,
+      "com_home_m": [
+        1.3989887476618254e-16,
+        0.051975380167237635,
+        0.3064325474743178
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          6.250000000000001e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.250000000000001e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          6.250000000000001e-05
+        ]
+      ],
+      "mass_source": "Unweighed hardware allowance at metalCOM;50mm cube inertia proxy"
+    },
+    {
+      "id": "L56_output_adapter",
+      "mass_kg": 0.055089729835981656,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -9.48693969778994e-16,
+        -0.055,
+        0.453
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          2.4429466377824702e-05,
+          7.7598087955267e-21,
+          4.260527930455997e-22
+        ],
+        [
+          7.7598087955267e-21,
+          4.548848434421531e-05,
+          9.976020010071816e-23
+        ],
+        [
+          4.260527930455997e-22,
+          9.976020010071816e-23,
+          6.958741234302413e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-OUT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L56_lower_block",
+      "mass_kg": 0.1931082001487904,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -3.020058854773863e-16,
+        -0.055000000000000014,
+        0.4653384140770578
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          6.266344469385451e-05,
+          2.4383234631387558e-20,
+          -2.1339841998049236e-19
+        ],
+        [
+          2.4383234631387558e-20,
+          0.00010818624519271852,
+          2.0753515120534482e-20
+        ],
+        [
+          -2.1339841998049236e-19,
+          2.0753515120534482e-20,
+          0.00015185998678230117
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-LOW-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L56_closed_beam",
+      "mass_kg": 0.11317940052999013,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -5.627618677540007e-18,
+        -0.05500000000000002,
+        0.5035000000000001
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          8.135025605215275e-05,
+          1.7118236428359537e-20,
+          7.43919486012599e-21
+        ],
+        [
+          1.7118236428359537e-20,
+          0.00010699367613915978,
+          -3.3354132256135996e-20
+        ],
+        [
+          7.43919486012599e-21,
+          -3.3354132256135996e-20,
+          8.306842427377412e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-TUBE-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L56_upper_block",
+      "mass_kg": 0.20670566660479933,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -1.39690893558422e-16,
+        -0.05465858344123111,
+        0.5417161769247668
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          6.575487913960651e-05,
+          7.217376468767283e-22,
+          5.215707377977823e-20
+        ],
+        [
+          7.217376468767283e-22,
+          0.00011213100400370686,
+          2.622607781329065e-07
+        ],
+        [
+          5.215707377977823e-20,
+          2.622607781329065e-07,
+          0.00015717677332237543
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-UP-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L56_rear_carrier",
+      "mass_kg": 0.2238115845668334,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -1.1144805208203611e-15,
+        -0.050151627640059114,
+        0.5723858812604596
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00022579258788197956,
+          1.2609044176769562e-18,
+          2.6390317159315506e-18
+        ],
+        [
+          1.2609044176769562e-18,
+          0.0003103239437530319,
+          -2.732772699408559e-05
+        ],
+        [
+          2.6390317159315506e-18,
+          -2.732772699408559e-05,
+          0.0001989513490954729
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L56_front_ring",
+      "mass_kg": 0.02007811342783789,
+      "preceding_joints": 5,
+      "com_home_m": [
+        8.064962010159022e-16,
+        -0.009000000000000003,
+        0.605
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.3419880630904766e-05,
+          3.9781298255545846e-22,
+          4.681055543165206e-24
+        ],
+        [
+          3.9781298255545846e-22,
+          1.3419880630905769e-05,
+          -5.8321347751188715e-24
+        ],
+        [
+          4.681055543165206e-24,
+          -5.8321347751188715e-24,
+          2.6809644091668764e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-FRONT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L56_hardware_reserve",
+      "mass_kg": 0.1,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -4.597884493258888e-16,
+        -0.05243921455978682,
+        0.5222242017383034
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          4.166666666666668e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.166666666666668e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4.166666666666668e-05
+        ]
+      ],
+      "mass_source": "Unweighed hardware allowance at metalCOM;50mm cube inertia proxy"
+    },
+    {
+      "id": "L67_output_adapter",
+      "mass_kg": 0.10382549000957633,
+      "preceding_joints": 6,
+      "com_home_m": [
+        6.254792727514012e-12,
+        0.0067540064604961775,
+        0.6050000000000453
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          3.4866300948756964e-05,
+          -1.5012633367718357e-07,
+          -7.96320692877734e-15
+        ],
+        [
+          -1.5012633367718357e-07,
+          0.00013701024002081726,
+          3.6148449955983394e-16
+        ],
+        [
+          -7.96320692877734e-15,
+          3.6148449955983394e-16,
+          0.00016522837348082625
+        ]
+      ],
+      "mass_source": "engineering/generated/link67-study/ODR-L67-OUT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L67_rear_carrier",
+      "mass_kg": 0.13101243954363864,
+      "preceding_joints": 6,
+      "com_home_m": [
+        -6.223601964342132e-16,
+        0.043274336543044085,
+        0.6032721886024942
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          7.094096844202427e-05,
+          -2.5235415619619163e-18,
+          3.1364422651268443e-19
+        ],
+        [
+          -2.5235415619619163e-18,
+          0.00015979655197506204,
+          1.5452483054793995e-06
+        ],
+        [
+          3.1364422651268443e-19,
+          1.5452483054793995e-06,
+          0.00021229671332566574
+        ]
+      ],
+      "mass_source": "engineering/generated/link67-study/ODR-L67-CARRIER-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L67_front_ring",
+      "mass_kg": 0.01321808424076229,
+      "preceding_joints": 6,
+      "com_home_m": [
+        3.875548245140947e-15,
+        0.05500000000000389,
+        0.6315000000000001
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          7.753359359319725e-06,
+          -7.99850097758182e-21,
+          1.2278178473898796e-23
+        ],
+        [
+          -7.99850097758182e-21,
+          7.75335935932005e-06,
+          -6.482909358235118e-21
+        ],
+        [
+          1.2278178473898796e-23,
+          -6.482909358235118e-21,
+          1.548689159227863e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link67-study/ODR-L67-FRONT-R4.step",
+      "scope": "Nominal homogeneous6061 CAD integration; no thread helix or measured mass"
+    },
+    {
+      "id": "L67_hardware_reserve",
+      "mass_kg": 0.1,
+      "preceding_joints": 6,
+      "com_home_m": [
+        2.617862797623563e-12,
+        0.028613331945108456,
+        0.6054995421970671
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          4.166666666666668e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.166666666666668e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4.166666666666668e-05
+        ]
+      ],
+      "mass_source": "Unweighed hardware allowance at metalCOM;50mm cube inertia proxy"
+    }
+  ],
+  "tool_home_transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.055
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.914
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "gravity_m_s2": [
+    0,
+    0,
+    -9.80665
+  ],
+  "model_scope": {
+    "links_with_CAD": [
+      "12",
+      "23",
+      "34",
+      "56",
+      "67"
+    ],
+    "head_is_budget": true,
+    "head_mass_kg": 4.5,
+    "budget_head_and_TCP_shift_mm": 24.0,
+    "L7_allowance": "Legacy0.15kg remains separate; remove when real head includes adapter/extension",
+    "joint_mass": "Catalog module mass assigned upstream with cylinder inertia and midpoint COM proxies",
+    "rotor_inertia": "Unknown, not qualified by setting absent entries to zero",
+    "fingers": "Head is rigid lump; four moving fingers and their coupling are not represented",
+    "manufacturing_release": false
+  }
+}
