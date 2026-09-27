@@ -1,0 +1,313 @@
+{
+  "revision": "R4-layout-03",
+  "status": "packaging study; dimensions are not manufacturing release",
+  "length_unit": "mm",
+  "mass_unit": "kg",
+  "payload_net_kg": 2.0,
+  "head_budget_kg": 2.0,
+  "head_mass_sensitivity_kg": [
+    1.8,
+    2.0,
+    2.2
+  ],
+  "joint_limits_status": "study bounds only, not collision/cable-qualified",
+  "joints": [
+    {
+      "id": "J1",
+      "model": "RH25-B",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "origin_mm": [
+        0,
+        0,
+        105.2
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 110,
+      "length_mm": 105.2,
+      "bore_mm": 22,
+      "mass_kg": 2.74,
+      "rated_torque_Nm": 108,
+      "peak_torque_Nm": 157
+    },
+    {
+      "id": "J2",
+      "model": "RH25-B",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "origin_mm": [
+        0,
+        0,
+        170
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 110,
+      "length_mm": 105.2,
+      "bore_mm": 22,
+      "mass_kg": 2.74,
+      "rated_torque_Nm": 108,
+      "peak_torque_Nm": 157
+    },
+    {
+      "id": "J3",
+      "model": "RH20-B",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "origin_mm": [
+        0,
+        55,
+        220
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 90,
+      "length_mm": 97.4,
+      "bore_mm": 12,
+      "mass_kg": 1.75,
+      "rated_torque_Nm": 50,
+      "peak_torque_Nm": 80
+    },
+    {
+      "id": "J4",
+      "model": "RH20-B",
+      "axis": [
+        0,
+        -1,
+        0
+      ],
+      "origin_mm": [
+        0,
+        0,
+        400
+      ],
+      "limit_deg": [
+        -120,
+        120
+      ],
+      "diameter_mm": 90,
+      "length_mm": 97.4,
+      "bore_mm": 12,
+      "mass_kg": 1.75,
+      "rated_torque_Nm": 50,
+      "peak_torque_Nm": 80
+    },
+    {
+      "id": "J5",
+      "model": "RH17-B",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "origin_mm": [
+        0,
+        -55,
+        450
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 80,
+      "length_mm": 104,
+      "bore_mm": 12,
+      "mass_kg": 1.28,
+      "rated_torque_Nm": 35,
+      "peak_torque_Nm": 54
+    },
+    {
+      "id": "J6",
+      "model": "RH17-B",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "origin_mm": [
+        0,
+        0,
+        605
+      ],
+      "limit_deg": [
+        -100,
+        100
+      ],
+      "diameter_mm": 80,
+      "length_mm": 104,
+      "bore_mm": 12,
+      "mass_kg": 1.28,
+      "rated_torque_Nm": 35,
+      "peak_torque_Nm": 54
+    },
+    {
+      "id": "J7",
+      "model": "RH14-N",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "origin_mm": [
+        0,
+        55,
+        640
+      ],
+      "limit_deg": [
+        -90,
+        90
+      ],
+      "diameter_mm": 70,
+      "length_mm": 81.7,
+      "bore_mm": 10,
+      "mass_kg": 0.78,
+      "rated_torque_Nm": 11,
+      "peak_torque_Nm": 28
+    }
+  ],
+  "link_budgets_kg": [
+    0.45,
+    0.45,
+    0.65,
+    0.35,
+    0.5,
+    0.3,
+    0.15
+  ],
+  "head": {
+    "mount_origin_mm": [
+      0,
+      55,
+      650
+    ],
+    "face_center_mm": [
+      0,
+      55,
+      780
+    ],
+    "tcp_home_mm": [
+      0,
+      55,
+      890
+    ],
+    "tcp_definition": "centre of the nominal 80 mm contact study at face +110 mm; home shoulder distance about 722 mm",
+    "drive_envelope_diameter_mm": 210,
+    "drive_envelope_depth_mm": 197,
+    "rear_carrier_depth_mm": 130,
+    "head_com_home_mm": [0, 55, 760],
+    "head_com_status": "mass budget location after drive packaging; not measured; examine +/-50mm displacement",
+    "central_core_diameter_mm": 90,
+    "screen_diameter_mm": 62,
+    "camera_baseline_mm": 100,
+    "camera_outward_pitch_deg": 8,
+    "camera_angle_status": "proposed for packaging, not optically validated",
+    "fingers": [
+      {
+        "id": "UR",
+        "phi_deg": 35,
+        "root_radius_mm": 70,
+        "root_z_mm": 0,
+        "length_mm": 140,
+        "width_mm": 46,
+        "thickness_mm": 6,
+        "contact_along_mm": 113.48568191626643,
+        "closure_study_deg": 114,
+        "pad_target_q_deg": 99.71881806280362
+      },
+      {
+        "id": "UL",
+        "phi_deg": 145,
+        "root_radius_mm": 70,
+        "root_z_mm": 0,
+        "length_mm": 140,
+        "width_mm": 46,
+        "thickness_mm": 6,
+        "contact_along_mm": 113.48568191626643,
+        "closure_study_deg": 114,
+        "pad_target_q_deg": 99.71881806280362
+      },
+      {
+        "id": "LL",
+        "phi_deg": 225,
+        "root_radius_mm": 70,
+        "root_z_mm": 50,
+        "length_mm": 100,
+        "width_mm": 36,
+        "thickness_mm": 6,
+        "contact_along_mm": 66.17401302626281,
+        "closure_study_deg": 126,
+        "pad_target_q_deg": 107.12716312191587
+      },
+      {
+        "id": "LR",
+        "phi_deg": 315,
+        "root_radius_mm": 70,
+        "root_z_mm": 50,
+        "length_mm": 100,
+        "width_mm": 36,
+        "thickness_mm": 6,
+        "contact_along_mm": 66.17401302626281,
+        "closure_study_deg": 126,
+        "pad_target_q_deg": 107.12716312191587
+      }
+    ],
+    "contact_study": {
+      "target_radius_mm": 40,
+      "target_common_contact_z_mm": 110,
+      "pad_surface_center_normal_mm": 11,
+      "scope": "80 mm nominal faceted-object contact study; no universal object fit"
+    }
+  },
+  "poses_deg": {
+    "zero": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "inspect": [
+      0,
+      -25,
+      0,
+      -95,
+      0,
+      -15,
+      0
+    ],
+    "reach": [
+      0,
+      65,
+      0,
+      10,
+      0,
+      10,
+      0
+    ]
+  },
+  "notes": [
+    "Actuator sizes/masses/rated torques are sourced from joints.json; relative placements and link masses are design assumptions.",
+    "Output contact planes use the normalized vendor interfaces; model housing is an original cylindrical envelope, not a copy of vendor STEP.",
+    "Four provisional drive envelopes included; supports, motor combination drawings, hubs and harness unresolved.",
+    "Finger closure angles are candidate poses; full independent travel and contact are not approved.",
+    "No pose, range, 2 kg performance, cable route or printed load-bearing structure is qualified."
+  ]
+}

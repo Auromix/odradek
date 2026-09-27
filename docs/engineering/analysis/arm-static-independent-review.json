@@ -1,0 +1,164 @@
+{
+  "status": "independent numerical checks pass; installed zero-speed holding and 2 kg capability remain unqualified",
+  "parameter_revision": "R4-layout-03",
+  "parameter_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "gravity_m_s2": 9.80665,
+  "payload_net_kg": 2.0,
+  "head_kg": 2.0,
+  "total_model_mass_including_fixed_J1_and_object_kg": 19.17,
+  "mass_moved_by_J1_including_object_kg": 16.43,
+  "mass_downstream_of_each_drive_kg": [
+    16.43,
+    13.24,
+    11.040000000000001,
+    8.64,
+    7.01,
+    5.23,
+    4.15
+  ],
+  "independent_cross_moment_error_Nm": 2.4868995751603507e-14,
+  "object_body_vs_TCP_wrench_error_Nm": 1.7763568394002505e-15,
+  "triangle_distance_max_excess_m": 2.220446049250313e-16,
+  "original_1503_sample_max_Nm": [
+    0.0,
+    48.454221016969385,
+    23.81921647618603,
+    23.15506632373694,
+    10.414228433815548,
+    8.702725022111892,
+    5.456572693685047e-15
+  ],
+  "horizontal_q_deg": [
+    0.0,
+    90.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "horizontal_hand_calculated_gravity_Nm": [
+    0.0,
+    -47.003489196299995,
+    -3.78512173375,
+    22.509174325049997,
+    5.75846488,
+    -8.71072744255,
+    0.0
+  ],
+  "triangle_bound_Nm": [
+    0.0,
+    55.94474115207781,
+    46.78773840303982,
+    27.148108638582727,
+    21.22034646265171,
+    10.43506680037071,
+    7.2642759875
+  ],
+  "catalog_running_rated_Nm_NOT_zero_speed_limit": [
+    108,
+    108,
+    50,
+    50,
+    35,
+    35,
+    11
+  ],
+  "horizontal_object_plus_100mm_tool_Y_gravity_Nm": [
+    0.0,
+    -47.003489196299995,
+    -1.82379173375,
+    22.509174325049997,
+    7.7197948799999985,
+    -8.71072744255,
+    1.96133
+  ],
+  "off_axis_object_sensitivity": [
+    {
+      "object_COM_displacement_radius_mm": 50.0,
+      "sampled_q_max_over_all_displacement_directions_Nm": [
+        0.0,
+        49.434886016969386,
+        24.79960100885181,
+        24.135726815089033,
+        11.39251882258673,
+        9.69139244255,
+        0.980665
+      ],
+      "all_configuration_bound_with_exact_nominal_J7_zero_Nm": [
+        0.0,
+        56.92540615207781,
+        47.76840340303982,
+        28.128773638582725,
+        22.20101146265171,
+        11.41573180037071,
+        0.980665
+      ],
+      "maximum_increment_Nm_except_fixed_vertical_J1": 0.980665
+    },
+    {
+      "object_COM_displacement_radius_mm": 100.0,
+      "sampled_q_max_over_all_displacement_directions_Nm": [
+        0.0,
+        50.41555101696938,
+        25.77998554151759,
+        25.11638730644113,
+        12.370809211357912,
+        10.67205744255,
+        1.96133
+      ],
+      "all_configuration_bound_with_exact_nominal_J7_zero_Nm": [
+        0.0,
+        57.90607115207781,
+        48.749068403039814,
+        29.109438638582727,
+        23.181676462651712,
+        12.39639680037071,
+        1.96133
+      ],
+      "maximum_increment_Nm_except_fixed_vertical_J1": 1.96133
+    },
+    {
+      "object_COM_displacement_radius_mm": 150.0,
+      "sampled_q_max_over_all_displacement_directions_Nm": [
+        0.0,
+        51.39621601696938,
+        26.76037007418337,
+        26.097047797793223,
+        13.350061759540052,
+        11.652722442550001,
+        2.941995
+      ],
+      "all_configuration_bound_with_exact_nominal_J7_zero_Nm": [
+        0.0,
+        58.88673615207781,
+        49.729733403039816,
+        30.090103638582725,
+        24.16234146265171,
+        13.37706180037071,
+        2.941995
+      ],
+      "maximum_increment_Nm_except_fixed_vertical_J1": 2.941995
+    }
+  ],
+  "horizontal_J7_output_weight_force_world_N": [
+    0.0,
+    0.0,
+    -40.6975975
+  ],
+  "horizontal_J7_output_weight_moment_world_Nm": [
+    0.0,
+    7.2642759875,
+    0.0
+  ],
+  "horizontal_J7_output_bending_magnitude_Nm": 7.2642759875,
+  "head_COM_50mm_plus_object_COM_100mm_increment_bound_Nm": 2.9419950000000004,
+  "not_verified": [
+    "physical COM and mass splits",
+    "collision and cable reachable configurations",
+    "installed zero-speed thermal limit",
+    "brake output holding torque",
+    "bearing load spectrum and overturning moment limit",
+    "dynamic or contact loads"
+  ]
+}

@@ -1,0 +1,2053 @@
+{
+  "schema_version": 1,
+  "revision": "structure-screening-01",
+  "source_review_date": "2026-09-27",
+  "status": "NON-FROZEN analytical section screening; NOT a 2 kg robot qualification",
+  "coordinate_system": "beam z longitudinal; x along width or twin center spacing; y along section height",
+  "layout_snapshot": {
+    "parameter_file": "engineering/parameters/r4-layout.json",
+    "parameter_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "revision": "R4-layout-03",
+    "joint_origins_mm": {
+      "J1": [
+        0,
+        0,
+        105.2
+      ],
+      "J2": [
+        0,
+        0,
+        170
+      ],
+      "J3": [
+        0,
+        55,
+        220
+      ],
+      "J4": [
+        0,
+        0,
+        400
+      ],
+      "J5": [
+        0,
+        -55,
+        450
+      ],
+      "J6": [
+        0,
+        0,
+        605
+      ],
+      "J7": [
+        0,
+        55,
+        640
+      ]
+    },
+    "joint_axis_directions": {
+      "J1": [
+        0,
+        0,
+        1
+      ],
+      "J2": [
+        0,
+        1,
+        0
+      ],
+      "J3": [
+        0,
+        0,
+        1
+      ],
+      "J4": [
+        0,
+        -1,
+        0
+      ],
+      "J5": [
+        0,
+        0,
+        1
+      ],
+      "J6": [
+        0,
+        1,
+        0
+      ],
+      "J7": [
+        0,
+        0,
+        1
+      ]
+    },
+    "joint_modules_total_kg": 12.32,
+    "link_budgets_total_kg": 2.85,
+    "arm_body_budget_including_fixed_J1_kg": 15.17,
+    "head_budget_kg": 2.0,
+    "net_payload_kg": 2.0,
+    "budget_total_with_fixed_J1_head_payload_kg": 19.17,
+    "head_mass_sensitivity_totals_kg": [
+      {
+        "head_kg": 1.8,
+        "system_budget_kg": 18.97
+      },
+      {
+        "head_kg": 2.0,
+        "system_budget_kg": 19.17
+      },
+      {
+        "head_kg": 2.2,
+        "system_budget_kg": 19.37
+      }
+    ],
+    "unbudgeted_examples": [
+      "base plate and anchors",
+      "external harness or power unit"
+    ],
+    "cad_route_context": [
+      {
+        "from": "J3",
+        "to": "J4",
+        "joint_center_distance_mm": 188.2153022471871,
+        "current_route_tube_length_mm": 127.47548783981962,
+        "route_endpoints_mm": [
+          [
+            0,
+            55,
+            232
+          ],
+          [
+            0,
+            0,
+            347.0
+          ]
+        ],
+        "route_is_not_effective_structural_span": true
+      },
+      {
+        "from": "J5",
+        "to": "J6",
+        "joint_center_distance_mm": 164.46884203398528,
+        "current_route_tube_length_mm": 109.77249200050075,
+        "route_endpoints_mm": [
+          [
+            0,
+            -55,
+            462
+          ],
+          [
+            0,
+            0,
+            557.0
+          ]
+        ],
+        "route_is_not_effective_structural_span": true
+      }
+    ],
+    "load_context": "Section loads below are chosen sensitivity inputs, not loads derived from this kinematic model."
+  },
+  "material": {
+    "designation": "6061-T6 extruded tube/profile, unwelded parent metal",
+    "E_Pa": 70000000000.0,
+    "G_Pa": 26300000000.0,
+    "density_kg_m3": 2700.0,
+    "yield_min_Pa": 240000000.0,
+    "poisson_ratio_inferred_from_E_G": 0.3307984790874525,
+    "moduli_status": "Published guidance values, not certified material tolerance intervals",
+    "yield_scope": "Thyssenkrupp extruded profiles/tubes t<=5 mm; Hydro T6/T6511 extrusions t<=6.30 mm: Rp0.2 >=240 MPa. Selected wall=3 mm. No upper bound inferred.",
+    "not_applicable_to": [
+      "weld heat-affected zone",
+      "unknown temper",
+      "3D printed polymer",
+      "machined joints with holes without local analysis"
+    ]
+  },
+  "sensitivity_inputs": {
+    "length_mm": [
+      150.0,
+      200.0
+    ],
+    "bending_moment_Nm": [
+      20.0,
+      40.0,
+      60.0
+    ],
+    "torque_Nm": [
+      10.0,
+      20.0
+    ],
+    "modulus_assumed_scale_factors_not_vendor_tolerances": [
+      0.95,
+      1.0,
+      1.05
+    ],
+    "compliance_multipliers_for_those_scales": [
+      1.0526315789473684,
+      1.0,
+      0.9523809523809523
+    ],
+    "modulus_sensitivity_scope": "Scale E and G together; deflection/rotation inversely scale, force-controlled nominal stress does not. This is a chosen numerical sensitivity, not a measured material range."
+  },
+  "sections": [
+    {
+      "id": "RHS50x35x3",
+      "kind": "closed_rectangle",
+      "envelope_mm": [
+        50.0,
+        35.0
+      ],
+      "wall_mm": 3.0,
+      "area_mm2": 473.99999999999983,
+      "Ix_mm4": 89219.50000000003,
+      "Iy_mm4": 158722.0,
+      "torsion_J_mm4": 171798.6835443038,
+      "J_model": "Bredt thin-wall median-line approximation",
+      "mass_per_m_kg": 1.2797999999999994,
+      "beam_only_mass_kg": {
+        "150": 0.1919699999999999,
+        "200": 0.2559599999999999
+      },
+      "specific_Ix_mm2": 188.22679324894528,
+      "specific_Iy_mm2": 334.85654008438837,
+      "specific_J_mm2": 362.444480051274
+    },
+    {
+      "id": "RHS60x40x3",
+      "kind": "closed_rectangle",
+      "envelope_mm": [
+        60.0,
+        40.0
+      ],
+      "wall_mm": 3.0,
+      "area_mm2": 563.9999999999997,
+      "Ix_mm4": 143132.0,
+      "Iy_mm4": 273851.99999999994,
+      "torsion_J_mm4": 283907.29787234036,
+      "J_model": "Bredt thin-wall median-line approximation",
+      "mass_per_m_kg": 1.522799999999999,
+      "beam_only_mass_kg": {
+        "150": 0.22841999999999985,
+        "200": 0.30455999999999983
+      },
+      "specific_Ix_mm2": 253.78014184397185,
+      "specific_Iy_mm2": 485.5531914893619,
+      "specific_J_mm2": 503.3817338162067
+    },
+    {
+      "id": "twin_D20_t3_s48",
+      "kind": "twin_circles",
+      "envelope_mm": [
+        68.0,
+        20.0
+      ],
+      "wall_mm": 3.0,
+      "area_mm2": 320.4424506661589,
+      "Ix_mm4": 11936.48128731442,
+      "Iy_mm4": 196511.33287102196,
+      "torsion_J_mm4": 23872.96257462884,
+      "J_model": "sum of local circular J, with common twist and no frame contribution",
+      "mass_per_m_kg": 0.865194616798629,
+      "beam_only_mass_kg": {
+        "150": 0.12977919251979433,
+        "200": 0.17303892335972582
+      },
+      "specific_Ix_mm2": 37.25000000000001,
+      "specific_Iy_mm2": 613.2500000000001,
+      "specific_J_mm2": 74.50000000000001
+    }
+  ],
+  "bending_cases": [
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 3.9229092294845853,
+      "tip_rotation_deg": 0.02752238476682258,
+      "tip_deflection_mm": 0.03602671741363393,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 61.179085714285726
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 133.33333333333334,
+      "nominal_max_stress_MPa": 3.9229092294845853,
+      "tip_rotation_deg": 0.01376119238341129,
+      "tip_deflection_mm": 0.02401781160908929,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 61.179085714285726
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 7.845818458969171,
+      "tip_rotation_deg": 0.05504476953364516,
+      "tip_deflection_mm": 0.07205343482726786,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 30.589542857142863
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 266.6666666666667,
+      "nominal_max_stress_MPa": 7.845818458969171,
+      "tip_rotation_deg": 0.02752238476682258,
+      "tip_deflection_mm": 0.04803562321817858,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 30.589542857142863
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 11.768727688453755,
+      "tip_rotation_deg": 0.08256715430046775,
+      "tip_deflection_mm": 0.10808015224090183,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 20.393028571428577
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 400.0,
+      "nominal_max_stress_MPa": 11.768727688453755,
+      "tip_rotation_deg": 0.041283577150233876,
+      "tip_deflection_mm": 0.07205343482726788,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 20.393028571428577
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 3.9229092294845853,
+      "tip_rotation_deg": 0.03669651302243011,
+      "tip_deflection_mm": 0.06404749762423813,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 61.179085714285726
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 100.0,
+      "nominal_max_stress_MPa": 3.9229092294845853,
+      "tip_rotation_deg": 0.018348256511215057,
+      "tip_deflection_mm": 0.042698331749492086,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 61.179085714285726
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 7.845818458969171,
+      "tip_rotation_deg": 0.07339302604486023,
+      "tip_deflection_mm": 0.12809499524847626,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 30.589542857142863
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 200.0,
+      "nominal_max_stress_MPa": 7.845818458969171,
+      "tip_rotation_deg": 0.03669651302243011,
+      "tip_deflection_mm": 0.08539666349898417,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 30.589542857142863
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 11.768727688453755,
+      "tip_rotation_deg": 0.11008953906729033,
+      "tip_deflection_mm": 0.1921424928727144,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 20.393028571428577
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 300.0,
+      "nominal_max_stress_MPa": 11.768727688453755,
+      "tip_rotation_deg": 0.05504476953364516,
+      "tip_deflection_mm": 0.12809499524847626,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 20.393028571428577
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 3.1501619183226013,
+      "tip_rotation_deg": 0.015470655660233161,
+      "tip_deflection_mm": 0.020251040903502437,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 76.18656000000001
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 133.33333333333334,
+      "nominal_max_stress_MPa": 3.1501619183226013,
+      "tip_rotation_deg": 0.007735327830116581,
+      "tip_deflection_mm": 0.01350069393566829,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 76.18656000000001
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 6.300323836645203,
+      "tip_rotation_deg": 0.030941311320466323,
+      "tip_deflection_mm": 0.040502081807004875,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 38.09328000000001
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 266.6666666666667,
+      "nominal_max_stress_MPa": 6.300323836645203,
+      "tip_rotation_deg": 0.015470655660233161,
+      "tip_deflection_mm": 0.02700138787133658,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 38.09328000000001
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 9.450485754967804,
+      "tip_rotation_deg": 0.046411966980699486,
+      "tip_deflection_mm": 0.06075312271050731,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 25.39552
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 400.0,
+      "nominal_max_stress_MPa": 9.450485754967804,
+      "tip_rotation_deg": 0.023205983490349743,
+      "tip_deflection_mm": 0.040502081807004875,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 25.39552
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 3.1501619183226013,
+      "tip_rotation_deg": 0.020627540880310883,
+      "tip_deflection_mm": 0.03600185049511545,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 76.18656000000001
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 100.0,
+      "nominal_max_stress_MPa": 3.1501619183226013,
+      "tip_rotation_deg": 0.010313770440155441,
+      "tip_deflection_mm": 0.024001233663410303,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 76.18656000000001
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 6.300323836645203,
+      "tip_rotation_deg": 0.041255081760621766,
+      "tip_deflection_mm": 0.0720037009902309,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 38.09328000000001
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 200.0,
+      "nominal_max_stress_MPa": 6.300323836645203,
+      "tip_rotation_deg": 0.020627540880310883,
+      "tip_deflection_mm": 0.048002467326820605,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 38.09328000000001
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 9.450485754967804,
+      "tip_rotation_deg": 0.061882622640932645,
+      "tip_deflection_mm": 0.10800555148534635,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 25.39552
+    },
+    {
+      "section": "RHS50x35x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 300.0,
+      "nominal_max_stress_MPa": 9.450485754967804,
+      "tip_rotation_deg": 0.030941311320466323,
+      "tip_deflection_mm": 0.0720037009902309,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 25.39552
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 2.794623145068887,
+      "tip_rotation_deg": 0.017155726236645387,
+      "tip_deflection_mm": 0.02245679313001784,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 85.87920000000001
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 133.33333333333334,
+      "nominal_max_stress_MPa": 2.794623145068887,
+      "tip_rotation_deg": 0.008577863118322693,
+      "tip_deflection_mm": 0.014971195420011893,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 85.87920000000001
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 5.589246290137774,
+      "tip_rotation_deg": 0.034311452473290774,
+      "tip_deflection_mm": 0.04491358626003568,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 42.939600000000006
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 266.6666666666667,
+      "nominal_max_stress_MPa": 5.589246290137774,
+      "tip_rotation_deg": 0.017155726236645387,
+      "tip_deflection_mm": 0.029942390840023786,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 42.939600000000006
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 8.38386943520666,
+      "tip_rotation_deg": 0.05146717870993617,
+      "tip_deflection_mm": 0.06737037939005353,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 28.626400000000004
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 400.0,
+      "nominal_max_stress_MPa": 8.38386943520666,
+      "tip_rotation_deg": 0.025733589354968084,
+      "tip_deflection_mm": 0.044913586260035686,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 28.626400000000004
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 2.794623145068887,
+      "tip_rotation_deg": 0.022874301648860517,
+      "tip_deflection_mm": 0.03992318778669839,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 85.87920000000001
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 100.0,
+      "nominal_max_stress_MPa": 2.794623145068887,
+      "tip_rotation_deg": 0.011437150824430259,
+      "tip_deflection_mm": 0.026615458524465594,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 85.87920000000001
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 5.589246290137774,
+      "tip_rotation_deg": 0.045748603297721034,
+      "tip_deflection_mm": 0.07984637557339679,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 42.939600000000006
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 200.0,
+      "nominal_max_stress_MPa": 5.589246290137774,
+      "tip_rotation_deg": 0.022874301648860517,
+      "tip_deflection_mm": 0.05323091704893119,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 42.939600000000006
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 8.38386943520666,
+      "tip_rotation_deg": 0.06862290494658155,
+      "tip_deflection_mm": 0.11976956336009517,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 28.626400000000004
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 300.0,
+      "nominal_max_stress_MPa": 8.38386943520666,
+      "tip_rotation_deg": 0.034311452473290774,
+      "tip_deflection_mm": 0.07984637557339679,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 28.626400000000004
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 2.190964462556418,
+      "tip_rotation_deg": 0.008966644054830816,
+      "tip_deflection_mm": 0.011737309620837952,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 109.54079999999996
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 133.33333333333334,
+      "nominal_max_stress_MPa": 2.190964462556418,
+      "tip_rotation_deg": 0.004483322027415408,
+      "tip_deflection_mm": 0.007824873080558636,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 109.54079999999996
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 4.381928925112836,
+      "tip_rotation_deg": 0.017933288109661633,
+      "tip_deflection_mm": 0.023474619241675904,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 54.77039999999998
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 266.6666666666667,
+      "nominal_max_stress_MPa": 4.381928925112836,
+      "tip_rotation_deg": 0.008966644054830816,
+      "tip_deflection_mm": 0.01564974616111727,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 54.77039999999998
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 6.572893387669253,
+      "tip_rotation_deg": 0.02689993216449245,
+      "tip_deflection_mm": 0.035211928862513855,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 36.5136
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 400.0,
+      "nominal_max_stress_MPa": 6.572893387669253,
+      "tip_rotation_deg": 0.013449966082246224,
+      "tip_deflection_mm": 0.023474619241675904,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 36.5136
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 2.190964462556418,
+      "tip_rotation_deg": 0.011955525406441089,
+      "tip_deflection_mm": 0.02086632821482303,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 109.54079999999996
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 100.0,
+      "nominal_max_stress_MPa": 2.190964462556418,
+      "tip_rotation_deg": 0.0059777627032205445,
+      "tip_deflection_mm": 0.013910885476548685,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 109.54079999999996
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 4.381928925112836,
+      "tip_rotation_deg": 0.023911050812882178,
+      "tip_deflection_mm": 0.04173265642964606,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 54.77039999999998
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 200.0,
+      "nominal_max_stress_MPa": 4.381928925112836,
+      "tip_rotation_deg": 0.011955525406441089,
+      "tip_deflection_mm": 0.02782177095309737,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 54.77039999999998
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 6.572893387669253,
+      "tip_rotation_deg": 0.035866576219323265,
+      "tip_deflection_mm": 0.0625989846444691,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 36.5136
+    },
+    {
+      "section": "RHS60x40x3",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 300.0,
+      "nominal_max_stress_MPa": 6.572893387669253,
+      "tip_rotation_deg": 0.017933288109661633,
+      "tip_deflection_mm": 0.04173265642964607,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 36.5136
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 16.75535655658853,
+      "tip_rotation_deg": 0.20571668891343747,
+      "tip_deflection_mm": 0.26928251608802994,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 14.323777544777304
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 133.33333333333334,
+      "nominal_max_stress_MPa": 16.75535655658853,
+      "tip_rotation_deg": 0.10285834445671874,
+      "tip_deflection_mm": 0.17952167739201996,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 14.323777544777304
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 33.51071311317706,
+      "tip_rotation_deg": 0.41143337782687495,
+      "tip_deflection_mm": 0.5385650321760599,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 7.161888772388652
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 266.6666666666667,
+      "nominal_max_stress_MPa": 33.51071311317706,
+      "tip_rotation_deg": 0.20571668891343747,
+      "tip_deflection_mm": 0.3590433547840399,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 7.161888772388652
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 50.26606966976559,
+      "tip_rotation_deg": 0.6171500667403124,
+      "tip_deflection_mm": 0.8078475482640898,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 4.774592514925769
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 400.0,
+      "nominal_max_stress_MPa": 50.26606966976559,
+      "tip_rotation_deg": 0.3085750333701562,
+      "tip_deflection_mm": 0.5385650321760599,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 4.774592514925769
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 16.75535655658853,
+      "tip_rotation_deg": 0.2742889185512499,
+      "tip_deflection_mm": 0.4787244730453867,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 14.323777544777304
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 100.0,
+      "nominal_max_stress_MPa": 16.75535655658853,
+      "tip_rotation_deg": 0.13714445927562496,
+      "tip_deflection_mm": 0.31914964869692447,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 14.323777544777304
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 33.51071311317706,
+      "tip_rotation_deg": 0.5485778371024999,
+      "tip_deflection_mm": 0.9574489460907734,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 7.161888772388652
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 200.0,
+      "nominal_max_stress_MPa": 33.51071311317706,
+      "tip_rotation_deg": 0.2742889185512499,
+      "tip_deflection_mm": 0.6382992973938489,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 7.161888772388652
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 50.26606966976559,
+      "tip_rotation_deg": 0.8228667556537499,
+      "tip_deflection_mm": 1.43617341913616,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 4.774592514925769
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "x",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 300.0,
+      "nominal_max_stress_MPa": 50.26606966976559,
+      "tip_rotation_deg": 0.41143337782687495,
+      "tip_deflection_mm": 0.9574489460907734,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 4.774592514925769
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 3.4603602248543623,
+      "tip_rotation_deg": 0.012495632551203499,
+      "tip_deflection_mm": 0.016356744760340994,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 69.35694101330188
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 133.33333333333334,
+      "nominal_max_stress_MPa": 3.4603602248543623,
+      "tip_rotation_deg": 0.0062478162756017495,
+      "tip_deflection_mm": 0.010904496506893997,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 69.35694101330188
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 6.920720449708725,
+      "tip_rotation_deg": 0.024991265102406998,
+      "tip_deflection_mm": 0.03271348952068199,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 34.67847050665094
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 266.6666666666667,
+      "nominal_max_stress_MPa": 6.920720449708725,
+      "tip_rotation_deg": 0.012495632551203499,
+      "tip_deflection_mm": 0.021808993013787994,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 34.67847050665094
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 10.381080674563087,
+      "tip_rotation_deg": 0.03748689765361049,
+      "tip_deflection_mm": 0.04907023428102299,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 23.11898033776729
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 400.0,
+      "nominal_max_stress_MPa": 10.381080674563087,
+      "tip_rotation_deg": 0.018743448826805245,
+      "tip_deflection_mm": 0.032713489520681996,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 23.11898033776729
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 3.4603602248543623,
+      "tip_rotation_deg": 0.016660843401604664,
+      "tip_deflection_mm": 0.029078657351717337,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 69.35694101330188
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 100.0,
+      "nominal_max_stress_MPa": 3.4603602248543623,
+      "tip_rotation_deg": 0.008330421700802332,
+      "tip_deflection_mm": 0.019385771567811554,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 69.35694101330188
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 6.920720449708725,
+      "tip_rotation_deg": 0.03332168680320933,
+      "tip_deflection_mm": 0.05815731470343467,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 34.67847050665094
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 200.0,
+      "nominal_max_stress_MPa": 6.920720449708725,
+      "tip_rotation_deg": 0.016660843401604664,
+      "tip_deflection_mm": 0.03877154313562311,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 34.67847050665094
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 10.381080674563087,
+      "tip_rotation_deg": 0.049982530204813996,
+      "tip_deflection_mm": 0.087235972055152,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 23.11898033776729
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "ideal_plane_section",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 300.0,
+      "nominal_max_stress_MPa": 10.381080674563087,
+      "tip_rotation_deg": 0.024991265102406998,
+      "tip_deflection_mm": 0.05815731470343467,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 23.11898033776729
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 16.75535655658853,
+      "tip_rotation_deg": 0.20571668891343747,
+      "tip_deflection_mm": 0.26928251608802994,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 14.323777544777304
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 133.33333333333334,
+      "nominal_max_stress_MPa": 16.75535655658853,
+      "tip_rotation_deg": 0.10285834445671874,
+      "tip_deflection_mm": 0.17952167739201996,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 14.323777544777304
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 33.51071311317706,
+      "tip_rotation_deg": 0.41143337782687495,
+      "tip_deflection_mm": 0.5385650321760599,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 7.161888772388652
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 266.6666666666667,
+      "nominal_max_stress_MPa": 33.51071311317706,
+      "tip_rotation_deg": 0.20571668891343747,
+      "tip_deflection_mm": 0.3590433547840399,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 7.161888772388652
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "pure_end_moment",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 50.26606966976559,
+      "tip_rotation_deg": 0.6171500667403124,
+      "tip_deflection_mm": 0.8078475482640898,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 4.774592514925769
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 150.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 400.0,
+      "nominal_max_stress_MPa": 50.26606966976559,
+      "tip_rotation_deg": 0.3085750333701562,
+      "tip_deflection_mm": 0.5385650321760599,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 4.774592514925769
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 16.75535655658853,
+      "tip_rotation_deg": 0.2742889185512499,
+      "tip_deflection_mm": 0.4787244730453867,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 14.323777544777304
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 20.0,
+      "end_force_N": 100.0,
+      "nominal_max_stress_MPa": 16.75535655658853,
+      "tip_rotation_deg": 0.13714445927562496,
+      "tip_deflection_mm": 0.31914964869692447,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 14.323777544777304
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 33.51071311317706,
+      "tip_rotation_deg": 0.5485778371024999,
+      "tip_deflection_mm": 0.9574489460907734,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 7.161888772388652
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 40.0,
+      "end_force_N": 200.0,
+      "nominal_max_stress_MPa": 33.51071311317706,
+      "tip_rotation_deg": 0.2742889185512499,
+      "tip_deflection_mm": 0.6382992973938489,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 7.161888772388652
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "pure_end_moment",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 0.0,
+      "nominal_max_stress_MPa": 50.26606966976559,
+      "tip_rotation_deg": 0.8228667556537499,
+      "tip_deflection_mm": 1.43617341913616,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 4.774592514925769
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "axis": "y",
+      "connection_model": "no_axial_couple_equal_M_split",
+      "load_model": "end_force_root_M_equals_FL",
+      "length_mm": 200.0,
+      "root_bending_moment_Nm": 60.0,
+      "end_force_N": 300.0,
+      "nominal_max_stress_MPa": 50.26606966976559,
+      "tip_rotation_deg": 0.41143337782687495,
+      "tip_deflection_mm": 0.9574489460907734,
+      "yield_min_to_nominal_stress_ratio_not_design_margin": 4.774592514925769
+    }
+  ],
+  "torsion_cases": [
+    {
+      "section": "RHS50x35x3",
+      "length_mm": 150.0,
+      "torque_Nm": 10.0,
+      "twist_deg": 0.019021217490747373,
+      "nominal_torsion_shear_MPa": 1.1081560283687943,
+      "torsional_stiffness_Nm_per_rad": 30122.035848101274
+    },
+    {
+      "section": "RHS50x35x3",
+      "length_mm": 150.0,
+      "torque_Nm": 20.0,
+      "twist_deg": 0.03804243498149475,
+      "nominal_torsion_shear_MPa": 2.2163120567375887,
+      "torsional_stiffness_Nm_per_rad": 30122.035848101274
+    },
+    {
+      "section": "RHS50x35x3",
+      "length_mm": 200.0,
+      "torque_Nm": 10.0,
+      "twist_deg": 0.025361623320996497,
+      "nominal_torsion_shear_MPa": 1.1081560283687943,
+      "torsional_stiffness_Nm_per_rad": 22591.526886075953
+    },
+    {
+      "section": "RHS50x35x3",
+      "length_mm": 200.0,
+      "torque_Nm": 20.0,
+      "twist_deg": 0.05072324664199299,
+      "nominal_torsion_shear_MPa": 2.2163120567375887,
+      "torsional_stiffness_Nm_per_rad": 22591.526886075953
+    },
+    {
+      "section": "RHS60x40x3",
+      "length_mm": 150.0,
+      "torque_Nm": 10.0,
+      "twist_deg": 0.011510165990131285,
+      "nominal_torsion_shear_MPa": 0.790263948158685,
+      "torsional_stiffness_Nm_per_rad": 49778.41289361702
+    },
+    {
+      "section": "RHS60x40x3",
+      "length_mm": 150.0,
+      "torque_Nm": 20.0,
+      "twist_deg": 0.02302033198026257,
+      "nominal_torsion_shear_MPa": 1.58052789631737,
+      "torsional_stiffness_Nm_per_rad": 49778.41289361702
+    },
+    {
+      "section": "RHS60x40x3",
+      "length_mm": 200.0,
+      "torque_Nm": 10.0,
+      "twist_deg": 0.015346887986841714,
+      "nominal_torsion_shear_MPa": 0.790263948158685,
+      "torsional_stiffness_Nm_per_rad": 37333.80967021276
+    },
+    {
+      "section": "RHS60x40x3",
+      "length_mm": 200.0,
+      "torque_Nm": 20.0,
+      "twist_deg": 0.03069377597368343,
+      "nominal_torsion_shear_MPa": 1.58052789631737,
+      "torsional_stiffness_Nm_per_rad": 37333.80967021276
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "length_mm": 150.0,
+      "torque_Nm": 10.0,
+      "twist_deg": 0.1368837283644546,
+      "nominal_torsion_shear_MPa": 4.188839139147133,
+      "torsional_stiffness_Nm_per_rad": 4185.72610475159
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "length_mm": 150.0,
+      "torque_Nm": 20.0,
+      "twist_deg": 0.2737674567289092,
+      "nominal_torsion_shear_MPa": 8.377678278294265,
+      "torsional_stiffness_Nm_per_rad": 4185.72610475159
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "length_mm": 200.0,
+      "torque_Nm": 10.0,
+      "twist_deg": 0.1825116378192728,
+      "nominal_torsion_shear_MPa": 4.188839139147133,
+      "torsional_stiffness_Nm_per_rad": 3139.2945785636925
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "length_mm": 200.0,
+      "torque_Nm": 20.0,
+      "twist_deg": 0.3650232756385456,
+      "nominal_torsion_shear_MPa": 8.377678278294265,
+      "torsional_stiffness_Nm_per_rad": 3139.2945785636925
+    }
+  ],
+  "twin_rigid_endplate_torsion_cases": [
+    {
+      "length_mm": 150.0,
+      "torque_Nm": 10.0,
+      "twist_deg": 0.09716188211122626,
+      "tube_only_twist_deg": 0.1368837283644546,
+      "tube_torsion_stiffness_Nm_per_rad": 4185.72610475159,
+      "frame_coupling_stiffness_Nm_per_rad": 1711.2139573493957,
+      "transverse_force_per_tube_N": 60.455575947317286,
+      "end_bending_moment_per_tube_Nm": 4.534168196048796,
+      "torque_per_tube_Nm": 3.549066177264385,
+      "frame_nominal_bending_stress_MPa": 7.597160481234139,
+      "tube_torsion_shear_MPa": 2.973293462149671,
+      "torque_equilibrium_recovered_Nm": 10.0
+    },
+    {
+      "length_mm": 150.0,
+      "torque_Nm": 20.0,
+      "twist_deg": 0.1943237642224525,
+      "tube_only_twist_deg": 0.2737674567289092,
+      "tube_torsion_stiffness_Nm_per_rad": 4185.72610475159,
+      "frame_coupling_stiffness_Nm_per_rad": 1711.2139573493957,
+      "transverse_force_per_tube_N": 120.91115189463457,
+      "end_bending_moment_per_tube_Nm": 9.068336392097592,
+      "torque_per_tube_Nm": 7.09813235452877,
+      "frame_nominal_bending_stress_MPa": 15.194320962468279,
+      "tube_torsion_shear_MPa": 5.946586924299342,
+      "torque_equilibrium_recovered_Nm": 20.0
+    },
+    {
+      "length_mm": 200.0,
+      "torque_Nm": 10.0,
+      "twist_deg": 0.14838803247950025,
+      "tube_only_twist_deg": 0.1825116378192728,
+      "tube_torsion_stiffness_Nm_per_rad": 3139.2945785636925,
+      "frame_coupling_stiffness_Nm_per_rad": 721.9183882567761,
+      "transverse_force_per_tube_N": 38.95140348707802,
+      "end_bending_moment_per_tube_Nm": 3.895140348707802,
+      "torque_per_tube_Nm": 4.065166316310127,
+      "frame_nominal_bending_stress_MPa": 6.526446538055381,
+      "tube_torsion_shear_MPa": 3.4056655545804873,
+      "torque_equilibrium_recovered_Nm": 9.999999999999998
+    },
+    {
+      "length_mm": 200.0,
+      "torque_Nm": 20.0,
+      "twist_deg": 0.2967760649590005,
+      "tube_only_twist_deg": 0.3650232756385456,
+      "tube_torsion_stiffness_Nm_per_rad": 3139.2945785636925,
+      "frame_coupling_stiffness_Nm_per_rad": 721.9183882567761,
+      "transverse_force_per_tube_N": 77.90280697415604,
+      "end_bending_moment_per_tube_Nm": 7.790280697415604,
+      "torque_per_tube_Nm": 8.130332632620254,
+      "frame_nominal_bending_stress_MPa": 13.052893076110761,
+      "tube_torsion_shear_MPa": 6.8113311091609745,
+      "torque_equilibrium_recovered_Nm": 19.999999999999996
+    }
+  ],
+  "nominal_combined_stress_cases": [
+    {
+      "section": "RHS50x35x3",
+      "weak_axis_M_Nm": 20.0,
+      "T_Nm": 10.0,
+      "nominal_von_Mises_MPa": 4.367292773836629,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 54.9539525808255,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS50x35x3",
+      "weak_axis_M_Nm": 20.0,
+      "T_Nm": 20.0,
+      "nominal_von_Mises_MPa": 5.4886550466664,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 43.72655923162211,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS50x35x3",
+      "weak_axis_M_Nm": 40.0,
+      "T_Nm": 10.0,
+      "nominal_von_Mises_MPa": 8.077183707254136,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 29.713326909285904,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS50x35x3",
+      "weak_axis_M_Nm": 40.0,
+      "T_Nm": 20.0,
+      "nominal_von_Mises_MPa": 8.734585547673259,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 27.47697629041275,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS50x35x3",
+      "weak_axis_M_Nm": 60.0,
+      "T_Nm": 10.0,
+      "nominal_von_Mises_MPa": 11.924218245009119,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 20.127105615536014,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS50x35x3",
+      "weak_axis_M_Nm": 60.0,
+      "T_Nm": 20.0,
+      "nominal_von_Mises_MPa": 12.378976888398299,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 19.387708868325813,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS60x40x3",
+      "weak_axis_M_Nm": 20.0,
+      "T_Nm": 10.0,
+      "nominal_von_Mises_MPa": 3.111827412668122,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 77.12509987635234,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS60x40x3",
+      "weak_axis_M_Nm": 20.0,
+      "T_Nm": 20.0,
+      "nominal_von_Mises_MPa": 3.9120485446971323,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 61.348931961829884,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS60x40x3",
+      "weak_axis_M_Nm": 40.0,
+      "T_Nm": 10.0,
+      "nominal_von_Mises_MPa": 5.754409215123385,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 41.70714855823022,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS60x40x3",
+      "weak_axis_M_Nm": 40.0,
+      "T_Nm": 20.0,
+      "nominal_von_Mises_MPa": 6.223654825336244,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 38.56254993817617,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS60x40x3",
+      "weak_axis_M_Nm": 60.0,
+      "T_Nm": 10.0,
+      "nominal_von_Mises_MPa": 8.494870100823821,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 28.25234490362897,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "RHS60x40x3",
+      "weak_axis_M_Nm": 60.0,
+      "T_Nm": 20.0,
+      "nominal_von_Mises_MPa": 8.819493863011905,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 27.21244594392616,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "weak_axis_M_Nm": 20.0,
+      "T_Nm": 10.0,
+      "nominal_von_Mises_MPa": 18.25872649829026,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 13.144399748935035,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "weak_axis_M_Nm": 20.0,
+      "T_Nm": 20.0,
+      "nominal_von_Mises_MPa": 22.165253288474396,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 10.827758062426314,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "weak_axis_M_Nm": 40.0,
+      "T_Nm": 10.0,
+      "nominal_von_Mises_MPa": 34.28712605854579,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 6.9997117749150615,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "weak_axis_M_Nm": 40.0,
+      "T_Nm": 20.0,
+      "nominal_von_Mises_MPa": 36.51745299658052,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 6.572199874467517,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "weak_axis_M_Nm": 60.0,
+      "T_Nm": 10.0,
+      "nominal_von_Mises_MPa": 50.78697549615138,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 4.725621040736854,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    },
+    {
+      "section": "twin_D20_t3_s48",
+      "weak_axis_M_Nm": 60.0,
+      "T_Nm": 20.0,
+      "nominal_von_Mises_MPa": 52.31858407917343,
+      "yield_min_to_nominal_vm_ratio_not_design_margin": 4.5872801075199074,
+      "caveat": "Nominal section screening. No holes, end effects, preload, fatigue or twin-frame-induced stress included."
+    }
+  ],
+  "connection_scale_examples_not_fastener_sizing": {
+    "bending_M_Nm": 60,
+    "force_couple_separation_mm": 40,
+    "row_force_N": 1500.0,
+    "torsion_Nm": 20,
+    "bolt_circle_diameter_mm": 50,
+    "equally_loaded_bolts": 4,
+    "ideal_tangential_force_per_bolt_N": 200.0
+  },
+  "exclusions": [
+    "actual joint loads/accelerations/impacts",
+    "joint/gear/bearing compliance",
+    "bolt preload and slip",
+    "holes, local bearing, wall crushing, buckling and fatigue",
+    "corner radii and extrusion tolerances",
+    "transverse shear deflection",
+    "end-plate flexibility",
+    "complete TCP deflection and positioning accuracy",
+    "connection, harness and armor mass",
+    "printed structure qualification"
+  ],
+  "sources": {
+    "thyssenkrupp_6061_2018": "https://d2zo35mdb530wx.cloudfront.net/_legacy/UCPthyssenkruppBAMXUK/assets.files/material-data-sheets/aluminium/aluminium-6061.pdf",
+    "hydro_6061_2019": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+    "mit_closed_section_torsion": "https://ocw.mit.edu/courses/16-20-structural-mechanics-fall-2002/a58ea050460c29f7389ff55e084521ed_ho3.pdf",
+    "nasa_mechanical_design": "https://extapps.ksc.nasa.gov/Reliability/Documents/Mechanical-Design-Reliability-Monograph.pdf",
+    "stratasys_abs_m30": "https://go.stratasys.com/rs/533-LAV-099/images/MDS_FDM_ABS-M30_A4_0920a.pdf",
+    "nasa_fastener_design_manual": "https://ntrs.nasa.gov/api/citations/19900009424/downloads/19900009424.pdf"
+  },
+  "self_checks": {
+    "all_passed": true,
+    "count": 60,
+    "scope": "Numerical/formula consistency only, not hardware validation",
+    "results": [
+      {
+        "name": "RHS50x35x3/end_moment/recover_M_from_stress",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/end_moment/recover_M_from_angle",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/end_moment/N_mm_vs_SI_displacement",
+        "passed": true,
+        "relative_error": 2.1667962563087785e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/end_moment/integrated_curvature_angle",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/end_moment/integrated_curvature_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/end_force/recover_M_from_stress",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/end_force/recover_M_from_angle",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/end_force/N_mm_vs_SI_displacement",
+        "passed": true,
+        "relative_error": 3.250194384463168e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/end_force/integrated_curvature_angle",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/end_force/integrated_curvature_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/recover_T_from_twist",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/torsion_N_mm_vs_SI",
+        "passed": true,
+        "relative_error": 1.2246891264824116e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/torsion_energy_derivative",
+        "passed": true,
+        "relative_error": 6.049964284823113e-13,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/bending_energy_derivative",
+        "passed": true,
+        "relative_error": 1.4886567404671407e-12,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS50x35x3/mass_N_mm_vs_SI",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_moment/recover_M_from_stress",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_moment/recover_M_from_angle",
+        "passed": true,
+        "relative_error": 1.7763568394002506e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_moment/N_mm_vs_SI_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_moment/integrated_curvature_angle",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_moment/integrated_curvature_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_force/recover_M_from_stress",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_force/recover_M_from_angle",
+        "passed": true,
+        "relative_error": 1.7763568394002506e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_force/N_mm_vs_SI_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_force/integrated_curvature_angle",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/end_force/integrated_curvature_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/recover_T_from_twist",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/torsion_N_mm_vs_SI",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/torsion_energy_derivative",
+        "passed": true,
+        "relative_error": 3.725944444625241e-13,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/bending_energy_derivative",
+        "passed": true,
+        "relative_error": 1.2600942858598254e-12,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "RHS60x40x3/mass_N_mm_vs_SI",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_moment/recover_M_from_stress",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_moment/recover_M_from_angle",
+        "passed": true,
+        "relative_error": 1.7763568394002506e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_moment/N_mm_vs_SI_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_moment/integrated_curvature_angle",
+        "passed": true,
+        "relative_error": 1.8118182520954412e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_moment/integrated_curvature_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_force/recover_M_from_stress",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_force/recover_M_from_angle",
+        "passed": true,
+        "relative_error": 1.7763568394002506e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_force/N_mm_vs_SI_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_force/integrated_curvature_angle",
+        "passed": true,
+        "relative_error": 1.8118182520954412e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/end_force/integrated_curvature_displacement",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/recover_T_from_twist",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/torsion_N_mm_vs_SI",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/torsion_energy_derivative",
+        "passed": true,
+        "relative_error": 7.297382724611147e-14,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/bending_energy_derivative",
+        "passed": true,
+        "relative_error": 7.118633912482989e-13,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_D20_t3_s48/mass_N_mm_vs_SI",
+        "passed": true,
+        "relative_error": 1.6040076461830856e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "rectangle/rotation_swaps_Ix_Iy",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "rectangle/rotation_preserves_J",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "scale2/A_scales4",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "scale2/I_scales16",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "scale2/J_scales16",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "scale2/beam_mass_scales8",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "rectangle/numeric_area_moment",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "thin_wall_circular_limit",
+        "passed": true,
+        "relative_error": 9.999265712776232e-09,
+        "tolerance": 2e-08
+      },
+      {
+        "name": "twin_frame/L0.15/torque_equilibrium",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_frame/L0.15/released_frame_recovers_tube_only",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_frame/L0.15/energy_derivative_is_T",
+        "passed": true,
+        "relative_error": 5.135447622706124e-13,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_frame/L0.2/torque_equilibrium",
+        "passed": true,
+        "relative_error": 1.7763568394002506e-16,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_frame/L0.2/released_frame_recovers_tube_only",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin_frame/L0.2/energy_derivative_is_T",
+        "passed": true,
+        "relative_error": 2.604139126560767e-13,
+        "tolerance": 2e-10
+      },
+      {
+        "name": "twin/J_is_sum_of_local_J_only",
+        "passed": true,
+        "relative_error": 0.0,
+        "tolerance": 2e-10
+      }
+    ]
+  }
+}

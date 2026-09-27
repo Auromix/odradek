@@ -1,0 +1,3463 @@
+{
+  "revision": "R4-layout-03",
+  "status": "CONDITIONAL POINT-CONTACT LP, NOT A GRASP TEST",
+  "friction_cone": "16 boundary rays; their convex cone is inside Coulomb cone",
+  "contact_radius_m": 0.04,
+  "pad_nominal_offset_m": 0.011,
+  "q_deg": [
+    99.71881806280362,
+    99.71881806280362,
+    107.12716312191587,
+    107.12716312191587
+  ],
+  "minimum_normal_per_nominal_contact_N": 2.0,
+  "finger_self_weight_inertia_friction_torque_bias_Nm": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "points_head_m": [
+    [
+      0.03276608177155969,
+      0.022943057454041852,
+      0.11
+    ],
+    [
+      -0.03276608177155969,
+      0.02294305745404185,
+      0.11
+    ],
+    [
+      -0.02828427124746192,
+      -0.0282842712474619,
+      0.11
+    ],
+    [
+      0.028284271247461894,
+      -0.02828427124746192,
+      0.11
+    ]
+  ],
+  "object_com_head_m": [
+    0.0,
+    0.0,
+    0.11
+  ],
+  "contact_jacobians_m_per_rad": [
+    [
+      -0.0901067248717891,
+      -0.06309340799861507,
+      -0.029999999999999992
+    ],
+    [
+      0.09010672487178911,
+      -0.06309340799861506,
+      -0.029999999999999992
+    ],
+    [
+      0.04242640687119287,
+      0.042426406871192854,
+      -0.03
+    ],
+    [
+      -0.04242640687119285,
+      0.04242640687119287,
+      -0.03
+    ]
+  ],
+  "cases": [
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.3,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        11.372980326983733,
+        11.37298032698373
+      ],
+      "forces_on_object_N": [
+        [
+          -2.072143016414784,
+          -0.5783389785562721,
+          2.0435042547006788e-15
+        ],
+        [
+          2.0721430164147856,
+          -0.5783389785562691,
+          -2.0816681711721685e-15
+        ],
+        [
+          6.4451936189313574,
+          10.384988978556267,
+          2.4147350785597155e-15
+        ],
+        [
+          -6.445193618931347,
+          10.384988978556272,
+          -2.55351295663786e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22320339781063922,
+        0.2232033978106393,
+        0.7140441745974793,
+        0.7140441745974793
+      ],
+      "normal_total_N": 26.745960653967465,
+      "max_force_balance_residual_N": 1.2434497875801753e-14,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        0.7926239048843228,
+        0.7926239048843237,
+        4.477034213884185,
+        4.477034213884185
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        11.372980326983733,
+        11.37298032698373
+      ],
+      "forces_on_object_N": [
+        [
+          -2.072143016414784,
+          -0.5783389785562721,
+          2.0435042547006788e-15
+        ],
+        [
+          2.0721430164147856,
+          -0.5783389785562691,
+          -2.0816681711721685e-15
+        ],
+        [
+          6.4451936189313574,
+          10.384988978556267,
+          2.4147350785597155e-15
+        ],
+        [
+          -6.445193618931347,
+          10.384988978556272,
+          -2.55351295663786e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22320339781063922,
+        0.2232033978106393,
+        0.7140441745974793,
+        0.7140441745974793
+      ],
+      "normal_total_N": 26.745960653967465,
+      "max_force_balance_residual_N": 1.2434497875801753e-14,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        0.7926239048843228,
+        0.7926239048843237,
+        4.477034213884185,
+        4.477034213884185
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        22.11260053783928,
+        22.112600537839278
+      ],
+      "forces_on_object_N": [
+        [
+          -2.0721430164147834,
+          -0.5783389785562734,
+          3.802513859341161e-15
+        ],
+        [
+          2.072143016414786,
+          -0.5783389785562679,
+          -3.99333344169861e-15
+        ],
+        [
+          12.531455061635373,
+          20.191638978556263,
+          4.773959005888173e-15
+        ],
+        [
+          -12.531455061635356,
+          20.19163897855627,
+          -4.440892098500626e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22320339781063922,
+        0.2232033978106393,
+        1.3883233018334762,
+        1.3883233018334762
+      ],
+      "normal_total_N": 48.225201075678555,
+      "max_force_balance_residual_N": 2.1316282072803006e-14,
+      "max_moment_balance_residual_Nm": 2.220446049250313e-16,
+      "friction_norms_N": [
+        0.7926239048843223,
+        0.7926239048843241,
+        8.70474284836085,
+        8.704742848360848
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        22.11260053783928,
+        22.112600537839278
+      ],
+      "forces_on_object_N": [
+        [
+          -2.0721430164147834,
+          -0.5783389785562734,
+          3.802513859341161e-15
+        ],
+        [
+          2.072143016414786,
+          -0.5783389785562679,
+          -3.99333344169861e-15
+        ],
+        [
+          12.531455061635373,
+          20.191638978556263,
+          4.773959005888173e-15
+        ],
+        [
+          -12.531455061635356,
+          20.19163897855627,
+          -4.440892098500626e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22320339781063922,
+        0.2232033978106393,
+        1.3883233018334762,
+        1.3883233018334762
+      ],
+      "normal_total_N": 48.225201075678555,
+      "max_force_balance_residual_N": 2.1316282072803006e-14,
+      "max_moment_balance_residual_Nm": 2.220446049250313e-16,
+      "friction_norms_N": [
+        0.7926239048843223,
+        0.7926239048843241,
+        8.70474284836085,
+        8.704742848360848
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        13.2274661881671,
+        2.0,
+        2.0,
+        10.589619915867878
+      ],
+      "forces_on_object_N": [
+        [
+          -12.344622797897088,
+          -5.797475033553217,
+          0.10129013513802462
+        ],
+        [
+          1.2164439492218406,
+          -1.7701584390692668,
+          -0.10129013513802493
+        ],
+        [
+          1.288929490865912,
+          1.7218861784764827,
+          0.11734015776993602
+        ],
+        [
+          -9.774050642190668,
+          5.845747294145975,
+          -0.11734015776993649
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.4750772836957453,
+        0.2243338129270146,
+        0.1242178858685852,
+        0.6662121072259352
+      ],
+      "normal_total_N": 27.81708610403498,
+      "max_force_balance_residual_N": 2.4868995751603507e-14,
+      "max_moment_balance_residual_Nm": 9.107298248878237e-18,
+      "friction_norms_N": [
+        3.3233758017121393,
+        0.7895925990552659,
+        0.7999999729235486,
+        4.1926776805762955
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        13.2274661881671,
+        2.0,
+        2.0,
+        10.589619915867878
+      ],
+      "forces_on_object_N": [
+        [
+          -12.344622797897088,
+          -5.797475033553217,
+          0.10129013513802462
+        ],
+        [
+          1.2164439492218406,
+          -1.7701584390692668,
+          -0.10129013513802493
+        ],
+        [
+          1.288929490865912,
+          1.7218861784764827,
+          0.11734015776993602
+        ],
+        [
+          -9.774050642190668,
+          5.845747294145975,
+          -0.11734015776993649
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.4750772836957453,
+        0.2243338129270146,
+        0.1242178858685852,
+        0.6662121072259352
+      ],
+      "normal_total_N": 27.81708610403498,
+      "max_force_balance_residual_N": 2.4868995751603507e-14,
+      "max_moment_balance_residual_Nm": 9.107298248878237e-18,
+      "friction_norms_N": [
+        3.3233758017121393,
+        0.7895925990552659,
+        0.7999999729235486,
+        4.1926776805762955
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        25.259473940685798,
+        2.0,
+        2.0,
+        19.71403909576561
+      ],
+      "forces_on_object_N": [
+        [
+          -23.626158397131924,
+          -10.968384204582247,
+          0.10129013513802193
+        ],
+        [
+          1.2164439492218415,
+          -1.7701584390692666,
+          -0.10129013513802149
+        ],
+        [
+          1.2889294908658988,
+          1.7218861784764947,
+          0.11734015776993266
+        ],
+        [
+          -18.105815042955804,
+          11.016656465174908,
+          -0.1173401577699319
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.8178697901188086,
+        0.22433381292701454,
+        0.12421788586858525,
+        1.239082030031773
+      ],
+      "normal_total_N": 48.973513036451415,
+      "max_force_balance_residual_N": 1.1013412404281553e-13,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        6.36160739098132,
+        0.7895925990552664,
+        0.7999999729235523,
+        7.781882117113779
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.4,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        25.259473940685798,
+        2.0,
+        2.0,
+        19.71403909576561
+      ],
+      "forces_on_object_N": [
+        [
+          -23.626158397131924,
+          -10.968384204582247,
+          0.10129013513802193
+        ],
+        [
+          1.2164439492218415,
+          -1.7701584390692666,
+          -0.10129013513802149
+        ],
+        [
+          1.2889294908658988,
+          1.7218861784764947,
+          0.11734015776993266
+        ],
+        [
+          -18.105815042955804,
+          11.016656465174908,
+          -0.1173401577699319
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.8178697901188086,
+        0.22433381292701454,
+        0.12421788586858525,
+        1.239082030031773
+      ],
+      "normal_total_N": 48.973513036451415,
+      "max_force_balance_residual_N": 1.1013412404281553e-13,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        6.36160739098132,
+        0.7895925990552664,
+        0.7999999729235523,
+        7.781882117113779
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        15.175584663279682,
+        15.175584663279682,
+        15.747941587540465,
+        15.74794158754048
+      ],
+      "forces_on_object_N": [
+        [
+          -11.098727118381104,
+          -12.609251591127043,
+          5.414569833323755
+        ],
+        [
+          11.09872711838111,
+          -12.609251591127038,
+          5.414569833323756
+        ],
+        [
+          12.609251727638068,
+          12.60925159112703,
+          4.392080166676244
+        ],
+        [
+          -12.609251727638075,
+          12.60925159112705,
+          4.392080166676247
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.633193511079483,
+        1.633193511079483,
+        0.9381680774841682,
+        0.9381680774841692
+      ],
+      "normal_total_N": 61.847052501640306,
+      "max_force_balance_residual_N": 3.552713678800501e-15,
+      "max_moment_balance_residual_Nm": 4.440892098500626e-16,
+      "friction_norms_N": [
+        9.01078054023058,
+        9.01078054023058,
+        9.44876493332369,
+        9.448764933323698
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        15.175584663279682,
+        15.175584663279682,
+        15.747941587540465,
+        15.74794158754048
+      ],
+      "forces_on_object_N": [
+        [
+          -11.098727118381104,
+          -12.609251591127043,
+          5.414569833323755
+        ],
+        [
+          11.09872711838111,
+          -12.609251591127038,
+          5.414569833323756
+        ],
+        [
+          12.609251727638068,
+          12.60925159112703,
+          4.392080166676244
+        ],
+        [
+          -12.609251727638075,
+          12.60925159112705,
+          4.392080166676247
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.633193511079483,
+        1.633193511079483,
+        0.9381680774841682,
+        0.9381680774841692
+      ],
+      "normal_total_N": 61.847052501640306,
+      "max_force_balance_residual_N": 3.552713678800501e-15,
+      "max_moment_balance_residual_Nm": 4.440892098500626e-16,
+      "friction_norms_N": [
+        9.01078054023058,
+        9.01078054023058,
+        9.44876493332369,
+        9.448764933323698
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        30.351169342350673,
+        30.351169342350673,
+        31.49588310928961,
+        31.495883109289636
+      ],
+      "forces_on_object_N": [
+        [
+          -22.197454242613805,
+          -25.21850320182933,
+          10.829139666647508
+        ],
+        [
+          22.197454242613816,
+          -25.218503201829318,
+          10.82913966664751
+        ],
+        [
+          25.21850333834032,
+          25.218503201829304,
+          8.78416033335249
+        ],
+        [
+          -25.218503338340327,
+          25.218503201829336,
+          8.784160333352494
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        3.266387023921303,
+        3.266387023921303,
+        1.876336150837677,
+        1.876336150837679
+      ],
+      "normal_total_N": 123.69410490328059,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 8.881784197001252e-16,
+      "friction_norms_N": [
+        18.021561088466246,
+        18.021561088466242,
+        18.897529846373182,
+        18.897529846373196
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        9.173873596503286,
+        9.173873596503284
+      ],
+      "forces_on_object_N": [
+        [
+          -2.311369838698318,
+          -0.23668766915279355,
+          2.733924198139448e-15
+        ],
+        [
+          2.311369838698318,
+          -0.2366876691527917,
+          -3.2057689836051395e-15
+        ],
+        [
+          3.532520489072761,
+          10.043337669152791,
+          3.3306690738754696e-15
+        ],
+        [
+          -3.532520489072753,
+          10.043337669152795,
+          -3.2751579226442118e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.2232033978106392,
+        0.2232033978106393,
+        0.57597488184648,
+        0.57597488184648
+      ],
+      "normal_total_N": 22.347747193006573,
+      "max_force_balance_residual_N": 7.993605777301127e-15,
+      "max_moment_balance_residual_Nm": 1.2395654481013127e-17,
+      "friction_norms_N": [
+        1.182561450400473,
+        1.1825614504004722,
+        5.402534199588387,
+        5.402534199588387
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        9.173873596503286,
+        9.173873596503284
+      ],
+      "forces_on_object_N": [
+        [
+          -2.311369838698318,
+          -0.23668766915279355,
+          2.733924198139448e-15
+        ],
+        [
+          2.311369838698318,
+          -0.2366876691527917,
+          -3.2057689836051395e-15
+        ],
+        [
+          3.532520489072761,
+          10.043337669152791,
+          3.3306690738754696e-15
+        ],
+        [
+          -3.532520489072753,
+          10.043337669152795,
+          -3.2751579226442118e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.2232033978106392,
+        0.2232033978106393,
+        0.57597488184648,
+        0.57597488184648
+      ],
+      "normal_total_N": 22.347747193006573,
+      "max_force_balance_residual_N": 7.993605777301127e-15,
+      "max_moment_balance_residual_Nm": 1.2395654481013127e-17,
+      "friction_norms_N": [
+        1.182561450400473,
+        1.1825614504004722,
+        5.402534199588387,
+        5.402534199588387
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        18.131549865963812,
+        18.13154986596381
+      ],
+      "forces_on_object_N": [
+        [
+          -2.311369838698318,
+          -0.23668766915279427,
+          5.509481759702339e-15
+        ],
+        [
+          2.311369838698318,
+          -0.236687669152791,
+          -5.925815393936773e-15
+        ],
+        [
+          6.9817913585134805,
+          19.84998766915279,
+          6.328271240363392e-15
+        ],
+        [
+          -6.9817913585134646,
+          19.849987669152796,
+          -6.994405055138486e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22320339781063916,
+        0.22320339781063933,
+        1.1383759741057085,
+        1.1383759741057085
+      ],
+      "normal_total_N": 40.26309973192762,
+      "max_force_balance_residual_N": 1.5987211554602254e-14,
+      "max_moment_balance_residual_Nm": 9.289143013914764e-18,
+      "friction_norms_N": [
+        1.182561450400473,
+        1.1825614504004718,
+        10.677748849706054,
+        10.677748849706056
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        18.131549865963812,
+        18.13154986596381
+      ],
+      "forces_on_object_N": [
+        [
+          -2.311369838698318,
+          -0.23668766915279427,
+          5.509481759702339e-15
+        ],
+        [
+          2.311369838698318,
+          -0.236687669152791,
+          -5.925815393936773e-15
+        ],
+        [
+          6.9817913585134805,
+          19.84998766915279,
+          6.328271240363392e-15
+        ],
+        [
+          -6.9817913585134646,
+          19.849987669152796,
+          -6.994405055138486e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22320339781063916,
+        0.22320339781063933,
+        1.1383759741057085,
+        1.1383759741057085
+      ],
+      "normal_total_N": 40.26309973192762,
+      "max_force_balance_residual_N": 1.5987211554602254e-14,
+      "max_moment_balance_residual_Nm": 9.289143013914764e-18,
+      "friction_norms_N": [
+        1.182561450400473,
+        1.1825614504004718,
+        10.677748849706054,
+        10.677748849706056
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        11.408383274458576,
+        2.0,
+        2.0,
+        8.702006705627289
+      ],
+      "forces_on_object_N": [
+        [
+          -11.917287624565088,
+          -3.2170735434215807,
+          0.19155882127023638
+        ],
+        [
+          0.9639000901981429,
+          -2.103874020142881,
+          -0.19155882127023738
+        ],
+        [
+          0.9281947362018805,
+          2.128193844564677,
+          0.22191245257441097
+        ],
+        [
+          -9.588107201834935,
+          3.192753718999784,
+          -0.22191245257441206
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.2710571262032044,
+        0.22534122680004515,
+        0.12301421190683734,
+        0.5489033791686947
+      ],
+      "normal_total_N": 24.110389980085866,
+      "max_force_balance_residual_N": 2.1094237467877974e-15,
+      "max_moment_balance_residual_Nm": 1.6653345369377348e-16,
+      "friction_norms_N": [
+        4.717710499326504,
+        1.1798661188976478,
+        1.1999998520680948,
+        5.142936948465457
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        11.408383274458576,
+        2.0,
+        2.0,
+        8.702006705627289
+      ],
+      "forces_on_object_N": [
+        [
+          -11.917287624565088,
+          -3.2170735434215807,
+          0.19155882127023638
+        ],
+        [
+          0.9639000901981429,
+          -2.103874020142881,
+          -0.19155882127023738
+        ],
+        [
+          0.9281947362018805,
+          2.128193844564677,
+          0.22191245257441097
+        ],
+        [
+          -9.588107201834935,
+          3.192753718999784,
+          -0.22191245257441206
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.2710571262032044,
+        0.22534122680004515,
+        0.12301421190683734,
+        0.5489033791686947
+      ],
+      "normal_total_N": 24.110389980085866,
+      "max_force_balance_residual_N": 2.1094237467877974e-15,
+      "max_moment_balance_residual_Nm": 1.6653345369377348e-16,
+      "friction_norms_N": [
+        4.717710499326504,
+        1.1798661188976478,
+        1.1999998520680948,
+        5.142936948465457
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        22.058075012131745,
+        2.0,
+        2.0,
+        16.486175569809927
+      ],
+      "forces_on_object_N": [
+        [
+          -23.00866549927109,
+          -6.21446997731274,
+          0.19155882127024393
+        ],
+        [
+          0.9639000901981418,
+          -2.1038740201428814,
+          -0.1915588212702416
+        ],
+        [
+          0.9281947362018901,
+          2.1281938445646706,
+          0.2219124525744181
+        ],
+        [
+          -18.110029327128935,
+          6.190150152890959,
+          -0.22191245257441916
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.4595808169454756,
+        0.2253412268000452,
+        0.12301421190683726,
+        1.0376266752395682
+      ],
+      "normal_total_N": 42.544250581941675,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        9.02753270265163,
+        1.1798661188976483,
+        1.1999998520680921,
+        9.723496354851786
+      ]
+    },
+    {
+      "contact_model": "flat_pad_comparison",
+      "mu": 0.6,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        22.058075012131745,
+        2.0,
+        2.0,
+        16.486175569809927
+      ],
+      "forces_on_object_N": [
+        [
+          -23.00866549927109,
+          -6.21446997731274,
+          0.19155882127024393
+        ],
+        [
+          0.9639000901981418,
+          -2.1038740201428814,
+          -0.1915588212702416
+        ],
+        [
+          0.9281947362018901,
+          2.1281938445646706,
+          0.2219124525744181
+        ],
+        [
+          -18.110029327128935,
+          6.190150152890959,
+          -0.22191245257441916
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.4595808169454756,
+        0.2253412268000452,
+        0.12301421190683726,
+        1.0376266752395682
+      ],
+      "normal_total_N": 42.544250581941675,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        9.02753270265163,
+        1.1798661188976483,
+        1.1999998520680921,
+        9.723496354851786
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        18.048566111079175,
+        18.04856611107918,
+        14.64026722225414,
+        14.640267222254172
+      ],
+      "forces_on_object_N": [
+        [
+          -14.784519826375528,
+          -10.352232231239054,
+          5.414569833323752
+        ],
+        [
+          14.78451982637553,
+          -10.352232231239052,
+          5.414569833323753
+        ],
+        [
+          10.352232231239045,
+          10.352232231239041,
+          4.392080166676242
+        ],
+        [
+          -10.352232231239062,
+          10.352232231239068,
+          4.3920801666762515
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.822905177218997,
+        1.8229051772189973,
+        0.7466536283349614,
+        0.746653628334963
+      ],
+      "normal_total_N": 65.37766666666666,
+      "max_force_balance_residual_N": 1.5987211554602254e-14,
+      "max_moment_balance_residual_Nm": 4.440892098500626e-16,
+      "friction_norms_N": [
+        5.414569833323752,
+        5.414569833323753,
+        4.392080166676242,
+        4.3920801666762515
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        18.048566111079175,
+        18.04856611107918,
+        14.64026722225414,
+        14.640267222254172
+      ],
+      "forces_on_object_N": [
+        [
+          -14.784519826375528,
+          -10.352232231239054,
+          5.414569833323752
+        ],
+        [
+          14.78451982637553,
+          -10.352232231239052,
+          5.414569833323753
+        ],
+        [
+          10.352232231239045,
+          10.352232231239041,
+          4.392080166676242
+        ],
+        [
+          -10.352232231239062,
+          10.352232231239068,
+          4.3920801666762515
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.822905177218997,
+        1.8229051772189973,
+        0.7466536283349614,
+        0.746653628334963
+      ],
+      "normal_total_N": 65.37766666666666,
+      "max_force_balance_residual_N": 1.5987211554602254e-14,
+      "max_moment_balance_residual_Nm": 4.440892098500626e-16,
+      "friction_norms_N": [
+        5.414569833323752,
+        5.414569833323753,
+        4.392080166676242,
+        4.3920801666762515
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": false,
+      "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        36.09713222215835,
+        36.09713222215836,
+        29.28053444450828,
+        29.280534444508344
+      ],
+      "forces_on_object_N": [
+        [
+          -29.569039652751055,
+          -20.704464462478107,
+          10.829139666647505
+        ],
+        [
+          29.56903965275106,
+          -20.704464462478104,
+          10.829139666647507
+        ],
+        [
+          20.70446446247809,
+          20.704464462478082,
+          8.784160333352483
+        ],
+        [
+          -20.704464462478125,
+          20.704464462478136,
+          8.784160333352503
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        3.645810354437994,
+        3.6458103544379945,
+        1.4933072566699228,
+        1.493307256669926
+      ],
+      "normal_total_N": 130.7553333333333,
+      "max_force_balance_residual_N": 3.197442310920451e-14,
+      "max_moment_balance_residual_Nm": 8.881784197001252e-16,
+      "friction_norms_N": [
+        10.829139666647505,
+        10.829139666647507,
+        8.784160333352483,
+        8.784160333352503
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        11.381494633637832,
+        11.381494633637832
+      ],
+      "forces_on_object_N": [
+        [
+          -1.9824499503886115,
+          -0.6556616461286973,
+          3.6739403974420595e-17
+        ],
+        [
+          1.9824499503886113,
+          -0.6556616461286968,
+          -1.1021821192326178e-16
+        ],
+        [
+          5.6335524248385305,
+          10.462311646128695,
+          -6.272239937668806e-16
+        ],
+        [
+          -5.633552424838526,
+          10.462311646128695,
+          2.0907466458896022e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000003,
+        0.22,
+        0.68288967801827,
+        0.68288967801827
+      ],
+      "normal_total_N": 26.762989267275664,
+      "max_force_balance_residual_N": 4.440892098500626e-15,
+      "max_moment_balance_residual_Nm": 2.220446049250313e-16,
+      "friction_norms_N": [
+        0.6,
+        0.5999999999999999,
+        3.4144483900913505,
+        3.4144483900913487
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        11.381494633637832,
+        11.381494633637832
+      ],
+      "forces_on_object_N": [
+        [
+          -1.9824499503886115,
+          -0.6556616461286973,
+          3.6739403974420595e-17
+        ],
+        [
+          1.9824499503886113,
+          -0.6556616461286968,
+          -1.1021821192326178e-16
+        ],
+        [
+          5.6335524248385305,
+          10.462311646128695,
+          -6.272239937668806e-16
+        ],
+        [
+          -5.633552424838526,
+          10.462311646128695,
+          2.0907466458896022e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000003,
+        0.22,
+        0.68288967801827,
+        0.68288967801827
+      ],
+      "normal_total_N": 26.762989267275664,
+      "max_force_balance_residual_N": 4.440892098500626e-15,
+      "max_moment_balance_residual_Nm": 2.220446049250313e-16,
+      "friction_norms_N": [
+        0.6,
+        0.5999999999999999,
+        3.4144483900913505,
+        3.4144483900913487
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        22.04972342705792,
+        22.04972342705792
+      ],
+      "forces_on_object_N": [
+        [
+          -1.9824499503886115,
+          -0.6556616461286973,
+          3.6739403974420595e-17
+        ],
+        [
+          1.9824499503886113,
+          -0.6556616461286968,
+          -1.1021821192326178e-16
+        ],
+        [
+          10.91405627099238,
+          20.268961646128695,
+          -1.2151405447663898e-15
+        ],
+        [
+          -10.91405627099237,
+          20.268961646128698,
+          4.050468482554633e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000003,
+        0.22,
+        1.3229834056234755,
+        1.3229834056234755
+      ],
+      "normal_total_N": 48.09944685411584,
+      "max_force_balance_residual_N": 8.881784197001252e-15,
+      "max_moment_balance_residual_Nm": 3.3306690738754696e-16,
+      "friction_norms_N": [
+        0.6,
+        0.5999999999999999,
+        6.614917028117376,
+        6.614917028117376
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        22.04972342705792,
+        22.04972342705792
+      ],
+      "forces_on_object_N": [
+        [
+          -1.9824499503886115,
+          -0.6556616461286973,
+          3.6739403974420595e-17
+        ],
+        [
+          1.9824499503886113,
+          -0.6556616461286968,
+          -1.1021821192326178e-16
+        ],
+        [
+          10.91405627099238,
+          20.268961646128695,
+          -1.2151405447663898e-15
+        ],
+        [
+          -10.91405627099237,
+          20.268961646128698,
+          4.050468482554633e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000003,
+        0.22,
+        1.3229834056234755,
+        1.3229834056234755
+      ],
+      "normal_total_N": 48.09944685411584,
+      "max_force_balance_residual_N": 8.881784197001252e-15,
+      "max_moment_balance_residual_Nm": 3.3306690738754696e-16,
+      "friction_norms_N": [
+        0.6,
+        0.5999999999999999,
+        6.614917028117376,
+        6.614917028117376
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        13.334760278024655,
+        2.0,
+        2.0,
+        10.055982388922711
+      ],
+      "forces_on_object_N": [
+        [
+          -12.653558448871955,
+          -5.177290800146265,
+          -1.844011372075617e-15
+        ],
+        [
+          1.2941582267673564,
+          -1.638644099275487,
+          3.6739403974420595e-17
+        ],
+        [
+          0.9899495624142716,
+          1.8384775623319192,
+          -2.633147570249466e-15
+        ],
+        [
+          -9.24384934030967,
+          4.977457337089826,
+          -5.541761990194358e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.4668236305827123,
+        0.22000000000000003,
+        0.12000000000000012,
+        0.6033589433353627
+      ],
+      "normal_total_N": 27.390742666947364,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 4.8686785444259266e-17,
+      "friction_norms_N": [
+        3.016794619445243,
+        0.5999999999999999,
+        0.5999999027684272,
+        3.0167947166768125
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        13.334760278024655,
+        2.0,
+        2.0,
+        10.055982388922711
+      ],
+      "forces_on_object_N": [
+        [
+          -12.653558448871955,
+          -5.177290800146265,
+          -1.844011372075617e-15
+        ],
+        [
+          1.2941582267673564,
+          -1.638644099275487,
+          3.6739403974420595e-17
+        ],
+        [
+          0.9899495624142716,
+          1.8384775623319192,
+          -2.633147570249466e-15
+        ],
+        [
+          -9.24384934030967,
+          4.977457337089826,
+          -5.541761990194358e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.4668236305827123,
+        0.22000000000000003,
+        0.12000000000000012,
+        0.6033589433353627
+      ],
+      "normal_total_N": 27.390742666947364,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 4.8686785444259266e-17,
+      "friction_norms_N": [
+        3.016794619445243,
+        0.5999999999999999,
+        0.5999999027684272,
+        3.0167947166768125
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        25.120120785192803,
+        2.0,
+        2.0,
+        19.181970339008988
+      ],
+      "forces_on_object_N": [
+        [
+          -23.877896094979416,
+          -9.694424375319166,
+          -1.2140560865852595e-15
+        ],
+        [
+          1.2941582267673564,
+          -1.638644099275487,
+          3.6739403974420595e-17
+        ],
+        [
+          0.9899495624142712,
+          1.838477562331919,
+          1.013316669762608e-15
+        ],
+        [
+          -17.63281169420221,
+          9.494590912262735,
+          -1.0571012359653071e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.7632132863712084,
+        0.22000000000000003,
+        0.12,
+        1.1509182203405393
+      ],
+      "normal_total_N": 48.302091124201795,
+      "max_force_balance_residual_N": 1.7763568394002505e-15,
+      "max_moment_balance_residual_Nm": 9.954392896438696e-17,
+      "friction_norms_N": [
+        5.754591004471127,
+        0.5999999999999999,
+        0.5999999027684273,
+        5.754591101702694
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.3,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        25.120120785192803,
+        2.0,
+        2.0,
+        19.181970339008988
+      ],
+      "forces_on_object_N": [
+        [
+          -23.877896094979416,
+          -9.694424375319166,
+          -1.2140560865852595e-15
+        ],
+        [
+          1.2941582267673564,
+          -1.638644099275487,
+          3.6739403974420595e-17
+        ],
+        [
+          0.9899495624142712,
+          1.838477562331919,
+          1.013316669762608e-15
+        ],
+        [
+          -17.63281169420221,
+          9.494590912262735,
+          -1.0571012359653071e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.7632132863712084,
+        0.22000000000000003,
+        0.12,
+        1.1509182203405393
+      ],
+      "normal_total_N": 48.302091124201795,
+      "max_force_balance_residual_N": 1.7763568394002505e-15,
+      "max_moment_balance_residual_Nm": 9.954392896438696e-17,
+      "friction_norms_N": [
+        5.754591004471127,
+        0.5999999999999999,
+        0.5999999027684273,
+        5.754591101702694
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        13.536424583309381,
+        13.536424583309383,
+        10.980200466690615,
+        10.980200466690619
+      ],
+      "forces_on_object_N": [
+        [
+          -11.088389869781645,
+          -7.76417417342929,
+          5.414569833323753
+        ],
+        [
+          11.088389869781647,
+          -7.764174173429288,
+          5.414569833323753
+        ],
+        [
+          7.764174244139971,
+          7.764174173429285,
+          4.3920801767306274
+        ],
+        [
+          -7.764174244139971,
+          7.764174173429291,
+          4.392080156621866
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.3265696091643195,
+        1.3265696091643195,
+        0.5270496226995183,
+        0.5270496233027814
+      ],
+      "normal_total_N": 49.033250100000004,
+      "max_force_balance_residual_N": 2.6645352591003757e-15,
+      "max_moment_balance_residual_Nm": 5.687617807281775e-10,
+      "friction_norms_N": [
+        5.414569833323753,
+        5.414569833323753,
+        4.392080176730628,
+        4.392080156621867
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        13.536424583309381,
+        13.536424583309383,
+        10.980200466690615,
+        10.980200466690619
+      ],
+      "forces_on_object_N": [
+        [
+          -11.088389869781645,
+          -7.76417417342929,
+          5.414569833323753
+        ],
+        [
+          11.088389869781647,
+          -7.764174173429288,
+          5.414569833323753
+        ],
+        [
+          7.764174244139971,
+          7.764174173429285,
+          4.3920801767306274
+        ],
+        [
+          -7.764174244139971,
+          7.764174173429291,
+          4.392080156621866
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.3265696091643195,
+        1.3265696091643195,
+        0.5270496226995183,
+        0.5270496233027814
+      ],
+      "normal_total_N": 49.033250100000004,
+      "max_force_balance_residual_N": 2.6645352591003757e-15,
+      "max_moment_balance_residual_Nm": 5.687617807281775e-10,
+      "friction_norms_N": [
+        5.414569833323753,
+        5.414569833323753,
+        4.392080176730628,
+        4.392080156621867
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        27.07284916661877,
+        27.072849166618774,
+        21.96040088338122,
+        21.960400883381233
+      ],
+      "forces_on_object_N": [
+        [
+          -22.176779739563298,
+          -15.528348346858584,
+          10.829139666647508
+        ],
+        [
+          22.1767797395633,
+          -15.52834834685858,
+          10.82913966664751
+        ],
+        [
+          15.528348417569246,
+          15.528348346858575,
+          8.784160343406873
+        ],
+        [
+          -15.528348417569248,
+          15.528348346858587,
+          8.784160323298112
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.65313921832864,
+        2.65313921832864,
+        1.0540992427006675,
+        1.054099243303931
+      ],
+      "normal_total_N": 98.0665001,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 5.687619264449495e-10,
+      "friction_norms_N": [
+        10.829139666647508,
+        10.82913966664751,
+        8.784160343406873,
+        8.784160323298112
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        27.07284916661877,
+        27.072849166618774,
+        21.96040088338122,
+        21.960400883381233
+      ],
+      "forces_on_object_N": [
+        [
+          -22.176779739563298,
+          -15.528348346858584,
+          10.829139666647508
+        ],
+        [
+          22.1767797395633,
+          -15.52834834685858,
+          10.82913966664751
+        ],
+        [
+          15.528348417569246,
+          15.528348346858575,
+          8.784160343406873
+        ],
+        [
+          -15.528348417569248,
+          15.528348346858587,
+          8.784160323298112
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.65313921832864,
+        2.65313921832864,
+        1.0540992427006675,
+        1.054099243303931
+      ],
+      "normal_total_N": 98.0665001,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 5.687619264449495e-10,
+      "friction_norms_N": [
+        10.829139666647508,
+        10.82913966664751,
+        8.784160343406873,
+        8.784160323298112
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        10.403037026852395,
+        10.403037026852395
+      ],
+      "forces_on_object_N": [
+        [
+          -2.097165237658821,
+          -0.4918312372708987,
+          4.898587196589413e-17
+        ],
+        [
+          2.0971652376588206,
+          -0.4918312372708983,
+          -1.4695761589768238e-16
+        ],
+        [
+          4.413634815973243,
+          10.298481237270897,
+          -7.64402759780771e-16
+        ],
+        [
+          -4.413634815973238,
+          10.298481237270897,
+          2.5480091992692367e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000006,
+        0.22,
+        0.6241822216111438,
+        0.6241822216111438
+      ],
+      "normal_total_N": 24.80607405370479,
+      "max_force_balance_residual_N": 3.9968028886505635e-15,
+      "max_moment_balance_residual_Nm": 2.220446049250313e-16,
+      "friction_norms_N": [
+        0.8000000000000004,
+        0.8,
+        4.161214810740959,
+        4.161214810740959
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        10.403037026852395,
+        10.403037026852395
+      ],
+      "forces_on_object_N": [
+        [
+          -2.097165237658821,
+          -0.4918312372708987,
+          4.898587196589413e-17
+        ],
+        [
+          2.0971652376588206,
+          -0.4918312372708983,
+          -1.4695761589768238e-16
+        ],
+        [
+          4.413634815973243,
+          10.298481237270897,
+          -7.64402759780771e-16
+        ],
+        [
+          -4.413634815973238,
+          10.298481237270897,
+          2.5480091992692367e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000006,
+        0.22,
+        0.6241822216111438,
+        0.6241822216111438
+      ],
+      "normal_total_N": 24.80607405370479,
+      "max_force_balance_residual_N": 3.9968028886505635e-15,
+      "max_moment_balance_residual_Nm": 2.220446049250313e-16,
+      "friction_norms_N": [
+        0.8000000000000004,
+        0.8,
+        4.161214810740959,
+        4.161214810740959
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        20.309249477885334,
+        20.309249477885338
+      ],
+      "forces_on_object_N": [
+        [
+          -2.097165237658821,
+          -0.4918312372708987,
+          4.898587196589413e-17
+        ],
+        [
+          2.0971652376588206,
+          -0.4918312372708983,
+          -1.4695761589768238e-16
+        ],
+        [
+          8.616484815973244,
+          20.1051312372709,
+          -1.4922994419706397e-15
+        ],
+        [
+          -8.616484815973239,
+          20.105131237270903,
+          4.974331473235467e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000006,
+        0.22,
+        1.2185549686731203,
+        1.2185549686731203
+      ],
+      "normal_total_N": 44.618498955770676,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 3.3306690738754696e-16,
+      "friction_norms_N": [
+        0.8000000000000004,
+        0.8,
+        8.123699791154136,
+        8.123699791154134
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0,
+        2.0,
+        20.309249477885334,
+        20.309249477885338
+      ],
+      "forces_on_object_N": [
+        [
+          -2.097165237658821,
+          -0.4918312372708987,
+          4.898587196589413e-17
+        ],
+        [
+          2.0971652376588206,
+          -0.4918312372708983,
+          -1.4695761589768238e-16
+        ],
+        [
+          8.616484815973244,
+          20.1051312372709,
+          -1.4922994419706397e-15
+        ],
+        [
+          -8.616484815973239,
+          20.105131237270903,
+          4.974331473235467e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000006,
+        0.22,
+        1.2185549686731203,
+        1.2185549686731203
+      ],
+      "normal_total_N": 44.618498955770676,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 3.3306690738754696e-16,
+      "friction_norms_N": [
+        0.8000000000000004,
+        0.8,
+        8.123699791154136,
+        8.123699791154134
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        12.535809549952269,
+        2.0,
+        2.0,
+        9.32649098410174
+      ],
+      "forces_on_object_N": [
+        [
+          -12.408516135163039,
+          -4.134319405320186,
+          -2.218317294999613e-15
+        ],
+        [
+          1.179442939497147,
+          -1.8024745081332854,
+          4.898587196589413e-17
+        ],
+        [
+          0.8485282230128437,
+          1.9798989017333468,
+          2.0589442216765605e-16
+        ],
+        [
+          -9.23275502734695,
+          3.9568950117201247,
+          -6.852994398574106e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.3789390504947499,
+        0.22000000000000003,
+        0.12000000000000001,
+        0.5595894590461045
+      ],
+      "normal_total_N": 25.862300534054015,
+      "max_force_balance_residual_N": 2.6487364407234734e-15,
+      "max_moment_balance_residual_Nm": 9.949740989729816e-17,
+      "friction_norms_N": [
+        3.730596272599592,
+        0.7999999999999999,
+        0.7999998789588949,
+        3.730596393640696
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        12.535809549952269,
+        2.0,
+        2.0,
+        9.32649098410174
+      ],
+      "forces_on_object_N": [
+        [
+          -12.408516135163039,
+          -4.134319405320186,
+          -2.218317294999613e-15
+        ],
+        [
+          1.179442939497147,
+          -1.8024745081332854,
+          4.898587196589413e-17
+        ],
+        [
+          0.8485282230128437,
+          1.9798989017333468,
+          2.0589442216765605e-16
+        ],
+        [
+          -9.23275502734695,
+          3.9568950117201247,
+          -6.852994398574106e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.3789390504947499,
+        0.22000000000000003,
+        0.12000000000000001,
+        0.5595894590461045
+      ],
+      "normal_total_N": 25.862300534054015,
+      "max_force_balance_residual_N": 2.6487364407234734e-15,
+      "max_moment_balance_residual_Nm": 9.949740989729816e-17,
+      "friction_norms_N": [
+        3.730596272599592,
+        0.7999999999999999,
+        0.7999998789588949,
+        3.730596393640696
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        23.747840868950483,
+        2.0,
+        2.0,
+        17.879149746018076
+      ],
+      "forces_on_object_N": [
+        [
+          -23.55511592434723,
+          -7.762905209955536,
+          -4.814702726680915e-15
+        ],
+        [
+          1.179442939497147,
+          -1.8024745081332854,
+          4.898587196589413e-17
+        ],
+        [
+          0.8485282230128488,
+          1.9798989017333417,
+          -1.8258679375064002e-15
+        ],
+        [
+          -17.699455238162766,
+          7.585480816355476,
+          -1.313738610476235e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.6122624955845537,
+        0.22000000000000003,
+        0.12000000000000006,
+        1.0727489847610847
+      ],
+      "normal_total_N": 45.626990614968555,
+      "max_force_balance_residual_N": 7.905323402697656e-15,
+      "max_moment_balance_residual_Nm": 1.4487881353516255e-16,
+      "friction_norms_N": [
+        7.151659777366119,
+        0.7999999999999999,
+        0.7999998789588877,
+        7.151659898407231
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.4,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        23.747840868950483,
+        2.0,
+        2.0,
+        17.879149746018076
+      ],
+      "forces_on_object_N": [
+        [
+          -23.55511592434723,
+          -7.762905209955536,
+          -4.814702726680915e-15
+        ],
+        [
+          1.179442939497147,
+          -1.8024745081332854,
+          4.898587196589413e-17
+        ],
+        [
+          0.8485282230128488,
+          1.9798989017333417,
+          -1.8258679375064002e-15
+        ],
+        [
+          -17.699455238162766,
+          7.585480816355476,
+          -1.313738610476235e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.6122624955845537,
+        0.22000000000000003,
+        0.12000000000000006,
+        1.0727489847610847
+      ],
+      "normal_total_N": 45.626990614968555,
+      "max_force_balance_residual_N": 7.905323402697656e-15,
+      "max_moment_balance_residual_Nm": 1.4487881353516255e-16,
+      "friction_norms_N": [
+        7.151659777366119,
+        0.7999999999999999,
+        0.7999998789588877,
+        7.151659898407231
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        9.02428305553959,
+        9.024283055539593,
+        7.320133661127075,
+        7.320133661127081
+      ],
+      "forces_on_object_N": [
+        [
+          -7.392259913187765,
+          -5.176116115619528,
+          5.414569833323753
+        ],
+        [
+          7.392259913187768,
+          -5.176116115619528,
+          5.414569833323756
+        ],
+        [
+          5.176116186330204,
+          5.176116115619523,
+          4.392080166676244
+        ],
+        [
+          -5.176116186330207,
+          5.1761161156195294,
+          4.392080166676248
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.8302340411096425,
+        0.8302340411096425,
+        0.30744561466733733,
+        0.3074456146673375
+      ],
+      "normal_total_N": 32.688833433333336,
+      "max_force_balance_residual_N": 3.552713678800501e-15,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        5.414569833323753,
+        5.414569833323756,
+        4.392080166676244,
+        4.392080166676248
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        9.02428305553959,
+        9.024283055539593,
+        7.320133661127075,
+        7.320133661127081
+      ],
+      "forces_on_object_N": [
+        [
+          -7.392259913187765,
+          -5.176116115619528,
+          5.414569833323753
+        ],
+        [
+          7.392259913187768,
+          -5.176116115619528,
+          5.414569833323756
+        ],
+        [
+          5.176116186330204,
+          5.176116115619523,
+          4.392080166676244
+        ],
+        [
+          -5.176116186330207,
+          5.1761161156195294,
+          4.392080166676248
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.8302340411096425,
+        0.8302340411096425,
+        0.30744561466733733,
+        0.3074456146673375
+      ],
+      "normal_total_N": 32.688833433333336,
+      "max_force_balance_residual_N": 3.552713678800501e-15,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        5.414569833323753,
+        5.414569833323756,
+        4.392080166676244,
+        4.392080166676248
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        18.04856611107918,
+        18.048566111079186,
+        14.640267272254148,
+        14.640267272254158
+      ],
+      "forces_on_object_N": [
+        [
+          -14.78451982637553,
+          -10.352232231239055,
+          10.829139666647507
+        ],
+        [
+          14.784519826375536,
+          -10.352232231239055,
+          10.829139666647512
+        ],
+        [
+          10.352232301949728,
+          10.352232231239045,
+          8.784160333352489
+        ],
+        [
+          -10.352232301949732,
+          10.352232231239057,
+          8.784160333352494
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.660468082219285,
+        1.660468082219285,
+        0.6148912263346745,
+        0.6148912263346747
+      ],
+      "normal_total_N": 65.37766676666666,
+      "max_force_balance_residual_N": 8.881784197001252e-15,
+      "max_moment_balance_residual_Nm": 2.3078876263670005e-16,
+      "friction_norms_N": [
+        10.829139666647507,
+        10.829139666647512,
+        8.784160333352489,
+        8.784160333352494
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        0,
+        -1
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        18.04856611107918,
+        18.048566111079186,
+        14.640267272254148,
+        14.640267272254158
+      ],
+      "forces_on_object_N": [
+        [
+          -14.78451982637553,
+          -10.352232231239055,
+          10.829139666647507
+        ],
+        [
+          14.784519826375536,
+          -10.352232231239055,
+          10.829139666647512
+        ],
+        [
+          10.352232301949728,
+          10.352232231239045,
+          8.784160333352489
+        ],
+        [
+          -10.352232301949732,
+          10.352232231239057,
+          8.784160333352494
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.660468082219285,
+        1.660468082219285,
+        0.6148912263346745,
+        0.6148912263346747
+      ],
+      "normal_total_N": 65.37766676666666,
+      "max_force_balance_residual_N": 8.881784197001252e-15,
+      "max_moment_balance_residual_Nm": 2.3078876263670005e-16,
+      "friction_norms_N": [
+        10.829139666647507,
+        10.829139666647512,
+        8.784160333352489,
+        8.784160333352494
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.000000000000003,
+        2.0,
+        8.81304341582606,
+        8.813043415826062
+      ],
+      "forces_on_object_N": [
+        [
+          -2.3265958121992427,
+          -0.16417041955530234,
+          7.34788079488413e-17
+        ],
+        [
+          2.3265958121992387,
+          -0.16417041955530165,
+          -2.2043642384652356e-16
+        ],
+        [
+          2.4927051048888265,
+          9.970820419555299,
+          -9.713578868944235e-16
+        ],
+        [
+          -2.4927051048888225,
+          9.9708204195553,
+          3.2378596229814126e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000036,
+        0.21999999999999997,
+        0.5287826049495638,
+        0.5287826049495638
+      ],
+      "normal_total_N": 21.626086831652124,
+      "max_force_balance_residual_N": 3.552713678800501e-15,
+      "max_moment_balance_residual_Nm": 5.551115123125783e-17,
+      "friction_norms_N": [
+        1.200000000000002,
+        1.1999999999999997,
+        5.287826049495637,
+        5.287826049495638
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.000000000000003,
+        2.0,
+        8.81304341582606,
+        8.813043415826062
+      ],
+      "forces_on_object_N": [
+        [
+          -2.3265958121992427,
+          -0.16417041955530234,
+          7.34788079488413e-17
+        ],
+        [
+          2.3265958121992387,
+          -0.16417041955530165,
+          -2.2043642384652356e-16
+        ],
+        [
+          2.4927051048888265,
+          9.970820419555299,
+          -9.713578868944235e-16
+        ],
+        [
+          -2.4927051048888225,
+          9.9708204195553,
+          3.2378596229814126e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.22000000000000036,
+        0.21999999999999997,
+        0.5287826049495638,
+        0.5287826049495638
+      ],
+      "normal_total_N": 21.626086831652124,
+      "max_force_balance_residual_N": 3.552713678800501e-15,
+      "max_moment_balance_residual_Nm": 5.551115123125783e-17,
+      "friction_norms_N": [
+        1.200000000000002,
+        1.1999999999999997,
+        5.287826049495637,
+        5.287826049495638
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0000000000000053,
+        2.0,
+        17.48097931047988,
+        17.48097931047989
+      ],
+      "forces_on_object_N": [
+        [
+          -2.3265958121992454,
+          -0.16417041955530254,
+          7.347880794884139e-17
+        ],
+        [
+          2.3265958121992387,
+          -0.16417041955530165,
+          -2.2043642384652356e-16
+        ],
+        [
+          4.9443676048888285,
+          19.7774704195553,
+          -1.926722282268626e-15
+        ],
+        [
+          -4.944367604888821,
+          19.777470419555307,
+          6.42240760756209e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.2200000000000006,
+        0.21999999999999997,
+        1.0488587586287932,
+        1.0488587586287932
+      ],
+      "normal_total_N": 38.96195862095978,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 8.229169805253345e-17,
+      "friction_norms_N": [
+        1.2000000000000033,
+        1.1999999999999997,
+        10.48858758628793,
+        10.488587586287933
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        2.0000000000000053,
+        2.0,
+        17.48097931047988,
+        17.48097931047989
+      ],
+      "forces_on_object_N": [
+        [
+          -2.3265958121992454,
+          -0.16417041955530254,
+          7.347880794884139e-17
+        ],
+        [
+          2.3265958121992387,
+          -0.16417041955530165,
+          -2.2043642384652356e-16
+        ],
+        [
+          4.9443676048888285,
+          19.7774704195553,
+          -1.926722282268626e-15
+        ],
+        [
+          -4.944367604888821,
+          19.777470419555307,
+          6.42240760756209e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        0.2200000000000006,
+        0.21999999999999997,
+        1.0488587586287932,
+        1.0488587586287932
+      ],
+      "normal_total_N": 38.96195862095978,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 8.229169805253345e-17,
+      "friction_norms_N": [
+        1.2000000000000033,
+        1.1999999999999997,
+        10.48858758628793,
+        10.488587586287933
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        11.18219100761365,
+        2.0,
+        2.0,
+        8.111791166542785
+      ],
+      "forces_on_object_N": [
+        [
+          -11.95155386813005,
+          -2.4269672460061398,
+          2.8207828342774027e-16
+        ],
+        [
+          0.9500123649567287,
+          -2.130135325848882,
+          7.347880794884119e-17
+        ],
+        [
+          0.5656855694637873,
+          2.2627415552824033,
+          -2.279396731035714e-16
+        ],
+        [
+          -9.17744406629046,
+          2.2943610165726174,
+          -8.940671178712556e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.2300410108375017,
+        0.22000000000000003,
+        0.12000000000000002,
+        0.4867074699925672
+      ],
+      "normal_total_N": 23.293982174156437,
+      "max_force_balance_residual_N": 3.552713678800501e-15,
+      "max_moment_balance_residual_Nm": 5.551115123125783e-17,
+      "friction_norms_N": [
+        4.867074495551241,
+        1.2,
+        1.199999795625565,
+        4.867074699925671
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 1.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        11.18219100761365,
+        2.0,
+        2.0,
+        8.111791166542785
+      ],
+      "forces_on_object_N": [
+        [
+          -11.95155386813005,
+          -2.4269672460061398,
+          2.8207828342774027e-16
+        ],
+        [
+          0.9500123649567287,
+          -2.130135325848882,
+          7.347880794884119e-17
+        ],
+        [
+          0.5656855694637873,
+          2.2627415552824033,
+          -2.279396731035714e-16
+        ],
+        [
+          -9.17744406629046,
+          2.2943610165726174,
+          -8.940671178712556e-16
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        1.2300410108375017,
+        0.22000000000000003,
+        0.12000000000000002,
+        0.4867074699925672
+      ],
+      "normal_total_N": 23.293982174156437,
+      "max_force_balance_residual_N": 3.552713678800501e-15,
+      "max_moment_balance_residual_Nm": 5.551115123125783e-17,
+      "friction_norms_N": [
+        4.867074495551241,
+        1.2,
+        1.199999795625565,
+        4.867074699925671
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.0,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        21.439553247418516,
+        2.0,
+        2.0,
+        15.709780849265794
+      ],
+      "forces_on_object_N": [
+        [
+          -22.96870982326788,
+          -4.576003257221679,
+          6.663034033252688e-16
+        ],
+        [
+          0.9500123649567287,
+          -2.130135325848882,
+          7.347880794884119e-17
+        ],
+        [
+          0.5656855694637937,
+          2.2627415552823966,
+          -2.0900597448827592e-16
+        ],
+        [
+          -17.773588111152645,
+          4.443397027788166,
+          -1.7315039549123766e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.358350857216037,
+        0.22000000000000003,
+        0.12000000000000001,
+        0.9425868509559479
+      ],
+      "normal_total_N": 41.14933409668431,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        9.425868305185034,
+        1.2,
+        1.199999795625556,
+        9.425868509559477
+      ]
+    },
+    {
+      "contact_model": "fixed_angle_pad_at_80mm_study_pose",
+      "mu": 0.6,
+      "load_direction_head": [
+        1,
+        0,
+        0
+      ],
+      "payload_kg": 2.0,
+      "design_factor": 2.0,
+      "output_torque_cap_Nm": 3.7,
+      "feasible": true,
+      "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "normal_N": [
+        21.439553247418516,
+        2.0,
+        2.0,
+        15.709780849265794
+      ],
+      "forces_on_object_N": [
+        [
+          -22.96870982326788,
+          -4.576003257221679,
+          6.663034033252688e-16
+        ],
+        [
+          0.9500123649567287,
+          -2.130135325848882,
+          7.347880794884119e-17
+        ],
+        [
+          0.5656855694637937,
+          2.2627415552823966,
+          -2.0900597448827592e-16
+        ],
+        [
+          -17.773588111152645,
+          4.443397027788166,
+          -1.7315039549123766e-15
+        ]
+      ],
+      "finger_joint_equilibrium_Nm": [
+        2.358350857216037,
+        0.22000000000000003,
+        0.12000000000000001,
+        0.9425868509559479
+      ],
+      "normal_total_N": 41.14933409668431,
+      "max_force_balance_residual_N": 7.105427357601002e-15,
+      "max_moment_balance_residual_Nm": 1.1102230246251565e-16,
+      "friction_norms_N": [
+        9.425868305185034,
+        1.2,
+        1.199999795625556,
+        9.425868509559477
+      ]
+    }
+  ],
+  "analytic_regression": {
+    "feasible": true,
+    "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "normal_N": [
+      27.07284916661877,
+      27.072849166618777,
+      21.96040088338121,
+      21.960400883381226
+    ],
+    "forces_on_object_N": [
+      [
+        -22.176779739563298,
+        -15.528348346858584,
+        10.829139666647508
+      ],
+      [
+        22.1767797395633,
+        -15.528348346858582,
+        10.829139666647512
+      ],
+      [
+        15.528348417569244,
+        15.528348346858568,
+        8.784160333352487
+      ],
+      [
+        -15.528348417569244,
+        15.52834834685858,
+        8.784160333352492
+      ]
+    ],
+    "finger_joint_equilibrium_Nm": [
+      2.4365564249956897,
+      2.4365564249956897,
+      1.5372280618366854,
+      1.537228061836686
+    ],
+    "normal_total_N": 98.06650009999998,
+    "max_force_balance_residual_N": 1.7763568394002505e-14,
+    "max_moment_balance_residual_Nm": 2.559967483773447e-16,
+    "friction_norms_N": [
+      10.829139666647508,
+      10.829139666647512,
+      8.784160333352487,
+      8.784160333352492
+    ]
+  },
+  "zero_friction_infeasible_check": {
+    "feasible": false,
+    "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+  },
+  "limits": [
+    "actual two pads per finger are replaced by one nominal point contact; contact location must be proven on an object",
+    "actual 3D contact positions enter force and moment equilibrium; this study has coplanar nominal contacts at z110mm",
+    "flat-pad case is a local compatible-contact geometry assumption, not proof that a cylinder contacts those points",
+    "angled CAD pads match radial normal only at the specified pose; real object faces, two-pad contact and deformation remain unverified",
+    "3.7 Nm is catalog gearbox output, not verified motor zero-speed capability or belt output",
+    "3.0 Nm is a comparison cap, not certified thermal or transmission derating",
+    "infeasible is relative to the conservative 16-ray cone and stated contact/torque model",
+    "zero torque bias excludes finger weight, inertia and joint friction; these must be added before actuator release",
+    "no robustness to COM error, slip, wear, acceleration beyond stated factor or contact loss"
+  ]
+}
