@@ -47,3 +47,13 @@ R2 used the built-in imagegen tool. The initial head-state board received four a
 The generated head-state design guided the count study. The existing A FIELD board supplied body/material language, and the new head-state design supplied head identity for the modular-arm board. A targeted edit to the head-state board clarified that the cameras and display roll with the petals. The roll miniatures are qualitative: they do not establish equal positive/negative angles or travel limits.
 
 All three boards are 1536 × 1024 PNGs. Asset sizes and SHA-256 hashes are in [manifest.json](concepts/manifest.json). The visual review checks petal count, paired silhouette, two local upper/lower cameras, screen-drawn ring, grasp versus empty closure, and modular boundary. It does not verify a closure trajectory, seven-axis topology, four-independent-coordinate mechanism, or connector specification.
+
+
+## R3: selected silhouette and closure review
+
+| Asset | Method and exact inputs | Scope |
+| --- | --- | --- |
+| [10-closure-study](concepts/10-r3-closure-study.png) | Built-in imagegen: [initial prompt](../prompts/10-r3-closure-study.txt), [optical/stow correction](../prompts/10-r3-closure-refinement.txt), [count correction](../prompts/10-r3-count-refinement.txt) | The [user-supplied crop](references/r3-approved-open-reference.png) of the R2 open head is the actual identity/style input. Adds proposed same-face proud pads, upper/lower camera tilt, and a longer stow-envelope study. |
+| [11-geometry-check](concepts/11-r3-geometry-check.png) | NumPy geometry and Matplotlib plotting, using [published parameters/results](analysis/r3-closure-results.json) and the [documented equations](r3-closure-study.md) | Computed views of one illustrative box model; not a reconstruction of the AI artwork or a validated head. |
+
+The AI board required targeted corrections to optical-axis direction and an extra apparent finger in the stow inset. Its lower-left panel is explicitly NOT FINAL CLOSURE. The grasp sketch communicates contact-pad placement and optical protection intent; it does not establish contact forces, friction, a rigid-object pose, or force closure. The computed geometry figure is the evidence for the numerical claims; the art is not used to verify them.

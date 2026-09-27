@@ -43,3 +43,12 @@ The inner pads, structural finger frames, recessed display, and grasp-priority b
 The original game close-up suggests four broad panels plus a narrower upper panel. The current four-finger design is this project's choice, not a claim that the original Odradek has four fingers. Dots and patterns visible in game images do not establish an actual programmable LED implementation; the circular display is our design proposal.
 
 R2's mechanical assignments, modular boundary, two cameras, and software-drawn screen ring come from the user's requirements and this project's stated assumptions. The references do not verify those mechanisms.
+
+
+## R3 geometric and viewing study
+
+The selected silhouette is the user's crop of this project's generated R2 open-head image. R3 preserves that visual identity. Its geometric dimensions are arbitrary normalized study parameters, not measurements inferred from the image.
+
+- [OpenCV fisheye model and calibration](https://docs.opencv.org/4.13.0/db/d58/group__calib3d__fisheye.html): camera-coordinate ray angles, projection, calibration and rectification. The outward-tilt overlap formula is this project's own two-dimensional derivation.
+- [Basler depth and occlusion guidance](https://docs.baslerweb.com/stereovisard/tutorials/image_tuning/depth_tuning): a region visible in only one camera cannot be assumed to support stereo matching.
+- [Robotiq grasp-mode explanation](https://assets.robotiq.com/website-assets/support_documents/document/online/2F-85_2F-140_TM_InstructionManual_HTML5_20190206.zip/2F-85_2F-140_TM_InstructionManual_HTML5/Content/1.%20General_Presentation.htm): contact region and palm support matter for encompassing grasps. No mechanism or performance figures are transferred to this project.

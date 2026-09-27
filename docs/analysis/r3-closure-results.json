@@ -1,0 +1,512 @@
+{
+  "status": "ILLUSTRATIVE_PARAMETRIC_BOX_MODEL_NOT_SELECTED_CAD",
+  "normalization": "D is an arbitrary length unit, not a specified screen size",
+  "parameters": {
+    "root_radius_D": 0.7,
+    "thickness_D": 0.04,
+    "fingers": [
+      {
+        "id": "UR",
+        "azimuth_deg": 35,
+        "length_D": 1.45,
+        "width_D": 0.35
+      },
+      {
+        "id": "UL",
+        "azimuth_deg": 145,
+        "length_D": 1.45,
+        "width_D": 0.35
+      },
+      {
+        "id": "LL",
+        "azimuth_deg": 225,
+        "length_D": 1.0,
+        "width_D": 0.24
+      },
+      {
+        "id": "LR",
+        "azimuth_deg": 315,
+        "length_D": 1.0,
+        "width_D": 0.24
+      }
+    ]
+  },
+  "method": "Oriented-box separating axis test, 15 axes; 61 x 61 independent angle samples per finger pair; 6 pairs per candidate. SAT margin is a separating projection, not Euclidean clearance. Continuous-domain sufficient condition uses nearest-grid motion bound 2*rho*sin(h/4) for each rotating box, rho=sqrt(L^2+(w/2)^2+(t/2)^2), h=q_limit/60 in radians. Every pair has a positive bound for a model-domain pass. No joints, contact pads, cables, palm, cameras, objects, deformation or tolerances modelled.",
+  "results": [
+    {
+      "r_stop_D": 0.06,
+      "stop_angles_deg": [
+        116.1919197225128,
+        116.1919197225128,
+        129.79181949955722,
+        129.79181949955722
+      ],
+      "tip_depths_D": [
+        1.3011149065320866,
+        1.3011149065320866,
+        0.768374908491942,
+        0.768374908491942
+      ],
+      "pairs": [
+        {
+          "pair": "UR-UL",
+          "final_sat_margin_D": -0.09691910461542091,
+          "sampled_overlap_count": 6,
+          "min_sat_margin_D": -0.09691910461542091,
+          "worst_angles_deg": [
+            116.1919197225128,
+            116.1919197225128
+          ],
+          "pair_motion_bound_D": 0.049368023997419984,
+          "continuous_separation_lower_bound_D": -0.1462871286128409,
+          "continuous_nonintersection_sufficient_condition": false
+        },
+        {
+          "pair": "UR-LL",
+          "final_sat_margin_D": 0.295372354702584,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.295372354702584,
+          "worst_angles_deg": [
+            116.1919197225128,
+            129.79181949955722
+          ],
+          "pair_motion_bound_D": 0.04370036466441907,
+          "continuous_separation_lower_bound_D": 0.2516719900381649,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UR-LR",
+          "final_sat_margin_D": 0.14554377851730405,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.08172299820464601,
+          "worst_angles_deg": [
+            116.1919197225128,
+            114.6494405579422
+          ],
+          "pair_motion_bound_D": 0.04370036466441907,
+          "continuous_separation_lower_bound_D": 0.03802263354022695,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LL",
+          "final_sat_margin_D": 0.145543778517304,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.0817229982046459,
+          "worst_angles_deg": [
+            116.1919197225128,
+            114.6494405579422
+          ],
+          "pair_motion_bound_D": 0.04370036466441907,
+          "continuous_separation_lower_bound_D": 0.038022633540226836,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LR",
+          "final_sat_margin_D": 0.2953723547025839,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.2953723547025839,
+          "worst_angles_deg": [
+            116.1919197225128,
+            129.79181949955722
+          ],
+          "pair_motion_bound_D": 0.04370036466441907,
+          "continuous_separation_lower_bound_D": 0.2516719900381648,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "LL-LR",
+          "final_sat_margin_D": -0.07429449450951628,
+          "sampled_overlap_count": 9,
+          "min_sat_margin_D": -0.07429449450951628,
+          "worst_angles_deg": [
+            129.79181949955722,
+            129.79181949955722
+          ],
+          "pair_motion_bound_D": 0.03803270533141815,
+          "continuous_separation_lower_bound_D": -0.11232719984093442,
+          "continuous_nonintersection_sufficient_condition": false
+        }
+      ]
+    },
+    {
+      "r_stop_D": 0.12,
+      "stop_angles_deg": [
+        113.57817847820183,
+        113.57817847820183,
+        125.45054263917542,
+        125.45054263917542
+      ],
+      "tip_depths_D": [
+        1.3289469515371934,
+        1.3289469515371934,
+        0.814616474176652,
+        0.814616474176652
+      ],
+      "pairs": [
+        {
+          "pair": "UR-UL",
+          "final_sat_margin_D": -0.025665564791182333,
+          "sampled_overlap_count": 1,
+          "min_sat_margin_D": -0.025665564791182333,
+          "worst_angles_deg": [
+            113.57817847820183,
+            113.57817847820183
+          ],
+          "pair_motion_bound_D": 0.04825751413863554,
+          "continuous_separation_lower_bound_D": -0.07392307892981788,
+          "continuous_nonintersection_sufficient_condition": false
+        },
+        {
+          "pair": "UR-LL",
+          "final_sat_margin_D": 0.37486149787842826,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.37486149787842826,
+          "worst_angles_deg": [
+            113.57817847820183,
+            125.45054263917542
+          ],
+          "pair_motion_bound_D": 0.042509068710818644,
+          "continuous_separation_lower_bound_D": 0.3323524291676096,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UR-LR",
+          "final_sat_margin_D": 0.16107197630220163,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.12516955387374884,
+          "worst_angles_deg": [
+            113.57817847820183,
+            110.8146459979383
+          ],
+          "pair_motion_bound_D": 0.042509068710818644,
+          "continuous_separation_lower_bound_D": 0.0826604851629302,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LL",
+          "final_sat_margin_D": 0.16107197630220146,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.12516955387374873,
+          "worst_angles_deg": [
+            113.57817847820183,
+            110.8146459979383
+          ],
+          "pair_motion_bound_D": 0.042509068710818644,
+          "continuous_separation_lower_bound_D": 0.08266048516293009,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LR",
+          "final_sat_margin_D": 0.3748614978784282,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.3748614978784282,
+          "worst_angles_deg": [
+            113.57817847820183,
+            125.45054263917542
+          ],
+          "pair_motion_bound_D": 0.042509068710818644,
+          "continuous_separation_lower_bound_D": 0.33235242916760954,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "LL-LR",
+          "final_sat_margin_D": -0.016292329483533208,
+          "sampled_overlap_count": 1,
+          "min_sat_margin_D": -0.016292329483533208,
+          "worst_angles_deg": [
+            125.45054263917542,
+            125.45054263917542
+          ],
+          "pair_motion_bound_D": 0.036760623283001746,
+          "continuous_separation_lower_bound_D": -0.053052952766534954,
+          "continuous_nonintersection_sufficient_condition": false
+        }
+      ]
+    },
+    {
+      "r_stop_D": 0.18,
+      "stop_angles_deg": [
+        111.01551199434395,
+        111.01551199434395,
+        121.33225149759427,
+        121.33225149759427
+      ],
+      "tip_depths_D": [
+        1.3535508856337835,
+        1.3535508856337835,
+        0.8541662601625049,
+        0.8541662601625049
+      ],
+      "pairs": [
+        {
+          "pair": "UR-UL",
+          "final_sat_margin_D": 0.05161866204319565,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.05161866204319565,
+          "worst_angles_deg": [
+            111.01551199434395,
+            111.01551199434395
+          ],
+          "pair_motion_bound_D": 0.04716870290825185,
+          "continuous_separation_lower_bound_D": 0.0044499591349438025,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UR-LL",
+          "final_sat_margin_D": 0.4611641676372505,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.4611641676372505,
+          "worst_angles_deg": [
+            111.01551199434395,
+            121.33225149759427
+          ],
+          "pair_motion_bound_D": 0.04136129004315155,
+          "continuous_separation_lower_bound_D": 0.41980287759409896,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UR-LR",
+          "final_sat_margin_D": 0.18112406000975487,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.16679069811963232,
+          "worst_angles_deg": [
+            111.01551199434395,
+            109.19902634783486
+          ],
+          "pair_motion_bound_D": 0.04136129004315155,
+          "continuous_separation_lower_bound_D": 0.1254294080764808,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LL",
+          "final_sat_margin_D": 0.18112406000975484,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.1667906981196321,
+          "worst_angles_deg": [
+            111.01551199434395,
+            109.19902634783486
+          ],
+          "pair_motion_bound_D": 0.04136129004315155,
+          "continuous_separation_lower_bound_D": 0.12542940807648056,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LR",
+          "final_sat_margin_D": 0.46116416763725043,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.46116416763725043,
+          "worst_angles_deg": [
+            111.01551199434395,
+            121.33225149759427
+          ],
+          "pair_motion_bound_D": 0.04136129004315155,
+          "continuous_separation_lower_bound_D": 0.4198028775940989,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "LL-LR",
+          "final_sat_margin_D": 0.047901053183807774,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.047901053183807774,
+          "worst_angles_deg": [
+            121.33225149759427,
+            121.33225149759427
+          ],
+          "pair_motion_bound_D": 0.03555387717805124,
+          "continuous_separation_lower_bound_D": 0.012347176005756536,
+          "continuous_nonintersection_sufficient_condition": true
+        }
+      ]
+    },
+    {
+      "r_stop_D": 0.24,
+      "stop_angles_deg": [
+        108.49617696977072,
+        108.49617696977072,
+        117.3871075026539,
+        117.3871075026539
+      ],
+      "tip_depths_D": [
+        1.3750999963639008,
+        1.3750999963639008,
+        0.8879189152169246,
+        0.8879189152169246
+      ],
+      "pairs": [
+        {
+          "pair": "UR-UL",
+          "final_sat_margin_D": 0.13132790079148732,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.13132790079148732,
+          "worst_angles_deg": [
+            108.49617696977072,
+            108.49617696977072
+          ],
+          "pair_motion_bound_D": 0.04609830050591831,
+          "continuous_separation_lower_bound_D": 0.085229600285569,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UR-LL",
+          "final_sat_margin_D": 0.5528737229584726,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.5528737229584726,
+          "worst_angles_deg": [
+            108.49617696977072,
+            117.3871075026539
+          ],
+          "pair_motion_bound_D": 0.04024808217512875,
+          "continuous_separation_lower_bound_D": 0.5126256407833438,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UR-LR",
+          "final_sat_margin_D": 0.21254884121418338,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.20892609077594854,
+          "worst_angles_deg": [
+            108.49617696977072,
+            105.6483967523885
+          ],
+          "pair_motion_bound_D": 0.04024808217512875,
+          "continuous_separation_lower_bound_D": 0.16867800860081977,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LL",
+          "final_sat_margin_D": 0.21254884121418316,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.20892609077594845,
+          "worst_angles_deg": [
+            108.49617696977072,
+            105.6483967523885
+          ],
+          "pair_motion_bound_D": 0.04024808217512875,
+          "continuous_separation_lower_bound_D": 0.16867800860081972,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LR",
+          "final_sat_margin_D": 0.5528737229584724,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.5528737229584724,
+          "worst_angles_deg": [
+            108.49617696977072,
+            117.3871075026539
+          ],
+          "pair_motion_bound_D": 0.04024808217512875,
+          "continuous_separation_lower_bound_D": 0.5126256407833436,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "LL-LR",
+          "final_sat_margin_D": 0.11201075613822975,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.11201075613822975,
+          "worst_angles_deg": [
+            117.3871075026539,
+            117.3871075026539
+          ],
+          "pair_motion_bound_D": 0.03439786384433919,
+          "continuous_separation_lower_bound_D": 0.07761289229389057,
+          "continuous_nonintersection_sufficient_condition": true
+        }
+      ]
+    },
+    {
+      "r_stop_D": 0.3,
+      "stop_angles_deg": [
+        106.0133944239485,
+        106.0133944239485,
+        113.57817847820183,
+        113.57817847820183
+      ],
+      "tip_depths_D": [
+        1.3937359864766354,
+        1.3937359864766354,
+        0.916515138991168,
+        0.916515138991168
+      ],
+      "pairs": [
+        {
+          "pair": "UR-UL",
+          "final_sat_margin_D": 0.21134517403462022,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.21134517403462022,
+          "worst_angles_deg": [
+            106.0133944239485,
+            106.0133944239485
+          ],
+          "pair_motion_bound_D": 0.04504342682302396,
+          "continuous_separation_lower_bound_D": 0.16630174721159627,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UR-LL",
+          "final_sat_margin_D": 0.6488109611277366,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.6488109611277366,
+          "worst_angles_deg": [
+            106.0133944239485,
+            113.57817847820183
+          ],
+          "pair_motion_bound_D": 0.03916259430343929,
+          "continuous_separation_lower_bound_D": 0.6096483668242973,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UR-LR",
+          "final_sat_margin_D": 0.25477945868887264,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.24929210133609137,
+          "worst_angles_deg": [
+            106.0133944239485,
+            104.11333027168502
+          ],
+          "pair_motion_bound_D": 0.03916259430343929,
+          "continuous_separation_lower_bound_D": 0.21012950703265207,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LL",
+          "final_sat_margin_D": 0.25477945868887264,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.24929210133609137,
+          "worst_angles_deg": [
+            106.0133944239485,
+            104.11333027168502
+          ],
+          "pair_motion_bound_D": 0.03916259430343929,
+          "continuous_separation_lower_bound_D": 0.21012950703265207,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "UL-LR",
+          "final_sat_margin_D": 0.6488109611277368,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.6488109611277368,
+          "worst_angles_deg": [
+            106.0133944239485,
+            113.57817847820183
+          ],
+          "pair_motion_bound_D": 0.03916259430343929,
+          "continuous_separation_lower_bound_D": 0.6096483668242976,
+          "continuous_nonintersection_sufficient_condition": true
+        },
+        {
+          "pair": "LL-LR",
+          "final_sat_margin_D": 0.1737680794170434,
+          "sampled_overlap_count": 0,
+          "min_sat_margin_D": 0.1737680794170434,
+          "worst_angles_deg": [
+            113.57817847820183,
+            113.57817847820183
+          ],
+          "pair_motion_bound_D": 0.03328176178385462,
+          "continuous_separation_lower_bound_D": 0.14048631763318878,
+          "continuous_nonintersection_sufficient_condition": true
+        }
+      ]
+    }
+  ]
+}

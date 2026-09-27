@@ -6,21 +6,29 @@
 
 Odradek is an independent Auromix robotics project sharing design material for noncommercial research and hobby use inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
 
-**Stage: R2 industrial design concepts.** This repository contains AI-assisted artwork, design records, references, and exact prompts. It does not yet contain manufacturing CAD, a validated seven-axis mechanism, firmware, or tested hardware. Payload, reach, cost, and performance targets remain open.
+**Stage: R3 silhouette selection and closure study.** This repository contains AI-assisted artwork, design records, references, and exact prompts. It does not yet contain manufacturing CAD, a validated seven-axis mechanism, firmware, or tested hardware. Payload, reach, cost, and performance targets remain open.
 
-## R2: a detachable four-petal head
+## R3: keep the silhouette, resolve closure and contact
 
-![Four-petal head: open, grasping, closed, and rolling](docs/concepts/09-r2-head-states.png)
+The larger upper / smaller lower, left-right mirrored open silhouette is selected. The upper fisheye tilts upward and the lower downward; the amount remains open pending near-grasp visibility checks.
+
+The study identifies three issues: unequal rigid lengths do not fold into one short common-depth pod, wide plates can collide before their tips reach the center, and forward curling turns the original luminous face toward the object. The leading candidate keeps each plate intact, uses different limits and real depth offsets, and places proud contact pads / structural borders on the light-facing side with recessed windows.
+
+The [geometry study](docs/r3-closure-study.md) includes counterexamples and a continuous-domain separation result for an illustrative four-box model. This does not validate the full head or a stable grasp. The artwork's stow panel is an envelope study, not a final closed pose.
+
+## Current direction: a detachable four-petal head
+
+![R3 silhouette, camera, and contact study](docs/concepts/10-r3-closure-study.png)
 
 - **Seven arm DOFs and four head DOFs.** J7 rotates the whole head about the normal to its front face. Each luminous finger has one independent opening coordinate.
 - **Two close petals on each side, with left/right mirror symmetry and different upper/lower proportions.** Longer upper and shorter lower petals avoid 180-degree rotational symmetry. The grouping is inspired by the XPENG logo composition; it does not require mechanically coupled pairs.
-- **The light petals are the fingers.** Inner pads contact objects, a frame carries load, and outer or edge windows emit light. Empty full closure is a protective storage pose that may occlude the screen and cameras.
-- **One circular LED display in the center.** Ring graphics use pixels at its perimeter. The four fingers provide lighting. Two fisheye cameras sit above and below the screen in the head's local frame and rotate with it.
+- **The light petals are the fingers.** Forward curling turns the light face inward. Proud pads / structural borders on that same side are proposed to contact the object before the recessed windows. Empty full closure must reach a mechanical limit with real clearances; it does not imply a sealed pod or four tips meeting at one point.
+- **One circular LED display in the center.** Ring graphics use pixels at its perimeter. The four fingers provide lighting. Two fisheye cameras sit above and below the screen, tilt upward/downward respectively, and rotate with the head.
 - **The detachable boundary is after the J7 output flange.** Four finger actuators and local control are proposed within the head; connection specifications remain open.
 
 ![Arm integration, detachable interface, and J7 axis](docs/concepts/08-r2-modular-arm.png)
 
-The roll sketches show finite-angle pose intent without defining travel. Open, grasping, and fully closed geometry must be reconciled in one CAD model. Mechanical breathing is limited to empty, task-permitted operation; expression must not change an active grasp.
+The roll sketches show finite-angle pose intent without defining travel. Open, grasping, and fully closed geometry must be reconciled in one CAD model; the R2 compact protective pod is now a historical assumption. Mechanical breathing is limited to empty, task-permitted operation; expression must not change an active grasp.
 
 ## Three, four, or five petals
 
@@ -40,7 +48,7 @@ Petal count is not a DOF count. Three- and five-petal variants would require the
 
 ## Process and next steps
 
-Research → R0 form exploration → R1 luminous fingers → **R2 7+4 DOF and modular head** → task and scale definition → mechanism samples and arm kinematics → engineering and task validation.
+Research → R0 form exploration → R1 luminous fingers → R2 7+4 DOF and modular head → **R3 silhouette, closure, and camera study** → task and scale definition → mechanism samples and arm kinematics → engineering and task validation.
 
 The [gallery](docs/gallery.html) retains original R0/R1 artwork and exact prompts for traceability. R1's separate physical light annulus and finger-count candidates are superseded by R2.
 
