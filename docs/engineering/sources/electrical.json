@@ -24,7 +24,7 @@
     "status": "cross_section_screening_only_not_a_harness_release",
     "inputs": [
       {
-        "role": "EtherCAT 100BASE-T",
+        "role": "EtherCAT 100BASE-TX",
         "count": 1,
         "od_mm": 7.1,
         "basis": "LAPP 2170941 max OD",
@@ -47,7 +47,13 @@
         "role": "24V auxiliary conductors",
         "count": 2,
         "od_mm": 2.0,
-        "basis": "assumed insulated-wire diameter; not a selected wire"
+        "basis": "assumed insulated-wire diameter for logic/IO auxiliary only; does not include finger motor current"
+      },
+      {
+        "role": "24V finger-motor bus conductors",
+        "count": 2,
+        "od_mm": 3.4,
+        "basis": "assumed insulated-wire diameter for separate 24V motor feed; not a selected gauge or ampacity approval"
       },
       {
         "role": "hardwired safety conductors",
@@ -62,16 +68,16 @@
         "basis": "assumed insulated-wire diameter; bonding design not finalized"
       }
     ],
-    "sum_wire_area_mm2": 95.27665120174444,
+    "sum_wire_area_mm2": 113.43505673949345,
     "design_fill_fraction_assumption": 0.4,
-    "minimum_bore_area_only_at_assumed_fill_mm": 17.414792562646273,
+    "minimum_bore_area_only_at_assumed_fill_mm": 19.001973581709873,
     "actual_actuator_holes": [
       {
         "actuator": "RH25",
         "bore_mm": 22,
         "bore_source": "root mechanical selection, hole dimensions not independently reread here",
         "gross_bore_area_mm2": 380.132711084365,
-        "gross_fill_fraction": 0.25064049586776854,
+        "gross_fill_fraction": 0.2984090909090909,
         "gross_area_less_than_wire_area": false,
         "note": "liner, connector envelope, bends, tolerances, wear clearances and circle packing omitted"
       },
@@ -80,8 +86,8 @@
         "bore_mm": 12,
         "bore_source": "root mechanical selection, hole dimensions not independently reread here",
         "gross_bore_area_mm2": 113.09733552923255,
-        "gross_fill_fraction": 0.8424305555555555,
-        "gross_area_less_than_wire_area": false,
+        "gross_fill_fraction": 1.0029861111111111,
+        "gross_area_less_than_wire_area": true,
         "note": "liner, connector envelope, bends, tolerances, wear clearances and circle packing omitted"
       },
       {
@@ -89,8 +95,8 @@
         "bore_mm": 12,
         "bore_source": "root mechanical selection, hole dimensions not independently reread here",
         "gross_bore_area_mm2": 113.09733552923255,
-        "gross_fill_fraction": 0.8424305555555555,
-        "gross_area_less_than_wire_area": false,
+        "gross_fill_fraction": 1.0029861111111111,
+        "gross_area_less_than_wire_area": true,
         "note": "liner, connector envelope, bends, tolerances, wear clearances and circle packing omitted"
       },
       {
@@ -98,7 +104,7 @@
         "bore_mm": 10,
         "bore_source": "root mechanical selection, hole dimensions not independently reread here",
         "gross_bore_area_mm2": 78.53981633974483,
-        "gross_fill_fraction": 1.2130999999999998,
+        "gross_fill_fraction": 1.4443,
         "gross_area_less_than_wire_area": true,
         "note": "liner, connector envelope, bends, tolerances, wear clearances and circle packing omitted"
       }
@@ -384,5 +390,36 @@
       "kind": "manufacturer_or_standards_body_primary",
       "supports": "7.2 mm nominal and dynamic R10d; not smaller than selected LAPP robot candidate."
     }
-  ]
+  ],
+  "ethercat_topology_candidate": {
+    "master": "external IPC dedicated NIC",
+    "ordered_slaves": [
+      "J1",
+      "J2",
+      "J3",
+      "J4",
+      "J5",
+      "J6",
+      "J7",
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "HEAD-IO"
+    ],
+    "slave_count": 12,
+    "finger_drive_candidates": [
+      "4x FAULHABER MC3001B ET + verified adapter/backplane",
+      "4x maxon EPOS4 Micro 24/5 EtherCAT 654731"
+    ],
+    "head_io": "LAN9252 ESC; SPI PDI to STM32G474; LED drivers by local SPI; MCU is not a second EtherCAT master",
+    "head_internal_connections": 4,
+    "head_internal_connection_status": "logical adjacent-node segments; exact PHY/ports/backplane and pinout require selected board confirmation",
+    "separate_supplies": [
+      "48V arm power",
+      "24V finger motor power; source/protection/regen TBD",
+      "24V auxiliary logic/IO/stop"
+    ],
+    "safety_interfaces": "STO/SBC requirements only; RH certified implementation not established"
+  }
 }

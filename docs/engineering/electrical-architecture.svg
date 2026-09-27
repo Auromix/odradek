@@ -5,6 +5,7 @@
 <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,4.5 L0,9 z" fill="#246db0"/></marker>
 <marker id="arrow-video" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,4.5 L0,9 z" fill="#1a887e"/></marker>
 <marker id="arrow-orange" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,4.5 L0,9 z" fill="#bd651d"/></marker>
+<marker id="arrow-finger" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,4.5 L0,9 z" fill="#946d17"/></marker>
 <marker id="arrow-logic" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,4.5 L0,9 z" fill="#776ba1"/></marker>
 <marker id="arrow-red" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,4.5 L0,9 z" fill="#a7404b"/></marker>
 <marker id="arrow-muted" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L9,4.5 L0,9 z" fill="#516773"/></marker>
@@ -13,7 +14,7 @@
 <rect width="1800" height="1430" fill="#f4f6f7"/>
 <text x="44" y="54" class="head" text-anchor="start">ODRADEK / R4</text>
 <text x="360" y="54" class="head" text-anchor="start">电气拓扑与内走线约束</text>
-<text x="44" y="91" class="" text-anchor="start" style="fill:#516773">7-axis arm · 4 independent fingers · 2 cameras · external compute</text>
+<text x="44" y="91" class="" text-anchor="start" style="fill:#516773">12 EtherCAT slaves = 7 arm + 4 finger + 1 head I/O · 2 cameras · external compute</text>
 <rect x="1270" y="29" width="485" height="72" rx="8" fill="#fff0d1" stroke="#c79842" stroke-width="1.5"/>
 <text x="1290" y="58" class="label" text-anchor="start" style="fill:#825320">尚未冻结 · NOT FOR MANUFACTURE</text>
 <text x="1290" y="83" class="small" text-anchor="start" style="fill:#825320">2026-09-27  /  logical architecture, not a pinout</text>
@@ -26,15 +27,18 @@
 <rect x="63" y="222" width="317" height="99" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
 <text x="79" y="253" class="label" text-anchor="start">实时运动主机 / RT host</text>
 <text x="79" y="283" class="small" text-anchor="start" style="fill:#516773">C6015-0040 candidate</text>
-<rect x="63" y="364" width="317" height="81" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
-<text x="79" y="395" class="label" text-anchor="start">48 V 执行电源</text>
-<text x="79" y="425" class="small" text-anchor="start" style="fill:#516773">RSP-1000-48 candidate</text>
-<rect x="63" y="478" width="317" height="73" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
-<text x="79" y="509" class="label" text-anchor="start">24 V 辅助电源</text>
-<text x="79" y="539" class="small" text-anchor="start" style="fill:#516773">HDR-100-24 candidate</text>
-<rect x="63" y="583" width="317" height="92" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
-<text x="79" y="614" class="label" text-anchor="start">急停与停止逻辑</text>
-<text x="79" y="644" class="small" text-anchor="start" style="fill:#516773">PNOZ s5 candidate + integration</text>
+<rect x="63" y="351" width="317" height="66" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
+<text x="79" y="382" class="label" text-anchor="start">48 V 臂动力</text>
+<text x="79" y="412" class="small" text-anchor="start" style="fill:#516773">RSP-1000-48 candidate</text>
+<rect x="63" y="436" width="317" height="66" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
+<text x="79" y="467" class="label" text-anchor="start">24 V 指动力 / MOTOR</text>
+<text x="79" y="497" class="small" text-anchor="start" style="fill:#516773">Separate source / protection TBD</text>
+<rect x="63" y="521" width="317" height="66" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
+<text x="79" y="552" class="label" text-anchor="start">24 V 辅助 / AUX</text>
+<text x="79" y="582" class="small" text-anchor="start" style="fill:#516773">HDR-100-24; no finger motors</text>
+<rect x="63" y="623" width="317" height="67" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
+<text x="79" y="654" class="label" text-anchor="start">急停与停止要求</text>
+<text x="79" y="684" class="small" text-anchor="start" style="fill:#516773">PNOZ s5 candidate + integration</text>
 <rect x="63" y="722" width="317" height="94" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
 <text x="79" y="753" class="label" text-anchor="start">视觉主机 + 解串采集</text>
 <text x="79" y="783" class="small" text-anchor="start" style="fill:#516773">Jetson + ZED Link Duo / MAX96712</text>
@@ -84,16 +88,17 @@
 <path d="M 1385 272 H 1452" fill="none" stroke="#246db0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
 <text x="680" y="215" class="small" text-anchor="start" style="fill:#246db0">EtherCAT 100BASE-TX · IN / OUT · PDO / feedback</text>
 <rect x="1455" y="229" width="280" height="85" rx="8" fill="#edf4fa" stroke="#90b4d3" stroke-width="1.5"/>
-<text x="1472" y="260" class="small" text-anchor="start">头部 ESC + MCU</text>
-<text x="1472" y="287" class="small" text-anchor="start">4-axis command / state / LED</text>
+<text x="1472" y="260" class="small" text-anchor="start">F1 → F2 → F3 → F4</text>
+<text x="1472" y="287" class="small" text-anchor="start">4 × EtherCAT servo / 24 V</text>
 <rect x="1455" y="350" width="280" height="65" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
-<text x="1472" y="377" class="small" text-anchor="start">四指执行器 × 4</text>
-<text x="1472" y="400" class="small" text-anchor="start">each with one independent DOF</text>
+<text x="1472" y="377" class="small" text-anchor="start">HEAD-IO ESC + MCU</text>
+<text x="1472" y="400" class="small" text-anchor="start">ESC ↔ MCU: SPI PDI</text>
 <path d="M 1595 314 V 344" fill="none" stroke="#246db0" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
 <rect x="1455" y="451" width="280" height="64" rx="8" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
 <text x="1472" y="478" class="small" text-anchor="start">圆点阵 + 四片照明</text>
 <text x="1472" y="501" class="small" text-anchor="start">pixels / 4 light panels</text>
-<path d="M 1721 296 H 1744 V 483 H 1738" fill="none" stroke="#246db0" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+<path d="M 1736 382 H 1744 V 483 H 1738" fill="none" stroke="#516773" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-muted)"/>
+<text x="1491" y="438" class="tiny" text-anchor="start" style="fill:#516773">MCU → LED drivers: local SPI</text>
 <path d="M 380 398 H 1396" fill="none" stroke="#bd651d" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
 <path d="M 511 398 V 356" fill="none" stroke="#bd651d" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-orange)"/>
 <circle cx="511" cy="398" r="4" fill="#bd651d"/>
@@ -111,19 +116,21 @@
 <circle cx="1327" cy="398" r="4" fill="#bd651d"/>
 <text x="452" y="425" class="small" text-anchor="start" style="fill:#bd651d">48 V · protection / regen / cable gauge TBD  |  phase current ≠ bus current</text>
 <rect x="450" y="447" width="944" height="72" rx="8" fill="#fff0f1" stroke="#d1a2a8" stroke-width="1.5"/>
-<text x="471" y="475" class="small" text-anchor="start" style="fill:#a7404b">RH 的认证 STO / SBC 尚未证实；J7 无闸需独立保持方案。</text>
+<text x="471" y="475" class="small" text-anchor="start" style="fill:#a7404b">RH 的认证 STO / SBC 尚未证实；J7 无闸，J7 与四指保持方案待验证。</text>
 <text x="471" y="500" class="small" text-anchor="start" style="fill:#a7404b">Stop / brake interface is a requirement, not an established safe circuit.</text>
-<path d="M 380 623 H 418 V 483 H 442" fill="none" stroke="#a7404b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-red)" stroke-dasharray="8 6"/>
-<path d="M 380 516 H 417 V 558 H 1594 V 522" fill="none" stroke="#776ba1" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-logic)"/>
-<text x="492" y="580" class="small" text-anchor="start" style="fill:#776ba1">24 V AUX → head regulation / control; RH separate logic supply is not confirmed</text>
-<path d="M 402 558 V 574 H 353 V 579" fill="none" stroke="#776ba1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-logic)"/>
-<path d="M 63 517 H 51 V 338 H 90 V 327" fill="none" stroke="#776ba1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-logic)"/>
+<path d="M 380 661 H 429 V 483 H 442" fill="none" stroke="#a7404b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-red)" stroke-dasharray="8 6"/>
+<path d="M 380 469 H 416 V 596 H 1420 V 327 H 1514 V 319" fill="none" stroke="#946d17" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-finger)"/>
+<text x="452" y="623" class="small" text-anchor="start" style="fill:#946d17">24 V FINGER MOTOR · separate source / current / regen protection TBD</text>
+<path d="M 380 554 H 412 V 558 H 1444 V 383 H 1450" fill="none" stroke="#776ba1" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-logic)"/>
+<path d="M 1444 558 H 1594 V 522" fill="none" stroke="#776ba1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-logic)"/>
+<text x="492" y="580" class="small" text-anchor="start" style="fill:#776ba1">24 V AUX → head I/O / LED logic; RH separate logic supply is not confirmed</text>
+<path d="M 402 558 V 609 H 353 V 619" fill="none" stroke="#776ba1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-logic)"/>
+<path d="M 63 554 H 51 V 338 H 90 V 327" fill="none" stroke="#776ba1" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arrow-logic)"/>
 <text x="105" y="346" class="tiny" text-anchor="start" style="fill:#776ba1">24 V control power</text>
 <text x="76" y="833" class="tiny" text-anchor="start" style="fill:#516773">视觉主机电源按载板规范；AC / PE 未画</text>
-<text x="452" y="610" class="small" text-anchor="start" style="fill:#516773">控制器、相机供电与日志可按设计保留；急停不等于无条件切断全部辅助电。</text>
-<rect x="455" y="630" width="926" height="60" rx="8" fill="#fff0d1" stroke="#d5bd87" stroke-width="1.5"/>
-<text x="474" y="655" class="small" text-anchor="start" style="fill:#825320">头部动力电压与驱动方式待手指执行器定型；相机供电来自采集板 PoC。</text>
-<text x="474" y="678" class="small" text-anchor="start" style="fill:#825320">Tool motor supply is unresolved. No 24 V injection into a camera coax.</text>
+<rect x="455" y="645" width="926" height="60" rx="8" fill="#fff0d1" stroke="#d5bd87" stroke-width="1.5"/>
+<text x="474" y="669" class="small" text-anchor="start" style="fill:#825320">24 V指动力与辅助电分开；电流/回馈待验证，急停不等于切断全部辅助电。</text>
+<text x="474" y="692" class="small" text-anchor="start" style="fill:#825320">Camera power comes from capture-board PoC. No 24 V injection into coax.</text>
 <rect x="1455" y="687" width="280" height="49" rx="8" fill="#ffffff" stroke="#78b6ad" stroke-width="1.5"/>
 <text x="1471" y="717" class="small" text-anchor="start">上鱼眼 / UPPER · ZED-414012</text>
 <rect x="1455" y="757" width="280" height="49" rx="8" fill="#ffffff" stroke="#78b6ad" stroke-width="1.5"/>
@@ -135,36 +142,38 @@
 <text x="1461" y="666" class="small" text-anchor="start" style="fill:#516773">上下外倾；遮挡与近场视域待标定</text>
 <rect x="40" y="866" width="1715" height="67" rx="10" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
 <path d="M 60 898 H 109" fill="none" stroke="#246db0" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="123" y="905" class="small" text-anchor="start">EtherCAT motion</text>
-<path d="M 350 898 H 399" fill="none" stroke="#1a887e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="413" y="905" class="small" text-anchor="start">GMSL2 video + PoC</text>
-<path d="M 696 898 H 745" fill="none" stroke="#bd651d" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="759" y="905" class="small" text-anchor="start">48 V power</text>
-<path d="M 985 898 H 1034" fill="none" stroke="#776ba1" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="1048" y="905" class="small" text-anchor="start">24 V auxiliary</text>
-<path d="M 1297 898 H 1346" fill="none" stroke="#a7404b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
-<text x="1360" y="905" class="small" text-anchor="start">Stop / brake requirement</text>
+<text x="123" y="905" class="small" text-anchor="start">EtherCAT chain</text>
+<path d="M 326 898 H 375" fill="none" stroke="#1a887e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="389" y="905" class="small" text-anchor="start">GMSL2 + PoC</text>
+<path d="M 610 898 H 659" fill="none" stroke="#bd651d" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="673" y="905" class="small" text-anchor="start">48 V arm</text>
+<path d="M 862 898 H 911" fill="none" stroke="#946d17" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="925" y="905" class="small" text-anchor="start">24 V fingers</text>
+<path d="M 1122 898 H 1171" fill="none" stroke="#776ba1" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1185" y="905" class="small" text-anchor="start">24 V AUX</text>
+<path d="M 1390 898 H 1439" fill="none" stroke="#a7404b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<text x="1453" y="905" class="small" text-anchor="start">Stop / brake TBD</text>
 <rect x="40" y="959" width="802" height="386" rx="14" fill="#ffffff" stroke="#c2cdd3" stroke-width="1.5"/>
 <text x="63" y="998" class="label" text-anchor="start">线束占积初筛 / AREA SCREEN ONLY</text>
-<text x="63" y="1030" class="small" text-anchor="start" style="fill:#516773">示例全束 95.28 mm²；含未选定电源/安全导线的外径假设。</text>
+<text x="63" y="1030" class="small" text-anchor="start" style="fill:#516773">示例全束 113.44 mm²；含两组24 V支路，绝缘外径仍是假设。</text>
 <text x="66" y="1076" class="small" text-anchor="start">Ø22  / RH25</text>
 <text x="66" y="1099" class="tiny" text-anchor="start" style="fill:#516773">380.13 mm²</text>
-<rect x="279" y="1062" width="350" height="24" rx="3" fill="#e7edef" stroke="#e7edef" stroke-width="1.5"/>
-<rect x="279" y="1062" width="87.85000000000001" height="24" rx="3" fill="#1a887e" stroke="#1a887e" stroke-width="1.5"/>
-<path d="M 629 1057 V 1092" fill="none" stroke="#516773" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="815" y="1081" class="label" text-anchor="end" style="fill:#1a887e">25.1%</text>
+<rect x="279" y="1062" width="260" height="24" rx="3" fill="#e7edef" stroke="#e7edef" stroke-width="1.5"/>
+<rect x="279" y="1062" width="77.48" height="24" rx="3" fill="#1a887e" stroke="#1a887e" stroke-width="1.5"/>
+<path d="M 539 1057 V 1092" fill="none" stroke="#516773" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="815" y="1081" class="label" text-anchor="end" style="fill:#1a887e">29.8%</text>
 <text x="66" y="1140" class="small" text-anchor="start">Ø12  / RH20, RH17</text>
 <text x="66" y="1163" class="tiny" text-anchor="start" style="fill:#516773">113.10 mm²</text>
-<rect x="279" y="1126" width="350" height="24" rx="3" fill="#e7edef" stroke="#e7edef" stroke-width="1.5"/>
-<rect x="279" y="1126" width="294.7" height="24" rx="3" fill="#bd651d" stroke="#bd651d" stroke-width="1.5"/>
-<path d="M 629 1121 V 1156" fill="none" stroke="#516773" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="815" y="1145" class="label" text-anchor="end" style="fill:#bd651d">84.2%</text>
+<rect x="279" y="1126" width="260" height="24" rx="3" fill="#e7edef" stroke="#e7edef" stroke-width="1.5"/>
+<rect x="279" y="1126" width="260.78000000000003" height="24" rx="3" fill="#a7404b" stroke="#a7404b" stroke-width="1.5"/>
+<path d="M 539 1121 V 1156" fill="none" stroke="#516773" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="815" y="1145" class="label" text-anchor="end" style="fill:#a7404b">100.3%</text>
 <text x="66" y="1204" class="small" text-anchor="start">Ø10  / RH14</text>
 <text x="66" y="1227" class="tiny" text-anchor="start" style="fill:#516773">78.54 mm²</text>
-<rect x="279" y="1190" width="350" height="24" rx="3" fill="#e7edef" stroke="#e7edef" stroke-width="1.5"/>
-<rect x="279" y="1190" width="424.55" height="24" rx="3" fill="#a7404b" stroke="#a7404b" stroke-width="1.5"/>
-<path d="M 629 1185 V 1220" fill="none" stroke="#516773" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="815" y="1209" class="label" text-anchor="end" style="fill:#a7404b">121.3%</text>
+<rect x="279" y="1190" width="260" height="24" rx="3" fill="#e7edef" stroke="#e7edef" stroke-width="1.5"/>
+<rect x="279" y="1190" width="375.44000000000005" height="24" rx="3" fill="#a7404b" stroke="#a7404b" stroke-width="1.5"/>
+<path d="M 539 1185 V 1220" fill="none" stroke="#516773" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="815" y="1209" class="label" text-anchor="end" style="fill:#a7404b">144.4%</text>
 <text x="65" y="1263" class="small" text-anchor="start">Ø10 mm 中仅放 2 × Ø3.1 mm 同轴：毛面积填充约 19.2%。</text>
 <text x="65" y="1290" class="small" text-anchor="start" style="fill:#516773">面积通过 ≠ 可装配 / 可转动；衬套、接头、弯曲半径与寿命另验。</text>
 <text x="65" y="1318" class="small" text-anchor="start" style="fill:#516773">40% 仅为项目筛查假设；不是法规、制造公差或合格标准。</text>
