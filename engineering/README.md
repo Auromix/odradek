@@ -24,6 +24,7 @@ python3.12 -m venv .venv
 ```sh
 python engineering/verify_math.py
 python engineering/arm_screening.py
+python engineering/head_mass_sensitivity.py
 python engineering/review_arm_screening.py > docs/engineering/analysis/arm-static-independent-review.json
 python engineering/grasp_screening.py
 python engineering/finite_pad_contacts.py
