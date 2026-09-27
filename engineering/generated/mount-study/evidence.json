@@ -1,0 +1,791 @@
+{
+  "revision": "R4-MOUNT-01",
+  "status": "nominal interface candidates; no manufacturing or load release",
+  "units": "mm, mm3, kg",
+  "coordinate_frame": "+Z output, z=0 output contact plane; XY from independent vendor extraction",
+  "source_files": {
+    "RH14_STEP": {
+      "filename": "RH-14-100-E-N-D 3D-A0.STEP",
+      "sha256": "6b0acdb82140b487be079b5515718157d16d512f3a584ac5439fe55380e7b595"
+    },
+    "RH25_STEP": {
+      "filename": "RH-25-100-E-B-D 3D-A0.STEP",
+      "sha256": "d844bc7dfe5c398b0447ea0d93eef77b7cb1bdaa0dbabd603031482c1909f07e"
+    },
+    "RH14_2D_page1": {
+      "filename": "RH-14-100-E-N-D 2D-A0.PDF",
+      "sha256": "55f14a6f6d9bcc2ec04c39c8a2f1e45c2bce2e4a263b37434f53e777f98f3966"
+    },
+    "RH25_2D_page1": {
+      "filename": "RH-25-100-E-B-D 2D-A0.PDF",
+      "sha256": "2ca7fc165dfae32adf45bbb4b6c9b4ab90d803aa5a9eaa251b00084149a324c4"
+    }
+  },
+  "vendor_CAD_exported": false,
+  "vendor_solid_count": {
+    "RH14-N": 32,
+    "RH25-B": 42
+  },
+  "contact_faces": {
+    "RH25_fixed_front": {
+      "face_index": 584,
+      "z_mm": -15.500000099999998,
+      "area_mm2": 1725.8967561043955,
+      "wire_count": 14,
+      "boundary_circle_features": [
+        {
+          "radius_mm": 54.199999999999996,
+          "xy_mm": [
+            4.689437271934654e-08,
+            -4.689438729985591e-08
+          ]
+        },
+        {
+          "radius_mm": 2.649999999960073,
+          "xy_mm": [
+            4.048353267001863e-07,
+            50.99999995310562
+          ]
+        },
+        {
+          "radius_mm": 2.6499999999255106,
+          "xy_mm": [
+            25.500000356880335,
+            44.16729536714044
+          ]
+        },
+        {
+          "radius_mm": 2.6500000000169166,
+          "xy_mm": [
+            44.167295818870144,
+            25.49999964311775
+          ]
+        },
+        {
+          "radius_mm": 2.6500000000169166,
+          "xy_mm": [
+            51.000000046892175,
+            -4.048375155414516e-07
+          ]
+        },
+        {
+          "radius_mm": 2.6500000000169166,
+          "xy_mm": [
+            44.167295460927,
+            -25.50000035688225
+          ]
+        },
+        {
+          "radius_mm": 2.649999999929563,
+          "xy_mm": [
+            25.49999973690436,
+            -44.16729581887231
+          ]
+        },
+        {
+          "radius_mm": 2.649999999960073,
+          "xy_mm": [
+            -3.110509172028214e-07,
+            -51.00000004689439
+          ]
+        },
+        {
+          "radius_mm": 2.6499999999986814,
+          "xy_mm": [
+            -25.500000263095636,
+            -44.16729546092921
+          ]
+        },
+        {
+          "radius_mm": 2.65000000007376,
+          "xy_mm": [
+            -44.16729572508575,
+            -25.499999736906528
+          ]
+        },
+        {
+          "radius_mm": 2.649999999960073,
+          "xy_mm": [
+            -50.999999953107825,
+            3.1104873469607197e-07
+          ]
+        },
+        {
+          "radius_mm": 2.6500000000169166,
+          "xy_mm": [
+            -44.16729536714261,
+            25.500000263093472
+          ]
+        },
+        {
+          "radius_mm": 2.6500000000169166,
+          "xy_mm": [
+            -25.499999643119672,
+            44.16729572508245
+          ]
+        },
+        {
+          "radius_mm": 48.00000000000006,
+          "xy_mm": [
+            4.689437271934654e-08,
+            -4.689438729985591e-08
+          ]
+        }
+      ],
+      "coaxial_boundary_radii_mm": [
+        48.0,
+        54.2
+      ]
+    },
+    "RH25_fixed_rear": {
+      "face_index": 356,
+      "z_mm": -45.700000100000004,
+      "area_mm2": 2047.3445164179338,
+      "wire_count": 18,
+      "boundary_circle_features": [
+        {
+          "radius_mm": 54.70000000000001,
+          "xy_mm": [
+            4.6894359083761925e-08,
+            -4.689437128495802e-08
+          ]
+        },
+        {
+          "radius_mm": 1.6499999999999917,
+          "xy_mm": [
+            -3.1105105772302e-07,
+            -51.00000004689437
+          ]
+        },
+        {
+          "radius_mm": 1.6499999999999917,
+          "xy_mm": [
+            -50.99999995310564,
+            3.110505130396846e-07
+          ]
+        },
+        {
+          "radius_mm": 1.6499999999999917,
+          "xy_mm": [
+            4.048397776050494e-07,
+            50.99999995310563
+          ]
+        },
+        {
+          "radius_mm": 1.6499999999999917,
+          "xy_mm": [
+            51.00000004689436,
+            -4.048396117406972e-07
+          ]
+        },
+        {
+          "radius_mm": 3.2500000000000027,
+          "xy_mm": [
+            -36.062445540514496,
+            36.062446046724624
+          ]
+        },
+        {
+          "radius_mm": 3.2500000000000027,
+          "xy_mm": [
+            36.06244614051373,
+            36.062445540514105
+          ]
+        },
+        {
+          "radius_mm": 2.249999999999995,
+          "xy_mm": [
+            -25.499999643116134,
+            44.16729572508449
+          ]
+        },
+        {
+          "radius_mm": 2.249999999999995,
+          "xy_mm": [
+            -44.16729572508443,
+            -25.499999736905032
+          ]
+        },
+        {
+          "radius_mm": 2.249999999999995,
+          "xy_mm": [
+            -44.167295367139516,
+            25.500000263095064
+          ]
+        },
+        {
+          "radius_mm": 2.249999999999995,
+          "xy_mm": [
+            25.50000035688395,
+            44.16729536713943
+          ]
+        },
+        {
+          "radius_mm": 2.249999999999995,
+          "xy_mm": [
+            44.16729581887334,
+            25.499999643115974
+          ]
+        },
+        {
+          "radius_mm": 2.249999999999995,
+          "xy_mm": [
+            44.16729546092807,
+            -25.500000356884126
+          ]
+        },
+        {
+          "radius_mm": 2.2500000000000018,
+          "xy_mm": [
+            25.499999736904563,
+            -44.16729581887341
+          ]
+        },
+        {
+          "radius_mm": 2.249999999999995,
+          "xy_mm": [
+            -25.500000263095533,
+            -44.167295460927996
+          ]
+        },
+        {
+          "radius_mm": 3.2500000000000027,
+          "xy_mm": [
+            -36.062446046725015,
+            -36.06244563430285
+          ]
+        },
+        {
+          "radius_mm": 3.2500000000000027,
+          "xy_mm": [
+            36.06244563430296,
+            -36.06244614051362
+          ]
+        },
+        {
+          "radius_mm": 47.400000000000006,
+          "xy_mm": [
+            4.6894359083761925e-08,
+            -4.689437128495802e-08
+          ]
+        }
+      ],
+      "coaxial_boundary_radii_mm": [
+        47.4,
+        54.7
+      ]
+    },
+    "RH14_output": {
+      "face_index": 259,
+      "z_mm": -1.30119231833703e-07,
+      "area_mm2": 700.3810324053761,
+      "wire_count": 10,
+      "boundary_circle_features": [
+        {
+          "radius_mm": 24.700000000000035,
+          "xy_mm": [
+            1.6030180738368927e-08,
+            4.423972489185791e-11
+          ]
+        },
+        {
+          "radius_mm": 3.400000000000004,
+          "xy_mm": [
+            20.303856060820852,
+            8.470739620196579
+          ]
+        },
+        {
+          "radius_mm": 24.700000000000035,
+          "xy_mm": [
+            1.6030180738368927e-08,
+            4.423972489185791e-11
+          ]
+        },
+        {
+          "radius_mm": 3.400000000000004,
+          "xy_mm": [
+            -20.30385602876047,
+            -8.470739620108091
+          ]
+        },
+        {
+          "radius_mm": 1.6999999999999897,
+          "xy_mm": [
+            13.348285335524935,
+            17.48780372233484
+          ]
+        },
+        {
+          "radius_mm": 1.6999999999999915,
+          "xy_mm": [
+            2.8160523385301985,
+            21.819024939691346
+          ]
+        },
+        {
+          "radius_mm": 1.6999999999999897,
+          "xy_mm": [
+            21.819024955677282,
+            -2.8160523224558522
+          ]
+        },
+        {
+          "radius_mm": 1.6999999999999915,
+          "xy_mm": [
+            17.487803738320753,
+            -13.348285319450575
+          ]
+        },
+        {
+          "radius_mm": 1.6999999999999897,
+          "xy_mm": [
+            -13.34828530346459,
+            -17.487803722246376
+          ]
+        },
+        {
+          "radius_mm": 1.6999999999999915,
+          "xy_mm": [
+            -2.8160523064698357,
+            -21.81902493960288
+          ]
+        },
+        {
+          "radius_mm": 1.6999999999999897,
+          "xy_mm": [
+            -21.81902492361692,
+            2.8160523225443317
+          ]
+        },
+        {
+          "radius_mm": 1.6999999999999915,
+          "xy_mm": [
+            -17.487803706260372,
+            13.34828531953905
+          ]
+        },
+        {
+          "radius_mm": 18.500000000000018,
+          "xy_mm": [
+            1.6030180738368927e-08,
+            4.423972489185791e-11
+          ]
+        }
+      ],
+      "coaxial_boundary_radii_mm": [
+        18.5,
+        24.7
+      ]
+    }
+  },
+  "RH25_fixed_holes_xy_mm": [
+    [
+      44.1672958,
+      25.4999996
+    ],
+    [
+      25.5000004,
+      44.1672954
+    ],
+    [
+      -25.4999996,
+      44.1672957
+    ],
+    [
+      -44.1672954,
+      25.5000003
+    ],
+    [
+      -44.1672957,
+      -25.4999997
+    ],
+    [
+      -25.5000003,
+      -44.1672955
+    ],
+    [
+      25.4999997,
+      -44.1672958
+    ],
+    [
+      44.1672955,
+      -25.5000004
+    ]
+  ],
+  "RH25_original_screw_head_relief_xy_mm": [
+    [
+      -50.999999,
+      0.0
+    ],
+    [
+      -0.0,
+      -51.0
+    ],
+    [
+      1e-06,
+      50.999999
+    ],
+    [
+      51.0,
+      -1e-06
+    ]
+  ],
+  "RH14_output_holes_xy_mm": [
+    [
+      13.3482853,
+      17.4878037
+    ],
+    [
+      2.8160523,
+      21.8190249
+    ],
+    [
+      -17.4878037,
+      13.3482853
+    ],
+    [
+      -21.8190249,
+      2.8160523
+    ],
+    [
+      -13.3482853,
+      -17.4878037
+    ],
+    [
+      -2.8160523,
+      -21.8190249
+    ],
+    [
+      17.4878037,
+      -13.3482853
+    ],
+    [
+      21.819025,
+      -2.8160523
+    ]
+  ],
+  "RH14_thread_minor_bore_alignment": [
+    {
+      "front_hole_xy_mm": [
+        13.3482853,
+        17.4878037
+      ],
+      "nearest_minor_bore": {
+        "face_index": 335,
+        "radius_mm": 1.2499999999999993,
+        "xy_mm": [
+          13.34108557587474,
+          17.432372778927608
+        ],
+        "z_mm": [
+          -17.500000230119234,
+          -9.600000030122414
+        ]
+      },
+      "lateral_offset_mm": 0.055896538697970524
+    },
+    {
+      "front_hole_xy_mm": [
+        2.8160523,
+        21.8190249
+      ],
+      "nearest_minor_bore": {
+        "face_index": 325,
+        "radius_mm": 1.250000000000001,
+        "xy_mm": [
+          2.8199103665237946,
+          21.79038624274382
+        ],
+        "z_mm": [
+          -17.500000230119234,
+          -9.600000030122414
+        ]
+      },
+      "lateral_offset_mm": 0.02889735916548134
+    },
+    {
+      "front_hole_xy_mm": [
+        -17.4878037,
+        13.3482853
+      ],
+      "nearest_minor_bore": {
+        "face_index": 327,
+        "radius_mm": 1.250000000000001,
+        "xy_mm": [
+          -17.50543934872413,
+          13.371350730710933
+        ],
+        "z_mm": [
+          -17.500000230119234,
+          -9.600000030122414
+        ]
+      },
+      "lateral_offset_mm": 0.02903498234547018
+    },
+    {
+      "front_hole_xy_mm": [
+        -21.8190249,
+        2.8160523
+      ],
+      "nearest_minor_bore": {
+        "face_index": 328,
+        "radius_mm": 1.2499999999999993,
+        "xy_mm": [
+          -21.863452812540302,
+          2.850175521360014
+        ],
+        "z_mm": [
+          -17.500000230119234,
+          -9.600000030122414
+        ]
+      },
+      "lateral_offset_mm": 0.05601993974178637
+    },
+    {
+      "front_hole_xy_mm": [
+        -13.3482853,
+        -17.4878037
+      ],
+      "nearest_minor_bore": {
+        "face_index": 329,
+        "radius_mm": 1.2499999999999993,
+        "xy_mm": [
+          -13.444417300507427,
+          -17.475174193887902
+        ],
+        "z_mm": [
+          -17.500000230119234,
+          -9.600000030122414
+        ]
+      },
+      "lateral_offset_mm": 0.09695806282200198
+    },
+    {
+      "front_hole_xy_mm": [
+        -2.8160523,
+        -21.8190249
+      ],
+      "nearest_minor_bore": {
+        "face_index": 330,
+        "radius_mm": 1.250000000000001,
+        "xy_mm": [
+          -2.9232420911565242,
+          -21.833187657704098
+        ],
+        "z_mm": [
+          -17.500000230119234,
+          -9.600000030122414
+        ]
+      },
+      "lateral_offset_mm": 0.10812139027021578
+    },
+    {
+      "front_hole_xy_mm": [
+        17.4878037,
+        -13.3482853
+      ],
+      "nearest_minor_bore": {
+        "face_index": 332,
+        "radius_mm": 1.250000000000001,
+        "xy_mm": [
+          17.402107624091393,
+          -13.414152145671226
+        ],
+        "z_mm": [
+          -17.500000230119234,
+          -9.600000030122414
+        ]
+      },
+      "lateral_offset_mm": 0.108084498355735
+    },
+    {
+      "front_hole_xy_mm": [
+        21.819025,
+        -2.8160523
+      ],
+      "nearest_minor_bore": {
+        "face_index": 333,
+        "radius_mm": 1.2499999999999993,
+        "xy_mm": [
+          21.76012108790762,
+          -2.8929769363203057
+        ],
+        "z_mm": [
+          -17.500000230119234,
+          -9.600000030122414
+        ]
+      },
+      "lateral_offset_mm": 0.09688689556796655
+    }
+  ],
+  "RH14_conservative_nominal_front_shank_radial_clearance_mm": 0.09187860972978418,
+  "collision": {
+    "J1_rear_ring": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J1_front_with_reliefs": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J1_front_without_reliefs": {
+      "pair_intersection_sum_mm3": 553.5175121649423,
+      "events": [
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 8,
+          "intersection_mm3": 138.37937804123558
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 9,
+          "intersection_mm3": 138.3793780412356
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 10,
+          "intersection_mm3": 138.37937804123555
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 11,
+          "intersection_mm3": 138.3793780412356
+        }
+      ],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J1_wrong_solid_plate": {
+      "pair_intersection_sum_mm3": 66881.60095870474,
+      "events": [
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 2,
+          "intersection_mm3": 897.2388618652438
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 4,
+          "intersection_mm3": 13839.029327768103
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 39,
+          "intersection_mm3": 52145.3327690714
+        }
+      ],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J1_M4_shaft_45mm": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J1_M4_head_envelope_D7_22_H4": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J1_driver_envelope_D6": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J7_adapter": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J7_axisymmetric_unbored_envelope": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J7_M3_head_envelope_D6_H3_2": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J7_driver_envelope_D6": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J7_M3_free_shank_to_recess_bottom_only": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J7_minor_axis_aligned_free_shank_to_vendor": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    "J7_minor_axis_aligned_free_shank_to_adapter": {
+      "pair_intersection_sum_mm3": 0,
+      "events": [],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    }
+  },
+  "parts": {
+    "ODR-J1-REAR-R4": {
+      "volume_mm3": 103181.52663670712,
+      "estimated_6061_mass_kg_at_2700kg_m3": 0.2785901219191092,
+      "step_valid": true,
+      "single_solid": true,
+      "stl_watertight": true,
+      "dxf_circle_count": 14,
+      "sha256": {
+        "ODR-J1-REAR-R4.step": "da27994703a5e1e9e3f34397074e26f18294f3295d0bb2e5771e9a6bd59d7718",
+        "ODR-J1-REAR-R4.stl": "e1e567737e0b3d8366d6b045d78e4128f8151adc6a4d5b3a3dddf94a38073282",
+        "ODR-J1-REAR-R4.dxf": "3961ce8b840e4e587457065a13dc6cd995a69b5459546de8dde428c54f8528ec"
+      }
+    },
+    "ODR-J1-FRONT-R4": {
+      "volume_mm3": 15591.598676059992,
+      "estimated_6061_mass_kg_at_2700kg_m3": 0.04209731642536198,
+      "step_valid": true,
+      "single_solid": true,
+      "stl_watertight": true,
+      "dxf_circle_count": 14,
+      "sha256": {
+        "ODR-J1-FRONT-R4.step": "08ffa85cdc3ba266ee35eb208f118c541f8c14bbf64a0c664c10816c181597a6",
+        "ODR-J1-FRONT-R4.stl": "514ad114d6b62ae1de63bb0784929767291e8fb6bb94650e8e99800cb0dff6c6",
+        "ODR-J1-FRONT-R4.dxf": "fbc5ce247526c385370055a013226ec266bbc63ca7d16c36a4121aa6de8bcb8a"
+      }
+    },
+    "ODR-J7-TOOL-R4": {
+      "volume_mm3": 27140.5596008156,
+      "estimated_6061_mass_kg_at_2700kg_m3": 0.07327951092220211,
+      "step_valid": true,
+      "single_solid": true,
+      "stl_watertight": true,
+      "dxf_circle_count": 16,
+      "sha256": {
+        "ODR-J7-TOOL-R4.step": "86bda9df1c62ff0d6c8b4b1b2c6fd853d0eb36a148b7e76ec116eb411c1571c7",
+        "ODR-J7-TOOL-R4.stl": "cfbcbbf3849d62758dce5e8c79db42dd8e5f888bdaecda346e86831a840d0992",
+        "ODR-J7-TOOL-R4.dxf": "1fdba9354840266b13217117c06daa9c58ea8e555d7361ff241166bf96286849"
+      }
+    }
+  },
+  "screw_envelopes": {
+    "M4": "Accu SSC-M4-45-12.9: head max7.22, H4, minimum thread20; candidate only",
+    "M3": "Accu SSC-M3-20-12.9 supplies head dimensions5.68x3 only; length20 explicitly NOT selected",
+    "tool": "D6 cylindrical approach envelope, not a selected complete tool/handle"
+  },
+  "source_urls": [
+    "https://www.myactuator.com/downloads-rhseries",
+    "https://www.accu.co.uk/metric-cap-head-screws/16031-SSC-M4-45-12-9",
+    "https://www.accu.co.uk/metric-cap-head-screws/16008-SSC-M3-20-12-9"
+  ],
+  "unresolved": [
+    "RH14 complete thread start, lead-in, runout and drill-bottom tolerances",
+    "vendor contact flatness/finish and allowed preload",
+    "adapter stress/deflection and tapped-edge strength",
+    "complete pedestal/desk anchorage and connector/bend access",
+    "assembly sequence with real head and cables"
+  ],
+  "pdf_sha256": "64d34eac66576dd871dd7dc4aed58ac72577211f6c2bf51a3fc1ef1071edef5c"
+}
