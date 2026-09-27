@@ -6,25 +6,27 @@
 
 Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面／固定底座机械臂项目，灵感来自《死亡搁浅》中的探测器，面向实际操作任务。本体与末端的机构、外观和行为同步设计。
 
-**当前为 R4 工程研究与几何样件阶段。** 已确认末端负载要求 2 kg、EtherCAT、本体内走线、外置计算与先打印后金属加工。最初按 2 kg 净工件＋2 kg 末端预算、约 700 mm 肩至 TCP 起算；完整直角驱动候选使头部预算上升至约3.58–4.25 kg，已另做3.5–4.5 kg静力敏感性，轻量传动仍在比较。臂展与载荷口径仍是显式工作假设。仓库已有可执行数学、参数化 STEP、Blender 装配、尺寸评审图和打印台架；尚无制造发布版、2 kg 实测样机或正式控制固件。
+**当前为 R4 工程研究与几何样件阶段。** 已确认末端负载要求2 kg、EtherCAT、内走线、外置计算与先打印后金属加工。计算保守地把2 kg视为净工件；当前P16条件分支的末端计量模型2.802 kg，完整规划2.987～3.252 kg，驱动速度和占空条件仍待确定。臂展仍是设计假设。六段承力连接、可拆整头、7＋4耦合数学与原生Blender总装已经集成；尚无制造发布版、2 kg实测样机或正式控制固件。
 
 ## 当前工程包
 
-![由实际布局参数生成的 R4 装配](engineering/generated/layout/odradek-r4-inspect.png)
+![当前结构检查总装](engineering/generated/integrated-arm-preview/arm-open-oblique.png)
 
-图中采用目录尺寸的关节和不完整的驱动占位。[独立底座候选](docs/engineering/base-structure-study.md)已避开旧实心底板与 J1 后壳的冲突；[双支承传动研究](docs/engineering/gripper-shaft-support-study.md)则发现加入真实轮宽、轴承及联轴器后，旧紧凑驱动布置不能成立。这些修订还没有汇入完整总装，不能照图直接制造。
+图中已合并24个原创连接件、修正后的底座和697对象的HEAD-INTEGRATED03快照。关节仍为目录包络，臂侧紧固件、线束和外壳尚未完整集成，中央像素屏单独标为显示效果。[整臂真实实体检查](docs/engineering/integrated-collision-study.md)发现历史reach姿态存在肩部碰撞，禁止执行；图示inspect仅通过已说明范围的离散几何检查，未取得轨迹或带载资格。
 
 | 入口 | 内容与范围 |
 |---|---|
 | [工程总览](docs/engineering/README.md) | 输入、假设、一手来源和发布清单 |
 | [布局、闭合与抓取](docs/engineering/r4-layout-and-grasp.md) | 同参数实体、独立角域分离、条件抓取和名义光线检查 |
-| [Blender 装配](engineering/generated/layout/odradek-r4-layout.blend)／[STEP](engineering/generated/layout/odradek-layout.step) | 7 本体轴＋4 独立指轴；当前为布局模型 |
+| [当前原生Blender](engineering/generated/integrated-arm-preview/odradek-integrated-7-plus-4.blend)／[模型使用说明](docs/engineering/integrated-blender-review.md) | 736个产品网格、11个控制量、可独立重开的推杆随动；几何检查候选 |
+| [整头STEP与证据](docs/engineering/head-integrated03-study.md)／[耦合动力学](docs/engineering/articulated-dynamics-review.md) | 实际候选实体、冻结灯板位置、明确的质量与惯量代理 |
+| [历史布局](docs/engineering/r4-layout-and-grasp.md)／[分组件场景](docs/engineering/subassembly-blender-review.md) | 保留早期设计阶段用于追溯 |
 | [A3 装配审查图](engineering/generated/layout/ODR-R4-assembly-review.pdf) | 轴坐标、布局尺寸和正交网格视图 |
 | [单指手动台架](engineering/generated/finger-fixture/README.md)／[关节接口片](docs/engineering/interface-coupon-guide.md) | 可打印、无动力的孔位与几何检查件，配尺寸图 |
 | [元件 BOM](docs/engineering/hardware/bom.csv)／[双鱼眼光学台架](docs/engineering/hardware/optical-bench-build.md) | 有来源的候选及具体相机—采集板—主机链 |
 | [计算与 CAD 复现](engineering/README.md) | 依赖、生成顺序、单位和限制 |
 
-当前四片名义几何在独立研究角域内的分离轴间隙下界为 4.7862 mm；该结果不包括支承、线束、公差和变形。[有限双垫接触检查](docs/engineering/finite-pad-contact-study.md)发现，Ø80 圆柱会先碰到下指骨架或灯窗，该反例保留在旧布局中。[CONTACT-02片尖鞋](docs/engineering/distal-contact-study.md)已改善指定圆柱接触，[SUPPORT-03窄根叉](docs/engineering/gripper-root-support-study.md)通过局部完整角域避让；两者尚未与真实灯板、线束合成制造总装。原条件性力平衡不等于已达到 2 kg 额定负载。
+旧布局的[有限双垫接触反例](docs/engineering/finite-pad-contact-study.md)继续保留。HEAD-INTEGRATED03已合并CONTACT-02软垫及保持键、CARRIER02窄根、灯腔、灯板位置和EXT24；17项指定范围的连续几何检查通过。动态线束、公差、变形与抓取试验仍未闭合，条件性力平衡不等于2 kg实测额定负载。
 
 ## R3：保留外形，检查闭合与接触
 

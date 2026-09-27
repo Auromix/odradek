@@ -55,6 +55,8 @@ Blender 保存 7＋4 层级和 360 帧几何演示，另输出三视角渲染。
 
 新增 LINK56、固定底座及 CONTACT-02 的[原生分组件检查包](../docs/engineering/subassembly-blender-review.md)独立保存为 `generated/component-reviews/odradek-r4-subassemblies.blend`，含三个场景和五张渲染。使用 `export_component_reviews.py --output /tmp/odradek-component-meshes.json` 从已有 STEP 导出，然后由 Blender 执行 `blender_component_reviews.py -- --mesh-json /tmp/odradek-component-meshes.json`。它没有将三个研究机械集成为新整臂。
 
+更新的[整体结构检查包](../docs/engineering/integrated-blender-review.md)保存为 `generated/integrated-arm-preview/odradek-integrated-7-plus-4.blend`，已合并六段24原创连接件、底座和HEAD03，736产品网格、11控制量。复现用 `export_integrated_arm_preview.py` → `blender_integrated_arm.py` → `review_integrated_blend.py`；具体命令与27条持久驱动、697件独立闭合CAD对照见说明。历史reach已查到肩部真实碰撞，不是可执行姿态；外壳、线束和完整臂侧紧固件尚未建成。
+
 独立 [P16-PACK-01](../docs/engineering/gripper-linear-packaging-study.md) 把真实线性执行器接口、双剪销叉和近根支承接到 CONTACT02，尚缺整头载体。执行 `python engineering/p16_packaging_study.py --vendor-dir /path/to/vendor-reference` 后，再运行 `python engineering/p16_pin_stack_drawing.py` 和 `python engineering/p16_packaging_verify.py --vendor-dir /path/to/vendor-reference`。原厂CAD仅作为本地核对输入，公开包只包含原创保守包络；使用跳过检查的调试选项不能复用完整验证结论。
 
 ## 无动力打印件与接口研究

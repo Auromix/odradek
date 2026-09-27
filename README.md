@@ -6,26 +6,27 @@
 
 Odradek is an independent Auromix robotics project sharing design material for noncommercial research and hobby use inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
 
-**Stage: R4 engineering research and geometry prototypes.** The requirement is a 2 kg end load, EtherCAT motion communication, internal cabling, and external computing. The initial baseline assumes a 2 kg object plus a 2 kg head and about 700 mm shoulder-to-TCP distance. The supported right-angle-drive candidate now budgets roughly 3.58–4.25 kg for the head; separate 3.5–4.5 kg static studies and a lighter transmission comparison are underway. Load interpretation and reach remain assumptions. The repository now includes executable mathematics, parameterized STEP geometry, a native Blender assembly, review drawings, and printable fixtures. It has no manufacturing release, tested 2 kg prototype, or production control firmware.
+**Stage: R4 engineering research and geometry prototypes.** Requirements include a 2 kg end load, EtherCAT, internal cabling, and external computing. Calculations conservatively treat 2 kg as a net object. The current P16 head candidate has a 2.802 kg modeled subtotal and a 2.987–3.252 kg planning total; the actuator's speed and duty limits remain conditional. Reach is still a design assumption. Six structural links, a detachable head, coupled 7+4 mathematics and a native Blender review assembly are now integrated. There is no manufacturing release, tested 2 kg prototype, or production control firmware.
 
 ## Engineering package
 
-![Parameter-derived R4 assembly](engineering/generated/layout/odradek-r4-inspect.png)
+![Current structural review assembly](engineering/generated/integrated-arm-preview/arm-open-oblique.png)
 
-The render exposes catalog-sized joint envelopes and provisional drive placeholders. The [base study](docs/engineering/base-structure-study.md) resolves the old solid plate's J1 interference in a separate candidate. The [supported-drive study](docs/engineering/gripper-shaft-support-study.md) rejects the old compact motor arrangement after real pulley widths, bearings and couplings are added. These corrections are not yet merged into the total assembly; do not fabricate it as shown.
+This model combines 24 original link parts, the corrected base and the 697-object HEAD-INTEGRATED03 snapshot. Joint housings remain catalog envelopes; arm fasteners, harnesses and exterior guards are not fully integrated. The central pixel display is a separate visual preview. [Full-arm BREP checks](docs/engineering/integrated-collision-study.md) found real shoulder collisions in the historical `reach` pose; it must not be executed. The shown `inspect` pose passed the stated discrete geometry check, not trajectory or payload qualification.
 
 | Package | Evidence and scope |
 |---|---|
 | [Engineering index](docs/engineering/README.md) | Requirements, assumptions, source records, and release checklist |
 | [R4 layout and grasp](docs/engineering/r4-layout-and-grasp.md) | Same-parameter geometry, closure proof, conditional contact calculations, and optical sightlines |
-| [Blender assembly](engineering/generated/layout/odradek-r4-layout.blend) / [STEP](engineering/generated/layout/odradek-layout.step) | 7 arm pivots and 4 independent fingers; layout, not production assembly |
-| [New subassembly Blender scenes](docs/engineering/subassembly-blender-review.md) | Native LINK56, anchored base and four-finger contact review; five renders, not an integrated new arm |
+| [Current native Blender](engineering/generated/integrated-arm-preview/odradek-integrated-7-plus-4.blend) / [model guide](docs/engineering/integrated-blender-review.md) | 736 product meshes, 11 controls, persistent actuator linkage drivers; geometric review only |
+| [Integrated head STEP and evidence](docs/engineering/head-integrated03-study.md) / [coupled dynamics](docs/engineering/articulated-dynamics-review.md) | Actual candidate solids, frozen board placement and explicit mass/inertia assumptions |
+| [Historical layout](docs/engineering/r4-layout-and-grasp.md) / [subassembly scenes](docs/engineering/subassembly-blender-review.md) | Earlier design stages retained for traceability |
 | [A3 review drawings](engineering/generated/layout/ODR-R4-assembly-review.pdf) | Axes, dimensions, and orthographic mesh views |
 | [Manual finger fixture](engineering/generated/finger-fixture/README.md) / [joint interface coupons](docs/engineering/interface-coupon-guide.md) | Unpowered printable geometry checks with dimensions |
 | [Hardware BOM](docs/engineering/hardware/bom.csv) / [optical bench](docs/engineering/hardware/optical-bench-build.md) | Sourced component candidates and a concrete dual-fisheye bench chain |
 | [Reproduce the calculations and CAD](engineering/README.md) | Dependencies, generation order, units, and limitations |
 
-The nominal petal geometry has a 4.7862 mm minimum separating-axis bound over the independent study angle intervals. This excludes supports, cables, tolerance and deformation. The [finite-pad contact study](docs/engineering/finite-pad-contact-study.md) finds that the lower finger or light window hits an 80 mm cylinder before the assumed pads engage. That counterexample remains documented in the old layout. [CONTACT-02 distal shoes](docs/engineering/distal-contact-study.md) improve the tested cylinder cases, and [SUPPORT-03 narrow forks](docs/engineering/gripper-root-support-study.md) pass local full-interval clearance checks. These studies are not yet combined with real LED boards and harnesses into a production assembly; conditional force calculations are not a measured payload rating.
+The old [finite-pad contact counterexample](docs/engineering/finite-pad-contact-study.md) remains documented. HEAD-INTEGRATED03 now combines the revised CONTACT-02 pads and retention, narrowed CARRIER02 roots, lamp cavities, board placement and EXT24. Its 17 scoped continuous checks pass nominal geometry conditions; dynamic harnesses, tolerances, deformation and grasp testing remain unresolved. Conditional force calculations are not a measured payload rating.
 
 ## R3: keep the silhouette, resolve closure and contact
 
@@ -79,7 +80,7 @@ The [gallery](docs/gallery.html) retains original R0/R1 artwork and exact prompt
 | [Sources](docs/sources.md) | Research and reference roles |
 | [Generation](docs/generation.md) and [review notes](docs/review-notes.md) | Prompts, AI assistance, and specific visual limitations |
 
-Current open items include full load-bearing link connections, independent belt-shaft supports, installed holding/thermal performance, internal dynamic cable routing, and task-specific contact validation. See the [release checklist](docs/engineering/release-checklist.md).
+Current open items include the shoulder's usable motion range, installed holding/thermal performance, complete controller and harness design, contact/fastener qualification and manufacturing tolerances. See the [release checklist](docs/engineering/release-checklist.md).
 
 ## License and commercial permissions
 
