@@ -4,7 +4,7 @@
 
 选择 **609 颗黄色 LED + 6 颗 LP5860**：中央为真正圆形可寻址 LED 点阵，上片较大、下片较小，四片独立亮度与动画。环形效果由中央点阵绘制，不增加实体灯环，也不换成 LCD。灯片继续承担造型和照明表达；夹持力经独立结构及接触垫传递，PCB、透光窗口和 LED 焊点不进入受力路径。
 
-对应 [30 行独立 BOM](head-lighting-io-bom.csv)、[19 个原厂来源、像素坐标与电源计算](../sources/head-lighting-io.json)。不改整机 BOM；其 LED-01…LED-13 可据此做后续合并。`selected-for-electronics-prototype` 是首版电子／光学样件的明确选择，不表示完成机械集成或生产定型；`candidate` 仍需电路、热与采购核验；`blocked` 是尚缺的制造输入。厂商目录可核实不等于已经报价、查库或买到。
+对应 [30 行独立 BOM](head-lighting-io-bom.csv)、[19 个原厂来源、像素坐标与电源计算](../sources/head-lighting-io.json)。整机 BOM 的 LED-01…07 已同步对应数量/型号，LED-13 指向其余详细器件；主表占位与本表细项不重复加总。`selected-for-electronics-prototype` 是首版电子／光学样件的明确选择，不表示完成机械集成或生产定型；`candidate` 仍需电路、热与采购核验；`blocked` 是尚缺的制造输入。厂商目录可核实不等于已经报价、查库或买到。
 
 ## 1. 元件与实现层级
 
