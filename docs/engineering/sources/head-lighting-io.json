@@ -1,0 +1,4119 @@
+{
+  "revision": "HLIO-01",
+  "status": "Original circuit-level selection and pixel placement study; no released PCB or Gerber",
+  "checked_on": "2026-09-27",
+  "parameters": {
+    "path": "engineering/parameters/r4-layout.json",
+    "revision": "R4-layout-03",
+    "sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81"
+  },
+  "sources": [
+    {
+      "id": "HL01",
+      "title": "Würth 150060YS75000",
+      "url": "https://www.we-online.com/components/products/datasheet/150060YS75000.pdf",
+      "fact": "Yellow 0603; 590 nm; Vf typ 2.0/max 2.4 V at 20 mA; 30 mA continuous absolute maximum at 25 C; land footprint 2.4×0.8 mm.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL02",
+      "title": "TI LP5860",
+      "url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+      "fact": "LP5860RKPR; 11 scan rows×18 sinks, not 198 simultaneously driven current outputs; SPI up to 12 MHz; VSYNC high >=200 us.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL03",
+      "title": "ST STM32G474",
+      "url": "https://www.st.com/resource/en/datasheet/stm32g474re.pdf",
+      "fact": "STM32G474RET6, LQFP64, 512 KB flash, 170 MHz; serial peripherals and MCU voltage constraints.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL04",
+      "title": "ST Nucleo G4 user manual",
+      "url": "https://www.st.com/resource/en/user_manual/um2505-stm32g4-nucleo64-boards-mb1367-stmicroelectronics.pdf",
+      "fact": "NUCLEO-G474RE; board revision and power jumpers must be recorded.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL05",
+      "title": "Microchip LAN9252",
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/UNG/ProductDocuments/DataSheets/LAN9252-Data-Sheet-DS00001909.pdf",
+      "fact": "DS00001909C: SPI PDI; integrated PHYs; LAN9252I/PT industrial TQFP-EP ordering convention. Typical two-PHY traffic: (112+82) mA at 3.3 V with internal regulators and magnetics.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL06",
+      "title": "Microchip SPI evaluation board",
+      "url": "https://www.microchip.com/en-us/development-tool/EVB-LAN9252-SPI",
+      "fact": "Evaluation platform, not claimed to fit inside final head.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL07",
+      "title": "Microchip LAN9252 reference schematic",
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/BoardDesignFiles/lan9252-hbispigpio-evb-rev-b.pdf",
+      "fact": "Reference includes 24FC512 and Pulse J0011D01BNL; custom board still requires full schematic and layout.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL08",
+      "title": "Microchip EEPROM",
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA512-24LC512-24FC512-512-Kbit-I2C-Serial-EEPROM-DS20001754.pdf",
+      "fact": "24FC512-I/SN: 512 Kbit I2C EEPROM, SOIC8; SII image/address/WP must be configured.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL09",
+      "title": "Pulse Ethernet connector guide",
+      "url": "https://www.pulseelectronics.com/wp-content/uploads/2020/12/Ethernet-Connector-Module-Selector-Guide-f.pdf",
+      "fact": "J0011D01BNL 100BASE-TX integrated magnetic RJ45; package and operating temperature require head review.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL10",
+      "title": "TI 24-to-5 V buck",
+      "url": "https://www.ti.com/lit/ds/symlink/tps54360b.pdf",
+      "fact": "TPS54360BDDAR, 60 V input family/3.5 A; external inductor, diode, compensation and thermal design required.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL11",
+      "title": "TI LED rail buck",
+      "url": "https://www.ti.com/lit/ds/symlink/tps62130a.pdf",
+      "fact": "TPS62130ARGTR, 3–17 V input, 3 A; proposed 5-to-3.3 V_LED.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL12",
+      "title": "TI logic rail buck",
+      "url": "https://www.ti.com/lit/ds/symlink/tps62162.pdf",
+      "fact": "TPS62162DSGR, fixed 3.3 V /1 A from 5 V; external components/layout required.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL13",
+      "title": "TI input eFuse",
+      "url": "https://www.ti.com/lit/ds/symlink/tps2660.pdf",
+      "fact": "TPS26600PWPR: 60 V /2 A family, reverse input polarity, programmable current/UVLO/OVP; not a safety power-removal function.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL14",
+      "title": "TI local LED power switch",
+      "url": "https://www.ti.com/lit/ds/symlink/tps2553.pdf",
+      "fact": "TPS2553DBVR, adjustable current-limited power distribution switch; per-board limit resistor and fault behavior to qualify.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL15",
+      "title": "JST GH connector",
+      "url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+      "fact": "GHR-10V-S + BM10B-GHS-TBT(LF)(SN) + SSHL-002T-P0.2; 1 A at AWG26; 50 V; positive latch; wire OD 0.76–1.0 mm.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL16",
+      "title": "Phoenix 24 V entry",
+      "url": "https://www.phoenixcontact.com/en-au/products/pcb-header-mc-15-2-g-381-1803277",
+      "fact": "MC 1,5/2-G-3,81 1803277 with mate 1803578; 8 A header, without locking, fixed bench only.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL17",
+      "title": "Littelfuse input TVS",
+      "url": "https://www.littelfuse.com/ja-jp/products/overvoltage-protection/tvs-diodes/surface-mount/smbj/smbj33a",
+      "fact": "SMBJ33A: 33 V stand-off, 53.3 V specified clamp at rated pulse; source impedance and pulse energy still needed.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL18",
+      "title": "Murata temperature NTC",
+      "url": "https://www.murata.com/en-us/api/pdfdownloadapi?cate=luNTCforTempeSenso&partno=NCP18XH103F03RB",
+      "fact": "NCP18XH103F03RB 10 kohm at 25 C, 1%; temperature observation, not LED junction-temperature measurement.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "HL19",
+      "title": "TI low-capacitance signal ESD array",
+      "url": "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf",
+      "fact": "TPD4E05U06DQAR candidate for exposed logic signals; placement/ground return and Ethernet applicability must be reviewed.",
+      "source_type": "manufacturer-primary",
+      "accessed": "2026-09-27"
+    }
+  ],
+  "assumptions": {
+    "land_pattern_mm": [
+      2.4,
+      0.8
+    ],
+    "central_pitch_mm": 3,
+    "central_aperture_diameter_mm": 62,
+    "central_lands_within_radius_mm": 29.5,
+    "petal_pitch_mm": 4,
+    "petal_land_edge_distance_from_CAD_window_mm": 1.5,
+    "contact_band_half_length_mm": 12,
+    "scan_duty_upper": 0.09090909090909091,
+    "hardware_peak_current_not_fail_safe": true,
+    "head_io_slave_position": 12,
+    "finger_drive_control": "four independent EtherCAT slaves F1-F4; MCU only light/sensors/IO"
+  },
+  "calculations": {
+    "pixel_count": 609,
+    "driver_count": 6,
+    "nominal_pulse_current_A": 0.02,
+    "scan_rows": 11,
+    "blanking_factor_upper_bound": 1,
+    "average_vled_current_full_on_upper_A": 1.1072727272727272,
+    "simultaneous_peak_current_A": 1.1600000000000001,
+    "design_peak_allowance_multiplier": 1.25,
+    "design_peak_allowance_not_datasheet_limit": true,
+    "led_peak_design_budget_A": 1.4500000000000002,
+    "led_regulator_current_rating_A": 3,
+    "led_peak_budget_fraction": 0.4833333333333334,
+    "average_vled_power_full_on_upper_W": 3.6539999999999995,
+    "led_electrical_power_at_typ_2V_W": 2.2145454545454544,
+    "led_electrical_power_at_max_2_4V_W": 2.657454545454545,
+    "driver_dissipation_at_typ_2V_W": 1.4394545454545453,
+    "example_pattern_lit_fraction": 0.25,
+    "example_pattern_pwm_mean": 0.35,
+    "example_pattern_vled_power_W": 0.3197249999999999,
+    "logic_3V3_allocation_A": 0.5,
+    "logic_budget_not_measured": true,
+    "converter_efficiency_assumption": 0.85,
+    "calculated_24V_full_on_power_with_logic_allocation_W": 7.341176470588235,
+    "calculated_24V_pattern_power_with_logic_allocation_W": 2.7262629757785466,
+    "calculated_5V_peak_current_with_design_allowances_A": 1.5141176470588236,
+    "data_bytes_per_full_16bit_driver_update": 396,
+    "all_six_driver_bytes": 2376,
+    "frame_Hz_design": 60,
+    "LED_SPI_clock_Hz_design": 2000000,
+    "payload_occupancy_at_design_clock": 0.57024,
+    "warning": "Power is an analytic screen with explicit assumptions, not measured photometry, guaranteed efficiency, junction temperature or fault-safe current. Scan blanking reduces average below 1/11 bound."
+  },
+  "pixel_maps": [
+    {
+      "panel": "circle",
+      "pixel_count": 285,
+      "scan_rows": 11,
+      "drivers": [
+        {
+          "ic": "circle_0",
+          "pixels": [
+            {
+              "x_mm": -27,
+              "y_mm": -6,
+              "sw": 0,
+              "cs": 0
+            },
+            {
+              "x_mm": -27,
+              "y_mm": 0,
+              "sw": 1,
+              "cs": 0
+            },
+            {
+              "x_mm": -27,
+              "y_mm": 6,
+              "sw": 2,
+              "cs": 0
+            },
+            {
+              "x_mm": -24,
+              "y_mm": -9,
+              "sw": 3,
+              "cs": 0
+            },
+            {
+              "x_mm": -24,
+              "y_mm": -3,
+              "sw": 4,
+              "cs": 0
+            },
+            {
+              "x_mm": -24,
+              "y_mm": 3,
+              "sw": 5,
+              "cs": 0
+            },
+            {
+              "x_mm": -24,
+              "y_mm": 9,
+              "sw": 6,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": -18,
+              "sw": 7,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": -12,
+              "sw": 8,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": -6,
+              "sw": 9,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": 0,
+              "sw": 10,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": 6,
+              "sw": 0,
+              "cs": 1
+            },
+            {
+              "x_mm": -21,
+              "y_mm": 12,
+              "sw": 1,
+              "cs": 1
+            },
+            {
+              "x_mm": -21,
+              "y_mm": 18,
+              "sw": 2,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": -18,
+              "sw": 3,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": -12,
+              "sw": 4,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": -6,
+              "sw": 5,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": 0,
+              "sw": 6,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": 6,
+              "sw": 7,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": 12,
+              "sw": 8,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": 18,
+              "sw": 9,
+              "cs": 1
+            },
+            {
+              "x_mm": -15,
+              "y_mm": -24,
+              "sw": 10,
+              "cs": 1
+            },
+            {
+              "x_mm": -15,
+              "y_mm": -18,
+              "sw": 0,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": -12,
+              "sw": 1,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": -6,
+              "sw": 2,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": 0,
+              "sw": 3,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": 6,
+              "sw": 4,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": 12,
+              "sw": 5,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": 18,
+              "sw": 6,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": 24,
+              "sw": 7,
+              "cs": 2
+            },
+            {
+              "x_mm": -12,
+              "y_mm": -21,
+              "sw": 8,
+              "cs": 2
+            },
+            {
+              "x_mm": -12,
+              "y_mm": -15,
+              "sw": 9,
+              "cs": 2
+            },
+            {
+              "x_mm": -12,
+              "y_mm": -9,
+              "sw": 10,
+              "cs": 2
+            },
+            {
+              "x_mm": -12,
+              "y_mm": -3,
+              "sw": 0,
+              "cs": 3
+            },
+            {
+              "x_mm": -12,
+              "y_mm": 3,
+              "sw": 1,
+              "cs": 3
+            },
+            {
+              "x_mm": -12,
+              "y_mm": 9,
+              "sw": 2,
+              "cs": 3
+            },
+            {
+              "x_mm": -12,
+              "y_mm": 15,
+              "sw": 3,
+              "cs": 3
+            },
+            {
+              "x_mm": -12,
+              "y_mm": 21,
+              "sw": 4,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": -27,
+              "sw": 5,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": -21,
+              "sw": 6,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": -15,
+              "sw": 7,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": -9,
+              "sw": 8,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": -3,
+              "sw": 9,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 3,
+              "sw": 10,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 9,
+              "sw": 0,
+              "cs": 4
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 15,
+              "sw": 1,
+              "cs": 4
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 21,
+              "sw": 2,
+              "cs": 4
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 27,
+              "sw": 3,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": -24,
+              "sw": 4,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": -18,
+              "sw": 5,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": -12,
+              "sw": 6,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": -6,
+              "sw": 7,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 0,
+              "sw": 8,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 6,
+              "sw": 9,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 12,
+              "sw": 10,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 18,
+              "sw": 0,
+              "cs": 5
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 24,
+              "sw": 1,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": -27,
+              "sw": 2,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": -21,
+              "sw": 3,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": -15,
+              "sw": 4,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": -9,
+              "sw": 5,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": -3,
+              "sw": 6,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 3,
+              "sw": 7,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 9,
+              "sw": 8,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 15,
+              "sw": 9,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 21,
+              "sw": 10,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 27,
+              "sw": 0,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": -24,
+              "sw": 1,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": -18,
+              "sw": 2,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": -12,
+              "sw": 3,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": -6,
+              "sw": 4,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 0,
+              "sw": 5,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 6,
+              "sw": 6,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 12,
+              "sw": 7,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 18,
+              "sw": 8,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 24,
+              "sw": 9,
+              "cs": 6
+            },
+            {
+              "x_mm": 3,
+              "y_mm": -27,
+              "sw": 10,
+              "cs": 6
+            },
+            {
+              "x_mm": 3,
+              "y_mm": -21,
+              "sw": 0,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": -15,
+              "sw": 1,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": -9,
+              "sw": 2,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": -3,
+              "sw": 3,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 3,
+              "sw": 4,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 9,
+              "sw": 5,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 15,
+              "sw": 6,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 21,
+              "sw": 7,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 27,
+              "sw": 8,
+              "cs": 7
+            },
+            {
+              "x_mm": 6,
+              "y_mm": -24,
+              "sw": 9,
+              "cs": 7
+            },
+            {
+              "x_mm": 6,
+              "y_mm": -18,
+              "sw": 10,
+              "cs": 7
+            },
+            {
+              "x_mm": 6,
+              "y_mm": -12,
+              "sw": 0,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": -6,
+              "sw": 1,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 6,
+              "sw": 3,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 12,
+              "sw": 4,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 18,
+              "sw": 5,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 24,
+              "sw": 6,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": -27,
+              "sw": 7,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": -21,
+              "sw": 8,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": -15,
+              "sw": 9,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": -9,
+              "sw": 10,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": -3,
+              "sw": 0,
+              "cs": 9
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 3,
+              "sw": 1,
+              "cs": 9
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 9,
+              "sw": 2,
+              "cs": 9
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 15,
+              "sw": 3,
+              "cs": 9
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 21,
+              "sw": 4,
+              "cs": 9
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 27,
+              "sw": 5,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": -21,
+              "sw": 6,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": -15,
+              "sw": 7,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": -9,
+              "sw": 8,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": -3,
+              "sw": 9,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": 3,
+              "sw": 10,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": 9,
+              "sw": 0,
+              "cs": 10
+            },
+            {
+              "x_mm": 12,
+              "y_mm": 15,
+              "sw": 1,
+              "cs": 10
+            },
+            {
+              "x_mm": 12,
+              "y_mm": 21,
+              "sw": 2,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": -24,
+              "sw": 3,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": -18,
+              "sw": 4,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": -12,
+              "sw": 5,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": -6,
+              "sw": 6,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": 0,
+              "sw": 7,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": 6,
+              "sw": 8,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": 12,
+              "sw": 9,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": 18,
+              "sw": 10,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": 24,
+              "sw": 0,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": -18,
+              "sw": 1,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": -12,
+              "sw": 2,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": -6,
+              "sw": 3,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": 6,
+              "sw": 5,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": 12,
+              "sw": 6,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": 18,
+              "sw": 7,
+              "cs": 11
+            },
+            {
+              "x_mm": 21,
+              "y_mm": -18,
+              "sw": 8,
+              "cs": 11
+            },
+            {
+              "x_mm": 21,
+              "y_mm": -12,
+              "sw": 9,
+              "cs": 11
+            },
+            {
+              "x_mm": 21,
+              "y_mm": -6,
+              "sw": 10,
+              "cs": 11
+            },
+            {
+              "x_mm": 21,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 12
+            },
+            {
+              "x_mm": 21,
+              "y_mm": 6,
+              "sw": 1,
+              "cs": 12
+            },
+            {
+              "x_mm": 21,
+              "y_mm": 12,
+              "sw": 2,
+              "cs": 12
+            },
+            {
+              "x_mm": 21,
+              "y_mm": 18,
+              "sw": 3,
+              "cs": 12
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -9,
+              "sw": 4,
+              "cs": 12
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -3,
+              "sw": 5,
+              "cs": 12
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 3,
+              "sw": 6,
+              "cs": 12
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 9,
+              "sw": 7,
+              "cs": 12
+            },
+            {
+              "x_mm": 27,
+              "y_mm": -6,
+              "sw": 8,
+              "cs": 12
+            },
+            {
+              "x_mm": 27,
+              "y_mm": 0,
+              "sw": 9,
+              "cs": 12
+            },
+            {
+              "x_mm": 27,
+              "y_mm": 6,
+              "sw": 10,
+              "cs": 12
+            }
+          ]
+        },
+        {
+          "ic": "circle_1",
+          "pixels": [
+            {
+              "x_mm": -27,
+              "y_mm": -3,
+              "sw": 0,
+              "cs": 0
+            },
+            {
+              "x_mm": -27,
+              "y_mm": 3,
+              "sw": 1,
+              "cs": 0
+            },
+            {
+              "x_mm": -24,
+              "y_mm": -12,
+              "sw": 2,
+              "cs": 0
+            },
+            {
+              "x_mm": -24,
+              "y_mm": -6,
+              "sw": 3,
+              "cs": 0
+            },
+            {
+              "x_mm": -24,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 0
+            },
+            {
+              "x_mm": -24,
+              "y_mm": 6,
+              "sw": 5,
+              "cs": 0
+            },
+            {
+              "x_mm": -24,
+              "y_mm": 12,
+              "sw": 6,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": -15,
+              "sw": 7,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": -9,
+              "sw": 8,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": -3,
+              "sw": 9,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": 3,
+              "sw": 10,
+              "cs": 0
+            },
+            {
+              "x_mm": -21,
+              "y_mm": 9,
+              "sw": 0,
+              "cs": 1
+            },
+            {
+              "x_mm": -21,
+              "y_mm": 15,
+              "sw": 1,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": -21,
+              "sw": 2,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": -15,
+              "sw": 3,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": -9,
+              "sw": 4,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": -3,
+              "sw": 5,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": 3,
+              "sw": 6,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": 9,
+              "sw": 7,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": 15,
+              "sw": 8,
+              "cs": 1
+            },
+            {
+              "x_mm": -18,
+              "y_mm": 21,
+              "sw": 9,
+              "cs": 1
+            },
+            {
+              "x_mm": -15,
+              "y_mm": -21,
+              "sw": 10,
+              "cs": 1
+            },
+            {
+              "x_mm": -15,
+              "y_mm": -15,
+              "sw": 0,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": -9,
+              "sw": 1,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": -3,
+              "sw": 2,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": 3,
+              "sw": 3,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": 9,
+              "sw": 4,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": 15,
+              "sw": 5,
+              "cs": 2
+            },
+            {
+              "x_mm": -15,
+              "y_mm": 21,
+              "sw": 6,
+              "cs": 2
+            },
+            {
+              "x_mm": -12,
+              "y_mm": -24,
+              "sw": 7,
+              "cs": 2
+            },
+            {
+              "x_mm": -12,
+              "y_mm": -18,
+              "sw": 8,
+              "cs": 2
+            },
+            {
+              "x_mm": -12,
+              "y_mm": -12,
+              "sw": 9,
+              "cs": 2
+            },
+            {
+              "x_mm": -12,
+              "y_mm": -6,
+              "sw": 10,
+              "cs": 2
+            },
+            {
+              "x_mm": -12,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 3
+            },
+            {
+              "x_mm": -12,
+              "y_mm": 6,
+              "sw": 1,
+              "cs": 3
+            },
+            {
+              "x_mm": -12,
+              "y_mm": 12,
+              "sw": 2,
+              "cs": 3
+            },
+            {
+              "x_mm": -12,
+              "y_mm": 18,
+              "sw": 3,
+              "cs": 3
+            },
+            {
+              "x_mm": -12,
+              "y_mm": 24,
+              "sw": 4,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": -24,
+              "sw": 5,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": -18,
+              "sw": 6,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": -12,
+              "sw": 7,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": -6,
+              "sw": 8,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 0,
+              "sw": 9,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 6,
+              "sw": 10,
+              "cs": 3
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 12,
+              "sw": 0,
+              "cs": 4
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 18,
+              "sw": 1,
+              "cs": 4
+            },
+            {
+              "x_mm": -9,
+              "y_mm": 24,
+              "sw": 2,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": -27,
+              "sw": 3,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": -21,
+              "sw": 4,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": -15,
+              "sw": 5,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": -9,
+              "sw": 6,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": -3,
+              "sw": 7,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 3,
+              "sw": 8,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 9,
+              "sw": 9,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 15,
+              "sw": 10,
+              "cs": 4
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 21,
+              "sw": 0,
+              "cs": 5
+            },
+            {
+              "x_mm": -6,
+              "y_mm": 27,
+              "sw": 1,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": -24,
+              "sw": 2,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": -18,
+              "sw": 3,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": -12,
+              "sw": 4,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": -6,
+              "sw": 5,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 0,
+              "sw": 6,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 6,
+              "sw": 7,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 12,
+              "sw": 8,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 18,
+              "sw": 9,
+              "cs": 5
+            },
+            {
+              "x_mm": -3,
+              "y_mm": 24,
+              "sw": 10,
+              "cs": 5
+            },
+            {
+              "x_mm": 0,
+              "y_mm": -27,
+              "sw": 0,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": -21,
+              "sw": 1,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": -15,
+              "sw": 2,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": -9,
+              "sw": 3,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": -3,
+              "sw": 4,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 3,
+              "sw": 5,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 9,
+              "sw": 6,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 15,
+              "sw": 7,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 21,
+              "sw": 8,
+              "cs": 6
+            },
+            {
+              "x_mm": 0,
+              "y_mm": 27,
+              "sw": 9,
+              "cs": 6
+            },
+            {
+              "x_mm": 3,
+              "y_mm": -24,
+              "sw": 10,
+              "cs": 6
+            },
+            {
+              "x_mm": 3,
+              "y_mm": -18,
+              "sw": 0,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": -12,
+              "sw": 1,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": -6,
+              "sw": 2,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 0,
+              "sw": 3,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 6,
+              "sw": 4,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 12,
+              "sw": 5,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 18,
+              "sw": 6,
+              "cs": 7
+            },
+            {
+              "x_mm": 3,
+              "y_mm": 24,
+              "sw": 7,
+              "cs": 7
+            },
+            {
+              "x_mm": 6,
+              "y_mm": -27,
+              "sw": 8,
+              "cs": 7
+            },
+            {
+              "x_mm": 6,
+              "y_mm": -21,
+              "sw": 9,
+              "cs": 7
+            },
+            {
+              "x_mm": 6,
+              "y_mm": -15,
+              "sw": 10,
+              "cs": 7
+            },
+            {
+              "x_mm": 6,
+              "y_mm": -9,
+              "sw": 0,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": -3,
+              "sw": 1,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 3,
+              "sw": 2,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 9,
+              "sw": 3,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 15,
+              "sw": 4,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 21,
+              "sw": 5,
+              "cs": 8
+            },
+            {
+              "x_mm": 6,
+              "y_mm": 27,
+              "sw": 6,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": -24,
+              "sw": 7,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": -18,
+              "sw": 8,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": -12,
+              "sw": 9,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": -6,
+              "sw": 10,
+              "cs": 8
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 9
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 6,
+              "sw": 1,
+              "cs": 9
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 12,
+              "sw": 2,
+              "cs": 9
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 18,
+              "sw": 3,
+              "cs": 9
+            },
+            {
+              "x_mm": 9,
+              "y_mm": 24,
+              "sw": 4,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": -24,
+              "sw": 5,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": -18,
+              "sw": 6,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": -12,
+              "sw": 7,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": -6,
+              "sw": 8,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": 0,
+              "sw": 9,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": 6,
+              "sw": 10,
+              "cs": 9
+            },
+            {
+              "x_mm": 12,
+              "y_mm": 12,
+              "sw": 0,
+              "cs": 10
+            },
+            {
+              "x_mm": 12,
+              "y_mm": 18,
+              "sw": 1,
+              "cs": 10
+            },
+            {
+              "x_mm": 12,
+              "y_mm": 24,
+              "sw": 2,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": -21,
+              "sw": 3,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": -15,
+              "sw": 4,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": -9,
+              "sw": 5,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": -3,
+              "sw": 6,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": 3,
+              "sw": 7,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": 9,
+              "sw": 8,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": 15,
+              "sw": 9,
+              "cs": 10
+            },
+            {
+              "x_mm": 15,
+              "y_mm": 21,
+              "sw": 10,
+              "cs": 10
+            },
+            {
+              "x_mm": 18,
+              "y_mm": -21,
+              "sw": 0,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": -15,
+              "sw": 1,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": -9,
+              "sw": 2,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": -3,
+              "sw": 3,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": 3,
+              "sw": 4,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": 9,
+              "sw": 5,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": 15,
+              "sw": 6,
+              "cs": 11
+            },
+            {
+              "x_mm": 18,
+              "y_mm": 21,
+              "sw": 7,
+              "cs": 11
+            },
+            {
+              "x_mm": 21,
+              "y_mm": -15,
+              "sw": 8,
+              "cs": 11
+            },
+            {
+              "x_mm": 21,
+              "y_mm": -9,
+              "sw": 9,
+              "cs": 11
+            },
+            {
+              "x_mm": 21,
+              "y_mm": -3,
+              "sw": 10,
+              "cs": 11
+            },
+            {
+              "x_mm": 21,
+              "y_mm": 3,
+              "sw": 0,
+              "cs": 12
+            },
+            {
+              "x_mm": 21,
+              "y_mm": 9,
+              "sw": 1,
+              "cs": 12
+            },
+            {
+              "x_mm": 21,
+              "y_mm": 15,
+              "sw": 2,
+              "cs": 12
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -12,
+              "sw": 3,
+              "cs": 12
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -6,
+              "sw": 4,
+              "cs": 12
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 0,
+              "sw": 5,
+              "cs": 12
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 6,
+              "sw": 6,
+              "cs": 12
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 12,
+              "sw": 7,
+              "cs": 12
+            },
+            {
+              "x_mm": 27,
+              "y_mm": -3,
+              "sw": 8,
+              "cs": 12
+            },
+            {
+              "x_mm": 27,
+              "y_mm": 3,
+              "sw": 9,
+              "cs": 12
+            }
+          ]
+        }
+      ],
+      "max_simultaneous_pixels": 26,
+      "nominal_peak_A": 0.52,
+      "full_on_avg_current_upper_A": 0.5181818181818182,
+      "full_on_vled_power_upper_W": 1.71,
+      "pattern_example_power_upper_W": 0.14962499999999998
+    },
+    {
+      "panel": "UR",
+      "pixel_count": 113,
+      "scan_rows": 11,
+      "drivers": [
+        {
+          "ic": "UR_0",
+          "pixels": [
+            {
+              "x_mm": 24,
+              "y_mm": -8,
+              "sw": 0,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -4,
+              "sw": 1,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 4,
+              "sw": 3,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 8,
+              "sw": 4,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -12,
+              "sw": 5,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -8,
+              "sw": 6,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -4,
+              "sw": 7,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 0,
+              "sw": 8,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 4,
+              "sw": 9,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 8,
+              "sw": 10,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 12,
+              "sw": 0,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -12,
+              "sw": 1,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -8,
+              "sw": 2,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -4,
+              "sw": 3,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 4,
+              "sw": 5,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 8,
+              "sw": 6,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 12,
+              "sw": 7,
+              "cs": 1
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -12,
+              "sw": 8,
+              "cs": 1
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -8,
+              "sw": 9,
+              "cs": 1
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -4,
+              "sw": 10,
+              "cs": 1
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 4,
+              "sw": 1,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 8,
+              "sw": 2,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 12,
+              "sw": 3,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -12,
+              "sw": 4,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -8,
+              "sw": 5,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -4,
+              "sw": 6,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 0,
+              "sw": 7,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 4,
+              "sw": 8,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 8,
+              "sw": 9,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 12,
+              "sw": 10,
+              "cs": 2
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -12,
+              "sw": 0,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -8,
+              "sw": 1,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -4,
+              "sw": 2,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 0,
+              "sw": 3,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 4,
+              "sw": 4,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 8,
+              "sw": 5,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 12,
+              "sw": 6,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -12,
+              "sw": 7,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -8,
+              "sw": 8,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -4,
+              "sw": 9,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 0,
+              "sw": 10,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 4,
+              "sw": 0,
+              "cs": 4
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 8,
+              "sw": 1,
+              "cs": 4
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 12,
+              "sw": 2,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": -12,
+              "sw": 3,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": -8,
+              "sw": 4,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": -4,
+              "sw": 5,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 0,
+              "sw": 6,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 4,
+              "sw": 7,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 8,
+              "sw": 8,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 12,
+              "sw": 9,
+              "cs": 4
+            },
+            {
+              "x_mm": 56,
+              "y_mm": -12,
+              "sw": 10,
+              "cs": 4
+            },
+            {
+              "x_mm": 56,
+              "y_mm": -8,
+              "sw": 0,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": -4,
+              "sw": 1,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": 4,
+              "sw": 3,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": 8,
+              "sw": 4,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": 12,
+              "sw": 5,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": -8,
+              "sw": 6,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": -4,
+              "sw": 7,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": 0,
+              "sw": 8,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": 4,
+              "sw": 9,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": 8,
+              "sw": 10,
+              "cs": 5
+            },
+            {
+              "x_mm": 64,
+              "y_mm": -8,
+              "sw": 0,
+              "cs": 6
+            },
+            {
+              "x_mm": 64,
+              "y_mm": -4,
+              "sw": 1,
+              "cs": 6
+            },
+            {
+              "x_mm": 64,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 6
+            },
+            {
+              "x_mm": 64,
+              "y_mm": 4,
+              "sw": 3,
+              "cs": 6
+            },
+            {
+              "x_mm": 64,
+              "y_mm": 8,
+              "sw": 4,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": -8,
+              "sw": 5,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": -4,
+              "sw": 6,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": 0,
+              "sw": 7,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": 4,
+              "sw": 8,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": 8,
+              "sw": 9,
+              "cs": 6
+            },
+            {
+              "x_mm": 72,
+              "y_mm": -8,
+              "sw": 10,
+              "cs": 6
+            },
+            {
+              "x_mm": 72,
+              "y_mm": -4,
+              "sw": 0,
+              "cs": 7
+            },
+            {
+              "x_mm": 72,
+              "y_mm": 0,
+              "sw": 1,
+              "cs": 7
+            },
+            {
+              "x_mm": 72,
+              "y_mm": 4,
+              "sw": 2,
+              "cs": 7
+            },
+            {
+              "x_mm": 72,
+              "y_mm": 8,
+              "sw": 3,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": -8,
+              "sw": 4,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": -4,
+              "sw": 5,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": 0,
+              "sw": 6,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": 4,
+              "sw": 7,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": 8,
+              "sw": 8,
+              "cs": 7
+            },
+            {
+              "x_mm": 80,
+              "y_mm": -8,
+              "sw": 9,
+              "cs": 7
+            },
+            {
+              "x_mm": 80,
+              "y_mm": -4,
+              "sw": 10,
+              "cs": 7
+            },
+            {
+              "x_mm": 80,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 8
+            },
+            {
+              "x_mm": 80,
+              "y_mm": 4,
+              "sw": 1,
+              "cs": 8
+            },
+            {
+              "x_mm": 80,
+              "y_mm": 8,
+              "sw": 2,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": -8,
+              "sw": 3,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": -4,
+              "sw": 4,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": 0,
+              "sw": 5,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": 4,
+              "sw": 6,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": 8,
+              "sw": 7,
+              "cs": 8
+            },
+            {
+              "x_mm": 88,
+              "y_mm": -8,
+              "sw": 8,
+              "cs": 8
+            },
+            {
+              "x_mm": 88,
+              "y_mm": -4,
+              "sw": 9,
+              "cs": 8
+            },
+            {
+              "x_mm": 88,
+              "y_mm": 0,
+              "sw": 10,
+              "cs": 8
+            },
+            {
+              "x_mm": 88,
+              "y_mm": 4,
+              "sw": 0,
+              "cs": 9
+            },
+            {
+              "x_mm": 88,
+              "y_mm": 8,
+              "sw": 1,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": -8,
+              "sw": 2,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": -4,
+              "sw": 3,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": 4,
+              "sw": 5,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": 8,
+              "sw": 6,
+              "cs": 9
+            },
+            {
+              "x_mm": 96,
+              "y_mm": -4,
+              "sw": 7,
+              "cs": 9
+            },
+            {
+              "x_mm": 96,
+              "y_mm": 0,
+              "sw": 8,
+              "cs": 9
+            },
+            {
+              "x_mm": 96,
+              "y_mm": 4,
+              "sw": 9,
+              "cs": 9
+            },
+            {
+              "x_mm": 100,
+              "y_mm": -4,
+              "sw": 10,
+              "cs": 9
+            },
+            {
+              "x_mm": 100,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 10
+            },
+            {
+              "x_mm": 100,
+              "y_mm": 4,
+              "sw": 1,
+              "cs": 10
+            },
+            {
+              "x_mm": 128,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 10
+            }
+          ]
+        }
+      ],
+      "max_simultaneous_pixels": 11,
+      "nominal_peak_A": 0.22,
+      "full_on_avg_current_upper_A": 0.20545454545454547,
+      "full_on_vled_power_upper_W": 0.6779999999999999,
+      "pattern_example_power_upper_W": 0.05932499999999999,
+      "cad_window_polygon_mm": [
+        [
+          18.2,
+          -11.04
+        ],
+        [
+          33.6,
+          -16.56
+        ],
+        [
+          100.8,
+          -9.200000000000001
+        ],
+        [
+          131.6,
+          -3.68
+        ],
+        [
+          131.6,
+          3.68
+        ],
+        [
+          100.8,
+          9.200000000000001
+        ],
+        [
+          33.6,
+          16.56
+        ],
+        [
+          18.2,
+          11.04
+        ]
+      ],
+      "contact_reserve_mm": {
+        "along_center": 113.48568191626643,
+        "half_width_along": 12,
+        "full_transverse_width": 46,
+        "led_land_half_length": 1.2
+      }
+    },
+    {
+      "panel": "UL",
+      "pixel_count": 113,
+      "scan_rows": 11,
+      "drivers": [
+        {
+          "ic": "UL_0",
+          "pixels": [
+            {
+              "x_mm": 24,
+              "y_mm": -8,
+              "sw": 0,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -4,
+              "sw": 1,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 4,
+              "sw": 3,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 8,
+              "sw": 4,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -12,
+              "sw": 5,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -8,
+              "sw": 6,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -4,
+              "sw": 7,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 0,
+              "sw": 8,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 4,
+              "sw": 9,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 8,
+              "sw": 10,
+              "cs": 0
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 12,
+              "sw": 0,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -12,
+              "sw": 1,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -8,
+              "sw": 2,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -4,
+              "sw": 3,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 4,
+              "sw": 5,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 8,
+              "sw": 6,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 12,
+              "sw": 7,
+              "cs": 1
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -12,
+              "sw": 8,
+              "cs": 1
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -8,
+              "sw": 9,
+              "cs": 1
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -4,
+              "sw": 10,
+              "cs": 1
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 4,
+              "sw": 1,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 8,
+              "sw": 2,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 12,
+              "sw": 3,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -12,
+              "sw": 4,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -8,
+              "sw": 5,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -4,
+              "sw": 6,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 0,
+              "sw": 7,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 4,
+              "sw": 8,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 8,
+              "sw": 9,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 12,
+              "sw": 10,
+              "cs": 2
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -12,
+              "sw": 0,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -8,
+              "sw": 1,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -4,
+              "sw": 2,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 0,
+              "sw": 3,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 4,
+              "sw": 4,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 8,
+              "sw": 5,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 12,
+              "sw": 6,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -12,
+              "sw": 7,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -8,
+              "sw": 8,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -4,
+              "sw": 9,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 0,
+              "sw": 10,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 4,
+              "sw": 0,
+              "cs": 4
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 8,
+              "sw": 1,
+              "cs": 4
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 12,
+              "sw": 2,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": -12,
+              "sw": 3,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": -8,
+              "sw": 4,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": -4,
+              "sw": 5,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 0,
+              "sw": 6,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 4,
+              "sw": 7,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 8,
+              "sw": 8,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 12,
+              "sw": 9,
+              "cs": 4
+            },
+            {
+              "x_mm": 56,
+              "y_mm": -12,
+              "sw": 10,
+              "cs": 4
+            },
+            {
+              "x_mm": 56,
+              "y_mm": -8,
+              "sw": 0,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": -4,
+              "sw": 1,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": 4,
+              "sw": 3,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": 8,
+              "sw": 4,
+              "cs": 5
+            },
+            {
+              "x_mm": 56,
+              "y_mm": 12,
+              "sw": 5,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": -8,
+              "sw": 6,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": -4,
+              "sw": 7,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": 0,
+              "sw": 8,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": 4,
+              "sw": 9,
+              "cs": 5
+            },
+            {
+              "x_mm": 60,
+              "y_mm": 8,
+              "sw": 10,
+              "cs": 5
+            },
+            {
+              "x_mm": 64,
+              "y_mm": -8,
+              "sw": 0,
+              "cs": 6
+            },
+            {
+              "x_mm": 64,
+              "y_mm": -4,
+              "sw": 1,
+              "cs": 6
+            },
+            {
+              "x_mm": 64,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 6
+            },
+            {
+              "x_mm": 64,
+              "y_mm": 4,
+              "sw": 3,
+              "cs": 6
+            },
+            {
+              "x_mm": 64,
+              "y_mm": 8,
+              "sw": 4,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": -8,
+              "sw": 5,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": -4,
+              "sw": 6,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": 0,
+              "sw": 7,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": 4,
+              "sw": 8,
+              "cs": 6
+            },
+            {
+              "x_mm": 68,
+              "y_mm": 8,
+              "sw": 9,
+              "cs": 6
+            },
+            {
+              "x_mm": 72,
+              "y_mm": -8,
+              "sw": 10,
+              "cs": 6
+            },
+            {
+              "x_mm": 72,
+              "y_mm": -4,
+              "sw": 0,
+              "cs": 7
+            },
+            {
+              "x_mm": 72,
+              "y_mm": 0,
+              "sw": 1,
+              "cs": 7
+            },
+            {
+              "x_mm": 72,
+              "y_mm": 4,
+              "sw": 2,
+              "cs": 7
+            },
+            {
+              "x_mm": 72,
+              "y_mm": 8,
+              "sw": 3,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": -8,
+              "sw": 4,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": -4,
+              "sw": 5,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": 0,
+              "sw": 6,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": 4,
+              "sw": 7,
+              "cs": 7
+            },
+            {
+              "x_mm": 76,
+              "y_mm": 8,
+              "sw": 8,
+              "cs": 7
+            },
+            {
+              "x_mm": 80,
+              "y_mm": -8,
+              "sw": 9,
+              "cs": 7
+            },
+            {
+              "x_mm": 80,
+              "y_mm": -4,
+              "sw": 10,
+              "cs": 7
+            },
+            {
+              "x_mm": 80,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 8
+            },
+            {
+              "x_mm": 80,
+              "y_mm": 4,
+              "sw": 1,
+              "cs": 8
+            },
+            {
+              "x_mm": 80,
+              "y_mm": 8,
+              "sw": 2,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": -8,
+              "sw": 3,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": -4,
+              "sw": 4,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": 0,
+              "sw": 5,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": 4,
+              "sw": 6,
+              "cs": 8
+            },
+            {
+              "x_mm": 84,
+              "y_mm": 8,
+              "sw": 7,
+              "cs": 8
+            },
+            {
+              "x_mm": 88,
+              "y_mm": -8,
+              "sw": 8,
+              "cs": 8
+            },
+            {
+              "x_mm": 88,
+              "y_mm": -4,
+              "sw": 9,
+              "cs": 8
+            },
+            {
+              "x_mm": 88,
+              "y_mm": 0,
+              "sw": 10,
+              "cs": 8
+            },
+            {
+              "x_mm": 88,
+              "y_mm": 4,
+              "sw": 0,
+              "cs": 9
+            },
+            {
+              "x_mm": 88,
+              "y_mm": 8,
+              "sw": 1,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": -8,
+              "sw": 2,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": -4,
+              "sw": 3,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": 4,
+              "sw": 5,
+              "cs": 9
+            },
+            {
+              "x_mm": 92,
+              "y_mm": 8,
+              "sw": 6,
+              "cs": 9
+            },
+            {
+              "x_mm": 96,
+              "y_mm": -4,
+              "sw": 7,
+              "cs": 9
+            },
+            {
+              "x_mm": 96,
+              "y_mm": 0,
+              "sw": 8,
+              "cs": 9
+            },
+            {
+              "x_mm": 96,
+              "y_mm": 4,
+              "sw": 9,
+              "cs": 9
+            },
+            {
+              "x_mm": 100,
+              "y_mm": -4,
+              "sw": 10,
+              "cs": 9
+            },
+            {
+              "x_mm": 100,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 10
+            },
+            {
+              "x_mm": 100,
+              "y_mm": 4,
+              "sw": 1,
+              "cs": 10
+            },
+            {
+              "x_mm": 128,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 10
+            }
+          ]
+        }
+      ],
+      "max_simultaneous_pixels": 11,
+      "nominal_peak_A": 0.22,
+      "full_on_avg_current_upper_A": 0.20545454545454547,
+      "full_on_vled_power_upper_W": 0.6779999999999999,
+      "pattern_example_power_upper_W": 0.05932499999999999,
+      "cad_window_polygon_mm": [
+        [
+          18.2,
+          -11.04
+        ],
+        [
+          33.6,
+          -16.56
+        ],
+        [
+          100.8,
+          -9.200000000000001
+        ],
+        [
+          131.6,
+          -3.68
+        ],
+        [
+          131.6,
+          3.68
+        ],
+        [
+          100.8,
+          9.200000000000001
+        ],
+        [
+          33.6,
+          16.56
+        ],
+        [
+          18.2,
+          11.04
+        ]
+      ],
+      "contact_reserve_mm": {
+        "along_center": 113.48568191626643,
+        "half_width_along": 12,
+        "full_transverse_width": 46,
+        "led_land_half_length": 1.2
+      }
+    },
+    {
+      "panel": "LL",
+      "pixel_count": 49,
+      "scan_rows": 11,
+      "drivers": [
+        {
+          "ic": "LL_0",
+          "pixels": [
+            {
+              "x_mm": 16,
+              "y_mm": -4,
+              "sw": 0,
+              "cs": 0
+            },
+            {
+              "x_mm": 16,
+              "y_mm": 0,
+              "sw": 1,
+              "cs": 0
+            },
+            {
+              "x_mm": 16,
+              "y_mm": 4,
+              "sw": 2,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": -8,
+              "sw": 3,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": -4,
+              "sw": 4,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": 0,
+              "sw": 5,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": 4,
+              "sw": 6,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": 8,
+              "sw": 7,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -8,
+              "sw": 8,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -4,
+              "sw": 9,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 0,
+              "sw": 10,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 4,
+              "sw": 0,
+              "cs": 1
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 8,
+              "sw": 1,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -8,
+              "sw": 2,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -4,
+              "sw": 3,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 4,
+              "sw": 5,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 8,
+              "sw": 6,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -8,
+              "sw": 7,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -4,
+              "sw": 8,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 0,
+              "sw": 9,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 4,
+              "sw": 10,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 8,
+              "sw": 0,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -8,
+              "sw": 1,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -4,
+              "sw": 2,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 0,
+              "sw": 3,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 4,
+              "sw": 4,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 8,
+              "sw": 5,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -8,
+              "sw": 6,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -4,
+              "sw": 7,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 0,
+              "sw": 8,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 4,
+              "sw": 9,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 8,
+              "sw": 10,
+              "cs": 2
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -8,
+              "sw": 0,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -4,
+              "sw": 1,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 4,
+              "sw": 3,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 8,
+              "sw": 4,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -8,
+              "sw": 5,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -4,
+              "sw": 6,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 0,
+              "sw": 7,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 4,
+              "sw": 8,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 8,
+              "sw": 9,
+              "cs": 3
+            },
+            {
+              "x_mm": 52,
+              "y_mm": -4,
+              "sw": 10,
+              "cs": 3
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 4,
+              "sw": 1,
+              "cs": 4
+            },
+            {
+              "x_mm": 80,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 4
+            },
+            {
+              "x_mm": 84,
+              "y_mm": 0,
+              "sw": 3,
+              "cs": 4
+            },
+            {
+              "x_mm": 88,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 4
+            }
+          ]
+        }
+      ],
+      "max_simultaneous_pixels": 5,
+      "nominal_peak_A": 0.1,
+      "full_on_avg_current_upper_A": 0.0890909090909091,
+      "full_on_vled_power_upper_W": 0.294,
+      "pattern_example_power_upper_W": 0.025724999999999998,
+      "cad_window_polygon_mm": [
+        [
+          13,
+          -8.64
+        ],
+        [
+          24,
+          -12.959999999999999
+        ],
+        [
+          72,
+          -7.2
+        ],
+        [
+          94,
+          -2.88
+        ],
+        [
+          94,
+          2.88
+        ],
+        [
+          72,
+          7.2
+        ],
+        [
+          24,
+          12.959999999999999
+        ],
+        [
+          13,
+          8.64
+        ]
+      ],
+      "contact_reserve_mm": {
+        "along_center": 66.17401302626281,
+        "half_width_along": 12,
+        "full_transverse_width": 36,
+        "led_land_half_length": 1.2
+      }
+    },
+    {
+      "panel": "LR",
+      "pixel_count": 49,
+      "scan_rows": 11,
+      "drivers": [
+        {
+          "ic": "LR_0",
+          "pixels": [
+            {
+              "x_mm": 16,
+              "y_mm": -4,
+              "sw": 0,
+              "cs": 0
+            },
+            {
+              "x_mm": 16,
+              "y_mm": 0,
+              "sw": 1,
+              "cs": 0
+            },
+            {
+              "x_mm": 16,
+              "y_mm": 4,
+              "sw": 2,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": -8,
+              "sw": 3,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": -4,
+              "sw": 4,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": 0,
+              "sw": 5,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": 4,
+              "sw": 6,
+              "cs": 0
+            },
+            {
+              "x_mm": 20,
+              "y_mm": 8,
+              "sw": 7,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -8,
+              "sw": 8,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": -4,
+              "sw": 9,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 0,
+              "sw": 10,
+              "cs": 0
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 4,
+              "sw": 0,
+              "cs": 1
+            },
+            {
+              "x_mm": 24,
+              "y_mm": 8,
+              "sw": 1,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -8,
+              "sw": 2,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": -4,
+              "sw": 3,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 4,
+              "sw": 5,
+              "cs": 1
+            },
+            {
+              "x_mm": 28,
+              "y_mm": 8,
+              "sw": 6,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -8,
+              "sw": 7,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": -4,
+              "sw": 8,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 0,
+              "sw": 9,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 4,
+              "sw": 10,
+              "cs": 1
+            },
+            {
+              "x_mm": 32,
+              "y_mm": 8,
+              "sw": 0,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -8,
+              "sw": 1,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": -4,
+              "sw": 2,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 0,
+              "sw": 3,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 4,
+              "sw": 4,
+              "cs": 2
+            },
+            {
+              "x_mm": 36,
+              "y_mm": 8,
+              "sw": 5,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -8,
+              "sw": 6,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": -4,
+              "sw": 7,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 0,
+              "sw": 8,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 4,
+              "sw": 9,
+              "cs": 2
+            },
+            {
+              "x_mm": 40,
+              "y_mm": 8,
+              "sw": 10,
+              "cs": 2
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -8,
+              "sw": 0,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": -4,
+              "sw": 1,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 4,
+              "sw": 3,
+              "cs": 3
+            },
+            {
+              "x_mm": 44,
+              "y_mm": 8,
+              "sw": 4,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -8,
+              "sw": 5,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": -4,
+              "sw": 6,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 0,
+              "sw": 7,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 4,
+              "sw": 8,
+              "cs": 3
+            },
+            {
+              "x_mm": 48,
+              "y_mm": 8,
+              "sw": 9,
+              "cs": 3
+            },
+            {
+              "x_mm": 52,
+              "y_mm": -4,
+              "sw": 10,
+              "cs": 3
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 0,
+              "sw": 0,
+              "cs": 4
+            },
+            {
+              "x_mm": 52,
+              "y_mm": 4,
+              "sw": 1,
+              "cs": 4
+            },
+            {
+              "x_mm": 80,
+              "y_mm": 0,
+              "sw": 2,
+              "cs": 4
+            },
+            {
+              "x_mm": 84,
+              "y_mm": 0,
+              "sw": 3,
+              "cs": 4
+            },
+            {
+              "x_mm": 88,
+              "y_mm": 0,
+              "sw": 4,
+              "cs": 4
+            }
+          ]
+        }
+      ],
+      "max_simultaneous_pixels": 5,
+      "nominal_peak_A": 0.1,
+      "full_on_avg_current_upper_A": 0.0890909090909091,
+      "full_on_vled_power_upper_W": 0.294,
+      "pattern_example_power_upper_W": 0.025724999999999998,
+      "cad_window_polygon_mm": [
+        [
+          13,
+          -8.64
+        ],
+        [
+          24,
+          -12.959999999999999
+        ],
+        [
+          72,
+          -7.2
+        ],
+        [
+          94,
+          -2.88
+        ],
+        [
+          94,
+          2.88
+        ],
+        [
+          72,
+          7.2
+        ],
+        [
+          24,
+          12.959999999999999
+        ],
+        [
+          13,
+          8.64
+        ]
+      ],
+      "contact_reserve_mm": {
+        "along_center": 66.17401302626281,
+        "half_width_along": 12,
+        "full_transverse_width": 36,
+        "led_land_half_length": 1.2
+      }
+    }
+  ]
+}
