@@ -1,0 +1,133 @@
+{
+  "revision": "SHOULDER-RAISE02",
+  "status": "READY-for-research-review-not-manufacture",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "generator_sha256": "750a88604e702e416ef084a2aaa094396a893e915ef614964fae1fe3c2b7dbf7",
+  "doc_sha256": "990b2c31ac98faf01bba7e54112691fb00d5779999dd73eecb75c0acea1b349a",
+  "all_main_and_supplement_sources_unchanged": true,
+  "all_main_artifact_hashes_match": true,
+  "STEP_original_part_roundtrip": [
+    {
+      "id": "L12_output_adapter",
+      "mass_roundtrip_error_kg": 1.637578961322106e-14,
+      "com_roundtrip_max_error_m": 6.484285921280807e-15,
+      "inertia_roundtrip_max_error_kg_m2": 2.6129272356900657e-17
+    },
+    {
+      "id": "L12_rear_fork",
+      "mass_roundtrip_error_kg": 4.4098835694228455e-11,
+      "com_roundtrip_max_error_m": 3.0804875176208103e-10,
+      "inertia_roundtrip_max_error_kg_m2": 5.987838557140341e-12
+    },
+    {
+      "id": "L12_front_ring",
+      "mass_roundtrip_error_kg": 5.474787290182803e-15,
+      "com_roundtrip_max_error_m": 3.4490890727290694e-15,
+      "inertia_roundtrip_max_error_kg_m2": 1.5680273919571608e-17
+    },
+    {
+      "id": "STEEL_THREAD_BLOCK_1",
+      "mass_roundtrip_error_kg": 5.179884299266746e-15,
+      "com_roundtrip_max_error_m": 3.0531133177191805e-15,
+      "inertia_roundtrip_max_error_kg_m2": 8.190808599949084e-19
+    },
+    {
+      "id": "STEEL_THREAD_BLOCK_2",
+      "mass_roundtrip_error_kg": 4.683753385137379e-16,
+      "com_roundtrip_max_error_m": 3.802513859341161e-15,
+      "inertia_roundtrip_max_error_kg_m2": 5.116079001415974e-19
+    },
+    {
+      "id": "STEEL_THREAD_BLOCK_3",
+      "mass_roundtrip_error_kg": 6.359496262930975e-15,
+      "com_roundtrip_max_error_m": 6.4878658001532585e-15,
+      "inertia_roundtrip_max_error_kg_m2": 1.345511836713456e-18
+    },
+    {
+      "id": "STEEL_THREAD_BLOCK_4",
+      "mass_roundtrip_error_kg": 3.0600522116230877e-15,
+      "com_roundtrip_max_error_m": 6.925016116099414e-15,
+      "inertia_roundtrip_max_error_kg_m2": 5.848762500790944e-19
+    },
+    {
+      "id": "STEEL_THREAD_BLOCK_5",
+      "mass_roundtrip_error_kg": 1.6063539387545234e-15,
+      "com_roundtrip_max_error_m": 6.043776590303196e-15,
+      "inertia_roundtrip_max_error_kg_m2": 9.357596484791883e-19
+    },
+    {
+      "id": "STEEL_THREAD_BLOCK_6",
+      "mass_roundtrip_error_kg": 5.159067617555024e-15,
+      "com_roundtrip_max_error_m": 7.0360384185619296e-15,
+      "inertia_roundtrip_max_error_kg_m2": 1.5648933700523199e-18
+    },
+    {
+      "id": "STEEL_THREAD_BLOCK_7",
+      "mass_roundtrip_error_kg": 2.942091015256665e-15,
+      "com_roundtrip_max_error_m": 6.6058269965196814e-15,
+      "inertia_roundtrip_max_error_kg_m2": 9.499474503456978e-19
+    },
+    {
+      "id": "STEEL_THREAD_BLOCK_8",
+      "mass_roundtrip_error_kg": 9.367506770274758e-17,
+      "com_roundtrip_max_error_m": 3.635980405647388e-15,
+      "inertia_roundtrip_max_error_kg_m2": 9.64770526922648e-19
+    }
+  ],
+  "assembly_original_and_hardware_solid_count": 39,
+  "aggregate_inertia_PSD": true,
+  "local_document_links_checked": [
+    "engineering/shoulder_raise02_study.py",
+    "engineering/generated/shoulder-raise02",
+    "engineering/generated/shoulder-raise02/qa.json",
+    "docs/engineering/shoulder-raise-strength-study.md",
+    "engineering/generated/shoulder-raise02/shoulder-raise02.png",
+    "engineering/generated/shoulder-raise02/interface-and-sources.json",
+    "engineering/generated/shoulder-raise02/section-comparison.png",
+    "docs/engineering/sources/p16-carrier02.json"
+  ],
+  "geometry_domain_deg": [
+    -90,
+    90
+  ],
+  "critical_unresolved": [
+    "Tail mating plugs/cables/service envelope within1.3mm-to-body region",
+    "M4x100 exactapprovedPN/grade/effective thread and length tolerance",
+    "OEM allowed clamp and actual contact/preload/settlement/fatigue",
+    "6061 raw90mm thickstock guarantee and manufacturing review",
+    "Complete revised wholearm mass/dynamics/global collision integration"
+  ],
+  "manufacturing_release": false,
+  "FEA_performed": false,
+  "files": {
+    "connections.json": "d617fc25f10bd8ef65f50961a1389a2b95fafe005e51ec608d5c8956cd8d96cf",
+    "STEEL_THREAD_BLOCK_7.step": "7bda0a05303d192a69b2ab64df72b802f83bf7340047c5c3ce4c443f1575db99",
+    "study.json": "d811839457cfd657bc9ec0193b1a444e850362a4d0a92f68e73ec8d1c8437c4c",
+    "STEEL_THREAD_BLOCK_6.step": "18ac06922c8a0c2cb9e20db7ca8d6c79097c71adb3585a1d1933d2b42988a1d8",
+    "qa.json": "ff00ccd32668c867ffce1502d09da3cfe814d4cb43a7bb6415e7d930aafc165b",
+    "L12_rear_fork.step": "c5af756a04674a71831daf07d21cffd0b36e9c49c6cfa25b8e5886467a3fc206",
+    "shoulder-raise02.svg": "74ba77d4c2b9801b4ae4173f5feb87c25be6e28d7e3c28ee8dc7eaeafde355a2",
+    "shoulder-raise02.png": "034ee0ee0fac397ad974003ec2a42d4f4a610be4b72c984bf75f0f9a6a76d8e9",
+    "section-comparison.png": "c65e9f820e1487b77f0b5c8cc7f2a4c9afb40bc4352b67cf12898ab630f567c4",
+    "SHOULDER-RAISE02-original-assembly.step": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce",
+    "STEEL_THREAD_BLOCK_1.step": "b9d64df1fb76a60b75d74df07f7ea654ff0bb33f070494c094ee8c0a70d1a400",
+    "geometry-first.json": "c070e2bf27e30483bd36e818d447e3dc900b30cf96c23f744be6ca8d7c88731b",
+    "supplement.json": "9bface0b03d424c07c4b116d2300c8d6afe0ba7ea5bd01bb795ce59716dfd41a",
+    "STEEL_THREAD_BLOCK_3.step": "a55ca80f299ce3f0dcedb7f7b1d7f3ce7124ee8d0d28afce2e87f3f895bf1dcc",
+    "L12_output_adapter.step": "03843967fbdc0faa0abb9be6d7380cde8e401b294fefe695b75579c530efc8f1",
+    "STEEL_THREAD_BLOCK_2.step": "6a26bc36408ba132b4c5426383187db780cf9ba5836058b797d3ac431d6b48d6",
+    "continuous-motion.json": "677052fac3db4ed343e993d539efeb035ca186c4ea116a39be455b3557e070c1",
+    "STEEL_THREAD_BLOCK_5.step": "fdfa237de45acfc8a307b98db001872f80b84fc13edcf37db68a78c3377765b1",
+    "part-placements.json": "de9eb4a228d7b4c55c07bc48d06a5a0eecef55d7e3499c85d19bcac754302b23",
+    "L12_front_ring.step": "72e6848393a0746755907582e586ad740ecdab4a4976e5880c660b814900f57a",
+    "supplement.py": "141d343b705830e0c05f32e67393d5b64699463ad0c967ca1d6b80f4ab7ca507",
+    "delivery_check.py": "cf99fbcbebf9234616fb0eb221b2beb1ab95661ffb9be2313a3ba40e49b920db",
+    "interface-and-sources.json": "2be2f19d7b01bd740a22ea689ffcdda5becb1e2820c24e98b13b8ae3db177664",
+    "assembly-paths.json": "c1dd9ef7d33a300d1495cb9c59bd45faee4c597740fa633307707c7bcd77e45b",
+    "section-comparison.json": "5480aa48c1626b073f015e3128d398f27748426e81e714626267750feb0d168a",
+    "STEEL_THREAD_BLOCK_8.step": "49a4ebba69e18d4fdb97b4b4affe7163f24406129e8a4f07bb9f3d69d553d856",
+    "steel-block-paths.json": "1298825ba14dbc8f15758782483d9bf59f52e66254836640228927688304ca35",
+    "STEEL_THREAD_BLOCK_4.step": "41bca2c5d28ae6e71e0f31de7e2b8651c85f6176a207852f285325adfee174e6"
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "revision": "SHOULDER-RAISE02",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "source_hashes": {
+    "engineering/parameters/r4-layout.json": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "engineering/generated/link12-study/part-placements.json": "ec50f20f19d5b4c1ffda70de8ce85851eef93836d98d599be5a13b425a5d3c8d",
+    "engineering/generated/link12-study/evidence.json": "3005afc00aaca2a880e40f3b085c3c036b73ae5258395979032844a1b1b7894c",
+    "engineering/generated/link12-study/ODR-L12-OUT-R4.step": "5cb2206e5ee2b195654731b9a0177d37cc103243504ba638212547854aa644f4",
+    "engineering/generated/link12-study/ODR-L12-FORK-R4.step": "1b2197f7409f905a2fb1724596efff74e07df5887d520a8257ffeb03c5ab960d",
+    "engineering/generated/link12-study/ODR-L12-FRONT-R4.step": "1d66911f77ee8d19cf9521a38cf80228629e811a3c2cadcb2995ff2da56971b4",
+    "engineering/generated/link23-study/part-placements.json": "8daa948492858dfd8a2c7100c97836ccea951c89f81fc408d65348f62d4f6fd6",
+    "engineering/generated/link23-study/evidence.json": "7d34edde71076430f423679228d805ca77359bc39f7b174ddc14948de159e11c",
+    "engineering/generated/link23-study/ODR-L23-OUT-R4.step": "2fa94dcb62dd206426afea83a01996ff347b2a0b3b5f2baa901d161a69958598",
+    "engineering/generated/link23-study/ODR-L23-CARRIER-R4.step": "748b7ebd940c72bae6fcc894c23743ddcdedad027145b8de0f4ccc689c01c74a",
+    "engineering/generated/link23-study/ODR-L23-FRONT-R4.step": "46d0e3c171fdb22a3ed4754a8411a104039976d423712aae665c864658329f0a",
+    "engineering/generated/link34-study/part-placements.json": "b352bb6bb82f1480c435b7dc1352d2af983e575d54d9662136966cd64420be85",
+    "engineering/generated/link34-study/evidence.json": "46af9fde3d5990b27e2199b4095c7dc19d4ac71546e73b57b839d651d6b721f5",
+    "engineering/generated/link34-study/ODR-L34-OUT-R4.step": "087ade434f0c2f238316abcc1caf5b77350b8fac716d007d126620f99bb527fe",
+    "engineering/generated/link34-study/ODR-L34-LOW-R4.step": "5192234cd1bef2d369a50fc8651ab6a2b55caeb3d836aece9b2cb1328712a431",
+    "engineering/generated/link34-study/ODR-L34-TUBE-R4.step": "a49486f95f25fb21d5d7993cbd6e9fbf6bade0e637e215018d05a7ff7ccdbf9d",
+    "engineering/generated/link34-study/ODR-L34-UP-R4.step": "da02499c7fd87d4637c33bed4a85702a3373bea07112e52c04eb23881ed46050",
+    "engineering/generated/link34-study/ODR-L34-CARRIER-R4.step": "7d58debca1d857925f8dd1a80067ff93f9aa543f21dfc6e911a1c143fb934bb5",
+    "engineering/generated/link34-study/ODR-L34-FRONT-R4.step": "91c308a6e308a1beb6bb7a10089c599b119ebf9daf66ed40062f47d0e7279aba",
+    "engineering/generated/link45-study/part-placements.json": "4eea6c767ac94da05a445574d701498671115a166a147539fd2e103676dcc587",
+    "engineering/generated/link45-study/evidence.json": "f7be8c3d63bf1b1b7b6d99368904253a1e5eb517c5df001d815dccb7e63d240b",
+    "engineering/generated/link45-study/ODR-L45-OUT-R4.step": "12b5dff7735ff53d9fea43c87a840fd920965ad5bdcc77294cded0b388bc4a6c",
+    "engineering/generated/link45-study/ODR-L45-CARRIER-R4.step": "4a6f7302ecdeeb8fa2411bd02544dbb4036eb073b8b7bafc8f0610037f14bae3",
+    "engineering/generated/link45-study/ODR-L45-FRONT-R4.step": "7759763be2a7f0b8a85d28a181c9fbd69df44865f4e1ceb1a948fd0c5b67302f",
+    "engineering/generated/link56-study/part-placements.json": "fb6329f3fdee45c3459e102a374ea117e69edb24a0233355f06f130c6103ae9e",
+    "engineering/generated/link56-study/evidence.json": "2e668b28467d1ccb7c8610df0c1279fdb0915246830167a4cbc86a5b81baab47",
+    "engineering/generated/link56-study/ODR-L56-OUT-R4.step": "d4ddce09c985ed17978c6c8e4baa65a5bc8b2780bcdab693d9af9b195ed92965",
+    "engineering/generated/link56-study/ODR-L56-LOW-R4.step": "f5b6168a2005bd274f9386dc0c7b23eeb6a0fe19f41401d2d6940995ef25e367",
+    "engineering/generated/link56-study/ODR-L56-TUBE-R4.step": "35a80d7d70bfbb8b2a5d24be0702b658f70a10f099952dc56542c6800a15b04b",
+    "engineering/generated/link56-study/ODR-L56-UP-R4.step": "13e21bbd8f7b9f6566bc8ad91f43ec0085669b843efdc033fad297ab42345e76",
+    "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step": "08a125b854dbdffdbca9b843cda446130092543cab7ed2964e1aed518bd17145",
+    "engineering/generated/link56-study/ODR-L56-FRONT-R4.step": "3cad09838550cd2e8d6bbfce6e722ada0054e7755feb1f67246dbdf90f583d70",
+    "engineering/generated/link67-study/part-placements.json": "29b202dbebb974e62aa57107afe236bd1f3d5bff15ae3ae546ad8b9424979297",
+    "engineering/generated/link67-study/evidence.json": "a969db963b3a5d69a3dfb192eff33f64d824d20b5505f62b54c55446a3db66d7",
+    "engineering/generated/link67-study/ODR-L67-OUT-R4.step": "cbd340a1bdcd539a2d2dac47f2ac7b6ca9859b18877d85477b1f3f218b23ec50",
+    "engineering/generated/link67-study/ODR-L67-CARRIER-R4.step": "6db1857a6e49b65e654696349d24964fbac2309fe268716470cdef165bdc4ef1",
+    "engineering/generated/link67-study/ODR-L67-FRONT-R4.step": "fa53b24ae942a6da9981ee28cc6328675d508faa08c5cff8aa322c8dfb0c0acb",
+    "engineering/generated/base-study/ODR-BASE-ORIGINAL-ASSEMBLY.step": "acde0f22c491c1ec3b67691ef50b871f15bb1c48adbc67139923a41e810ce982",
+    "docs/engineering/sources/rh-interface-extraction.json": "49dbfa4aca9501ffa83e884226b287b909095688f2e1adfc24cab7d1e278026d",
+    "engineering/shoulder_raise02_study.py": "750a88604e702e416ef084a2aaa094396a893e915ef614964fae1fe3c2b7dbf7",
+    "engineering/shoulder_raise_study.py": "410f1af346eb04d9a98872c8717d70042286c4acad68f1d05c51152c854f84f1",
+    "engineering/shoulder_raise_strength.py": "b713775c5a7aaa7eed53c70f696a036540bc9f4a3f9d817c800e2ce6ac5e016d",
+    "engineering/generated/shoulder-raise-01/qa.json": "fa554cc8faa64909a2816c20b0e1e9dbb45b46757c2ba7cec182fbaa81907dbb",
+    "engineering/generated/shoulder-raise-01/part-placements.json": "1f735370b9ad30c2dbff91338658504f2a109fb523f2badc39832e4d9f2beedc",
+    "engineering/generated/shoulder-raise-strength01/study.json": "23ca111695099b1f3b6c64888d44baf2c2ffbb2c033d3f23c1cd3118c1a01e13",
+    "engineering/generated/shoulder-raise-strength01/sections.json": "00e9e84485697e5983884966914adcfc66a5a6131538ce6a33cfee05003bfd3b",
+    "engineering/generated/raised-arm-integration01/model.json": "e3b2a10a2f11cbc6a5085150dd1d5bcba3848431f40e4aea7485d4d5125d33a1",
+    "docs/engineering/sources/p16-carrier02.json": "c2dcb4553d570f525f36883a201e34bb45c72d1869fc0d8891d94f51d51937a7",
+    "docs/engineering/sources/gripper-root-support.json": "2412dc2ff1d3d9dcc75e224b1b7b3760a01cd14cc9a2e63716b441796fd68c2b"
+  },
+  "vendor_sources": {
+    "RH25-B": {
+      "filename": "RH-25-100-E-B-D 3D-A0.STEP",
+      "sha256": "d844bc7dfe5c398b0447ea0d93eef77b7cb1bdaa0dbabd603031482c1909f07e",
+      "solid_count": 42,
+      "local_only": true
+    },
+    "RH20-B": {
+      "filename": "RH-20-100-E-B-D 3D A.STEP",
+      "sha256": "de9f070ac232257b3e9d2c2920260aab8d0f8893ced026bff00da49906fafb04",
+      "solid_count": 47,
+      "local_only": true
+    },
+    "RH17-B": {
+      "filename": "RH-17-100-E-B-D 3D-A.STEP",
+      "sha256": "02424efbc162b8832f1bf4d73cf9af45d0c45d8385cadb8685e1670e2b07ae33",
+      "solid_count": 34,
+      "local_only": true
+    },
+    "RH14-N": {
+      "filename": "RH-14-100-E-N-D 3D-A0.STEP",
+      "sha256": "6b0acdb82140b487be079b5515718157d16d512f3a584ac5439fe55380e7b595",
+      "solid_count": 32,
+      "local_only": true
+    }
+  },
+  "dimensions": {
+    "real_front_leg_transition_radius_mm": 2,
+    "real_axial_rib_root_radius_mm": 0.8,
+    "real_rib_root_fillets": 14,
+    "key_radius_mm": 1,
+    "key_pocket_radius_mm": 1.2,
+    "rear_collar_thickness_mm": 24,
+    "rear_columns_mm": [
+      16,
+      24,
+      77.8
+    ],
+    "front_legs_mm": [
+      16,
+      51.7,
+      49
+    ],
+    "axial_compression_rib_length_mm": 34.8,
+    "radial_OD_mm": 128,
+    "maximum_X_width_mm": 130,
+    "thread_block_envelope_radial_tangent_axial_mm": [
+      30,
+      14,
+      10
+    ],
+    "thread_block_main_Y_mm": [
+      -112.5,
+      -104.5
+    ],
+    "thread_block_outer_key_Y_mm": [
+      -104.5,
+      -102.5
+    ],
+    "nominal_thread_engagement_mm": 7,
+    "thread_major_min_ligament_mm": 5,
+    "aluminum_clearance_bore_inner_ligament_mm": 1.05
+  },
+  "original_metal": {
+    "mass_kg": 1.23456993614179,
+    "com_world_m": [
+      1.7170922750644306e-07,
+      -0.05759984575920438,
+      0.17656147132064554
+    ],
+    "inertia_about_COM_world_axes_kg_m2": [
+      [
+        0.004736193638215645,
+        -1.644916800569462e-08,
+        1.2931039878940633e-08
+      ],
+      [
+        -1.644916800569462e-08,
+        0.005421223460439875,
+        0.0012070631156749399
+      ],
+      [
+        1.2931039878940633e-08,
+        0.0012070631156749399,
+        0.0040337135448096145
+      ]
+    ],
+    "mass_basis": "Mixed uniform original6061 and steel CAD; excludes all screws and OEM."
+  },
+  "delta_original_metal_kg": 0.5631171173707495,
+  "continuous_local_q2_deg": [
+    -90,
+    90
+  ],
+  "minimum_external_envelope_gap_mm": 4.0,
+  "rejected_nearby9_2mm_diameter_probe": {
+    "1": {
+      "solid_pair_intersection_sum_mm3": 48.793633923488734,
+      "events": [
+        {
+          "a_solid": 0,
+          "b_solid": 4,
+          "intersection_mm3": 48.793633923488734
+        }
+      ],
+      "pair_count": 42,
+      "boolean_count": 4,
+      "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+      "minimum_BREP_surface_distance_mm": 0.0,
+      "nearest_pair": [
+        0,
+        4
+      ]
+    },
+    "2": {
+      "solid_pair_intersection_sum_mm3": 48.79362761562432,
+      "events": [
+        {
+          "a_solid": 0,
+          "b_solid": 4,
+          "intersection_mm3": 48.79362761562432
+        }
+      ],
+      "pair_count": 42,
+      "boolean_count": 4,
+      "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+      "minimum_BREP_surface_distance_mm": 0.0,
+      "nearest_pair": [
+        0,
+        4
+      ]
+    },
+    "3": {
+      "solid_pair_intersection_sum_mm3": 48.793634309421776,
+      "events": [
+        {
+          "a_solid": 0,
+          "b_solid": 4,
+          "intersection_mm3": 48.793634309421776
+        }
+      ],
+      "pair_count": 42,
+      "boolean_count": 4,
+      "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+      "minimum_BREP_surface_distance_mm": 0.0,
+      "nearest_pair": [
+        0,
+        4
+      ]
+    },
+    "4": {
+      "solid_pair_intersection_sum_mm3": 48.79362783844376,
+      "events": [
+        {
+          "a_solid": 0,
+          "b_solid": 4,
+          "intersection_mm3": 48.79362783844376
+        }
+      ],
+      "pair_count": 42,
+      "boolean_count": 4,
+      "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+      "minimum_BREP_surface_distance_mm": 0.0,
+      "nearest_pair": [
+        0,
+        4
+      ]
+    },
+    "5": {
+      "solid_pair_intersection_sum_mm3": 48.7936340866055,
+      "events": [
+        {
+          "a_solid": 0,
+          "b_solid": 4,
+          "intersection_mm3": 48.7936340866055
+        }
+      ],
+      "pair_count": 42,
+      "boolean_count": 4,
+      "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+      "minimum_BREP_surface_distance_mm": 0.0,
+      "nearest_pair": [
+        0,
+        4
+      ]
+    },
+    "6": {
+      "solid_pair_intersection_sum_mm3": 48.79362745251037,
+      "events": [
+        {
+          "a_solid": 0,
+          "b_solid": 4,
+          "intersection_mm3": 48.79362745251037
+        }
+      ],
+      "pair_count": 42,
+      "boolean_count": 4,
+      "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+      "minimum_BREP_surface_distance_mm": 0.0,
+      "nearest_pair": [
+        0,
+        4
+      ]
+    },
+    "7": {
+      "solid_pair_intersection_sum_mm3": 48.7936337006687,
+      "events": [
+        {
+          "a_solid": 0,
+          "b_solid": 4,
+          "intersection_mm3": 48.7936337006687
+        }
+      ],
+      "pair_count": 42,
+      "boolean_count": 4,
+      "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+      "minimum_BREP_surface_distance_mm": 0.0,
+      "nearest_pair": [
+        0,
+        4
+      ]
+    },
+    "8": {
+      "solid_pair_intersection_sum_mm3": 48.79362722969143,
+      "events": [
+        {
+          "a_solid": 0,
+          "b_solid": 4,
+          "intersection_mm3": 48.79362722969143
+        }
+      ],
+      "pair_count": 42,
+      "boolean_count": 4,
+      "method": "per-solid Boolean common; cached AABB and intersection-volume-upper-bound pruning; threshold1e-4mm3",
+      "minimum_BREP_surface_distance_mm": 0.0,
+      "nearest_pair": [
+        0,
+        4
+      ]
+    }
+  },
+  "selected_geometry": "Rear24mm collar +2straight rearcolumns +8axial compression ribs +8remote custom steel thread blocks. Forward existing flange, hole positions, J1 contact and all downstream geometry unchanged.",
+  "fastener_procurement_closed": false,
+  "manufacturing_release": false,
+  "physical_payload_qualified": false,
+  "FEA_performed": false,
+  "exclusions": [
+    "Cables/connectors/internalOEM ownership",
+    "Thick-billet strength guarantee",
+    "M4x100 precise approvedPN/grade and tolerances",
+    "Actual clamp/contact/friction/settlement and bolt fatigue",
+    "OEMoutputM4 effective threads and length",
+    "Full-arm dynamics and complete newselfweight force-flow",
+    "Continuous disassembly with downstreamJ3 installed"
+  ]
+}

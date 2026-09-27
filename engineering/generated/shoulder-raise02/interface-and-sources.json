@@ -1,0 +1,110 @@
+{
+  "revision": "SHOULDER-RAISE02",
+  "evidence_mode": "Read existing controlled local first-party files only; no network refresh, sourcing, purchase or OEM modification.",
+  "fixed_interface": {
+    "manufacturer": "MYACTUATOR",
+    "model": "RH-25-100-E-B-D",
+    "official_zip_url": "https://www.myactuator.com/_files/archives/cab28a_bc732701dadf4512a0d917ecaab12747.zip",
+    "drawing_member": "RH-25-100-E-B-D/RH-25-100-E-B-D 2D-A0.PDF",
+    "drawing_sha256": "2ca7fc165dfae32adf45bbb4b6c9b4ab90d803aa5a9eaa251b00084149a324c4",
+    "page": 1,
+    "revision": "A0",
+    "evidence": "Right upper view: P.C.D.102, 8 x diameter4.5 Through Hole.",
+    "not_output_holes": "SeparatePCD77 sixteenM4 output holes are threaded with unresolved usable start/end; they are NOT the eight fixed flange holes.",
+    "fixed_holes_confirmed_by_official_drawing_as_through": true,
+    "does_not_confirm": "Approved clamp load, screw length, long-tie arrangement, tolerances/settlement/fatigue, current production revision or absent rear connectors."
+  },
+  "screw_path_worldY_mm": [
+    {
+      "segment": "head envelope",
+      "range": [
+        -11.5,
+        -7.5
+      ],
+      "owner": "ProvisionalM4x100 screw; head bears on originalfront ring atY-11.5"
+    },
+    {
+      "segment": "front ring4mm clearance",
+      "range": [
+        -15.5,
+        -11.5
+      ],
+      "diameter_mm": 4.5,
+      "owner": "Original6061 ring, frontcontact toOEMatY-15.5"
+    },
+    {
+      "segment": "fixed OEM flange30.2mm clearance",
+      "range": [
+        -45.7,
+        -15.5
+      ],
+      "diameter_mm": 4.5,
+      "owner": "OfficialPCD102 throughholes; no assumedOEMthread engagement"
+    },
+    {
+      "segment": "rear collar plus axial ribs58.8mm clearance",
+      "range": [
+        -104.5,
+        -45.7
+      ],
+      "diameter_mm": 4.5,
+      "owner": "Original6061 rear fork"
+    },
+    {
+      "segment": "nominal7mm entered steelthread",
+      "range": [
+        -111.5,
+        -104.5
+      ],
+      "owner": "Originalsteel nutblock8mm thick; M4x.7 planned, fullthread lengthTBD"
+    }
+  ],
+  "nominal_shank_length_sum_mm": 100.0,
+  "OEM_modification_required": false,
+  "serial_OEM_and_custom_thread_engagement": false,
+  "long_screw_source_status": {
+    "M4x100_selected_PN": null,
+    "current_local_source": "https://www.unbrako.com/images/downloads/Unbrako_US_Product_Guide.pdf",
+    "local_pdf_sha256": "b05bbc5ab9c347275a8023eab64b02da3700f9c102d5429b09f94e7b491e57a7",
+    "pages": [
+      17,
+      18,
+      19
+    ],
+    "used": "M4 base metric dimensions, exampleproperty12.9 and source torque assumptions; M4x100 exact length/PN is NOT verified by the local table. No source torque adopted.",
+    "blocking_items": [
+      "ExactM4x100 length/grade/threadlength/head/tolerancePN",
+      "Verified effective steel thread length and tip allowance",
+      "OEM permitted clamp load and contact/preload calculation"
+    ],
+    "head_envelope_reference": {
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16032-SSC-M4-50-12-9",
+      "source_part": "SSC-M4-50-12.9, original50mm only",
+      "head_diameter_upper_mm": 7.22,
+      "head_height_mm": 4,
+      "stored_bom": "engineering/generated/link12-study/bom.json",
+      "stored_bom_sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193",
+      "scope": "Copied as provisional conservative head envelope for100mm length, not evidence of a purchasable100mmPN."
+    }
+  },
+  "steel_source": {
+    "url": "https://steelnavigator.ovako.com/steel-grades/42crmo4/",
+    "saved_source_record": "docs/engineering/sources/p16-carrier02.json",
+    "saved_source_sha256": "c2dcb4553d570f525f36883a201e34bb45c72d1869fc0d8891d94f51d51937a7",
+    "used_row": "42CrMo4 M(6082), MoC410M +QT, roundbar40<D<100",
+    "candidate_raw_stock_diameter_mm": 50,
+    "conditional_Rel_min_MPa": 650,
+    "not_applied_to": "Generic4140, AR/A stock, final8mm thickness or unverifiedlot"
+  },
+  "aluminum_source": {
+    "saved_record": "docs/engineering/sources/gripper-root-support.json",
+    "sha256": "2412dc2ff1d3d9dcc75e224b1b7b3760a01cd14cc9a2e63716b441796fd68c2b",
+    "candidate": "6061-T6 billet, nominal90mm stockYthickness",
+    "E_MPa": 70000,
+    "density_kg_m3": 2700,
+    "yield_MPa": null,
+    "status": "No controlled guarantee for this stockform/thickness; no yield-pass conclusion."
+  },
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)"
+}
