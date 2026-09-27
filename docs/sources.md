@@ -17,3 +17,15 @@ Research accessed 2026-09-27. These references inform design intent; their speci
 The design process here adapts that general framework to industrial design: research, brief, form exploration, concept development, review, mechanical packaging, prototyping, and validation. It is not a claim that all industrial design teams follow an identical linear process.
 
 The expression requirements—active attention, spotlight, breathing motion, and luminous end panels—come from this project's brief. Automatic sensing, tracking, and lighting control have not yet been implemented.
+
+## R1 technical references
+
+The user added luminous petals that also grip, and a circular LED with specific display patterns. These are project requirements / exploration inputs; the sources below inform implementation questions, not final selections.
+
+| Source | Supported observation and project inference |
+| --- | --- |
+| [Yale OpenHand Model T](https://www.eng.yale.edu/grablab/openhand/model_t.html) | Published four-finger compliant, underactuated hand with a differential. Supports investigating contact adaptation; it does not validate our rigid luminous panels or provide a selected mechanism. No source CAD or assets copied. |
+| [Adafruit LED Matrix Diffuser](https://learn.adafruit.com/pixel-art-matrix-display/led-matrix-diffuser) | A diffusion faceplate can protect LEDs and reduce glare / grid reflections. Protecting an LED is not evidence of suitability for clamping loads. |
+| [LEDiL Guide to TIR Lenses](https://www.ledil.com/support/guide-to-tir-lenses/) | Distinct lens designs shape spot, diffuse, and wider beams. Our proposed separation of matrix display and task-light optics is an inference; beam, illumination, heat, and available space need measurement. |
+
+The inner pads, structural finger frames, recessed display, and grasp-priority behavior are project design proposals. No component pricing, performance figures, or manufacturing readiness are inferred from these references.

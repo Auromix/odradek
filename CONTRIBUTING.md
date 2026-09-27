@@ -6,7 +6,9 @@ Odradek is currently a concept-stage project. Contributions in English or Chines
 
 - A concrete desktop task: target objects, tool, payload including accessories, working area, and fabrication constraints.
 - Concept feedback identifying a candidate, a pose, and the functional or visual issue.
-- A proposed kinematic layout with seven explicitly identified arm axes; account separately for gripper and light-petal actuation.
+- A proposed kinematic layout with seven explicitly identified arm axes; account separately for unified end-effector actuation without assuming a second decorative petal mechanism.
+- Luminous finger studies covering contact pads, load paths, drive arrangement, and collision envelopes.
+- Circular LED display and task-light optical / thermal studies, including grasp occlusion and state readability.
 - Optical, lighting, packaging, cable-routing, and serviceability studies with stated assumptions.
 
 ## Evidence and design files

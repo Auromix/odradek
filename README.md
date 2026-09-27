@@ -1,6 +1,6 @@
 # Odradek
 
-**An open-source seven-axis desktop arm exploring active attention, directional lighting, and breathing light petals.**
+**An open-source seven-axis desktop arm exploring luminous gripper fingers, circular LED feedback, and active attention.**
 
 [中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Concept comparison](docs/concept-comparison.md) · [Behavior study](docs/behavior-spec.md) · [Roadmap](docs/roadmap.md)
 
@@ -8,13 +8,27 @@ Odradek is an independent Auromix project inspired by the attentive, articulated
 
 **Stage: industrial design concept exploration.** This repository currently contains AI-assisted concept artwork, design intent, prompts, and a development roadmap. It does not yet contain manufacturing CAD, a validated seven-axis mechanism, firmware, a tracking system, or tested hardware. Payload, reach, cost, and performance targets remain open.
 
-## Form exploration
+## R1: the light petals are the gripper fingers
+
+The current exploration integrates gripping into the illuminated petals themselves. Each finger combines a structural frame, replaceable inner contact pad, and outward or edge lighting. The circular palm currently depicts an **LED matrix plus a separate segmented white task-light annulus**; this is a proposed configuration, not a selected component.
+
+![Two-, three-, and four-finger candidates](docs/concepts/05-petal-gripper-options.png)
+
+D2 explores opposed pinch, D3 an enveloping three-finger grasp, and D4 four fingers arranged as two opposing pairs. **D4 is recommended for further study, not selected as the final design.**
+
+![D4 arm, grasp, and circular display study](docs/concepts/06-petal-gripper-study.png)
+
+The five display examples are rest, attention, progress, done, and wait. Mechanical breathing is limited to empty, unconstrained operation. Expression must not disturb acquisition, holding, or release; light modulation is also subordinate to illumination and imaging needs. Objects may occlude the central display: never relax a grasp to reveal it. The display matrix and task illumination require distinct optical treatment; an all-white matrix is not evidence of a working spotlight.
+
+The sketches do not validate gripping, motion, optics, or thermal performance. Seven axes refer to the arm; end-effector actuation is counted separately without assuming separate gripper and petal mechanisms.
+
+## R0 archive: form exploration
 
 ![Six initial form explorations](docs/concepts/00-form-exploration.png)
 
-The six sketches explore head packaging and light-panel morphology. They are narrowed into three candidates below. The working target is **seven arm axes**, with gripper and light-petal actuation counted separately. Perspective artwork does not establish the joint topology; that is a subsequent CAD task.
+The original boards below preserve the initial exploration. Their structural and cover styling remains relevant; their separate observation-head / conventional-gripper arrangements are superseded by R1. These images do not depict petals gripping objects.
 
-## Three candidates
+## R0 archive: three candidates
 
 ### A / FIELD — modular observation head
 
@@ -34,15 +48,15 @@ Four short illuminated panels fold around the sides of a compact optical pod, wi
 
 ![C SHELL concept](docs/concepts/03-shell.png)
 
-## Attention and breathing
+## R0 archive: attention and breathing
 
 ![Attention and light-petal behavior study](docs/concepts/04-attention-study.png)
 
-The behavior sheet uses candidate A to explore an expressive vocabulary; this is not a selection of the final hardware design. A directional spotlight serves observation and task illumination. Diffuse petal lighting and slow opening/closing communicate state. Arm orientation, task lighting, and expression should be independently controllable and coordinated by task state. Tracking shown in artwork is design intent, not an implemented capability.
+This historical R0 sheet used candidate A to explore expression; it does not satisfy the R1 gripping requirement or select the final hardware design. A directional spotlight serves observation and task illumination. Diffuse petal lighting and slow opening/closing communicate state. Arm orientation, task lighting, and expression should be independently controllable and coordinated by task state. Tracking shown in artwork is design intent, not an implemented capability.
 
 ## Design process
 
-Research and references → design brief → six form thumbnails → three concept boards → behavior study → **review and task definition** → kinematic packaging → engineering prototype → task validation.
+Research and references → R0 form and behavior studies → R1 luminous-finger and circular-display studies → **review and task definition** → kinematic packaging → engineering prototype → task validation.
 
 Industrial design and mechanical design develop together: every iteration must account for actuator and structural volume, motion clearance, cable routing, tool access, optical field of view, and service access. The current boards support discussion of appearance and interaction intent, not a build decision.
 
