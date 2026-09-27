@@ -1,83 +1,57 @@
 # Odradek
 
-**An open-source seven-axis desktop arm exploring luminous gripper fingers, circular LED feedback, and active attention.**
+**A 7-DOF desktop arm with a detachable 4-DOF luminous gripper, expressing attention through orientation, opening, and light.**
 
-[中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Concept comparison](docs/concept-comparison.md) · [Behavior study](docs/behavior-spec.md) · [Roadmap](docs/roadmap.md)
+[中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Comparison](docs/concept-comparison.md) · [Nickname candidates](docs/nickname-candidates.md) · [Roadmap](docs/roadmap.md)
 
-Odradek is an independent Auromix project inspired by the attentive, articulated scanner in *Death Stranding*. Its intended identity comes from where it looks, how it directs light, and how its illuminated panels open and close. The first application is a fixed-base desktop arm for practical tasks.
+Odradek is an independent Auromix open-source robotics project inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
 
-**Stage: industrial design concept exploration.** This repository currently contains AI-assisted concept artwork, design intent, prompts, and a development roadmap. It does not yet contain manufacturing CAD, a validated seven-axis mechanism, firmware, a tracking system, or tested hardware. Payload, reach, cost, and performance targets remain open.
+**Stage: R2 industrial design concepts.** This repository contains AI-assisted artwork, design records, references, and exact prompts. It does not yet contain manufacturing CAD, a validated seven-axis mechanism, firmware, or tested hardware. Payload, reach, cost, and performance targets remain open.
 
-## R1: the light petals are the gripper fingers
+## R2: a detachable four-petal head
 
-The current exploration integrates gripping into the illuminated petals themselves. Each finger combines a structural frame, replaceable inner contact pad, and outward or edge lighting. The circular palm currently depicts an **LED matrix plus a separate segmented white task-light annulus**; this is a proposed configuration, not a selected component.
+![Four-petal head: open, grasping, closed, and rolling](docs/concepts/09-r2-head-states.png)
 
-![Two-, three-, and four-finger candidates](docs/concepts/05-petal-gripper-options.png)
+- **Seven arm DOFs and four head DOFs.** J7 rotates the whole head about the normal to its front face. Each luminous finger has one independent opening coordinate.
+- **Two close petals on each side, with left/right mirror symmetry and different upper/lower proportions.** Longer upper and shorter lower petals avoid 180-degree rotational symmetry. The grouping is inspired by the XPENG logo composition; it does not require mechanically coupled pairs.
+- **The light petals are the fingers.** Inner pads contact objects, a frame carries load, and outer or edge windows emit light. Empty full closure is a protective storage pose that may occlude the screen and cameras.
+- **One circular LED display in the center.** Ring graphics use pixels at its perimeter. The four fingers provide lighting. Two fisheye cameras sit above and below the screen in the head's local frame and rotate with it.
+- **The detachable boundary is after the J7 output flange.** Four finger actuators and local control are proposed within the head; connection specifications remain open.
 
-D2 explores opposed pinch, D3 an enveloping three-finger grasp, and D4 four fingers arranged as two opposing pairs. **D4 is recommended for further study, not selected as the final design.**
+![Arm integration, detachable interface, and J7 axis](docs/concepts/08-r2-modular-arm.png)
 
-![D4 arm, grasp, and circular display study](docs/concepts/06-petal-gripper-study.png)
+The roll sketches show finite-angle pose intent without defining travel. Open, grasping, and fully closed geometry must be reconciled in one CAD model. Mechanical breathing is limited to empty, task-permitted operation; expression must not change an active grasp.
 
-The five display examples are rest, attention, progress, done, and wait. Mechanical breathing is limited to empty, unconstrained operation. Expression must not disturb acquisition, holding, or release; light modulation is also subordinate to illumination and imaging needs. Objects may occlude the central display: never relax a grasp to reveal it. The display matrix and task illumination require distinct optical treatment; an all-white matrix is not evidence of a working spotlight.
+## Three, four, or five petals
 
-The sketches do not validate gripping, motion, optics, or thermal performance. Seven axes refer to the arm; end-effector actuation is counted separately without assuming separate gripper and petal mechanisms.
+![Same-scale petal-count study](docs/concepts/07-r2-petal-count-study.png)
 
-## R0 archive: form exploration
+| Count | Visual character | Role |
+| --- | --- | --- |
+| 3 | Light triangular silhouette; instrument or alien-tool associations | Aesthetic comparison |
+| **4** | Two visually grouped pairs; balance between tool and creature | **Current mechanical direction: one DOF per finger** |
+| 5 | Denser flower or biological silhouette; a hand-like reading needs an offset petal | Aesthetic comparison |
 
-![Six initial form explorations](docs/concepts/00-form-exploration.png)
+Petal count is not a DOF count. Three- and five-petal variants would require their own motion allocation; the confirmed four independent coordinates apply to the four-petal design.
 
-The original boards below preserve the initial exploration. Their structural and cover styling remains relevant; their separate observation-head / conventional-gripper arrangements are superseded by R1. These images do not depict petals gripping objects.
+## Nickname candidates
 
-## R0 archive: three candidates
+**Odi** is the leading suggestion for continuity with Odradek; **Lumo** emphasizes light and breathing. Noto, Piko, Tavi, and Filo are additional options. See the [shortlist](docs/nickname-candidates.md). No nickname has been selected; the project and repository remain Odradek.
 
-### A / FIELD — modular observation head
+## Process and next steps
 
-Four luminous petals surround a directional spotlight and camera. Graphite structure and local removable covers express a serviceable exploration instrument. The observation head and gripper are alternate tool modules in this study.
+Research → R0 form exploration → R1 luminous fingers → **R2 7+4 DOF and modular head** → task and scale definition → mechanism samples and arm kinematics → engineering and task validation.
 
-![A FIELD concept](docs/concepts/01-field.png)
+The [gallery](docs/gallery.html) retains original R0/R1 artwork and exact prompts for traceability. R1's separate physical light annulus and finger-count candidates are superseded by R2.
 
-### B / FRAME — light crest with a gripper
-
-Three slender light leaves fold along the back of the wrist. A dorsal optical pod sits above a parallel gripper, exploring observation, expression, and manipulation on one assembly. Finger clearance and collision envelopes still require validation.
-
-![B FRAME concept](docs/concepts/02-frame.png)
-
-### C / SHELL — compact light shutters
-
-Four short illuminated panels fold around the sides of a compact optical pod, with the camera and spotlight apertures remaining exposed. Segmented covers and a separate tool interface explore a calmer, compact instrument with accessible service areas.
-
-![C SHELL concept](docs/concepts/03-shell.png)
-
-## R0 archive: attention and breathing
-
-![Attention and light-petal behavior study](docs/concepts/04-attention-study.png)
-
-This historical R0 sheet used candidate A to explore expression; it does not satisfy the R1 gripping requirement or select the final hardware design. A directional spotlight serves observation and task illumination. Diffuse petal lighting and slow opening/closing communicate state. Arm orientation, task lighting, and expression should be independently controllable and coordinated by task state. Tracking shown in artwork is design intent, not an implemented capability.
-
-## Design process
-
-Research and references → R0 form and behavior studies → R1 luminous-finger and circular-display studies → **review and task definition** → kinematic packaging → engineering prototype → task validation.
-
-Industrial design and mechanical design develop together: every iteration must account for actuator and structural volume, motion clearance, cable routing, tool access, optical field of view, and service access. The current boards support discussion of appearance and interaction intent, not a build decision.
-
-## Repository guide
-
-| Path | Contents |
+| Document | Contents |
 | --- | --- |
-| [`docs/design-brief.md`](docs/design-brief.md) | Confirmed requirements, sketch assumptions, and unknown inputs |
-| [`docs/concept-comparison.md`](docs/concept-comparison.md) | Qualitative trade-offs and review criteria |
-| [`docs/behavior-spec.md`](docs/behavior-spec.md) | Proposed attention, illumination, and petal states |
-| [`docs/decisions.md`](docs/decisions.md) | Decisions and changes in direction |
-| [`docs/sources.md`](docs/sources.md) | Research sources and their limited roles |
-| [`docs/generation.md`](docs/generation.md) | AI assistance, prompts, references, and review limitations |
-| [`docs/roadmap.md`](docs/roadmap.md) | Planned route to reproducible hardware |
-| [`docs/concepts/`](docs/concepts/) | Full-resolution concept boards |
-| [`prompts/`](prompts/) | Exact generation prompts |
+| [Design brief](docs/design-brief.md) | Confirmed requirements, concept assumptions, and open inputs |
+| [Comparison](docs/concept-comparison.md) and [behavior](docs/behavior-spec.md) | Form, grasp, light, and attention studies |
+| [Decisions](docs/decisions.md) and [roadmap](docs/roadmap.md) | Evolution and route to reproducible hardware |
+| [Sources](docs/sources.md) | Research and reference roles |
+| [Generation](docs/generation.md) and [review notes](docs/review-notes.md) | Prompts, AI assistance, and specific visual limitations |
 
-## Contributing
+The next priorities are finger trajectories and closure clearance, module mass and connection design, J7 cable routing, and a concrete target task that determines arm sizing.
 
-Start with the [contribution guide](CONTRIBUTING.md). The most useful next inputs are a concrete desktop task, its target objects, tool requirements, payload definition, reach, and available fabrication budget. Concept feedback can use the issue template and should identify the candidate and pose it refers to.
-
-## License and attribution
-
-Original repository content is released under [Apache-2.0](LICENSE). Third-party reference images are not included or relicensed. Inspiration and technical references are linked in [sources](docs/sources.md). This is an independent project, not an official *Death Stranding* or KOJIMA PRODUCTIONS product. Future third-party parts and contributions must retain their own attribution and licensing requirements.
+Contributions in English or Chinese are welcome; see [CONTRIBUTING](CONTRIBUTING.md). Original repository content is released under [Apache-2.0](LICENSE). Third-party reference images are not included or relicensed. This project has no official affiliation with *Death Stranding*, KOJIMA PRODUCTIONS, or XPENG.

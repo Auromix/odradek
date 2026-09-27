@@ -6,9 +6,10 @@ Odradek is currently a concept-stage project. Contributions in English or Chines
 
 - A concrete desktop task: target objects, tool, payload including accessories, working area, and fabrication constraints.
 - Concept feedback identifying a candidate, a pose, and the functional or visual issue.
-- A proposed kinematic layout with seven explicitly identified arm axes; account separately for unified end-effector actuation without assuming a second decorative petal mechanism.
+- A proposed layout with seven identified arm axes: J7 rotates the entire head about its face normal. Account for four independent finger-opening coordinates in the detachable head; any finger segmentation must preserve this allocation.
 - Luminous finger studies covering contact pads, load paths, drive arrangement, and collision envelopes.
-- Circular LED display and task-light optical / thermal studies, including grasp occlusion and state readability.
+- A single circular LED screen with pixel-drawn ring graphics, two upper/lower fisheyes, and lighting on the four fingers: study occlusion, readability, illumination, and heat.
+- Detachable interfaces after the J7 output flange, including load paths, module mass, power/data, and finite-angle cable routing.
 - Optical, lighting, packaging, cable-routing, and serviceability studies with stated assumptions.
 
 ## Evidence and design files

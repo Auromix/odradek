@@ -16,9 +16,9 @@ Research accessed 2026-09-27. These references inform design intent; their speci
 
 The design process here adapts that general framework to industrial design: research, brief, form exploration, concept development, review, mechanical packaging, prototyping, and validation. It is not a claim that all industrial design teams follow an identical linear process.
 
-The expression requirements—active attention, spotlight, breathing motion, and luminous end panels—come from this project's brief. Automatic sensing, tracking, and lighting control have not yet been implemented.
+The original expression requirements—active attention, spotlight, breathing motion, and luminous end panels—came from this project's brief. R2 retains attention and breathing but assigns lighting to the fingers and uses only a display at the center. Automatic sensing, tracking, and lighting control have not yet been implemented.
 
-## R1 technical references
+## R1 technical references (historical exploration)
 
 The user added luminous petals that also grip, and a circular LED with specific display patterns. These are project requirements / exploration inputs; the sources below inform implementation questions, not final selections.
 
@@ -29,3 +29,17 @@ The user added luminous petals that also grip, and a circular LED with specific 
 | [LEDiL Guide to TIR Lenses](https://www.ledil.com/support/guide-to-tir-lenses/) | Distinct lens designs shape spot, diffuse, and wider beams. Our proposed separation of matrix display and task-light optics is an inference; beam, illumination, heat, and available space need measurement. |
 
 The inner pads, structural finger frames, recessed display, and grasp-priority behavior are project design proposals. No component pricing, performance figures, or manufacturing readiness are inferred from these references.
+
+
+## R2 visual inputs and reference roles
+
+| Source | Role and attribution |
+| --- | --- |
+| [PlayStation Share of the Week, 2021-10-01](https://blog.latam.playstation.com/2021/10/01/share-de-la-semana-death-stranding-directors-cut/) | Odradek close-up by **@momentohermano42**, a player photograph selected by PlayStation; *Death Stranding Director's Cut*. Used for thin articulated supports, uneven petal proportions, and luminous surface texture. |
+| [Odradek gameplay image collection](https://deathstranding.fandom.com/wiki/Odradek?file=OdradekPointing.png) | Community-hosted pointing screenshot, used for directional gesture. This is not an official mechanical drawing. |
+| [XPENG published logo image, Cision](https://news.cision.com/se/xpeng/i/xpeng-logo-horizontal-black,c3010388) | Actual image supplied to imagegen for the user's requested left/right close-pair composition. The drawing adapts proportions to gripper fingers; it does not reproduce a logo badge or imply affiliation. |
+| User-selected industrial design sketch | Existing style reference supplied for fine-line drawing, blue-gray marker shading, pale ground, and whitespace. It provides no product geometry or performance evidence. |
+
+The original game close-up suggests four broad panels plus a narrower upper panel. The current four-finger design is this project's choice, not a claim that the original Odradek has four fingers. Dots and patterns visible in game images do not establish an actual programmable LED implementation; the circular display is our design proposal.
+
+R2's mechanical assignments, modular boundary, two cameras, and software-drawn screen ring come from the user's requirements and this project's stated assumptions. The references do not verify those mechanisms.

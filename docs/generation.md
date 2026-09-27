@@ -22,7 +22,7 @@ The artwork is reviewed for concept identity, visible panel configuration, spotl
 
 No performance, automatic tracking, or hardware safety claim is derived from these images. Candidate A is used for motion study without selecting it as the final product direction. See [review notes](review-notes.md) for concrete observations and unresolved geometry.
 
-## R1: luminous gripping fingers and circular LED display
+## R1: luminous gripping fingers and circular LED display (historical)
 
 | Asset | Prompt | Purpose |
 | --- | --- | --- |
@@ -31,4 +31,19 @@ No performance, automatic tracking, or hardware safety claim is derived from the
 
 R1 used the built-in imagegen tool. The existing A board supplied arm and material language, the original Odradek image supplied articulated-light emotion, and the user-selected sketch reference supplied pen/marker style for the options sheet. The generated options sheet and A board then guided the D4 study. A targeted refinement removed an incorrectly placed task-light callout; the remaining LED MATRIX callout identifies the display. Third-party images remain excluded from the repository.
 
-D4 is a proposed direction only. The images communicate that the luminous panels themselves are fingers, with separate contact pads. Root hinges, contact planes, transmission paths, display setback, and collision-free opening still require a coherent 3D model. The five display examples are visual proposals, not implemented state feedback. R0 images and exact prompts remain unchanged as historical records.
+At R1, D4 was a proposed direction only; R2 now establishes the four-finger motion allocation and supersedes the physical annulus. The images communicate that the luminous panels themselves are fingers, with separate contact pads. Root hinges, contact planes, transmission paths, display setback, and collision-free opening still require a coherent 3D model. The five display examples are visual proposals, not implemented state feedback. R0 images and exact prompts remain unchanged as historical records.
+
+
+## R2: paired petals, 7+4 DOF, and a detachable head
+
+| Asset | Exact prompts | Purpose |
+| --- | --- | --- |
+| [07-petal-count](concepts/07-r2-petal-count-study.png) | [07 prompt](../prompts/07-r2-petal-count-study.txt) | Same-scale aesthetic comparison of three, four, and five petals |
+| [08-modular-arm](concepts/08-r2-modular-arm.png) | [08 prompt](../prompts/08-r2-modular-arm.txt) | Fixed-base body, J7 face-normal roll, and detachable head interface |
+| [09-head-states](concepts/09-r2-head-states.png) | [09 prompt](../prompts/09-r2-head-states.txt), [roll refinement](../prompts/09-r2-roll-refinement.txt) | Four-petal open, grasping, empty closed, and whole-head roll poses |
+
+R2 used the built-in imagegen tool. The initial head-state board received four actual visual inputs: PlayStation's selected Odradek player close-up for articulated luminous-panel character; a community gameplay pointing image for directional gesture; XPENG's published logo for paired-petal composition only; and the user-selected industrial-design sketch for pen/marker style. These source images remain outside the repository; see [sources](sources.md).
+
+The generated head-state design guided the count study. The existing A FIELD board supplied body/material language, and the new head-state design supplied head identity for the modular-arm board. A targeted edit to the head-state board clarified that the cameras and display roll with the petals. The roll miniatures are qualitative: they do not establish equal positive/negative angles or travel limits.
+
+All three boards are 1536 × 1024 PNGs. Asset sizes and SHA-256 hashes are in [manifest.json](concepts/manifest.json). The visual review checks petal count, paired silhouette, two local upper/lower cameras, screen-drawn ring, grasp versus empty closure, and modular boundary. It does not verify a closure trajectory, seven-axis topology, four-independent-coordinate mechanism, or connector specification.
