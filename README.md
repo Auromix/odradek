@@ -6,7 +6,7 @@
 
 Odradek is an independent Auromix robotics project sharing design material for noncommercial research and hobby use inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
 
-**Stage: R4 engineering research and geometry prototypes.** The requirement is a 2 kg end load, EtherCAT motion communication, internal cabling, and external computing. Current calculations assume a 2 kg object plus a 2 kg head budget and approximately 700 mm shoulder-to-TCP distance; those interpretations are not yet confirmed performance specifications. The repository now includes executable mathematics, parameterized STEP geometry, a native Blender assembly, review drawings, and printable fixtures. It has no manufacturing release, tested 2 kg prototype, or production control firmware.
+**Stage: R4 engineering research and geometry prototypes.** The requirement is a 2 kg end load, EtherCAT motion communication, internal cabling, and external computing. The initial baseline assumes a 2 kg object plus a 2 kg head and about 700 mm shoulder-to-TCP distance. The supported right-angle-drive candidate now budgets roughly 3.58–4.25 kg for the head; separate 3.5–4.5 kg static studies and a lighter transmission comparison are underway. Load interpretation and reach remain assumptions. The repository now includes executable mathematics, parameterized STEP geometry, a native Blender assembly, review drawings, and printable fixtures. It has no manufacturing release, tested 2 kg prototype, or production control firmware.
 
 ## Engineering package
 
@@ -24,7 +24,7 @@ The render exposes catalog-sized joint envelopes and provisional drive placehold
 | [Hardware BOM](docs/engineering/hardware/bom.csv) / [optical bench](docs/engineering/hardware/optical-bench-build.md) | Sourced component candidates and a concrete dual-fisheye bench chain |
 | [Reproduce the calculations and CAD](engineering/README.md) | Dependencies, generation order, units, and limitations |
 
-The nominal petal geometry has a 4.7862 mm minimum separating-axis bound over the independent study angle intervals. This excludes supports, cables, tolerance and deformation. The [finite-pad contact study](docs/engineering/finite-pad-contact-study.md) finds that the lower finger or light window hits an 80 mm cylinder before the assumed pads engage. Contact geometry needs revision; the conditional force calculations are not a measured payload rating.
+The nominal petal geometry has a 4.7862 mm minimum separating-axis bound over the independent study angle intervals. This excludes supports, cables, tolerance and deformation. The [finite-pad contact study](docs/engineering/finite-pad-contact-study.md) finds that the lower finger or light window hits an 80 mm cylinder before the assumed pads engage. That counterexample remains documented in the old layout. [CONTACT-02 distal shoes](docs/engineering/distal-contact-study.md) improve the tested cylinder cases, and [SUPPORT-03 narrow forks](docs/engineering/gripper-root-support-study.md) pass local full-interval clearance checks. These studies are not yet combined with real LED boards and harnesses into a production assembly; conditional force calculations are not a measured payload rating.
 
 ## R3: keep the silhouette, resolve closure and contact
 
