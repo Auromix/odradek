@@ -30,4 +30,7 @@ for r in runs:
  r['command']=[Path(x).name if x in [a.kicad_cli,a.kicad_python] else x for x in r['command']]
 report={'status':'actual rebuild and gates passed','runs':runs,'compiler_syntax_check_run':bool(clang),'hardware_execution':False,'fabrication_release':False,'artifact_hashes':{str(p.relative_to(D)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(D.rglob('*')) if p.is_file() and (p.suffix in ['.g1','.g2','.gbl','.gtl','.gtp','.gbp','.gto','.gbo','.gts','.gbs','.gm1','.drl','.gbrjob'] or p.name in ['upper-petal.kicad_pcb','upper-petal.kicad_sch','routing-plan.json'])}}
 for temp in D.glob('upper-petal-unrouted.*'):temp.unlink()
+# prepare_native retains a router-export step shared with historical trials;
+# reviewed routes are replayed directly, so that intermediate is not delivered.
+(D/'upper-petal.dsn').unlink(missing_ok=True)
 (D/'checks/rebuild-report.json').write_text(json.dumps(report,indent=2)+'\n');print('Native ULP02 rebuild, ERC/DRC/net parity, 113 positions and C99 syntax passed')
