@@ -38,6 +38,7 @@
 | 灯片真实层叠 | [电子腔与PCB安装](led-petal-pocket-study.md) | 4.45 mm普通层叠、安装柱/低头螺钉和净截面计算；GH/线束与正式灯板未集成 |
 | 正式灯板适配 | [上下片130/42点阵候选](final-petal-board-fit-analysis.md) | 212项实体包络容纳检查；侧插GH、焊高/局部深腔与热桥待ECAD/MCAD联合收敛 |
 | 腕部承力连接 | [J6—J7三件结构](link67-structure-study.md) | 24螺钉、零位/工具/J7连续装入已检查；末端旋转碰撞和生产公差未闭合 |
+| 头部腕区避让 | [24mm加高与连续证明](wrist-extension-study.md) | q5/q7±90、q6±90及四指独立范围，头对相关腕区名义下界2.9mm；未含全臂/线束/受载公差 |
 | 完整末端载体 | [P16-CARRIER-01](p16-carrier-study.md) | 四轴承座/P16基叉/J7后架/双鱼眼前架及236实体端态；2.727kg已建模型，根部小间隙与腕旋转仍需修订 |
 | 灯光与IO | [609点LED与控制/功率](hardware/head-lighting-io-selection.md) | 真实圆形点阵与四片LED坐标，MCU/ESC/电源候选；不是完整PCB |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
