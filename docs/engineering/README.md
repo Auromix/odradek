@@ -14,6 +14,7 @@
 | 接触材料试片 | [双型四腔浇注模具](contact-pad-prototype.md) | STEP/STL/DXF/两页图纸；未打印/浇注，不含保持结构或承载资格 |
 | J5→J6实体连接 | [LINK56-01](link56-structure-study.md) | 六件原创结构、40紧固件、六页图与分步装配；有效螺纹/预紧/局部强度未放行 |
 | 六段承力连接 | [真实接口与空间审查](link-connection-plan.md) | 全部接触面/孔阵；发现肩部螺钉及两段旧梁干涉 |
+| 真实连接质量回算 | [候选载荷集成](candidate-loads.md) | LINK56六实体惯量/COM回填；重头情景与底座重算，仍非整机载荷上限 |
 | 末端质量影响 | [3.5–4.5 kg 敏感性](head-mass-sensitivity.md) | 2 kg净物体另计；局部搜索及全域保守界，不替代动态/热选型 |
 | 材料与梁 | [截面筛选](structure-screening.md) | 6061-T6 闭口矩形梁与双管比较；不含完整连接柔度 |
 | 底座 | [开腔底座及倾覆计算](base-structure-study.md) | 5种原创零件、8件装配、4页图；固定到桌架的候选，未承载放行 |

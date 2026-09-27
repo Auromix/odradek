@@ -1,0 +1,1135 @@
+{
+  "revision": "CANDIDATE-LOADS-01",
+  "baseline_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "base_study_sha256": "2c46ca6bfe3cfbc08f8ba6c12f5d084fff9f6633992269a3382e6cc3e8069d28",
+  "link56": {
+    "original_metal_kg": 0.8119726951142328,
+    "reserve_kg": 0.1,
+    "replacement_mass_kg": 0.9119726951142327,
+    "metal_COM_home_mm": [
+      -4.597884493258888e-13,
+      -52.43921455978682,
+      522.2242017383035
+    ],
+    "input_hashes": {
+      "engineering/generated/link56-study/part-placements.json": "fb6329f3fdee45c3459e102a374ea117e69edb24a0233355f06f130c6103ae9e",
+      "engineering/generated/link56-study/evidence.json": "2e668b28467d1ccb7c8610df0c1279fdb0915246830167a4cbc86a5b81baab47",
+      "engineering/generated/link56-study/ODR-L56-OUT-R4.step": "d4ddce09c985ed17978c6c8e4baa65a5bc8b2780bcdab693d9af9b195ed92965",
+      "engineering/generated/link56-study/ODR-L56-LOW-R4.step": "f5b6168a2005bd274f9386dc0c7b23eeb6a0fe19f41401d2d6940995ef25e367",
+      "engineering/generated/link56-study/ODR-L56-TUBE-R4.step": "35a80d7d70bfbb8b2a5d24be0702b658f70a10f099952dc56542c6800a15b04b",
+      "engineering/generated/link56-study/ODR-L56-UP-R4.step": "13e21bbd8f7b9f6566bc8ad91f43ec0085669b843efdc033fad297ab42345e76",
+      "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step": "08a125b854dbdffdbca9b843cda446130092543cab7ed2964e1aed518bd17145",
+      "engineering/generated/link56-study/ODR-L56-FRONT-R4.step": "3cad09838550cd2e8d6bbfce6e722ada0054e7755feb1f67246dbdf90f583d70"
+    },
+    "reserve_inertia_is_proxy": true,
+    "replaces": "L5_budget"
+  },
+  "generator_sha256": "775328d53e4c19ef75c992e7813ac7d2d974f93c6b1b5c63051e40c39a2564a9",
+  "mass_helper_sha256": "9828f0675cbf7c624d12bfcff9093d8d0c07f98d5d2eeb53a5c676e3d638c765",
+  "replacement_bodies": [
+    {
+      "id": "L56_output_adapter",
+      "mass_kg": 0.055089729835981656,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -9.48693969778994e-16,
+        -0.055,
+        0.453
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          2.4429466377824702e-05,
+          7.7598087955267e-21,
+          4.260527930455997e-22
+        ],
+        [
+          7.7598087955267e-21,
+          4.548848434421531e-05,
+          9.976020010071816e-23
+        ],
+        [
+          4.260527930455997e-22,
+          9.976020010071816e-23,
+          6.958741234302413e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-OUT-R4.step",
+      "material_assumption": "homogeneous 6061 at 2700 kg/m3; thread helix omitted"
+    },
+    {
+      "id": "L56_lower_block",
+      "mass_kg": 0.1931082001487904,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -3.020058854773863e-16,
+        -0.055000000000000014,
+        0.4653384140770578
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          6.266344469385451e-05,
+          2.4383234631387558e-20,
+          -2.1339841998049236e-19
+        ],
+        [
+          2.4383234631387558e-20,
+          0.00010818624519271852,
+          2.0753515120534482e-20
+        ],
+        [
+          -2.1339841998049236e-19,
+          2.0753515120534482e-20,
+          0.00015185998678230117
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-LOW-R4.step",
+      "material_assumption": "homogeneous 6061 at 2700 kg/m3; thread helix omitted"
+    },
+    {
+      "id": "L56_closed_beam",
+      "mass_kg": 0.11317940052999013,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -5.627618677540007e-18,
+        -0.05500000000000002,
+        0.5035000000000001
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          8.135025605215276e-05,
+          1.7118236428359534e-20,
+          7.439194860125989e-21
+        ],
+        [
+          1.7118236428359534e-20,
+          0.00010699367613915978,
+          -3.3354132256135996e-20
+        ],
+        [
+          7.439194860125989e-21,
+          -3.3354132256135996e-20,
+          8.306842427377412e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-TUBE-R4.step",
+      "material_assumption": "homogeneous 6061 at 2700 kg/m3; thread helix omitted"
+    },
+    {
+      "id": "L56_upper_block",
+      "mass_kg": 0.20670566660479933,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -1.39690893558422e-16,
+        -0.05465858344123111,
+        0.5417161769247668
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          6.575487913960651e-05,
+          7.217376468767283e-22,
+          5.215707377977823e-20
+        ],
+        [
+          7.217376468767283e-22,
+          0.00011213100400370686,
+          2.6226077813290655e-07
+        ],
+        [
+          5.215707377977823e-20,
+          2.6226077813290655e-07,
+          0.00015717677332237543
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-UP-R4.step",
+      "material_assumption": "homogeneous 6061 at 2700 kg/m3; thread helix omitted"
+    },
+    {
+      "id": "L56_rear_carrier",
+      "mass_kg": 0.2238115845668334,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -1.1144805208203611e-15,
+        -0.050151627640059114,
+        0.5723858812604596
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00022579258788197956,
+          1.2609044176769564e-18,
+          2.6390317159315506e-18
+        ],
+        [
+          1.2609044176769564e-18,
+          0.0003103239437530319,
+          -2.732772699408559e-05
+        ],
+        [
+          2.6390317159315506e-18,
+          -2.732772699408559e-05,
+          0.0001989513490954729
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step",
+      "material_assumption": "homogeneous 6061 at 2700 kg/m3; thread helix omitted"
+    },
+    {
+      "id": "L56_front_ring",
+      "mass_kg": 0.02007811342783789,
+      "preceding_joints": 5,
+      "com_home_m": [
+        8.064962010159022e-16,
+        -0.009000000000000003,
+        0.605
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.3419880630904764e-05,
+          3.978129825554585e-22,
+          4.681055543165206e-24
+        ],
+        [
+          3.978129825554585e-22,
+          1.3419880630905769e-05,
+          -5.8321347751188715e-24
+        ],
+        [
+          4.681055543165206e-24,
+          -5.8321347751188715e-24,
+          2.6809644091668764e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link56-study/ODR-L56-FRONT-R4.step",
+      "material_assumption": "homogeneous 6061 at 2700 kg/m3; thread helix omitted"
+    },
+    {
+      "id": "L56_fasteners_wiring_reserve",
+      "mass_kg": 0.1,
+      "preceding_joints": 5,
+      "com_home_m": [
+        -4.597884493258888e-16,
+        -0.05243921455978682,
+        0.5222242017383034
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          4.166666666666668e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          4.166666666666668e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          4.166666666666668e-05
+        ]
+      ],
+      "mass_source": "unweighed 0.1 kg reserve at metal COM; 50 mm cube inertia proxy"
+    }
+  ],
+  "equivalent_rigid_body": {
+    "id": "L56_lumped",
+    "mass_kg": 0.9119726951142328,
+    "preceding_joints": 5,
+    "com_home_m": [
+      -4.597884493258888e-16,
+      -0.05243921455978682,
+      0.5222242017383033
+    ],
+    "orientation_home": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "inertia_com_kg_m2": [
+      [
+        0.002265349850150203,
+        8.291907456185489e-19,
+        7.272336088879444e-18
+      ],
+      [
+        8.291907456185489e-19,
+        0.0024594264852210138,
+        -0.0001593237711369765
+      ],
+      [
+        7.272336088879444e-18,
+        -0.0001593237711369765,
+        0.0007581763407918873
+      ]
+    ]
+  },
+  "rigid_body_equivalence_regression": {
+    "poses": 12,
+    "gravity_max_error_Nm": 7.105427357601002e-15,
+    "mass_matrix_max_error_kg_m2": 4.440892098500626e-16
+  },
+  "search_samples": 15005,
+  "cases": [
+    {
+      "head_mass_kg": 2.0,
+      "head_COM_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 19.581972695114235,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        50.30886560275583,
+        26.729154088059,
+        23.660734837923126,
+        10.380752550588241,
+        8.710727442550002,
+        8.629381931246627e-15
+      ],
+      "witness_q_deg_by_joint": [
+        [
+          49.19395439424474,
+          -30.713803399889382,
+          29.62125023917333,
+          -50.01396727405156,
+          -50.93348827186799,
+          45.84353820546141,
+          -2.563739210089264
+        ],
+        [
+          -3.2764883389288975,
+          76.02173571071667,
+          90.0,
+          13.966250738822321,
+          -90.0,
+          14.38664794386976,
+          -26.70469701675817
+        ],
+        [
+          -65.01546681897266,
+          -89.99999981370291,
+          -55.90420167661306,
+          -104.77958613569048,
+          90.0,
+          -34.996153851642774,
+          -56.46657062472123
+        ],
+        [
+          -71.02077908677784,
+          28.552658607942718,
+          1.1226763201718398e-06,
+          -47.64073724820344,
+          -90.0,
+          -1.791231908479828e-06,
+          -32.95832431060461
+        ],
+        [
+          -23.373833834897482,
+          83.39516462931095,
+          86.44484369085941,
+          118.1706318711631,
+          25.45525294908245,
+          -89.99999986110718,
+          -34.61619608964004
+        ],
+        [
+          -1.0177774980683254e-05,
+          90.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          22.799471653639124,
+          -61.33632130158188,
+          -48.175319617860076,
+          47.31762220610092,
+          -77.05888557101815,
+          -45.67823189117139,
+          -1.3075878044084366
+        ]
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        57.55002416567343,
+        48.09272147388465,
+        27.69268833109869,
+        21.464626212416903,
+        10.43506680037071,
+        7.2642759875
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 1.0658141036401503e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 58.90965734827343,
+        "sample_max_overturning_Nm": 49.83870189631191,
+        "sample_worst_q_deg": [
+          12.553307553547333,
+          -83.75150441999554,
+          -67.83008586559008,
+          24.56787657822649,
+          -69.50365039120271,
+          5.755083151769713,
+          -24.57666192156539
+        ],
+        "added_COM_uncertainty_Nm": 3.08909475,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 92.99812814741014,
+        "study_vertical_budget_N": 358.0645998063302,
+        "post_equal_stiffness_max_abs_N": 804.8863664701221,
+        "J1_fixed_M4_equal_stiffness_N": 500.6312521689782,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 298.90730477586027,
+        "single_anchor_110mm_lever_example_N": 845.4375286128195,
+        "post_nominal_axial_eccentric_stress_MPa": 2.317478905796669,
+        "plate_strip_sensitivity_stress_MPa": 71.18488271374933,
+        "plate_strip_sensitivity_deflection_mm": 0.34752400666148475
+      }
+    },
+    {
+      "head_mass_kg": 3.5,
+      "head_COM_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 21.081972695114235,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        59.419780135034706,
+        32.627251517583474,
+        29.191091075872844,
+        13.174666911696663,
+        10.990773567550004,
+        1.1293917190347003e-14
+      ],
+      "witness_q_deg_by_joint": [
+        [
+          49.19395439424474,
+          -30.713803399889382,
+          29.62125023917333,
+          -50.01396727405156,
+          -50.93348827186799,
+          45.84353820546141,
+          -2.563739210089264
+        ],
+        [
+          22.64232799927905,
+          -76.03297627699689,
+          -90.0,
+          -14.581246214600144,
+          90.0,
+          -14.412779278375215,
+          4.08088582874634
+        ],
+        [
+          -65.01545763589166,
+          -89.99999897512404,
+          -57.07625391448608,
+          -105.38220716458254,
+          90.0,
+          -33.88429627840883,
+          -56.466582418182014
+        ],
+        [
+          55.1995702508494,
+          39.662315767276596,
+          -2.148542698179255e-06,
+          115.25199440785364,
+          90.0,
+          3.047620770580316e-07,
+          38.63473437205692
+        ],
+        [
+          -84.20624979890381,
+          18.33255904792508,
+          23.966632595784933,
+          106.8452999272944,
+          -49.1958879086905,
+          -90.0000000749201,
+          54.159592411178586
+        ],
+        [
+          -1.0177774980683254e-05,
+          90.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          22.799471653639124,
+          -61.33632130158188,
+          -48.175319617860076,
+          47.31762220610092,
+          -77.05888557101815,
+          -45.67823189117139,
+          -1.3075878044084366
+        ]
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        67.64896415116394,
+        57.09826396126848,
+        33.92958842780896,
+        26.60812881102048,
+        13.159236844375416,
+        9.0294729875
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 1.4210854715202004e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 69.00859733376394,
+        "sample_max_overturning_Nm": 58.853277440437346,
+        "sample_worst_q_deg": [
+          12.553307553547333,
+          -83.75150441999554,
+          -67.83008586559008,
+          24.56787657822649,
+          -69.50365039120271,
+          5.755083151769713,
+          -24.57666192156539
+        ],
+        "added_COM_uncertainty_Nm": 3.8245935,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 109.24978625064593,
+        "study_vertical_budget_N": 380.12956230633023,
+        "post_equal_stiffness_max_abs_N": 935.4153617353974,
+        "J1_fixed_M4_equal_stiffness_N": 583.0543631836144,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 351.1421122773299,
+        "single_anchor_110mm_lever_example_N": 993.179875005872,
+        "post_nominal_axial_eccentric_stress_MPa": 2.693306110385477,
+        "plate_strip_sensitivity_stress_MPa": 82.72898583907799,
+        "plate_strip_sensitivity_deflection_mm": 0.4038822223174711
+      }
+    },
+    {
+      "head_mass_kg": 4.0,
+      "head_COM_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 21.581972695114235,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        62.4572984781592,
+        34.595395105938714,
+        31.035092234770254,
+        14.106143281211263,
+        11.750788942550006,
+        1.262618481989719e-14
+      ],
+      "witness_q_deg_by_joint": [
+        [
+          49.19395439424474,
+          -30.713803399889382,
+          29.62125023917333,
+          -50.01396727405156,
+          -50.93348827186799,
+          45.84353820546141,
+          -2.563739210089264
+        ],
+        [
+          22.642426374661373,
+          -76.03608186286188,
+          -90.0,
+          -14.737592421089285,
+          90.0,
+          -14.419440782132476,
+          4.080922038790521
+        ],
+        [
+          -11.979412514591122,
+          -90.0,
+          57.3850595234399,
+          105.53393805623098,
+          -90.0,
+          33.59029912882456,
+          -37.44515654047098
+        ],
+        [
+          64.86417721066488,
+          75.20530282719258,
+          -3.3878051390084297e-07,
+          -29.358438640810764,
+          90.0,
+          -2.488552200673402e-06,
+          -12.659570699427077
+        ],
+        [
+          15.525617677764783,
+          -84.5861001601866,
+          -57.54590275746252,
+          10.015672356138753,
+          -66.44293312826444,
+          89.99999755795432,
+          -85.29259555474066
+        ],
+        [
+          -1.0177774980683254e-05,
+          90.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          22.799471653639124,
+          -61.33632130158188,
+          -48.175319617860076,
+          47.31762220610092,
+          -77.05888557101815,
+          -45.67823189117139,
+          -1.3075878044084366
+        ]
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        71.01527747966077,
+        60.100111457063086,
+        36.00855512671238,
+        28.322629677221677,
+        14.067293525710319,
+        9.6178719875
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 2.1316282072803006e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 72.37491066226077,
+        "sample_max_overturning_Nm": 61.85824095600885,
+        "sample_worst_q_deg": [
+          12.553307553547333,
+          -83.75150441999554,
+          -67.83008586559008,
+          24.56787657822649,
+          -69.50365039120271,
+          5.755083151769713,
+          -24.57666192156539
+        ],
+        "added_COM_uncertainty_Nm": 4.06975975,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 114.66700561839116,
+        "study_vertical_budget_N": 387.4845498063302,
+        "post_equal_stiffness_max_abs_N": 978.9250268238221,
+        "J1_fixed_M4_equal_stiffness_N": 610.5287335218263,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 368.55371477781966,
+        "single_anchor_110mm_lever_example_N": 1042.427323803556,
+        "post_nominal_axial_eccentric_stress_MPa": 2.8185818452484117,
+        "plate_strip_sensitivity_stress_MPa": 86.57702021418753,
+        "plate_strip_sensitivity_deflection_mm": 0.4226682942027998
+      }
+    },
+    {
+      "head_mass_kg": 4.5,
+      "head_COM_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 22.081972695114235,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        65.49501368012706,
+        36.56432393742663,
+        32.87929095287268,
+        15.037678872452,
+        12.51080431755,
+        1.3514363239597316e-14
+      ],
+      "witness_q_deg_by_joint": [
+        [
+          49.19395439424474,
+          -30.713803399889382,
+          29.62125023917333,
+          -50.01396727405156,
+          -50.93348827186799,
+          45.84353820546141,
+          -2.563739210089264
+        ],
+        [
+          22.642412014158232,
+          -76.0389296890777,
+          -90.0,
+          -14.876413973442135,
+          90.0,
+          -14.425367082941113,
+          4.080958513652719
+        ],
+        [
+          -65.01548071710378,
+          -89.99999951742896,
+          -57.66308271733808,
+          -105.66815745538254,
+          90.0,
+          -33.325226195174515,
+          -56.466582737597314
+        ],
+        [
+          64.86414010751916,
+          75.19421817731042,
+          -5.240252905986335e-07,
+          -29.50573343058348,
+          90.0,
+          -1.9486733669722635e-07,
+          -12.659605462735572
+        ],
+        [
+          -84.20625245692838,
+          18.286623579761788,
+          23.905768837531873,
+          106.81010965387318,
+          -48.99603742116487,
+          -89.99999912459057,
+          54.15959050823898
+        ],
+        [
+          0.0,
+          90.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          22.799471653639124,
+          -61.33632130158188,
+          -48.175319617860076,
+          47.31762220610092,
+          -77.05888557101815,
+          -45.67823189117139,
+          -1.3075878044084366
+        ]
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        74.38159080815761,
+        63.10195895285771,
+        38.0875218256158,
+        30.037130543422872,
+        14.975350207045222,
+        10.2062709875
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 1.4210854715202004e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 75.74122399075762,
+        "sample_max_overturning_Nm": 64.86324481100384,
+        "sample_worst_q_deg": [
+          12.553307553547333,
+          -83.75150441999554,
+          -67.83008586559008,
+          24.56787657822649,
+          -69.50365039120271,
+          5.755083151769713,
+          -24.57666192156539
+        ],
+        "added_COM_uncertainty_Nm": 4.314926,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 120.08422498613643,
+        "study_vertical_budget_N": 394.8395373063302,
+        "post_equal_stiffness_max_abs_N": 1022.4346919122476,
+        "J1_fixed_M4_equal_stiffness_N": 638.0031038600386,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 385.96531727830967,
+        "single_anchor_110mm_lever_example_N": 1091.6747726012404,
+        "post_nominal_axial_eccentric_stress_MPa": 2.9438575801113487,
+        "plate_strip_sensitivity_stress_MPa": 90.42505458929709,
+        "plate_strip_sensitivity_deflection_mm": 0.44145436608812877
+      }
+    },
+    {
+      "head_mass_kg": 4.5,
+      "head_COM_offset_mm": [
+        0,
+        50,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 22.081972695114235,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        66.11165055609297,
+        37.130009031943054,
+        33.507246369625335,
+        16.365193906035387,
+        12.703891150875458,
+        2.2064962500000003
+      ],
+      "witness_q_deg_by_joint": [
+        [
+          49.19395439424474,
+          -30.713803399889382,
+          29.62125023917333,
+          -50.01396727405156,
+          -50.93348827186799,
+          45.84353820546141,
+          -2.563739210089264
+        ],
+        [
+          12.553408476448734,
+          -76.14092551429577,
+          -90.0,
+          18.571598614134317,
+          -90.0,
+          14.588713965995977,
+          -2.3814595973776683e-05
+        ],
+        [
+          -65.01549870070671,
+          -90.0,
+          -58.214033495848945,
+          -109.52786297534884,
+          90.0,
+          -33.32525027575644,
+          -0.00012940257395644433
+        ],
+        [
+          -9.591894081865394,
+          -1.0132529705519398e-05,
+          -54.80558092319131,
+          -71.64808176382287,
+          -90.0,
+          -7.786636987338374e-06,
+          -3.6284027438416834e-05
+        ],
+        [
+          -42.720794420111524,
+          -73.78140811027602,
+          76.51490857767654,
+          51.28146701430485,
+          61.11549619322485,
+          -89.9999996342536,
+          -2.6529091219747236e-06
+        ],
+        [
+          -9.220673462820153,
+          -80.75571460744423,
+          78.07587165802128,
+          -0.3216611512778151,
+          -78.1272887751511,
+          -19.312842912376553,
+          -90.0
+        ],
+        [
+          0.0,
+          90.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        74.82289005815761,
+        63.54325820285771,
+        38.5288210756158,
+        30.478429793422873,
+        15.416649457045224,
+        10.6475702375
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 1.4210854715202004e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 76.18252324075762,
+        "sample_max_overturning_Nm": 65.39467647352896,
+        "sample_worst_q_deg": [
+          12.553307553547333,
+          -83.75150441999554,
+          -67.83008586559008,
+          24.56787657822649,
+          -69.50365039120271,
+          5.755083151769713,
+          -24.57666192156539
+        ],
+        "added_COM_uncertainty_Nm": 4.314926,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 120.74617386113643,
+        "study_vertical_budget_N": 394.8395373063302,
+        "post_equal_stiffness_max_abs_N": 1027.5266063353242,
+        "J1_fixed_M4_equal_stiffness_N": 641.2479512865091,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 388.09290154336105,
+        "single_anchor_110mm_lever_example_N": 1097.6924896466949,
+        "post_nominal_axial_eccentric_stress_MPa": 2.9585185369335565,
+        "plate_strip_sensitivity_stress_MPa": 90.87538813462076,
+        "plate_strip_sensitivity_deflection_mm": 0.44365289071918385
+      }
+    }
+  ],
+  "manufacturing_release": false,
+  "limits": [
+    "Only six LINK56 solids use CAD-derived mass/COM/inertia; 0.1kg local reserve remains a proxy",
+    "Head masses/COM and other five connections remain assumptions; no new tip/interface offsets included",
+    "Base COM budgets: object 100mm, head additional 50mm, 0.1kg local reserve 150mm; not all uncertainty bounded",
+    "0.5kg base/general hardware reserve is separate from LINK56 0.1kg allowance",
+    "No collision/task/harness validation of sampled or optimized poses",
+    "Local witness maximum is not a global proof; running rating does not establish zero-speed thermal capacity",
+    "Base equal-stiffness loads and strip stresses omit prying/preload/contact separation/local concentration",
+    "No dynamic, contact, fatigue, thread stripping, anchor/table capacity or brake qualification"
+  ]
+}
