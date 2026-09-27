@@ -1,0 +1,162 @@
+{
+  "revision": "INTERNAL-HARNESS02",
+  "status": "READY for engineering review; local space study only",
+  "source_hash_checks": {
+    "engineering/parameters/r4-layout.json": true,
+    "engineering/generated/link12-study/part-placements.json": true,
+    "engineering/generated/link12-study/evidence.json": true,
+    "engineering/generated/link12-study/ODR-L12-OUT-R4.step": true,
+    "engineering/generated/link12-study/ODR-L12-FORK-R4.step": true,
+    "engineering/generated/link12-study/ODR-L12-FRONT-R4.step": true,
+    "engineering/generated/link23-study/part-placements.json": true,
+    "engineering/generated/link23-study/evidence.json": true,
+    "engineering/generated/link23-study/ODR-L23-OUT-R4.step": true,
+    "engineering/generated/link23-study/ODR-L23-CARRIER-R4.step": true,
+    "engineering/generated/link23-study/ODR-L23-FRONT-R4.step": true,
+    "engineering/generated/link34-study/part-placements.json": true,
+    "engineering/generated/link34-study/evidence.json": true,
+    "engineering/generated/link34-study/ODR-L34-OUT-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-LOW-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-TUBE-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-UP-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-CARRIER-R4.step": true,
+    "engineering/generated/link34-study/ODR-L34-FRONT-R4.step": true,
+    "engineering/generated/link45-study/part-placements.json": true,
+    "engineering/generated/link45-study/evidence.json": true,
+    "engineering/generated/link45-study/ODR-L45-OUT-R4.step": true,
+    "engineering/generated/link45-study/ODR-L45-CARRIER-R4.step": true,
+    "engineering/generated/link45-study/ODR-L45-FRONT-R4.step": true,
+    "engineering/generated/link56-study/part-placements.json": true,
+    "engineering/generated/link56-study/evidence.json": true,
+    "engineering/generated/link56-study/ODR-L56-OUT-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-LOW-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-TUBE-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-UP-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step": true,
+    "engineering/generated/link56-study/ODR-L56-FRONT-R4.step": true,
+    "engineering/generated/link67-study/part-placements.json": true,
+    "engineering/generated/link67-study/evidence.json": true,
+    "engineering/generated/link67-study/ODR-L67-OUT-R4.step": true,
+    "engineering/generated/link67-study/ODR-L67-CARRIER-R4.step": true,
+    "engineering/generated/link67-study/ODR-L67-FRONT-R4.step": true,
+    "engineering/generated/base-study/ODR-BASE-ORIGINAL-ASSEMBLY.step": true,
+    "docs/engineering/sources/rh-interface-extraction.json": true,
+    "engineering/internal_harness02.py": true,
+    "engineering/screen_integrated_collisions.py": true,
+    "engineering/build_layout.py": true,
+    "engineering/mount_interface_study.py": true,
+    "engineering/studies/link_interface_tools.py": true,
+    "engineering/build_link45_study.py": true,
+    "engineering/build_link56_study.py": true,
+    "engineering/build_link34_study.py": true,
+    "docs/engineering/sources/camera-cable-refresh.json": true,
+    "docs/engineering/harness-and-connectors.md": true
+  },
+  "existing_document_hash_checks": {
+    "docs/engineering/sources/camera-cable-refresh.json": true,
+    "docs/engineering/p16-control-interface.md": true
+  },
+  "original_STEP_readback": {
+    "J5-two-coax-home-shape.step": {
+      "sha256": "49bf91f8756f6b1036de5741347b73b1a615c9b97e27c409c4e08933a5ae8dc3",
+      "valid": true,
+      "solid_count": 2,
+      "volume_mm3": 3452.6396387559166
+    },
+    "J5-coax-corridor-probe.step": {
+      "sha256": "0ee6fdc1891843627075f1fffb5af50a0ffbd223986c7b48bb216ac1e5c4c398",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 9613.556260481262
+    },
+    "J5-local-family-envelope.step": {
+      "sha256": "7771ccc8354812ec45e9fb8888e74d782037c907e1363c8f43d0748aad958ca6",
+      "valid": true,
+      "solid_count": 4,
+      "volume_mm3": 21151.268911932646
+    },
+    "J6-coax-corridor-probe.step": {
+      "sha256": "dd55255f64a6dbeab9dc18df3ffcd125402ab53137dba0d5f4435ff4c8992401",
+      "valid": true,
+      "solid_count": 1,
+      "volume_mm3": 10503.066804786955
+    }
+  },
+  "two_wire_independent_volume_error_mm3": 2.0049810700584203e-09,
+  "envelope_object_checks": 588,
+  "envelope_per_solid_boolean_count": 27,
+  "envelope_events": 0,
+  "neutral_wire_outside_fused_enclosure_mm3": 0,
+  "pdf_pages": 1,
+  "pdf_page_size_pt": [
+    1080,
+    720
+  ],
+  "png_size_px": [
+    2250,
+    1500
+  ],
+  "actual_pdf_render_visually_checked": true,
+  "visual_QA_notes": "Four panels inspected from actual PDF at135%; labels and qualifications visible, no observed overlap. Geometry is orthographic review imagery, not machining dimensions.",
+  "local_document_links": [
+    {
+      "link": "../../../engineering/generated/internal-harness02/internal-harness02-review.png",
+      "exists": true
+    },
+    {
+      "link": "../../../engineering/generated/internal-harness02/internal-harness02-review.pdf",
+      "exists": true
+    },
+    {
+      "link": "../../../engineering/generated/internal-harness02/evidence.json",
+      "exists": true
+    },
+    {
+      "link": "../../../engineering/generated/internal-harness02/source-records.json",
+      "exists": true
+    },
+    {
+      "link": "../../../engineering/internal_harness02.py",
+      "exists": true
+    },
+    {
+      "link": "../p16-control-interface.md",
+      "exists": true
+    },
+    {
+      "link": "../harness-and-connectors.md",
+      "exists": true
+    },
+    {
+      "link": "../rh-operation-evidence.md",
+      "exists": true
+    },
+    {
+      "link": "../camera-cable-refresh.md",
+      "exists": true
+    },
+    {
+      "link": "../../../engineering/generated/internal-harness02/J5-two-coax-home-shape.step",
+      "exists": true
+    },
+    {
+      "link": "../../../engineering/generated/internal-harness02/J5-local-family-envelope.step",
+      "exists": true
+    }
+  ],
+  "baseline_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "full_harness_qualified": false,
+  "manufacturing_release": false,
+  "artifact_sha256": {
+    "engineering/generated/internal-harness02/J5-coax-corridor-probe.step": "0ee6fdc1891843627075f1fffb5af50a0ffbd223986c7b48bb216ac1e5c4c398",
+    "engineering/generated/internal-harness02/J5-local-family-envelope.step": "7771ccc8354812ec45e9fb8888e74d782037c907e1363c8f43d0748aad958ca6",
+    "engineering/generated/internal-harness02/J5-two-coax-home-shape.step": "49bf91f8756f6b1036de5741347b73b1a615c9b97e27c409c4e08933a5ae8dc3",
+    "engineering/generated/internal-harness02/J6-coax-corridor-probe.step": "dd55255f64a6dbeab9dc18df3ffcd125402ab53137dba0d5f4435ff4c8992401",
+    "engineering/generated/internal-harness02/evidence.json": "226ddd06e20af3540d661d561b7a881a4c6962f1c3543c9247b22ddbfca7957d",
+    "engineering/generated/internal-harness02/internal-harness02-review.pdf": "6ab50b24a4b55a12853f58656d5de966ef1b4da6262c39f04ed9a56127f9cdbb",
+    "engineering/generated/internal-harness02/internal-harness02-review.png": "0db73a029ba600f1115ea1999f5dbad22c358e1c3e3ecd235ff5c90c47d55a76",
+    "engineering/generated/internal-harness02/source-records.json": "5627fc0caf469f93cdde01b45845bc59c0c23e593c3bcb909395d8253855ed82"
+  },
+  "study_doc_sha256": "d38fc5bca0927e46db5d9a67b2faa85a8ad778fd7f4dad66704bce3ded9b5454",
+  "study_script_sha256": "2e6ba3c6c0aca4066dd668004c9a6bfe6e1c46b17d211597650b5cc99b81b11c"
+}

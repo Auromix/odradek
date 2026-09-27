@@ -1,0 +1,143 @@
+{
+  "revision": "INTERNAL-HARNESS02",
+  "date": "2026-09-27",
+  "license": "CC-BY-NC-4.0",
+  "sources": [
+    {
+      "id": "CG03",
+      "url": "https://www.rosenberger.com/fileadmin/content/headquarter/Downloads/_Other/HySpeedVision_Flyer.pdf",
+      "file": "rosenberger.pdf",
+      "sha256": "8ee280b7cbf131ab88ae178ce2651643849476610639e6aa04c67d1cc5f3ebc4",
+      "PDF_page": 7,
+      "OD_nominal_mm": 3.1,
+      "dynamic_bend_R_mm": 75,
+      "bend_cycles": 3000000,
+      "torsion_deg_per_m": 180,
+      "torsion_cycles": 5000000,
+      "combined_bend_torsion_qualified": false,
+      "complete_order_number": null
+    },
+    {
+      "id": "EC-T",
+      "url": "https://imager.lapp.com/e/lapp/5di4RA3zY0WwUKwyFeGtJg~~/DB2170941EN.pdf",
+      "file": "lapp2170941.pdf",
+      "sha256": "7855ef75613acc31d7276a4e4a63cae5697a08704bf861b30fae110a8ad9c0c4",
+      "PDF_pages": [
+        1,
+        2
+      ],
+      "OD_max_mm": 7.1,
+      "continuous_bend_multiplier": 12,
+      "study_bend_multiplier": 15,
+      "study_R_mm": 106.5,
+      "torsion_deg_per_m": 180,
+      "torsion_cycles": 5000000,
+      "combined_qualified": false
+    },
+    {
+      "id": "EC-B",
+      "url": "https://imager.lapp.com/e/lapp/jC7Lyg4YokqH2qg5r8noxw~~/DB2170433EN.pdf",
+      "crosscheck_url": "https://e.lapp.com/jp/p/ethernet-cables/etherline-p-ec-fd-cat-5e-2170433",
+      "OD_max_mm": 5.1,
+      "continuous_bend_multiplier": 16,
+      "study_R_mm": 81.6,
+      "life_test_bend_multiplier": 15,
+      "bend_cycles": 3000000,
+      "torsion_suitable": false,
+      "evidence": "Official PDF searchable text version04 valid2023-08-11 plus official product technical fields; previous local PDF rejected",
+      "rejected_local_file": "lapp2170433.pdf",
+      "rejected_local_sha256": "956c4310f1269ee9c301af8ba2bee89bef48c6a8e0bdf56b665256c9451cbadd",
+      "reason": "One page4000x4000 LAPP brand image; no datasheet body"
+    },
+    {
+      "id": "BASLER",
+      "url": "https://docs.baslerweb.com/basler-cable-gmsl-fakra-z-1x-f-f",
+      "conflict_url": "https://www.baslerweb.com/en/shop/cable-gmsl-fakra-z-1x-f-f-3m/",
+      "order": "2200002798",
+      "OD_max_mm": 3.45,
+      "dynamic_bend_R_mm": 34.5,
+      "bend_cycles": 5000000,
+      "status": "conditional: documentation dynamic vs shop static unresolved; ZED channel not qualified",
+      "torsion_deg_per_m": null
+    },
+    {
+      "id": "OKI",
+      "url": "https://www.okidensen.co.jp/en/prod/cable/movable/index_fakra.html",
+      "family": "FKR(CX) K",
+      "OD_mm": 3,
+      "reference_sliding_R_mm": 37,
+      "reference_cycles_over": 10000000,
+      "dynamic_max_length_m": 5,
+      "status": "Manufacturer reference not guarantee; GMSL2 mode6Gbps and torsion not qualified",
+      "torsion_deg_per_m": null
+    },
+    {
+      "id": "STEREOLABS-FAKRA",
+      "url": "https://cdn.sanity.io/files/s18ewfw4/staging/93950f8ae45e38bac0814db247ad58c799831cb1.stp/GMSL Cable - FAKRA Z Female connector.stp",
+      "sha256": "2bab7cb6f41998c82f57a716e668741e2ae2556bcb1c2a9a232add2a2da518ce",
+      "role": "Mechanical sample only, not CG03 assembly selection"
+    },
+    {
+      "id": "STEREOLABS-CAMERA",
+      "url": "https://www.stereolabs.com/docs/products/cameras/zedxone/specifications",
+      "order": "ZED-414012",
+      "interface": "GMSL2 FAKRA-Z + PoC",
+      "role": "Dual fisheye system target; no extra independent24V camera feed"
+    },
+    {
+      "id": "ROSENBERGER-HOUSING-SEQUENCE",
+      "url": "https://products.rosenberger.com/_ocassets/ma/MA_59V116.pdf",
+      "file": "MA_59V116.pdf",
+      "sha256": "303dc622dc13f02aedbedd53dd03ddbe4cbd1df23edbaa0ea0deb6d90bcc821e",
+      "revision": "b00 2022-10-20",
+      "PDF_pages": [
+        1,
+        2
+      ],
+      "confirmed": "Precrimped contact then insertion into plastic housing exists for listed FAKRA2/SF plug examples. Not automatically the CG03 female cable assembly.",
+      "applicable_CG03_female_order_number": null,
+      "bare_contact_maximum_passage_diameter_mm": null
+    },
+    {
+      "id": "ROSENBERGER-PLUG-103",
+      "url": "https://products.rosenberger.com/radio-frequency/connectors/170501/59s10o-103a4-straight-plug",
+      "PN": "59S10O-103A4",
+      "cable": "RG316-d, K02252d, HF50 0.5/1.5LDY",
+      "diameter_mm": 3.1,
+      "impedance_ohm": 50,
+      "gender": "plug",
+      "status": "Example only; not required female assembly selection"
+    },
+    {
+      "id": "ROSENBERGER-JACK-103-EXCLUDED",
+      "url": "https://products.rosenberger.com/radio-frequency/connectors/170823/59k13o-103a4-straight-jack",
+      "PN": "59K13O-103A4",
+      "cable": "RG179-d",
+      "diameter_mm": 3.1,
+      "impedance_ohm": 75,
+      "gender": "jack",
+      "status": "Excluded as proof of 50ohm CG03 compatibility; cannot infer same cable from shared103suffix"
+    },
+    {
+      "id": "ROSENBERGER-Z-HOUSING",
+      "url": "https://products.rosenberger.com/radio-frequency/connectors/487658/59z063-000z-plastic-housing-jack",
+      "PN": "59Z063-000Z",
+      "status": "Separate Z-coded jack plastic housing exists; compatible CG03 female contact and assembly instruction not established"
+    }
+  ],
+  "existing_source_records": {
+    "docs/engineering/sources/camera-cable-refresh.json": "9997227261a088b5e5de518d79427466903e499c11c49fb4f21be338f8dc714b",
+    "docs/engineering/p16-control-interface.md": "74dda5adb42d4dd199aeea8ec25297edd634a28a74bfd794cd3368ad49439500"
+  },
+  "motion_mode_boundaries": "Bend and torsion test limits never combined into a guaranteed compound-motion life.",
+  "raw_OEM_content_redistributed": false,
+  "connector_assembly_gate": {
+    "complete_housed_Stereolabs_connector_axial_insertion_D10_D12": false,
+    "post_housing_assembly_exists_for_other_documented_family": true,
+    "CG03_female_precrimped_contact_fit_D10": "TBD",
+    "CG03_metal_contact_dimensions": "TBD",
+    "complete_cable_order_number": "TBD",
+    "sequential_two_contact_insertion": "TBD",
+    "disassemble_existing_factory_plug_authorized": false
+  }
+}
