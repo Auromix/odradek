@@ -12,7 +12,7 @@ Odradek is an independent Auromix robotics project sharing design material for n
 
 ![Current structural review assembly](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
 
-This model combines 24 original link parts, the corrected base and the 697-object HEAD-INTEGRATED03 snapshot. Joint housings remain catalog envelopes; arm fasteners, harnesses and exterior guards are not fully integrated. The central pixel display is a separate visual preview. [Full-arm BREP checks](docs/engineering/integrated-collision-study.md) found real shoulder collisions in the historical `reach` pose; it must not be executed. The shown `inspect` pose passed the stated discrete geometry check, not trajectory or payload qualification.
+This model combines 24 original link parts, a shoulder raised by 35 mm, the corrected base and the 697-object HEAD-INTEGRATED03 snapshot. Joint housings in Blender remain catalog envelopes; arm fasteners, harnesses and exterior guards are not fully integrated. The central pixel display is a separate visual preview. [The raised candidate](docs/engineering/raised-arm-integration01.md) passes the stated actual-BREP checks for ten poses, including the historical shoulder-collision pose. These discrete checks do not qualify trajectories or payload. [Current baseline and hardware choices](docs/engineering/current-baseline.md) separate the conditional eight-node P16 branch from earlier alternatives.
 
 | Package | Evidence and scope |
 |---|---|

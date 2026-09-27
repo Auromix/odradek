@@ -12,7 +12,7 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 
 ![当前结构检查总装](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
 
-图中已合并24个原创连接件、修正后的底座和697对象的HEAD-INTEGRATED03快照。关节仍为目录包络，臂侧紧固件、线束和外壳尚未完整集成，中央像素屏单独标为显示效果。[整臂真实实体检查](docs/engineering/integrated-collision-study.md)发现历史reach姿态存在肩部碰撞，禁止执行；图示inspect仅通过已说明范围的离散几何检查，未取得轨迹或带载资格。
+图中已合并24个原创连接件、加高35mm的肩架、修正后的底座和697对象的HEAD-INTEGRATED03快照。Blender中的关节仍为目录包络，臂侧紧固件、线束和外壳尚未完整集成，中央像素屏单独标为显示效果。[当前加高候选](docs/engineering/raised-arm-integration01.md)通过10个指定姿态的真实BREP检查，包括历史上发生肩部碰撞的姿态；离散几何通过仍不等于轨迹或带载资格。[当前基线与硬件选择](docs/engineering/current-baseline.md)统一列出P16条件8站分支与历史替代方案的区别。
 
 | 入口 | 内容与范围 |
 |---|---|
