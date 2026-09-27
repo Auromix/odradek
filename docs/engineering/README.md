@@ -10,6 +10,7 @@
 | 本体数学 | [运动学与动力学](arm-mathematics.md)／[静力独立审查](arm-screening-review.md) | 解析回归、独立重量叉乘、质心敏感性；非实机额定值 |
 | 夹爪数学 | [当前抓取 LP 审查](grasp-screening-review.md)／[独立角域分离](petal-certificate-review.md) | 72 个条件接触场景；16 实体独立角域闭合证明，不含完整支承 |
 | 实际物体接触 | [有限双垫研究](finite-pad-contact-study.md) | 八点共享四个指轴；Ø80 圆柱先碰骨架/灯窗，接触结构待修正 |
+| 双垫受力分担 | [最低共同力矩上限](paired-pad-loadsharing.md) | 90种分担/摩擦/直径；区分一组最小夹力解与最低所需驱动上限 |
 | 片尖接触鞋 | [CONTACT-02](distal-contact-study.md) | 150/100 mm 长短片、64 项实体复核；改善指定圆柱接触，驱动力矩仍需匹配 |
 | 接触材料试片 | [双型四腔浇注模具](contact-pad-prototype.md) | STEP/STL/DXF/两页图纸；未打印/浇注，不含保持结构或承载资格 |
 | J5→J6实体连接 | [LINK56-01](link56-structure-study.md) | 六件原创结构、40紧固件、六页图与分步装配；有效螺纹/预紧/局部强度未放行 |

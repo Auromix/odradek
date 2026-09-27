@@ -14,7 +14,12 @@ from gripper import petal_point,petal_jacobian,radial,grasp_matrix
 ROOT=Path(__file__).resolve().parents[1]
 
 
-def solve_grasp(points,normals,jacobians,com,wrench,mu,torque_limit,rays=16,minimum_normal_N=0.,contact_to_joint=None):
+def solve_grasp(points,normals,jacobians,com,wrench,mu,torque_limit,rays=16,minimum_normal_N=0.,contact_to_joint=None,normal_ratio_constraints=None):
+    """Optional triples (a,b,k) impose normal[a] = k*normal[b].
+
+    They expose assumed coupled pad load sharing, not independent force control
+    or a measured compliance model. Without triples the original LP is retained.
+    """
     n=len(points);ndof=len(torque_limit)
     groups=np.arange(n) if contact_to_joint is None else np.asarray(contact_to_joint)
     if (len(groups)!=n or np.any(groups!=np.floor(groups)) or
@@ -37,9 +42,17 @@ def solve_grasp(points,normals,jacobians,com,wrench,mu,torque_limit,rays=16,mini
             F[3*i:3*i+3,i*rays+k]=v;Q[groups[i],i*rays+k]=J@v
     G=grasp_matrix(points,np.asarray(com));W=G@F
     normal_map=np.kron(np.eye(n),np.ones((1,rays)))
+    balance=[]
+    for a,b,k in normal_ratio_constraints or []:
+        if (not np.isfinite(k) or k<0 or a!=int(a) or b!=int(b) or
+                not 0<=a<n or not 0<=b<n or a==b):
+            raise ValueError('Normal ratio requires two distinct valid contacts and finite nonnegative ratio')
+        balance.append(normal_map[int(a)]-k*normal_map[int(b)])
+    equality=np.vstack([W,*balance]) if balance else W
+    rhs=np.r_[-np.asarray(wrench),np.zeros(len(balance))]
     A_ub=np.vstack([Q,-Q,-normal_map]);b_ub=np.r_[torque_limit,torque_limit,[-minimum_normal_N]*n]
     sol=linprog(np.ones(n*rays),A_ub=A_ub,
-                b_ub=b_ub,A_eq=W,b_eq=-np.asarray(wrench),
+                b_ub=b_ub,A_eq=equality,b_eq=rhs,
                 bounds=(0,None),method='highs')
     answer={'feasible':bool(sol.success),'solver_message':sol.message}
     if sol.success:
@@ -50,7 +63,7 @@ def solve_grasp(points,normals,jacobians,com,wrench,mu,torque_limit,rays=16,mini
                        A_ub=np.vstack([np.c_[A_ub,np.zeros(len(b_ub))],
                                        np.r_[np.ones(m),0.],np.c_[Q,-np.ones(ndof)],np.c_[-Q,-np.ones(ndof)]]),
                        b_ub=np.r_[b_ub,sol.fun+1e-7,np.zeros(2*ndof)],
-                       A_eq=np.c_[W,np.zeros(6)],b_eq=-np.asarray(wrench),bounds=(0,None),method='highs')
+                       A_eq=np.c_[equality,np.zeros(len(rhs))],b_eq=rhs,bounds=(0,None),method='highs')
         weights=second.x[:m] if second.success else sol.x
         forces=(F@weights).reshape(n,3);normal=np.sum(weights.reshape(n,rays),axis=1)
         residual=G@forces.reshape(-1)+wrench
@@ -59,6 +72,7 @@ def solve_grasp(points,normals,jacobians,com,wrench,mu,torque_limit,rays=16,mini
                        'max_force_balance_residual_N':float(max(abs(residual[:3]))),
                        'max_moment_balance_residual_Nm':float(max(abs(residual[3:]))),
                        'friction_norms_N':np.linalg.norm(forces-np.asarray(normals)*normal[:,None],axis=1).tolist()})
+        if balance:answer['normal_ratio_constraint_max_residual_N']=float(np.max(np.abs(np.array(balance)@weights)))
     return answer
 
 
