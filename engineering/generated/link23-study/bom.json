@@ -1,0 +1,87 @@
+{
+  "revision": "R4-LINK23-01",
+  "original_parts": [
+    {
+      "id": "ODR-L23-OUT-R4",
+      "quantity": 1,
+      "candidate_material": "6061-T6",
+      "mass_kg": 0.18449891337772642
+    },
+    {
+      "id": "ODR-L23-CARRIER-R4",
+      "quantity": 1,
+      "candidate_material": "6061-T6",
+      "mass_kg": 0.18693069222662256
+    },
+    {
+      "id": "ODR-L23-FRONT-R4",
+      "quantity": 1,
+      "candidate_material": "6061-T6",
+      "mass_kg": 0.027379847055607455
+    }
+  ],
+  "fasteners": [
+    {
+      "part": "Accu SSC-M6-30-12.9",
+      "quantity": 4,
+      "DIN912": true,
+      "grade": "12.9 natural finish",
+      "L_mm": 30,
+      "max_D_mm": 10.22,
+      "H_mm": 6,
+      "key_AF_mm": 5,
+      "fully_threaded": true,
+      "nominal_grip_mm": 14,
+      "nominal_geometric_engagement_mm": 16,
+      "pilot_bottom_remaining_mm": 3,
+      "mass_each_kg": 0.0083,
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16078-SSC-M6-30-12-9"
+    },
+    {
+      "part": "Accu SSC-M3-40-12.9",
+      "quantity": 8,
+      "DIN912": true,
+      "grade": "12.9 natural finish",
+      "L_mm": 40,
+      "max_D_mm": 5.68,
+      "H_mm": 3,
+      "key_AF_mm": 2.5,
+      "minimum_thread_mm": 18,
+      "nominal_grip_mm": 30,
+      "nominal_geometric_engagement_mm": 10,
+      "rear_face_remaining_mm": 4,
+      "mass_each_kg": 0.0031,
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16011-SSC-M3-40-12-9"
+    },
+    {
+      "part": "OEM output M4 length TBD",
+      "quantity": 16,
+      "only_known_free_length_modeled_mm": 7.5,
+      "reason": "No verified effective OEM outputthread start/end;13mm drawing recess not assumed completeemptychannel."
+    }
+  ],
+  "known_selected_fasteners_catalog_mass_kg": 0.058,
+  "all_fasteners_mass_budget_kg": 0.15,
+  "catalog_listing_not_stock_confirmation": true,
+  "preload_selected": false,
+  "sources": [
+    {
+      "url": "https://www.myactuator.com/downloads-rhseries",
+      "documents": [
+        "RH25 3D-A0 /2D-A0 p1",
+        "RH20 3D A /2D A p1"
+      ],
+      "vendor_STEP_private": true
+    },
+    {
+      "url": "https://ucpcdn.thyssenkrupp.com/_legacy/UCPthyssenkruppBAMXUK/assets.files/material-data-sheets/aluminium/aluminium-6061.pdf",
+      "pages": [
+        2,
+        3
+      ],
+      "values": "E70000N/mm2;rho2.7g/cm3;T6 minimumRp0.2 240MPa in statedproductranges;requiresbatchcert"
+    }
+  ],
+  "no_purchase_made": true,
+  "printed_parts": "PLA/PETG; external supports carry joints; unloaded manualfitonly"
+}

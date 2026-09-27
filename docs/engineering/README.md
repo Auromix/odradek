@@ -16,6 +16,7 @@
 | 软垫保持候选 | [贯穿浇注键](contact-pad-retention-study.md) | 8个实体与两页特征图，保持名义外轮廓；偏心剥离和材料抗撕裂仍待验证 |
 | J5→J6实体连接 | [LINK56-01](link56-structure-study.md) | 六件原创结构、40紧固件、六页图与分步装配；有效螺纹/预紧/局部强度未放行 |
 | J1→J2肩架 | [LINK12-01](link12-structure-study.md) | 三件原创结构、五页图及J2连续插入证明；0.745 kg含紧固预算，预紧/材料/行程未放行 |
+| J2→J3实体连接 | [LINK23-01](link23-structure-study.md) | 三件原创结构、28螺钉、五页图与四步连续装入证明；完整牙/预紧/全行程未放行 |
 | 新增部件 Blender | [三个原生场景](subassembly-blender-review.md) | 连接件、底座和四指；五张渲染、12项层级变换检查，尚非新整机装配 |
 | 六段承力连接 | [真实接口与空间审查](link-connection-plan.md) | 全部接触面/孔阵；发现肩部螺钉及两段旧梁干涉 |
 | 真实连接质量回算 | [LOADS-02肩架集成](shoulder-mass-integration.md)／[LOADS-01](candidate-loads.md) | LINK12+LINK56九实体惯量/COM回填；重头情景与底座重算，仍非整机载荷上限 |
