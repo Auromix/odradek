@@ -1,0 +1,94 @@
+{
+  "revision": "R4-LINK12-01",
+  "original_parts": [
+    {
+      "id": "ODR-L12-OUT-R4",
+      "quantity": 1,
+      "candidate_material": "6061-T6",
+      "mass_kg": 0.2637967488403456
+    },
+    {
+      "id": "ODR-L12-FORK-R4",
+      "quantity": 1,
+      "candidate_material": "6061-T6",
+      "mass_kg": 0.24643486107873563
+    },
+    {
+      "id": "ODR-L12-FRONT-R4",
+      "quantity": 1,
+      "candidate_material": "6061-T6",
+      "mass_kg": 0.03436145867516249
+    }
+  ],
+  "fasteners": [
+    {
+      "source_id": "M4x50",
+      "quantity": 8,
+      "nominal_free_grip_mm": 34.2,
+      "nominal_geometric_engagement_mm": 14,
+      "nominal_tip_protrusion_mm": 1.8
+    },
+    {
+      "source_id": "M6x35",
+      "quantity": 4,
+      "nominal_free_grip_mm": 22,
+      "nominal_geometric_engagement_mm": 13,
+      "nominal_tip_protrusion_mm": 0,
+      "remaining_foot_depth_mm": 1
+    },
+    {
+      "size": "M4 length TBD",
+      "quantity": 16,
+      "reason": "Do not infer13mm recess +6mm thread as confirmed effective thread interval"
+    }
+  ],
+  "known_12_selected_fasteners_catalog_mass_kg": 0.0852,
+  "all_28_fasteners_mass_budget_kg": 0.2,
+  "sources": [
+    {
+      "id": "M4x50",
+      "part": "Accu SSC-M4-50-12.9",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16032-SSC-M4-50-12-9",
+      "standard": "DIN912",
+      "material": "12.9 alloy steel; finish natural",
+      "max_head_D_mm": 7.22,
+      "head_H_mm": 4,
+      "key_AF_mm": 3,
+      "minimum_thread_mm": 20,
+      "weight_100_grams": 570,
+      "catalog_listing_not_stock_confirmation": true
+    },
+    {
+      "id": "M6x35",
+      "part": "Accu SSC-M6-35-HK-12.9",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/642488-SSC-M6-35-HK-12-9",
+      "standard": "ISO4762 / Holokrome",
+      "material": "12.9 alloy steel; finish natural",
+      "max_head_D_mm": 10.22,
+      "head_H_mm": 6,
+      "key_AF_mm": 5,
+      "minimum_thread_mm": 24,
+      "weight_100_grams": 990,
+      "catalog_listing_not_stock_confirmation": true
+    },
+    {
+      "id": "material",
+      "part": "thyssenkrupp EN AW-6061 sheet",
+      "url": "https://ucpcdn.thyssenkrupp.com/_legacy/UCPthyssenkruppBAMXUK/assets.files/material-data-sheets/aluminium/aluminium-6061.pdf",
+      "pages": [
+        2,
+        3
+      ],
+      "values": "density2.70g/cm3,E70000N/mm2; T6 minimum Rp0.2=240MPa in listed ranges; batch certification required"
+    },
+    {
+      "id": "RH25",
+      "part": "MYACTUATOR RH-25-100-E-B-D 3D-A0 / 2D-A0 p1",
+      "url": "https://www.myactuator.com/downloads-rhseries",
+      "values": "actual mounting contacts/PCD/hole coordinates; source STEP retained privately; M4 effective output-thread start/end not established"
+    }
+  ],
+  "preload_selected": false,
+  "no_purchase_made": true,
+  "printed_parts": "PLA/PETG, no load, no powered joint motion"
+}
