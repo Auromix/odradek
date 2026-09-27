@@ -1,0 +1,70 @@
+{
+  "revision": "CD-EC01",
+  "maturity": "schematic and component packing only",
+  "component_count": 318,
+  "pin_count": 726,
+  "connected_pins_compared": 716,
+  "differences": [],
+  "unexpected_native_nets": [],
+  "erc_violations": 0,
+  "custom_erc_exclusions": [],
+  "native_default_ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "exact_XY_preservation": true,
+  "LP5860_pin_assertions": "pass",
+  "GH12_HEADCTRL02_and_mirror_transform": "pass",
+  "backpacking": "33 AABB envelopes, all pairs non-overlapping, corners insideR28 andZ-10..-3",
+  "firmware_mock": "pass",
+  "PCB_created": false,
+  "DRC_run": false,
+  "assigned_footprints": 0,
+  "route_feasibility_established": false,
+  "hardware_tests": false,
+  "sha256": {
+    "bom.csv": "b2a2fb22beddb40d4f4bb91cb024b78ff116611f1f2a1723d17a4c7a8940fbf8",
+    "build.py": "7988266e8ddd745fb7d917af352ebe9b67794a42dffd4a8c135e07f5a04dcaeb",
+    "build_firmware.py": "2dccaff8275db905993f2faf81477b48d96d0dfedb15ca3b6b64fe38de97d8a9",
+    "build_schematic.py": "9ba6345b4551a0d3e3e4d543b55cc47d1d564c1d07b75a2f7785f6a883201bd2",
+    "cd01_example.c": "bfcb3fd44d5ca6fabdd11306d7759e06980ac4d9f1206596902bbadc8872a48c",
+    "cd01_example.h": "7cdc6df3ade3eba4112762090b20986c53f92b79f7aab017de10cea6581da861",
+    "draw_packing.py": "d7ed71cd64b80b08c503974e3ae770774796146f47068bd60cf12d48ded3c64d",
+    "firmware-check.json": "363640090589d8d0daf105bbd56bfe0aed0033cea7adb517112a63a3db66a688",
+    "firmware_check.py": "db4219c52e77b6edc64ca0b1e9963788e4f60df14106b0742b709233f285a393",
+    "footprint-constraints.json": "3912ce94af00946894d623e4eb069edc4d39ceba75fd7c4cf821abebe1b30237",
+    "kicad/CD.kicad_sym": "6bf073e5e782d1d236497764f42ca5c4f3d84435e88a0e7cccb02d81ecb84c49",
+    "kicad/central.kicad_pro": "507e45f91ac0fd0266e282329080363146596aa32b85cb68186fc75de73af290",
+    "kicad/central.kicad_sch": "440eff474950d47e7f382131a3ebacf6a1786dcecf04257c794809c4ff9be528",
+    "kicad/central.net.xml": "05e1d67dde4c25cdbfe3667e7388c24e2e1913109470c88b3c67f0823efa43b2",
+    "kicad/checks/erc.json": "96e3ae890fe3b4ffaa76ae46cbb0fee1bbab1ebf279f73984281b7381bb64331",
+    "kicad/plots/central.svg": "11a0aee6d82a4c8143af590b469d0a657671c67ccf6be8d1a55c04ba65ea65f2",
+    "kicad/schematic-build-map.json": "f6200ce280c9250c94166c4149406b646b9c9307d9aeee820717e7675f57e65a",
+    "mapping-revision.json": "85909dd2cfd9263fefc90653d854c397b9a7e5d8a07fcc7d334a4def9f0f2f82",
+    "mechanical-packing.json": "d076a6dd09af031fce27b95682326c62ef8ce5cd95031e2281ad7298587546c3",
+    "netlist.json": "ca3625af798a3b9eee14121172b5bdce110ca75999d0859d5815a81139d6efd0",
+    "packing-review.svg": "c9f058f0aa0db0d598322021bb78ebd6410dd803f297597b1e6ff53afa1f78f7",
+    "pin-net.csv": "f4dd9ef4267cc06d769f354c4ba5dacd34c86e4d8db66e10e0a321b1fe17a9ee",
+    "pixel-map.csv": "a03310383b372dfeed630e575ae92a942a7b97b88aa0a48269e6206a544d8419",
+    "power-budget.json": "2ecb716feb222e0f5fc062d011b2e8a9b1eefab1b86a9af09437c43c22394159",
+    "rebuild.py": "da8d67645eb5bec0912002b92695e4bd995c6b314fe33d36e8edc0963e27bb38",
+    "register-plan-A.json": "b86f84e995563e2c243165ebf4ce2f2fe5b8639046fd44a3d6798a2f21745b87",
+    "register-plan-B.json": "6c00c54eb875ac0be9845446cd460dffdae38b98013addce4976dbfce9ba9dc6",
+    "sources.json": "463db08d2388357200e4611563740e384a176f114d6d670c2b4aba1ffdeb3039",
+    "verify.py": "ba8574947ea228c6b86c1aa74b6d4e1e410bc26241a2f452db86b111445a9c2a"
+  }
+}

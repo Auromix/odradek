@@ -1,0 +1,1301 @@
+{
+  "revision": "CD-EC01",
+  "status": "component packing witness only; no routing or assembly process release",
+  "PCB": {
+    "diameter_mm": 60,
+    "thickness_mm": 1,
+    "head_z_mm": [
+      -3,
+      -2
+    ]
+  },
+  "back_reserved": {
+    "radius_mm": 28,
+    "head_z_mm": [
+      -10,
+      -3
+    ]
+  },
+  "front_LED": {
+    "land_body_union_mm": [
+      2.4,
+      0.9
+    ],
+    "package_plus_solder_height_mm": 0.9,
+    "head_z_mm": [
+      -2,
+      -1.1
+    ],
+    "window_bottom_z_mm": -0.5,
+    "nominal_optical_gap_mm": 0.6,
+    "max_radius_mm": 27.443806222898452,
+    "aperture_radius_mm": 28.5,
+    "aperture_nominal_gap_mm": 1.056193777101548
+  },
+  "connector": {
+    "header": "SM12B-GHS-TB(LF)(SN)",
+    "housing": "GHR-12V-S",
+    "terminal": "SSHL-002T-P0.2",
+    "inapplicable_contact": "SSHL-003 family",
+    "source": "JST-GH",
+    "circuits": 12,
+    "pitch_mm": 1.25,
+    "signal_span_A_mm": 13.75,
+    "header_width_B_mm": 18.25,
+    "housing_width_B_mm": 16.25,
+    "housing_unmated_view_dimensions_mm": [
+      16.25,
+      5.7,
+      4.15
+    ],
+    "header_body_depth_reference_mm": 4.05,
+    "mated_body_depth_reference_mm": 7.15,
+    "mated_height_above_mounting_face_reference_mm": 4.35,
+    "extra_header_solder_tail_projection_mm": 0.8,
+    "mated_with_solder_tail_derived_depth_mm": 7.95,
+    "wire_AWG": [
+      30,
+      26
+    ],
+    "wire_insulation_OD_mm": [
+      0.76,
+      1.0
+    ],
+    "current_rating_A_at_AWG26": 1.0,
+    "voltage_rating_V": 50,
+    "frame": "Mounting-side view: u right, v up, h away from PCB. Pin1 upper-left; wire exits-v. Backside placement requires explicit transform and pin-number check.",
+    "pads": [
+      {
+        "pad": 1,
+        "center_uv_mm": [
+          -6.875,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 2,
+        "center_uv_mm": [
+          -5.625,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 3,
+        "center_uv_mm": [
+          -4.375,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 4,
+        "center_uv_mm": [
+          -3.125,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 5,
+        "center_uv_mm": [
+          -1.875,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 6,
+        "center_uv_mm": [
+          -0.625,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 7,
+        "center_uv_mm": [
+          0.625,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 8,
+        "center_uv_mm": [
+          1.875,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 9,
+        "center_uv_mm": [
+          3.125,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 10,
+        "center_uv_mm": [
+          4.375,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 11,
+        "center_uv_mm": [
+          5.625,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 12,
+        "center_uv_mm": [
+          6.875,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": "M1",
+        "center_uv_mm": [
+          -8.725,
+          -1.35
+        ],
+        "size_uv_mm": [
+          1.0,
+          2.7
+        ]
+      },
+      {
+        "pad": "M2",
+        "center_uv_mm": [
+          8.725,
+          -1.35
+        ],
+        "size_uv_mm": [
+          1.0,
+          2.7
+        ]
+      }
+    ],
+    "pad_bounds_uv_mm": [
+      [
+        -9.225,
+        -2.7
+      ],
+      [
+        9.225,
+        2.7
+      ]
+    ],
+    "header_body_reference_bounds_uv_mm": [
+      [
+        -9.125,
+        -2.45
+      ],
+      [
+        9.125,
+        1.6
+      ]
+    ],
+    "mated_body_reference_bounds_uvh_mm": [
+      [
+        -9.125,
+        -5.55,
+        0
+      ],
+      [
+        9.125,
+        1.6,
+        4.35
+      ]
+    ],
+    "mated_plus_solder_tail_reference_bounds_uvh_mm": [
+      [
+        -9.125,
+        -5.55,
+        0
+      ],
+      [
+        9.125,
+        2.4,
+        4.35
+      ]
+    ],
+    "source_PCB_dimensions": {
+      "pitch_mm": [
+        1.25,
+        0.05
+      ],
+      "pitch_tolerance_nonaccumulating": true,
+      "signal_pad_width_mm": [
+        0.6,
+        0.05
+      ],
+      "hold_pad_width_mm": [
+        1,
+        0.1
+      ],
+      "hold_pad_length_mm": [
+        2.7,
+        0.1
+      ],
+      "outer_signal_center_to_hold_pad_inner_edge_mm": [
+        1.35,
+        0.1
+      ],
+      "longitudinal_datums_from_lower_pad_edge_mm": [
+        [
+          5.4,
+          0.1
+        ],
+        [
+          3.7,
+          0.1
+        ]
+      ],
+      "signal_pad_length_nominal_derived_mm": 1.7,
+      "no_independent_signal_length_tolerance_assigned": true
+    },
+    "reference_only_not_guaranteed_max": true,
+    "latch_access_distance_mm": null,
+    "unmating_translation_mm": null,
+    "wire_bend_radius_mm": null,
+    "controlled_CAD_downloaded": false,
+    "application_pin_to_net_frozen": false,
+    "CD01_parent_layout_input": {
+      "mounting_face_world_z_mm": -3,
+      "footprint_origin_head_xyz_mm": [
+        0,
+        -14,
+        -3
+      ],
+      "wire_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "T_head_from_uvh_mm": [
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -14
+        ],
+        [
+          0,
+          0,
+          -1,
+          -3
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_determinant": 1,
+      "transform_formula": "headX=-u; headY=-14+v; headZ=-3-h",
+      "pin1_land_center_head_mm": [
+        6.875,
+        -12.15,
+        -3
+      ],
+      "scope": "Exact parent-specified backside candidate transform,180deg aroundY. Source dimensions have no added engineering clearance; CD01 owns clearance envelopes and assembly verification."
+    },
+    "other_board_endpoint": {
+      "board": "HEAD-CTRL02",
+      "ref": "J15",
+      "header": "BM12B-GHS-TBT",
+      "entry": "top",
+      "scope": "Electrical candidate without finalMCAD placement; not this SM12B side-entry envelope"
+    },
+    "pad_centers_head_mm": [
+      {
+        "pad": 1,
+        "center_head_mm": [
+          6.875,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 2,
+        "center_head_mm": [
+          5.625,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 3,
+        "center_head_mm": [
+          4.375,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 4,
+        "center_head_mm": [
+          3.125,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 5,
+        "center_head_mm": [
+          1.875,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 6,
+        "center_head_mm": [
+          0.625,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 7,
+        "center_head_mm": [
+          -0.625,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 8,
+        "center_head_mm": [
+          -1.875,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 9,
+        "center_head_mm": [
+          -3.125,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 10,
+        "center_head_mm": [
+          -4.375,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 11,
+        "center_head_mm": [
+          -5.625,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 12,
+        "center_head_mm": [
+          -6.875,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": "M1",
+        "center_head_mm": [
+          8.725,
+          -15.35,
+          -3
+        ],
+        "size_head_xy_mm": [
+          1.0,
+          2.7
+        ]
+      },
+      {
+        "pad": "M2",
+        "center_head_mm": [
+          -8.725,
+          -15.35,
+          -3
+        ],
+        "size_head_xy_mm": [
+          1.0,
+          2.7
+        ]
+      }
+    ]
+  },
+  "components": [
+    {
+      "ref": "U1",
+      "MPN": "LP5860RKPR",
+      "footprint": "TI_RKP0040B",
+      "center_head_xy_mm": [
+        -10,
+        3
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -12.95,
+        0.04999999999999982,
+        -4.1
+      ],
+      "envelope_head_max_mm": [
+        -7.05,
+        5.95,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C1",
+      "MPN": "C2012X5R1V226M125AC",
+      "footprint": "C0805",
+      "center_head_xy_mm": [
+        -10,
+        -4.8
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -11.7,
+        -5.7749999999999995,
+        -4.55
+      ],
+      "envelope_head_max_mm": [
+        -8.3,
+        -3.825,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C2",
+      "MPN": "C2012X5R1V226M125AC",
+      "footprint": "C0805",
+      "center_head_xy_mm": [
+        -10,
+        -7.5
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -11.7,
+        -8.475,
+        -4.55
+      ],
+      "envelope_head_max_mm": [
+        -8.3,
+        -6.525,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C3",
+      "MPN": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        -10.2,
+        -1.7000000000000002
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -11.549999999999999,
+        -2.45,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -8.85,
+        -0.9500000000000002,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C4",
+      "MPN": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        -5.5,
+        5.4
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -6.85,
+        4.65,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -4.15,
+        6.15,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C5",
+      "MPN": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        -11.4,
+        7.7
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -12.75,
+        6.95,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -10.05,
+        8.45,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C6",
+      "MPN": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        -14.1,
+        -0.7999999999999998
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -15.45,
+        -1.5499999999999998,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -12.75,
+        -0.04999999999999982,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C7",
+      "MPN": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        -5.5,
+        3
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -6.85,
+        2.25,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -4.15,
+        3.75,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C8",
+      "MPN": "C1608C0G1H102J080AA",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        -8,
+        7.7
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -9.35,
+        6.95,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -6.65,
+        8.45,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C9",
+      "MPN": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        0,
+        16
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -1.35,
+        15.25,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        1.35,
+        16.75,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R1",
+      "MPN": "CRCW06034K70FKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        -15,
+        7.7
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -16.5,
+        6.9750000000000005,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        -13.5,
+        8.425,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R2",
+      "MPN": "CRCW060310K0FKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        -15,
+        10.4
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -16.5,
+        9.675,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        -13.5,
+        11.125,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R3",
+      "MPN": "CRCW0603100KFKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        0,
+        -3
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -1.5,
+        -3.725,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        1.5,
+        -2.275,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R4",
+      "MPN": "CRCW0603100KFKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        0,
+        0
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -1.5,
+        -0.725,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        1.5,
+        0.725,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R5",
+      "MPN": "CRCW0603100KFKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        0,
+        3
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -1.5,
+        2.275,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        1.5,
+        3.725,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R6",
+      "MPN": "CRCW0603100KFKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        0,
+        6
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -1.5,
+        5.275,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        1.5,
+        6.725,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R7",
+      "MPN": "CRCW060333R0FKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        -9.5,
+        10.4
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -11.0,
+        9.675,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        -8.0,
+        11.125,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R8",
+      "MPN": "CRCW060347K0FKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        -2,
+        13
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -3.5,
+        12.275,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        -0.5,
+        13.725,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R9",
+      "MPN": "CRCW06031K00FKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        2,
+        13
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        0.5,
+        12.275,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        3.5,
+        13.725,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "TH1",
+      "MPN": "NCU18XH103F6SRB",
+      "footprint": "NTC0603",
+      "center_head_xy_mm": [
+        0,
+        10
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -1.3,
+        9.275,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        1.3,
+        10.725,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "U2",
+      "MPN": "LP5860RKPR",
+      "footprint": "TI_RKP0040B",
+      "center_head_xy_mm": [
+        10,
+        3
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        7.05,
+        0.04999999999999982,
+        -4.1
+      ],
+      "envelope_head_max_mm": [
+        12.95,
+        5.95,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C10",
+      "MPN": "C2012X5R1V226M125AC",
+      "footprint": "C0805",
+      "center_head_xy_mm": [
+        10,
+        -4.8
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        8.3,
+        -5.7749999999999995,
+        -4.55
+      ],
+      "envelope_head_max_mm": [
+        11.7,
+        -3.825,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C11",
+      "MPN": "C2012X5R1V226M125AC",
+      "footprint": "C0805",
+      "center_head_xy_mm": [
+        10,
+        -7.5
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        8.3,
+        -8.475,
+        -4.55
+      ],
+      "envelope_head_max_mm": [
+        11.7,
+        -6.525,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C12",
+      "MPN": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        9.8,
+        -1.7000000000000002
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        8.450000000000001,
+        -2.45,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        11.15,
+        -0.9500000000000002,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C13",
+      "MPN": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        14.5,
+        5.4
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        13.15,
+        4.65,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        15.85,
+        6.15,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C14",
+      "MPN": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        8.6,
+        7.7
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        7.25,
+        6.95,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        9.95,
+        8.45,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C15",
+      "MPN": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        5.9,
+        -0.7999999999999998
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        4.550000000000001,
+        -1.5499999999999998,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        7.25,
+        -0.04999999999999982,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C16",
+      "MPN": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        14.5,
+        3
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        13.15,
+        2.25,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        15.85,
+        3.75,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "C17",
+      "MPN": "C1608C0G1H102J080AA",
+      "footprint": "C0603",
+      "center_head_xy_mm": [
+        12,
+        7.7
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        10.65,
+        6.95,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        13.35,
+        8.45,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R10",
+      "MPN": "CRCW06034K70FKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        5,
+        7.7
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        3.5,
+        6.9750000000000005,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        6.5,
+        8.425,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R11",
+      "MPN": "CRCW060310K0FKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        5,
+        10.4
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        3.5,
+        9.675,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        6.5,
+        11.125,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "R12",
+      "MPN": "CRCW060333R0FKEA",
+      "footprint": "R0603",
+      "center_head_xy_mm": [
+        10.5,
+        10.4
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        9.0,
+        9.675,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        12.0,
+        11.125,
+        -3
+      ],
+      "contains": "land/body plus .25mm per-side planning clearance",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    },
+    {
+      "ref": "J1",
+      "MPN": "SM12B-GHS-TB(LF)(SN)",
+      "footprint": "JST_GH_12_SIDE",
+      "center_head_xy_mm": [
+        0,
+        -14
+      ],
+      "side": "B",
+      "envelope_head_min_mm": [
+        -9.225,
+        -19.55,
+        -7.45
+      ],
+      "envelope_head_max_mm": [
+        9.225,
+        -11.3,
+        -3
+      ],
+      "contains": "union of supplied mated reference/pads; not max tolerance nor insertion corridor",
+      "pad_transform": "headX=x-u;headY=y+v;headZ=-3-h"
+    }
+  ],
+  "backpacking": {
+    "pairs_checked": 528,
+    "XY_overlaps": [],
+    "max_corner_radius_mm": 21.61719512332717,
+    "reserve_radial_gap_mm": 6.382804876672829,
+    "min_z_mm": -7.45
+  },
+  "thermal_bridge_candidate_regions": [
+    {
+      "center_xy_mm": [
+        -10,
+        15
+      ],
+      "size_mm": [
+        4,
+        4
+      ],
+      "status": "bare component-free rear planning patch; no thermal path or pressure design"
+    },
+    {
+      "center_xy_mm": [
+        10,
+        15
+      ],
+      "size_mm": [
+        4,
+        4
+      ],
+      "status": "bare component-free rear planning patch; no thermal path or pressure design"
+    }
+  ],
+  "not_covered": [
+    "routing feasibility",
+    "GH wire fanout/bend/unmating/latch and controlled tolerance",
+    "PCB process stackup/warpage",
+    "actual solder height",
+    "thermal coupling/bridge/metal insulation",
+    "assembled part masses",
+    "optical diffuser tolerance and luminous uniformity"
+  ]
+}

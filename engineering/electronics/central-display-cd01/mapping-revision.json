@@ -1,0 +1,15 @@
+{
+  "revision": "CD-EC01",
+  "authority": "pixel-map.csv index/ref/driver/sw/cs/dot_index and generated register plans",
+  "source": "engineering/generated/central-display-mount01/led-centres.csv",
+  "source_sha256": "f15e275efd8e3482e9b1a63f4cea29bf863157ce325dde517757e6b27ebd5850",
+  "all_XY_unchanged": true,
+  "old_columns_retained_as_history": true,
+  "algorithm": "A:x<0 or(x=0,y<0); B:others. Within half sort X ascending with alternating Y direction, chunk13 -> SW0..10; ordinal mod13 -> CS0..12.",
+  "note": "No longer the old sparse circle_0/1 mapping. Pixel index matches input CSV independent of serial/address order.",
+  "driver_counts": {
+    "A": 142,
+    "B": 143
+  },
+  "previous_FPL_geometry_or_HEAD_files_modified": false
+}

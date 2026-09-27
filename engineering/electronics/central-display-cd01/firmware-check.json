@@ -1,0 +1,20 @@
+{
+  "revision": "CD-EC01",
+  "compiler": "clang",
+  "result": "pass",
+  "hardware_execution": false,
+  "checks": [
+    "both explicit3mA initializations and all-black",
+    "142/143 fitted masks andDC",
+    "all285 unique little-endian PWM locations and absent zero",
+    "stage alone never pulses sharedVSYNC",
+    "both driver transport failures propagate withoutVSYNC",
+    "both driver readback corruption rejects init",
+    "all1024 read/write headers and invalid address rejection"
+  ],
+  "sha256": {
+    "cd01_example.c": "bfcb3fd44d5ca6fabdd11306d7759e06980ac4d9f1206596902bbadc8872a48c",
+    "cd01_example.h": "7cdc6df3ade3eba4112762090b20986c53f92b79f7aab017de10cea6581da861",
+    "pixel-map.csv": "a03310383b372dfeed630e575ae92a942a7b97b88aa0a48269e6206a544d8419"
+  }
+}

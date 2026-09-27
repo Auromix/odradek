@@ -1,0 +1,52 @@
+{
+  "version": "10.0.6",
+  "commands": [
+    {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--exit-code-violations",
+        "--output",
+        "kicad/checks/erc.json",
+        "kicad/central.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Found 0 violations\nSaved ERC Report to kicad/checks/erc.json\n",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "--output",
+        "kicad/central.net.xml",
+        "kicad/central.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "export",
+        "svg",
+        "--output",
+        "kicad/plots",
+        "kicad/central.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Plotted to 'kicad/plots/central.svg'.\nDone.\n",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    }
+  ],
+  "fontconfig_note": "Headless CLI emits host fontconfig warning; vector schematic still exported and visually reviewed. No ERC severity suppressed."
+}

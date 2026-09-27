@@ -1,0 +1,70 @@
+{
+  "revision": "CD-EC01",
+  "voltage_nominal_V": 3.3,
+  "first_light_mA": 3,
+  "full_mA_requires_review": 20,
+  "drivers": {
+    "A": {
+      "pixels": 142,
+      "row_population": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        12
+      ],
+      "peak_VLED_A_20mA": 0.26,
+      "mean_before_blanking_A_20mA": 0.2581818181818182,
+      "driver_loss_typVF2V_W": 0.33563636363636357,
+      "bulk_nominal_uF": 44,
+      "droop_at8us_44uF_V": 0.04727272727272727,
+      "droop_at8us_assumed20uF_V": 0.10400000000000001
+    },
+    "B": {
+      "pixels": 143,
+      "row_population": [
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13,
+        13
+      ],
+      "peak_VLED_A_20mA": 0.26,
+      "mean_before_blanking_A_20mA": 0.26,
+      "driver_loss_typVF2V_W": 0.33799999999999997,
+      "bulk_nominal_uF": 44,
+      "droop_at8us_44uF_V": 0.04727272727272727,
+      "droop_at8us_assumed20uF_V": 0.10400000000000001
+    }
+  },
+  "total_VLED_peak_A_20mA": 0.52,
+  "total_VLED_mean_A_20mA": 0.5181818181818182,
+  "VLED_power_W_20mA": 1.71,
+  "LED_electrical_power_at_typVF2V_W": 1.0363636363636364,
+  "logic_planning_W_not_datasheet_max": 0.1,
+  "total_board_planning_W": 1.81,
+  "closed_head_thermal_load_including_4petal_baseline_W": 4.074,
+  "total_VLED_peak_A_firstlight": 0.078,
+  "total_VLED_mean_A_firstlight": 0.07772727272727273,
+  "GH_single_VLED_contact_rating_A_at_AWG26": 1,
+  "GH_contact_derating_and_wire_TBD": true,
+  "GH_current_utilization_of_catalogue_20mA": 0.52,
+  "voltage_drop_and_dynamic_current_not_measured": true,
+  "brightness_multiply": "all-full upper bound before blanking; mean scales with DC/CC/MC/global/group/pixel PWM, not temperature proof",
+  "thermal": "input electrical power is conservative closed-head heat budget; escaping light uncredited; typicalVf is not a driver worst case; no JEDEC thetaJA used as enclosure result",
+  "SPI_two_full_frames_bytes": 792,
+  "SPI_2MHz_payload_fraction_at60Hz": 0.19008,
+  "per_driver_current_tolerance_not_budgeted": true
+}

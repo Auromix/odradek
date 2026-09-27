@@ -1,0 +1,92 @@
+{
+  "revision": "CD-EC01",
+  "access_date": "2026-09-27",
+  "primary_sources": [
+    {
+      "id": "U1-DS",
+      "url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+      "checked": "61-page Rev A; pin table, SPI, timing, current and package drawings"
+    },
+    {
+      "id": "U1-TRM",
+      "url": "https://www.ti.com/lit/pdf/SNVU786",
+      "checked": "config pp30-36, onoff pp70+, DC p140, 16-bit PWM p205; reset-default conflict recorded"
+    },
+    {
+      "id": "EVM",
+      "url": "https://www.ti.com/lit/pdf/SNVU762",
+      "checked": "schematic p14 and BOM p15; reference, not copied complete EVM"
+    },
+    {
+      "id": "LED",
+      "url": "https://www.we-online.com/components/products/datasheet/150060YS75000.pdf",
+      "checked": "p1 polarity/land/max ratings and p2 Vf; official PDF fetched and visually inspected"
+    },
+    {
+      "id": "R",
+      "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "checked": "CRCW0603 ordering code and rated family; quantity values are project choices"
+    },
+    {
+      "id": "NTC",
+      "url": "https://www.murata.com/-/media/webrenewal/products/thermistor/ntc/ncu/ncu18-s.ashx?cvid=20240402040000000000&la=en-us",
+      "checked": "official 22-page JEWB01BR-5300G; p3 F-series table, p5 dimensions/land ranges; 0.1mA means 0.1C self-heating in specified 25C still-air test, not universal absolute-current rating"
+    },
+    {
+      "id": "NCP-NRND",
+      "url": "https://www.murata.com/products/thermistor/ntc/overview/lineup/ncp",
+      "checked": "NCP15/18 NRND, updated 2025-03-31; NCU recommended for new designs"
+    },
+    {
+      "id": "C2012X5R1V226M125AC",
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+      "checked": "official indexed part data; bulk capacitor also in TI EVM BOM"
+    },
+    {
+      "id": "C1608X7R1E105K080AB",
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+      "checked": "official indexed part data; bulk capacitor also in TI EVM BOM"
+    },
+    {
+      "id": "C1608X7R1H104K080AA",
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+      "checked": "official indexed part data; bulk capacitor also in TI EVM BOM"
+    },
+    {
+      "id": "C1608C0G1H102J080AA",
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H102J080AA",
+      "checked": "official indexed part data; bulk capacitor also in TI EVM BOM"
+    }
+  ],
+  "GH12": [
+    {
+      "id": "JST-GH",
+      "url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+      "pages_1based": [
+        2,
+        3,
+        6
+      ],
+      "file": "JST-eGH.pdf",
+      "sha256": "b1dcb317b6b9a4fbbedd2dbf42c64c95306a252d23de8933b85fcf161240b722",
+      "bytes": 146619,
+      "local_storage": "work/central-display-hardware01/JST-eGH.pdf",
+      "evidence": "Downloaded primary PDF; pages2/3 visually inspected; assembly and PCB layout dimensions are references."
+    },
+    {
+      "id": "JST-GH-FULL-PN",
+      "url": "https://jst.de/product-family/show/89/gh",
+      "evidence": "Official JST site lists SM12B-GHS-TB (LF)(SN)."
+    }
+  ],
+  "inputs": {
+    "engineering/generated/central-display-mount01/led-centres.csv": "f15e275efd8e3482e9b1a63f4cea29bf863157ce325dde517757e6b27ebd5850",
+    "docs/engineering/sources/central-display-hardware01.json": "9bc7a219ffaef4aeeba98ff3e8017668f0e7ab40815588a10a48b1ab4baca985",
+    "engineering/electronics/head-ctrl02/pin-net.csv": "7f6b36e3357a53053ce60be758de6a00d82e2d30c061d8472f48bca083046902",
+    "engineering/electronics/final-petal-fpl01/upper/netlist.json": "921d354b830f4695f8121afea933fcb1475de5f76998c7a4bf9bcbfd926d5084",
+    "engineering/electronics/final-petal-fpl01/upper/footprint-constraints.json": "a9b2cef09dfc08c2e665356059fca51ea8bb06c1531dda3c62b740155d6e7878",
+    "engineering/electronics/final-petal-fpl01/upper/register-plan.json": "5b2b9782e05d71043342e668a1e40106099098c98ff99e56f08c20c7e853851d"
+  },
+  "raw_vendor_material_redistributed": false,
+  "scope": "FPL circuit inheritance rechecked; pin numbering and manufacturer reference dimensions, not released product availability or assembly guarantee"
+}
