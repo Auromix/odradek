@@ -1,0 +1,59 @@
+{
+  "revision": "ULP-01",
+  "status": "pin-level consistency and data mapping passed; NO ECAD ERC/DRC performed",
+  "kicad_availability": "not found in PATH, /Applications, /opt/homebrew/bin, /usr/local/bin on this host; no installation attempted",
+  "component_count": 134,
+  "LED_count": 113,
+  "connected_net_count": 36,
+  "pin_records": 317,
+  "U1_float_pins": [
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30"
+  ],
+  "checks": [
+    "all component pins unique and enumerated",
+    "all connected nets have at least two nodes",
+    "113 unique unmodified SW/CS coordinates",
+    "each LED pin2=A=SW and pin1=K=CS",
+    "all40U1 pins+EP41 covered",
+    "7unusedCS pins explicitly NC",
+    "unused LED sites OFF/DC0/PWM0",
+    "16bit row-major SRAM address mapping",
+    "SPI address headers stay10bit"
+  ],
+  "input_hashes": {
+    "docs/engineering/sources/head-lighting-io.json": "a62f763618d7668981d72b29970b15f334cc846ce05fa102dfbcc9fec728be7c",
+    "engineering/electronics/upper-petal-prototype/build.py": "fa99a6032695409b499c5a01143ee5013947554319a054897ae6dcf10142fa89"
+  },
+  "output_hashes": {
+    "bom.csv": "5e034262bbc32939f391a386f5d71ed1b8a8a882c2a69a98740eff9d909cace0",
+    "external-interface-bom.csv": "6de2824d6f2ccf296fabc51ae641a5b55c97364e2a3a631722227f8b705d80d1",
+    "footprint-constraints.json": "a5118482d6718c1769096896df959dc1ef32d661925299cec5ce13f4757054ed",
+    "led-placement-reference.csv": "f70ecd4b0cbe6a40c608f7ba244acf42d33eeb4a19384ac438a30d222c909ab4",
+    "mechanical-power-budget.json": "b73e81e90586677430297803327e0bd571d3e1395753d94d0602dec3040b8fc2",
+    "netlist.json": "ab2bf41dc702a2a0df5ac1f9b432250a77633f31affa62966c546d793c7d9d5e",
+    "pin-net.csv": "dc2232875e23d1bba227898e01def67ad516922876a1cd8630b7e032f0ec406e",
+    "placement-reference.svg": "8f23463c1719808fd3752dd8ec26ce22f70fdf8147a0688f6b089e60cd10846a",
+    "register-plan.json": "f94a6fdb9d46434bd782ba93569b8607c3155d5ae8d616f203338214e70b6c4f",
+    "schematic-control.svg": "ffeae117920f8cb13a252c0332fbfed2c538c146492ae054b465933838bf81f3",
+    "schematic-led-matrix.svg": "8d3d07885cf100072513fcce9381518356fc6df445341b199232b6d83b755e7b",
+    "sources.json": "73d4279cfb1af1e2cd577d027e1b29235568b5b8c578c93f334053b546e0e4c5"
+  },
+  "not_done": [
+    "actual schematic capture",
+    "ERC",
+    "PCB routing",
+    "DRC",
+    "Gerber",
+    "stencil",
+    "assembler polarity check",
+    "electrical bring-up",
+    "thermal tests",
+    "mechanical integration"
+  ]
+}
