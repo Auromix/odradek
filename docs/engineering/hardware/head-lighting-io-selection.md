@@ -26,6 +26,10 @@
 
 ## 2. 与当前机械轮廓协同的布点规则
 
+![按同源坐标绘制的展开正投影](../../../engineering/generated/lighting-layout/led-front-projection.png)
+
+[毫米制DXF](../../../engineering/generated/lighting-layout/led-front-projection.dxf)与[坐标参考CSV](../../../engineering/generated/lighting-layout/led-coordinate-reference.csv)由源JSON生成，包含609个唯一电气地址。图中上下层的深度错开被投影消去；DXF只有器件焊盘包络，不能当PCB铜层、贴片坐标或加工放行文件。
+
 源为 `engineering/parameters/r4-layout.json` 的 R4-layout-03；JSON 存其 SHA-256，及每个像素的本地坐标、驱动 IC、SW 行和 CS 电流通道。只是二维 LED 焊盘包络可布置，不是已布线 PCB。
 
 | 发光面 | 轮廓输入 | 格点／数量 | 驱动容量 |
