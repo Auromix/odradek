@@ -34,6 +34,7 @@
 | 光学台架 | [采购和搭建](hardware/optical-bench-build.md) | 双鱼眼、Duo采集、AGX Orin及固定驱动链，尚未实装 |
 | 单轴台架 | [采购和搭建](hardware/single-axis-bench-build.md) | IPC、电源、原厂通信转接及未放行针脚/保护项 |
 | 上灯片电子样片 | [113 LED 元件级电路](hardware/upper-petal-prototype.md) | 134 器件、317 针、36 网及扫描配置；独立电测设计，未布线放行 |
+| 灯片真实层叠 | [电子腔与PCB安装](led-petal-pocket-study.md) | 4.45 mm普通层叠、安装柱/低头螺钉和净截面计算；GH/线束与正式灯板未集成 |
 | 灯光与IO | [609点LED与控制/功率](hardware/head-lighting-io-selection.md) | 真实圆形点阵与四片LED坐标，MCU/ESC/电源候选；不是完整PCB |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
 | 放行差距 | [发布检查清单](release-checklist.md) | 对应证据和实际未完成事项 |

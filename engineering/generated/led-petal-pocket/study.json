@@ -1,0 +1,957 @@
+{
+  "revision": "R4-LED-POCKET-01",
+  "manufacturing_release": false,
+  "generator_sha256": "89cede1cfccb806220111acf9b8fd7eb00dd3b1dba435bebfd03b6f629ad0213",
+  "input_sha256": {
+    "engineering/generated/contact02-study/study.json": "d36f825a731eab458aa1c5945404023d3b075768ddd8b21d928a0b42b86e4ea9",
+    "engineering/electronics/upper-petal-prototype/mechanical-power-budget.json": "b73e81e90586677430297803327e0bd571d3e1395753d94d0602dec3040b8fc2",
+    "engineering/generated/pad-retention-study/ODR-RET-UPPER-BLADE.step": "44cb80853ff3d93f96c808a5aeeb155db74b37411a5dd43368b3b8b4022a747b",
+    "engineering/generated/contact02-study/parts-step/UR_light.step": "147d591a894c9764916482cfcf9503ef2c71f6e88a1df746e9f23c8516818491",
+    "engineering/generated/pad-retention-study/ODR-RET-LOWER-BLADE.step": "f87ea3e44c6e6138ce9a8c5465f8810066c6302c477026e7f02c6b6d9dc4cafd",
+    "engineering/generated/contact02-study/parts-step/LL_light.step": "a4290bc272a3e054658b7706bea4a41567c48d0f098d1da80d529258bb7d6626"
+  },
+  "variants": [
+    {
+      "variant": "UPPER",
+      "length_mm": 150.0,
+      "mount_centers_root_xy_mm": [
+        [
+          33.0,
+          8.0
+        ],
+        [
+          33.0,
+          -8.0
+        ],
+        [
+          122.0,
+          0.0
+        ]
+      ],
+      "metal_mass_before_g": 74.69815273890889,
+      "metal_mass_after_g": 46.5836001805986,
+      "new_metal_volume_mm3": 17253.185252073556,
+      "pocket_floor_nominal_mm": 1.9,
+      "PCB_bottom_top_mm": [
+        3.6,
+        4.4
+      ],
+      "LED_bottom_top_mm": [
+        4.4,
+        5.2
+      ],
+      "back_components_bottom_top_mm": [
+        2.15,
+        3.6
+      ],
+      "diffuser_bottom_top_mm": [
+        6.0,
+        6.6
+      ],
+      "mixing_gap_mm": 0.8,
+      "back_component_to_floor_nominal_gap_mm": 0.25,
+      "boss_top_mm": 3.4,
+      "insulating_ring_thickness_mm": 0.2,
+      "screw_cap_top_mm": 5.5,
+      "screw_to_sheet_clearance_mm": 0.5,
+      "screw_geometric_engagement_mm": 3.0,
+      "screw_tip_recess_mm": 0.4,
+      "connector_aperture_xyz_mm": [
+        9,
+        17.5,
+        6
+      ],
+      "connector_aperture_center_xy_mm": [
+        43,
+        0
+      ],
+      "connector_mated_bottom_if_board_bottom_3_6_mm": -3.6999999999999997,
+      "nominal_external_subset_checks": [
+        {
+          "part": "metal",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "PCB_outline",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "front_LED_volume_reserve",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "back_component_volume_reserve",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "optical_sheet",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "insulating_ring1",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "SSH_M2_4_1",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "insulating_ring2",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "SSH_M2_4_2",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "insulating_ring3",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "SSH_M2_4_3",
+          "outside_prior_envelope_mm3": 0.0
+        }
+      ],
+      "static_component_intersections": [
+        {
+          "a": "metal",
+          "b": "PCB_outline",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "front_LED_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "back_component_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "optical_sheet",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "front_LED_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "back_component_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "optical_sheet",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "back_component_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "optical_sheet",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "optical_sheet",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_1",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_1",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_1",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_1",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring2",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring2",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring2",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_2",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_2",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring3",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        }
+      ],
+      "parts": [
+        {
+          "part": "metal",
+          "path": "UPPER-metal.step",
+          "solids": 1,
+          "volume_mm3": 17253.185252073556,
+          "sha256": "6c98792406df346af44a296d66f351b7c11c9aa3552df8e4ca88aee46def69b5"
+        },
+        {
+          "part": "PCB_outline",
+          "path": "UPPER-PCB_outline.step",
+          "solids": 1,
+          "volume_mm3": 1930.576837606886,
+          "sha256": "f68dd7d08082c54bca3429c3dcd88b82387c6659d0c091e41c6f94cf269158c3"
+        },
+        {
+          "part": "front_LED_volume_reserve",
+          "path": "UPPER-front_LED_volume_reserve.step",
+          "solids": 1,
+          "volume_mm3": 1861.7948080491917,
+          "sha256": "33e185d93f64b6c98f83ea107834b44a01ed3d4cd1988ecb0348a8fd7879e6f3"
+        },
+        {
+          "part": "back_component_volume_reserve",
+          "path": "UPPER-back_component_volume_reserve.step",
+          "solids": 1,
+          "volume_mm3": 3106.253089589136,
+          "sha256": "7281173f666325df8e119fb78249e49620b4b1c129456c387614cd66861d1074"
+        },
+        {
+          "part": "optical_sheet",
+          "path": "UPPER-optical_sheet.step",
+          "solids": 1,
+          "volume_mm3": 1456.075636363273,
+          "sha256": "c3837fc8a54fe50f8212e50af2d97f352dc974513cba94e5a92b53d4ab2a5b79"
+        },
+        {
+          "part": "insulating_ring1",
+          "path": "UPPER-insulating_ring1.step",
+          "solids": 1,
+          "volume_mm3": 3.846880204320702,
+          "sha256": "94babbe42d6edab9133041406866c9128b21c53c5f43bbea521c22e1a77669c9"
+        },
+        {
+          "part": "SSH_M2_4_1",
+          "path": "UPPER-SSH_M2_4_1.step",
+          "solids": 1,
+          "volume_mm3": 26.389378290154262,
+          "sha256": "ecae50b6f43519e3ea6dca349205c290123f2e1879d8b24e224dab00aed1031c"
+        },
+        {
+          "part": "insulating_ring2",
+          "path": "UPPER-insulating_ring2.step",
+          "solids": 1,
+          "volume_mm3": 3.846880204320702,
+          "sha256": "8f57f55c9e0f344e7bf4cb207cfe3a2220b418b799a492b8cd1dd8f2c7da8a0e"
+        },
+        {
+          "part": "SSH_M2_4_2",
+          "path": "UPPER-SSH_M2_4_2.step",
+          "solids": 1,
+          "volume_mm3": 26.389378290154262,
+          "sha256": "96aca55b612e411bd367d04bc64e1fe0dbebfc9d7a63971058df2b4868ab2601"
+        },
+        {
+          "part": "insulating_ring3",
+          "path": "UPPER-insulating_ring3.step",
+          "solids": 1,
+          "volume_mm3": 3.8468802043207027,
+          "sha256": "1f713b31df1d73bdaec9eab224a938c0a0c5739ade2ec7e94b188eb1daa7008e"
+        },
+        {
+          "part": "SSH_M2_4_3",
+          "path": "UPPER-SSH_M2_4_3.step",
+          "solids": 1,
+          "volume_mm3": 26.389378290154276,
+          "sha256": "3a02c789be4121bcd9df82b3dfd9a06c3ca0c225692a7152987bd8c81b987a58"
+        }
+      ],
+      "continuous_external_separation_scope": "All exported parts lie within previous rigid body/light envelope. Connector, cable, optical-sheet retention and deformation excluded."
+    },
+    {
+      "variant": "LOWER",
+      "length_mm": 100.0,
+      "mount_centers_root_xy_mm": [
+        [
+          33.0,
+          6.0
+        ],
+        [
+          33.0,
+          -6.0
+        ],
+        [
+          72.0,
+          0.0
+        ]
+      ],
+      "metal_mass_before_g": 40.72059673887838,
+      "metal_mass_after_g": 29.01382176166243,
+      "new_metal_volume_mm3": 10745.859911726826,
+      "pocket_floor_nominal_mm": 1.9,
+      "PCB_bottom_top_mm": [
+        3.6,
+        4.4
+      ],
+      "LED_bottom_top_mm": [
+        4.4,
+        5.2
+      ],
+      "back_components_bottom_top_mm": [
+        2.15,
+        3.6
+      ],
+      "diffuser_bottom_top_mm": [
+        6.0,
+        6.6
+      ],
+      "mixing_gap_mm": 0.8,
+      "back_component_to_floor_nominal_gap_mm": 0.25,
+      "boss_top_mm": 3.4,
+      "insulating_ring_thickness_mm": 0.2,
+      "screw_cap_top_mm": 5.5,
+      "screw_to_sheet_clearance_mm": 0.5,
+      "screw_geometric_engagement_mm": 3.0,
+      "screw_tip_recess_mm": 0.4,
+      "connector_aperture_xyz_mm": [
+        9,
+        17.5,
+        6
+      ],
+      "connector_aperture_center_xy_mm": [
+        43,
+        0
+      ],
+      "connector_mated_bottom_if_board_bottom_3_6_mm": -3.6999999999999997,
+      "nominal_external_subset_checks": [
+        {
+          "part": "metal",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "PCB_outline",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "front_LED_volume_reserve",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "back_component_volume_reserve",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "optical_sheet",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "insulating_ring1",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "SSH_M2_4_1",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "insulating_ring2",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "SSH_M2_4_2",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "insulating_ring3",
+          "outside_prior_envelope_mm3": 0.0
+        },
+        {
+          "part": "SSH_M2_4_3",
+          "outside_prior_envelope_mm3": 0.0
+        }
+      ],
+      "static_component_intersections": [
+        {
+          "a": "metal",
+          "b": "PCB_outline",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "front_LED_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "back_component_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "optical_sheet",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "metal",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "front_LED_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "back_component_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "optical_sheet",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB_outline",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "back_component_volume_reserve",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "optical_sheet",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "front_LED_volume_reserve",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "optical_sheet",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "back_component_volume_reserve",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "insulating_ring1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "optical_sheet",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "SSH_M2_4_1",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring1",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_1",
+          "b": "insulating_ring2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_1",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_1",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_1",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring2",
+          "b": "SSH_M2_4_2",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring2",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring2",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_2",
+          "b": "insulating_ring3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SSH_M2_4_2",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "insulating_ring3",
+          "b": "SSH_M2_4_3",
+          "intersection_mm3": 0.0
+        }
+      ],
+      "parts": [
+        {
+          "part": "metal",
+          "path": "LOWER-metal.step",
+          "solids": 1,
+          "volume_mm3": 10745.859911726826,
+          "sha256": "c3dabceb53c8239ffe6d9c37e68940c2e3b9c29d6e0de3c1edb054f29bfc5300"
+        },
+        {
+          "part": "PCB_outline",
+          "path": "LOWER-PCB_outline.step",
+          "solids": 1,
+          "volume_mm3": 765.4073830611829,
+          "sha256": "d1e7b7040528ef12f84f93cf59fb37ed9197be340706d306e1b37989f907760c"
+        },
+        {
+          "part": "front_LED_volume_reserve",
+          "path": "LOWER-front_LED_volume_reserve.step",
+          "solids": 1,
+          "volume_mm3": 696.6253535034909,
+          "sha256": "0170449dad549efac5dab578057a862ff24413a549477018c24faef8fa687c54"
+        },
+        {
+          "part": "back_component_volume_reserve",
+          "path": "LOWER-back_component_volume_reserve.step",
+          "solids": 1,
+          "volume_mm3": 994.3834532250461,
+          "sha256": "49fe521b2047f5cfaebce94d35ed84c58fe0f8d5586c30d830ed3747352ce19d"
+        },
+        {
+          "part": "optical_sheet",
+          "path": "LOWER-optical_sheet.step",
+          "solids": 1,
+          "volume_mm3": 582.1985454540045,
+          "sha256": "a27b0c696c5d5451590842ff14258eb2fbfd9bc48d8b4ef91704598967732f8a"
+        },
+        {
+          "part": "insulating_ring1",
+          "path": "LOWER-insulating_ring1.step",
+          "solids": 1,
+          "volume_mm3": 3.846880204320702,
+          "sha256": "77da8395b236257c281b88b2c04155c822c9890ca1f7fa3d9cfcc7867a68a010"
+        },
+        {
+          "part": "SSH_M2_4_1",
+          "path": "LOWER-SSH_M2_4_1.step",
+          "solids": 1,
+          "volume_mm3": 26.389378290154262,
+          "sha256": "c6539c3c6dc065abac825de38cc377c27d428e8edc6545a399250909c02befb2"
+        },
+        {
+          "part": "insulating_ring2",
+          "path": "LOWER-insulating_ring2.step",
+          "solids": 1,
+          "volume_mm3": 3.846880204320702,
+          "sha256": "4b887add640a1bac513e8a3717a76907db17fb670222198c96bf3e252fa43b64"
+        },
+        {
+          "part": "SSH_M2_4_2",
+          "path": "LOWER-SSH_M2_4_2.step",
+          "solids": 1,
+          "volume_mm3": 26.389378290154262,
+          "sha256": "bdeba6bc2042387f7b3ea64de69b1993d7c06ddc41a9cef03a6ff03e4281f1d2"
+        },
+        {
+          "part": "insulating_ring3",
+          "path": "LOWER-insulating_ring3.step",
+          "solids": 1,
+          "volume_mm3": 3.8468802043207027,
+          "sha256": "23c74840ec5bb2e3cc0a6ba1eb290de66c456ba258e36b5024bda5997e0e1520"
+        },
+        {
+          "part": "SSH_M2_4_3",
+          "path": "LOWER-SSH_M2_4_3.step",
+          "solids": 1,
+          "volume_mm3": 26.389378290154276,
+          "sha256": "91c2ddd0e07e7f4ddf861e27d2a63ee786f0bde1ff705805c2d3aae2ebdb2e57"
+        }
+      ],
+      "continuous_external_separation_scope": "All exported parts lie within previous rigid body/light envelope. Connector, cable, optical-sheet retention and deformation excluded."
+    }
+  ],
+  "screw": {
+    "candidate": "NBK SSH-M2-4",
+    "source": "https://www.nbk1560.com/images/en-US/product/lowsmallheadscrew/SSH/SSH_1.pdf",
+    "thread": "M2x0.4",
+    "length_mm": 4,
+    "head_D_H_mm": [
+      4,
+      1.1
+    ],
+    "hex_key_mm": 1.3,
+    "catalog_max_torque_Nm": 0.3,
+    "selected_assembly_torque_Nm": null,
+    "note": "Catalog max is not PCB mounting torque; threads/PCB/gasket need joint preload design."
+  },
+  "limits": [
+    "Mechanical envelope allocation only; not the current 113-site ULP01/02 board.",
+    "No geometric proof for mated GH envelope, cable bends, root support interaction or connector accessibility.",
+    "Optical sheet retention, mixing quality, thermal field, dielectric isolation and component solder height not qualified.",
+    "Pockets and through connector aperture weaken blade; rigidity/stress and tolerance stack need re-evaluation.",
+    "Backing components are allocated volumes, not solid blocks of actual component material; do not use these reserve volumes as mass.",
+    "Insulating rings are custom thickness assumptions with no selected material/supplier or compressive qualification.",
+    "Screw thread represented by nominal shank and minor pilot bore; thread zone excluded only from intersection check.",
+    "No actual LED positions or copper traces assigned. Mount keepouts require redesigned final boards."
+  ]
+}
