@@ -26,11 +26,14 @@ python engineering/verify_math.py
 python engineering/arm_screening.py
 python engineering/review_arm_screening.py > docs/engineering/analysis/arm-static-independent-review.json
 python engineering/grasp_screening.py
+python engineering/finite_pad_contacts.py
 python engineering/structure_screening.py
 python engineering/structure_screening.py --check
 ```
 
 数学回归覆盖解析单摆、耦合 2R、外力矩、Jacobian、势能梯度、动力学能量恒等式、可达/不可达 IK 和接触虚功。机械臂静力复核使用独立旋转递推与重量叉乘；梁模型有 60 项公式/数值检查。它们均不代表硬件验证。当前实机惯量、摩擦、转子耦合和热条件未知，不从这些检查推导额定速度或精度。
+
+有限双垫研究读取已有主 CAD，计算物体先接触的实体、八点共享四轴力矩以及 BREP 反例。当前 Ø80 圆柱先碰骨架/灯窗，不能由旧单点例题推出可抓取；完整结果见[接触研究](../docs/engineering/finite-pad-contact-study.md)。
 
 ## 几何、图纸与 Blender
 

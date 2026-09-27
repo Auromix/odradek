@@ -14,8 +14,14 @@ from gripper import petal_point,petal_jacobian,radial,grasp_matrix
 ROOT=Path(__file__).resolve().parents[1]
 
 
-def solve_grasp(points,normals,jacobians,com,wrench,mu,torque_limit,rays=16,minimum_normal_N=0.):
-    n=len(points);F=np.zeros((3*n,n*rays));Q=np.zeros((n,n*rays))
+def solve_grasp(points,normals,jacobians,com,wrench,mu,torque_limit,rays=16,minimum_normal_N=0.,contact_to_joint=None):
+    n=len(points);ndof=len(torque_limit)
+    groups=np.arange(n) if contact_to_joint is None else np.asarray(contact_to_joint)
+    if (len(groups)!=n or np.any(groups!=np.floor(groups)) or
+            np.any(groups<0) or np.any(groups>=ndof)):
+        raise ValueError('Every contact must map to one valid finger joint')
+    groups=groups.astype(int)
+    F=np.zeros((3*n,n*rays));Q=np.zeros((ndof,n*rays))
     normals=np.asarray(normals,dtype=float).copy();norm=np.linalg.norm(normals,axis=1)
     if (mu<0 or minimum_normal_N<0 or rays<4 or np.any(norm<=0) or
             not np.all(np.isfinite(normals)) or np.any(np.asarray(torque_limit)<0)):
@@ -28,7 +34,7 @@ def solve_grasp(points,normals,jacobians,com,wrench,mu,torque_limit,rays=16,mini
         for k in range(rays):
             theta=2*np.pi*k/rays
             v=normal+mu*(np.cos(theta)*t1+np.sin(theta)*t2)
-            F[3*i:3*i+3,i*rays+k]=v;Q[i,i*rays+k]=J@v
+            F[3*i:3*i+3,i*rays+k]=v;Q[groups[i],i*rays+k]=J@v
     G=grasp_matrix(points,np.asarray(com));W=G@F
     normal_map=np.kron(np.eye(n),np.ones((1,rays)))
     A_ub=np.vstack([Q,-Q,-normal_map]);b_ub=np.r_[torque_limit,torque_limit,[-minimum_normal_N]*n]
@@ -42,8 +48,8 @@ def solve_grasp(points,normals,jacobians,com,wrench,mu,torque_limit,rays=16,mini
         m=n*rays
         second=linprog(np.r_[np.zeros(m),1.],
                        A_ub=np.vstack([np.c_[A_ub,np.zeros(len(b_ub))],
-                                       np.r_[np.ones(m),0.],np.c_[Q,-np.ones(n)],np.c_[-Q,-np.ones(n)]]),
-                       b_ub=np.r_[b_ub,sol.fun+1e-7,np.zeros(2*n)],
+                                       np.r_[np.ones(m),0.],np.c_[Q,-np.ones(ndof)],np.c_[-Q,-np.ones(ndof)]]),
+                       b_ub=np.r_[b_ub,sol.fun+1e-7,np.zeros(2*ndof)],
                        A_eq=np.c_[W,np.zeros(6)],b_eq=-np.asarray(wrench),bounds=(0,None),method='highs')
         weights=second.x[:m] if second.success else sol.x
         forces=(F@weights).reshape(n,3);normal=np.sum(weights.reshape(n,rays),axis=1)

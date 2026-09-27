@@ -9,6 +9,9 @@
 | 结构布局 | [R4 布局、闭合与抓取](r4-layout-and-grasp.md) | 同参数 74 组 STEP、7＋4 Blender、A3评审图；连接与动态线束未完整 |
 | 本体数学 | [运动学与动力学](arm-mathematics.md)／[静力独立审查](arm-screening-review.md) | 解析回归、独立重量叉乘、质心敏感性；非实机额定值 |
 | 夹爪数学 | [当前抓取 LP 审查](grasp-screening-review.md)／[独立角域分离](petal-certificate-review.md) | 72 个条件接触场景；16 实体独立角域闭合证明，不含完整支承 |
+| 实际物体接触 | [有限双垫研究](finite-pad-contact-study.md) | 八点共享四个指轴；Ø80 圆柱先碰骨架/灯窗，接触结构待修正 |
+| 接触材料试片 | [双型四腔浇注模具](contact-pad-prototype.md) | STEP/STL/DXF/两页图纸；未打印/浇注，不含保持结构或承载资格 |
+| 六段承力连接 | [真实接口与空间审查](link-connection-plan.md) | 全部接触面/孔阵；发现肩部螺钉及两段旧梁干涉 |
 | 材料与梁 | [截面筛选](structure-screening.md) | 6061-T6 闭口矩形梁与双管比较；不含完整连接柔度 |
 | 底座 | [开腔底座及倾覆计算](base-structure-study.md) | 5种原创零件、8件装配、4页图；固定到桌架的候选，未承载放行 |
 | 指轴支承 | [单指双支承与四组反例](gripper-shaft-support-study.md) | 修正带轮真实宽度，否定旧紧凑切向布局；正在重新布置传动 |

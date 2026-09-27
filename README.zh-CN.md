@@ -24,7 +24,7 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 | [元件 BOM](docs/engineering/hardware/bom.csv)／[双鱼眼光学台架](docs/engineering/hardware/optical-bench-build.md) | 有来源的候选及具体相机—采集板—主机链 |
 | [计算与 CAD 复现](engineering/README.md) | 依赖、生成顺序、单位和限制 |
 
-当前四片名义几何在独立研究角域内的分离轴间隙下界为 4.7862 mm；该结果不包括支承、线束、公差和变形。抓取结果受物体、摩擦、接触法向与力矩条件限制，不等于已达到 2 kg 额定负载。
+当前四片名义几何在独立研究角域内的分离轴间隙下界为 4.7862 mm；该结果不包括支承、线束、公差和变形。[有限双垫接触检查](docs/engineering/finite-pad-contact-study.md)发现，Ø80 圆柱会先碰到下指骨架或灯窗，接触布局需要修改；原条件性力平衡不等于已达到 2 kg 额定负载。
 
 ## R3：保留外形，检查闭合与接触
 

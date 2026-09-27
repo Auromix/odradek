@@ -24,7 +24,7 @@ The render exposes catalog-sized joint envelopes and provisional drive placehold
 | [Hardware BOM](docs/engineering/hardware/bom.csv) / [optical bench](docs/engineering/hardware/optical-bench-build.md) | Sourced component candidates and a concrete dual-fisheye bench chain |
 | [Reproduce the calculations and CAD](engineering/README.md) | Dependencies, generation order, units, and limitations |
 
-The nominal petal geometry has a 4.7862 mm minimum separating-axis bound over the independent study angle intervals. This excludes supports, cables, tolerance and deformation. Grasp feasibility remains conditional on the modeled object, friction, contact normals, and available torque; it is not a measured payload rating.
+The nominal petal geometry has a 4.7862 mm minimum separating-axis bound over the independent study angle intervals. This excludes supports, cables, tolerance and deformation. The [finite-pad contact study](docs/engineering/finite-pad-contact-study.md) finds that the lower finger or light window hits an 80 mm cylinder before the assumed pads engage. Contact geometry needs revision; the conditional force calculations are not a measured payload rating.
 
 ## R3: keep the silhouette, resolve closure and contact
 
