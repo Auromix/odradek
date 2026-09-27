@@ -4,7 +4,7 @@
 
 [中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Comparison](docs/concept-comparison.md) · [Nickname candidates](docs/nickname-candidates.md) · [Roadmap](docs/roadmap.md)
 
-Odradek is an independent Auromix open-source robotics project inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
+Odradek is an independent Auromix robotics project sharing design material for noncommercial research and hobby use inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
 
 **Stage: R2 industrial design concepts.** This repository contains AI-assisted artwork, design records, references, and exact prompts. It does not yet contain manufacturing CAD, a validated seven-axis mechanism, firmware, or tested hardware. Payload, reach, cost, and performance targets remain open.
 
@@ -54,4 +54,10 @@ The [gallery](docs/gallery.html) retains original R0/R1 artwork and exact prompt
 
 The next priorities are finger trajectories and closure clearance, module mass and connection design, J7 cable routing, and a concrete target task that determines arm sizing.
 
-Contributions in English or Chinese are welcome; see [CONTRIBUTING](CONTRIBUTING.md). Original repository content is released under [Apache-2.0](LICENSE). Third-party reference images are not included or relicensed. This project has no official affiliation with *Death Stranding*, KOJIMA PRODUCTIONS, or XPENG.
+## License and commercial permissions
+
+Current original artwork, documentation, prompts, and static documentation pages are offered under **[CC BY-NC 4.0](LICENSE)**. Noncommercial research, study, hobby use, adaptation, and sharing are permitted under its terms. Sharing requires attribution, license information, and indication of changes. Commercial use requiring authorization needs a [separate written license from the authors](https://github.com/Auromix/odradek/issues/new?template=commercial-license.yml).
+
+**Material previously published through `2d7d00f` retains its already-granted Apache-2.0 rights, including commercial use under those terms.** This change does not revoke prior grants. See [licensing scope and history](LICENSING.md). No software, firmware, or manufacturing CAD is currently released; those assets need appropriate licensing before publication. A copyright license for artwork and documents does not itself control all physical hardware manufacture.
+
+The noncommercial restriction means this is not open source under the OSI definition. Contributions in English or Chinese are welcome; see [CONTRIBUTING](CONTRIBUTING.md). Third-party reference images are not included or relicensed. This project has no official affiliation with *Death Stranding*, KOJIMA PRODUCTIONS, or XPENG.

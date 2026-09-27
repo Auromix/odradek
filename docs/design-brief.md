@@ -4,7 +4,7 @@
 
 ## 已确认的设计方向
 
-- 开源桌面／固定底座机械臂，用于实际操作任务；项目与仓库仍为 **Odradek / Auromix/odradek**，nickname 尚未选定。
+- 面向非商业研究与爱好者公开设计资料的桌面／固定底座机械臂，用于实际操作任务；项目与仓库仍为 **Odradek / Auromix/odradek**，nickname 尚未选定。
 - **本体 7 自由度，末端 4 自由度。** 本体最后一个轴 J7 沿末端正面法线，使整套末端做 roll 旋转；四片夹指各有 1 个独立开合自由度。
 - 四片既是发光片，也是抓取手指，可展开、独立表达及空手完全闭合。主动注意力通过朝向、整头姿态、指片张合和灯光共同表达。
 - 四片构图参考用户所指的小鹏 logo：**左右各一组近邻双瓣，左右镜像、非中心对称**；上下瓣采用不同长度或张角，避免 180° 中心对称。指根位于斜对角象限，为中央上下区域留出空间；同组不强制联动。
@@ -35,3 +35,7 @@ R0 的整体形态与 R1 的灯片夹爪探索保留为历史记录。R1 的中�
 目标工件与任务、负载、臂展、尺寸、精度、速度、预算和制造条件尚未确定。下一轮以相同任务检查夹持力路径、指片全行程、相机遮挡、照明、末端质量、线束与模块装配，再进入同版 CAD 和样件验证。
 
 工业设计按发现与定义、发散与比较、方向收敛、机电协同深化、原型验证推进，参考 [Design Council Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/)。Odradek 的[官方介绍](https://blog.playstation.com/2019/11/07/hit-the-ground-running-with-these-day-one-death-stranding-tips/)、[Ludens 设计访谈](https://www.kojimaproductions.jp/EXPLORING-LUDENS-YojiShinkawa)、[OpenArm 硬件](https://github.com/enactic/openarm_hardware)与[Kinova Gen3 手册](https://www.kinovarobotics.com/uploads/User-Guide-Gen3-R07.pdf)是形态与结构研究来源，其产品指标不移植为本项目指标。
+
+## 许可定位
+
+当前图稿与设计资料按 [CC BY-NC 4.0](../LICENSE) 提供；商业使用需要作者另行书面授权。此前 Apache-2.0 已授出的权利保留，详见[许可说明](../LICENSING.md)。此公开设计模式带非商业限制，不称为标准开源项目；未来制造资料、软件与固件的适用许可须在发布前明确。

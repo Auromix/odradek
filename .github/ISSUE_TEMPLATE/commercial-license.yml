@@ -1,0 +1,23 @@
+name: Commercial license request / 商业授权申请
+description: Contact the authors about a separate commercial authorization.
+title: "[License] Commercial use request / 商业授权申请"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Contact the Odradek authors through the Auromix maintainers. This public request is not a license grant; a separate written agreement is required for uses not covered by existing permissions. Do not include confidential information.
+        通过 Auromix 维护者联系项目作者。本申请不构成授权；不在既有许可范围内的商业用途需另行取得书面授权。请勿在公开 Issue 中填写保密资料。
+  - type: textarea
+    id: material
+    attributes:
+      label: Version and material / 版本与内容
+      description: Identify the commit or release and the files you plan to use.
+    validations:
+      required: true
+  - type: textarea
+    id: intended-use
+    attributes:
+      label: Intended use / 计划用途
+      description: Briefly describe the product or service, intended distribution, and requested scope without confidential details.
+    validations:
+      required: true

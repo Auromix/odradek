@@ -22,4 +22,8 @@ Use the concept-feedback issue template for visual review. For proposed changes,
 
 ## License
 
-By intentionally submitting original contributions for inclusion, you agree that they may be distributed under the repository's Apache-2.0 license, unless a different arrangement is explicitly documented and accepted. Preserve third-party notices. Do not include secrets, credentials, or private user data.
+Original contributions within the current artwork/documentation scope are accepted under [CC BY-NC 4.0](LICENSE), unless a different arrangement is explicitly documented and accepted. You must hold the rights needed for that contribution. You retain ownership; this policy does not assign your rights or automatically grant the maintainers commercial relicensing rights.
+
+A commercial authorization covering third-party contributions requires separate written permission from the relevant rights holders. Before adding software, firmware, or manufacturing CAD, establish the applicable file or directory license with the maintainers. See [LICENSING.md](LICENSING.md) for scope, prior Apache-2.0 grants, and the commercial contact route.
+
+Preserve third-party notices. Do not include secrets, credentials, or private user data.
