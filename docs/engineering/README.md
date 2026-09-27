@@ -63,6 +63,7 @@
 | 整头质量与惯量 | [HEAD-MASS04](head-mass04-study.md) | 262项聚合为13个刚体、重2.802kg；精确实体积分与目录惯量代理分列，P16质量分配/未知185～450g预算明确，不重复旧L7占位 |
 | 历史灯光与IO | [HLIO01的609点研究](hardware/head-lighting-io-selection.md) | 历史285+2×113+2×49；当前FPL01四片344、中央拟285，合计629点，电源预算不能混用 |
 | 末端控制板空间 | [HEAD-CTRL-VOLUME01](head-control-volume01.md) | 56×64×30mm完整电子装配预留，固定件最小2mm、四指/P16连续分离；实际PCB/插头/支架/热路径尚未集成 |
+| 中央圆屏安装 | [CD-MOUNT01](central-display-mount01.md)／[独立装拆审查](central-display-review01.md) | 285点、Ø60PCB、杯座/压框/窗口/侧耳、GH12参考；连续避让和全开装拆空间通过，材料/公差/实际中央板与线束待闭合 |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
 | 放行差距 | [发布检查清单](release-checklist.md) | 对应证据和实际未完成事项 |
 

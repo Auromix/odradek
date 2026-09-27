@@ -1,0 +1,616 @@
+{
+  "revision": "CD-MOUNT01-INDEPENDENT-REVIEW01",
+  "date": "2026-09-27",
+  "license": "CC-BY-NC-4.0",
+  "manufacturing_release": false,
+  "scope": "Independent nominal contact/access and proof-formula review; current MOUNT_X=35.25. HEAD03 all-open fixed assembly configuration for tool/removal sweeps. No repository generator edits.",
+  "result": "No unresolved nominal geometry blocker found in reviewed display mounting; candidate can proceed to no-load fit prototype, with connector service conditions below.",
+  "source_sha256": {
+    "engineering/central_display_mount01.py": "9dac871b22d8283f9b34b41b7f350435217768b4755d43c8e75167c699fc1e38",
+    "engineering/generated/central-display-mount01/study.json": "7aa6efd20381e41c7953924974b0c51c67a6c0801cbdb38ac2b4f8758a79a40a",
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+    "engineering/generated/head-integrated-03/motion.json": "dd7b6c1c608be0cf46c886f4a54afe8e665d9827b8c4ae241939e3956469af9d",
+    "engineering/generated/head-integrated-03/motion-containment.json": "954dc56102e912fb4c27e31261550fd307eccef4b8acc52dfcbb4501670a6fad",
+    "engineering/build_link56_study.py": "c1119f288c0a9169764dc047ae3aa17be86ed97b62994e5917a02ea3f28fec40",
+    "engineering/studies/link_interface_tools.py": "335a99418ecf6a4df08a9923e775e83ac4f882d18896e9e14796a50e740964fa",
+    "engineering/p16_packaging_study.py": "3903d14a5b081574b8e9a7bfde7c74705b6ec68933f7084133b53b998987f68d",
+    "engineering/p16_carrier_study.py": "19f0d00207349825a814d15b7e768030dbe09ac071fc5b0d5dccf65f45be224c",
+    "engineering/gripper_root_support_study.py": "3ef2cbe6f1987f35a54fca22a0fb538ee502545ede5d4a58a4e7e06ef30dd732",
+    "engineering/screen_integrated_collisions.py": "72373f83c60555e45fb2d3297789b793996c372fb9159a1972dad0aace154e1b",
+    "docs/engineering/sources/central-display-hardware01.json": "9bc7a219ffaef4aeeba98ff3e8017668f0e7ab40815588a10a48b1ab4baca985"
+  },
+  "contacts": [
+    {
+      "a": "CD01-cup",
+      "b": "CD01-PCB-outline",
+      "origin_world_mm": [
+        0,
+        0,
+        -3
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 364.4247478164166,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-PCB-outline",
+      "b": "CD01-insulating-spacer",
+      "origin_world_mm": [
+        0,
+        0,
+        -2
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 256.85661535750205,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-insulating-spacer",
+      "b": "CD01-window",
+      "origin_world_mm": [
+        0,
+        0,
+        -0.5
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 256.85661535750205,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-window",
+      "b": "CD01-bezel",
+      "origin_world_mm": [
+        0,
+        0,
+        0.25
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 256.85661535750205,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-cup",
+      "b": "CD01-bezel",
+      "origin_world_mm": [
+        0,
+        0,
+        0.25
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 464.4103388809668,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-cup",
+      "b": "CD01-optical-frame",
+      "origin_world_mm": [
+        0,
+        0,
+        -11
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 156.92115548776613,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-L-M2x20-envelope",
+      "b": "CD01-L-front-washer",
+      "origin_world_mm": [
+        -35.25,
+        0,
+        2.1
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 7.539822368615494,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-L-front-washer",
+      "b": "CD01-bezel",
+      "origin_world_mm": [
+        -35.25,
+        0,
+        1.75
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 15.83362697409256,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-optical-frame",
+      "b": "CD01-L-rear-washer",
+      "origin_world_mm": [
+        -35.25,
+        0,
+        -15
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 15.833626974092562,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-L-rear-washer",
+      "b": "CD01-L-M2-nut-envelope",
+      "origin_world_mm": [
+        -35.25,
+        0,
+        -15.35
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 10.05507934970738,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-R-M2x20-envelope",
+      "b": "CD01-R-front-washer",
+      "origin_world_mm": [
+        35.25,
+        0,
+        2.1
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 7.539822368615494,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-R-front-washer",
+      "b": "CD01-bezel",
+      "origin_world_mm": [
+        35.25,
+        0,
+        1.75
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 15.83362697409256,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-optical-frame",
+      "b": "CD01-R-rear-washer",
+      "origin_world_mm": [
+        35.25,
+        0,
+        -15
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 15.833626974092562,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    },
+    {
+      "a": "CD01-R-rear-washer",
+      "b": "CD01-R-M2-nut-envelope",
+      "origin_world_mm": [
+        35.25,
+        0,
+        -15.35
+      ],
+      "normal_world": [
+        0,
+        0,
+        1
+      ],
+      "shared_planar_face_area_mm2": 10.05507934970738,
+      "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+    }
+  ],
+  "mounting_geometry": {
+    "mount_x_mm": 35.25,
+    "hole_diameter_mm": 2.2,
+    "frame_inner_radius_mm": 32.5,
+    "frame_outer_radius_mm": 38,
+    "washer_max_OD_mm": 5,
+    "washer_radial_footprint_mm": [
+      32.75,
+      37.75
+    ],
+    "washer_inside_and_outside_nominal_margin_mm": [
+      0.25,
+      0.25
+    ],
+    "cup_to_frame_support": "Two side ears only; sleeve R30.1..32 does not touch frame R32.5..38.",
+    "backwasher_each_shared_area_mm2": 15.833626974092562
+  },
+  "access": {
+    "object_count_including_current_CD": 995,
+    "method": "Each exact probe/swept BREP is checked vs each object, per-solid Boolean intersection after AABB pruning. Volume >1e-4 mm3 reported as penetration; nominal contact allowed.",
+    "checks": [
+      {
+        "name": "L_rear_OD8_ID4.7_tool_to_nut_flats",
+        "object_pairs": 995,
+        "booleans": 4,
+        "hits": []
+      },
+      {
+        "name": "L_rear_full_OD8_space_probe",
+        "object_pairs": 993,
+        "booleans": 2,
+        "hits": []
+      },
+      {
+        "name": "L_nut_translation_and_spin_containing_annulus",
+        "object_pairs": 993,
+        "booleans": 2,
+        "hits": []
+      },
+      {
+        "name": "L_front_OD3_shaft_60mm",
+        "object_pairs": 995,
+        "booleans": 1,
+        "hits": []
+      },
+      {
+        "name": "L_nut_rear_insert_sweep",
+        "object_pairs": 993,
+        "booleans": 2,
+        "hits": []
+      },
+      {
+        "name": "R_rear_OD8_ID4.7_tool_to_nut_flats",
+        "object_pairs": 995,
+        "booleans": 4,
+        "hits": []
+      },
+      {
+        "name": "R_rear_full_OD8_space_probe",
+        "object_pairs": 993,
+        "booleans": 2,
+        "hits": []
+      },
+      {
+        "name": "R_nut_translation_and_spin_containing_annulus",
+        "object_pairs": 993,
+        "booleans": 2,
+        "hits": []
+      },
+      {
+        "name": "R_front_OD3_shaft_60mm",
+        "object_pairs": 995,
+        "booleans": 1,
+        "hits": []
+      },
+      {
+        "name": "R_nut_rear_insert_sweep",
+        "object_pairs": 993,
+        "booleans": 2,
+        "hits": []
+      },
+      {
+        "name": "bezel_front_remove_60mm",
+        "object_pairs": 990,
+        "booleans": 5,
+        "hits": []
+      },
+      {
+        "name": "window_front_remove_60mm",
+        "object_pairs": 989,
+        "booleans": 4,
+        "hits": []
+      },
+      {
+        "name": "spacer_front_remove_60mm",
+        "object_pairs": 988,
+        "booleans": 289,
+        "hits": []
+      },
+      {
+        "name": "PCB_front_remove_60mm",
+        "object_pairs": 701,
+        "booleans": 4,
+        "hits": []
+      },
+      {
+        "name": "GH12_front_remove_with_PCB_60mm",
+        "object_pairs": 701,
+        "booleans": 2,
+        "hits": []
+      },
+      {
+        "name": "L_complete_bolt_front_remove_60mm",
+        "object_pairs": 992,
+        "booleans": 5,
+        "hits": []
+      },
+      {
+        "name": "R_complete_bolt_front_remove_60mm",
+        "object_pairs": 992,
+        "booleans": 5,
+        "hits": []
+      }
+    ],
+    "total_object_pairs": 16291,
+    "total_boolean_pairs": 336,
+    "penetrations": 0,
+    "tool_probe_only": true,
+    "conditions": [
+      "HEAD03 all-open position, de-energized no-load assembly; no powered maintenance.",
+      "Rear OD8 probe from Z-80 to-15.35; own nut and bolt intentionally excluded only from full-cylinder test. Annular OD8/ID4.7 probe is additional space check, not selected socket geometry.",
+      "Front OD3 cylindrical driver-shaft probe from Z4.1 to64.1; driver handle, actual tip and accessibility from outside the complete skinned product not qualified.",
+      "Nut circumcircle-annulus R2/cos30, boreD2 from Z-50 to-15.35 contains arbitrary nut spin and axial approach; simplified threaded interface excluded.",
+      "Front-removal translation is +60mm in Z, sequentially excluding already removed parts only. Complete M2 screw shank/head swept before bezel removal.",
+      "GH12 reference moves with PCB only after connector cable has been disconnected and released, or an adequately released service loop established separately. No cable/strain-relief/latch actuation model is included.",
+      "If GH cannot be unlatched in place, service the entire optical-frame subassembly on bench; removing that subassembly is an additional unverified route, not proven by the PCB sweep."
+    ]
+  },
+  "motion_formula_review": {
+    "independent_reexecution_of_all_motion_distances": false,
+    "reviewed_method": "Distance is 1-Lipschitz in Hausdorff motion; nearest endpoint is at most half interval away. min(endpoint distances)-V*half angular interval is a valid lower bound.",
+    "rotor": "Unit closing axes; maximum perpendicular radius of all AABB corners bounds the complete solid, not just vertices sampled from the solid.",
+    "P16": {
+      "q_minus_phase_deg": [
+        -68,
+        54
+      ],
+      "Lmin_mm": 99.371686441314,
+      "Lmax_mm": 144.84292421800302,
+      "max_native_AABB_radius_at_Lmax_mm": 149.08492437067468,
+      "bound_radius_mm": 160,
+      "beta_derivative_bound_per_rad": 0.39231444195471654,
+      "V_mm_per_rad": 88.77031071275465
+    },
+    "P16_reason": "L²=D²+a²+2Da sin(q-phase), phase68 and q0..122 => cosine positive; Lmin atq0. |Lprime|<=a and |betaprime|<=a(D+a)/Lmin². All native envelope corners lie within149.084925<160mm of base at max extension, so 26+160*beta is valid.",
+    "root_certificates": {
+      "UR_rotor": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 156.6927649653998,
+        "continuous_lower_bound_mm": 17.781620092020773
+      },
+      "UR_P16": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 88.77031071275465,
+        "continuous_lower_bound_mm": 39.706072681756666
+      },
+      "UL_rotor": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 156.69276496543216,
+        "continuous_lower_bound_mm": 17.781620092017967
+      },
+      "UL_P16": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 88.77031071275465,
+        "continuous_lower_bound_mm": 39.70607268175668
+      },
+      "LL_rotor": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 107.16809226628173,
+        "continuous_lower_bound_mm": 44.699331015621176
+      },
+      "LL_P16": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 88.77031071275465,
+        "continuous_lower_bound_mm": 30.67027419685972
+      },
+      "LR_rotor": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 107.16809226628881,
+        "continuous_lower_bound_mm": 44.69933101562442
+      },
+      "LR_P16": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 88.77031071275465,
+        "continuous_lower_bound_mm": 30.67027419685972
+      }
+    },
+    "containing_obstacle": "All new CD geometry lies in root closed union R32/Z-11..1.75, ears X+-38.25/Y+-4, and two R2.5/Z-17.9..4.1 bolt cylinders. Modified old frame only loses two holes; frame clearance inherits HEAD03 evidence, not the central obstacle alone."
+  },
+  "PCB_static_candidate": {
+    "allocation": {
+      "radius_mm": 28,
+      "z_mm": [
+        -10,
+        -3
+      ]
+    },
+    "GH12": {
+      "bbox_head_mm": [
+        [
+          -9.475,
+          -19.8,
+          -7.45
+        ],
+        [
+          9.475,
+          -11.05,
+          -3
+        ]
+      ],
+      "radial_max_mm": 21.950298972906953,
+      "radial_margin_mm": 6.049701027093047,
+      "zfloor_margin_mm": 2.55,
+      "wire_exit": "-Y; not routed"
+    },
+    "LP5860_candidate": {
+      "LP5860_L_6mm": {
+        "bbox": [
+          [
+            -13.0,
+            2.0,
+            -4.1
+          ],
+          [
+            -7.0,
+            8.0,
+            -3.0
+          ]
+        ],
+        "rmax": 15.264337522473747,
+        "R28_margin": 12.735662477526253,
+        "allocation_cut_volume": 0.0,
+        "GH_gap": 13.05
+      },
+      "LP5860_L_10mm": {
+        "bbox": [
+          [
+            -15.0,
+            0.0,
+            -4.1
+          ],
+          [
+            -5.0,
+            10.0,
+            -3.0
+          ]
+        ],
+        "rmax": 18.027756377319946,
+        "R28_margin": 9.972243622680054,
+        "allocation_cut_volume": 0.0,
+        "GH_gap": 11.05
+      },
+      "LP5860_R_6mm": {
+        "bbox": [
+          [
+            7.0,
+            2.0,
+            -4.1
+          ],
+          [
+            13.0,
+            8.0,
+            -3.0
+          ]
+        ],
+        "rmax": 15.264337522473747,
+        "R28_margin": 12.735662477526253,
+        "allocation_cut_volume": 0.0,
+        "GH_gap": 13.05
+      },
+      "LP5860_R_10mm": {
+        "bbox": [
+          [
+            5.0,
+            0.0,
+            -4.1
+          ],
+          [
+            15.0,
+            10.0,
+            -3.0
+          ]
+        ],
+        "rmax": 18.027756377319946,
+        "R28_margin": 9.972243622680054,
+        "allocation_cut_volume": 0.0,
+        "GH_gap": 11.05
+      }
+    },
+    "LP5860_source": {
+      "url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+      "sha256": "2d0234bb32de821d8c3ba9208bf5e1fae3f43d4570b1e42697d0ef791f70e771",
+      "pages_1based": [
+        51,
+        58,
+        59
+      ],
+      "part": "LP5860RKPR / RKP0040B",
+      "body_max_mm": [
+        5.1,
+        5.1,
+        1
+      ],
+      "land_outer_mm": [
+        5.4,
+        5.4
+      ],
+      "proposal": "Centers(+/-10,+5), six-mm square package/land planning boxes Z-4.1..-3. Optional10x10 XY circuit-placement reserves are not routed passives."
+    },
+    "limitations": [
+      "Geometric fit only, no net assignment/routing or LED current/thermal approval.",
+      "Leave board perimeter R28..30 free of backside components; PCB underside touches seat directly, so if cup is conductive require copper/via electrical keepout or separately engineered insulation.",
+      "Current circular PCB has no positive angular key; set assembly GH orientation explicitly. Friction/preload or an optional indexing feature requires later verification.",
+      "GH tail/12 wires and positive latch actuation need their own mechanical service path."
+    ]
+  },
+  "reproduction": {
+    "instruction": "Extract python_script to a scratch .py file and run with CadQuery runtime: python script.py /absolute/repository /absolute/scratch-output. It reads source files only and writes access3525.json in scratch.",
+    "python_script": "# SPDX-License-Identifier: CC-BY-NC-4.0\n# Required Notice: Odradek — Auromix contributors (https://github.com/Auromix/odradek)\nfrom pathlib import Path\nimport sys,json,math,itertools,hashlib\nimport numpy as np\nimport cadquery as cq\nroot=Path(sys.argv[1]).resolve();sys.path.insert(0,str(root/'engineering'))\nimport central_display_mount01 as cd\nfrom screen_integrated_collisions import named_step\nfrom studies.link_interface_tools import check,cache\nfrom build_link56_study import face_contact\nw=Path(sys.argv[2]).resolve();w.mkdir(parents=True,exist_ok=True)\nsource=root/'engineering/central_display_mount01.py'\n# Read-only independent hypothetical transform from current baseline. No repository mutation.\nt=source.read_text().replace('for x in [-35.,35.]:','for x in [-35.25,35.25]:')\nns={'__file__':str(source),'__name__':'independent_candidate'};exec(compile(t,'cd_candidate3525','exec'),ns)\nsh=named_step(root/'engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step');p,rows=ns['build'](sh['removable_optical_frame'])\nfixed={n:s for n,s in sh.items() if n not in ['removable_optical_frame','display_including_candidate_GH_keepout']};fixed.update(p)\ncs={n:cache(s) for n,s in fixed.items()}\nr={'script_hash':hashlib.sha256(source.read_bytes()).hexdigest(),'hypothetical_edit':'none if root MOUNT_X=35.25; otherwise only two build loops shifted; no repository file edit','state':'HEAD03 open; complete named solids plus new CD','checks':[]}\ndef against(name,s,exclude=[]):\n c=cache(s);hits=[];checks=0;booleans=0\n for n,k in cs.items():\n  if n in exclude:continue\n  z=check(c,k);checks+=1;booleans+=z['boolean_count']\n  if z['events']:hits.append({'id':n,**z})\n d={'name':name,'object_pairs':checks,'booleans':booleans,'hits':hits};r['checks'].append(d);print(name,len(hits),'hits',flush=True)\n# Rear tool must reach around nut, not just touch its back. An annular driving section OD8/ID4.7\n# goes from z-80 to rear washer z-15.35; nominal nut's Dcorner4.619 stays inside bore.\nfor side,x in [('L',-35.25),('R',35.25)]:\n tool=cd.C(4,64.65,(x,0,-80),(0,0,1),4.7)\n against(side+'_rear_OD8_ID4.7_tool_to_nut_flats',tool)\n # Full outer cylinder proves a bounded socket approach envelope after excluding its intended nut/bolt mates.\n against(side+'_rear_full_OD8_space_probe',cd.C(4,64.65,(x,0,-80),(0,0,1)),[f'CD01-{side}-M2x20-envelope',f'CD01-{side}-M2-nut-envelope'])\n # Circumcircle annulus continuously contains all hex-nut rotations and rear axial translations.\n against(side+'_nut_translation_and_spin_containing_annulus',cd.C(2/math.cos(math.pi/6),34.65,(x,0,-50),(0,0,1),2),[f'CD01-{side}-M2x20-envelope',f'CD01-{side}-M2-nut-envelope'])\n # Generic cylinder from head top forward for hex-driver shaft; caller-selected envelope only.\n tool=cd.C(1.5,60,(x,0,4.1),(0,0,1))\n against(side+'_front_OD3_shaft_60mm',tool)\n sweep=cq.Workplane('XY').workplane(offset=-50).center(x,0).polygon(6,4/math.cos(math.pi/6)).extrude(34.65).val().cut(cd.C(1,40,(x,0,-51),(0,0,1)))\n against(side+'_nut_rear_insert_sweep',sweep,[f'CD01-{side}-M2x20-envelope',f'CD01-{side}-M2-nut-envelope'])\n print('washer area',side,face_contact(p['CD01-optical-frame'],p[f'CD01-{side}-rear-washer'],[x,0,-15],[0,0,1])['shared_planar_face_area_mm2'],flush=True)\n# Continuous +Z translation sweeps; excluding successively removed pieces only. Use exact extrusion\n# of z-prismatic XY profiles; intersections at intended start/end contact do not count as volume.\ncup=p['CD01-cup'];bezel=p['CD01-bezel']\n# Bezel has fixed XY profile, extrude its bottom face polygon union from .25 to61.75 by fuse translations/linear prism.\nfrom OCP.BRepPrimAPI import BRepPrimAPI_MakePrism\nfrom OCP.gp import gp_Vec\nzfaces=[f for f in bezel.Faces() if abs(f.Center().z-.25)<1e-6 and abs(f.normalAt().z)>0.999]\nbezel_sweep=cd.union([cq.Shape(BRepPrimAPI_MakePrism(f.wrapped,gp_Vec(0,0,61.5)).Shape()) for f in zfaces])\nbolts=[n for n in p if 'M2x20' in n or 'front-washer' in n]\nagainst('bezel_front_remove_60mm',bezel_sweep,['CD01-bezel']+bolts)\n# Window disk front removal while bezel+front hardware removed.\nagainst('window_front_remove_60mm',cd.C(29.9,60.75,(0,0,-.5),(0,0,1)),['CD01-window','CD01-bezel']+bolts)\n# Then ring spacer.\nagainst('spacer_front_remove_60mm',cd.C(29.9,61.5,(0,0,-2),(0,0,1),57),['CD01-window','CD01-bezel','CD01-insulating-spacer']+bolts)\n# PCB + LED package front removal; GH can remain on PCB, lead disconnection/slack is outside model.\nexclude=['CD01-PCB-outline','CD01-GH12-mated-reference','CD01-window','CD01-bezel','CD01-insulating-spacer']+bolts+[n for n in p if n.startswith('CD01-LED')]\nagainst('PCB_front_remove_60mm',cd.C(30,61,(0,0,-3),(0,0,1)),exclude)\nagainst('GH12_front_remove_with_PCB_60mm',cd.B(-9.475,9.475,-19.8,-11.05,-7.45,57),exclude)\n# Candidate package and 10x10 placement reserves, not circuit routed/thermal qualification.\n# Bolt removal after rear nut/washer have been removed; complete shaft and head translation union.\nfor side,x in [('L',-35.25),('R',35.25)]:\n sweep=cd.C(1,80,(x,0,-17.9),(0,0,1)).fuse(cd.C(1.9,62,(x,0,2.1),(0,0,1)))\n against(side+'_complete_bolt_front_remove_60mm',sweep,[f'CD01-{side}-M2x20-envelope',f'CD01-{side}-M2-nut-envelope',f'CD01-{side}-rear-washer'])\n# Current-source actual contact areas after 35.25 change.\nr['contacts']=[]\nfor a,b,z in [('CD01-cup','CD01-PCB-outline',-3),('CD01-PCB-outline','CD01-insulating-spacer',-2),('CD01-insulating-spacer','CD01-window',-.5),('CD01-window','CD01-bezel',.25),('CD01-cup','CD01-bezel',.25),('CD01-cup','CD01-optical-frame',-11)]:\n r['contacts'].append(dict(a=a,b=b,**face_contact(p[a],p[b],[0,0,z],[0,0,1])))\nfor side,x in [('L',-35.25),('R',35.25)]:\n for a,b,z in [(f'CD01-{side}-M2x20-envelope',f'CD01-{side}-front-washer',2.1),(f'CD01-{side}-front-washer','CD01-bezel',1.75),('CD01-optical-frame',f'CD01-{side}-rear-washer',-15),(f'CD01-{side}-rear-washer',f'CD01-{side}-M2-nut-envelope',-15.35)]:\n  r['contacts'].append(dict(a=a,b=b,**face_contact(p[a],p[b],[x,0,z],[0,0,1])))\nr['pcb']={} \nfor side,x in [('L',-10),('R',10)]:\n for width in [6,10]:\n  s=cd.B(x-width/2,x+width/2,5-width/2,5+width/2,-4.1,-3)\n  rad=max(math.hypot(a,b) for a,b in itertools.product([x-width/2,x+width/2],[5-width/2,5+width/2]))\n  r['pcb'][f'LP5860_{side}_{width}mm']={'bbox':cd.bb(s),'rmax':rad,'R28_margin':28-rad,'allocation_cut_volume':s.cut(cd.C(28,7,(0,0,-10),(0,0,1))).Volume(),'GH_gap':s.distance(p['CD01-GH12-mated-reference'])}\n(w/'access3525.json').write_text(json.dumps(r,indent=2)+'\\n')\nprint('DONE',flush=True)\n"
+  },
+  "remaining": [
+    "Nominal contacts do not establish clamp force or stack tolerance; cup/bezel hard stop is a parallel path to optical stack.",
+    "No actual tool PN, cable release, full optical-frame removal or skinned-product service route released.",
+    "No whole-arm motion extension, fatigue, thermal or manufacturing approval."
+  ]
+}

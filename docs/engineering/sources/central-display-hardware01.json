@@ -52,15 +52,15 @@
     "body_diameter_mm": 64,
     "body_z_mm": [
       -11,
-      1
+      1.75
     ],
     "ear_hole_centers_xy_mm": [
       [
-        -35,
+        -35.25,
         0
       ],
       [
-        35,
+        35.25,
         0
       ]
     ],
@@ -69,7 +69,7 @@
       -11
     ],
     "ear_top_z_interpretation_mm": 1.75,
-    "source": "Latest parent CD01 design update; prior initialZ1 is superseded for fastener stack, not commercial display datasheet",
+    "source": "CD-MOUNT01 root-reviewed update: holes X+-35.25 put maxOD5 washers at annulus mid-radius, bezel topZ1.75. Original optical columns remain X+-35/Y+-22; not a commercial display datasheet.",
     "PCB_z_mm": [
       -3,
       -2
@@ -176,9 +176,10 @@
     "formula": "L - ((ear_top_z-frame_back_z) + washer_top + washer_back + nut_height)",
     "source_length_and_mounting_tolerances_not_included": true,
     "two_fastener_sets_catalogue_mass_g": 1.48,
-    "washer_to_D64_body_nominal_radial_gap_mm": 0.5,
+    "washer_to_D64_body_nominal_radial_gap_mm": 0.75,
     "compression_load_path_verified": false,
-    "tool_clearance_verified": false
+    "tool_clearance_verified": false,
+    "washer_frame_inner_and_outer_edge_nominal_margin_mm": 0.25
   },
   "connector": {
     "header": "SM12B-GHS-TB(LF)(SN)",
