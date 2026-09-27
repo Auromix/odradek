@@ -1,4 +1,4 @@
-# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+# SPDX-License-Identifier: CC-BY-NC-4.0
 # Required Notice: Odradek — Auromix contributors (https://github.com/Auromix/odradek)
 """Read vendor STEP interfaces without redistributing vendor CAD.
 

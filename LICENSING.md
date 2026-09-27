@@ -1,64 +1,63 @@
 # Licensing / 许可说明
 
-Policy updated: 2026-09-27. This note describes scope and licensing history; it does not modify the standard [CC BY-NC 4.0 legal text](LICENSE).
+Policy updated: 2026-09-27. This scope and history note does not modify the standard [CC BY-NC 4.0 legal text](LICENSE).
 
 ## 当前政策
 
-现有原创概念图、设计文档、生成提示词和静态文档页面，现按 **Creative Commons Attribution-NonCommercial 4.0 International（CC BY-NC 4.0，署名—非商业性使用 4.0 国际）** 提供。适用范围限于权利人有权许可的版权及类似权利；下述既有 Apache-2.0 授权继续有效。
+新增原创概念图、设计文档、生成提示词、静态页面、工程研究脚本、参数与模型采用 **Creative Commons Attribution-NonCommercial 4.0 International（CC BY-NC 4.0，署名—非商业性使用 4.0 国际）**，仅覆盖许可方实际拥有的版权及类似权利。
 
-- 允许非商业的研究、教学、个人学习和爱好者用途，包括复制、修改与分享。
-- 分享时保留作者署名、许可链接和所提供的声明，并注明修改。建议署名：`Odradek — Auromix contributors`，附[项目链接](https://github.com/Auromix/odradek)。
-- 本许可不授予商业使用权。对需要依赖本许可的商业用途，须先联系项目作者并取得另行书面授权；提出申请本身不构成授权。
-- 商业与否按具体用途判断，不能仅凭“研究”“大学”“非营利”或“公司”标签决定。以商业利益或金钱报酬为主要目的的使用不在 NC 许可范围内；法定例外和已有授权不受本说明削减。
+- 允许非商业研究、教学、个人学习和爱好者用途，包括复制、修改和分享。
+- 分享时保留署名、许可链接及声明，并注明修改。建议署名：`Odradek — Auromix contributors`，附[项目链接](https://github.com/Auromix/odradek)。
+- 需要依赖本许可的商业使用，须先联系作者取得另行书面授权。申请不等于授权。
+- 商业与否按具体用途判断，不能仅凭“研究”“大学”“非营利”或“公司”标签决定。主要面向商业利益或金钱报酬的用途不在 NC 授权内；法定例外和既有授权不受本说明削减。
 
-这里选择 BY-NC，而非 BY-NC-SA：当前要求是署名与非商业使用，没有另行增加“改作必须采用相同许可”的义务。
+采用 BY-NC 而非 BY-NC-SA：当前要求未增加“改作必须采用相同许可”的义务。这是公开共享的非商业设计项目，不满足 OSI 的开源定义。
 
 ## 商业授权联系
 
-通过仓库的 [Commercial license request / 商业授权申请](https://github.com/Auromix/odradek/issues/new?template=commercial-license.yml) 联系作者，由 Auromix 维护者对接。说明使用的版本、素材以及计划用途即可；不要在公开 Issue 中提交保密信息。作者将依据相关内容的权利归属协调授权，具体范围以双方另行达成的书面协议为准。
+通过 [Commercial license request / 商业授权申请](https://github.com/Auromix/odradek/issues/new?template=commercial-license.yml) 联系作者，注明版本、内容和计划用途。不要在公开 Issue 中提交保密信息。Auromix 维护者依据权利归属协调，授权范围以相关权利人另行书面协议为准。
 
-出售或付费分发受保护图稿、将其用于商业营销等，属于需要评估商业授权的典型场景。实体机械臂的制造、销售及功能利用涉及的权利须另行判断，不能仅凭这份图文许可认定允许或禁止。
+出售受保护图稿、付费分发、商业营销等需评估授权。实体机械臂制造、销售与功能利用涉及哪些权利，不能单靠图文文件的 NC 标记判断。
 
-## 已发布版本与生效边界
+## 已发布授权不会被追溯撤销
 
-此前提交 `2416784`、`6999b19`，直至 **[2d7d00f3639f2f80bc4b6c621e13300fea09f88d](https://github.com/Auromix/odradek/tree/2d7d00f3639f2f80bc4b6c621e13300fea09f88d)**，已经按 Apache-2.0 发布。其[原许可文本](LICENSES/Apache-2.0.txt)在仓库内保留作历史授权记录，并非对未来新增内容的统一 Apache 授权。
+| 历史范围 | 已经授出的许可 |
+|---|---|
+| `2416784`、`6999b19`，直至 [2d7d00f3639f2f80bc4b6c621e13300fea09f88d](https://github.com/Auromix/odradek/tree/2d7d00f3639f2f80bc4b6c621e13300fea09f88d) 的已发布内容 | [Apache-2.0](LICENSES/Apache-2.0.txt)，包括符合其条款的商业使用 |
+| R4 提交 `698736a` 至 [c4f1fde](https://github.com/Auromix/odradek/tree/c4f1fde)（含）中以 PolyForm 标识发布的原创 Python 脚本 | [PolyForm Noncommercial 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md)，按原文的允许用途与条件 |
 
-**本次变更不撤销、不缩减此前 Apache-2.0 已经授出的权利。** 使用者仍可在遵守该许可条件的前提下使用和商用此前发布的内容；同一内容在新版本中再次出现，也不会使其失去原授权。新 NC 政策主要适用于本次变更及其后新增或修改内容中尚未按其他条款授出的权利，不能把旧内容仅因移动、重新打包或改写许可声明就变成“禁止商用”。
+**以上既有授权继续有效，包括原样延续到后续版本的内容。** 新文件头、移动目录或重新打包都不会使旧内容失去已经授出的权利。当前 NC 政策只能覆盖尚未按其他条款授出的新增或修改部分的权利。
 
-## 软件、硬件及第三方内容
+此前给工程脚本采用 PolyForm 的决定与 R3 许可记录不一致：PolyForm 对特定非商业组织的允许用途，不能直接等同于本项目按实际用途判断的商业授权边界。现纠正后续新增工程源稿的许可，保留上述历史说明及标准原文，不追溯撤回已授权利。
 
-R4 开始增加工程计算、参数化建模脚本与机械模型，按目录明确区分：
+## 工程源稿、硬件与第三方内容
 
 | 范围 | 新增原创内容的许可 |
-| --- | --- |
-| 文档、图稿、参数数据、原创 STEP／STL／DXF／PDF／Blend 模型 | CC BY-NC 4.0，限许可方拥有的版权及类似权利 |
-| `engineering/` 中原创 Python 计算／CAD／Blender 生成脚本及对应测试 | [PolyForm Noncommercial 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md)，以文件标识为准 |
-| 第三方 SDK、驱动、元件 CAD、软件包 | 各自原许可；不自动纳入上述许可，不擅自重新分发 |
+|---|---|
+| 文档、图稿、参数、原创 STEP / STL / DXF / PDF / Blend 模型 | CC BY-NC 4.0，限许可方拥有的版权及类似权利 |
+| 原创 Python 计算、CAD、Blender 工程研究脚本及检查 | CC BY-NC 4.0，以文件标识为准；此前发布内容保留上述既有许可 |
+| 第三方 SDK、驱动、CAD、软件包、参考图 | 各自原许可，不自动纳入本项目许可，不擅自重新分发 |
 
-软件采用完整、未改写的标准 PolyForm Noncommercial 许可。其允许用途以原文为准，包括规定的个人非商业用途及非商业机构用途，不能笼统改写为“任何研究都允许”或“任何营利机构都禁止”。需要许可但不在其允许范围内的商业软件使用，仍须联系作者取得单独授权。
+当前把工程研究脚本作为设计源稿与模型一并共享。**Creative Commons 官方不建议将 CC 许可用于软件**，因为它没有软件专用的源代码分发、专利等条款。因此此处只说明当前研究源稿的版权授权，不宣称 CC 是推荐的软件发行许可证。正式控制软件、固件或 SDK 发布前，须另行明确适合其用途且符合商业授权政策的软件许可。
 
-模型文件的版权许可不等于已经解决实体制造、功能使用、专利和商标的全部权利问题。不得将文件上标注 NC 理解为对所有功能性硬件制造自动产生禁止权。尚未提供经过验证的控制软件、固件或制造发布版 CAD。
+CC BY-NC 不授予专利或商标权，不会为不受版权保护的功能、思想或材料创造新权利。模型许可不代表已经解决实体制造与销售的全部权利问题。AI 辅助图像仅在权利人实际拥有可许可权利的范围内授权。尚无验证过的控制固件或制造发布版 CAD。实体商业化与授权合同应由具备相应经验的法律专业人士审核。
 
-CC BY-NC 不授予专利或商标权，也不会为不受版权保护的功能、思想或材料创造新权利。AI 辅助图像的许可仅覆盖权利人实际拥有且能够授出的权利。第三方参考图、商标与组件不因在文档中被引用而进入本项目许可。实体产品的制造／销售及正式商业授权合同应由具备相应经验的法律专业人士审核。
+## 贡献
 
-## 贡献者
-
-贡献者保留其权利。提交到当前文档／图稿范围内的原创贡献按 CC BY-NC 4.0 接收，除非明确另有约定。维护者不会仅凭这项非商业许可就假定能将他人的贡献转授为商业许可；需要包含这些贡献的商业授权时，应先取得相应权利人的单独书面许可。
+当前文档、图稿、工程研究源稿与模型的原创贡献按 CC BY-NC 4.0 接收，除非明确另有约定。贡献者保留权利；非商业贡献许可本身不赋予维护者自动转授商业许可的权利。商业授权若涉及第三方贡献，须取得相关权利人的单独书面许可。
 
 ## English summary
 
-Current original concept artwork, design documentation, prompts, and static documentation pages are offered under **CC BY-NC 4.0**, to the extent the licensors hold the relevant rights. Noncommercial research, education, personal study, and hobby use may include copying, adapting, and sharing under its terms. Sharing requires attribution, license information, and indication of changes. Commercial use requiring permission under this license needs a separate written authorization from the relevant rights holders; contact the authors through the repository's commercial-license issue form.
+New original design material, engineering research scripts, parameters, and models use **CC BY-NC 4.0**, only to the extent of rights held by the licensors. Noncommercial research and hobby use, adaptation, and sharing are permitted under its terms; commercial use requiring that permission needs separate written authorization through the issue form above.
 
-Previously published material through commit **2d7d00f** remains available under its already-granted Apache-2.0 rights, including commercial use under those terms. Changing the current license does not withdraw that grant, including for unchanged material carried forward. The new policy governs only rights in new material or changes not already granted under other terms.
+Prior Apache-2.0 grants through `2d7d00f` and PolyForm grants for marked scripts in `698736a` through `c4f1fde` remain valid, including unchanged material carried forward. New notices do not revoke those grants. The PolyForm copy is retained for historical scope, not as a blanket license for future additions.
 
-R4 introduces engineering calculation and model-generation software under the unmodified PolyForm Noncommercial 1.0.0 license, with file-level notices. Original design files, models, drawings, and parameter data use CC BY-NC 4.0 to the extent of applicable copyright and similar rights. Third-party components retain their own terms. No validated control firmware or manufacturing-release CAD is asserted. These notices do not by themselves establish control over functional hardware manufacture; contributor commercial permissions, third-party rights, and statutory exceptions remain distinct.
+Creative Commons recommends against using CC licenses for software. The present research-source policy is not a claim that CC supplies software-specific source or patent provisions; future control firmware or SDK releases need a separate suitable license decision. Copyright notices alone do not establish control over functional hardware manufacture. Third-party rights, contributor commercial permissions, and statutory exceptions remain distinct.
 
 ## Official references
 
-- [CC BY-NC 4.0 legal code](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en): noncommercial grant, attribution, separate terms, and rights excluded.
-- [Creative Commons FAQ](https://creativecommons.org/faq/): noncommercial purpose is distinct from the user's legal status; software and hardware need different consideration.
-- [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0): existing copyright grant is perpetual and irrevocable, subject to its terms.
-- [Open Source Definition, section 6](https://opensource.org/osd): a noncommercial restriction does not meet the OSI definition of open source.
-- [PolyForm Noncommercial 1.0.0 official text](https://polyformproject.org/licenses/noncommercial/1.0.0): permitted software purposes and notices; the repository copy is unmodified.
-
-Therefore the project is described as **a publicly shared design for noncommercial use**, not an OSI open-source project.
+- [CC BY-NC 4.0 legal code](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)
+- [Creative Commons FAQ: software](https://creativecommons.org/faq/#can-i-apply-a-creative-commons-license-to-software)
+- [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+- [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)
+- [Open Source Definition, section 6](https://opensource.org/osd)

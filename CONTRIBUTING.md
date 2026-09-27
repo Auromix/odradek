@@ -1,6 +1,6 @@
 # Contributing to Odradek
 
-Odradek is currently a concept-stage project. Contributions in English or Chinese are welcome.
+Odradek is currently an engineering research project with parameterized CAD and mathematical checks, without manufacturing release or validated hardware. Contributions in English or Chinese are welcome.
 
 ## Useful contributions now
 
@@ -22,8 +22,8 @@ Use the concept-feedback issue template for visual review. For proposed changes,
 
 ## License
 
-Original contributions within the current artwork/documentation scope are accepted under [CC BY-NC 4.0](LICENSE), unless a different arrangement is explicitly documented and accepted. You must hold the rights needed for that contribution. You retain ownership; this policy does not assign your rights or automatically grant the maintainers commercial relicensing rights.
+Original contributions within the current artwork, documentation, engineering research source, parameter, and model scope are accepted under [CC BY-NC 4.0](LICENSE), unless a different arrangement is explicitly documented and accepted. You must hold the rights needed for that contribution. You retain ownership; this policy does not assign your rights or automatically grant the maintainers commercial relicensing rights.
 
-A commercial authorization covering third-party contributions requires separate written permission from the relevant rights holders. Before adding software, firmware, or manufacturing CAD, establish the applicable file or directory license with the maintainers. See [LICENSING.md](LICENSING.md) for scope, prior Apache-2.0 grants, and the commercial contact route.
+A commercial authorization covering third-party contributions requires separate written permission from the relevant rights holders. CC licenses lack software-specific provisions and are not recommended by Creative Commons for software; the current engineering research-source policy is explicitly limited in this respect. Before adding production control software, firmware, or SDKs, establish a suitable license with the maintainers. See [LICENSING.md](LICENSING.md) for scope, prior Apache-2.0 and PolyForm grants, and the commercial contact route.
 
 Preserve third-party notices. Do not include secrets, credentials, or private user data.
