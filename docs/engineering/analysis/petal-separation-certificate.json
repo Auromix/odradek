@@ -1,0 +1,242 @@
+{
+  "revision": "R4-layout-03",
+  "status": "ANALYTIC NOMINAL PETAL-TO-PETAL SEPARATION ONLY",
+  "input_sha256": {
+    "engineering/parameters/r4-layout.json": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "engineering/generated/layout/manifest.json": "08ccb3c6e324197d2f5214113b3db36cade7eaa31bab47e5f8b7909354295da3",
+    "engineering/generated/layout/parts-step/F_UR_structure.step": "48b37fd9373e3e44eefae154ac598a7499f228f098c2723c602dbadc44bd7c43",
+    "engineering/generated/layout/parts-step/F_UR_light.step": "5c8d586f0748789233d7a98e92bf5c2b4c4f5bedc338bc071117b99ef026e78f",
+    "engineering/generated/layout/parts-step/F_UR_pad_-1.step": "1a553068c2a602a38f7db2c80c5221c06a2639df294ec4b7935c11acf6e6c30a",
+    "engineering/generated/layout/parts-step/F_UR_pad_1.step": "7fee22e011ce02803f1c648df820282ac0adfc69480395a38c585a555a65903d",
+    "engineering/generated/layout/parts-step/F_UL_structure.step": "407f3af74c0542544020d45cfc2a90acc9fe5f8babbbec6f3b1ff2dd46726e68",
+    "engineering/generated/layout/parts-step/F_UL_light.step": "35a1bdfd5c2617aaa0cf6f6e46292f1b9e064f11942cf0dd78cf876eaf831188",
+    "engineering/generated/layout/parts-step/F_UL_pad_-1.step": "9e8b11b17f38634517a1b4cb434fe5669fc3271f161e4e89f7ff4ff6b24808ff",
+    "engineering/generated/layout/parts-step/F_UL_pad_1.step": "ce65cad8b22603c501fc57048d0f970d3baf51ca4c8572fa01fab516b27d5804",
+    "engineering/generated/layout/parts-step/F_LL_structure.step": "eb78e59455036edec0255a1d802a8cb115dc4948e6fd52b8eb43cd12e6d303cc",
+    "engineering/generated/layout/parts-step/F_LL_light.step": "a894e290e73bb72b36068bd60dfb10a6dd1b5f8b96ea6b449dc5d66c0e17ce90",
+    "engineering/generated/layout/parts-step/F_LL_pad_-1.step": "ee453de7f52590ae12d5149d6a2a9b80c76eb85375270f0071055292f293f24f",
+    "engineering/generated/layout/parts-step/F_LL_pad_1.step": "2591d758427d24efb94e52c9c7239ea44eb7d5c5b5636ddc5cfdf67bcb5a2ed9",
+    "engineering/generated/layout/parts-step/F_LR_structure.step": "aa898c720d324afd1f32e97605b275f8f61767b1ddaa18bb0db3689b230804cd",
+    "engineering/generated/layout/parts-step/F_LR_light.step": "2fa52d1957f618a5b3b45abf12a60a02c5c322cf3ad7233bb8551e8c272f4659",
+    "engineering/generated/layout/parts-step/F_LR_pad_-1.step": "eded2d553d85ab6df6cea7c7a917b756d7a1a29e0f8c665d1f484188d9722505",
+    "engineering/generated/layout/parts-step/F_LR_pad_1.step": "08b65070ef43c2029b5623dcbd06fc32f3943d9665e461457b391b1d3147aa46"
+  },
+  "proof_method": "coordinate extrema of every exact planar-solid vertex over independent intervals",
+  "fingers": [
+    {
+      "finger": "UR",
+      "interval_deg": [
+        0,
+        114
+      ],
+      "parts": [
+        "F_UR_structure",
+        "F_UR_light",
+        "F_UR_pad_-1",
+        "F_UR_pad_1"
+      ],
+      "planar_vertex_count": 48,
+      "quadrant_margins": [
+        {
+          "axis": "x",
+          "side_sign": 1,
+          "minimum_signed_coordinate_mm": 4.886340148761957,
+          "worst_q_deg": 114.00000000000001,
+          "home_vertex_mm": [
+            170.70270349708,
+            177.33510133558,
+            786.0
+          ]
+        },
+        {
+          "axis": "y",
+          "side_sign": 1,
+          "minimum_signed_coordinate_mm": 1.5565753445184178,
+          "worst_q_deg": 114.00000000000001,
+          "home_vertex_mm": [
+            161.21974221472,
+            160.34289184842,
+            789.45855935468
+          ]
+        }
+      ]
+    },
+    {
+      "finger": "UL",
+      "interval_deg": [
+        0,
+        114
+      ],
+      "parts": [
+        "F_UL_structure",
+        "F_UL_light",
+        "F_UL_pad_-1",
+        "F_UL_pad_1"
+      ],
+      "planar_vertex_count": 48,
+      "quadrant_margins": [
+        {
+          "axis": "x",
+          "side_sign": -1,
+          "minimum_signed_coordinate_mm": 4.886340148757517,
+          "worst_q_deg": 114.00000000000001,
+          "home_vertex_mm": [
+            -170.702703497,
+            177.33510133558,
+            786.0
+          ]
+        },
+        {
+          "axis": "y",
+          "side_sign": 1,
+          "minimum_signed_coordinate_mm": 1.5565753445316854,
+          "worst_q_deg": 114.00000000000001,
+          "home_vertex_mm": [
+            -161.2197422147,
+            160.34289184842,
+            789.45855935468
+          ]
+        }
+      ]
+    },
+    {
+      "finger": "LL",
+      "interval_deg": [
+        0,
+        126
+      ],
+      "parts": [
+        "F_LL_structure",
+        "F_LL_light",
+        "F_LL_pad_-1",
+        "F_LL_pad_1"
+      ],
+      "planar_vertex_count": 48,
+      "quadrant_margins": [
+        {
+          "axis": "x",
+          "side_sign": -1,
+          "minimum_signed_coordinate_mm": 3.2296202822621867,
+          "worst_q_deg": 126.0,
+          "home_vertex_mm": [
+            -118.9353605955,
+            -66.48094500784,
+            836.0
+          ]
+        },
+        {
+          "axis": "y",
+          "side_sign": -1,
+          "minimum_signed_coordinate_mm": 3.2296202823084914,
+          "worst_q_deg": 126.0,
+          "home_vertex_mm": [
+            -121.4809450078,
+            -63.93536059557,
+            836.0
+          ]
+        }
+      ]
+    },
+    {
+      "finger": "LR",
+      "interval_deg": [
+        0,
+        126
+      ],
+      "parts": [
+        "F_LR_structure",
+        "F_LR_light",
+        "F_LR_pad_-1",
+        "F_LR_pad_1"
+      ],
+      "planar_vertex_count": 48,
+      "quadrant_margins": [
+        {
+          "axis": "x",
+          "side_sign": 1,
+          "minimum_signed_coordinate_mm": 3.229620282276639,
+          "worst_q_deg": 126.0,
+          "home_vertex_mm": [
+            118.93536059557,
+            -66.48094500784,
+            836.0
+          ]
+        },
+        {
+          "axis": "y",
+          "side_sign": -1,
+          "minimum_signed_coordinate_mm": 3.229620282276536,
+          "worst_q_deg": 126.0,
+          "home_vertex_mm": [
+            121.48094500784,
+            -63.93536059557,
+            836.0
+          ]
+        }
+      ]
+    }
+  ],
+  "pair_bounds": [
+    {
+      "a": "UR",
+      "b": "UL",
+      "best_axis_certificate": {
+        "axis": "x",
+        "lower_bound_mm": 9.772680297519475
+      },
+      "nominal_2mm_separation_proven": true
+    },
+    {
+      "a": "UR",
+      "b": "LL",
+      "best_axis_certificate": {
+        "axis": "x",
+        "lower_bound_mm": 8.115960431024144
+      },
+      "nominal_2mm_separation_proven": true
+    },
+    {
+      "a": "UR",
+      "b": "LR",
+      "best_axis_certificate": {
+        "axis": "y",
+        "lower_bound_mm": 4.786195626794954
+      },
+      "nominal_2mm_separation_proven": true
+    },
+    {
+      "a": "UL",
+      "b": "LL",
+      "best_axis_certificate": {
+        "axis": "y",
+        "lower_bound_mm": 4.786195626840177
+      },
+      "nominal_2mm_separation_proven": true
+    },
+    {
+      "a": "UL",
+      "b": "LR",
+      "best_axis_certificate": {
+        "axis": "x",
+        "lower_bound_mm": 8.115960431034157
+      },
+      "nominal_2mm_separation_proven": true
+    },
+    {
+      "a": "LL",
+      "b": "LR",
+      "best_axis_certificate": {
+        "axis": "x",
+        "lower_bound_mm": 6.459240564538826
+      },
+      "nominal_2mm_separation_proven": true
+    }
+  ],
+  "all_six_pairs_separated_by_2mm": true,
+  "excludes": [
+    "stationary head, cameras, belts, shafts, supports, cable motion",
+    "manufacturing tolerance, fillet changes, flexure, wear and objects",
+    "gripping efficacy or a sealed shell"
+  ],
+  "minimizer_self_check_count": 100
+}

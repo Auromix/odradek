@@ -1,0 +1,758 @@
+{
+  "R_mm": 70,
+  "q_top_mm": 2.5,
+  "q_bottom_mm": 2.5,
+  "axis_signs": [
+    1,
+    1
+  ],
+  "passes_conservative_hardware_obb_screen": true,
+  "minimum_tested_gap_mm": 1.149999999999996,
+  "failures": [],
+  "envelope": {
+    "coaxial_enclosing_diameter_mm": 175.034282356343,
+    "z_min_mm": -42.0,
+    "z_max_mm": 67.0,
+    "depth_mm": 109.0,
+    "aabb_min_mm": [
+      -84.38147484034542,
+      -68.23580438450185,
+      -42.0
+    ],
+    "aabb_max_mm": [
+      84.38147484034542,
+      57.68309438328643,
+      67.0
+    ]
+  },
+  "coordinates": [
+    {
+      "finger": "UR",
+      "phi_deg": 35.0,
+      "motor_axis_sign_e_t": 1,
+      "motor_center_tangent_mm": -40.699999999999996,
+      "hinge_pulley_tangent_mm": 2.5,
+      "body_center_mm": [
+        50.03534108566819,
+        -14.650402757512385,
+        -25.0
+      ],
+      "front_mounting_face_center_mm": [
+        29.931486991564032,
+        14.060876394816777,
+        -25.0
+      ],
+      "shaft_tip_mm": [
+        20.582191079041984,
+        27.413054716727345,
+        -25.0
+      ],
+      "drive_pulley_center_mm": [
+        25.256839035303006,
+        20.73696555577206,
+        -25.0
+      ],
+      "hinge_pulley_center_mm": [
+        55.90670200935181,
+        42.1982306552957,
+        0.0
+      ],
+      "hinge_axis_anchor_mm": [
+        57.34064310022943,
+        40.15035054457322,
+        0.0
+      ],
+      "drive_to_hinge_center_distance_mm": 44.99999999999999
+    },
+    {
+      "finger": "UL",
+      "phi_deg": 145.0,
+      "motor_axis_sign_e_t": -1,
+      "motor_center_tangent_mm": 40.699999999999996,
+      "hinge_pulley_tangent_mm": -2.5,
+      "body_center_mm": [
+        -50.035341085668186,
+        -14.650402757512396,
+        -25.0
+      ],
+      "front_mounting_face_center_mm": [
+        -29.93148699156403,
+        14.06087639481677,
+        -25.0
+      ],
+      "shaft_tip_mm": [
+        -20.58219107904198,
+        27.413054716727338,
+        -25.0
+      ],
+      "drive_pulley_center_mm": [
+        -25.256839035303003,
+        20.736965555772052,
+        -25.0
+      ],
+      "hinge_pulley_center_mm": [
+        -55.90670200935182,
+        42.198230655295696,
+        0.0
+      ],
+      "hinge_axis_anchor_mm": [
+        -57.340643100229435,
+        40.150350544573215,
+        0.0
+      ],
+      "drive_to_hinge_center_distance_mm": 45.0
+    },
+    {
+      "finger": "LL",
+      "phi_deg": 225.0,
+      "motor_axis_sign_e_t": 1,
+      "motor_center_tangent_mm": -40.699999999999996,
+      "hinge_pulley_tangent_mm": 2.5,
+      "body_center_mm": [
+        -51.819207566704904,
+        5.739284421880072,
+        25.0
+      ],
+      "front_mounting_face_center_mm": [
+        -27.035114886116418,
+        -19.04480825870842,
+        25.0
+      ],
+      "shaft_tip_mm": [
+        -15.509274352775693,
+        -30.57064879204915,
+        25.0
+      ],
+      "drive_pulley_center_mm": [
+        -21.272194619446054,
+        -24.807728525378785,
+        25.0
+      ],
+      "hinge_pulley_center_mm": [
+        -47.72970773009197,
+        -51.26524163602469,
+        50.0
+      ],
+      "hinge_axis_anchor_mm": [
+        -49.497474683058336,
+        -49.49747468305832,
+        50.0
+      ],
+      "drive_to_hinge_center_distance_mm": 45.00000000000001
+    },
+    {
+      "finger": "LR",
+      "phi_deg": 315.0,
+      "motor_axis_sign_e_t": -1,
+      "motor_center_tangent_mm": 40.699999999999996,
+      "hinge_pulley_tangent_mm": -2.5,
+      "body_center_mm": [
+        51.819207566704904,
+        5.7392844218800505,
+        25.0
+      ],
+      "front_mounting_face_center_mm": [
+        27.03511488611641,
+        -19.044808258708432,
+        25.0
+      ],
+      "shaft_tip_mm": [
+        15.509274352775682,
+        -30.570648792049155,
+        25.0
+      ],
+      "drive_pulley_center_mm": [
+        21.272194619446047,
+        -24.807728525378792,
+        25.0
+      ],
+      "hinge_pulley_center_mm": [
+        47.729707730091945,
+        -51.265241636024705,
+        50.0
+      ],
+      "hinge_axis_anchor_mm": [
+        49.497474683058314,
+        -49.497474683058336,
+        50.0
+      ],
+      "drive_to_hinge_center_distance_mm": 45.0
+    }
+  ],
+  "belt_cover_test": {
+    "passes": true,
+    "minimum_tested_gap_mm": 6.1016759333465025,
+    "failures": [],
+    "box_count": 296,
+    "belt_thickness_assumption_mm": 3.0
+  },
+  "envelope_with_belt_cover": {
+    "coaxial_enclosing_diameter_mm": 175.034282356343,
+    "z_min_mm": -42.0,
+    "z_max_mm": 67.0,
+    "depth_mm": 109.0,
+    "aabb_min_mm": [
+      -84.38147484034542,
+      -68.23580438450185,
+      -42.0
+    ],
+    "aabb_max_mm": [
+      84.38147484034542,
+      57.68309438328643,
+      67.0
+    ]
+  },
+  "parts": [
+    {
+      "name": "UR_body",
+      "group": 0,
+      "center": [
+        50.03534108566819,
+        -14.650402757512385,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.8191520442889918,
+          0.0
+        ],
+        [
+          0.8191520442889918,
+          0.573576436351046,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        35.05,
+        11.0,
+        11.0
+      ],
+      "kind": "motor_body"
+    },
+    {
+      "name": "UR_shaft",
+      "group": 0,
+      "center": [
+        25.256839035303006,
+        20.73696555577206,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.8191520442889918,
+          0.0
+        ],
+        [
+          0.8191520442889918,
+          0.573576436351046,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        8.15,
+        3.0,
+        3.0
+      ],
+      "kind": "motor_shaft"
+    },
+    {
+      "name": "UR_drive_pulley",
+      "group": 0,
+      "center": [
+        25.256839035303006,
+        20.73696555577206,
+        -25.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.8191520442889918,
+          0.0
+        ],
+        [
+          0.8191520442889918,
+          0.573576436351046,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        7.0,
+        17.0,
+        17.0
+      ],
+      "kind": "drive_pulley"
+    },
+    {
+      "name": "UR_hinge_pulley",
+      "group": 0,
+      "center": [
+        55.90670200935181,
+        42.1982306552957,
+        0.0
+      ],
+      "axes": [
+        [
+          -0.573576436351046,
+          0.8191520442889918,
+          0.0
+        ],
+        [
+          0.8191520442889918,
+          0.573576436351046,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        7.0,
+        17.0,
+        17.0
+      ],
+      "kind": "hinge_pulley"
+    },
+    {
+      "name": "UL_body",
+      "group": 1,
+      "center": [
+        -50.035341085668186,
+        -14.650402757512396,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.8191520442889919,
+          0.0
+        ],
+        [
+          0.8191520442889919,
+          0.5735764363510459,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        35.05,
+        11.0,
+        11.0
+      ],
+      "kind": "motor_body"
+    },
+    {
+      "name": "UL_shaft",
+      "group": 1,
+      "center": [
+        -25.256839035303003,
+        20.736965555772052,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.8191520442889919,
+          0.0
+        ],
+        [
+          0.8191520442889919,
+          0.5735764363510459,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        8.15,
+        3.0,
+        3.0
+      ],
+      "kind": "motor_shaft"
+    },
+    {
+      "name": "UL_drive_pulley",
+      "group": 1,
+      "center": [
+        -25.256839035303003,
+        20.736965555772052,
+        -25.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.8191520442889919,
+          0.0
+        ],
+        [
+          0.8191520442889919,
+          0.5735764363510459,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        7.0,
+        17.0,
+        17.0
+      ],
+      "kind": "drive_pulley"
+    },
+    {
+      "name": "UL_hinge_pulley",
+      "group": 1,
+      "center": [
+        -55.90670200935182,
+        42.198230655295696,
+        0.0
+      ],
+      "axes": [
+        [
+          0.5735764363510459,
+          -0.8191520442889919,
+          0.0
+        ],
+        [
+          0.8191520442889919,
+          0.5735764363510459,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        7.0,
+        17.0,
+        17.0
+      ],
+      "kind": "hinge_pulley"
+    },
+    {
+      "name": "LL_body",
+      "group": 2,
+      "center": [
+        -51.819207566704904,
+        5.739284421880072,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.7071067811865477,
+          0.0
+        ],
+        [
+          -0.7071067811865477,
+          -0.7071067811865475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        35.05,
+        11.0,
+        11.0
+      ],
+      "kind": "motor_body"
+    },
+    {
+      "name": "LL_shaft",
+      "group": 2,
+      "center": [
+        -21.272194619446054,
+        -24.807728525378785,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.7071067811865477,
+          0.0
+        ],
+        [
+          -0.7071067811865477,
+          -0.7071067811865475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        8.15,
+        3.0,
+        3.0
+      ],
+      "kind": "motor_shaft"
+    },
+    {
+      "name": "LL_drive_pulley",
+      "group": 2,
+      "center": [
+        -21.272194619446054,
+        -24.807728525378785,
+        25.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.7071067811865477,
+          0.0
+        ],
+        [
+          -0.7071067811865477,
+          -0.7071067811865475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        7.0,
+        17.0,
+        17.0
+      ],
+      "kind": "drive_pulley"
+    },
+    {
+      "name": "LL_hinge_pulley",
+      "group": 2,
+      "center": [
+        -47.72970773009197,
+        -51.26524163602469,
+        50.0
+      ],
+      "axes": [
+        [
+          0.7071067811865475,
+          -0.7071067811865477,
+          0.0
+        ],
+        [
+          -0.7071067811865477,
+          -0.7071067811865475,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        7.0,
+        17.0,
+        17.0
+      ],
+      "kind": "hinge_pulley"
+    },
+    {
+      "name": "LR_body",
+      "group": 3,
+      "center": [
+        51.819207566704904,
+        5.7392844218800505,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.7071067811865474,
+          0.0
+        ],
+        [
+          -0.7071067811865474,
+          -0.7071067811865477,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        35.05,
+        11.0,
+        11.0
+      ],
+      "kind": "motor_body"
+    },
+    {
+      "name": "LR_shaft",
+      "group": 3,
+      "center": [
+        21.272194619446047,
+        -24.807728525378792,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.7071067811865474,
+          0.0
+        ],
+        [
+          -0.7071067811865474,
+          -0.7071067811865477,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        8.15,
+        3.0,
+        3.0
+      ],
+      "kind": "motor_shaft"
+    },
+    {
+      "name": "LR_drive_pulley",
+      "group": 3,
+      "center": [
+        21.272194619446047,
+        -24.807728525378792,
+        25.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.7071067811865474,
+          0.0
+        ],
+        [
+          -0.7071067811865474,
+          -0.7071067811865477,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        7.0,
+        17.0,
+        17.0
+      ],
+      "kind": "drive_pulley"
+    },
+    {
+      "name": "LR_hinge_pulley",
+      "group": 3,
+      "center": [
+        47.729707730091945,
+        -51.265241636024705,
+        50.0
+      ],
+      "axes": [
+        [
+          -0.7071067811865477,
+          0.7071067811865474,
+          0.0
+        ],
+        [
+          -0.7071067811865474,
+          -0.7071067811865477,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "half": [
+        7.0,
+        17.0,
+        17.0
+      ],
+      "kind": "hinge_pulley"
+    }
+  ],
+  "status": "FORWARD-LOWER DRIVE ENVELOPE SCREEN ONLY; NOT FULL GRIPPER CAD",
+  "revision": "R4 lower roots +50 mm; upper roots0; motor axes upper -25/lower+25",
+  "units": "mm, deg",
+  "changes_from_original": "Lower finger-root z changed from -25 to +50; lower motor-axis z from -50 to +25. Upper roots/motors unchanged. R70, q±2.5, s∓40.7 and shaft directions unchanged.",
+  "assumptions": {
+    "motor_body_diameter_mm": 22,
+    "motor_body_length_mm": 70.1,
+    "motor_body_length_status": "provisional combined length; not final supplier assembly drawing",
+    "shaft_length_mm": 16.3,
+    "shaft_diameter_mm": 6,
+    "pulley_outer_diameter_assumption_mm": 34,
+    "pulley_total_width_assumption_mm": 14,
+    "drive_pulley_center_from_motor_front_mm": 8.15,
+    "belt_width_mm": 9,
+    "belt_thickness_assumption_mm": 3,
+    "required_noncontact_gap_mm": 1,
+    "excluded": [
+      "finger bodies and full sweeps",
+      "palm/display/cameras",
+      "independent input/output shaft bearings and carriers",
+      "coupling, motor supports and tension adjustment",
+      "wires, connectors, heat paths and manufacturing tolerances"
+    ]
+  },
+  "sources": [
+    {
+      "path": "docs/engineering/gripper-drive-packaging.md",
+      "scope": "original fixed-input study"
+    },
+    {
+      "scope": "root task revised geometry request",
+      "details": "R70; phi35/145/225/315; lower roots+50 and lower motor axes+25"
+    }
+  ],
+  "reproduction": {
+    "script_filename": "pack_forward_lower.py",
+    "script_sha256": "7e1310611c9b65c7622d27a9ffe021901af689d0dff816c594c5b0ea70a3ad08",
+    "call": "assess(70,2.5,2.5,(1,1),belts=True)"
+  }
+}
