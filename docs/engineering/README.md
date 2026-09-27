@@ -9,6 +9,7 @@
 | 结构布局 | [R4 布局、闭合与抓取](r4-layout-and-grasp.md) | 同参数 74 组 STEP、7＋4 Blender、A3评审图；连接与动态线束未完整 |
 | 本体数学 | [运动学与动力学](arm-mathematics.md)／[静力独立审查](arm-screening-review.md) | 解析回归、独立重量叉乘、质心敏感性；非实机额定值 |
 | 独立动力学复核 | [DYNAMICS-REVIEW01](rigid-body-dynamics-review.md) | 五段21实体CAD惯量；24组独立力/矩法、拉格朗日与能量检查一致，剩余质量代理/转子/热仍未验证 |
+| 7＋4耦合动力学 | [DYNAMICS-11DOF01](articulated-dynamics-review.md) | 六段24实体＋整头13刚体，去除重复L7预算；解析Jacobian/直接刚体力矩/能量/推杆虚功一致，未计量余量与夹持接触负载仍需加入 |
 | 夹爪数学 | [当前抓取 LP 审查](grasp-screening-review.md)／[独立角域分离](petal-certificate-review.md) | 72 个条件接触场景；16 实体独立角域闭合证明，不含完整支承 |
 | 实际物体接触 | [有限双垫研究](finite-pad-contact-study.md) | 八点共享四个指轴；Ø80 圆柱先碰骨架/灯窗，接触结构待修正 |
 | 双垫受力分担 | [最低共同力矩上限](paired-pad-loadsharing.md) | 90种分担/摩擦/直径；区分一组最小夹力解与最低所需驱动上限 |

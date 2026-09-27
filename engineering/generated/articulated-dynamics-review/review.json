@@ -1,0 +1,788 @@
+{
+  "revision": "DYNAMICS-11DOF01",
+  "passed": true,
+  "manufacturing_release": false,
+  "physical_payload_qualification": false,
+  "model_mass_including_fixed_J1_and_2kg_object_kg": 21.383620345104976,
+  "head_modeled_mass_kg": 2.802491324757483,
+  "generalized_order": [
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J5",
+    "J6",
+    "J7",
+    "UR",
+    "UL",
+    "LL",
+    "LR"
+  ],
+  "trials": [
+    {
+      "trial": 0,
+      "q_deg": [
+        -36.76292127210567,
+        56.03218770752991,
+        -50.24509761951161,
+        -59.4669874875788,
+        -47.63889915247305,
+        -69.7422244083775,
+        -53.149252628053134,
+        47.261652782671746,
+        45.736944014651186,
+        25.40732982688549,
+        46.73685862038161
+      ],
+      "qd_rad_s": [
+        -0.5028067869004983,
+        0.5423815542112816,
+        -0.3058044365547637,
+        -0.09995681713405724,
+        -0.3785953933164684,
+        0.3365319629096349,
+        -0.0399296963569876,
+        0.5571171819103645,
+        0.31441601967242366,
+        -0.1490146442646232,
+        -0.591348432202239
+      ],
+      "qdd_rad_s2": [
+        1.0510914633577717,
+        0.8724478619923767,
+        -0.03058399168594121,
+        0.907582178598892,
+        -1.1946614723662123,
+        0.22759019332844144,
+        0.8710370784958267,
+        0.9501801510937675,
+        -0.5171700255271954,
+        0.4694481359546249,
+        -0.2516339395240682
+      ],
+      "max_analytic_numeric_J_error": 6.742784108837441e-11,
+      "max_gravity_gradient_error_Nm": 8.627543124362091e-09,
+      "minimum_mass_matrix_eigenvalue_kg_m2": 0.00011796799764382316,
+      "direct_force_comparisons": [
+        {
+          "trajectory_difference_step_s": 0.0002,
+          "max_effort_error_Nm": 3.0615460833161023e-08
+        },
+        {
+          "trajectory_difference_step_s": 0.0001,
+          "max_effort_error_Nm": 6.82390670636579e-08
+        }
+      ],
+      "kinetic_energy_error_J": 3.719136110191812e-12,
+      "energy_identity_error_W": 1.9500373538150484e-11,
+      "P16_virtual_work_error_W": 3.59091228974151e-13,
+      "generalized_effort_Nm": [
+        1.5722928636101405,
+        -37.57632595327414,
+        -8.793126945840271,
+        14.594997241146103,
+        9.392967657170315,
+        -2.5598776580870046,
+        -0.016757987525835627,
+        -0.0018706188172852127,
+        0.01953217338783246,
+        -0.001755648065944335,
+        -0.010854896196345318
+      ],
+      "ideal_P16_axial_force_N": [
+        -0.07277983237484845,
+        0.7634396044770345,
+        -0.07988658131095247,
+        -0.42296027121966007
+      ],
+      "sample_is_qualified_trajectory": false
+    },
+    {
+      "trial": 1,
+      "q_deg": [
+        -26.268886379551674,
+        -33.76260561082412,
+        50.59342159761465,
+        -66.3727959481082,
+        -22.332550066515445,
+        4.160646022608714,
+        3.7759422287941597,
+        83.39103501233116,
+        19.24115316186276,
+        96.61523308339129,
+        91.4393629530986
+      ],
+      "qd_rad_s": [
+        -0.26588791475845264,
+        -0.3683485025714667,
+        0.531168851167421,
+        -0.5139486835334791,
+        -0.4134249139575485,
+        0.13517919563374256,
+        -0.3827976185471245,
+        0.3893809642656512,
+        -0.27584993227485205,
+        0.21651390288132646,
+        0.1601187188292205
+      ],
+      "qdd_rad_s2": [
+        -0.9883471607010321,
+        0.7422609828340069,
+        1.0064451697029215,
+        0.7748645059338453,
+        0.052427632804328536,
+        -0.28057431347210143,
+        -0.6722883332348542,
+        0.3523871310065135,
+        0.04264068608171447,
+        0.984534155588119,
+        -0.6314899658345992
+      ],
+      "max_analytic_numeric_J_error": 8.86588580328862e-11,
+      "max_gravity_gradient_error_Nm": 6.502792970763949e-09,
+      "minimum_mass_matrix_eigenvalue_kg_m2": 0.00011886311013313941,
+      "direct_force_comparisons": [
+        {
+          "trajectory_difference_step_s": 0.0002,
+          "max_effort_error_Nm": 1.594608356469962e-08
+        },
+        {
+          "trajectory_difference_step_s": 0.0001,
+          "max_effort_error_Nm": 4.0654821731322954e-08
+        }
+      ],
+      "kinetic_energy_error_J": 2.7538082925104845e-11,
+      "energy_identity_error_W": 3.2737666744164784e-11,
+      "P16_virtual_work_error_W": 1.7753168726764024e-12,
+      "generalized_effort_Nm": [
+        -0.7576903538671622,
+        4.355374781509756,
+        -9.2346647914292,
+        17.603228427249217,
+        1.9703439356930719,
+        -4.508385765905054,
+        0.025291943055785127,
+        0.036722565872574726,
+        0.02257823911513853,
+        -0.015967035691943018,
+        0.0010970955770968468
+      ],
+      "ideal_P16_axial_force_N": [
+        1.5756736621981975,
+        1.1230107981599036,
+        -0.7812463836035469,
+        0.05064972693263726
+      ],
+      "sample_is_qualified_trajectory": false
+    },
+    {
+      "trial": 2,
+      "q_deg": [
+        8.308073389119933,
+        19.545159354098313,
+        -52.92456366185665,
+        11.528756500703741,
+        -13.255315525488532,
+        -47.13884253188646,
+        3.416960393834898,
+        17.73133350679161,
+        81.80213086658483,
+        73.0070547673692,
+        56.71104805204313
+      ],
+      "qd_rad_s": [
+        -0.24663522760738638,
+        -0.27791243136465504,
+        0.23924527733565515,
+        -0.22877829400308702,
+        -0.20625130482054413,
+        0.07974295083700235,
+        -0.4855264087815895,
+        0.3089546658700606,
+        -0.03568509130216233,
+        0.1850028183200075,
+        0.16265763788161944
+      ],
+      "qdd_rad_s2": [
+        0.31381095767889816,
+        1.1776721943487976,
+        -0.4387993968132015,
+        0.6481720928519051,
+        -0.4478636348415473,
+        -0.28894137709962875,
+        -0.3885114153112754,
+        -0.5693470112550955,
+        -0.7268852216878039,
+        -1.0144202628466006,
+        0.37954494464387506
+      ],
+      "max_analytic_numeric_J_error": 5.1439991155532994e-11,
+      "max_gravity_gradient_error_Nm": 1.4443498494443041e-08,
+      "minimum_mass_matrix_eigenvalue_kg_m2": 0.00011764760030583012,
+      "direct_force_comparisons": [
+        {
+          "trajectory_difference_step_s": 0.0002,
+          "max_effort_error_Nm": 2.0557808788623788e-08
+        },
+        {
+          "trajectory_difference_step_s": 0.0001,
+          "max_effort_error_Nm": 3.3371204466448035e-08
+        }
+      ],
+      "kinetic_energy_error_J": 1.7560258802618023e-12,
+      "energy_identity_error_W": 4.264023162336983e-12,
+      "P16_virtual_work_error_W": 1.9925094560391265e-12,
+      "generalized_effort_Nm": [
+        -0.46656290589776367,
+        -6.160481531132285,
+        1.5737519134791467,
+        -5.686426301297059,
+        1.1893197472669708,
+        7.609811440025516,
+        -0.029407822326084607,
+        0.02084863851314123,
+        0.03549313988995759,
+        0.013419816631052083,
+        -0.0002724651328714137
+      ],
+      "ideal_P16_axial_force_N": [
+        1.064161549702785,
+        1.504530824305535,
+        0.5388440983928097,
+        -0.01048075831467596
+      ],
+      "sample_is_qualified_trajectory": false
+    },
+    {
+      "trial": 3,
+      "q_deg": [
+        -20.563534577021958,
+        38.736375660177416,
+        33.853554640988364,
+        16.342650144394188,
+        -61.64448982705775,
+        67.31856256706646,
+        -47.63831230449837,
+        77.6283345315445,
+        60.169781617056586,
+        92.9898423067347,
+        63.56500658034102
+      ],
+      "qd_rad_s": [
+        -0.5183279106530289,
+        0.023041117395008914,
+        0.37855438093225263,
+        -0.598237838951544,
+        0.20999410331647925,
+        -0.2774466244727239,
+        -0.2825121952547329,
+        -0.40657410657901527,
+        0.5420670317804406,
+        -0.36919524663895253,
+        0.23874412948738158
+      ],
+      "qdd_rad_s2": [
+        0.24969420606935067,
+        -1.1002260588402326,
+        0.6218884488657875,
+        1.162829531790477,
+        0.6217726083576923,
+        -1.1143874932841331,
+        0.8059177753123931,
+        -0.44307627510706,
+        0.8766354664131046,
+        0.2567096755464444,
+        0.09922925698809619
+      ],
+      "max_analytic_numeric_J_error": 8.965234110647202e-11,
+      "max_gravity_gradient_error_Nm": 8.681675822685975e-09,
+      "minimum_mass_matrix_eigenvalue_kg_m2": 0.00011779843270271568,
+      "direct_force_comparisons": [
+        {
+          "trajectory_difference_step_s": 0.0002,
+          "max_effort_error_Nm": 5.2309868492361744e-08
+        },
+        {
+          "trajectory_difference_step_s": 0.0001,
+          "max_effort_error_Nm": 3.2050373910408325e-08
+        }
+      ],
+      "kinetic_energy_error_J": 2.6292773513958423e-11,
+      "energy_identity_error_W": 1.218337930541935e-12,
+      "P16_virtual_work_error_W": 3.4309777241503525e-12,
+      "generalized_effort_Nm": [
+        0.3795616615283241,
+        -45.7434823976987,
+        -7.596902459887615,
+        16.644982679358428,
+        2.549013549288544,
+        -11.784766752690432,
+        0.06850090586203492,
+        0.040956275412439486,
+        -0.00456613911637978,
+        -0.027072754008213934,
+        -0.0038342426294282832
+      ],
+      "ideal_P16_axial_force_N": [
+        1.6874159772955786,
+        -0.17612521999053377,
+        -1.2706058133866245,
+        -0.14879793413972855
+      ],
+      "sample_is_qualified_trajectory": false
+    },
+    {
+      "trial": 4,
+      "q_deg": [
+        -10.581343272738044,
+        -13.698062038429912,
+        37.607889401363984,
+        -59.369627116509925,
+        54.321293218414446,
+        -9.005875999804777,
+        44.838203390204605,
+        68.11315112258553,
+        46.52164943448953,
+        77.52338243693096,
+        45.307745967391554
+      ],
+      "qd_rad_s": [
+        0.5924687556268009,
+        0.2723033768789321,
+        0.14780498694922833,
+        -0.03758759150566515,
+        0.4701434991048865,
+        0.1289042682886467,
+        -0.17043026982254997,
+        0.19611676473406336,
+        0.12433302210989416,
+        0.11556362432804401,
+        0.4483585698622979
+      ],
+      "qdd_rad_s2": [
+        0.791835224285928,
+        -0.5646349704740516,
+        -0.5193828944091025,
+        1.161315591513505,
+        -0.43472922186450225,
+        0.7590185848761898,
+        -1.0875750107519189,
+        0.2619076082963714,
+        0.47195503351869106,
+        0.43980170637373567,
+        -0.9410924953774285
+      ],
+      "max_analytic_numeric_J_error": 6.865585877591229e-11,
+      "max_gravity_gradient_error_Nm": 1.0885354839729189e-08,
+      "minimum_mass_matrix_eigenvalue_kg_m2": 0.00011790259483283003,
+      "direct_force_comparisons": [
+        {
+          "trajectory_difference_step_s": 0.0002,
+          "max_effort_error_Nm": 1.9454123145745683e-08
+        },
+        {
+          "trajectory_difference_step_s": 0.0001,
+          "max_effort_error_Nm": 2.167086421422937e-08
+        }
+      ],
+      "kinetic_energy_error_J": 4.9535514579091e-12,
+      "energy_identity_error_W": 1.7003606855858777e-11,
+      "P16_virtual_work_error_W": 9.815481760711009e-13,
+      "generalized_effort_Nm": [
+        1.0781380663807387,
+        -12.451751828630934,
+        -0.4972625034367546,
+        17.142666297424604,
+        2.4187207633521357,
+        -4.593002195599506,
+        -0.02587759542408337,
+        -0.005901923468493468,
+        0.01350174300458052,
+        0.020181031570278365,
+        0.01638819834183227
+      ],
+      "ideal_P16_axial_force_N": [
+        -0.23210616914808777,
+        0.5264310757739288,
+        0.8309256075095123,
+        0.6414780514895863
+      ],
+      "sample_is_qualified_trajectory": false
+    },
+    {
+      "trial": 5,
+      "q_deg": [
+        61.94379579886224,
+        -16.41418782415998,
+        -62.40102475226486,
+        -45.71735627568883,
+        -2.625877037349102,
+        52.61717115563012,
+        -36.10768059327894,
+        28.589615386118236,
+        50.875107895522014,
+        40.287247455505835,
+        44.608115074111275
+      ],
+      "qd_rad_s": [
+        0.3190891478295897,
+        0.0438723366335167,
+        0.16436056951050718,
+        -0.5972284223009033,
+        0.18099011878357987,
+        0.43700508094202867,
+        0.21002909284858826,
+        0.0011140307300135709,
+        0.46965545309082357,
+        -0.38159962299613714,
+        -0.3076803405769522
+      ],
+      "qdd_rad_s2": [
+        0.016336650323029733,
+        -0.4153341241244477,
+        0.6719021429822593,
+        0.1639421130500314,
+        -0.15748972070696388,
+        -0.42471293630751267,
+        1.0043149883788414,
+        -0.5239214833659643,
+        0.19433278407459323,
+        -0.9387598316571576,
+        -0.46546187615268575
+      ],
+      "max_analytic_numeric_J_error": 8.280487406864268e-11,
+      "max_gravity_gradient_error_Nm": 1.4590428421001889e-08,
+      "minimum_mass_matrix_eigenvalue_kg_m2": 0.00011813215749285034,
+      "direct_force_comparisons": [
+        {
+          "trajectory_difference_step_s": 0.0002,
+          "max_effort_error_Nm": 1.794146697875476e-08
+        },
+        {
+          "trajectory_difference_step_s": 0.0001,
+          "max_effort_error_Nm": 7.640408128395393e-08
+        }
+      ],
+      "kinetic_energy_error_J": 4.6185777424767593e-11,
+      "energy_identity_error_W": 1.4859939667655198e-11,
+      "P16_virtual_work_error_W": 2.523311420921104e-13,
+      "generalized_effort_Nm": [
+        -0.016858531365888205,
+        4.385058161572765,
+        6.401363646249552,
+        20.440880567501058,
+        6.1984029890873265,
+        -10.473166269943508,
+        0.04039489224592095,
+        0.009520103646987448,
+        -0.01714251170482438,
+        -0.008991751345805307,
+        0.0024639367047776467
+      ],
+      "ideal_P16_axial_force_N": [
+        0.4175542686172867,
+        -0.6618137431360143,
+        -0.35975252571469035,
+        0.0966857665357014
+      ],
+      "sample_is_qualified_trajectory": false
+    },
+    {
+      "trial": 6,
+      "q_deg": [
+        -27.320909627621614,
+        4.195686911380621,
+        58.396536553314505,
+        9.028952203961014,
+        -7.620851309335036,
+        22.042455632480774,
+        34.202512127875536,
+        88.22434366612156,
+        18.828045889499716,
+        43.9198706483993,
+        47.797419071010935
+      ],
+      "qd_rad_s": [
+        0.10435161898557296,
+        -0.40539988724889126,
+        0.49087489178009425,
+        0.2768193621967495,
+        -0.3010312713898515,
+        0.1036218991537166,
+        0.30098713986929554,
+        -0.5895386729090716,
+        -0.23691173225886988,
+        0.5856053821795795,
+        0.2326487128299019
+      ],
+      "qdd_rad_s2": [
+        0.8112087992934466,
+        -0.577357856259532,
+        -0.680615650025601,
+        -0.9508796145320901,
+        0.9791997766443663,
+        -0.34187554354088273,
+        0.07556903140600059,
+        0.5551271072395642,
+        -1.1933204160789541,
+        -0.39813968897102486,
+        -0.25248676818971016
+      ],
+      "max_analytic_numeric_J_error": 8.595990586002245e-11,
+      "max_gravity_gradient_error_Nm": 6.932159513084457e-09,
+      "minimum_mass_matrix_eigenvalue_kg_m2": 0.00011763495865371731,
+      "direct_force_comparisons": [
+        {
+          "trajectory_difference_step_s": 0.0002,
+          "max_effort_error_Nm": 1.6289549265025016e-08
+        },
+        {
+          "trajectory_difference_step_s": 0.0001,
+          "max_effort_error_Nm": 7.2548589358234494e-09
+        }
+      ],
+      "kinetic_energy_error_J": 5.086486787320155e-12,
+      "energy_identity_error_W": 2.980907187755122e-12,
+      "P16_virtual_work_error_W": 8.235877257956048e-13,
+      "generalized_effort_Nm": [
+        0.3062331268905974,
+        -9.906291992066922,
+        -0.0858501498080494,
+        1.625714512023579,
+        -0.16473077392983093,
+        -2.8119118457461,
+        0.01627725018145806,
+        0.005556453250757141,
+        0.03362614637178457,
+        0.017137403953650744,
+        0.01888457783429228
+      ],
+      "ideal_P16_axial_force_N": [
+        0.2485342306056529,
+        1.6841083615621333,
+        0.6742449268679992,
+        0.7336919950569979
+      ],
+      "sample_is_qualified_trajectory": false
+    },
+    {
+      "trial": 7,
+      "q_deg": [
+        7.714869451798324,
+        31.50642235580586,
+        35.00172889830507,
+        -47.40033635418315,
+        27.48161171755843,
+        -6.890229617523809,
+        19.39884899509846,
+        17.657076955432153,
+        81.66730528044054,
+        78.65541156254433,
+        19.184095098492367
+      ],
+      "qd_rad_s": [
+        -0.022682350157998774,
+        -0.2812492651593919,
+        0.13351884993081592,
+        -0.45044630522662116,
+        0.3129403408895674,
+        -0.42902992781530414,
+        0.5715538245844066,
+        0.04008925369175378,
+        -0.5409719113573211,
+        0.42557030332531975,
+        -0.09548586582028311
+      ],
+      "qdd_rad_s2": [
+        -0.587940902472798,
+        -1.0550823608841116,
+        -0.7252933428248749,
+        -0.5073904493809588,
+        -1.1698326695488157,
+        -0.8072140680244014,
+        -0.5502787898594824,
+        -0.08677555581338119,
+        -0.3559730065922464,
+        -0.7465317796648946,
+        -0.05027661580886287
+      ],
+      "max_analytic_numeric_J_error": 6.705137833851182e-11,
+      "max_gravity_gradient_error_Nm": 9.267019152048306e-09,
+      "minimum_mass_matrix_eigenvalue_kg_m2": 0.00011841291207617,
+      "direct_force_comparisons": [
+        {
+          "trajectory_difference_step_s": 0.0002,
+          "max_effort_error_Nm": 1.7438620769638646e-08
+        },
+        {
+          "trajectory_difference_step_s": 0.0001,
+          "max_effort_error_Nm": 8.122433570179055e-08
+        }
+      ],
+      "kinetic_energy_error_J": 8.9846949324901e-12,
+      "energy_identity_error_W": 2.8540603040638768e-12,
+      "P16_virtual_work_error_W": 7.97768101579166e-13,
+      "generalized_effort_Nm": [
+        -1.173562604704544,
+        -41.26013524768976,
+        1.9953566806359464,
+        24.063950855152488,
+        3.6805059526331494,
+        -7.350742895123056,
+        -0.008676842059913453,
+        0.012017646982699647,
+        -0.03148628108353556,
+        0.009832946786303585,
+        0.004399363374337257
+      ],
+      "ideal_P16_axial_force_N": [
+        0.6142169197755908,
+        -1.3333525342662584,
+        0.4077796194865025,
+        0.21902546950110985
+      ],
+      "sample_is_qualified_trajectory": false
+    }
+  ],
+  "arm_finger_coupling": {
+    "pose": "inspect; only a static mathematical comparison",
+    "arm_finger_mass_matrix_cross_block_kg_m2": [
+      [
+        -0.0003291612299000304,
+        -0.0002960335157914247,
+        -0.0001450511233349326,
+        -0.00017221339498603083
+      ],
+      [
+        0.0005222051441440093,
+        0.0007980818978617364,
+        0.00013028851326691538,
+        0.0005219643149525665
+      ],
+      [
+        -0.00010745806458287498,
+        -0.00011520864396723922,
+        -0.00016758825787810394,
+        -0.00015983731284663683
+      ],
+      [
+        0.0003770560752880091,
+        2.6818756521146332e-05,
+        0.0002621976135095555,
+        -6.26696685510483e-05
+      ],
+      [
+        9.525392114277724e-05,
+        0.00024995035735816387,
+        0.00011897000286015683,
+        -1.5635462971472684e-05
+      ],
+      [
+        -0.0003594546001361823,
+        0.0003594565008148182,
+        3.180857442292925e-06,
+        -3.1832006045890754e-06
+      ],
+      [
+        2.232466240348192e-05,
+        -2.2324539795386265e-05,
+        -2.232453979537691e-05,
+        2.2324662403461308e-05
+      ]
+    ],
+    "open_gravity_effort_Nm": [
+      0.0,
+      -11.43748442866017,
+      1.8163442360719977,
+      23.263083086769694,
+      6.047412006528945,
+      -8.586693943173008,
+      0.03477561104665685,
+      0.013929980953902127,
+      0.028886475267372994,
+      0.017294978783067665,
+      0.0038574633041724353
+    ],
+    "closed_gravity_effort_Nm": [
+      0.0,
+      -11.546030350598873,
+      1.8228892216145982,
+      23.37162900870839,
+      6.032859216992117,
+      -8.695239865111708,
+      0.022089603903991395,
+      0.024265494012553176,
+      -0.033010469632658045,
+      -0.017406035628802292,
+      0.010925932311311243
+    ]
+  },
+  "input_model_scope": {
+    "links_with_CAD": [
+      "12",
+      "23",
+      "34",
+      "45",
+      "56",
+      "67"
+    ],
+    "head_is_budget": false,
+    "head": "HEAD-MASS04 nominal material integrations and explicit catalog inertia proxies",
+    "removed_duplicate_budgets": [
+      "L7_budget",
+      "head_budget"
+    ],
+    "unweighed_head_reserve": "185..450g excluded from this measured-geometry subtotal; not a complete machine mass or rating",
+    "base": "Fixed base plates/fork hardware are not part of this moving-chain mass subtotal; fixedJ1 is included",
+    "joint_mass": "Catalog mass/upstream cylinder inertia proxies; rotor distribution unknown",
+    "object": "2kg held rigid at world-home TCP914mm; finger/object contact constraints not solved",
+    "finger_load": "Free finger inertial/gravity effort only; gripping contact forces and friction must be added separately",
+    "manufacturing_release": false
+  },
+  "source_hashes": {
+    "engineering/parameters/r4-layout.json": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "engineering/generated/head-mass04/mass-properties.json": "0be449070516295a490c7a36a0cc91bd172349789960588ffe887be24545b588",
+    "engineering/generated/link12-study/part-placements.json": "ec50f20f19d5b4c1ffda70de8ce85851eef93836d98d599be5a13b425a5d3c8d",
+    "engineering/generated/link12-study/evidence.json": "3005afc00aaca2a880e40f3b085c3c036b73ae5258395979032844a1b1b7894c",
+    "engineering/generated/link12-study/ODR-L12-OUT-R4.step": "5cb2206e5ee2b195654731b9a0177d37cc103243504ba638212547854aa644f4",
+    "engineering/generated/link12-study/ODR-L12-FORK-R4.step": "1b2197f7409f905a2fb1724596efff74e07df5887d520a8257ffeb03c5ab960d",
+    "engineering/generated/link12-study/ODR-L12-FRONT-R4.step": "1d66911f77ee8d19cf9521a38cf80228629e811a3c2cadcb2995ff2da56971b4",
+    "engineering/generated/link23-study/part-placements.json": "8daa948492858dfd8a2c7100c97836ccea951c89f81fc408d65348f62d4f6fd6",
+    "engineering/generated/link23-study/evidence.json": "7d34edde71076430f423679228d805ca77359bc39f7b174ddc14948de159e11c",
+    "engineering/generated/link23-study/ODR-L23-OUT-R4.step": "2fa94dcb62dd206426afea83a01996ff347b2a0b3b5f2baa901d161a69958598",
+    "engineering/generated/link23-study/ODR-L23-CARRIER-R4.step": "748b7ebd940c72bae6fcc894c23743ddcdedad027145b8de0f4ccc689c01c74a",
+    "engineering/generated/link23-study/ODR-L23-FRONT-R4.step": "46d0e3c171fdb22a3ed4754a8411a104039976d423712aae665c864658329f0a",
+    "engineering/generated/link34-study/part-placements.json": "b352bb6bb82f1480c435b7dc1352d2af983e575d54d9662136966cd64420be85",
+    "engineering/generated/link34-study/evidence.json": "46af9fde3d5990b27e2199b4095c7dc19d4ac71546e73b57b839d651d6b721f5",
+    "engineering/generated/link34-study/ODR-L34-OUT-R4.step": "087ade434f0c2f238316abcc1caf5b77350b8fac716d007d126620f99bb527fe",
+    "engineering/generated/link34-study/ODR-L34-LOW-R4.step": "5192234cd1bef2d369a50fc8651ab6a2b55caeb3d836aece9b2cb1328712a431",
+    "engineering/generated/link34-study/ODR-L34-TUBE-R4.step": "a49486f95f25fb21d5d7993cbd6e9fbf6bade0e637e215018d05a7ff7ccdbf9d",
+    "engineering/generated/link34-study/ODR-L34-UP-R4.step": "da02499c7fd87d4637c33bed4a85702a3373bea07112e52c04eb23881ed46050",
+    "engineering/generated/link34-study/ODR-L34-CARRIER-R4.step": "7d58debca1d857925f8dd1a80067ff93f9aa543f21dfc6e911a1c143fb934bb5",
+    "engineering/generated/link34-study/ODR-L34-FRONT-R4.step": "91c308a6e308a1beb6bb7a10089c599b119ebf9daf66ed40062f47d0e7279aba",
+    "engineering/generated/link45-study/part-placements.json": "4eea6c767ac94da05a445574d701498671115a166a147539fd2e103676dcc587",
+    "engineering/generated/link45-study/evidence.json": "f7be8c3d63bf1b1b7b6d99368904253a1e5eb517c5df001d815dccb7e63d240b",
+    "engineering/generated/link45-study/ODR-L45-OUT-R4.step": "12b5dff7735ff53d9fea43c87a840fd920965ad5bdcc77294cded0b388bc4a6c",
+    "engineering/generated/link45-study/ODR-L45-CARRIER-R4.step": "4a6f7302ecdeeb8fa2411bd02544dbb4036eb073b8b7bafc8f0610037f14bae3",
+    "engineering/generated/link45-study/ODR-L45-FRONT-R4.step": "7759763be2a7f0b8a85d28a181c9fbd69df44865f4e1ceb1a948fd0c5b67302f",
+    "engineering/generated/link56-study/part-placements.json": "fb6329f3fdee45c3459e102a374ea117e69edb24a0233355f06f130c6103ae9e",
+    "engineering/generated/link56-study/evidence.json": "2e668b28467d1ccb7c8610df0c1279fdb0915246830167a4cbc86a5b81baab47",
+    "engineering/generated/link56-study/ODR-L56-OUT-R4.step": "d4ddce09c985ed17978c6c8e4baa65a5bc8b2780bcdab693d9af9b195ed92965",
+    "engineering/generated/link56-study/ODR-L56-LOW-R4.step": "f5b6168a2005bd274f9386dc0c7b23eeb6a0fe19f41401d2d6940995ef25e367",
+    "engineering/generated/link56-study/ODR-L56-TUBE-R4.step": "35a80d7d70bfbb8b2a5d24be0702b658f70a10f099952dc56542c6800a15b04b",
+    "engineering/generated/link56-study/ODR-L56-UP-R4.step": "13e21bbd8f7b9f6566bc8ad91f43ec0085669b843efdc033fad297ab42345e76",
+    "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step": "08a125b854dbdffdbca9b843cda446130092543cab7ed2964e1aed518bd17145",
+    "engineering/generated/link56-study/ODR-L56-FRONT-R4.step": "3cad09838550cd2e8d6bbfce6e722ada0054e7755feb1f67246dbdf90f583d70",
+    "engineering/generated/link67-study/part-placements.json": "29b202dbebb974e62aa57107afe236bd1f3d5bff15ae3ae546ad8b9424979297",
+    "engineering/generated/link67-study/evidence.json": "a969db963b3a5d69a3dfb192eff33f64d824d20b5505f62b54c55446a3db66d7",
+    "engineering/generated/link67-study/ODR-L67-OUT-R4.step": "cbd340a1bdcd539a2d2dac47f2ac7b6ca9859b18877d85477b1f3f218b23ec50",
+    "engineering/generated/link67-study/ODR-L67-CARRIER-R4.step": "6db1857a6e49b65e654696349d24964fbac2309fe268716470cdef165bdc4ef1",
+    "engineering/generated/link67-study/ODR-L67-FRONT-R4.step": "fa53b24ae942a6da9981ee28cc6328675d508faa08c5cff8aa322c8dfb0c0acb"
+  },
+  "scripts_sha256": {
+    "engineering/review_articulated_dynamics.py": "e7cf34a1ce908824467a1779ff4dac3b6b6dc35966883936b991f56875106b4f",
+    "engineering/articulated_head_dynamics.py": "31a4a2f94603117127faa56d4fff45bf1b59248231df06bc2b3c0facb930c9f6",
+    "engineering/structural_mass_model.py": "0f97418152f190abc7f6f940d1a7f36e2e5aff4b3e6c6871553f3c869fb0242b",
+    "engineering/kinematics.py": "0ca974a3057ce976ed7314c83d58db541eeb524b3f7ecabc3e022cce2fc586b8"
+  }
+}
