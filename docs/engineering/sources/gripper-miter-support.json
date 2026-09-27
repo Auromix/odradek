@@ -1,0 +1,248 @@
+{
+  "revision": "R4-support-02",
+  "license": "CC-BY-NC-4.0",
+  "notice": "Original research only; manufacturer copyright unchanged; PDFs not redistributed",
+  "sources": [
+    {
+      "id": "MS-01",
+      "manufacturer": "KHK",
+      "title": "2025 Miter Gears catalogue",
+      "url": "https://khkgears.net/pdf/2025/miter-gears.pdf",
+      "locator": "PDF p.9 / printed320–321 MMSB; p.3 / printed308–309 torque conditions; pp.4–5 / printed310–313 assembly; p.8 / printed318–319 SMSG; SM table PDF p.14 / printed330–331",
+      "facts": {
+        "MMSB1.5-20R_L": {
+          "module_mm": 1.5,
+          "teeth": 20,
+          "ratio": 1,
+          "material": "SCM415; carburized HRC55–60; no secondary machining",
+          "bore_H7_mm": 12,
+          "keyway_mm": [
+            4,
+            1.8
+          ],
+          "OD_mm": 31.9,
+          "hub_D_mm": 25,
+          "pitch_D_mm": 30,
+          "E_mm": 28,
+          "F_mm": 18.48,
+          "G_mm": 13.95,
+          "H_mm": 10.5,
+          "I_mm": 16.5,
+          "J_mm": 7,
+          "K_mm": 17.2,
+          "set_screws": "2xM4 included; L6",
+          "bending_reference_Nm": 7.74,
+          "surface_reference_Nm": 7.34,
+          "mass_kg_each": 0.052,
+          "normal_backlash_mm": [
+            0.05,
+            0.15
+          ]
+        },
+        "torque_conditions": "100rpm MMSB; >1e7 cycles; uniform motor/load; bidirectional allowable bending stress already 2/3; 100cSt at50C; normal stiffness, gear supported one end"
+      },
+      "limits": [
+        "Reference torque is not actual3rpm oscillatory acceptance",
+        "MMSA/MMSB opposite hands must mate in compatible family",
+        "Mounting E is cone apex to gear back; F is entire gear, H only hub",
+        "Metric drawing controls: US page inch face-width field disagrees with metric7mm"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verified_pdf_sha256": "d5c578512f99d78da301fb6fb72811d80d06be3711044a760fc3a4f535a4526c"
+    },
+    {
+      "id": "MS-02",
+      "manufacturer": "KHK",
+      "title": "Gear Forces technical reference",
+      "url": "https://khkgears.net/new/gear_knowledge/gear_technical_reference/gear_forces.html",
+      "locator": "Table12.1 formulas; section12.2(2); Table12.6 published spiral bevel example",
+      "facts": {
+        "formula_image_url": "https://khkgears.net/new/images/Gear-Forces/Table-12.1-Forces-Acting-upon-a-Gear.jpg",
+        "check_example_url": "https://khkgears.net/new/images/Gear-Forces/Table-12.6-Calculation-Examples-Spiral-Bevel-Gears.jpg",
+        "dm": "d-b sin(delta)",
+        "Ft": "2000T/dm with N,m and mm",
+        "convex_Fa": "Ft/cos(beta)*(tan(alpha)*sin(delta)-sin(beta)*cos(delta))",
+        "convex_Fr": "Ft/cos(beta)*(tan(alpha)*cos(delta)+sin(beta)*sin(delta))"
+      },
+      "limits": [
+        "Negative axial thrust pulls mesh together; bearing axial play can remove backlash",
+        "HTML gzip decoded locally and official formula/example inspected; no manufacturer media redistributed"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer"
+    },
+    {
+      "id": "MS-03",
+      "manufacturer": "SKF",
+      "title": "Rolling bearings catalogue17000/1EN",
+      "url": "https://cdn.skfmediahub.skf.com/api/public/0901d196802809de/pdf_preview_medium/0901d196802809de_pdf_preview_medium.pdf",
+      "locator": "PDF408–409 / printed406–407 7201; PDF387–388 / printed385–386 universal/DB; PDF394/396 / printed392/394 CB; PDF400–405 / printed398–403 loads/adjustment; PDF1106/1108 / printed1104/1106 KM1/MB1",
+      "facts": {
+        "7201_BECBP": {
+          "d_D_B_mm": [
+            12,
+            32,
+            10
+          ],
+          "C_N": 7610,
+          "C0_N": 3800,
+          "mass_g": 36,
+          "contact_deg": 40,
+          "a_mm": 14,
+          "da_min_mm": 16.2,
+          "Da_max_mm": 27.8,
+          "Db_max_mm": 30,
+          "ra_max_mm": 0.6,
+          "rb_max_mm": 0.3,
+          "CB_unmounted_axial_clearance_um": [
+            15,
+            23
+          ]
+        },
+        "KM1": {
+          "thread": "M12x1",
+          "face_D_mm": 17,
+          "outer_D_mm": 22,
+          "width_mm": 4,
+          "mass_g": 6,
+          "static_axial_N": 11800,
+          "washer": "MB1"
+        },
+        "MB1": {
+          "d_mm": 12,
+          "d1_mm": 17,
+          "d2_mm": 25,
+          "B_mm": 1,
+          "f_mm": 3,
+          "M_mm": 10.5,
+          "mass_g": 2
+        }
+      },
+      "limits": [
+        "CB is positive clearance, not preload or zero backlash",
+        "Adjacent universal pairs get catalog clearance only with appropriate fits; separated pairs need controlled spacers",
+        "Single ratings cannot be compared to net object weight",
+        "Inclined MB1 tabs and shaft lock keyway require real drawing; flat CAD washer is envelope only"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verified_pdf_sha256": "65e0919bee24975b9563ca0d9adf721a9e7efcf6d0fa32c18b8d119d37b190b2"
+    },
+    {
+      "id": "MS-04",
+      "manufacturer": "NBK",
+      "title": "MJC-CS-EGR coupling catalogue",
+      "url": "https://www.nbk1560.com/images/en/product/jaw_type/MJC-CS-EGR/MJC-CS-EGR_1.pdf",
+      "locator": "PDF1 EasyFit; PDF3 table; PDF4 slip conditions",
+      "facts": {
+        "configured_part": "MJC-20CS-EGR-6-10",
+        "D_L_mm": [
+          20,
+          30
+        ],
+        "insertion_mm_each": 10,
+        "reference_mass_g": 16,
+        "rated_Nm": 6,
+        "stiffness_Nm_per_rad": 87,
+        "slip_6mm_Nm": 6.4,
+        "slip_10mm_Nm": 6,
+        "test_basis": "h7 shaft,34–40HRC, specified clamp screw torque",
+        "temperature_factor_40_60C": 0.7
+      },
+      "limits": [
+        "FAUL shaft minimum5.982mm outside6h7 test basis; coupling connection needs confirmation",
+        "EasyFit not zero backlash; max bore11 so12mm spindle needs10mm coupling tenon",
+        "16g maximum-bore reference, not exact configured variant mass"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer",
+      "verified_pdf_sha256": "fe7b9d1fdcc333cf3498070a03c2c679bdbfaa73247c6000e38f4f8f10ca26d6"
+    },
+    {
+      "id": "MS-05",
+      "manufacturer": "FAULHABER",
+      "title": "22GPT HT",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_22GPT_HT_FCH.pdf",
+      "locator": "PDF1–2; edition2026-07-28",
+      "facts": {
+        "4stage_continuous_Nm": 3.7,
+        "4stage_mass_g": 109,
+        "output_D_mm": 6,
+        "output_deviation_mm": [
+          -0.018,
+          -0.01
+        ],
+        "output_extension_mm": 16.3,
+        "axial_max_N": 170,
+        "radial_at10mm_N": 300,
+        "KS1": "round shaft, order confirmation required",
+        "mounting": "6xM2x3deep; max35Ncm"
+      },
+      "limits": [
+        "Combined motor/gear/encoder body70.1mm remains estimate",
+        "Torque after miter loss is less than gearhead output",
+        "Zero-speed thermal performance and holding not established"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer"
+    },
+    {
+      "id": "MS-06",
+      "manufacturer": "FAULHABER",
+      "title": "2214 BXT H",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_2214_BXTH_DFF.pdf",
+      "locator": "PDF1 mass, continuous conditions; PDF2 combinations; edition2026-07-28",
+      "facts": {
+        "mass_g": 28.9,
+        "diameter_mm": 22,
+        "body_length_mm": 14.8,
+        "24V_rated_mNm": 9.7,
+        "rated_rpm": 2710
+      },
+      "limits": [
+        "Final combined order/drawing not confirmed",
+        "Do not treat stall torque as continuous"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer"
+    },
+    {
+      "id": "MS-07",
+      "manufacturer": "FAULHABER",
+      "title": "IE3-1024L encoder",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_IE3-1024L_DFF.pdf",
+      "locator": "PDF1 mass and motor combination length",
+      "facts": {
+        "mass_typ_g": 13.5,
+        "2214_BXTH_combined_L1_mm": 26.5
+      },
+      "limits": [
+        "Mass and dimension are catalog typical, tail cable clearance extra"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer"
+    },
+    {
+      "id": "MS-08",
+      "manufacturer": "Stereolabs",
+      "title": "ZED X One specifications",
+      "url": "https://docs.stereolabs.com/docs/products/cameras/zedxone/specifications",
+      "locator": "Physical specifications; ZED X One S fisheye row",
+      "facts": {
+        "fisheye_weight_g_each": 36,
+        "dimensions_mm": [
+          25,
+          25,
+          34.2
+        ]
+      },
+      "limits": [
+        "37g on family comparison is wide-lens/max; use fisheye-specific36g",
+        "No fixed-bench cable mass counted as head-carried robot harness"
+      ],
+      "verified_on": "2026-09-27",
+      "source_type": "primary-manufacturer"
+    }
+  ]
+}

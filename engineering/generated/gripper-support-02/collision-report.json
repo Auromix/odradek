@@ -1,0 +1,402 @@
+{
+  "revision": "R4-support-02",
+  "source_layout_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "obb": {
+    "scope": "inter-module nominal outer-envelope OBB screen; not moving finger/optical screen",
+    "tested_pairs": 12150,
+    "required_projection_gap_mm": 1,
+    "flagged_pairs": [
+      {
+        "a": "UR_input_gear_tooth_envelope",
+        "b": "UL_input_gear_tooth_envelope",
+        "projection_gap_mm": -2.5922362850809577
+      },
+      {
+        "a": "UR_input_gear_hub",
+        "b": "UL_input_housing_front_lip",
+        "projection_gap_mm": 0.5
+      },
+      {
+        "a": "UR_input_MB1_allowance",
+        "b": "UL_input_housing_rear_cap",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_bearing_A",
+        "b": "UL_input_bearing_A",
+        "projection_gap_mm": -2.706321923286538
+      },
+      {
+        "a": "UR_input_bearing_A",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_bearing_A",
+        "b": "UL_input_housing",
+        "projection_gap_mm": -6.706321923286538
+      },
+      {
+        "a": "UR_input_bearing_A",
+        "b": "UL_input_housing_front_lip",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_input_bearing_A",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": -2.706321923286538
+      },
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_input_housing",
+        "projection_gap_mm": -6.706321923286538
+      },
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_input_housing_rear_cap",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_bearing_A",
+        "projection_gap_mm": -6.706321923286538
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": -6.706321923286538
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_housing",
+        "projection_gap_mm": -11.833172979732847
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_housing_front_lip",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_housing_rear_cap",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_housing_front_lip",
+        "b": "UL_input_gear_hub",
+        "projection_gap_mm": 0.5
+      },
+      {
+        "a": "UR_input_housing_front_lip",
+        "b": "UL_input_bearing_A",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_housing_front_lip",
+        "b": "UL_input_housing",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_housing_front_lip",
+        "b": "UL_input_housing_front_lip",
+        "projection_gap_mm": -1.5
+      },
+      {
+        "a": "UR_input_housing_rear_cap",
+        "b": "UL_input_MB1_allowance",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_housing_rear_cap",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_housing_rear_cap",
+        "b": "UL_input_housing",
+        "projection_gap_mm": 0.0
+      },
+      {
+        "a": "UR_input_housing_rear_cap",
+        "b": "UL_input_housing_rear_cap",
+        "projection_gap_mm": -2.0
+      },
+      {
+        "a": "UR_motor_flange",
+        "b": "UL_motor_flange",
+        "projection_gap_mm": -2.0
+      }
+    ],
+    "obb_passes": false
+  },
+  "cad": {
+    "global_minimum_inter_module_distance_mm": 1.2635023475249754,
+    "global_minimum_inter_module_pair": [
+      "UR_input_housing_rear_cap",
+      "UL_input_housing_rear_cap"
+    ],
+    "open_pose_finger_housing_collisions": [
+      {
+        "finger": "UR",
+        "pose_q_deg": 0,
+        "part": "UR_output_housing",
+        "intersection_mm3": 142.7010788455207
+      },
+      {
+        "finger": "UR",
+        "pose_q_deg": 0,
+        "part": "UR_output_housing_rear_cap",
+        "intersection_mm3": 73.64453729371806
+      },
+      {
+        "finger": "UR",
+        "pose_q_deg": 0,
+        "part": "UR_side_plate_output_1",
+        "intersection_mm3": 70.53460317460313
+      },
+      {
+        "finger": "UL",
+        "pose_q_deg": 0,
+        "part": "UL_output_housing",
+        "intersection_mm3": 142.70107895190526
+      },
+      {
+        "finger": "UL",
+        "pose_q_deg": 0,
+        "part": "UL_output_housing_rear_cap",
+        "intersection_mm3": 73.64453729371812
+      },
+      {
+        "finger": "UL",
+        "pose_q_deg": 0,
+        "part": "UL_side_plate_output_1",
+        "intersection_mm3": 70.53460317460316
+      },
+      {
+        "finger": "LL",
+        "pose_q_deg": 0,
+        "part": "LL_output_housing",
+        "intersection_mm3": 88.4200863004383
+      },
+      {
+        "finger": "LL",
+        "pose_q_deg": 0,
+        "part": "LL_output_housing_rear_cap",
+        "intersection_mm3": 73.64453729371806
+      },
+      {
+        "finger": "LL",
+        "pose_q_deg": 0,
+        "part": "LL_side_plate_output_1",
+        "intersection_mm3": 45.33333333333329
+      },
+      {
+        "finger": "LR",
+        "pose_q_deg": 0,
+        "part": "LR_output_housing",
+        "intersection_mm3": 88.42008633017291
+      },
+      {
+        "finger": "LR",
+        "pose_q_deg": 0,
+        "part": "LR_output_housing_rear_cap",
+        "intersection_mm3": 73.64453729371807
+      },
+      {
+        "finger": "LR",
+        "pose_q_deg": 0,
+        "part": "LR_side_plate_output_1",
+        "intersection_mm3": 45.33333333333322
+      }
+    ],
+    "open_pose_finger_test_passes": false,
+    "valid_components": 180,
+    "step_reimport_valid": true,
+    "reimport_solids": 180,
+    "exact_outer_envelope_tests": [
+      {
+        "a": "UR_input_gear_tooth_envelope",
+        "b": "UL_input_gear_tooth_envelope",
+        "projection_gap_mm": -2.5922362850809577,
+        "distance_mm": 9.363502347524976,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_gear_hub",
+        "b": "UL_input_housing_front_lip",
+        "projection_gap_mm": 0.5,
+        "distance_mm": 8.77775446199515,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_MB1_allowance",
+        "b": "UL_input_housing_rear_cap",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 8.763502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_bearing_A",
+        "b": "UL_input_bearing_A",
+        "projection_gap_mm": -2.706321923286538,
+        "distance_mm": 9.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_bearing_A",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 9.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_bearing_A",
+        "b": "UL_input_housing",
+        "projection_gap_mm": -6.706321923286538,
+        "distance_mm": 5.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_bearing_A",
+        "b": "UL_input_housing_front_lip",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 5.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_input_bearing_A",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 9.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": -2.706321923286538,
+        "distance_mm": 9.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_input_housing",
+        "projection_gap_mm": -6.706321923286538,
+        "distance_mm": 5.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_bearing_B",
+        "b": "UL_input_housing_rear_cap",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 5.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_bearing_A",
+        "projection_gap_mm": -6.706321923286538,
+        "distance_mm": 5.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": -6.706321923286538,
+        "distance_mm": 5.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_housing",
+        "projection_gap_mm": -11.833172979732847,
+        "distance_mm": 1.2635023475249754,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_housing_front_lip",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 1.2635023475249754,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing",
+        "b": "UL_input_housing_rear_cap",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 1.2635023475249754,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing_front_lip",
+        "b": "UL_input_gear_hub",
+        "projection_gap_mm": 0.5,
+        "distance_mm": 8.77775446199515,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing_front_lip",
+        "b": "UL_input_bearing_A",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 5.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing_front_lip",
+        "b": "UL_input_housing",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 1.2635023475249754,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing_front_lip",
+        "b": "UL_input_housing_front_lip",
+        "projection_gap_mm": -1.5,
+        "distance_mm": 1.2635023475249754,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing_rear_cap",
+        "b": "UL_input_MB1_allowance",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 8.763502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing_rear_cap",
+        "b": "UL_input_bearing_B",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 5.263502347524975,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing_rear_cap",
+        "b": "UL_input_housing",
+        "projection_gap_mm": 0.0,
+        "distance_mm": 1.2635023475249754,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_input_housing_rear_cap",
+        "b": "UL_input_housing_rear_cap",
+        "projection_gap_mm": -2.0,
+        "distance_mm": 1.2635023475249754,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "UR_motor_flange",
+        "b": "UL_motor_flange",
+        "projection_gap_mm": -2.0,
+        "distance_mm": 7.263502347524975,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "exact_inter_module_positive_intersection_count": 0,
+    "exact_inter_module_distance_below_1mm_count": 0,
+    "scope": "nominal envelopes, not teeth, bearing raceways, threaded fasteners or fully closed gearboxes"
+  }
+}
