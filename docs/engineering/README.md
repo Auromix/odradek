@@ -23,6 +23,7 @@
 | 打印台架 | [单指手动台架](../../engineering/generated/finger-fixture/README.md) | 四件打印件与五页图纸，无动力无载 |
 | 元件 | [主 BOM](hardware/bom.csv)／[BOM口径](hardware/bom-notes.md) | 候选、blocked 和 TBD 逐项区分，不是一键采购整机表 |
 | 电气 | [架构](electrical-architecture.svg)／[线束](harness-and-connectors.md) | 7本体＋4指伺服＋1头IO，共12从站；视频独立GMSL候选 |
+| 工件可见性 | [实际圆柱遮挡](grasp-object-visibility.md) | 两相机可见端面45采样点；八接触点被工件遮住，需独立接触反馈 |
 | 光学台架 | [采购和搭建](hardware/optical-bench-build.md) | 双鱼眼、Duo采集、AGX Orin及固定驱动链，尚未实装 |
 | 单轴台架 | [采购和搭建](hardware/single-axis-bench-build.md) | IPC、电源、原厂通信转接及未放行针脚/保护项 |
 | 上灯片电子样片 | [113 LED 元件级电路](hardware/upper-petal-prototype.md) | 134 器件、317 针、36 网及扫描配置；独立电测设计，未布线放行 |
