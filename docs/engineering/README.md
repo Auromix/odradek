@@ -19,6 +19,7 @@
 | J1→J2肩架 | [LINK12-01](link12-structure-study.md) | 三件原创结构、五页图及J2连续插入证明；0.745 kg含紧固预算，预紧/材料/行程未放行 |
 | J2→J3实体连接 | [LINK23-01](link23-structure-study.md) | 三件原创结构、28螺钉、五页图与四步连续装入证明；完整牙/预紧/全行程未放行 |
 | J3→J4实体连接 | [LINK34-01](link34-structure-study.md) | 六件原创结构、40螺钉、六页图；q3相对J2/L23全周和连续装配已检查；后环接触刚度/预紧/完整牙待验证 |
+| J4→J5实体连接 | [LINK45-01](link45-structure-study.md) | 三件原创结构、28个已知螺钉形状、六页图；局部q4/q5连续避让和装入已检查；动态相机线首弯存在明确碰撞 |
 | 新增部件 Blender | [三个原生场景](subassembly-blender-review.md) | 连接件、底座和四指；五张渲染、12项层级变换检查，尚非新整机装配 |
 | 六段承力连接 | [真实接口与空间审查](link-connection-plan.md) | 全部接触面/孔阵；发现肩部螺钉及两段旧梁干涉 |
 | 真实连接质量回算 | [LOADS-02肩架集成](shoulder-mass-integration.md)／[LOADS-01](candidate-loads.md) | LINK12+LINK56九实体惯量/COM回填；重头情景与底座重算，仍非整机载荷上限 |
