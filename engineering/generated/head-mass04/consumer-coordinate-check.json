@@ -1,0 +1,324 @@
+{
+  "revision": "HEAD-MASS04",
+  "scope": "Read-only consumer coordinate contract only; not validation of whole-arm dynamics, Jacobian, M/C/G or load rating.",
+  "consumer": "engineering/articulated_head_dynamics.py",
+  "consumer_sha256": "31a4a2f94603117127faa56d4fff45bf1b59248231df06bc2b3c0facb930c9f6",
+  "mass_properties_sha256": "0be449070516295a490c7a36a0cc91bd172349789960588ffe887be24545b588",
+  "checked_cases": 52,
+  "maximum_position_error_m": 3.122502256758253e-17,
+  "maximum_rotation_matrix_error": 4.440892098500626e-16,
+  "cases": [
+    {
+      "body": "HEAD_head_fixed",
+      "fraction_of_limit": 0,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 0.0
+    },
+    {
+      "body": "HEAD_UR_finger_rotor",
+      "fraction_of_limit": 0,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 0.0
+    },
+    {
+      "body": "HEAD_UR_P16_body",
+      "fraction_of_limit": 0,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UR_P16_slider",
+      "fraction_of_limit": 0,
+      "position_error_m": 6.938893903907228e-18,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UL_finger_rotor",
+      "fraction_of_limit": 0,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 0.0
+    },
+    {
+      "body": "HEAD_UL_P16_body",
+      "fraction_of_limit": 0,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UL_P16_slider",
+      "fraction_of_limit": 0,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LL_finger_rotor",
+      "fraction_of_limit": 0,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 0.0
+    },
+    {
+      "body": "HEAD_LL_P16_body",
+      "fraction_of_limit": 0,
+      "position_error_m": 6.938893903907228e-18,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LL_P16_slider",
+      "fraction_of_limit": 0,
+      "position_error_m": 1.8648277366750676e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LR_finger_rotor",
+      "fraction_of_limit": 0,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 0.0
+    },
+    {
+      "body": "HEAD_LR_P16_body",
+      "fraction_of_limit": 0,
+      "position_error_m": 6.938893903907228e-18,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LR_P16_slider",
+      "fraction_of_limit": 0,
+      "position_error_m": 8.673617379884035e-18,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_head_fixed",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 0.0
+    },
+    {
+      "body": "HEAD_UR_finger_rotor",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 3.122502256758253e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UR_P16_body",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 1.5515838457795457e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UR_P16_slider",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 2.8609792490763984e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UL_finger_rotor",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 7.757919228897728e-18,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UL_P16_body",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 2.7755575615628914e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UL_P16_slider",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 2.7755575615628914e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LL_finger_rotor",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 1.5515838457795457e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LL_P16_body",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 1.5515838457795457e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LL_P16_slider",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 1.5515838457795457e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LR_finger_rotor",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 1.2018516789897274e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LR_P16_body",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 1.3877787807814457e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LR_P16_slider",
+      "fraction_of_limit": 0.25,
+      "position_error_m": 1.2509268882771003e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_head_fixed",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 0.0
+    },
+    {
+      "body": "HEAD_UR_finger_rotor",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 1.5515838457795457e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UR_P16_body",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 1.962615573354719e-17,
+      "rotation_matrix_error": 1.2576745200831851e-16
+    },
+    {
+      "body": "HEAD_UR_P16_slider",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 2.8609792490763984e-17,
+      "rotation_matrix_error": 1.2576745200831851e-16
+    },
+    {
+      "body": "HEAD_UL_finger_rotor",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 9.813077866773595e-18,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UL_P16_body",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 2.7755575615628914e-17,
+      "rotation_matrix_error": 1.5395670849294163e-16
+    },
+    {
+      "body": "HEAD_UL_P16_slider",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 2.7755575615628914e-17,
+      "rotation_matrix_error": 1.5395670849294163e-16
+    },
+    {
+      "body": "HEAD_LL_finger_rotor",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 6.938893903907228e-18,
+      "rotation_matrix_error": 1.6653345369377348e-16
+    },
+    {
+      "body": "HEAD_LL_P16_body",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 9.813077866773595e-18,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "body": "HEAD_LL_P16_slider",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 1.6996749443881478e-17,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "body": "HEAD_LR_finger_rotor",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 6.938893903907228e-18,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "body": "HEAD_LR_P16_body",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 1.6996749443881478e-17,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "body": "HEAD_LR_P16_slider",
+      "fraction_of_limit": 0.5,
+      "position_error_m": 9.813077866773595e-18,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "body": "HEAD_head_fixed",
+      "fraction_of_limit": 1,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 0.0
+    },
+    {
+      "body": "HEAD_UR_finger_rotor",
+      "fraction_of_limit": 1,
+      "position_error_m": 1.4304896245381992e-17,
+      "rotation_matrix_error": 4.440892098500626e-16
+    },
+    {
+      "body": "HEAD_UR_P16_body",
+      "fraction_of_limit": 1,
+      "position_error_m": 0.0,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UR_P16_slider",
+      "fraction_of_limit": 1,
+      "position_error_m": 1.3877787807814457e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_UL_finger_rotor",
+      "fraction_of_limit": 1,
+      "position_error_m": 9.813077866773595e-18,
+      "rotation_matrix_error": 2.220446049250313e-16
+    },
+    {
+      "body": "HEAD_UL_P16_body",
+      "fraction_of_limit": 1,
+      "position_error_m": 1.5515838457795457e-17,
+      "rotation_matrix_error": 1.1752751549742868e-16
+    },
+    {
+      "body": "HEAD_UL_P16_slider",
+      "fraction_of_limit": 1,
+      "position_error_m": 1.3877787807814457e-17,
+      "rotation_matrix_error": 1.1752751549742868e-16
+    },
+    {
+      "body": "HEAD_LL_finger_rotor",
+      "fraction_of_limit": 1,
+      "position_error_m": 1.5515838457795457e-17,
+      "rotation_matrix_error": 4.440892098500626e-16
+    },
+    {
+      "body": "HEAD_LL_P16_body",
+      "fraction_of_limit": 1,
+      "position_error_m": 2.0816681711721685e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LL_P16_slider",
+      "fraction_of_limit": 1,
+      "position_error_m": 1.6996749443881478e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LR_finger_rotor",
+      "fraction_of_limit": 1,
+      "position_error_m": 6.938893903907228e-18,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LR_P16_body",
+      "fraction_of_limit": 1,
+      "position_error_m": 9.813077866773595e-18,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "body": "HEAD_LR_P16_slider",
+      "fraction_of_limit": 1,
+      "position_error_m": 2.0816681711721685e-17,
+      "rotation_matrix_error": 1.1102230246251565e-16
+    }
+  ]
+}

@@ -1,0 +1,905 @@
+{
+  "revision": "HEAD-MASS04",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "manufacturing_release": false,
+  "dynamics_or_grasp_rating": false,
+  "units": {
+    "mass": "kg",
+    "length": "m",
+    "angle": "rad",
+    "inertia": "kg*m^2"
+  },
+  "coordinate_contract": {
+    "frame": "HEAD03 head face home",
+    "head_face_world_home_m": [
+      0,
+      0.055,
+      0.804
+    ],
+    "J7_pivot_head_home_m": [
+      0,
+      0,
+      -0.164
+    ],
+    "inertia_reference": "each body COM, tensor components resolved along head HOME axes",
+    "inertia_transform": "I(q)=R(q) I_home R(q)^T; use parallel-axis theorem only when changing reference point",
+    "world_translation_does_not_change_COM_central_inertia": true
+  },
+  "head_face_world_mm": [
+    0.0,
+    55.0,
+    804.0
+  ],
+  "source_hashes": {
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+    "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+    "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+    "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+  },
+  "bodies": [
+    {
+      "id": "HEAD_head_fixed",
+      "mass_kg": 1.783256987001871,
+      "com_head_home_m": [
+        -1.0840254636759632e-14,
+        0.00507328326381549,
+        -0.053842441396714166
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          0.012378656348755587,
+          -9.113809809805581e-15,
+          -1.0201333478425069e-15
+        ],
+        [
+          -9.113809809805581e-15,
+          0.013434711249898909,
+          0.0004933552954718473
+        ],
+        [
+          -1.0201333478425069e-15,
+          0.0004933552954718473,
+          0.007766055226880687
+        ]
+      ],
+      "kinematic_group": "head_fixed",
+      "finger": null,
+      "source": [
+        "HEAD_main_carrier",
+        "HEAD_J7_existing_adapter",
+        "HEAD_UR_bearing_A",
+        "HEAD_UR_bearing_B",
+        "HEAD_UR_bearing_outer_cap",
+        "HEAD_UR_M3_cap_bolt_0",
+        "HEAD_UR_M3_cap_washer_0",
+        "HEAD_UR_M3_cap_bolt_1",
+        "HEAD_UR_M3_cap_washer_1",
+        "HEAD_UR_M3_cap_bolt_2",
+        "HEAD_UR_M3_cap_washer_2",
+        "HEAD_UR_M3_cap_bolt_3",
+        "HEAD_UR_M3_cap_washer_3",
+        "HEAD_UL_bearing_A",
+        "HEAD_UL_bearing_B",
+        "HEAD_UL_bearing_outer_cap",
+        "HEAD_UL_M3_cap_bolt_0",
+        "HEAD_UL_M3_cap_washer_0",
+        "HEAD_UL_M3_cap_bolt_1",
+        "HEAD_UL_M3_cap_washer_1",
+        "HEAD_UL_M3_cap_bolt_2",
+        "HEAD_UL_M3_cap_washer_2",
+        "HEAD_UL_M3_cap_bolt_3",
+        "HEAD_UL_M3_cap_washer_3",
+        "HEAD_LL_bearing_A",
+        "HEAD_LL_bearing_B",
+        "HEAD_LL_bearing_outer_cap",
+        "HEAD_LL_M3_cap_bolt_0",
+        "HEAD_LL_M3_cap_washer_0",
+        "HEAD_LL_M3_cap_bolt_1",
+        "HEAD_LL_M3_cap_washer_1",
+        "HEAD_LL_M3_cap_bolt_2",
+        "HEAD_LL_M3_cap_washer_2",
+        "HEAD_LL_M3_cap_bolt_3",
+        "HEAD_LL_M3_cap_washer_3",
+        "HEAD_LR_bearing_A",
+        "HEAD_LR_bearing_B",
+        "HEAD_LR_bearing_outer_cap",
+        "HEAD_LR_M3_cap_bolt_0",
+        "HEAD_LR_M3_cap_washer_0",
+        "HEAD_LR_M3_cap_bolt_1",
+        "HEAD_LR_M3_cap_washer_1",
+        "HEAD_LR_M3_cap_bolt_2",
+        "HEAD_LR_M3_cap_washer_2",
+        "HEAD_LR_M3_cap_bolt_3",
+        "HEAD_LR_M3_cap_washer_3",
+        "HEAD_J7_to_carrier_M4x40_0",
+        "HEAD_J7_M4_washer_0",
+        "HEAD_J7_to_carrier_M4x40_1",
+        "HEAD_J7_M4_washer_1",
+        "HEAD_J7_to_carrier_M4x40_2",
+        "HEAD_J7_M4_washer_2",
+        "HEAD_J7_to_carrier_M4x40_3",
+        "HEAD_J7_M4_washer_3",
+        "HEAD_camera_-1_physical_keepout",
+        "HEAD_camera_-1_M2x6_-10.5_-10.5",
+        "HEAD_camera_-1_M2x6_-10.5_10.5",
+        "HEAD_camera_-1_M2x6_10.5_-10.5",
+        "HEAD_camera_-1_M2x6_10.5_10.5",
+        "HEAD_camera_1_physical_keepout",
+        "HEAD_camera_1_M2x6_-10.5_-10.5",
+        "HEAD_camera_1_M2x6_-10.5_10.5",
+        "HEAD_camera_1_M2x6_10.5_-10.5",
+        "HEAD_camera_1_M2x6_10.5_10.5",
+        "HEAD_optic_column_-35.0_-22.0",
+        "HEAD_optic_M3_tierod_-35.0_-22.0",
+        "HEAD_optic_M3_washer_rear_-35.0_-22.0",
+        "HEAD_optic_M3_nut_rear_-35.0_-22.0",
+        "HEAD_optic_M3_washer_front_-35.0_-22.0",
+        "HEAD_optic_M3_nut_front_-35.0_-22.0",
+        "HEAD_optic_column_-35.0_22.0",
+        "HEAD_optic_M3_tierod_-35.0_22.0",
+        "HEAD_optic_M3_washer_rear_-35.0_22.0",
+        "HEAD_optic_M3_nut_rear_-35.0_22.0",
+        "HEAD_optic_M3_washer_front_-35.0_22.0",
+        "HEAD_optic_M3_nut_front_-35.0_22.0",
+        "HEAD_optic_column_35.0_-22.0",
+        "HEAD_optic_M3_tierod_35.0_-22.0",
+        "HEAD_optic_M3_washer_rear_35.0_-22.0",
+        "HEAD_optic_M3_nut_rear_35.0_-22.0",
+        "HEAD_optic_M3_washer_front_35.0_-22.0",
+        "HEAD_optic_M3_nut_front_35.0_-22.0",
+        "HEAD_optic_column_35.0_22.0",
+        "HEAD_optic_M3_tierod_35.0_22.0",
+        "HEAD_optic_M3_washer_rear_35.0_22.0",
+        "HEAD_optic_M3_nut_rear_35.0_22.0",
+        "HEAD_optic_M3_washer_front_35.0_22.0",
+        "HEAD_optic_M3_nut_front_35.0_22.0",
+        "HEAD_removable_optical_frame",
+        "HEAD_UR_base_bracket",
+        "HEAD_UR_base_SBSM_pin",
+        "HEAD_UR_base_M3_retention_washer",
+        "HEAD_UR_base_M3_retention_nut",
+        "HEAD_UR_base_lug_spacer_-1",
+        "HEAD_UR_base_lug_spacer_1",
+        "HEAD_UR_M4_base_bolt_-10",
+        "HEAD_UR_M4_base_bolt_10",
+        "HEAD_UL_base_bracket",
+        "HEAD_UL_base_SBSM_pin",
+        "HEAD_UL_base_M3_retention_washer",
+        "HEAD_UL_base_M3_retention_nut",
+        "HEAD_UL_base_lug_spacer_-1",
+        "HEAD_UL_base_lug_spacer_1",
+        "HEAD_UL_M4_base_bolt_-10",
+        "HEAD_UL_M4_base_bolt_10",
+        "HEAD_LL_base_bracket",
+        "HEAD_LL_base_SBSM_pin",
+        "HEAD_LL_base_M3_retention_washer",
+        "HEAD_LL_base_M3_retention_nut",
+        "HEAD_LL_base_lug_spacer_-1",
+        "HEAD_LL_base_lug_spacer_1",
+        "HEAD_LL_M4_base_bolt_-10",
+        "HEAD_LL_M4_base_bolt_10",
+        "HEAD_LR_base_bracket",
+        "HEAD_LR_base_SBSM_pin",
+        "HEAD_LR_base_M3_retention_washer",
+        "HEAD_LR_base_M3_retention_nut",
+        "HEAD_LR_base_lug_spacer_-1",
+        "HEAD_LR_base_lug_spacer_1",
+        "HEAD_LR_M4_base_bolt_-10",
+        "HEAD_LR_M4_base_bolt_10",
+        "HEAD_J7_extension24"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 0.007723437857539598,
+        "principal_triangle_margin_kg_m2": 0.006624765587055187
+      }
+    },
+    {
+      "id": "HEAD_UR_finger_rotor",
+      "mass_kg": 0.16921126496541977,
+      "com_head_home_m": [
+        0.0740116523955885,
+        0.05692674336651865,
+        -0.0014223101391269296
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          0.00010052807963091662,
+          -8.186306157540429e-05,
+          -5.0756830275016645e-06
+        ],
+        [
+          -8.186306157540429e-05,
+          0.0002063078624269002,
+          -1.2351824991184358e-05
+        ],
+        [
+          -5.0756830275016645e-06,
+          -1.2351824991184358e-05,
+          0.0002867634220874802
+        ]
+      ],
+      "kinematic_group": "finger_rotor",
+      "finger": "UR",
+      "source": [
+        "HEAD_UR_M2x6_keeper_screw_0",
+        "HEAD_UR_M2x6_keeper_screw_1",
+        "HEAD_UR_nut_keeper_sheet",
+        "HEAD_UR_removable_upper_fork",
+        "HEAD_UR_metal_blade_with_narrow_tongue",
+        "HEAD_UR_M3x20_fork_screw_0",
+        "HEAD_UR_M3_washer_0",
+        "HEAD_UR_M3_hexnut_0",
+        "HEAD_UR_M3x20_fork_screw_1",
+        "HEAD_UR_M3_washer_1",
+        "HEAD_UR_M3_hexnut_1",
+        "HEAD_UR_tip_SBSM_pin",
+        "HEAD_UR_tip_outer_stack_spacer",
+        "HEAD_UR_tip_M3_retention_washer",
+        "HEAD_UR_tip_M3_retention_nut",
+        "HEAD_UR_tip_lug_spacer_-1",
+        "HEAD_UR_tip_lug_spacer_1",
+        "HEAD_UR_integral_steel_crank_spindle",
+        "HEAD_UR_inner_front_spacer",
+        "HEAD_UR_MB1",
+        "HEAD_UR_KM1",
+        "HEAD_UR_lamp_PCB_outline",
+        "HEAD_UR_lamp_optical_sheet",
+        "HEAD_UR_lamp_insulating_ring1",
+        "HEAD_UR_lamp_insulating_ring2",
+        "HEAD_UR_lamp_insulating_ring3",
+        "HEAD_UR_lamp_SSH_M2_4_1",
+        "HEAD_UR_lamp_SSH_M2_4_2",
+        "HEAD_UR_lamp_SSH_M2_4_3",
+        "HEAD_UR_retained_pad_minus",
+        "HEAD_UR_retained_pad_plus"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 5.5490469214239103e-05,
+        "principal_triangle_margin_kg_m2": 1.5438314620651035e-05
+      }
+    },
+    {
+      "id": "HEAD_UR_P16_body",
+      "mass_kg": 0.0879178746067135,
+      "com_head_home_m": [
+        0.07597229662672524,
+        0.03122243219543156,
+        -0.08508191340072124
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          5.5456670862431964e-05,
+          -2.9517052443214435e-06,
+          -1.8147562603162388e-06
+        ],
+        [
+          -2.9517052443214435e-06,
+          5.7605336560953e-05,
+          -1.270706013486719e-06
+        ],
+        [
+          -1.8147562603162388e-06,
+          -1.270706013486719e-06,
+          1.1692077244013746e-05
+        ]
+      ],
+      "kinematic_group": "P16_body",
+      "finger": "UR",
+      "source": [
+        "HEAD_UR_P16_envelope_case",
+        "HEAD_UR_P16_envelope_guide"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 1.1574702735861884e-05,
+        "principal_triangle_margin_kg_m2": 5.409799020198762e-06
+      }
+    },
+    {
+      "id": "HEAD_UR_P16_slider",
+      "mass_kg": 0.0070821253932865005,
+      "com_head_home_m": [
+        0.07329678049248234,
+        0.02934901562963231,
+        -0.053193238594479025
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          3.359811541221001e-06,
+          -1.4898378603726174e-08,
+          -2.637335964152592e-07
+        ],
+        [
+          -1.4898378603726174e-08,
+          3.3706566739221767e-06,
+          -1.8466825228912137e-07
+        ],
+        [
+          -2.637335964152592e-07,
+          -1.8466825228912137e-07,
+          1.1206026110631644e-07
+        ]
+      ],
+      "kinematic_group": "P16_slider",
+      "finger": "UR",
+      "source": [
+        "HEAD_UR_P16_envelope_slider",
+        "HEAD_UR_P16_envelope_tip"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 8.035121439427728e-08,
+        "principal_triangle_margin_kg_m2": 8.035121439426965e-08
+      }
+    },
+    {
+      "id": "HEAD_UL_finger_rotor",
+      "mass_kg": 0.1692112649654156,
+      "com_head_home_m": [
+        -0.07401187704713329,
+        0.056926422530860596,
+        -0.0014223101391266514
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          0.00010052678727140084,
+          8.186219554642365e-05,
+          5.0758074197020595e-06
+        ],
+        [
+          8.186219554642365e-05,
+          0.00020630970885869581,
+          -1.2351647340709663e-05
+        ],
+        [
+          5.0758074197020595e-06,
+          -1.2351647340709663e-05,
+          0.0002867639761597632
+        ]
+      ],
+      "kinematic_group": "finger_rotor",
+      "finger": "UL",
+      "source": [
+        "HEAD_UL_M2x6_keeper_screw_0",
+        "HEAD_UL_M2x6_keeper_screw_1",
+        "HEAD_UL_nut_keeper_sheet",
+        "HEAD_UL_removable_upper_fork",
+        "HEAD_UL_metal_blade_with_narrow_tongue",
+        "HEAD_UL_M3x20_fork_screw_0",
+        "HEAD_UL_M3_washer_0",
+        "HEAD_UL_M3_hexnut_0",
+        "HEAD_UL_M3x20_fork_screw_1",
+        "HEAD_UL_M3_washer_1",
+        "HEAD_UL_M3_hexnut_1",
+        "HEAD_UL_tip_SBSM_pin",
+        "HEAD_UL_tip_outer_stack_spacer",
+        "HEAD_UL_tip_M3_retention_washer",
+        "HEAD_UL_tip_M3_retention_nut",
+        "HEAD_UL_tip_lug_spacer_-1",
+        "HEAD_UL_tip_lug_spacer_1",
+        "HEAD_UL_integral_steel_crank_spindle",
+        "HEAD_UL_inner_front_spacer",
+        "HEAD_UL_MB1",
+        "HEAD_UL_KM1",
+        "HEAD_UL_lamp_PCB_outline",
+        "HEAD_UL_lamp_optical_sheet",
+        "HEAD_UL_lamp_insulating_ring1",
+        "HEAD_UL_lamp_insulating_ring2",
+        "HEAD_UL_lamp_insulating_ring3",
+        "HEAD_UL_lamp_SSH_M2_4_1",
+        "HEAD_UL_lamp_SSH_M2_4_2",
+        "HEAD_UL_lamp_SSH_M2_4_3",
+        "HEAD_UL_retained_pad_minus",
+        "HEAD_UL_retained_pad_plus"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 5.54906275595886e-05,
+        "principal_triangle_margin_kg_m2": 1.5438440303574955e-05
+      }
+    },
+    {
+      "id": "HEAD_UL_P16_body",
+      "mass_kg": 0.0879178746067117,
+      "com_head_home_m": [
+        -0.0759722966267193,
+        0.03122243219543138,
+        -0.08508191340072524
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          5.545667086242924e-05,
+          2.951705244321483e-06,
+          1.8147562603131624e-06
+        ],
+        [
+          2.951705244321483e-06,
+          5.760533656094894e-05,
+          -1.2707060134882862e-06
+        ],
+        [
+          1.8147562603131624e-06,
+          -1.2707060134882862e-06,
+          1.169207724401203e-05
+        ]
+      ],
+      "kinematic_group": "P16_body",
+      "finger": "UL",
+      "source": [
+        "HEAD_UL_P16_envelope_case",
+        "HEAD_UL_P16_envelope_guide"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 1.1574702735860339e-05,
+        "principal_triangle_margin_kg_m2": 5.4097990201974405e-06
+      }
+    },
+    {
+      "id": "HEAD_UL_P16_slider",
+      "mass_kg": 0.007082125393288301,
+      "com_head_home_m": [
+        -0.07329678049247512,
+        0.029349015629632255,
+        -0.05319323859447835
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          3.3598115412218886e-06,
+          1.4898378603736087e-08,
+          2.637335964154237e-07
+        ],
+        [
+          1.4898378603736087e-08,
+          3.370656673923077e-06,
+          -1.8466825228915514e-07
+        ],
+        [
+          2.637335964154237e-07,
+          -1.8466825228915514e-07,
+          1.1206026110637228e-07
+        ]
+      ],
+      "kinematic_group": "P16_slider",
+      "finger": "UL",
+      "source": [
+        "HEAD_UL_P16_envelope_slider",
+        "HEAD_UL_P16_envelope_tip"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 8.035121439431031e-08,
+        "principal_triangle_margin_kg_m2": 8.035121439430565e-08
+      }
+    },
+    {
+      "id": "HEAD_LL_finger_rotor",
+      "mass_kg": 0.15040590391239306,
+      "com_head_home_m": [
+        -0.062287711645562065,
+        -0.055637307281366725,
+        0.0480915519851029
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          8.517528924283442e-05,
+          -1.619392569484681e-05,
+          8.357285343575679e-06
+        ],
+        [
+          -1.619392569484681e-05,
+          5.5763428582663284e-05,
+          -2.3205282912328937e-06
+        ],
+        [
+          8.357285343575679e-06,
+          -2.3205282912328937e-06,
+          0.0001216366928129577
+        ]
+      ],
+      "kinematic_group": "finger_rotor",
+      "finger": "LL",
+      "source": [
+        "HEAD_LL_M2x6_keeper_screw_0",
+        "HEAD_LL_M2x6_keeper_screw_1",
+        "HEAD_LL_nut_keeper_sheet",
+        "HEAD_LL_removable_upper_fork",
+        "HEAD_LL_metal_blade_with_narrow_tongue",
+        "HEAD_LL_M3x20_fork_screw_0",
+        "HEAD_LL_M3_washer_0",
+        "HEAD_LL_M3_hexnut_0",
+        "HEAD_LL_M3x20_fork_screw_1",
+        "HEAD_LL_M3_washer_1",
+        "HEAD_LL_M3_hexnut_1",
+        "HEAD_LL_tip_SBSM_pin",
+        "HEAD_LL_tip_outer_stack_spacer",
+        "HEAD_LL_tip_M3_retention_washer",
+        "HEAD_LL_tip_M3_retention_nut",
+        "HEAD_LL_tip_lug_spacer_-1",
+        "HEAD_LL_tip_lug_spacer_1",
+        "HEAD_LL_integral_steel_crank_spindle",
+        "HEAD_LL_inner_front_spacer",
+        "HEAD_LL_MB1",
+        "HEAD_LL_KM1",
+        "HEAD_LL_lamp_PCB_outline",
+        "HEAD_LL_lamp_optical_sheet",
+        "HEAD_LL_lamp_insulating_ring1",
+        "HEAD_LL_lamp_insulating_ring2",
+        "HEAD_LL_lamp_insulating_ring3",
+        "HEAD_LL_lamp_SSH_M2_4_1",
+        "HEAD_LL_lamp_SSH_M2_4_2",
+        "HEAD_LL_lamp_SSH_M2_4_3",
+        "HEAD_LL_retained_pad_minus",
+        "HEAD_LL_retained_pad_plus"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 4.8572261912144786e-05,
+        "principal_triangle_margin_kg_m2": 1.46051883770997e-05
+      }
+    },
+    {
+      "id": "HEAD_LL_P16_body",
+      "mass_kg": 0.08791787460672057,
+      "com_head_home_m": [
+        -0.043940544156356724,
+        -0.06939638827907489,
+        -0.03508191340076689
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          5.653100371179478e-05,
+          -3.141139111908168e-06,
+          1.566530251398667e-06
+        ],
+        [
+          -3.141139111908168e-06,
+          5.653100371179479e-05,
+          1.566530251394624e-06
+        ],
+        [
+          1.566530251398667e-06,
+          1.566530251394624e-06,
+          1.1692077244016971e-05
+        ]
+      ],
+      "kinematic_group": "P16_body",
+      "finger": "LL",
+      "source": [
+        "HEAD_LL_P16_envelope_case",
+        "HEAD_LL_P16_envelope_guide"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 1.1574702735865072e-05,
+        "principal_triangle_margin_kg_m2": 5.409799020200632e-06
+      }
+    },
+    {
+      "id": "HEAD_LL_P16_slider",
+      "mass_kg": 0.007082125393279426,
+      "com_head_home_m": [
+        -0.04163099049670787,
+        -0.06708683461941994,
+        -0.0031932385944807625
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          3.3652341075678133e-06,
+          -1.585452335599927e-08,
+          2.2765958499612548e-07
+        ],
+        [
+          -1.585452335599927e-08,
+          3.3652341075677803e-06,
+          2.2765958499645246e-07
+        ],
+        [
+          2.2765958499612548e-07,
+          2.2765958499645246e-07,
+          1.1206026110617958e-07
+        ]
+      ],
+      "kinematic_group": "P16_slider",
+      "finger": "LL",
+      "source": [
+        "HEAD_LL_P16_envelope_slider",
+        "HEAD_LL_P16_envelope_tip"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 8.035121439419003e-08,
+        "principal_triangle_margin_kg_m2": 8.035121439417352e-08
+      }
+    },
+    {
+      "id": "HEAD_LR_finger_rotor",
+      "mass_kg": 0.1504059039123833,
+      "com_head_home_m": [
+        0.062288023224073744,
+        -0.0556369957028488,
+        0.04809155198510103
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          8.517255096117599e-05,
+          1.6194237368993098e-05,
+          -8.357461476658495e-06
+        ],
+        [
+          1.6194237368993098e-05,
+          5.576554351601426e-05,
+          -2.3207044243178335e-06
+        ],
+        [
+          -8.357461476658495e-06,
+          -2.3207044243178335e-06,
+          0.00012163606946464612
+        ]
+      ],
+      "kinematic_group": "finger_rotor",
+      "finger": "LR",
+      "source": [
+        "HEAD_LR_M2x6_keeper_screw_0",
+        "HEAD_LR_M2x6_keeper_screw_1",
+        "HEAD_LR_nut_keeper_sheet",
+        "HEAD_LR_removable_upper_fork",
+        "HEAD_LR_metal_blade_with_narrow_tongue",
+        "HEAD_LR_M3x20_fork_screw_0",
+        "HEAD_LR_M3_washer_0",
+        "HEAD_LR_M3_hexnut_0",
+        "HEAD_LR_M3x20_fork_screw_1",
+        "HEAD_LR_M3_washer_1",
+        "HEAD_LR_M3_hexnut_1",
+        "HEAD_LR_tip_SBSM_pin",
+        "HEAD_LR_tip_outer_stack_spacer",
+        "HEAD_LR_tip_M3_retention_washer",
+        "HEAD_LR_tip_M3_retention_nut",
+        "HEAD_LR_tip_lug_spacer_-1",
+        "HEAD_LR_tip_lug_spacer_1",
+        "HEAD_LR_integral_steel_crank_spindle",
+        "HEAD_LR_inner_front_spacer",
+        "HEAD_LR_MB1",
+        "HEAD_LR_KM1",
+        "HEAD_LR_lamp_PCB_outline",
+        "HEAD_LR_lamp_optical_sheet",
+        "HEAD_LR_lamp_insulating_ring1",
+        "HEAD_LR_lamp_insulating_ring2",
+        "HEAD_LR_lamp_insulating_ring3",
+        "HEAD_LR_lamp_SSH_M2_4_1",
+        "HEAD_LR_lamp_SSH_M2_4_2",
+        "HEAD_LR_lamp_SSH_M2_4_3",
+        "HEAD_LR_retained_pad_minus",
+        "HEAD_LR_retained_pad_plus"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 4.857333944596083e-05,
+        "principal_triangle_margin_kg_m2": 1.4605141409168581e-05
+      }
+    },
+    {
+      "id": "HEAD_LR_P16_body",
+      "mass_kg": 0.08791787460671988,
+      "com_head_home_m": [
+        0.043940544156360895,
+        -0.06939638827907313,
+        -0.03508191340076702
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          5.653100371179373e-05,
+          3.1411391119082696e-06,
+          -1.5665302513969422e-06
+        ],
+        [
+          3.1411391119082696e-06,
+          5.653100371179372e-05,
+          1.566530251395023e-06
+        ],
+        [
+          -1.5665302513969422e-06,
+          1.566530251395023e-06,
+          1.1692077244016263e-05
+        ]
+      ],
+      "kinematic_group": "P16_body",
+      "finger": "LR",
+      "source": [
+        "HEAD_LR_P16_envelope_case",
+        "HEAD_LR_P16_envelope_guide"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 1.157470273586446e-05,
+        "principal_triangle_margin_kg_m2": 5.409799020199717e-06
+      }
+    },
+    {
+      "id": "HEAD_LR_P16_slider",
+      "mass_kg": 0.007082125393280122,
+      "com_head_home_m": [
+        0.04163099049671112,
+        -0.06708683461942022,
+        -0.0031932385944806693
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          3.3652341075680946e-06,
+          1.5854523356003973e-08,
+          -2.276595849963321e-07
+        ],
+        [
+          1.5854523356003973e-08,
+          3.365234107568086e-06,
+          2.2765958499651964e-07
+        ],
+        [
+          -2.276595849963321e-07,
+          2.2765958499651964e-07,
+          1.1206026110622103e-07
+        ]
+      ],
+      "kinematic_group": "P16_slider",
+      "finger": "LR",
+      "source": [
+        "HEAD_LR_P16_envelope_slider",
+        "HEAD_LR_P16_envelope_tip"
+      ],
+      "hash": {
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+        "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+        "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+        "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+        "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+        "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+      },
+      "assumption": "Parallel-axis aggregation of listed nominal/proxy parts; do not add both aggregate and member masses.",
+      "contains_proxy": true,
+      "mass_measured": false,
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 8.035121439419596e-08,
+        "principal_triangle_margin_kg_m2": 8.035121439417309e-08
+      }
+    }
+  ],
+  "integration_rule": "Choose either the 262 mass-bearing primitive parts or 13 aggregate bodies, NEVER add both. 435 unweighed/reservation entries have null mass, not physical zero."
+}

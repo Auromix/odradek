@@ -1,0 +1,590 @@
+{
+  "revision": "HEAD-MASS04",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "manufacturing_release": false,
+  "dynamics_or_grasp_rating": false,
+  "units": {
+    "mass": "kg",
+    "length": "m",
+    "angle": "rad",
+    "inertia": "kg*m^2"
+  },
+  "coordinate_contract": {
+    "frame": "HEAD03 head face home",
+    "head_face_world_home_m": [
+      0,
+      0.055,
+      0.804
+    ],
+    "J7_pivot_head_home_m": [
+      0,
+      0,
+      -0.164
+    ],
+    "inertia_reference": "each body COM, tensor components resolved along head HOME axes",
+    "inertia_transform": "I(q)=R(q) I_home R(q)^T; use parallel-axis theorem only when changing reference point",
+    "world_translation_does_not_change_COM_central_inertia": true
+  },
+  "head_face_world_mm": [
+    0.0,
+    55.0,
+    804.0
+  ],
+  "source_hashes": {
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+    "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+    "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+    "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+  },
+  "per_finger_inputs": [
+    {
+      "finger": "UR",
+      "slider_mass_kg_interval": [
+        0,
+        0.095
+      ],
+      "body_mass_kg_formula": "0.095 - slider_mass_kg",
+      "nominal_slider_mass_kg": 0.0070821253932865005,
+      "body_com_head_home_m": [
+        0.07597229662672524,
+        0.03122243219543156,
+        -0.08508191340072124
+      ],
+      "slider_com_head_home_m": [
+        0.07329678049248234,
+        0.02934901562963231,
+        -0.053193238594479025
+      ],
+      "body_normalized_central_inertia_m2": [
+        [
+          0.0006307781109416995,
+          -3.357343722792917e-05,
+          -2.064149376260811e-05
+        ],
+        [
+          -3.357343722792917e-05,
+          0.0006552175745676431,
+          -1.4453329532487202e-05
+        ],
+        [
+          -2.064149376260811e-05,
+          -1.4453329532487202e-05,
+          0.00013298862485377832
+        ]
+      ],
+      "slider_normalized_central_inertia_m2": [
+        [
+          0.00047440723718418395,
+          -2.1036592514796603e-06,
+          -3.7239328841207106e-05
+        ],
+        [
+          -2.1036592514796603e-06,
+          0.00047593857588533944,
+          -2.6075258772483412e-05
+        ],
+        [
+          -3.7239328841207106e-05,
+          -2.6075258772483412e-05,
+          1.5822970490263268e-05
+        ]
+      ],
+      "assumption": "Scalar allocation sensitivity with each group uniformly distributed over its own overlapping envelope sum. Does not bound all possible true internal COM/inertia distributions. Endpoints allow zero mass; do not divide by zero."
+    },
+    {
+      "finger": "UL",
+      "slider_mass_kg_interval": [
+        0,
+        0.095
+      ],
+      "body_mass_kg_formula": "0.095 - slider_mass_kg",
+      "nominal_slider_mass_kg": 0.007082125393288301,
+      "body_com_head_home_m": [
+        -0.0759722966267193,
+        0.03122243219543138,
+        -0.08508191340072524
+      ],
+      "slider_com_head_home_m": [
+        -0.07329678049247512,
+        0.029349015629632255,
+        -0.05319323859447835
+      ],
+      "body_normalized_central_inertia_m2": [
+        [
+          0.0006307781109416815,
+          3.3573437227930306e-05,
+          2.0641493762573543e-05
+        ],
+        [
+          3.3573437227930306e-05,
+          0.0006552175745676103,
+          -1.4453329532505325e-05
+        ],
+        [
+          2.0641493762573543e-05,
+          -1.4453329532505325e-05,
+          0.00013298862485376154
+        ]
+      ],
+      "slider_normalized_central_inertia_m2": [
+        [
+          0.00047440723718418867,
+          2.103659251480525e-06,
+          3.723932884122087e-05
+        ],
+        [
+          2.103659251480525e-06,
+          0.00047593857588534556,
+          -2.6075258772481552e-05
+        ],
+        [
+          3.723932884122087e-05,
+          -2.6075258772481552e-05,
+          1.582297049026713e-05
+        ]
+      ],
+      "assumption": "Scalar allocation sensitivity with each group uniformly distributed over its own overlapping envelope sum. Does not bound all possible true internal COM/inertia distributions. Endpoints allow zero mass; do not divide by zero."
+    },
+    {
+      "finger": "LL",
+      "slider_mass_kg_interval": [
+        0,
+        0.095
+      ],
+      "body_mass_kg_formula": "0.095 - slider_mass_kg",
+      "nominal_slider_mass_kg": 0.007082125393279426,
+      "body_com_head_home_m": [
+        -0.043940544156356724,
+        -0.06939638827907489,
+        -0.03508191340076689
+      ],
+      "slider_com_head_home_m": [
+        -0.04163099049670787,
+        -0.06708683461941994,
+        -0.0031932385944807625
+      ],
+      "body_normalized_central_inertia_m2": [
+        [
+          0.0006429978427557832,
+          -3.572810564358268e-05,
+          1.78181087566796e-05
+        ],
+        [
+          -3.572810564358268e-05,
+          0.0006429978427557833,
+          1.7818108756633617e-05
+        ],
+        [
+          1.78181087566796e-05,
+          1.7818108756633617e-05,
+          0.0001329886248538043
+        ]
+      ],
+      "slider_normalized_central_inertia_m2": [
+        [
+          0.00047517290653470326,
+          -2.238667416287828e-06,
+          3.214565859172202e-05
+        ],
+        [
+          -2.238667416287828e-06,
+          0.0004751729065346986,
+          3.214565859176819e-05
+        ],
+        [
+          3.214565859172202e-05,
+          3.214565859176819e-05,
+          1.5822970490259748e-05
+        ]
+      ],
+      "assumption": "Scalar allocation sensitivity with each group uniformly distributed over its own overlapping envelope sum. Does not bound all possible true internal COM/inertia distributions. Endpoints allow zero mass; do not divide by zero."
+    },
+    {
+      "finger": "LR",
+      "slider_mass_kg_interval": [
+        0,
+        0.095
+      ],
+      "body_mass_kg_formula": "0.095 - slider_mass_kg",
+      "nominal_slider_mass_kg": 0.007082125393280122,
+      "body_com_head_home_m": [
+        0.043940544156360895,
+        -0.06939638827907313,
+        -0.03508191340076702
+      ],
+      "slider_com_head_home_m": [
+        0.04163099049671112,
+        -0.06708683461942022,
+        -0.0031932385944806693
+      ],
+      "body_normalized_central_inertia_m2": [
+        [
+          0.0006429978427557764,
+          3.5728105643584125e-05,
+          -1.7818108756660126e-05
+        ],
+        [
+          3.5728105643584125e-05,
+          0.0006429978427557763,
+          1.7818108756638296e-05
+        ],
+        [
+          -1.7818108756660126e-05,
+          1.7818108756638296e-05,
+          0.00013298862485379732
+        ]
+      ],
+      "slider_normalized_central_inertia_m2": [
+        [
+          0.00047517290653469627,
+          2.2386674162882722e-06,
+          -3.2145658591748037e-05
+        ],
+        [
+          2.2386674162882722e-06,
+          0.00047517290653469507,
+          3.214565859177452e-05
+        ],
+        [
+          -3.2145658591748037e-05,
+          3.214565859177452e-05,
+          1.5822970490264048e-05
+        ]
+      ],
+      "assumption": "Scalar allocation sensitivity with each group uniformly distributed over its own overlapping envelope sum. Does not bound all possible true internal COM/inertia distributions. Endpoints allow zero mass; do not divide by zero."
+    }
+  ],
+  "common_mass_examples": [
+    {
+      "slider_mass_per_P16_kg": 0,
+      "all_four_allocations_equal_for_this_example": true,
+      "open": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.15778210267576e-09,
+          0.0015424997866752839,
+          -0.037417019309124375
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.01971113911385548,
+            -2.706430003013554e-09,
+            -2.6906640465614072e-09
+          ],
+          [
+            -2.706430003013554e-09,
+            0.022241614662209162,
+            0.0016644514047334873
+          ],
+          [
+            -2.6906640465614072e-09,
+            0.0016644514047334873,
+            0.01628507951316616
+          ]
+        ]
+      },
+      "closed": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.1577823648194413e-09,
+          0.0009762886103891407,
+          -0.03303518686264298
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.02062607866651748,
+            -1.169440818433922e-09,
+            -2.8024552117534825e-09
+          ],
+          [
+            -1.169440818379712e-09,
+            0.022512573736491664,
+            0.0015413887256165236
+          ],
+          [
+            -2.8024552117534825e-09,
+            0.0015413887256165236,
+            0.013454594693849152
+          ]
+        ]
+      }
+    },
+    {
+      "slider_mass_per_P16_kg": 0.025,
+      "all_four_allocations_equal_for_this_example": true,
+      "open": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.1577821060802234e-09,
+          0.0015502810256393794,
+          -0.03627915049488192
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.019626936893289856,
+            -2.7063611416337395e-09,
+            -2.680594296419715e-09
+          ],
+          [
+            -2.7063611416337395e-09,
+            0.022147918829494094,
+            0.0017249663156652622
+          ],
+          [
+            -2.680594296419715e-09,
+            0.0017249663156652622,
+            0.01622201076611342
+          ]
+        ]
+      },
+      "closed": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.1577823658253053e-09,
+          0.000993633196925226,
+          -0.030345212305824352
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.02077126734967372,
+            -1.169287325045675e-09,
+            -2.7786498665394264e-09
+          ],
+          [
+            -1.169287324991465e-09,
+            0.022671208572196518,
+            0.001701551140308883
+          ],
+          [
+            -2.7786498665394264e-09,
+            0.001701551140308883,
+            0.013489728390286594
+          ]
+        ]
+      }
+    },
+    {
+      "slider_mass_per_P16_kg": 0.05,
+      "all_four_allocations_equal_for_this_example": true,
+      "open": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.1577821091751904e-09,
+          0.0015580622646034702,
+          -0.035141281680639486
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.019535477307637616,
+            -2.7062922805249755e-09,
+            -2.6705245457359214e-09
+          ],
+          [
+            -2.7062922805249755e-09,
+            0.022046965971061108,
+            0.00178553085327682
+          ],
+          [
+            -2.6705245457359214e-09,
+            0.00178553085327682,
+            0.016158941679691986
+          ]
+        ]
+      },
+      "closed": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.157782368842898e-09,
+          0.001010977783461314,
+          -0.02765523774900573
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.020875896898937218,
+            -1.1691338313321673e-09,
+            -2.7548445218268137e-09
+          ],
+          [
+            -1.1691338312779572e-09,
+            0.022789285960181805,
+            0.0018619750638545036
+          ],
+          [
+            -2.7548445218268137e-09,
+            0.0018619750638545036,
+            0.01352486040055087
+          ]
+        ]
+      }
+    },
+    {
+      "slider_mass_per_P16_kg": 0.075,
+      "all_four_allocations_equal_for_this_example": true,
+      "open": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.1577821128891503e-09,
+          0.0015658435035675621,
+          -0.034003412866397034
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.01943676035689877,
+            -2.706223418941873e-09,
+            -2.6604547949979178e-09
+          ],
+          [
+            -2.706223418941873e-09,
+            0.021938756086910215,
+            0.0018461450175681605
+          ],
+          [
+            -2.6604547949979178e-09,
+            0.0018461450175681605,
+            0.016095872253901855
+          ]
+        ]
+      },
+      "closed": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.157782370235633e-09,
+          0.0010283223699974005,
+          -0.024965263192187115
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.020939967314307976,
+            -1.1689803378219475e-09,
+            -2.73103917662631e-09
+          ],
+          [
+            -1.1689803377677374e-09,
+            0.02286680590044753,
+            0.0020226604962533846
+          ],
+          [
+            -2.73103917662631e-09,
+            0.002022660496253385,
+            0.013559990724641964
+          ]
+        ]
+      }
+    },
+    {
+      "slider_mass_per_P16_kg": 0.095,
+      "all_four_allocations_equal_for_this_example": true,
+      "open": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.157782115055627e-09,
+          0.0015720684947388391,
+          -0.03309311781500308
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.019352561493445334,
+            -2.7061683297350224e-09,
+            -2.652398994884564e-09
+          ],
+          [
+            -2.7061683297350224e-09,
+            0.021846963121072604,
+            0.0018946720802106775
+          ],
+          [
+            -2.652398994884564e-09,
+            0.0018946720802106775,
+            0.01604541646892429
+          ]
+        ]
+      },
+      "closed": {
+        "mass_kg": 2.802491324757483,
+        "com_head_home_m": [
+          3.1577823713188715e-09,
+          0.0010421980392262711,
+          -0.02281328354673222
+        ],
+        "inertia_about_COM_head_axes_kg_m2": [
+          [
+            0.02096202107020181,
+            -1.1688575430354557e-09,
+            -2.7119949007315368e-09
+          ],
+          [
+            -1.1688575429812456e-09,
+            0.02289962049030201,
+            0.0021513971285468383
+          ],
+          [
+            -2.7119949007315368e-09,
+            0.0021513971285468383,
+            0.013588093769870156
+          ]
+        ]
+      }
+    }
+  ],
+  "allocation_notes": [
+    {
+      "finger": "UR",
+      "total_mass_kg": 0.095,
+      "body_mass_kg": 0.0879178746067135,
+      "slider_mass_kg": 0.0070821253932865005,
+      "body_fraction": 0.9254513116496158,
+      "slider_fraction": 0.07454868835038421,
+      "primitive_volume_sum_mm3": 74261.93375578572,
+      "open_union_volume_mm3": 61914.767540325665,
+      "closed_union_volume_mm3": 64768.97549380132,
+      "open_overlap_volume_counted_more_than_once_mm3": 12347.166215460056,
+      "closed_overlap_volume_counted_more_than_once_mm3": 9492.9582619844,
+      "assumption": "Mass allocation uses primitive-volume SUM, NOT fused physical material volume. Overlapping boxes are intentional conservative spatial envelopes, not motor material."
+    },
+    {
+      "finger": "UL",
+      "total_mass_kg": 0.095,
+      "body_mass_kg": 0.0879178746067117,
+      "slider_mass_kg": 0.007082125393288301,
+      "body_fraction": 0.9254513116495968,
+      "slider_fraction": 0.07454868835040317,
+      "primitive_volume_sum_mm3": 74261.93375576893,
+      "open_union_volume_mm3": 61914.7675403203,
+      "closed_union_volume_mm3": 64768.97549382224,
+      "open_overlap_volume_counted_more_than_once_mm3": 12347.166215448626,
+      "closed_overlap_volume_counted_more_than_once_mm3": 9492.95826194669,
+      "assumption": "Mass allocation uses primitive-volume SUM, NOT fused physical material volume. Overlapping boxes are intentional conservative spatial envelopes, not motor material."
+    },
+    {
+      "finger": "LL",
+      "total_mass_kg": 0.095,
+      "body_mass_kg": 0.08791787460672057,
+      "slider_mass_kg": 0.007082125393279426,
+      "body_fraction": 0.9254513116496902,
+      "slider_fraction": 0.07454868835030976,
+      "primitive_volume_sum_mm3": 74261.93375585818,
+      "open_union_volume_mm3": 61914.767540397406,
+      "closed_union_volume_mm3": 64996.15687782108,
+      "open_overlap_volume_counted_more_than_once_mm3": 12347.16621546077,
+      "closed_overlap_volume_counted_more_than_once_mm3": 9265.776878037097,
+      "assumption": "Mass allocation uses primitive-volume SUM, NOT fused physical material volume. Overlapping boxes are intentional conservative spatial envelopes, not motor material."
+    },
+    {
+      "finger": "LR",
+      "total_mass_kg": 0.095,
+      "body_mass_kg": 0.08791787460671988,
+      "slider_mass_kg": 0.007082125393280122,
+      "body_fraction": 0.9254513116496829,
+      "slider_fraction": 0.07454868835031707,
+      "primitive_volume_sum_mm3": 74261.93375585167,
+      "open_union_volume_mm3": 61914.76754039124,
+      "closed_union_volume_mm3": 64996.15687783633,
+      "open_overlap_volume_counted_more_than_once_mm3": 12347.166215460427,
+      "closed_overlap_volume_counted_more_than_once_mm3": 9265.776878015342,
+      "assumption": "Mass allocation uses primitive-volume SUM, NOT fused physical material volume. Overlapping boxes are intentional conservative spatial envelopes, not motor material."
+    }
+  ]
+}

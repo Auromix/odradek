@@ -1,0 +1,4309 @@
+{
+  "revision": "HEAD-MASS04",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "manufacturing_release": false,
+  "dynamics_or_grasp_rating": false,
+  "units": {
+    "mass": "kg",
+    "length": "m",
+    "angle": "rad",
+    "inertia": "kg*m^2"
+  },
+  "coordinate_contract": {
+    "frame": "HEAD03 head face home",
+    "head_face_world_home_m": [
+      0,
+      0.055,
+      0.804
+    ],
+    "J7_pivot_head_home_m": [
+      0,
+      0,
+      -0.164
+    ],
+    "inertia_reference": "each body COM, tensor components resolved along head HOME axes",
+    "inertia_transform": "I(q)=R(q) I_home R(q)^T; use parallel-axis theorem only when changing reference point",
+    "world_translation_does_not_change_COM_central_inertia": true
+  },
+  "head_face_world_mm": [
+    0.0,
+    55.0,
+    804.0
+  ],
+  "source_hashes": {
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+    "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+    "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+    "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554"
+  },
+  "unit_checks": {
+    "box_volume_mm3": 6000.0,
+    "box_expected_inertia_kg_m2": [
+      [
+        0.00021666666666666666,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.00016666666666666666,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        8.333333333333333e-05
+      ]
+    ],
+    "box_calculated_inertia_kg_m2": [
+      [
+        0.00021666666666666666,
+        -2.4432394156922697e-23,
+        7.325974439492181e-23
+      ],
+      [
+        -2.4432394156922697e-23,
+        0.00016666666666666666,
+        1.4651948878984345e-22
+      ],
+      [
+        7.325974439492181e-23,
+        1.4651948878984345e-22,
+        8.333333333333333e-05
+      ]
+    ],
+    "box_error_kg_m2": 1.4651948878984345e-22,
+    "translation_invariance_error_m2": 7.325974439492173e-23,
+    "rotation_covariance_error_m2": 1.3552527156068805e-20,
+    "double_size_same_mass_inertia_ratio": [
+      4.0,
+      4.0,
+      4.0
+    ],
+    "double_size_fixed_density_mass_ratio": 8.0,
+    "fixed_density_inertia_ratio": 32.0
+  },
+  "named_step_entities": 697,
+  "name_sets_match_manifest_and_closed": true,
+  "per_part_geometry_audit": [
+    {
+      "id": "main_carrier",
+      "volume_delta_mm3": -6.9267116487026215e-09
+    },
+    {
+      "id": "J7_existing_adapter",
+      "volume_delta_mm3": 6.511982064694166e-10
+    },
+    {
+      "id": "UR_bearing_A",
+      "volume_delta_mm3": 1.2732925824820995e-11
+    },
+    {
+      "id": "UR_bearing_B",
+      "volume_delta_mm3": 4.05634636990726e-10
+    },
+    {
+      "id": "UR_bearing_outer_cap",
+      "volume_delta_mm3": 1.064108801074326e-10
+    },
+    {
+      "id": "UR_M3_cap_bolt_0",
+      "volume_delta_mm3": 1.028865881380625e-11
+    },
+    {
+      "id": "UR_M3_cap_washer_0",
+      "volume_delta_mm3": -2.070876803372812e-11
+    },
+    {
+      "id": "UR_M3_cap_bolt_1",
+      "volume_delta_mm3": -3.581135388230905e-12
+    },
+    {
+      "id": "UR_M3_cap_washer_1",
+      "volume_delta_mm3": 3.709033080667723e-12
+    },
+    {
+      "id": "UR_M3_cap_bolt_2",
+      "volume_delta_mm3": -3.552713678800501e-12
+    },
+    {
+      "id": "UR_M3_cap_washer_2",
+      "volume_delta_mm3": 3.7339020764193265e-12
+    },
+    {
+      "id": "UR_M3_cap_bolt_3",
+      "volume_delta_mm3": 1.0345502232667059e-11
+    },
+    {
+      "id": "UR_M3_cap_washer_3",
+      "volume_delta_mm3": -2.070876803372812e-11
+    },
+    {
+      "id": "UL_bearing_A",
+      "volume_delta_mm3": -2.8558133635669947e-10
+    },
+    {
+      "id": "UL_bearing_B",
+      "volume_delta_mm3": -2.901288098655641e-10
+    },
+    {
+      "id": "UL_bearing_outer_cap",
+      "volume_delta_mm3": -2.902197593357414e-09
+    },
+    {
+      "id": "UL_M3_cap_bolt_0",
+      "volume_delta_mm3": -4.3002046368201263e-11
+    },
+    {
+      "id": "UL_M3_cap_washer_0",
+      "volume_delta_mm3": 6.301803523456329e-11
+    },
+    {
+      "id": "UL_M3_cap_bolt_1",
+      "volume_delta_mm3": -4.331468517193571e-11
+    },
+    {
+      "id": "UL_M3_cap_washer_1",
+      "volume_delta_mm3": -8.125233819100686e-11
+    },
+    {
+      "id": "UL_M3_cap_bolt_2",
+      "volume_delta_mm3": -4.32578417530749e-11
+    },
+    {
+      "id": "UL_M3_cap_washer_2",
+      "volume_delta_mm3": -8.122746919525525e-11
+    },
+    {
+      "id": "UL_M3_cap_bolt_3",
+      "volume_delta_mm3": -4.2945202949340455e-11
+    },
+    {
+      "id": "UL_M3_cap_washer_3",
+      "volume_delta_mm3": 6.297895538409648e-11
+    },
+    {
+      "id": "LL_bearing_A",
+      "volume_delta_mm3": 4.266439646016806e-09
+    },
+    {
+      "id": "LL_bearing_B",
+      "volume_delta_mm3": -5.50062395632267e-09
+    },
+    {
+      "id": "LL_bearing_outer_cap",
+      "volume_delta_mm3": -1.0006260708905756e-08
+    },
+    {
+      "id": "LL_M3_cap_bolt_0",
+      "volume_delta_mm3": 5.786660040030256e-11
+    },
+    {
+      "id": "LL_M3_cap_washer_0",
+      "volume_delta_mm3": 2.794617870449656e-10
+    },
+    {
+      "id": "LL_M3_cap_bolt_1",
+      "volume_delta_mm3": 5.792344381916337e-11
+    },
+    {
+      "id": "LL_M3_cap_washer_1",
+      "volume_delta_mm3": 2.793161257841348e-10
+    },
+    {
+      "id": "LL_M3_cap_bolt_2",
+      "volume_delta_mm3": 5.7838178690872155e-11
+    },
+    {
+      "id": "LL_M3_cap_washer_2",
+      "volume_delta_mm3": 2.79463563401805e-10
+    },
+    {
+      "id": "LL_M3_cap_bolt_3",
+      "volume_delta_mm3": 5.789502210973296e-11
+    },
+    {
+      "id": "LL_M3_cap_washer_3",
+      "volume_delta_mm3": 2.7941915448082e-10
+    },
+    {
+      "id": "LR_bearing_A",
+      "volume_delta_mm3": 2.621163730509579e-09
+    },
+    {
+      "id": "LR_bearing_B",
+      "volume_delta_mm3": -2.760316419880837e-09
+    },
+    {
+      "id": "LR_bearing_outer_cap",
+      "volume_delta_mm3": -4.876710590906441e-09
+    },
+    {
+      "id": "LR_M3_cap_bolt_0",
+      "volume_delta_mm3": 3.1803892852622084e-11
+    },
+    {
+      "id": "LR_M3_cap_washer_0",
+      "volume_delta_mm3": 1.347473244095454e-10
+    },
+    {
+      "id": "LR_M3_cap_bolt_1",
+      "volume_delta_mm3": 3.169020601490047e-11
+    },
+    {
+      "id": "LR_M3_cap_washer_1",
+      "volume_delta_mm3": 1.3463541392866318e-10
+    },
+    {
+      "id": "LR_M3_cap_bolt_2",
+      "volume_delta_mm3": 3.1747049433761276e-11
+    },
+    {
+      "id": "LR_M3_cap_washer_2",
+      "volume_delta_mm3": 1.3458745229399938e-10
+    },
+    {
+      "id": "LR_M3_cap_bolt_3",
+      "volume_delta_mm3": 3.1803892852622084e-11
+    },
+    {
+      "id": "LR_M3_cap_washer_3",
+      "volume_delta_mm3": 1.347491007663848e-10
+    },
+    {
+      "id": "J7_to_carrier_M4x40_0",
+      "volume_delta_mm3": -7.048583938740194e-12
+    },
+    {
+      "id": "J7_M4_washer_0",
+      "volume_delta_mm3": 7.389644451905042e-13
+    },
+    {
+      "id": "J7_to_carrier_M4x40_1",
+      "volume_delta_mm3": -7.275957614183426e-12
+    },
+    {
+      "id": "J7_M4_washer_1",
+      "volume_delta_mm3": 7.389644451905042e-13
+    },
+    {
+      "id": "J7_to_carrier_M4x40_2",
+      "volume_delta_mm3": -7.048583938740194e-12
+    },
+    {
+      "id": "J7_M4_washer_2",
+      "volume_delta_mm3": 7.389644451905042e-13
+    },
+    {
+      "id": "J7_to_carrier_M4x40_3",
+      "volume_delta_mm3": -7.275957614183426e-12
+    },
+    {
+      "id": "J7_M4_washer_3",
+      "volume_delta_mm3": 7.389644451905042e-13
+    },
+    {
+      "id": "display_including_candidate_GH_keepout",
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "id": "camera_-1_physical_keepout",
+      "volume_delta_mm3": -1.0550138540565968e-10
+    },
+    {
+      "id": "camera_-1_FAKRA_unmated_reservation",
+      "volume_delta_mm3": 1.0431904229335487e-09
+    },
+    {
+      "id": "camera_-1_M2x6_-10.5_-10.5",
+      "volume_delta_mm3": -3.396394276933279e-11
+    },
+    {
+      "id": "camera_-1_M2x6_-10.5_10.5",
+      "volume_delta_mm3": -6.766498472643434e-11
+    },
+    {
+      "id": "camera_-1_M2x6_10.5_-10.5",
+      "volume_delta_mm3": -3.396394276933279e-11
+    },
+    {
+      "id": "camera_-1_M2x6_10.5_10.5",
+      "volume_delta_mm3": -6.767209015379194e-11
+    },
+    {
+      "id": "camera_1_physical_keepout",
+      "volume_delta_mm3": -1.2951204553246498e-09
+    },
+    {
+      "id": "camera_1_FAKRA_unmated_reservation",
+      "volume_delta_mm3": -1.2350938050076365e-09
+    },
+    {
+      "id": "camera_1_M2x6_-10.5_-10.5",
+      "volume_delta_mm3": -6.723155365762068e-11
+    },
+    {
+      "id": "camera_1_M2x6_-10.5_10.5",
+      "volume_delta_mm3": -3.3516300845803926e-11
+    },
+    {
+      "id": "camera_1_M2x6_10.5_-10.5",
+      "volume_delta_mm3": -6.723865908497828e-11
+    },
+    {
+      "id": "camera_1_M2x6_10.5_10.5",
+      "volume_delta_mm3": -3.352340627316153e-11
+    },
+    {
+      "id": "optic_column_-35.0_-22.0",
+      "volume_delta_mm3": 1.609805622138083e-10
+    },
+    {
+      "id": "optic_M3_tierod_-35.0_-22.0",
+      "volume_delta_mm3": 4.547473508864641e-13
+    },
+    {
+      "id": "optic_M3_washer_rear_-35.0_-22.0",
+      "volume_delta_mm3": 3.2862601528904634e-13
+    },
+    {
+      "id": "optic_M3_nut_rear_-35.0_-22.0",
+      "volume_delta_mm3": 6.573941391252447e-11
+    },
+    {
+      "id": "optic_M3_washer_front_-35.0_-22.0",
+      "volume_delta_mm3": 3.2862601528904634e-13
+    },
+    {
+      "id": "optic_M3_nut_front_-35.0_-22.0",
+      "volume_delta_mm3": 6.565414878423326e-11
+    },
+    {
+      "id": "optic_column_-35.0_22.0",
+      "volume_delta_mm3": 1.609805622138083e-10
+    },
+    {
+      "id": "optic_M3_tierod_-35.0_22.0",
+      "volume_delta_mm3": 4.547473508864641e-13
+    },
+    {
+      "id": "optic_M3_washer_rear_-35.0_22.0",
+      "volume_delta_mm3": 3.2862601528904634e-13
+    },
+    {
+      "id": "optic_M3_nut_rear_-35.0_22.0",
+      "volume_delta_mm3": 6.573941391252447e-11
+    },
+    {
+      "id": "optic_M3_washer_front_-35.0_22.0",
+      "volume_delta_mm3": 3.2862601528904634e-13
+    },
+    {
+      "id": "optic_M3_nut_front_-35.0_22.0",
+      "volume_delta_mm3": 6.565414878423326e-11
+    },
+    {
+      "id": "optic_column_35.0_-22.0",
+      "volume_delta_mm3": 1.609805622138083e-10
+    },
+    {
+      "id": "optic_M3_tierod_35.0_-22.0",
+      "volume_delta_mm3": 4.547473508864641e-13
+    },
+    {
+      "id": "optic_M3_washer_rear_35.0_-22.0",
+      "volume_delta_mm3": 3.3217872896784684e-13
+    },
+    {
+      "id": "optic_M3_nut_rear_35.0_-22.0",
+      "volume_delta_mm3": -6.856737400084967e-12
+    },
+    {
+      "id": "optic_M3_washer_front_35.0_-22.0",
+      "volume_delta_mm3": 3.3217872896784684e-13
+    },
+    {
+      "id": "optic_M3_nut_front_35.0_-22.0",
+      "volume_delta_mm3": -6.942002528376179e-12
+    },
+    {
+      "id": "optic_column_35.0_22.0",
+      "volume_delta_mm3": 1.609805622138083e-10
+    },
+    {
+      "id": "optic_M3_tierod_35.0_22.0",
+      "volume_delta_mm3": 4.547473508864641e-13
+    },
+    {
+      "id": "optic_M3_washer_rear_35.0_22.0",
+      "volume_delta_mm3": 3.3217872896784684e-13
+    },
+    {
+      "id": "optic_M3_nut_rear_35.0_22.0",
+      "volume_delta_mm3": -6.856737400084967e-12
+    },
+    {
+      "id": "optic_M3_washer_front_35.0_22.0",
+      "volume_delta_mm3": 3.3217872896784684e-13
+    },
+    {
+      "id": "optic_M3_nut_front_35.0_22.0",
+      "volume_delta_mm3": -6.942002528376179e-12
+    },
+    {
+      "id": "removable_optical_frame",
+      "volume_delta_mm3": -4.891262506134808e-09
+    },
+    {
+      "id": "UR_base_bracket",
+      "volume_delta_mm3": 7.73070496506989e-11
+    },
+    {
+      "id": "UR_base_SBSM_pin",
+      "volume_delta_mm3": -3.319655661471188e-11
+    },
+    {
+      "id": "UR_base_M3_retention_washer",
+      "volume_delta_mm3": 2.133937471171521e-11
+    },
+    {
+      "id": "UR_base_M3_retention_nut",
+      "volume_delta_mm3": 6.579625733138528e-12
+    },
+    {
+      "id": "UR_base_lug_spacer_-1",
+      "volume_delta_mm3": 1.8317791727895383e-11
+    },
+    {
+      "id": "UR_base_lug_spacer_1",
+      "volume_delta_mm3": -2.6858515411731787e-12
+    },
+    {
+      "id": "UR_M4_base_bolt_-10",
+      "volume_delta_mm3": -5.684341886080801e-13
+    },
+    {
+      "id": "UR_M4_base_bolt_10",
+      "volume_delta_mm3": -5.684341886080801e-13
+    },
+    {
+      "id": "UL_base_bracket",
+      "volume_delta_mm3": -1.6061676433309913e-09
+    },
+    {
+      "id": "UL_base_SBSM_pin",
+      "volume_delta_mm3": -9.401901479577646e-11
+    },
+    {
+      "id": "UL_base_M3_retention_washer",
+      "volume_delta_mm3": 9.052669724951556e-11
+    },
+    {
+      "id": "UL_base_M3_retention_nut",
+      "volume_delta_mm3": 3.4440006402292056e-11
+    },
+    {
+      "id": "UL_base_lug_spacer_-1",
+      "volume_delta_mm3": 4.8473225433554035e-11
+    },
+    {
+      "id": "UL_base_lug_spacer_1",
+      "volume_delta_mm3": -5.042011252953671e-11
+    },
+    {
+      "id": "UL_M4_base_bolt_-10",
+      "volume_delta_mm3": 6.821210263296962e-13
+    },
+    {
+      "id": "UL_M4_base_bolt_10",
+      "volume_delta_mm3": 7.389644451905042e-13
+    },
+    {
+      "id": "LL_base_bracket",
+      "volume_delta_mm3": -9.367795428261161e-11
+    },
+    {
+      "id": "LL_base_SBSM_pin",
+      "volume_delta_mm3": -1.2391865311656147e-11
+    },
+    {
+      "id": "LL_base_M3_retention_washer",
+      "volume_delta_mm3": 7.392664258532022e-11
+    },
+    {
+      "id": "LL_base_M3_retention_nut",
+      "volume_delta_mm3": 1.5582202195218997e-11
+    },
+    {
+      "id": "LL_base_lug_spacer_-1",
+      "volume_delta_mm3": 1.3747580851486418e-10
+    },
+    {
+      "id": "LL_base_lug_spacer_1",
+      "volume_delta_mm3": -7.560174708487466e-11
+    },
+    {
+      "id": "LL_M4_base_bolt_-10",
+      "volume_delta_mm3": 5.115907697472721e-13
+    },
+    {
+      "id": "LL_M4_base_bolt_10",
+      "volume_delta_mm3": 7.389644451905042e-13
+    },
+    {
+      "id": "LR_base_bracket",
+      "volume_delta_mm3": 1.1805241229012609e-09
+    },
+    {
+      "id": "LR_base_SBSM_pin",
+      "volume_delta_mm3": -1.5916157281026244e-12
+    },
+    {
+      "id": "LR_base_M3_retention_washer",
+      "volume_delta_mm3": -7.600675644425792e-11
+    },
+    {
+      "id": "LR_base_M3_retention_nut",
+      "volume_delta_mm3": 1.48858703141741e-11
+    },
+    {
+      "id": "LR_base_lug_spacer_-1",
+      "volume_delta_mm3": 7.796074896759819e-11
+    },
+    {
+      "id": "LR_base_lug_spacer_1",
+      "volume_delta_mm3": -2.8549607122840825e-11
+    },
+    {
+      "id": "LR_M4_base_bolt_-10",
+      "volume_delta_mm3": -6.252776074688882e-13
+    },
+    {
+      "id": "LR_M4_base_bolt_10",
+      "volume_delta_mm3": -6.252776074688882e-13
+    },
+    {
+      "id": "J7_extension24",
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "id": "UR_M2x6_keeper_screw_0",
+      "volume_delta_mm3": -2.6290081223123707e-13
+    },
+    {
+      "id": "UR_M2x6_keeper_screw_1",
+      "volume_delta_mm3": -2.6290081223123707e-13
+    },
+    {
+      "id": "UR_nut_keeper_sheet",
+      "volume_delta_mm3": -8.029132914089132e-13
+    },
+    {
+      "id": "UR_removable_upper_fork",
+      "volume_delta_mm3": -8.185452315956354e-12
+    },
+    {
+      "id": "UR_metal_blade_with_narrow_tongue",
+      "volume_delta_mm3": -7.992639439180493e-09
+    },
+    {
+      "id": "UR_M3x20_fork_screw_0",
+      "volume_delta_mm3": -2.2453150450019166e-12
+    },
+    {
+      "id": "UR_M3_washer_0",
+      "volume_delta_mm3": 3.0020430585864233e-13
+    },
+    {
+      "id": "UR_M3_hexnut_0",
+      "volume_delta_mm3": 4.497735517361434e-12
+    },
+    {
+      "id": "UR_M3x20_fork_screw_1",
+      "volume_delta_mm3": -2.2453150450019166e-12
+    },
+    {
+      "id": "UR_M3_washer_1",
+      "volume_delta_mm3": 3.0020430585864233e-13
+    },
+    {
+      "id": "UR_M3_hexnut_1",
+      "volume_delta_mm3": 2.2808421817899216e-12
+    },
+    {
+      "id": "UR_tip_SBSM_pin",
+      "volume_delta_mm3": -4.149569576838985e-12
+    },
+    {
+      "id": "UR_tip_outer_stack_spacer",
+      "volume_delta_mm3": -8.526512829121202e-13
+    },
+    {
+      "id": "UR_tip_M3_retention_washer",
+      "volume_delta_mm3": 2.120259523508139e-11
+    },
+    {
+      "id": "UR_tip_M3_retention_nut",
+      "volume_delta_mm3": 7.858602657506708e-12
+    },
+    {
+      "id": "UR_tip_lug_spacer_-1",
+      "volume_delta_mm3": -1.6129320101754274e-12
+    },
+    {
+      "id": "UR_tip_lug_spacer_1",
+      "volume_delta_mm3": -1.7195134205394424e-12
+    },
+    {
+      "id": "UR_integral_steel_crank_spindle",
+      "volume_delta_mm3": 1.7644197214394808e-10
+    },
+    {
+      "id": "UR_inner_front_spacer",
+      "volume_delta_mm3": 1.3358203432289883e-12
+    },
+    {
+      "id": "UR_MB1",
+      "volume_delta_mm3": 2.2168933355715126e-12
+    },
+    {
+      "id": "UR_KM1",
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "id": "UR_lamp_PCB_outline",
+      "volume_delta_mm3": -6.034497346263379e-10
+    },
+    {
+      "id": "UR_lamp_optical_sheet",
+      "volume_delta_mm3": -4.2814463085960597e-10
+    },
+    {
+      "id": "UR_lamp_insulating_ring1",
+      "volume_delta_mm3": 1.7763568394002505e-15
+    },
+    {
+      "id": "UR_lamp_insulating_ring2",
+      "volume_delta_mm3": 8.881784197001252e-15
+    },
+    {
+      "id": "UR_lamp_insulating_ring3",
+      "volume_delta_mm3": -1.2434497875801753e-14
+    },
+    {
+      "id": "UR_lamp_SSH_M2_4_1",
+      "volume_delta_mm3": -8.171241461241152e-14
+    },
+    {
+      "id": "UR_lamp_SSH_M2_4_2",
+      "volume_delta_mm3": -3.552713678800501e-14
+    },
+    {
+      "id": "UR_lamp_SSH_M2_4_3",
+      "volume_delta_mm3": -5.684341886080802e-14
+    },
+    {
+      "id": "UR_retained_pad_minus",
+      "volume_delta_mm3": 1.9952040020143613e-10
+    },
+    {
+      "id": "UR_retained_pad_plus",
+      "volume_delta_mm3": 9.401901479577646e-11
+    },
+    {
+      "id": "UR_PCBA_U1",
+      "volume_delta_mm3": -3.2308378195011755e-11
+    },
+    {
+      "id": "UR_PCBA_C1",
+      "volume_delta_mm3": -1.1032952329514956e-11
+    },
+    {
+      "id": "UR_PCBA_C2",
+      "volume_delta_mm3": -5.559996907322784e-13
+    },
+    {
+      "id": "UR_PCBA_C3",
+      "volume_delta_mm3": 1.1466383398328617e-12
+    },
+    {
+      "id": "UR_PCBA_C4",
+      "volume_delta_mm3": 1.1306511282782594e-12
+    },
+    {
+      "id": "UR_PCBA_C5",
+      "volume_delta_mm3": -1.2801759652347755e-11
+    },
+    {
+      "id": "UR_PCBA_C6",
+      "volume_delta_mm3": 1.1359801987964602e-12
+    },
+    {
+      "id": "UR_PCBA_C7",
+      "volume_delta_mm3": 3.708144902248023e-13
+    },
+    {
+      "id": "UR_PCBA_C8",
+      "volume_delta_mm3": -1.3527845510452607e-11
+    },
+    {
+      "id": "UR_PCBA_C9",
+      "volume_delta_mm3": -1.3775647289548942e-12
+    },
+    {
+      "id": "UR_PCBA_R1",
+      "volume_delta_mm3": 3.859135233597044e-12
+    },
+    {
+      "id": "UR_PCBA_R2",
+      "volume_delta_mm3": -1.2789769243681803e-13
+    },
+    {
+      "id": "UR_PCBA_R3",
+      "volume_delta_mm3": 3.2933655802480644e-12
+    },
+    {
+      "id": "UR_PCBA_R4",
+      "volume_delta_mm3": -3.5274005938390474e-12
+    },
+    {
+      "id": "UR_PCBA_R5",
+      "volume_delta_mm3": 4.192202140984591e-13
+    },
+    {
+      "id": "UR_PCBA_R6",
+      "volume_delta_mm3": -7.952305480785071e-12
+    },
+    {
+      "id": "UR_PCBA_R7",
+      "volume_delta_mm3": -8.699707620962727e-12
+    },
+    {
+      "id": "UR_PCBA_R8",
+      "volume_delta_mm3": 3.3137936839011672e-12
+    },
+    {
+      "id": "UR_PCBA_R9",
+      "volume_delta_mm3": -4.440448009290776e-12
+    },
+    {
+      "id": "UR_PCBA_TH1",
+      "volume_delta_mm3": -8.539835505416704e-13
+    },
+    {
+      "id": "UR_LED_D1",
+      "volume_delta_mm3": -7.52065076881081e-13
+    },
+    {
+      "id": "UR_LED_D2",
+      "volume_delta_mm3": -2.4091839634365897e-13
+    },
+    {
+      "id": "UR_LED_D3",
+      "volume_delta_mm3": 4.18332035678759e-13
+    },
+    {
+      "id": "UR_LED_D4",
+      "volume_delta_mm3": 4.0811798385220754e-13
+    },
+    {
+      "id": "UR_LED_D5",
+      "volume_delta_mm3": -2.395861287141088e-13
+    },
+    {
+      "id": "UR_LED_D6",
+      "volume_delta_mm3": -1.2372325386422744e-12
+    },
+    {
+      "id": "UR_LED_D7",
+      "volume_delta_mm3": -7.214229214014267e-13
+    },
+    {
+      "id": "UR_LED_D8",
+      "volume_delta_mm3": 1.2225775947172224e-12
+    },
+    {
+      "id": "UR_LED_D9",
+      "volume_delta_mm3": 1.227462576025573e-12
+    },
+    {
+      "id": "UR_LED_D10",
+      "volume_delta_mm3": -2.540190280342358e-13
+    },
+    {
+      "id": "UR_LED_D11",
+      "volume_delta_mm3": -7.107647803650252e-13
+    },
+    {
+      "id": "UR_LED_D12",
+      "volume_delta_mm3": -7.136513602290506e-13
+    },
+    {
+      "id": "UR_LED_D13",
+      "volume_delta_mm3": -7.813749647311852e-13
+    },
+    {
+      "id": "UR_LED_D14",
+      "volume_delta_mm3": -5.861977570020827e-14
+    },
+    {
+      "id": "UR_LED_D15",
+      "volume_delta_mm3": -5.81756864903582e-14
+    },
+    {
+      "id": "UR_LED_D16",
+      "volume_delta_mm3": -3.863576125695545e-14
+    },
+    {
+      "id": "UR_LED_D17",
+      "volume_delta_mm3": -7.116529587847253e-13
+    },
+    {
+      "id": "UR_LED_D18",
+      "volume_delta_mm3": 2.433608869978343e-13
+    },
+    {
+      "id": "UR_LED_D19",
+      "volume_delta_mm3": 2.540190280342358e-13
+    },
+    {
+      "id": "UR_LED_D20",
+      "volume_delta_mm3": -7.7982065249671e-13
+    },
+    {
+      "id": "UR_LED_D21",
+      "volume_delta_mm3": -5.46229728115577e-14
+    },
+    {
+      "id": "UR_LED_D22",
+      "volume_delta_mm3": -4.6629367034256575e-14
+    },
+    {
+      "id": "UR_LED_D23",
+      "volume_delta_mm3": -1.2398970739013748e-12
+    },
+    {
+      "id": "UR_LED_D24",
+      "volume_delta_mm3": -7.120970479945754e-13
+    },
+    {
+      "id": "UR_LED_D25",
+      "volume_delta_mm3": 2.062572335148616e-12
+    },
+    {
+      "id": "UR_LED_D26",
+      "volume_delta_mm3": -7.2735151235292506e-12
+    },
+    {
+      "id": "UR_LED_D27",
+      "volume_delta_mm3": 4.2010839251815923e-13
+    },
+    {
+      "id": "UR_LED_D28",
+      "volume_delta_mm3": 4.205524817280093e-13
+    },
+    {
+      "id": "UR_LED_D29",
+      "volume_delta_mm3": 4.0034642267983145e-13
+    },
+    {
+      "id": "UR_LED_D30",
+      "volume_delta_mm3": -2.637889906509372e-13
+    },
+    {
+      "id": "UR_LED_D31",
+      "volume_delta_mm3": 2.473576898864849e-13
+    },
+    {
+      "id": "UR_LED_D32",
+      "volume_delta_mm3": -2.362110507192483e-12
+    },
+    {
+      "id": "UR_LED_D33",
+      "volume_delta_mm3": 2.0616841567289157e-12
+    },
+    {
+      "id": "UR_LED_D34",
+      "volume_delta_mm3": -7.960077041957447e-12
+    },
+    {
+      "id": "UR_LED_D35",
+      "volume_delta_mm3": 3.992361996552063e-13
+    },
+    {
+      "id": "UR_LED_D36",
+      "volume_delta_mm3": 4.036770917537069e-13
+    },
+    {
+      "id": "UR_LED_D37",
+      "volume_delta_mm3": -2.682298827494378e-13
+    },
+    {
+      "id": "UR_LED_D38",
+      "volume_delta_mm3": -2.6489921367556235e-13
+    },
+    {
+      "id": "UR_LED_D39",
+      "volume_delta_mm3": 1.6038281813735011e-12
+    },
+    {
+      "id": "UR_LED_D40",
+      "volume_delta_mm3": -1.56052948341312e-12
+    },
+    {
+      "id": "UR_LED_D41",
+      "volume_delta_mm3": 3.5265124154193472e-12
+    },
+    {
+      "id": "UR_LED_D42",
+      "volume_delta_mm3": 2.828848266744899e-12
+    },
+    {
+      "id": "UR_LED_D43",
+      "volume_delta_mm3": -6.636913241209186e-12
+    },
+    {
+      "id": "UR_LED_D44",
+      "volume_delta_mm3": -2.575717417130363e-13
+    },
+    {
+      "id": "UR_LED_D45",
+      "volume_delta_mm3": -2.4202861936828413e-13
+    },
+    {
+      "id": "UR_LED_D46",
+      "volume_delta_mm3": -2.858158154595003e-12
+    },
+    {
+      "id": "UR_LED_D47",
+      "volume_delta_mm3": 2.263078613395919e-12
+    },
+    {
+      "id": "UR_LED_D48",
+      "volume_delta_mm3": 1.5869527913991988e-12
+    },
+    {
+      "id": "UR_LED_D49",
+      "volume_delta_mm3": -2.83728596173205e-12
+    },
+    {
+      "id": "UR_LED_D50",
+      "volume_delta_mm3": 1.5565326805244695e-12
+    },
+    {
+      "id": "UR_LED_D51",
+      "volume_delta_mm3": -8.427480935324638e-12
+    },
+    {
+      "id": "UR_LED_D52",
+      "volume_delta_mm3": 5.444533712761768e-13
+    },
+    {
+      "id": "UR_LED_D53",
+      "volume_delta_mm3": 2.2433166435575913e-12
+    },
+    {
+      "id": "UR_LED_D54",
+      "volume_delta_mm3": 1.5916157281026244e-12
+    },
+    {
+      "id": "UR_LED_D55",
+      "volume_delta_mm3": -2.830624623584299e-12
+    },
+    {
+      "id": "UR_LED_D56",
+      "volume_delta_mm3": 1.603384092163651e-12
+    },
+    {
+      "id": "UR_LED_D57",
+      "volume_delta_mm3": -2.8321789358187743e-12
+    },
+    {
+      "id": "UR_LED_D58",
+      "volume_delta_mm3": 2.2521984277545926e-12
+    },
+    {
+      "id": "UR_LED_D59",
+      "volume_delta_mm3": -1.0129008742865153e-11
+    },
+    {
+      "id": "UR_LED_D60",
+      "volume_delta_mm3": 2.042366276100438e-12
+    },
+    {
+      "id": "UR_LED_D61",
+      "volume_delta_mm3": -2.405187160547939e-12
+    },
+    {
+      "id": "UR_LED_D62",
+      "volume_delta_mm3": 2.5563995365018854e-12
+    },
+    {
+      "id": "UR_LED_D63",
+      "volume_delta_mm3": -1.8771650900362147e-12
+    },
+    {
+      "id": "UR_LED_D64",
+      "volume_delta_mm3": 3.2298608232395054e-12
+    },
+    {
+      "id": "UR_LED_D65",
+      "volume_delta_mm3": -9.182876681279595e-12
+    },
+    {
+      "id": "UR_LED_D66",
+      "volume_delta_mm3": 2.247091401841317e-12
+    },
+    {
+      "id": "UR_LED_D67",
+      "volume_delta_mm3": -2.382982700055436e-12
+    },
+    {
+      "id": "UR_LED_D68",
+      "volume_delta_mm3": 2.0523582833220644e-12
+    },
+    {
+      "id": "UR_LED_D69",
+      "volume_delta_mm3": -2.3874235921539366e-12
+    },
+    {
+      "id": "UR_LED_D70",
+      "volume_delta_mm3": 2.7418067816142866e-12
+    },
+    {
+      "id": "UR_LED_D71",
+      "volume_delta_mm3": -9.659606448053637e-12
+    },
+    {
+      "id": "UR_LED_D72",
+      "volume_delta_mm3": 2.7338131758369855e-12
+    },
+    {
+      "id": "UR_LED_D73",
+      "volume_delta_mm3": 2.043698543729988e-12
+    },
+    {
+      "id": "UR_LED_D74",
+      "volume_delta_mm3": -2.3956392425361628e-12
+    },
+    {
+      "id": "UR_LED_D75",
+      "volume_delta_mm3": 2.6969537714194303e-12
+    },
+    {
+      "id": "UR_LED_D76",
+      "volume_delta_mm3": 2.0459189897792385e-12
+    },
+    {
+      "id": "UR_LED_D77",
+      "volume_delta_mm3": 2.7142732506035827e-12
+    },
+    {
+      "id": "UR_LED_D78",
+      "volume_delta_mm3": 2.058131443050115e-12
+    },
+    {
+      "id": "UR_LED_D79",
+      "volume_delta_mm3": 2.2462032234216167e-12
+    },
+    {
+      "id": "UR_LED_D80",
+      "volume_delta_mm3": 1.5660805985362458e-12
+    },
+    {
+      "id": "UR_LED_D81",
+      "volume_delta_mm3": -2.842615032250251e-12
+    },
+    {
+      "id": "UR_LED_D82",
+      "volume_delta_mm3": 2.8688162956314045e-12
+    },
+    {
+      "id": "UR_LED_D83",
+      "volume_delta_mm3": -1.575184427338172e-12
+    },
+    {
+      "id": "UR_LED_D84",
+      "volume_delta_mm3": 1.5789591856218976e-12
+    },
+    {
+      "id": "UR_LED_D85",
+      "volume_delta_mm3": -2.852384994866952e-12
+    },
+    {
+      "id": "UR_LED_D86",
+      "volume_delta_mm3": 1.5727419366839968e-12
+    },
+    {
+      "id": "UR_LED_D87",
+      "volume_delta_mm3": -2.8530511286817273e-12
+    },
+    {
+      "id": "UR_LED_D88",
+      "volume_delta_mm3": 2.248423669470867e-12
+    },
+    {
+      "id": "UR_LED_D89",
+      "volume_delta_mm3": -1.8884893648873913e-12
+    },
+    {
+      "id": "UR_LED_D90",
+      "volume_delta_mm3": 2.5437429940211587e-12
+    },
+    {
+      "id": "UR_LED_D91",
+      "volume_delta_mm3": -2.8534952178915773e-12
+    },
+    {
+      "id": "UR_LED_D92",
+      "volume_delta_mm3": 2.2231105845094135e-12
+    },
+    {
+      "id": "UR_LED_D93",
+      "volume_delta_mm3": -1.014477390981483e-11
+    },
+    {
+      "id": "UR_LED_D94",
+      "volume_delta_mm3": 2.043476499125063e-12
+    },
+    {
+      "id": "UR_LED_D95",
+      "volume_delta_mm3": -2.3805402094012607e-12
+    },
+    {
+      "id": "UR_LED_D96",
+      "volume_delta_mm3": 2.702060797332706e-12
+    },
+    {
+      "id": "UR_LED_D97",
+      "volume_delta_mm3": -9.673817302768839e-12
+    },
+    {
+      "id": "UR_LED_D98",
+      "volume_delta_mm3": 2.7005064850982308e-12
+    },
+    {
+      "id": "UR_LED_D99",
+      "volume_delta_mm3": -2.33946195749013e-12
+    },
+    {
+      "id": "UR_LED_D100",
+      "volume_delta_mm3": 2.7049473771967314e-12
+    },
+    {
+      "id": "UR_LED_D101",
+      "volume_delta_mm3": -9.670930722904814e-12
+    },
+    {
+      "id": "UR_LED_D102",
+      "volume_delta_mm3": 2.7131630275789576e-12
+    },
+    {
+      "id": "UR_LED_D103",
+      "volume_delta_mm3": -1.8904877663317166e-12
+    },
+    {
+      "id": "UR_LED_D104",
+      "volume_delta_mm3": 3.539835091714849e-12
+    },
+    {
+      "id": "UR_LED_D105",
+      "volume_delta_mm3": 2.8461677459290513e-12
+    },
+    {
+      "id": "UR_LED_D106",
+      "volume_delta_mm3": 3.5136338283336954e-12
+    },
+    {
+      "id": "UR_LED_D107",
+      "volume_delta_mm3": -8.399947404313934e-13
+    },
+    {
+      "id": "UR_LED_D108",
+      "volume_delta_mm3": -3.784972335552084e-12
+    },
+    {
+      "id": "UR_LED_D109",
+      "volume_delta_mm3": 1.6231460620019789e-12
+    },
+    {
+      "id": "UR_LED_D110",
+      "volume_delta_mm3": -2.8423929876453258e-12
+    },
+    {
+      "id": "UR_LED_D111",
+      "volume_delta_mm3": 1.5840662115351734e-12
+    },
+    {
+      "id": "UR_LED_D112",
+      "volume_delta_mm3": -3.7696512578122565e-12
+    },
+    {
+      "id": "UR_LED_D113",
+      "volume_delta_mm3": 6.59472476627343e-13
+    },
+    {
+      "id": "UR_LED_D114",
+      "volume_delta_mm3": -2.821742839387298e-12
+    },
+    {
+      "id": "UR_LED_D115",
+      "volume_delta_mm3": 1.5636381078820705e-12
+    },
+    {
+      "id": "UR_LED_D116",
+      "volume_delta_mm3": -7.567502180449992e-12
+    },
+    {
+      "id": "UR_LED_D117",
+      "volume_delta_mm3": 5.952349724225314e-12
+    },
+    {
+      "id": "UR_LED_D118",
+      "volume_delta_mm3": -3.7692071686024065e-12
+    },
+    {
+      "id": "UR_LED_D119",
+      "volume_delta_mm3": -4.239275597228698e-12
+    },
+    {
+      "id": "UR_LED_D120",
+      "volume_delta_mm3": 1.0973888464604897e-11
+    },
+    {
+      "id": "UR_LED_D121",
+      "volume_delta_mm3": -1.1059375637501034e-11
+    },
+    {
+      "id": "UR_LED_D122",
+      "volume_delta_mm3": 1.3022916078853086e-12
+    },
+    {
+      "id": "UR_LED_D123",
+      "volume_delta_mm3": -1.1045164782785832e-11
+    },
+    {
+      "id": "UR_LED_D124",
+      "volume_delta_mm3": 5.930589352942661e-12
+    },
+    {
+      "id": "UR_LED_D125",
+      "volume_delta_mm3": -6.4368510521717326e-12
+    },
+    {
+      "id": "UR_LED_D126",
+      "volume_delta_mm3": 6.421529974431905e-13
+    },
+    {
+      "id": "UR_LED_D127",
+      "volume_delta_mm3": 1.2931877790833823e-12
+    },
+    {
+      "id": "UR_LED_D128",
+      "volume_delta_mm3": -3.786970736996409e-12
+    },
+    {
+      "id": "UR_LED_D129",
+      "volume_delta_mm3": 5.311306949806749e-12
+    },
+    {
+      "id": "UR_LED_D130",
+      "volume_delta_mm3": 6.461498003318411e-13
+    },
+    {
+      "id": "UR_JST_header_reference",
+      "volume_delta_mm3": -1.9895196601282805e-10
+    },
+    {
+      "id": "UR_JST_plug_reference",
+      "volume_delta_mm3": 2.8848035071860068e-11
+    },
+    {
+      "id": "UR_P16_envelope_case",
+      "volume_delta_mm3": -6.451591616496444e-08
+    },
+    {
+      "id": "UR_P16_envelope_guide",
+      "volume_delta_mm3": -6.784830475226045e-09
+    },
+    {
+      "id": "UR_P16_envelope_slider",
+      "volume_delta_mm3": 5.547917680814862e-11
+    },
+    {
+      "id": "UR_P16_envelope_tip",
+      "volume_delta_mm3": -5.047695594839752e-10
+    },
+    {
+      "id": "UL_M2x6_keeper_screw_0",
+      "volume_delta_mm3": 2.842170943040401e-14
+    },
+    {
+      "id": "UL_M2x6_keeper_screw_1",
+      "volume_delta_mm3": 2.842170943040401e-14
+    },
+    {
+      "id": "UL_nut_keeper_sheet",
+      "volume_delta_mm3": -1.2704504115390591e-11
+    },
+    {
+      "id": "UL_removable_upper_fork",
+      "volume_delta_mm3": 2.0691004465334117e-11
+    },
+    {
+      "id": "UL_metal_blade_with_narrow_tongue",
+      "volume_delta_mm3": -4.223693395033479e-09
+    },
+    {
+      "id": "UL_M3x20_fork_screw_0",
+      "volume_delta_mm3": 1.5063505998114124e-12
+    },
+    {
+      "id": "UL_M3_washer_0",
+      "volume_delta_mm3": -3.161915174132446e-13
+    },
+    {
+      "id": "UL_M3_hexnut_0",
+      "volume_delta_mm3": -1.0864198429771932e-11
+    },
+    {
+      "id": "UL_M3x20_fork_screw_1",
+      "volume_delta_mm3": 1.5631940186722204e-12
+    },
+    {
+      "id": "UL_M3_washer_1",
+      "volume_delta_mm3": -3.268496584496461e-13
+    },
+    {
+      "id": "UL_M3_hexnut_1",
+      "volume_delta_mm3": -8.540723683836404e-12
+    },
+    {
+      "id": "UL_tip_SBSM_pin",
+      "volume_delta_mm3": -6.605205271625891e-11
+    },
+    {
+      "id": "UL_tip_outer_stack_spacer",
+      "volume_delta_mm3": 9.745804163685534e-11
+    },
+    {
+      "id": "UL_tip_M3_retention_washer",
+      "volume_delta_mm3": -8.427392117482668e-11
+    },
+    {
+      "id": "UL_tip_M3_retention_nut",
+      "volume_delta_mm3": 2.8627766823774436e-11
+    },
+    {
+      "id": "UL_tip_lug_spacer_-1",
+      "volume_delta_mm3": 1.468691834816127e-11
+    },
+    {
+      "id": "UL_tip_lug_spacer_1",
+      "volume_delta_mm3": -4.595079872160568e-11
+    },
+    {
+      "id": "UL_integral_steel_crank_spindle",
+      "volume_delta_mm3": -5.402398528531194e-10
+    },
+    {
+      "id": "UL_inner_front_spacer",
+      "volume_delta_mm3": -1.4864554032101296e-10
+    },
+    {
+      "id": "UL_MB1",
+      "volume_delta_mm3": -2.346496330574155e-10
+    },
+    {
+      "id": "UL_KM1",
+      "volume_delta_mm3": 8.733422873774543e-10
+    },
+    {
+      "id": "UL_lamp_PCB_outline",
+      "volume_delta_mm3": -3.13548298436217e-09
+    },
+    {
+      "id": "UL_lamp_optical_sheet",
+      "volume_delta_mm3": -2.3096617951523513e-09
+    },
+    {
+      "id": "UL_lamp_insulating_ring1",
+      "volume_delta_mm3": 5.773159728050814e-15
+    },
+    {
+      "id": "UL_lamp_insulating_ring2",
+      "volume_delta_mm3": 4.440892098500626e-16
+    },
+    {
+      "id": "UL_lamp_insulating_ring3",
+      "volume_delta_mm3": -1.199040866595169e-14
+    },
+    {
+      "id": "UL_lamp_SSH_M2_4_1",
+      "volume_delta_mm3": -6.039613253960852e-14
+    },
+    {
+      "id": "UL_lamp_SSH_M2_4_2",
+      "volume_delta_mm3": -8.526512829121202e-14
+    },
+    {
+      "id": "UL_lamp_SSH_M2_4_3",
+      "volume_delta_mm3": -7.105427357601002e-14
+    },
+    {
+      "id": "UL_retained_pad_minus",
+      "volume_delta_mm3": 2.53328380495077e-09
+    },
+    {
+      "id": "UL_retained_pad_plus",
+      "volume_delta_mm3": -2.5737563191796653e-09
+    },
+    {
+      "id": "UL_PCBA_U1",
+      "volume_delta_mm3": 7.948841584948241e-11
+    },
+    {
+      "id": "UL_PCBA_C1",
+      "volume_delta_mm3": 1.8440360349814e-11
+    },
+    {
+      "id": "UL_PCBA_C2",
+      "volume_delta_mm3": -5.382361223382759e-13
+    },
+    {
+      "id": "UL_PCBA_C3",
+      "volume_delta_mm3": 8.557154984600857e-12
+    },
+    {
+      "id": "UL_PCBA_C4",
+      "volume_delta_mm3": 8.58557669403126e-12
+    },
+    {
+      "id": "UL_PCBA_C5",
+      "volume_delta_mm3": 8.605560708474513e-12
+    },
+    {
+      "id": "UL_PCBA_C6",
+      "volume_delta_mm3": -9.907452636070957e-11
+    },
+    {
+      "id": "UL_PCBA_C7",
+      "volume_delta_mm3": 5.6339377607628194e-11
+    },
+    {
+      "id": "UL_PCBA_C8",
+      "volume_delta_mm3": 7.861267192765808e-12
+    },
+    {
+      "id": "UL_PCBA_C9",
+      "volume_delta_mm3": 4.084288462991026e-12
+    },
+    {
+      "id": "UL_PCBA_R1",
+      "volume_delta_mm3": 1.582423081458728e-11
+    },
+    {
+      "id": "UL_PCBA_R2",
+      "volume_delta_mm3": 3.2951419370874646e-12
+    },
+    {
+      "id": "UL_PCBA_R3",
+      "volume_delta_mm3": 1.5292211941186906e-11
+    },
+    {
+      "id": "UL_PCBA_R4",
+      "volume_delta_mm3": 1.5778933715182575e-11
+    },
+    {
+      "id": "UL_PCBA_R5",
+      "volume_delta_mm3": -6.191536172650558e-11
+    },
+    {
+      "id": "UL_PCBA_R6",
+      "volume_delta_mm3": 1.5266010677805752e-11
+    },
+    {
+      "id": "UL_PCBA_R7",
+      "volume_delta_mm3": -6.139488917256131e-11
+    },
+    {
+      "id": "UL_PCBA_R8",
+      "volume_delta_mm3": 1.5279333354101254e-11
+    },
+    {
+      "id": "UL_PCBA_R9",
+      "volume_delta_mm3": 1.5281553800150505e-11
+    },
+    {
+      "id": "UL_PCBA_TH1",
+      "volume_delta_mm3": 4.581934831549006e-11
+    },
+    {
+      "id": "UL_LED_D1",
+      "volume_delta_mm3": -2.3503421431314564e-12
+    },
+    {
+      "id": "UL_LED_D2",
+      "volume_delta_mm3": -2.388977904388412e-12
+    },
+    {
+      "id": "UL_LED_D3",
+      "volume_delta_mm3": 2.724265257825209e-12
+    },
+    {
+      "id": "UL_LED_D4",
+      "volume_delta_mm3": 2.0734525207899424e-12
+    },
+    {
+      "id": "UL_LED_D5",
+      "volume_delta_mm3": 2.041922186890588e-12
+    },
+    {
+      "id": "UL_LED_D6",
+      "volume_delta_mm3": 2.0323742688788116e-12
+    },
+    {
+      "id": "UL_LED_D7",
+      "volume_delta_mm3": 2.5424107263916085e-12
+    },
+    {
+      "id": "UL_LED_D8",
+      "volume_delta_mm3": -1.864508547555488e-12
+    },
+    {
+      "id": "UL_LED_D9",
+      "volume_delta_mm3": 2.2652990594451694e-12
+    },
+    {
+      "id": "UL_LED_D10",
+      "volume_delta_mm3": -2.8486102365832267e-12
+    },
+    {
+      "id": "UL_LED_D11",
+      "volume_delta_mm3": 2.2382096176443156e-12
+    },
+    {
+      "id": "UL_LED_D12",
+      "volume_delta_mm3": 1.5927259511272496e-12
+    },
+    {
+      "id": "UL_LED_D13",
+      "volume_delta_mm3": -2.8275159991153487e-12
+    },
+    {
+      "id": "UL_LED_D14",
+      "volume_delta_mm3": 1.5856205237696486e-12
+    },
+    {
+      "id": "UL_LED_D15",
+      "volume_delta_mm3": -2.8279600883251987e-12
+    },
+    {
+      "id": "UL_LED_D16",
+      "volume_delta_mm3": 2.2448709557920665e-12
+    },
+    {
+      "id": "UL_LED_D17",
+      "volume_delta_mm3": 1.5898393712632242e-12
+    },
+    {
+      "id": "UL_LED_D18",
+      "volume_delta_mm3": -1.0131007144309478e-11
+    },
+    {
+      "id": "UL_LED_D19",
+      "volume_delta_mm3": 2.2297719226571644e-12
+    },
+    {
+      "id": "UL_LED_D20",
+      "volume_delta_mm3": 1.5851764345597985e-12
+    },
+    {
+      "id": "UL_LED_D21",
+      "volume_delta_mm3": -2.851940905657102e-12
+    },
+    {
+      "id": "UL_LED_D22",
+      "volume_delta_mm3": 1.5720758028692217e-12
+    },
+    {
+      "id": "UL_LED_D23",
+      "volume_delta_mm3": -1.5707435352396715e-12
+    },
+    {
+      "id": "UL_LED_D24",
+      "volume_delta_mm3": 3.5160763189878708e-12
+    },
+    {
+      "id": "UL_LED_D25",
+      "volume_delta_mm3": 3.532507619752323e-12
+    },
+    {
+      "id": "UL_LED_D26",
+      "volume_delta_mm3": -8.846257060213247e-12
+    },
+    {
+      "id": "UL_LED_D27",
+      "volume_delta_mm3": 2.714939384418358e-12
+    },
+    {
+      "id": "UL_LED_D28",
+      "volume_delta_mm3": 2.043698543729988e-12
+    },
+    {
+      "id": "UL_LED_D29",
+      "volume_delta_mm3": -2.3807622540061857e-12
+    },
+    {
+      "id": "UL_LED_D30",
+      "volume_delta_mm3": -1.8524071165870737e-11
+    },
+    {
+      "id": "UL_LED_D31",
+      "volume_delta_mm3": -1.5416556919944924e-11
+    },
+    {
+      "id": "UL_LED_D32",
+      "volume_delta_mm3": -2.3656632208712836e-12
+    },
+    {
+      "id": "UL_LED_D33",
+      "volume_delta_mm3": 2.717381875072533e-12
+    },
+    {
+      "id": "UL_LED_D34",
+      "volume_delta_mm3": -2.3667734438959087e-12
+    },
+    {
+      "id": "UL_LED_D35",
+      "volume_delta_mm3": 2.694955369975105e-12
+    },
+    {
+      "id": "UL_LED_D36",
+      "volume_delta_mm3": -5.170797123810189e-11
+    },
+    {
+      "id": "UL_LED_D37",
+      "volume_delta_mm3": -1.5446977030819653e-11
+    },
+    {
+      "id": "UL_LED_D38",
+      "volume_delta_mm3": 3.54587470496881e-11
+    },
+    {
+      "id": "UL_LED_D39",
+      "volume_delta_mm3": 2.070343896320992e-12
+    },
+    {
+      "id": "UL_LED_D40",
+      "volume_delta_mm3": -2.362110507192483e-12
+    },
+    {
+      "id": "UL_LED_D41",
+      "volume_delta_mm3": -1.851052644497031e-11
+    },
+    {
+      "id": "UL_LED_D42",
+      "volume_delta_mm3": -1.54269930163764e-11
+    },
+    {
+      "id": "UL_LED_D43",
+      "volume_delta_mm3": -1.493494217186253e-11
+    },
+    {
+      "id": "UL_LED_D44",
+      "volume_delta_mm3": -1.4927170610690155e-11
+    },
+    {
+      "id": "UL_LED_D45",
+      "volume_delta_mm3": -1.4940937376195507e-11
+    },
+    {
+      "id": "UL_LED_D46",
+      "volume_delta_mm3": 3.205880005907602e-12
+    },
+    {
+      "id": "UL_LED_D47",
+      "volume_delta_mm3": -5.2157389518470154e-11
+    },
+    {
+      "id": "UL_LED_D48",
+      "volume_delta_mm3": -1.5902834604730742e-11
+    },
+    {
+      "id": "UL_LED_D49",
+      "volume_delta_mm3": 3.4993785646975084e-11
+    },
+    {
+      "id": "UL_LED_D50",
+      "volume_delta_mm3": 1.0800249583553523e-10
+    },
+    {
+      "id": "UL_LED_D51",
+      "volume_delta_mm3": 1.0800538241539925e-10
+    },
+    {
+      "id": "UL_LED_D52",
+      "volume_delta_mm3": 1.079800693304378e-10
+    },
+    {
+      "id": "UL_LED_D53",
+      "volume_delta_mm3": -1.589306464211404e-11
+    },
+    {
+      "id": "UL_LED_D54",
+      "volume_delta_mm3": -1.5901946426311042e-11
+    },
+    {
+      "id": "UL_LED_D55",
+      "volume_delta_mm3": -1.5881740367262864e-11
+    },
+    {
+      "id": "UL_LED_D56",
+      "volume_delta_mm3": -1.5877743564374214e-11
+    },
+    {
+      "id": "UL_LED_D57",
+      "volume_delta_mm3": -1.5899281891051942e-11
+    },
+    {
+      "id": "UL_LED_D58",
+      "volume_delta_mm3": -1.588462694712689e-11
+    },
+    {
+      "id": "UL_LED_D59",
+      "volume_delta_mm3": -1.589173237448449e-11
+    },
+    {
+      "id": "UL_LED_D60",
+      "volume_delta_mm3": 3.499978085130806e-11
+    },
+    {
+      "id": "UL_LED_D61",
+      "volume_delta_mm3": 3.4966918249779155e-11
+    },
+    {
+      "id": "UL_LED_D62",
+      "volume_delta_mm3": 1.0927125870807686e-10
+    },
+    {
+      "id": "UL_LED_D63",
+      "volume_delta_mm3": 1.0926903826202761e-10
+    },
+    {
+      "id": "UL_LED_D64",
+      "volume_delta_mm3": -7.964517934055948e-12
+    },
+    {
+      "id": "UL_LED_D65",
+      "volume_delta_mm3": -1.5436985023598027e-11
+    },
+    {
+      "id": "UL_LED_D66",
+      "volume_delta_mm3": -1.5413448295475973e-11
+    },
+    {
+      "id": "UL_LED_D67",
+      "volume_delta_mm3": -1.5429435507030576e-11
+    },
+    {
+      "id": "UL_LED_D68",
+      "volume_delta_mm3": -1.542033167822865e-11
+    },
+    {
+      "id": "UL_LED_D69",
+      "volume_delta_mm3": -1.5447865209239353e-11
+    },
+    {
+      "id": "UL_LED_D70",
+      "volume_delta_mm3": -1.5424994614932075e-11
+    },
+    {
+      "id": "UL_LED_D71",
+      "volume_delta_mm3": -1.542033167822865e-11
+    },
+    {
+      "id": "UL_LED_D72",
+      "volume_delta_mm3": -1.5428103239401025e-11
+    },
+    {
+      "id": "UL_LED_D73",
+      "volume_delta_mm3": -1.5413226250871048e-11
+    },
+    {
+      "id": "UL_LED_D74",
+      "volume_delta_mm3": -8.79518680108049e-12
+    },
+    {
+      "id": "UL_LED_D75",
+      "volume_delta_mm3": -8.788081373722889e-12
+    },
+    {
+      "id": "UL_LED_D76",
+      "volume_delta_mm3": -1.545474859199203e-11
+    },
+    {
+      "id": "UL_LED_D77",
+      "volume_delta_mm3": -1.5439427514252202e-11
+    },
+    {
+      "id": "UL_LED_D78",
+      "volume_delta_mm3": -1.5426326882561625e-11
+    },
+    {
+      "id": "UL_LED_D79",
+      "volume_delta_mm3": -1.4926282432270455e-11
+    },
+    {
+      "id": "UL_LED_D80",
+      "volume_delta_mm3": -1.492517220924583e-11
+    },
+    {
+      "id": "UL_LED_D81",
+      "volume_delta_mm3": -1.495426005249101e-11
+    },
+    {
+      "id": "UL_LED_D82",
+      "volume_delta_mm3": -1.5901946426311042e-11
+    },
+    {
+      "id": "UL_LED_D83",
+      "volume_delta_mm3": -1.587663334134959e-11
+    },
+    {
+      "id": "UL_LED_D84",
+      "volume_delta_mm3": -1.589395282053374e-11
+    },
+    {
+      "id": "UL_LED_D85",
+      "volume_delta_mm3": -1.588684739317614e-11
+    },
+    {
+      "id": "UL_LED_D86",
+      "volume_delta_mm3": -1.5877743564374214e-11
+    },
+    {
+      "id": "UL_LED_D87",
+      "volume_delta_mm3": -1.594990806097485e-11
+    },
+    {
+      "id": "UL_LED_D88",
+      "volume_delta_mm3": -1.589262055290419e-11
+    },
+    {
+      "id": "UL_LED_D89",
+      "volume_delta_mm3": -1.589040010685494e-11
+    },
+    {
+      "id": "UL_LED_D90",
+      "volume_delta_mm3": -1.5891510329879566e-11
+    },
+    {
+      "id": "UL_LED_D91",
+      "volume_delta_mm3": -1.589128828527464e-11
+    },
+    {
+      "id": "UL_LED_D92",
+      "volume_delta_mm3": -1.589484099895344e-11
+    },
+    {
+      "id": "UL_LED_D93",
+      "volume_delta_mm3": 3.6252112423085237e-11
+    },
+    {
+      "id": "UL_LED_D94",
+      "volume_delta_mm3": -1.4608980691832585e-11
+    },
+    {
+      "id": "UL_LED_D95",
+      "volume_delta_mm3": -1.5448753387659053e-11
+    },
+    {
+      "id": "UL_LED_D96",
+      "volume_delta_mm3": -1.5404788555883897e-11
+    },
+    {
+      "id": "UL_LED_D97",
+      "volume_delta_mm3": -1.54181112321794e-11
+    },
+    {
+      "id": "UL_LED_D98",
+      "volume_delta_mm3": -1.5443868406350703e-11
+    },
+    {
+      "id": "UL_LED_D99",
+      "volume_delta_mm3": -1.875455346578292e-11
+    },
+    {
+      "id": "UL_LED_D100",
+      "volume_delta_mm3": 3.54596352281078e-11
+    },
+    {
+      "id": "UL_LED_D101",
+      "volume_delta_mm3": 3.547850901952643e-11
+    },
+    {
+      "id": "UL_LED_D102",
+      "volume_delta_mm3": 1.0847567288863047e-10
+    },
+    {
+      "id": "UL_LED_D103",
+      "volume_delta_mm3": 1.084812240037536e-10
+    },
+    {
+      "id": "UL_LED_D104",
+      "volume_delta_mm3": -1.681454975255292e-11
+    },
+    {
+      "id": "UL_LED_D105",
+      "volume_delta_mm3": -1.9217738511656535e-11
+    },
+    {
+      "id": "UL_LED_D106",
+      "volume_delta_mm3": -1.5430323685450276e-11
+    },
+    {
+      "id": "UL_LED_D107",
+      "volume_delta_mm3": -1.4907186596246902e-11
+    },
+    {
+      "id": "UL_LED_D108",
+      "volume_delta_mm3": -1.4936940573306856e-11
+    },
+    {
+      "id": "UL_LED_D109",
+      "volume_delta_mm3": 1.0706413533512205e-10
+    },
+    {
+      "id": "UL_LED_D110",
+      "volume_delta_mm3": 1.070556976401349e-10
+    },
+    {
+      "id": "UL_LED_D111",
+      "volume_delta_mm3": -9.22151244253655e-12
+    },
+    {
+      "id": "UL_LED_D112",
+      "volume_delta_mm3": -1.5899059846447017e-11
+    },
+    {
+      "id": "UL_LED_D113",
+      "volume_delta_mm3": -1.5859313862165436e-11
+    },
+    {
+      "id": "UL_LED_D114",
+      "volume_delta_mm3": -1.6826096072009022e-11
+    },
+    {
+      "id": "UL_LED_D115",
+      "volume_delta_mm3": -1.2172485241990216e-11
+    },
+    {
+      "id": "UL_LED_D116",
+      "volume_delta_mm3": -1.9726664746144706e-11
+    },
+    {
+      "id": "UL_LED_D117",
+      "volume_delta_mm3": -1.5902612560125817e-11
+    },
+    {
+      "id": "UL_LED_D118",
+      "volume_delta_mm3": -1.5858869772955586e-11
+    },
+    {
+      "id": "UL_LED_D119",
+      "volume_delta_mm3": -1.6820100867676047e-11
+    },
+    {
+      "id": "UL_LED_D120",
+      "volume_delta_mm3": -4.100497719150553e-12
+    },
+    {
+      "id": "UL_LED_D121",
+      "volume_delta_mm3": -1.7286172493413687e-11
+    },
+    {
+      "id": "UL_LED_D122",
+      "volume_delta_mm3": -1.2191136988803919e-11
+    },
+    {
+      "id": "UL_LED_D123",
+      "volume_delta_mm3": -1.6792567336665343e-11
+    },
+    {
+      "id": "UL_LED_D124",
+      "volume_delta_mm3": -1.683964079290945e-11
+    },
+    {
+      "id": "UL_LED_D125",
+      "volume_delta_mm3": -1.680611205756577e-11
+    },
+    {
+      "id": "UL_LED_D126",
+      "volume_delta_mm3": -1.2156498030435614e-11
+    },
+    {
+      "id": "UL_LED_D127",
+      "volume_delta_mm3": -1.6813883618738146e-11
+    },
+    {
+      "id": "UL_LED_D128",
+      "volume_delta_mm3": 3.407119031351158e-11
+    },
+    {
+      "id": "UL_LED_D129",
+      "volume_delta_mm3": -1.6791457113640718e-11
+    },
+    {
+      "id": "UL_LED_D130",
+      "volume_delta_mm3": -1.2182699293816768e-11
+    },
+    {
+      "id": "UL_JST_header_reference",
+      "volume_delta_mm3": -7.310063665499911e-10
+    },
+    {
+      "id": "UL_JST_plug_reference",
+      "volume_delta_mm3": 2.3501911528001074e-10
+    },
+    {
+      "id": "UL_P16_envelope_case",
+      "volume_delta_mm3": -7.995549822226167e-08
+    },
+    {
+      "id": "UL_P16_envelope_guide",
+      "volume_delta_mm3": -8.321876521222293e-09
+    },
+    {
+      "id": "UL_P16_envelope_slider",
+      "volume_delta_mm3": 9.458744898438454e-11
+    },
+    {
+      "id": "UL_P16_envelope_tip",
+      "volume_delta_mm3": -3.8630787457805127e-10
+    },
+    {
+      "id": "LL_M2x6_keeper_screw_0",
+      "volume_delta_mm3": 1.5631940186722204e-13
+    },
+    {
+      "id": "LL_M2x6_keeper_screw_1",
+      "volume_delta_mm3": 1.3500311979441904e-13
+    },
+    {
+      "id": "LL_nut_keeper_sheet",
+      "volume_delta_mm3": -2.8421709430404007e-12
+    },
+    {
+      "id": "LL_removable_upper_fork",
+      "volume_delta_mm3": 5.846914064022712e-10
+    },
+    {
+      "id": "LL_metal_blade_with_narrow_tongue",
+      "volume_delta_mm3": 1.745229383232072e-08
+    },
+    {
+      "id": "LL_M3x20_fork_screw_0",
+      "volume_delta_mm3": 1.7621459846850485e-12
+    },
+    {
+      "id": "LL_M3_washer_0",
+      "volume_delta_mm3": -3.126388037344441e-13
+    },
+    {
+      "id": "LL_M3_hexnut_0",
+      "volume_delta_mm3": 3.2869706956262235e-11
+    },
+    {
+      "id": "LL_M3x20_fork_screw_1",
+      "volume_delta_mm3": 1.6768808563938364e-12
+    },
+    {
+      "id": "LL_M3_washer_1",
+      "volume_delta_mm3": -3.304023721284466e-13
+    },
+    {
+      "id": "LL_M3_hexnut_1",
+      "volume_delta_mm3": 3.278444182797102e-11
+    },
+    {
+      "id": "LL_tip_SBSM_pin",
+      "volume_delta_mm3": -2.5579538487363607e-12
+    },
+    {
+      "id": "LL_tip_outer_stack_spacer",
+      "volume_delta_mm3": -8.490985692333197e-11
+    },
+    {
+      "id": "LL_tip_M3_retention_washer",
+      "volume_delta_mm3": -1.4132162107216573e-10
+    },
+    {
+      "id": "LL_tip_M3_retention_nut",
+      "volume_delta_mm3": 2.913225216616411e-11
+    },
+    {
+      "id": "LL_tip_lug_spacer_-1",
+      "volume_delta_mm3": -3.750244559341809e-11
+    },
+    {
+      "id": "LL_tip_lug_spacer_1",
+      "volume_delta_mm3": -3.749534016606049e-11
+    },
+    {
+      "id": "LL_integral_steel_crank_spindle",
+      "volume_delta_mm3": -2.0190782379359007e-10
+    },
+    {
+      "id": "LL_inner_front_spacer",
+      "volume_delta_mm3": -5.396145752456505e-10
+    },
+    {
+      "id": "LL_MB1",
+      "volume_delta_mm3": 1.8374066712567583e-09
+    },
+    {
+      "id": "LL_KM1",
+      "volume_delta_mm3": -2.3599113774253055e-09
+    },
+    {
+      "id": "LL_lamp_PCB_outline",
+      "volume_delta_mm3": -8.089955372270197e-10
+    },
+    {
+      "id": "LL_lamp_optical_sheet",
+      "volume_delta_mm3": -6.235723049030639e-10
+    },
+    {
+      "id": "LL_lamp_insulating_ring1",
+      "volume_delta_mm3": 3.552713678800501e-14
+    },
+    {
+      "id": "LL_lamp_insulating_ring2",
+      "volume_delta_mm3": 3.552713678800501e-14
+    },
+    {
+      "id": "LL_lamp_insulating_ring3",
+      "volume_delta_mm3": 3.552713678800501e-14
+    },
+    {
+      "id": "LL_lamp_SSH_M2_4_1",
+      "volume_delta_mm3": 1.7763568394002505e-14
+    },
+    {
+      "id": "LL_lamp_SSH_M2_4_2",
+      "volume_delta_mm3": 1.7763568394002505e-14
+    },
+    {
+      "id": "LL_lamp_SSH_M2_4_3",
+      "volume_delta_mm3": 2.1316282072803006e-14
+    },
+    {
+      "id": "LL_retained_pad_minus",
+      "volume_delta_mm3": -1.1489191820146516e-09
+    },
+    {
+      "id": "LL_retained_pad_plus",
+      "volume_delta_mm3": -8.47990122565534e-10
+    },
+    {
+      "id": "LL_PCBA_U1",
+      "volume_delta_mm3": -1.1567635738174431e-11
+    },
+    {
+      "id": "LL_PCBA_C1",
+      "volume_delta_mm3": 1.1567635738174431e-11
+    },
+    {
+      "id": "LL_PCBA_C2",
+      "volume_delta_mm3": 1.234035096331354e-11
+    },
+    {
+      "id": "LL_PCBA_C3",
+      "volume_delta_mm3": 7.300826609935029e-13
+    },
+    {
+      "id": "LL_PCBA_C4",
+      "volume_delta_mm3": -6.56394938403082e-11
+    },
+    {
+      "id": "LL_PCBA_C5",
+      "volume_delta_mm3": -9.640244158504174e-11
+    },
+    {
+      "id": "LL_PCBA_C6",
+      "volume_delta_mm3": 7.136513602290506e-13
+    },
+    {
+      "id": "LL_PCBA_C7",
+      "volume_delta_mm3": -1.5680745590884726e-10
+    },
+    {
+      "id": "LL_PCBA_C8",
+      "volume_delta_mm3": -3.360955957987244e-11
+    },
+    {
+      "id": "LL_PCBA_C9",
+      "volume_delta_mm3": 1.63113966777928e-12
+    },
+    {
+      "id": "LL_PCBA_R1",
+      "volume_delta_mm3": 4.920508445138694e-12
+    },
+    {
+      "id": "LL_PCBA_R2",
+      "volume_delta_mm3": -8.86846152070575e-13
+    },
+    {
+      "id": "LL_PCBA_R3",
+      "volume_delta_mm3": -9.103828801926284e-13
+    },
+    {
+      "id": "LL_PCBA_R4",
+      "volume_delta_mm3": -8.912870441690757e-13
+    },
+    {
+      "id": "LL_PCBA_R5",
+      "volume_delta_mm3": -8.917311333789257e-13
+    },
+    {
+      "id": "LL_PCBA_R6",
+      "volume_delta_mm3": 4.583000645652646e-13
+    },
+    {
+      "id": "LL_PCBA_R7",
+      "volume_delta_mm3": -8.841816168114747e-13
+    },
+    {
+      "id": "LL_PCBA_R8",
+      "volume_delta_mm3": 4.920064355928844e-12
+    },
+    {
+      "id": "LL_PCBA_R9",
+      "volume_delta_mm3": -8.65529869997772e-13
+    },
+    {
+      "id": "LL_PCBA_TH1",
+      "volume_delta_mm3": 8.819611707622244e-12
+    },
+    {
+      "id": "LL_LED_D1",
+      "volume_delta_mm3": 9.07851571696483e-12
+    },
+    {
+      "id": "LL_LED_D2",
+      "volume_delta_mm3": -1.1973755320582313e-11
+    },
+    {
+      "id": "LL_LED_D3",
+      "volume_delta_mm3": 3.326672270986819e-12
+    },
+    {
+      "id": "LL_LED_D4",
+      "volume_delta_mm3": 4.4142467459096224e-13
+    },
+    {
+      "id": "LL_LED_D5",
+      "volume_delta_mm3": 9.054312855028002e-12
+    },
+    {
+      "id": "LL_LED_D6",
+      "volume_delta_mm3": -3.375522084070326e-12
+    },
+    {
+      "id": "LL_LED_D7",
+      "volume_delta_mm3": 3.325562047962194e-12
+    },
+    {
+      "id": "LL_LED_D8",
+      "volume_delta_mm3": 4.602984660095899e-13
+    },
+    {
+      "id": "LL_LED_D9",
+      "volume_delta_mm3": 3.311573237851917e-12
+    },
+    {
+      "id": "LL_LED_D10",
+      "volume_delta_mm3": 9.056533301077252e-12
+    },
+    {
+      "id": "LL_LED_D11",
+      "volume_delta_mm3": 3.3171243529750427e-12
+    },
+    {
+      "id": "LL_LED_D12",
+      "volume_delta_mm3": -3.367528478293025e-12
+    },
+    {
+      "id": "LL_LED_D13",
+      "volume_delta_mm3": 9.035883152819224e-12
+    },
+    {
+      "id": "LL_LED_D14",
+      "volume_delta_mm3": 9.066303263693953e-12
+    },
+    {
+      "id": "LL_LED_D15",
+      "volume_delta_mm3": -2.41273667711539e-12
+    },
+    {
+      "id": "LL_LED_D16",
+      "volume_delta_mm3": 9.048317650695026e-12
+    },
+    {
+      "id": "LL_LED_D17",
+      "volume_delta_mm3": 9.042988580176825e-12
+    },
+    {
+      "id": "LL_LED_D18",
+      "volume_delta_mm3": 4.722888746755416e-13
+    },
+    {
+      "id": "LL_LED_D19",
+      "volume_delta_mm3": 3.3093527918026666e-12
+    },
+    {
+      "id": "LL_LED_D20",
+      "volume_delta_mm3": 9.059419880941277e-12
+    },
+    {
+      "id": "LL_LED_D21",
+      "volume_delta_mm3": 3.3064662119386412e-12
+    },
+    {
+      "id": "LL_LED_D22",
+      "volume_delta_mm3": -3.339994947282321e-12
+    },
+    {
+      "id": "LL_LED_D23",
+      "volume_delta_mm3": 3.319788888234143e-12
+    },
+    {
+      "id": "LL_LED_D24",
+      "volume_delta_mm3": 4.634070904785403e-13
+    },
+    {
+      "id": "LL_LED_D25",
+      "volume_delta_mm3": 9.034772929794599e-12
+    },
+    {
+      "id": "LL_LED_D26",
+      "volume_delta_mm3": -3.3311131630853197e-12
+    },
+    {
+      "id": "LL_LED_D27",
+      "volume_delta_mm3": 3.319566843629218e-12
+    },
+    {
+      "id": "LL_LED_D28",
+      "volume_delta_mm3": -3.3584246494910985e-12
+    },
+    {
+      "id": "LL_LED_D29",
+      "volume_delta_mm3": 9.04321062478175e-12
+    },
+    {
+      "id": "LL_LED_D30",
+      "volume_delta_mm3": -1.1926015730523432e-11
+    },
+    {
+      "id": "LL_LED_D31",
+      "volume_delta_mm3": 9.054090810423077e-12
+    },
+    {
+      "id": "LL_LED_D32",
+      "volume_delta_mm3": 4.636291350834654e-13
+    },
+    {
+      "id": "LL_LED_D33",
+      "volume_delta_mm3": -1.57764912245284e-11
+    },
+    {
+      "id": "LL_LED_D34",
+      "volume_delta_mm3": 9.056089211867402e-12
+    },
+    {
+      "id": "LL_LED_D35",
+      "volume_delta_mm3": -8.131273432354647e-12
+    },
+    {
+      "id": "LL_LED_D36",
+      "volume_delta_mm3": -7.781197908229842e-11
+    },
+    {
+      "id": "LL_LED_D37",
+      "volume_delta_mm3": -1.1968426250064113e-11
+    },
+    {
+      "id": "LL_LED_D38",
+      "volume_delta_mm3": -5.1088022701151203e-11
+    },
+    {
+      "id": "LL_LED_D39",
+      "volume_delta_mm3": -1.1001421995615601e-11
+    },
+    {
+      "id": "LL_LED_D40",
+      "volume_delta_mm3": -5.301692418413495e-11
+    },
+    {
+      "id": "LL_LED_D41",
+      "volume_delta_mm3": -3.3890446005102604e-11
+    },
+    {
+      "id": "LL_LED_D42",
+      "volume_delta_mm3": -6.064015956042113e-11
+    },
+    {
+      "id": "LL_JST_header_reference",
+      "volume_delta_mm3": -4.878870640823152e-10
+    },
+    {
+      "id": "LL_JST_plug_reference",
+      "volume_delta_mm3": 2.0042989490320906e-10
+    },
+    {
+      "id": "LL_P16_envelope_case",
+      "volume_delta_mm3": 4.73664840683341e-09
+    },
+    {
+      "id": "LL_P16_envelope_guide",
+      "volume_delta_mm3": -3.496097633615136e-09
+    },
+    {
+      "id": "LL_P16_envelope_slider",
+      "volume_delta_mm3": -4.920366336591542e-10
+    },
+    {
+      "id": "LL_P16_envelope_tip",
+      "volume_delta_mm3": -8.958522812463343e-11
+    },
+    {
+      "id": "LR_M2x6_keeper_screw_0",
+      "volume_delta_mm3": -1.3500311979441904e-13
+    },
+    {
+      "id": "LR_M2x6_keeper_screw_1",
+      "volume_delta_mm3": -1.2789769243681803e-13
+    },
+    {
+      "id": "LR_nut_keeper_sheet",
+      "volume_delta_mm3": 2.6830093702301383e-11
+    },
+    {
+      "id": "LR_removable_upper_fork",
+      "volume_delta_mm3": 2.6136603992199525e-10
+    },
+    {
+      "id": "LR_metal_blade_with_narrow_tongue",
+      "volume_delta_mm3": 8.154529496096075e-09
+    },
+    {
+      "id": "LR_M3x20_fork_screw_0",
+      "volume_delta_mm3": -1.9326762412674725e-12
+    },
+    {
+      "id": "LR_M3_washer_0",
+      "volume_delta_mm3": 3.304023721284466e-13
+    },
+    {
+      "id": "LR_M3_hexnut_0",
+      "volume_delta_mm3": -2.9629632081196178e-12
+    },
+    {
+      "id": "LR_M3x20_fork_screw_1",
+      "volume_delta_mm3": -1.8758328224066645e-12
+    },
+    {
+      "id": "LR_M3_washer_1",
+      "volume_delta_mm3": 3.304023721284466e-13
+    },
+    {
+      "id": "LR_M3_hexnut_1",
+      "volume_delta_mm3": -2.9984903449076228e-12
+    },
+    {
+      "id": "LR_tip_SBSM_pin",
+      "volume_delta_mm3": 4.263256414560601e-12
+    },
+    {
+      "id": "LR_tip_outer_stack_spacer",
+      "volume_delta_mm3": -2.8265390028536785e-11
+    },
+    {
+      "id": "LR_tip_M3_retention_washer",
+      "volume_delta_mm3": -7.600498008741852e-11
+    },
+    {
+      "id": "LR_tip_M3_retention_nut",
+      "volume_delta_mm3": 1.2121859072067309e-11
+    },
+    {
+      "id": "LR_tip_lug_spacer_-1",
+      "volume_delta_mm3": -2.0797585875698132e-11
+    },
+    {
+      "id": "LR_tip_lug_spacer_1",
+      "volume_delta_mm3": -2.070521532004932e-11
+    },
+    {
+      "id": "LR_integral_steel_crank_spindle",
+      "volume_delta_mm3": 1.0186340659856796e-09
+    },
+    {
+      "id": "LR_inner_front_spacer",
+      "volume_delta_mm3": -2.688977929210523e-10
+    },
+    {
+      "id": "LR_MB1",
+      "volume_delta_mm3": 1.0501253200345673e-09
+    },
+    {
+      "id": "LR_KM1",
+      "volume_delta_mm3": -1.1814336176030338e-09
+    },
+    {
+      "id": "LR_lamp_PCB_outline",
+      "volume_delta_mm3": -3.6698111216537654e-10
+    },
+    {
+      "id": "LR_lamp_optical_sheet",
+      "volume_delta_mm3": -2.8387603379087523e-10
+    },
+    {
+      "id": "LR_lamp_insulating_ring1",
+      "volume_delta_mm3": 3.4638958368304884e-14
+    },
+    {
+      "id": "LR_lamp_insulating_ring2",
+      "volume_delta_mm3": 3.552713678800501e-14
+    },
+    {
+      "id": "LR_lamp_insulating_ring3",
+      "volume_delta_mm3": 3.4638958368304884e-14
+    },
+    {
+      "id": "LR_lamp_SSH_M2_4_1",
+      "volume_delta_mm3": 2.1316282072803006e-14
+    },
+    {
+      "id": "LR_lamp_SSH_M2_4_2",
+      "volume_delta_mm3": 2.1316282072803006e-14
+    },
+    {
+      "id": "LR_lamp_SSH_M2_4_3",
+      "volume_delta_mm3": 2.1316282072803006e-14
+    },
+    {
+      "id": "LR_retained_pad_minus",
+      "volume_delta_mm3": 2.1861978893866763e-10
+    },
+    {
+      "id": "LR_retained_pad_plus",
+      "volume_delta_mm3": 1.914486347232014e-10
+    },
+    {
+      "id": "LR_PCBA_U1",
+      "volume_delta_mm3": -2.3945290195115376e-12
+    },
+    {
+      "id": "LR_PCBA_C1",
+      "volume_delta_mm3": 1.354649725726631e-11
+    },
+    {
+      "id": "LR_PCBA_C2",
+      "volume_delta_mm3": 1.3496759265763103e-11
+    },
+    {
+      "id": "LR_PCBA_C3",
+      "volume_delta_mm3": 4.4146908351194725e-12
+    },
+    {
+      "id": "LR_PCBA_C4",
+      "volume_delta_mm3": -6.127010010459344e-11
+    },
+    {
+      "id": "LR_PCBA_C5",
+      "volume_delta_mm3": -8.491873870752897e-12
+    },
+    {
+      "id": "LR_PCBA_C6",
+      "volume_delta_mm3": -3.0619951019161817e-12
+    },
+    {
+      "id": "LR_PCBA_C7",
+      "volume_delta_mm3": -1.5241985451552864e-10
+    },
+    {
+      "id": "LR_PCBA_C8",
+      "volume_delta_mm3": 9.992895400046109e-12
+    },
+    {
+      "id": "LR_PCBA_C9",
+      "volume_delta_mm3": -4.7126746949288645e-12
+    },
+    {
+      "id": "LR_PCBA_R1",
+      "volume_delta_mm3": -2.824407374646398e-13
+    },
+    {
+      "id": "LR_PCBA_R2",
+      "volume_delta_mm3": -3.1796787425264483e-13
+    },
+    {
+      "id": "LR_PCBA_R3",
+      "volume_delta_mm3": 4.956035581926699e-13
+    },
+    {
+      "id": "LR_PCBA_R4",
+      "volume_delta_mm3": 4.933831121434196e-13
+    },
+    {
+      "id": "LR_PCBA_R5",
+      "volume_delta_mm3": -7.323031070427533e-13
+    },
+    {
+      "id": "LR_PCBA_R6",
+      "volume_delta_mm3": 1.8052226380405045e-12
+    },
+    {
+      "id": "LR_PCBA_R7",
+      "volume_delta_mm3": 4.800604358479177e-13
+    },
+    {
+      "id": "LR_PCBA_R8",
+      "volume_delta_mm3": 5.03375119365046e-12
+    },
+    {
+      "id": "LR_PCBA_R9",
+      "volume_delta_mm3": -3.135269821541442e-13
+    },
+    {
+      "id": "LR_PCBA_TH1",
+      "volume_delta_mm3": 3.4066083287598303e-12
+    },
+    {
+      "id": "LR_LED_D1",
+      "volume_delta_mm3": 4.871214542845337e-12
+    },
+    {
+      "id": "LR_LED_D2",
+      "volume_delta_mm3": -7.574163518597743e-12
+    },
+    {
+      "id": "LR_LED_D3",
+      "volume_delta_mm3": -8.681944052568724e-13
+    },
+    {
+      "id": "LR_LED_D4",
+      "volume_delta_mm3": 4.8405723873656825e-12
+    },
+    {
+      "id": "LR_LED_D5",
+      "volume_delta_mm3": 4.839018075131207e-12
+    },
+    {
+      "id": "LR_LED_D6",
+      "volume_delta_mm3": -7.576161920042068e-12
+    },
+    {
+      "id": "LR_LED_D7",
+      "volume_delta_mm3": 4.312106227644108e-12
+    },
+    {
+      "id": "LR_LED_D8",
+      "volume_delta_mm3": 4.864775249302511e-12
+    },
+    {
+      "id": "LR_LED_D9",
+      "volume_delta_mm3": -8.821832153671494e-13
+    },
+    {
+      "id": "LR_LED_D10",
+      "volume_delta_mm3": 4.8481219039331336e-12
+    },
+    {
+      "id": "LR_LED_D11",
+      "volume_delta_mm3": 4.285904964262954e-12
+    },
+    {
+      "id": "LR_LED_D12",
+      "volume_delta_mm3": -8.404388296412435e-12
+    },
+    {
+      "id": "LR_LED_D13",
+      "volume_delta_mm3": 4.8399062535509074e-12
+    },
+    {
+      "id": "LR_LED_D14",
+      "volume_delta_mm3": 4.863442981672961e-12
+    },
+    {
+      "id": "LR_LED_D15",
+      "volume_delta_mm3": -1.4439560658274786e-12
+    },
+    {
+      "id": "LR_LED_D16",
+      "volume_delta_mm3": 4.011457832575616e-12
+    },
+    {
+      "id": "LR_LED_D17",
+      "volume_delta_mm3": 4.85811391115476e-12
+    },
+    {
+      "id": "LR_LED_D18",
+      "volume_delta_mm3": -3.730349362740526e-12
+    },
+    {
+      "id": "LR_LED_D19",
+      "volume_delta_mm3": 4.278799536905353e-12
+    },
+    {
+      "id": "LR_LED_D20",
+      "volume_delta_mm3": 4.022338018216942e-12
+    },
+    {
+      "id": "LR_LED_D21",
+      "volume_delta_mm3": -8.784084570834239e-13
+    },
+    {
+      "id": "LR_LED_D22",
+      "volume_delta_mm3": 4.8474557701183585e-12
+    },
+    {
+      "id": "LR_LED_D23",
+      "volume_delta_mm3": 4.2943426592501055e-12
+    },
+    {
+      "id": "LR_LED_D24",
+      "volume_delta_mm3": -4.57345272764087e-12
+    },
+    {
+      "id": "LR_LED_D25",
+      "volume_delta_mm3": 4.849676216167609e-12
+    },
+    {
+      "id": "LR_LED_D26",
+      "volume_delta_mm3": 4.856559598920285e-12
+    },
+    {
+      "id": "LR_LED_D27",
+      "volume_delta_mm3": -8.826273045769994e-13
+    },
+    {
+      "id": "LR_LED_D28",
+      "volume_delta_mm3": -8.402611939573035e-12
+    },
+    {
+      "id": "LR_LED_D29",
+      "volume_delta_mm3": 4.865885472327136e-12
+    },
+    {
+      "id": "LR_LED_D30",
+      "volume_delta_mm3": -3.731015496555301e-12
+    },
+    {
+      "id": "LR_LED_D31",
+      "volume_delta_mm3": 4.844347145649408e-12
+    },
+    {
+      "id": "LR_LED_D32",
+      "volume_delta_mm3": 4.275912957041328e-12
+    },
+    {
+      "id": "LR_LED_D33",
+      "volume_delta_mm3": -7.563283332956416e-12
+    },
+    {
+      "id": "LR_LED_D34",
+      "volume_delta_mm3": 4.846567591698658e-12
+    },
+    {
+      "id": "LR_LED_D35",
+      "volume_delta_mm3": -4.318545521186934e-12
+    },
+    {
+      "id": "LR_LED_D36",
+      "volume_delta_mm3": -8.202039047944254e-11
+    },
+    {
+      "id": "LR_LED_D37",
+      "volume_delta_mm3": -8.156364472711175e-12
+    },
+    {
+      "id": "LR_LED_D38",
+      "volume_delta_mm3": 5.628830734849544e-13
+    },
+    {
+      "id": "LR_LED_D39",
+      "volume_delta_mm3": -7.189138173657739e-12
+    },
+    {
+      "id": "LR_LED_D40",
+      "volume_delta_mm3": -3.3659741660585496e-12
+    },
+    {
+      "id": "LR_LED_D41",
+      "volume_delta_mm3": 1.7734036461547475e-11
+    },
+    {
+      "id": "LR_LED_D42",
+      "volume_delta_mm3": -9.021672298104022e-11
+    },
+    {
+      "id": "LR_JST_header_reference",
+      "volume_delta_mm3": -2.212914296251256e-10
+    },
+    {
+      "id": "LR_JST_plug_reference",
+      "volume_delta_mm3": 8.37019342725398e-11
+    },
+    {
+      "id": "LR_P16_envelope_case",
+      "volume_delta_mm3": -1.3096723705530167e-10
+    },
+    {
+      "id": "LR_P16_envelope_guide",
+      "volume_delta_mm3": -5.1641109166666865e-09
+    },
+    {
+      "id": "LR_P16_envelope_slider",
+      "volume_delta_mm3": -4.902176442556083e-10
+    },
+    {
+      "id": "LR_P16_envelope_tip",
+      "volume_delta_mm3": -2.955857780762017e-11
+    }
+  ],
+  "closed_rigid_transform_checks": [
+    {
+      "id": "main_carrier",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_existing_adapter",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_bearing_A",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_bearing_B",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_bearing_outer_cap",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M3_cap_bolt_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M3_cap_washer_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M3_cap_bolt_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M3_cap_washer_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M3_cap_bolt_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M3_cap_washer_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M3_cap_bolt_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M3_cap_washer_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_bearing_A",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_bearing_B",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_bearing_outer_cap",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M3_cap_bolt_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M3_cap_washer_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M3_cap_bolt_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M3_cap_washer_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M3_cap_bolt_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M3_cap_washer_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M3_cap_bolt_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M3_cap_washer_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_bearing_A",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_bearing_B",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_bearing_outer_cap",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M3_cap_bolt_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M3_cap_washer_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M3_cap_bolt_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M3_cap_washer_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M3_cap_bolt_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M3_cap_washer_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M3_cap_bolt_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M3_cap_washer_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_bearing_A",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_bearing_B",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_bearing_outer_cap",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M3_cap_bolt_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M3_cap_washer_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M3_cap_bolt_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M3_cap_washer_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M3_cap_bolt_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M3_cap_washer_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M3_cap_bolt_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M3_cap_washer_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_to_carrier_M4x40_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_M4_washer_0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_to_carrier_M4x40_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_M4_washer_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_to_carrier_M4x40_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_M4_washer_2",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_to_carrier_M4x40_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_M4_washer_3",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_-1_physical_keepout",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_-1_M2x6_-10.5_-10.5",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_-1_M2x6_-10.5_10.5",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_-1_M2x6_10.5_-10.5",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_-1_M2x6_10.5_10.5",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_1_physical_keepout",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_1_M2x6_-10.5_-10.5",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_1_M2x6_-10.5_10.5",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_1_M2x6_10.5_-10.5",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "camera_1_M2x6_10.5_10.5",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_column_-35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_tierod_-35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_washer_rear_-35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_nut_rear_-35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_washer_front_-35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_nut_front_-35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_column_-35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_tierod_-35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_washer_rear_-35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_nut_rear_-35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_washer_front_-35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_nut_front_-35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_column_35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_tierod_35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_washer_rear_35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_nut_rear_35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_washer_front_35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_nut_front_35.0_-22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_column_35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_tierod_35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_washer_rear_35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_nut_rear_35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_washer_front_35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "optic_M3_nut_front_35.0_22.0",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "removable_optical_frame",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_base_bracket",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_base_SBSM_pin",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_base_M3_retention_washer",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_base_M3_retention_nut",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_base_lug_spacer_-1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_base_lug_spacer_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M4_base_bolt_-10",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M4_base_bolt_10",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_base_bracket",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_base_SBSM_pin",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_base_M3_retention_washer",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_base_M3_retention_nut",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_base_lug_spacer_-1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_base_lug_spacer_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M4_base_bolt_-10",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UL_M4_base_bolt_10",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_base_bracket",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_base_SBSM_pin",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_base_M3_retention_washer",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_base_M3_retention_nut",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_base_lug_spacer_-1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_base_lug_spacer_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M4_base_bolt_-10",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LL_M4_base_bolt_10",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_base_bracket",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_base_SBSM_pin",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_base_M3_retention_washer",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_base_M3_retention_nut",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_base_lug_spacer_-1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_base_lug_spacer_1",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M4_base_bolt_-10",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "LR_M4_base_bolt_10",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "J7_extension24",
+      "independent_transform_COM_error_m": 0.0,
+      "independent_transform_inertia_error_kg_m2": 0.0
+    },
+    {
+      "id": "UR_M2x6_keeper_screw_0",
+      "independent_transform_COM_error_m": 1.0107470202776803e-15,
+      "independent_transform_inertia_error_kg_m2": 2.8496372102451803e-22
+    },
+    {
+      "id": "UR_M2x6_keeper_screw_1",
+      "independent_transform_COM_error_m": 7.485728784705058e-16,
+      "independent_transform_inertia_error_kg_m2": 3.1474222307642703e-22
+    },
+    {
+      "id": "UR_nut_keeper_sheet",
+      "independent_transform_COM_error_m": 1.5662545344429945e-15,
+      "independent_transform_inertia_error_kg_m2": 1.0951871310202086e-21
+    },
+    {
+      "id": "UR_removable_upper_fork",
+      "independent_transform_COM_error_m": 1.4879195607699152e-15,
+      "independent_transform_inertia_error_kg_m2": 3.712386589137988e-21
+    },
+    {
+      "id": "UR_metal_blade_with_narrow_tongue",
+      "independent_transform_COM_error_m": 3.6179022845204673e-14,
+      "independent_transform_inertia_error_kg_m2": 2.0247475571166795e-17
+    },
+    {
+      "id": "UR_M3x20_fork_screw_0",
+      "independent_transform_COM_error_m": 1.8380146325788475e-15,
+      "independent_transform_inertia_error_kg_m2": 1.2109924167776325e-20
+    },
+    {
+      "id": "UR_M3_washer_0",
+      "independent_transform_COM_error_m": 5.810158414919727e-16,
+      "independent_transform_inertia_error_kg_m2": 1.208200682210266e-22
+    },
+    {
+      "id": "UR_M3_hexnut_0",
+      "independent_transform_COM_error_m": 6.04172086223903e-16,
+      "independent_transform_inertia_error_kg_m2": 4.799715504338943e-22
+    },
+    {
+      "id": "UR_M3x20_fork_screw_1",
+      "independent_transform_COM_error_m": 1.3003763025502062e-15,
+      "independent_transform_inertia_error_kg_m2": 5.968935300182648e-21
+    },
+    {
+      "id": "UR_M3_washer_1",
+      "independent_transform_COM_error_m": 5.969163063393318e-16,
+      "independent_transform_inertia_error_kg_m2": 7.836502328174246e-22
+    },
+    {
+      "id": "UR_M3_hexnut_1",
+      "independent_transform_COM_error_m": 1.924526961177656e-16,
+      "independent_transform_inertia_error_kg_m2": 5.261902671602947e-22
+    },
+    {
+      "id": "UR_tip_SBSM_pin",
+      "independent_transform_COM_error_m": 6.603858739683868e-15,
+      "independent_transform_inertia_error_kg_m2": 1.3234889800848443e-20
+    },
+    {
+      "id": "UR_tip_outer_stack_spacer",
+      "independent_transform_COM_error_m": 6.910831784011499e-15,
+      "independent_transform_inertia_error_kg_m2": 2.269783600845508e-21
+    },
+    {
+      "id": "UR_tip_M3_retention_washer",
+      "independent_transform_COM_error_m": 6.218317559633461e-15,
+      "independent_transform_inertia_error_kg_m2": 3.4669207423628772e-22
+    },
+    {
+      "id": "UR_tip_M3_retention_nut",
+      "independent_transform_COM_error_m": 6.060959982337018e-15,
+      "independent_transform_inertia_error_kg_m2": 1.1665314588529073e-21
+    },
+    {
+      "id": "UR_tip_lug_spacer_-1",
+      "independent_transform_COM_error_m": 7.170695564469423e-15,
+      "independent_transform_inertia_error_kg_m2": 4.956362832841173e-22
+    },
+    {
+      "id": "UR_tip_lug_spacer_1",
+      "independent_transform_COM_error_m": 6.182921455665885e-15,
+      "independent_transform_inertia_error_kg_m2": 1.8270351779765e-21
+    },
+    {
+      "id": "UR_integral_steel_crank_spindle",
+      "independent_transform_COM_error_m": 1.0030726312251204e-15,
+      "independent_transform_inertia_error_kg_m2": 1.7313353441877899e-18
+    },
+    {
+      "id": "UR_inner_front_spacer",
+      "independent_transform_COM_error_m": 9.233464609979224e-16,
+      "independent_transform_inertia_error_kg_m2": 8.860758721668032e-21
+    },
+    {
+      "id": "UR_MB1",
+      "independent_transform_COM_error_m": 5.782589948949705e-16,
+      "independent_transform_inertia_error_kg_m2": 8.32474568473367e-21
+    },
+    {
+      "id": "UR_KM1",
+      "independent_transform_COM_error_m": 8.252330100176435e-16,
+      "independent_transform_inertia_error_kg_m2": 2.9804971831510693e-20
+    },
+    {
+      "id": "UR_lamp_PCB_outline",
+      "independent_transform_COM_error_m": 1.2120742706435097e-14,
+      "independent_transform_inertia_error_kg_m2": 9.486769009248164e-19
+    },
+    {
+      "id": "UR_lamp_optical_sheet",
+      "independent_transform_COM_error_m": 2.6247032784669554e-14,
+      "independent_transform_inertia_error_kg_m2": 6.88214269644119e-19
+    },
+    {
+      "id": "UR_lamp_insulating_ring1",
+      "independent_transform_COM_error_m": 7.58413485477019e-16,
+      "independent_transform_inertia_error_kg_m2": 9.205615488920218e-24
+    },
+    {
+      "id": "UR_lamp_insulating_ring2",
+      "independent_transform_COM_error_m": 6.980489330928908e-16,
+      "independent_transform_inertia_error_kg_m2": 1.2931159419676628e-23
+    },
+    {
+      "id": "UR_lamp_insulating_ring3",
+      "independent_transform_COM_error_m": 3.964673597181734e-15,
+      "independent_transform_inertia_error_kg_m2": 7.619432040864432e-23
+    },
+    {
+      "id": "UR_lamp_SSH_M2_4_1",
+      "independent_transform_COM_error_m": 6.222605686680249e-16,
+      "independent_transform_inertia_error_kg_m2": 8.37106779903664e-22
+    },
+    {
+      "id": "UR_lamp_SSH_M2_4_2",
+      "independent_transform_COM_error_m": 3.8289870333611516e-16,
+      "independent_transform_inertia_error_kg_m2": 8.225277216074169e-22
+    },
+    {
+      "id": "UR_lamp_SSH_M2_4_3",
+      "independent_transform_COM_error_m": 3.99386844220645e-15,
+      "independent_transform_inertia_error_kg_m2": 8.468261521011621e-22
+    },
+    {
+      "id": "UR_retained_pad_minus",
+      "independent_transform_COM_error_m": 4.474398998967561e-15,
+      "independent_transform_inertia_error_kg_m2": 8.513342864395761e-21
+    },
+    {
+      "id": "UR_retained_pad_plus",
+      "independent_transform_COM_error_m": 3.917173853344877e-15,
+      "independent_transform_inertia_error_kg_m2": 4.611118324676853e-21
+    },
+    {
+      "id": "UR_P16_envelope_case",
+      "independent_transform_COM_error_m": 3.516869929776097e-14,
+      "independent_transform_inertia_error_kg_m2": 7.086616449908378e-17
+    },
+    {
+      "id": "UR_P16_envelope_guide",
+      "independent_transform_COM_error_m": 1.6043659444168613e-14,
+      "independent_transform_inertia_error_kg_m2": 4.8297818652440205e-18
+    },
+    {
+      "id": "UR_P16_envelope_slider",
+      "independent_transform_COM_error_m": 1.2252770295503196e-14,
+      "independent_transform_inertia_error_kg_m2": 1.9259411638194654e-19
+    },
+    {
+      "id": "UR_P16_envelope_tip",
+      "independent_transform_COM_error_m": 6.031651237387229e-15,
+      "independent_transform_inertia_error_kg_m2": 2.083171654653545e-20
+    },
+    {
+      "id": "UL_M2x6_keeper_screw_0",
+      "independent_transform_COM_error_m": 6.709656560181658e-15,
+      "independent_transform_inertia_error_kg_m2": 2.371113225883254e-21
+    },
+    {
+      "id": "UL_M2x6_keeper_screw_1",
+      "independent_transform_COM_error_m": 3.792275336651728e-15,
+      "independent_transform_inertia_error_kg_m2": 1.5273890010791656e-21
+    },
+    {
+      "id": "UL_nut_keeper_sheet",
+      "independent_transform_COM_error_m": 1.3921581625012351e-14,
+      "independent_transform_inertia_error_kg_m2": 1.1635122496170887e-20
+    },
+    {
+      "id": "UL_removable_upper_fork",
+      "independent_transform_COM_error_m": 3.568926166748509e-15,
+      "independent_transform_inertia_error_kg_m2": 1.0938636420401238e-20
+    },
+    {
+      "id": "UL_metal_blade_with_narrow_tongue",
+      "independent_transform_COM_error_m": 2.853063328153506e-14,
+      "independent_transform_inertia_error_kg_m2": 1.825525407922468e-17
+    },
+    {
+      "id": "UL_M3x20_fork_screw_0",
+      "independent_transform_COM_error_m": 9.217505711075262e-15,
+      "independent_transform_inertia_error_kg_m2": 1.7999450129153882e-20
+    },
+    {
+      "id": "UL_M3_washer_0",
+      "independent_transform_COM_error_m": 8.56926778897385e-15,
+      "independent_transform_inertia_error_kg_m2": 2.578735559634064e-22
+    },
+    {
+      "id": "UL_M3_hexnut_0",
+      "independent_transform_COM_error_m": 2.565310577792895e-15,
+      "independent_transform_inertia_error_kg_m2": 1.149367461142432e-21
+    },
+    {
+      "id": "UL_M3x20_fork_screw_1",
+      "independent_transform_COM_error_m": 9.873003063688865e-15,
+      "independent_transform_inertia_error_kg_m2": 1.5524525736395223e-20
+    },
+    {
+      "id": "UL_M3_washer_1",
+      "independent_transform_COM_error_m": 9.075017476920166e-15,
+      "independent_transform_inertia_error_kg_m2": 1.8611563782443123e-22
+    },
+    {
+      "id": "UL_M3_hexnut_1",
+      "independent_transform_COM_error_m": 3.649891172839968e-15,
+      "independent_transform_inertia_error_kg_m2": 1.7414219845772615e-21
+    },
+    {
+      "id": "UL_tip_SBSM_pin",
+      "independent_transform_COM_error_m": 8.257543221218728e-15,
+      "independent_transform_inertia_error_kg_m2": 1.1943164556285635e-19
+    },
+    {
+      "id": "UL_tip_outer_stack_spacer",
+      "independent_transform_COM_error_m": 5.204212061127313e-15,
+      "independent_transform_inertia_error_kg_m2": 2.035691487493001e-21
+    },
+    {
+      "id": "UL_tip_M3_retention_washer",
+      "independent_transform_COM_error_m": 9.250011451901473e-15,
+      "independent_transform_inertia_error_kg_m2": 8.892191584945048e-22
+    },
+    {
+      "id": "UL_tip_M3_retention_nut",
+      "independent_transform_COM_error_m": 4.94605530500423e-15,
+      "independent_transform_inertia_error_kg_m2": 1.953593811697113e-21
+    },
+    {
+      "id": "UL_tip_lug_spacer_-1",
+      "independent_transform_COM_error_m": 8.191190118097073e-15,
+      "independent_transform_inertia_error_kg_m2": 5.982583780289773e-22
+    },
+    {
+      "id": "UL_tip_lug_spacer_1",
+      "independent_transform_COM_error_m": 1.2992516948530664e-14,
+      "independent_transform_inertia_error_kg_m2": 1.2746853239442156e-21
+    },
+    {
+      "id": "UL_integral_steel_crank_spindle",
+      "independent_transform_COM_error_m": 6.448924757264635e-15,
+      "independent_transform_inertia_error_kg_m2": 5.854691731421724e-18
+    },
+    {
+      "id": "UL_inner_front_spacer",
+      "independent_transform_COM_error_m": 3.0263967618438277e-15,
+      "independent_transform_inertia_error_kg_m2": 1.0669968157444015e-19
+    },
+    {
+      "id": "UL_MB1",
+      "independent_transform_COM_error_m": 1.329223704897137e-15,
+      "independent_transform_inertia_error_kg_m2": 1.0932018975500814e-20
+    },
+    {
+      "id": "UL_KM1",
+      "independent_transform_COM_error_m": 7.109393811230386e-16,
+      "independent_transform_inertia_error_kg_m2": 1.2260801911505997e-19
+    },
+    {
+      "id": "UL_lamp_PCB_outline",
+      "independent_transform_COM_error_m": 3.046948984088023e-14,
+      "independent_transform_inertia_error_kg_m2": 1.1909283238395463e-18
+    },
+    {
+      "id": "UL_lamp_optical_sheet",
+      "independent_transform_COM_error_m": 4.738236150308044e-14,
+      "independent_transform_inertia_error_kg_m2": 2.0320320404630665e-18
+    },
+    {
+      "id": "UL_lamp_insulating_ring1",
+      "independent_transform_COM_error_m": 9.825432727425705e-15,
+      "independent_transform_inertia_error_kg_m2": 3.2134028093124454e-23
+    },
+    {
+      "id": "UL_lamp_insulating_ring2",
+      "independent_transform_COM_error_m": 1.4115593622960397e-14,
+      "independent_transform_inertia_error_kg_m2": 6.421635739796434e-23
+    },
+    {
+      "id": "UL_lamp_insulating_ring3",
+      "independent_transform_COM_error_m": 8.819289127078405e-14,
+      "independent_transform_inertia_error_kg_m2": 8.352585482224908e-23
+    },
+    {
+      "id": "UL_lamp_SSH_M2_4_1",
+      "independent_transform_COM_error_m": 7.688751597330499e-15,
+      "independent_transform_inertia_error_kg_m2": 2.8062102280861464e-22
+    },
+    {
+      "id": "UL_lamp_SSH_M2_4_2",
+      "independent_transform_COM_error_m": 8.374879880403753e-15,
+      "independent_transform_inertia_error_kg_m2": 9.488795601748919e-22
+    },
+    {
+      "id": "UL_lamp_SSH_M2_4_3",
+      "independent_transform_COM_error_m": 8.306406482274314e-14,
+      "independent_transform_inertia_error_kg_m2": 1.6312001679545706e-21
+    },
+    {
+      "id": "UL_retained_pad_minus",
+      "independent_transform_COM_error_m": 2.7886471309075863e-14,
+      "independent_transform_inertia_error_kg_m2": 3.3007815163316016e-20
+    },
+    {
+      "id": "UL_retained_pad_plus",
+      "independent_transform_COM_error_m": 6.051883952958391e-14,
+      "independent_transform_inertia_error_kg_m2": 1.1379937277198278e-20
+    },
+    {
+      "id": "UL_P16_envelope_case",
+      "independent_transform_COM_error_m": 3.921009498328762e-14,
+      "independent_transform_inertia_error_kg_m2": 6.647514570051749e-17
+    },
+    {
+      "id": "UL_P16_envelope_guide",
+      "independent_transform_COM_error_m": 1.6664214201982502e-14,
+      "independent_transform_inertia_error_kg_m2": 4.186036825330752e-18
+    },
+    {
+      "id": "UL_P16_envelope_slider",
+      "independent_transform_COM_error_m": 1.2153951532115361e-14,
+      "independent_transform_inertia_error_kg_m2": 1.7787691892340307e-19
+    },
+    {
+      "id": "UL_P16_envelope_tip",
+      "independent_transform_COM_error_m": 6.539646140341392e-15,
+      "independent_transform_inertia_error_kg_m2": 2.3941915649734833e-20
+    },
+    {
+      "id": "LL_M2x6_keeper_screw_0",
+      "independent_transform_COM_error_m": 1.958155613796924e-14,
+      "independent_transform_inertia_error_kg_m2": 2.1614229406010613e-21
+    },
+    {
+      "id": "LL_M2x6_keeper_screw_1",
+      "independent_transform_COM_error_m": 1.1236115567731672e-14,
+      "independent_transform_inertia_error_kg_m2": 1.7114366873722143e-21
+    },
+    {
+      "id": "LL_nut_keeper_sheet",
+      "independent_transform_COM_error_m": 1.503224685661564e-14,
+      "independent_transform_inertia_error_kg_m2": 1.558904582417436e-20
+    },
+    {
+      "id": "LL_removable_upper_fork",
+      "independent_transform_COM_error_m": 5.851310485724989e-15,
+      "independent_transform_inertia_error_kg_m2": 1.1957722935066568e-20
+    },
+    {
+      "id": "LL_metal_blade_with_narrow_tongue",
+      "independent_transform_COM_error_m": 2.0040335876568277e-14,
+      "independent_transform_inertia_error_kg_m2": 1.2564886739570291e-17
+    },
+    {
+      "id": "LL_M3x20_fork_screw_0",
+      "independent_transform_COM_error_m": 1.8199817927698398e-14,
+      "independent_transform_inertia_error_kg_m2": 5.1940325023429714e-20
+    },
+    {
+      "id": "LL_M3_washer_0",
+      "independent_transform_COM_error_m": 1.1087275531498492e-14,
+      "independent_transform_inertia_error_kg_m2": 6.307252170716836e-22
+    },
+    {
+      "id": "LL_M3_hexnut_0",
+      "independent_transform_COM_error_m": 9.632356980411753e-15,
+      "independent_transform_inertia_error_kg_m2": 2.9414542582385664e-21
+    },
+    {
+      "id": "LL_M3x20_fork_screw_1",
+      "independent_transform_COM_error_m": 1.8205516839810703e-14,
+      "independent_transform_inertia_error_kg_m2": 3.7692966152816365e-20
+    },
+    {
+      "id": "LL_M3_washer_1",
+      "independent_transform_COM_error_m": 1.1058256826334418e-14,
+      "independent_transform_inertia_error_kg_m2": 1.230741353902336e-21
+    },
+    {
+      "id": "LL_M3_hexnut_1",
+      "independent_transform_COM_error_m": 9.50504367026745e-15,
+      "independent_transform_inertia_error_kg_m2": 3.515931193656644e-21
+    },
+    {
+      "id": "LL_tip_SBSM_pin",
+      "independent_transform_COM_error_m": 1.0786898354628808e-14,
+      "independent_transform_inertia_error_kg_m2": 6.313042435004707e-20
+    },
+    {
+      "id": "LL_tip_outer_stack_spacer",
+      "independent_transform_COM_error_m": 1.6949547666312628e-14,
+      "independent_transform_inertia_error_kg_m2": 2.7127388188676543e-21
+    },
+    {
+      "id": "LL_tip_M3_retention_washer",
+      "independent_transform_COM_error_m": 1.3731348726717272e-14,
+      "independent_transform_inertia_error_kg_m2": 1.4031051140430732e-21
+    },
+    {
+      "id": "LL_tip_M3_retention_nut",
+      "independent_transform_COM_error_m": 1.1078073963025097e-14,
+      "independent_transform_inertia_error_kg_m2": 1.419028340834719e-21
+    },
+    {
+      "id": "LL_tip_lug_spacer_-1",
+      "independent_transform_COM_error_m": 1.5504453413289116e-14,
+      "independent_transform_inertia_error_kg_m2": 7.5769744109857335e-22
+    },
+    {
+      "id": "LL_tip_lug_spacer_1",
+      "independent_transform_COM_error_m": 1.5471164557092253e-14,
+      "independent_transform_inertia_error_kg_m2": 2.2542739643601387e-21
+    },
+    {
+      "id": "LL_integral_steel_crank_spindle",
+      "independent_transform_COM_error_m": 6.325718094951223e-15,
+      "independent_transform_inertia_error_kg_m2": 1.1519648082658485e-18
+    },
+    {
+      "id": "LL_inner_front_spacer",
+      "independent_transform_COM_error_m": 1.087499184768905e-14,
+      "independent_transform_inertia_error_kg_m2": 1.6289502366884263e-19
+    },
+    {
+      "id": "LL_MB1",
+      "independent_transform_COM_error_m": 8.243844737750407e-15,
+      "independent_transform_inertia_error_kg_m2": 2.6999175193730823e-21
+    },
+    {
+      "id": "LL_KM1",
+      "independent_transform_COM_error_m": 4.285699561412856e-15,
+      "independent_transform_inertia_error_kg_m2": 3.155197728522269e-20
+    },
+    {
+      "id": "LL_lamp_PCB_outline",
+      "independent_transform_COM_error_m": 4.3850854304620476e-14,
+      "independent_transform_inertia_error_kg_m2": 9.706468179942248e-19
+    },
+    {
+      "id": "LL_lamp_optical_sheet",
+      "independent_transform_COM_error_m": 8.269383687416329e-15,
+      "independent_transform_inertia_error_kg_m2": 4.982671312223422e-19
+    },
+    {
+      "id": "LL_lamp_insulating_ring1",
+      "independent_transform_COM_error_m": 1.1059691394112475e-14,
+      "independent_transform_inertia_error_kg_m2": 1.1817373649571047e-22
+    },
+    {
+      "id": "LL_lamp_insulating_ring2",
+      "independent_transform_COM_error_m": 1.1069267101987229e-14,
+      "independent_transform_inertia_error_kg_m2": 1.3065091593076327e-22
+    },
+    {
+      "id": "LL_lamp_insulating_ring3",
+      "independent_transform_COM_error_m": 1.356050439307407e-13,
+      "independent_transform_inertia_error_kg_m2": 1.5724994250317157e-22
+    },
+    {
+      "id": "LL_lamp_SSH_M2_4_1",
+      "independent_transform_COM_error_m": 1.0528744332741635e-14,
+      "independent_transform_inertia_error_kg_m2": 1.1859702032479034e-21
+    },
+    {
+      "id": "LL_lamp_SSH_M2_4_2",
+      "independent_transform_COM_error_m": 1.0527951454059507e-14,
+      "independent_transform_inertia_error_kg_m2": 1.3572999876229493e-21
+    },
+    {
+      "id": "LL_lamp_SSH_M2_4_3",
+      "independent_transform_COM_error_m": 1.2501611838613417e-13,
+      "independent_transform_inertia_error_kg_m2": 7.47771273747937e-22
+    },
+    {
+      "id": "LL_retained_pad_minus",
+      "independent_transform_COM_error_m": 3.583647905078607e-14,
+      "independent_transform_inertia_error_kg_m2": 7.588224067316455e-20
+    },
+    {
+      "id": "LL_retained_pad_plus",
+      "independent_transform_COM_error_m": 4.75519395164154e-14,
+      "independent_transform_inertia_error_kg_m2": 8.053430443816277e-20
+    },
+    {
+      "id": "LL_P16_envelope_case",
+      "independent_transform_COM_error_m": 2.978725801754939e-15,
+      "independent_transform_inertia_error_kg_m2": 3.527892225314161e-18
+    },
+    {
+      "id": "LL_P16_envelope_guide",
+      "independent_transform_COM_error_m": 8.688609780722834e-16,
+      "independent_transform_inertia_error_kg_m2": 5.148372132530044e-19
+    },
+    {
+      "id": "LL_P16_envelope_slider",
+      "independent_transform_COM_error_m": 4.885966847273684e-15,
+      "independent_transform_inertia_error_kg_m2": 4.620564727272208e-19
+    },
+    {
+      "id": "LL_P16_envelope_tip",
+      "independent_transform_COM_error_m": 4.030129650520052e-15,
+      "independent_transform_inertia_error_kg_m2": 1.1441562232833479e-20
+    },
+    {
+      "id": "LR_M2x6_keeper_screw_0",
+      "independent_transform_COM_error_m": 1.0647732130305002e-14,
+      "independent_transform_inertia_error_kg_m2": 1.760240343512843e-21
+    },
+    {
+      "id": "LR_M2x6_keeper_screw_1",
+      "independent_transform_COM_error_m": 6.0867350828009186e-15,
+      "independent_transform_inertia_error_kg_m2": 5.773720675620133e-22
+    },
+    {
+      "id": "LR_nut_keeper_sheet",
+      "independent_transform_COM_error_m": 1.0295132382719095e-14,
+      "independent_transform_inertia_error_kg_m2": 3.861279099397533e-21
+    },
+    {
+      "id": "LR_removable_upper_fork",
+      "independent_transform_COM_error_m": 1.9870089416614216e-15,
+      "independent_transform_inertia_error_kg_m2": 1.1018045759206329e-20
+    },
+    {
+      "id": "LR_metal_blade_with_narrow_tongue",
+      "independent_transform_COM_error_m": 2.3648408317386878e-14,
+      "independent_transform_inertia_error_kg_m2": 1.136718215215271e-18
+    },
+    {
+      "id": "LR_M3x20_fork_screw_0",
+      "independent_transform_COM_error_m": 1.1866695432385739e-14,
+      "independent_transform_inertia_error_kg_m2": 2.4947767274599315e-20
+    },
+    {
+      "id": "LR_M3_washer_0",
+      "independent_transform_COM_error_m": 4.193974473645662e-15,
+      "independent_transform_inertia_error_kg_m2": 6.952453048508198e-22
+    },
+    {
+      "id": "LR_M3_hexnut_0",
+      "independent_transform_COM_error_m": 3.751837539897755e-15,
+      "independent_transform_inertia_error_kg_m2": 1.875425243810852e-21
+    },
+    {
+      "id": "LR_M3x20_fork_screw_1",
+      "independent_transform_COM_error_m": 9.573875842861154e-15,
+      "independent_transform_inertia_error_kg_m2": 5.188738546422632e-20
+    },
+    {
+      "id": "LR_M3_washer_1",
+      "independent_transform_COM_error_m": 7.67997955917496e-15,
+      "independent_transform_inertia_error_kg_m2": 1.5847746560750319e-21
+    },
+    {
+      "id": "LR_M3_hexnut_1",
+      "independent_transform_COM_error_m": 4.172716412030327e-15,
+      "independent_transform_inertia_error_kg_m2": 2.0700194829139518e-21
+    },
+    {
+      "id": "LR_tip_SBSM_pin",
+      "independent_transform_COM_error_m": 6.636546907876974e-15,
+      "independent_transform_inertia_error_kg_m2": 8.083870690358229e-20
+    },
+    {
+      "id": "LR_tip_outer_stack_spacer",
+      "independent_transform_COM_error_m": 1.171367502477111e-14,
+      "independent_transform_inertia_error_kg_m2": 4.8241173324092574e-21
+    },
+    {
+      "id": "LR_tip_M3_retention_washer",
+      "independent_transform_COM_error_m": 6.461418122087258e-15,
+      "independent_transform_inertia_error_kg_m2": 6.961758830399419e-22
+    },
+    {
+      "id": "LR_tip_M3_retention_nut",
+      "independent_transform_COM_error_m": 6.065740383400595e-15,
+      "independent_transform_inertia_error_kg_m2": 1.4953357523427358e-21
+    },
+    {
+      "id": "LR_tip_lug_spacer_-1",
+      "independent_transform_COM_error_m": 4.984154891320413e-15,
+      "independent_transform_inertia_error_kg_m2": 1.3388034806089181e-21
+    },
+    {
+      "id": "LR_tip_lug_spacer_1",
+      "independent_transform_COM_error_m": 4.177957516923006e-15,
+      "independent_transform_inertia_error_kg_m2": 9.951145242129785e-22
+    },
+    {
+      "id": "LR_integral_steel_crank_spindle",
+      "independent_transform_COM_error_m": 6.69081382963369e-15,
+      "independent_transform_inertia_error_kg_m2": 1.0164395367051604e-17
+    },
+    {
+      "id": "LR_inner_front_spacer",
+      "independent_transform_COM_error_m": 4.618829524813421e-15,
+      "independent_transform_inertia_error_kg_m2": 8.949432483333717e-20
+    },
+    {
+      "id": "LR_MB1",
+      "independent_transform_COM_error_m": 3.1016331836265897e-15,
+      "independent_transform_inertia_error_kg_m2": 1.7628873214730126e-20
+    },
+    {
+      "id": "LR_KM1",
+      "independent_transform_COM_error_m": 5.525770417744016e-15,
+      "independent_transform_inertia_error_kg_m2": 1.9746455582865877e-20
+    },
+    {
+      "id": "LR_lamp_PCB_outline",
+      "independent_transform_COM_error_m": 2.6139403927397448e-14,
+      "independent_transform_inertia_error_kg_m2": 7.067960549245102e-19
+    },
+    {
+      "id": "LR_lamp_optical_sheet",
+      "independent_transform_COM_error_m": 9.202784393732983e-15,
+      "independent_transform_inertia_error_kg_m2": 2.200432778289062e-19
+    },
+    {
+      "id": "LR_lamp_insulating_ring1",
+      "independent_transform_COM_error_m": 5.507651693906168e-15,
+      "independent_transform_inertia_error_kg_m2": 4.119262515286044e-23
+    },
+    {
+      "id": "LR_lamp_insulating_ring2",
+      "independent_transform_COM_error_m": 6.847884146798539e-15,
+      "independent_transform_inertia_error_kg_m2": 5.917734112735322e-23
+    },
+    {
+      "id": "LR_lamp_insulating_ring3",
+      "independent_transform_COM_error_m": 9.256610058859272e-14,
+      "independent_transform_inertia_error_kg_m2": 9.840056556399855e-23
+    },
+    {
+      "id": "LR_lamp_SSH_M2_4_1",
+      "independent_transform_COM_error_m": 5.343768294184055e-15,
+      "independent_transform_inertia_error_kg_m2": 9.416417298150529e-22
+    },
+    {
+      "id": "LR_lamp_SSH_M2_4_2",
+      "independent_transform_COM_error_m": 6.5590543825723215e-15,
+      "independent_transform_inertia_error_kg_m2": 1.4902692710908485e-21
+    },
+    {
+      "id": "LR_lamp_SSH_M2_4_3",
+      "independent_transform_COM_error_m": 8.543833668936989e-14,
+      "independent_transform_inertia_error_kg_m2": 1.0297364650519503e-21
+    },
+    {
+      "id": "LR_retained_pad_minus",
+      "independent_transform_COM_error_m": 8.58868022375757e-15,
+      "independent_transform_inertia_error_kg_m2": 1.6104379345794896e-20
+    },
+    {
+      "id": "LR_retained_pad_plus",
+      "independent_transform_COM_error_m": 7.277629558508413e-15,
+      "independent_transform_inertia_error_kg_m2": 2.3852580143579106e-20
+    },
+    {
+      "id": "LR_P16_envelope_case",
+      "independent_transform_COM_error_m": 7.544610552961393e-15,
+      "independent_transform_inertia_error_kg_m2": 3.5096810169481935e-18
+    },
+    {
+      "id": "LR_P16_envelope_guide",
+      "independent_transform_COM_error_m": 4.774350122103906e-15,
+      "independent_transform_inertia_error_kg_m2": 4.019700730313689e-19
+    },
+    {
+      "id": "LR_P16_envelope_slider",
+      "independent_transform_COM_error_m": 4.422999242550807e-15,
+      "independent_transform_inertia_error_kg_m2": 4.811147140404426e-19
+    },
+    {
+      "id": "LR_P16_envelope_tip",
+      "independent_transform_COM_error_m": 3.1838863456917265e-15,
+      "independent_transform_inertia_error_kg_m2": 1.3327534029454382e-20
+    }
+  ],
+  "maximum_closed_COM_error_m": 1.356050439307407e-13,
+  "maximum_closed_inertia_error_kg_m2": 7.086616449908378e-17,
+  "all_nominal_and_transformed_tensors_symmetric_PSD_and_triangle_consistent": true,
+  "whole_head_comparison": {
+    "open": {
+      "mass_kg": 2.802491324757483,
+      "com_head_home_m": [
+        3.157782105751383e-09,
+        0.0015447040950776335,
+        -0.03709467812418157
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          0.01968802263464323,
+          -2.706410495926094e-09,
+          -2.6878114331776586e-09
+        ],
+        [
+          -2.706410495926094e-09,
+          0.02221580875047797,
+          0.0016815893342618264
+        ],
+        [
+          -2.6878114331776586e-09,
+          0.0016815893342618264,
+          0.01626721311661696
+        ]
+      ],
+      "reference_mass_difference_kg": -4.4853010194856324e-14,
+      "reference_COM_difference_m": [
+        8.823259812086921e-17,
+        -3.3046482217358175e-15,
+        4.621303340002214e-15
+      ],
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 0.015824759524254252,
+        "principal_triangle_margin_kg_m2": 0.012854519816051353
+      }
+    },
+    "closed": {
+      "mass_kg": 2.802491324757483,
+      "com_head_home_m": [
+        3.1577823663717607e-09,
+        0.0009812020718588772,
+        -0.032273157377997706
+      ],
+      "inertia_about_COM_head_axes_kg_m2": [
+        [
+          0.020671325898988707,
+          -1.1693973354969783e-09,
+          -2.7957115055469604e-09
+        ],
+        [
+          -1.1693973354969783e-09,
+          0.02256162989132337,
+          0.001586733790107409
+        ],
+        [
+          -2.7957115055469604e-09,
+          0.001586733790107409,
+          0.013464547714772896
+        ]
+      ],
+      "reference_mass_difference_kg": -4.4853010194856324e-14,
+      "reference_COM_difference_m": [
+        3.446340753420354e-16,
+        -1.0323773086406973e-15,
+        3.3861802251067274e-15
+      ],
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 0.013195729552130145,
+        "principal_triangle_margin_kg_m2": 0.011036607397152058
+      }
+    }
+  },
+  "aggregate_closed_tensor_matches_per_part": true,
+  "direct_closed_STEP_tensor_matches_independent_transform": true,
+  "aggregate_group_count": 13,
+  "mass_bearing_part_count": 262,
+  "unweighed_or_reservation_count": 435,
+  "catalogue_mass_proxy_parts": [
+    "UR_bearing_A",
+    "UR_bearing_B",
+    "UL_bearing_A",
+    "UL_bearing_B",
+    "LL_bearing_A",
+    "LL_bearing_B",
+    "LR_bearing_A",
+    "LR_bearing_B",
+    "J7_to_carrier_M4x40_0",
+    "J7_to_carrier_M4x40_1",
+    "J7_to_carrier_M4x40_2",
+    "J7_to_carrier_M4x40_3",
+    "camera_-1_physical_keepout",
+    "camera_1_physical_keepout",
+    "UR_base_SBSM_pin",
+    "UL_base_SBSM_pin",
+    "LL_base_SBSM_pin",
+    "LR_base_SBSM_pin",
+    "UR_tip_SBSM_pin",
+    "UR_MB1",
+    "UR_KM1",
+    "UL_tip_SBSM_pin",
+    "UL_MB1",
+    "UL_KM1",
+    "LL_tip_SBSM_pin",
+    "LL_MB1",
+    "LL_KM1",
+    "LR_tip_SBSM_pin",
+    "LR_MB1",
+    "LR_KM1"
+  ],
+  "HEAD03_read_only_sha_before_after_identical": true,
+  "script_sha256": "af397b2aca71a952bfd6593fdcc1ef4c42a57a3826b1e0900e3e8809c4f2806b"
+}

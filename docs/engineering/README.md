@@ -48,6 +48,7 @@
 | 完整末端载体 | [P16-CARRIER-01](p16-carrier-study.md) | 四轴承座/P16基叉/J7后架/双鱼眼前架及236实体端态；2.727kg已建模型，根部小间隙与腕旋转仍需修订 |
 | 灯爪近根修订 | [P16-CARRIER-02](p16-carrier02-study.md) | 四路同轴支承全角域名义间隙1mm；增厚钢桥、孔后截面和反力已计算，2.747kg已建模型；延伸件/正式灯板待合并 |
 | 四瓣整头集成 | [HEAD-INTEGRATED03](head-integrated03-study.md) | CARRIER02＋灯腔/软垫保持＋FPL机械快照＋EXT24；两态各697实体、17项连续检查，计量模型2.802kg、规划2.987～3.252kg；电气路由/线束/护壳未定版 |
+| 整头质量与惯量 | [HEAD-MASS04](head-mass04-study.md) | 262项聚合为13个刚体、重2.802kg；精确实体积分与目录惯量代理分列，P16质量分配/未知185～450g预算明确，不重复旧L7占位 |
 | 灯光与IO | [609点LED与控制/功率](hardware/head-lighting-io-selection.md) | 真实圆形点阵与四片LED坐标，MCU/ESC/电源候选；不是完整PCB |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
 | 放行差距 | [发布检查清单](release-checklist.md) | 对应证据和实际未完成事项 |
