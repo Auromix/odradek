@@ -19,6 +19,8 @@ from mathutils import Matrix, Vector
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--mesh-json',type=Path,required=True)
 parser.add_argument('--out',type=Path)
+parser.add_argument('--home-scale',type=float,default=1.27)
+parser.add_argument('--home-target-z',type=float,default=.44)
 args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
 ROOT=Path(__file__).resolve().parents[1]
 GENERATOR_SHA256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
@@ -266,7 +268,7 @@ def render(name,position,target,scale,up=None):
 set_pose(data['poses_deg']['inspect'],{k:0 for k in finger_controls})
 render('arm-open-oblique',Vector((1.65,-2.1,1.45)),Vector((.19,0,.39)),1.13)
 set_pose([0]*7,{k:0 for k in finger_controls})
-render('arm-home-structure',Vector((1.6,-2.2,1.75)),Vector((0,0,.44)),1.27)
+render('arm-home-structure',Vector((1.6,-2.2,1.75)),Vector((0,0,args.home_target_z)),args.home_scale)
 render('head-open',face+Vector((.15,-.18,.85)),face+Vector((0,0,-.035)),.52,up=(0,1,0))
 set_pose([0]*7,{k:finger_specs[k]['range_deg'][1] for k in finger_controls})
 render('head-closed',face+Vector((.22,-.26,.72)),face+Vector((0,0,.015)),.42,up=(0,1,0))
@@ -284,6 +286,7 @@ report={'revision':data['revision'],'parts':len(objects),'arm_vertex_checks':che
         'source_hashes':data['source_hashes'],'mesh_export_generator_sha256':data['generator_sha256'],
         'blender_generator_sha256':GENERATOR_SHA256,
         'blend_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'manufacturing_release':False,'scope':data['scope'],
+        'home_view':{'ortho_scale_m':args.home_scale,'target_z_m':args.home_target_z},
         'native_controls':7+len(finger_controls),'P16_drivers':'Body aim plus extension; not a rigid finger child',
         'omissions':data['omissions'],
         'central_display_preview':{'pixels':len(data['central_pixel_preview_mm']),'lit_pixels':len(lit),'physical_design':False,'included_in_mass_or_parts':False},

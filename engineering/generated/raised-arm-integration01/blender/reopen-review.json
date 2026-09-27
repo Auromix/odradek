@@ -1,0 +1,233 @@
+{
+  "revision": "RAISED-ARM-INTEGRATION01",
+  "passed": true,
+  "reopened_blend_sha256": "8967fac158f02836c3a9587dfe825e352840cb7309ac3b06d7b9cbc75bc359c3",
+  "reviewer_sha256": "0c9ad0e6f64affe9a3edd164eef53f9bef820e8677457fcc49a5a7397f0c46ba",
+  "python_autoexec_enabled": false,
+  "handlers_required": false,
+  "drivers": [
+    {
+      "object": "FINGER_LL",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "FINGER_LR",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "FINGER_UL",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "FINGER_UR",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "J1",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "J2",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "J3",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "J4",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "J5",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "J6",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "J7",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "q*pi/180",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_LL_body_pivot",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "atan2(26*cos(q*pi/180-68*pi/180),123+26*sin(q*pi/180-68*pi/180))-(0.098171159399031871)",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_LL_slider",
+      "path": "location",
+      "array_index": 0,
+      "expression": "(-0.069306045770645142)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_LL_slider",
+      "path": "location",
+      "array_index": 1,
+      "expression": "(-0.069306045770645142)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_LL_slider",
+      "path": "location",
+      "array_index": 2,
+      "expression": "(0.99518507719039917)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_LR_body_pivot",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "atan2(26*cos(q*pi/180-68*pi/180),123+26*sin(q*pi/180-68*pi/180))-(0.098171159399031871)",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_LR_slider",
+      "path": "location",
+      "array_index": 0,
+      "expression": "(0.069306045770645142)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_LR_slider",
+      "path": "location",
+      "array_index": 1,
+      "expression": "(-0.069306045770645142)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_LR_slider",
+      "path": "location",
+      "array_index": 2,
+      "expression": "(0.99518507719039917)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_UL_body_pivot",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "atan2(26*cos(q*pi/180-68*pi/180),123+26*sin(q*pi/180-68*pi/180))-(0.098171159399031871)",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_UL_slider",
+      "path": "location",
+      "array_index": 0,
+      "expression": "(-0.080288000404834747)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_UL_slider",
+      "path": "location",
+      "array_index": 1,
+      "expression": "(0.056218262761831284)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_UL_slider",
+      "path": "location",
+      "array_index": 2,
+      "expression": "(0.99518507719039917)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_UR_body_pivot",
+      "path": "rotation_axis_angle",
+      "array_index": 0,
+      "expression": "atan2(26*cos(q*pi/180-68*pi/180),123+26*sin(q*pi/180-68*pi/180))-(0.098171159399031871)",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_UR_slider",
+      "path": "location",
+      "array_index": 0,
+      "expression": "(0.080288000404834747)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_UR_slider",
+      "path": "location",
+      "array_index": 1,
+      "expression": "(0.056218262761831284)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    },
+    {
+      "object": "P16_UR_slider",
+      "path": "location",
+      "array_index": 2,
+      "expression": "(0.99518507719039917)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "valid": true,
+      "simple": true
+    }
+  ],
+  "arm_vertex_checks": 492,
+  "max_arm_vertex_error_mm": 0.00013328003749250113,
+  "independent_closed_CAD_checks": 697,
+  "max_closed_bound_error_mm": 0.0027341682805115397,
+  "file_resaved": false,
+  "manufacturing_release": false,
+  "warning": "Pose controls are geometric only. Consult the candidate-specific collision report; discrete checks do not qualify motion paths or hardware limits."
+}

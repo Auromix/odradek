@@ -22,7 +22,8 @@
 | J3→J4实体连接 | [LINK34-01](link34-structure-study.md) | 六件原创结构、40螺钉、六页图；q3相对J2/L23全周和连续装配已检查；后环接触刚度/预紧/完整牙待验证 |
 | J4→J5实体连接 | [LINK45-01](link45-structure-study.md) | 三件原创结构、28个已知螺钉形状、六页图；局部q4/q5连续避让和装入已检查；动态相机线首弯存在明确碰撞 |
 | 新增部件 Blender | [三个原生场景](subassembly-blender-review.md) | 连接件、底座和四指；五张渲染、12项层级变换检查，尚非新整机装配 |
-| 当前结构 Blender 总装 | [736对象与11个原生控制](integrated-blender-review.md) | 六段＋底座＋HEAD03，27条推杆/关节驱动独立重开通过；外壳/线束/全臂紧固件未集成，历史reach有碰撞 |
+| 当前肩部抬升总装 | [RAISED-ARM-INTEGRATION01](raised-arm-integration01.md) | +35mm肩架、736网格/11控制、10个真实实体姿态无交叠、派生数学模型独立通过；全臂路径/线束/结构强度未放行 |
+| 原版结构 Blender 总装 | [原736对象与11个控制](integrated-blender-review.md) | 历史原版保留，reach存在肩部碰撞；由抬升候选继续推进 |
 | 六段承力连接 | [真实接口与空间审查](link-connection-plan.md) | 全部接触面/孔阵；发现肩部螺钉及两段旧梁干涉 |
 | 真实连接质量回算 | [LOADS-02肩架集成](shoulder-mass-integration.md)／[LOADS-01](candidate-loads.md) | LINK12+LINK56九实体惯量/COM回填；重头情景与底座重算，仍非整机载荷上限 |
 | 末端质量影响 | [3.5–4.5 kg 敏感性](head-mass-sensitivity.md) | 2 kg净物体另计；局部搜索及全域保守界，不替代动态/热选型 |

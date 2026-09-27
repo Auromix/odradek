@@ -66,14 +66,14 @@ for ob in bpy.data.objects:
             drivers.append(dict(object=ob.name,path=fc.data_path,array_index=fc.array_index,expression=d.expression,valid=d.is_valid,simple=d.is_simple_expression))
 assert len(drivers)==27,len(drivers)
 assert not bpy.app.autoexec_fail
-result=dict(revision='ARM-INTEGRATED-PREVIEW01',passed=True,
+result=dict(revision=source['revision'],passed=True,
             reopened_blend_sha256=hashlib.sha256(Path(bpy.data.filepath).read_bytes()).hexdigest(),
             reviewer_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             python_autoexec_enabled=bpy.context.preferences.filepaths.use_scripts_auto_execute,
             handlers_required=False,drivers=drivers,arm_vertex_checks=len(errors),max_arm_vertex_error_mm=max(errors),
             independent_closed_CAD_checks=len(closed_errors),max_closed_bound_error_mm=max(closed_errors),
             file_resaved=False,manufacturing_release=False,
-            warning='Home/inspect/reach used only for transformation validation; reach has documented real shoulder collisions and must not be executed.')
+            warning=('Home/inspect/reach used only for transformation validation; reach has documented real shoulder collisions and must not be executed.' if source['revision']=='ARM-INTEGRATED-PREVIEW01' else 'Pose controls are geometric only. Consult the candidate-specific collision report; discrete checks do not qualify motion paths or hardware limits.'))
 assert not result['python_autoexec_enabled']
 args.report.parent.mkdir(parents=True,exist_ok=True)
 args.report.write_text(json.dumps(result,indent=2)+'\n')

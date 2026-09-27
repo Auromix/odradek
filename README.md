@@ -10,7 +10,7 @@ Odradek is an independent Auromix robotics project sharing design material for n
 
 ## Engineering package
 
-![Current structural review assembly](engineering/generated/integrated-arm-preview/arm-open-oblique.png)
+![Current structural review assembly](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
 
 This model combines 24 original link parts, the corrected base and the 697-object HEAD-INTEGRATED03 snapshot. Joint housings remain catalog envelopes; arm fasteners, harnesses and exterior guards are not fully integrated. The central pixel display is a separate visual preview. [Full-arm BREP checks](docs/engineering/integrated-collision-study.md) found real shoulder collisions in the historical `reach` pose; it must not be executed. The shown `inspect` pose passed the stated discrete geometry check, not trajectory or payload qualification.
 
@@ -18,7 +18,7 @@ This model combines 24 original link parts, the corrected base and the 697-objec
 |---|---|
 | [Engineering index](docs/engineering/README.md) | Requirements, assumptions, source records, and release checklist |
 | [R4 layout and grasp](docs/engineering/r4-layout-and-grasp.md) | Same-parameter geometry, closure proof, conditional contact calculations, and optical sightlines |
-| [Current native Blender](engineering/generated/integrated-arm-preview/odradek-integrated-7-plus-4.blend) / [model guide](docs/engineering/integrated-blender-review.md) | 736 product meshes, 11 controls, persistent actuator linkage drivers; geometric review only |
+| [Current native Blender](engineering/generated/raised-arm-integration01/blender/odradek-integrated-7-plus-4.blend) / [model guide](docs/engineering/raised-arm-integration01.md) | 736 product meshes, 11 controls, persistent actuator linkage drivers; geometric review only |
 | [Integrated head STEP and evidence](docs/engineering/head-integrated03-study.md) / [coupled dynamics](docs/engineering/articulated-dynamics-review.md) | Actual candidate solids, frozen board placement and explicit mass/inertia assumptions |
 | [Historical layout](docs/engineering/r4-layout-and-grasp.md) / [subassembly scenes](docs/engineering/subassembly-blender-review.md) | Earlier design stages retained for traceability |
 | [A3 review drawings](engineering/generated/layout/ODR-R4-assembly-review.pdf) | Axes, dimensions, and orthographic mesh views |

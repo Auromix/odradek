@@ -10,7 +10,7 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 
 ## 当前工程包
 
-![当前结构检查总装](engineering/generated/integrated-arm-preview/arm-open-oblique.png)
+![当前结构检查总装](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
 
 图中已合并24个原创连接件、修正后的底座和697对象的HEAD-INTEGRATED03快照。关节仍为目录包络，臂侧紧固件、线束和外壳尚未完整集成，中央像素屏单独标为显示效果。[整臂真实实体检查](docs/engineering/integrated-collision-study.md)发现历史reach姿态存在肩部碰撞，禁止执行；图示inspect仅通过已说明范围的离散几何检查，未取得轨迹或带载资格。
 
@@ -18,7 +18,7 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 |---|---|
 | [工程总览](docs/engineering/README.md) | 输入、假设、一手来源和发布清单 |
 | [布局、闭合与抓取](docs/engineering/r4-layout-and-grasp.md) | 同参数实体、独立角域分离、条件抓取和名义光线检查 |
-| [当前原生Blender](engineering/generated/integrated-arm-preview/odradek-integrated-7-plus-4.blend)／[模型使用说明](docs/engineering/integrated-blender-review.md) | 736个产品网格、11个控制量、可独立重开的推杆随动；几何检查候选 |
+| [当前原生Blender](engineering/generated/raised-arm-integration01/blender/odradek-integrated-7-plus-4.blend)／[模型使用说明](docs/engineering/raised-arm-integration01.md) | 736个产品网格、11个控制量、可独立重开的推杆随动；几何检查候选 |
 | [整头STEP与证据](docs/engineering/head-integrated03-study.md)／[耦合动力学](docs/engineering/articulated-dynamics-review.md) | 实际候选实体、冻结灯板位置、明确的质量与惯量代理 |
 | [历史布局](docs/engineering/r4-layout-and-grasp.md)／[分组件场景](docs/engineering/subassembly-blender-review.md) | 保留早期设计阶段用于追溯 |
 | [A3 装配审查图](engineering/generated/layout/ODR-R4-assembly-review.pdf) | 轴坐标、布局尺寸和正交网格视图 |
