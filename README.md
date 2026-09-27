@@ -6,7 +6,25 @@
 
 Odradek is an independent Auromix robotics project sharing design material for noncommercial research and hobby use inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
 
-**Stage: R3 silhouette selection and closure study.** This repository contains AI-assisted artwork, design records, references, and exact prompts. It does not yet contain manufacturing CAD, a validated seven-axis mechanism, firmware, or tested hardware. Payload, reach, cost, and performance targets remain open.
+**Stage: R4 engineering research and geometry prototypes.** The requirement is a 2 kg end load, EtherCAT motion communication, internal cabling, and external computing. Current calculations assume a 2 kg object plus a 2 kg head budget and approximately 700 mm shoulder-to-TCP distance; those interpretations are not yet confirmed performance specifications. The repository now includes executable mathematics, parameterized STEP geometry, a native Blender assembly, review drawings, and printable fixtures. It has no manufacturing release, tested 2 kg prototype, or production control firmware.
+
+## Engineering package
+
+![Parameter-derived R4 assembly](engineering/generated/layout/odradek-r4-inspect.png)
+
+The render exposes actual catalog-sized joint and drive envelopes; connections, shaft supports, and cable paths remain under development. Its old base plate has a documented J1 housing interference and must be replaced by the separate mount/base study, not fabricated as shown.
+
+| Package | Evidence and scope |
+|---|---|
+| [Engineering index](docs/engineering/README.md) | Requirements, assumptions, source records, and release checklist |
+| [R4 layout and grasp](docs/engineering/r4-layout-and-grasp.md) | Same-parameter geometry, closure proof, conditional contact calculations, and optical sightlines |
+| [Blender assembly](engineering/generated/layout/odradek-r4-layout.blend) / [STEP](engineering/generated/layout/odradek-layout.step) | 7 arm pivots and 4 independent fingers; layout, not production assembly |
+| [A3 review drawings](engineering/generated/layout/ODR-R4-assembly-review.pdf) | Axes, dimensions, and orthographic mesh views |
+| [Manual finger fixture](engineering/generated/finger-fixture/README.md) / [joint interface coupons](docs/engineering/interface-coupon-guide.md) | Unpowered printable geometry checks with dimensions |
+| [Hardware BOM](docs/engineering/hardware/bom.csv) / [optical bench](docs/engineering/hardware/optical-bench-build.md) | Sourced component candidates and a concrete dual-fisheye bench chain |
+| [Reproduce the calculations and CAD](engineering/README.md) | Dependencies, generation order, units, and limitations |
+
+The nominal petal geometry has a 4.7862 mm minimum separating-axis bound over the independent study angle intervals. This excludes supports, cables, tolerance and deformation. Grasp feasibility remains conditional on the modeled object, friction, contact normals, and available torque; it is not a measured payload rating.
 
 ## R3: keep the silhouette, resolve closure and contact
 
@@ -48,7 +66,7 @@ Petal count is not a DOF count. Three- and five-petal variants would require the
 
 ## Process and next steps
 
-Research → R0 form exploration → R1 luminous fingers → R2 7+4 DOF and modular head → **R3 silhouette, closure, and camera study** → task and scale definition → mechanism samples and arm kinematics → engineering and task validation.
+Research → R0 form exploration → R1 luminous fingers → R2 7+4 DOF and modular head → R3 silhouette and closure → **R4 sourced components, mathematics, CAD, and geometry fixtures** → complete load paths and harness routes → physical task and manufacturing validation.
 
 The [gallery](docs/gallery.html) retains original R0/R1 artwork and exact prompts for traceability. R1's separate physical light annulus and finger-count candidates are superseded by R2.
 
@@ -60,12 +78,12 @@ The [gallery](docs/gallery.html) retains original R0/R1 artwork and exact prompt
 | [Sources](docs/sources.md) | Research and reference roles |
 | [Generation](docs/generation.md) and [review notes](docs/review-notes.md) | Prompts, AI assistance, and specific visual limitations |
 
-The next priorities are finger trajectories and closure clearance, module mass and connection design, J7 cable routing, and a concrete target task that determines arm sizing.
+Current open items include full load-bearing link connections, independent belt-shaft supports, installed holding/thermal performance, internal dynamic cable routing, and task-specific contact validation. See the [release checklist](docs/engineering/release-checklist.md).
 
 ## License and commercial permissions
 
-Current original artwork, documentation, prompts, and static documentation pages are offered under **[CC BY-NC 4.0](LICENSE)**. Noncommercial research, study, hobby use, adaptation, and sharing are permitted under its terms. Sharing requires attribution, license information, and indication of changes. Commercial use requiring authorization needs a [separate written license from the authors](https://github.com/Auromix/odradek/issues/new?template=commercial-license.yml).
+New original artwork, documentation, research scripts, parameters, and models are offered under **[CC BY-NC 4.0](LICENSE)**. Noncommercial research, study, hobby use, adaptation, and sharing are permitted under its terms. Sharing requires attribution, license information, and indication of changes. Commercial use requiring authorization needs a [separate written license from the authors](https://github.com/Auromix/odradek/issues/new?template=commercial-license.yml).
 
-**Material previously published through `2d7d00f` retains its already-granted Apache-2.0 rights, including commercial use under those terms.** This change does not revoke prior grants. See [licensing scope and history](LICENSING.md). No software, firmware, or manufacturing CAD is currently released; those assets need appropriate licensing before publication. A copyright license for artwork and documents does not itself control all physical hardware manufacture.
+**Prior Apache-2.0 grants through `2d7d00f` and marked-script PolyForm grants in `698736a` through `c4f1fde` remain valid.** See [licensing scope and history](LICENSING.md), including the explicit limitations of applying CC to engineering research software. Future production control firmware needs a suitable separate license decision. Copyright notices do not themselves control all functional hardware manufacture.
 
 The noncommercial restriction means this is not open source under the OSI definition. Contributions in English or Chinese are welcome; see [CONTRIBUTING](CONTRIBUTING.md). Third-party reference images are not included or relicensed. This project has no official affiliation with *Death Stranding*, KOJIMA PRODUCTIONS, or XPENG.

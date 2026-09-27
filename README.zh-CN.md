@@ -6,7 +6,25 @@
 
 Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面／固定底座机械臂项目，灵感来自《死亡搁浅》中的探测器，面向实际操作任务。本体与末端的机构、外观和行为同步设计。
 
-**当前为 R3 外形确认与闭合研究阶段。** 仓库收录概念图、设计记录、参考来源和生成提示词；尚未提供制造 CAD、验证过的七轴机构、固件或测试样机。负载、臂展、成本与性能目标待定义。
+**当前为 R4 工程研究与几何样件阶段。** 已确认末端负载要求 2 kg、EtherCAT、本体内走线、外置计算与先打印后金属加工。当前暂按 2 kg 净工件＋2 kg 末端预算、约 700 mm 肩至 TCP 起算，这些口径仍是显式工作假设。仓库已有可执行数学、参数化 STEP、Blender 装配、尺寸评审图和打印台架；尚无制造发布版、2 kg 实测样机或正式控制固件。
+
+## 当前工程包
+
+![由实际布局参数生成的 R4 装配](engineering/generated/layout/odradek-r4-inspect.png)
+
+图中采用目录尺寸的关节及驱动包络，承力连接、轴支承与线束尚在深化。旧底板占位已发现与 J1 后壳干涉，必须采用后续独立安装／底座研究修正，不能照图直接制造。
+
+| 入口 | 内容与范围 |
+|---|---|
+| [工程总览](docs/engineering/README.md) | 输入、假设、一手来源和发布清单 |
+| [布局、闭合与抓取](docs/engineering/r4-layout-and-grasp.md) | 同参数实体、独立角域分离、条件抓取和名义光线检查 |
+| [Blender 装配](engineering/generated/layout/odradek-r4-layout.blend)／[STEP](engineering/generated/layout/odradek-layout.step) | 7 本体轴＋4 独立指轴；当前为布局模型 |
+| [A3 装配审查图](engineering/generated/layout/ODR-R4-assembly-review.pdf) | 轴坐标、布局尺寸和正交网格视图 |
+| [单指手动台架](engineering/generated/finger-fixture/README.md)／[关节接口片](docs/engineering/interface-coupon-guide.md) | 可打印、无动力的孔位与几何检查件，配尺寸图 |
+| [元件 BOM](docs/engineering/hardware/bom.csv)／[双鱼眼光学台架](docs/engineering/hardware/optical-bench-build.md) | 有来源的候选及具体相机—采集板—主机链 |
+| [计算与 CAD 复现](engineering/README.md) | 依赖、生成顺序、单位和限制 |
+
+当前四片名义几何在独立研究角域内的分离轴间隙下界为 4.7862 mm；该结果不包括支承、线束、公差和变形。抓取结果受物体、摩擦、接触法向与力矩条件限制，不等于已达到 2 kg 额定负载。
 
 ## R3：保留外形，检查闭合与接触
 
@@ -48,7 +66,7 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 
 ## 过程与下一步
 
-调研 → R0 形态发散 → R1 灯片夹爪 → R2 7＋4 DOF 与模块化末端 → **R3 外形确认、闭合与相机研究** → 任务和尺度定义 → 机构样件与七轴布局 → 工程及任务验证。
+调研 → R0 形态发散 → R1 灯片夹爪 → R2 7＋4 DOF 与模块化末端 → R3 外形与闭合 → **R4 元件、数学、CAD 与几何台架** → 完整承力连接及动态线束 → 样机任务与制造验证。
 
 R0／R1 的原图和提示词保留在[图集](docs/gallery.html)。R1 的独立实体灯环与片数候选已由 R2 取代；旧图不代表当前要求。
 
@@ -57,12 +75,12 @@ R0／R1 的原图和提示词保留在[图集](docs/gallery.html)。R1 的独立
 - [决策记录](docs/decisions.md)与[路线图](docs/roadmap.md)
 - [参考来源](docs/sources.md)、[生成方式和提示词](docs/generation.md)、[图像审阅记录](docs/review-notes.md)
 
-下一阶段优先统一四指开闭轨迹、全闭净空、模块质量和接口、J7 线束，再结合目标工件确定本体参数。
+当前继续推进完整承力连接、带轮独立轴支承、安装后的保持与温升、内部动态线束以及任务接触验证，见[工程发布清单](docs/engineering/release-checklist.md)。
 
 ## 许可与商业授权
 
-当前原创图稿、文档、提示词和静态文档页面采用 **[CC BY-NC 4.0（署名—非商业性使用）](LICENSE)**，允许非商业研究、学习、爱好者使用与修改分享；分享时须署名、保留许可信息并注明修改。商业使用需[联系作者取得单独书面授权](https://github.com/Auromix/odradek/issues/new?template=commercial-license.yml)。
+新增原创图稿、文档、工程研究脚本、参数与模型采用 **[CC BY-NC 4.0（署名—非商业性使用）](LICENSE)**，允许非商业研究、学习、爱好者使用与修改分享；分享时须署名、保留许可信息并注明修改。需要依赖该许可的商业使用，须[联系作者取得单独书面授权](https://github.com/Auromix/odradek/issues/new?template=commercial-license.yml)。
 
-**此前截至 `2d7d00f` 按 Apache-2.0 发布的内容，其原授权继续有效，仍可依原条款商用。** 新政策不追溯收回旧权利，详见[许可范围与历史](LICENSING.md)。软件、固件与制造 CAD 尚未发布，须在发布前另行明确适用许可；图文许可不等于对实体硬件制造的全面限制。
+**截至 `2d7d00f` 的 Apache-2.0 授权及 `698736a` 至 `c4f1fde` 中标明 PolyForm 的脚本授权继续有效。** 新政策不追溯收回旧权利，详见[许可范围与历史](LICENSING.md)，其中也明确 CC 用于工程研究软件的局限。正式控制固件需另选合适的软件许可；版权声明不等于对功能性硬件制造的全面限制。
 
 带非商业限制的公开设计不属于 OSI 定义的开源项目。欢迎按[贡献说明](CONTRIBUTING.md)参与。第三方参考原图未收录，也不纳入本项目许可；项目与《死亡搁浅》、KOJIMA PRODUCTIONS 或 XPENG 无官方关联。

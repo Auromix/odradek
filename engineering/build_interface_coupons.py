@@ -205,7 +205,7 @@ def main():
     for i,d in enumerate(parts,1):page(c,d,i)
     c.save()
     result={'status':'geometry/export checks passed; unpowered physical fit check not yet performed',
-       'input_extraction_sha256':sha(args.source),'units':'mm','source_spdx':'PolyForm-Noncommercial-1.0.0',
+       'input_extraction_sha256':sha(args.source),'units':'mm','source_spdx':'CC-BY-NC-4.0',
        'manufacturing_scope':'3D printed, non-load-bearing fit coupons only',
        'parts':entries,'pdf':str(pdf.relative_to(args.output)),'pdf_sha256':sha(pdf)}
     (args.output/'verification.json').write_text(json.dumps(result,indent=2)+'\n')
