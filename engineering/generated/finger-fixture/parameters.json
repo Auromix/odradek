@@ -1,0 +1,92 @@
+{
+  "revision": "finger-fixture-02",
+  "unit": "mm",
+  "base_length": 130.0,
+  "base_width": 76.0,
+  "base_thickness": 6.0,
+  "base_mount_holes": [
+    [
+      -50.0,
+      -28.0
+    ],
+    [
+      -50.0,
+      28.0
+    ],
+    [
+      50.0,
+      -28.0
+    ],
+    [
+      50.0,
+      28.0
+    ]
+  ],
+  "base_mount_hole_diameter": 5.5,
+  "pivot_height": 38.0,
+  "fork_gap": 11.2,
+  "cheek_thickness": 6.0,
+  "dial_radius": 28.0,
+  "left_cheek_radius": 12.0,
+  "rotor_radius": 24.0,
+  "rotor_width": 10.0,
+  "axis_print_pilot_diameter": 3.0,
+  "axis_drill_finish_diameter": 3.2,
+  "pin_nominal_diameter": 3.0,
+  "stop_radius": 18.0,
+  "stop_slot_width": 3.6,
+  "q_min_deg": 0.0,
+  "q_max_deg": 130.0,
+  "rotor_tongue_x_limits": [
+    10.0,
+    54.0
+  ],
+  "rotor_tongue_z_limits": [
+    -6.0,
+    0.0
+  ],
+  "blade_mount_holes_x": [
+    36.0,
+    48.0
+  ],
+  "blade_mount_hole_diameter": 3.2,
+  "blade_root_x": 30.0,
+  "blade_thickness": 6.0,
+  "led_recess_depth": 0.8,
+  "pad_length": 12.0,
+  "pad_width": 16.0,
+  "pad_surface_center_normal": 11,
+  "upper": {
+    "source_finger_id": "UR",
+    "length_from_axis": 140,
+    "width": 46,
+    "contact_along": 113.48568191626643,
+    "review_angle_deg": 114,
+    "pad_target_q_deg": 99.71881806280362,
+    "pad_local_normal_tilt_deg": 9.71881806280362,
+    "source_root_z_mm": 0,
+    "source_root_radius_mm": 70
+  },
+  "lower": {
+    "source_finger_id": "LL",
+    "length_from_axis": 100,
+    "width": 36,
+    "contact_along": 66.17401302626281,
+    "review_angle_deg": 126,
+    "pad_target_q_deg": 107.12716312191587,
+    "pad_local_normal_tilt_deg": 17.12716312191587,
+    "source_root_z_mm": 50,
+    "source_root_radius_mm": 70
+  },
+  "source_layout": {
+    "revision": "R4-layout-03",
+    "sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "file": "engineering/parameters/r4-layout.json",
+    "contact_study": {
+      "target_radius_mm": 40,
+      "target_common_contact_z_mm": 110,
+      "pad_surface_center_normal_mm": 11,
+      "scope": "80 mm nominal faceted-object contact study; no universal object fit"
+    }
+  }
+}

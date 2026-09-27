@@ -1,0 +1,1061 @@
+{
+  "revision": "finger-fixture-02",
+  "status": "CAD geometry checks only; no physical validation; no 2 kg capability",
+  "parameters": {
+    "revision": "finger-fixture-02",
+    "unit": "mm",
+    "base_length": 130.0,
+    "base_width": 76.0,
+    "base_thickness": 6.0,
+    "base_mount_holes": [
+      [
+        -50.0,
+        -28.0
+      ],
+      [
+        -50.0,
+        28.0
+      ],
+      [
+        50.0,
+        -28.0
+      ],
+      [
+        50.0,
+        28.0
+      ]
+    ],
+    "base_mount_hole_diameter": 5.5,
+    "pivot_height": 38.0,
+    "fork_gap": 11.2,
+    "cheek_thickness": 6.0,
+    "dial_radius": 28.0,
+    "left_cheek_radius": 12.0,
+    "rotor_radius": 24.0,
+    "rotor_width": 10.0,
+    "axis_print_pilot_diameter": 3.0,
+    "axis_drill_finish_diameter": 3.2,
+    "pin_nominal_diameter": 3.0,
+    "stop_radius": 18.0,
+    "stop_slot_width": 3.6,
+    "q_min_deg": 0.0,
+    "q_max_deg": 130.0,
+    "rotor_tongue_x_limits": [
+      10.0,
+      54.0
+    ],
+    "rotor_tongue_z_limits": [
+      -6.0,
+      0.0
+    ],
+    "blade_mount_holes_x": [
+      36.0,
+      48.0
+    ],
+    "blade_mount_hole_diameter": 3.2,
+    "blade_root_x": 30.0,
+    "blade_thickness": 6.0,
+    "led_recess_depth": 0.8,
+    "pad_length": 12.0,
+    "pad_width": 16.0,
+    "pad_surface_center_normal": 11,
+    "upper": {
+      "source_finger_id": "UR",
+      "length_from_axis": 140,
+      "width": 46,
+      "contact_along": 113.48568191626643,
+      "review_angle_deg": 114,
+      "pad_target_q_deg": 99.71881806280362,
+      "pad_local_normal_tilt_deg": 9.71881806280362,
+      "source_root_z_mm": 0,
+      "source_root_radius_mm": 70
+    },
+    "lower": {
+      "source_finger_id": "LL",
+      "length_from_axis": 100,
+      "width": 36,
+      "contact_along": 66.17401302626281,
+      "review_angle_deg": 126,
+      "pad_target_q_deg": 107.12716312191587,
+      "pad_local_normal_tilt_deg": 17.12716312191587,
+      "source_root_z_mm": 50,
+      "source_root_radius_mm": 70
+    },
+    "source_layout": {
+      "revision": "R4-layout-03",
+      "sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+      "file": "engineering/parameters/r4-layout.json",
+      "contact_study": {
+        "target_radius_mm": 40,
+        "target_common_contact_z_mm": 110,
+        "pad_surface_center_normal_mm": 11,
+        "scope": "80 mm nominal faceted-object contact study; no universal object fit"
+      }
+    }
+  },
+  "slot_cap_center_inset_deg": 0.9549407113233784,
+  "parts": {
+    "base": {
+      "step_valid": true,
+      "step_solids": 1,
+      "step_volume_relative_error": 1.0499147605369031e-14,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "stl_volume_relative_error": 3.661205987534482e-05,
+      "stl_bounds_max_error_mm": 0.0001220703125,
+      "step_bounds_max_error_mm": 0.0,
+      "print_min_z_mm": 0.0,
+      "volume_mm3": 79002.52469950452,
+      "native_bounds_mm": [
+        -65.0,
+        -38.0,
+        0.0,
+        65.0,
+        38.0,
+        66.0
+      ],
+      "print_bounds_mm": [
+        -65.0,
+        -38.0,
+        0.0,
+        65.0,
+        38.0,
+        66.0
+      ],
+      "sha256": {
+        "STEP/base.step": "b6877e04f3050364c9a389ff48c69ef15ffbd4ad88341ad4f939712c2eca8e30",
+        "STL/base-print.stl": "cc14c76c0a7bc7ae447eee492ad4ddcbd0149079f15e56ea1b98d6dbae02124b"
+      }
+    },
+    "rotor": {
+      "step_valid": true,
+      "step_solids": 1,
+      "step_volume_relative_error": 1.5718536779160538e-14,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "stl_volume_relative_error": 0.00023147658522444417,
+      "stl_bounds_max_error_mm": 0.0021667480468785527,
+      "step_bounds_max_error_mm": 3.552713678800501e-15,
+      "print_min_z_mm": -2.664535259100376e-15,
+      "volume_mm3": 19672.83615182088,
+      "native_bounds_mm": [
+        -24.000000000000004,
+        -5.0,
+        -24.000000000000004,
+        54.0,
+        5.0,
+        24.000000000000004
+      ],
+      "print_bounds_mm": [
+        -24.000000000000004,
+        -24.000000000000004,
+        -2.664535259100376e-15,
+        54.0,
+        24.000000000000004,
+        10.000000000000004
+      ],
+      "sha256": {
+        "STEP/rotor.step": "d89ecba0bef3e66ea9bfbc5fd2846d179ae9936db7af6a42e83bc078c488c765",
+        "STL/rotor-print.stl": "092456f3b8154582fb92c64d4abc5973cb753751a36bde0cf4a8df4a62cccafc"
+      }
+    },
+    "upper": {
+      "step_valid": true,
+      "step_solids": 1,
+      "step_volume_relative_error": 1.078715817679997e-13,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "stl_volume_relative_error": 1.0222240404652008e-06,
+      "stl_bounds_max_error_mm": 1.0560810181914349e-07,
+      "step_bounds_max_error_mm": 2.5011104298755527e-12,
+      "print_min_z_mm": 0.0,
+      "volume_mm3": 24450.690273681714,
+      "native_bounds_mm": [
+        30.0,
+        -23.0,
+        0.0,
+        140.0,
+        23.0,
+        12.027627096880074
+      ],
+      "print_bounds_mm": [
+        30.0,
+        -23.0,
+        0.0,
+        140.0,
+        23.0,
+        12.027627096880074
+      ],
+      "sha256": {
+        "STEP/upper.step": "49dc1864476df1837b4be4d469130e0e827e4fec74994c7bdf0511b72142b581",
+        "STL/upper-print.stl": "39aba1cea292153eefc6455684e134a49f14cca43584d06386676ee9aa00f20c"
+      }
+    },
+    "lower": {
+      "step_valid": true,
+      "step_solids": 1,
+      "step_volume_relative_error": 9.58919635271176e-14,
+      "stl_watertight": true,
+      "stl_winding_consistent": true,
+      "stl_body_count": 1,
+      "stl_volume_relative_error": 2.1318044832908266e-06,
+      "stl_bounds_max_error_mm": 4.5427750450244275e-08,
+      "step_bounds_max_error_mm": 2.5011104298755527e-12,
+      "print_min_z_mm": 0.0,
+      "volume_mm3": 11874.690273681725,
+      "native_bounds_mm": [
+        30.0,
+        -18.0,
+        0.0,
+        100.0,
+        18.0,
+        12.848955199846696
+      ],
+      "print_bounds_mm": [
+        30.0,
+        -18.0,
+        0.0,
+        100.0,
+        18.0,
+        12.848955199846696
+      ],
+      "sha256": {
+        "STEP/lower.step": "4cd9b9d62f2f12f7f01317522d8f38c6699cec742a0bb8afed62ee3058c8c88c",
+        "STL/lower-print.stl": "b17d1e0d62ee8dcae18036180ae1b28d6a9f7139a96c43a15794d27d013c6392"
+      }
+    }
+  },
+  "assemblies": [
+    {
+      "file": "STEP/assembly-upper-q000p000.step",
+      "step_valid": true,
+      "solids": 5,
+      "q_deg": 0,
+      "variant": "upper",
+      "hardware_caveat": "Only smooth 3 mm shaft/pin reference cylinders; screw heads, nuts, washers and blade screws are specified in BOM, not represented by vendor CAD."
+    },
+    {
+      "file": "STEP/assembly-upper-q090p000.step",
+      "step_valid": true,
+      "solids": 5,
+      "q_deg": 90,
+      "variant": "upper",
+      "hardware_caveat": "Only smooth 3 mm shaft/pin reference cylinders; screw heads, nuts, washers and blade screws are specified in BOM, not represented by vendor CAD."
+    },
+    {
+      "file": "STEP/assembly-upper-q099p719.step",
+      "step_valid": true,
+      "solids": 5,
+      "q_deg": 99.71881806280362,
+      "variant": "upper",
+      "hardware_caveat": "Only smooth 3 mm shaft/pin reference cylinders; screw heads, nuts, washers and blade screws are specified in BOM, not represented by vendor CAD."
+    },
+    {
+      "file": "STEP/assembly-upper-q114p000.step",
+      "step_valid": true,
+      "solids": 5,
+      "q_deg": 114,
+      "variant": "upper",
+      "hardware_caveat": "Only smooth 3 mm shaft/pin reference cylinders; screw heads, nuts, washers and blade screws are specified in BOM, not represented by vendor CAD."
+    },
+    {
+      "file": "STEP/assembly-upper-q130p000.step",
+      "step_valid": true,
+      "solids": 5,
+      "q_deg": 130.0,
+      "variant": "upper",
+      "hardware_caveat": "Only smooth 3 mm shaft/pin reference cylinders; screw heads, nuts, washers and blade screws are specified in BOM, not represented by vendor CAD."
+    },
+    {
+      "file": "STEP/assembly-lower-q107p127.step",
+      "step_valid": true,
+      "solids": 5,
+      "q_deg": 107.12716312191587,
+      "variant": "lower",
+      "hardware_caveat": "Only smooth 3 mm shaft/pin reference cylinders; screw heads, nuts, washers and blade screws are specified in BOM, not represented by vendor CAD."
+    },
+    {
+      "file": "STEP/assembly-lower-q126p000.step",
+      "step_valid": true,
+      "solids": 5,
+      "q_deg": 126,
+      "variant": "lower",
+      "hardware_caveat": "Only smooth 3 mm shaft/pin reference cylinders; screw heads, nuts, washers and blade screws are specified in BOM, not represented by vendor CAD."
+    }
+  ],
+  "motion": {
+    "motion_sampling": [
+      {
+        "variant": "upper",
+        "sampled_angles_deg": [
+          0.0,
+          2.5,
+          5.0,
+          7.5,
+          10.0,
+          12.5,
+          15.0,
+          17.5,
+          20.0,
+          22.5,
+          25.0,
+          27.5,
+          30.0,
+          32.5,
+          35.0,
+          37.5,
+          40.0,
+          42.5,
+          45.0,
+          47.5,
+          50.0,
+          52.5,
+          55.0,
+          57.5,
+          60.0,
+          62.5,
+          65.0,
+          67.5,
+          70.0,
+          72.5,
+          75.0,
+          77.5,
+          80.0,
+          82.5,
+          85.0,
+          87.5,
+          90.0,
+          92.5,
+          95.0,
+          97.5,
+          99.71881806280362,
+          100.0,
+          102.5,
+          105.0,
+          107.12716312191587,
+          107.5,
+          110.0,
+          112.5,
+          114,
+          115.0,
+          117.5,
+          120.0,
+          122.5,
+          125.0,
+          126,
+          127.5,
+          130.0
+        ],
+        "base_moving_interference_max_mm3": 0.0,
+        "angle_of_max_interference_deg": null,
+        "passes_sampled_interference_test": true
+      },
+      {
+        "variant": "lower",
+        "sampled_angles_deg": [
+          0.0,
+          2.5,
+          5.0,
+          7.5,
+          10.0,
+          12.5,
+          15.0,
+          17.5,
+          20.0,
+          22.5,
+          25.0,
+          27.5,
+          30.0,
+          32.5,
+          35.0,
+          37.5,
+          40.0,
+          42.5,
+          45.0,
+          47.5,
+          50.0,
+          52.5,
+          55.0,
+          57.5,
+          60.0,
+          62.5,
+          65.0,
+          67.5,
+          70.0,
+          72.5,
+          75.0,
+          77.5,
+          80.0,
+          82.5,
+          85.0,
+          87.5,
+          90.0,
+          92.5,
+          95.0,
+          97.5,
+          99.71881806280362,
+          100.0,
+          102.5,
+          105.0,
+          107.12716312191587,
+          107.5,
+          110.0,
+          112.5,
+          114,
+          115.0,
+          117.5,
+          120.0,
+          122.5,
+          125.0,
+          126,
+          127.5,
+          130.0
+        ],
+        "base_moving_interference_max_mm3": 0.0,
+        "angle_of_max_interference_deg": null,
+        "passes_sampled_interference_test": true
+      }
+    ],
+    "nominal_stop_contact_checks": [
+      {
+        "q_deg": -1.0,
+        "pin_cheek_interference_mm3": 4.264382368664759,
+        "expected_interference_beyond_stop": true,
+        "passed": true
+      },
+      {
+        "q_deg": 0.0,
+        "pin_cheek_interference_mm3": 0.0,
+        "expected_interference_beyond_stop": false,
+        "passed": true
+      },
+      {
+        "q_deg": 1.0,
+        "pin_cheek_interference_mm3": 0.0,
+        "expected_interference_beyond_stop": false,
+        "passed": true
+      },
+      {
+        "q_deg": 90.0,
+        "pin_cheek_interference_mm3": 0.0,
+        "expected_interference_beyond_stop": false,
+        "passed": true
+      },
+      {
+        "q_deg": 129.0,
+        "pin_cheek_interference_mm3": 0.0,
+        "expected_interference_beyond_stop": false,
+        "passed": true
+      },
+      {
+        "q_deg": 130.0,
+        "pin_cheek_interference_mm3": 0.0,
+        "expected_interference_beyond_stop": false,
+        "passed": true
+      },
+      {
+        "q_deg": 131.0,
+        "pin_cheek_interference_mm3": 4.264382368664604,
+        "expected_interference_beyond_stop": true,
+        "passed": true
+      }
+    ],
+    "scope": "Ideal CAD geometry and nominal 3 mm pin only. Samples do not constitute continuous collision proof; tolerances, print deformation and hand forces are unverified."
+  },
+  "dimensions_and_holes": {
+    "bounds": [
+      {
+        "part": "base",
+        "expected_bounds_mm": [
+          -65.0,
+          -38.0,
+          0,
+          65.0,
+          38.0,
+          66.0
+        ],
+        "max_error_mm": 0.0,
+        "passed": true
+      },
+      {
+        "part": "rotor",
+        "expected_bounds_mm": [
+          -24.0,
+          -5.0,
+          -24.0,
+          54.0,
+          5.0,
+          24.0
+        ],
+        "max_error_mm": 3.552713678800501e-15,
+        "passed": true
+      },
+      {
+        "part": "upper",
+        "expected_bounds_mm": [
+          30.0,
+          -23.0,
+          0,
+          140,
+          23.0,
+          12.027627096880074
+        ],
+        "max_error_mm": 0.0,
+        "passed": true
+      },
+      {
+        "part": "lower",
+        "expected_bounds_mm": [
+          30.0,
+          -18.0,
+          0,
+          100,
+          18.0,
+          12.848955199846696
+        ],
+        "max_error_mm": 0.0,
+        "passed": true
+      }
+    ],
+    "hole_axes_and_diameters": [
+      {
+        "part": "base",
+        "hole": "table_1",
+        "radius_mm": 2.75,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          -50.0,
+          -28.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "base",
+        "hole": "table_2",
+        "radius_mm": 2.75,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          -50.0,
+          28.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "base",
+        "hole": "table_3",
+        "radius_mm": 2.75,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          50.0,
+          -28.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "base",
+        "hole": "table_4",
+        "radius_mm": 2.75,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          50.0,
+          28.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "base",
+        "hole": "main_axis",
+        "radius_mm": 1.5,
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "axis_point_mm": [
+          0.0,
+          0.0,
+          38.0
+        ],
+        "expected_cylindrical_faces": 2,
+        "matched_faces": 2,
+        "passed": true
+      },
+      {
+        "part": "rotor",
+        "hole": "main_axis",
+        "radius_mm": 1.5,
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "axis_point_mm": [
+          0,
+          0,
+          0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "rotor",
+        "hole": "stop_pin",
+        "radius_mm": 1.5,
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "axis_point_mm": [
+          18.0,
+          0.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "rotor",
+        "hole": "blade_1",
+        "radius_mm": 1.6,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          36.0,
+          0.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "rotor",
+        "hole": "blade_2",
+        "radius_mm": 1.6,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          48.0,
+          0.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "upper",
+        "hole": "blade_1",
+        "radius_mm": 1.6,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          36.0,
+          0.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "upper",
+        "hole": "blade_2",
+        "radius_mm": 1.6,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          48.0,
+          0.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "lower",
+        "hole": "blade_1",
+        "radius_mm": 1.6,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          36.0,
+          0.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      },
+      {
+        "part": "lower",
+        "hole": "blade_2",
+        "radius_mm": 1.6,
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "axis_point_mm": [
+          48.0,
+          0.0,
+          0.0
+        ],
+        "expected_cylindrical_faces": 1,
+        "matched_faces": 1,
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "wedge_surface_checks": [
+    {
+      "variant": "upper",
+      "local_surface_center_mm": [
+        113.48568191626643,
+        0.0,
+        11.0
+      ],
+      "local_surface_normal": [
+        0.16881311211446104,
+        0.0,
+        0.9856480777530235
+      ],
+      "surface_matches": 1,
+      "target_q_deg": 99.71881806280362,
+      "local_normal_tilt_deg": 9.71881806280362,
+      "normal_at_target_q": [
+        -1.0,
+        0,
+        -1.6081226496766366e-16
+      ],
+      "transformed_CAD_face_normal": [
+        -1.0,
+        0.0,
+        -2.1512797070451348e-16
+      ],
+      "projected_head_contact_radius_mm": 39.99999999999997,
+      "projected_head_contact_z_mm": 110.0,
+      "projection_scope": "Coordinate projection to source head; fixture does not physically reproduce multiple roots or simultaneous contacts.",
+      "passed": true
+    },
+    {
+      "variant": "lower",
+      "local_surface_center_mm": [
+        66.17401302626281,
+        0.0,
+        11.0
+      ],
+      "local_surface_normal": [
+        0.2944934201750854,
+        0.0,
+        0.9556535070168375
+      ],
+      "surface_matches": 1,
+      "target_q_deg": 107.12716312191587,
+      "local_normal_tilt_deg": 17.12716312191587,
+      "normal_at_target_q": [
+        -1.0,
+        0,
+        6.123233995736766e-17
+      ],
+      "transformed_CAD_face_normal": [
+        -1.0,
+        -0.0,
+        1.7397000758974224e-16
+      ],
+      "projected_head_contact_radius_mm": 40.00000000000001,
+      "projected_head_contact_z_mm": 110.0,
+      "projection_scope": "Coordinate projection to source head; fixture does not physically reproduce multiple roots or simultaneous contacts.",
+      "passed": true
+    }
+  ],
+  "contact_geometry": [
+    {
+      "variant": "upper",
+      "q_deg": 0,
+      "contact_center_mm": [
+        113.48568191626643,
+        0,
+        49.0
+      ],
+      "light_face_outward_normal": [
+        -0.0,
+        0,
+        1.0
+      ],
+      "wedge_contact_outward_normal": [
+        0.16881311211446104,
+        0,
+        0.9856480777530235
+      ],
+      "normal_points_toward_palm_minus_X": false
+    },
+    {
+      "variant": "upper",
+      "q_deg": 90,
+      "contact_center_mm": [
+        -10.999999999999993,
+        0,
+        151.48568191626643
+      ],
+      "light_face_outward_normal": [
+        -1.0,
+        0,
+        6.123233995736766e-17
+      ],
+      "wedge_contact_outward_normal": [
+        -0.9856480777530235,
+        0,
+        0.168813112114461
+      ],
+      "normal_points_toward_palm_minus_X": true
+    },
+    {
+      "variant": "upper",
+      "q_deg": 99.71881806280362,
+      "contact_center_mm": [
+        -30.000000000000014,
+        0,
+        148.0
+      ],
+      "light_face_outward_normal": [
+        -0.9856480777530235,
+        0,
+        -0.16881311211446112
+      ],
+      "wedge_contact_outward_normal": [
+        -1.0,
+        0,
+        -1.6081226496766366e-16
+      ],
+      "normal_points_toward_palm_minus_X": true
+    },
+    {
+      "variant": "upper",
+      "q_deg": 114,
+      "contact_center_mm": [
+        -56.207785333858865,
+        0,
+        137.20022614824444
+      ],
+      "light_face_outward_normal": [
+        -0.9135454576426009,
+        0,
+        -0.40673664307580026
+      ],
+      "wedge_contact_outward_normal": [
+        -0.9690968027940503,
+        0,
+        -0.24668073863670326
+      ],
+      "normal_points_toward_palm_minus_X": true
+    },
+    {
+      "variant": "upper",
+      "q_deg": 130.0,
+      "contact_center_mm": [
+        -81.37367908691259,
+        0,
+        117.86441229897187
+      ],
+      "light_face_outward_normal": [
+        -0.766044443118978,
+        0,
+        -0.6427876096865394
+      ],
+      "wedge_contact_outward_normal": [
+        -0.8635612096534063,
+        0,
+        -0.5042440254300943
+      ],
+      "normal_points_toward_palm_minus_X": true
+    },
+    {
+      "variant": "lower",
+      "q_deg": 0,
+      "contact_center_mm": [
+        66.17401302626281,
+        0,
+        49.0
+      ],
+      "light_face_outward_normal": [
+        -0.0,
+        0,
+        1.0
+      ],
+      "wedge_contact_outward_normal": [
+        0.2944934201750854,
+        0,
+        0.9556535070168375
+      ],
+      "normal_points_toward_palm_minus_X": false
+    },
+    {
+      "variant": "lower",
+      "q_deg": 90,
+      "contact_center_mm": [
+        -10.999999999999996,
+        0,
+        104.17401302626281
+      ],
+      "light_face_outward_normal": [
+        -1.0,
+        0,
+        6.123233995736766e-17
+      ],
+      "wedge_contact_outward_normal": [
+        -0.9556535070168375,
+        0,
+        0.29449342017508545
+      ],
+      "normal_points_toward_palm_minus_X": true
+    },
+    {
+      "variant": "lower",
+      "q_deg": 107.12716312191587,
+      "contact_center_mm": [
+        -30.0,
+        0,
+        98.0
+      ],
+      "light_face_outward_normal": [
+        -0.9556535070168375,
+        0,
+        -0.29449342017508534
+      ],
+      "wedge_contact_outward_normal": [
+        -1.0,
+        0,
+        6.123233995736766e-17
+      ],
+      "normal_points_toward_palm_minus_X": true
+    },
+    {
+      "variant": "lower",
+      "q_deg": 126,
+      "contact_center_mm": [
+        -47.795295879971704,
+        0,
+        85.07026334901856
+      ],
+      "light_face_outward_normal": [
+        -0.8090169943749475,
+        0,
+        -0.587785252292473
+      ],
+      "wedge_contact_outward_normal": [
+        -0.9462388171867254,
+        0,
+        -0.3234688560728324
+      ],
+      "normal_points_toward_palm_minus_X": true
+    },
+    {
+      "variant": "lower",
+      "q_deg": 130.0,
+      "contact_center_mm": [
+        -50.96232453082615,
+        0,
+        81.62157125109957
+      ],
+      "light_face_outward_normal": [
+        -0.766044443118978,
+        0,
+        -0.6427876096865394
+      ],
+      "wedge_contact_outward_normal": [
+        -0.9213697802201685,
+        0,
+        -0.38868718540368485
+      ],
+      "normal_points_toward_palm_minus_X": true
+    }
+  ],
+  "nominal_fastener_stack_mm": {
+    "axis": {
+      "grip_outer_cheeks": 23.2,
+      "external_washers": 1.0,
+      "assumed_nut": 3.9,
+      "under_head_length": 35,
+      "nominal_protrusion": 6.9
+    },
+    "stop": {
+      "rotor_plus_side_gap_plus_cheek": 16.6,
+      "washers": 1.0,
+      "assumed_nut": 3.9,
+      "under_head_length": 25,
+      "nominal_protrusion": 3.5
+    },
+    "blade": {
+      "blade_plus_tongue": 12.0,
+      "washers": 1.0,
+      "assumed_nut": 3.9,
+      "under_head_length": 20,
+      "nominal_protrusion": 3.1
+    }
+  },
+  "dependencies": {
+    "cadquery": "2.8.0",
+    "trimesh": "5.1.0",
+    "numpy": "2.5.3"
+  },
+  "all_checked_parts_valid": true,
+  "limitations": [
+    "Fastener dimensions are generic candidates; vendor fit, grade and installed nut thickness unverified.",
+    "Nominal stop angles depend on actual pin diameter and printed slot geometry.",
+    "No motor, LED, thermal insert, bearing or elastomer pad selected.",
+    "No force closure, holding force, strength, fatigue or powered motion qualification.",
+    "Sampled interference checks are not a continuous collision proof."
+  ]
+}
