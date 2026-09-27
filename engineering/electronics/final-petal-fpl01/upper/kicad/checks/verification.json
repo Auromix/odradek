@@ -1,0 +1,159 @@
+{
+  "commands": {
+    "version": {
+      "command": [
+        "kicad-cli",
+        "version"
+      ],
+      "returncode": 0,
+      "stdout": "10.0.6\n",
+      "stderr": ""
+    },
+    "export_netlist": {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "checks/petal.xml",
+        "petal.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    "erc": {
+      "command": [
+        "kicad-cli",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--exit-code-violations",
+        "-o",
+        "checks/erc.json",
+        "petal.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Found 0 violations\nSaved ERC Report to checks/erc.json\n",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    "drc": {
+      "command": [
+        "kicad-cli",
+        "pcb",
+        "drc",
+        "--schematic-parity",
+        "--format",
+        "json",
+        "--exit-code-violations",
+        "-o",
+        "checks/drc.json",
+        "petal.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to checks/drc.json\n",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    }
+  },
+  "netlist_comparison": {
+    "expected_pin_records": 351,
+    "exported_pin_records": 351,
+    "mismatches": [],
+    "unexpected": [],
+    "passed": true
+  },
+  "input_hashes": {
+    "petal.kicad_sch": "bbe3f604cebfb4fc36f7676474cd4f0b25a2f866bceae66188e2335ff993f687",
+    "petal.kicad_pcb": "96b22c18cde1cbe94bbe8077b414aba22156d6da9dcec2a59d3a2950b63e7573",
+    "petal.kicad_pro": "63f8c88b5ccba13ae24c53ca202c30c47b2891f2d256e8cbbee50e7be1f5abb2",
+    "../mapping-revision.json": "5368ef685e938a537d49200479753359773597285aa7c343860f94917843de9d",
+    "../register-plan.json": "5b2b9782e05d71043342e668a1e40106099098c98ff99e56f08c20c7e853851d",
+    "../netlist.json": "921d354b830f4695f8121afea933fcb1475de5f76998c7a4bf9bcbfd926d5084",
+    "FPL.pretty/C0603.kicad_mod": "9e777fd309d8d43d1c3de69a7308518e93a879430fc43e06bb1a911070b1fae6",
+    "FPL.pretty/C0805.kicad_mod": "b83f886ac05fb631fe63890907f0723c4bb5e27a45e4d3ea9e39e1f68176a543",
+    "FPL.pretty/JST_GH_10_SIDE.kicad_mod": "b53e97afb270070a30df0fece24c1ba1aa0b50852396119b8b97fe62927ac041",
+    "FPL.pretty/Mount_M2.kicad_mod": "2794d24009ed3b5e976014fd339a6919e028727c68b1f7c22d3cb0fa6b697c5e",
+    "FPL.pretty/NTC0603.kicad_mod": "1ca6c51a0469b484862535442dfdc33288d298ea6805c8b808b05b3943231fc5",
+    "FPL.pretty/R0603.kicad_mod": "9b2d8d98e60942002f66c908d698948a05a4ed079fc68a923f4fd5e7fdac31af",
+    "FPL.pretty/TI_RKP0040B.kicad_mod": "c57d616017be6213a1754930d3cb45fce3a99d66e5f1affb9788479dde6620ae",
+    "FPL.pretty/WE_150060YS75000.kicad_mod": "573eaec7c5023652802b7a9346a09febd5257ccab26d761133628e16efe3462d"
+  },
+  "generator_hashes": {
+    "build_board.py": "92ca4d1a9105fb6adcbca8de9f74a90e7fc3720a8c6298a95a71212217158d24",
+    "build_schematic.py": "2333c57a76cd679696eb8fb6d3826da8baa3ce141ed90c6d155300db7587d45b",
+    "capture_routing_plan.py": "f5513ef16462926c863e2638b9646d6ab9d8de41d20b573a1541af5609899713",
+    "check_ecad.py": "c959f15eb1e37a32cadb68f9b36d216299916f8139a12ffbcce375d0626ec1e4",
+    "clean_dangling.py": "c2b56d7b9394b9970199106a0f5f5a30408474c99a5a58b9820579bdc1e30f6a",
+    "export_review_views.py": "e3d2f0a04ca0cf4e1a35854fb1415b92357aed471504d96bca472f0a0181c3db",
+    "finalize_native.py": "fff3077d66075c7e7653fa8a8ab9c892c72872f9bc445537d21b4ba58a904ebc",
+    "firmware_mock_check.py": "4ab96740ad5a2747119837a323da2bb308c68cbe26f815b046dfb2ef7ff87280",
+    "normalize_branches.py": "ec12542ef69cc7e2692f1df04c94cf05aa52704806e750cfcbff8bf0977836a9",
+    "prepare_native.py": "4fab7b783b99ece4609ddd06db5f238e46c3f11c64fa4349415db9b4fedf624d",
+    "replay_routing.py": "2ce1f66a56f7a987b3d3287d87fca2c6f3d66d28471635a66a247a8de0347fce",
+    "review_native_board.py": "0695c28741e999c54c58e0e3636e5197576c32fe3fcbb02aa11b8d48b96c8e3f",
+    "route_remaining.py": "92ea96ae0dbff73891bf1fa364cb769c043f21bb53a971b493ab4f720286ac10",
+    "route_seed.py": "e30bba8613c251d022b0408fcb005baa2a7fd9020e9b6cb854aa72609eb9d6a2"
+  },
+  "report_counts": {
+    "erc": {
+      "violations": 0
+    },
+    "drc": {
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0
+    }
+  },
+  "ignored_default_checks": {
+    "erc": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "Four connection points are joined together",
+        "key": "four_way_junction"
+      },
+      {
+        "description": "SPICE model issue",
+        "key": "simulation_model_issue"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ],
+    "drc": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ]
+  },
+  "digital_checks_all_passed": true,
+  "project_DRC_exclusions": [],
+  "disabled_checks_note": "KiCad default ignored checks are listed verbatim above; no claim that every optional rule is enabled. No project DRC exclusion or violation waiver is permitted.",
+  "fabrication_release": false,
+  "status": "Actual tool results; engineering/thermal/manufacturing validation separate",
+  "report_sanitization": "Only absolute current-project directory prefix is removed from XML and stdout/stderr; electrical records and check findings unchanged."
+}

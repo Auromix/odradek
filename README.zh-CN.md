@@ -77,7 +77,7 @@ R0／R1 的原图和提示词保留在[图集](docs/gallery.html)。R1 的独立
 - [决策记录](docs/decisions.md)与[路线图](docs/roadmap.md)
 - [参考来源](docs/sources.md)、[生成方式和提示词](docs/generation.md)、[图像审阅记录](docs/review-notes.md)
 
-当前继续推进完整承力连接、带轮独立轴支承、安装后的保持与温升、内部动态线束以及任务接触验证，见[工程发布清单](docs/engineering/release-checklist.md)。
+当前继续推进肩部可用活动范围、安装后的保持与温升、完整控制器及动态线束、接触/紧固件资格和制造公差，见[工程发布清单](docs/engineering/release-checklist.md)。
 
 ## 许可与商业授权
 

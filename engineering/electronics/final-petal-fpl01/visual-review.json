@@ -1,0 +1,33 @@
+{
+  "revision": "FPL-01",
+  "method": "Native SVG export, rendered with Sharp, visually inspected front/back for both boards and both schematics; final raster overview also inspected separately",
+  "corrections": [
+    "Upper schematic moved from A1 to A0 to include all 18 CS columns inside the drawing frame.",
+    "Review derivatives hide overlapping value text only; original per-layer native plots and BOM retain complete values."
+  ],
+  "source_hashes": {
+    "upper/kicad/plots/front-review.svg": "aab64ab28dbcc01f0b6e07ca45bea2916bc71555ed4896ca71ccaba4e0e86a5c",
+    "upper/kicad/plots/back-review.svg": "0e9360648c99fe8d1fb0863ad5bf2bbbc88436e0fb360c77dbf88eb2dd05a79a",
+    "upper/kicad/plots/schematic/petal.svg": "8ce72f4fb5cf21efa93f538905ab67e3749d0a96cffffa4c15c8cb37103c66e7",
+    "lower/kicad/plots/front-review.svg": "23056b4f0f5ba9074356d9f652f6b7e3bbe95fbc3ab0665488ea70c76646bad3",
+    "lower/kicad/plots/back-review.svg": "60df37c52d5a24aeb1543bc549ae435b92d1cde37519da54db8ea3ae78b74b34",
+    "lower/kicad/plots/schematic/petal.svg": "d09fe98bd0dd0b4709c0b8633e45d2e703d0d3d1c4d30085e19cc068baf6dead"
+  },
+  "views": "Each panel scales independently. Back views are mirrored only for display; PCB copper and pin order not mirrored.",
+  "geometry_authority": "Native PCB and mechanical-interface-candidate.json, not raster preview.",
+  "scope_boundary": "Visual review does not replace native DRC, actual assembly inspection, thermal tests or manufacturing approval.",
+  "independent_root_review": {
+    "rebuild": "Complete rebuild.py with native KiCad 10.0.6; all commands exit zero, ERC/DRC/connectivity/source-placement checks passed.",
+    "render": "Fresh native SVG rendered through repository render_review_png.mjs plus individual schematic raster review.",
+    "reviewed_views": [
+      "upper front",
+      "upper rear",
+      "lower front",
+      "lower rear",
+      "upper A0 schematic",
+      "lower A1 schematic"
+    ],
+    "board_overview_sha256": "4f81f3129b55f16a2fae5f57450f60e56ffd95f25831879ce9c969ce6e1044d0",
+    "finding": "No drawing-frame clipping; reference density remains high in overview and must be read in native files. No manufacturing release implied."
+  }
+}

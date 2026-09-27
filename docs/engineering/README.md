@@ -44,6 +44,7 @@
 | 上灯片电子样片 | [ULP-02 原生四层PCB](hardware/upper-petal-ulp02.md)／[ULP-01历史电路](hardware/upper-petal-prototype.md) | 113 LED、134器件、317针、39网；实跑ERC/DRC/未连/网表一致性均0，已导出制造审查文件，未实测或装机放行 |
 | 灯片真实层叠 | [电子腔与PCB安装](led-petal-pocket-study.md) | 4.45 mm普通层叠、安装柱/低头螺钉和净截面计算；GH/线束与正式灯板未集成 |
 | 正式灯板适配 | [上下片130/42点阵候选](final-petal-board-fit-analysis.md) | 212项实体包络容纳检查；侧插GH、焊高/局部深腔与热桥待ECAD/MCAD联合收敛 |
+| 上下片原生电路 | [FPL-01](hardware/final-petal-fpl01.md) | 130/42点、六层0.8mm候选；完整重建ERC/DRC/未连/网表一致性均0，位置与HEAD03一致；层叠/填孔/去耦/温升未制造放行 |
 | 腕部承力连接 | [J6—J7三件结构](link67-structure-study.md) | 24螺钉、零位/工具/J7连续装入已检查；末端旋转碰撞和生产公差未闭合 |
 | 头部腕区避让 | [24mm加高与连续证明](wrist-extension-study.md) | q5/q7±90、q6±90及四指独立范围，头对相关腕区名义下界2.9mm；未含全臂/线束/受载公差 |
 | 整臂真实实体筛查 | [六态与LINK67连续转动](integrated-collision-study.md) | zero/inspect两种指态无新增交叠；历史reach肩部有3对真实碰撞，不可执行；LINK67自身对J6/L56覆盖q6±100，尚非完整联合运动域 |

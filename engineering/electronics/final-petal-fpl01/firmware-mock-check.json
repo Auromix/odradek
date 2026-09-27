@@ -1,0 +1,32 @@
+{
+  "status": "compiled C99 with in-memory transport mock, not executed on LED driver hardware",
+  "results": {
+    "upper": {
+      "LED_count": 130,
+      "passed": true,
+      "checks": [
+        "dark initialization and explicit 3mA register",
+        "ON/OFF and DC masks agree",
+        "16bit LE PWM maps fitted pixels and leaves absent sites zero",
+        "all 1024 SPI address headers",
+        "callback failures propagate"
+      ],
+      "source_sha256": "04cc33e3408b3a18430a4477b97f59ceacc58b359560a3dfa3d876db3da0d24e",
+      "map_sha256": "3e601e4d9a1792270517c4e7d2c7a06d09fd87bcfec60d84878fa010a0c478f9"
+    },
+    "lower": {
+      "LED_count": 42,
+      "passed": true,
+      "checks": [
+        "dark initialization and explicit 3mA register",
+        "ON/OFF and DC masks agree",
+        "16bit LE PWM maps fitted pixels and leaves absent sites zero",
+        "all 1024 SPI address headers",
+        "callback failures propagate"
+      ],
+      "source_sha256": "2cfb9f7c82505382297b661bfaa24feed38e188e1ed3bc2cf68bedc401527860",
+      "map_sha256": "4284ce0bcd0f4066c5e0da6cff20a40c2c03171f0d84408282e68988e3b4cc4c"
+    }
+  },
+  "hardware_execution": false
+}

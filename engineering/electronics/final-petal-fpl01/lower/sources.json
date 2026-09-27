@@ -1,0 +1,91 @@
+{
+  "inherited_circuit_sources": {
+    "accessed": "2026-09-27",
+    "sources": [
+      {
+        "id": "U1-DS",
+        "url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+        "checked": "61-page Rev A; pin table, SPI, timing, current and package drawings"
+      },
+      {
+        "id": "U1-TRM",
+        "url": "https://www.ti.com/lit/pdf/SNVU786",
+        "checked": "config pp30-36, onoff pp70+, DC p140, 16-bit PWM p205; reset-default conflict recorded"
+      },
+      {
+        "id": "EVM",
+        "url": "https://www.ti.com/lit/pdf/SNVU762",
+        "checked": "schematic p14 and BOM p15; reference, not copied complete EVM"
+      },
+      {
+        "id": "LED",
+        "url": "https://www.we-online.com/components/products/datasheet/150060YS75000.pdf",
+        "checked": "p1 polarity/land/max ratings and p2 Vf; official PDF fetched and visually inspected"
+      },
+      {
+        "id": "GH",
+        "url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+        "checked": "p2-3 rendered with PDFium after Poppler missing glyphs: 1.7 signal-pad length; pin1 upper right; 4.25 is depth, 4.05 body height +0.15 standoff; mated reference 7.3; controlled model drawing not obtained"
+      },
+      {
+        "id": "R",
+        "url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "checked": "CRCW0603 ordering code and rated family; quantity values are project choices"
+      },
+      {
+        "id": "NTC",
+        "url": "https://www.murata.com/-/media/webrenewal/products/thermistor/ntc/ncu/ncu18-s.ashx?cvid=20240402040000000000&la=en-us",
+        "checked": "official 22-page JEWB01BR-5300G; p3 F-series table, p5 dimensions/land ranges; 0.1mA means 0.1C self-heating in specified 25C still-air test, not universal absolute-current rating"
+      },
+      {
+        "id": "NCP-NRND",
+        "url": "https://www.murata.com/products/thermistor/ntc/overview/lineup/ncp",
+        "checked": "NCP15/18 NRND, updated 2025-03-31; NCU recommended for new designs"
+      },
+      {
+        "id": "GH-CAD-access",
+        "url": "https://www.jst-mfg.com/product/index.php?doc=4&filename=BM10B-GHS-TBT.pdf&series=105&type=10",
+        "checked": "2025 onward drawings distributed by email after company/contact form; no form submitted, no external contact"
+      },
+      {
+        "id": "C2012X5R1V226M125AC",
+        "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+        "checked": "official indexed part data; bulk capacitor also in TI EVM BOM"
+      },
+      {
+        "id": "C1608X7R1E105K080AB",
+        "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "checked": "official indexed part data; bulk capacitor also in TI EVM BOM"
+      },
+      {
+        "id": "C1608X7R1H104K080AA",
+        "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "checked": "official indexed part data; bulk capacitor also in TI EVM BOM"
+      },
+      {
+        "id": "C1608C0G1H102J080AA",
+        "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H102J080AA",
+        "checked": "official indexed part data; bulk capacitor also in TI EVM BOM"
+      }
+    ],
+    "input_pixel_source_sha256": "a62f763618d7668981d72b29970b15f334cc846ce05fa102dfbcc9fec728be7c"
+  },
+  "connector": {
+    "id": "JST-GH",
+    "url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+    "pages_1based": [
+      2,
+      3
+    ],
+    "sha256": "b1dcb317b6b9a4fbbedd2dbf42c64c95306a252d23de8933b85fcf161240b722",
+    "bytes": 146619,
+    "observations": "Mated top height7.3 depth4.25; side height4.35 axialdepth7.15. Ten-way header width15.75. Assembly dimensions reference only. Pages visually checked."
+  },
+  "input_hashes": {
+    "docs/engineering/sources/final-petal-board-fit-analysis.json": "9d7fd9d87181a80208aee5c3057f7adb3338d541377e82445592e163954c3a33",
+    "engineering/electronics/upper-petal-prototype/ulp02/netlist.json": "a235d66aac190b8236f3bcb499c986468f88017758b1bca41553042e0ed45be1",
+    "engineering/electronics/upper-petal-prototype/ulp02/footprint-constraints.json": "2f9fb65a67373f45d8bef3f2501e8258eadf355cdb9d7f515ea97c797b925a32",
+    "engineering/electronics/upper-petal-prototype/ulp02/register-plan.json": "0c6a16d429918b391631063e4bd6511bc89b59c71785a3f1b22931ddb722550d"
+  },
+  "checked": "FPL01 replaces GH entry and mapping, not claiming previous native checks apply"
+}
