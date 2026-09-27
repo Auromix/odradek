@@ -27,7 +27,17 @@ Policy updated: 2026-09-27. This note describes scope and licensing history; it 
 
 ## 软件、硬件及第三方内容
 
-目前仓库没有控制软件、固件或制造 CAD。后续发布这些内容前，应明确适合对应内容的许可与商业授权范围，并在文件或目录级标注；不能把本次图文许可视为已经解决了软件、硬件制造和专利问题。
+R4 开始增加工程计算、参数化建模脚本与机械模型，按目录明确区分：
+
+| 范围 | 新增原创内容的许可 |
+| --- | --- |
+| 文档、图稿、参数数据、原创 STEP／STL／DXF／PDF／Blend 模型 | CC BY-NC 4.0，限许可方拥有的版权及类似权利 |
+| `engineering/` 中原创 Python 计算／CAD／Blender 生成脚本及对应测试 | [PolyForm Noncommercial 1.0.0](LICENSES/PolyForm-Noncommercial-1.0.0.md)，以文件标识为准 |
+| 第三方 SDK、驱动、元件 CAD、软件包 | 各自原许可；不自动纳入上述许可，不擅自重新分发 |
+
+软件采用完整、未改写的标准 PolyForm Noncommercial 许可。其允许用途以原文为准，包括规定的个人非商业用途及非商业机构用途，不能笼统改写为“任何研究都允许”或“任何营利机构都禁止”。需要许可但不在其允许范围内的商业软件使用，仍须联系作者取得单独授权。
+
+模型文件的版权许可不等于已经解决实体制造、功能使用、专利和商标的全部权利问题。不得将文件上标注 NC 理解为对所有功能性硬件制造自动产生禁止权。尚未提供经过验证的控制软件、固件或制造发布版 CAD。
 
 CC BY-NC 不授予专利或商标权，也不会为不受版权保护的功能、思想或材料创造新权利。AI 辅助图像的许可仅覆盖权利人实际拥有且能够授出的权利。第三方参考图、商标与组件不因在文档中被引用而进入本项目许可。实体产品的制造／销售及正式商业授权合同应由具备相应经验的法律专业人士审核。
 
@@ -41,7 +51,7 @@ Current original concept artwork, design documentation, prompts, and static docu
 
 Previously published material through commit **2d7d00f** remains available under its already-granted Apache-2.0 rights, including commercial use under those terms. Changing the current license does not withdraw that grant, including for unchanged material carried forward. The new policy governs only rights in new material or changes not already granted under other terms.
 
-No software, firmware, or manufacturing CAD is currently released. Such future assets need explicit, appropriate licensing before publication. This copyright license alone neither establishes control over functional hardware manufacture nor licenses patents or trademarks. Contributor commercial permissions must be secured separately; third-party rights and statutory exceptions remain unaffected.
+R4 introduces engineering calculation and model-generation software under the unmodified PolyForm Noncommercial 1.0.0 license, with file-level notices. Original design files, models, drawings, and parameter data use CC BY-NC 4.0 to the extent of applicable copyright and similar rights. Third-party components retain their own terms. No validated control firmware or manufacturing-release CAD is asserted. These notices do not by themselves establish control over functional hardware manufacture; contributor commercial permissions, third-party rights, and statutory exceptions remain distinct.
 
 ## Official references
 
@@ -49,5 +59,6 @@ No software, firmware, or manufacturing CAD is currently released. Such future a
 - [Creative Commons FAQ](https://creativecommons.org/faq/): noncommercial purpose is distinct from the user's legal status; software and hardware need different consideration.
 - [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0): existing copyright grant is perpetual and irrevocable, subject to its terms.
 - [Open Source Definition, section 6](https://opensource.org/osd): a noncommercial restriction does not meet the OSI definition of open source.
+- [PolyForm Noncommercial 1.0.0 official text](https://polyformproject.org/licenses/noncommercial/1.0.0): permitted software purposes and notices; the repository copy is unmodified.
 
 Therefore the project is described as **a publicly shared design for noncommercial use**, not an OSI open-source project.
