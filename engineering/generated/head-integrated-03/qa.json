@@ -1,0 +1,199 @@
+{
+  "revision": "HEAD-INTEGRATED03",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "manufacturing_release": false,
+  "artifact_integrity_passed": true,
+  "states": {
+    "open": {
+      "parts": 697,
+      "all_watertight": true,
+      "unique_names": true,
+      "manifest_total_mass_g": 2802.4913247575278,
+      "mass_agrees_with_ledger": true,
+      "world_transform_all_expected": true,
+      "P16_has_16_envelope_parts_and_4_mass_groups": true,
+      "GLB_hash_matches": true,
+      "electrical_snapshot_hash_matches": true,
+      "all_LED_indices_match_snapshot": true
+    },
+    "closed": {
+      "parts": 697,
+      "all_watertight": true,
+      "unique_names": true,
+      "manifest_total_mass_g": 2802.4913247575278,
+      "mass_agrees_with_ledger": true,
+      "world_transform_all_expected": true,
+      "P16_has_16_envelope_parts_and_4_mass_groups": true,
+      "GLB_hash_matches": true,
+      "electrical_snapshot_hash_matches": true,
+      "all_LED_indices_match_snapshot": true
+    }
+  },
+  "continuous_certificates": [
+    {
+      "path": "/UR_own_carrier_analytic",
+      "passed": true
+    },
+    {
+      "path": "/UR_moving_vs_other_fixed",
+      "passed": true
+    },
+    {
+      "path": "/UR_actuator_vs_other_fixed",
+      "passed": true
+    },
+    {
+      "path": "/LL_own_carrier_analytic",
+      "passed": true
+    },
+    {
+      "path": "/LL_moving_vs_other_fixed",
+      "passed": true
+    },
+    {
+      "path": "/LL_actuator_vs_other_fixed",
+      "passed": true
+    },
+    {
+      "path": "/UL_asymmetric_fixed_root",
+      "passed": true
+    },
+    {
+      "path": "/UL_asymmetric_fixed_actuator",
+      "passed": true
+    },
+    {
+      "path": "/LR_asymmetric_fixed_root",
+      "passed": true
+    },
+    {
+      "path": "/LR_asymmetric_fixed_actuator",
+      "passed": true
+    },
+    {
+      "path": "/four_independent_modules/pairs/0",
+      "passed": true
+    },
+    {
+      "path": "/four_independent_modules/pairs/1",
+      "passed": true
+    },
+    {
+      "path": "/four_independent_modules/pairs/2",
+      "passed": true
+    },
+    {
+      "path": "/four_independent_modules/pairs/3",
+      "passed": true
+    },
+    {
+      "path": "/four_independent_modules/pairs/4",
+      "passed": true
+    },
+    {
+      "path": "/four_independent_modules/pairs/5",
+      "passed": true
+    },
+    {
+      "path": "/GH_vs_own_P16",
+      "passed": true
+    }
+  ],
+  "own_interfaces_no_unintended_intersection": true,
+  "integrated_distal_solids_all_contained": true,
+  "source_hash_checks": {
+    "interfaces": {
+      "checked": 6,
+      "mismatches": []
+    },
+    "export": {
+      "checked": 3,
+      "mismatches": []
+    },
+    "source": {
+      "checked": 53,
+      "mismatches": []
+    }
+  },
+  "electrical_inputs": {
+    "mechanical-interface-candidate.json": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": true
+    },
+    "component-envelope-reference.json": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": true
+    },
+    "upper-mechanical-power-budget.json": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": true
+    },
+    "upper-footprint-constraints.json": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": true
+    },
+    "upper-led-placement-reference.csv": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": false
+    },
+    "upper-bom.csv": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": false
+    },
+    "upper-placement-map.json": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": true
+    },
+    "lower-mechanical-power-budget.json": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": true
+    },
+    "lower-footprint-constraints.json": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": true
+    },
+    "lower-led-placement-reference.csv": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": false
+    },
+    "lower-bom.csv": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": false
+    },
+    "lower-placement-map.json": {
+      "snapshot_hash_valid": true,
+      "current_source_matches": true
+    }
+  },
+  "visual_qa": {
+    "file": "HEAD-INTEGRATED03-audit-views.png",
+    "reviewed": true,
+    "remarks": "Both actual-mesh poses fit canvas; annotation readable; no commercial appearance/render qualification."
+  },
+  "limits": [
+    "Final routed ECAD is not frozen; this is the copied candidate placement snapshot.",
+    "GH reference box is not supplier paired BREP; real wire bend/mating access remains unresolved.",
+    "COM vendor/density assumptions and unweighed electronic budget are explicit; no inertia qualification.",
+    "No thermal path, optical-sheet retention, tolerance/load/fatigue or2kg-grasp acceptance."
+  ],
+  "electrical_address_update": {
+    "geometry_unchanged": true,
+    "strict_field_comparison_passed": true,
+    "evidence": "electrical-address-update.json"
+  },
+  "final_artifact_sha256": {
+    "engineering/head_integrated03_study.py": "9a837c9610c234951645e2adaf330d8ee060a1988a5345f50a5acda5c744eb50",
+    "engineering/head_integrated03_export.py": "9b9c3468c3f481c60f77d17a3913d8371a49fc32389b767a72b24c830491c22c",
+    "engineering/head_integrated03_render.py": "2eae655a4695867860f2d3dfe49a1b0507deb19c14535f9ea10b1298e6e1b9ec",
+    "docs/engineering/head-integrated03-study.md": "b731549a36099b37a318f86b6e27f32dc99d29c05fd9a64e8a361b543dbcfa8f",
+    "docs/engineering/sources/head-integrated03.json": "bf81da824f5f333eeb80eadea86f5bda8556ac6aa736bab38167c851aab3aeca",
+    "engineering/generated/head-integrated-03/interfaces.json": "1f7bf639b819cd5264de0a6185214303efdfdba14b2ea24e1b518bac5af7b2b7",
+    "engineering/generated/head-integrated-03/motion.json": "dd7b6c1c608be0cf46c886f4a54afe8e665d9827b8c4ae241939e3956469af9d",
+    "engineering/generated/head-integrated-03/motion-containment.json": "954dc56102e912fb4c27e31261550fd307eccef4b8acc52dfcbb4501670a6fad",
+    "engineering/generated/head-integrated-03/export-mass.json": "ecfdaa644d2e7e0fd3f85aca27ecf070695444558ff44f1e47a81cb33ae6e8b0",
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+    "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-audit-views.png": "21f5e05b3e378770ce8c13061ad1cc90d539515ad5aadc500049d5c897e4f5ce"
+  }
+}

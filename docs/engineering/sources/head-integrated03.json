@@ -1,0 +1,542 @@
+{
+  "revision": "HEAD-INTEGRATED03",
+  "license_original": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "checked_date": "2026-09-27",
+  "manufacturing_release": false,
+  "upstream_evidence_sha256": {
+    "engineering/parameters/r4-layout.json": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "engineering/head_integrated03_study.py": "9a837c9610c234951645e2adaf330d8ee060a1988a5345f50a5acda5c744eb50",
+    "engineering/head_integrated03_export.py": "9b9c3468c3f481c60f77d17a3913d8371a49fc32389b767a72b24c830491c22c",
+    "engineering/head_integrated03_render.py": "2eae655a4695867860f2d3dfe49a1b0507deb19c14535f9ea10b1298e6e1b9ec",
+    "engineering/p16_carrier02_study.py": "ed095e8b0b9565ee8be98e5a653d36da458b61425c5a2c08e7c9ecd2bdc513bc",
+    "engineering/p16_carrier02_envelope.py": "23b37267e274a55a8177e4f7c11931555da28f68edbbef413ff47097996092c7",
+    "engineering/p16_carrier_study.py": "19f0d00207349825a814d15b7e768030dbe09ac071fc5b0d5dccf65f45be224c",
+    "engineering/p16_packaging_study.py": "3903d14a5b081574b8e9a7bfde7c74705b6ec68933f7084133b53b998987f68d",
+    "engineering/gripper_root_support_study.py": "3ef2cbe6f1987f35a54fca22a0fb538ee502545ede5d4a58a4e7e06ef30dd732",
+    "engineering/generated/p16-carrier-02/study.json": "467753f6d853426e7d110ee2efb8310b86ba6e43e4c8917685203080703a2be3",
+    "engineering/generated/p16-carrier-02/motion.json": "c4efa6422c51472abb8170b128d21c8c98fd6a19389eaf6d6dc30860920a6bfe",
+    "engineering/generated/p16-carrier-02/root-z-envelope.json": "9d7aafae00a9e13f8145988f61b60519a7b27ba48ecfd422b5e2e09dbfd3f9c9",
+    "engineering/generated/p16-carrier-02/loads.json": "1ea5c53f62bb15d9a23b5967116af1b5496be65bb4c3f87f147994201856f2b6",
+    "engineering/generated/wrist-extension-01/study.json": "4dae41ebda4d98c1a86856d4e52e8b4091ad6d2ad26188e36fe989b6ef8c45d8",
+    "engineering/generated/contact02-study/study.json": "d36f825a731eab458aa1c5945404023d3b075768ddd8b21d928a0b42b86e4ea9",
+    "engineering/generated/led-petal-pocket/study.json": "e3aeec30250f96bec6ea16ce2057c43d8bf7a67d385e4ab5e292884458902303",
+    "engineering/generated/pad-retention-study/verification.json": "949e6660ceab638befec01f5e03016b9d8148284db23a47280ad9918099206be",
+    "docs/engineering/sources/p16-carrier02.json": "c2dcb4553d570f525f36883a201e34bb45c72d1869fc0d8891d94f51d51937a7",
+    "docs/engineering/sources/p16-carrier.json": "5fb05b1329e62ce780c46e6e3ffe3bfb28a743d82ae445e4307bd4e168d3a21c",
+    "docs/engineering/sources/final-petal-board-fit-analysis.json": "9d7fd9d87181a80208aee5c3057f7adb3338d541377e82445592e163954c3a33",
+    "engineering/generated/led-petal-pocket/LOWER-metal.step": "c3dabceb53c8239ffe6d9c37e68940c2e3b9c29d6e0de3c1edb054f29bfc5300",
+    "engineering/generated/led-petal-pocket/UPPER-assembly.step": "959ac655ec2c9f4d0a5775128be0d900f2ec4d47fa83d3d6ccfc5401968b5006",
+    "engineering/generated/led-petal-pocket/UPPER-optical_sheet.step": "c3837fc8a54fe50f8212e50af2d97f352dc974513cba94e5a92b53d4ab2a5b79",
+    "engineering/generated/led-petal-pocket/LOWER-SSH_M2_4_3.step": "91c2ddd0e07e7f4ddf861e27d2a63ee786f0bde1ff705805c2d3aae2ebdb2e57",
+    "engineering/generated/led-petal-pocket/UPPER-insulating_ring2.step": "8f57f55c9e0f344e7bf4cb207cfe3a2220b418b799a492b8cd1dd8f2c7da8a0e",
+    "engineering/generated/led-petal-pocket/UPPER-insulating_ring3.step": "1f713b31df1d73bdaec9eab224a938c0a0c5739ade2ec7e94b188eb1daa7008e",
+    "engineering/generated/led-petal-pocket/LOWER-SSH_M2_4_2.step": "bdeba6bc2042387f7b3ea64de69b1993d7c06ddc41a9cef03a6ff03e4281f1d2",
+    "engineering/generated/led-petal-pocket/UPPER-front_LED_volume_reserve.step": "33e185d93f64b6c98f83ea107834b44a01ed3d4cd1988ecb0348a8fd7879e6f3",
+    "engineering/generated/led-petal-pocket/LOWER-front_LED_volume_reserve.step": "0170449dad549efac5dab578057a862ff24413a549477018c24faef8fa687c54",
+    "engineering/generated/led-petal-pocket/UPPER-SSH_M2_4_3.step": "3a02c789be4121bcd9df82b3dfd9a06c3ca0c225692a7152987bd8c81b987a58",
+    "engineering/generated/led-petal-pocket/UPPER-SSH_M2_4_2.step": "96aca55b612e411bd367d04bc64e1fe0dbebfc9d7a63971058df2b4868ab2601",
+    "engineering/generated/led-petal-pocket/LOWER-optical_sheet.step": "a27b0c696c5d5451590842ff14258eb2fbfd9bc48d8b4ef91704598967732f8a",
+    "engineering/generated/led-petal-pocket/LOWER-insulating_ring1.step": "77da8395b236257c281b88b2c04155c822c9890ca1f7fa3d9cfcc7867a68a010",
+    "engineering/generated/led-petal-pocket/LOWER-back_component_volume_reserve.step": "49fe521b2047f5cfaebce94d35ed84c58fe0f8d5586c30d830ed3747352ce19d",
+    "engineering/generated/led-petal-pocket/LOWER-assembly.step": "6dbeb8ab085479ae9dc1d5e7c74074aa63fb0e7fc28ec9bfcee5e52fd682de15",
+    "engineering/generated/led-petal-pocket/UPPER-SSH_M2_4_1.step": "ecae50b6f43519e3ea6dca349205c290123f2e1879d8b24e224dab00aed1031c",
+    "engineering/generated/led-petal-pocket/LOWER-insulating_ring2.step": "4b887add640a1bac513e8a3717a76907db17fb670222198c96bf3e252fa43b64",
+    "engineering/generated/led-petal-pocket/LOWER-insulating_ring3.step": "23c74840ec5bb2e3cc0a6ba1eb290de66c456ba258e36b5024bda5997e0e1520",
+    "engineering/generated/led-petal-pocket/UPPER-PCB_outline.step": "f68dd7d08082c54bca3429c3dcd88b82387c6659d0c091e41c6f94cf269158c3",
+    "engineering/generated/led-petal-pocket/LOWER-PCB_outline.step": "d1e7b7040528ef12f84f93cf59fb37ed9197be340706d306e1b37989f907760c",
+    "engineering/generated/led-petal-pocket/LOWER-SSH_M2_4_1.step": "c6539c3c6dc065abac825de38cc377c27d428e8edc6545a399250909c02befb2",
+    "engineering/generated/led-petal-pocket/UPPER-insulating_ring1.step": "94babbe42d6edab9133041406866c9128b21c53c5f43bbea521c22e1a77669c9",
+    "engineering/generated/led-petal-pocket/UPPER-back_component_volume_reserve.step": "7281173f666325df8e119fb78249e49620b4b1c129456c387614cd66861d1074",
+    "engineering/generated/led-petal-pocket/UPPER-metal.step": "6c98792406df346af44a296d66f351b7c11c9aa3552df8e4ca88aee46def69b5",
+    "engineering/generated/pad-retention-study/ODR-RET-LOWER-PAD-MINUS.step": "2e0422209920ded84b0dc4e811535d4edb97a28e20a4b2b90f9d9fe23c76d99d",
+    "engineering/generated/pad-retention-study/ODR-RET-UPPER-BLADE.step": "44cb80853ff3d93f96c808a5aeeb155db74b37411a5dd43368b3b8b4022a747b",
+    "engineering/generated/pad-retention-study/ODR-RET-UPPER-PAD-PLUS.step": "5157f63cd6c7a0e48f8c4b377d02e21d51a38be3ab979d0e5239d9fd001b10e6",
+    "engineering/generated/pad-retention-study/ODR-RET-LOWER-COUPON.step": "e33873ef53f1364b33338c0be3341a7546bd5373ea47f9182328d05056ce0727",
+    "engineering/generated/pad-retention-study/ODR-RET-LOWER-PAD-PLUS.step": "c43ea1cf8886d8be283545ad9d7a644cd979bc8670e1f59e77e756336c7300a0",
+    "engineering/generated/pad-retention-study/ODR-RET-UPPER-COUPON.step": "f7613a069c748fb34d28191a44fefd8babfc246970b9cf2a6ebdc296a309bae9",
+    "engineering/generated/pad-retention-study/ODR-RET-LOWER-BLADE.step": "f87ea3e44c6e6138ce9a8c5465f8810066c6302c477026e7f02c6b6d9dc4cafd",
+    "engineering/generated/pad-retention-study/ODR-RET-UPPER-PAD-MINUS.step": "b9b6995f4ffa47eed26260a6349d914e7919af313da3a66179285f06007a9aa3",
+    "engineering/generated/wrist-extension-01/ODR-J7-EXT24.step": "d766b410f1a3195d8a54e1938c1deddc3b3ee2c38626919ccc2ffb17d1aaaee8"
+  },
+  "electrical_snapshot": {
+    "revision": "HEAD-INTEGRATED03",
+    "files": {
+      "mechanical-interface-candidate.json": {
+        "source": "engineering/electronics/final-petal-fpl01/mechanical-interface-candidate.json",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/mechanical-interface-candidate.json",
+        "sha256": "d040f520dc40e7143b6e1fd7909061d4330b434ae67538827c4ec9f6794b1a83",
+        "source_current_matches": true
+      },
+      "component-envelope-reference.json": {
+        "source": "docs/engineering/sources/final-petal-board-fit-analysis.json",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/component-envelope-reference.json",
+        "sha256": "9d7fd9d87181a80208aee5c3057f7adb3338d541377e82445592e163954c3a33",
+        "source_current_matches": true
+      },
+      "upper-mechanical-power-budget.json": {
+        "source": "engineering/electronics/final-petal-fpl01/upper/mechanical-power-budget.json",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/upper-mechanical-power-budget.json",
+        "sha256": "09bf2b28fe29783ea6835029e3a779a779fa7c078a57a3ec53b4c816f6ac0641",
+        "source_current_matches": true
+      },
+      "upper-footprint-constraints.json": {
+        "source": "engineering/electronics/final-petal-fpl01/upper/footprint-constraints.json",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/upper-footprint-constraints.json",
+        "sha256": "6c3de7c8d146ed4faffeb1ba95d1e2dd5113a4e5c276a476c0d0142ecdd34b66",
+        "source_current_matches": true
+      },
+      "upper-led-placement-reference.csv": {
+        "source": "engineering/electronics/final-petal-fpl01/upper/led-placement-reference.csv",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/upper-led-placement-reference.csv",
+        "sha256": "9b0127183a18fb400646b40779551dd954ecb4a6bc9535ec4aa94fefd7d132f2",
+        "source_current_matches": false
+      },
+      "upper-bom.csv": {
+        "source": "engineering/electronics/final-petal-fpl01/upper/bom.csv",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/upper-bom.csv",
+        "sha256": "c15344c334b4e04030967c092f21fed59d1917e36261f36a4edc3201ad288daa",
+        "source_current_matches": false
+      },
+      "upper-placement-map.json": {
+        "source": "engineering/electronics/final-petal-fpl01/upper/kicad/placement-map.json",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/upper-placement-map.json",
+        "sha256": "ce1d003c3217865c5680b4a75b0bfb4e023af3071ead1003989b4ad51f6e34d8",
+        "source_current_matches": true
+      },
+      "lower-mechanical-power-budget.json": {
+        "source": "engineering/electronics/final-petal-fpl01/lower/mechanical-power-budget.json",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/lower-mechanical-power-budget.json",
+        "sha256": "cc3bb75e5a6352d2ba46ebf87eac981437e088faf615aaf4bddeb94a0a06d4eb",
+        "source_current_matches": true
+      },
+      "lower-footprint-constraints.json": {
+        "source": "engineering/electronics/final-petal-fpl01/lower/footprint-constraints.json",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/lower-footprint-constraints.json",
+        "sha256": "6c3de7c8d146ed4faffeb1ba95d1e2dd5113a4e5c276a476c0d0142ecdd34b66",
+        "source_current_matches": true
+      },
+      "lower-led-placement-reference.csv": {
+        "source": "engineering/electronics/final-petal-fpl01/lower/led-placement-reference.csv",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/lower-led-placement-reference.csv",
+        "sha256": "f44676582e78046931664bb1acb89dc2e80dc2cfb732aec2ba0397de75e3aecd",
+        "source_current_matches": false
+      },
+      "lower-bom.csv": {
+        "source": "engineering/electronics/final-petal-fpl01/lower/bom.csv",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/lower-bom.csv",
+        "sha256": "55d3e89ff2bd90dfb7271812c859fd7078a26dced43a94f4f811141d48ffd2b1",
+        "source_current_matches": false
+      },
+      "lower-placement-map.json": {
+        "source": "engineering/electronics/final-petal-fpl01/lower/kicad/placement-map.json",
+        "snapshot": "engineering/generated/head-integrated-03/inputs/lower-placement-map.json",
+        "sha256": "b0a7ff7bfe5c660ff2055e1d872858a5ab2e2e86154f06111f349461eb2440aa",
+        "source_current_matches": true
+      }
+    },
+    "status": "FPL01 placement snapshot; ordinary back parts may be superseded by final electrical export; not ECAD release."
+  },
+  "primary_source_reuse": [
+    {
+      "url": "https://www.actuonix.com/p16-50-256-12-p",
+      "used": "P16 catalog95g and selected part identity; performance/20% duty constraints remain prior LINEAR01 evidence",
+      "evidence": "docs/engineering/sources/p16-carrier.json"
+    },
+    {
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16030-SSC-M4-40-12-9",
+      "used": "M4x40 catalog mass4.7g; EXT24 upstream controlled geometry/mount scheme",
+      "evidence": "docs/engineering/wrist-extension-study.md"
+    },
+    {
+      "url": "https://www.smooth-on.com/tb/files/DRAGON_SKIN_SERIES_TB.pdf",
+      "used": "DS30 candidate density1.08g/cm3; no retention strength qualification",
+      "evidence": "docs/engineering/contact-pad-prototype.md"
+    },
+    {
+      "url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+      "used": "GH catalog mated reference dimensions, not controlled3D or wirebend clearance",
+      "evidence": "engineering/generated/head-integrated-03/inputs/mechanical-interface-candidate.json"
+    }
+  ],
+  "evidence_status": "Existing checked primary-source evidence reused; this integration introduces original CAD compositions and explicit mass/assembly assumptions. It is not a new supplier compatibility release.",
+  "vendor_BREP_redistributed": false,
+  "ordinary_component_positions": "Copied candidate after electrical escape routing, upper ce1d003c3217..., lower b0a7ff7bfe5c...; still not final ECAD. Any later position change must be rechecked.",
+  "material_mass_assumptions": {
+    "PCB_laminate_g_cm3": 1.85,
+    "transparent_sheet_g_cm3": 1.2,
+    "insulating_ring_g_cm3": 1.2,
+    "note": "These are planning assumptions, no selected material guarantee. Discrete electronics/GH do not receive envelope-volume mass."
+  },
+  "placement_update": {
+    "revision": "HEAD-INTEGRATED03",
+    "kind": "ordinary backside candidate placement refresh after electrical escape routing",
+    "updates": [
+      {
+        "board": "upper",
+        "previous_sha256": "7dfd5411dfe6800b19261bd9697967a76cceae44b9a41108f05b1c2179dcf276",
+        "current_sha256": "ce1d003c3217865c5680b4a75b0bfb4e023af3071ead1003989b4ad51f6e34d8",
+        "component_changes": [
+          {
+            "ref": "U1",
+            "change": {
+              "x_mm": {
+                "old": 56,
+                "new": 80
+              }
+            }
+          },
+          {
+            "ref": "C3",
+            "change": {
+              "x_mm": {
+                "old": 50,
+                "new": 70.5
+              }
+            }
+          },
+          {
+            "ref": "C4",
+            "change": {
+              "x_mm": {
+                "old": 65.2,
+                "new": 90
+              },
+              "source_y_mm": {
+                "old": -1.8,
+                "new": -6.4
+              }
+            }
+          },
+          {
+            "ref": "C5",
+            "change": {
+              "x_mm": {
+                "old": 63,
+                "new": 90
+              },
+              "source_y_mm": {
+                "old": 3.5,
+                "new": 4.2
+              }
+            }
+          },
+          {
+            "ref": "C6",
+            "change": {
+              "x_mm": {
+                "old": 50,
+                "new": 70.3
+              }
+            }
+          },
+          {
+            "ref": "C7",
+            "change": {
+              "x_mm": {
+                "old": 62.2,
+                "new": 93
+              },
+              "source_y_mm": {
+                "old": -1.8,
+                "new": -6.4
+              }
+            }
+          },
+          {
+            "ref": "C8",
+            "change": {
+              "x_mm": {
+                "old": 65.8,
+                "new": 93
+              },
+              "source_y_mm": {
+                "old": 3.5,
+                "new": -3.5
+              }
+            }
+          },
+          {
+            "ref": "C9",
+            "change": {
+              "x_mm": {
+                "old": 69.8,
+                "new": 102
+              },
+              "source_y_mm": {
+                "old": -5.5,
+                "new": 0
+              }
+            }
+          },
+          {
+            "ref": "R1",
+            "change": {
+              "x_mm": {
+                "old": 65.3,
+                "new": 93
+              },
+              "source_y_mm": {
+                "old": 1.8,
+                "new": 3
+              }
+            }
+          },
+          {
+            "ref": "R3",
+            "change": {
+              "x_mm": {
+                "old": 58.2,
+                "new": 85
+              },
+              "source_y_mm": {
+                "old": 7.2,
+                "new": 9
+              }
+            }
+          },
+          {
+            "ref": "R4",
+            "change": {
+              "x_mm": {
+                "old": 55,
+                "new": 88.2
+              },
+              "source_y_mm": {
+                "old": 7.2,
+                "new": 9
+              }
+            }
+          },
+          {
+            "ref": "R5",
+            "change": {
+              "x_mm": {
+                "old": 51.8,
+                "new": 91.4
+              },
+              "source_y_mm": {
+                "old": 7.2,
+                "new": 9
+              }
+            }
+          },
+          {
+            "ref": "R6",
+            "change": {
+              "x_mm": {
+                "old": 61.4,
+                "new": 94.6
+              },
+              "source_y_mm": {
+                "old": 7.2,
+                "new": 9
+              }
+            }
+          },
+          {
+            "ref": "R7",
+            "change": {
+              "x_mm": {
+                "old": 59.4,
+                "new": 90
+              },
+              "source_y_mm": {
+                "old": 3.85,
+                "new": -1.8
+              }
+            }
+          },
+          {
+            "ref": "R8",
+            "change": {
+              "x_mm": {
+                "old": 66.8,
+                "new": 96
+              },
+              "source_y_mm": {
+                "old": 5.5,
+                "new": 0
+              }
+            }
+          },
+          {
+            "ref": "R9",
+            "change": {
+              "x_mm": {
+                "old": 70,
+                "new": 99
+              },
+              "source_y_mm": {
+                "old": 5.5,
+                "new": 0
+              }
+            }
+          },
+          {
+            "ref": "TH1",
+            "change": {
+              "x_mm": {
+                "old": 66,
+                "new": 93
+              }
+            }
+          }
+        ]
+      },
+      {
+        "board": "lower",
+        "previous_sha256": "8bd1708fb1197e77714410cf795f42f35c02943714bf573fddbc4953b1712c6b",
+        "current_sha256": "b0a7ff7bfe5c660ff2055e1d872858a5ab2e2e86154f06111f349461eb2440aa",
+        "component_changes": [
+          {
+            "ref": "C4",
+            "change": {
+              "x_mm": {
+                "old": 65.2,
+                "new": 68
+              },
+              "source_y_mm": {
+                "old": -1.8,
+                "new": -3
+              }
+            }
+          },
+          {
+            "ref": "C5",
+            "change": {
+              "x_mm": {
+                "old": 63,
+                "new": 67.3
+              },
+              "source_y_mm": {
+                "old": 3.5,
+                "new": 3.8
+              }
+            }
+          },
+          {
+            "ref": "C7",
+            "change": {
+              "x_mm": {
+                "old": 62.2,
+                "new": 68
+              },
+              "source_y_mm": {
+                "old": -1.8,
+                "new": -5.3
+              }
+            }
+          },
+          {
+            "ref": "C8",
+            "change": {
+              "x_mm": {
+                "old": 65.8,
+                "new": 70.2
+              },
+              "source_y_mm": {
+                "old": 3.5,
+                "new": 5.5
+              }
+            }
+          },
+          {
+            "ref": "C9",
+            "change": {
+              "x_mm": {
+                "old": 69.8,
+                "new": 29.5
+              },
+              "source_y_mm": {
+                "old": -5.5,
+                "new": 2.5
+              }
+            }
+          },
+          {
+            "ref": "R1",
+            "change": {
+              "x_mm": {
+                "old": 65.3,
+                "new": 36.8
+              },
+              "source_y_mm": {
+                "old": 1.8,
+                "new": 2.5
+              }
+            }
+          },
+          {
+            "ref": "R2",
+            "change": {
+              "x_mm": {
+                "old": 34,
+                "new": 33.3
+              }
+            }
+          },
+          {
+            "ref": "R3",
+            "change": {
+              "x_mm": {
+                "old": 58.2,
+                "new": 29.5
+              },
+              "source_y_mm": {
+                "old": 7.2,
+                "new": 0
+              }
+            }
+          },
+          {
+            "ref": "R7",
+            "change": {
+              "x_mm": {
+                "old": 59.4,
+                "new": 58.2
+              },
+              "source_y_mm": {
+                "old": 3.85,
+                "new": 7.2
+              }
+            }
+          },
+          {
+            "ref": "R8",
+            "change": {
+              "x_mm": {
+                "old": 66.8,
+                "new": 36.8
+              },
+              "source_y_mm": {
+                "old": 5.5,
+                "new": -2.5
+              }
+            }
+          },
+          {
+            "ref": "R9",
+            "change": {
+              "x_mm": {
+                "old": 70,
+                "new": 29.5
+              },
+              "source_y_mm": {
+                "old": 5.5,
+                "new": -2.5
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "unchanged_contract": "PCB outline and mounts / LED centers / J1 / C1 C2 / reserved ground copper zone retained",
+    "scope": "New candidate placement not final ECAD; interfaces, containment, motion and exports regenerated. No pre-existing IC thermal path inherited."
+  },
+  "nongeometric_address_update": {
+    "path": "engineering/generated/head-integrated-03/electrical-address-update.json",
+    "sha256": "90a4a04afa70e0186a3b9c8f28f610e210d59215cab98c010393dd20cfb5c424",
+    "geometry_unchanged": true
+  }
+}

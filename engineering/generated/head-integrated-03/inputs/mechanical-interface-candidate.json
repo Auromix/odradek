@@ -1,0 +1,523 @@
+{
+  "revision": "FPL-01",
+  "status": "engineering candidate; catalogue references, no controlled tolerance or mated vendor CAD",
+  "header": "SM10B-GHS-TB(LF)(SN)",
+  "housing": "GHR-10V-S",
+  "terminal": "SSHL-002T-P0.2",
+  "source": {
+    "id": "JST-GH",
+    "url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+    "pages_1based": [
+      2,
+      3
+    ],
+    "sha256": "b1dcb317b6b9a4fbbedd2dbf42c64c95306a252d23de8933b85fcf161240b722",
+    "bytes": 146619,
+    "observations": "Mated top height7.3 depth4.25; side height4.35 axialdepth7.15. Ten-way header width15.75. Assembly dimensions reference only. Pages visually checked."
+  },
+  "mounting_side_frame": "u right, v up in JST mounting-side drawing; header pin1 upper-left; wire exit -v",
+  "header_body_uv_bounds_mm": [
+    [
+      -7.875,
+      -2.45
+    ],
+    [
+      7.875,
+      1.6
+    ]
+  ],
+  "mated_reference_uv_bounds_mm": [
+    [
+      -7.875,
+      -5.55
+    ],
+    [
+      7.875,
+      1.6
+    ]
+  ],
+  "mount_pads": [
+    {
+      "pad": 1,
+      "xy_mm": [
+        -5.625,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": 2,
+      "xy_mm": [
+        -4.375,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": 3,
+      "xy_mm": [
+        -3.125,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": 4,
+      "xy_mm": [
+        -1.875,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": 5,
+      "xy_mm": [
+        -0.625,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": 6,
+      "xy_mm": [
+        0.625,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": 7,
+      "xy_mm": [
+        1.875,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": 8,
+      "xy_mm": [
+        3.125,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": 9,
+      "xy_mm": [
+        4.375,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": 10,
+      "xy_mm": [
+        5.625,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ]
+    },
+    {
+      "pad": "M1",
+      "xy_mm": [
+        -7.475,
+        -1.35
+      ],
+      "size_mm": [
+        1,
+        2.7
+      ]
+    },
+    {
+      "pad": "M2",
+      "xy_mm": [
+        7.475,
+        -1.35
+      ],
+      "size_mm": [
+        1,
+        2.7
+      ]
+    }
+  ],
+  "footprint_origin_mechanical_xyz_mm": [
+    44.975,
+    0,
+    3.6
+  ],
+  "transform": "X=44.975+v; Y=u; Z=3.6-h, h away from mounting PCB face",
+  "native_transform": "mechanical LED/global PCB mapping Xboard=X, Yboard=40-Y; native front footprint (u,-v), then KiCad Flip LEFT_RIGHT and -90 degree orientation",
+  "mated_reference_xyz_bounds_mm": [
+    [
+      39.425,
+      -7.875,
+      -0.75
+    ],
+    [
+      46.575,
+      7.875,
+      3.6
+    ]
+  ],
+  "land_mechanical_xy_bounds_mm": [
+    [
+      42.275,
+      -7.975
+    ],
+    [
+      47.675,
+      7.975
+    ]
+  ],
+  "projected_pads": [
+    {
+      "pad": 1,
+      "xy_mm": [
+        -5.625,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        -5.625
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": 2,
+      "xy_mm": [
+        -4.375,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        -4.375
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": 3,
+      "xy_mm": [
+        -3.125,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        -3.125
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": 4,
+      "xy_mm": [
+        -1.875,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        -1.875
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": 5,
+      "xy_mm": [
+        -0.625,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        -0.625
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": 6,
+      "xy_mm": [
+        0.625,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        0.625
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": 7,
+      "xy_mm": [
+        1.875,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        1.875
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": 8,
+      "xy_mm": [
+        3.125,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        3.125
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": 9,
+      "xy_mm": [
+        4.375,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        4.375
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": 10,
+      "xy_mm": [
+        5.625,
+        1.85
+      ],
+      "size_mm": [
+        0.6,
+        1.7
+      ],
+      "mechanical_xy_mm": [
+        46.825,
+        5.625
+      ],
+      "mechanical_size_xy_mm": [
+        1.7,
+        0.6
+      ]
+    },
+    {
+      "pad": "M1",
+      "xy_mm": [
+        -7.475,
+        -1.35
+      ],
+      "size_mm": [
+        1,
+        2.7
+      ],
+      "mechanical_xy_mm": [
+        43.625,
+        -7.475
+      ],
+      "mechanical_size_xy_mm": [
+        2.7,
+        1
+      ]
+    },
+    {
+      "pad": "M2",
+      "xy_mm": [
+        7.475,
+        -1.35
+      ],
+      "size_mm": [
+        1,
+        2.7
+      ],
+      "mechanical_xy_mm": [
+        43.625,
+        7.475
+      ],
+      "mechanical_size_xy_mm": [
+        2.7,
+        1
+      ]
+    }
+  ],
+  "wire_exit_mechanical_direction": [
+    -1,
+    0,
+    0
+  ],
+  "unknowns": [
+    "controlled dimensional tolerances",
+    "wire exit z and bend radius",
+    "mating/unmating translation/access",
+    "true latch/mated CAD",
+    "supplier crimp qualification"
+  ],
+  "thermal_bridge_candidate": {
+    "bare_backside_region_xy_mm": [
+      [
+        62,
+        -7
+      ],
+      [
+        66,
+        -3
+      ]
+    ],
+    "PCB_bottom_z_mm": 3.6,
+    "metal_floor_z_mm": 1.9,
+    "gap_mm": 1.7,
+    "size_mm": [
+      4,
+      4
+    ],
+    "status": "no components/paste/signal copper/vias inside B-side region; B-side GND copper under mask, four-layer GND reference. Insulating bridge material/compression/metal pedestal not designed; no direct IC pressure."
+  },
+  "high_capacitor_recesses_candidate": [
+    {
+      "ref": "C1",
+      "center_xy_mm": [
+        50,
+        -5.5
+      ],
+      "plan_envelope_xy_mm": [
+        [
+          48.3,
+          -6.475
+        ],
+        [
+          51.7,
+          -4.525
+        ]
+      ],
+      "package_height_max_mm": 1.45,
+      "solder_height_assumption_mm": 0.1,
+      "assembled_bottom_z_mm": 2.05,
+      "floor_z_for_025_gap_mm": 1.8
+    },
+    {
+      "ref": "C2",
+      "center_xy_mm": [
+        50,
+        -7.8
+      ],
+      "plan_envelope_xy_mm": [
+        [
+          48.3,
+          -8.775
+        ],
+        [
+          51.7,
+          -6.825
+        ]
+      ],
+      "package_height_max_mm": 1.45,
+      "solder_height_assumption_mm": 0.1,
+      "assembled_bottom_z_mm": 2.05,
+      "floor_z_for_025_gap_mm": 1.8
+    }
+  ],
+  "assembly_height_plan_A": {
+    "PCB_z_mm": [
+      3.6,
+      4.4
+    ],
+    "front_package_max_mm": 0.8,
+    "solder_height_assumption_mm": 0.1,
+    "LED_top_z_mm": 5.3,
+    "diffuser_bottom_z_mm": 6,
+    "mix_gap_mm": 0.7,
+    "outer_face_z_mm": 6.6,
+    "not_included": "PCB/fixture/insulator/solder/optics tolerance and deflection; original pocket is unchanged"
+  },
+  "four_petal_baseline_W": 2.264,
+  "thermal_validation": "not measured"
+}

@@ -1,0 +1,362 @@
+{
+  "revision": "HEAD-INTEGRATED03",
+  "manufacturing_release": false,
+  "coordinate_contract": {
+    "face_world_mm": [
+      0.0,
+      55.0,
+      804.0
+    ],
+    "J7_output_world_mm": [
+      0,
+      55,
+      640
+    ],
+    "J7_output_head_z_mm": -164,
+    "original_adapter_main_plate_world_z_range_mm": [
+      640,
+      650
+    ],
+    "original_adapter_complete_nominal_world_z_range_mm": [
+      637.5,
+      650
+    ],
+    "extension_head_z_range_mm": [
+      -154,
+      -130
+    ],
+    "carrier_original_head_coordinates_retained": true
+  },
+  "finger_interfaces": [
+    {
+      "finger": "UR",
+      "variant": "UPPER",
+      "part_count": 183,
+      "near_x_less_than25_symmetric_difference_mm3": -2.2737367544323206e-13,
+      "PCB_outline_vs_FPL01_budget_symmetric_difference_mm3": -6.61666490486823e-08,
+      "metal_volume_mm3": 13029.52002026799,
+      "capacitor_recess_removed_volume_mm3": 1.8455761723907926,
+      "capacitor_recesses": [
+        {
+          "ref": "C1",
+          "pocket_bbox_mm": [
+            [
+              48.05,
+              -6.725,
+              1.7999999999999998
+            ],
+            [
+              51.95,
+              -4.275,
+              6.2
+            ]
+          ],
+          "floor_z_mm": 1.8,
+          "component_bottom_z_mm": 2.05,
+          "nominal_bottom_gap_mm": 0.25
+        },
+        {
+          "ref": "C2",
+          "pocket_bbox_mm": [
+            [
+              48.05,
+              -9.025,
+              1.7999999999999998
+            ],
+            [
+              51.95,
+              -6.575000000000001,
+              6.2
+            ]
+          ],
+          "floor_z_mm": 1.8,
+          "component_bottom_z_mm": 2.05,
+          "nominal_bottom_gap_mm": 0.25
+        }
+      ],
+      "LED_count": 130,
+      "back_components": 20,
+      "PCB_transform": "at q0: x=e_r along petal, y=e_t=(-sin(phi),cos(phi),0), LED side+z; identical same-variant PCB reused left/right, NOT mirrored",
+      "root_transform": "carrier02 mechanical module mirror retained; electronic parts pre-compensate that reflection"
+    },
+    {
+      "finger": "UL",
+      "variant": "UPPER",
+      "part_count": 183,
+      "near_x_less_than25_symmetric_difference_mm3": -2.2737367544323206e-13,
+      "PCB_outline_vs_FPL01_budget_symmetric_difference_mm3": -6.61666490486823e-08,
+      "metal_volume_mm3": 13029.52002026799,
+      "capacitor_recess_removed_volume_mm3": 1.8455761723907926,
+      "capacitor_recesses": [
+        {
+          "ref": "C1",
+          "pocket_bbox_mm": [
+            [
+              48.05,
+              -6.725,
+              1.7999999999999998
+            ],
+            [
+              51.95,
+              -4.275,
+              6.2
+            ]
+          ],
+          "floor_z_mm": 1.8,
+          "component_bottom_z_mm": 2.05,
+          "nominal_bottom_gap_mm": 0.25
+        },
+        {
+          "ref": "C2",
+          "pocket_bbox_mm": [
+            [
+              48.05,
+              -9.025,
+              1.7999999999999998
+            ],
+            [
+              51.95,
+              -6.575000000000001,
+              6.2
+            ]
+          ],
+          "floor_z_mm": 1.8,
+          "component_bottom_z_mm": 2.05,
+          "nominal_bottom_gap_mm": 0.25
+        }
+      ],
+      "LED_count": 130,
+      "back_components": 20,
+      "PCB_transform": "at q0: x=e_r along petal, y=e_t=(-sin(phi),cos(phi),0), LED side+z; identical same-variant PCB reused left/right, NOT mirrored",
+      "root_transform": "carrier02 mechanical module mirror retained; electronic parts pre-compensate that reflection"
+    },
+    {
+      "finger": "LL",
+      "variant": "LOWER",
+      "part_count": 95,
+      "near_x_less_than25_symmetric_difference_mm3": -2.2737367544323206e-13,
+      "PCB_outline_vs_FPL01_budget_symmetric_difference_mm3": -7.755488695693202e-09,
+      "metal_volume_mm3": 7251.318148757668,
+      "capacitor_recess_removed_volume_mm3": 1.8455761724599142,
+      "capacitor_recesses": [
+        {
+          "ref": "C1",
+          "pocket_bbox_mm": [
+            [
+              48.05,
+              -6.725,
+              1.7999999999999998
+            ],
+            [
+              51.95,
+              -4.275,
+              6.2
+            ]
+          ],
+          "floor_z_mm": 1.8,
+          "component_bottom_z_mm": 2.05,
+          "nominal_bottom_gap_mm": 0.25
+        },
+        {
+          "ref": "C2",
+          "pocket_bbox_mm": [
+            [
+              48.05,
+              -9.025,
+              1.7999999999999998
+            ],
+            [
+              51.95,
+              -6.575000000000001,
+              6.2
+            ]
+          ],
+          "floor_z_mm": 1.8,
+          "component_bottom_z_mm": 2.05,
+          "nominal_bottom_gap_mm": 0.25
+        }
+      ],
+      "LED_count": 42,
+      "back_components": 20,
+      "PCB_transform": "at q0: x=e_r along petal, y=e_t=(-sin(phi),cos(phi),0), LED side+z; identical same-variant PCB reused left/right, NOT mirrored",
+      "root_transform": "carrier02 mechanical module mirror retained; electronic parts pre-compensate that reflection"
+    },
+    {
+      "finger": "LR",
+      "variant": "LOWER",
+      "part_count": 95,
+      "near_x_less_than25_symmetric_difference_mm3": -2.2737367544323206e-13,
+      "PCB_outline_vs_FPL01_budget_symmetric_difference_mm3": -7.755488695693202e-09,
+      "metal_volume_mm3": 7251.318148757668,
+      "capacitor_recess_removed_volume_mm3": 1.8455761724599142,
+      "capacitor_recesses": [
+        {
+          "ref": "C1",
+          "pocket_bbox_mm": [
+            [
+              48.05,
+              -6.725,
+              1.7999999999999998
+            ],
+            [
+              51.95,
+              -4.275,
+              6.2
+            ]
+          ],
+          "floor_z_mm": 1.8,
+          "component_bottom_z_mm": 2.05,
+          "nominal_bottom_gap_mm": 0.25
+        },
+        {
+          "ref": "C2",
+          "pocket_bbox_mm": [
+            [
+              48.05,
+              -9.025,
+              1.7999999999999998
+            ],
+            [
+              51.95,
+              -6.575000000000001,
+              6.2
+            ]
+          ],
+          "floor_z_mm": 1.8,
+          "component_bottom_z_mm": 2.05,
+          "nominal_bottom_gap_mm": 0.25
+        }
+      ],
+      "LED_count": 42,
+      "back_components": 20,
+      "PCB_transform": "at q0: x=e_r along petal, y=e_t=(-sin(phi),cos(phi),0), LED side+z; identical same-variant PCB reused left/right, NOT mirrored",
+      "root_transform": "carrier02 mechanical module mirror retained; electronic parts pre-compensate that reflection"
+    }
+  ],
+  "own_interfaces": [
+    {
+      "finger": "UR",
+      "boolean_tests": 381,
+      "unintended_intersections": [],
+      "intended_M2_minor_pilot_thread_envelope_intersections": [
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_1",
+          "positive_intersection_mm3": 3.3929200658770595
+        },
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_2",
+          "positive_intersection_mm3": 3.3929200658770604
+        },
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_3",
+          "positive_intersection_mm3": 3.392920065877056
+        }
+      ],
+      "key_component_to_metal_gap_mm": {
+        "PCBA_C1": 0.25,
+        "PCBA_C2": 0.25,
+        "JST_header_reference": 0.875,
+        "JST_plug_reference": 0.875
+      },
+      "nominal_no_unintended_intersections": true
+    },
+    {
+      "finger": "UL",
+      "boolean_tests": 381,
+      "unintended_intersections": [],
+      "intended_M2_minor_pilot_thread_envelope_intersections": [
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_1",
+          "positive_intersection_mm3": 3.3929200658770595
+        },
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_2",
+          "positive_intersection_mm3": 3.3929200658770604
+        },
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_3",
+          "positive_intersection_mm3": 3.392920065877056
+        }
+      ],
+      "key_component_to_metal_gap_mm": {
+        "PCBA_C1": 0.25,
+        "PCBA_C2": 0.25,
+        "JST_header_reference": 0.875,
+        "JST_plug_reference": 0.875
+      },
+      "nominal_no_unintended_intersections": true
+    },
+    {
+      "finger": "LL",
+      "boolean_tests": 205,
+      "unintended_intersections": [],
+      "intended_M2_minor_pilot_thread_envelope_intersections": [
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_1",
+          "positive_intersection_mm3": 3.3929200658770595
+        },
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_2",
+          "positive_intersection_mm3": 3.3929200658770595
+        },
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_3",
+          "positive_intersection_mm3": 3.392920065877055
+        }
+      ],
+      "key_component_to_metal_gap_mm": {
+        "PCBA_C1": 0.25,
+        "PCBA_C2": 0.25,
+        "JST_header_reference": 0.875,
+        "JST_plug_reference": 0.875
+      },
+      "nominal_no_unintended_intersections": true
+    },
+    {
+      "finger": "LR",
+      "boolean_tests": 205,
+      "unintended_intersections": [],
+      "intended_M2_minor_pilot_thread_envelope_intersections": [
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_1",
+          "positive_intersection_mm3": 3.3929200658770595
+        },
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_2",
+          "positive_intersection_mm3": 3.3929200658770595
+        },
+        {
+          "a": "metal_blade_with_narrow_tongue",
+          "b": "lamp_SSH_M2_4_3",
+          "positive_intersection_mm3": 3.392920065877055
+        }
+      ],
+      "key_component_to_metal_gap_mm": {
+        "PCBA_C1": 0.25,
+        "PCBA_C2": 0.25,
+        "JST_header_reference": 0.875,
+        "JST_plug_reference": 0.875
+      },
+      "nominal_no_unintended_intersections": true
+    }
+  ],
+  "source_sha256": {
+    "engineering/head_integrated03_study.py": "9a837c9610c234951645e2adaf330d8ee060a1988a5345f50a5acda5c744eb50",
+    "engineering/p16_carrier02_study.py": "ed095e8b0b9565ee8be98e5a653d36da458b61425c5a2c08e7c9ecd2bdc513bc",
+    "engineering/generated/p16-carrier-02/study.json": "467753f6d853426e7d110ee2efb8310b86ba6e43e4c8917685203080703a2be3",
+    "engineering/generated/wrist-extension-01/study.json": "4dae41ebda4d98c1a86856d4e52e8b4091ad6d2ad26188e36fe989b6ef8c45d8",
+    "engineering/generated/led-petal-pocket/study.json": "e3aeec30250f96bec6ea16ce2057c43d8bf7a67d385e4ab5e292884458902303",
+    "engineering/generated/pad-retention-study/verification.json": "949e6660ceab638befec01f5e03016b9d8148284db23a47280ad9918099206be"
+  }
+}
