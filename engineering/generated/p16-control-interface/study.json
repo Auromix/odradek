@@ -1,0 +1,250 @@
+{
+  "revision": "P16-CTRL01",
+  "status": "conditional P16 electronics branch; no completed schematic/PCB or powered validation",
+  "generator_sha256": "197d765b87d9f298cfeed4b56086e842f67e8b8fc3b0818d820b00bf73191deb",
+  "sources_sha256": "ca64484b6e38f990813529425e8fa85d7f68a9538745d36e6cf88ec23aaca9c6",
+  "mechanical_sources_sha256": {
+    "engineering/p16_packaging_study.py": "3903d14a5b081574b8e9a7bfde7c74705b6ec68933f7084133b53b998987f68d",
+    "engineering/linear_finger_drive_study.py": "724c3f97d8c65b1c23926328ed4b66228bd144c8195015bac2080ff46aef52d9",
+    "engineering/generated/contact02-study/study.json": "d36f825a731eab458aa1c5945404023d3b075768ddd8b21d928a0b42b86e4ea9"
+  },
+  "kinematics": {
+    "D_mm": 123.0,
+    "crank_mm": 26.0,
+    "phase_deg": 68.0,
+    "CAD_closed_mm": 97.4,
+    "catalog_closed_mm": 97,
+    "stroke_mm": 50.0,
+    "valid_angle_deg": [
+      0,
+      122
+    ],
+    "inverse_branch": "68deg+asin((L\u00b2-D\u00b2-a\u00b2)/(2Da)); monotonic in0..122deg",
+    "minimum_jacobian_mm_per_rad": 12.05566624303579,
+    "roundtrip_max_deg": 8.526512829121202e-14,
+    "finite_difference_jacobian_max_mm_per_rad": 5.283948922851778e-08,
+    "samples": 10001,
+    "feedback_table": [
+      {
+        "q_deg": 0,
+        "pin_distance_mm": 99.371686441314,
+        "stroke_from_nominal_CAD_closed_mm": 1.9716864413139916,
+        "nominal_pot_fraction": 0.03943372882627983,
+        "ideal_12bit_ADC_code": 161.4811195436159,
+        "jacobian_mm_per_rad": 12.05566624303579,
+        "local_angle_step_deg_per_ADC_LSB": 0.05802932441340859,
+        "geometric_inverse_at_length_minus_plus_1mm_deg": [
+          -5.355536026284199,
+          4.368711777239632
+        ]
+      },
+      {
+        "q_deg": 15,
+        "pin_distance_mm": 103.42595069776984,
+        "stroke_from_nominal_CAD_closed_mm": 6.025950697769829,
+        "nominal_pot_fraction": 0.12051901395539659,
+        "ideal_12bit_ADC_code": 493.525362147349,
+        "jacobian_mm_per_rad": 18.608525530157397,
+        "local_angle_step_deg_per_ADC_LSB": 0.037594712504391815,
+        "geometric_inverse_at_length_minus_plus_1mm_deg": [
+          11.816937358238725,
+          17.991629665204073
+        ]
+      },
+      {
+        "q_deg": 30,
+        "pin_distance_mm": 108.93681289544453,
+        "stroke_from_nominal_CAD_closed_mm": 11.536812895444527,
+        "nominal_pot_fraction": 0.23073625790889055,
+        "ideal_12bit_ADC_code": 944.8649761369068,
+        "jacobian_mm_per_rad": 23.13321202496534,
+        "local_angle_step_deg_per_ADC_LSB": 0.03024146265040558,
+        "geometric_inverse_at_length_minus_plus_1mm_deg": [
+          27.490872864761876,
+          32.44803526157673
+        ]
+      },
+      {
+        "q_deg": 45,
+        "pin_distance_mm": 115.35113221023279,
+        "stroke_from_nominal_CAD_closed_mm": 17.951132210232785,
+        "nominal_pot_fraction": 0.3590226442046557,
+        "ideal_12bit_ADC_code": 1470.197728018065,
+        "jacobian_mm_per_rad": 25.52011813785875,
+        "local_angle_step_deg_per_ADC_LSB": 0.02741296743446818,
+        "geometric_inverse_at_length_minus_plus_1mm_deg": [
+          42.7451972547601,
+          47.236889457852115
+        ]
+      },
+      {
+        "q_deg": 60,
+        "pin_distance_mm": 122.12636425546869,
+        "stroke_from_nominal_CAD_closed_mm": 24.72636425546868,
+        "nominal_pot_fraction": 0.4945272851093736,
+        "ideal_12bit_ADC_code": 2025.089232522885,
+        "jacobian_mm_per_rad": 25.931151747144007,
+        "local_angle_step_deg_per_ADC_LSB": 0.026978445626270837,
+        "geometric_inverse_at_length_minus_plus_1mm_deg": [
+          57.79299251206404,
+          62.21312477413288
+        ]
+      },
+      {
+        "q_deg": 90,
+        "pin_distance_mm": 134.91102168276754,
+        "stroke_from_nominal_CAD_closed_mm": 37.511021682767534,
+        "nominal_pot_fraction": 0.7502204336553507,
+        "ideal_12bit_ADC_code": 3072.1526758186615,
+        "jacobian_mm_per_rad": 21.978441271291096,
+        "local_angle_step_deg_per_ADC_LSB": 0.03183038136333708,
+        "geometric_inverse_at_length_minus_plus_1mm_deg": [
+          87.42525649127344,
+          92.64211450331238
+        ]
+      },
+      {
+        "q_deg": 109,
+        "pin_distance_mm": 141.42543459160126,
+        "stroke_from_nominal_CAD_closed_mm": 44.025434591601254,
+        "nominal_pot_fraction": 0.8805086918320251,
+        "ideal_12bit_ADC_code": 3605.683093052143,
+        "jacobian_mm_per_rad": 17.065963025124457,
+        "local_angle_step_deg_per_ADC_LSB": 0.04099283271661728,
+        "geometric_inverse_at_length_minus_plus_1mm_deg": [
+          105.73369825611623,
+          112.46219265827017
+        ]
+      },
+      {
+        "q_deg": 122,
+        "pin_distance_mm": 144.84292421800302,
+        "stroke_from_nominal_CAD_closed_mm": 47.442924218003014,
+        "nominal_pot_fraction": 0.9488584843600603,
+        "ideal_12bit_ADC_code": 3885.5754934544466,
+        "jacobian_mm_per_rad": 12.97776364969087,
+        "local_angle_step_deg_per_ADC_LSB": 0.0539062188463855,
+        "geometric_inverse_at_length_minus_plus_1mm_deg": [
+          117.80759842709966,
+          126.70068743195034
+        ]
+      }
+    ],
+    "ADC_scope": "12-bit ideal ADC across the full physical stroke using common excitation/reference. Actual end codes require per-axis calibration; this is not an accuracy or connector acceptance specification."
+  },
+  "current_regulation": {
+    "driver_candidate": "DRV8874PWPR",
+    "quantity": 4,
+    "VREF_nominal_V": 2.5,
+    "VREF_total_planning_envelope_fraction": 0.01,
+    "VREF_candidate": "REF3125AIDBZR",
+    "R_IPROPI_ohm": 6190.0,
+    "R_tolerance_fraction": 0.001,
+    "gain_A_per_A": 0.00045,
+    "gain_error_fraction": 0.075,
+    "trip_nominal_A": 0.8975049362771496,
+    "trip_static_corner_A": [
+      0.8257137159718217,
+      0.9809593221761448
+    ],
+    "full_reference_and_resistor_selected": false,
+    "scope": "DC comparison threshold with nominal gain and specified error interval; not a guaranteed peak clamp. Switching blanking, deglitch, current-sense dynamics and VREF transient faults are excluded."
+  },
+  "duty_examples": [
+    {
+      "gesture": "upper_full",
+      "angle_span_deg": [
+        0,
+        109
+      ],
+      "round_trip_travel_mm": 84.10749630057452,
+      "no_load_minimum_motor_on_s": 17.522395062619694,
+      "minimum_cycle_time_if_20percent_window_s": 87.61197531309847,
+      "minimum_rest_s": 70.08958025047878,
+      "scope": "Minimum times assuming full no-load4.8mm/s, ignoring acceleration/reversal. Loaded times grow.20% catalog does not specify a thermal averaging window; this arithmetic does not qualify a duty schedule."
+    },
+    {
+      "gesture": "lower_full",
+      "angle_span_deg": [
+        0,
+        122
+      ],
+      "round_trip_travel_mm": 90.94247555337805,
+      "no_load_minimum_motor_on_s": 18.94634907362043,
+      "minimum_cycle_time_if_20percent_window_s": 94.73174536810214,
+      "minimum_rest_s": 75.78539629448171,
+      "scope": "Minimum times assuming full no-load4.8mm/s, ignoring acceleration/reversal. Loaded times grow.20% catalog does not specify a thermal averaging window; this arithmetic does not qualify a duty schedule."
+    },
+    {
+      "gesture": "small_attention_45_plus_minus_2",
+      "angle_span_deg": [
+        43,
+        47
+      ],
+      "round_trip_travel_mm": 3.5624595002136346,
+      "no_load_minimum_motor_on_s": 0.7421790625445073,
+      "minimum_cycle_time_if_20percent_window_s": 3.710895312722536,
+      "minimum_rest_s": 2.968716250178029,
+      "scope": "Minimum times assuming full no-load4.8mm/s, ignoring acceleration/reversal. Loaded times grow.20% catalog does not specify a thermal averaging window; this arithmetic does not qualify a duty schedule."
+    }
+  ],
+  "motor_supply": {
+    "candidate": "MEAN WELL LRS-75-12",
+    "external": true,
+    "catalog_nominal_V": 12,
+    "catalog_current_A": 6,
+    "catalog_power_W": 72,
+    "four_catalog_stall_A": 4,
+    "four_driver_quiescent_budget_A": 0.028,
+    "worst_simultaneous_input_scenario_A": 4.028,
+    "planning_margin_factor": 1.25,
+    "planned_input_A": 5.034999999999999,
+    "typical_four_Hbridge_conduction_W_at1A": 0.8,
+    "thermal_note": "0.2ohm is typical specified-condition bridge resistance, not a guaranteed hot12V value. Bridge loss is part of VM*I, do not add it again to 48W motor-branch input.",
+    "regen_test_case_J": [
+      0.05,
+      0.5,
+      2,
+      10
+    ],
+    "C_required_12_to_15V_uF": [
+      1234.567901234568,
+      12345.679012345678,
+      49382.71604938271,
+      246913.58024691357
+    ],
+    "energy_1000uF_12_to_15V_J": 0.0405,
+    "not_selected": [
+      "mains/branch fuse and wire size",
+      "12V regen/clamp hardware",
+      "actual hot PCB thermal path",
+      "head power connector and cable length"
+    ],
+    "scope": "Fault/start-current planning, not sustained stall operation. No sink capability is assumed for the AC/DC source.15V is P16 stated maximum input, not a proposed normal clamp setpoint; actual clamp must leave margin below it."
+  },
+  "proposed_modes": {
+    "PMODE": "GND: PH/EN",
+    "IMODE": "Hi-Z: fixed off-time and latched OCP; no external pull-up/down unless revised",
+    "nSLEEP": "individual or shared supervised enable, external default low; hard fault latches in supervisor",
+    "normal_STOP": "EN=0 means both outputs low (electrical brake), not Hi-Z. After current settles nSLEEP low gives Hi-Z; exact timing and mechanical hold require bench proof.",
+    "factory_pin3_pin4": "OUT1=H/OUT2=L extends; reverse retracts according to factory color/connector diagram; verify on unloaded axis before calibration.",
+    "current_is_not_force": "IPROPI cannot substitute calibrated contact force due to friction, screw efficiency and linkage changes."
+  },
+  "conditional_topology": {
+    "EtherCAT_nodes": 8,
+    "path": [
+      "master",
+      "J1",
+      "J2",
+      "J3",
+      "J4",
+      "J5",
+      "J6",
+      "J7",
+      "HEAD-DC"
+    ],
+    "head_channels": 4,
+    "comparison": "Old4xindependent EtherCAT BLDC servo route remains12nodes; do not add both architectures. HEAD-DC requires its own process-data/ESI and MCU4brushed-loop implementation."
+  },
+  "manufacturing_release": false
+}

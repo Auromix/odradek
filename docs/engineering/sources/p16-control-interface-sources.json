@@ -1,0 +1,66 @@
+{
+  "revision": "P16-CTRL01",
+  "accessed": "2026-09-27",
+  "manufacturer_documents": {
+    "drv8874": {
+      "url": "https://www.ti.com/lit/ds/symlink/drv8874.pdf",
+      "sha256": "fa2b0d0bdf49088299ee167675542b4c3b16b7c8e384ce03af93ffafafa6c80a"
+    },
+    "lrs75": {
+      "url": "https://www.meanwell.com/Upload/PDF/LRS-75/LRS-75-SPEC.PDF",
+      "sha256": "0dbb61cb8843af1039842201cc9537db6f7e2df514bbb25dd9b2b34a881808a5"
+    },
+    "ref31": {
+      "url": "https://www.ti.com/lit/gpn/REF31",
+      "sha256": "1fd81fb15648b7b69fb9cc14760b4949877fc63eff3632228815f40c79e164f9"
+    },
+    "p16": {
+      "url": "https://www.actuonix.com/assets/images/datasheets/ActuonixP16Datasheet.pdf",
+      "sha256": "070deb5f22cead2e67abec1e02b870234e9e321fdacc38d4debb51c247c1768d"
+    }
+  },
+  "references": {
+    "P16": {
+      "part": "P16-50-256-12-P",
+      "source": "p16",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "checked_pinout": "OptionP 1orange potlow,2purple wiper,3red motor+,4black motor-,5yellow pothigh; page3 connector face,2.54mm pitch"
+    },
+    "driver": {
+      "part": "DRV8874PWPR",
+      "source": "drv8874",
+      "pages": [
+        3,
+        6,
+        10,
+        11,
+        13,
+        17,
+        21,
+        30,
+        31
+      ],
+      "notes": "PMODElow PH/EN;IMODEfloating fixedofflatchedOCP;450uA/A mirror with7.5%error0.4..1A;typical bridge200mohm"
+    },
+    "reference": {
+      "part": "REF3125AIDBZR",
+      "source": "ref31",
+      "pages": [
+        4,
+        6,
+        7
+      ],
+      "notes": "2.5V,0.2%initial,20ppm/deg fullrange.1%assembled envelope is our acceptance target, not direct datasheet sum."
+    },
+    "supply": {
+      "part": "LRS-75-12",
+      "source": "lrs75",
+      "notes": "12V6A72W external source. No regenerative sink capability assumed."
+    }
+  },
+  "redistribution": "Original analysis only. Manufacturer PDFs retained outside repository."
+}

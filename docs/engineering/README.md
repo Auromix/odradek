@@ -24,6 +24,7 @@
 | 材料与梁 | [截面筛选](structure-screening.md) | 6061-T6 闭口矩形梁与双管比较；不含完整连接柔度 |
 | 底座 | [开腔底座及倾覆计算](base-structure-study.md) | 5种原创零件、8件装配、4页图；固定到桌架的候选，未承载放行 |
 | 直线指驱动候选 | [LINEAR-01](linear-finger-drive-study.md) | 独立曲柄正逆解／速度／夹力；轻量但速度和20%占空比受限，未选定 |
+| 四路推杆控制候选 | [P16-CTRL01](p16-control-interface.md) | 4×DRV8874、12V/6A外置电源、反馈反解和静态限流角落；8从站为条件分支，实际PCB/力与占空未验证 |
 | 真实直线驱动封装 | [P16-PACK-01](gripper-linear-packaging-study.md) | 原厂配合、双叉肩轴与四组独立运动；建模1.423 kg，后伸14 mm，载体/J7路径待补 |
 | 窄根可拆接口 | [SUPPORT-03](gripper-root-support-study.md) | 真实键轴、叉、螺钉与捕获螺母；完整名义角域避让通过，公差/强度未放行 |
 | 指轴支承 | [单指双支承与四组反例](gripper-shaft-support-study.md) | 修正带轮真实宽度，否定旧紧凑切向布局；正在重新布置传动 |
