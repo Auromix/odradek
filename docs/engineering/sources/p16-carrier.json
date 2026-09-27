@@ -1,0 +1,142 @@
+{
+  "revision": "P16-CARRIER-01",
+  "license": "CC-BY-NC-4.0 for original research only",
+  "vendor_media_policy": "Manufacturer STEP and PDFs remain private in work/; only measurements, URLs and hashes are published. No supplier license is replaced.",
+  "verified_on": "2026-09-27",
+  "sources": [
+    {
+      "id": "PC-01",
+      "manufacturer": "Stereolabs",
+      "source_page": "https://www.stereolabs.com/store/products/zed-x-one-s",
+      "url": "https://cdn.sanity.io/files/s18ewfw4/staging/55a6b2b28ff22034133862a443a863107b80db00.pdf/ZED-X-One-S-Datasheet.pdf",
+      "locator": "Rev1.8: PDF p3 physical summary; p9 fisheye drawing; p11 front mount; p12 bottom mount",
+      "download_sha256": "78ca23bd946909956a2ba6e3fec61b27cc4a889453c13a14734143c66c11dbd0",
+      "facts": {
+        "summary_mm": [
+          25,
+          25,
+          34.2
+        ],
+        "drawing_overall_depth_mm": 47.5,
+        "drawing_to_rear_screw_head_mm": 38.3,
+        "body_back_to_front_mount_mm": 20.22,
+        "mount_front": "4 x M2 x0.4 x6 deep on21mm square",
+        "bottom_short_thread_mm": 1.2,
+        "mass_g": 36,
+        "warning": "Summary34.2 does not cover complete hardware. p9 drawing and native CAD agree on approx47.5 including rear FAKRA. Do not silently reconcile1.2mm bottom shallow thread with older2mm web entry."
+      }
+    },
+    {
+      "id": "PC-02",
+      "manufacturer": "Stereolabs",
+      "source_page": "https://www.stereolabs.com/3dmodels",
+      "url": "https://cdn.sanity.io/files/s18ewfw4/staging/ffdb8de47469bcabdc26a3ce7b5e82bf8739eeef.step/ZED%20X%20ONE%20S%20Fisheye.step",
+      "locator": "Official3Dmodels page href, original STEP PRODUCT names and solid geometry",
+      "download_sha256": "c65bcc5ba4851d4aaa8504918fdc9e1654253808cf913f6b5b867bd3a102b3f7",
+      "facts": {
+        "solids_total": 14,
+        "excluded_reference_solids": [
+          {
+            "index": 7,
+            "PRODUCT": "Image plane"
+          },
+          {
+            "index": 8,
+            "PRODUCT": "Simple FOV"
+          }
+        ],
+        "physical_solids": 12,
+        "physical_bbox_mm": [
+          [
+            -12.5000001,
+            -12.5000001,
+            -33.5500371403
+          ],
+          [
+            12.5000001271,
+            12.5000001271,
+            13.911658
+          ]
+        ],
+        "front_plane_z_mm": 0,
+        "front_minor_holes_xy_mm": [
+          [
+            -10.5,
+            -10.5
+          ],
+          [
+            -10.5,
+            10.5
+          ],
+          [
+            10.5,
+            10.5
+          ],
+          [
+            10.5,
+            -10.5
+          ]
+        ],
+        "minor_hole_d_mm": 1.623,
+        "front_mount_is_nominal": "Effective thread6 from drawing; STEP minor cylinders are not full thread form."
+      }
+    },
+    {
+      "id": "PC-03",
+      "manufacturer": "Stereolabs",
+      "source_page": "https://www.stereolabs.com/3dmodels",
+      "url": "https://cdn.sanity.io/files/s18ewfw4/staging/93950f8ae45e38bac0814db247ad58c799831cb1.stp/GMSL%20Cable%20-%20FAKRA%20Z%20Female%20connector.stp",
+      "locator": "Official3Dmodels page: GMSL Cable - FAKRA Z Female connector",
+      "download_sha256": "2bab7cb6f41998c82f57a716e668741e2ae2556bcb1c2a9a232add2a2da518ce",
+      "facts": {
+        "solids": 6,
+        "native_bbox_mm": [
+          [
+            -4.1000001,
+            -4.95,
+            -4.7
+          ],
+          [
+            22.1,
+            4.75,
+            9
+          ]
+        ],
+        "reservation": "Full26.2mm original-connector axial length reserved behind camera without mate overlap. Precise plug-to-socket mating datum/keying/cable exit bend not verified. Not certified robot flex cable."
+      }
+    }
+  ],
+  "inherited_primary_evidence": [
+    {
+      "file": "gripper-miter-support.json",
+      "ids": [
+        "MS-03"
+      ],
+      "used": "SKF7201 BECBP / KM1 / MB1 dimensions, catalog mass, shoulders and clearance limitations; source PDF1106/1108 for KM1/MB1. MB1 M10.5 and d12 imply nominal internal tab tip -4.5 relative center in chosen slot orientation; our3.2x1.6 slot is a clearance proposal, not a supplier fit prescription."
+    },
+    {
+      "file": "gripper-linear-support.json",
+      "used": "P16 native body and stroke, NBK SBSM-M3-4-25/-30 pins; Unbrako nominal screw envelope and Boellhoff DIN934 nut dimensions."
+    },
+    {
+      "file": "rh-interface-extraction.json",
+      "model": "RH14-N",
+      "used": "Actual output plane/pilot/8 nonuniform hole centers; source files and hashes retained there. M3 output screw length unselected."
+    }
+  ],
+  "other_input_evidence": [
+    {
+      "file": "../../../engineering/electronics/upper-petal-prototype/mechanical-power-budget.json",
+      "used": "Central display12mm reservation borrows component-level8.9mm including paired GH or10.3mm with diffuser reference; no actual central PCBA inferred."
+    },
+    {
+      "file": "../structure-screening.md",
+      "used": "6061 engineering E69GPa and density2700kg/m3 screening basis; not material certification."
+    },
+    {
+      "file": "../../../engineering/generated/p16-carrier-01/led-interface-reservation.json",
+      "used": "Parent latest pocketX38.5..47.5/Y+/-8.75; JST eGH.pdf pages2-3 side paired envelope15.75x7.15x4.35. No mating CAD or final origin inferred. Old independent box explicitly superseded.",
+      "primary_url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf"
+    }
+  ]
+}

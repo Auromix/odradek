@@ -1,0 +1,121 @@
+{
+  "revision": "P16-CARRIER-01",
+  "provisional_keepout_local_mm": [
+    [
+      38.5,
+      -8.75,
+      -3.7
+    ],
+    [
+      47.5,
+      8.75,
+      0
+    ]
+  ],
+  "source": "Parent latest pocket centeredX43, openingX38.5..47.5/Y+/-8.75. Direct GH7.3mm stack reachesZ-3.7; side GH4.35mm reachesZ-0.75. This is a conservative below-plate pocket-sized probe, not mated connector CAD.",
+  "fixed_obstacle_checks": [
+    {
+      "finger": "UR",
+      "certified": true,
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "velocity_bound_mm_per_rad": 47.643887330905315,
+      "sample_count": 56,
+      "minimum_sample_mm": 14.859761101713566,
+      "minimum_sample_q": 40.0,
+      "continuous_lower_bound_mm": 14.028218399340055,
+      "failures": []
+    },
+    {
+      "finger": "UL",
+      "certified": true,
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "velocity_bound_mm_per_rad": 47.643887330905315,
+      "sample_count": 56,
+      "minimum_sample_mm": 14.859761101713568,
+      "minimum_sample_q": 14.0,
+      "continuous_lower_bound_mm": 14.028218399340057,
+      "failures": []
+    },
+    {
+      "finger": "LL",
+      "certified": true,
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "velocity_bound_mm_per_rad": 47.643887330905315,
+      "sample_count": 62,
+      "minimum_sample_mm": 14.859761101713564,
+      "minimum_sample_q": 116.0,
+      "continuous_lower_bound_mm": 14.028218399340053,
+      "failures": []
+    },
+    {
+      "finger": "LR",
+      "certified": true,
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "velocity_bound_mm_per_rad": 47.643887330905315,
+      "sample_count": 62,
+      "minimum_sample_mm": 14.859761101713564,
+      "minimum_sample_q": 116.0,
+      "continuous_lower_bound_mm": 14.028218399340053,
+      "failures": []
+    }
+  ],
+  "own_P16_continuous_checks": [
+    {
+      "finger": "UR",
+      "certified": true,
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "velocity_bound_mm_per_rad": 136.41419804365995,
+      "sample_count": 56,
+      "minimum_sample_mm": 29.472297404350336,
+      "minimum_sample_q": 0.0,
+      "continuous_lower_bound_mm": 27.091420502020863,
+      "failures": []
+    },
+    {
+      "finger": "LL",
+      "certified": true,
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "velocity_bound_mm_per_rad": 136.41419804365995,
+      "sample_count": 62,
+      "minimum_sample_mm": 29.472297404350336,
+      "minimum_sample_q": 0.0,
+      "continuous_lower_bound_mm": 27.091420502020863,
+      "failures": []
+    }
+  ],
+  "earlier_box_superseded": {
+    "box": [
+      [
+        25,
+        -7,
+        -4
+      ],
+      [
+        40,
+        7,
+        0
+      ]
+    ],
+    "old_constant_u_gap_mm": 0.9,
+    "conclusion": "Old0.9mm u-slab separation does NOT apply to the wider latest pocket. Recomputed geometric certificates replace it."
+  },
+  "scope": "Backside space against fixed carrier/optics and own actuator only. Does not replace actual GH/pin/wire/PCB integration, inner cavity fit or adjacent moving-petal proof. x>25 geometry remains parent-owned and unmodified."
+}

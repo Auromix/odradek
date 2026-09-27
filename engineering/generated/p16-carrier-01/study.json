@@ -1,0 +1,489 @@
+{
+  "revision": "P16-CARRIER-01",
+  "parameters": {
+    "revision": "P16-CARRIER-01",
+    "J7_output_plane_head_z_mm": -140.0,
+    "adapter_front_head_z_mm": -130.0,
+    "central_ring_OD_mm": 84.0,
+    "central_ring_ID_mm": 52.0,
+    "central_ring_thickness_mm": 8.0,
+    "housing_OD_mm": 48.0,
+    "bearing_d_D_B_mm": [
+      12.0,
+      32.0,
+      10.0
+    ],
+    "bearing_centers_u_mm": [
+      19.0,
+      29.0
+    ],
+    "stem_r_u_mm": [
+      20.0,
+      20.0
+    ],
+    "stem_blind_bore_D_mm": 14.0,
+    "base_bracket_extra_thickness_mm": 2.0,
+    "base_arm_thickness_mm": 8.0,
+    "steel_root_integral": true,
+    "display_keepout_D_mm": 64.0,
+    "display_keepout_depth_mm": 12.0
+  },
+  "baseline_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "manufacturing_release": false,
+  "export_QA": [
+    {
+      "filename": "P16-CARRIER-01-open.step",
+      "valid": true,
+      "solid_count": 236,
+      "roundtrip_volume_delta_mm3": -6.495974957942963e-08
+    },
+    {
+      "filename": "P16-CARRIER-01-closed.step",
+      "valid": true,
+      "solid_count": 236,
+      "roundtrip_volume_delta_mm3": -9.848736226558685e-08
+    }
+  ],
+  "rigid_state_checks": [
+    {
+      "boolean_count": 870,
+      "positive_intersections": [
+        {
+          "a": "J7_existing_adapter",
+          "b": "J7_to_carrier_M4x16_0",
+          "volume_mm3": 28.896369227719163,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "J7_existing_adapter",
+          "b": "J7_to_carrier_M4x16_1",
+          "volume_mm3": 28.896369227719156,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "J7_existing_adapter",
+          "b": "J7_to_carrier_M4x16_2",
+          "volume_mm3": 28.896369227719163,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "J7_existing_adapter",
+          "b": "J7_to_carrier_M4x16_3",
+          "volume_mm3": 28.896369227719156,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_-1_physical_keepout",
+          "b": "camera_-1_M2x6_-10.5_-10.5",
+          "volume_mm3": 12.566370614359169,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_-1_physical_keepout",
+          "b": "camera_-1_M2x6_-10.5_10.5",
+          "volume_mm3": 12.56637061435917,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_-1_physical_keepout",
+          "b": "camera_-1_M2x6_10.5_-10.5",
+          "volume_mm3": 12.566370614359176,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_-1_physical_keepout",
+          "b": "camera_-1_M2x6_10.5_10.5",
+          "volume_mm3": 12.56637061435917,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_1_physical_keepout",
+          "b": "camera_1_M2x6_-10.5_-10.5",
+          "volume_mm3": 12.56637061435917,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_1_physical_keepout",
+          "b": "camera_1_M2x6_-10.5_10.5",
+          "volume_mm3": 12.566370614359169,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_1_physical_keepout",
+          "b": "camera_1_M2x6_10.5_-10.5",
+          "volume_mm3": 12.566370614359172,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_1_physical_keepout",
+          "b": "camera_1_M2x6_10.5_10.5",
+          "volume_mm3": 12.566370614359169,
+          "intended_nominal_thread_or_envelope_interface": true
+        }
+      ],
+      "passes": true
+    },
+    {
+      "boolean_count": 986,
+      "positive_intersections": [
+        {
+          "a": "J7_existing_adapter",
+          "b": "J7_to_carrier_M4x16_0",
+          "volume_mm3": 28.896369227719163,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "J7_existing_adapter",
+          "b": "J7_to_carrier_M4x16_1",
+          "volume_mm3": 28.896369227719156,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "J7_existing_adapter",
+          "b": "J7_to_carrier_M4x16_2",
+          "volume_mm3": 28.896369227719163,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "J7_existing_adapter",
+          "b": "J7_to_carrier_M4x16_3",
+          "volume_mm3": 28.896369227719156,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_-1_physical_keepout",
+          "b": "camera_-1_M2x6_-10.5_-10.5",
+          "volume_mm3": 12.566370614359169,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_-1_physical_keepout",
+          "b": "camera_-1_M2x6_-10.5_10.5",
+          "volume_mm3": 12.56637061435917,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_-1_physical_keepout",
+          "b": "camera_-1_M2x6_10.5_-10.5",
+          "volume_mm3": 12.566370614359176,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_-1_physical_keepout",
+          "b": "camera_-1_M2x6_10.5_10.5",
+          "volume_mm3": 12.56637061435917,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_1_physical_keepout",
+          "b": "camera_1_M2x6_-10.5_-10.5",
+          "volume_mm3": 12.56637061435917,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_1_physical_keepout",
+          "b": "camera_1_M2x6_-10.5_10.5",
+          "volume_mm3": 12.566370614359169,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_1_physical_keepout",
+          "b": "camera_1_M2x6_10.5_-10.5",
+          "volume_mm3": 12.566370614359172,
+          "intended_nominal_thread_or_envelope_interface": true
+        },
+        {
+          "a": "camera_1_physical_keepout",
+          "b": "camera_1_M2x6_10.5_10.5",
+          "volume_mm3": 12.566370614359169,
+          "intended_nominal_thread_or_envelope_interface": true
+        }
+      ],
+      "passes": true
+    }
+  ],
+  "motion": {
+    "UR_own_carrier_analytic": {
+      "certified": true,
+      "coaxial_shell_minimum_gap_mm": 0.22634549293720382,
+      "method": "Own support shell is a rotationally invariant conservative superset, including cap and cap screw envelopes; exact distance at q0 is valid throughout range.",
+      "stem_proof": {
+        "wide_blade_xmin_mm": 24.37832081605201,
+        "wide_blade_zmin_through_motion_mm": 0,
+        "other_positive_u_rotor_zmin_mm": -17.67766952966369,
+        "stem_zmax_mm": -18,
+        "actuator_u_max_mm": -7.9,
+        "stem_u_min_mm": 14
+      },
+      "base_arm_z_range_mm": [
+        -154,
+        -146
+      ],
+      "base_arm_proof": "Existing continuous base-bridge proof has its obstacle top at -139, and new arm is farther rearward. Pins and rolling contact are separate intended interfaces."
+    },
+    "UR_moving_vs_other_fixed": {
+      "certified": true,
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "velocity_bound_mm_per_rad": 152.79792097637267,
+      "sample_count": 56,
+      "minimum_sample_mm": 12.336419308376845,
+      "minimum_sample_q": 80.0,
+      "continuous_lower_bound_mm": 9.669592497137034,
+      "failures": []
+    },
+    "UR_actuator_vs_other_fixed": {
+      "certified": true,
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "velocity_bound_mm_per_rad": 88.77031071275465,
+      "sample_count": 56,
+      "minimum_sample_mm": 8.38030078654261,
+      "minimum_sample_q": 56.0,
+      "continuous_lower_bound_mm": 6.830966586586648,
+      "failures": []
+    },
+    "LL_own_carrier_analytic": {
+      "certified": true,
+      "coaxial_shell_minimum_gap_mm": 0.3798956602738156,
+      "method": "Own support shell is a rotationally invariant conservative superset, including cap and cap screw envelopes; exact distance at q0 is valid throughout range.",
+      "stem_proof": {
+        "wide_blade_xmin_mm": 24.638297872340427,
+        "wide_blade_zmin_through_motion_mm": 0,
+        "other_positive_u_rotor_zmin_mm": -17.67766952966369,
+        "stem_zmax_mm": -18,
+        "actuator_u_max_mm": -7.9,
+        "stem_u_min_mm": 14
+      },
+      "base_arm_z_range_mm": [
+        -154,
+        -146
+      ],
+      "base_arm_proof": "Existing continuous base-bridge proof has its obstacle top at -139, and new arm is farther rearward. Pins and rolling contact are separate intended interfaces."
+    },
+    "LL_moving_vs_other_fixed": {
+      "certified": true,
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "velocity_bound_mm_per_rad": 104.14991432882616,
+      "sample_count": 62,
+      "minimum_sample_mm": 38.538671240477605,
+      "minimum_sample_q": 0.0,
+      "continuous_lower_bound_mm": 36.72091231976957,
+      "failures": []
+    },
+    "LL_actuator_vs_other_fixed": {
+      "certified": true,
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "velocity_bound_mm_per_rad": 88.77031071275465,
+      "sample_count": 62,
+      "minimum_sample_mm": 8.38030078654261,
+      "minimum_sample_q": 56.0,
+      "continuous_lower_bound_mm": 6.830966586586648,
+      "failures": []
+    },
+    "UL_asymmetric_fixed_root": {
+      "certified": true,
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "velocity_bound_mm_per_rad": 152.79792097637267,
+      "sample_count": 56,
+      "minimum_sample_mm": 49.035856852906015,
+      "minimum_sample_q": 108.0,
+      "continuous_lower_bound_mm": 46.36903004166621,
+      "failures": []
+    },
+    "UL_asymmetric_fixed_actuator": {
+      "certified": true,
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "velocity_bound_mm_per_rad": 88.77031071275465,
+      "sample_count": 56,
+      "minimum_sample_mm": 24.657457938418798,
+      "minimum_sample_q": 56.0,
+      "continuous_lower_bound_mm": 23.108123738462837,
+      "failures": []
+    },
+    "LR_asymmetric_fixed_root": {
+      "certified": true,
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "velocity_bound_mm_per_rad": 104.14991432882616,
+      "sample_count": 62,
+      "minimum_sample_mm": 76.56087077717297,
+      "minimum_sample_q": 0.0,
+      "continuous_lower_bound_mm": 74.74311185646494,
+      "failures": []
+    },
+    "LR_asymmetric_fixed_actuator": {
+      "certified": true,
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "velocity_bound_mm_per_rad": 88.77031071275465,
+      "sample_count": 62,
+      "minimum_sample_mm": 14.625839964454682,
+      "minimum_sample_q": 56.0,
+      "continuous_lower_bound_mm": 13.07650576449872,
+      "failures": []
+    },
+    "mirror_scope": "UR maps to UL and LL to LR under x reflection for all new fixed original carrier/optic/fastener geometry. J7 adapter asymmetric hole pattern and offset FAKRA reservations checked separately for UL/LR.",
+    "four_independent_modules": {
+      "module_ranges": [
+        {
+          "finger": "UR",
+          "min_mm": [
+            4.995655392682243,
+            0.5930712778999565,
+            -154.53341340561988
+          ],
+          "max_mm": [
+            185.56189820365543,
+            133.25429371287296,
+            151.649501024784
+          ],
+          "sample_step_deg": 1,
+          "half_interval_margin_mm": 1.3334134056199058,
+          "point_speed_bound_mm_per_rad": 152.79792097637267
+        },
+        {
+          "finger": "UL",
+          "min_mm": [
+            -185.56189820365543,
+            0.5930712778999565,
+            -154.53341340561988
+          ],
+          "max_mm": [
+            -4.995655392682247,
+            133.25429371287294,
+            151.649501024784
+          ],
+          "sample_step_deg": 1,
+          "half_interval_margin_mm": 1.3334134056199058,
+          "point_speed_bound_mm_per_rad": 152.79792097637267
+        },
+        {
+          "finger": "LL",
+          "min_mm": [
+            -126.06677973037294,
+            -126.06677973037291,
+            -104.108879460354
+          ],
+          "max_mm": [
+            -1.4467641370068414,
+            -1.4467641370068423,
+            151.31729940257253
+          ],
+          "sample_step_deg": 1,
+          "half_interval_margin_mm": 0.9088794603540183,
+          "point_speed_bound_mm_per_rad": 104.14991432882616
+        },
+        {
+          "finger": "LR",
+          "min_mm": [
+            1.4467641370068423,
+            -126.06677973037296,
+            -104.108879460354
+          ],
+          "max_mm": [
+            126.0667797303729,
+            -1.446764137006848,
+            151.31729940257253
+          ],
+          "sample_step_deg": 1,
+          "half_interval_margin_mm": 0.9088794603540183,
+          "point_speed_bound_mm_per_rad": 104.14991432882616
+        }
+      ],
+      "pairs": [
+        {
+          "a": "UR",
+          "b": "UL",
+          "axis": "x",
+          "continuous_independent_gap_bound_mm": 9.99131078536449,
+          "certified": true
+        },
+        {
+          "a": "UR",
+          "b": "LL",
+          "axis": "x",
+          "continuous_independent_gap_bound_mm": 6.442419529689085,
+          "certified": true
+        },
+        {
+          "a": "UR",
+          "b": "LR",
+          "axis": "y",
+          "continuous_independent_gap_bound_mm": 2.0398354149068045,
+          "certified": true
+        },
+        {
+          "a": "UL",
+          "b": "LL",
+          "axis": "y",
+          "continuous_independent_gap_bound_mm": 2.0398354149067988,
+          "certified": true
+        },
+        {
+          "a": "UL",
+          "b": "LR",
+          "axis": "x",
+          "continuous_independent_gap_bound_mm": 6.442419529689089,
+          "certified": true
+        },
+        {
+          "a": "LL",
+          "b": "LR",
+          "axis": "x",
+          "continuous_independent_gap_bound_mm": 2.8935282740136836,
+          "certified": true
+        }
+      ],
+      "all_independent_pairs_certified": true,
+      "drive_envelope": {
+        "conservative_coaxial_diameter_mm": 255.7703933994963,
+        "zmin_mm": -154.53341340561988,
+        "zmax_mm": 78.40815651338295,
+        "method": "world AABB corners for each part at 1deg plus global speed margin; excludes distal blade/light/pads, enclosure and cable bend volumes"
+      }
+    },
+    "unchanged_interfaces": {
+      "source": "engineering/generated/p16-packaging-study/study.json",
+      "source_sha256": "228790dd98a640948d8ff5a74b1465b575aa504c577874a6264dfaef6a2b797c",
+      "retained": "P16 case vs crank, guide/slider vs cheeks/bridge, pin native fits; root integral changes are u>=-5 and do not enter negative-u actuator halfspace; base added material is z<=-144. Full new root vs actuator native samples below.",
+      "limitations": "CONTACT02 distal light surface remains placeholder; parent real LED/GH and soft-pad retention not merged."
+    }
+  },
+  "native_checks_cached_file": "native-checks.json; final carrier subset proof in qa.json",
+  "local_nominal_finger_motion_passed": true,
+  "whole_wrist_available": false,
+  "minimum_carrier_clearance_is_nominal_only_mm": 0.22634549293720382,
+  "contact02_sha256": "d36f825a731eab458aa1c5945404023d3b075768ddd8b21d928a0b42b86e4ea9",
+  "generator_sha256": {
+    "p16_carrier_study.py": "19f0d00207349825a814d15b7e768030dbe09ac071fc5b0d5dccf65f45be224c",
+    "p16_carrier_review.py": "639fcbe3d9ffd885f9b95059a82220ab95dde9efaa6e9060e8eb6331c4d5f347",
+    "p16_carrier_qa.py": "642f0286f714e1304212d854fb7b7e4c1733a4c684827b696b432bd6dbc238bc",
+    "draw_p16_carrier.py": "49b92e676b8889dae72497d7a1fe44a90950ba6fd70ce757dcf616548c0f5d78"
+  },
+  "warnings": [
+    "Own coaxial nominal clearances0.226345 upper/0.379896 lower do not cover tolerance or elastic displacement; enlarge near-root clearance before manufacturing.",
+    "J7 +/-90deg collides with J6; see wrist-cross-check.json.",
+    "Real distal lamp stack and paired connector not integrated."
+  ]
+}

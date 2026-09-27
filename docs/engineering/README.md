@@ -37,6 +37,7 @@
 | 上灯片电子样片 | [ULP-02 原生四层PCB](hardware/upper-petal-ulp02.md)／[ULP-01历史电路](hardware/upper-petal-prototype.md) | 113 LED、134器件、317针、39网；实跑ERC/DRC/未连/网表一致性均0，已导出制造审查文件，未实测或装机放行 |
 | 灯片真实层叠 | [电子腔与PCB安装](led-petal-pocket-study.md) | 4.45 mm普通层叠、安装柱/低头螺钉和净截面计算；GH/线束与正式灯板未集成 |
 | 腕部承力连接 | [J6—J7三件结构](link67-structure-study.md) | 24螺钉、零位/工具/J7连续装入已检查；末端旋转碰撞和生产公差未闭合 |
+| 完整末端载体 | [P16-CARRIER-01](p16-carrier-study.md) | 四轴承座/P16基叉/J7后架/双鱼眼前架及236实体端态；2.727kg已建模型，根部小间隙与腕旋转仍需修订 |
 | 灯光与IO | [609点LED与控制/功率](hardware/head-lighting-io-selection.md) | 真实圆形点阵与四片LED坐标，MCU/ESC/电源候选；不是完整PCB |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
 | 放行差距 | [发布检查清单](release-checklist.md) | 对应证据和实际未完成事项 |

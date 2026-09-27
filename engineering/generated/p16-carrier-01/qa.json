@@ -1,0 +1,146 @@
+{
+  "revision": "P16-CARRIER-01",
+  "parts": [
+    {
+      "part": "main-carrier",
+      "valid": true,
+      "solid_count": 1,
+      "mesh_watertight": true,
+      "mesh_body_count": 1,
+      "bbox_mm": [
+        [
+          -90.51637924884928,
+          -83.43860028001471,
+          -154.0031330740168
+        ],
+        [
+          90.5163792488516,
+          81.77476718922028,
+          74.01042555397882
+        ]
+      ],
+      "volume_mm3": 322945.8265818767,
+      "step_sha256": "57ea271828da2281bf34bd7bb87fb9d15420859cf501e65d4ec9888c4d1638fb"
+    },
+    {
+      "part": "integral-steel-root-spindle",
+      "valid": true,
+      "solid_count": 1,
+      "mesh_watertight": true,
+      "mesh_body_count": 1,
+      "bbox_mm": [
+        [
+          -12.004279829720776,
+          -29.10213886112693,
+          -29.108919079856932
+        ],
+        [
+          25.000000100000435,
+          42.002692026093655,
+          12.005365069205771
+        ]
+      ],
+      "volume_mm3": 12659.940750070185,
+      "step_sha256": "c0b9d0a15a357a624354531751bc27fc730de0b9f709b203072c079183764014"
+    },
+    {
+      "part": "bearing-outer-cap",
+      "valid": true,
+      "solid_count": 1,
+      "mesh_watertight": true,
+      "mesh_body_count": 1,
+      "bbox_mm": [
+        [
+          -24.008056168642486,
+          33.98925827480408,
+          -24.000000100000005
+        ],
+        [
+          24.008056168642486,
+          38.01074172519592,
+          24.010741725195924
+        ]
+      ],
+      "volume_mm3": 4491.330813315027,
+      "step_sha256": "63aabb20cf0825d628bdc0e6bd0e51009d97930d4eb67dc2f5750b28681c5727"
+    },
+    {
+      "part": "base-bracket",
+      "valid": true,
+      "solid_count": 1,
+      "mesh_watertight": true,
+      "mesh_body_count": 1,
+      "bbox_mm": [
+        [
+          -15.000000100000006,
+          -33.00296144942461,
+          -146.0009847489763
+        ],
+        [
+          15.000000100000006,
+          -2.9970385505753896,
+          -115.99703855057538
+        ]
+      ],
+      "volume_mm3": 8145.881455601775,
+      "step_sha256": "ecb5731c738f8652c1847ce31108904fce254f5596036ed556197777f66271d5"
+    },
+    {
+      "part": "removable-optical-frame",
+      "valid": true,
+      "solid_count": 1,
+      "mesh_watertight": true,
+      "mesh_body_count": 1,
+      "bbox_mm": [
+        [
+          -40.0022057889869,
+          -65.41071353496153,
+          -16.08759661440956
+        ],
+        [
+          40.00221415127401,
+          65.41071353496855,
+          -7.951331110604361
+        ]
+      ],
+      "volume_mm3": 13731.457001074145,
+      "step_sha256": "e7aea5f9ac03866b7554ef42d6d23e86ef892ac98eda5eb6c581b0271756bc21"
+    }
+  ],
+  "late_drilling_fix": {
+    "new_material_outside_checked_old_carrier_mm3": 0.0,
+    "removed_material_mm3": 7389.025921244903,
+    "reason": "Re-cut axial bore after all unions to keep bottom drilling access open; old carrier subset collision and service results remain conservative.",
+    "native_J7_proof_preserved_by_subset": true
+  },
+  "blind_bore_access": [
+    {
+      "finger": "UR",
+      "tool_probe_D_mm": 13.8,
+      "clear_path_mm": 126,
+      "positive_intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UL",
+      "tool_probe_D_mm": 13.8,
+      "clear_path_mm": 126,
+      "positive_intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "tool_probe_D_mm": 13.8,
+      "clear_path_mm": 152,
+      "positive_intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LR",
+      "tool_probe_D_mm": 13.8,
+      "clear_path_mm": 152,
+      "positive_intersection_mm3": 0.0,
+      "passes": true
+    }
+  ]
+}

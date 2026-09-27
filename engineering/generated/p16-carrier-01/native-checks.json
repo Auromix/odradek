@@ -1,0 +1,127 @@
+{
+  "P16_new_root_samples": [
+    {
+      "finger": "UR",
+      "q": 0,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q": 30,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q": 60,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q": 90,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q": 109.0,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q": 0,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q": 30,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q": 60,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q": 90,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q": 122.0,
+      "native_P16_vs_new_root_mm3": 0.0,
+      "passes": true
+    }
+  ],
+  "camera": {
+    "physical_solids": 12,
+    "reference_solids_excluded": [
+      {
+        "index": 7,
+        "product": "Image plane"
+      },
+      {
+        "index": 8,
+        "product": "Simple FOV"
+      }
+    ],
+    "physical_bbox_native_mm": [
+      [
+        -12.500000100000003,
+        -12.500000100000001,
+        -33.55003714025296
+      ],
+      [
+        12.500000127088487,
+        12.500000127088487,
+        13.911657999996402
+      ]
+    ],
+    "front_hole_minor_axes_xy_mm": [
+      [
+        -10.5,
+        -10.5
+      ],
+      [
+        -10.5,
+        10.5
+      ],
+      [
+        10.5,
+        10.5
+      ],
+      [
+        10.5,
+        -10.5
+      ]
+    ],
+    "front_mount_plane_native_z_mm": 0,
+    "checks": [
+      {
+        "sign": -1,
+        "physical_outside_original_envelope_mm3": 0.0,
+        "physical_vs_front_frame_mm3": 0.0,
+        "passes": true
+      },
+      {
+        "sign": 1,
+        "physical_outside_original_envelope_mm3": 0.0,
+        "physical_vs_front_frame_mm3": 0.0,
+        "passes": true
+      }
+    ]
+  },
+  "J7_new_carrier_vs_native": {
+    "pair_intersection_sum_mm3": 0,
+    "events": [],
+    "method": "solid-by-solid common; pair sum is not a union volume"
+  }
+}

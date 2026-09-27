@@ -1,0 +1,98 @@
+{
+  "revision": "P16-CARRIER-01",
+  "scope": "Final carrier vs native RH17-B J6 only, q6=0, baseline axis origins; failure witness, no motion-range approval.",
+  "carrier_sha256": "57ea271828da2281bf34bd7bb87fb9d15420859cf501e65d4ec9888c4d1638fb",
+  "J6_sha256": "02424efbc162b8832f1bf4d73cf9af45d0c45d8385cadb8685e1670e2b07ae33",
+  "J7_world_axis_mm": [
+    0,
+    55,
+    640
+  ],
+  "face_world_mm": [
+    0,
+    55,
+    780
+  ],
+  "rows": [
+    {
+      "q7_deg": -90.0,
+      "pair_intersection_sum_mm3": 3150.5551823174155,
+      "events": [
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 0,
+          "intersection_mm3": 107.19646091825729
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 2,
+          "intersection_mm3": 44.63589116112662
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 6,
+          "intersection_mm3": 2389.9336337805667
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 7,
+          "intersection_mm3": 231.51509487509847
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 8,
+          "intersection_mm3": 275.25465847218845
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 21,
+          "intersection_mm3": 59.6291527454445
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 31,
+          "intersection_mm3": 42.390290364733616
+        }
+      ],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    },
+    {
+      "q7_deg": 90.0,
+      "pair_intersection_sum_mm3": 3146.0124788610206,
+      "events": [
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 0,
+          "intersection_mm3": 107.1964609131083
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 2,
+          "intersection_mm3": 45.08459605623732
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 6,
+          "intersection_mm3": 2387.290712142774
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 7,
+          "intersection_mm3": 231.51509559401103
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 8,
+          "intersection_mm3": 308.22398069825846
+        },
+        {
+          "candidate_solid": 0,
+          "vendor_solid": 20,
+          "intersection_mm3": 66.70163345663151
+        }
+      ],
+      "method": "solid-by-solid common; pair sum is not a union volume"
+    }
+  ],
+  "current_plus_minus90_supported": false
+}

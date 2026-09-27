@@ -1,0 +1,24 @@
+item,quantity,part_or_candidate,material_or_basis,status,source,unresolved
+main_carrier,1,P16-CARRIER-01 main-carrier.step,6061 candidate density2700kg/m3,original nominal geometry,../p16-carrier-study.md,deep drilling DFM/flatness/fits/actual frame stress
+integral_root_spindle,4,P16-CARRIER-01 integral-steel-root-spindle.step,steel density7850kg/m3,original nominal geometry,../p16-carrier-study.md,alloy/heat treatment/grind/fillets/thread and MB1 tab fit
+bearing,8,SKF7201 BECBP,12x32x10/36g,retained catalog candidate,../sources/gripper-miter-support.json,paired clearance/preload/pressure centers/combined load
+bearing_outer_cap,4,P16-CARRIER-01 bearing-outer-cap.step,6061 candidate,original nominal geometry,../p16-carrier-study.md,face adjustment and ring loading
+bearing_cap_screw,16,M3x10 socket head,nominal standard envelope,candidate,../sources/gripper-linear-support.json,exact purchase SKU/property class/preload/locking
+bearing_cap_washer,16,M3 washer OD7 ID3.4 t0.5,steel nominal,candidate,../p16-carrier-study.md,exact SKU
+shaft_front_spacer,4,OD17.3 ID12 L2,steel candidate,original nominal geometry,../p16-carrier-study.md,ground parallel faces/tolerance
+shaft_locknut,4,SKF KM1,M12x1/6g,retained catalog candidate,../sources/gripper-miter-support.json,thread runout/preload/locking tool
+shaft_lockwasher,4,SKF MB1,2g,retained catalog candidate,../sources/gripper-miter-support.json,actual bent tabs and nominal shaft slot fit
+P16_base_bracket,4,P16-CARRIER-01 base-bracket.step,6061 candidate,original nominal geometry,../p16-carrier-study.md,counterbore remaining floor/bolted joint preload
+P16_base_screw,8,M4x10 socket head,nominal7.2 engagement,candidate,../p16-carrier-study.md,property class/torque/locking/thread strength
+P16,4,P16-50-256-12-P,95g each,retained candidate,../sources/gripper-linear-support.json,20percent duty/holding/life/cable strain relief
+P16_pin_and_spacer_stack,4,tip SBSM-M3-4-25 plus base SBSM-M3-4-30,NBK actual shoulders,retained geometry,../sources/gripper-linear-support.json,shoulder tolerance/plastic creep/locking
+J7_adapter,1,ODR-J7-TOOL-R4.step,existing original geometry,retained,../mount-interface-study.md,pilot fit/flatness/actual M3 thread start
+J7_carrier_screw,4,M4x16 plus0.8 washer,nominal7.2 engagement,candidate,../p16-carrier-study.md,SKU/preload/thread strength
+J7_output_screw,8,M3 length TBD,manufacturer recessed thread,UNSELECTED,../sources/rh-interface-extraction.json,DO NOT freeze length until thread start and runout are confirmed
+removable_optical_frame,1,P16-CARRIER-01 removable-optical-frame.step,6061 candidate,original nominal geometry,../sources/p16-carrier.json,manufacturability/optic alignment/FOV shadow
+optic_column,4,OD10 ID3.4 L107,aluminum candidate,original nominal geometry,../p16-carrier-study.md,compression stiffness/end squareness
+optic_tie_rod,4,M3 threaded rod cut128 plus two nuts/washers,nominal steel,candidate,../p16-carrier-study.md,thread class/preload/locking
+camera,2,ZED-414012 ZED X One S Fisheye,36g each,retained optical-bench selection,../sources/p16-carrier.json,controlled delivery revision/thermal/FOV
+camera_front_screw,8,M2x6 socket head,4mm nominal body engagement,candidate,../sources/p16-carrier.json,exact SKU/torque/locking; maximum available thread6
+central_display,1,diameter64 depth12 reservation,not a finished PCBA,TBD,../sources/p16-carrier.json,actual round PCB/mounting/protection/connector routing
+harness_and_FAKRA,1,full26.2mm female connector rear reservation,no exact mated registration,TBD,../sources/p16-carrier.json,mated datum/withdrawal/cable bend/strain relief/head mass
