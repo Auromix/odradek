@@ -1,0 +1,3303 @@
+{
+  "revision": "P16-CARRIER-02",
+  "method": "Each actual part BREP axis-aligned bounding box contains that part; z(q)=x sin(q)+z cos(q)+root_z. Evaluate endpoints and all derivative-zero angles per xz corner. Union min/max bounds every point at every independent q. Conservative lower/upper bounds, NOT asserted actual surface extrema.",
+  "root_rotor_envelopes": [
+    {
+      "finger": "UR",
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "root_head_z_mm": 0,
+      "z_lower_bound_mm": -31.483402845020247,
+      "z_upper_bound_mm": 150.49779785967954,
+      "limiting_lower_part": "integral_steel_crank_spindle",
+      "parts": [
+        {
+          "part": "M2x6_keeper_screw_0",
+          "z_lower_bound_mm": -9.9,
+          "z_upper_bound_mm": 22.511703671351913,
+          "lower_bound_witness": {
+            "z_head_mm": -9.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              16.6,
+              -9.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 22.511703671351913,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              20.4,
+              -9.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              16.6,
+              -1.9,
+              -9.9
+            ],
+            [
+              20.4,
+              1.9,
+              -1.9000000000000004
+            ]
+          ]
+        },
+        {
+          "part": "M2x6_keeper_screw_1",
+          "z_lower_bound_mm": -9.9,
+          "z_upper_bound_mm": 26.29377797374918,
+          "lower_bound_witness": {
+            "z_head_mm": -9.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              20.6,
+              -9.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 26.29377797374918,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              24.4,
+              -9.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              20.6,
+              -1.9,
+              -9.9
+            ],
+            [
+              24.4,
+              1.9,
+              -1.9000000000000004
+            ]
+          ]
+        },
+        {
+          "part": "nut_keeper_sheet",
+          "z_lower_bound_mm": -7.9,
+          "z_upper_bound_mm": 26.218504915421857,
+          "lower_bound_witness": {
+            "z_head_mm": -7.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.0,
+              -7.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 26.218504915421857,
+            "q_deg": 107.53653617211744,
+            "bounding_corner_xz_mm": [
+              25.0,
+              -7.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.0,
+              -9.0,
+              -7.9
+            ],
+            [
+              25.0,
+              9.0,
+              -7.4
+            ]
+          ]
+        },
+        {
+          "part": "removable_upper_fork",
+          "z_lower_bound_mm": 6.0,
+          "z_upper_bound_mm": 26.92582403567252,
+          "lower_bound_witness": {
+            "z_head_mm": 6.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              15.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 26.92582403567252,
+            "q_deg": 68.19859051364818,
+            "bounding_corner_xz_mm": [
+              25.0,
+              10.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              15.0,
+              -9.0,
+              6.0
+            ],
+            [
+              25.0,
+              9.0,
+              10.0
+            ]
+          ]
+        },
+        {
+          "part": "metal_blade_with_narrow_tongue",
+          "z_lower_bound_mm": 0.0,
+          "z_upper_bound_mm": 150.11995203836162,
+          "lower_bound_witness": {
+            "z_head_mm": 0.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              15.0,
+              0.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.11995203836162,
+            "q_deg": 87.70938995736148,
+            "bounding_corner_xz_mm": [
+              150.0,
+              6.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              15.0,
+              -23.0,
+              0.0
+            ],
+            [
+              150.0,
+              23.0,
+              6.0
+            ]
+          ]
+        },
+        {
+          "part": "M3x20_fork_screw_0",
+          "z_lower_bound_mm": -10.0,
+          "z_upper_bound_mm": 27.075126961844518,
+          "lower_bound_witness": {
+            "z_head_mm": -10.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -10.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 27.075126961844518,
+            "q_deg": 61.30509562065655,
+            "bounding_corner_xz_mm": [
+              23.75,
+              13.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              -7.25,
+              -10.0
+            ],
+            [
+              23.75,
+              -1.75,
+              13.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_washer_0",
+          "z_lower_bound_mm": -4.5,
+          "z_upper_bound_mm": 24.9098374141623,
+          "lower_bound_witness": {
+            "z_head_mm": -4.5,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.5,
+              -4.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 24.9098374141623,
+            "q_deg": 100.40771131249006,
+            "bounding_corner_xz_mm": [
+              24.5,
+              -4.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.5,
+              -8.0,
+              -4.5
+            ],
+            [
+              24.5,
+              -1.0,
+              -4.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_hexnut_0",
+          "z_lower_bound_mm": -6.9,
+          "z_upper_bound_mm": 24.732013666501153,
+          "lower_bound_witness": {
+            "z_head_mm": -6.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -6.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 24.732013666501153,
+            "q_deg": 106.1999714187052,
+            "bounding_corner_xz_mm": [
+              23.75,
+              -6.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              -7.675426480542943,
+              -6.9
+            ],
+            [
+              23.75,
+              -1.3245735194570598,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "part": "M3x20_fork_screw_1",
+          "z_lower_bound_mm": -10.0,
+          "z_upper_bound_mm": 27.075126961844518,
+          "lower_bound_witness": {
+            "z_head_mm": -10.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -10.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 27.075126961844518,
+            "q_deg": 61.30509562065655,
+            "bounding_corner_xz_mm": [
+              23.75,
+              13.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              1.75,
+              -10.0
+            ],
+            [
+              23.75,
+              7.25,
+              13.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_washer_1",
+          "z_lower_bound_mm": -4.5,
+          "z_upper_bound_mm": 24.9098374141623,
+          "lower_bound_witness": {
+            "z_head_mm": -4.5,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.5,
+              -4.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 24.9098374141623,
+            "q_deg": 100.40771131249006,
+            "bounding_corner_xz_mm": [
+              24.5,
+              -4.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.5,
+              1.0,
+              -4.5
+            ],
+            [
+              24.5,
+              8.0,
+              -4.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_hexnut_1",
+          "z_lower_bound_mm": -6.9,
+          "z_upper_bound_mm": 24.732013666501153,
+          "lower_bound_witness": {
+            "z_head_mm": -6.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -6.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 24.732013666501153,
+            "q_deg": 106.1999714187052,
+            "bounding_corner_xz_mm": [
+              23.75,
+              -6.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              1.3245735194570576,
+              -6.9
+            ],
+            [
+              23.75,
+              7.675426480542942,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "part": "LED_window_placeholder",
+          "z_lower_bound_mm": 5.999999999999999,
+          "z_upper_bound_mm": 128.1700433018574,
+          "lower_bound_witness": {
+            "z_head_mm": 5.999999999999999,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              25.0,
+              5.999999999999999
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 128.1700433018574,
+            "q_deg": 87.04830040293022,
+            "bounding_corner_xz_mm": [
+              128.0,
+              6.6
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              25.0,
+              -16.56,
+              5.999999999999999
+            ],
+            [
+              128.0,
+              16.56,
+              6.6
+            ]
+          ]
+        },
+        {
+          "part": "contact02_pad_0",
+          "z_lower_bound_mm": 6.0,
+          "z_upper_bound_mm": 150.49779785967954,
+          "lower_bound_witness": {
+            "z_head_mm": 6.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              132.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.49779785967954,
+            "q_deg": 85.33857338441742,
+            "bounding_corner_xz_mm": [
+              150.0,
+              12.23058300380509
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              132.0,
+              -6.0,
+              6.0
+            ],
+            [
+              150.0,
+              -1.0,
+              12.23058300380509
+            ]
+          ]
+        },
+        {
+          "part": "contact02_pad_1",
+          "z_lower_bound_mm": 6.0,
+          "z_upper_bound_mm": 150.49779785967954,
+          "lower_bound_witness": {
+            "z_head_mm": 6.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              132.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.49779785967954,
+            "q_deg": 85.33857338441742,
+            "bounding_corner_xz_mm": [
+              150.0,
+              12.23058300380509
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              132.0,
+              1.0,
+              6.0
+            ],
+            [
+              150.0,
+              6.0,
+              12.23058300380509
+            ]
+          ]
+        },
+        {
+          "part": "tip_SBSM_pin",
+          "z_lower_bound_mm": -27.606780218736475,
+          "z_upper_bound_mm": 21.506338308950845,
+          "lower_bound_witness": {
+            "z_head_mm": -27.606780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 21.506338308950845,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -32.1,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              2.8999999999999986,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_outer_stack_spacer",
+          "z_lower_bound_mm": -27.606780218736475,
+          "z_upper_bound_mm": 21.506338308950845,
+          "lower_bound_witness": {
+            "z_head_mm": -27.606780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 21.506338308950845,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -6.9,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              -4.100000000000001,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_M3_retention_washer",
+          "z_lower_bound_mm": -27.606780218736475,
+          "z_upper_bound_mm": 21.506338308950845,
+          "lower_bound_witness": {
+            "z_head_mm": -27.606780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 21.506338308950845,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -4.100000000000001,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              -3.6000000000000014,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_M3_retention_nut",
+          "z_lower_bound_mm": -26.856780218736475,
+          "z_upper_bound_mm": 20.955271901313687,
+          "lower_bound_witness": {
+            "z_head_mm": -26.856780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.56434494827077,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 20.955271901313687,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              12.915197909356653,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.56434494827077,
+              -3.6000000000000014,
+              -26.856780218736475
+            ],
+            [
+              12.915197909356653,
+              -1.2000000000000015,
+              -21.35678021873647
+            ]
+          ]
+        },
+        {
+          "part": "tip_lug_spacer_-1",
+          "z_lower_bound_mm": -26.856780218736475,
+          "z_upper_bound_mm": 20.55302326140849,
+          "lower_bound_witness": {
+            "z_head_mm": -26.856780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.989771428813711,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 20.55302326140849,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              12.489771428813711,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.989771428813711,
+              -25.0,
+              -26.856780218736475
+            ],
+            [
+              12.489771428813711,
+              -21.02,
+              -21.356780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_lug_spacer_1",
+          "z_lower_bound_mm": -26.856780218736475,
+          "z_upper_bound_mm": 20.55302326140849,
+          "lower_bound_witness": {
+            "z_head_mm": -26.856780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.989771428813711,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 20.55302326140849,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              12.489771428813711,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.989771428813711,
+              -14.98,
+              -26.856780218736475
+            ],
+            [
+              12.489771428813711,
+              -11.0,
+              -21.356780218736475
+            ]
+          ]
+        },
+        {
+          "part": "integral_steel_crank_spindle",
+          "z_lower_bound_mm": -31.483402845020247,
+          "z_upper_bound_mm": 33.11420510798703,
+          "lower_bound_witness": {
+            "z_head_mm": -31.483402845020247,
+            "q_deg": 22.40513333451766,
+            "bounding_corner_xz_mm": [
+              -12.0,
+              -29.106780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 33.11420510798703,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              25.0,
+              -29.106780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -12.0,
+              -29.1,
+              -29.106780218736475
+            ],
+            [
+              25.0,
+              42.0,
+              12.0
+            ]
+          ]
+        },
+        {
+          "part": "inner_front_spacer",
+          "z_lower_bound_mm": -12.232947314527273,
+          "z_upper_bound_mm": 12.232947314527273,
+          "lower_bound_witness": {
+            "z_head_mm": -12.232947314527273,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -8.65,
+              -8.65
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 12.232947314527273,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              8.65,
+              8.65
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -8.65,
+              34.0,
+              -8.65
+            ],
+            [
+              8.65,
+              36.0,
+              8.65
+            ]
+          ]
+        },
+        {
+          "part": "MB1",
+          "z_lower_bound_mm": -17.67766952966369,
+          "z_upper_bound_mm": 17.67766952966369,
+          "lower_bound_witness": {
+            "z_head_mm": -17.67766952966369,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -12.5,
+              -12.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 17.67766952966369,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              12.5,
+              12.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -12.5,
+              36.0,
+              -12.5
+            ],
+            [
+              12.5,
+              37.0,
+              12.5
+            ]
+          ]
+        },
+        {
+          "part": "KM1",
+          "z_lower_bound_mm": -15.556349186104045,
+          "z_upper_bound_mm": 15.556349186104045,
+          "lower_bound_witness": {
+            "z_head_mm": -15.556349186104045,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -11.0,
+              -11.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 15.556349186104045,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              11.0,
+              11.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -11.0,
+              37.0,
+              -11.0
+            ],
+            [
+              11.0,
+              41.0,
+              11.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "finger": "UL",
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "root_head_z_mm": 0,
+      "z_lower_bound_mm": -31.483402845020247,
+      "z_upper_bound_mm": 150.49779785967954,
+      "limiting_lower_part": "integral_steel_crank_spindle",
+      "parts": [
+        {
+          "part": "M2x6_keeper_screw_0",
+          "z_lower_bound_mm": -9.9,
+          "z_upper_bound_mm": 22.511703671351913,
+          "lower_bound_witness": {
+            "z_head_mm": -9.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              16.6,
+              -9.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 22.511703671351913,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              20.4,
+              -9.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              16.6,
+              -1.9,
+              -9.9
+            ],
+            [
+              20.4,
+              1.9,
+              -1.9000000000000004
+            ]
+          ]
+        },
+        {
+          "part": "M2x6_keeper_screw_1",
+          "z_lower_bound_mm": -9.9,
+          "z_upper_bound_mm": 26.29377797374918,
+          "lower_bound_witness": {
+            "z_head_mm": -9.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              20.6,
+              -9.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 26.29377797374918,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              24.4,
+              -9.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              20.6,
+              -1.9,
+              -9.9
+            ],
+            [
+              24.4,
+              1.9,
+              -1.9000000000000004
+            ]
+          ]
+        },
+        {
+          "part": "nut_keeper_sheet",
+          "z_lower_bound_mm": -7.9,
+          "z_upper_bound_mm": 26.218504915421857,
+          "lower_bound_witness": {
+            "z_head_mm": -7.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.0,
+              -7.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 26.218504915421857,
+            "q_deg": 107.53653617211744,
+            "bounding_corner_xz_mm": [
+              25.0,
+              -7.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.0,
+              -9.0,
+              -7.9
+            ],
+            [
+              25.0,
+              9.0,
+              -7.4
+            ]
+          ]
+        },
+        {
+          "part": "removable_upper_fork",
+          "z_lower_bound_mm": 6.0,
+          "z_upper_bound_mm": 26.92582403567252,
+          "lower_bound_witness": {
+            "z_head_mm": 6.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              15.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 26.92582403567252,
+            "q_deg": 68.19859051364818,
+            "bounding_corner_xz_mm": [
+              25.0,
+              10.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              15.0,
+              -9.0,
+              6.0
+            ],
+            [
+              25.0,
+              9.0,
+              10.0
+            ]
+          ]
+        },
+        {
+          "part": "metal_blade_with_narrow_tongue",
+          "z_lower_bound_mm": 0.0,
+          "z_upper_bound_mm": 150.11995203836162,
+          "lower_bound_witness": {
+            "z_head_mm": 0.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              15.0,
+              0.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.11995203836162,
+            "q_deg": 87.70938995736148,
+            "bounding_corner_xz_mm": [
+              150.0,
+              6.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              15.0,
+              -23.0,
+              0.0
+            ],
+            [
+              150.0,
+              23.0,
+              6.0
+            ]
+          ]
+        },
+        {
+          "part": "M3x20_fork_screw_0",
+          "z_lower_bound_mm": -10.0,
+          "z_upper_bound_mm": 27.075126961844518,
+          "lower_bound_witness": {
+            "z_head_mm": -10.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -10.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 27.075126961844518,
+            "q_deg": 61.30509562065655,
+            "bounding_corner_xz_mm": [
+              23.75,
+              13.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              -7.25,
+              -10.0
+            ],
+            [
+              23.75,
+              -1.75,
+              13.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_washer_0",
+          "z_lower_bound_mm": -4.5,
+          "z_upper_bound_mm": 24.9098374141623,
+          "lower_bound_witness": {
+            "z_head_mm": -4.5,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.5,
+              -4.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 24.9098374141623,
+            "q_deg": 100.40771131249006,
+            "bounding_corner_xz_mm": [
+              24.5,
+              -4.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.5,
+              -8.0,
+              -4.5
+            ],
+            [
+              24.5,
+              -1.0,
+              -4.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_hexnut_0",
+          "z_lower_bound_mm": -6.9,
+          "z_upper_bound_mm": 24.732013666501153,
+          "lower_bound_witness": {
+            "z_head_mm": -6.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -6.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 24.732013666501153,
+            "q_deg": 106.1999714187052,
+            "bounding_corner_xz_mm": [
+              23.75,
+              -6.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              -7.675426480542943,
+              -6.9
+            ],
+            [
+              23.75,
+              -1.3245735194570598,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "part": "M3x20_fork_screw_1",
+          "z_lower_bound_mm": -10.0,
+          "z_upper_bound_mm": 27.075126961844518,
+          "lower_bound_witness": {
+            "z_head_mm": -10.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -10.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 27.075126961844518,
+            "q_deg": 61.30509562065655,
+            "bounding_corner_xz_mm": [
+              23.75,
+              13.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              1.75,
+              -10.0
+            ],
+            [
+              23.75,
+              7.25,
+              13.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_washer_1",
+          "z_lower_bound_mm": -4.5,
+          "z_upper_bound_mm": 24.9098374141623,
+          "lower_bound_witness": {
+            "z_head_mm": -4.5,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.5,
+              -4.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 24.9098374141623,
+            "q_deg": 100.40771131249006,
+            "bounding_corner_xz_mm": [
+              24.5,
+              -4.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.5,
+              1.0,
+              -4.5
+            ],
+            [
+              24.5,
+              8.0,
+              -4.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_hexnut_1",
+          "z_lower_bound_mm": -6.9,
+          "z_upper_bound_mm": 24.732013666501153,
+          "lower_bound_witness": {
+            "z_head_mm": -6.9,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -6.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 24.732013666501153,
+            "q_deg": 106.1999714187052,
+            "bounding_corner_xz_mm": [
+              23.75,
+              -6.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              1.3245735194570576,
+              -6.9
+            ],
+            [
+              23.75,
+              7.675426480542942,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "part": "LED_window_placeholder",
+          "z_lower_bound_mm": 5.999999999999999,
+          "z_upper_bound_mm": 128.1700433018574,
+          "lower_bound_witness": {
+            "z_head_mm": 5.999999999999999,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              25.0,
+              5.999999999999999
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 128.1700433018574,
+            "q_deg": 87.04830040293022,
+            "bounding_corner_xz_mm": [
+              128.0,
+              6.6
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              25.0,
+              -16.56,
+              5.999999999999999
+            ],
+            [
+              128.0,
+              16.56,
+              6.6
+            ]
+          ]
+        },
+        {
+          "part": "contact02_pad_0",
+          "z_lower_bound_mm": 6.0,
+          "z_upper_bound_mm": 150.49779785967954,
+          "lower_bound_witness": {
+            "z_head_mm": 6.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              132.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.49779785967954,
+            "q_deg": 85.33857338441742,
+            "bounding_corner_xz_mm": [
+              150.0,
+              12.23058300380509
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              132.0,
+              -6.0,
+              6.0
+            ],
+            [
+              150.0,
+              -1.0,
+              12.23058300380509
+            ]
+          ]
+        },
+        {
+          "part": "contact02_pad_1",
+          "z_lower_bound_mm": 6.0,
+          "z_upper_bound_mm": 150.49779785967954,
+          "lower_bound_witness": {
+            "z_head_mm": 6.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              132.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.49779785967954,
+            "q_deg": 85.33857338441742,
+            "bounding_corner_xz_mm": [
+              150.0,
+              12.23058300380509
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              132.0,
+              1.0,
+              6.0
+            ],
+            [
+              150.0,
+              6.0,
+              12.23058300380509
+            ]
+          ]
+        },
+        {
+          "part": "tip_SBSM_pin",
+          "z_lower_bound_mm": -27.606780218736475,
+          "z_upper_bound_mm": 21.506338308950845,
+          "lower_bound_witness": {
+            "z_head_mm": -27.606780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 21.506338308950845,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -32.1,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              2.8999999999999986,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_outer_stack_spacer",
+          "z_lower_bound_mm": -27.606780218736475,
+          "z_upper_bound_mm": 21.506338308950845,
+          "lower_bound_witness": {
+            "z_head_mm": -27.606780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 21.506338308950845,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -6.9,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              -4.100000000000001,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_M3_retention_washer",
+          "z_lower_bound_mm": -27.606780218736475,
+          "z_upper_bound_mm": 21.506338308950845,
+          "lower_bound_witness": {
+            "z_head_mm": -27.606780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 21.506338308950845,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -4.100000000000001,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              -3.6000000000000014,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_M3_retention_nut",
+          "z_lower_bound_mm": -26.856780218736475,
+          "z_upper_bound_mm": 20.955271901313687,
+          "lower_bound_witness": {
+            "z_head_mm": -26.856780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.56434494827077,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 20.955271901313687,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              12.915197909356653,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.56434494827077,
+              -3.6000000000000014,
+              -26.856780218736475
+            ],
+            [
+              12.915197909356653,
+              -1.2000000000000015,
+              -21.35678021873647
+            ]
+          ]
+        },
+        {
+          "part": "tip_lug_spacer_-1",
+          "z_lower_bound_mm": -26.856780218736475,
+          "z_upper_bound_mm": 20.55302326140849,
+          "lower_bound_witness": {
+            "z_head_mm": -26.856780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.989771428813711,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 20.55302326140849,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              12.489771428813711,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.989771428813711,
+              -25.0,
+              -26.856780218736475
+            ],
+            [
+              12.489771428813711,
+              -21.02,
+              -21.356780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_lug_spacer_1",
+          "z_lower_bound_mm": -26.856780218736475,
+          "z_upper_bound_mm": 20.55302326140849,
+          "lower_bound_witness": {
+            "z_head_mm": -26.856780218736475,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.989771428813711,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 20.55302326140849,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              12.489771428813711,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.989771428813711,
+              -14.98,
+              -26.856780218736475
+            ],
+            [
+              12.489771428813711,
+              -11.0,
+              -21.356780218736475
+            ]
+          ]
+        },
+        {
+          "part": "integral_steel_crank_spindle",
+          "z_lower_bound_mm": -31.483402845020247,
+          "z_upper_bound_mm": 33.11420510798703,
+          "lower_bound_witness": {
+            "z_head_mm": -31.483402845020247,
+            "q_deg": 22.40513333451766,
+            "bounding_corner_xz_mm": [
+              -12.0,
+              -29.106780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 33.11420510798703,
+            "q_deg": 109.0,
+            "bounding_corner_xz_mm": [
+              25.0,
+              -29.106780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -12.0,
+              -29.1,
+              -29.106780218736475
+            ],
+            [
+              25.0,
+              42.0,
+              12.0
+            ]
+          ]
+        },
+        {
+          "part": "inner_front_spacer",
+          "z_lower_bound_mm": -12.232947314527273,
+          "z_upper_bound_mm": 12.232947314527273,
+          "lower_bound_witness": {
+            "z_head_mm": -12.232947314527273,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -8.65,
+              -8.65
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 12.232947314527273,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              8.65,
+              8.65
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -8.65,
+              34.0,
+              -8.65
+            ],
+            [
+              8.65,
+              36.0,
+              8.65
+            ]
+          ]
+        },
+        {
+          "part": "MB1",
+          "z_lower_bound_mm": -17.67766952966369,
+          "z_upper_bound_mm": 17.67766952966369,
+          "lower_bound_witness": {
+            "z_head_mm": -17.67766952966369,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -12.5,
+              -12.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 17.67766952966369,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              12.5,
+              12.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -12.5,
+              36.0,
+              -12.5
+            ],
+            [
+              12.5,
+              37.0,
+              12.5
+            ]
+          ]
+        },
+        {
+          "part": "KM1",
+          "z_lower_bound_mm": -15.556349186104045,
+          "z_upper_bound_mm": 15.556349186104045,
+          "lower_bound_witness": {
+            "z_head_mm": -15.556349186104045,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -11.0,
+              -11.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 15.556349186104045,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              11.0,
+              11.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -11.0,
+              37.0,
+              -11.0
+            ],
+            [
+              11.0,
+              41.0,
+              11.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "finger": "LL",
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "root_head_z_mm": 50,
+      "z_lower_bound_mm": 18.516597154979753,
+      "z_upper_bound_mm": 150.83474523278701,
+      "limiting_lower_part": "integral_steel_crank_spindle",
+      "parts": [
+        {
+          "part": "M2x6_keeper_screw_0",
+          "z_lower_bound_mm": 40.1,
+          "z_upper_bound_mm": 72.67531697683629,
+          "lower_bound_witness": {
+            "z_head_mm": 40.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              16.6,
+              -9.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 72.67531697683629,
+            "q_deg": 115.88702626632669,
+            "bounding_corner_xz_mm": [
+              20.4,
+              -9.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              16.6,
+              -1.9,
+              -9.9
+            ],
+            [
+              20.4,
+              1.9,
+              -1.9000000000000004
+            ]
+          ]
+        },
+        {
+          "part": "M2x6_keeper_screw_1",
+          "z_lower_bound_mm": 40.1,
+          "z_upper_bound_mm": 76.33191979328511,
+          "lower_bound_witness": {
+            "z_head_mm": 40.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              20.6,
+              -9.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 76.33191979328511,
+            "q_deg": 112.0842495418522,
+            "bounding_corner_xz_mm": [
+              24.4,
+              -9.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              20.6,
+              -1.9,
+              -9.9
+            ],
+            [
+              24.4,
+              1.9,
+              -1.9000000000000004
+            ]
+          ]
+        },
+        {
+          "part": "nut_keeper_sheet",
+          "z_lower_bound_mm": 42.1,
+          "z_upper_bound_mm": 76.21850491542186,
+          "lower_bound_witness": {
+            "z_head_mm": 42.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.0,
+              -7.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 76.21850491542186,
+            "q_deg": 107.53653617211744,
+            "bounding_corner_xz_mm": [
+              25.0,
+              -7.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.0,
+              -9.0,
+              -7.9
+            ],
+            [
+              25.0,
+              9.0,
+              -7.4
+            ]
+          ]
+        },
+        {
+          "part": "removable_upper_fork",
+          "z_lower_bound_mm": 56.0,
+          "z_upper_bound_mm": 76.92582403567252,
+          "lower_bound_witness": {
+            "z_head_mm": 56.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              15.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 76.92582403567252,
+            "q_deg": 68.19859051364818,
+            "bounding_corner_xz_mm": [
+              25.0,
+              10.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              15.0,
+              -9.0,
+              6.0
+            ],
+            [
+              25.0,
+              9.0,
+              10.0
+            ]
+          ]
+        },
+        {
+          "part": "metal_blade_with_narrow_tongue",
+          "z_lower_bound_mm": 50.0,
+          "z_upper_bound_mm": 150.17983829094555,
+          "lower_bound_witness": {
+            "z_head_mm": 50.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              15.0,
+              0.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.17983829094555,
+            "q_deg": 86.56636963754949,
+            "bounding_corner_xz_mm": [
+              100.0,
+              6.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              15.0,
+              -17.0609756097561,
+              0.0
+            ],
+            [
+              100.0,
+              17.060975609756106,
+              6.0
+            ]
+          ]
+        },
+        {
+          "part": "M3x20_fork_screw_0",
+          "z_lower_bound_mm": 40.0,
+          "z_upper_bound_mm": 77.07512696184452,
+          "lower_bound_witness": {
+            "z_head_mm": 40.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -10.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 77.07512696184452,
+            "q_deg": 61.30509562065655,
+            "bounding_corner_xz_mm": [
+              23.75,
+              13.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              -7.25,
+              -10.0
+            ],
+            [
+              23.75,
+              -1.75,
+              13.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_washer_0",
+          "z_lower_bound_mm": 45.5,
+          "z_upper_bound_mm": 74.9098374141623,
+          "lower_bound_witness": {
+            "z_head_mm": 45.5,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.5,
+              -4.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.9098374141623,
+            "q_deg": 100.40771131249006,
+            "bounding_corner_xz_mm": [
+              24.5,
+              -4.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.5,
+              -8.0,
+              -4.5
+            ],
+            [
+              24.5,
+              -1.0,
+              -4.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_hexnut_0",
+          "z_lower_bound_mm": 43.1,
+          "z_upper_bound_mm": 74.73201366650116,
+          "lower_bound_witness": {
+            "z_head_mm": 43.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -6.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.73201366650116,
+            "q_deg": 106.1999714187052,
+            "bounding_corner_xz_mm": [
+              23.75,
+              -6.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              -7.675426480542943,
+              -6.9
+            ],
+            [
+              23.75,
+              -1.3245735194570598,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "part": "M3x20_fork_screw_1",
+          "z_lower_bound_mm": 40.0,
+          "z_upper_bound_mm": 77.07512696184452,
+          "lower_bound_witness": {
+            "z_head_mm": 40.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -10.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 77.07512696184452,
+            "q_deg": 61.30509562065655,
+            "bounding_corner_xz_mm": [
+              23.75,
+              13.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              1.75,
+              -10.0
+            ],
+            [
+              23.75,
+              7.25,
+              13.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_washer_1",
+          "z_lower_bound_mm": 45.5,
+          "z_upper_bound_mm": 74.9098374141623,
+          "lower_bound_witness": {
+            "z_head_mm": 45.5,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.5,
+              -4.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.9098374141623,
+            "q_deg": 100.40771131249006,
+            "bounding_corner_xz_mm": [
+              24.5,
+              -4.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.5,
+              1.0,
+              -4.5
+            ],
+            [
+              24.5,
+              8.0,
+              -4.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_hexnut_1",
+          "z_lower_bound_mm": 43.1,
+          "z_upper_bound_mm": 74.73201366650116,
+          "lower_bound_witness": {
+            "z_head_mm": 43.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -6.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.73201366650116,
+            "q_deg": 106.1999714187052,
+            "bounding_corner_xz_mm": [
+              23.75,
+              -6.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              1.3245735194570576,
+              -6.9
+            ],
+            [
+              23.75,
+              7.675426480542942,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "part": "LED_window_placeholder",
+          "z_lower_bound_mm": 56.0,
+          "z_upper_bound_mm": 128.278732743958,
+          "lower_bound_witness": {
+            "z_head_mm": 56.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              25.0,
+              5.999999999999999
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 128.278732743958,
+            "q_deg": 85.1634165542647,
+            "bounding_corner_xz_mm": [
+              78.0,
+              6.6
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              25.0,
+              -12.840000000000003,
+              5.999999999999999
+            ],
+            [
+              78.0,
+              12.840000000000003,
+              6.6
+            ]
+          ]
+        },
+        {
+          "part": "contact02_pad_0",
+          "z_lower_bound_mm": 56.0,
+          "z_upper_bound_mm": 150.83474523278701,
+          "lower_bound_witness": {
+            "z_head_mm": 56.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              82.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.83474523278701,
+            "q_deg": 82.62249418468637,
+            "bounding_corner_xz_mm": [
+              100.0,
+              12.9478124083207
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              82.0,
+              -6.0,
+              6.0
+            ],
+            [
+              100.0,
+              -1.0,
+              12.9478124083207
+            ]
+          ]
+        },
+        {
+          "part": "contact02_pad_1",
+          "z_lower_bound_mm": 56.0,
+          "z_upper_bound_mm": 150.83474523278701,
+          "lower_bound_witness": {
+            "z_head_mm": 56.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              82.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.83474523278701,
+            "q_deg": 82.62249418468637,
+            "bounding_corner_xz_mm": [
+              100.0,
+              12.9478124083207
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              82.0,
+              1.0,
+              6.0
+            ],
+            [
+              100.0,
+              6.0,
+              12.9478124083207
+            ]
+          ]
+        },
+        {
+          "part": "tip_SBSM_pin",
+          "z_lower_bound_mm": 22.393219781263525,
+          "z_upper_bound_mm": 75.85732761511234,
+          "lower_bound_witness": {
+            "z_head_mm": 22.393219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 75.85732761511234,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -32.1,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              2.8999999999999986,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_outer_stack_spacer",
+          "z_lower_bound_mm": 22.393219781263525,
+          "z_upper_bound_mm": 75.85732761511234,
+          "lower_bound_witness": {
+            "z_head_mm": 22.393219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 75.85732761511234,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -6.9,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              -4.100000000000001,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_M3_retention_washer",
+          "z_lower_bound_mm": 22.393219781263525,
+          "z_upper_bound_mm": 75.85732761511234,
+          "lower_bound_witness": {
+            "z_head_mm": 22.393219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 75.85732761511234,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -4.100000000000001,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              -3.6000000000000014,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_M3_retention_nut",
+          "z_lower_bound_mm": 23.143219781263525,
+          "z_upper_bound_mm": 75.18463421169909,
+          "lower_bound_witness": {
+            "z_head_mm": 23.143219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.56434494827077,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 75.18463421169909,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              12.915197909356653,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.56434494827077,
+              -3.6000000000000014,
+              -26.856780218736475
+            ],
+            [
+              12.915197909356653,
+              -1.2000000000000015,
+              -21.35678021873647
+            ]
+          ]
+        },
+        {
+          "part": "tip_lug_spacer_-1",
+          "z_lower_bound_mm": 23.143219781263525,
+          "z_upper_bound_mm": 74.82385209482011,
+          "lower_bound_witness": {
+            "z_head_mm": 23.143219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.989771428813711,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.82385209482011,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              12.489771428813711,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.989771428813711,
+              -25.0,
+              -26.856780218736475
+            ],
+            [
+              12.489771428813711,
+              -21.02,
+              -21.356780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_lug_spacer_1",
+          "z_lower_bound_mm": 23.143219781263525,
+          "z_upper_bound_mm": 74.82385209482011,
+          "lower_bound_witness": {
+            "z_head_mm": 23.143219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.989771428813711,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.82385209482011,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              12.489771428813711,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.989771428813711,
+              -14.98,
+              -26.856780218736475
+            ],
+            [
+              12.489771428813711,
+              -11.0,
+              -21.356780218736475
+            ]
+          ]
+        },
+        {
+          "part": "integral_steel_crank_spindle",
+          "z_lower_bound_mm": 18.516597154979753,
+          "z_upper_bound_mm": 86.62544596162108,
+          "lower_bound_witness": {
+            "z_head_mm": 18.516597154979753,
+            "q_deg": 22.40513333451766,
+            "bounding_corner_xz_mm": [
+              -12.0,
+              -29.106780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 86.62544596162108,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              25.0,
+              -29.106780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -12.0,
+              -29.1,
+              -29.106780218736475
+            ],
+            [
+              25.0,
+              42.0,
+              12.0
+            ]
+          ]
+        },
+        {
+          "part": "inner_front_spacer",
+          "z_lower_bound_mm": 37.76705268547273,
+          "z_upper_bound_mm": 62.23294731452727,
+          "lower_bound_witness": {
+            "z_head_mm": 37.76705268547273,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -8.65,
+              -8.65
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 62.23294731452727,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              8.65,
+              8.65
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -8.65,
+              34.0,
+              -8.65
+            ],
+            [
+              8.65,
+              36.0,
+              8.65
+            ]
+          ]
+        },
+        {
+          "part": "MB1",
+          "z_lower_bound_mm": 32.32233047033631,
+          "z_upper_bound_mm": 67.67766952966369,
+          "lower_bound_witness": {
+            "z_head_mm": 32.32233047033631,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -12.5,
+              -12.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 67.67766952966369,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              12.5,
+              12.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -12.5,
+              36.0,
+              -12.5
+            ],
+            [
+              12.5,
+              37.0,
+              12.5
+            ]
+          ]
+        },
+        {
+          "part": "KM1",
+          "z_lower_bound_mm": 34.44365081389596,
+          "z_upper_bound_mm": 65.55634918610404,
+          "lower_bound_witness": {
+            "z_head_mm": 34.44365081389596,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -11.0,
+              -11.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 65.55634918610404,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              11.0,
+              11.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -11.0,
+              37.0,
+              -11.0
+            ],
+            [
+              11.0,
+              41.0,
+              11.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "finger": "LR",
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "root_head_z_mm": 50,
+      "z_lower_bound_mm": 18.516597154979753,
+      "z_upper_bound_mm": 150.83474523278701,
+      "limiting_lower_part": "integral_steel_crank_spindle",
+      "parts": [
+        {
+          "part": "M2x6_keeper_screw_0",
+          "z_lower_bound_mm": 40.1,
+          "z_upper_bound_mm": 72.67531697683629,
+          "lower_bound_witness": {
+            "z_head_mm": 40.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              16.6,
+              -9.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 72.67531697683629,
+            "q_deg": 115.88702626632669,
+            "bounding_corner_xz_mm": [
+              20.4,
+              -9.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              16.6,
+              -1.9,
+              -9.9
+            ],
+            [
+              20.4,
+              1.9,
+              -1.9000000000000004
+            ]
+          ]
+        },
+        {
+          "part": "M2x6_keeper_screw_1",
+          "z_lower_bound_mm": 40.1,
+          "z_upper_bound_mm": 76.33191979328511,
+          "lower_bound_witness": {
+            "z_head_mm": 40.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              20.6,
+              -9.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 76.33191979328511,
+            "q_deg": 112.0842495418522,
+            "bounding_corner_xz_mm": [
+              24.4,
+              -9.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              20.6,
+              -1.9,
+              -9.9
+            ],
+            [
+              24.4,
+              1.9,
+              -1.9000000000000004
+            ]
+          ]
+        },
+        {
+          "part": "nut_keeper_sheet",
+          "z_lower_bound_mm": 42.1,
+          "z_upper_bound_mm": 76.21850491542186,
+          "lower_bound_witness": {
+            "z_head_mm": 42.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.0,
+              -7.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 76.21850491542186,
+            "q_deg": 107.53653617211744,
+            "bounding_corner_xz_mm": [
+              25.0,
+              -7.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.0,
+              -9.0,
+              -7.9
+            ],
+            [
+              25.0,
+              9.0,
+              -7.4
+            ]
+          ]
+        },
+        {
+          "part": "removable_upper_fork",
+          "z_lower_bound_mm": 56.0,
+          "z_upper_bound_mm": 76.92582403567252,
+          "lower_bound_witness": {
+            "z_head_mm": 56.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              15.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 76.92582403567252,
+            "q_deg": 68.19859051364818,
+            "bounding_corner_xz_mm": [
+              25.0,
+              10.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              15.0,
+              -9.0,
+              6.0
+            ],
+            [
+              25.0,
+              9.0,
+              10.0
+            ]
+          ]
+        },
+        {
+          "part": "metal_blade_with_narrow_tongue",
+          "z_lower_bound_mm": 50.0,
+          "z_upper_bound_mm": 150.17983829094555,
+          "lower_bound_witness": {
+            "z_head_mm": 50.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              15.0,
+              0.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.17983829094555,
+            "q_deg": 86.56636963754949,
+            "bounding_corner_xz_mm": [
+              100.0,
+              6.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              15.0,
+              -17.0609756097561,
+              0.0
+            ],
+            [
+              100.0,
+              17.060975609756106,
+              6.0
+            ]
+          ]
+        },
+        {
+          "part": "M3x20_fork_screw_0",
+          "z_lower_bound_mm": 40.0,
+          "z_upper_bound_mm": 77.07512696184452,
+          "lower_bound_witness": {
+            "z_head_mm": 40.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -10.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 77.07512696184452,
+            "q_deg": 61.30509562065655,
+            "bounding_corner_xz_mm": [
+              23.75,
+              13.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              -7.25,
+              -10.0
+            ],
+            [
+              23.75,
+              -1.75,
+              13.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_washer_0",
+          "z_lower_bound_mm": 45.5,
+          "z_upper_bound_mm": 74.9098374141623,
+          "lower_bound_witness": {
+            "z_head_mm": 45.5,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.5,
+              -4.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.9098374141623,
+            "q_deg": 100.40771131249006,
+            "bounding_corner_xz_mm": [
+              24.5,
+              -4.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.5,
+              -8.0,
+              -4.5
+            ],
+            [
+              24.5,
+              -1.0,
+              -4.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_hexnut_0",
+          "z_lower_bound_mm": 43.1,
+          "z_upper_bound_mm": 74.73201366650116,
+          "lower_bound_witness": {
+            "z_head_mm": 43.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -6.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.73201366650116,
+            "q_deg": 106.1999714187052,
+            "bounding_corner_xz_mm": [
+              23.75,
+              -6.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              -7.675426480542943,
+              -6.9
+            ],
+            [
+              23.75,
+              -1.3245735194570598,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "part": "M3x20_fork_screw_1",
+          "z_lower_bound_mm": 40.0,
+          "z_upper_bound_mm": 77.07512696184452,
+          "lower_bound_witness": {
+            "z_head_mm": 40.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -10.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 77.07512696184452,
+            "q_deg": 61.30509562065655,
+            "bounding_corner_xz_mm": [
+              23.75,
+              13.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              1.75,
+              -10.0
+            ],
+            [
+              23.75,
+              7.25,
+              13.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_washer_1",
+          "z_lower_bound_mm": 45.5,
+          "z_upper_bound_mm": 74.9098374141623,
+          "lower_bound_witness": {
+            "z_head_mm": 45.5,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              17.5,
+              -4.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.9098374141623,
+            "q_deg": 100.40771131249006,
+            "bounding_corner_xz_mm": [
+              24.5,
+              -4.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              17.5,
+              1.0,
+              -4.5
+            ],
+            [
+              24.5,
+              8.0,
+              -4.0
+            ]
+          ]
+        },
+        {
+          "part": "M3_hexnut_1",
+          "z_lower_bound_mm": 43.1,
+          "z_upper_bound_mm": 74.73201366650116,
+          "lower_bound_witness": {
+            "z_head_mm": 43.1,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              18.25,
+              -6.9
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.73201366650116,
+            "q_deg": 106.1999714187052,
+            "bounding_corner_xz_mm": [
+              23.75,
+              -6.9
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              18.25,
+              1.3245735194570576,
+              -6.9
+            ],
+            [
+              23.75,
+              7.675426480542942,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "part": "LED_window_placeholder",
+          "z_lower_bound_mm": 56.0,
+          "z_upper_bound_mm": 128.278732743958,
+          "lower_bound_witness": {
+            "z_head_mm": 56.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              25.0,
+              5.999999999999999
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 128.278732743958,
+            "q_deg": 85.1634165542647,
+            "bounding_corner_xz_mm": [
+              78.0,
+              6.6
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              25.0,
+              -12.840000000000003,
+              5.999999999999999
+            ],
+            [
+              78.0,
+              12.840000000000003,
+              6.6
+            ]
+          ]
+        },
+        {
+          "part": "contact02_pad_0",
+          "z_lower_bound_mm": 56.0,
+          "z_upper_bound_mm": 150.83474523278701,
+          "lower_bound_witness": {
+            "z_head_mm": 56.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              82.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.83474523278701,
+            "q_deg": 82.62249418468637,
+            "bounding_corner_xz_mm": [
+              100.0,
+              12.9478124083207
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              82.0,
+              -6.0,
+              6.0
+            ],
+            [
+              100.0,
+              -1.0,
+              12.9478124083207
+            ]
+          ]
+        },
+        {
+          "part": "contact02_pad_1",
+          "z_lower_bound_mm": 56.0,
+          "z_upper_bound_mm": 150.83474523278701,
+          "lower_bound_witness": {
+            "z_head_mm": 56.0,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              82.0,
+              6.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 150.83474523278701,
+            "q_deg": 82.62249418468637,
+            "bounding_corner_xz_mm": [
+              100.0,
+              12.9478124083207
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              82.0,
+              1.0,
+              6.0
+            ],
+            [
+              100.0,
+              6.0,
+              12.9478124083207
+            ]
+          ]
+        },
+        {
+          "part": "tip_SBSM_pin",
+          "z_lower_bound_mm": 22.393219781263525,
+          "z_upper_bound_mm": 75.85732761511234,
+          "lower_bound_witness": {
+            "z_head_mm": 22.393219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 75.85732761511234,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -32.1,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              2.8999999999999986,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_outer_stack_spacer",
+          "z_lower_bound_mm": 22.393219781263525,
+          "z_upper_bound_mm": 75.85732761511234,
+          "lower_bound_witness": {
+            "z_head_mm": 22.393219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 75.85732761511234,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -6.9,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              -4.100000000000001,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_M3_retention_washer",
+          "z_lower_bound_mm": 22.393219781263525,
+          "z_upper_bound_mm": 75.85732761511234,
+          "lower_bound_witness": {
+            "z_head_mm": 22.393219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 75.85732761511234,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              13.239771428813711,
+              -27.606780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.239771428813711,
+              -4.100000000000001,
+              -27.606780218736475
+            ],
+            [
+              13.239771428813711,
+              -3.6000000000000014,
+              -20.606780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_M3_retention_nut",
+          "z_lower_bound_mm": 23.143219781263525,
+          "z_upper_bound_mm": 75.18463421169909,
+          "lower_bound_witness": {
+            "z_head_mm": 23.143219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.56434494827077,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 75.18463421169909,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              12.915197909356653,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.56434494827077,
+              -3.6000000000000014,
+              -26.856780218736475
+            ],
+            [
+              12.915197909356653,
+              -1.2000000000000015,
+              -21.35678021873647
+            ]
+          ]
+        },
+        {
+          "part": "tip_lug_spacer_-1",
+          "z_lower_bound_mm": 23.143219781263525,
+          "z_upper_bound_mm": 74.82385209482011,
+          "lower_bound_witness": {
+            "z_head_mm": 23.143219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.989771428813711,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.82385209482011,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              12.489771428813711,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.989771428813711,
+              -25.0,
+              -26.856780218736475
+            ],
+            [
+              12.489771428813711,
+              -21.02,
+              -21.356780218736475
+            ]
+          ]
+        },
+        {
+          "part": "tip_lug_spacer_1",
+          "z_lower_bound_mm": 23.143219781263525,
+          "z_upper_bound_mm": 74.82385209482011,
+          "lower_bound_witness": {
+            "z_head_mm": 23.143219781263525,
+            "q_deg": 0.0,
+            "bounding_corner_xz_mm": [
+              6.989771428813711,
+              -26.856780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 74.82385209482011,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              12.489771428813711,
+              -26.856780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              6.989771428813711,
+              -14.98,
+              -26.856780218736475
+            ],
+            [
+              12.489771428813711,
+              -11.0,
+              -21.356780218736475
+            ]
+          ]
+        },
+        {
+          "part": "integral_steel_crank_spindle",
+          "z_lower_bound_mm": 18.516597154979753,
+          "z_upper_bound_mm": 86.62544596162108,
+          "lower_bound_witness": {
+            "z_head_mm": 18.516597154979753,
+            "q_deg": 22.40513333451766,
+            "bounding_corner_xz_mm": [
+              -12.0,
+              -29.106780218736475
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 86.62544596162108,
+            "q_deg": 122.0,
+            "bounding_corner_xz_mm": [
+              25.0,
+              -29.106780218736475
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -12.0,
+              -29.1,
+              -29.106780218736475
+            ],
+            [
+              25.0,
+              42.0,
+              12.0
+            ]
+          ]
+        },
+        {
+          "part": "inner_front_spacer",
+          "z_lower_bound_mm": 37.76705268547273,
+          "z_upper_bound_mm": 62.23294731452727,
+          "lower_bound_witness": {
+            "z_head_mm": 37.76705268547273,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -8.65,
+              -8.65
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 62.23294731452727,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              8.65,
+              8.65
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -8.65,
+              34.0,
+              -8.65
+            ],
+            [
+              8.65,
+              36.0,
+              8.65
+            ]
+          ]
+        },
+        {
+          "part": "MB1",
+          "z_lower_bound_mm": 32.32233047033631,
+          "z_upper_bound_mm": 67.67766952966369,
+          "lower_bound_witness": {
+            "z_head_mm": 32.32233047033631,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -12.5,
+              -12.5
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 67.67766952966369,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              12.5,
+              12.5
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -12.5,
+              36.0,
+              -12.5
+            ],
+            [
+              12.5,
+              37.0,
+              12.5
+            ]
+          ]
+        },
+        {
+          "part": "KM1",
+          "z_lower_bound_mm": 34.44365081389596,
+          "z_upper_bound_mm": 65.55634918610404,
+          "lower_bound_witness": {
+            "z_head_mm": 34.44365081389596,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              -11.0,
+              -11.0
+            ]
+          },
+          "upper_bound_witness": {
+            "z_head_mm": 65.55634918610404,
+            "q_deg": 45.0,
+            "bounding_corner_xz_mm": [
+              11.0,
+              11.0
+            ]
+          },
+          "bbox_local_mm": [
+            [
+              -11.0,
+              37.0,
+              -11.0
+            ],
+            [
+              11.0,
+              41.0,
+              11.0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "steel_stock_candidate": [
+    {
+      "finger": "UR",
+      "candidate_original_blank": "Ovako6082/MoC410M 42CrMo4 +QT round D80 x L80",
+      "blank_axis": "local u",
+      "blank_u_range_mm": [
+        -33,
+        47
+      ],
+      "blank_diameter_mm": 80,
+      "steel_outside_blank_mm3": 0.0,
+      "finished_nominal_steel_volume_mm3": 13328.866382603852,
+      "stock_nominal_volume_mm3": 402123.8596594935,
+      "guarantee_dimension_basis": "Original D80 bar, in supplier40<D<100 mm band; not finished7mm ligament",
+      "candidate_Rel_min_MPa": 650.0,
+      "release": "Not selected for procurement/manufacture; require exact supplier heat/condition certificate and surface/heat-treatment/finish machining plan."
+    },
+    {
+      "finger": "UL",
+      "candidate_original_blank": "Ovako6082/MoC410M 42CrMo4 +QT round D80 x L80",
+      "blank_axis": "local u",
+      "blank_u_range_mm": [
+        -33,
+        47
+      ],
+      "blank_diameter_mm": 80,
+      "steel_outside_blank_mm3": 0.0,
+      "finished_nominal_steel_volume_mm3": 13328.866382603852,
+      "stock_nominal_volume_mm3": 402123.8596594935,
+      "guarantee_dimension_basis": "Original D80 bar, in supplier40<D<100 mm band; not finished7mm ligament",
+      "candidate_Rel_min_MPa": 650.0,
+      "release": "Not selected for procurement/manufacture; require exact supplier heat/condition certificate and surface/heat-treatment/finish machining plan."
+    },
+    {
+      "finger": "LL",
+      "candidate_original_blank": "Ovako6082/MoC410M 42CrMo4 +QT round D80 x L80",
+      "blank_axis": "local u",
+      "blank_u_range_mm": [
+        -33,
+        47
+      ],
+      "blank_diameter_mm": 80,
+      "steel_outside_blank_mm3": 0.0,
+      "finished_nominal_steel_volume_mm3": 13328.866382603852,
+      "stock_nominal_volume_mm3": 402123.8596594935,
+      "guarantee_dimension_basis": "Original D80 bar, in supplier40<D<100 mm band; not finished7mm ligament",
+      "candidate_Rel_min_MPa": 650.0,
+      "release": "Not selected for procurement/manufacture; require exact supplier heat/condition certificate and surface/heat-treatment/finish machining plan."
+    },
+    {
+      "finger": "LR",
+      "candidate_original_blank": "Ovako6082/MoC410M 42CrMo4 +QT round D80 x L80",
+      "blank_axis": "local u",
+      "blank_u_range_mm": [
+        -33,
+        47
+      ],
+      "blank_diameter_mm": 80,
+      "steel_outside_blank_mm3": 0.0,
+      "finished_nominal_steel_volume_mm3": 13328.866382603852,
+      "stock_nominal_volume_mm3": 402123.8596594935,
+      "guarantee_dimension_basis": "Original D80 bar, in supplier40<D<100 mm band; not finished7mm ligament",
+      "candidate_Rel_min_MPa": 650.0,
+      "release": "Not selected for procurement/manufacture; require exact supplier heat/condition certificate and surface/heat-treatment/finish machining plan."
+    }
+  ],
+  "sources_sha256": {
+    "engineering/p16_carrier02_envelope.py": "23b37267e274a55a8177e4f7c11931555da28f68edbbef413ff47097996092c7",
+    "engineering/p16_carrier02_study.py": "ed095e8b0b9565ee8be98e5a653d36da458b61425c5a2c08e7c9ecd2bdc513bc",
+    "engineering/generated/contact02-study/study.json": "d36f825a731eab458aa1c5945404023d3b075768ddd8b21d928a0b42b86e4ea9",
+    "engineering/generated/p16-carrier-02/geometry.json": "c5fd0c041d6089a7a35846b2e116da0ea43f2e8c4d2c959ef513fbfdb44b0df1",
+    "engineering/generated/p16-carrier-02/UR_integral_steel_crank_spindle.step": "9c55fb77b8d5baec32a1d83d6a8d026e056a7205cf4d756014b46f416cc55079",
+    "engineering/generated/p16-carrier-02/LL_integral_steel_crank_spindle.step": "b2aecfaaa9ea1c61bb6b0dae4ff9c543442663e026073914d3926ce956fff3ec"
+  },
+  "exclusions": "P16 body, stationary carrier/base and original optic module unchanged, excluded from rotor bounds; no parent24mm extension or distal later lamp/pad/connector integration.",
+  "coordinate_reference": "head face z0, J7 contact z-140; current worldfacez780, or plus24 only if root extension explicitly integrated.",
+  "selfchecks": "Analytic bounds crosschecked against123 angles per part; cylinder80x80 contains actual revised steel; no q7 dependence of z under rotation about head z."
+}

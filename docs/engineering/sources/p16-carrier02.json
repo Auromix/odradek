@@ -1,0 +1,49 @@
+{
+  "revision": "P16-CARRIER-02",
+  "license_original": "CC-BY-NC-4.0",
+  "checked_date": "2026-09-27",
+  "upstream_evidence_sha256": {
+    "engineering/generated/p16-carrier-01/study.json": "95e20e88770acde045c2ba6fe454877284878216ec840ec03cb61b68738789cc",
+    "engineering/generated/p16-carrier-01/qa.json": "9e13d3f34e3133c83a1a25b2de50eade43bbac3964c3d2d1adddbdddcc9394e0",
+    "engineering/generated/p16-carrier-01/native-checks.json": "656d07c6f145240f6d40edeb98a266b762df15511f4bdafd813e95bb546c1541",
+    "engineering/generated/p16-carrier-01/wrist-cross-check.json": "4da4b92d627595d236f8d846c9052db482d5e42256b7b422907e7346ae66068a",
+    "engineering/generated/p16-packaging-study/study.json": "228790dd98a640948d8ff5a74b1465b575aa504c577874a6264dfaef6a2b797c",
+    "engineering/generated/linear-drive-study/study.json": "0451b81dc0195b867b76c99b6c6175b13cdb355975c102d07ce8f29e7ed8dfd3",
+    "engineering/generated/contact02-study/study.json": "d36f825a731eab458aa1c5945404023d3b075768ddd8b21d928a0b42b86e4ea9",
+    "docs/engineering/sources/p16-carrier.json": "5fb05b1329e62ce780c46e6e3ffe3bfb28a743d82ae445e4307bd4e168d3a21c",
+    "docs/engineering/sources/gripper-miter-support.json": "644940c1df2ff4d2c5bfdc417b4a7fbbf033f52613aec4fa76a3bf9fcfa0fa0a",
+    "engineering/parameters/r4-layout.json": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81"
+  },
+  "new_primary_sources": [
+    {
+      "id": "C02-MIT",
+      "url": "https://live.ocw.mit.edu/courses/1-050-solid-mechanics-fall-2004/8c30fdf15d9d50c02f4215903c847d7f_emech8_04.pdf",
+      "location": "Chapter8 printed p230 section8.5",
+      "used": "Noncircular rectangular torsion; k2=.208 square lower-tabulated value used conservatively for 8/7 and7.4/7 ratios. Not polar-I torsion."
+    },
+    {
+      "id": "C02-OVAKO",
+      "url": "https://steelnavigator.ovako.com/steel-grades/42crmo4/",
+      "revision_displayed": "2026-02-03",
+      "location": "Mechanical Properties, 42CrMo4 M (6082), MoC410M +QT, round bar40<D<100",
+      "used": "Candidate Rel min650MPa; not applied to AR/A conditions or all suppliers. E210GPa/G80GPa/rho7800kgm3 typical; existing mass calculation retains generic7850.",
+      "status": "material-screening candidate; not procurement or strength release"
+    }
+  ],
+  "vendor_geometry_redistributed": false,
+  "steel_stock_candidate": {
+    "original_blank_diameter_mm": 80,
+    "original_blank_length_mm": 80,
+    "axis": "local u",
+    "u_range_mm": [
+      -33,
+      47
+    ],
+    "supplier_variant": "Ovako42CrMo4 M (6082), MoC410M",
+    "condition": "+QT",
+    "supplier_dimension_band_mm": "40<D<100",
+    "Rel_min_MPa": 650,
+    "critical_condition": "Geometry is contained by the nominal raw blank; product/heat/size certificate and machining allowance must be confirmed. Finished7mm bridge dimension is not the guarantee dimension.",
+    "geometry_proof": "engineering/generated/p16-carrier-02/root-z-envelope.json"
+  }
+}

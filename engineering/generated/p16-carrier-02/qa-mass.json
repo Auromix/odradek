@@ -1,0 +1,136 @@
+{
+  "revision": "P16-CARRIER-02",
+  "exports": [
+    {
+      "filename": "P16-CARRIER-02-open.step",
+      "valid": true,
+      "solid_count": 236,
+      "roundtrip_volume_delta_mm3": -5.448237061500549e-08
+    },
+    {
+      "filename": "P16-CARRIER-02-closed.step",
+      "valid": true,
+      "solid_count": 236,
+      "roundtrip_volume_delta_mm3": -1.0686926543712616e-07
+    }
+  ],
+  "parts": [
+    {
+      "part": "UR_metal_blade_with_narrow_tongue",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 23656.220344368292,
+      "bbox_mm": [
+        [
+          14.999999899999995,
+          -23.000000100000015,
+          -0.0001322027823467548
+        ],
+        [
+          150.00000010000002,
+          23.000000100000015,
+          6.000132202782347
+        ]
+      ],
+      "mesh_watertight": true,
+      "mesh_bodies": 1,
+      "step_sha256": "9354061a5bd43fc385882cb425a6a4582863a251b7d40bc5ce2135e58273b331"
+    },
+    {
+      "part": "UR_integral_steel_crank_spindle",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13328.866382603852,
+      "bbox_mm": [
+        [
+          -12.000798037512375,
+          -29.10038780425585,
+          -29.1071631667325
+        ],
+        [
+          25.00000010000001,
+          42.00064248475155,
+          12.000927092052518
+        ]
+      ],
+      "mesh_watertight": true,
+      "mesh_bodies": 1,
+      "step_sha256": "9c55fb77b8d5baec32a1d83d6a8d026e056a7205cf4d756014b46f416cc55079"
+    },
+    {
+      "part": "LL_metal_blade_with_narrow_tongue",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11801.06381320298,
+      "bbox_mm": [
+        [
+          14.999999899999995,
+          -17.060975709756114,
+          -0.0001322027823467548
+        ],
+        [
+          100.00000010000001,
+          17.060975709756118,
+          6.000132202782347
+        ]
+      ],
+      "mesh_watertight": true,
+      "mesh_bodies": 1,
+      "step_sha256": "bbf93c39f8cee1a2658f4b4a2c71c0474e144f21af7395ad17f7a9673e6a7668"
+    },
+    {
+      "part": "LL_integral_steel_crank_spindle",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 13328.866382603852,
+      "bbox_mm": [
+        [
+          -12.000798037512375,
+          -29.10038780425585,
+          -29.1071631667325
+        ],
+        [
+          25.00000010000001,
+          42.00064248475155,
+          12.000927092052518
+        ]
+      ],
+      "mesh_watertight": true,
+      "mesh_bodies": 1,
+      "step_sha256": "b2aecfaaa9ea1c61bb6b0dae4ff9c543442663e026073914d3926ce956fff3ec"
+    }
+  ],
+  "mass": {
+    "modeled_mass_g": 2746.993345783776,
+    "home_COM_proxy_head_mm": [
+      -6.799863801935279e-12,
+      2.3161536983717226,
+      -30.841824858718496
+    ],
+    "changed_rows": [
+      "UR_metal_blade_with_narrow_tongue",
+      "UR_integral_steel_crank_spindle",
+      "UL_metal_blade_with_narrow_tongue",
+      "UL_integral_steel_crank_spindle",
+      "LL_metal_blade_with_narrow_tongue",
+      "LL_integral_steel_crank_spindle",
+      "LR_metal_blade_with_narrow_tongue",
+      "LR_integral_steel_crank_spindle"
+    ],
+    "planning_remaining_mass_g": [
+      235,
+      520
+    ],
+    "whole_head_planning_g": [
+      2981.993345783776,
+      3266.993345783776
+    ],
+    "limitations": "Catalog P16 mass mapped to envelope centroid proxy; other retained catalog/nominal-volume assumptions from carrier01. No J7 mass, parent24mm extension, integrated real distal lamps/pad retention or harness. Head face and J7 planes unchanged: J7 contact Z-140, face Z0."
+  },
+  "sources_sha256": {
+    "engineering/generated/p16-carrier-01/mass-ledger.csv": "1a74895b5f284752c786b892bd2f9f56ed38b328a15245304241e359cf3e90d7",
+    "engineering/parameters/r4-layout.json": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "engineering/p16_carrier02_export.py": "355ac01a0aed3a279696b514bdf060944051a85a582c81b00a657bde8f251279",
+    "engineering/p16_carrier02_study.py": "ed095e8b0b9565ee8be98e5a653d36da458b61425c5a2c08e7c9ecd2bdc513bc"
+  }
+}

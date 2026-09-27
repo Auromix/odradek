@@ -1,0 +1,296 @@
+{
+  "UR_own_carrier_analytic": {
+    "certified": true,
+    "coaxial_shell_minimum_gap_mm": 1.0,
+    "method": "Own support shell is a rotationally invariant conservative superset, including cap and cap screw envelopes; exact distance at q0 is valid throughout range.",
+    "stem_proof": {
+      "wide_blade_xmin_mm": 25.0,
+      "wide_blade_zmin_through_motion_mm": 0,
+      "other_positive_u_rotor_zmin_mm": -17.67766952966369,
+      "stem_zmax_mm": -18,
+      "actuator_u_max_mm": -7.9,
+      "stem_u_min_mm": 14
+    },
+    "base_arm_z_range_mm": [
+      -154,
+      -146
+    ],
+    "base_arm_proof": "Existing continuous base-bridge proof has its obstacle top at -139, and new arm is farther rearward. Pins and rolling contact are separate intended interfaces."
+  },
+  "UR_moving_vs_other_fixed": {
+    "certified": true,
+    "range_deg": [
+      0,
+      109.0
+    ],
+    "velocity_bound_mm_per_rad": 152.79792097637267,
+    "sample_count": 56,
+    "minimum_sample_mm": 12.336419308376845,
+    "minimum_sample_q": 80.0,
+    "continuous_lower_bound_mm": 9.669592497137034,
+    "failures": []
+  },
+  "UR_actuator_vs_other_fixed": {
+    "certified": true,
+    "range_deg": [
+      0,
+      109.0
+    ],
+    "velocity_bound_mm_per_rad": 88.77031071275465,
+    "sample_count": 56,
+    "minimum_sample_mm": 8.38030078654261,
+    "minimum_sample_q": 56.0,
+    "continuous_lower_bound_mm": 6.830966586586648,
+    "failures": []
+  },
+  "LL_own_carrier_analytic": {
+    "certified": true,
+    "coaxial_shell_minimum_gap_mm": 0.9999999999999964,
+    "method": "Own support shell is a rotationally invariant conservative superset, including cap and cap screw envelopes; exact distance at q0 is valid throughout range.",
+    "stem_proof": {
+      "wide_blade_xmin_mm": 24.999999999999996,
+      "wide_blade_zmin_through_motion_mm": 0,
+      "other_positive_u_rotor_zmin_mm": -17.67766952966369,
+      "stem_zmax_mm": -18,
+      "actuator_u_max_mm": -7.9,
+      "stem_u_min_mm": 14
+    },
+    "base_arm_z_range_mm": [
+      -154,
+      -146
+    ],
+    "base_arm_proof": "Existing continuous base-bridge proof has its obstacle top at -139, and new arm is farther rearward. Pins and rolling contact are separate intended interfaces."
+  },
+  "LL_moving_vs_other_fixed": {
+    "certified": true,
+    "range_deg": [
+      0,
+      122.0
+    ],
+    "velocity_bound_mm_per_rad": 104.14991432882616,
+    "sample_count": 62,
+    "minimum_sample_mm": 38.538671240477605,
+    "minimum_sample_q": 0.0,
+    "continuous_lower_bound_mm": 36.72091231976957,
+    "failures": []
+  },
+  "LL_actuator_vs_other_fixed": {
+    "certified": true,
+    "range_deg": [
+      0,
+      122.0
+    ],
+    "velocity_bound_mm_per_rad": 88.77031071275465,
+    "sample_count": 62,
+    "minimum_sample_mm": 8.38030078654261,
+    "minimum_sample_q": 56.0,
+    "continuous_lower_bound_mm": 6.830966586586648,
+    "failures": []
+  },
+  "UL_asymmetric_fixed_root": {
+    "certified": true,
+    "range_deg": [
+      0,
+      109.0
+    ],
+    "velocity_bound_mm_per_rad": 152.79792097637267,
+    "sample_count": 56,
+    "minimum_sample_mm": 49.035856852906015,
+    "minimum_sample_q": 108.0,
+    "continuous_lower_bound_mm": 46.36903004166621,
+    "failures": []
+  },
+  "UL_asymmetric_fixed_actuator": {
+    "certified": true,
+    "range_deg": [
+      0,
+      109.0
+    ],
+    "velocity_bound_mm_per_rad": 88.77031071275465,
+    "sample_count": 56,
+    "minimum_sample_mm": 24.657457938418798,
+    "minimum_sample_q": 56.0,
+    "continuous_lower_bound_mm": 23.108123738462837,
+    "failures": []
+  },
+  "LR_asymmetric_fixed_root": {
+    "certified": true,
+    "range_deg": [
+      0,
+      122.0
+    ],
+    "velocity_bound_mm_per_rad": 104.14991432882616,
+    "sample_count": 62,
+    "minimum_sample_mm": 76.56087077717297,
+    "minimum_sample_q": 0.0,
+    "continuous_lower_bound_mm": 74.74311185646494,
+    "failures": []
+  },
+  "LR_asymmetric_fixed_actuator": {
+    "certified": true,
+    "range_deg": [
+      0,
+      122.0
+    ],
+    "velocity_bound_mm_per_rad": 88.77031071275465,
+    "sample_count": 62,
+    "minimum_sample_mm": 14.625839964454682,
+    "minimum_sample_q": 56.0,
+    "continuous_lower_bound_mm": 13.07650576449872,
+    "failures": []
+  },
+  "mirror_scope": "UR maps to UL and LL to LR under x reflection for all new fixed original carrier/optic/fastener geometry. J7 adapter asymmetric hole pattern and offset FAKRA reservations checked separately for UL/LR.",
+  "four_independent_modules": {
+    "module_ranges": [
+      {
+        "finger": "UR",
+        "min_mm": [
+          4.995655392682243,
+          0.5930712778999565,
+          -154.53341340561988
+        ],
+        "max_mm": [
+          185.56189820365543,
+          133.25429371287296,
+          151.649501024784
+        ],
+        "sample_step_deg": 1,
+        "half_interval_margin_mm": 1.3334134056199058,
+        "point_speed_bound_mm_per_rad": 152.79792097637267
+      },
+      {
+        "finger": "UL",
+        "min_mm": [
+          -185.56189820365543,
+          0.5930712778999565,
+          -154.53341340561988
+        ],
+        "max_mm": [
+          -4.995655392682247,
+          133.25429371287294,
+          151.649501024784
+        ],
+        "sample_step_deg": 1,
+        "half_interval_margin_mm": 1.3334134056199058,
+        "point_speed_bound_mm_per_rad": 152.79792097637267
+      },
+      {
+        "finger": "LL",
+        "min_mm": [
+          -126.06677973037294,
+          -126.06677973037291,
+          -104.108879460354
+        ],
+        "max_mm": [
+          -1.4467641370068414,
+          -1.4467641370068423,
+          151.31729940257253
+        ],
+        "sample_step_deg": 1,
+        "half_interval_margin_mm": 0.9088794603540183,
+        "point_speed_bound_mm_per_rad": 104.14991432882616
+      },
+      {
+        "finger": "LR",
+        "min_mm": [
+          1.4467641370068423,
+          -126.06677973037296,
+          -104.108879460354
+        ],
+        "max_mm": [
+          126.0667797303729,
+          -1.446764137006848,
+          151.31729940257253
+        ],
+        "sample_step_deg": 1,
+        "half_interval_margin_mm": 0.9088794603540183,
+        "point_speed_bound_mm_per_rad": 104.14991432882616
+      }
+    ],
+    "pairs": [
+      {
+        "a": "UR",
+        "b": "UL",
+        "axis": "x",
+        "continuous_independent_gap_bound_mm": 9.99131078536449,
+        "certified": true
+      },
+      {
+        "a": "UR",
+        "b": "LL",
+        "axis": "x",
+        "continuous_independent_gap_bound_mm": 6.442419529689085,
+        "certified": true
+      },
+      {
+        "a": "UR",
+        "b": "LR",
+        "axis": "y",
+        "continuous_independent_gap_bound_mm": 2.0398354149068045,
+        "certified": true
+      },
+      {
+        "a": "UL",
+        "b": "LL",
+        "axis": "y",
+        "continuous_independent_gap_bound_mm": 2.0398354149067988,
+        "certified": true
+      },
+      {
+        "a": "UL",
+        "b": "LR",
+        "axis": "x",
+        "continuous_independent_gap_bound_mm": 6.442419529689089,
+        "certified": true
+      },
+      {
+        "a": "LL",
+        "b": "LR",
+        "axis": "x",
+        "continuous_independent_gap_bound_mm": 2.8935282740136836,
+        "certified": true
+      }
+    ],
+    "all_independent_pairs_certified": true,
+    "drive_envelope": {
+      "conservative_coaxial_diameter_mm": 255.7703933994963,
+      "zmin_mm": -154.53341340561988,
+      "zmax_mm": 78.40815651338295,
+      "method": "world AABB corners for each part at 1deg plus global speed margin; excludes distal blade/light/pads, enclosure and cable bend volumes"
+    }
+  },
+  "unchanged_interfaces": {
+    "source": "engineering/generated/p16-carrier-01/study.json",
+    "source_sha256": "95e20e88770acde045c2ba6fe454877284878216ec840ec03cb61b68738789cc",
+    "retained": "Old integral spindle, pin/clevis, base and bearing interfaces unchanged. Modified blade is a subset of old blade. Added bridge checked independently against all four conservative native-contained P16 envelopes.",
+    "added_bridge_vs_native_containing_envelopes": {
+      "UR": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 107.55860494081058,
+        "sample_count": 56,
+        "minimum_sample_mm": 9.872428002872157,
+        "minimum_sample_q": 109.0,
+        "continuous_lower_bound_mm": 8.069840311105722,
+        "failures": []
+      },
+      "LL": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 107.55860494081058,
+        "sample_count": 62,
+        "minimum_sample_mm": 8.242934827643385,
+        "minimum_sample_q": 122.0,
+        "continuous_lower_bound_mm": 6.3656830325744,
+        "failures": []
+      }
+    },
+    "limitations": "Distal LED/connector and retained pad hardware not merged; wrist range still blocked by carrier01 J6 collision. No 24 mm extension integrated."
+  }
+}

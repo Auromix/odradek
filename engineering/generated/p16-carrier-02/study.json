@@ -1,0 +1,98 @@
+{
+  "revision": "P16-CARRIER-02",
+  "manufacturing_release": false,
+  "whole_wrist_available": false,
+  "local_nominal_finger_motion_passed": true,
+  "minimum_nominal_root_clearance_mm": 1.0,
+  "mass": {
+    "modeled_mass_g": 2746.993345783776,
+    "home_COM_proxy_head_mm": [
+      -6.799863801935279e-12,
+      2.3161536983717226,
+      -30.841824858718496
+    ],
+    "changed_rows": [
+      "UR_metal_blade_with_narrow_tongue",
+      "UR_integral_steel_crank_spindle",
+      "UL_metal_blade_with_narrow_tongue",
+      "UL_integral_steel_crank_spindle",
+      "LL_metal_blade_with_narrow_tongue",
+      "LL_integral_steel_crank_spindle",
+      "LR_metal_blade_with_narrow_tongue",
+      "LR_integral_steel_crank_spindle"
+    ],
+    "planning_remaining_mass_g": [
+      235,
+      520
+    ],
+    "whole_head_planning_g": [
+      2981.993345783776,
+      3266.993345783776
+    ],
+    "limitations": "Catalog P16 mass mapped to envelope centroid proxy; other retained catalog/nominal-volume assumptions from carrier01. No J7 mass, parent24mm extension, integrated real distal lamps/pad retention or harness. Head face and J7 planes unchanged: J7 contact Z-140, face Z0."
+  },
+  "root_rotor_z_bounds": [
+    {
+      "finger": "UR",
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "z_lower_bound_mm": -31.483402845020247,
+      "z_upper_bound_mm": 150.49779785967954
+    },
+    {
+      "finger": "UL",
+      "range_deg": [
+        0,
+        109.0
+      ],
+      "z_lower_bound_mm": -31.483402845020247,
+      "z_upper_bound_mm": 150.49779785967954
+    },
+    {
+      "finger": "LL",
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "z_lower_bound_mm": 18.516597154979753,
+      "z_upper_bound_mm": 150.83474523278701
+    },
+    {
+      "finger": "LR",
+      "range_deg": [
+        0,
+        122.0
+      ],
+      "z_lower_bound_mm": 18.516597154979753,
+      "z_upper_bound_mm": 150.83474523278701
+    }
+  ],
+  "proof_files": {
+    "geometry": "engineering/generated/p16-carrier-02/geometry.json",
+    "motion": "engineering/generated/p16-carrier-02/motion.json",
+    "loads": "engineering/generated/p16-carrier-02/loads.json",
+    "qa-mass": "engineering/generated/p16-carrier-02/qa-mass.json",
+    "root-z-envelope": "engineering/generated/p16-carrier-02/root-z-envelope.json"
+  },
+  "sources_sha256": {
+    "engineering/generated/p16-carrier-02/geometry.json": "c5fd0c041d6089a7a35846b2e116da0ea43f2e8c4d2c959ef513fbfdb44b0df1",
+    "engineering/generated/p16-carrier-02/motion.json": "c4efa6422c51472abb8170b128d21c8c98fd6a19389eaf6d6dc30860920a6bfe",
+    "engineering/generated/p16-carrier-02/loads.json": "1ea5c53f62bb15d9a23b5967116af1b5496be65bb4c3f87f147994201856f2b6",
+    "engineering/generated/p16-carrier-02/qa-mass.json": "44194633295b7e132bb8c248c99824a5e792ccc55b0221c9f95e6dddfc494565",
+    "engineering/generated/p16-carrier-02/root-z-envelope.json": "9d7aafae00a9e13f8145988f61b60519a7b27ba48ecfd422b5e2e09dbfd3f9c9",
+    "docs/engineering/p16-carrier02-study.md": "3b70858f69b88dbc30d763aa58d60ee47e051512f5ec81c49e35ac4cd2a5df25",
+    "docs/engineering/sources/p16-carrier02.json": "c2dcb4553d570f525f36883a201e34bb45c72d1869fc0d8891d94f51d51937a7",
+    "engineering/p16_carrier02_study.py": "ed095e8b0b9565ee8be98e5a653d36da458b61425c5a2c08e7c9ecd2bdc513bc",
+    "engineering/p16_carrier02_export.py": "355ac01a0aed3a279696b514bdf060944051a85a582c81b00a657bde8f251279",
+    "engineering/p16_carrier02_envelope.py": "23b37267e274a55a8177e4f7c11931555da28f68edbbef413ff47097996092c7",
+    "engineering/p16_carrier02_loads.py": "04e484648611920629d9b1c10fc83c4c20b5aefabdffd245eed83b390bb18b76",
+    "engineering/draw_p16_carrier02.py": "3fe381bb0ca5060dbd00f6e47ceb4d05886d8e04ea8b41dd5aa4379e804fd5c4"
+  },
+  "warnings": [
+    "CARRIER01 wrist collision remains; parent24mm extension not integrated.",
+    "Material+QT and original stock certificate, fits, local notch/fatigue, clamp preload, bearing pressure centers and P16 duty/holding remain open.",
+    "CONTACT02 distal placeholders retained; parent later lamp and pad-retention are not integrated."
+  ]
+}
