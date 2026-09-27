@@ -1,0 +1,66 @@
+{
+  "revision": "P16-PACK-01",
+  "checked_on": "2026-09-27",
+  "license": "CC-BY-NC-4.0 for original project work only",
+  "vendor_assets_policy": "Read locally from work; do not commit vendor STEP/PDF or apply project license to them.",
+  "sources": [
+    {
+      "id": "ACTUONIX-P16-PRODUCT",
+      "publisher": "Actuonix",
+      "url": "https://www.actuonix.com/p16-50-256-12-p",
+      "locator": "Product Features / Technical Specs",
+      "used": "Exact PN, voltage/stroke/gearing/control, 95g, 97mm catalog closed length, max force and speed. No stock claim."
+    },
+    {
+      "id": "ACTUONIX-P16-PDF",
+      "publisher": "Actuonix",
+      "url": "https://www.actuonix.com/assets/images/datasheets/ActuonixP16Datasheet.pdf",
+      "locator": "Rev B 2016; PDF p1 force/duty/side-load/hold caveats; p3 dimensions and rod-end torque",
+      "used": "Distinguish max lifted/static/backdrive limits, 20% duty, axial loading, 36x20x70 case, pin and lug dimensions",
+      "sha256": "070deb5f22cead2e67abec1e02b870234e9e321fdacc38d4debb51c247c1768d"
+    },
+    {
+      "id": "ACTUONIX-P16-STEP",
+      "publisher": "Actuonix",
+      "url": "https://www.actuonix.com/assets/images/datasheets/P16_STP.zip",
+      "locator": "p16_50mm_in.stp and p16_50mm_out.stp (2016 archive)",
+      "used": "11/12 solids, pin-cylinder measurement97.4/147.4, two moving solids9/10, extra fixed connector11, source-containment and interface intersection checks",
+      "sha256": "cd89204e9fe798f4ea7f243dcbe71d8f272703fae8d88219f099f7c746dae69f",
+      "extracted_files_sha256": {
+        "p16_50mm_out.stp": "566a33669581b10069da3645e11c32e4931ac5651568a3b43ab807afd6e59a99",
+        "p16_50mm_in.stp": "bbaa144a6cac67447a71dc43d4d939d17d9527ec51a05d1712b2eba7056b0b56"
+      }
+    },
+    {
+      "id": "NBK-SBSM",
+      "publisher": "NBK",
+      "url": "https://static.nbk1560-chn.com.cn/images/zh-CN/product/adjustbolt/SBSM/SBSM_1.pdf",
+      "alternate_official_page": "https://www.nbk1560.com/products/machine_element/adjustbolt/SBSM/?SelectedLanguage=ja-JP",
+      "locator": "PDF p1: SBSM-M3-4-25/30 rows and upper dimension sketch",
+      "used": "d4 f9; L2 25/30 +0.25/0; M3x0.5 thread7; head7x3; hex2; masses3.5/4g; steel12.9",
+      "sha256": "9259b7cef53992c7e4bdc5add954895c6f7fd17aeaf7a8817feff8775d84445f"
+    },
+    {
+      "id": "INHERITED-SKF",
+      "local_source_record": "gripper-miter-support.json",
+      "used": "SKF7201 BECBP, KM1/MB1 original source, dimensions, 36g bearing mass, limits. No KHK/FAULHABER part used in this candidate."
+    },
+    {
+      "id": "INHERITED-ROOT",
+      "local_source_record": "gripper-root-support.json",
+      "used": "Existing Unbrako M2/M3/M4 head envelopes; Böllhoff DIN934 M3 nut; NBK key geometry; 6061 E/density reference. Material release and locking not inherited as passed."
+    }
+  ],
+  "validation_result": "study.json in engineering/generated/p16-packaging-study",
+  "cad_closed_vs_catalog_closed_mm": [
+    97.4,
+    97.0
+  ],
+  "corrections": [
+    "Guide tube must use square12.2x12.2 envelope, not diameter12 circle.",
+    "Rod-end assembly9mm behind6mm lug requires more than6.4mm clevis opening.",
+    "True two-cheek support requires shoulder through both bores, with thread outside; final pins25/30mm, not preliminary20mm.",
+    "Front spacer OD5.5 clears vendor rod-end transition; OD6 at .02 axial clearance gave0.00045855mm3 positive overlap.",
+    "Offset18mm adds F*18 bending and changes signed radial reactions; no unoffset-bearing approval reused."
+  ]
+}

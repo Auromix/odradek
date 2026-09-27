@@ -1,0 +1,2675 @@
+{
+  "internal_rigid_assembly_checks": [
+    {
+      "assembly": "upper_root",
+      "boolean_tests": 66,
+      "intersections": [],
+      "passes": true
+    },
+    {
+      "assembly": "lower_root",
+      "boolean_tests": 66,
+      "intersections": [],
+      "passes": true
+    },
+    {
+      "assembly": "base",
+      "boolean_tests": 9,
+      "intersections": [],
+      "passes": true
+    },
+    {
+      "assembly": "cartridge",
+      "boolean_tests": 29,
+      "intersections": [],
+      "passes": true
+    }
+  ],
+  "parameters": {
+    "revision": "P16-PACK-01",
+    "D": 123.0,
+    "a": 26.0,
+    "phase": 68.0,
+    "offset_u_mm": -18.0,
+    "tip_gap_mm": 14.2,
+    "base_gap_mm": 22.0,
+    "cheek_mm": 4.0,
+    "CAD_closed_mm": 97.4,
+    "catalog_closed_mm": 97.0,
+    "stroke_mm": 50.0,
+    "actuator_PN": "P16-50-256-12-P",
+    "actuator_mass_g": 95.0,
+    "upper_qmax_deg": 109.0,
+    "lower_qmax_deg": 122.0
+  },
+  "baseline_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "contact02_sha256": "d36f825a731eab458aa1c5945404023d3b075768ddd8b21d928a0b42b86e4ea9",
+  "generator_sha256": "3903d14a5b081574b8e9a7bfde7c74705b6ec68933f7084133b53b998987f68d",
+  "manufacturing_release": false,
+  "vendor_containment": [
+    {
+      "solid": 0,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 1,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 2,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 3,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 4,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 5,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 6,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 7,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 8,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 9,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 10,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "solid": 11,
+      "outside_volume_mm3": 0.0,
+      "passes": true
+    }
+  ],
+  "CAD_pin_measurements": [
+    {
+      "state": "closed",
+      "pin_axis_xz_native_mm": [
+        [
+          -10.5,
+          -4.5
+        ],
+        [
+          -10.5,
+          92.9
+        ]
+      ],
+      "pin_distance_mm": 97.4
+    },
+    {
+      "state": "extended",
+      "pin_axis_xz_native_mm": [
+        [
+          -10.5,
+          -4.5
+        ],
+        [
+          -10.5,
+          142.9
+        ]
+      ],
+      "pin_distance_mm": 147.4
+    }
+  ],
+  "CAD_stroke_margins_mm": [
+    1.9716864413139916,
+    2.5570757819969856
+  ],
+  "vendor_solids": [
+    11,
+    12
+  ],
+  "vendor_files_sha256": {
+    "nbk-shoulder.pdf": "9259b7cef53992c7e4bdc5add954895c6f7fd17aeaf7a8817feff8775d84445f",
+    "P16_STP.zip": "cd89204e9fe798f4ea7f243dcbe71d8f272703fae8d88219f099f7c746dae69f",
+    "p16_50mm_out.stp": "566a33669581b10069da3645e11c32e4931ac5651568a3b43ab807afd6e59a99",
+    "p16_50mm_in.stp": "bbaa144a6cac67447a71dc43d4d939d17d9527ec51a05d1712b2eba7056b0b56",
+    "ActuonixP16Datasheet.pdf": "070deb5f22cead2e67abec1e02b870234e9e321fdacc38d4debb51c247c1768d"
+  },
+  "native_CAD_interface_samples": [
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "q_deg": 30.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "q_deg": 60.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "q_deg": 90.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "tip_SBSM_pin",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "tip_outer_stack_spacer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "tip_M3_retention_washer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "tip_M3_retention_nut",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "tip_lug_spacer_-1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "tip_lug_spacer_1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "base_bracket",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "base_SBSM_pin",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "base_M3_retention_washer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "base_M3_retention_nut",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "base_lug_spacer_-1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 0.0,
+      "interface": "base_lug_spacer_1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "tip_SBSM_pin",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "tip_outer_stack_spacer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "tip_M3_retention_washer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "tip_M3_retention_nut",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "tip_lug_spacer_-1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "tip_lug_spacer_1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "base_bracket",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "base_SBSM_pin",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "base_M3_retention_washer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "base_M3_retention_nut",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "base_lug_spacer_-1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "UR",
+      "q_deg": 109.0,
+      "interface": "base_lug_spacer_1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "q_deg": 30.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "q_deg": 60.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "q_deg": 90.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "root_distance_mm": 2.5999999999999908,
+      "root_intersection_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "tip_SBSM_pin",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "tip_outer_stack_spacer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "tip_M3_retention_washer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "tip_M3_retention_nut",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "tip_lug_spacer_-1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "tip_lug_spacer_1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "base_bracket",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "base_SBSM_pin",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "base_M3_retention_washer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "base_M3_retention_nut",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "base_lug_spacer_-1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 0.0,
+      "interface": "base_lug_spacer_1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "tip_SBSM_pin",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "tip_outer_stack_spacer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "tip_M3_retention_washer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "tip_M3_retention_nut",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "tip_lug_spacer_-1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "tip_lug_spacer_1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "base_bracket",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "base_SBSM_pin",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "base_M3_retention_washer",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "base_M3_retention_nut",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "base_lug_spacer_-1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    },
+    {
+      "finger": "LL",
+      "q_deg": 122.0,
+      "interface": "base_lug_spacer_1",
+      "intersection_mm3": 0.0,
+      "passes": true
+    }
+  ],
+  "coplanar_counterexample": {
+    "q_deg": 122,
+    "intersection_mm3": 100.82956910176893,
+    "scope": "original root mechanical parts without distal blade"
+  },
+  "own_module_continuous_checks": {
+    "UR": {
+      "actuator_vs_existing_root_and_contact02": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 239.33259018540343,
+        "sample_count": 56,
+        "minimum_sample_mm": 9.171700162572234,
+        "minimum_sample_q": 109.0,
+        "continuous_lower_bound_mm": 5.027210910651337,
+        "failures": []
+      },
+      "case_vs_crank": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 121.98483546777453,
+        "sample_count": 56,
+        "minimum_sample_mm": 19.071686441313986,
+        "minimum_sample_q": 0.0,
+        "continuous_lower_bound_mm": 16.942649424897763,
+        "failures": []
+      },
+      "guide_vs_cheeks": {
+        "certified": true,
+        "continuous_lower_bound_mm": 1.0,
+        "method": "constant u slabs throughout 0..qmax"
+      },
+      "slider_tip_vs_cheeks": {
+        "certified": true,
+        "continuous_lower_bound_mm": 2.5,
+        "method": "constant u slabs throughout 0..qmax"
+      },
+      "guide_slider_tip_vs_crank_bridge": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 106.65885453275297,
+        "sample_count": 56,
+        "minimum_sample_mm": 9.872428002872157,
+        "minimum_sample_q": 109.0,
+        "continuous_lower_bound_mm": 8.08554391817249,
+        "failures": []
+      },
+      "actuator_vs_base_cheeks": {
+        "certified": true,
+        "continuous_lower_bound_mm": 0.9000000000000004,
+        "method": "constant u slabs; pins/lug spacers are intentional interfaces"
+      },
+      "actuator_vs_base_bridge": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 88.77031071275465,
+        "sample_count": 56,
+        "minimum_sample_mm": 7.867748853886925,
+        "minimum_sample_q": 56.0,
+        "continuous_lower_bound_mm": 6.3184146539309625,
+        "failures": []
+      },
+      "root_crank_pins_vs_output_cartridge": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 152.79792097637267,
+        "sample_count": 219,
+        "minimum_sample_mm": 1.0,
+        "minimum_sample_q": 108.5,
+        "continuous_lower_bound_mm": 0.3332932971900471,
+        "failures": []
+      },
+      "moving_vs_base_bracket": {
+        "certified": true,
+        "range_deg": [
+          0,
+          109.0
+        ],
+        "velocity_bound_mm_per_rad": 152.79792097637267,
+        "sample_count": 56,
+        "minimum_sample_mm": 87.37168644131398,
+        "minimum_sample_q": 0.0,
+        "continuous_lower_bound_mm": 84.70485963007417,
+        "failures": []
+      }
+    },
+    "LL": {
+      "actuator_vs_existing_root_and_contact02": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 189.6117704403885,
+        "sample_count": 62,
+        "minimum_sample_mm": 7.486273362761646,
+        "minimum_sample_q": 122.0,
+        "continuous_lower_bound_mm": 4.1769236680412085,
+        "failures": []
+      },
+      "case_vs_crank": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 121.98483546777453,
+        "sample_count": 62,
+        "minimum_sample_mm": 19.071686441313986,
+        "minimum_sample_q": 0.0,
+        "continuous_lower_bound_mm": 16.942649424897763,
+        "failures": []
+      },
+      "guide_vs_cheeks": {
+        "certified": true,
+        "continuous_lower_bound_mm": 1.0,
+        "method": "constant u slabs throughout 0..qmax"
+      },
+      "slider_tip_vs_cheeks": {
+        "certified": true,
+        "continuous_lower_bound_mm": 2.5,
+        "method": "constant u slabs throughout 0..qmax"
+      },
+      "guide_slider_tip_vs_crank_bridge": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 106.65885453275297,
+        "sample_count": 62,
+        "minimum_sample_mm": 8.242934827643385,
+        "minimum_sample_q": 122.0,
+        "continuous_lower_bound_mm": 6.381386639641168,
+        "failures": []
+      },
+      "actuator_vs_base_cheeks": {
+        "certified": true,
+        "continuous_lower_bound_mm": 0.9000000000000004,
+        "method": "constant u slabs; pins/lug spacers are intentional interfaces"
+      },
+      "actuator_vs_base_bridge": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 88.77031071275465,
+        "sample_count": 62,
+        "minimum_sample_mm": 7.867748853886925,
+        "minimum_sample_q": 56.0,
+        "continuous_lower_bound_mm": 6.3184146539309625,
+        "failures": []
+      },
+      "root_crank_pins_vs_output_cartridge": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 104.14991432882616,
+        "sample_count": 245,
+        "minimum_sample_mm": 1.0,
+        "minimum_sample_q": 121.5,
+        "continuous_lower_bound_mm": 0.5455602698229909,
+        "failures": []
+      },
+      "moving_vs_base_bracket": {
+        "certified": true,
+        "range_deg": [
+          0,
+          122.0
+        ],
+        "velocity_bound_mm_per_rad": 104.14991432882616,
+        "sample_count": 62,
+        "minimum_sample_mm": 87.37168644131398,
+        "minimum_sample_q": 0.0,
+        "continuous_lower_bound_mm": 85.55392752060595,
+        "failures": []
+      }
+    }
+  },
+  "speed_bound_derivation": {
+    "beta_derivative_bound": 0.39231444195471654,
+    "actuator_point_speed_bound_mm_per_rad": 88.77031071275465
+  },
+  "four_module_motion": {
+    "module_ranges": [
+      {
+        "finger": "UR",
+        "min_mm": [
+          4.995655392682243,
+          0.5930712778999565,
+          -145.3334134056199
+        ],
+        "max_mm": [
+          185.56189820365543,
+          133.25429371287296,
+          151.649501024784
+        ],
+        "sample_step_deg": 1,
+        "half_interval_margin_mm": 1.3334134056199058,
+        "point_speed_bound_mm_per_rad": 152.79792097637267
+      },
+      {
+        "finger": "UL",
+        "min_mm": [
+          -185.56189820365543,
+          0.5930712778999565,
+          -145.3334134056199
+        ],
+        "max_mm": [
+          -4.995655392682247,
+          133.25429371287294,
+          151.649501024784
+        ],
+        "sample_step_deg": 1,
+        "half_interval_margin_mm": 1.3334134056199058,
+        "point_speed_bound_mm_per_rad": 152.79792097637267
+      },
+      {
+        "finger": "LL",
+        "min_mm": [
+          -126.06677973037294,
+          -126.06677973037291,
+          -94.90887946035402
+        ],
+        "max_mm": [
+          -1.4467641370068414,
+          -1.4467641370068423,
+          151.31729940257253
+        ],
+        "sample_step_deg": 1,
+        "half_interval_margin_mm": 0.9088794603540183,
+        "point_speed_bound_mm_per_rad": 104.14991432882616
+      },
+      {
+        "finger": "LR",
+        "min_mm": [
+          1.4467641370068423,
+          -126.06677973037296,
+          -94.90887946035402
+        ],
+        "max_mm": [
+          126.0667797303729,
+          -1.446764137006848,
+          151.31729940257253
+        ],
+        "sample_step_deg": 1,
+        "half_interval_margin_mm": 0.9088794603540183,
+        "point_speed_bound_mm_per_rad": 104.14991432882616
+      }
+    ],
+    "pairs": [
+      {
+        "a": "UR",
+        "b": "UL",
+        "axis": "x",
+        "continuous_independent_gap_bound_mm": 9.99131078536449,
+        "certified": true
+      },
+      {
+        "a": "UR",
+        "b": "LL",
+        "axis": "x",
+        "continuous_independent_gap_bound_mm": 6.442419529689085,
+        "certified": true
+      },
+      {
+        "a": "UR",
+        "b": "LR",
+        "axis": "y",
+        "continuous_independent_gap_bound_mm": 2.0398354149068045,
+        "certified": true
+      },
+      {
+        "a": "UL",
+        "b": "LL",
+        "axis": "y",
+        "continuous_independent_gap_bound_mm": 2.0398354149067988,
+        "certified": true
+      },
+      {
+        "a": "UL",
+        "b": "LR",
+        "axis": "x",
+        "continuous_independent_gap_bound_mm": 6.442419529689089,
+        "certified": true
+      },
+      {
+        "a": "LL",
+        "b": "LR",
+        "axis": "x",
+        "continuous_independent_gap_bound_mm": 2.8935282740136836,
+        "certified": true
+      }
+    ],
+    "all_independent_pairs_certified": true,
+    "drive_envelope": {
+      "conservative_coaxial_diameter_mm": 247.4060422446241,
+      "zmin_mm": -145.3334134056199,
+      "zmax_mm": 78.40815651338295,
+      "method": "world AABB corners for each part at 1deg plus global speed margin; excludes distal blade/light/pads, enclosure and cable bend volumes"
+    }
+  },
+  "load_screen": {
+    "cases": [
+      {
+        "F_N": 123.107854960616,
+        "offset_only_bending_Nm": 2.2159413892910877,
+        "near_bearing_reaction_N": 578.6069183148952,
+        "far_bearing_reaction_N": -455.4990633542792,
+        "added_pair_reaction_due_to_offset_N": 221.5941389291088,
+        "note": "500N static/backdrive boundary sensitivity only, not a commanded load",
+        "crank_bridge_nominal_square_6mm_bending_upper_MPa": 62.869732654431104,
+        "annular_D10_d4_at_u6_nominal_bending_MPa": 30.885869793768897,
+        "max_linkage_torque_Nm": 3.2008042289760157,
+        "annular_D10_d4_nominal_torsion_MPa": 16.72984613829149,
+        "pin_screens": [
+          {
+            "role": "tip",
+            "support_center_span_mm": 18.2,
+            "bending_moment_Nmm": 467.80984885034076,
+            "nominal_bending_MPa": 74.45424987160415,
+            "double_shear_MPa": 4.898305912605536,
+            "plastic_hole_bearing_MPa": 5.129493956692333
+          },
+          {
+            "role": "base",
+            "support_center_span_mm": 26.0,
+            "bending_moment_Nmm": 677.093202283388,
+            "nominal_bending_MPa": 107.76273007732179,
+            "double_shear_MPa": 4.898305912605536,
+            "plastic_hole_bearing_MPa": 3.84712046751925
+          }
+        ]
+      },
+      {
+        "F_N": 218.785851158771,
+        "offset_only_bending_Nm": 3.938145320857878,
+        "near_bearing_reaction_N": 1028.2935004462238,
+        "far_bearing_reaction_N": -809.5076492874528,
+        "added_pair_reaction_due_to_offset_N": 393.81453208578785,
+        "note": "500N static/backdrive boundary sensitivity only, not a commanded load",
+        "crank_bridge_nominal_square_6mm_bending_upper_MPa": 111.73135926480498,
+        "annular_D10_d4_at_u6_nominal_bending_MPa": 54.89000936431304,
+        "max_linkage_torque_Nm": 5.688432130128046,
+        "annular_D10_d4_nominal_torsion_MPa": 29.732088405669565,
+        "pin_screens": [
+          {
+            "role": "tip",
+            "support_center_span_mm": 18.2,
+            "bending_moment_Nmm": 831.3862344033298,
+            "nominal_bending_MPa": 132.3192288238471,
+            "double_shear_MPa": 8.705212422621521,
+            "plastic_hole_bearing_MPa": 9.116077131615459
+          },
+          {
+            "role": "base",
+            "support_center_span_mm": 26.0,
+            "bending_moment_Nmm": 1203.3221813732405,
+            "nominal_bending_MPa": 191.51467329767345,
+            "double_shear_MPa": 8.705212422621521,
+            "plastic_hole_bearing_MPa": 6.837057848711594
+          }
+        ]
+      },
+      {
+        "F_N": 300.0,
+        "offset_only_bending_Nm": 5.3999999999999995,
+        "near_bearing_reaction_N": 1410.0,
+        "far_bearing_reaction_N": -1110.0,
+        "added_pair_reaction_due_to_offset_N": 540.0,
+        "note": "500N static/backdrive boundary sensitivity only, not a commanded load",
+        "crank_bridge_nominal_square_6mm_bending_upper_MPa": 153.2064692570853,
+        "annular_D10_d4_at_u6_nominal_bending_MPa": 75.26539180700469,
+        "max_linkage_torque_Nm": 7.8,
+        "annular_D10_d4_nominal_torsion_MPa": 40.768753895460875,
+        "pin_screens": [
+          {
+            "role": "tip",
+            "support_center_span_mm": 18.2,
+            "bending_moment_Nmm": 1140.0,
+            "nominal_bending_MPa": 181.4366351247607,
+            "double_shear_MPa": 11.93662073189215,
+            "plastic_hole_bearing_MPa": 12.5
+          },
+          {
+            "role": "base",
+            "support_center_span_mm": 26.0,
+            "bending_moment_Nmm": 1650.0,
+            "nominal_bending_MPa": 262.6056561016273,
+            "double_shear_MPa": 11.93662073189215,
+            "plastic_hole_bearing_MPa": 9.375
+          }
+        ]
+      },
+      {
+        "F_N": 500.0,
+        "offset_only_bending_Nm": 9.0,
+        "near_bearing_reaction_N": 2350.0,
+        "far_bearing_reaction_N": -1850.0,
+        "added_pair_reaction_due_to_offset_N": 900.0,
+        "note": "500N static/backdrive boundary sensitivity only, not a commanded load",
+        "crank_bridge_nominal_square_6mm_bending_upper_MPa": 255.3441154284755,
+        "annular_D10_d4_at_u6_nominal_bending_MPa": 125.44231967834116,
+        "max_linkage_torque_Nm": 13.0,
+        "annular_D10_d4_nominal_torsion_MPa": 67.94792315910146,
+        "pin_screens": [
+          {
+            "role": "tip",
+            "support_center_span_mm": 18.2,
+            "bending_moment_Nmm": 1900.0,
+            "nominal_bending_MPa": 302.3943918746011,
+            "double_shear_MPa": 19.89436788648692,
+            "plastic_hole_bearing_MPa": 20.833333333333332
+          },
+          {
+            "role": "base",
+            "support_center_span_mm": 26.0,
+            "bending_moment_Nmm": 2750.0,
+            "nominal_bending_MPa": 437.6760935027122,
+            "double_shear_MPa": 19.89436788648692,
+            "plastic_hole_bearing_MPa": 15.625
+          }
+        ]
+      }
+    ],
+    "bearing_geometric_centers_u_mm": [
+      19,
+      29
+    ],
+    "load_plane_u_mm": -18,
+    "limits": "Radial-plane actuator force only; vector superposition with finger/contact/gravity and real pressure centers still required. These signed reactions are not equivalent dynamic P, life, stiffness, preload or static safety certification. Pins use ideal simple supports/uniform plastic contact; shoulder transition, fit, creep and fatigue unqualified."
+  },
+  "mass": {
+    "modeled_metal_actuators_bearings_g": 1423.0983121075,
+    "home_COM_proxy_head_mm": [
+      -1.2142800807693098e-14,
+      1.058730327645397,
+      -7.367579997217447
+    ],
+    "rows": [
+      {
+        "part": "UR_output_tenon_D10",
+        "mass_g": 5.347352705384816,
+        "head_center_mm": [
+          57.13543872658997,
+          40.873700436376225,
+          -7.966586081069299e-16
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_shoulder_spacer",
+        "mass_g": 0.9494061859753488,
+        "head_center_mm": [
+          54.18597270029868,
+          44.65568678816267,
+          1.3512497899904864e-15
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_M2x6_keeper_screw_0",
+        "mass_g": 0.3260250608115879,
+        "head_center_mm": [
+          72.49495591957576,
+          50.76151461706757,
+          -7.084568835098331
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_M2x6_keeper_screw_1",
+        "mass_g": 0.3260250608115879,
+        "head_center_mm": [
+          75.77156409673174,
+          53.055820362471756,
+          -7.084568835098331
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_nut_keeper_sheet",
+        "mass_g": 0.4584156949081561,
+        "head_center_mm": [
+          74.57456508014783,
+          52.217672627830105,
+          -7.649999999999999
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_keyed_hub_lower_fork",
+        "mass_g": 20.066531016662125,
+        "head_center_mm": [
+          66.07809137372904,
+          39.757626378879664,
+          -3.946980831585877
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_removable_upper_fork",
+        "mass_g": 1.7478892201923104,
+        "head_center_mm": [
+          73.63177624704575,
+          51.55752477995209,
+          8.000000000000002
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_metal_blade_with_narrow_tongue",
+        "mass_g": 64.07894583028848,
+        "head_center_mm": [
+          117.8359479243161,
+          82.50961900869292,
+          3.0
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_parallel_key_3x3x8",
+        "mass_g": 0.5651999999999999,
+        "head_center_mm": [
+          53.49062849207116,
+          37.4545412937233,
+          2.4671622769447922e-17
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_end_washer_D18",
+        "mass_g": 2.825375841392253,
+        "head_center_mm": [
+          60.638707609247945,
+          35.440226289911514,
+          9.1305170173318e-16
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_M4x10_end_screw_envelope",
+        "mass_g": 2.194873707430509,
+        "head_center_mm": [
+          60.41153267237856,
+          35.76466572318328,
+          2.7953938773412165e-16
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_M3x20_fork_screw_0",
+        "mass_g": 1.6692754390078939,
+        "head_center_mm": [
+          77.12392999387794,
+          48.50927150864472,
+          3.854570637119109
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_M3_washer_0",
+        "mass_g": 0.11541583090758183,
+        "head_center_mm": [
+          77.12392999387798,
+          48.509271508644716,
+          -4.249999999999999
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_M3_hexnut_0",
+        "mass_g": 0.3603844252851179,
+        "head_center_mm": [
+          77.12392999387797,
+          48.50927150864472,
+          -5.699999999999999
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_M3x20_fork_screw_1",
+        "mass_g": 1.6692754390078939,
+        "head_center_mm": [
+          71.96174206671854,
+          55.881639907245656,
+          3.854570637119109
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_M3_washer_1",
+        "mass_g": 0.11541583090758183,
+        "head_center_mm": [
+          71.96174206671854,
+          55.881639907245656,
+          -4.249999999999999
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_M3_hexnut_1",
+        "mass_g": 0.360384425285118,
+        "head_center_mm": [
+          71.96174206671854,
+          55.881639907245656,
+          -5.7
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_tip_SBSM_pin",
+        "mass_g": 3.5,
+        "head_center_mm": [
+          75.82766932239278,
+          30.728914182448598,
+          -24.10678021873647
+        ],
+        "method": "NBK catalog"
+      },
+      {
+        "part": "UR_tip_outer_stack_spacer",
+        "mass_g": 0.5556976320172093,
+        "head_center_mm": [
+          68.47366717698046,
+          41.23151768799648,
+          -24.10678021873648
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_tip_M3_retention_washer",
+        "mass_g": 0.119484978792144,
+        "head_center_mm": [
+          67.52726605700119,
+          42.583118561073306,
+          -24.10678021873647
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_tip_M3_retention_nut",
+        "mass_g": 0.3603844252851181,
+        "head_center_mm": [
+          66.69558022429219,
+          43.77088902529234,
+          -24.106780218736475
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_tip_lug_spacer_-1",
+        "mass_g": 0.32979333836771574,
+        "head_center_mm": [
+          78.51699057748729,
+          26.888165392496234,
+          -24.106780218736482
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_tip_lug_spacer_1",
+        "mass_g": 0.32979333836771574,
+        "head_center_mm": [
+          72.7697546852498,
+          35.0960688762719,
+          -24.106780218736475
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UR_base_bracket",
+        "mass_g": 17.95521257277166,
+        "head_center_mm": [
+          67.66501895454822,
+          25.40561374737136,
+          -136.9763284570124
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_base_SBSM_pin",
+        "mass_g": 4.0,
+        "head_center_mm": [
+          68.71241940353713,
+          23.90977088388712,
+          -123.0
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "UR_base_M3_retention_washer",
+        "mass_g": 0.11948497879214405,
+        "head_center_mm": [
+          58.91797830019481,
+          37.8976824227785,
+          -123.00000000000003
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_base_M3_retention_nut",
+        "mass_g": 0.360384425285118,
+        "head_center_mm": [
+          58.08629246748577,
+          39.085452886997516,
+          -122.99999999999997
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_base_lug_spacer_-1",
+        "mass_g": 0.813997275128284,
+        "head_center_mm": [
+          71.94389916972708,
+          19.29473949697549,
+          -122.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_base_lug_spacer_1",
+        "mass_g": 0.8139972751282841,
+        "head_center_mm": [
+          63.38613873936945,
+          31.51648799776725,
+          -122.99999999999996
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_output_shaft_shoulder",
+        "mass_g": 3.69047051627459,
+        "head_center_mm": [
+          37.26546782794281,
+          68.82067209468794,
+          4.836465551907863e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_output_bearing_journal",
+        "mass_g": 19.53190984589846,
+        "head_center_mm": [
+          44.14838506415538,
+          58.99084756322002,
+          2.74148821028505e-16
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_output_thread_bay",
+        "mass_g": 5.326884503426853,
+        "head_center_mm": [
+          52.17845517307001,
+          47.522718943174155,
+          -1.6753539062853092e-16
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_output_rear_spacer",
+        "mass_g": 1.9148423484656387,
+        "head_center_mm": [
+          49.88414942766584,
+          50.79932712033012,
+          2.2138104293241374e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_output_MB1",
+        "mass_g": 2.9655456552642554,
+        "head_center_mm": [
+          50.7445140821924,
+          49.57059905389663,
+          -5.680181185800592e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_output_KM1",
+        "mass_g": 8.384910792431157,
+        "head_center_mm": [
+          52.17845517307001,
+          47.522718943174155,
+          -2.6608562041001963e-16
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_output_bearing_A",
+        "mass_g": 36.0,
+        "head_center_mm": [
+          40.706926446049096,
+          63.905759828954,
+          -4.605700193278885e-16
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "UR_output_bearing_B",
+        "mass_g": 36.0,
+        "head_center_mm": [
+          46.44269080955955,
+          55.714239386064065,
+          9.211400386557769e-16
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "UR_output_housing",
+        "mass_g": 24.42902447431423,
+        "head_center_mm": [
+          43.57480862780435,
+          59.80999960750902,
+          -7.237528875152536e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_output_housing_front_lip",
+        "mass_g": 2.683852786484718,
+        "head_center_mm": [
+          37.408861937030586,
+          68.61588408361568,
+          -3.8886081067486225e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_output_housing_rear_cap",
+        "mass_g": 3.4607784671945154,
+        "head_center_mm": [
+          49.88414942766586,
+          50.79932712033013,
+          1.9512945496734784e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UR_P16",
+        "mass_g": 95.0,
+        "head_center_mm": [
+          75.7728404082583,
+          31.08277144771755,
+          -82.70465452073059
+        ],
+        "method": "catalog mass; envelope uniform-volume centroid PROXY only, not vendor internal COM"
+      },
+      {
+        "part": "UL_output_tenon_D10",
+        "mass_g": 5.347352705384816,
+        "head_center_mm": [
+          -57.13543872658998,
+          40.87370043637622,
+          -1.9297131587532846e-16
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_shoulder_spacer",
+        "mass_g": 0.9494061859753488,
+        "head_center_mm": [
+          -54.18597270029869,
+          44.65568678816267,
+          -3.5249994521491024e-15
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_M2x6_keeper_screw_0",
+        "mass_g": 0.3260250608115879,
+        "head_center_mm": [
+          -72.4949559195758,
+          50.76151461706756,
+          -7.084568835098332
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_M2x6_keeper_screw_1",
+        "mass_g": 0.3260250608115879,
+        "head_center_mm": [
+          -75.77156409673175,
+          53.055820362471756,
+          -7.084568835098332
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_nut_keeper_sheet",
+        "mass_g": 0.4584156949081561,
+        "head_center_mm": [
+          -74.57456508014786,
+          52.2176726278301,
+          -7.649999999999998
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_keyed_hub_lower_fork",
+        "mass_g": 20.066531016662125,
+        "head_center_mm": [
+          -66.07809137372905,
+          39.757626378879685,
+          -3.9469808315858765
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_removable_upper_fork",
+        "mass_g": 1.7478892201923104,
+        "head_center_mm": [
+          -73.63177624704579,
+          51.55752477995208,
+          8.0
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_metal_blade_with_narrow_tongue",
+        "mass_g": 64.07894583028848,
+        "head_center_mm": [
+          -117.83594792431613,
+          82.5096190086929,
+          3.000000000000001
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_parallel_key_3x3x8",
+        "mass_g": 0.5651999999999999,
+        "head_center_mm": [
+          -53.490628492071174,
+          37.454541293723295,
+          2.4671622769447922e-17
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_end_washer_D18",
+        "mass_g": 2.825375841392253,
+        "head_center_mm": [
+          -60.63870760924795,
+          35.44022628991151,
+          3.8989775371308806e-16
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_M4x10_end_screw_envelope",
+        "mass_g": 2.194873707430509,
+        "head_center_mm": [
+          -60.41153267237858,
+          35.76466572318327,
+          1.9059503709144668e-16
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_M3x20_fork_screw_0",
+        "mass_g": 1.6692754390078939,
+        "head_center_mm": [
+          -77.12392999387797,
+          48.50927150864471,
+          3.854570637119107
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_M3_washer_0",
+        "mass_g": 0.11541583090758183,
+        "head_center_mm": [
+          -77.12392999387798,
+          48.509271508644716,
+          -4.25
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_M3_hexnut_0",
+        "mass_g": 0.3603844252851179,
+        "head_center_mm": [
+          -77.12392999387798,
+          48.509271508644716,
+          -5.7
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_M3x20_fork_screw_1",
+        "mass_g": 1.6692754390078939,
+        "head_center_mm": [
+          -71.96174206671856,
+          55.881639907245635,
+          3.854570637119107
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_M3_washer_1",
+        "mass_g": 0.11541583090758183,
+        "head_center_mm": [
+          -71.96174206671856,
+          55.881639907245635,
+          -4.249999999999999
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_M3_hexnut_1",
+        "mass_g": 0.360384425285118,
+        "head_center_mm": [
+          -71.96174206671857,
+          55.88163990724565,
+          -5.7
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_tip_SBSM_pin",
+        "mass_g": 3.5,
+        "head_center_mm": [
+          -75.82766932239277,
+          30.72891418244858,
+          -24.106780218736475
+        ],
+        "method": "NBK catalog"
+      },
+      {
+        "part": "UL_tip_outer_stack_spacer",
+        "mass_g": 0.5556976320172093,
+        "head_center_mm": [
+          -68.47366717698043,
+          41.23151768799645,
+          -24.106780218736468
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_tip_M3_retention_washer",
+        "mass_g": 0.119484978792144,
+        "head_center_mm": [
+          -67.52726605700124,
+          42.58311856107331,
+          -24.10678021873648
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_tip_M3_retention_nut",
+        "mass_g": 0.3603844252851181,
+        "head_center_mm": [
+          -66.69558022429223,
+          43.770889025292334,
+          -24.10678021873648
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_tip_lug_spacer_-1",
+        "mass_g": 0.32979333836771574,
+        "head_center_mm": [
+          -78.51699057748723,
+          26.888165392496216,
+          -24.10678021873647
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_tip_lug_spacer_1",
+        "mass_g": 0.32979333836771574,
+        "head_center_mm": [
+          -72.7697546852498,
+          35.09606887627192,
+          -24.106780218736475
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "UL_base_bracket",
+        "mass_g": 17.95521257277166,
+        "head_center_mm": [
+          -67.66501895454826,
+          25.40561374737137,
+          -136.97632845701244
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_base_SBSM_pin",
+        "mass_g": 4.0,
+        "head_center_mm": [
+          -68.71241940353713,
+          23.90977088388711,
+          -123.0
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "UL_base_M3_retention_washer",
+        "mass_g": 0.11948497879214405,
+        "head_center_mm": [
+          -58.917978300194825,
+          37.897682422778495,
+          -123.00000000000003
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_base_M3_retention_nut",
+        "mass_g": 0.360384425285118,
+        "head_center_mm": [
+          -58.086292467485805,
+          39.08545288699753,
+          -123.00000000000001
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_base_lug_spacer_-1",
+        "mass_g": 0.813997275128284,
+        "head_center_mm": [
+          -71.94389916972708,
+          19.29473949697548,
+          -122.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_base_lug_spacer_1",
+        "mass_g": 0.8139972751282841,
+        "head_center_mm": [
+          -63.38613873936944,
+          31.516487997767246,
+          -122.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_output_shaft_shoulder",
+        "mass_g": 3.69047051627459,
+        "head_center_mm": [
+          -37.26546782794283,
+          68.82067209468792,
+          5.441023745896356e-16
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_output_bearing_journal",
+        "mass_g": 19.53190984589846,
+        "head_center_mm": [
+          -44.148385064155384,
+          58.99084756322003,
+          -1.1879782244568558e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_output_thread_bay",
+        "mass_g": 5.326884503426853,
+        "head_center_mm": [
+          -52.178455173070034,
+          47.522718943174155,
+          -1.1727477343997165e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_output_rear_spacer",
+        "mass_g": 1.9148423484656387,
+        "head_center_mm": [
+          -49.88414942766584,
+          50.799327120330126,
+          1.1651633838548094e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_output_MB1",
+        "mass_g": 2.9655456552642554,
+        "head_center_mm": [
+          -50.7445140821924,
+          49.57059905389662,
+          1.8056205093935626e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_output_KM1",
+        "mass_g": 8.384910792431157,
+        "head_center_mm": [
+          -52.178455173070034,
+          47.522718943174155,
+          -1.5965137224601184e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_output_bearing_A",
+        "mass_g": 36.0,
+        "head_center_mm": [
+          -40.7069264460491,
+          63.90575982895398,
+          1.315914340936825e-16
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "UL_output_bearing_B",
+        "mass_g": 36.0,
+        "head_center_mm": [
+          -46.44269080955956,
+          55.714239386064065,
+          5.0662702126067744e-15
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "UL_output_housing",
+        "mass_g": 24.42902447431423,
+        "head_center_mm": [
+          -43.57480862780432,
+          59.80999960750899,
+          4.8250192501016895e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_output_housing_front_lip",
+        "mass_g": 2.683852786484718,
+        "head_center_mm": [
+          -37.40886193703059,
+          68.6158840836157,
+          -6.404766293468315e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_output_housing_rear_cap",
+        "mass_g": 3.4607784671945154,
+        "head_center_mm": [
+          -49.88414942766584,
+          50.79932712033011,
+          -5.853883649020435e-15
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "UL_P16",
+        "mass_g": 95.0,
+        "head_center_mm": [
+          -75.77284040825832,
+          31.082771447717544,
+          -82.70465452073063
+        ],
+        "method": "catalog mass; envelope uniform-volume centroid PROXY only, not vendor internal COM"
+      },
+      {
+        "part": "LL_output_tenon_D10",
+        "mass_g": 5.347352705384816,
+        "head_center_mm": [
+          -50.174201899114706,
+          -49.169779434419034,
+          50.00000000000001
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_shoulder_spacer",
+        "mass_g": 0.9494061859753488,
+        "head_center_mm": [
+          -53.38656197958433,
+          -45.6083873865323,
+          50.0
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_M2x6_keeper_screw_0",
+        "mass_g": 0.3260250608115879,
+        "head_center_mm": [
+          -62.578950135009464,
+          -62.57895013500945,
+          42.91543116490167
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_M2x6_keeper_screw_1",
+        "mass_g": 0.3260250608115879,
+        "head_center_mm": [
+          -65.40737725975565,
+          -65.40737725975562,
+          42.915431164901676
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_nut_keeper_sheet",
+        "mass_g": 0.4584156949081561,
+        "head_center_mm": [
+          -64.37410617461207,
+          -64.37410617461202,
+          42.35000000000001
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_keyed_hub_lower_fork",
+        "mass_g": 20.066531016662125,
+        "head_center_mm": [
+          -50.62795885004032,
+          -58.17037732004229,
+          46.053019168414075
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_removable_upper_fork",
+        "mass_g": 1.7478892201923104,
+        "head_center_mm": [
+          -63.560273893094525,
+          -63.560273893094504,
+          58.00000000000001
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_metal_blade_with_narrow_tongue",
+        "mass_g": 31.982819196142128,
+        "head_center_mm": [
+          -87.73717082780246,
+          -87.73717082780236,
+          52.99999999999999
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_parallel_key_3x3x8",
+        "mass_g": 0.5651999999999999,
+        "head_center_mm": [
+          -46.17407281148156,
+          -46.17407281148155,
+          50.0
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_end_washer_D18",
+        "mass_g": 2.825375841392253,
+        "head_center_mm": [
+          -45.43161069123569,
+          -53.56333867488098,
+          50.0
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_M4x10_end_screw_envelope",
+        "mass_g": 2.194873707430509,
+        "head_center_mm": [
+          -45.71167264670564,
+          -53.28327671941102,
+          50.0
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_M3x20_fork_screw_0",
+        "mass_g": 1.6692754390078939,
+        "head_center_mm": [
+          -61.16473657263637,
+          -67.52869760331527,
+          53.85457063711912
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_M3_washer_0",
+        "mass_g": 0.11541583090758183,
+        "head_center_mm": [
+          -61.16473657263637,
+          -67.52869760331531,
+          45.750000000000014
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_M3_hexnut_0",
+        "mass_g": 0.3603844252851179,
+        "head_center_mm": [
+          -61.16473657263636,
+          -67.52869760331527,
+          44.29999999999998
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_M3x20_fork_screw_1",
+        "mass_g": 1.6692754390078939,
+        "head_center_mm": [
+          -67.5286976033153,
+          -61.164736572636365,
+          53.85457063711912
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_M3_washer_1",
+        "mass_g": 0.11541583090758183,
+        "head_center_mm": [
+          -67.52869760331531,
+          -61.164736572636365,
+          45.75
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_M3_hexnut_1",
+        "mass_g": 0.360384425285118,
+        "head_center_mm": [
+          -67.52869760331531,
+          -61.16473657263635,
+          44.300000000000004
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_tip_SBSM_pin",
+        "mass_g": 3.5,
+        "head_center_mm": [
+          -43.4294095230863,
+          -69.33965669207268,
+          25.893219781263525
+        ],
+        "method": "NBK catalog"
+      },
+      {
+        "part": "LL_tip_outer_stack_spacer",
+        "mass_g": 0.5556976320172093,
+        "head_center_mm": [
+          -52.495445811053486,
+          -60.27362040410549,
+          25.893219781263518
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_tip_M3_retention_washer",
+        "mass_g": 0.119484978792144,
+        "head_center_mm": [
+          -53.662172000011296,
+          -59.10689421514769,
+          25.89321978126352
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_tip_M3_retention_nut",
+        "mass_g": 0.3603844252851181,
+        "head_center_mm": [
+          -54.6874768327318,
+          -58.08158938242719,
+          25.893219781263525
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_tip_lug_spacer_-1",
+        "mass_g": 0.32979333836771574,
+        "head_center_mm": [
+          -40.11400607247706,
+          -72.65506014268195,
+          25.89321978126352
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_tip_lug_spacer_1",
+        "mass_g": 0.32979333836771574,
+        "head_center_mm": [
+          -47.199216019966244,
+          -65.56985019519274,
+          25.89321978126352
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LL_base_bracket",
+        "mass_g": 17.95521257277166,
+        "head_center_mm": [
+          -36.769552621700484,
+          -62.225396744416145,
+          -86.97632845701231
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_base_SBSM_pin",
+        "mass_g": 4.0,
+        "head_center_mm": [
+          -35.47831415170765,
+          -63.516635214409,
+          -72.99999999999997
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "LL_base_M3_retention_washer",
+        "mass_g": 0.11948497879214405,
+        "head_center_mm": [
+          -47.552931034795336,
+          -51.44201833132134,
+          -73.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_base_M3_retention_nut",
+        "mass_g": 0.360384425285118,
+        "head_center_mm": [
+          -48.57823586751581,
+          -50.416713498600835,
+          -73.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_base_lug_spacer_-1",
+        "mass_g": 0.813997275128284,
+        "head_center_mm": [
+          -31.494536034048835,
+          -67.50041333206782,
+          -73.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_base_lug_spacer_1",
+        "mass_g": 0.8139972751282841,
+        "head_center_mm": [
+          -42.04456920935214,
+          -56.950380156764545,
+          -73.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_output_shaft_shoulder",
+        "mass_g": 3.69047051627459,
+        "head_center_mm": [
+          -74.24621202458749,
+          -24.748737341529154,
+          49.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_output_bearing_journal",
+        "mass_g": 19.53190984589846,
+        "head_center_mm": [
+          -65.76093065034893,
+          -33.234018715767725,
+          49.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_output_thread_bay",
+        "mass_g": 5.326884503426853,
+        "head_center_mm": [
+          -55.861435713737265,
+          -43.1335136523794,
+          50.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_output_rear_spacer",
+        "mass_g": 1.9148423484656387,
+        "head_center_mm": [
+          -58.68986283848345,
+          -40.30508652763321,
+          49.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_output_MB1",
+        "mass_g": 2.9655456552642554,
+        "head_center_mm": [
+          -57.62920266670364,
+          -41.365746699413016,
+          50.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_output_KM1",
+        "mass_g": 8.384910792431157,
+        "head_center_mm": [
+          -55.86143571373726,
+          -43.133513652379385,
+          49.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_output_bearing_A",
+        "mass_g": 36.0,
+        "head_center_mm": [
+          -70.00357133746823,
+          -28.99137802864844,
+          50.00000000000001
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "LL_output_bearing_B",
+        "mass_g": 36.0,
+        "head_center_mm": [
+          -62.93250352560275,
+          -36.062445840513924,
+          50.00000000000001
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "LL_output_housing",
+        "mass_g": 24.42902447431423,
+        "head_center_mm": [
+          -66.46803743153549,
+          -32.526911934581186,
+          49.999999999999986
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_output_housing_front_lip",
+        "mass_g": 2.683852786484718,
+        "head_center_mm": [
+          -74.06943532929087,
+          -24.925514036825785,
+          49.999999999999964
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_output_housing_rear_cap",
+        "mass_g": 3.4607784671945154,
+        "head_center_mm": [
+          -58.68986283848344,
+          -40.30508652763319,
+          50.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LL_P16",
+        "mass_g": 95.0,
+        "head_center_mm": [
+          -43.76836996035996,
+          -69.22421408307562,
+          -32.70465452073062
+        ],
+        "method": "catalog mass; envelope uniform-volume centroid PROXY only, not vendor internal COM"
+      },
+      {
+        "part": "LR_output_tenon_D10",
+        "mass_g": 5.347352705384816,
+        "head_center_mm": [
+          50.17420189911466,
+          -49.169779434419034,
+          49.999999999999986
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_shoulder_spacer",
+        "mass_g": 0.9494061859753488,
+        "head_center_mm": [
+          53.38656197958431,
+          -45.60838738653232,
+          49.999999999999986
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_M2x6_keeper_screw_0",
+        "mass_g": 0.3260250608115879,
+        "head_center_mm": [
+          62.57895013500943,
+          -62.57895013500945,
+          42.91543116490166
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_M2x6_keeper_screw_1",
+        "mass_g": 0.3260250608115879,
+        "head_center_mm": [
+          65.40737725975565,
+          -65.40737725975566,
+          42.915431164901676
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_nut_keeper_sheet",
+        "mass_g": 0.4584156949081561,
+        "head_center_mm": [
+          64.374106174612,
+          -64.37410617461202,
+          42.349999999999994
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_keyed_hub_lower_fork",
+        "mass_g": 20.066531016662125,
+        "head_center_mm": [
+          50.62795885004028,
+          -58.170377320042334,
+          46.05301916841406
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_removable_upper_fork",
+        "mass_g": 1.7478892201923104,
+        "head_center_mm": [
+          63.560273893094504,
+          -63.56027389309453,
+          58.000000000000014
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_metal_blade_with_narrow_tongue",
+        "mass_g": 31.982819196142128,
+        "head_center_mm": [
+          87.73717082780239,
+          -87.73717082780239,
+          52.99999999999999
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_parallel_key_3x3x8",
+        "mass_g": 0.5651999999999999,
+        "head_center_mm": [
+          46.174072811481544,
+          -46.174072811481565,
+          50.00000000000001
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_end_washer_D18",
+        "mass_g": 2.825375841392253,
+        "head_center_mm": [
+          45.43161069123566,
+          -53.56333867488099,
+          50.000000000000014
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_M4x10_end_screw_envelope",
+        "mass_g": 2.194873707430509,
+        "head_center_mm": [
+          45.711672646705615,
+          -53.28327671941102,
+          50.0
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_M3x20_fork_screw_0",
+        "mass_g": 1.6692754390078939,
+        "head_center_mm": [
+          61.16473657263634,
+          -67.52869760331531,
+          53.85457063711912
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_M3_washer_0",
+        "mass_g": 0.11541583090758183,
+        "head_center_mm": [
+          61.16473657263635,
+          -67.5286976033153,
+          45.750000000000014
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_M3_hexnut_0",
+        "mass_g": 0.3603844252851179,
+        "head_center_mm": [
+          61.16473657263632,
+          -67.5286976033153,
+          44.3
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_M3x20_fork_screw_1",
+        "mass_g": 1.6692754390078939,
+        "head_center_mm": [
+          67.52869760331527,
+          -61.16473657263637,
+          53.85457063711912
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_M3_washer_1",
+        "mass_g": 0.11541583090758183,
+        "head_center_mm": [
+          67.52869760331528,
+          -61.16473657263638,
+          45.750000000000014
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_M3_hexnut_1",
+        "mass_g": 0.360384425285118,
+        "head_center_mm": [
+          67.5286976033153,
+          -61.164736572636386,
+          44.29999999999999
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_tip_SBSM_pin",
+        "mass_g": 3.5,
+        "head_center_mm": [
+          43.429409523086264,
+          -69.3396566920727,
+          25.893219781263525
+        ],
+        "method": "NBK catalog"
+      },
+      {
+        "part": "LR_tip_outer_stack_spacer",
+        "mass_g": 0.5556976320172093,
+        "head_center_mm": [
+          52.495445811053465,
+          -60.273620404105515,
+          25.893219781263525
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_tip_M3_retention_washer",
+        "mass_g": 0.119484978792144,
+        "head_center_mm": [
+          53.66217200001127,
+          -59.10689421514769,
+          25.89321978126352
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_tip_M3_retention_nut",
+        "mass_g": 0.3603844252851181,
+        "head_center_mm": [
+          54.687476832731754,
+          -58.08158938242721,
+          25.893219781263525
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_tip_lug_spacer_-1",
+        "mass_g": 0.32979333836771574,
+        "head_center_mm": [
+          40.114006072477004,
+          -72.65506014268196,
+          25.89321978126352
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_tip_lug_spacer_1",
+        "mass_g": 0.32979333836771574,
+        "head_center_mm": [
+          47.19921601996624,
+          -65.56985019519277,
+          25.89321978126353
+        ],
+        "method": "nominal volume*density"
+      },
+      {
+        "part": "LR_base_bracket",
+        "mass_g": 17.95521257277166,
+        "head_center_mm": [
+          36.76955262170048,
+          -62.225396744416216,
+          -86.97632845701236
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_base_SBSM_pin",
+        "mass_g": 4.0,
+        "head_center_mm": [
+          35.47831415170763,
+          -63.51663521440903,
+          -73.00000000000001
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "LR_base_M3_retention_washer",
+        "mass_g": 0.11948497879214405,
+        "head_center_mm": [
+          47.55293103479531,
+          -51.44201833132134,
+          -72.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_base_M3_retention_nut",
+        "mass_g": 0.360384425285118,
+        "head_center_mm": [
+          48.57823586751581,
+          -50.416713498600856,
+          -73.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_base_lug_spacer_-1",
+        "mass_g": 0.813997275128284,
+        "head_center_mm": [
+          31.494536034048803,
+          -67.50041333206784,
+          -72.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_base_lug_spacer_1",
+        "mass_g": 0.8139972751282841,
+        "head_center_mm": [
+          42.04456920935209,
+          -56.95038015676456,
+          -73.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_output_shaft_shoulder",
+        "mass_g": 3.69047051627459,
+        "head_center_mm": [
+          74.24621202458749,
+          -24.748737341529182,
+          50.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_output_bearing_journal",
+        "mass_g": 19.53190984589846,
+        "head_center_mm": [
+          65.76093065034891,
+          -33.23401871576775,
+          50.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_output_thread_bay",
+        "mass_g": 5.326884503426853,
+        "head_center_mm": [
+          55.86143571373724,
+          -43.133513652379406,
+          49.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_output_rear_spacer",
+        "mass_g": 1.9148423484656387,
+        "head_center_mm": [
+          58.68986283848344,
+          -40.305086527633215,
+          50.00000000000001
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_output_MB1",
+        "mass_g": 2.9655456552642554,
+        "head_center_mm": [
+          57.62920266670362,
+          -41.36574669941303,
+          50.0
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_output_KM1",
+        "mass_g": 8.384910792431157,
+        "head_center_mm": [
+          55.86143571373724,
+          -43.1335136523794,
+          49.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_output_bearing_A",
+        "mass_g": 36.0,
+        "head_center_mm": [
+          70.0035713374682,
+          -28.99137802864847,
+          50.00000000000001
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "LR_output_bearing_B",
+        "mass_g": 36.0,
+        "head_center_mm": [
+          62.93250352560271,
+          -36.06244584051393,
+          50.0
+        ],
+        "method": "catalog 7201/shoulder pin"
+      },
+      {
+        "part": "LR_output_housing",
+        "mass_g": 24.42902447431423,
+        "head_center_mm": [
+          66.46803743153548,
+          -32.526911934581186,
+          49.99999999999998
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_output_housing_front_lip",
+        "mass_g": 2.683852786484718,
+        "head_center_mm": [
+          74.06943532929085,
+          -24.92551403682582,
+          49.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_output_housing_rear_cap",
+        "mass_g": 3.4607784671945154,
+        "head_center_mm": [
+          58.68986283848342,
+          -40.30508652763321,
+          49.99999999999999
+        ],
+        "method": "nominal volume*density; rings modeled simply"
+      },
+      {
+        "part": "LR_P16",
+        "mass_g": 95.0,
+        "head_center_mm": [
+          43.768369960359934,
+          -69.22421408307567,
+          -32.704654520730614
+        ],
+        "method": "catalog mass; envelope uniform-volume centroid PROXY only, not vendor internal COM"
+      }
+    ],
+    "exclusions": "optics/cameras, real lamps/PCBs, pad retainers/material, ground carrier and its screws, armor, cable/strain relief and external control; actuator internal mass distribution unknown"
+  },
+  "export_QA": [
+    {
+      "path": "P16-PACK-01-open.step",
+      "valid": true,
+      "roundtrip_solids": 188,
+      "parts": 188
+    },
+    {
+      "path": "P16-PACK-01-closed.step",
+      "valid": true,
+      "roundtrip_solids": 188,
+      "parts": 188
+    }
+  ],
+  "checks": {
+    "baseline_unchanged": true,
+    "all_export_valid": true,
+    "vendor_checked": true,
+    "motion_checked": true
+  }
+}
