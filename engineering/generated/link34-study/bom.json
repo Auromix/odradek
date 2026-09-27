@@ -1,0 +1,128 @@
+{
+  "revision": "R4-LINK34-01",
+  "original_parts": [
+    {
+      "id": "ODR-L34-OUT-R4",
+      "quantity": 1,
+      "material_candidate": "6061-T6",
+      "mass_kg": 0.09983803010645646
+    },
+    {
+      "id": "ODR-L34-LOW-R4",
+      "quantity": 1,
+      "material_candidate": "6061-T6",
+      "mass_kg": 0.2326362001487906
+    },
+    {
+      "id": "ODR-L34-TUBE-R4",
+      "quantity": 1,
+      "material_candidate": "6061-T6",
+      "mass_kg": 0.1390670005299899
+    },
+    {
+      "id": "ODR-L34-UP-R4",
+      "quantity": 1,
+      "material_candidate": "6061-T6",
+      "mass_kg": 0.24623366660479917
+    },
+    {
+      "id": "ODR-L34-CARRIER-R4",
+      "quantity": 1,
+      "material_candidate": "6061-T6",
+      "mass_kg": 0.2968070081784773
+    },
+    {
+      "id": "ODR-L34-FRONT-R4",
+      "quantity": 1,
+      "material_candidate": "6061-T6",
+      "mass_kg": 0.040408660108575065
+    }
+  ],
+  "fasteners": [
+    {
+      "source_id": "M4x12",
+      "quantity": 8,
+      "grip_mm": 3.1,
+      "geometric_engagement_mm": 8.9
+    },
+    {
+      "source_id": "M4x16",
+      "quantity": 4,
+      "grip_mm": 10,
+      "geometric_engagement_mm": 6,
+      "bottom_remaining_output_mm": 2
+    },
+    {
+      "source_id": "M4x20",
+      "quantity": 4,
+      "grip_mm": 10,
+      "geometric_engagement_mm": 10,
+      "tip_nominally_flush": true
+    },
+    {
+      "source_id": "M3x40",
+      "quantity": 8,
+      "grip_mm": 30,
+      "geometric_engagement_mm": 10,
+      "rear_remaining_mm": 4
+    },
+    {
+      "size": "M3 lengthTBD",
+      "quantity": 16,
+      "modeled_known_free_mm": 11,
+      "reason": "8mmplate + proven3mmchannel; OEMeffective threadlimitsunknown"
+    }
+  ],
+  "sources": {
+    "M3x40": {
+      "part": "Accu SSC-M3-40-12.9",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16011-SSC-M3-40-12-9",
+      "dimensions": "headD5.68/H3, key2.5, minthread18; length40"
+    },
+    "M4x12": {
+      "part": "TR00005918-000 / W/M4/12/SO12CS",
+      "url": "https://www.trfastenings.com/products/catalogue/screws-and-bolts/hexagon-socket-screws/cap-head/tr00006369/tr00005063/tr00005810/tr00006352/TR00005918-000",
+      "availability": "cataloguePreferred; stock/order not confirmed"
+    },
+    "M4x16": {
+      "part": "TR00005927-000 / W/M4/16/SO12CS",
+      "url": "https://www.trfastenings.com/Products/Catalogue/Screws-and-Bolts/Hexagon-Socket-Screws/Cap-Head/TR00005927-000",
+      "availability": "cataloguePreferred; stock/order not confirmed"
+    },
+    "M4x20": {
+      "part": "TR00005935-000 / W/M4/20/SO12CS",
+      "url": "https://www.trfastenings.com/products/catalogue/screws-and-bolts/hexagon-socket-screws/cap-head/tr00006369/tr00005063/tr00005810/tr00006352/TR00005935-000",
+      "availability": "cataloguePreferred; stock/order not confirmed"
+    },
+    "M4dimension_crosscheck": {
+      "part": "Accu SSCF-M4-12-12.9 / SSCF-M4-16-12.9 / SSCF-M4-20-HK-12.9",
+      "urls": [
+        "https://www.accu.co.uk/metric-cap-head-screws/16020-SSCF-M4-12-12-9",
+        "https://www.accu.co.uk/metric-cap-head-screws/16023-SSCF-M4-16-12-9",
+        "https://www.accu.co.uk/metric-cap-head-screws/642457-SSCF-M4-20-HK-12-9"
+      ],
+      "dimensions": "fullthread; headmaxD7.22/H4,key3; do not assume this catalog proves TR batch max dimensions; confirm purchase drawing",
+      "availability": "Accu page contains discontinued/unavailable text; not nominated as current-stock sources"
+    },
+    "material": {
+      "url": "https://ucpcdn.thyssenkrupp.com/_legacy/UCPthyssenkruppBAMXUK/assets.files/material-data-sheets/aluminium/aluminium-6061.pdf",
+      "pages": [
+        2,
+        3
+      ]
+    },
+    "vendor": {
+      "url": "https://www.myactuator.com/downloads-rhseries",
+      "part": "RH-20-100-E-B-D 3D A.STEP / 2D A.pdf; RH25/RH17 neighbors only"
+    }
+  },
+  "hardware_mass_budget_kg": 0.15,
+  "source_recheck_date": "2026-09-27",
+  "M4_sources_rechecked": "TR threeactual grade12.9 catalogentries and Accudimensionalcrosschecks; availabilitynot confirmed; criticalDIN/ISOvariant andmaximumhead requirespurchase drawing",
+  "no_purchase_made": true,
+  "thread_helix_modeled": false,
+  "preload_selected": false,
+  "printed_parts": "PLA/PETG unloaded manuallyfitted withseparate jointsupport",
+  "stock_profile_selected": false,
+  "closed_beam_note": "Original60x40/54x34 profile, bothcornerradii3.0; arbitrarycommercial60x40x3tube isnot equivalent untilmeasured."
+}
