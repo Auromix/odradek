@@ -1,0 +1,785 @@
+{
+  "revision": "CANDIDATE-LOADS-02",
+  "prior_results_sha256": "90a41b3a894e41afc29c66c06672b724d58d4c028c9f9850c221afa3a3ef5750",
+  "generator_sha256": "e6967af4eff0eff2534b03e654b568d26b00e064122f6f2b768c51fe49da4f5b",
+  "baseline_sha256": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+  "link12": {
+    "metal_mass_kg": 0.5445930687415641,
+    "reserve_mass_kg": 0.2,
+    "metal_COM_home_mm": [
+      0.0003890365627791045,
+      -31.137642038624122,
+      139.76038046777666
+    ],
+    "source_hashes": {
+      "engineering/generated/link12-study/part-placements.json": "ec50f20f19d5b4c1ffda70de8ce85851eef93836d98d599be5a13b425a5d3c8d",
+      "engineering/generated/link12-study/evidence.json": "3005afc00aaca2a880e40f3b085c3c036b73ae5258395979032844a1b1b7894c",
+      "engineering/generated/link12-study/ODR-L12-OUT-R4.step": "5cb2206e5ee2b195654731b9a0177d37cc103243504ba638212547854aa644f4",
+      "engineering/generated/link12-study/ODR-L12-FORK-R4.step": "1b2197f7409f905a2fb1724596efff74e07df5887d520a8257ffeb03c5ab960d",
+      "engineering/generated/link12-study/ODR-L12-FRONT-R4.step": "1d66911f77ee8d19cf9521a38cf80228629e811a3c2cadcb2995ff2da56971b4"
+    }
+  },
+  "replacement_bodies": [
+    {
+      "id": "L12_output_adapter",
+      "mass_kg": 0.263796748987852,
+      "preceding_joints": 1,
+      "com_home_m": [
+        8.031440440704311e-07,
+        -0.015775909754715014,
+        0.11108789238394913
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00034602870133660735,
+          -7.590118710589138e-09,
+          -9.41807541592799e-10
+        ],
+        [
+          -7.590118710589138e-09,
+          0.0004898589770492127,
+          1.4535847190220377e-05
+        ],
+        [
+          -9.41807541592799e-10,
+          1.4535847190220377e-05,
+          0.0008217755536874256
+        ]
+      ],
+      "mass_source": "engineering/generated/link12-study/ODR-L12-OUT-R4.step"
+    },
+    {
+      "id": "L12_rear_fork",
+      "mass_kg": 0.24643486107854784,
+      "preceding_joints": 1,
+      "com_home_m": [
+        -4.201224706323016e-13,
+        -0.050040934060566034,
+        0.16623647105216235
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.00037382408949977833,
+          -3.128924165983628e-16,
+          8.924704921766516e-16
+        ],
+        [
+          -3.128924165983628e-16,
+          0.0008406647863564482,
+          2.0993404200754648e-05
+        ],
+        [
+          8.924704921766516e-16,
+          2.0993404200754648e-05,
+          0.0005017247059006517
+        ]
+      ],
+      "mass_source": "engineering/generated/link12-study/ODR-L12-FORK-R4.step"
+    },
+    {
+      "id": "L12_front_ring",
+      "mass_kg": 0.03436145867516432,
+      "preceding_joints": 1,
+      "com_home_m": [
+        -1.9989072969378873e-12,
+        -0.0135,
+        0.16999999999800047
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          4.433770119367687e-05,
+          3.47704280563146e-21,
+          -6.261871021706611e-23
+        ],
+        [
+          3.47704280563146e-21,
+          4.4337701193680226e-05,
+          2.9467628355738786e-23
+        ],
+        [
+          -6.261871021706611e-23,
+          2.9467628355738786e-23,
+          8.858377183089e-05
+        ]
+      ],
+      "mass_source": "engineering/generated/link12-study/ODR-L12-FRONT-R4.step"
+    },
+    {
+      "id": "L12_fastener_reserve",
+      "mass_kg": 0.2,
+      "preceding_joints": 1,
+      "com_home_m": [
+        3.890365627791045e-07,
+        -0.03113764203862412,
+        0.13976038046777667
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          8.333333333333336e-05,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          8.333333333333336e-05,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          8.333333333333336e-05
+        ]
+      ],
+      "mass_source": "Unweighed 0.20kg reserve at metal COM with 50mm cube inertia proxy"
+    }
+  ],
+  "equivalent_rigid_body": {
+    "id": "L12_lumped",
+    "mass_kg": 0.7445930687415642,
+    "preceding_joints": 1,
+    "com_home_m": [
+      3.8903656277910447e-07,
+      -0.03113764203862412,
+      0.13976038046777664
+    ],
+    "orientation_home": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "inertia_com_kg_m2": [
+      [
+        0.0014295627808312609,
+        -1.0844760643099335e-08,
+        5.132946117441453e-09
+      ],
+      [
+        -1.0844760643099335e-08,
+        0.0019234792753040574,
+        0.0002567310688773831
+      ],
+      [
+        5.132946117441453e-09,
+        0.0002567310688773831,
+        0.001612171843024254
+      ]
+    ]
+  },
+  "mass_increase_vs_LOADS01_kg": 0.29459306874156416,
+  "nominal_base_bound_increase_Nm": 0.2273659293607445,
+  "constant_M11_increase_kg_m2": 0.0021766301018510603,
+  "analytic_reason": "New and old L1 bodies depend only on J1; its axis is vertical through x=y=0. Gravity effort is identically zero and the inertia difference is a constant M11 term. All J2-J7 gravity witnesses and triangle bounds are unchanged.",
+  "checks": [
+    {
+      "q_deg": [
+        -79.81051446886516,
+        -40.91750211672527,
+        35.24390470059631,
+        -34.32285497710505,
+        -31.100008377068324,
+        51.05700482171465,
+        -58.76366258122985
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 1.9949319973733282e-17,
+      "lumped_mass_matrix_error_kg_m2": 5.551115123125783e-17
+    },
+    {
+      "q_deg": [
+        -46.77471074254851,
+        -59.663740000500205,
+        12.951298093272598,
+        87.0774289989472,
+        -44.83335118067583,
+        -96.63324045986367,
+        1.9223372355777444
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 3.5561831257524545e-17,
+      "lumped_mass_matrix_error_kg_m2": 0.0
+    },
+    {
+      "q_deg": [
+        -18.469405934782937,
+        -39.45742299841467,
+        -24.976914963442265,
+        10.329849595868684,
+        69.76470314163602,
+        68.81821376572637,
+        32.880943797541896
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 3.5561831257524545e-17,
+      "lumped_mass_matrix_error_kg_m2": 0.0
+    },
+    {
+      "q_deg": [
+        -14.090747459036246,
+        -1.0632524724027737,
+        -29.93635940098297,
+        -58.988363201931115,
+        -64.37396539217488,
+        -31.177617001067627,
+        85.15647018913383
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 3.5561831257524545e-17,
+      "lumped_mass_matrix_error_kg_m2": 1.1102230246251565e-16
+    },
+    {
+      "q_deg": [
+        64.13018582583419,
+        -23.654454172311887,
+        -86.93521670792427,
+        -103.47619633814172,
+        -60.6740762367274,
+        -1.5250037411016715,
+        -15.54870492188958
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 1.465841337200402e-16,
+      "lumped_mass_matrix_error_kg_m2": 1.1102230246251565e-16
+    },
+    {
+      "q_deg": [
+        42.34772007765497,
+        25.477971528880385,
+        -52.17784283367561,
+        61.22838181642586,
+        63.73791410043869,
+        36.8126814023833,
+        78.51063832133727
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 3.5561831257524545e-17,
+      "lumped_mass_matrix_error_kg_m2": 1.1102230246251565e-16
+    },
+    {
+      "q_deg": [
+        -82.037592483518,
+        5.511569242228307,
+        45.078974994617376,
+        -6.947015506162141,
+        42.90597604742035,
+        96.14630946997906,
+        -15.110222582433073
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 1.9949319973733282e-17,
+      "lumped_mass_matrix_error_kg_m2": 5.551115123125783e-17
+    },
+    {
+      "q_deg": [
+        -67.02460955353578,
+        65.26384676816774,
+        -44.67880691907275,
+        81.78580821908903,
+        -47.926539386396755,
+        -17.671183337217776,
+        61.917088952291024
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 3.5561831257524545e-17,
+      "lumped_mass_matrix_error_kg_m2": 0.0
+    },
+    {
+      "q_deg": [
+        -20.38082988796459,
+        -70.95163818033868,
+        -76.68901079150696,
+        -39.78240156524876,
+        -48.837741070514646,
+        33.07350018879043,
+        -2.403626523954192
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 3.5561831257524545e-17,
+      "lumped_mass_matrix_error_kg_m2": 0.0
+    },
+    {
+      "q_deg": [
+        5.004229342281015,
+        50.3735393819379,
+        40.32708972094827,
+        5.756118978331992,
+        54.53244372804856,
+        12.157868609354306,
+        -41.84856044726521
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 3.5561831257524545e-17,
+      "lumped_mass_matrix_error_kg_m2": 0.0
+    },
+    {
+      "q_deg": [
+        83.05761653959296,
+        28.935134261008063,
+        -68.44249594428625,
+        -6.265033109490998,
+        -41.26630047704938,
+        67.64419920241345,
+        55.14474726197217
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 3.5561831257524545e-17,
+      "lumped_mass_matrix_error_kg_m2": 1.1102230246251565e-16
+    },
+    {
+      "q_deg": [
+        -75.1090574408045,
+        -19.27916634485679,
+        -1.2375566340361743,
+        -15.859337484685401,
+        -29.070185329971505,
+        -69.21772717792271,
+        48.02789457774051
+      ],
+      "gravity_difference_Nm": 0.0,
+      "analytic_mass_matrix_delta_error_kg_m2": 1.9949319973733282e-17,
+      "lumped_mass_matrix_error_kg_m2": 5.551115123125783e-17
+    }
+  ],
+  "cases": [
+    {
+      "head_mass_kg": 2.0,
+      "head_COM_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 19.876565763855798,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        50.30886560275583,
+        26.729154088059,
+        23.660734837923126,
+        10.380752550588241,
+        8.710727442550002,
+        8.629381931246627e-15
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        57.55002416567343,
+        48.09272147388465,
+        27.69268833109869,
+        21.464626212416903,
+        10.43506680037071,
+        7.2642759875
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 1.0658141036401503e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 59.13702327763417,
+        "added_COM_uncertainty_Nm": 3.38329425,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 93.78047629145125,
+        "study_vertical_budget_N": 362.39805648269186,
+        "post_equal_stiffness_max_abs_N": 811.9877932856826,
+        "J1_fixed_M4_equal_stiffness_N": 505.0079741752936,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 301.4218669481338,
+        "single_anchor_110mm_lever_example_N": 852.5497844677386,
+        "post_nominal_axial_eccentric_stress_MPa": 2.3379257757297447,
+        "plate_strip_sensitivity_stress_MPa": 71.81293936376183,
+        "plate_strip_sensitivity_deflection_mm": 0.35059017401474746
+      }
+    },
+    {
+      "head_mass_kg": 3.5,
+      "head_COM_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 21.376565763855798,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        59.419780135034706,
+        32.627251517583474,
+        29.191091075872844,
+        13.174666911696663,
+        10.990773567550004,
+        1.1293917190347003e-14
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        67.64896415116394,
+        57.09826396126848,
+        33.92958842780896,
+        26.60812881102048,
+        13.159236844375416,
+        9.0294729875
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 1.4210854715202004e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 69.23596326312469,
+        "added_COM_uncertainty_Nm": 4.118793,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 110.03213439468703,
+        "study_vertical_budget_N": 384.4630189826919,
+        "post_equal_stiffness_max_abs_N": 942.5167885509579,
+        "J1_fixed_M4_equal_stiffness_N": 587.4310851899298,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 353.65667444960343,
+        "single_anchor_110mm_lever_example_N": 1000.2921308607912,
+        "post_nominal_axial_eccentric_stress_MPa": 2.7137529803185525,
+        "plate_strip_sensitivity_stress_MPa": 83.35704248909049,
+        "plate_strip_sensitivity_deflection_mm": 0.4069483896707338
+      }
+    },
+    {
+      "head_mass_kg": 4.0,
+      "head_COM_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 21.876565763855798,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        62.4572984781592,
+        34.595395105938714,
+        31.035092234770254,
+        14.106143281211263,
+        11.750788942550006,
+        1.262618481989719e-14
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        71.01527747966077,
+        60.100111457063086,
+        36.00855512671238,
+        28.322629677221677,
+        14.067293525710319,
+        9.6178719875
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 2.1316282072803006e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 72.60227659162152,
+        "added_COM_uncertainty_Nm": 4.363959250000001,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 115.44935376243227,
+        "study_vertical_budget_N": 391.8180064826919,
+        "post_equal_stiffness_max_abs_N": 986.0264536393827,
+        "J1_fixed_M4_equal_stiffness_N": 614.9054555281417,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 371.0682769500932,
+        "single_anchor_110mm_lever_example_N": 1049.539579658475,
+        "post_nominal_axial_eccentric_stress_MPa": 2.8390287151814877,
+        "plate_strip_sensitivity_stress_MPa": 87.20507686420001,
+        "plate_strip_sensitivity_deflection_mm": 0.4257344615560625
+      }
+    },
+    {
+      "head_mass_kg": 4.5,
+      "head_COM_offset_mm": [
+        0,
+        0,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 22.376565763855798,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        65.49501368012706,
+        36.56432393742663,
+        32.87929095287268,
+        15.037678872452,
+        12.51080431755,
+        1.3514363239597316e-14
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        74.38159080815761,
+        63.10195895285771,
+        38.0875218256158,
+        30.037130543422872,
+        14.975350207045222,
+        10.2062709875
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 1.4210854715202004e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 75.96858992011836,
+        "added_COM_uncertainty_Nm": 4.6091255,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 120.86657313017756,
+        "study_vertical_budget_N": 399.1729939826919,
+        "post_equal_stiffness_max_abs_N": 1029.5361187278081,
+        "J1_fixed_M4_equal_stiffness_N": 642.3798258663539,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 388.4798794505832,
+        "single_anchor_110mm_lever_example_N": 1098.7870284561595,
+        "post_nominal_axial_eccentric_stress_MPa": 2.964304450044424,
+        "plate_strip_sensitivity_stress_MPa": 91.05311123930959,
+        "plate_strip_sensitivity_deflection_mm": 0.4445205334413914
+      }
+    },
+    {
+      "head_mass_kg": 4.5,
+      "head_COM_offset_mm": [
+        0,
+        50,
+        0
+      ],
+      "arm_model_mass_including_object_and_J1_kg": 22.376565763855798,
+      "witness_max_abs_gravity_Nm": [
+        0.0,
+        66.11165055609297,
+        37.130009031943054,
+        33.507246369625335,
+        16.365193906035387,
+        12.703891150875458,
+        2.2064962500000003
+      ],
+      "triangle_bound_Nm": [
+        0.0,
+        74.82289005815761,
+        63.54325820285771,
+        38.5288210756158,
+        30.478429793422873,
+        15.416649457045224,
+        10.6475702375
+      ],
+      "catalog_rated_Nm": [
+        108,
+        108,
+        50,
+        50,
+        35,
+        35,
+        11
+      ],
+      "witness_over_rated": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "triangle_over_rated": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "independent_gravity_error_Nm": 1.4210854715202004e-14,
+      "base": {
+        "nominal_overturning_bound_Nm": 76.40988917011836,
+        "added_COM_uncertainty_Nm": 4.6091255,
+        "study_multiplier": 1.5,
+        "study_design_moment_Nm": 121.52852200517755,
+        "study_vertical_budget_N": 399.1729939826919,
+        "post_equal_stiffness_max_abs_N": 1034.628033150885,
+        "J1_fixed_M4_equal_stiffness_N": 645.6246732928245,
+        "anchor_equal_stiffness_tension_no_gravity_relief_N": 390.60746371563465,
+        "single_anchor_110mm_lever_example_N": 1104.8047455016142,
+        "post_nominal_axial_eccentric_stress_MPa": 2.9789654068666325,
+        "plate_strip_sensitivity_stress_MPa": 91.50344478463325,
+        "plate_strip_sensitivity_deflection_mm": 0.44671905807244655
+      }
+    }
+  ],
+  "manufacturing_release": false,
+  "limits": [
+    "0.5kg base/general hardware reserve is separate from LINK56 0.1kg allowance",
+    "No collision/task/harness validation of sampled or optimized poses",
+    "Local witness maximum is not a global proof; running rating does not establish zero-speed thermal capacity",
+    "Base equal-stiffness loads and strip stresses omit prying/preload/contact separation/local concentration",
+    "No dynamic, contact, fatigue, thread stripping, anchor/table capacity or brake qualification",
+    "Base/general 0.5kg, LINK56 0.1kg and LINK12 0.2kg are distinct planning budgets, not weighed fastener assemblies."
+  ],
+  "new_limits": [
+    "LINK12 three solids now have CAD-derived inertia; 0.20kg remains a COM/cube proxy.",
+    "Nine metal solids use CAD integration, other joints/four link budgets/head/payload remain directory values or proxies.",
+    "Additional shoulder reserve COM error budget is 0.20kg at 150mm, without claiming all uncertainties are bounded.",
+    "Downstream gravity searches reused only under the explicit analytic identity; prior base sampled maxima are not copied as current.",
+    "No new head/camera/LED/contact height or rear-interface offsets integrated."
+  ]
+}

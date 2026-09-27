@@ -18,7 +18,7 @@
 | J1→J2肩架 | [LINK12-01](link12-structure-study.md) | 三件原创结构、五页图及J2连续插入证明；0.745 kg含紧固预算，预紧/材料/行程未放行 |
 | 新增部件 Blender | [三个原生场景](subassembly-blender-review.md) | 连接件、底座和四指；五张渲染、12项层级变换检查，尚非新整机装配 |
 | 六段承力连接 | [真实接口与空间审查](link-connection-plan.md) | 全部接触面/孔阵；发现肩部螺钉及两段旧梁干涉 |
-| 真实连接质量回算 | [候选载荷集成](candidate-loads.md) | LINK56六实体惯量/COM回填；重头情景与底座重算，仍非整机载荷上限 |
+| 真实连接质量回算 | [LOADS-02肩架集成](shoulder-mass-integration.md)／[LOADS-01](candidate-loads.md) | LINK12+LINK56九实体惯量/COM回填；重头情景与底座重算，仍非整机载荷上限 |
 | 末端质量影响 | [3.5–4.5 kg 敏感性](head-mass-sensitivity.md) | 2 kg净物体另计；局部搜索及全域保守界，不替代动态/热选型 |
 | 材料与梁 | [截面筛选](structure-screening.md) | 6061-T6 闭口矩形梁与双管比较；不含完整连接柔度 |
 | 底座 | [开腔底座及倾覆计算](base-structure-study.md) | 5种原创零件、8件装配、4页图；固定到桌架的候选，未承载放行 |

@@ -1,5 +1,7 @@
 # 用实际连接件质量复算整臂与底座
 
+本页保留LOADS-01结果；新增肩架回填后的当前底座/惯量结果见 [CANDIDATE-LOADS-02](shoulder-mass-integration.md)。下游重力不变，底座载荷已更新。
+
 **CANDIDATE-LOADS-01：混合质量模型，非整机制造／载荷放行。** 将 LINK56-01 的六件原创 STEP 逐一求体积、质心和转动惯量，替换旧 L5 预算；其他关节和连接仍保留目录／预算代理。主 R4-layout-03 参数不变，历史 HEAD-MASS-01 结果不覆盖。
 
 ![整臂与底座复算](../../engineering/generated/candidate-loads/candidate-loads.png)
