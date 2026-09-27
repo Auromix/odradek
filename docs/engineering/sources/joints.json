@@ -1,0 +1,551 @@
+{
+  "schema_version": "1.0",
+  "status": "R4 conditional hardware study; not manufacturing/procurement release",
+  "review_date": "2026-09-27",
+  "working_assumptions": {
+    "net_object_payload_kg": 2,
+    "head_mass_kg": 1.2,
+    "head_mass_sensitivity_kg": [
+      0.8,
+      1.5
+    ],
+    "shoulder_to_tcp_reach_m": 0.7,
+    "scope": "actuator selection only; arm dynamics handled in system model"
+  },
+  "sources": [
+    {
+      "id": "MYA-RH-260805",
+      "title": "RH Series-product manual-260805.pdf",
+      "publisher": "MYACTUATOR",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_be98b58973d34f7aaa50bdf3f2aa12ed.zip",
+      "landing_url": "https://www.myactuator.com/downloads-rhseries",
+      "accessed": "2026-09-27",
+      "local_download_sha256": "b7071360fa9f5e8870ab74e72c06f90bcef73dbf7a9c908482124fa2d6e9753e",
+      "verification": "PDF downloaded from official host; pages 3,6,8,10 visually reviewed; 100:1 columns used",
+      "limits": "Rated running torque at 24 C ambient and 60 C rise; peak table conflicts with larger short-duration stall measurements. No assembled arm performance inferred."
+    },
+    {
+      "id": "MYA-RH-USER-1.4",
+      "title": "User Manual for RH Series Products V1.4.pdf",
+      "publisher": "MYACTUATOR",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_be98b58973d34f7aaa50bdf3f2aa12ed.zip",
+      "accessed": "2026-09-27",
+      "locator": "ZIP member; document section 7, PDF pages 27-28",
+      "verification": "Holding brake only; side of brake torque values not explicit; RH14 brake row contradicts current RH14 product table"
+    },
+    {
+      "id": "MYA-ECAT-2.0",
+      "title": "EtherCAT control protocol V2.0_260425.pdf",
+      "publisher": "MYACTUATOR",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_be98b58973d34f7aaa50bdf3f2aa12ed.zip",
+      "accessed": "2026-09-27",
+      "verification": "CiA402 modes documented; ESI / shipping firmware compatibility not bench-tested"
+    },
+    {
+      "id": "HD-SHA",
+      "title": "SHA with Integrated Servo Drive",
+      "publisher": "Harmonic Drive LLC",
+      "url": "https://www.harmonicdrive.net/products/integrated-actuators/integrated-actuators/sha-integrated-with-servo-drive",
+      "accessed": "2026-09-27",
+      "verification": "Series-level fallback only; thermal footnote explicitly requires 320 x 320 x 16 mm aluminum heat sink"
+    },
+    {
+      "id": "HD-SHA-BROCHURE",
+      "title": "SHA Integrated Brochure",
+      "publisher": "Harmonic Drive LLC",
+      "url": "https://www.harmonicdrive.net/_hd/Content/catalogs/pdf/SHA-Integrated-Brochure.pdf",
+      "accessed": "2026-09-27",
+      "verification": "Order fields for brake, connector exit and EtherCAT; MTO not third-party-certified STO"
+    },
+    {
+      "id": "HD-CSG20",
+      "title": "CSG-20-100-2UH",
+      "publisher": "Harmonic Drive LLC",
+      "url": "https://global.harmonicdrive.net/products/gear-units/gear-units/csg-2uh/csg-20-100-2uh",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "KM-TBM2G",
+      "title": "TBM2G Frameless Motors",
+      "publisher": "Kollmorgen",
+      "url": "https://www.kollmorgen.com/en-us/products/motors/direct-drive/tbm2g-series-frameless",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "KM-TBM2G-DATASHEET",
+      "title": "TBM2G Frameless Motor Selection Guide",
+      "publisher": "Kollmorgen",
+      "url": "https://www.kollmorgen.com/sites/default/files/TBM2G-KM_SG_00396_RevA_EN-mobile.pdf",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "SYN-CIRCULO",
+      "title": "SOMANET Circulo technical specifications",
+      "publisher": "Synapticon",
+      "url": "https://doc.synapticon.com/circulo/technical_specs/tech_specs_circulo.html",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "SYN-CIRCULO-CAD",
+      "title": "SOMANET Circulo downloads",
+      "publisher": "Synapticon",
+      "url": "https://doc.synapticon.com/circulo/technical_specs/downloads_circulo.html",
+      "accessed": "2026-09-27"
+    },
+    {
+      "id": "SYN-JP-CATALOG",
+      "title": "ACTILINK JP catalog",
+      "publisher": "Synapticon",
+      "url": "https://catalog.synapticon.com/shop/category/actilink-actuators/actilink-jp",
+      "accessed": "2026-09-27",
+      "verification": "Official catalog currently identifies sample/RFQ entries; no complete production configuration selected"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "MYA-RH14-100",
+      "manufacturer": "MYACTUATOR",
+      "series": "EPS-RH-14",
+      "order_codes_verified": [
+        "EPS-RH-14-100-E-N-D"
+      ],
+      "selection_status": "conditional_candidate_not_procurement_release",
+      "gear_ratio": 100,
+      "nominal_voltage_V": 48,
+      "voltage_range_V": [
+        20,
+        55
+      ],
+      "rated_output_torque_Nm": 11,
+      "catalog_peak_output_torque_Nm": 28,
+      "rated_output_speed_rpm": 25,
+      "no_load_speed_rpm": 30,
+      "mass_kg": {
+        "N_without_brake": 0.78,
+        "B_with_brake": null
+      },
+      "max_body_diameter_mm": 70,
+      "length_mm": {
+        "N_without_brake": 81.7,
+        "B_with_brake": null,
+        "tolerance_plus_minus": 0.3,
+        "includes_external_mating_connectors": false
+      },
+      "clear_bore_mm": {
+        "N_without_brake": 10,
+        "B_with_brake": null
+      },
+      "output_interface": {
+        "pilot_diameter_mm": 50,
+        "pilot_tolerance": "h6",
+        "thread_pcd_mm": 44,
+        "thread_count": 8,
+        "thread": "M3",
+        "thread_depth_mm": 5,
+        "hole_angles_deg": null,
+        "hole_angles_status": "Must extract actual CAD / confirm drawing; not assumed equal spacing"
+      },
+      "housing_interface": {
+        "diameter_mm": 70,
+        "fit": "h7",
+        "hole_pcd_mm": 64,
+        "through_hole_count": 4,
+        "through_hole_diameter_mm": 3.5,
+        "hole_angles_deg": null
+      },
+      "feedback": {
+        "motor": "17-bit absolute",
+        "output": "17-bit absolute",
+        "multiturn": "Battery connection present; retention and shipped battery require confirmation"
+      },
+      "communication": [
+        "EtherCAT",
+        "CAN BUS"
+      ],
+      "ethercat_modes_documented": [
+        "CiA402 CSP",
+        "CiA402 CSV",
+        "CiA402 CST"
+      ],
+      "sto_certification_verified": false,
+      "motor_brake_option_verified": false,
+      "brake_holding_output_torque_Nm": null,
+      "whole_module_com_mm": null,
+      "whole_module_inertia_kg_m2": null,
+      "source_ids": [
+        "MYA-RH-260805",
+        "MYA-RH-USER-1.4",
+        "MYA-ECAT-2.0"
+      ],
+      "source_pdf_page_1based": 3,
+      "product_url": "https://www.myactuator.com/rh-14details",
+      "cad_download_url": "https://www.myactuator.com/_files/archives/cab28a_bcc022d169b448ff82894171aa9ae1ce.zip",
+      "cad_distribution_rights": "not verified; download locally, do not redistribute",
+      "procurement_unknowns": [
+        "price",
+        "lead time",
+        "region distributor",
+        "order revision and mating cable part numbers",
+        "brake side and holding curve",
+        "installed thermal derating",
+        "output bearing moment load/life",
+        "connector swing and actual cable bend envelope",
+        "full installed cable fit",
+        "whole-module COM/inertia"
+      ],
+      "cad_download_sha256": "fa7f9c74eadffdc14f781fe7681b0fe4d2110d36026e5613b1bd5b572c0be672",
+      "cad_members_verified": [
+        "RH-14 product manual 260805.pdf",
+        "RH-14-100-E-B-D/RH-14-100-E-B-D 2D-A0.PDF",
+        "RH-14-100-E-B-D/RH-14-100-E-B-D 3D-A0.STEP",
+        "RH-14-100-E-N-D/RH-14-100-E-N-D 2D-A0.PDF",
+        "RH-14-100-E-N-D/RH-14-100-E-N-D 3D-A0.STEP"
+      ],
+      "unresolved_brake_variant": {
+        "drawing_model": "RH-14-100-E-B-D",
+        "drawing_revision": "A0",
+        "length_mm": 94.7,
+        "length_tolerance_plus_minus_mm": 0.3,
+        "clear_bore_mm": 10,
+        "diameter_mm": 70,
+        "mass_kg": null,
+        "availability": "Unknown: current product manual says standard without brake only; official CAD ZIP contains brake STEP and drawing",
+        "source": "Official CAD ZIP / RH-14-100-E-B-D 2D-A0.PDF"
+      }
+    },
+    {
+      "id": "MYA-RH17-100",
+      "manufacturer": "MYACTUATOR",
+      "series": "EPS-RH-17",
+      "order_codes_verified": [
+        "EPS-RH-17-100-E-N-D",
+        "EPS-RH-17-100-E-B-D"
+      ],
+      "selection_status": "conditional_candidate_not_procurement_release",
+      "gear_ratio": 100,
+      "nominal_voltage_V": 48,
+      "voltage_range_V": [
+        20,
+        55
+      ],
+      "rated_output_torque_Nm": 35,
+      "catalog_peak_output_torque_Nm": 54,
+      "rated_output_speed_rpm": 25,
+      "no_load_speed_rpm": 30,
+      "mass_kg": {
+        "N_without_brake": 1.11,
+        "B_with_brake": 1.28
+      },
+      "max_body_diameter_mm": 80,
+      "length_mm": {
+        "N_without_brake": 90.2,
+        "B_with_brake": 104,
+        "tolerance_plus_minus": 0.3,
+        "includes_external_mating_connectors": false
+      },
+      "clear_bore_mm": {
+        "N_without_brake": 15,
+        "B_with_brake": 12
+      },
+      "output_interface": {
+        "pilot_diameter_mm": 60,
+        "pilot_tolerance": "h6",
+        "thread_pcd_mm": 54,
+        "thread_count": 16,
+        "thread": "M3",
+        "thread_depth_mm": 6,
+        "hole_angles_deg": null,
+        "hole_angles_status": "Must extract actual CAD / confirm drawing; not assumed equal spacing"
+      },
+      "housing_interface": {
+        "diameter_mm": 80,
+        "fit": "h7",
+        "hole_pcd_mm": 74,
+        "through_hole_count": 8,
+        "through_hole_diameter_mm": 3.4,
+        "hole_angles_deg": null
+      },
+      "feedback": {
+        "motor": "17-bit absolute",
+        "output": "17-bit absolute",
+        "multiturn": "Battery connection present; retention and shipped battery require confirmation"
+      },
+      "communication": [
+        "EtherCAT",
+        "CAN BUS"
+      ],
+      "ethercat_modes_documented": [
+        "CiA402 CSP",
+        "CiA402 CSV",
+        "CiA402 CST"
+      ],
+      "sto_certification_verified": false,
+      "motor_brake_option_verified": true,
+      "brake_holding_output_torque_Nm": null,
+      "whole_module_com_mm": null,
+      "whole_module_inertia_kg_m2": null,
+      "source_ids": [
+        "MYA-RH-260805",
+        "MYA-RH-USER-1.4",
+        "MYA-ECAT-2.0"
+      ],
+      "source_pdf_page_1based": 6,
+      "product_url": "https://www.myactuator.com/rh-17details",
+      "cad_download_url": "https://www.myactuator.com/_files/archives/cab28a_e83c5096831240dbb0f680b9f6b2cfeb.zip",
+      "cad_distribution_rights": "not verified; download locally, do not redistribute",
+      "procurement_unknowns": [
+        "price",
+        "lead time",
+        "region distributor",
+        "order revision and mating cable part numbers",
+        "brake side and holding curve",
+        "installed thermal derating",
+        "output bearing moment load/life",
+        "connector swing and actual cable bend envelope",
+        "full installed cable fit",
+        "whole-module COM/inertia"
+      ],
+      "cad_download_sha256": "191a25ef0734ee5d81ad7b7fb13f3af86f5e134d5e2610f779fa8a3dba08f654",
+      "cad_members_verified": [
+        "RH-17 product manual 260805.pdf",
+        "RH-17-100-E-N-D/RH-17-100-E-N-D 2D-A.pdf",
+        "RH-17-100-E-N-D/RH-17-100-E-N-D 3D-A.STEP",
+        "RH-17-100-E-B-D/RH-17-100-E-B-D 2D-A.pdf",
+        "RH-17-100-E-B-D/RH-17-100-E-B-D 3D-A.STEP"
+      ]
+    },
+    {
+      "id": "MYA-RH20-100",
+      "manufacturer": "MYACTUATOR",
+      "series": "EPS-RH-20",
+      "order_codes_verified": [
+        "EPS-RH-20-100-E-N-D",
+        "EPS-RH-20-100-E-B-D"
+      ],
+      "selection_status": "conditional_candidate_not_procurement_release",
+      "gear_ratio": 100,
+      "nominal_voltage_V": 48,
+      "voltage_range_V": [
+        20,
+        55
+      ],
+      "rated_output_torque_Nm": 50,
+      "catalog_peak_output_torque_Nm": 80,
+      "rated_output_speed_rpm": 25,
+      "no_load_speed_rpm": 30,
+      "mass_kg": {
+        "N_without_brake": 1.45,
+        "B_with_brake": 1.75
+      },
+      "max_body_diameter_mm": 90,
+      "length_mm": {
+        "N_without_brake": 82.9,
+        "B_with_brake": 97.4,
+        "tolerance_plus_minus": 0.3,
+        "includes_external_mating_connectors": false
+      },
+      "clear_bore_mm": {
+        "N_without_brake": 14,
+        "B_with_brake": 12
+      },
+      "output_interface": {
+        "pilot_diameter_mm": 70,
+        "pilot_tolerance": "h6",
+        "thread_pcd_mm": 62,
+        "thread_count": 16,
+        "thread": "M3",
+        "thread_depth_mm": 6,
+        "hole_angles_deg": null,
+        "hole_angles_status": "Must extract actual CAD / confirm drawing; not assumed equal spacing"
+      },
+      "housing_interface": {
+        "diameter_mm": 90,
+        "fit": "h7",
+        "hole_pcd_mm": 84,
+        "through_hole_count": 8,
+        "through_hole_diameter_mm": 3.4,
+        "hole_angles_deg": null
+      },
+      "feedback": {
+        "motor": "17-bit absolute",
+        "output": "17-bit absolute",
+        "multiturn": "Battery connection present; retention and shipped battery require confirmation"
+      },
+      "communication": [
+        "EtherCAT",
+        "CAN BUS"
+      ],
+      "ethercat_modes_documented": [
+        "CiA402 CSP",
+        "CiA402 CSV",
+        "CiA402 CST"
+      ],
+      "sto_certification_verified": false,
+      "motor_brake_option_verified": true,
+      "brake_holding_output_torque_Nm": null,
+      "whole_module_com_mm": null,
+      "whole_module_inertia_kg_m2": null,
+      "source_ids": [
+        "MYA-RH-260805",
+        "MYA-RH-USER-1.4",
+        "MYA-ECAT-2.0"
+      ],
+      "source_pdf_page_1based": 8,
+      "product_url": "https://www.myactuator.com/rh-20details",
+      "cad_download_url": "https://www.myactuator.com/_files/archives/cab28a_5ebf837a05c14a718f4c6611666c03ad.zip",
+      "cad_distribution_rights": "not verified; download locally, do not redistribute",
+      "procurement_unknowns": [
+        "price",
+        "lead time",
+        "region distributor",
+        "order revision and mating cable part numbers",
+        "brake side and holding curve",
+        "installed thermal derating",
+        "output bearing moment load/life",
+        "connector swing and actual cable bend envelope",
+        "full installed cable fit",
+        "whole-module COM/inertia"
+      ],
+      "cad_download_sha256": "442ccaafa11fb9f8c16540dc0eb1b0cc88d48d2b50f41d2cad97f5ac243f6f40",
+      "cad_members_verified": [
+        "RH-20 product manual 260805.pdf",
+        "RH-20-100-E-B-D/RH-20-100-E-B-D 2D A.pdf",
+        "RH-20-100-E-B-D/RH-20-100-E-B-D 3D A.STEP",
+        "RH-20-100-E-N-D/RH-20-100-E-N-D 2D A.pdf",
+        "RH-20-100-E-N-D/RH-20-100-E-N-D 3D A.STEP"
+      ]
+    },
+    {
+      "id": "MYA-RH25-100",
+      "manufacturer": "MYACTUATOR",
+      "series": "EPS-RH-25",
+      "order_codes_verified": [
+        "EPS-RH-25-100-E-N-D",
+        "EPS-RH-25-100-E-B-D"
+      ],
+      "selection_status": "conditional_candidate_not_procurement_release",
+      "gear_ratio": 100,
+      "nominal_voltage_V": 48,
+      "voltage_range_V": [
+        20,
+        55
+      ],
+      "rated_output_torque_Nm": 108,
+      "catalog_peak_output_torque_Nm": 157,
+      "rated_output_speed_rpm": 25,
+      "no_load_speed_rpm": 30,
+      "mass_kg": {
+        "N_without_brake": 2.42,
+        "B_with_brake": 2.74
+      },
+      "max_body_diameter_mm": 110,
+      "length_mm": {
+        "N_without_brake": 89.5,
+        "B_with_brake": 105.2,
+        "tolerance_plus_minus": 0.3,
+        "includes_external_mating_connectors": false
+      },
+      "clear_bore_mm": {
+        "N_without_brake": 22,
+        "B_with_brake": 22
+      },
+      "output_interface": {
+        "pilot_diameter_mm": 85,
+        "pilot_tolerance": "h6",
+        "thread_pcd_mm": 77,
+        "thread_count": 16,
+        "thread": "M4",
+        "thread_depth_mm": 6,
+        "hole_angles_deg": null,
+        "hole_angles_status": "Must extract actual CAD / confirm drawing; not assumed equal spacing"
+      },
+      "housing_interface": {
+        "diameter_mm": 110,
+        "fit": "h7",
+        "hole_pcd_mm": 102,
+        "through_hole_count": 8,
+        "through_hole_diameter_mm": 4.5,
+        "hole_angles_deg": null
+      },
+      "feedback": {
+        "motor": "17-bit absolute",
+        "output": "17-bit absolute",
+        "multiturn": "Battery connection present; retention and shipped battery require confirmation"
+      },
+      "communication": [
+        "EtherCAT",
+        "CAN BUS"
+      ],
+      "ethercat_modes_documented": [
+        "CiA402 CSP",
+        "CiA402 CSV",
+        "CiA402 CST"
+      ],
+      "sto_certification_verified": false,
+      "motor_brake_option_verified": true,
+      "brake_holding_output_torque_Nm": null,
+      "whole_module_com_mm": null,
+      "whole_module_inertia_kg_m2": null,
+      "source_ids": [
+        "MYA-RH-260805",
+        "MYA-RH-USER-1.4",
+        "MYA-ECAT-2.0"
+      ],
+      "source_pdf_page_1based": 10,
+      "product_url": "https://www.myactuator.com/rh-25details",
+      "cad_download_url": "https://www.myactuator.com/_files/archives/cab28a_bc732701dadf4512a0d917ecaab12747.zip",
+      "cad_distribution_rights": "not verified; download locally, do not redistribute",
+      "procurement_unknowns": [
+        "price",
+        "lead time",
+        "region distributor",
+        "order revision and mating cable part numbers",
+        "brake side and holding curve",
+        "installed thermal derating",
+        "output bearing moment load/life",
+        "connector swing and actual cable bend envelope",
+        "full installed cable fit",
+        "whole-module COM/inertia"
+      ],
+      "cad_download_sha256": "36e957e11ed19d715f2d7fdf086e4da36f467c017ecbc20e0735d6db69fd5936",
+      "cad_members_verified": [
+        "RH-25 product manual  260805.pdf",
+        "RH-25-100-E-N-D/RH-25-100-E-N-D 3D-A0.STEP",
+        "RH-25-100-E-N-D/RH-25-100-E-N-D 2D -A0.PDF",
+        "RH-25-100-E-B-D/RH-25-100-E-B-D 3D-A0.STEP",
+        "RH-25-100-E-B-D/RH-25-100-E-B-D 2D-A0.PDF"
+      ]
+    }
+  ],
+  "provisional_axis_assignment": [
+    {
+      "joint": "J1",
+      "part_number": "EPS-RH-25-100-E-B-D"
+    },
+    {
+      "joint": "J2",
+      "part_number": "EPS-RH-25-100-E-B-D"
+    },
+    {
+      "joint": "J3",
+      "part_number": "EPS-RH-20-100-E-B-D"
+    },
+    {
+      "joint": "J4",
+      "part_number": "EPS-RH-20-100-E-B-D"
+    },
+    {
+      "joint": "J5",
+      "part_number": "EPS-RH-17-100-E-B-D"
+    },
+    {
+      "joint": "J6",
+      "part_number": "EPS-RH-17-100-E-B-D"
+    },
+    {
+      "joint": "J7",
+      "part_number": "EPS-RH-14-100-E-N-D"
+    }
+  ],
+  "provisional_actuator_total_mass_kg": 12.32
+}

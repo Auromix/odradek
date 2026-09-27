@@ -1,0 +1,388 @@
+{
+  "revision": "R4",
+  "status": "engineering_candidates_not_manufacturing_release",
+  "date": "2026-09-27",
+  "camera_interface_assumption": "GMSL2; user wording gxxx not yet resolved in this subtask",
+  "primary_camera_chain": {
+    "camera_sku": "ZED-414012",
+    "qty": 2,
+    "sensor": "onsemi AR0234",
+    "lens": "built-in 1.38 mm fisheye",
+    "serializer": "internal module part number not established from reviewed official material",
+    "capture": "ZED Link Duo",
+    "deserializer": "MAX96712",
+    "host_candidate": "official NVIDIA Jetson AGX Orin Developer Kit",
+    "driver_candidate": "Stereolabs GMSL 1.4.3 for matching full L4T version; not installed/tested",
+    "source_ids": [
+      "EC-02",
+      "EC-03",
+      "EC-04",
+      "EC-05"
+    ]
+  },
+  "hollow_shaft_screen": {
+    "status": "cross_section_screening_only_not_a_harness_release",
+    "inputs": [
+      {
+        "role": "EtherCAT 100BASE-T",
+        "count": 1,
+        "od_mm": 7.1,
+        "basis": "LAPP 2170941 max OD",
+        "source_id": "EC-27"
+      },
+      {
+        "role": "camera GMSL coax",
+        "count": 2,
+        "od_mm": 3.1,
+        "basis": "Rosenberger CG02 nominal example; exact assembly unresolved",
+        "source_id": "EC-24"
+      },
+      {
+        "role": "48V motor-bus conductors",
+        "count": 2,
+        "od_mm": 3.4,
+        "basis": "assumed insulated-wire diameter; not a selected wire"
+      },
+      {
+        "role": "24V auxiliary conductors",
+        "count": 2,
+        "od_mm": 2.0,
+        "basis": "assumed insulated-wire diameter; not a selected wire"
+      },
+      {
+        "role": "hardwired safety conductors",
+        "count": 4,
+        "od_mm": 1.5,
+        "basis": "assumed insulated-wire diameter; safety circuit not finalized"
+      },
+      {
+        "role": "protective/equipotential conductor",
+        "count": 1,
+        "od_mm": 3.4,
+        "basis": "assumed insulated-wire diameter; bonding design not finalized"
+      }
+    ],
+    "sum_wire_area_mm2": 95.27665120174444,
+    "design_fill_fraction_assumption": 0.4,
+    "minimum_bore_area_only_at_assumed_fill_mm": 17.414792562646273,
+    "actual_actuator_holes": [
+      {
+        "actuator": "RH25",
+        "bore_mm": 22,
+        "bore_source": "root mechanical selection, hole dimensions not independently reread here",
+        "gross_bore_area_mm2": 380.132711084365,
+        "gross_fill_fraction": 0.25064049586776854,
+        "gross_area_less_than_wire_area": false,
+        "note": "liner, connector envelope, bends, tolerances, wear clearances and circle packing omitted"
+      },
+      {
+        "actuator": "RH20",
+        "bore_mm": 12,
+        "bore_source": "root mechanical selection, hole dimensions not independently reread here",
+        "gross_bore_area_mm2": 113.09733552923255,
+        "gross_fill_fraction": 0.8424305555555555,
+        "gross_area_less_than_wire_area": false,
+        "note": "liner, connector envelope, bends, tolerances, wear clearances and circle packing omitted"
+      },
+      {
+        "actuator": "RH17",
+        "bore_mm": 12,
+        "bore_source": "root mechanical selection, hole dimensions not independently reread here",
+        "gross_bore_area_mm2": 113.09733552923255,
+        "gross_fill_fraction": 0.8424305555555555,
+        "gross_area_less_than_wire_area": false,
+        "note": "liner, connector envelope, bends, tolerances, wear clearances and circle packing omitted"
+      },
+      {
+        "actuator": "RH14",
+        "bore_mm": 10,
+        "bore_source": "root mechanical selection, hole dimensions not independently reread here",
+        "gross_bore_area_mm2": 78.53981633974483,
+        "gross_fill_fraction": 1.2130999999999998,
+        "gross_area_less_than_wire_area": true,
+        "note": "liner, connector envelope, bends, tolerances, wear clearances and circle packing omitted"
+      }
+    ]
+  },
+  "manufacturing_blockers": [
+    "exact dynamic coax assembly and GMSL signal-integrity qualification",
+    "all joint harness bend/twist envelopes and connector installation sequence",
+    "complete driver and brake datasheets plus safety-function compatibility",
+    "motor-bus current and regeneration absorption budget",
+    "electrical protection and wire/terminal derating",
+    "complete ECAD wiring and board production files",
+    "camera full driver and geometry/occlusion validation"
+  ],
+  "sources": [
+    {
+      "id": "EC-01",
+      "publisher": "EtherCAT Technology Group",
+      "title": "EtherCAT technology",
+      "url": "https://www.ethercat.org/en/technology.html",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "EtherCAT frame processing, ESC, 100BASE-TX; basis for a dedicated motion segment."
+    },
+    {
+      "id": "EC-02",
+      "publisher": "Stereolabs",
+      "title": "ZED X One specifications",
+      "url": "https://docs.stereolabs.com/docs/products/cameras/zedxone/specifications",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "ZED-414012 fisheye variant; AR0234, lens/FOV, mechanical envelope and mass. Internal serializer part number not established."
+    },
+    {
+      "id": "EC-03",
+      "publisher": "Stereolabs",
+      "title": "ZED Link Duo datasheet",
+      "url": "https://support.stereolabs.com/hc/en-us/article_attachments/27901419886615",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "MAX96712 capture board; external interface requirements."
+    },
+    {
+      "id": "EC-04",
+      "publisher": "Stereolabs",
+      "title": "ZED X GMSL2 drivers",
+      "url": "https://www.stereolabs.com/developers/drivers",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "Live page listed 1.4.3 and Duo / JetPack 6.2.2 / L4T 36.5; not a local runtime test."
+    },
+    {
+      "id": "EC-05",
+      "publisher": "Stereolabs",
+      "title": "Monocular installation",
+      "url": "https://docs.stereolabs.com/docs/products/cameras/zedxone/monocular-vision",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "Board-specific driver, SDK and calibration workflow."
+    },
+    {
+      "id": "EC-06",
+      "publisher": "Stereolabs",
+      "title": "CBL-320500",
+      "url": "https://store.stereolabs.com/products/gmsl2-1-to-4-fakra-cable",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "0.5 m FAKRA fan-out with RTK031; no robotic dynamic life given on this page."
+    },
+    {
+      "id": "EC-07",
+      "publisher": "TechNexion",
+      "title": "VLS-GM2-AR0234-SL",
+      "url": "https://www.technexion.com/products/serdes/gmsl/gmsl2/vls/vls-gm2-ar0234-sl/",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "AR0234 + MAX96717; S128 standard order variant is 128 degrees diagonal, not the requested fisheye."
+    },
+    {
+      "id": "EC-08",
+      "publisher": "TechNexion",
+      "title": "UVC-VL-GM2-1CAM",
+      "url": "https://www.technexion.com/shop/serdes/gmsl/gmsl2-frame-grabber/uvc-vl-gm2-1cam/",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "MAX96714, one camera per UVC USB 3 bridge; Linux and Windows support stated. Cross-bridge synchronization not verified."
+    },
+    {
+      "id": "EC-09",
+      "publisher": "Basler",
+      "title": "a2A1920-51gcBAS",
+      "url": "https://docs.baslerweb.com/a2a1920-51gcbas",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "GigE / PoE IMX392 camera, C mount; alternative only."
+    },
+    {
+      "id": "EC-10",
+      "publisher": "Basler",
+      "title": "a2A1920-160ucBAS",
+      "url": "https://docs.baslerweb.com/a2a1920-160ucbas",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "USB 3 IMX392 camera, C mount; alternative only."
+    },
+    {
+      "id": "EC-11",
+      "publisher": "Fujifilm",
+      "title": "FE185 lens series",
+      "url": "https://www.fujifilm.com/uk/en/business/optical-devices/mvlens/fe185",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "FE185C057HA-1 C mount fisheye study lens; its final FOV depends on sensor crop and image circle."
+    },
+    {
+      "id": "EC-12",
+      "publisher": "Beckhoff",
+      "title": "C6015-0040",
+      "url": "https://www.beckhoff.com/en-us/products/ipc/pcs/c60xx-ultra-compact-industrial-pcs/c6015-0040.html",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "External IPC candidate, two network ports; OS, CPU and runtime license configuration unresolved."
+    },
+    {
+      "id": "EC-13",
+      "publisher": "Microchip",
+      "title": "LAN9252",
+      "url": "https://www.microchip.com/en-us/product/LAN9252",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "2/3-port EtherCAT ESC with integrated PHYs."
+    },
+    {
+      "id": "EC-14",
+      "publisher": "Microchip",
+      "title": "EVB-LAN9252-SPI",
+      "url": "https://www.microchip.com/en-us/development-tool/EVB-LAN9252-SPI",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "SPI PDI evaluation route, not a completed production head controller."
+    },
+    {
+      "id": "EC-15",
+      "publisher": "STMicroelectronics",
+      "title": "STM32G474RE",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32g474re.html",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "Head MCU candidate STM32G474RET6; does not prove four-axis FOC throughput."
+    },
+    {
+      "id": "EC-16",
+      "publisher": "Texas Instruments",
+      "title": "LP5860",
+      "url": "https://www.ti.com/product/LP5860",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "198 single-color dots or 66 RGB pixels per driver; SPI / I2C matrix LED drive."
+    },
+    {
+      "id": "EC-17",
+      "publisher": "Wurth Elektronik",
+      "title": "150060YS75000 datasheet",
+      "url": "https://www.we-online.com/components/products/datasheet/150060YS75000.pdf",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "0603 yellow LED study part."
+    },
+    {
+      "id": "EC-18",
+      "publisher": "Texas Instruments",
+      "title": "TPS54360B",
+      "url": "https://www.ti.com/product/TPS54360B",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "60 V input / 3.5 A buck converter candidate; upstream regeneration clamp not thereby established."
+    },
+    {
+      "id": "EC-19",
+      "publisher": "MEAN WELL",
+      "title": "RSP-1000 datasheet",
+      "url": "https://www.meanwell.com/Upload/PDF/RSP-1000/RSP-1000-SPEC.PDF",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "RSP-1000-48 is 48 V / 21 A / 1008 W. Candidate capacity, not calculated system sufficiency or regen absorption."
+    },
+    {
+      "id": "EC-20",
+      "publisher": "MEAN WELL",
+      "title": "HDR-100 datasheet",
+      "url": "https://www.meanwell.com/Upload/PDF/HDR-100/HDR-100-SPEC.PDF",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "HDR-100-24 auxiliary supply candidate."
+    },
+    {
+      "id": "EC-21",
+      "publisher": "Pilz",
+      "title": "PNOZ s5 750105",
+      "url": "https://www.pilz.com/en-INT/eshop/product/750105",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "24 V safety relay with immediate and delayed outputs; component capability is not system validation."
+    },
+    {
+      "id": "EC-22",
+      "publisher": "igus",
+      "title": "CFROBOT8 PLUS dimensional catalogue",
+      "url": "https://blog.igus.ca/wp-content/uploads/2024/05/chainflex-torsion-cables-catalog.pdf",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "CFROBOT8-PLUS-045 7.5 mm max, 4 STP x 0.15 mm2, 10d dynamic bend radius."
+    },
+    {
+      "id": "EC-23",
+      "publisher": "igus",
+      "title": "CFROBOT8 PLUS lifetime table",
+      "url": "https://www.igus.com/product/CFROBOT8_PLUS",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "Different torsion / temperature / cycle combinations; 10 million at +/-180 deg/m is not 10 million at +/-360 deg/m."
+    },
+    {
+      "id": "EC-24",
+      "publisher": "Rosenberger",
+      "title": "HySpeedVision portfolio",
+      "url": "https://www.rosenberger.com/fileadmin/content/headquarter/Downloads/_Other/HySpeedVision_Flyer.pdf",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "Includes CG02-type 3.1 mm dynamic coax: 2M cycles, +/-180 deg/m, dynamic R75 mm; exact assembly SKU and compatibility are still unresolved."
+    },
+    {
+      "id": "EC-25",
+      "publisher": "HARTING",
+      "title": "All for Ethernet catalogue",
+      "url": "https://b2b.harting.com/files/livebooks/en/PRD0200000100248/downloads/livebook.pdf",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "M8 D coded 21021851405 / 21021852405 require AWG22 IDC; not directly compatible with AWG26 cable."
+    },
+    {
+      "id": "EC-26",
+      "publisher": "Synapticon",
+      "title": "Safe Brake Control",
+      "url": "https://doc.synapticon.com/circulo_safe_motion/smm/sbc.htm",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "Vendor-specific SBC/STO sequencing, delay and brake wear boundaries."
+    },
+    {
+      "id": "EC-27",
+      "publisher": "LAPP",
+      "title": "2170941 datasheet DB2170941EN",
+      "url": "https://imager.lapp.com/e/lapp/5di4RA3zY0WwUKwyFeGtJg~~/DB2170941EN.pdf",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "Robot EtherCAT / 100BASE-T cable, 1x4xAWG22/19, 6.8 +/-0.3 mm. Downloaded v01 2022-04-01 p2: 12d continuous flex, +/-180 deg/m and 5M torsion cycles. Combined lifetime table uses 15d at 5M bending; procurement revision/conditions require resolution."
+    },
+    {
+      "id": "EC-28",
+      "publisher": "LAPP",
+      "title": "2170433 datasheet DB2170433EN",
+      "url": "https://imager.lapp.com/e/lapp/jC7Lyg4YokqH2qg5r8noxw~~/DB2170433EN.pdf",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "EtherCAT 1x4xAWG26/19, 4.8 +/-0.3 mm; drag-chain flex rating is not a robot torsion rating."
+    },
+    {
+      "id": "EC-29",
+      "publisher": "LAPP",
+      "title": "Drag-chain lifetime table A2-2",
+      "url": "https://products.lappgroup.com/fileadmin/catalog/en_A_pdf/A2_2_Data_cables_for_use_in_power_chains_Bending_cycles_and_operation_parameters_en.pdf",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "2170941 at 5M bend cycles uses 15d under table conditions; 2170433 3M at 15d. Do not combine this with an unrelated torsion-life promise."
+    },
+    {
+      "id": "EC-30",
+      "publisher": "HELUKABEL",
+      "title": "11007800 robotic 2-pair Ethernet",
+      "url": "https://shop.helukabel.com/ch-en/helukat-profinet-r-cat5e-sfutp-pur-robotic-m11007800/11007800",
+      "retrieved_at": "2026-09-27",
+      "kind": "manufacturer_or_standards_body_primary",
+      "supports": "7.2 mm nominal and dynamic R10d; not smaller than selected LAPP robot candidate."
+    }
+  ]
+}
