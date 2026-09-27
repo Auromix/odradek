@@ -1,0 +1,1370 @@
+{
+  "schema_version": "1.0",
+  "study_id": "RH-OPERATION-EVIDENCE-01",
+  "date_checked": "2026-09-27",
+  "license": "CC-BY-NC-4.0",
+  "status": "evidence_audit_not_procurement_or_safe_operation_release",
+  "scope": "Four exact 100:1 EtherCAT candidate order variants; no baseline geometry changes",
+  "no_outreach": true,
+  "no_purchase": true,
+  "no_hardware_commands": true,
+  "source_notice": "OEM PDF/STEP/XML/SDK files retained privately under work; report only records facts, hashes and locators. Null means unresolved, never zero.",
+  "sources": [
+    {
+      "id": "USER14",
+      "title": "User Manual for RH Series Products V1.4.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_be98b58973d34f7aaa50bdf3f2aa12ed.zip",
+      "landing_url": "https://www.myactuator.com/downloads-rhseries",
+      "sha256": "2aab4a0557c43860d55c62bcbd535f3565796607379e5373a4c96e6e9041614b",
+      "pages_one_based": [
+        8,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "SERIES260805",
+      "title": "RH Series-product manual-260805.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_be98b58973d34f7aaa50bdf3f2aa12ed.zip",
+      "landing_url": "https://www.myactuator.com/downloads-rhseries",
+      "sha256": "67a3e3cc904357d4759e0415cc740ea614d18ea8f9f407d12fe65f05b53772f3",
+      "pages_one_based": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "ECAT20",
+      "title": "EtherCAT control protocol V2.0_260425.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_be98b58973d34f7aaa50bdf3f2aa12ed.zip",
+      "landing_url": "https://www.myactuator.com/downloads-rhseries",
+      "sha256": "9ae3fb9cb851fc5c588b571190976a52fecbf916c903c45398ff9ca998be95dd",
+      "pages_one_based": [
+        11,
+        12,
+        15,
+        17,
+        18,
+        23,
+        24,
+        25,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        50,
+        55,
+        56
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "P25",
+      "title": "RH-25 product manual  260805.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_bc732701dadf4512a0d917ecaab12747.zip",
+      "landing_url": "https://www.myactuator.com/rh-25details",
+      "sha256": "536975fd838cfb16bfd9b36cb382c3d3fc4dfbcc950f81e1869cd495fc1a5bac",
+      "pages_one_based": [
+        1,
+        2
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "D25",
+      "title": "RH-25-100-E-B-D 2D-A0.PDF",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_bc732701dadf4512a0d917ecaab12747.zip",
+      "landing_url": "https://www.myactuator.com/rh-25details",
+      "sha256": "2ca7fc165dfae32adf45bbb4b6c9b4ab90d803aa5a9eaa251b00084149a324c4",
+      "pages_one_based": [
+        1
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "STEP25",
+      "title": "RH-25-100-E-B-D 3D-A0.STEP",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_bc732701dadf4512a0d917ecaab12747.zip",
+      "landing_url": "https://www.myactuator.com/rh-25details",
+      "sha256": "d844bc7dfe5c398b0447ea0d93eef77b7cb1bdaa0dbabd603031482c1909f07e",
+      "pages_one_based": [],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "P20",
+      "title": "RH-20 product manual 260805.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_5ebf837a05c14a718f4c6611666c03ad.zip",
+      "landing_url": "https://www.myactuator.com/rh-20details",
+      "sha256": "dbb80f671e4d7f66aecb3e9caf63ab0919775e9c42d7bd7b80e85af8c1795e0f",
+      "pages_one_based": [
+        1,
+        2
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "D20",
+      "title": "RH-20-100-E-B-D 2D A.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_5ebf837a05c14a718f4c6611666c03ad.zip",
+      "landing_url": "https://www.myactuator.com/rh-20details",
+      "sha256": "7277b727accdc753e504a19d403cf5200ed3b085a609dd4e1c1c50710cf87bdf",
+      "pages_one_based": [
+        1
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "STEP20",
+      "title": "RH-20-100-E-B-D 3D A.STEP",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_5ebf837a05c14a718f4c6611666c03ad.zip",
+      "landing_url": "https://www.myactuator.com/rh-20details",
+      "sha256": "de9f070ac232257b3e9d2c2920260aab8d0f8893ced026bff00da49906fafb04",
+      "pages_one_based": [],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "P17",
+      "title": "RH-17 product manual 260805.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_e83c5096831240dbb0f680b9f6b2cfeb.zip",
+      "landing_url": "https://www.myactuator.com/rh-17details",
+      "sha256": "1a7ac7d8a50714ac815747e70f5677b6ec8d9808ae02749ba9b53c67247e112c",
+      "pages_one_based": [
+        1,
+        2
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "D17",
+      "title": "RH-17-100-E-B-D 2D-A.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_e83c5096831240dbb0f680b9f6b2cfeb.zip",
+      "landing_url": "https://www.myactuator.com/rh-17details",
+      "sha256": "11a897af96a6ae1000bd8218ddf1e57642daaa6f45eba01fb4e7253a76678607",
+      "pages_one_based": [
+        1
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "STEP17",
+      "title": "RH-17-100-E-B-D 3D-A.STEP",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_e83c5096831240dbb0f680b9f6b2cfeb.zip",
+      "landing_url": "https://www.myactuator.com/rh-17details",
+      "sha256": "02424efbc162b8832f1bf4d73cf9af45d0c45d8385cadb8685e1670e2b07ae33",
+      "pages_one_based": [],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "P14",
+      "title": "RH-14 product manual 260805.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_bcc022d169b448ff82894171aa9ae1ce.zip",
+      "landing_url": "https://www.myactuator.com/rh-14details",
+      "sha256": "089f349bbba52094aba5027e5cf96f0b7c86cdf0d9a5880ed77c3da7d469b65e",
+      "pages_one_based": [
+        1,
+        2
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "D14",
+      "title": "RH-14-100-E-N-D 2D-A0.PDF",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_bcc022d169b448ff82894171aa9ae1ce.zip",
+      "landing_url": "https://www.myactuator.com/rh-14details",
+      "sha256": "55f14a6f6d9bcc2ec04c39c8a2f1e45c2bce2e4a263b37434f53e777f98f3966",
+      "pages_one_based": [
+        1
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "STEP14",
+      "title": "RH-14-100-E-N-D 3D-A0.STEP",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_bcc022d169b448ff82894171aa9ae1ce.zip",
+      "landing_url": "https://www.myactuator.com/rh-14details",
+      "sha256": "6b0acdb82140b487be079b5515718157d16d512f3a584ac5439fe55380e7b595",
+      "pages_one_based": [],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "ESI260424ZIP",
+      "title": "esi-260424.zip",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_f94084d537ab4cbf87d90bd780e7120f.zip",
+      "sha256": "6192d73aeae1c5aa04f2e7de9bb254d464577da9c7def935e215b1006bd91751",
+      "members": [
+        {
+          "name": "MT-Device_260424.xml",
+          "bytes": 85580,
+          "sha256": "e102e7cbbff93480f7d2e5008b3031b034107f3ce2dead9349d80d48bacf2362"
+        }
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "ESI250702ZIP",
+      "title": "esi-250702.zip",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_829a01643b674adbb84cc870fd772942.zip",
+      "sha256": "5f0d20e43d09003007e02a3606d22cbad03720a05fee7cfbcb6c53149de0bd3a",
+      "members": [
+        {
+          "name": "EtherCAT ESI-250702/MT-Device-250702.xml",
+          "bytes": 73054,
+          "sha256": "f83a135fa5f83c43c9dcdab35cda974f4cc6b92527e48b32e54cfd05523ac5e5"
+        }
+      ],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "ESI260424CN",
+      "title": "cn-esi-260424.zip",
+      "url": "https://cloud-1251007531.bcdn8.com/maita0712/uploads/20260508/MT-Device_260424.zip",
+      "sha256": "6192d73aeae1c5aa04f2e7de9bb254d464577da9c7def935e215b1006bd91751",
+      "members": [],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "ECAT20CN",
+      "title": "cn-ethercat-v2.pdf",
+      "url": "https://cloud-1251007531.bcdn8.com/maita0712/uploads/20260508/EtherCAT%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AEV2.0_%E4%B8%AD%E8%8B%B1%E6%96%87%E7%89%88.pdf",
+      "sha256": "9ae3fb9cb851fc5c588b571190976a52fecbf916c903c45398ff9ca998be95dd",
+      "members": [],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "IGH260620",
+      "title": "myactuator-igh-260620.zip",
+      "url": "https://cloud-1251007531.bcdn8.com/maita0712/uploads/20260630/MyActuator_IGH%283%29.zip",
+      "sha256": "8253457f7d1ef2cd28a7913bc0da1056d7152a38564d31acde4e04247654dc6b",
+      "members": [],
+      "local_original_redistributed": false
+    },
+    {
+      "id": "INTERFACE-EXTRACTION",
+      "repo_path": "docs/engineering/sources/rh-interface-extraction.json",
+      "sha256": "49dbfa4aca9501ffa83e884226b287b909095688f2e1adfc24cab7d1e278026d",
+      "role": "Previously checked independent STEP surface extraction, not a thread certification"
+    },
+    {
+      "id": "WEB14",
+      "url": "https://www.myactuator.com/rh-14details",
+      "role": "Exact order and option naming; live checked 2026-09-27"
+    },
+    {
+      "id": "WEB17",
+      "url": "https://www.myactuator.com/rh-17details",
+      "role": "Exact order and option naming; live checked 2026-09-27"
+    },
+    {
+      "id": "WEB20",
+      "url": "https://www.myactuator.com/rh-20details",
+      "role": "Exact order and option naming; live checked 2026-09-27"
+    },
+    {
+      "id": "WEB25",
+      "url": "https://www.myactuator.com/rh-25details",
+      "role": "Exact order and option naming; live checked 2026-09-27"
+    },
+    {
+      "id": "ESIPAGE",
+      "url": "https://www.myactuator.com/downloads-ethercatesi",
+      "role": "Official firmware / ESI compatibility scope; live checked 2026-09-27"
+    },
+    {
+      "id": "CNPROTOCOL",
+      "url": "https://www.myactuator.cn/downlaodrj",
+      "role": "Official firmware / ESI compatibility scope; live checked 2026-09-27"
+    },
+    {
+      "id": "CNFIRMWARE",
+      "url": "https://www.myactuator.cn/gu",
+      "role": "Official firmware / ESI compatibility scope; live checked 2026-09-27"
+    },
+    {
+      "id": "CAN44",
+      "title": "CAN BUS Motor Motion Protocol V4.4 260520.pdf",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_be98b58973d34f7aaa50bdf3f2aa12ed.zip",
+      "sha256": "15731a29c60771f0066fa0b2c7a7609de76edc53fbc8757035d2389d7a5dc3d2",
+      "pages_one_based": [
+        53,
+        54,
+        68,
+        131,
+        132,
+        133,
+        138,
+        139
+      ],
+      "local_original_redistributed": false
+    }
+  ],
+  "models": [
+    {
+      "order_code": "EPS-RH-25-100-E-B-D",
+      "assigned_joints": [
+        "J1",
+        "J2"
+      ],
+      "variant_status": "exact_catalog_order_confirmed",
+      "ratio": 100,
+      "nominal_voltage_V": 48,
+      "published_voltage_range_V": [
+        20,
+        55
+      ],
+      "maximum_input_V": 55,
+      "rated_running_output_torque_Nm": 108,
+      "catalog_peak_output_torque_Nm": 157,
+      "rated_output_speed_rpm": 25,
+      "rated_current_Arms": 10.6,
+      "catalog_peak_current_Arms": 14.1,
+      "rated_mechanical_power_W": 282,
+      "no_load_current_A": 2,
+      "mass_kg": 2.74,
+      "continuous_zero_speed_output_torque_Nm": null,
+      "continuous_zero_speed_status": "not_found_in_reviewed_public_sources",
+      "short_stall_rows": [
+        {
+          "output_torque_Nm": 162,
+          "temperature_rise_C": 3,
+          "stall_time_s": 15,
+          "phase_current_Arms": 18
+        },
+        {
+          "output_torque_Nm": 216,
+          "temperature_rise_C": 9,
+          "stall_time_s": 10,
+          "phase_current_Arms": 22.1
+        },
+        {
+          "output_torque_Nm": 256,
+          "temperature_rise_C": 39,
+          "stall_time_s": 5,
+          "phase_current_Arms": 24.6
+        }
+      ],
+      "short_stall_status": "measured_short_duration_rows_not_continuous_rating; peak/current_definition_conflicts_unresolved",
+      "brake": {
+        "integrated": true,
+        "series_manual_static_torque_Nm": 1.2,
+        "series_manual_value_applies_to_selected_variant": true,
+        "torque_side": null,
+        "guaranteed_output_holding_torque_Nm": null,
+        "external_coil_supply_required": false,
+        "supply_description": "module DC input; coil rating unspecified",
+        "external_brake_control_pin": null,
+        "coil_voltage_V": null,
+        "coil_current_A": null,
+        "apply_release_timing_ms": null,
+        "loss_of_power_response": "CAN44 family command section describes power-off locked; apply timing, physical feedback and exact shipped EtherCAT firmware behavior unconfirmed"
+      },
+      "electrical": {
+        "power_connector": "XT30U-F",
+        "supplied_power_wire_AWG": 14,
+        "supplied_power_wire_length_mm": 200,
+        "ethercat_connector_catalog_name": "SH1.0mm(4pin)",
+        "ethercat_supplied_cable_length_mm": 480,
+        "aux_connector_catalog_name": "GH1.25-2P",
+        "dc_and_can_ports": true,
+        "ethercat_in_out": true,
+        "multiturn_battery_port": true,
+        "bleeder_resistor_port": true,
+        "independent_logic_supply_port_documented": false,
+        "brake_output_connector_documented": false,
+        "certified_STO_SBC_evidence": false
+      },
+      "output_threads": {
+        "thread": "M4",
+        "count": 16,
+        "pcd_mm": 77.0,
+        "nominal_thread_depth_mm": 6.0,
+        "drawing_clearance_recess_depth_mm": 13.0,
+        "known_STEP_clearance_diameter_mm": 4.4,
+        "known_STEP_clearance_joint_z_mm": [
+          -3.5,
+          -0.0
+        ],
+        "frame": "z=0 output annular contact plane; +z output direction",
+        "full_thread_start_joint_z_mm": null,
+        "full_thread_end_joint_z_mm": null,
+        "max_permitted_total_penetration_mm": null,
+        "approved_screw_length_mm": null,
+        "status": "nominal_drawing_and_smooth_CAD_channel_only; effective_engagement_unresolved",
+        "source_ids": [
+          "D25",
+          "STEP25",
+          "INTERFACE-EXTRACTION"
+        ]
+      },
+      "source_ids": [
+        "P25",
+        "USER14",
+        "ECAT20",
+        "CAN44"
+      ],
+      "ethercat_model_specific_status": "E option confirmed; public ESI is generic and shipped hardware/firmware identity not read"
+    },
+    {
+      "order_code": "EPS-RH-20-100-E-B-D",
+      "assigned_joints": [
+        "J3",
+        "J4"
+      ],
+      "variant_status": "exact_catalog_order_confirmed",
+      "ratio": 100,
+      "nominal_voltage_V": 48,
+      "published_voltage_range_V": [
+        20,
+        55
+      ],
+      "maximum_input_V": 55,
+      "rated_running_output_torque_Nm": 50,
+      "catalog_peak_output_torque_Nm": 80,
+      "rated_output_speed_rpm": 25,
+      "rated_current_Arms": 6.8,
+      "catalog_peak_current_Arms": 10.6,
+      "rated_mechanical_power_W": 130,
+      "no_load_current_A": 1.2,
+      "mass_kg": 1.75,
+      "continuous_zero_speed_output_torque_Nm": null,
+      "continuous_zero_speed_status": "not_found_in_reviewed_public_sources",
+      "short_stall_rows": [
+        {
+          "output_torque_Nm": 75,
+          "temperature_rise_C": 12,
+          "stall_time_s": 15,
+          "phase_current_Arms": 10.5
+        },
+        {
+          "output_torque_Nm": 100,
+          "temperature_rise_C": 8,
+          "stall_time_s": 10,
+          "phase_current_Arms": 13.5
+        },
+        {
+          "output_torque_Nm": 125,
+          "temperature_rise_C": 15,
+          "stall_time_s": 8,
+          "phase_current_Arms": 18
+        }
+      ],
+      "short_stall_status": "measured_short_duration_rows_not_continuous_rating; peak/current_definition_conflicts_unresolved",
+      "brake": {
+        "integrated": true,
+        "series_manual_static_torque_Nm": 0.8,
+        "series_manual_value_applies_to_selected_variant": true,
+        "torque_side": null,
+        "guaranteed_output_holding_torque_Nm": null,
+        "external_coil_supply_required": false,
+        "supply_description": "module DC input; coil rating unspecified",
+        "external_brake_control_pin": null,
+        "coil_voltage_V": null,
+        "coil_current_A": null,
+        "apply_release_timing_ms": null,
+        "loss_of_power_response": "CAN44 family command section describes power-off locked; apply timing, physical feedback and exact shipped EtherCAT firmware behavior unconfirmed"
+      },
+      "electrical": {
+        "power_connector": "XT30(2+2)",
+        "supplied_power_wire_AWG": 18,
+        "supplied_power_wire_length_mm": 200,
+        "ethercat_connector_catalog_name": "SH1.0mm(4pin)",
+        "ethercat_supplied_cable_length_mm": 480,
+        "aux_connector_catalog_name": "GH1.25-2P",
+        "dc_and_can_ports": true,
+        "ethercat_in_out": true,
+        "multiturn_battery_port": true,
+        "bleeder_resistor_port": true,
+        "independent_logic_supply_port_documented": false,
+        "brake_output_connector_documented": false,
+        "certified_STO_SBC_evidence": false
+      },
+      "output_threads": {
+        "thread": "M3",
+        "count": 16,
+        "pcd_mm": 62.0,
+        "nominal_thread_depth_mm": 6.0,
+        "drawing_clearance_recess_depth_mm": 10.5,
+        "known_STEP_clearance_diameter_mm": 3.4,
+        "known_STEP_clearance_joint_z_mm": [
+          -3.0,
+          -0.0
+        ],
+        "frame": "z=0 output annular contact plane; +z output direction",
+        "full_thread_start_joint_z_mm": null,
+        "full_thread_end_joint_z_mm": null,
+        "max_permitted_total_penetration_mm": null,
+        "approved_screw_length_mm": null,
+        "status": "nominal_drawing_and_smooth_CAD_channel_only; effective_engagement_unresolved",
+        "source_ids": [
+          "D20",
+          "STEP20",
+          "INTERFACE-EXTRACTION"
+        ]
+      },
+      "source_ids": [
+        "P20",
+        "USER14",
+        "ECAT20",
+        "CAN44"
+      ],
+      "ethercat_model_specific_status": "E option confirmed; public ESI is generic and shipped hardware/firmware identity not read"
+    },
+    {
+      "order_code": "EPS-RH-17-100-E-B-D",
+      "assigned_joints": [
+        "J5",
+        "J6"
+      ],
+      "variant_status": "exact_catalog_order_confirmed",
+      "ratio": 100,
+      "nominal_voltage_V": 48,
+      "published_voltage_range_V": [
+        20,
+        55
+      ],
+      "maximum_input_V": 55,
+      "rated_running_output_torque_Nm": 35,
+      "catalog_peak_output_torque_Nm": 54,
+      "rated_output_speed_rpm": 25,
+      "rated_current_Arms": 4.7,
+      "catalog_peak_current_Arms": 7.4,
+      "rated_mechanical_power_W": 91,
+      "no_load_current_A": 0.6,
+      "mass_kg": 1.28,
+      "continuous_zero_speed_output_torque_Nm": null,
+      "continuous_zero_speed_status": "not_found_in_reviewed_public_sources",
+      "short_stall_rows": [
+        {
+          "output_torque_Nm": 52.5,
+          "temperature_rise_C": 15,
+          "stall_time_s": 15,
+          "phase_current_Arms": 6.9
+        },
+        {
+          "output_torque_Nm": 70,
+          "temperature_rise_C": 7,
+          "stall_time_s": 10,
+          "phase_current_Arms": 9.8
+        },
+        {
+          "output_torque_Nm": 87.5,
+          "temperature_rise_C": 35,
+          "stall_time_s": 8,
+          "phase_current_Arms": 11.9
+        }
+      ],
+      "short_stall_status": "measured_short_duration_rows_not_continuous_rating; peak/current_definition_conflicts_unresolved",
+      "brake": {
+        "integrated": true,
+        "series_manual_static_torque_Nm": 0.5,
+        "series_manual_value_applies_to_selected_variant": true,
+        "torque_side": null,
+        "guaranteed_output_holding_torque_Nm": null,
+        "external_coil_supply_required": false,
+        "supply_description": "module DC input; coil rating unspecified",
+        "external_brake_control_pin": null,
+        "coil_voltage_V": null,
+        "coil_current_A": null,
+        "apply_release_timing_ms": null,
+        "loss_of_power_response": "CAN44 family command section describes power-off locked; apply timing, physical feedback and exact shipped EtherCAT firmware behavior unconfirmed"
+      },
+      "electrical": {
+        "power_connector": "XT30(2+2)",
+        "supplied_power_wire_AWG": 18,
+        "supplied_power_wire_length_mm": 200,
+        "ethercat_connector_catalog_name": "SH1.0mm(4pin)",
+        "ethercat_supplied_cable_length_mm": 480,
+        "aux_connector_catalog_name": "GH1.25-2P",
+        "dc_and_can_ports": true,
+        "ethercat_in_out": true,
+        "multiturn_battery_port": true,
+        "bleeder_resistor_port": true,
+        "independent_logic_supply_port_documented": false,
+        "brake_output_connector_documented": false,
+        "certified_STO_SBC_evidence": false
+      },
+      "output_threads": {
+        "thread": "M3",
+        "count": 16,
+        "pcd_mm": 54.0,
+        "nominal_thread_depth_mm": 6.0,
+        "drawing_clearance_recess_depth_mm": 9.6,
+        "known_STEP_clearance_diameter_mm": 3.4,
+        "known_STEP_clearance_joint_z_mm": [
+          -3.0,
+          0.0
+        ],
+        "frame": "z=0 output annular contact plane; +z output direction",
+        "full_thread_start_joint_z_mm": null,
+        "full_thread_end_joint_z_mm": null,
+        "max_permitted_total_penetration_mm": null,
+        "approved_screw_length_mm": null,
+        "status": "nominal_drawing_and_smooth_CAD_channel_only; effective_engagement_unresolved",
+        "source_ids": [
+          "D17",
+          "STEP17",
+          "INTERFACE-EXTRACTION"
+        ]
+      },
+      "source_ids": [
+        "P17",
+        "USER14",
+        "ECAT20",
+        "CAN44"
+      ],
+      "ethercat_model_specific_status": "E option confirmed; public ESI is generic and shipped hardware/firmware identity not read"
+    },
+    {
+      "order_code": "EPS-RH-14-100-E-N-D",
+      "assigned_joints": [
+        "J7"
+      ],
+      "variant_status": "exact_catalog_order_confirmed",
+      "ratio": 100,
+      "nominal_voltage_V": 48,
+      "published_voltage_range_V": [
+        20,
+        55
+      ],
+      "maximum_input_V": 55,
+      "rated_running_output_torque_Nm": 11,
+      "catalog_peak_output_torque_Nm": 28,
+      "rated_output_speed_rpm": 25,
+      "rated_current_Arms": 2.8,
+      "catalog_peak_current_Arms": 5.7,
+      "rated_mechanical_power_W": 28,
+      "no_load_current_A": 0.4,
+      "mass_kg": 0.78,
+      "continuous_zero_speed_output_torque_Nm": null,
+      "continuous_zero_speed_status": "not_found_in_reviewed_public_sources",
+      "short_stall_rows": [
+        {
+          "output_torque_Nm": 16.5,
+          "temperature_rise_C": 3,
+          "stall_time_s": 15,
+          "phase_current_Arms": 3.7
+        },
+        {
+          "output_torque_Nm": 22,
+          "temperature_rise_C": 4,
+          "stall_time_s": 10,
+          "phase_current_Arms": 4.8
+        },
+        {
+          "output_torque_Nm": 27.5,
+          "temperature_rise_C": 6,
+          "stall_time_s": 8,
+          "phase_current_Arms": 6.6
+        }
+      ],
+      "short_stall_status": "measured_short_duration_rows_not_continuous_rating; peak/current_definition_conflicts_unresolved",
+      "brake": {
+        "integrated": false,
+        "series_manual_static_torque_Nm": 0.2,
+        "series_manual_value_applies_to_selected_variant": false,
+        "torque_side": null,
+        "guaranteed_output_holding_torque_Nm": null,
+        "external_coil_supply_required": null,
+        "supply_description": "not applicable: selected N has no brake",
+        "external_brake_control_pin": null,
+        "coil_voltage_V": null,
+        "coil_current_A": null,
+        "apply_release_timing_ms": null,
+        "loss_of_power_response": "not fully documented for selected revision"
+      },
+      "electrical": {
+        "power_connector": "XT30(2+2)",
+        "supplied_power_wire_AWG": 18,
+        "supplied_power_wire_length_mm": 200,
+        "ethercat_connector_catalog_name": "SH1.0mm(4pin)",
+        "ethercat_supplied_cable_length_mm": 480,
+        "aux_connector_catalog_name": "GH1.25-2P",
+        "dc_and_can_ports": true,
+        "ethercat_in_out": true,
+        "multiturn_battery_port": true,
+        "bleeder_resistor_port": false,
+        "independent_logic_supply_port_documented": false,
+        "brake_output_connector_documented": false,
+        "certified_STO_SBC_evidence": false
+      },
+      "output_threads": {
+        "thread": "M3",
+        "count": 8,
+        "pcd_mm": 44.0,
+        "nominal_thread_depth_mm": 5.0,
+        "drawing_clearance_recess_depth_mm": 9.0,
+        "known_STEP_clearance_diameter_mm": 3.4,
+        "known_STEP_clearance_joint_z_mm": [
+          -3.0,
+          -0.0
+        ],
+        "frame": "z=0 output annular contact plane; +z output direction",
+        "full_thread_start_joint_z_mm": null,
+        "full_thread_end_joint_z_mm": null,
+        "max_permitted_total_penetration_mm": null,
+        "approved_screw_length_mm": null,
+        "status": "nominal_drawing_and_smooth_CAD_channel_only; effective_engagement_unresolved",
+        "source_ids": [
+          "D14",
+          "STEP14",
+          "INTERFACE-EXTRACTION"
+        ]
+      },
+      "source_ids": [
+        "P14",
+        "USER14",
+        "ECAT20",
+        "CAN44"
+      ],
+      "ethercat_model_specific_status": "E option confirmed; public ESI is generic and shipped hardware/firmware identity not read"
+    }
+  ],
+  "rated_test_conditions": {
+    "ambient_C": 24,
+    "output_speed_rpm": 25,
+    "thermal_equilibrium_temperature_rise_C": 60,
+    "other_heat_dissipation": "none per product footnote",
+    "winding_or_case_measurement_location": null,
+    "zero_speed_qualified": false,
+    "enclosed_printed_case_qualified": false,
+    "source_ids": [
+      "P14",
+      "P17",
+      "P20",
+      "P25"
+    ]
+  },
+  "environment": {
+    "operating_ambient_C": [
+      0,
+      50
+    ],
+    "source": "USER14 PDF p8; not a constant-torque guarantee at all ambient temperatures"
+  },
+  "power_and_brake": {
+    "reference_switch_on_capacitor_uF": 1000,
+    "reference_capacitor_voltage_rating_V": 100,
+    "reference_capacitor_is_regen_sizing": false,
+    "brake_power_path": "USER14 PDF p27: module DC connector, no extra supply",
+    "manual_brake_torque_side": "unspecified; do not multiply 100",
+    "manual_brake_use": "static hold; high-load/high-speed dynamic stopping may damage brake",
+    "resistor_chopper_current_limit_A": null,
+    "resistor_minimum_ohm": null,
+    "resistor_energy_J": null,
+    "voltage_threshold_hysteresis_delay": null,
+    "brake_current_and_bus_inrush_unknown": true,
+    "source_ids": [
+      "USER14"
+    ]
+  },
+  "connector_drawing_notes": {
+    "product_pdf_page": 2,
+    "physical_pin_numbers_not_assigned": true,
+    "front_mating_vs_wire_side_not_certified": true,
+    "drawn_ethercat_left_to_right": [
+      "T+",
+      "T-",
+      "R+",
+      "R-"
+    ],
+    "orientation": "as drawn in interface schematic only; verify keyed connector and actual module label before crimping",
+    "port_numbers_are_drawing_callouts_not_universal_connector_pin_numbers": true,
+    "RES_is_bleeder_not_brake": true
+  },
+  "ethercat": {
+    "esi_filename": "MT-Device_260424.xml",
+    "esi_sha256": "e102e7cbbff93480f7d2e5008b3031b034107f3ce2dead9349d80d48bacf2362",
+    "official_firmware_binding": "26042402",
+    "schema_version": "1.6",
+    "schema_validated": false,
+    "device_count": 1,
+    "vendor_id": "#x202008",
+    "device_type": {
+      "name": "MT_Device",
+      "ProductCode": "#x00000000",
+      "RevisionNo": "#x00010000"
+    },
+    "object_count": 79,
+    "exact_model_entries_found": false,
+    "selected_objects": [
+      {
+        "index": "0x1001",
+        "name": "Error register",
+        "type": "USINT",
+        "bit_size": "8",
+        "access": "ro",
+        "pdo_mapping": null,
+        "default_data_hex": "00",
+        "xml_line": 1236,
+        "subitems": []
+      },
+      {
+        "index": "0x1018",
+        "name": "Identity",
+        "type": "DT1018",
+        "bit_size": "144",
+        "access": null,
+        "pdo_mapping": null,
+        "default_data_hex": null,
+        "xml_line": 1284,
+        "subitems": [
+          {
+            "name": "SubIndex 000",
+            "default_data_hex": "04"
+          },
+          {
+            "name": "Vendor ID",
+            "default_data_hex": "82020000"
+          },
+          {
+            "name": "Product code",
+            "default_data_hex": "00000000"
+          },
+          {
+            "name": "Revision",
+            "default_data_hex": "10000000"
+          },
+          {
+            "name": "Serial number",
+            "default_data_hex": "00000000"
+          }
+        ]
+      },
+      {
+        "index": "0x2009",
+        "name": "Motor Temperature",
+        "type": "INT",
+        "bit_size": "16",
+        "access": "ro",
+        "pdo_mapping": "t",
+        "default_data_hex": "0000",
+        "xml_line": 2016,
+        "subitems": []
+      },
+      {
+        "index": "0x200A",
+        "name": "Voltage",
+        "type": "UINT",
+        "bit_size": "16",
+        "access": "ro",
+        "pdo_mapping": "t",
+        "default_data_hex": "0000",
+        "xml_line": 2029,
+        "subitems": []
+      },
+      {
+        "index": "0x200C",
+        "name": "Drive Temperature",
+        "type": "INT",
+        "bit_size": "16",
+        "access": "ro",
+        "pdo_mapping": "t",
+        "default_data_hex": "0000",
+        "xml_line": 2055,
+        "subitems": []
+      },
+      {
+        "index": "0x603F",
+        "name": "Error Code",
+        "type": "UINT",
+        "bit_size": "16",
+        "access": "ro",
+        "pdo_mapping": "t",
+        "default_data_hex": "0000",
+        "xml_line": 2158,
+        "subitems": []
+      },
+      {
+        "index": "0x6040",
+        "name": "control word",
+        "type": "UINT",
+        "bit_size": "16",
+        "access": "rw",
+        "pdo_mapping": "r",
+        "default_data_hex": "0000",
+        "xml_line": 2171,
+        "subitems": []
+      },
+      {
+        "index": "0x6041",
+        "name": "status word",
+        "type": "UINT",
+        "bit_size": "16",
+        "access": "ro",
+        "pdo_mapping": "t",
+        "default_data_hex": "0000",
+        "xml_line": 2184,
+        "subitems": []
+      },
+      {
+        "index": "0x605A",
+        "name": "quickstop option code",
+        "type": "INT",
+        "bit_size": "16",
+        "access": "rw",
+        "pdo_mapping": null,
+        "default_data_hex": "0000",
+        "xml_line": 2197,
+        "subitems": []
+      },
+      {
+        "index": "0x605B",
+        "name": "shutdown option code",
+        "type": "INT",
+        "bit_size": "16",
+        "access": "rw",
+        "pdo_mapping": null,
+        "default_data_hex": "0000",
+        "xml_line": 2209,
+        "subitems": []
+      },
+      {
+        "index": "0x605C",
+        "name": "disable operation option code",
+        "type": "INT",
+        "bit_size": "16",
+        "access": "rw",
+        "pdo_mapping": null,
+        "default_data_hex": "1000",
+        "xml_line": 2221,
+        "subitems": []
+      },
+      {
+        "index": "0x605E",
+        "name": "fault reaction code",
+        "type": "INT",
+        "bit_size": "16",
+        "access": "rw",
+        "pdo_mapping": null,
+        "default_data_hex": "2000",
+        "xml_line": 2233,
+        "subitems": []
+      },
+      {
+        "index": "0x6075",
+        "name": "Motor Rate Current",
+        "type": "DINT",
+        "bit_size": "32",
+        "access": "rw",
+        "pdo_mapping": null,
+        "default_data_hex": "00000000",
+        "xml_line": 2410,
+        "subitems": []
+      },
+      {
+        "index": "0x6085",
+        "name": "Quick Stop Deceleration",
+        "type": "UDINT",
+        "bit_size": "32",
+        "access": "rw",
+        "pdo_mapping": "r",
+        "default_data_hex": "00000000",
+        "xml_line": 2513,
+        "subitems": []
+      }
+    ],
+    "default_pdo_descriptions": [
+      {
+        "direction": "RxPdo",
+        "index": "#x1600",
+        "attributes": {
+          "Fixed": "false",
+          "Mandatory": "false",
+          "Sm": "2"
+        },
+        "entries": [
+          {
+            "index": "#x6040",
+            "subindex": "0",
+            "bits": 16,
+            "name": "control word"
+          },
+          {
+            "index": "#x607A",
+            "subindex": "0",
+            "bits": 32,
+            "name": "target position"
+          },
+          {
+            "index": "#x60FF",
+            "subindex": "0",
+            "bits": 32,
+            "name": "target velocity"
+          },
+          {
+            "index": "#x6071",
+            "subindex": "0",
+            "bits": 16,
+            "name": "Target Torque"
+          },
+          {
+            "index": "#x6072",
+            "subindex": "0",
+            "bits": 16,
+            "name": "Max Torque"
+          },
+          {
+            "index": "#x6060",
+            "subindex": "0",
+            "bits": 8,
+            "name": "modes of operation"
+          },
+          {
+            "index": "#x2FFD",
+            "subindex": "0",
+            "bits": 8,
+            "name": "Dummy Byte1"
+          }
+        ]
+      },
+      {
+        "direction": "TxPdo",
+        "index": "#x1A00",
+        "attributes": {
+          "Fixed": "false",
+          "Mandatory": "false",
+          "Sm": "3"
+        },
+        "entries": [
+          {
+            "index": "#x6041",
+            "subindex": "0",
+            "bits": 16,
+            "name": "status word"
+          },
+          {
+            "index": "#x6064",
+            "subindex": "0",
+            "bits": 32,
+            "name": "position actual value"
+          },
+          {
+            "index": "#x606C",
+            "subindex": "0",
+            "bits": 32,
+            "name": "velocity actual value"
+          },
+          {
+            "index": "#x6077",
+            "subindex": "0",
+            "bits": 16,
+            "name": "torque actual value"
+          },
+          {
+            "index": "#x603F",
+            "subindex": "0",
+            "bits": 16,
+            "name": "Error Code"
+          },
+          {
+            "index": "#x6061",
+            "subindex": "0",
+            "bits": 8,
+            "name": "modes of operation display"
+          },
+          {
+            "index": "#x2FFE",
+            "subindex": "0",
+            "bits": 8,
+            "name": "Dummy Byte2"
+          }
+        ]
+      }
+    ],
+    "coe": {
+      "SdoInfo": "true",
+      "PdoAssign": "true",
+      "PdoConfig": "true",
+      "CompleteAccess": "true",
+      "SegmentedSdo": "true"
+    },
+    "foe_present": true,
+    "findings": [
+      {
+        "id": "ESI-PUBLIC",
+        "status": "verified_public",
+        "description": "Official English and Chinese sites publish the same MT-Device_260424 ZIP/XML. Website binds it to firmware 26042402."
+      },
+      {
+        "id": "EXACT-UNIT",
+        "status": "unresolved",
+        "description": "Both ESI revisions identify one generic MT_Device, with no exact EPS-RH model-specific device entries or supplied-unit firmware evidence."
+      },
+      {
+        "id": "IDENTITY-TEMPLATE",
+        "status": "unresolved",
+        "description": "Top-level vendor #x202008 and RevisionNo #x00010000 differ from 0x1018 XML DefaultData bytes: Vendor 82020000 and Revision 10000000. Runtime identity must be read, not inferred from defaults."
+      },
+      {
+        "id": "FW-BINARY",
+        "status": "not_publicly_retrieved",
+        "description": "Official Chinese firmware page states latest firmware is obtained by contacting sales. No firmware binary downloaded or flashed."
+      },
+      {
+        "id": "QUICKSTOP",
+        "status": "vendor_specific_documented_partial",
+        "description": "Protocol PDF p50, while Operation Enabled: 0x6040=0x0002 triggers quick stop; with 0x605A=0, decelerate by 0x6085 then enter Switch On Disabled. Other option values and timing are not defined in the reviewed PDF."
+      },
+      {
+        "id": "FAULT-REACTION",
+        "status": "unresolved",
+        "description": "0x605E INT16 RW listed p15, but no supported values or physical response/timing. XML raw default is 2000 (LE integer 32); do not assume value 2."
+      },
+      {
+        "id": "BRAKE-CONTROL",
+        "status": "unresolved",
+        "description": "No brake control/status object found in 79-object latest ESI or 56-page protocol. Manual PDF pp27-28 describes DC-supplied static holding brake, not EtherCAT release/apply sequence or timings."
+      },
+      {
+        "id": "STO",
+        "status": "not_evidenced",
+        "description": "No safety-rated STO, SS1, SBC or FSoE evidence in examined protocol/ESIs/manual brake section. PDO disable and quick stop are ordinary controls, not STO."
+      },
+      {
+        "id": "FAULT-RESET",
+        "status": "documented",
+        "description": "Protocol pp12 and55-56: 0x6040 bit7 rising edge / 0x0080 triggers system reset; runtime parameters revert to defaults and must be configured again."
+      },
+      {
+        "id": "IGH-SAMPLE",
+        "status": "not_integration_qualified",
+        "description": "Official 260620 IGH source main.cpp uses legacy 0x5FFE padding, whereas latest ESI uses Rx0x2FFD/Tx0x2FFE; quick_stop/fault_reset flags are set by helper functions but not consumed by main loop. No source was executed."
+      },
+      {
+        "id": "CAN-BRAKE",
+        "status": "documented_separate_interface",
+        "description": "CAN V4.4 provides 0x77 release and 0x78 lock plus 0x9A DATA3 command-state feedback. This is not a proven EtherCAT object mapping or mechanical brake position feedback."
+      }
+    ],
+    "protocol_pages_one_based": {
+      "state_transition": 11,
+      "enable": 12,
+      "stop_options_dictionary": 15,
+      "control_word": 17,
+      "save_and_status_word": 18,
+      "error_codes": 23,
+      "quickstop_deceleration": [
+        24,
+        25
+      ],
+      "pvt_gains": 30,
+      "pid_gains": 31,
+      "temperature_bus_encoder": 32,
+      "pdo_mappings": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "sm_assignment": [
+        40,
+        41
+      ],
+      "quickstop": 50,
+      "fault_recovery": [
+        55,
+        56
+      ]
+    },
+    "known_document_limits": [
+      "Protocol p17 promises per-bit definitions but no full bit table follows on p18; scattered mode bits are documented elsewhere.",
+      "0x605B/605C/605E list names/types/access only, with no full behavior matrix.",
+      "0x200D..0x2011 exist in latest XML but are absent from protocol PDF.",
+      "No complete link-loss/watchdog and brake response timing found."
+    ],
+    "runtime_identity_and_firmware_readback_performed": false,
+    "safety_rated_function_evidence": false
+  },
+  "thread_installation": {
+    "generic_manual_torque_M3_kgf_cm": 17,
+    "generic_manual_torque_M4_kgf_cm": 40,
+    "converted_M3_Nm": 1.6671305,
+    "converted_M4_Nm": 3.92266,
+    "source": "USER14 PDF p23 Table4-1",
+    "applicability": "generic table without specified bolt grade/friction/thread material; does not release our output fasteners or thin adapters"
+  },
+  "release_gates": [
+    "Continuous zero-speed torque/current/temperature curve for selected variant, actual mounting and ambient",
+    "Guaranteed brake output torque and side, coil demand, apply/release/fault/DC-loss timing, allowed energy and feedback",
+    "Per-unit label/hardware/firmware/ESI identity matching and read-only 0x1018 verification before enabling",
+    "Manufacturer-confirmed stop/disable/fault/watchdog behavior and independent safety architecture",
+    "Bus current and regen transient measurements plus specified chopper/resistor thresholds and ratings",
+    "Revision-controlled connector pin/mating/shield/battery details",
+    "Output full thread start/end, bottom clearance, allowed penetration, bolt grade/torque and moving-side ownership"
+  ],
+  "qa": {
+    "product_pages_visually_reviewed": {
+      "14": [
+        1,
+        2
+      ],
+      "17": [
+        1,
+        2
+      ],
+      "20": [
+        1,
+        2
+      ],
+      "25": [
+        1,
+        2
+      ]
+    },
+    "user_manual_pages_visually_reviewed": [
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "protocol_pages_visually_reviewed_by_independent_probe": [
+      11,
+      12,
+      15,
+      17,
+      18,
+      23,
+      24,
+      25,
+      30,
+      31,
+      32,
+      50,
+      55,
+      56
+    ],
+    "xml_parsed": true,
+    "xml_xsd_validated": false,
+    "source_digests_calculated_from_local_bytes": true,
+    "independent_ethercat_review": "14 selected object definitions and both 128-bit default PDO groups cross-checked against XML; no blocking mismatches",
+    "can_pages_visually_reviewed_by_independent_probe": [
+      53,
+      54,
+      68,
+      131,
+      132,
+      133,
+      138,
+      139
+    ]
+  },
+  "brake_interfaces": {
+    "ethercat": {
+      "command_index": null,
+      "command_subindex": null,
+      "status_index": null,
+      "status_subindex": null,
+      "enum": null,
+      "default": null,
+      "not_found_in": "protocol V2.0 and all 79 latest ESI objects",
+      "firmware_confirmation_required": true,
+      "status_6041_is_not_proven_brake_feedback": true
+    },
+    "CAN_V4_4": [
+      {
+        "command": "0x77",
+        "purpose": "brake release",
+        "pdf_pages": [
+          131,
+          132
+        ],
+        "printed_pages": [
+          123,
+          124
+        ],
+        "payload": "DATA[0]=0x77; DATA[1..7]=0",
+        "reply": "echo",
+        "default": "not documented"
+      },
+      {
+        "command": "0x78",
+        "purpose": "brake lock",
+        "pdf_pages": [
+          132,
+          133
+        ],
+        "printed_pages": [
+          124,
+          125
+        ],
+        "payload": "DATA[0]=0x78; DATA[1..7]=0",
+        "reply": "echo",
+        "default": "power-off state described as locked; timing not stated"
+      },
+      {
+        "command": "0x9A",
+        "purpose": "command-state readback, not proven physical position feedback",
+        "pdf_pages": [
+          53,
+          54
+        ],
+        "printed_pages": [
+          45,
+          46
+        ],
+        "field": "DATA[3] uint8 RlyCtrlRslt",
+        "enum": {
+          "1": "brake release command",
+          "0": "brake lock command"
+        },
+        "default": "not documented"
+      },
+      {
+        "command": "0xA1",
+        "purpose": "torque/current control",
+        "pdf_pages": [
+          68
+        ],
+        "printed_pages": [
+          60
+        ],
+        "constraint": "braked models require separate 0x77 before this command"
+      },
+      {
+        "command": "0xB3",
+        "purpose": "CAN communication interruption protection",
+        "pdf_pages": [
+          138,
+          139
+        ],
+        "printed_pages": [
+          130,
+          131
+        ],
+        "field": "DATA[4..7] little endian CanRecvTime_MS",
+        "units": "ms",
+        "zero": "disabled",
+        "timeout_behavior_as_documented": "cut output and lock brake",
+        "ethercat_equivalence_proven": false
+      }
+    ]
+  }
+}

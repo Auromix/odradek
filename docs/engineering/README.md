@@ -36,6 +36,7 @@
 | 接口 | [试装片](interface-coupon-guide.md)／[J1与J7安装](mount-interface-study.md) | 原厂真实孔位、逐实体避让、原创尺寸图；螺纹有效起点等未冻结 |
 | 打印台架 | [单指手动台架](../../engineering/generated/finger-fixture/README.md) | 四件打印件与五页图纸，无动力无载 |
 | 元件 | [主 BOM](hardware/bom.csv)／[BOM口径](hardware/bom-notes.md) | 候选、blocked 和 TBD 逐项区分，不是一键采购整机表 |
+| 关节运行与接口证据 | [RH-OPERATION-EVIDENCE01](rh-operation-evidence.md) | 四精确型号、官方ESI与固件关系；确认B闸无需独立外供24V、J7 N无闸；零速热额定/停止时序/满牙区间仍缺 |
 | 电气 | [架构](electrical-architecture.svg)／[线束](harness-and-connectors.md) | 7本体＋4指伺服＋1头IO，共12从站；视频独立GMSL候选 |
 | 动态相机线补查 | [CAM-CABLE02](camera-cable-refresh.md) | CG03现行PDF、R34.5/R37候选及资料冲突；半径较小的候选未获动态/通道资格 |
 | 工件可见性 | [实际圆柱遮挡](grasp-object-visibility.md) | 两相机可见端面45采样点；八接触点被工件遮住，需独立接触反馈 |
