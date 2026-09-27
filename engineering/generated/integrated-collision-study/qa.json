@@ -1,0 +1,48 @@
+{
+  "revision": "INTEGRATED-COLLISION01",
+  "source_sha256": {
+    "engineering/screen_integrated_collisions.py": "72373f83c60555e45fb2d3297789b793996c372fb9159a1972dad0aace154e1b",
+    "engineering/studies/wrist67_rotation.py": "735e6da61e925f98f1e209ebbc4d5295a2aaf0cee28ff1d3773491d03a282be1",
+    "engineering/studies/link_interface_tools.py": "335a99418ecf6a4df08a9923e775e83ac4f882d18896e9e14796a50e740964fa",
+    "engineering/build_layout.py": "9c21a65d2c7873809faf4f7ee733efb8a0e699758190046d73f5e2d1d0e44d2c",
+    "engineering/mount_interface_study.py": "facf67a020fd1fd546e501705e2048b9925cfc5e7260bb270c969a73b80a5f79",
+    "engineering/kinematics.py": "0ca974a3057ce976ed7314c83d58db541eeb524b3f7ecabc3e022cce2fc586b8",
+    "engineering/arm_screening.py": "87dcbf79cbec8dd889b90ae639c8a0143e12413dde0a4cbfeab2b5c5db5250a3"
+  },
+  "report_sha256": {
+    "poses.json": "4cd20a5c254a9d1d197f98f5d9a83c913cc1b973315303adda1ca098e0e7ba2b",
+    "wrist67-rotation.json": "87a538f30e625783924f38cd4dcb0ec13e712ede0281f2e7fbc85ffebceab45b"
+  },
+  "all_source_hashes_match": true,
+  "independent_millimetre_transform_to_SI_Arm_prefix_max_error": 1.7053025658242404e-13,
+  "transform_cases": 23,
+  "all_six_discrete_poses_complete": true,
+  "candidate_reach_has_real_collision": true,
+  "max_head_STEP_to_manifest_volume_error_mm3": 7.995549822226167e-08,
+  "max_head_STEP_to_manifest_bbox_error_mm": 0.0027198631658933436,
+  "head_import_acceptance": "volume error<0.001mm3 and bbox max coordinate error<0.01mm; compare BREP exported shape to source export metadata, not manufacturing tolerance",
+  "wrist_containment_solid_checks": 59,
+  "wrist_stationary_object_count": 47,
+  "wrist_actual_witnesses": [
+    {
+      "q6_deg": -100,
+      "solid_pairs": 4720,
+      "booleans": 17,
+      "events": []
+    },
+    {
+      "q6_deg": 0,
+      "solid_pairs": 4720,
+      "booleans": 17,
+      "events": []
+    },
+    {
+      "q6_deg": 100,
+      "solid_pairs": 4720,
+      "booleans": 17,
+      "events": []
+    }
+  ],
+  "manufacturing_release": false,
+  "trajectory_qualified": false
+}
