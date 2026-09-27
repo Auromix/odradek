@@ -1,0 +1,692 @@
+{
+  "revision": "CD-HW01",
+  "date": "2026-09-27",
+  "license": "CC-BY-NC-4.0",
+  "status": "Primary-source procurement/geometric candidates; no manufacturing or strength release",
+  "sources": [
+    {
+      "id": "JST-GH",
+      "url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+      "pages_1based": [
+        2,
+        3,
+        6
+      ],
+      "file": "JST-eGH.pdf",
+      "sha256": "b1dcb317b6b9a4fbbedd2dbf42c64c95306a252d23de8933b85fcf161240b722",
+      "bytes": 146619,
+      "local_storage": "work/central-display-hardware01/JST-eGH.pdf",
+      "evidence": "Downloaded primary PDF; pages2/3 visually inspected; assembly and PCB layout dimensions are references."
+    },
+    {
+      "id": "JST-GH-FULL-PN",
+      "url": "https://jst.de/product-family/show/89/gh",
+      "evidence": "Official JST site lists SM12B-GHS-TB (LF)(SN)."
+    },
+    {
+      "id": "ACCU-SCREW",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/151771-SSC-M2-20-A2-BL",
+      "evidence": "Own-brand primary technical table opened2026-09-27; PDF API returned403; no PDF downloaded."
+    },
+    {
+      "id": "ACCU-WASHER",
+      "url": "https://www.accu.co.uk/metric-flat-washers/179343-HPW-M2-A2-BL",
+      "evidence": "Own-brand primary technical table opened2026-09-27; PDF API returned403; no PDF downloaded."
+    },
+    {
+      "id": "ACCU-NUT",
+      "url": "https://www.accu.co.uk/hexagon-nuts/7884-HPN-M2-A2",
+      "evidence": "Own-brand primary technical table opened2026-09-27; PDF API returned403; no PDF downloaded."
+    },
+    {
+      "id": "JST-DATA-GATE",
+      "url": "https://www.jst-mfg.com/product/index.php?lang=2&series=105",
+      "header_STEP_entry": "https://www.jst-mfg.com/product/index.php?doc=2&filename=SM12B-GHS-TB.zip&series=105&type=10",
+      "housing_STEP_entry": "https://www.jst-mfg.com/product/index.php?doc=2&filename=GHR-12V-S.zip&series=105&type=10",
+      "status": "Official specific STEP/2D entries exist but require personal/company form and email delivery since2025-04. No form submitted; no controlled model obtained."
+    }
+  ],
+  "input_assumptions": {
+    "PCB_diameter_mm": 60,
+    "PCB_thickness_mm": 1,
+    "body_diameter_mm": 64,
+    "body_z_mm": [
+      -11,
+      1
+    ],
+    "ear_hole_centers_xy_mm": [
+      [
+        -35,
+        0
+      ],
+      [
+        35,
+        0
+      ]
+    ],
+    "frame_z_mm": [
+      -15,
+      -11
+    ],
+    "ear_top_z_interpretation_mm": 1.75,
+    "source": "Latest parent CD01 design update; prior initialZ1 is superseded for fastener stack, not commercial display datasheet",
+    "PCB_z_mm": [
+      -3,
+      -2
+    ]
+  },
+  "fasteners": [
+    {
+      "id": "F1",
+      "PN": "SSC-M2-20-A2-BL",
+      "quantity": 2,
+      "source": "ACCU-SCREW",
+      "thread": "M2x0.4",
+      "under_head_length_nominal_mm": 20,
+      "length_tolerance_mm": null,
+      "full_thread_claim": true,
+      "head_diameter_range_mm": [
+        3.62,
+        3.8
+      ],
+      "head_height_range_mm": [
+        1.86,
+        2.0
+      ],
+      "socket_AF_mm": 1.5,
+      "drive_depth_nominal_mm": 1,
+      "material": "A2 stainless; exact strength class not confirmed",
+      "finish": "matte black",
+      "standard_claim": [
+        "DIN912",
+        "ISO4762"
+      ],
+      "catalogue_mass_each_g": 0.5,
+      "availability": "Published exact catalogue PN; live inventory/leadtime not established"
+    },
+    {
+      "id": "W1",
+      "PN": "HPW-M2-A2-BL",
+      "quantity": 4,
+      "source": "ACCU-WASHER",
+      "ID_range_mm": [
+        2.2,
+        2.34
+      ],
+      "OD_range_mm": [
+        4.7,
+        5.0
+      ],
+      "thickness_range_mm": [
+        0.25,
+        0.35
+      ],
+      "material": "A2 stainless",
+      "finish": "matte black",
+      "standard_claim": "DIN125",
+      "catalogue_mass_each_g": 0.05,
+      "availability": "Published exact catalogue PN; live inventory/leadtime not established"
+    },
+    {
+      "id": "N1",
+      "PN": "HPN-M2-A2",
+      "quantity": 2,
+      "source": "ACCU-NUT",
+      "thread": "M2x0.4",
+      "AF_range_mm": [
+        3.82,
+        4.0
+      ],
+      "thickness_range_mm": [
+        1.35,
+        1.6
+      ],
+      "regular_hex_max_AF_derived_circumscribed_diameter_mm": 4.618802153517006,
+      "vendor_across_corners_mm": null,
+      "material": "A2 stainless; exact strength class not confirmed",
+      "finish": "natural",
+      "standard_claim": "DIN934",
+      "catalogue_mass_each_g": 0.14,
+      "availability": "Published exact catalogue PN; live inventory/leadtime not established"
+    }
+  ],
+  "conditional_stack": {
+    "configuration": "latestCD01 ear top Z1.75; upper washer; M2x20 towards-Z; frame backside Z-15; lower washer; hex nut",
+    "top_washer_z_mm": [
+      1.75,
+      2.1
+    ],
+    "screw_under_head_z_mm": 2.1,
+    "head_top_z_mm": 4.1,
+    "screw_tip_z_mm": -17.9,
+    "lower_washer_z_mm": [
+      -15.35,
+      -15
+    ],
+    "nut_z_mm": [
+      -16.95,
+      -15.35
+    ],
+    "nominal_tail_protrusion_mm": 0.95,
+    "protrusion_range_from_washer_and_nut_only_mm": [
+      0.95,
+      1.4
+    ],
+    "nominal_protrusion_thread_pitch_count": 2.3749999999999996,
+    "formula": "L - ((ear_top_z-frame_back_z) + washer_top + washer_back + nut_height)",
+    "source_length_and_mounting_tolerances_not_included": true,
+    "two_fastener_sets_catalogue_mass_g": 1.48,
+    "washer_to_D64_body_nominal_radial_gap_mm": 0.5,
+    "compression_load_path_verified": false,
+    "tool_clearance_verified": false
+  },
+  "connector": {
+    "header": "SM12B-GHS-TB(LF)(SN)",
+    "housing": "GHR-12V-S",
+    "terminal": "SSHL-002T-P0.2",
+    "inapplicable_contact": "SSHL-003 family",
+    "source": "JST-GH",
+    "circuits": 12,
+    "pitch_mm": 1.25,
+    "signal_span_A_mm": 13.75,
+    "header_width_B_mm": 18.25,
+    "housing_width_B_mm": 16.25,
+    "housing_unmated_view_dimensions_mm": [
+      16.25,
+      5.7,
+      4.15
+    ],
+    "header_body_depth_reference_mm": 4.05,
+    "mated_body_depth_reference_mm": 7.15,
+    "mated_height_above_mounting_face_reference_mm": 4.35,
+    "extra_header_solder_tail_projection_mm": 0.8,
+    "mated_with_solder_tail_derived_depth_mm": 7.95,
+    "wire_AWG": [
+      30,
+      26
+    ],
+    "wire_insulation_OD_mm": [
+      0.76,
+      1.0
+    ],
+    "current_rating_A_at_AWG26": 1.0,
+    "voltage_rating_V": 50,
+    "frame": "Mounting-side view: u right, v up, h away from PCB. Pin1 upper-left; wire exits-v. Backside placement requires explicit transform and pin-number check.",
+    "pads": [
+      {
+        "pad": 1,
+        "center_uv_mm": [
+          -6.875,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 2,
+        "center_uv_mm": [
+          -5.625,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 3,
+        "center_uv_mm": [
+          -4.375,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 4,
+        "center_uv_mm": [
+          -3.125,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 5,
+        "center_uv_mm": [
+          -1.875,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 6,
+        "center_uv_mm": [
+          -0.625,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 7,
+        "center_uv_mm": [
+          0.625,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 8,
+        "center_uv_mm": [
+          1.875,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 9,
+        "center_uv_mm": [
+          3.125,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 10,
+        "center_uv_mm": [
+          4.375,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 11,
+        "center_uv_mm": [
+          5.625,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 12,
+        "center_uv_mm": [
+          6.875,
+          1.85
+        ],
+        "size_uv_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": "M1",
+        "center_uv_mm": [
+          -8.725,
+          -1.35
+        ],
+        "size_uv_mm": [
+          1.0,
+          2.7
+        ]
+      },
+      {
+        "pad": "M2",
+        "center_uv_mm": [
+          8.725,
+          -1.35
+        ],
+        "size_uv_mm": [
+          1.0,
+          2.7
+        ]
+      }
+    ],
+    "pad_bounds_uv_mm": [
+      [
+        -9.225,
+        -2.7
+      ],
+      [
+        9.225,
+        2.7
+      ]
+    ],
+    "header_body_reference_bounds_uv_mm": [
+      [
+        -9.125,
+        -2.45
+      ],
+      [
+        9.125,
+        1.6
+      ]
+    ],
+    "mated_body_reference_bounds_uvh_mm": [
+      [
+        -9.125,
+        -5.55,
+        0
+      ],
+      [
+        9.125,
+        1.6,
+        4.35
+      ]
+    ],
+    "mated_plus_solder_tail_reference_bounds_uvh_mm": [
+      [
+        -9.125,
+        -5.55,
+        0
+      ],
+      [
+        9.125,
+        2.4,
+        4.35
+      ]
+    ],
+    "source_PCB_dimensions": {
+      "pitch_mm": [
+        1.25,
+        0.05
+      ],
+      "pitch_tolerance_nonaccumulating": true,
+      "signal_pad_width_mm": [
+        0.6,
+        0.05
+      ],
+      "hold_pad_width_mm": [
+        1,
+        0.1
+      ],
+      "hold_pad_length_mm": [
+        2.7,
+        0.1
+      ],
+      "outer_signal_center_to_hold_pad_inner_edge_mm": [
+        1.35,
+        0.1
+      ],
+      "longitudinal_datums_from_lower_pad_edge_mm": [
+        [
+          5.4,
+          0.1
+        ],
+        [
+          3.7,
+          0.1
+        ]
+      ],
+      "signal_pad_length_nominal_derived_mm": 1.7,
+      "no_independent_signal_length_tolerance_assigned": true
+    },
+    "reference_only_not_guaranteed_max": true,
+    "latch_access_distance_mm": null,
+    "unmating_translation_mm": null,
+    "wire_bend_radius_mm": null,
+    "controlled_CAD_downloaded": false,
+    "application_pin_to_net_frozen": false,
+    "CD01_parent_layout_input": {
+      "mounting_face_world_z_mm": -3,
+      "footprint_origin_head_xyz_mm": [
+        0,
+        -14,
+        -3
+      ],
+      "wire_direction_head": [
+        0,
+        -1,
+        0
+      ],
+      "T_head_from_uvh_mm": [
+        [
+          -1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          -14
+        ],
+        [
+          0,
+          0,
+          -1,
+          -3
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "rotation_determinant": 1,
+      "transform_formula": "headX=-u; headY=-14+v; headZ=-3-h",
+      "pin1_land_center_head_mm": [
+        6.875,
+        -12.15,
+        -3
+      ],
+      "scope": "Exact parent-specified backside candidate transform,180deg aroundY. Source dimensions have no added engineering clearance; CD01 owns clearance envelopes and assembly verification."
+    },
+    "other_board_endpoint": {
+      "board": "HEAD-CTRL02",
+      "ref": "J15",
+      "header": "BM12B-GHS-TBT",
+      "entry": "top",
+      "scope": "Electrical candidate without finalMCAD placement; not this SM12B side-entry envelope"
+    },
+    "pad_centers_head_mm": [
+      {
+        "pad": 1,
+        "center_head_mm": [
+          6.875,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 2,
+        "center_head_mm": [
+          5.625,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 3,
+        "center_head_mm": [
+          4.375,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 4,
+        "center_head_mm": [
+          3.125,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 5,
+        "center_head_mm": [
+          1.875,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 6,
+        "center_head_mm": [
+          0.625,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 7,
+        "center_head_mm": [
+          -0.625,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 8,
+        "center_head_mm": [
+          -1.875,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 9,
+        "center_head_mm": [
+          -3.125,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 10,
+        "center_head_mm": [
+          -4.375,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 11,
+        "center_head_mm": [
+          -5.625,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": 12,
+        "center_head_mm": [
+          -6.875,
+          -12.15,
+          -3
+        ],
+        "size_head_xy_mm": [
+          0.6,
+          1.7
+        ]
+      },
+      {
+        "pad": "M1",
+        "center_head_mm": [
+          8.725,
+          -15.35,
+          -3
+        ],
+        "size_head_xy_mm": [
+          1.0,
+          2.7
+        ]
+      },
+      {
+        "pad": "M2",
+        "center_head_mm": [
+          -8.725,
+          -15.35,
+          -3
+        ],
+        "size_head_xy_mm": [
+          1.0,
+          2.7
+        ]
+      }
+    ]
+  },
+  "unknowns": [
+    "Screw20mm length tolerance, incomplete-end-thread allowance and exact strength subclass",
+    "Actual ears/spacers carrying compression to frame; preload, plastic creep and anti-loosening",
+    "Full screw/nut insertion and actual1.5mmkey/4mmnut-tool outside envelope",
+    "Supplier-controlled GH12 tolerances and actual mated CAD",
+    "GH12 latch actuation/unmating stroke; wire fanout and bend radius",
+    "PCB masks/stencils, selected mounting transform, pin-to-net and assembled interference"
+  ],
+  "no_external_communication_or_purchase": true,
+  "raw_vendor_documents_redistributed": false,
+  "baseline_CAD_modified": false
+}
