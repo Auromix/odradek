@@ -13,6 +13,7 @@
 | 双垫受力分担 | [最低共同力矩上限](paired-pad-loadsharing.md) | 90种分担/摩擦/直径；区分一组最小夹力解与最低所需驱动上限 |
 | 片尖接触鞋 | [CONTACT-02](distal-contact-study.md) | 150/100 mm 长短片、64 项实体复核；改善指定圆柱接触，驱动力矩仍需匹配 |
 | 接触材料试片 | [双型四腔浇注模具](contact-pad-prototype.md) | STEP/STL/DXF/两页图纸；未打印/浇注，不含保持结构或承载资格 |
+| 软垫保持候选 | [贯穿浇注键](contact-pad-retention-study.md) | 8个实体与两页特征图，保持名义外轮廓；偏心剥离和材料抗撕裂仍待验证 |
 | J5→J6实体连接 | [LINK56-01](link56-structure-study.md) | 六件原创结构、40紧固件、六页图与分步装配；有效螺纹/预紧/局部强度未放行 |
 | 新增部件 Blender | [三个原生场景](subassembly-blender-review.md) | 连接件、底座和四指；五张渲染、12项层级变换检查，尚非新整机装配 |
 | 六段承力连接 | [真实接口与空间审查](link-connection-plan.md) | 全部接触面/孔阵；发现肩部螺钉及两段旧梁干涉 |

@@ -1,0 +1,316 @@
+{
+  "revision": "R4-PAD-RETENTION-01",
+  "input_sha256": {
+    "engineering/generated/contact02-study/study.json": "d36f825a731eab458aa1c5945404023d3b075768ddd8b21d928a0b42b86e4ea9",
+    "engineering/generated/contact02-study/parts-step/UR_structure.step": "c24354f135b3b75d945ff13449613fb45736c3ec2b605c9b71042d5a8732e917",
+    "engineering/generated/contact02-study/parts-step/UR_pad_minus.step": "af1950b1cda174f11ced5ee9be2376c6f5d7a07d5a95de35cecbfd5032840888",
+    "engineering/generated/contact02-study/parts-step/UR_pad_plus.step": "58871fe1a29d01836251bb988fd9988269098ffcb7b66407aed43ec924fcf3c5",
+    "engineering/generated/contact02-study/parts-step/LL_structure.step": "3cd5404a23277abfb2ec15c0dc823a90c216711c5228b643531123b23a794323",
+    "engineering/generated/contact02-study/parts-step/LL_pad_minus.step": "1144890740a3cefc28cfc7a5046a49dbb1a48e61fda4e5977767e42d3e405820",
+    "engineering/generated/contact02-study/parts-step/LL_pad_plus.step": "868b005b65476bda0d3e54bd61b00700bb36944bbcb71098f70ce8042fc2609d"
+  },
+  "generator_sha256": "2f369ddeda63dad1789cdf9fe49752072c01df3bab94ee8e35daf4f6b6cbf8b3",
+  "manufacturing_release": false,
+  "dimensions_mm": {
+    "stem_d": 3.0,
+    "head_d": 4.5,
+    "counterbore_depth": 1.2,
+    "back_recess": 0.2,
+    "hole_centers_toe_xy": [
+      [
+        -14.0,
+        -3.5
+      ],
+      [
+        -4.0,
+        -3.5
+      ],
+      [
+        -14.0,
+        3.5
+      ],
+      [
+        -4.0,
+        3.5
+      ]
+    ]
+  },
+  "variants": [
+    {
+      "variant": "UPPER",
+      "finger_reference": "UR",
+      "length_mm": 150.0,
+      "target_q_deg": 97.78585415799613,
+      "cot_q": -0.1367314448672322,
+      "outside_original_envelope_mm3": 0.0,
+      "recess_void_volume_mm3": 12.723450247038643,
+      "min_head_to_outer_edge_mm": 1.7367366226373102,
+      "new_blade_volume_mm3": 27665.982495885484,
+      "removed_metal_mm3": 212.05750412104317,
+      "added_soft_key_volume_mm3": 199.33405387027238,
+      "pad_intersection_volume_mm3": 0.0,
+      "pad_pair_min_distance_mm": 1.999999999992255,
+      "parts": [
+        {
+          "part_id": "ODR-RET-UPPER-BLADE",
+          "volume_mm3": 27665.982495885484,
+          "step_symmetric_difference_mm3": 0.0,
+          "stl_watertight": true,
+          "stl_winding_consistent": true,
+          "stl_volume_relative_error": 3.1766719829794223e-06,
+          "sha256": {
+            "step": "44cb80853ff3d93f96c808a5aeeb155db74b37411a5dd43368b3b8b4022a747b",
+            "stl": "f8dded22e4fabfd7eca0c4d388a5c02f2b38b9e2df532d702c9f02450f61d0ce"
+          }
+        },
+        {
+          "part_id": "ODR-RET-UPPER-COUPON",
+          "volume_mm3": 1899.9424958826885,
+          "step_symmetric_difference_mm3": 0.0,
+          "stl_watertight": true,
+          "stl_winding_consistent": true,
+          "stl_volume_relative_error": 4.625055539079467e-05,
+          "sha256": {
+            "step": "f7613a069c748fb34d28191a44fefd8babfc246970b9cf2a6ebdc296a309bae9",
+            "stl": "398a1a41f6c4e467d63a4461ff8306f09d4a360c4c466f5b4be1289b96ee4ce3"
+          }
+        },
+        {
+          "part_id": "ODR-RET-UPPER-PAD-MINUS",
+          "volume_mm3": 549.6670269349856,
+          "step_symmetric_difference_mm3": 0.0,
+          "stl_watertight": true,
+          "stl_winding_consistent": true,
+          "stl_volume_relative_error": 7.513760232856888e-05,
+          "sha256": {
+            "step": "b9b6995f4ffa47eed26260a6349d914e7919af313da3a66179285f06007a9aa3",
+            "stl": "cce2c30dbfa6fa3e51481128342bac3a85fdc7b0533446fd55e677f9adaeba4d"
+          }
+        },
+        {
+          "part_id": "ODR-RET-UPPER-PAD-PLUS",
+          "volume_mm3": 549.6670269341695,
+          "step_symmetric_difference_mm3": 0.0,
+          "stl_watertight": true,
+          "stl_winding_consistent": true,
+          "stl_volume_relative_error": 7.513760084882212e-05,
+          "sha256": {
+            "step": "5157f63cd6c7a0e48f8c4b377d02e21d51a38be3ab979d0e5239d9fd001b10e6",
+            "stl": "6d31f28003d1068cac8604e1955a7a18aaf633e9e6feeb00813345bcf506343f"
+          }
+        }
+      ],
+      "force_witness": [
+        {
+          "pad": "minus",
+          "force_on_pad_blade_N": [
+            -13.401933704428199,
+            0.677565341188615,
+            -24.11167038087401
+          ],
+          "force_application_point_toe_mm": [
+            2.842170943040401e-14,
+            -0.9999999999999967,
+            9.769416996194904
+          ],
+          "moment_about_pad_base_center_Nmm": [
+            -62.83320226529408,
+            166.4875567405178,
+            39.6029223317681
+          ],
+          "center_of_pressure_diagnostic_offset_mm": [
+            6.90485371235748,
+            2.6059249016250225
+          ],
+          "center_of_pressure_inside_18x5_footprint": false,
+          "in_plane_shear_N": 13.419050704482363,
+          "net_outward_force_N": 0.0,
+          "two_stem_average_shear_MPa": 0.9492036672085105,
+          "two_head_annulus_average_net_tension_MPa": 0.0
+        },
+        {
+          "pad": "plus",
+          "force_on_pad_blade_N": [
+            -0.5318474985579946,
+            0.025001263749436755,
+            -0.9362854554036446
+          ],
+          "force_application_point_toe_mm": [
+            2.842170943040401e-14,
+            1.0000000000000033,
+            9.769416996194908
+          ],
+          "moment_about_pad_base_center_Nmm": [
+            2.2464734500056296,
+            6.421814098184577,
+            -1.1046073726500532
+          ],
+          "center_of_pressure_diagnostic_offset_mm": [
+            6.858820737972535,
+            -2.399346734524618
+          ],
+          "center_of_pressure_inside_18x5_footprint": true,
+          "in_plane_shear_N": 0.5324348081328502,
+          "net_outward_force_N": 0.0,
+          "two_stem_average_shear_MPa": 0.037662058483790214,
+          "two_head_annulus_average_net_tension_MPa": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "LOWER",
+      "finger_reference": "LL",
+      "length_mm": 100.0,
+      "target_q_deg": 102.21181982898288,
+      "cot_q": -0.2164236009245222,
+      "outside_original_envelope_mm3": 0.0,
+      "recess_void_volume_mm3": 12.723450247038665,
+      "min_head_to_outer_edge_mm": 1.75,
+      "new_blade_volume_mm3": 15081.7024958855,
+      "removed_metal_mm3": 212.05750412020097,
+      "added_soft_key_volume_mm3": 199.33405387027238,
+      "pad_intersection_volume_mm3": 0.0,
+      "pad_pair_min_distance_mm": 2.0000000000239027,
+      "parts": [
+        {
+          "part_id": "ODR-RET-LOWER-BLADE",
+          "volume_mm3": 15081.7024958855,
+          "step_symmetric_difference_mm3": 0.0,
+          "stl_watertight": true,
+          "stl_winding_consistent": true,
+          "stl_volume_relative_error": 5.828402312235454e-06,
+          "sha256": {
+            "step": "f87ea3e44c6e6138ce9a8c5465f8810066c6302c477026e7f02c6b6d9dc4cafd",
+            "stl": "c8de2a9048542661922496d66decafd41076786b718b2a714a94928ab86dea2d"
+          }
+        },
+        {
+          "part_id": "ODR-RET-LOWER-COUPON",
+          "volume_mm3": 1899.9424958826885,
+          "step_symmetric_difference_mm3": 0.0,
+          "stl_watertight": true,
+          "stl_winding_consistent": true,
+          "stl_volume_relative_error": 4.625055539079467e-05,
+          "sha256": {
+            "step": "e33873ef53f1364b33338c0be3341a7546bd5373ea47f9182328d05056ce0727",
+            "stl": "398a1a41f6c4e467d63a4461ff8306f09d4a360c4c466f5b4be1289b96ee4ce3"
+          }
+        },
+        {
+          "part_id": "ODR-RET-LOWER-PAD-MINUS",
+          "volume_mm3": 549.6670269333559,
+          "step_symmetric_difference_mm3": 0.0,
+          "stl_watertight": true,
+          "stl_winding_consistent": true,
+          "stl_volume_relative_error": 7.51375997593605e-05,
+          "sha256": {
+            "step": "2e0422209920ded84b0dc4e811535d4edb97a28e20a4b2b90f9d9fe23c76d99d",
+            "stl": "349ee3fa966eddae1ba0491832c8e549cfab09f71c0f263fafe15c5938581cf8"
+          }
+        },
+        {
+          "part_id": "ODR-RET-LOWER-PAD-PLUS",
+          "volume_mm3": 549.6670269316742,
+          "step_symmetric_difference_mm3": 0.0,
+          "stl_watertight": true,
+          "stl_winding_consistent": true,
+          "stl_volume_relative_error": 7.513759807042157e-05,
+          "sha256": {
+            "step": "c43ea1cf8886d8be283545ad9d7a644cd979bc8670e1f59e77e756336c7300a0",
+            "stl": "c120f2d89573afa16b42932ca2d71d5ab46c5170422c207d76a8be71446f3463"
+          }
+        }
+      ],
+      "force_witness": [
+        {
+          "pad": "minus",
+          "force_on_pad_blade_N": [
+            -13.260847592447492,
+            -0.550219202671196,
+            -19.640132212204037
+          ],
+          "force_application_point_toe_mm": [
+            1.4210854715202004e-14,
+            -1.000000000000001,
+            9.052187591679296
+          ],
+          "moment_about_pad_base_center_Nmm": [
+            -47.42095830741338,
+            136.28659543301814,
+            28.200146157077945
+          ],
+          "center_of_pressure_diagnostic_offset_mm": [
+            6.939189306899473,
+            2.414492824948847
+          ],
+          "center_of_pressure_inside_18x5_footprint": true,
+          "in_plane_shear_N": 13.2722575337095,
+          "net_outward_force_N": 0.0,
+          "two_stem_average_shear_MPa": 0.9388201744348954,
+          "two_head_annulus_average_net_tension_MPa": 0.0
+        },
+        {
+          "pad": "plus",
+          "force_on_pad_blade_N": [
+            -0.6025256628662233,
+            0.024999999999999967,
+            -0.8923776249927037
+          ],
+          "force_application_point_toe_mm": [
+            1.4210854715202004e-14,
+            0.9999999999999954,
+            9.052187591679296
+          ],
+          "moment_about_pad_base_center_Nmm": [
+            2.1546393726897812,
+            6.192377273065716,
+            -1.2813141571655609
+          ],
+          "center_of_pressure_diagnostic_offset_mm": [
+            6.939189306899472,
+            -2.414492824948853
+          ],
+          "center_of_pressure_inside_18x5_footprint": true,
+          "in_plane_shear_N": 0.603044089940679,
+          "net_outward_force_N": 0.0,
+          "two_stem_average_shear_MPa": 0.04265664347396115,
+          "two_head_annulus_average_net_tension_MPa": 0.0
+        }
+      ]
+    }
+  ],
+  "pair_of_stems_area_mm2": 14.137166941154069,
+  "pair_of_head_annuli_area_mm2": 17.671458676442587,
+  "limits": [
+    "No adhesion credited. In-place molding process and air removal not qualified.",
+    "Nominal sharp holes; practical edge radius, material tolerance and casting shrinkage not frozen.",
+    "Silicone allowable peel/shear/tear, compression, creep and fatigue not measured.",
+    "Average stress proxy is not local key-root stress or a rated load.",
+    "Zero net outward force does not exclude moment-induced local peel; center-of-pressure diagnostic assumes centered in-plane transfer.",
+    "Force witness uses 80x40 cylinder, mu .4, 2 kg x2 gravity, cap 3.7 Nm, no self weight or drive losses.",
+    "Printed coupon is a separate bench sample, not a gripper insert.",
+    "No claim for deformed pad external collision or PCB/harness integration."
+  ],
+  "output_sha256": {
+    "ODR-RET-UPPER-BLADE.stl": "f8dded22e4fabfd7eca0c4d388a5c02f2b38b9e2df532d702c9f02450f61d0ce",
+    "ODR-RET-LOWER-PAD-PLUS.stl": "c120f2d89573afa16b42932ca2d71d5ab46c5170422c207d76a8be71446f3463",
+    "ODR-RET-LOWER-PAD-MINUS.step": "2e0422209920ded84b0dc4e811535d4edb97a28e20a4b2b90f9d9fe23c76d99d",
+    "ODR-RET-UPPER-BLADE.step": "44cb80853ff3d93f96c808a5aeeb155db74b37411a5dd43368b3b8b4022a747b",
+    "ODR-RET-UPPER-PAD-PLUS.step": "5157f63cd6c7a0e48f8c4b377d02e21d51a38be3ab979d0e5239d9fd001b10e6",
+    "ODR-RET-LOWER-PAD-MINUS.stl": "349ee3fa966eddae1ba0491832c8e549cfab09f71c0f263fafe15c5938581cf8",
+    "ODR-RET-LOWER-COUPON.stl": "398a1a41f6c4e467d63a4461ff8306f09d4a360c4c466f5b4be1289b96ee4ce3",
+    "ODR-RET-UPPER-PAD-MINUS.stl": "cce2c30dbfa6fa3e51481128342bac3a85fdc7b0533446fd55e677f9adaeba4d",
+    "pad-retention-section.png": "1b2bead345647c71e8a924ea795a103f37c61551d73831cebd1bc7d17e58f1f8",
+    "ODR-RET-LOWER-BLADE.stl": "c8de2a9048542661922496d66decafd41076786b718b2a714a94928ab86dea2d",
+    "ODR-RET-LOWER-COUPON.step": "e33873ef53f1364b33338c0be3341a7546bd5373ea47f9182328d05056ce0727",
+    "ODR-RET-UPPER-PAD-PLUS.stl": "6d31f28003d1068cac8604e1955a7a18aaf633e9e6feeb00813345bcf506343f",
+    "ODR-RET-LOWER-PAD-PLUS.step": "c43ea1cf8886d8be283545ad9d7a644cd979bc8670e1f59e77e756336c7300a0",
+    "ODR-RET-UPPER-COUPON.step": "f7613a069c748fb34d28191a44fefd8babfc246970b9cf2a6ebdc296a309bae9",
+    "ODR-RET-LOWER-features.dxf": "e9b1b1ad75001413c2a24bbeb84ec39315757df057390c278001083f6c3af708",
+    "ODR-RET-UPPER-COUPON.stl": "398a1a41f6c4e467d63a4461ff8306f09d4a360c4c466f5b4be1289b96ee4ce3",
+    "ODR-RET-UPPER-features.dxf": "fe636940c1e86defa6d12771a543cb9fbf8750296d06d3cdbab057cf5384cf75",
+    "ODR-RET-LOWER-BLADE.step": "f87ea3e44c6e6138ce9a8c5465f8810066c6302c477026e7f02c6b6d9dc4cafd",
+    "ODR-RET-UPPER-PAD-MINUS.step": "b9b6995f4ffa47eed26260a6349d914e7919af313da3a66179285f06007a9aa3",
+    "ODR-PAD-RETENTION-01-review.pdf": "3cd2938d1cb2f3dcdfd4b14d7f8fc1eb13e22a76cdaaf9699c84e1d819064264"
+  }
+}

@@ -1,5 +1,7 @@
 # 片尖接触鞋候选 CONTACT-02
 
+后续保持构造见[贯穿浇注键研究](contact-pad-retention-study.md)：保持原接触楔面与外包，增加背面沉孔键；尚无保持力或疲劳资格，不替换本页历史几何。
+
 **独立几何与条件静力研究；不替换 R4-layout-03，不是制造发布。** 旧 R03 的 Ø80 圆柱会先撞骨架／灯窗，见[实际双垫反例](finite-pad-contact-study.md)。本候选将软垫移到片尖，并调整长短指的接触高度，使灯面与承力接触分开。
 
 ![开态与 Ø80 接触截面](../../engineering/generated/contact02-study/contact02-study.png)
