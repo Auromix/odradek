@@ -14,6 +14,8 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 
 一台中央隐藏电机带动四个有造型的灯瓣，发光面同时作为夹持面。本体保持七轴、细长比例与可拆工具接口。[查看末端和本体两张概念图、确认输入与机构研究顺序](docs/r5-modular-design.md)。生成图用于工业设计，实际闭合和承载以CAD、计算及样机为准。
 
+已完成[真实造型灯片STEP与二维图](docs/engineering/r5-petal-form01.md)、[单滑块非线性机构](docs/engineering/r5-link01.md)、[单主控原生Blender](docs/engineering/r5-linkage-blender01.md)及[本体质量/臂展独立分析](docs/engineering/r5-body01.md)。首版目标是**盒体、瓶罐等日常物体，夹持宽约50–120mm**；[216组接触筛查](docs/engineering/r5-grasp-range01.md)已找到压圈先碰与角域不足问题，尚未达到通用抓取范围。下一版据此改接触边缘和轨迹。
+
 ## 当前工程包
 
 ![既有结构检查总装，头部为历史P16分支](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
