@@ -1,0 +1,214 @@
+{
+  "mass": {
+    "added": {
+      "mass_kg": 0.03457049688479839,
+      "COM_root_m": [
+        0.011840238167876644,
+        -0.02368998699562957,
+        -0.0011918116941563618
+      ],
+      "inertia_COM_root_axes_kg_m2": [
+        [
+          5.918587896275644e-06,
+          4.177593545485331e-08,
+          1.9797965602429743e-06
+        ],
+        [
+          4.177593545485331e-08,
+          9.309061105953488e-06,
+          -2.9943938008215326e-08
+        ],
+        [
+          1.9797965602429743e-06,
+          -2.9943938008215326e-08,
+          4.264671149413531e-06
+        ]
+      ]
+    },
+    "removed_old_fastener_proxies": {
+      "mass_kg": 0.0017848762311829564,
+      "COM_root_m": [
+        0.0049999999999999975,
+        -0.019821243523316063,
+        -0.014
+      ],
+      "inertia_COM_root_axes_kg_m2": [
+        [
+          1.3780525607086341e-08,
+          2.8598108184289086e-23,
+          7.76490845301304e-24
+        ],
+        [
+          2.8598108184289086e-23,
+          4.960227690845603e-08,
+          5.71162672713399e-23
+        ],
+        [
+          7.76490845301304e-24,
+          5.71162672713399e-23,
+          5.8402431386660407e-08
+        ]
+      ]
+    },
+    "old_translation_body": {
+      "mass_kg": 0.05958447258593929,
+      "COM_root_m": [
+        0.011667193597582804,
+        2.843133153633662e-20,
+        -0.016533737809618084
+      ],
+      "inertia_COM_root_axes_kg_m2": [
+        [
+          2.729262044502857e-05,
+          8.205631676526035e-22,
+          7.918774638527656e-06
+        ],
+        [
+          8.205631676526035e-22,
+          2.0260222480179207e-05,
+          -3.639594695233322e-22
+        ],
+        [
+          7.918774638527656e-06,
+          -3.639594695233322e-22,
+          2.433337585094466e-05
+        ]
+      ]
+    },
+    "new_translation_body": {
+      "mass_kg": 0.09237009323955472,
+      "COM_root_m": [
+        0.011860788207397895,
+        -0.008483223603162057,
+        -0.010840817274990349
+      ],
+      "inertia_COM_root_axes_kg_m2": [
+        [
+          5.038216683718238e-05,
+          2.6767013994193737e-07,
+          9.878443201648535e-06
+        ],
+        [
+          2.6767013994193737e-07,
+          3.456982168583098e-05,
+          7.984113796699067e-06
+        ],
+        [
+          9.878443201648535e-06,
+          7.984113796699067e-06,
+          4.0510709000900026e-05
+        ]
+      ]
+    },
+    "increment_per_branch_kg": 0.032785620653615434,
+    "coordinate_frame": "Hinge zero-angle frame, metres; all added/replaced parts only translate radially with R, no q rotation. COM and tensor in these axes.",
+    "unknowns": [
+      "Exact fastener recess/thread mass",
+      "Material grade/heat treatment/actual density",
+      "Wiring/rail/palm/drive/return hardware"
+    ],
+    "rotor_unchanged": true,
+    "whole_head_mass_kg": null
+  },
+  "envelope": {
+    "added_parts": [
+      {
+        "id": "external_negative_side_stop_arch",
+        "radial_outer_upper_mm": 122.97154142320898,
+        "front_projection_radius_lower_mm": 30.80990100600779,
+        "head_Z_min_mm": -1.0,
+        "head_Z_max_mm": 39.0
+      },
+      {
+        "id": "upper_guard_contact_bridge",
+        "radial_outer_upper_mm": 101.26450513383256,
+        "front_projection_radius_lower_mm": 30.516389039334257,
+        "head_Z_min_mm": 29.0,
+        "head_Z_max_mm": 37.0
+      },
+      {
+        "id": "lower_guard_contact_bridge",
+        "radial_outer_upper_mm": 119.3367085183767,
+        "front_projection_radius_lower_mm": 49.912423303221814,
+        "head_Z_min_mm": 5.0,
+        "head_Z_max_mm": 14.5
+      },
+      {
+        "id": "upper_retained_backing_shim",
+        "radial_outer_upper_mm": 94.2443632266673,
+        "front_projection_radius_lower_mm": 34.121107836645635,
+        "head_Z_min_mm": 30.5,
+        "head_Z_max_mm": 36.0
+      },
+      {
+        "id": "lower_retained_backing_shim",
+        "radial_outer_upper_mm": 120.07081243999309,
+        "front_projection_radius_lower_mm": 53.66796064692602,
+        "head_Z_min_mm": 4.0,
+        "head_Z_max_mm": 5.0
+      },
+      {
+        "id": "cap_mount_spacer_0",
+        "radial_outer_upper_mm": 96.89298220201502,
+        "front_projection_radius_lower_mm": 34.40930106817051,
+        "head_Z_min_mm": 3.0,
+        "head_Z_max_mm": 9.0
+      },
+      {
+        "id": "cap_mount_M3x12_0",
+        "radial_outer_upper_mm": 98.132881849052,
+        "front_projection_radius_lower_mm": 31.52875671510058,
+        "head_Z_min_mm": 3.25,
+        "head_Z_max_mm": 8.75
+      },
+      {
+        "id": "cap_mount_spacer_10",
+        "radial_outer_upper_mm": 106.621995854514,
+        "front_projection_radius_lower_mm": 42.941821107167776,
+        "head_Z_min_mm": 3.0,
+        "head_Z_max_mm": 9.0
+      },
+      {
+        "id": "cap_mount_M3x12_10",
+        "radial_outer_upper_mm": 107.72679564528038,
+        "front_projection_radius_lower_mm": 40.73159093381942,
+        "head_Z_min_mm": 3.25,
+        "head_Z_max_mm": 8.75
+      },
+      {
+        "id": "upper_clamp_M3x6",
+        "radial_outer_upper_mm": 101.96108326219372,
+        "front_projection_radius_lower_mm": 37.94815542289243,
+        "head_Z_min_mm": 30.25,
+        "head_Z_max_mm": 35.75
+      },
+      {
+        "id": "lower_clamp_M3x6",
+        "radial_outer_upper_mm": 119.32754292283069,
+        "front_projection_radius_lower_mm": 54.08384694157767,
+        "head_Z_min_mm": 8.25,
+        "head_Z_max_mm": 13.75
+      },
+      {
+        "id": "upper_shim_retainer_M2x5",
+        "radial_outer_upper_mm": 95.94352505510729,
+        "front_projection_radius_lower_mm": 35.82680560697535,
+        "head_Z_min_mm": 31.1,
+        "head_Z_max_mm": 34.9
+      },
+      {
+        "id": "lower_shim_retainer_M2x5",
+        "radial_outer_upper_mm": 118.85356536511642,
+        "front_projection_radius_lower_mm": 57.60876669396768,
+        "head_Z_min_mm": 0.0,
+        "head_Z_max_mm": 7.0
+      }
+    ],
+    "new_parts_outer_D_upper_mm": 245.94308284641795,
+    "old_mechanism_outer_D_upper_mm": 256.530699917,
+    "new_projection_to_D60_gauge_lower_mm": 0.516389039334257,
+    "D60_is_only_a_gauge_not_actual_display_or_camera": true,
+    "old_mechanism_Zmin_mm": -17,
+    "new_parts_head_Zmin_mm": -1.0
+  }
+}

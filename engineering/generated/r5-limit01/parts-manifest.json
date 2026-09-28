@@ -1,0 +1,625 @@
+{
+  "revision": "R5-LIMIT01",
+  "coordinates": "Root hinge zero-angle coordinates,mm; newparts are fixed to translating carrier, no q rotation.",
+  "parts": [
+    {
+      "id": "external_negative_side_stop_arch",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "original steel",
+      "note": "2.5mm outer plate with integral bosses/rails. Machining or fabricated process and actual material/heat treatment are not selected.",
+      "mass_kg": 0.02120156929753374,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        0.012935811975090467,
+        -0.02487715446183723,
+        2.607225638727659e-05
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          3.4304741006668535e-06,
+          -1.9892419808381297e-08,
+          1.133054106333973e-06
+        ],
+        [
+          -1.9892419808381297e-08,
+          5.8390554755829985e-06,
+          -1.845656127279821e-08
+        ],
+        [
+          1.133054106333973e-06,
+          -1.845656127279821e-08,
+          2.525008233643174e-06
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/external_negative_side_stop_arch.step",
+      "sha256": "74698ae28ea03a53da7493cb47de830073d4fb8624d1947b3ec7a5aa03a4abe5",
+      "volume_mm3": 2700.836853189012,
+      "bbox_part_mm": [
+        [
+          -8.0,
+          -31.0,
+          -21.0
+        ],
+        [
+          28.0,
+          -20.5,
+          19.0
+        ]
+      ]
+    },
+    {
+      "id": "upper_guard_contact_bridge",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "original steel",
+      "note": "Target89.5deg matched contact face. Backing shim carries -X stop force; clamp/guide rails retain the block. No assumption that clamp friction alone carries stopping load.",
+      "mass_kg": 0.0031224946648078363,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        0.0017977844294427764,
+        -0.01874329003352051,
+        0.013000530716712339
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.462787917744365e-08,
+          1.0102711174643192e-08,
+          -3.009067080612658e-12
+        ],
+        [
+          1.0102711174643192e-08,
+          3.0301106598003794e-08,
+          -6.4046273181273125e-12
+        ],
+        [
+          -3.009067080612658e-12,
+          -6.4046273181273125e-12,
+          7.375056557116974e-08
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/upper_guard_contact_bridge.step",
+      "sha256": "187c1d5da62ab65b170d2a1382a1680c50bc403f2e01cd808821d2c0e799f8e4",
+      "volume_mm3": 397.77002099462885,
+      "bbox_part_mm": [
+        [
+          -2.0,
+          -23.5,
+          9.0
+        ],
+        [
+          7.5,
+          -9.499999999999998,
+          17.0
+        ]
+      ]
+    },
+    {
+      "id": "lower_guard_contact_bridge",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "original steel",
+      "note": "Target0.5deg matched contact face. Backing shim carries -Z stop force. Shim changes require angle/contact remeasurement.",
+      "mass_kg": 0.0033178705907739294,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        0.021834445249025003,
+        -0.01918345720000211,
+        -0.010117431921768403
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.83296984541012e-08,
+          2.5778161979457707e-09,
+          2.4894523478051117e-10
+        ],
+        [
+          2.5778161979457707e-09,
+          3.3634958759012615e-08,
+          -3.5171081411706653e-09
+        ],
+        [
+          2.4894523478051117e-10,
+          -3.5171081411706653e-09,
+          6.20394230479988e-08
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/lower_guard_contact_bridge.step",
+      "sha256": "c6b06d2220d781bcdb5e26324e8d85899bc62a4f4aedf331b9599bac6e390e79",
+      "volume_mm3": 422.6586739839401,
+      "bbox_part_mm": [
+        [
+          18.0,
+          -23.5,
+          -15.0
+        ],
+        [
+          26.0,
+          -9.5,
+          -5.5
+        ]
+      ]
+    },
+    {
+      "id": "upper_retained_backing_shim",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "original steel",
+      "note": "Nominal1mm; .95/1/1.05 alternatives for metrology-only adjustment. No certified shim material, tolerance or final stack chosen.",
+      "mass_kg": 0.00046667208217987717,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        -0.002500000000000001,
+        -0.025042185216089242,
+        0.013265985752608522
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.368225463390454e-09,
+          1.0709300113376228e-23,
+          -3.569766704458743e-24
+        ],
+        [
+          1.0709300113376228e-23,
+          1.2795035927097066e-09,
+          2.5795659474114652e-11
+        ],
+        [
+          -3.569766704458743e-24,
+          2.5795659474114652e-11,
+          5.166500551044042e-09
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/upper_retained_backing_shim.step",
+      "sha256": "a905b351d959134471c50ac498a99a3ba8d4f216ff952b325fc06697d1a1f636",
+      "volume_mm3": 59.448672889156335,
+      "bbox_part_mm": [
+        [
+          -3.0,
+          -31.0,
+          10.5
+        ],
+        [
+          -2.0,
+          -19.5,
+          16.0
+        ]
+      ]
+    },
+    {
+      "id": "lower_retained_backing_shim",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "original steel",
+      "note": "Nominal1mm; .95/1/1.05 alternatives. Retention tab is explicit; do not use a loose unretained foil.",
+      "mass_kg": 0.0005118095821798772,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        0.022000000000000006,
+        -0.025060512813178806,
+        -0.015500000000000003
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          5.669492309213769e-09,
+          -5.711626727133987e-23,
+          -2.855813363566994e-23
+        ],
+        [
+          -5.711626727133987e-23,
+          1.658574072124333e-09,
+          8.567440090700982e-23
+        ],
+        [
+          -2.855813363566994e-23,
+          8.567440090700982e-23,
+          7.242764784308151e-09
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/lower_retained_backing_shim.step",
+      "sha256": "1aba84f0903d5b616802b50ce11dd9ad84e17c16051589e8a5ed75a072f71c61",
+      "volume_mm3": 65.19867288915634,
+      "bbox_part_mm": [
+        [
+          19.0,
+          -31.0,
+          -16.0
+        ],
+        [
+          25.0,
+          -19.5,
+          -15.0
+        ]
+      ]
+    },
+    {
+      "id": "cap_mount_spacer_0",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "original steel",
+      "note": "OD6/ID3.2x3.5, nominal bearing area20.23mm2. Not a selected purchased spacer.",
+      "mass_kg": 0.0005558702625335244,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        5.537784317719844e-20,
+        -0.021750000000000005,
+        -0.014
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.173915951724787e-09,
+          -1.9816185939151814e-40,
+          1.8552815953779472e-25
+        ],
+        [
+          -1.9816185939151814e-40,
+          3.212930117443801e-09,
+          -2.8558133635669943e-23
+        ],
+        [
+          1.8552815953779472e-25,
+          -2.8558133635669943e-23,
+          2.1739159517248443e-09
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/cap_mount_spacer_0.step",
+      "sha256": "9be46dac1f65321a2d79822fe37a00fff96c5d1643eb8f96e6b92d32e0c54020",
+      "volume_mm3": 70.81149841191395,
+      "bbox_part_mm": [
+        [
+          -3.0,
+          -23.5,
+          -17.0
+        ],
+        [
+          3.0,
+          -20.0,
+          -11.0
+        ]
+      ]
+    },
+    {
+      "id": "cap_mount_M3x12_0",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "standard fastener envelope",
+      "note": "Replaces oldM3x6; same tipY-14 and5mm nominal aluminium thread engagement. ExactPN/grade/torque TBD; not an upgrade of thread strength.",
+      "mass_kg": 0.0012253683970556565,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        6.59225938091419e-20,
+        -0.023424528301886793,
+        -0.013999999999999999
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.694426126771807e-08,
+          4.0905158338173083e-25,
+          -1.2850950469735425e-25
+        ],
+        [
+          4.0905158338173083e-25,
+          2.8647321310883133e-09,
+          -5.71162672713399e-23
+        ],
+        [
+          -1.2850950469735425e-25,
+          -5.71162672713399e-23,
+          2.6944261267718302e-08
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/cap_mount_M3x12_0.step",
+      "sha256": "76ecedb3c8b4752302cf31d73e4f9447c1704afb931cbb6a1df2982b30fa320c",
+      "volume_mm3": 156.09788497524286,
+      "bbox_part_mm": [
+        [
+          -2.75,
+          -29.0,
+          -16.75
+        ],
+        [
+          2.75,
+          -14.0,
+          -11.25
+        ]
+      ]
+    },
+    {
+      "id": "cap_mount_spacer_10",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "original steel",
+      "note": "OD6/ID3.2x3.5, nominal bearing area20.23mm2. Not a selected purchased spacer.",
+      "mass_kg": 0.0005558702625335244,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        0.010000000000000002,
+        -0.021750000000000005,
+        -0.014000000000000002
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.1739159517247297e-09,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          3.2129301174437155e-09,
+          2.8558133635669943e-23
+        ],
+        [
+          0.0,
+          2.8558133635669943e-23,
+          2.1739159517248443e-09
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/cap_mount_spacer_10.step",
+      "sha256": "7f99cdc198be4f9655f76fd7c0c31a2afcf57d47bc243f0bb161dcfe99d227cc",
+      "volume_mm3": 70.81149841191395,
+      "bbox_part_mm": [
+        [
+          7.0,
+          -23.5,
+          -17.0
+        ],
+        [
+          13.0,
+          -20.0,
+          -11.0
+        ]
+      ]
+    },
+    {
+      "id": "cap_mount_M3x12_10",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "standard fastener envelope",
+      "note": "Replaces oldM3x6; same tipY-14 and5mm nominal aluminium thread engagement. ExactPN/grade/torque TBD; not an upgrade of thread strength.",
+      "mass_kg": 0.001225368397055656,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        0.01,
+        -0.023424528301886793,
+        -0.013999999999999999
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.6944261267718067e-08,
+          0.0,
+          2.855813363566994e-23
+        ],
+        [
+          0.0,
+          2.864732131088313e-09,
+          -1.1423253454267975e-22
+        ],
+        [
+          2.855813363566994e-23,
+          -1.1423253454267975e-22,
+          2.6944261267718187e-08
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/cap_mount_M3x12_10.step",
+      "sha256": "81b08e50395c6669346ab51a1787b7d5dbb0278350b77e43f579325abae49057",
+      "volume_mm3": 156.09788497524283,
+      "bbox_part_mm": [
+        [
+          7.25,
+          -29.0,
+          -16.75
+        ],
+        [
+          12.75,
+          -14.0,
+          -11.25
+        ]
+      ]
+    },
+    {
+      "id": "upper_clamp_M3x6",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "standard fastener envelope",
+      "note": "Major-cylinder threads intersect pilot holes intentionally.Upper3.0/lower3.5mm nominal steel engagement, locking/preload TBD.",
+      "mass_kg": 0.0008924381155914781,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        0.004,
+        -0.025821243523316058,
+        0.012999999999999998
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.890262803543512e-09,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.4901855644411246e-09,
+          5.711626727133989e-23
+        ],
+        [
+          0.0,
+          5.711626727133989e-23,
+          6.890262803543512e-09
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/upper_clamp_M3x6.step",
+      "sha256": "e20edd149e79b709c0cdf4f603ec26d163e7eebcd2bc4c4ab3a86975e7ab39d2",
+      "volume_mm3": 113.68638415178066,
+      "bbox_part_mm": [
+        [
+          1.25,
+          -29.0,
+          10.25
+        ],
+        [
+          6.75,
+          -20.0,
+          15.75
+        ]
+      ]
+    },
+    {
+      "id": "lower_clamp_M3x6",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "standard fastener envelope",
+      "note": "Major-cylinder threads intersect pilot holes intentionally.Upper3.0/lower3.5mm nominal steel engagement, locking/preload TBD.",
+      "mass_kg": 0.0008924381155914779,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        0.022,
+        -0.02582124352331606,
+        -0.009000000000000003
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.890262803543399e-09,
+          5.711626727133989e-23,
+          0.0
+        ],
+        [
+          5.711626727133989e-23,
+          2.4901855644411527e-09,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          6.890262803543399e-09
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/lower_clamp_M3x6.step",
+      "sha256": "df4706c8242e83a70b869981ee1f4f8f030f4eb243ce170420a01f3d1237b730",
+      "volume_mm3": 113.68638415178063,
+      "bbox_part_mm": [
+        [
+          19.25,
+          -29.0,
+          -11.75
+        ],
+        [
+          24.75,
+          -20.0,
+          -6.25
+        ]
+      ]
+    },
+    {
+      "id": "upper_shim_retainer_M2x5",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "standard fastener envelope",
+      "note": "Nominal ISO4762 envelope only; exactPN/locking not selected. Not in main stop compression path.",
+      "mass_kg": 0.00030136355848090797,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        -0.0024320785597381346,
+        -0.0285,
+        0.013000000000000003
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          3.830449203503525e-10,
+          3.569766704458743e-24,
+          0.0
+        ],
+        [
+          3.569766704458743e-24,
+          1.4002309898891554e-09,
+          -2.8558133635669943e-23
+        ],
+        [
+          0.0,
+          -2.8558133635669943e-23,
+          1.4002309898891912e-09
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/upper_shim_retainer_M2x5.step",
+      "sha256": "a1cbf2bdb9d308c486f03cf8e28dc99873fde481c525293936f0d52c5017002d",
+      "volume_mm3": 38.39026222686726,
+      "bbox_part_mm": [
+        [
+          -7.0,
+          -30.4,
+          11.1
+        ],
+        [
+          0.0,
+          -26.6,
+          14.9
+        ]
+      ]
+    },
+    {
+      "id": "lower_shim_retainer_M2x5",
+      "group": "carrier",
+      "origin": "R5-LIMIT01",
+      "representation": "standard fastener envelope",
+      "note": "Nominal ISO4762 envelope only; exactPN/locking not selected.",
+      "mass_kg": 0.00030136355848090797,
+      "density_kg_m3": 7850.0,
+      "COM_part_m": [
+        0.022000000000000006,
+        -0.0285,
+        -0.015432078559738138
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.400230989889134e-09,
+          -2.8558133635669943e-23,
+          -2.8558133635669943e-23
+        ],
+        [
+          -2.8558133635669943e-23,
+          1.400230989889134e-09,
+          2.8558133635669943e-23
+        ],
+        [
+          -2.8558133635669943e-23,
+          2.8558133635669943e-23,
+          3.8304492035029543e-10
+        ]
+      ],
+      "mass_is_nominal_solid_proxy": true,
+      "source_step": "parts/lower_shim_retainer_M2x5.step",
+      "sha256": "9209989d959d54c716eeca76c2b841b549cfe2d510f447eae39f66248be7bc0f",
+      "volume_mm3": 38.39026222686726,
+      "bbox_part_mm": [
+        [
+          20.1,
+          -30.4,
+          -20.0
+        ],
+        [
+          23.9,
+          -26.6,
+          -13.0
+        ]
+      ]
+    }
+  ],
+  "replaced_old_ids": [
+    "cap_M3x6_negative_0",
+    "cap_M3x6_negative_10"
+  ],
+  "new_nominal_steel_and_hardware_kg": 0.03457049688479839,
+  "removed_old_proxy_kg": 0.0017848762311829564,
+  "increment_per_branch_kg": 0.032785620653615434,
+  "whole_head_mass_kg": null
+}

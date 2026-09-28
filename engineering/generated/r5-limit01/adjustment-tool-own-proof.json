@@ -1,0 +1,246 @@
+{
+  "shim_adjustment": [
+    {
+      "stop": "upper",
+      "shim_mm": 0.95,
+      "nominal_translation_mm": -0.050000000000000044,
+      "edge_equation_angles_deg": [
+        89.74860485551964,
+        89.6972282547136
+      ],
+      "first_contact_angle_deg": 89.6972282547136,
+      "full_area_contact_only_if_nominal_1mm": false
+    },
+    {
+      "stop": "upper",
+      "shim_mm": 1.0,
+      "nominal_translation_mm": 0.0,
+      "edge_equation_angles_deg": [
+        89.5,
+        89.5
+      ],
+      "first_contact_angle_deg": 89.5,
+      "full_area_contact_only_if_nominal_1mm": true
+    },
+    {
+      "stop": "upper",
+      "shim_mm": 1.05,
+      "nominal_translation_mm": 0.050000000000000044,
+      "edge_equation_angles_deg": [
+        89.25174090152206,
+        89.30294696340852
+      ],
+      "first_contact_angle_deg": 89.25174090152206,
+      "full_area_contact_only_if_nominal_1mm": false
+    },
+    {
+      "stop": "lower",
+      "shim_mm": 0.95,
+      "nominal_translation_mm": -0.050000000000000044,
+      "edge_equation_angles_deg": [
+        0.3563661022363471,
+        0.3751403313068195
+      ],
+      "first_contact_angle_deg": 0.3751403313068195,
+      "full_area_contact_only_if_nominal_1mm": false
+    },
+    {
+      "stop": "lower",
+      "shim_mm": 1.0,
+      "nominal_translation_mm": 0.0,
+      "edge_equation_angles_deg": [
+        0.4999999999999985,
+        0.4999999999999988
+      ],
+      "first_contact_angle_deg": 0.4999999999999988,
+      "full_area_contact_only_if_nominal_1mm": true
+    },
+    {
+      "stop": "lower",
+      "shim_mm": 1.05,
+      "nominal_translation_mm": 0.050000000000000044,
+      "edge_equation_angles_deg": [
+        0.6437631947502865,
+        0.6249439529265537
+      ],
+      "first_contact_angle_deg": 0.6437631947502865,
+      "full_area_contact_only_if_nominal_1mm": false
+    }
+  ],
+  "tools": [
+    {
+      "target": "cap_mount_M3x12_0",
+      "nominal_tool_radius_mm": 1.6,
+      "assembly_state": "Isolated branch, q45, fixed guide absent; shim retainer before associated clamp screw",
+      "temporarily_absent_ids": [],
+      "violations": [],
+      "installed_state_obstructions": [],
+      "does_not_certify_four_branch_in_situ_service": true
+    },
+    {
+      "target": "cap_mount_M3x12_10",
+      "nominal_tool_radius_mm": 1.6,
+      "assembly_state": "Isolated branch, q45, fixed guide absent; shim retainer before associated clamp screw",
+      "temporarily_absent_ids": [],
+      "violations": [],
+      "installed_state_obstructions": [],
+      "does_not_certify_four_branch_in_situ_service": true
+    },
+    {
+      "target": "upper_clamp_M3x6",
+      "nominal_tool_radius_mm": 1.6,
+      "assembly_state": "Isolated branch, q45, fixed guide absent; shim retainer before associated clamp screw",
+      "temporarily_absent_ids": [],
+      "violations": [],
+      "installed_state_obstructions": [],
+      "does_not_certify_four_branch_in_situ_service": true
+    },
+    {
+      "target": "lower_clamp_M3x6",
+      "nominal_tool_radius_mm": 1.6,
+      "assembly_state": "Isolated branch, q45, fixed guide absent; shim retainer before associated clamp screw",
+      "temporarily_absent_ids": [],
+      "violations": [],
+      "installed_state_obstructions": [],
+      "does_not_certify_four_branch_in_situ_service": true
+    },
+    {
+      "target": "upper_shim_retainer_M2x5",
+      "nominal_tool_radius_mm": 1.05,
+      "assembly_state": "Isolated branch, q45, fixed guide absent; shim retainer before associated clamp screw",
+      "temporarily_absent_ids": [
+        "upper_clamp_M3x6"
+      ],
+      "violations": [],
+      "installed_state_obstructions": [
+        {
+          "part": "upper_clamp_M3x6",
+          "overlap_mm3": 14.76902743004219
+        }
+      ],
+      "does_not_certify_four_branch_in_situ_service": true
+    },
+    {
+      "target": "lower_shim_retainer_M2x5",
+      "nominal_tool_radius_mm": 1.05,
+      "assembly_state": "Isolated branch, q45, fixed guide absent; shim retainer before associated clamp screw",
+      "temporarily_absent_ids": [
+        "lower_clamp_M3x6"
+      ],
+      "violations": [],
+      "installed_state_obstructions": [
+        {
+          "part": "lower_clamp_M3x6",
+          "overlap_mm3": 14.76902922599925
+        }
+      ],
+      "does_not_certify_four_branch_in_situ_service": true
+    }
+  ],
+  "own_continuous_separators": {
+    "scope": "New stationary hardware versus own frozen rotor/petals for all q in [.5,89.5], any common R; nominal analytic separators, not tolerance or wall-following proof.",
+    "petal_strip_checks": [
+      {
+        "kind": "upper",
+        "hand": "right",
+        "strips": [
+          {
+            "y_upper_mm": -9.5,
+            "native_strip_x_min_mm": 15.21428571428557,
+            "empty": false
+          },
+          {
+            "y_upper_mm": -20.5,
+            "native_strip_x_min_mm": 19.928571428569576,
+            "empty": false
+          },
+          {
+            "y_upper_mm": -21,
+            "native_strip_x_min_mm": 20.14285714285521,
+            "empty": false
+          }
+        ]
+      },
+      {
+        "kind": "upper",
+        "hand": "left",
+        "strips": [
+          {
+            "y_upper_mm": -9.5,
+            "native_strip_x_min_mm": 15.749999999996843,
+            "empty": false
+          },
+          {
+            "y_upper_mm": -20.5,
+            "native_strip_x_min_mm": null,
+            "empty": true
+          },
+          {
+            "y_upper_mm": -21,
+            "native_strip_x_min_mm": null,
+            "empty": true
+          }
+        ]
+      },
+      {
+        "kind": "lower",
+        "hand": "right",
+        "strips": [
+          {
+            "y_upper_mm": -9.5,
+            "native_strip_x_min_mm": 15.571428571428246,
+            "empty": false
+          },
+          {
+            "y_upper_mm": -20.5,
+            "native_strip_x_min_mm": null,
+            "empty": true
+          },
+          {
+            "y_upper_mm": -21,
+            "native_strip_x_min_mm": null,
+            "empty": true
+          }
+        ]
+      },
+      {
+        "kind": "lower",
+        "hand": "left",
+        "strips": [
+          {
+            "y_upper_mm": -9.5,
+            "native_strip_x_min_mm": 15.333333333336736,
+            "empty": false
+          },
+          {
+            "y_upper_mm": -20.5,
+            "native_strip_x_min_mm": 24.999999999999055,
+            "empty": false
+          },
+          {
+            "y_upper_mm": -21,
+            "native_strip_x_min_mm": 25.799999999999244,
+            "empty": false
+          }
+        ]
+      }
+    ],
+    "upper_tongue_to_petal_radial_lower_mm": 0.26762200581894824,
+    "upper_pad_to_petal_radial_lower_mm": 1.3476672525075308,
+    "upper_slide_rail_to_petal_radial_lower_mm": 0.6153635127416095,
+    "lower_bridge_to_petal_z_lower_mm": 2.0,
+    "outside_plate_to_petal_y_lower_mm": 0.5,
+    "root_fasteners_to_new_tongues_y_lower_mm": 1.5,
+    "circular_root_parts_max_radius_mm": 7.5,
+    "new_overlapping_root_cheek_tongue_radius_min_mm": 11.5,
+    "cradle_base_contact_proof": {
+      "upper": "For z>=11.5, front boundary x(q,z)=(3.5+z*cosq)/sinq decreases strictly: derivative=-(z+3.5*cosq)/sin(q)^2<0. Stop face equals it only at q89.5. Other q values put the moving base farther +X.",
+      "lower": "For x>=20, bottom boundary z(q,x)=(-7.5+x*sinq)/cosq increases strictly: derivative=(x-7.5*sinq)/cos(q)^2>0. Stop top equals it at q.5; above this angle the moving base is above the stop. At q90 base x<=7.5."
+    },
+    "prerequisites": [
+      "Actual petal source hashes unchanged; no overhanging wires or LEDs beyond frozen CAD",
+      "New arch box/primitives remain at stated Y and Z; new-to-old fixed mounting intersections separately checked",
+      "Circular cheek/shaft geometry uses construction radii; bearings are intended fits, not inferred clearance"
+    ]
+  }
+}
