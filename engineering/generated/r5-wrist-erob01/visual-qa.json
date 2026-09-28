@@ -1,0 +1,56 @@
+{
+  "revision": "R5-WRIST-EROB01",
+  "review_type": "Rendered PDF and independent STEP feature/equilibrium readback; not physical product acceptance",
+  "pdf_sha256": "1c4b08ebd69f6808d8205730a13c1b776967bdd9df9a1c35d5ee43db633fdbe0",
+  "study_sha256": "214d5b4d840cfd4e823f9bdb187b585e6672b477869f2259465f3cd0c474943e",
+  "script_sha256": "1d82e3ce6de149f22dbbc73c9ca6c1b44b3596a17d6f7ab15a0bb17ef774c05b",
+  "document_sha256": "346da874d3916c5ce2c2b1c26bfddd5003b54e69a961d26581598afbcd418f0b",
+  "source_table_sha256": "3de1764c50a77dd5ec2a3c3f6f7f89227ad069f81e18b5e3cc62b5639b0b5f9e",
+  "render_tool": "Poppler pdftoppm -r110 -png",
+  "pages": [
+    {
+      "file": "preview/page-1.png",
+      "sha256": "aa304054dce4dbc5a7e0047efa56c692dd017ef7a0714c001ecb92db9c2f73ac"
+    },
+    {
+      "file": "preview/page-2.png",
+      "sha256": "d24722785269896b33fc9652839aa34604c56652ad908c9f00fb1b36f1cf14db"
+    },
+    {
+      "file": "preview/page-3.png",
+      "sha256": "520e732196b41848a1676912a7c67c85e0803d6ca84adf31b38bb99bc6b00a0d"
+    },
+    {
+      "file": "preview/page-4.png",
+      "sha256": "f076c89f8777a7a4bc68dd318ab74ca65d639daa45743913b915238931703552"
+    }
+  ],
+  "readback": [
+    {
+      "page": 1,
+      "outside_page_spans": []
+    },
+    {
+      "page": 2,
+      "outside_page_spans": []
+    },
+    {
+      "page": 3,
+      "outside_page_spans": []
+    },
+    {
+      "page": 4,
+      "outside_page_spans": []
+    }
+  ],
+  "visual_checks": [
+    "All four pages actually viewed at full render; Chinese labels readable, no missing glyphs or edge clipping.",
+    "Page2 rear-relief callout moved away from hole-angle table.",
+    "Page3 diameter dimension moved below header; pin pitch64 and coordinates0,+/-32 agree with CAD.",
+    "Page1 actual section/profile dimensions checked; central39 no-load relief and rear register shown.",
+    "Page4 references only bounded5.3936575Nm scenario and no production release."
+  ],
+  "independent_check_sha256": "a1a31d672492f8130463dd694857c7cf563688654449570feca591519c5d36b9",
+  "independent_check_script_sha256": "956462d2fcf5e20a4d682749917901cf9fb0ad2950a38023432cd394345d8569",
+  "geometry_export_checks": "Four STEP/STL solids valid; six STL meshes incl2 print-oriented watertight/winding consistent; DXF unitmm and audits passed."
+}
