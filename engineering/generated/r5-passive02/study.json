@@ -1,0 +1,1452 @@
+{
+  "revision": "R5-PASSIVE02",
+  "scope": "Known material/envelope mass model; massless taut frictionless two-tier differential; separate half-cycles only until first stop/slack. Not a complete1s qualification.",
+  "source_hashes": {
+    "engineering/r5_passive02.py": "0236980c86aae20674dd359305e25a1c821c63dec9fe41bdbf49f52b6e21ddd8",
+    "engineering/generated/r5-petal-form02/study.json": "6198b33a7e2e44d206f98062d2e2d099d94d4f6d3f4945ee5e0d3eae832164f4",
+    "engineering/generated/r5-carrier01/parts-manifest.json": "cae92c4d08cefd00f5231a2938a715e91c976a719119deb33d3dbc4fd070f130",
+    "engineering/generated/r5-carrier01/mass-summary.json": "1d8f235b0a2447f170492edb413ec8eb3a2c1930477bf00c2d32e7125d66a64e",
+    "engineering/r5_passive01.py": "a3998f5b226d3079c84302fdbbce0fc897f8b168c9d3a7f16f52c10b427d002e",
+    "engineering/generated/r5-passive01/study.json": "e5b03ebaec4bd65066c01686a45fdc2cda0892999072a7181b67dd2ab2823593",
+    "engineering/generated/r5-stage01/study.json": "a3764e43a7cf973f2d83169cc960aed0158d6cf1c6ff54056fb7b161c47a790f",
+    "engineering/electronics/r5-cable-hardware01/budget.json": "eeb8fead1f06f9e82919eeb4abfb0fc4f9ebc66eb94027482794e71fb9a97879"
+  },
+  "mass_source": "R5-CARRIER01 parts-manifest + FORM02, no duplicated form/guide mass",
+  "assumptions": {
+    "gravity_head_m_s2": [
+      0,
+      0,
+      -9.80665
+    ],
+    "unselected_spring_and_damper": true,
+    "all_halfcycles_start_each_leaf_at_rest": true,
+    "opening_start_s_m": 0.06,
+    "closing_start_s_m": 0.0,
+    "event_guard_m": 1e-08,
+    "rail_slider_mass_missing": true,
+    "omitted": [
+      "actual rail blocks",
+      "pulley/cable inertia, friction and compliance",
+      "return component mass and nonlinear force",
+      "bearing rolling-element spin",
+      "slot clearance/impact/slack recovery",
+      "actuator dynamics and force limits",
+      "actual electronics/wiring",
+      "payload during motion and arbitrary gravity"
+    ]
+  },
+  "runs": {
+    "known_mass_baseline": [
+      {
+        "direction": "opening",
+        "params_upper": {
+          "preload_N": 5.0,
+          "k_N_m": 30.0,
+          "c_N_s_m": 0.2
+        },
+        "params_lower": {
+          "preload_N": 5.0,
+          "k_N_m": 30.0,
+          "c_N_s_m": 0.2
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "opening_stop",
+        "stop_time_s": 0.40937766992377,
+        "end_s_mm": [
+          10.188089756151468,
+          -1.0000000002542697e-05
+        ],
+        "end_v_m_s": [
+          -0.08942509446972785,
+          -0.1371944820409181
+        ],
+        "max_pair_difference_mm": 10.18809975615147,
+        "remaining_other_branch_mm": 10.188089756151468,
+        "T_min_N": 1.803269973941463,
+        "T_max_N": 12.444820861837755,
+        "arrived_at_intended_stop": true,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 0.006995260870466917,
+        "peak_total_damper_power_before_event_W": 0.03353239843795476,
+        "ideal_input_work_before_event_J": -1.352450816068925,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              6.8,
+              5.75,
+              6.8,
+              5.75
+            ],
+            "normal_each_N": [
+              24.516624999999998,
+              25.566625,
+              24.516624999999998,
+              25.566625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              7.105427357601002e-15,
+              3.552713678800501e-15
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 31.316625,
+            "second_tier_tension_N": 62.63325,
+            "input_force_N": 125.2665,
+            "ideal_4mm_lead_hold_Nm": 0.07974713071528364,
+            "passes_mid50_100_screen": true,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.44001608548124815,
+            "terminal_retention_needed_secondary": 0.5215005457555534,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              5.75,
+              6.8,
+              5.75,
+              6.8
+            ],
+            "normal_each_N": [
+              25.566625,
+              24.516624999999998,
+              25.566625,
+              24.516624999999998
+            ],
+            "unbalanced_XY_normal_force_N": [
+              7.105427357601002e-15,
+              3.552713678800501e-15
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 31.316625,
+            "second_tier_tension_N": 62.63325,
+            "input_force_N": 125.2665,
+            "ideal_4mm_lead_hold_Nm": 0.07974713071528364,
+            "passes_mid50_100_screen": true,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.44001608548124815,
+            "terminal_retention_needed_secondary": 0.5215005457555534,
+            "assembly_qualified": false
+          }
+        ]
+      },
+      {
+        "direction": "closing",
+        "params_upper": {
+          "preload_N": 5.0,
+          "k_N_m": 30.0,
+          "c_N_s_m": 0.2
+        },
+        "params_lower": {
+          "preload_N": 5.0,
+          "k_N_m": 30.0,
+          "c_N_s_m": 0.2
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "closing_stop",
+        "stop_time_s": 0.30237027739106964,
+        "end_s_mm": [
+          9.212879390197884,
+          60.00001
+        ],
+        "end_v_m_s": [
+          -0.04827430094733853,
+          0.43533356686052704
+        ],
+        "max_pair_difference_mm": 50.78713060980213,
+        "remaining_other_branch_mm": 50.787120609802116,
+        "T_min_N": 0.10344890804878482,
+        "T_max_N": 13.186299393300846,
+        "arrived_at_intended_stop": true,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 0.006748664568133653,
+        "peak_total_damper_power_before_event_W": 0.07673828902698528,
+        "ideal_input_work_before_event_J": 0.9517525540414611,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              6.8,
+              5.75,
+              6.8,
+              5.75
+            ],
+            "normal_each_N": [
+              24.516624999999998,
+              25.566625,
+              24.516624999999998,
+              25.566625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              7.105427357601002e-15,
+              3.552713678800501e-15
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 31.316625,
+            "second_tier_tension_N": 62.63325,
+            "input_force_N": 125.2665,
+            "ideal_4mm_lead_hold_Nm": 0.07974713071528364,
+            "passes_mid50_100_screen": true,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.44001608548124815,
+            "terminal_retention_needed_secondary": 0.5215005457555534,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              5.75,
+              6.8,
+              5.75,
+              6.8
+            ],
+            "normal_each_N": [
+              25.566625,
+              24.516624999999998,
+              25.566625,
+              24.516624999999998
+            ],
+            "unbalanced_XY_normal_force_N": [
+              7.105427357601002e-15,
+              3.552713678800501e-15
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 31.316625,
+            "second_tier_tension_N": 62.63325,
+            "input_force_N": 125.2665,
+            "ideal_4mm_lead_hold_Nm": 0.07974713071528364,
+            "passes_mid50_100_screen": true,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.44001608548124815,
+            "terminal_retention_needed_secondary": 0.5215005457555534,
+            "assembly_qualified": false
+          }
+        ]
+      }
+    ],
+    "lowest_search_score": [
+      {
+        "direction": "opening",
+        "params_upper": {
+          "preload_N": 10.0,
+          "k_N_m": 300.0,
+          "c_N_s_m": 80.0
+        },
+        "params_lower": {
+          "preload_N": 10.0,
+          "k_N_m": 300.0,
+          "c_N_s_m": 80.0
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "opening_stop",
+        "stop_time_s": 0.4634705317476001,
+        "end_s_mm": [
+          -1.0000000000591133e-05,
+          1.2016996813466025
+        ],
+        "end_v_m_s": [
+          -0.04003802558333671,
+          -0.04568417258357683
+        ],
+        "max_pair_difference_mm": 3.108765451956704,
+        "remaining_other_branch_mm": 1.2016996813466025,
+        "T_min_N": 1.1987956752904032,
+        "T_max_N": 28.0,
+        "arrived_at_intended_stop": true,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 2.9102676990991636,
+        "peak_total_damper_power_before_event_W": 13.407358129382388,
+        "ideal_input_work_before_event_J": -1.7894190512227948,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              28.0,
+              17.5,
+              28.0,
+              17.5
+            ],
+            "normal_each_N": [
+              24.516624999999998,
+              35.016625,
+              24.516624999999998,
+              35.016625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              1.0658141036401503e-14,
+              3.552713678800501e-15
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 52.516625,
+            "second_tier_tension_N": 105.03325,
+            "input_force_N": 210.0665,
+            "ideal_4mm_lead_hold_Nm": 0.1337324874120545,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7378879350883646,
+            "terminal_retention_needed_secondary": 0.8745338489936173,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              17.5,
+              28.0,
+              17.5,
+              28.0
+            ],
+            "normal_each_N": [
+              35.016625,
+              24.516624999999998,
+              35.016625,
+              24.516624999999998
+            ],
+            "unbalanced_XY_normal_force_N": [
+              7.105427357601002e-15,
+              -0.0
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 52.516625,
+            "second_tier_tension_N": 105.03325,
+            "input_force_N": 210.0665,
+            "ideal_4mm_lead_hold_Nm": 0.1337324874120545,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7378879350883646,
+            "terminal_retention_needed_secondary": 0.8745338489936173,
+            "assembly_qualified": false
+          }
+        ]
+      },
+      {
+        "direction": "closing",
+        "params_upper": {
+          "preload_N": 10.0,
+          "k_N_m": 300.0,
+          "c_N_s_m": 80.0
+        },
+        "params_lower": {
+          "preload_N": 10.0,
+          "k_N_m": 300.0,
+          "c_N_s_m": 80.0
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "closing_stop",
+        "stop_time_s": 0.45184511580274117,
+        "end_s_mm": [
+          57.975116560002924,
+          60.00000999999999
+        ],
+        "end_v_m_s": [
+          0.061387953080741645,
+          0.05312355703481897
+        ],
+        "max_pair_difference_mm": 7.25179420574424,
+        "remaining_other_branch_mm": 2.0248834399970717,
+        "T_min_N": 10.0,
+        "T_max_N": 39.629430652678934,
+        "arrived_at_intended_stop": true,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 2.9100416515354905,
+        "peak_total_damper_power_before_event_W": 13.418987413637304,
+        "ideal_input_work_before_event_J": 7.523894754025859,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              28.0,
+              17.5,
+              28.0,
+              17.5
+            ],
+            "normal_each_N": [
+              24.516624999999998,
+              35.016625,
+              24.516624999999998,
+              35.016625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              1.0658141036401503e-14,
+              3.552713678800501e-15
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 52.516625,
+            "second_tier_tension_N": 105.03325,
+            "input_force_N": 210.0665,
+            "ideal_4mm_lead_hold_Nm": 0.1337324874120545,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7378879350883646,
+            "terminal_retention_needed_secondary": 0.8745338489936173,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              17.5,
+              28.0,
+              17.5,
+              28.0
+            ],
+            "normal_each_N": [
+              35.016625,
+              24.516624999999998,
+              35.016625,
+              24.516624999999998
+            ],
+            "unbalanced_XY_normal_force_N": [
+              7.105427357601002e-15,
+              -0.0
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 52.516625,
+            "second_tier_tension_N": 105.03325,
+            "input_force_N": 210.0665,
+            "ideal_4mm_lead_hold_Nm": 0.1337324874120545,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7378879350883646,
+            "terminal_retention_needed_secondary": 0.8745338489936173,
+            "assembly_qualified": false
+          }
+        ]
+      }
+    ],
+    "best_asymmetric_candidate": [
+      {
+        "direction": "opening",
+        "params_upper": {
+          "preload_N": 10.0,
+          "k_N_m": 300.0,
+          "c_N_s_m": 76.0
+        },
+        "params_lower": {
+          "preload_N": 10.0,
+          "k_N_m": 300.0,
+          "c_N_s_m": 84.0
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "opening_stop",
+        "stop_time_s": 0.44450848416868616,
+        "end_s_mm": [
+          -1.0000000001458495e-05,
+          3.429859401137941
+        ],
+        "end_v_m_s": [
+          -0.06229079708754363,
+          -0.0858189592931409
+        ],
+        "max_pair_difference_mm": 3.980587096681575,
+        "remaining_other_branch_mm": 3.429859401137941,
+        "T_min_N": 0.9485700722643882,
+        "T_max_N": 28.0,
+        "arrived_at_intended_stop": true,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 2.869196068675085,
+        "peak_total_damper_power_before_event_W": 13.37618436847235,
+        "ideal_input_work_before_event_J": -1.7792235429062484,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              28.0,
+              17.5,
+              28.0,
+              17.5
+            ],
+            "normal_each_N": [
+              24.516624999999998,
+              35.016625,
+              24.516624999999998,
+              35.016625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              1.0658141036401503e-14,
+              3.552713678800501e-15
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 52.516625,
+            "second_tier_tension_N": 105.03325,
+            "input_force_N": 210.0665,
+            "ideal_4mm_lead_hold_Nm": 0.1337324874120545,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7378879350883646,
+            "terminal_retention_needed_secondary": 0.8745338489936173,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              17.5,
+              28.0,
+              17.5,
+              28.0
+            ],
+            "normal_each_N": [
+              35.016625,
+              24.516624999999998,
+              35.016625,
+              24.516624999999998
+            ],
+            "unbalanced_XY_normal_force_N": [
+              7.105427357601002e-15,
+              -0.0
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 52.516625,
+            "second_tier_tension_N": 105.03325,
+            "input_force_N": 210.0665,
+            "ideal_4mm_lead_hold_Nm": 0.1337324874120545,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7378879350883646,
+            "terminal_retention_needed_secondary": 0.8745338489936173,
+            "assembly_qualified": false
+          }
+        ]
+      },
+      {
+        "direction": "closing",
+        "params_upper": {
+          "preload_N": 10.0,
+          "k_N_m": 300.0,
+          "c_N_s_m": 76.0
+        },
+        "params_lower": {
+          "preload_N": 10.0,
+          "k_N_m": 300.0,
+          "c_N_s_m": 84.0
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "closing_stop",
+        "stop_time_s": 0.4596966892464882,
+        "end_s_mm": [
+          60.00000999999999,
+          58.75868169018334
+        ],
+        "end_v_m_s": [
+          0.0430029732849629,
+          0.04241779063330156
+        ],
+        "max_pair_difference_mm": 5.576434832404477,
+        "remaining_other_branch_mm": 1.2413183098166636,
+        "T_min_N": 10.0,
+        "T_max_N": 39.590540868099126,
+        "arrived_at_intended_stop": true,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 2.906999734563073,
+        "peak_total_damper_power_before_event_W": 13.37399507446721,
+        "ideal_input_work_before_event_J": 7.5634465766906,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              28.0,
+              17.5,
+              28.0,
+              17.5
+            ],
+            "normal_each_N": [
+              24.516624999999998,
+              35.016625,
+              24.516624999999998,
+              35.016625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              1.0658141036401503e-14,
+              3.552713678800501e-15
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 52.516625,
+            "second_tier_tension_N": 105.03325,
+            "input_force_N": 210.0665,
+            "ideal_4mm_lead_hold_Nm": 0.1337324874120545,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7378879350883646,
+            "terminal_retention_needed_secondary": 0.8745338489936173,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              17.5,
+              28.0,
+              17.5,
+              28.0
+            ],
+            "normal_each_N": [
+              35.016625,
+              24.516624999999998,
+              35.016625,
+              24.516624999999998
+            ],
+            "unbalanced_XY_normal_force_N": [
+              7.105427357601002e-15,
+              -0.0
+            ],
+            "centered_normal_only_force_balance": true,
+            "leaf_tension_N": 52.516625,
+            "second_tier_tension_N": 105.03325,
+            "input_force_N": 210.0665,
+            "ideal_4mm_lead_hold_Nm": 0.1337324874120545,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7378879350883646,
+            "terminal_retention_needed_secondary": 0.8745338489936173,
+            "assembly_qualified": false
+          }
+        ]
+      }
+    ],
+    "unequal_stiffness_example": [
+      {
+        "direction": "opening",
+        "params_upper": {
+          "preload_N": 10.0,
+          "k_N_m": 290.0,
+          "c_N_s_m": 80.0
+        },
+        "params_lower": {
+          "preload_N": 10.0,
+          "k_N_m": 310.0,
+          "c_N_s_m": 80.0
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "closing_stop",
+        "stop_time_s": 7.625154148716695e-05,
+        "end_s_mm": [
+          60.000009999999996,
+          59.99998998960113
+        ],
+        "end_v_m_s": [
+          0.0002606869746672337,
+          -0.00026109605031553364
+        ],
+        "max_pair_difference_mm": 2.001039886567746e-05,
+        "remaining_other_branch_mm": 60.000009999999996,
+        "T_min_N": 28.04101349242728,
+        "T_max_N": 28.043461304227183,
+        "arrived_at_intended_stop": false,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 5.584979011261086e-10,
+        "peak_total_damper_power_before_event_W": 2.1780615400244257e-05,
+        "ideal_input_work_before_event_J": -5.832016962259746e-10,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              27.4,
+              17.25,
+              28.599999999999998,
+              17.75
+            ],
+            "normal_each_N": [
+              25.716625,
+              35.866625,
+              24.516625,
+              35.366625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              -0.49497474683057163,
+              -1.202081528017132
+            ],
+            "centered_normal_only_force_balance": false,
+            "leaf_tension_N": 53.116625,
+            "second_tier_tension_N": 106.23325,
+            "input_force_N": 212.4665,
+            "ideal_4mm_lead_hold_Nm": 0.13526037486573672,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7463182704546037,
+            "terminal_retention_needed_secondary": 0.8845253575758266,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              17.25,
+              27.4,
+              17.75,
+              28.599999999999998
+            ],
+            "normal_each_N": [
+              35.866625,
+              25.716625,
+              35.366625,
+              24.516625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              0.4949747468305894,
+              -1.2020815280171284
+            ],
+            "centered_normal_only_force_balance": false,
+            "leaf_tension_N": 53.116625,
+            "second_tier_tension_N": 106.23325,
+            "input_force_N": 212.4665,
+            "ideal_4mm_lead_hold_Nm": 0.13526037486573672,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7463182704546037,
+            "terminal_retention_needed_secondary": 0.8845253575758266,
+            "assembly_qualified": false
+          }
+        ]
+      },
+      {
+        "direction": "closing",
+        "params_upper": {
+          "preload_N": 10.0,
+          "k_N_m": 290.0,
+          "c_N_s_m": 80.0
+        },
+        "params_lower": {
+          "preload_N": 10.0,
+          "k_N_m": 310.0,
+          "c_N_s_m": 80.0
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "closing_stop",
+        "stop_time_s": 0.47775137684787966,
+        "end_s_mm": [
+          60.00001,
+          59.76948436890527
+        ],
+        "end_v_m_s": [
+          0.022240478347288907,
+          0.007613598566161445
+        ],
+        "max_pair_difference_mm": 6.913478911391747,
+        "remaining_other_branch_mm": 0.2305156310947326,
+        "T_min_N": 10.0,
+        "T_max_N": 39.63810557671524,
+        "arrived_at_intended_stop": true,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 2.9250959249499804,
+        "peak_total_damper_power_before_event_W": 13.435345753739227,
+        "ideal_input_work_before_event_J": 7.636896711220553,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              27.4,
+              17.25,
+              28.599999999999998,
+              17.75
+            ],
+            "normal_each_N": [
+              25.716625,
+              35.866625,
+              24.516625,
+              35.366625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              -0.49497474683057163,
+              -1.202081528017132
+            ],
+            "centered_normal_only_force_balance": false,
+            "leaf_tension_N": 53.116625,
+            "second_tier_tension_N": 106.23325,
+            "input_force_N": 212.4665,
+            "ideal_4mm_lead_hold_Nm": 0.13526037486573672,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7463182704546037,
+            "terminal_retention_needed_secondary": 0.8845253575758266,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              17.25,
+              27.4,
+              17.75,
+              28.599999999999998
+            ],
+            "normal_each_N": [
+              35.866625,
+              25.716625,
+              35.366625,
+              24.516625
+            ],
+            "unbalanced_XY_normal_force_N": [
+              0.4949747468305894,
+              -1.2020815280171284
+            ],
+            "centered_normal_only_force_balance": false,
+            "leaf_tension_N": 53.116625,
+            "second_tier_tension_N": 106.23325,
+            "input_force_N": 212.4665,
+            "ideal_4mm_lead_hold_Nm": 0.13526037486573672,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7463182704546037,
+            "terminal_retention_needed_secondary": 0.8845253575758266,
+            "assembly_qualified": false
+          }
+        ]
+      }
+    ],
+    "unequal_preload_counterexample": [
+      {
+        "direction": "opening",
+        "params_upper": {
+          "preload_N": 4.145950398147871,
+          "k_N_m": 370.5405125121216,
+          "c_N_s_m": 40.0
+        },
+        "params_lower": {
+          "preload_N": 5.854049601852129,
+          "k_N_m": 329.4594874878784,
+          "c_N_s_m": 40.0
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "closing_stop",
+        "stop_time_s": 9.584015516706251e-05,
+        "end_s_mm": [
+          59.999989979353806,
+          60.000009999999996
+        ],
+        "end_v_m_s": [
+          -0.0002084394597184452,
+          0.00020779329199882487
+        ],
+        "max_pair_difference_mm": 2.0020646196439174e-05,
+        "remaining_other_branch_mm": 60.000009999999996,
+        "T_min_N": 25.97202664591798,
+        "T_max_N": 25.97259176962484,
+        "arrived_at_intended_stop": false,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 2.2263698679885916e-10,
+        "peak_total_damper_power_before_event_W": 6.930004845394099e-06,
+        "ideal_input_work_before_event_J": -1.0724533642181401e-09,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              26.378381148875167,
+              13.409463210950912,
+              25.621618851124833,
+              14.09053678904909
+            ],
+            "normal_each_N": [
+              24.516625,
+              37.48554293792426,
+              25.273387297750336,
+              36.80446935982608
+            ],
+            "unbalanced_XY_normal_force_N": [
+              1.0167034980457892,
+              0.05352000692537828
+            ],
+            "centered_normal_only_force_balance": false,
+            "leaf_tension_N": 50.89500614887517,
+            "second_tier_tension_N": 101.79001229775034,
+            "input_force_N": 203.58002459550067,
+            "ideal_4mm_lead_hold_Nm": 0.12960306891657425,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7151032838363683,
+            "terminal_retention_needed_secondary": 0.8475298178801401,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              13.409463210950912,
+              26.378381148875167,
+              14.09053678904909,
+              25.621618851124833
+            ],
+            "normal_each_N": [
+              37.48554293792426,
+              24.516625,
+              36.80446935982608,
+              25.273387297750336
+            ],
+            "unbalanced_XY_normal_force_N": [
+              -1.016703498045775,
+              0.05352000692537118
+            ],
+            "centered_normal_only_force_balance": false,
+            "leaf_tension_N": 50.89500614887517,
+            "second_tier_tension_N": 101.79001229775034,
+            "input_force_N": 203.58002459550067,
+            "ideal_4mm_lead_hold_Nm": 0.12960306891657425,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7151032838363683,
+            "terminal_retention_needed_secondary": 0.8475298178801401,
+            "assembly_qualified": false
+          }
+        ]
+      },
+      {
+        "direction": "closing",
+        "params_upper": {
+          "preload_N": 4.145950398147871,
+          "k_N_m": 370.5405125121216,
+          "c_N_s_m": 40.0
+        },
+        "params_lower": {
+          "preload_N": 5.854049601852129,
+          "k_N_m": 329.4594874878784,
+          "c_N_s_m": 40.0
+        },
+        "extra_translation_each_kg": 0.0,
+        "legacy_bare_petal": false,
+        "CFS_spin_scenario": "rigid_proxy",
+        "bearing_corotating_J_kg_m2": 0.0,
+        "event": "opening_stop",
+        "stop_time_s": 6.369439198987924e-05,
+        "end_s_mm": [
+          1.0009395551628581e-05,
+          -1.0000000000000433e-05
+        ],
+        "end_v_m_s": [
+          0.0003135902926804031,
+          -0.00031314786172247295
+        ],
+        "max_pair_difference_mm": 2.0009395551629012e-05,
+        "remaining_other_branch_mm": 60.000009999999996,
+        "T_min_N": 5.061863515952002,
+        "T_max_N": 5.062154404202052,
+        "arrived_at_intended_stop": false,
+        "complete_cycle_qualified": false,
+        "damping_energy_before_event_J": 3.348327431681758e-10,
+        "peak_total_damper_power_before_event_W": 1.5712036397179034e-05,
+        "ideal_input_work_before_event_J": 9.512206078587737e-11,
+        "static_box": [
+          {
+            "box_orientation_offset_deg": 0,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              60.0,
+              25.0,
+              60.0,
+              25.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              26.378381148875167,
+              13.409463210950912,
+              25.621618851124833,
+              14.09053678904909
+            ],
+            "normal_each_N": [
+              24.516625,
+              37.48554293792426,
+              25.273387297750336,
+              36.80446935982608
+            ],
+            "unbalanced_XY_normal_force_N": [
+              1.0167034980457892,
+              0.05352000692537828
+            ],
+            "centered_normal_only_force_balance": false,
+            "leaf_tension_N": 50.89500614887517,
+            "second_tier_tension_N": 101.79001229775034,
+            "input_force_N": 203.58002459550067,
+            "ideal_4mm_lead_hold_Nm": 0.12960306891657425,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7151032838363683,
+            "terminal_retention_needed_secondary": 0.8475298178801401,
+            "assembly_qualified": false
+          },
+          {
+            "box_orientation_offset_deg": 90,
+            "finger_order": [
+              "UR",
+              "UL",
+              "LL",
+              "LR"
+            ],
+            "contact_s_mm": [
+              25.0,
+              60.0,
+              25.0,
+              60.0
+            ],
+            "required_normal_each_lower_bound_N": 24.516624999999998,
+            "spring_each_N": [
+              13.409463210950912,
+              26.378381148875167,
+              14.09053678904909,
+              25.621618851124833
+            ],
+            "normal_each_N": [
+              37.48554293792426,
+              24.516625,
+              36.80446935982608,
+              25.273387297750336
+            ],
+            "unbalanced_XY_normal_force_N": [
+              -1.016703498045775,
+              0.05352000692537118
+            ],
+            "centered_normal_only_force_balance": false,
+            "leaf_tension_N": 50.89500614887517,
+            "second_tier_tension_N": 101.79001229775034,
+            "input_force_N": 203.58002459550067,
+            "ideal_4mm_lead_hold_Nm": 0.12960306891657425,
+            "passes_mid50_100_screen": false,
+            "passes_CABLE_conditional_bend10_ceiling": true,
+            "terminal_retention_needed_leaf": 0.7151032838363683,
+            "terminal_retention_needed_secondary": 0.8475298178801401,
+            "assembly_qualified": false
+          }
+        ]
+      }
+    ]
+  },
+  "original_nine_case_comparison": [
+    {
+      "original_proxy_or_new_extra_translation_kg": 0.0,
+      "k_N_m": 30.0,
+      "c_N_s_m": 0.2,
+      "original_time_s": 0.40084804559396287,
+      "legacy_replay_event_time_error_s": 2.6683655285353325e-12,
+      "new_time_s": 0.40937766992377,
+      "original_other_remaining_mm": 12.16602343835117,
+      "new_other_remaining_mm": 10.188089756151468,
+      "new_T_min_N": 1.8032884882060731,
+      "new_T_max_N": 12.444781587531475,
+      "interpretation": "Old: bareFORM02+mc proxy. New: FORM02+knownrotor+known59.584gtranslation+mc extra; mc is not the same physical component. Actual-known baseline uses extra0."
+    },
+    {
+      "original_proxy_or_new_extra_translation_kg": 0.0,
+      "k_N_m": 100.0,
+      "c_N_s_m": 2.0,
+      "original_time_s": 0.40624075083891337,
+      "legacy_replay_event_time_error_s": -4.755085214469545e-13,
+      "new_time_s": 0.4088015022111482,
+      "original_other_remaining_mm": 10.905467761526445,
+      "new_other_remaining_mm": 10.318886330325627,
+      "new_T_min_N": 2.8573774120418203,
+      "new_T_max_N": 12.729391749271564,
+      "interpretation": "Old: bareFORM02+mc proxy. New: FORM02+knownrotor+known59.584gtranslation+mc extra; mc is not the same physical component. Actual-known baseline uses extra0."
+    },
+    {
+      "original_proxy_or_new_extra_translation_kg": 0.0,
+      "k_N_m": 300.0,
+      "c_N_s_m": 5.0,
+      "original_time_s": 0.4174992052666213,
+      "legacy_replay_event_time_error_s": -2.500777362968165e-13,
+      "new_time_s": 0.4211205497914124,
+      "original_other_remaining_mm": 8.397081705453248,
+      "new_other_remaining_mm": 7.634518110922608,
+      "new_T_min_N": 5.426927325914692,
+      "new_T_max_N": 23.0,
+      "interpretation": "Old: bareFORM02+mc proxy. New: FORM02+knownrotor+known59.584gtranslation+mc extra; mc is not the same physical component. Actual-known baseline uses extra0."
+    },
+    {
+      "original_proxy_or_new_extra_translation_kg": 0.05,
+      "k_N_m": 30.0,
+      "c_N_s_m": 0.2,
+      "original_time_s": 0.4057838796780535,
+      "legacy_replay_event_time_error_s": 1.819663308921804e-10,
+      "new_time_s": 0.4102936796178367,
+      "original_other_remaining_mm": 11.010985761290673,
+      "new_other_remaining_mm": 9.981084472359555,
+      "new_T_min_N": 1.8048026870922957,
+      "new_T_max_N": 12.368596495770284,
+      "interpretation": "Old: bareFORM02+mc proxy. New: FORM02+knownrotor+known59.584gtranslation+mc extra; mc is not the same physical component. Actual-known baseline uses extra0."
+    },
+    {
+      "original_proxy_or_new_extra_translation_kg": 0.05,
+      "k_N_m": 100.0,
+      "c_N_s_m": 2.0,
+      "original_time_s": 0.4069195587459732,
+      "legacy_replay_event_time_error_s": -3.2154834350706096e-12,
+      "new_time_s": 0.4103162747724904,
+      "original_other_remaining_mm": 10.749163710689292,
+      "new_other_remaining_mm": 9.97599311624097,
+      "new_T_min_N": 2.858975329103176,
+      "new_T_max_N": 12.680331120631205,
+      "interpretation": "Old: bareFORM02+mc proxy. New: FORM02+knownrotor+known59.584gtranslation+mc extra; mc is not the same physical component. Actual-known baseline uses extra0."
+    },
+    {
+      "original_proxy_or_new_extra_translation_kg": 0.05,
+      "k_N_m": 300.0,
+      "c_N_s_m": 5.0,
+      "original_time_s": 0.41853726588346873,
+      "legacy_replay_event_time_error_s": 3.0077051960120116e-12,
+      "new_time_s": 0.42321873392159454,
+      "original_other_remaining_mm": 8.176014455264626,
+      "new_other_remaining_mm": 7.20425784750135,
+      "new_T_min_N": 5.661486559081473,
+      "new_T_max_N": 23.0,
+      "interpretation": "Old: bareFORM02+mc proxy. New: FORM02+knownrotor+known59.584gtranslation+mc extra; mc is not the same physical component. Actual-known baseline uses extra0."
+    },
+    {
+      "original_proxy_or_new_extra_translation_kg": 0.1,
+      "k_N_m": 30.0,
+      "c_N_s_m": 0.2,
+      "original_time_s": 0.40847995336914356,
+      "legacy_replay_event_time_error_s": -8.278044916210092e-12,
+      "new_time_s": 0.4107832967951246,
+      "original_other_remaining_mm": 10.392075733680532,
+      "new_other_remaining_mm": 9.870921735897541,
+      "new_T_min_N": 1.8073527457059206,
+      "new_T_max_N": 12.315317253155426,
+      "interpretation": "Old: bareFORM02+mc proxy. New: FORM02+knownrotor+known59.584gtranslation+mc extra; mc is not the same physical component. Actual-known baseline uses extra0."
+    },
+    {
+      "original_proxy_or_new_extra_translation_kg": 0.1,
+      "k_N_m": 100.0,
+      "c_N_s_m": 2.0,
+      "original_time_s": 0.4080298567436909,
+      "legacy_replay_event_time_error_s": 3.7767067251337494e-11,
+      "new_time_s": 0.41182396636952606,
+      "original_other_remaining_mm": 10.494754502053093,
+      "new_other_remaining_mm": 9.637924498136766,
+      "new_T_min_N": 2.8642505618301026,
+      "new_T_max_N": 12.630979685072361,
+      "interpretation": "Old: bareFORM02+mc proxy. New: FORM02+knownrotor+known59.584gtranslation+mc extra; mc is not the same physical component. Actual-known baseline uses extra0."
+    },
+    {
+      "original_proxy_or_new_extra_translation_kg": 0.1,
+      "k_N_m": 300.0,
+      "c_N_s_m": 5.0,
+      "original_time_s": 0.4198727434478331,
+      "legacy_replay_event_time_error_s": 7.050693362486982e-12,
+      "new_time_s": 0.44602402986785383,
+      "original_other_remaining_mm": 7.894504402902135,
+      "new_other_remaining_mm": 3.208908622098047,
+      "new_T_min_N": 5.891545457162167,
+      "new_T_max_N": 23.0,
+      "interpretation": "Old: bareFORM02+mc proxy. New: FORM02+knownrotor+known59.584gtranslation+mc extra; mc is not the same physical component. Actual-known baseline uses extra0."
+    }
+  ],
+  "search": {
+    "unique_parameter_sets": 238,
+    "synchronous_force_fit": {
+      "delta_preload_U_minus_L_N": -1.7080992037042568,
+      "delta_k_U_minus_L_N_m": 41.08102502424323,
+      "residual_rms_N": 3.1544154345213036,
+      "required_difference_minmax_N": [
+        -9.948072507686561,
+        5.727822742385951
+      ]
+    },
+    "close2mm_screen": "study-selected diagnostic only, not user acceptance: both halfcycles max difference<=2mm and other branch remaining<=2mm, with intended first stop",
+    "close2mm_count": 0,
+    "best_score": 25.281305910751147,
+    "finite_search_not_global_optimum": true
+  },
+  "spin": {
+    "CFS_rotor_model": "Baseline includes full4g COM motion plus uniform-envelope centralI*qdot². Alternative cases remove that central term before adding separate ring/stud spin.",
+    "ring_absolute_omega_per_sdot_minmax_rad_m": [
+      201.04574227363818,
+      375.7674837161407
+    ],
+    "qprime_max_rad_m": 117.8097245096172,
+    "central_inertia_bound_assumption": "Jstud>=0,Jring>=0,Jstud+Jring<=4g*(4mm)^2, common roller axis and no slip. Alternatives are sensitivity extremes, not measured internals or complete contact dynamics.",
+    "bearing_bound_scope": "At most both7.2g bearings assigned to co-rotating inner-ring inertia within9.5mm radius; ball/cage spin and real load/friction remain unidentified."
+  },
+  "independent_checks": {
+    "known_mass_baseline_opening": {
+      "full_four_bordered_mass_solve_max_position_error_m": 1.2135299709559177e-11,
+      "sum_position_constraint_error_m": 1.6653345369377348e-16,
+      "work_energy_max_residual_J": 3.8071669594685886e-08,
+      "end_energy_change_J": -1.3594460836420506,
+      "end_net_work_J": -1.35944607698683,
+      "event_refinement_error_s": 2.576938662457451e-12
+    },
+    "known_mass_baseline_closing": {
+      "full_four_bordered_mass_solve_max_position_error_m": 6.199284141583661e-12,
+      "sum_position_constraint_error_m": 1.249000902703301e-16,
+      "work_energy_max_residual_J": 2.2000027632973485e-08,
+      "end_energy_change_J": 0.945003879992936,
+      "end_net_work_J": 0.9450038894636713,
+      "event_refinement_error_s": 2.5893676092181295e-11
+    },
+    "lowest_search_score_opening": {
+      "full_four_bordered_mass_solve_max_position_error_m": 2.2008870420586746e-13,
+      "sum_position_constraint_error_m": 4.627374872168133e-16,
+      "work_energy_max_residual_J": 1.847332100624044e-07,
+      "end_energy_change_J": -4.699686775187804,
+      "end_net_work_J": -4.699686750322606,
+      "event_refinement_error_s": 2.786215702599293e-12
+    },
+    "lowest_search_score_closing": {
+      "full_four_bordered_mass_solve_max_position_error_m": 1.7766794979667822e-12,
+      "sum_position_constraint_error_m": 3.885780586188048e-16,
+      "work_energy_max_residual_J": 1.8509774601938034e-07,
+      "end_energy_change_J": 4.6138531608112645,
+      "end_net_work_J": 4.613853102577258,
+      "event_refinement_error_s": 1.3066825399477011e-11
+    }
+  },
+  "cable_boundary": "Static normalthreshold plus returnforce screen only; no terminal/routing qualification. Actual rope limit unknown. Asymmetric returnforces can leave nonzeroXY normal resultant for a centered box.",
+  "one_second_qualification": false,
+  "manufacturing_release": false
+}

@@ -1,0 +1,195 @@
+{
+  "coordinates": "Hinge-relative +X radial,+Y tangent,+Z front; rotation about -Y. FORM02 alone translated by -3.5mmZ; carrier manifest is already hinge-relative.",
+  "canonical_right_models": {
+    "upper": {
+      "mass_kg": 0.12520182836667648,
+      "COM_hinge_m": [
+        0.04487886054388792,
+        0.0027150871245631173,
+        -0.00077025411868123
+      ],
+      "inertia_COM_hinge_axes_kg_m2": [
+        [
+          2.4832281419717444e-05,
+          1.4186270561691559e-05,
+          -6.882789497416637e-06
+        ],
+        [
+          1.4186270561691559e-05,
+          0.00028894378262900934,
+          7.702775395632915e-07
+        ],
+        [
+          -6.882789497416637e-06,
+          7.702775395632915e-07,
+          0.0003100715201826035
+        ]
+      ],
+      "I_hinge_y_kg_m2": 0.0005411885842229139
+    },
+    "lower": {
+      "mass_kg": 0.10023978763490897,
+      "COM_hinge_m": [
+        0.025689671446216207,
+        0.004311567237761758,
+        -0.0011520426482012867
+      ],
+      "inertia_COM_hinge_axes_kg_m2": [
+        [
+          1.9583938058102175e-05,
+          9.996238248746212e-06,
+          -3.161603973738723e-06
+        ],
+        [
+          9.996238248746212e-06,
+          8.743119151066166e-05,
+          4.66424079999148e-07
+        ],
+        [
+          -3.161603973738723e-06,
+          4.66424079999148e-07,
+          0.00010390910533085089
+        ]
+      ],
+      "I_hinge_y_kg_m2": 0.00015371840194539836
+    }
+  },
+  "left_petal_mirrored_but_internal_C4_not_mirrored_models": {
+    "upper": {
+      "mass_kg": 0.12520182836667648,
+      "COM_hinge_m": [
+        0.04487886054388792,
+        0.0036015308175474897,
+        -0.00077025411868123
+      ],
+      "inertia_COM_hinge_axes_kg_m2": [
+        [
+          2.413123554989698e-05,
+          1.9321626113209788e-05,
+          -6.882789497416637e-06
+        ],
+        [
+          1.9321626113209788e-05,
+          0.00028894378262900934,
+          6.052070920379896e-07
+        ],
+        [
+          -6.882789497416637e-06,
+          6.052070920379896e-07,
+          0.00030937047431278306
+        ]
+      ],
+      "I_hinge_y_kg_m2": 0.0005411885842229139
+    },
+    "lower": {
+      "mass_kg": 0.10023978763490897,
+      "COM_hinge_m": [
+        0.025689671446216207,
+        0.0035780356245909114,
+        -0.0011520426482012867
+      ],
+      "inertia_COM_hinge_axes_kg_m2": [
+        [
+          2.0164053086124864e-05,
+          8.335847634568113e-06,
+          -3.161603973738723e-06
+        ],
+        [
+          8.335847634568113e-06,
+          8.743119151066167e-05,
+          6.071222853781784e-07
+        ],
+        [
+          -3.161603973738723e-06,
+          6.071222853781784e-07,
+          0.00010448922035887359
+        ]
+      ],
+      "I_hinge_y_kg_m2": 0.0001537184019453984
+    }
+  },
+  "carrier_only_translation_each_kg": 0.05958447258593929,
+  "rotor_hardware_each_kg": 0.05374395904837327,
+  "moving_known_mass_four_branches_kg": 0.6892211223469281,
+  "fixed_guide_mass_four_kg": 0.11545981465839264,
+  "sum_matches_CARRIER01_mass_kg": 0.8046809370011618,
+  "geometry_checks": [
+    {
+      "kind": "upper",
+      "individual_piece_FD_H_max_error_kg": 1.3414682697998614e-09,
+      "FD_Hprime_max_error_kg_m": 2.486012817826122e-07,
+      "individual_piece_FD_gravity_max_error_N": 5.34248241999824e-10
+    },
+    {
+      "kind": "lower",
+      "individual_piece_FD_H_max_error_kg": 3.994662378659086e-10,
+      "FD_Hprime_max_error_kg_m": 7.54878328734776e-08,
+      "individual_piece_FD_gravity_max_error_N": 2.451506517318208e-10
+    }
+  ],
+  "source_STEP_hashes_match": {
+    "parts/rotor_split_trunnion_cradle.step": true,
+    "parts/radial_carrier_foot.step": true,
+    "parts/bearing_pedestal_negative.step": true,
+    "parts/outer_cap_negative.step": true,
+    "parts/SKF_607_8_2Z_negative.step": true,
+    "parts/cap_M3x6_negative_0.step": true,
+    "parts/cap_M3x6_negative_10.step": true,
+    "parts/foot_M3x12_negative_24.step": true,
+    "parts/foot_M3_nut_negative_24.step": true,
+    "parts/foot_M3x12_negative_31.step": true,
+    "parts/foot_M3_nut_negative_31.step": true,
+    "parts/bearing_pedestal_positive.step": true,
+    "parts/outer_cap_positive.step": true,
+    "parts/SKF_607_8_2Z_positive.step": true,
+    "parts/cap_M3x6_positive_0.step": true,
+    "parts/cap_M3x6_positive_10.step": true,
+    "parts/foot_M3x12_positive_24.step": true,
+    "parts/foot_M3_nut_positive_24.step": true,
+    "parts/foot_M3x12_positive_31.step": true,
+    "parts/foot_M3_nut_positive_31.step": true,
+    "parts/detachable_cam_crank.step": true,
+    "parts/custom_D3_crosspin.step": true,
+    "parts/positive_inner_ring_spacer.step": true,
+    "parts/negative_inner_ring_end_washer.step": true,
+    "parts/negative_end_M3x8.step": true,
+    "parts/IKO_CFS4.step": true,
+    "parts/IKO_CFS4_supplied_nut.step": true,
+    "parts/root_NBK_SSHS_M3_16_FT_7_-4.5.step": true,
+    "parts/root_Wurth_51493_7_-4.5.step": true,
+    "parts/root_Wurth_031093_7_-4.5.step": true,
+    "parts/root_NBK_SSHS_M3_16_FT_7_4.5.step": true,
+    "parts/root_Wurth_51493_7_4.5.step": true,
+    "parts/root_Wurth_031093_7_4.5.step": true,
+    "parts/root_NBK_SSHS_M3_16_FT_17_-4.5.step": true,
+    "parts/root_Wurth_51493_17_-4.5.step": true,
+    "parts/root_Wurth_031093_17_-4.5.step": true,
+    "parts/root_NBK_SSHS_M3_16_FT_17_4.5.step": true,
+    "parts/root_Wurth_51493_17_4.5.step": true,
+    "parts/root_Wurth_031093_17_4.5.step": true,
+    "parts/fixed_fold_guide.step": true
+  },
+  "uniform_envelope_proxy_rotor_parts": [
+    "negative_end_M3x8",
+    "IKO_CFS4",
+    "IKO_CFS4_supplied_nut",
+    "root_NBK_SSHS_M3_16_FT_7_-4.5",
+    "root_Wurth_51493_7_-4.5",
+    "root_Wurth_031093_7_-4.5",
+    "root_NBK_SSHS_M3_16_FT_7_4.5",
+    "root_Wurth_51493_7_4.5",
+    "root_Wurth_031093_7_4.5",
+    "root_NBK_SSHS_M3_16_FT_17_-4.5",
+    "root_Wurth_51493_17_-4.5",
+    "root_Wurth_031093_17_-4.5",
+    "root_NBK_SSHS_M3_16_FT_17_4.5",
+    "root_Wurth_51493_17_4.5",
+    "root_Wurth_031093_17_4.5"
+  ],
+  "unidentified_spin": {
+    "CFS_baseline_central_J_kg_m2": 2.666666666666684e-08,
+    "CFS_total_mass_radius_bound_J_kg_m2": 6.4e-08,
+    "bearing_corotating_inner_ring_only_bound_J_kg_m2": 1.2996e-06,
+    "warning": "The co-rotating-bearing sensitivity does not bound ball/cage independent spin. CFS bounds assume all4g lies within4mm of its own axis. No actual ring/stud split measured."
+  }
+}
