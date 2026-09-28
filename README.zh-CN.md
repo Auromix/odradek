@@ -4,6 +4,8 @@
 
 [English](README.md) · [设计简报](docs/design-brief.md) · [方案比较](docs/concept-comparison.md) · [昵称候选](docs/nickname-candidates.md) · [路线图](docs/roadmap.md)
 
+**2026-09-28保存点：** 先保存当前成果和草案，不再扩展复杂度。末端优先单输入正向同步，允许一对相对灯片主夹持；多级差动只保留作比较。[保存范围与未完成状态](docs/engineering/checkpoint-2026-09-28.md)。
+
 Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面／固定底座机械臂项目，灵感来自《死亡搁浅》中的探测器，面向实际操作任务。本体与末端的机构、外观和行为同步设计。
 
 **当前为工程研究阶段，末端正按已确认的“一秒空载完整往返”重选驱动。** 灯片面本身就是夹持面，正常夹持是主功能。用户已确认2kg净工件另计头重、约700mm臂展、GMSL／GMSL2、EtherCAT、内走线与外置计算。P16无法满足新节拍，其CAD与电路保留为历史分支；现有7＋4总装不代表已实现新速度要求。见[最新设计输入](docs/engineering/fast-grasp-requirements01.md)。尚无制造发布版或2kg实测样机。

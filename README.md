@@ -4,6 +4,8 @@
 
 [中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Comparison](docs/concept-comparison.md) · [Nickname candidates](docs/nickname-candidates.md) · [Roadmap](docs/roadmap.md)
 
+**2026-09-28 checkpoint:** preserve the current research and drafts without adding complexity. The preferred head uses positive single-input synchronization and permits one opposed petal pair to carry the grasp. Passive differential studies remain comparisons. [Saved scope and draft status](docs/engineering/checkpoint-2026-09-28.md).
+
 Odradek is an independent Auromix robotics project sharing design material for noncommercial research and hobby use inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
 
 **Stage: engineering research; the head drive is being redesigned for a confirmed ≤1-second empty closed–open–closed cycle.** Gripping is the primary function and the illuminated petal face is the contact face. The user has confirmed a 2 kg net object plus head mass, approximately 700 mm reach, EtherCAT, GMSL/GMSL2 cameras, internal cabling and external computing. P16 actuators cannot meet the new cycle; their CAD and electrical branch remain historical references. The existing 7+4 assembly does not demonstrate the new speed requirement. See [current requirements](docs/engineering/fast-grasp-requirements01.md). No manufacturing release or tested 2 kg prototype exists.
