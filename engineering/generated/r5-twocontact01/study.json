@@ -1,0 +1,383 @@
+{
+  "revision": "R5-TWOCONTACT01",
+  "script_sha256": "9728eddadbef1b016dac9bb04a891cf76cc2627684bec57c50a9ecc122468b80",
+  "input_hashes": {
+    "engineering/r5_passive02.py": "0236980c86aae20674dd359305e25a1c821c63dec9fe41bdbf49f52b6e21ddd8",
+    "engineering/generated/r5-carrier01/parts-manifest.json": "cae92c4d08cefd00f5231a2938a715e91c976a719119deb33d3dbc4fd070f130",
+    "engineering/generated/r5-petal-form02/study.json": "6198b33a7e2e44d206f98062d2e2d099d94d4f6d3f4945ee5e0d3eae832164f4",
+    "engineering/electronics/r5-cam-hardware01/budget.json": "1fe1072de36ef47443d5010a36a22366df58f13b1a93b46e7d7d3d9a2e4769f0"
+  },
+  "decision": "user accepts one opposed primary pair; positive synchronization priority",
+  "nominal_gravity": "head minus Z; workpiece factor 2, known rotor gravity factor 1",
+  "contact_allocation": "equal loads in one opposed upper/lower pair, centered resultant at local x65 y0",
+  "nominal_cases": [
+    {
+      "kind": "upper",
+      "hand": "left",
+      "contacts": 2,
+      "assumed_mu": 0.4,
+      "contact_x_mm": 65.0,
+      "mass_rotor_known_kg": 0.12520182836667648,
+      "normal_N": 49.033249999999995,
+      "friction_N": 19.6133,
+      "cam_N": 542.779969340368,
+      "hinge_torque_Nm": 3.0704271761024047,
+      "bearing_near_N": 803.985101782335,
+      "bearing_far_N": 282.73729691731666,
+      "SKF607_8_static_ratio": 1.1816139352507504,
+      "CFS4_static_ratio": 2.063451238558266,
+      "CFS4_structural_limit_ratio": 1.6931354359241486,
+      "catalogue_flat40HRC_track_ratio": 1.4720513746500488,
+      "planar4mm_width_track_proxy_ratio": 1.177641099720039,
+      "force_residual_N": 5.684341886080802e-14,
+      "moment_residual_Nm": 1.7763568394002505e-15
+    },
+    {
+      "kind": "upper",
+      "hand": "right",
+      "contacts": 2,
+      "assumed_mu": 0.4,
+      "contact_x_mm": 65.0,
+      "mass_rotor_known_kg": 0.12520182836667648,
+      "normal_N": 49.033249999999995,
+      "friction_N": 19.6133,
+      "cam_N": 542.779969340368,
+      "hinge_torque_Nm": 3.0704271761024047,
+      "bearing_near_N": 804.0190979934208,
+      "bearing_far_N": 282.7711808522554,
+      "SKF607_8_static_ratio": 1.181563973257478,
+      "CFS4_static_ratio": 2.063451238558266,
+      "CFS4_structural_limit_ratio": 1.6931354359241486,
+      "catalogue_flat40HRC_track_ratio": 1.4720513746500488,
+      "planar4mm_width_track_proxy_ratio": 1.177641099720039,
+      "force_residual_N": 5.684341886080802e-14,
+      "moment_residual_Nm": 8.881784197001252e-16
+    },
+    {
+      "kind": "lower",
+      "hand": "left",
+      "contacts": 2,
+      "assumed_mu": 0.4,
+      "contact_x_mm": 65.0,
+      "mass_rotor_known_kg": 0.10023978763490897,
+      "normal_N": 49.033249999999995,
+      "friction_N": 19.6133,
+      "cam_N": 542.8129825375786,
+      "hinge_torque_Nm": 3.0706139269473343,
+      "bearing_near_N": 804.1851982924131,
+      "bearing_far_N": 282.6599717385367,
+      "SKF607_8_static_ratio": 1.1813199273217243,
+      "CFS4_static_ratio": 2.063325742070775,
+      "CFS4_structural_limit_ratio": 1.6930324615741448,
+      "catalogue_flat40HRC_track_ratio": 1.4719618463522761,
+      "planar4mm_width_track_proxy_ratio": 1.177569477081821,
+      "force_residual_N": 0.0,
+      "moment_residual_Nm": 8.881784197001252e-16
+    },
+    {
+      "kind": "lower",
+      "hand": "right",
+      "contacts": 2,
+      "assumed_mu": 0.4,
+      "contact_x_mm": 65.0,
+      "mass_rotor_known_kg": 0.10023978763490897,
+      "normal_N": 49.033249999999995,
+      "friction_N": 19.6133,
+      "cam_N": 542.8129825375786,
+      "hinge_torque_Nm": 3.0706139269473343,
+      "bearing_near_N": 804.162675213864,
+      "bearing_far_N": 282.63752311282104,
+      "SKF607_8_static_ratio": 1.1813530138629615,
+      "CFS4_static_ratio": 2.063325742070775,
+      "CFS4_structural_limit_ratio": 1.6930324615741448,
+      "catalogue_flat40HRC_track_ratio": 1.4719618463522761,
+      "planar4mm_width_track_proxy_ratio": 1.177569477081821,
+      "force_residual_N": 0.0,
+      "moment_residual_Nm": 3.3480163086352377e-16
+    }
+  ],
+  "scenario_count": 96,
+  "box_examples": [
+    {
+      "box_dimensions_along_grip_axes_mm": [
+        50,
+        50
+      ],
+      "common_R_mm": 31.0,
+      "active_face_separation_mm": 50,
+      "first_pair": "larger dimension; both if square",
+      "smaller_side_gap_each_mm": 0.0,
+      "centered_aligned_only": true
+    },
+    {
+      "box_dimensions_along_grip_axes_mm": [
+        80,
+        80
+      ],
+      "common_R_mm": 46.0,
+      "active_face_separation_mm": 80,
+      "first_pair": "larger dimension; both if square",
+      "smaller_side_gap_each_mm": 0.0,
+      "centered_aligned_only": true
+    },
+    {
+      "box_dimensions_along_grip_axes_mm": [
+        120,
+        120
+      ],
+      "common_R_mm": 66.0,
+      "active_face_separation_mm": 120,
+      "first_pair": "larger dimension; both if square",
+      "smaller_side_gap_each_mm": 0.0,
+      "centered_aligned_only": true
+    },
+    {
+      "box_dimensions_along_grip_axes_mm": [
+        50,
+        120
+      ],
+      "common_R_mm": 66.0,
+      "active_face_separation_mm": 120,
+      "first_pair": "larger dimension; both if square",
+      "smaller_side_gap_each_mm": 35.0,
+      "centered_aligned_only": true
+    },
+    {
+      "box_dimensions_along_grip_axes_mm": [
+        80,
+        120
+      ],
+      "common_R_mm": 66.0,
+      "active_face_separation_mm": 120,
+      "first_pair": "larger dimension; both if square",
+      "smaller_side_gap_each_mm": 20.0,
+      "centered_aligned_only": true
+    },
+    {
+      "box_dimensions_along_grip_axes_mm": [
+        50,
+        80
+      ],
+      "common_R_mm": 46.0,
+      "active_face_separation_mm": 80,
+      "first_pair": "larger dimension; both if square",
+      "smaller_side_gap_each_mm": 15.0,
+      "centered_aligned_only": true
+    }
+  ],
+  "point_contact_rank": 5,
+  "point_contact_singular_values": [
+    1.4142135623730951,
+    1.4142135623730951,
+    1.414213562373095,
+    0.05656854249492388,
+    0.05656854249492379,
+    3.622125885904189e-46
+  ],
+  "point_contact_twist_residual": 0.0,
+  "finite_patch_model": [
+    {
+      "assumed_patch_radius_mm": 5.0,
+      "eccentricity_about_pair_axis_mm": 0.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.0,
+      "sufficient_normal_each_N": 49.033249999999995,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 5.0,
+      "eccentricity_about_pair_axis_mm": 5.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.19613299999999997,
+      "sufficient_normal_each_N": 122.58312499999998,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 5.0,
+      "eccentricity_about_pair_axis_mm": 10.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.39226599999999995,
+      "sufficient_normal_each_N": 196.13299999999995,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 5.0,
+      "eccentricity_about_pair_axis_mm": 20.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.7845319999999999,
+      "sufficient_normal_each_N": 343.23274999999995,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 8.0,
+      "eccentricity_about_pair_axis_mm": 0.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.0,
+      "sufficient_normal_each_N": 49.033249999999995,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 8.0,
+      "eccentricity_about_pair_axis_mm": 5.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.19613299999999997,
+      "sufficient_normal_each_N": 95.00192187499998,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 8.0,
+      "eccentricity_about_pair_axis_mm": 10.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.39226599999999995,
+      "sufficient_normal_each_N": 140.97059374999995,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 8.0,
+      "eccentricity_about_pair_axis_mm": 20.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.7845319999999999,
+      "sufficient_normal_each_N": 232.90793749999995,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 10.0,
+      "eccentricity_about_pair_axis_mm": 0.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.0,
+      "sufficient_normal_each_N": 49.033249999999995,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 10.0,
+      "eccentricity_about_pair_axis_mm": 5.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.19613299999999997,
+      "sufficient_normal_each_N": 85.80818749999999,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 10.0,
+      "eccentricity_about_pair_axis_mm": 10.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.39226599999999995,
+      "sufficient_normal_each_N": 122.58312499999998,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 10.0,
+      "eccentricity_about_pair_axis_mm": 20.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.7845319999999999,
+      "sufficient_normal_each_N": 196.13299999999995,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 15.0,
+      "eccentricity_about_pair_axis_mm": 0.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.0,
+      "sufficient_normal_each_N": 49.033249999999995,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 15.0,
+      "eccentricity_about_pair_axis_mm": 5.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.19613299999999997,
+      "sufficient_normal_each_N": 73.549875,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 15.0,
+      "eccentricity_about_pair_axis_mm": 10.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.39226599999999995,
+      "sufficient_normal_each_N": 98.06649999999999,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    },
+    {
+      "assumed_patch_radius_mm": 15.0,
+      "eccentricity_about_pair_axis_mm": 20.0,
+      "design_transverse_force_each_N": 19.6133,
+      "design_twist_Nm": 0.7845319999999999,
+      "sufficient_normal_each_N": 147.09975,
+      "mu": 0.4,
+      "scope": "uniform circular pressure and full stick/slip friction bound; assumed patch, not a real bottle or measured skin"
+    }
+  ],
+  "illustrative_patch_containment": [
+    {
+      "kind": "upper",
+      "radius_mm": 8.0,
+      "center_local_mm": [
+        65,
+        0
+      ],
+      "outside_nominal_skin_mm3": 0,
+      "contained": true,
+      "scope": "geometry only; does not infer pressure patch"
+    },
+    {
+      "kind": "upper",
+      "radius_mm": 10.0,
+      "center_local_mm": [
+        65,
+        0
+      ],
+      "outside_nominal_skin_mm3": 0,
+      "contained": true,
+      "scope": "geometry only; does not infer pressure patch"
+    },
+    {
+      "kind": "lower",
+      "radius_mm": 8.0,
+      "center_local_mm": [
+        65,
+        0
+      ],
+      "outside_nominal_skin_mm3": 0,
+      "contained": true,
+      "scope": "geometry only; does not infer pressure patch"
+    },
+    {
+      "kind": "lower",
+      "radius_mm": 10.0,
+      "center_local_mm": [
+        65,
+        0
+      ],
+      "outside_nominal_skin_mm3": 0.49406187164701054,
+      "contained": false,
+      "scope": "geometry only; does not infer pressure patch"
+    }
+  ],
+  "polar_mean_radius_ratio": 0.6666666666625,
+  "manufacturing_release": false,
+  "exclusions": [
+    "finite loaded contact area and skin pressure",
+    "cylinder contact line/patch and friction measurements",
+    "dynamic motion while gripping",
+    "other gravity directions",
+    "rail or drive forces with friction",
+    "actual guide strength/contact stress",
+    "head carrier deformation",
+    "complete closed state",
+    "one-second hardware qualification"
+  ]
+}
