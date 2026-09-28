@@ -1,0 +1,131 @@
+{
+  "revision": "FAST-DRIVE01-single-central-drive",
+  "license": "CC-BY-NC-4.0",
+  "attribution": "Odradek — Auromix contributors",
+  "status": "conditional actuator preselection; no production or 2kg grip rating",
+  "requirements": {
+    "active_motors": 1,
+    "mechanically_coupled_petals": 4,
+    "empty_roundtrip_max_s": 1,
+    "object_mass_net_kg": 2,
+    "head_mass_added_separately": true,
+    "head_mass_design_aspiration_kg_not_user_requirement": 1.5
+  },
+  "source_hashes": {
+    "engineering/generated/fast-finger-kin01/finger-inputs.csv": "ca5f3fa109c5bc7758b877e2b7f8af781052ac355eb5cfe3b4fa66ac66eb0a77",
+    "engineering/generated/fast-finger-kin01/single-master-contact.csv": "25deb9f3fb85c17110d79d5b1018c3fac8eec2af465177c1ba5727233cad2891",
+    "engineering/generated/head-mass04/mass-properties.json": "0be449070516295a490c7a36a0cc91bd172349789960588ffe887be24545b588",
+    "docs/engineering/sources/fast-drive01.json": "d5ebbed0e6658cdc4de2e14549c8d38111d14cf0dcda966be9e0ef5c9c601a88"
+  },
+  "script_sha256": "07e88f342d2ee741fe002ef32760877c9a8d3340a2fed1abffb45ee18e105a46",
+  "motor_rotor_kg_m2": 4.8e-06,
+  "gear_input_with_pinion_max_kg_m2": 1.96e-07,
+  "encoder_magnet_kg_m2": 8e-09,
+  "finger_only_mass_kg_historical_geometry": 0.6392343377556118,
+  "finger_generalized_inertia_Joule_second2": 0.0034996190769657235,
+  "single_master": {
+    "stroke_deg": 180,
+    "ratio_exact": 50.0,
+    "upper_ratio": 0.6055555555555555,
+    "lower_ratio": 0.6777777777777778,
+    "peak_output_rpm": 112.5,
+    "peak_motor_rpm": 5625.0,
+    "peak_master_accel_rad_s2": 72.55197456936872,
+    "finger_referred_inertia_kg_m2": 0.0003545855471754727,
+    "motor_gear_encoder_referred_inertia_kg_m2": 0.01251,
+    "finger_gravity_absolute_sum_bound_Nm": 0.07390458208206213,
+    "peak_kinetic_energy_known_components_J": 0.892746352508861,
+    "energy_note": "energy in moving components at one midpoint, not guaranteed DC bus returned energy; do not multiply by four motors",
+    "empty_cases": [
+      {
+        "assumed_dynamic_gear_efficiency": 0.5,
+        "motor_abs_torque_bound_peak_Nm": 0.026677160300461,
+        "motor_abs_torque_bound_sample_RMS_Nm": 0.02102534452767001,
+        "motor_torque_over_kt_A_not_DC_bus_or_driver_RMS": 0.9493651352477225,
+        "output_torque_bound_peak_Nm": 0.09963046339708626,
+        "output_power_bound_peak_W": 0.9436855117775135,
+        "omissions": "new linkage inertia, preload, bearing/cable friction, seals, motor-controller losses"
+      },
+      {
+        "assumed_dynamic_gear_efficiency": 0.65,
+        "motor_abs_torque_bound_peak_Nm": 0.025759906143905026,
+        "motor_abs_torque_bound_sample_RMS_Nm": 0.02020265138648666,
+        "motor_torque_over_kt_A_not_DC_bus_or_driver_RMS": 0.9167226385731326,
+        "output_torque_bound_peak_Nm": 0.09963046339708626,
+        "output_power_bound_peak_W": 0.9436855117775135,
+        "omissions": "new linkage inertia, preload, bearing/cable friction, seals, motor-controller losses"
+      },
+      {
+        "assumed_dynamic_gear_efficiency": 0.77,
+        "motor_abs_torque_bound_peak_Nm": 0.025283434636781864,
+        "motor_abs_torque_bound_sample_RMS_Nm": 0.01977583694555611,
+        "motor_torque_over_kt_A_not_DC_bus_or_driver_RMS": 0.8997663571808493,
+        "output_torque_bound_peak_Nm": 0.09963046339708626,
+        "output_power_bound_peak_W": 0.9436855117775135,
+        "omissions": "new linkage inertia, preload, bearing/cable friction, seals, motor-controller losses"
+      }
+    ],
+    "contact_example": {
+      "assumed_mu": 0.4,
+      "four_equal_contacts_object_mass_kg": 2,
+      "vertical_load_multiplier": 2,
+      "normal_arm_mm": 60,
+      "tangent_arm_mm": 30,
+      "per_finger_normal_N": 24.516624999999998,
+      "per_finger_tangent_N": 9.80665,
+      "normal_component_master_torque_Nm": 3.775560249999999,
+      "same_sign_contact_plus_finger_gravity_bound_Nm": 4.6045768820820605,
+      "gear_7p4Nm_continuous_limit_met_for_this_assumption": true,
+      "ideal_lossless_motor_static_torque_Nm": 0.09209153764164121,
+      "coefficient_needed_for_0p140Nm_motor_static_budget": 0.6577966974402942,
+      "coefficient_needed_for_0p158Nm_motor_static_budget": 0.5828578331749443,
+      "geared_14W_continuous_speed_ceiling_rpm_at_torque": 29.034188291529002,
+      "note": "coefficient is REQUIRED measured static transfer ratio normalized by G, NOT claimed static efficiency; 0.140/0.158 not qualified installed ratings",
+      "assumed_static_transfer_0.50_motor_Nm": 0.18418307528328243,
+      "assumed_static_transfer_0.65_motor_Nm": 0.141679288679448,
+      "assumed_static_transfer_0.77_motor_Nm": 0.11959939953459897
+    }
+  },
+  "linear_alternative": {
+    "assumed_mu": 0.4,
+    "normal_arm_mm": 60,
+    "tangent_arm_mm": 30,
+    "slider_stroke_mm": 50,
+    "lead_mm": 2.5,
+    "peak_linear_speed_mm_s": 187.5,
+    "direct_motor_peak_rpm": 4500.0,
+    "contact_plus_finger_gravity_axial_N": 289.3140981127679,
+    "ideal_lossless_motor_torque_Nm": 0.1151144220520515,
+    "required_static_transfer_for_0p140Nm_motor": 0.8222458718003677,
+    "static_transfer_unverified": true
+  },
+  "head_mass_lower_bounds_kg": {
+    "motor_gear_encoder": 0.5685,
+    "plus_historical_fingers": 1.2077343377556118,
+    "plus_MC5010_in_head": 1.4777343377556118,
+    "AK70_plus_historical_fingers": 1.2602343377556118,
+    "direct3274_encoder_plus_historical_fingers_before_screw": 0.9777343377556118
+  },
+  "network": {
+    "native_ET_servo_plus_7_RH_plus_HEAD_IO_stations": 9,
+    "CAN_bridge_single_servo_plus_7_RH_plus_HEAD_IO_stations": 8,
+    "old_12_station_four_servo_scheme": "superseded by single-master requirement"
+  },
+  "checks_passed": [
+    "quintic endpoints and analytic extrema",
+    "gcm2/gmm2 conversion",
+    "virtual work",
+    "energy coordinate invariance",
+    "5625rpm selected speed",
+    "independent FAST-KIN normal-contact comparison"
+  ],
+  "excluded_from_qualification": [
+    "actual light-face contact geometry/pressure and friction",
+    "four-way compliance and linkage synthesis",
+    "zero-speed thermal performance in enclosure",
+    "joint brake and power-off force retention",
+    "complete assembly PN/CAD/tolerances",
+    "all new moving mass and friction",
+    "regenerative energy path"
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "revision": "FAST-DRIVE01-single-central-drive",
+  "date": "2026-09-27",
+  "license": "CC-BY-NC-4.0",
+  "third_party_materials": "Manufacturer PDFs/HTML remain local evidence; not redistributed or relicensed. JSON stores factual observations and source links.",
+  "requirements": {
+    "motor_count": 1,
+    "mechanically_mimicked_petals": 4,
+    "luminous_face_is_grip_face": true,
+    "empty_closed_open_closed_s_max": 1,
+    "payload_net_kg": 2,
+    "head_mass_is_additional": true,
+    "approx_arm_reach_mm_user_confirmed": 700
+  },
+  "sources": [
+    {
+      "id": "MOTOR3274",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_3274_BP4_DFF.pdf",
+      "local_archive": "work/fast-drive01/3274.pdf",
+      "sha256": "1b8e49bb4e3aabbac116ab53b40e112ecd5b886b375cd6baf881989fa4375f03",
+      "bytes": 306081,
+      "pages_1_based": [
+        1,
+        2
+      ],
+      "edition": "2026-07-28",
+      "used_for": "24V variant, thermal torque-speed chart, rotor J, dimensions, motor/controller combinations"
+    },
+    {
+      "id": "MOTOR3274_ORDER",
+      "url": "https://eshop.faulhaber.com/en/3274G024BP4/3274G024BP4",
+      "local_archive": "work/fast-drive01/3274page.html",
+      "sha256": "d8d1b290252f55124a8748d4d66a9898e7c1e3dedad5be519bb4c87baa5dd89c",
+      "bytes": 882865,
+      "pages_1_based": [],
+      "edition": "retrieved 2026-09-27",
+      "used_for": "Exact model3274G024BP4 and article3274.00001; assembly option code not inferred"
+    },
+    {
+      "id": "GEAR32HT",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_32GPT_HT_FCH.pdf",
+      "local_archive": "work/fast-drive01/32GPTHT.pdf",
+      "sha256": "5397ef9b7af9af21fe279467ee54a7c21679ac83a022d5cd60ab3afdb4687fa2",
+      "bytes": 301716,
+      "pages_1_based": [
+        1,
+        2
+      ],
+      "edition": "2026-07-28",
+      "used_for": "Three-stage limits/curve; assembly length; 230g excludes motor and flange"
+    },
+    {
+      "id": "GEAR50_ORDER",
+      "url": "https://eshop.faulhaber.com/en/32GPT-HT-50-1/32GPT-HT-50-1",
+      "local_archive": "work/fast-drive01/32GPT50page.html",
+      "sha256": "88c01966fbe6d6961ce86f95c7f5e8464f314c2b9fe02b618adc468cdef1c60e",
+      "bytes": 1514877,
+      "pages_1_based": [],
+      "edition": "retrieved 2026-09-27",
+      "used_for": "50.0 exact ratio, current purchasable request model; lead time on request"
+    },
+    {
+      "id": "ENCODER",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_IE3-1024L_DFF.pdf",
+      "local_archive": "work/fast-drive01/IE3L.pdf",
+      "sha256": "50ee372e4e9bf730cf92e844b8559da6b34f45d46b9993eeee6f75064195a9eb",
+      "bytes": 635044,
+      "pages_1_based": [
+        1,
+        3
+      ],
+      "edition": "2026-07-28",
+      "used_for": "IE3-1024L line-driver encoder, added body length/mass/magnet inertia; not absolute finger sensing"
+    },
+    {
+      "id": "DRIVER5010",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_MC5010S_DFF.pdf",
+      "local_archive": "work/fast-drive01/MC5010.pdf",
+      "sha256": "fe37c5d67bb30d3f31e38f8e46e485f5ae676452ddb83645ef53e901b71b210e",
+      "bytes": 337862,
+      "pages_1_based": [
+        1,
+        2
+      ],
+      "edition": "2026-07-28",
+      "used_for": "MC5010SET native EtherCAT, current ratings, thermal/physical envelope, connections"
+    },
+    {
+      "id": "DRIVER5010_ORDER",
+      "url": "https://eshop.faulhaber.com/en/MC-5010-S-ET/MC-5010-S-ET",
+      "local_archive": "work/fast-drive01/MC5010page.html",
+      "sha256": "9a7f2144cf140267ec8ae33f1462c4b5f69d128cd8958090767f15fa15761ef4",
+      "bytes": 775950,
+      "pages_1_based": [],
+      "edition": "retrieved 2026-09-27",
+      "used_for": "Specific ET version exists in manufacturer shop"
+    },
+    {
+      "id": "AK70_PRODUCT",
+      "url": "https://www.cubemars.com/product/ak70-10-kv100-robotic-actuator.html",
+      "local_archive": "work/fast-drive01/AK70.html",
+      "sha256": "0f57d25f04b3d7fe51e2066792412d85b528f1f53c722075fb92eedf45edb65b",
+      "bytes": 158205,
+      "pages_1_based": [],
+      "edition": "retrieved 2026-09-27",
+      "used_for": "AK70-10 KV100 driver=yes; table621g,8.3Nm,148/310rpm,24/48V,one14bitencoder"
+    },
+    {
+      "id": "AK70_DRAWING",
+      "url": "https://www.cubemars.com/data/cms/202602/ak70-10-robotic-actuator-2d-drawing.pdf",
+      "local_archive": "work/fast-drive01/AKdrawing.pdf",
+      "sha256": "d98ef17b176bfad0c663ff437bfd391787baa0e586dd49da34aafa8db4476056",
+      "bytes": 68012,
+      "pages_1_based": [
+        1
+      ],
+      "edition": "download path 2026-02",
+      "used_for": "Nominal Ø89×50.25; actual toleranced connector envelope not provided"
+    },
+    {
+      "id": "AK_DRIVER",
+      "url": "https://www.cubemars.com/data/cms/202605/ak-series-driver-manual-v1-0-18-for-ak-2-0-robotic-actuator.pdf",
+      "local_archive": "work/fast-drive01/AKmanual.pdf",
+      "sha256": "4c82e46a5d286010b0526b558e734a0695a1cede6cdaba56e217971b6db24bef",
+      "bytes": 2009302,
+      "pages_1_based": [
+        8,
+        9
+      ],
+      "edition": "V1.0.18",
+      "used_for": "CAN/UART; V2.1 small board limits are board limits, not motor continuous/static rating"
+    },
+    {
+      "id": "SMALLER2264",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_2264_BP4_DFF.pdf",
+      "local_archive": "work/fast-drive01/2264.pdf",
+      "sha256": "aa4003a4ee3bea9c2220750970075819d02452c91e5ba0f99a80b1e9a4f622e2",
+      "bytes": 298582,
+      "pages_1_based": [
+        1,
+        2
+      ],
+      "edition": "2026-07-28",
+      "used_for": "140g59mNm motor, limited spare torque at single-master high grip; not selected"
+    },
+    {
+      "id": "SMALLER_MC3606",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_MC3606B_DFF.pdf",
+      "local_archive": "work/fast-drive01/MC3606.pdf",
+      "sha256": "43d6a96251f5bb11524df82044c225f77e690fe925c0f957f35ea6c22c439dea",
+      "bytes": 396344,
+      "pages_1_based": [
+        1,
+        2
+      ],
+      "edition": "2026-07-28",
+      "used_for": "6A compact board;3274 not in listed compatible motors; not a qualified substitute"
+    },
+    {
+      "id": "AK_MASS_CONFLICT",
+      "url": "https://www.cubemars.com/robotic-power-solution.html",
+      "local_archive": null,
+      "sha256": null,
+      "used_for": "Official overview previously lists521g, current exact-model page621g. Use621 provisional and obtain controlled BOM before mass freeze."
+    },
+    {
+      "id": "AK_CURVE_UNREAD",
+      "url": "https://store.tmotor.com/images/202408/141723615254490269.jpg",
+      "local_archive": null,
+      "sha256": null,
+      "used_for": "Official product-linked load-test image URL found; not visually interpreted, no graph points claimed. Rated8.3Nm/148rpm comes from product parameter table."
+    },
+    {
+      "id": "THOMSON_SCREW",
+      "url": "https://www.thomsonlinear.com/downloads/screws/Miniature_Metric_Ball_Screws_bren.pdf",
+      "pages_1_based": [
+        3,
+        4,
+        5
+      ],
+      "edition": "04/26;20260409KB",
+      "local_archive": null,
+      "sha256": null,
+      "used_for": "Browser text extraction; local direct download HTTP403. SRT0825X280 +KGF-D-0825-RH-M-EE:8mm/2.5mm,2.1kNdynamic2.2kNstatic,nut18mm length,D1g6=16,D6=28. SRT0805X280 +KGF-D-0805-RH-K-KK:8mm/5mm,nut23mm. No source efficiency/maximumrpm established."
+    }
+  ],
+  "candidates": [
+    {
+      "id": "A",
+      "recommendation": "preferred conditional rotary architecture prototype",
+      "motor_model": "3274G024BP4",
+      "motor_article": "3274.00001",
+      "gear_model": "32GPT HT 50:1",
+      "gear_ratio_exact": 50.0,
+      "encoder_model": "IE3-1024 L",
+      "driver_model": "MC 5010 S ET",
+      "quantity": 1,
+      "complete_combination_order_code": null,
+      "motor": {
+        "nominal_V": 24,
+        "no_load_rpm": 8820,
+        "rated_continuous_torque_Nm": 0.158,
+        "rated_speed_rpm": 8420,
+        "rated_current_A": 6.88,
+        "rated_conditions": "22C;Rth2 reduced50%;not continuous zero-speed rating",
+        "zero_speed_chart_insulated_manual_read_Nm": [
+          0.14,
+          0.145
+        ],
+        "zero_speed_chart_status": "approximate visual read of recommended envelope at22C;not a guaranteed part limit or enclosure rating",
+        "rotor_inertia_kg_m2": 4.8e-06,
+        "mass_g": 325,
+        "diameter_nominal_mm": 32,
+        "body_length_nominal_mm": 74,
+        "Kt_Nm_A": 0.0281,
+        "phase_phase_R_ohm": 0.253,
+        "Rth1_Rth2_K_W": [
+          1.1,
+          7.9
+        ],
+        "thermal_time_s": [
+          22,
+          1100
+        ],
+        "motor_max_C": 125,
+        "winding_max_C": 150,
+        "hall": "digital;5V",
+        "axial_at3000rpm_N": 5,
+        "axial_standstill_N": 50
+      },
+      "gear": {
+        "stages": 3,
+        "continuous_torque_max_Nm": 7.4,
+        "intermittent_torque_Nm": 10,
+        "peak_torque_Nm": 14,
+        "continuous_input_max_rpm": 7000,
+        "intermittent_input_max_rpm": 9000,
+        "continuous_output_max_W": 14,
+        "intermittent_output_max_W": 20,
+        "efficiency_max": 0.77,
+        "zero_speed_static_transfer_verified": null,
+        "input_inertia_with_pinion_max_kg_m2": 1.96e-07,
+        "mass_excluding_motor_flange_g": 230,
+        "body_length_mm": [
+          49.0,
+          49.6
+        ],
+        "diameter_mm": [
+          31.9,
+          32.1
+        ],
+        "motor_gear_combination_L1_mm": [
+          126.6,
+          128.2
+        ],
+        "output_extension_mm": [
+          20.7,
+          21.3
+        ],
+        "output_shaft_diameter_mm": [
+          9.978,
+          9.987
+        ],
+        "mount_threads": "6xM3 depth5 onPCD27;95Ncm max per source",
+        "radial_load_at10mm_N": 400,
+        "axial_load_N": 280
+      },
+      "encoder": {
+        "mass_typical_g": 13.5,
+        "rotor_magnet_inertia_kg_m2": 8e-09,
+        "supply_V": [
+          4.5,
+          5.5
+        ],
+        "lines": 1024,
+        "outputs": "A/B/I and differential complements TIA422",
+        "motor_encoder_L1_mm": [
+          90.2,
+          91.4
+        ],
+        "axis": "motor shaft;not absolute finger position"
+      },
+      "geometry": {
+        "assembled_with_encoder_nominal_body_estimate_mm": 144.2,
+        "with_shaft_nominal_length_estimate_mm": 165.2,
+        "assembled_max_dimensions_verified": false,
+        "missing": "combined drawing, flange, coupler, new master shaft, cable exit and strain relief; estimates are not toleranced manufacturing envelopes"
+      },
+      "driver": {
+        "electronic_V": [
+          12,
+          50
+        ],
+        "motor_V": [
+          0,
+          50
+        ],
+        "continuous_output_A": 10,
+        "peak_output_A": 30,
+        "peak_max_duration_s": 3,
+        "mass_g": 270,
+        "drawing_body_max_mm": [
+          115.5,
+          75.5,
+          45
+        ],
+        "mating_connectors_included_in_max": false,
+        "modes": [
+          "PP",
+          "PV",
+          "CSP",
+          "CSV",
+          "CST",
+          "homing"
+        ],
+        "holding_brake_output_support": true,
+        "safety_STO_certified_here": false
+      },
+      "brake": {
+        "selected": null,
+        "power_off_holding_verified": false
+      },
+      "head_drive_mass_lower_bound_g": 568.5
+    },
+    {
+      "id": "B",
+      "recommendation": "integrated lighter-than-A-with-local-driver comparison; zero-speed thermal data missing",
+      "exact_product_model": "AK70-10 KV100",
+      "ordering_option": "Driver Board YES",
+      "quantity": 1,
+      "nominal_V": [
+        24,
+        48
+      ],
+      "rated_torque_Nm": 8.3,
+      "rated_rpm_at24_48": [
+        148,
+        310
+      ],
+      "peak_torque_Nm": 24.8,
+      "rated_current_ADC": 7.2,
+      "peak_current_ADC": 23.2,
+      "ratio": 10,
+      "mass_current_product_g": 621,
+      "mass_conflict_overview_g": 521,
+      "body_nominal_mm": {
+        "diameter": 89,
+        "length": 50.25
+      },
+      "body_tolerance_and_mated_connector_max": null,
+      "encoder": "one14bit inner motor encoder; no outer encoder",
+      "native_protocols": [
+        "CAN",
+        "UART"
+      ],
+      "EtherCAT_native": false,
+      "zero_speed_continuous_hold_Nm": null,
+      "gear_efficiency_verified": null,
+      "backdrive_Nm": 0.48,
+      "brake_selected": null,
+      "power_off_hold_verified": false,
+      "inertia_table_gcm2": 753.4788,
+      "inertia_reference_axis": "not stated; not integrated as rotor J in calculations"
+    },
+    {
+      "id": "C_mechanism",
+      "recommendation": "axial50mm slider alternative to synthesize, not qualified assembly",
+      "motor": "3274G024BP4 +IE3-1024 L +MC5010 S ET, no gearbox",
+      "screw_stock_PN": "SRT0825X280",
+      "ball_nut_PN": "KGF-D-0825-RH-M-EE",
+      "lead_mm": 2.5,
+      "diameter_mm": 8,
+      "nut_body_diameter_g6_mm": 16,
+      "nut_flange_nominal_D6_mm": 28,
+      "nut_nominal_length_mm": 18,
+      "catalog_dynamic_kN": 2.1,
+      "catalog_static_kN": 2.2,
+      "screw_mass_kg_per_m": 0.39,
+      "screw_stock_max_length_mm": 280,
+      "complete_end_machined_assembly_PN": null,
+      "efficiency_verified": null,
+      "max_allowable_rpm_verified": null,
+      "off_power_hold": false,
+      "required_additions": [
+        "independent axial bearings",
+        "anti-rotation linear guide",
+        "coupler",
+        "actual end machining",
+        "lubrication",
+        "four compliant branches",
+        "backdrive catch or qualified holding brake"
+      ]
+    }
+  ],
+  "decision_boundaries": [
+    "Maximum gear efficiency is not a lower-bound or zero-speed efficiency.",
+    "Motor rated torque at reduced Rth2 does not certify enclosed static holding.",
+    "Four-contact force allocation/normal and tangent arms must come from new contact CAD and testing.",
+    "No P16 power circuit reuse is approved.",
+    "Head target1.5kg is a design aspiration, not user-required or achieved.",
+    "No source declares full assembly maximum dimensions; nominal estimates must not become manufacturing clearance."
+  ],
+  "local_archive_base": "Workspace root containing outputs/odradek and work/; not repository root."
+}
