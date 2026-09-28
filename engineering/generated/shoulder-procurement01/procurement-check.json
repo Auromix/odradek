@@ -1,0 +1,102 @@
+{
+  "revision": "SHOULDER-PROC01",
+  "manufacturing_release": false,
+  "source_sha256": {
+    "docs/engineering/sources/shoulder-procurement01.json": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847",
+    "engineering/generated/shoulder-raise02/L12_rear_fork.step": "c5af756a04674a71831daf07d21cffd0b36e9c49c6cfa25b8e5886467a3fc206",
+    "engineering/shoulder_procurement01.py": "58049f14a12fb26c7164c21ec673af0b7e0592db5102631e6ed466fd92cb0248"
+  },
+  "fork_bbox_world_mm": [
+    [
+      -65.0,
+      -104.5000001,
+      127.2
+    ],
+    [
+      65.0,
+      -18.0,
+      269.0000001
+    ]
+  ],
+  "fork_volume_mm3": 266751.71113149077,
+  "stock_containment": [
+    {
+      "definition": "nominal_raw_stock_world_XYZ_mm",
+      "dimensions_world_XYZ_mm": [
+        140,
+        101.6,
+        150
+      ],
+      "centre_world_mm": [
+        0.0,
+        -61.25000005,
+        198.10000005
+      ],
+      "nominal_each_side_margin_XYZ_mm": [
+        5.0,
+        7.54999995,
+        4.099999949999983
+      ],
+      "outside_fork_volume_mm3": 0.0,
+      "box_volume_mm3": 2133600.0,
+      "nominal_box_mass_kg": 5.76072,
+      "net_material_fraction": 0.12502423656331588
+    },
+    {
+      "definition": "minimum_clean_usable_box_world_XYZ_mm",
+      "dimensions_world_XYZ_mm": [
+        140,
+        96,
+        150
+      ],
+      "centre_world_mm": [
+        0.0,
+        -61.25000005,
+        198.10000005
+      ],
+      "nominal_each_side_margin_XYZ_mm": [
+        5.0,
+        4.749999950000003,
+        4.099999949999983
+      ],
+      "outside_fork_volume_mm3": 0.0,
+      "box_volume_mm3": 2016000,
+      "nominal_box_mass_kg": 5.4432,
+      "net_material_fraction": 0.1323173170295093
+    }
+  ],
+  "screw_nominal_fit": {
+    "head_bearing_world_Y_mm": -11.5,
+    "block_front_world_Y_mm": -104.5,
+    "block_rear_world_Y_mm": -112.5,
+    "grip_mm": 93.0,
+    "bolt_nominal_tip_world_Y_mm": -111.5,
+    "nominal_geometric_insertion_mm": 7.0,
+    "nominal_tip_to_block_back_face_mm": 1.0,
+    "catalog_thread_b_mm": 20.0,
+    "nominal_thread_transition_distance_from_head_mm": 80.0,
+    "block_front_minus_thread_transition_mm": 13.0,
+    "maximum_head_diameter_mm": 7.0,
+    "maximum_head_height_mm": 4.0,
+    "previous_geometry_head_diameter_proxy_mm": 7.22,
+    "catalog_eight_screws_mass_kg": 0.088,
+    "condition": "No washers added; neither end chamfers nor incomplete threads deducted",
+    "thread_tolerance_relation": "effective_engagement_min = L_min - grip_max - bolt_tip_incomplete_max - block_entry_incomplete_max; all four terms require controlled limits",
+    "release": false
+  },
+  "certificate_request_unit_conversion": {
+    "ultimate_42_ksi_MPa": 289.5798063130712,
+    "tensile_yield_35_ksi_MPa": 241.31650526089263,
+    "meaning": "Procurement request from the cited old manufacturer table, not measured material values or a structural allowable"
+  },
+  "unclosed": [
+    "post-facing stock actual dimensions and grain direction",
+    "batch material certificate",
+    "screw controlled length/runout and full thread engagement",
+    "OEM clamp load limit",
+    "bolt preload, torsion and joint compliance",
+    "head bearing/contact and relaxation",
+    "tail connector access",
+    "whole-arm mass and interference integration"
+  ]
+}
