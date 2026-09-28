@@ -1,0 +1,276 @@
+{
+  "method": "CAD subset of original polygon convex prism; exact extrema of A*cos(q)+B*sin(q)+C over each independent bounded angle; fixed separating plane for each pair",
+  "parts_subset_checks": [
+    {
+      "finger": "UR",
+      "part": "frame",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "part": "retainer",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "part": "bearing_cover",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "part": "compliant_skin",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "part": "PCB_blank_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "part": "back_electronics_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UR",
+      "part": "LED_front_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UL",
+      "part": "frame",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UL",
+      "part": "retainer",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UL",
+      "part": "bearing_cover",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UL",
+      "part": "compliant_skin",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UL",
+      "part": "PCB_blank_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UL",
+      "part": "back_electronics_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "UL",
+      "part": "LED_front_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "part": "frame",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "part": "retainer",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "part": "bearing_cover",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "part": "compliant_skin",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "part": "PCB_blank_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "part": "back_electronics_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LL",
+      "part": "LED_front_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LR",
+      "part": "frame",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LR",
+      "part": "retainer",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LR",
+      "part": "bearing_cover",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LR",
+      "part": "compliant_skin",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LR",
+      "part": "PCB_blank_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LR",
+      "part": "back_electronics_reservation",
+      "outside_convex_prism_mm3": 0
+    },
+    {
+      "finger": "LR",
+      "part": "LED_front_reservation",
+      "outside_convex_prism_mm3": 0
+    }
+  ],
+  "pairs": [
+    {
+      "pair": [
+        "UR",
+        "UL"
+      ],
+      "plane_unit_normal": [
+        1.0,
+        6.776660281601376e-17,
+        0.0
+      ],
+      "min_projection_A_mm": 5.547424901517431,
+      "max_projection_B_mm": -5.547424901517431,
+      "separating_plane_offset_mm": 0.0,
+      "gap_lower_bound_mm": 11.094849803034862,
+      "witness_A_angle_deg": 105.00000000000001,
+      "witness_B_angle_deg": 105.00000000000001,
+      "witness_vertices": [
+        19,
+        19
+      ]
+    },
+    {
+      "pair": [
+        "UR",
+        "LL"
+      ],
+      "plane_unit_normal": [
+        0.766044443118978,
+        0.6427876096865393,
+        0.0
+      ],
+      "min_projection_A_mm": 16.531044401120013,
+      "max_projection_B_mm": -16.640385154202804,
+      "separating_plane_offset_mm": -0.05467037654139517,
+      "gap_lower_bound_mm": 33.17142955532282,
+      "witness_A_angle_deg": 105.00000000000001,
+      "witness_B_angle_deg": 113.0,
+      "witness_vertices": [
+        15,
+        9
+      ]
+    },
+    {
+      "pair": [
+        "UR",
+        "LR"
+      ],
+      "plane_unit_normal": [
+        0.0871557427476583,
+        0.9961946980917455,
+        0.0
+      ],
+      "min_projection_A_mm": 0.080518218552033,
+      "max_projection_B_mm": -3.501393753900416,
+      "separating_plane_offset_mm": -1.7104377676741915,
+      "gap_lower_bound_mm": 3.581911972452449,
+      "witness_A_angle_deg": 105.00000000000001,
+      "witness_B_angle_deg": 113.0,
+      "witness_vertices": [
+        13,
+        13
+      ]
+    },
+    {
+      "pair": [
+        "UL",
+        "LL"
+      ],
+      "plane_unit_normal": [
+        -0.08715574274765815,
+        0.9961946980917455,
+        0.0
+      ],
+      "min_projection_A_mm": 0.08051821855202235,
+      "max_projection_B_mm": -3.501393753900416,
+      "separating_plane_offset_mm": -1.7104377676741969,
+      "gap_lower_bound_mm": 3.5819119724524384,
+      "witness_A_angle_deg": 105.00000000000001,
+      "witness_B_angle_deg": 113.0,
+      "witness_vertices": [
+        13,
+        13
+      ]
+    },
+    {
+      "pair": [
+        "UL",
+        "LR"
+      ],
+      "plane_unit_normal": [
+        -0.766044443118978,
+        0.6427876096865393,
+        0.0
+      ],
+      "min_projection_A_mm": 16.53104440112,
+      "max_projection_B_mm": -16.640385154202804,
+      "separating_plane_offset_mm": -0.05467037654140228,
+      "gap_lower_bound_mm": 33.1714295553228,
+      "witness_A_angle_deg": 105.00000000000001,
+      "witness_B_angle_deg": 113.0,
+      "witness_vertices": [
+        15,
+        9
+      ]
+    },
+    {
+      "pair": [
+        "LL",
+        "LR"
+      ],
+      "plane_unit_normal": [
+        -1.0,
+        1.5700924586837752e-16,
+        0.0
+      ],
+      "min_projection_A_mm": 3.4792752082682625,
+      "max_projection_B_mm": -3.4792752082682625,
+      "separating_plane_offset_mm": 0.0,
+      "gap_lower_bound_mm": 6.958550416536525,
+      "witness_A_angle_deg": 113.0,
+      "witness_B_angle_deg": 113.0,
+      "witness_vertices": [
+        7,
+        7
+      ]
+    }
+  ],
+  "minimum_nominal_gap_lower_bound_mm": 3.5819119724524384,
+  "scope": "28 supplied petal solids including three electronic allocation volumes per petal; no root hinge, motor, linkage, palm, display, cameras, cable, fastener head or real deformation included",
+  "tolerance_deflection_margin_qualified": false
+}

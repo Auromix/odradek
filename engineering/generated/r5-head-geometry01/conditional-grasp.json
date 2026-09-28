@@ -1,0 +1,763 @@
+{
+  "friction_cone": "16 generators inscribed in circular Coulomb cone per contact, point forces only; no soft-contact torsion",
+  "objective": "Minimize shared per-contact normal upper bound while every contact >=5 N; assumptions for feasibility comparison only",
+  "rows": [
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 16.00325248852264,
+      "per_finger_normal_N": [
+        16.00325248852267,
+        4.99999999999999,
+        5.000000000000012,
+        16.003252488522648
+      ],
+      "wrench_residual": 1.1531757767093545e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 27.957718733525954,
+      "per_finger_normal_N": [
+        27.957718733526004,
+        7.06693477801633,
+        5.00000000000003,
+        27.957718733526505
+      ],
+      "wrench_residual": 5.115907697472721e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 17.134472248040698,
+      "per_finger_normal_N": [
+        17.134472248040634,
+        17.134472248040698,
+        5.0,
+        5.0
+      ],
+      "wrench_residual": 1.2703270744501013e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 30.433304586954783,
+      "per_finger_normal_N": [
+        30.43330458695533,
+        30.43330458695479,
+        5.0,
+        5.0
+      ],
+      "wrench_residual": 3.979039320256561e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 27.072849166618763,
+      "per_finger_normal_N": [
+        27.072849166618756,
+        27.072849166618763,
+        21.960400833381225,
+        21.96040083338124
+      ],
+      "wrench_residual": 1.4277340469127776e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 54.145698333237526,
+      "per_finger_normal_N": [
+        54.14569833323751,
+        54.145698333237526,
+        43.92080166676245,
+        43.92080166676248
+      ],
+      "wrench_residual": 2.855468093825555e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 16.003252488522666,
+      "per_finger_normal_N": [
+        5.0,
+        16.003252488522374,
+        16.00325248852299,
+        4.999999999999996
+      ],
+      "wrench_residual": 1.1099556408446537e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 27.957718733525983,
+      "per_finger_normal_N": [
+        7.066934778016438,
+        27.95771873352597,
+        27.957718733526036,
+        5.00000000000003
+      ],
+      "wrench_residual": 2.4113595508456306e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 13.971699481244471,
+      "per_finger_normal_N": [
+        5.0,
+        5.0,
+        13.97169948124447,
+        13.971699481244471
+      ],
+      "wrench_residual": 3.426405317638902e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 25.528947340782903,
+      "per_finger_normal_N": [
+        5.0,
+        5.0,
+        25.528947340782892,
+        25.528947340782906
+      ],
+      "wrench_residual": 1.15281665748583e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 27.072849166618774,
+      "per_finger_normal_N": [
+        27.07284916661879,
+        27.072849166618777,
+        21.96040083338121,
+        21.960400833381208
+      ],
+      "wrench_residual": 4.74118414027241e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.2,
+      "gravity_direction_head": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 54.14569833323755,
+      "per_finger_normal_N": [
+        54.14569833323758,
+        54.14569833323754,
+        43.920801666762394,
+        43.920801666762415
+      ],
+      "wrench_residual": 9.83763964842487e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 13.012215523502231,
+      "per_finger_normal_N": [
+        13.012215523502224,
+        7.249388889219586,
+        5.0,
+        13.012215523502235
+      ],
+      "wrench_residual": 8.796451559633867e-15,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 23.22934059627237,
+      "per_finger_normal_N": [
+        23.22934059627237,
+        8.732187554794335,
+        5.0,
+        23.22934059627237
+      ],
+      "wrench_residual": 1.0265238990952605e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 13.235105727972524,
+      "per_finger_normal_N": [
+        13.235105727972453,
+        13.235105727972588,
+        5.000000000000024,
+        5.0
+      ],
+      "wrench_residual": 1.0302869668521453e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 24.11642466563247,
+      "per_finger_normal_N": [
+        24.11642466563237,
+        24.11642466563256,
+        5.000000000000038,
+        5.0
+      ],
+      "wrench_residual": 1.5187850976872141e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 13.536424583309381,
+      "per_finger_normal_N": [
+        13.536424583309504,
+        13.536424583309351,
+        10.980200416690648,
+        10.980200416690492
+      ],
+      "wrench_residual": 1.1349672165542583e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 27.072849166618763,
+      "per_finger_normal_N": [
+        27.072849166619008,
+        27.072849166618703,
+        21.960400833381296,
+        21.960400833380984
+      ],
+      "wrench_residual": 2.2699344331085165e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 13.012215523502247,
+      "per_finger_normal_N": [
+        7.249388889219701,
+        13.012215523500899,
+        13.012215523503269,
+        4.999999999999896
+      ],
+      "wrench_residual": 7.064801270587781e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 23.229340596272337,
+      "per_finger_normal_N": [
+        8.732187554794281,
+        23.229340596272532,
+        23.22934059627239,
+        5.0
+      ],
+      "wrench_residual": 2.5579538487363607e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 11.148273890581581,
+      "per_finger_normal_N": [
+        5.000000000000266,
+        5.0,
+        11.148273890581692,
+        11.148273890581622
+      ],
+      "wrench_residual": 5.007507254334503e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 21.054486341614517,
+      "per_finger_normal_N": [
+        5.000000000000452,
+        5.0,
+        21.054486341614606,
+        21.05448634161461
+      ],
+      "wrench_residual": 4.2434657945816806e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 13.536424583309376,
+      "per_finger_normal_N": [
+        13.536424583309355,
+        13.536424583309518,
+        10.980200416690474,
+        10.980200416690638
+      ],
+      "wrench_residual": 5.2523374906597775e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.4,
+      "gravity_direction_head": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 27.072849166618752,
+      "per_finger_normal_N": [
+        27.07284916661871,
+        27.072849166619037,
+        21.960400833380948,
+        21.960400833381275
+      ],
+      "wrench_residual": 1.0504674981319555e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 9.05428662851207,
+      "per_finger_normal_N": [
+        9.054286628512068,
+        6.18886593794445,
+        5.000000000000005,
+        9.054286628512068
+      ],
+      "wrench_residual": 3.1715874341430505e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 17.047366000199588,
+      "per_finger_normal_N": [
+        17.047366000199585,
+        7.13556444817105,
+        5.000000000000008,
+        17.047366000199585
+      ],
+      "wrench_residual": 7.072778996598617e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 8.555434354241212,
+      "per_finger_normal_N": [
+        8.555434354241212,
+        8.555434354241209,
+        5.0,
+        4.999999999999965
+      ],
+      "wrench_residual": 1.3837216775666701e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 16.535469659999045,
+      "per_finger_normal_N": [
+        16.53546965999904,
+        16.53546965999904,
+        5.0,
+        5.000000000000001
+      ],
+      "wrench_residual": 4.4206485528734645e-15,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 6.768212291654679,
+      "per_finger_normal_N": [
+        6.768212291654699,
+        6.768212291654686,
+        5.490100208345313,
+        5.490100208345302
+      ],
+      "wrench_residual": 3.552713678800501e-15,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 13.536424583309358,
+      "per_finger_normal_N": [
+        13.536424583309397,
+        13.536424583309373,
+        10.980200416690627,
+        10.980200416690604
+      ],
+      "wrench_residual": 7.105427357601002e-15,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 9.054286628512063,
+      "per_finger_normal_N": [
+        6.188865937944443,
+        9.054286628512058,
+        9.054286628512063,
+        5.000000000000012
+      ],
+      "wrench_residual": 6.056569366831077e-15,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 17.047366000199574,
+      "per_finger_normal_N": [
+        7.135564448171035,
+        17.04736600019959,
+        17.047366000199563,
+        5.000000000000048
+      ],
+      "wrench_residual": 4.1505269560222425e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 7.2398517473474024,
+      "per_finger_normal_N": [
+        7.239851747347426,
+        7.239851747347414,
+        7.2398517473474095,
+        7.239851747347405
+      ],
+      "wrench_residual": 1.2801475235947539e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        -0.0,
+        -1.0,
+        -0.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 14.479703494694805,
+      "per_finger_normal_N": [
+        14.479703494694853,
+        14.479703494694828,
+        14.479703494694819,
+        14.47970349469481
+      ],
+      "wrench_residual": 2.5602950471895077e-14,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 1.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 6.768212291654594,
+      "per_finger_normal_N": [
+        6.76821229165535,
+        6.768212291654542,
+        5.490100208345341,
+        5.490100208345099
+      ],
+      "wrench_residual": 4.829366454919766e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    },
+    {
+      "assumed_mu": 0.8,
+      "gravity_direction_head": [
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "net_object_mass_kg": 2.0,
+      "load_multiplier": 2.0,
+      "assumed_min_per_contact_normal_N": 5.0,
+      "minimum_common_normal_cap_N": 13.53642458330916,
+      "per_finger_normal_N": [
+        13.536424583309154,
+        13.536424583309085,
+        10.980200416690137,
+        10.980200416690709
+      ],
+      "wrench_residual": 5.175384056158149e-13,
+      "grasp_matrix_rank": 6,
+      "actuator_allocation_verified": false
+    }
+  ],
+  "does_not_prove": "Measured friction, real contact patch/pressure, compliance allocation, actuator demand, surface temperature, object damage, holding or 2kg hardware rating"
+}
