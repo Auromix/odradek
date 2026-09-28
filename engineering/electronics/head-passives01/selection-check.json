@@ -1,0 +1,166 @@
+{
+  "revision": "HEAD-PASSIVES01",
+  "parent": "HEAD-CTRL02",
+  "release": false,
+  "input_hashes": {
+    "engineering/electronics/head-ctrl02/bom.csv": "a88487d60b68f323abc8a4e286604ff93b24958e765c41b227afb29216d30f55",
+    "engineering/electronics/head-ctrl02/pin-net.csv": "7f6b36e3357a53053ce60be758de6a00d82e2d30c061d8472f48bca083046902",
+    "engineering/electronics/head-ctrl02/netlist.json": "887c8df0b4877c83e677dae2443531caed6e0a1074c929b654f5c71033e1c59e",
+    "engineering/electronics/head-ctrl02/calculations.json": "706f545869286e4f05e3c6df150ec5415166874b0bef3e43e4a93f08dec57f5b",
+    "engineering/electronics/head-passives01/catalog.json": "ae5dd4014268461489bac1c5079959831eb734d4ea097f46f34b9e5bb5a9a568",
+    "engineering/electronics/head-passives01/select.py": "2457e411a1cd79a919fc80c5fe774ccd5ea50f13c256efde5bcd1da9532bc409"
+  },
+  "coverage": {
+    "parent_positions": 242,
+    "newly_selected_positions": 193,
+    "counts": {
+      "R": 106,
+      "C": 84,
+      "JP": 3
+    },
+    "new_unique_board_MPNs": 23,
+    "new_loose_accessory_MPNs": 1,
+    "final_MPN_TBD_count": 0,
+    "parent_files_modified": false,
+    "same_nominal_R_C_values": true,
+    "assembly_or_order_release": false
+  },
+  "package_changes": [
+    {
+      "ref": "C6",
+      "before": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate": "Capacitor_SMD:C_1206_3216Metric"
+    },
+    {
+      "ref": "JP1",
+      "before": "Jumper:Jumper_2_Open",
+      "candidate": "ODR_HEAD_PASSIVES01:TSW_102_07_T_S_P2.54_Hole1.02_pending"
+    },
+    {
+      "ref": "JP2",
+      "before": "Jumper:Jumper_2_Open",
+      "candidate": "ODR_HEAD_PASSIVES01:TSW_102_07_T_S_P2.54_Hole1.02_pending"
+    },
+    {
+      "ref": "JP3",
+      "before": "Jumper:Jumper_2_Open",
+      "candidate": "ODR_HEAD_PASSIVES01:TSW_102_07_T_S_P2.54_Hole1.02_pending"
+    },
+    {
+      "ref": "C45",
+      "before": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate": "Capacitor_SMD:C_1210_3225Metric"
+    },
+    {
+      "ref": "C51",
+      "before": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate": "Capacitor_SMD:C_1210_3225Metric"
+    },
+    {
+      "ref": "C57",
+      "before": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate": "Capacitor_SMD:C_1210_3225Metric"
+    },
+    {
+      "ref": "C63",
+      "before": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate": "Capacitor_SMD:C_1210_3225Metric"
+    },
+    {
+      "ref": "C82",
+      "before": "TBD aluminiumcase after ripple/ESR selection",
+      "candidate": "ODR_HEAD_PASSIVES01:CP_Radial_D10_P5_vendor_pending"
+    },
+    {
+      "ref": "C83",
+      "before": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate": "Capacitor_SMD:C_1210_3225Metric"
+    },
+    {
+      "ref": "C84",
+      "before": "Capacitor_SMD:C_0603_1608Metric",
+      "candidate": "Capacitor_SMD:C_1210_3225Metric"
+    }
+  ],
+  "resistor_temperature_study": {
+    "body_temperature_assumption_C": [
+      0,
+      70
+    ],
+    "reference_C": 25,
+    "max_delta_K": 45,
+    "precision_R_factor_bounds": [
+      0.997876125,
+      1.002126125
+    ],
+    "ipropi_effective_R_nominal_ohm": 6220.846717302257,
+    "ipropi_ADC_ratio_nominal": 0.33332333363332434,
+    "ipropi_trip_nominal_A": 0.89305456443794,
+    "ipropi_trip_study_A": [
+      0.8206960458771055,
+      0.977194780786078
+    ],
+    "ipropi_ADC_ratio_study": [
+      0.3323795729206772,
+      0.3342784461694514
+    ],
+    "current_study_corner_count": 128,
+    "switch_Ron_ohm": [
+      0,
+      4.5
+    ],
+    "inherited_VREF_fraction": 0.01,
+    "inherited_DRV_ratio_fraction": 0.075,
+    "VM_on_ratio_study": [
+      0.14233202290729463,
+      0.14337834153920206
+    ],
+    "VM_off_ratio_study": [
+      0.16607722459494614,
+      0.16725778119168436
+    ],
+    "VM_off_max_at15V": 2.5088667178752653,
+    "powered_off_ADC_leakage_V_bound": 0.20042522499999998,
+    "R26_ohm_study": [
+      0.095436,
+      0.104636
+    ],
+    "limitations": [
+      "Resistor temperatures are not ambient qualification.",
+      "Inherited semiconductor bounds only; excludes aging, calibration, ADC errors, transients and thermal coupling.",
+      "Powered-off switch bound applies at specified VDD=0, not every power ramp.",
+      "R26 ripple and LAN regulator stability still require verification."
+    ]
+  },
+  "power_examples": {
+    "RIPROPI_at2V5_mW": 0.9650697182645199,
+    "minimum_1k_at3V399_mW": 11.722651933701657,
+    "VM_upper_100k_conservative_full15V_mW": 2.2547888897532244,
+    "continuous_3V399_across_33ohm_mW": 350.097,
+    "continuous_3V399_across_49R9_mW": 231.5270741482966,
+    "note": "First three are bounded local examples. Last two exceed 0.1W and prohibit assuming full supply DC contention is acceptable. Real PHY/series waveforms need separate assessment."
+  },
+  "bulk_study": {
+    "nominal_F": 0.001,
+    "initial_tolerance_fraction": 0.2,
+    "initial_min_F": 0.0008,
+    "energy_nominal_12_to15_J": 0.0405,
+    "energy_initial_min_12_to15_J": 0.0324,
+    "body_max_mm": [
+      10.5,
+      10.5,
+      22
+    ],
+    "upright_stack_fit_verified": false,
+    "system_regen_verified": false,
+    "note": "Initial tolerance only. Frequency, low temperature, aging, ESR/ESL and permitted bus transient can lower usable storage."
+  },
+  "pinmap_sha256": "7f6b36e3357a53053ce60be758de6a00d82e2d30c061d8472f48bca083046902",
+  "pending": [
+    "Controller PCB partition, land patterns and complete assembly envelope",
+    "DC-bias/aging and ripple/inrush/bulk sizing from actual waveforms",
+    "Regulator/reference stability, reset timing and PHY signal integrity",
+    "Supply/regen/short-circuit protection and calibration",
+    "Price, stock, controlled supplier specification and batch evidence"
+  ]
+}
