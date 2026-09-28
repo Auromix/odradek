@@ -1,0 +1,305 @@
+{
+  "revision": "SHOULDER-FEA01",
+  "status": "READY independent ideal-boundary elastic comparison; not manufacturing or payload acceptance",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "original_sources_unchanged": true,
+  "source_hashes": {
+    "engineering/generated/shoulder-raise-01/RAISE01-L12-rear_fork.step": "4f84e228b9b8dc8b619b1671f2d340c8d05ae91a9be1d6722b5a2cc20ddf862c",
+    "engineering/generated/shoulder-raise-01/part-placements.json": "1f735370b9ad30c2dbff91338658504f2a109fb523f2badc39832e4d9f2beedc",
+    "engineering/generated/shoulder-raise02/L12_rear_fork.step": "c5af756a04674a71831daf07d21cffd0b36e9c49c6cfa25b8e5886467a3fc206",
+    "engineering/generated/shoulder-raise02/part-placements.json": "de9eb4a228d7b4c55c07bc48d06a5a0eecef55d7e3499c85d19bcac754302b23",
+    "engineering/generated/shoulder-raise-strength01/study.json": "23ca111695099b1f3b6c64888d44baf2c2ffbb2c033d3f23c1cd3118c1a01e13",
+    "engineering/generated/raised-arm-integration01/model.json": "e3b2a10a2f11cbc6a5085150dd1d5bcba3848431f40e4aea7485d4d5125d33a1"
+  },
+  "force_input_from_STRENGTH01": {
+    "nominal_mass_kg": 17.89902727636341,
+    "nominal_vertical_force_N": 175.52949583974922,
+    "nominal_moment_norm_bound_Nm": 73.97942688263753,
+    "planning_remainder_high_mass_kg": 0.45,
+    "conditional_remainder_moment_bound_Nm": 4.528775547897153,
+    "planning_remainder_face_sphere_radius_m": 0.25,
+    "known_head_COM_sensitivity_m": 0.05,
+    "object_COM_sensitivity_m": 0.1,
+    "additional_COM_moment_sensitivity_Nm": 3.3354825774966486,
+    "research_multiplier": 1.5,
+    "expanded_force_N": 269.9137325096238,
+    "expanded_moment_bound_Nm": 122.76552751204699,
+    "limits": "Remainder sphere0.25m is a NEW conditional planning enclosure, not a verified all-finger-state bound.1.5 multiplier and COM offsets are study assumptions, not certified safety factors."
+  },
+  "script": {
+    "file": "engineering/shoulder_fea01.py",
+    "sha256": "9bbe125ddef81c73bd2ea5b839fb0a6b48f083d2a0f9b75411234de623c5e0d8"
+  },
+  "document": {
+    "file": "docs/engineering/shoulder-fea01.md",
+    "sha256": "a93102a9df66128ec343cb45cc480e1e404f3bca1ca999e397a2d2e341779bbe"
+  },
+  "all_eight_mesh_cases_and_24_load_solutions_verified": true,
+  "all_raw_reimport_checks": [
+    {
+      "file": "RAISE01-h2.8-Fz.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138305.6891574803,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h2.8-Mx.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138305.6891574803,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h2.8-My.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138305.6891574803,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h4-Fz.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138318.9381680042,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h4-Mx.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138318.9381680042,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h4-My.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138318.9381680042,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h6-posts-Fz.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138360.75771913945,
+      "midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE01-h6-posts-Mx.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138360.75771913945,
+      "midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE01-h6-posts-My.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138360.75771913945,
+      "midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE01-h6-Fz.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138360.7628710224,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h6-Mx.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138360.7628710224,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h6-My.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 138360.7628710224,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h2.8-Fz.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 266939.5220095579,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h2.8-Mx.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 266939.5220095579,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h2.8-My.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 266939.5220095579,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h4-Fz.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 266971.7700341055,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h4-Mx.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 266971.7700341055,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h4-My.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 266971.7700341055,
+      "midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h6-posts-Fz.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 267013.59123256174,
+      "midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE02-h6-posts-Mx.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 267013.59123256174,
+      "midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE02-h6-posts-My.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 267013.59123256174,
+      "midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE02-h6-Fz.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 267012.61306611117,
+      "midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE02-h6-Mx.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 267012.61306611117,
+      "midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE02-h6-My.vtu",
+      "volume_components": 1,
+      "reimport_volume_mm3": 267012.61306611117,
+      "midpoint_max_error_mm": 1.7763568394002505e-15
+    }
+  ],
+  "repository_generated_bytes_excluding_manifest": 26177446,
+  "files": [
+    {
+      "file": "RAISE01-finest-surface-fields.vtu.gz",
+      "bytes": 5107011,
+      "sha256": "64a45bebc26f5082668665e58cd7fd6f63aeb7eaffb9d8931f5583db1937489d"
+    },
+    {
+      "file": "RAISE01-h2.8.json",
+      "bytes": 11332,
+      "sha256": "43fd39930d2dc46d7454252d567215fd79593f8ad312d0b01f62d8a5773c6b5a"
+    },
+    {
+      "file": "RAISE01-h4.json",
+      "bytes": 11328,
+      "sha256": "0c1f54cdf5f5b4d2bcad5a6a1e4503cdb4561b829ad1416434eaa34e6958db2d"
+    },
+    {
+      "file": "RAISE01-h6-posts.json",
+      "bytes": 11596,
+      "sha256": "82ffc20546578f0a609b244105ff5c85995f7993ad33e0082f8391f83b277a3b"
+    },
+    {
+      "file": "RAISE01-h6.json",
+      "bytes": 11313,
+      "sha256": "3e41fd7b2a0274fe9649856c6c9bb3631c2c46df79bd7d03b59e1f9d0972aea8"
+    },
+    {
+      "file": "RAISE01-rear-fork-world.step",
+      "bytes": 123264,
+      "sha256": "67b076ccc5227d02584c0d9f6f08452953282a7c9aa8b6918e0866ecd0267442"
+    },
+    {
+      "file": "RAISE02-finest-surface-fields.vtu.gz",
+      "bytes": 18436273,
+      "sha256": "e23a4c2b8a9f858494ab66344f359a0890cec9744e7ad3d638ec25f6a849b51a"
+    },
+    {
+      "file": "RAISE02-h2.8.json",
+      "bytes": 11459,
+      "sha256": "136b6361f04fdf9fc5e72baaa1446523305765884aa9ae83c493319a7b20b62e"
+    },
+    {
+      "file": "RAISE02-h4.json",
+      "bytes": 11291,
+      "sha256": "738b7dc12752a9617087ae5c249fa3949af1d2c68f2a585245142336b33af11e"
+    },
+    {
+      "file": "RAISE02-h6-posts.json",
+      "bytes": 11525,
+      "sha256": "10e907348703f9fd3ee6d15dabdbd0fc4059b8b38a790d1b8eded718b2d8385a"
+    },
+    {
+      "file": "RAISE02-h6.json",
+      "bytes": 11242,
+      "sha256": "59fcb929d090f47a81cee1dfe1a53afd9a8f9b40e8b3c44d4d91e6bdd24bab2d"
+    },
+    {
+      "file": "RAISE02-rear-fork-world.step",
+      "bytes": 603080,
+      "sha256": "bafeaf26477ba1bb24a14434dff655e9f404d046ae0ec1ba8a778d4f68327907"
+    },
+    {
+      "file": "benchmarks.json",
+      "bytes": 11783,
+      "sha256": "f6c7f3b77346c992f3ae7c55c331a8576bff8c04411be96f5eafaf359217ea5c"
+    },
+    {
+      "file": "boundary-conditions.pdf",
+      "bytes": 128252,
+      "sha256": "c7765fb8b148cde90d5f9e5d7ca61d28593185b333aa62e115983bb307e9c063"
+    },
+    {
+      "file": "boundary-conditions.png",
+      "bytes": 299820,
+      "sha256": "4551240eadd4916e4544c80e92362f2a4f0655dd9d520d4e5566a10d731fb744"
+    },
+    {
+      "file": "comparison.json",
+      "bytes": 10912,
+      "sha256": "29f7e560be26ecaf68448b78b8782df42f36c60687f35102440d9cf754660603"
+    },
+    {
+      "file": "convergence.pdf",
+      "bytes": 26740,
+      "sha256": "25eb6525f6dfa7ed3297f556cf60c0eb68a87aa9f8e94e27e19252314fc1f347"
+    },
+    {
+      "file": "convergence.png",
+      "bytes": 120287,
+      "sha256": "7fc6048fa20da2321d5b797575c2a745ff285b409dcc4af1db1f5673b4234778"
+    },
+    {
+      "file": "displacement-comparison.pdf",
+      "bytes": 291199,
+      "sha256": "50a11d0127e92ac03c4116a553b18b5dd13882e7a9b6d22ea63558e02ea6baa0"
+    },
+    {
+      "file": "displacement-comparison.png",
+      "bytes": 919466,
+      "sha256": "91f5656c5ce105e3ecf9ff89441ba84edac3abe71446dd279b5b82679bb00477"
+    },
+    {
+      "file": "raw-artifact-manifest.json",
+      "bytes": 5862,
+      "sha256": "a5d5fb5a6ba0d0ecdb6cbb54956997417f9dc1b2363c26fa9b9864b4c579cc64"
+    },
+    {
+      "file": "sources-and-runtime.json",
+      "bytes": 1005,
+      "sha256": "7ff0d12985ef69f2224d680bb2d09c5f3622e7667e16db1b656f3150792f5f87"
+    },
+    {
+      "file": "visual-qa.json",
+      "bytes": 1406,
+      "sha256": "8744bfd8e5c6f3294674bba4174930cabd6c13b3cdd6f837963761e3085d921f"
+    }
+  ],
+  "raw_repository_policy": "Complete meshes/fields remain work/shoulder-fea01-raw; hashes and commands supplied; no LFS change.",
+  "source_provenance_note": "Case generator_sha256 records the script file at completion; reporting/optional support instrumentation evolved between independently run cases. Original STEP/placement hashes and stored result fields are frozen. This final script reproduces the declared algorithms and all cases; file-byte identity is not promised across Gmsh/OCC runs."
+}

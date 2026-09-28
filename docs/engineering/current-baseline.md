@@ -59,6 +59,7 @@ RH的B闸从模块自身DC口取电，未增加独立24V抱闸母线；J7 N无�
 | [SHOULDER-RAISE02](shoulder-raise02-study.md) | 后叉加厚并采用8块后置钢螺纹块；J2仍为205mm | 原创金属1.234570kg，比01增0.563117kg；名义装入/局部运动检查已完成。整机质量/Blender尚未换成02，螺栓预紧及真实接触未放行 |
 | [SHOULDER-PROC01](hardware/shoulder-procurement01.md) | 后叉按6061-T651厚板提出采购条件；M4×100精确候选 | 实体坯料包含检查与螺钉名义长度已核对；完整牙、公差、批次材质仍待确认 |
 | [SHOULDER-PORT01](shoulder-port01.md) | 两块钢件内缘34→38mm，保留承压面 | 尾盖开口连续通道遮挡消除；真实插头PN/注册基准及线缆外形尚不完整。该局部修改尚未并入RAISE02或主总装 |
+| [SHOULDER-FEA01](shoulder-fea01.md) | 01/02后叉实体的二次四面体线弹性比较 | 8个网格、24个载荷解；主比较最后两档最大变化0.459%。相同四处支承时02三方向响应降低43.1%/77.8%/53.5%；仅理想边界刚度，不含螺栓接触、疲劳或2kg资格 |
 | [CD-MOUNT01](central-display-mount01.md)与[装拆核查](central-display-review01.md) | 真实杯座、压框、Ø60 PCB、窗口与GH12参考替代旧显示占位 | 名义静态/四指连续避让及指定装拆检查已完成；中央板背面元件、线缆、质量/惯量仍待整头集成 |
 | [HEAD-PASSIVES01](hardware/head-passives01.md) | 具体R/C/跳线料号、真实封装、温漂与偏压选型 | 242位置合并表有MPN；控制器PCB/板间连接、供电保护、回生和整舱装配尚未完成 |
 

@@ -1,0 +1,383 @@
+{
+  "revision": "SHOULDER-FEA01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "units": "mm,N,MPa,Nmm; SI crosscheck separatelym,N,Pa",
+  "material_nominal": {
+    "E_MPa": 70000.0,
+    "nu": 0.33,
+    "yield_MPa": null
+  },
+  "versions": {
+    "gmsh": "4.15.2",
+    "skfem": "12.0.2",
+    "scipy": "1.18.1",
+    "numpy": "2.5.3",
+    "pyamg": "5.3.0"
+  },
+  "patch": {
+    "mesh": {
+      "nodes": 64,
+      "tetrahedra": 162,
+      "min_jacobian_determinant_mm3": 17.777777777777775,
+      "min_volume_mm3": 2.9629629629629624,
+      "mesh_volume_mm3": 480.000000000002,
+      "mean_ratio_min": 0.6620498637295743,
+      "mean_ratio_percentiles": [
+        0.6620498637295743,
+        0.6620498637295744,
+        0.6979441334498527,
+        0.7286712336646262,
+        0.7286712336646262
+      ],
+      "nonpositive_elements": 0
+    },
+    "assembly": {
+      "dofs": 1029,
+      "order": 2,
+      "quadrature_order": 4,
+      "geometry_order": 1,
+      "stiffness_symmetry_relative_error": 1.3653869204332338e-16
+    },
+    "solver": {
+      "method": "SuperLU",
+      "iterations": null,
+      "free_residual_relative": 1.2743981688081624e-11,
+      "reaction_force_N": [
+        -1.6612489162071142e-11,
+        -4.841743696711623e-13,
+        4.311576343018123e-12
+      ],
+      "reaction_moment_Nmm": [
+        2.0385379152968567e-11,
+        -8.020606401260011e-11,
+        5.940137270954438e-11
+      ],
+      "force_balance_error_N": 1.7169709128050222e-11,
+      "moment_balance_error_Nmm": 1.0186804929604667e-10,
+      "force_balance_normalized": 1.7169709128050222e-11,
+      "moment_balance_normalized": 1.0186804929604667e-10,
+      "balance_length_scale_mm": 14.142135623730951,
+      "strain_energy_Nmm": 16.800000000000026,
+      "total_external_work_Nmm": 33.59999999999988,
+      "energy_balance_relative_error": 5.075305255429305e-15
+    },
+    "affine_displacement_max_error_mm": 1.3877787807814457e-17,
+    "constant_stress_max_error_MPa": 1.1652900866465643e-12,
+    "analytical_energy_Nmm": 16.800000000000068,
+    "SI_vs_mm_stiffness_scaling_relative_error": 2.1000178306229405e-16
+  },
+  "beam": [
+    {
+      "target_size_mm": 5.0,
+      "mesh": {
+        "nodes": 189,
+        "tetrahedra": 480,
+        "min_jacobian_determinant_mm3": 124.99999999999994,
+        "min_volume_mm3": 20.833333333333325,
+        "mesh_volume_mm3": 10000.000000000004,
+        "mean_ratio_min": 0.7559526299369236,
+        "mean_ratio_percentiles": [
+          0.7559526299369236,
+          0.7559526299369236,
+          0.7559526299369236,
+          0.7559526299369236,
+          0.7559526299369236
+        ],
+        "nonpositive_elements": 0
+      },
+      "assembly": {
+        "dofs": 3075,
+        "order": 2,
+        "quadrature_order": 4,
+        "geometry_order": 1,
+        "stiffness_symmetry_relative_error": 1.0483870525120805e-16
+      },
+      "load": {
+        "area_mm2": 100.0000000000002,
+        "centroid_world_mm": [
+          100.0,
+          5.0,
+          5.0
+        ],
+        "area_second_moment_mm4": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            833.3333333333353,
+            1.4210854715202004e-13
+          ],
+          [
+            0.0,
+            1.4210854715202004e-13,
+            833.3333333333353
+          ]
+        ],
+        "traction_constant_N_mm2": [
+          0.0,
+          0.0,
+          0.999999999999998
+        ],
+        "traction_rotation_coefficient_N_mm3": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "assembled_force_N": [
+          0.0,
+          0.0,
+          100.0
+        ],
+        "assembled_moment_Nmm": [
+          7.105427357601002e-15,
+          -1.0369801985320398e-15,
+          0.0
+        ],
+        "force_error_N": 0.0,
+        "moment_error_Nmm": 7.180698146161855e-15,
+        "face_count": 8
+      },
+      "solver": {
+        "method": "SuperLU",
+        "iterations": null,
+        "free_residual_relative": 6.243556675876956e-11,
+        "reaction_force_N": [
+          -8.446647825621767e-10,
+          -9.098286568587355e-10,
+          -99.99999999660184
+        ],
+        "reaction_moment_Nmm": [
+          -2.600955895104562e-09,
+          6.895879778312519e-08,
+          2.4309088075824548e-08
+        ],
+        "force_balance_error_N": 3.6178327565492564e-09,
+        "moment_balance_error_Nmm": 7.3164283269645e-08,
+        "force_balance_normalized": 3.6178327565492567e-11,
+        "moment_balance_normalized": 7.2443435313088385e-12,
+        "balance_length_scale_mm": 100.99504938362078,
+        "strain_energy_Nmm": 28.40253399848644,
+        "total_external_work_Nmm": 56.8050679972441,
+        "energy_balance_relative_error": 4.774596303276076e-12
+      },
+      "work_conjugate_tip_displacement_mm": 0.568050679972441,
+      "Euler_Bernoulli_mm": 0.5714285714285714,
+      "Timoshenko_reference_mm": 0.5759885714285714,
+      "relative_to_Timoshenko": -0.013781334994968475,
+      "von_mises_quadrature_max_MPa": 59.46612950405464
+    },
+    {
+      "target_size_mm": 2.5,
+      "mesh": {
+        "nodes": 1025,
+        "tetrahedra": 3840,
+        "min_jacobian_determinant_mm3": 15.625000000000002,
+        "min_volume_mm3": 2.604166666666667,
+        "mesh_volume_mm3": 9999.99999999996,
+        "mean_ratio_min": 0.7559526299369239,
+        "mean_ratio_percentiles": [
+          0.7559526299369239,
+          0.7559526299369239,
+          0.7559526299369239,
+          0.7559526299369239,
+          0.7559526299369239
+        ],
+        "nonpositive_elements": 0
+      },
+      "assembly": {
+        "dofs": 19683,
+        "order": 2,
+        "quadrature_order": 4,
+        "geometry_order": 1,
+        "stiffness_symmetry_relative_error": 1.0483870525120805e-16
+      },
+      "load": {
+        "area_mm2": 100.0000000000002,
+        "centroid_world_mm": [
+          100.0,
+          4.999999999999999,
+          4.999999999999999
+        ],
+        "area_second_moment_mm4": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            833.3333333333348,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            833.3333333333348
+          ]
+        ],
+        "traction_constant_N_mm2": [
+          0.0,
+          0.0,
+          0.999999999999998
+        ],
+        "traction_rotation_coefficient_N_mm3": [
+          5.3290705182007413e-17,
+          0.0,
+          0.0
+        ],
+        "assembled_force_N": [
+          0.0,
+          -5.9164567891575885e-31,
+          99.99999999999997
+        ],
+        "assembled_moment_Nmm": [
+          8.260059303211165e-14,
+          -1.605831449775704e-15,
+          -1.0815355130914234e-30
+        ],
+        "force_error_N": 2.842170943040401e-14,
+        "moment_error_Nmm": 8.261620097717892e-14,
+        "face_count": 32
+      },
+      "solver": {
+        "method": "SuperLU",
+        "iterations": null,
+        "free_residual_relative": 2.617005522761053e-10,
+        "reaction_force_N": [
+          -4.264641972895333e-09,
+          -3.4844482854623493e-09,
+          -99.99999997579297
+        ],
+        "reaction_moment_Nmm": [
+          -4.968761402324162e-09,
+          7.089015525707509e-07,
+          1.0170089126404491e-07
+        ],
+        "force_balance_error_N": 2.482553663222274e-08,
+        "moment_balance_error_Nmm": 7.161767714841108e-07,
+        "force_balance_normalized": 2.482553663222275e-10,
+        "moment_balance_normalized": 7.091206706219597e-11,
+        "balance_length_scale_mm": 100.99504938362078,
+        "strain_energy_Nmm": 28.513695619089496,
+        "total_external_work_Nmm": 57.02739123715757,
+        "energy_balance_relative_error": 1.7911031371961634e-11
+      },
+      "work_conjugate_tip_displacement_mm": 0.5702739123715758,
+      "Euler_Bernoulli_mm": 0.5714285714285714,
+      "Timoshenko_reference_mm": 0.5759885714285714,
+      "relative_to_Timoshenko": -0.00992147993982262,
+      "von_mises_quadrature_max_MPa": 64.22959727628277
+    },
+    {
+      "target_size_mm": 1.6666666666666667,
+      "mesh": {
+        "nodes": 2989,
+        "tetrahedra": 12960,
+        "min_jacobian_determinant_mm3": 4.6296296296296,
+        "min_volume_mm3": 0.7716049382715999,
+        "mesh_volume_mm3": 10000.000000001988,
+        "mean_ratio_min": 0.7559526299369234,
+        "mean_ratio_percentiles": [
+          0.7559526299369234,
+          0.7559526299369235,
+          0.7559526299369238,
+          0.7559526299369242,
+          0.7559526299369245
+        ],
+        "nonpositive_elements": 0
+      },
+      "assembly": {
+        "dofs": 61347,
+        "order": 2,
+        "quadrature_order": 4,
+        "geometry_order": 1,
+        "stiffness_symmetry_relative_error": 1.572580578768116e-16
+      },
+      "load": {
+        "area_mm2": 100.0000000000002,
+        "centroid_world_mm": [
+          100.00000000000001,
+          5.0,
+          5.000000000000001
+        ],
+        "area_second_moment_mm4": [
+          [
+            2.019483917365792e-26,
+            1.7670484276950664e-28,
+            8.456588903969247e-28
+          ],
+          [
+            1.7670484276950664e-28,
+            833.3333333333346,
+            7.105427357601002e-14
+          ],
+          [
+            8.456588903969247e-28,
+            7.105427357601002e-14,
+            833.3333333333353
+          ]
+        ],
+        "traction_constant_N_mm2": [
+          0.0,
+          0.0,
+          0.999999999999998
+        ],
+        "traction_rotation_coefficient_N_mm3": [
+          1.808011330610445e-46,
+          1.7053025658242362e-15,
+          1.4540284205033631e-31
+        ],
+        "assembled_force_N": [
+          -2.477023242393977e-28,
+          -2.0662986635547965e-43,
+          99.99999999999989
+        ],
+        "assembled_moment_Nmm": [
+          5.995204332975845e-15,
+          1.4199205771027765e-12,
+          9.466330862652142e-29
+        ],
+        "force_error_N": 1.1368683772161603e-13,
+        "moment_error_Nmm": 1.4199332335553233e-12,
+        "face_count": 72
+      },
+      "solver": {
+        "method": "CG+smoothed-aggregation AMG sixrigid modes",
+        "iterations": 41,
+        "AMG_levels": 2,
+        "free_residual_relative": 5.654926808009471e-10,
+        "reaction_force_N": [
+          -1.3368506301958405e-10,
+          -8.832545361769917e-09,
+          -99.99999999370947
+        ],
+        "reaction_moment_Nmm": [
+          1.894922974088331e-08,
+          -3.542641024978366e-08,
+          2.409571493444673e-07
+        ],
+        "force_balance_error_N": 1.0844405052901747e-08,
+        "moment_balance_error_Nmm": 2.4428334223810293e-07,
+        "force_balance_normalized": 1.0844405052901758e-10,
+        "moment_balance_normalized": 2.4187655110718793e-11,
+        "balance_length_scale_mm": 100.99504938362078,
+        "strain_energy_Nmm": 28.53651485003173,
+        "total_external_work_Nmm": 57.07302969997603,
+        "energy_balance_relative_error": 1.531812463216044e-12
+      },
+      "work_conjugate_tip_displacement_mm": 0.5707302969997603,
+      "Euler_Bernoulli_mm": 0.5714285714285714,
+      "Timoshenko_reference_mm": 0.5759885714285714,
+      "relative_to_Timoshenko": -0.009129129794658075,
+      "von_mises_quadrature_max_MPa": 70.37503337404785
+    }
+  ],
+  "beam_last_refinement_relative_change": 0.0008002902084134345,
+  "elapsed_seconds": 11.55226182937622,
+  "generator_sha256": "bf3d1b29b297006d29352b2c4f02c9a88c213c0d54e5f2aa89acd5312992a447",
+  "limits": "Patch verifies linear completeness and unit scaling. Cantilever has3Dclamp/end effects; EB/Timoshenko are reference solutions, not exact3D. No physical material/assembly/strength validation."
+}

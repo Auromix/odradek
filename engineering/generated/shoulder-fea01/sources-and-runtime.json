@@ -1,0 +1,27 @@
+{
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "official_API_sources": [
+    {
+      "url": "https://gmsh.info/doc/texinfo/",
+      "used_for": "OCC STEP import, surface fragment, physical tags, tetrahedron meshing and export",
+      "accessed": "2026-09-27"
+    },
+    {
+      "url": "https://scikit-fem.readthedocs.io/en/stable/listofexamples.html#example-11-three-dimensional-linear-elasticity",
+      "used_for": "Official 3D elasticity workflow; installed package source checked for constitutive/assembly functions",
+      "accessed": "2026-09-27"
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "cadquery": "2.8.0",
+    "gmsh": "4.15.2",
+    "scikit_fem": "12.0.2",
+    "scipy": "1.18.1",
+    "numpy": "2.5.3",
+    "pyamg": "5.3.0",
+    "meshio": "5.3.5"
+  },
+  "material_boundary": "E=70GPa,nu=.33 is a common nominal comparison assumption; no yield, CoC, printed-material or supplier capacity inferred."
+}

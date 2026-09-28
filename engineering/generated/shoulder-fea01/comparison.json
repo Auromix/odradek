@@ -1,0 +1,324 @@
+{
+  "revision": "SHOULDER-FEA01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "material_nominal": {
+    "E_MPa": 70000.0,
+    "nu": 0.33,
+    "yield_MPa": null
+  },
+  "mesh_sizes_mm": [
+    6.0,
+    4.0,
+    2.8
+  ],
+  "convergence_checks": [
+    {
+      "variant": "01",
+      "case": "Fz",
+      "responses": [
+        0.0015134791999070532,
+        0.0015270433950039883,
+        0.0015325416660376269
+      ],
+      "last_refinement_relative_change": 0.0036005990737573157,
+      "criterion": 0.02,
+      "pass_under_declared_criterion": true
+    },
+    {
+      "variant": "01",
+      "case": "Mx",
+      "responses": [
+        0.0060314267174604,
+        0.006084567830665724,
+        0.006105630431451334
+      ],
+      "last_refinement_relative_change": 0.0034616428597371574,
+      "criterion": 0.02,
+      "pass_under_declared_criterion": true
+    },
+    {
+      "variant": "01",
+      "case": "My",
+      "responses": [
+        0.00026115323577162534,
+        0.00026383362673466215,
+        0.00026504434975314906
+      ],
+      "last_refinement_relative_change": 0.00458896401293285,
+      "criterion": 0.02,
+      "pass_under_declared_criterion": true
+    },
+    {
+      "variant": "02",
+      "case": "Fz",
+      "responses": [
+        0.0008411572707991283,
+        0.0008445027341464397,
+        0.0008463614109234721
+      ],
+      "last_refinement_relative_change": 0.002200912681367573,
+      "criterion": 0.02,
+      "pass_under_declared_criterion": true
+    },
+    {
+      "variant": "02",
+      "case": "Mx",
+      "responses": [
+        0.0012910267508820556,
+        0.0012941706463744055,
+        0.001296145892812712
+      ],
+      "last_refinement_relative_change": 0.0015262642865840892,
+      "criterion": 0.02,
+      "pass_under_declared_criterion": true
+    },
+    {
+      "variant": "02",
+      "case": "My",
+      "responses": [
+        0.00011384966346333492,
+        0.00011428775908177244,
+        0.00011448310603299607
+      ],
+      "last_refinement_relative_change": 0.0017092552412709683,
+      "criterion": 0.02,
+      "pass_under_declared_criterion": true
+    }
+  ],
+  "comparison_finest": {
+    "Fz": {
+      "RAISE01": 0.0015325416660376269,
+      "RAISE02": 0.0008463614109234721,
+      "response_unit": "mm",
+      "RAISE02_over_RAISE01": 0.5522599676599542,
+      "response_reduction_percent": 44.77400323400458,
+      "stiffness_factor": 1.8107414235314174
+    },
+    "Mx": {
+      "RAISE01": 0.006105630431451334,
+      "RAISE02": 0.001296145892812712,
+      "response_unit": "rad",
+      "RAISE02_over_RAISE01": 0.21228698778360433,
+      "response_reduction_percent": 78.77130122163956,
+      "stiffness_factor": 4.7106043118354215
+    },
+    "My": {
+      "RAISE01": 0.00026504434975314906,
+      "RAISE02": 0.00011448310603299607,
+      "response_unit": "rad",
+      "RAISE02_over_RAISE01": 0.4319394325501401,
+      "response_reduction_percent": 56.80605674498599,
+      "stiffness_factor": 2.3151394029854373
+    }
+  },
+  "compact_surface_exports": [
+    {
+      "file": "RAISE01-finest-surface-fields.vtu.gz",
+      "sha256": "64a45bebc26f5082668665e58cd7fd6f63aeb7eaffb9d8931f5583db1937489d",
+      "bytes": 5107011,
+      "uncompressed_file": "RAISE01-finest-surface-fields.vtu",
+      "uncompressed_sha256": "1475a56d0d7ec8eb963d2542acc05f6f4b9d7f56c8627acba5b472bdd0f93ff0",
+      "uncompressed_bytes": 6777236,
+      "lossless_gzip_roundtrip_verified": true,
+      "nodes": 45052,
+      "quadratic_surface_triangles": 22534,
+      "meaning": "Exact subset of solved straight-geometry P2 boundary DOFs; no internal stress field or deformed geometry. Decompress gzip before VTU viewing."
+    },
+    {
+      "file": "RAISE02-finest-surface-fields.vtu.gz",
+      "sha256": "e23a4c2b8a9f858494ab66344f359a0890cec9744e7ad3d638ec25f6a849b51a",
+      "bytes": 18436273,
+      "uncompressed_file": "RAISE02-finest-surface-fields.vtu",
+      "uncompressed_sha256": "087bc50b163de8d6bf6ba00755fbeddb233d4b36daa6a6f9dc99268fd6625499",
+      "uncompressed_bytes": 24492953,
+      "lossless_gzip_roundtrip_verified": true,
+      "nodes": 156728,
+      "quadratic_surface_triangles": 78372,
+      "meaning": "Exact subset of solved straight-geometry P2 boundary DOFs; no internal stress field or deformed geometry. Decompress gzip before VTU viewing."
+    }
+  ],
+  "same_post_support_sensitivity": {
+    "Fz": {
+      "RAISE01": 0.0015293406180897301,
+      "RAISE02": 0.0008702909108650945,
+      "RAISE02_over_RAISE01": 0.5690628369971354,
+      "RAISE01_posts_over_full": 1.0104801031845374,
+      "RAISE02_posts_over_full": 1.0346351878267523
+    },
+    "Mx": {
+      "RAISE01": 0.006034262348602921,
+      "RAISE02": 0.0013402172282822955,
+      "RAISE02_over_RAISE01": 0.2221012529547358,
+      "RAISE01_posts_over_full": 1.00047014268354,
+      "RAISE02_posts_over_full": 1.0381018266016813
+    },
+    "My": {
+      "RAISE01": 0.0002626876138508012,
+      "RAISE02": 0.00012220082616420892,
+      "RAISE02_over_RAISE01": 0.4651944732864922,
+      "RAISE01_posts_over_full": 1.005875393711444,
+      "RAISE02_posts_over_full": 1.0733525462160323
+    }
+  },
+  "sensitivity_note": "One h6 mesh per variant; same four CAD annular fixed areas, not contact/bolt physics and not a separate converged study.",
+  "aggregate_scope": {
+    "main_meshes": 6,
+    "sensitivity_meshes": 2,
+    "total_meshes": 8,
+    "total_load_solutions": 24
+  },
+  "minimum_mean_ratio_all_meshes": 0.07543086554267567,
+  "maximum_absolute_CAD_volume_error": 0.0009817381397503322,
+  "maximum_force_balance_error_N": 6.922221462911323e-09,
+  "maximum_moment_balance_error_Nmm": 4.4655924627865464e-07,
+  "maximum_energy_balance_relative_error": 1.0699738451678117e-11,
+  "export_reimport_checks": [
+    {
+      "file": "RAISE01-h6-Fz.vtu",
+      "tetra10": 37004,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 138360.7628710224,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h6-Mx.vtu",
+      "tetra10": 37004,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 138360.7628710224,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h6-My.vtu",
+      "tetra10": 37004,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 138360.7628710224,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h4-Fz.vtu",
+      "tetra10": 50643,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 138318.9381680042,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h4-Mx.vtu",
+      "tetra10": 50643,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 138318.9381680042,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h4-My.vtu",
+      "tetra10": 50643,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 138318.9381680042,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h2.8-Fz.vtu",
+      "tetra10": 76779,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 138305.6891574803,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h2.8-Mx.vtu",
+      "tetra10": 76779,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 138305.6891574803,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE01-h2.8-My.vtu",
+      "tetra10": 76779,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 138305.6891574803,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h6-Fz.vtu",
+      "tetra10": 147775,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 267012.61306611117,
+      "quadratic_node_midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE02-h6-Mx.vtu",
+      "tetra10": 147775,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 267012.61306611117,
+      "quadratic_node_midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE02-h6-My.vtu",
+      "tetra10": 147775,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 267012.61306611117,
+      "quadratic_node_midpoint_max_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "file": "RAISE02-h4-Fz.vtu",
+      "tetra10": 231614,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 266971.7700341055,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h4-Mx.vtu",
+      "tetra10": 231614,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 266971.7700341055,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h4-My.vtu",
+      "tetra10": 231614,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 266971.7700341055,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h2.8-Fz.vtu",
+      "tetra10": 336917,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 266939.5220095579,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h2.8-Mx.vtu",
+      "tetra10": 336917,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 266939.5220095579,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    },
+    {
+      "file": "RAISE02-h2.8-My.vtu",
+      "tetra10": 336917,
+      "finite_displacement": true,
+      "connected_volume_components": 1,
+      "raw_reimport_volume_mm3": 266939.5220095579,
+      "quadratic_node_midpoint_max_error_mm": 8.881784197001252e-16
+    }
+  ],
+  "generator_sha256": "9bbe125ddef81c73bd2ea5b839fb0a6b48f083d2a0f9b75411234de623c5e0d8",
+  "decision": "Only rear-fork ideal elastic stiffness comparison; no assembly, material, payload, fatigue or manufacturing release. Foot constraint areas differ by geometry."
+}

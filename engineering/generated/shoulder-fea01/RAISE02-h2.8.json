@@ -1,0 +1,378 @@
+{
+  "revision": "SHOULDER-FEA01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "variant": "RAISE02",
+  "support_mode": "full",
+  "target_mesh_size_mm": 2.8,
+  "material_nominal": {
+    "E_MPa": 70000.0,
+    "nu": 0.33,
+    "yield_MPa": null
+  },
+  "units": "mm,N,MPa,Nmm",
+  "load_origin_world_mm": [
+    0.0,
+    -45.7,
+    205.0
+  ],
+  "foot_z_world_mm": 127.2,
+  "axis_z_world_mm": 205,
+  "span_mm": 77.8,
+  "assembly": {
+    "dofs": 1587459,
+    "order": 2,
+    "quadrature_order": 4,
+    "geometry_order": 1,
+    "stiffness_symmetry_relative_error": 1.2342597070601392e-16
+  },
+  "fixed_dofs": 6534,
+  "fixed_mesh_area_mm2": 1577.8633135269854,
+  "source": {
+    "source": "engineering/generated/shoulder-raise02/L12_rear_fork.step",
+    "source_sha256": "c5af756a04674a71831daf07d21cffd0b36e9c49c6cfa25b8e5886467a3fc206",
+    "placement_manifest": "engineering/generated/shoulder-raise02/part-placements.json",
+    "placement_manifest_sha256": "de9eb4a228d7b4c55c07bc48d06a5a0eecef55d7e3499c85d19bcac754302b23",
+    "T_world_from_part_mm": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "world_STEP_sha256_at_mesh_generation": "bafeaf26477ba1bb24a14434dff655e9f404d046ae0ec1ba8a778d4f68327907",
+    "CAD_volume_mm3": 266751.71113149077,
+    "nominal_mass_kg": 0.7202296200109263
+  },
+  "mesh": {
+    "nodes": 76521,
+    "tetrahedra": 336917,
+    "min_jacobian_determinant_mm3": 0.00212997417874207,
+    "min_volume_mm3": 0.0003549956964570117,
+    "mesh_volume_mm3": 266939.5220095572,
+    "mean_ratio_min": 0.12213154952344327,
+    "mean_ratio_percentiles": [
+      0.6117275791490937,
+      0.6981147149252328,
+      0.8676117635144428,
+      0.9649492363938373,
+      0.983681581386412
+    ],
+    "nonpositive_elements": 0,
+    "CAD_volume_relative_error": 0.0007040663189443741
+  },
+  "raw_mesh": "RAISE02-h2.8.msh",
+  "raw_mesh_sha256": "53048711481ae3196d611958f591af2e82cb42748db2cbcf697e511b2291ec8e",
+  "load_CAD_area_mm2": 2124.6591116227783,
+  "fixed_CAD_area_mm2": 1575.8601836602552,
+  "load_surface_entity_ids": [
+    1
+  ],
+  "fixed_surface_entity_ids": [
+    20,
+    101
+  ],
+  "cases": {
+    "Fz": {
+      "load": {
+        "area_mm2": 2127.720877459795,
+        "centroid_world_mm": [
+          -0.0009915860727070435,
+          -45.7,
+          205.00222969538552
+        ],
+        "area_second_moment_mm4": [
+          [
+            2802324.1493065846,
+            4.78754526349802e-14,
+            55.98204390347132
+          ],
+          [
+            4.78754526349802e-14,
+            1.062574806430486e-26,
+            -6.915027517753528e-11
+          ],
+          [
+            55.98204390347132,
+            -6.915027517753528e-11,
+            2802279.0114183547
+          ]
+        ],
+        "traction_constant_N_mm2": [
+          0.0,
+          0.0,
+          0.12685579925871834
+        ],
+        "traction_rotation_coefficient_N_mm3": [
+          -7.923123345723504e-28,
+          -4.775408540330953e-08,
+          1.1783819166502273e-24
+        ],
+        "assembled_force_N": [
+          -2.6064669034881233e-17,
+          2.610270021146692e-36,
+          269.91373250962397
+        ],
+        "assembled_moment_Nmm": [
+          3.2484312279421447e-15,
+          1.6645847322890661e-12,
+          2.2673239580702808e-18
+        ],
+        "force_error_N": 1.7053025857434907e-13,
+        "moment_error_Nmm": 1.6645879019386285e-12,
+        "face_count": 1112
+      },
+      "solver": {
+        "method": "CG+smoothed-aggregation AMG sixrigid modes",
+        "iterations": 96,
+        "AMG_levels": 3,
+        "free_residual_relative": 1.7356249633406791e-10,
+        "reaction_force_N": [
+          -1.2140627739243293e-10,
+          -6.795111522073238e-11,
+          -269.9137325097063
+        ],
+        "reaction_moment_Nmm": [
+          -2.627694506429634e-09,
+          3.1591316229651056e-09,
+          -6.500580074231266e-10
+        ],
+        "force_balance_error_N": 1.6165290158491313e-10,
+        "moment_balance_error_Nmm": 4.161486444051286e-09,
+        "force_balance_normalized": 5.989058062436645e-13,
+        "moment_balance_normalized": 7.30961982393101e-14,
+        "balance_length_scale_mm": 210.92531853715428,
+        "strain_energy_Nmm": 0.11422228373715412,
+        "total_external_work_Nmm": 0.22844456747446584,
+        "energy_balance_relative_error": 1.5759615834554097e-13
+      },
+      "work_conjugate_response": 0.0008463614109234721,
+      "response_unit": "mm",
+      "max_displacement_norm_mm": 0.004017818991307297,
+      "von_mises_quadrature_max_MPa": 2.912021422261079,
+      "result_vtu": "RAISE02-h2.8-Fz.vtu",
+      "result_sha256": "9cfb7028c0b8c3454d063de12b3caf4785eefecca7065bd738796e74f1e58283"
+    },
+    "Mx": {
+      "load": {
+        "area_mm2": 2127.720877459795,
+        "centroid_world_mm": [
+          -0.0009915860727070435,
+          -45.7,
+          205.00222969538552
+        ],
+        "area_second_moment_mm4": [
+          [
+            2802324.1493065846,
+            4.78754526349802e-14,
+            55.98204390347132
+          ],
+          [
+            4.78754526349802e-14,
+            1.062574806430486e-26,
+            -6.915027517753528e-11
+          ],
+          [
+            55.98204390347132,
+            -6.915027517753528e-11,
+            2802279.0114183547
+          ]
+        ],
+        "traction_constant_N_mm2": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "traction_rotation_coefficient_N_mm3": [
+          0.03568524034631882,
+          2.960336076888445e-22,
+          7.128842294235916e-07
+        ],
+        "assembled_force_N": [
+          8.994635774250701e-21,
+          -1.9872457383258726e-11,
+          -4.502494601199144e-16
+        ],
+        "assembled_moment_Nmm": [
+          99999.99999999988,
+          -4.464410385891201e-19,
+          1.0683676317581123e-13
+        ],
+        "force_error_N": 1.9872457388359367e-11,
+        "moment_error_Nmm": 1.1641537085008478e-10,
+        "face_count": 1112
+      },
+      "solver": {
+        "method": "CG+smoothed-aggregation AMG sixrigid modes",
+        "iterations": 98,
+        "AMG_levels": 3,
+        "free_residual_relative": 1.9203529692990454e-10,
+        "reaction_force_N": [
+          -4.744046544491454e-10,
+          1.2323946307901679e-09,
+          2.4518787000715747e-09
+        ],
+        "reaction_moment_Nmm": [
+          -100000.00000006855,
+          5.29765529222459e-08,
+          1.9122126104775816e-10
+        ],
+        "force_balance_error_N": 2.776144223398462e-09,
+        "moment_balance_error_Nmm": 8.673054642366495e-08,
+        "force_balance_normalized": 5.855591046254021e-12,
+        "moment_balance_normalized": 8.673054642366505e-13,
+        "balance_length_scale_mm": 210.92531853715428,
+        "strain_energy_Nmm": 64.80729464059151,
+        "total_external_work_Nmm": 129.6145892812712,
+        "energy_balance_relative_error": 6.804215856531446e-13
+      },
+      "work_conjugate_response": 0.001296145892812712,
+      "response_unit": "rad",
+      "max_displacement_norm_mm": 0.15325911230030845,
+      "von_mises_quadrature_max_MPa": 130.9541933000927,
+      "result_vtu": "RAISE02-h2.8-Mx.vtu",
+      "result_sha256": "ba817137fcac14a1e91bfa614239bfe6cc261d6149941f4e6dbcccc021758550"
+    },
+    "My": {
+      "load": {
+        "area_mm2": 2127.720877459795,
+        "centroid_world_mm": [
+          -0.0009915860727070435,
+          -45.7,
+          205.00222969538552
+        ],
+        "area_second_moment_mm4": [
+          [
+            2802324.1493065846,
+            4.78754526349802e-14,
+            55.98204390347132
+          ],
+          [
+            4.78754526349802e-14,
+            1.062574806430486e-26,
+            -6.915027517753528e-11
+          ],
+          [
+            55.98204390347132,
+            -6.915027517753528e-11,
+            2802279.0114183547
+          ]
+        ],
+        "traction_constant_N_mm2": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "traction_rotation_coefficient_N_mm3": [
+          2.960336076888445e-22,
+          0.01784247646662378,
+          -4.402817358757243e-19
+        ],
+        "assembled_force_N": [
+          9.796229587242619e-12,
+          3.2063084857630977e-31,
+          6.673503698805163e-14
+        ],
+        "assembled_moment_Nmm": [
+          -1.6477948282795745e-14,
+          100000.00000000001,
+          -8.471458310303571e-13
+        ],
+        "force_error_N": 9.796456894772186e-12,
+        "moment_error_Nmm": 1.4576562159692758e-11,
+        "face_count": 1112
+      },
+      "solver": {
+        "method": "CG+smoothed-aggregation AMG sixrigid modes",
+        "iterations": 91,
+        "AMG_levels": 3,
+        "free_residual_relative": 1.7208810644459193e-10,
+        "reaction_force_N": [
+          -7.155406822612065e-10,
+          9.586503847691663e-10,
+          -3.496622991150389e-10
+        ],
+        "reaction_moment_Nmm": [
+          7.483530772844915e-08,
+          -99999.999999951,
+          6.165981047967506e-08
+        ],
+        "force_balance_error_N": 1.2406864435147157e-09,
+        "moment_balance_error_Nmm": 1.0864719067523286e-07,
+        "force_balance_normalized": 2.6169218330307043e-12,
+        "moment_balance_normalized": 1.0864719067523285e-12,
+        "balance_length_scale_mm": 210.92531853715428,
+        "strain_energy_Nmm": 5.724155301639192,
+        "total_external_work_Nmm": 11.448310603299607,
+        "energy_balance_relative_error": 1.8537350964428056e-12
+      },
+      "work_conjugate_response": 0.00011448310603299607,
+      "response_unit": "rad",
+      "max_displacement_norm_mm": 0.024404041017718908,
+      "von_mises_quadrature_max_MPa": 18.382769489794676,
+      "result_vtu": "RAISE02-h2.8-My.vtu",
+      "result_sha256": "eea4b5b1eec520c297507cdb596cef534c5d40dd90cf24865c221dd5270a1e91"
+    }
+  },
+  "normalized_compliance_matrix": [
+    [
+      3.135673769000601e-06,
+      1.0930323058247713e-07,
+      -7.50751395955602e-13
+    ],
+    [
+      1.0930323058210649e-07,
+      1.296145892812712e-08,
+      1.5103353553869543e-14
+    ],
+    [
+      -7.507513292126085e-13,
+      1.510334718719426e-14,
+      1.1448310603299607e-09
+    ]
+  ],
+  "compliance_diagonal_units": [
+    "mm/N",
+    "rad/Nmm",
+    "rad/Nmm"
+  ],
+  "generalized_load_order": [
+    "Fz_N",
+    "Mx_Nmm",
+    "My_Nmm"
+  ],
+  "generalized_response_order": [
+    "conjugate_translation_z_mm",
+    "conjugate_rotation_x_rad",
+    "conjugate_rotation_y_rad"
+  ],
+  "Maxwell_Betti_relative_error": 1.1820205677546988e-13,
+  "elapsed_seconds": 554.468198299408,
+  "generator_sha256": "e7db1cb07fdd499e8debc2c8e853b00e2f31a78823d8bb510ee7724c09083de4",
+  "limitations": [
+    "Ideal Dirichlet support: full; no contact separation/slip or bolt compliance.",
+    "Ideal annular rear load excludes eight4.5mm holes; not exact OEM rear contact footprint.",
+    "Only original aluminium fork; no tied steel blocks, OEM joint, bolts, preload or contact.",
+    "Linear isotropic smallstrain stiffness, not payload qualification or yield/fatigue assessment.",
+    "Quadratic displacement on linear faceted geometry. Singular clamp/corner stress peaks not design allowables."
+  ]
+}
