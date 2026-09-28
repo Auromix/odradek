@@ -13,6 +13,7 @@ R5最新工程入口：[削肩灯片FORM02与二维图](r5-petal-form02.md)、[�
 | 部分 | 入口 | 已有证据及边界 |
 |---|---|---|
 | 当前径向候选 Blender | [STAGE-BLENDER01](r5-stage-blender01.md) | 28个真实灯片CAD网格，展示圆柱与长方盒的不同半径接触；一个主动输入加被动评审偏移，未模拟真实差动传动 |
+| 径向折叠随动器与根轴承 | [CAM-HARDWARE01](hardware/r5-cam-hardware01.md) | CFS4、双607/8-2Z、真实安装栈与逐片受力；保留大悬伸、远端接触及低摩擦下的不足 |
 | 单驱动运动与夹持需求 | [FAST-KIN01](fast-finger-kin01.md) | 真实单位的虚功、非线性映射项、1秒空载轨迹、接触顺应反例及转子回生；机构仍待综合 |
 | 中央执行器候选 | [FAST-DRIVE01](hardware/fast-drive01.md) | 单3274+32GPT HT50与AK70/直接丝杆比较；空载速度筛查通过，静止热及实际夹力未获得资格 |
 | 结构布局 | [R4 布局、闭合与抓取](r4-layout-and-grasp.md) | 同参数 74 组 STEP、7＋4 Blender、A3评审图；连接与动态线束未完整 |

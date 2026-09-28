@@ -1,0 +1,213 @@
+{
+  "revision": "R5-CAM-HARDWARE01",
+  "status": "catalogue interface candidate; no vendor BREP, tolerance stack or carrier release",
+  "units": "mm unless stated",
+  "source_ids": [
+    "IKO-CURRENT",
+    "IKO-CN",
+    "SKF-6078"
+  ],
+  "datum": {
+    "origin": "fixed stud shoulder seated against rocker mounting plate",
+    "positive_u": "along stud toward threaded tip; orthogonal radial coordinates v,w",
+    "head_transform": null
+  },
+  "CFS4": {
+    "manufacturer": "IKO",
+    "exact_designation": "CFS4",
+    "variant": "high-carbon-steel,caged,cylindrical outer ring,class0",
+    "dimensions": {
+      "D": 8,
+      "C": 5,
+      "d1": 4,
+      "G": "M4x0.7",
+      "G1": 4,
+      "B": 7,
+      "B1": 15,
+      "B2": 8,
+      "C1": 1,
+      "H_hex": 1.5,
+      "f_seat_min": 7.7
+    },
+    "nominal_axial_intervals": {
+      "front_assembly": [
+        -7,
+        0
+      ],
+      "rolling_outer_ring": [
+        -6,
+        -1
+      ],
+      "rolling_center": -3.5,
+      "plain_stud": [
+        0,
+        4
+      ],
+      "thread": [
+        4,
+        8
+      ]
+    },
+    "tolerances": {
+      "mean_outer_D": [
+        7.992,
+        8
+      ],
+      "width_C": [
+        4.88,
+        5
+      ],
+      "radial_runout_max": 0.015,
+      "radial_internal_clearance": [
+        0.003,
+        0.017
+      ],
+      "stud_fit": "h6",
+      "mounting_hole": "4H6",
+      "mounting_hole_limits": [
+        4,
+        4.008
+      ],
+      "limits_note": "mean D plus runout is not a max-material envelope; axial endpoints above nominal only"
+    },
+    "ratings": {
+      "dynamic_C_N": 1120,
+      "static_C0_N": 1120,
+      "maximum_allowable_static_N": 919,
+      "flat_40HRC_track_capacity_N": 799,
+      "reference_body_mass_kg": 0.004,
+      "mass_excludes_supplied_nut": true,
+      "grease_recommended_relative_rpm": 2100,
+      "grease_maximum_relative_rpm": 21000,
+      "max_nut_torque_Nm": 0.777
+    },
+    "supplied_nut": {
+      "thread": "M4x0.7",
+      "thickness": 3.2,
+      "across_flats": 7,
+      "across_corners_reference": 8.1,
+      "separate_SKU": null,
+      "lock_method": "TBD; supplied nut not a verified locking system"
+    },
+    "mounting_candidate": {
+      "rocker_plate_interval": [
+        0,
+        4
+      ],
+      "nut_interval": [
+        4,
+        7.2
+      ],
+      "nominal_tip_projection": 0.8,
+      "track_plate_interval": [
+        -5.5,
+        -1.5
+      ],
+      "effective_track_width": 4,
+      "nominal_rolling_edge_allowance": 0.5,
+      "minimum_width_edge_allowance_if_centered": 0.44,
+      "plate_material_grade": null,
+      "plate_strength_verified": false,
+      "small_hole_chamfer": "IKO general guidance C0.5 or less; actual micro seat to be designed",
+      "warning": "four-mm seat places nut at nominal thread start; runout/chamfer/thread tolerance/tool clearance not closed"
+    }
+  },
+  "root_support_candidate": {
+    "manufacturer": "SKF",
+    "exact_designation": "607/8-2Z",
+    "quantity_per_petal": 2,
+    "dimensions": {
+      "bore": 8,
+      "outer_D": 19,
+      "width": 6
+    },
+    "abutment": {
+      "shaft_shoulder_diameter_min": 10,
+      "shaft_shoulder_diameter_max": 11,
+      "housing_shoulder_opening_max": 17,
+      "fillet_radius_max": 0.3,
+      "bearing_chamfer_min": 0.3,
+      "source": "SKF-6078 matched row PDF264–265, printed262–263"
+    },
+    "ratings": {
+      "C_N": 2340,
+      "C0_N": 950,
+      "reference_rpm": 85000,
+      "limiting_rpm": 43000,
+      "reference_mass_kg": 0.0072
+    },
+    "interface": "two separate coaxial short trunnions; no shaft through unchanged FORM02 root",
+    "trunnion_material_fit_retention": null,
+    "positive_torque_transfer": null,
+    "carrier_example": {
+      "bearing_center_y": [
+        -16,
+        16
+      ],
+      "bearing_intervals_y": [
+        [
+          -19,
+          -13
+        ],
+        [
+          13,
+          19
+        ]
+      ],
+      "candidate_housing_intervals_y": [
+        [
+          -19,
+          -13
+        ],
+        [
+          13,
+          19
+        ]
+      ],
+      "candidate_housing_OD": 22,
+      "candidate_endcap_outer_D": 20,
+      "candidate_endcap_intervals_y": [
+        [
+          -20,
+          -19
+        ],
+        [
+          19,
+          20
+        ]
+      ]
+    },
+    "warning": "housing and trunnions are custom candidates; bearing catalogue rating does not verify shaft, pin, bracket, retention or complete module"
+  },
+  "package_example": {
+    "status": "carrier-agent packaging counterexample under examination; not accepted arrangement",
+    "cam_center_y": 32,
+    "stud_shoulder_y": 28.5,
+    "stud_points_towards_negative_y": true,
+    "roller_y": [
+      29.5,
+      34.5
+    ],
+    "plain_stud_y": [
+      24.5,
+      28.5
+    ],
+    "nut_y": [
+      21.3,
+      24.5
+    ],
+    "stud_tip_y": 20.5,
+    "track_plate_y": [
+      30,
+      34
+    ],
+    "housing_nearest_positive_y": 20,
+    "nominal_tip_housing_axial_gap": 0.5
+  },
+  "scope": [
+    "dimension and reaction inputs for R5-CARRIER01",
+    "no all-petal collision proof",
+    "no guarantee of 2kg gripping",
+    "groove8.05 candidate would alter STAGE01 placeholder, not silently update it"
+  ]
+}

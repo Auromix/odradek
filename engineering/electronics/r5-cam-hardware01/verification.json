@@ -1,0 +1,367 @@
+{
+  "revision": "R5-CAM-HARDWARE01",
+  "result": "PASS evidence-consistency checks; not hardware acceptance",
+  "check_count": 61,
+  "checks": [
+    {
+      "name": "input engineering/generated/r5-stage01/study.json",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "input engineering/generated/r5-petal-form02/study.json",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "input engineering/r5_stage01.py",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "calculate script hash",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "no manufacturing release",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "component source IDs resolvable",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "cached primary source hash IKO-CN",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "cached primary source hash SKF-6078",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "quintic/upper rated relative speed screen",
+      "passed": true,
+      "observed": 887.4705595035086
+    },
+    {
+      "name": "quintic/upper actual relative <= both-wall bound",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "quintic/upper force changes wall (not suppressed)",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "quintic/upper contains moving-root inertia",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "quintic/lower rated relative speed screen",
+      "passed": true,
+      "observed": 887.4705595035086
+    },
+    {
+      "name": "quintic/lower actual relative <= both-wall bound",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "quintic/lower force changes wall (not suppressed)",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "quintic/lower contains moving-root inertia",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "quintic/system independent path force reconstruction",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "quintic/system work-energy residual",
+      "passed": true,
+      "observed": 3.7300335598011714e-08
+    },
+    {
+      "name": "quintic/system/upper independent acceleration FD",
+      "passed": true,
+      "observed": {
+        "max_abs_error_m_s2": 0.022163486774217755,
+        "peak_analytic_acceleration_m_s2": 45.6010542041262,
+        "sample_step_s": 2.5e-05,
+        "method": "second central finite differences of independent COM positions; five endpoint samples omitted; piecewise C2 transition samples retained"
+      }
+    },
+    {
+      "name": "quintic/system/lower independent acceleration FD",
+      "passed": true,
+      "observed": {
+        "max_abs_error_m_s2": 0.014585327586288221,
+        "peak_analytic_acceleration_m_s2": 29.80458511843289,
+        "sample_step_s": 2.5e-05,
+        "method": "second central finite differences of independent COM positions; five endpoint samples omitted; piecewise C2 transition samples retained"
+      }
+    },
+    {
+      "name": "bernstein9/upper rated relative speed screen",
+      "passed": true,
+      "observed": 568.4516934652092
+    },
+    {
+      "name": "bernstein9/upper actual relative <= both-wall bound",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "bernstein9/upper force changes wall (not suppressed)",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "bernstein9/upper contains moving-root inertia",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "bernstein9/lower rated relative speed screen",
+      "passed": true,
+      "observed": 568.4516934652092
+    },
+    {
+      "name": "bernstein9/lower actual relative <= both-wall bound",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "bernstein9/lower force changes wall (not suppressed)",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "bernstein9/lower contains moving-root inertia",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "bernstein9/system independent path force reconstruction",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "bernstein9/system work-energy residual",
+      "passed": true,
+      "observed": 7.324656284279918e-09
+    },
+    {
+      "name": "bernstein9/system/upper independent acceleration FD",
+      "passed": true,
+      "observed": {
+        "max_abs_error_m_s2": 0.008270556080900215,
+        "peak_analytic_acceleration_m_s2": 18.060289244768768,
+        "sample_step_s": 2.5e-05,
+        "method": "second central finite differences of independent COM positions; five endpoint samples omitted; piecewise C2 transition samples retained"
+      }
+    },
+    {
+      "name": "bernstein9/system/lower independent acceleration FD",
+      "passed": true,
+      "observed": {
+        "max_abs_error_m_s2": 0.005442691668944399,
+        "peak_analytic_acceleration_m_s2": 11.95604256853842,
+        "sample_step_s": 2.5e-05,
+        "method": "second central finite differences of independent COM positions; five endpoint samples omitted; piecewise C2 transition samples retained"
+      }
+    },
+    {
+      "name": "exactly48 static cases",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "static torque equilibrium and separated normal-only cases",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "two nominal contact cases",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "nominal CFS C0 screen>=3",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "x95 failure retained, not declared passing",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "low-mu track failure retained",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "root-bearing moment balance",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "root overhang effect retained",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "root C0 margin below3 explicitly retained",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "outer ring width and center",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "B1=B+B2",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "stock nut thread engagement nominal",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "correct root bearing, not same-size substitute",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "matched SKF abutment record",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "no invented trunnion or positive torque SKU",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "slot candidate locally regular",
+      "passed": true,
+      "observed": 0.2619540037441972
+    },
+    {
+      "name": "slot remains unreleased",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "valid SVG single-petal-loads.svg",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "valid SVG follower-interface.svg",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "8 BOM rows with candidate/TBD boundaries",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "catalogue pieces reference mass subtotal",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "document link ../sources/r5-cam-hardware01.json",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "document link ../../../engineering/electronics/r5-cam-hardware01/follower-interface.svg",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "document link ../../../engineering/electronics/r5-cam-hardware01/mechanical-interface.json",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "document link ../../../engineering/electronics/r5-cam-hardware01/single-petal-loads.svg",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "document link ../../../engineering/electronics/r5-cam-hardware01/static-grip-scenarios.csv",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "document link ../../../engineering/electronics/r5-cam-hardware01/split-root-reaction-sensitivity.csv",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "document link ../../../engineering/electronics/r5-cam-hardware01/bom.csv",
+      "passed": true,
+      "observed": null
+    },
+    {
+      "name": "document link ../../../engineering/electronics/r5-cam-hardware01/budget.json",
+      "passed": true,
+      "observed": null
+    }
+  ],
+  "artifact_sha256": {
+    "engineering/electronics/r5-cam-hardware01/bernstein9-single-petal-cycle.csv": "7b939efde7fd5d87a73178cf3e87c932968c1db2ad2967357c19b6b5e0178338",
+    "engineering/electronics/r5-cam-hardware01/bom.csv": "f8bede1370af3a7cf2be0977300b7a6813c0f13535abd645588fd2c1c286d0de",
+    "engineering/electronics/r5-cam-hardware01/budget.json": "1fe1072de36ef47443d5010a36a22366df58f13b1a93b46e7d7d3d9a2e4769f0",
+    "engineering/electronics/r5-cam-hardware01/build_interfaces.py": "16298b92f1ab878424cf3b275a7760704f7b83a78000395030629420c478b5fa",
+    "engineering/electronics/r5-cam-hardware01/calculate.py": "3bbf43bd3f71326488aa84c5dfc2f20b5d93df93ab195ebbb0391928fa533a01",
+    "engineering/electronics/r5-cam-hardware01/draw.py": "19abd74a0b9044e1b3ba7ab23486c25b7e640e20dc6076291b73ab0d99ad25a0",
+    "engineering/electronics/r5-cam-hardware01/follower-interface.png": "a93e0143c10a2cd040eed474859e1e3656ab37b5b5c93952d168e98b7bf090a4",
+    "engineering/electronics/r5-cam-hardware01/follower-interface.svg": "a06fcb333c2b2dc725867641d671a029c9aca365cb2ed8843ada527dccdc3441",
+    "engineering/electronics/r5-cam-hardware01/mechanical-interface.json": "37571fd9ed80371787e453afbc48f06e116c864311b8b94f2e5a72a91bbe9ef3",
+    "engineering/electronics/r5-cam-hardware01/quintic-single-petal-cycle.csv": "894bfc31bd85bc46af306b7c5c9b0e609a47b289d630807b58129aceaad2a8a5",
+    "engineering/electronics/r5-cam-hardware01/single-petal-loads.png": "a6572c0b8514cb2d9b582ca862cb6f0f6d1200ec016460e5ce8e4a3788ba4b5e",
+    "engineering/electronics/r5-cam-hardware01/single-petal-loads.svg": "76eb13c5557ba5708e3bb6dc4b37885a40cbeeaed074f9114610fab3f308ca28",
+    "engineering/electronics/r5-cam-hardware01/split-root-reaction-sensitivity.csv": "a71ea3f134210921871a55294af0eb92bf3fc6afdf7a8f2c6e44d8cde2857576",
+    "engineering/electronics/r5-cam-hardware01/static-grip-scenarios.csv": "9f579904c35d104c8d25ad2c79ec1016c6843b803a66bd2eba8e790ff1843c3f",
+    "engineering/electronics/r5-cam-hardware01/verify.py": "3fdff3d8258ed867660a10a9323a6720bc53fc238a167e00c6319e360c019e1c",
+    "docs/engineering/hardware/r5-cam-hardware01.md": "d518f6b571a3ad2bd1d9d406703d519a897694389dd732fcf83ca2671a51d0ed",
+    "docs/engineering/sources/r5-cam-hardware01.json": "5e168e44d97b76bca11285979383c6bfc420b52eed30782bca845d920fa65c19"
+  },
+  "visual_review": {
+    "status": "rendered PNGs inspected; labels, axes, source notes and candidate scope readable",
+    "files": [
+      "follower-interface.png",
+      "single-petal-loads.png"
+    ]
+  },
+  "unpassed_engineering_requirements": [
+    "full four-petal carrier collision and tolerance proof",
+    "root-bearing static target3 not met in current span32/Y32 example",
+    "x95/mu.4 CFS static target3 not met;mu.2/x95 flat-track capacity exceeded",
+    "shaft/pin/bracket/fastener strength, fits, positive torque path and locking",
+    "curved-track material/finish/contact fatigue and reversal impacts",
+    "completed assemblies and2kg object tests"
+  ],
+  "manufacturing_release": false
+}
