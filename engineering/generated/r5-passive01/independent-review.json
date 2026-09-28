@@ -1,0 +1,68 @@
+{
+  "review": "Independent R5-PASSIVE01 mathematical audit",
+  "conclusion": "PASS within stated hypothetical pre-event model; no substantive sign/factor bug found",
+  "input_hashes": {
+    "engineering/r5_passive01.py": "a3998f5b226d3079c84302fdbbce0fc897f8b168c9d3a7f16f52c10b427d002e",
+    "engineering/generated/r5-passive01/study.json": "e5b03ebaec4bd65066c01686a45fdc2cda0892999072a7181b67dd2ab2823593",
+    "engineering/generated/r5-petal-form02/study.json": "6198b33a7e2e44d206f98062d2e2d099d94d4f6d3f4945ee5e0d3eae832164f4",
+    "engineering/generated/r5-stage01/study.json": "a3764e43a7cf973f2d83169cc960aed0158d6cf1c6ff54056fb7b161c47a790f"
+  },
+  "independence": [
+    "power-polynomial Bernstein construction, no BPoly",
+    "4 independent leaf coordinates plus5x5 multiplier solve, no reduced delta RHS",
+    "rotated COM Jacobian and finite-difference mass derivative",
+    "exact nominal first-opening stop, no10nm offset",
+    "independent Simpson work-energy integration"
+  ],
+  "values": {
+    "event_time_s": 0.40578381484046544,
+    "upper_s_m": 0.011010990753660185,
+    "lower_s_m": -2.1277467635028025e-18,
+    "upper_v_m_s": -0.07732964723049003,
+    "lower_v_m_s": -0.15390403839182684,
+    "mean_v_m_s": -0.11561684280930043,
+    "HU_kg": 7.848885139775842,
+    "HL_kg": 0.0964958285865357,
+    "required_upper_v_after_maintaining_mean_m_s": -0.23123368561860086,
+    "upper_delta_v_m_s": -0.15390403838811084,
+    "tension_impulse_each_leaf_N_s": -1.2079751198559339,
+    "lower_stop_impulse_each_N_s": 1.2228262175633673,
+    "tension_range_N": [
+      1.7959045687601547,
+      12.130755638946674
+    ],
+    "energy_change_J": -1.3407691904166992,
+    "input_minus_damping_work_J": -1.3407691829820108
+  },
+  "errors": {
+    "stop_time_vs_parent_s": -6.483758807629414e-08,
+    "upper_s_vs_parent_m": 4.992369510847805e-09,
+    "upper_v_vs_parent_m_s": 5.798341654039696e-08,
+    "lower_v_vs_parent_m_s": -1.3578884930365298e-07,
+    "impulse_vs_parent_N_s": -1.5910522921380732e-06,
+    "max_sum_position_constraint_error_m": 7.865583184774039e-14,
+    "energy_error_J": 7.434688420460134e-09
+  },
+  "findings": [
+    {
+      "severity": "informational",
+      "text": "Parent open-stop event has +1e-8m guard, hence ends at -10nm. Independent exact stop differs about65ns; quoted rounded result unaffected."
+    },
+    {
+      "severity": "scope",
+      "text": "Negative required rope impulse rules out continuing the simultaneous hard lower stop plus prescribed mean speed with all ropes taut. It does not predict post-impact slack recovery, or prove complete1s infeasibility for actual hardware."
+    },
+    {
+      "severity": "scope",
+      "text": "Spring5N+30N/m*s, viscous.2Ns/m and50g pure translating carrier each are assumptions; dynamic CABLE sizing must use actual routing/masses/return mechanism."
+    }
+  ],
+  "mathematics": {
+    "reduced": "(HU+HL)*d_ddot=(HL-HU)*u_ddot+bL-bU",
+    "impulse": "At maintained mean velocity, vUplus=2*u_dot; delta_vU=vLminus; J_each=HU*vLminus<0",
+    "multipliers": "each leaf T; second tier2T; prescribed mean input4T. Pair multiplicity cancels in reduced d equation.",
+    "mass": "H=m*||dr_com/ds||^2+I_COM,y*(dq/ds)^2+m_carrier; G=mg*dz_com/ds",
+    "force_sign": "positive s closes; spring and damping terms enter b=0.5Hprime*v^2+G+pre+k*s+c*v; gravity_head=-Z"
+  },
+  "source_files_modified": false
+}

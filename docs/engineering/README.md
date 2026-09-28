@@ -15,6 +15,7 @@ R5最新工程入口：[削肩灯片FORM02与二维图](r5-petal-form02.md)、[�
 | 当前径向候选 Blender | [STAGE-BLENDER01](r5-stage-blender01.md) | 28个真实灯片CAD网格，展示圆柱与长方盒的不同半径接触；一个主动输入加被动评审偏移，未模拟真实差动传动 |
 | 径向折叠随动器与根轴承 | [CAM-HARDWARE01](hardware/r5-cam-hardware01.md) | CFS4、双607/8-2Z、真实安装栈与逐片受力；保留大悬伸、远端接触及低摩擦下的不足 |
 | 差动钢索、滑轮与终端 | [CABLE-HARDWARE01](hardware/r5-cable-hardware01.md) | 一套升级索轮候选、名义50/100N条件筛选；全公差、端部保持力和完整索路尚未验证 |
+| 单电机被动开合动力学 | [PASSIVE01](r5-passive01.md) | 上下瓣不同步与首次止挡的独立数学核对；先碰止挡后不能继续套用绷紧钢索约束，完整周期仍未验证 |
 | eRob两轴腕部连接 | [WRIST-PAIR01](r5-wrist-pair01.md) | 一体连接件和薄裙接口、5页图与无载样件；真实固定侧螺钉纳入，线束/完整牙/强度仍待闭合 |
 | 单驱动运动与夹持需求 | [FAST-KIN01](fast-finger-kin01.md) | 真实单位的虚功、非线性映射项、1秒空载轨迹、接触顺应反例及转子回生；机构仍待综合 |
 | 中央执行器候选 | [FAST-DRIVE01](hardware/fast-drive01.md) | 单3274+32GPT HT50与AK70/直接丝杆比较；空载速度筛查通过，静止热及实际夹力未获得资格 |

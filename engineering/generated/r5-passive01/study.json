@@ -1,0 +1,290 @@
+{
+  "revision": "R5-PASSIVE01",
+  "scope": "Before first opening stop in an ideal massless, frictionless, inextensible, taut two-tier differential; carrier masses, springs and viscous damping are hypothetical. Not a simulated complete cycle, fabricated transmission or payload rating.",
+  "source_hashes": {
+    "engineering/r5_passive01.py": "a3998f5b226d3079c84302fdbbce0fc897f8b168c9d3a7f16f52c10b427d002e",
+    "engineering/generated/r5-petal-form02/study.json": "6198b33a7e2e44d206f98062d2e2d099d94d4f6d3f4945ee5e0d3eae832164f4",
+    "engineering/generated/r5-stage01/study.json": "a3764e43a7cf973f2d83169cc960aed0158d6cf1c6ff54056fb7b161c47a790f"
+  },
+  "assumptions": {
+    "gravity_head": [
+      0,
+      0,
+      -9.80665
+    ],
+    "one_active_mean_input": true,
+    "identical_members_within_upper_lower_pair": true,
+    "carrier_mass_is_sensitivity_not_actual": true,
+    "omitted": [
+      "follower/crank rotational inertia",
+      "pulley and rope mass/compliance/friction",
+      "actual return hardware",
+      "3D asymmetry and arbitrary gravity",
+      "stop impact/slack recovery and grasp contacts",
+      "final fully closed shape"
+    ]
+  },
+  "scenarios": [
+    {
+      "k_N_mm": 0.03,
+      "c_N_s_m": 0.2,
+      "preload_N": 5.0,
+      "carrier_each_kg": 0,
+      "stop_time_s": 0.40084804559396287,
+      "event": "open_stop",
+      "max_upper_lower_diff_mm": 12.166033438351166,
+      "end_s_mm": [
+        12.16602343835117,
+        -9.999999996471165e-06
+      ],
+      "T_min_N": 1.793466508326519,
+      "T_max_N": 12.368689647164246
+    },
+    {
+      "k_N_mm": 0.1,
+      "c_N_s_m": 2,
+      "preload_N": 5.0,
+      "carrier_each_kg": 0,
+      "stop_time_s": 0.40624075083891337,
+      "event": "open_stop",
+      "max_upper_lower_diff_mm": 10.905477761526443,
+      "end_s_mm": [
+        10.905467761526445,
+        -9.99999999907325e-06
+      ],
+      "T_min_N": 2.858723697364971,
+      "T_max_N": 12.301469309466528
+    },
+    {
+      "k_N_mm": 0.3,
+      "c_N_s_m": 5,
+      "preload_N": 5.0,
+      "carrier_each_kg": 0,
+      "stop_time_s": 0.4174992052666213,
+      "event": "open_stop",
+      "max_upper_lower_diff_mm": 8.702631454405568,
+      "end_s_mm": [
+        8.397081705453248,
+        -9.999999997338527e-06
+      ],
+      "T_min_N": 4.854998501877123,
+      "T_max_N": 23.0
+    },
+    {
+      "k_N_mm": 0.03,
+      "c_N_s_m": 0.2,
+      "preload_N": 5.0,
+      "carrier_each_kg": 0.05,
+      "stop_time_s": 0.4057838796780535,
+      "event": "open_stop",
+      "max_upper_lower_diff_mm": 11.010995761290673,
+      "end_s_mm": [
+        11.010985761290673,
+        -9.99999999907325e-06
+      ],
+      "T_min_N": 1.7959045742981714,
+      "T_max_N": 12.13072866011358
+    },
+    {
+      "k_N_mm": 0.1,
+      "c_N_s_m": 2,
+      "preload_N": 5.0,
+      "carrier_each_kg": 0.05,
+      "stop_time_s": 0.4069195587459732,
+      "event": "open_stop",
+      "max_upper_lower_diff_mm": 10.749173710689293,
+      "end_s_mm": [
+        10.749163710689292,
+        -1.0000000002542697e-05
+      ],
+      "T_min_N": 2.8568796946062562,
+      "T_max_N": 12.273245965817082
+    },
+    {
+      "k_N_mm": 0.3,
+      "c_N_s_m": 5,
+      "preload_N": 5.0,
+      "carrier_each_kg": 0.05,
+      "stop_time_s": 0.41853726588346873,
+      "event": "open_stop",
+      "max_upper_lower_diff_mm": 8.565498891414087,
+      "end_s_mm": [
+        8.176014455264626,
+        -1.0000000002542697e-05
+      ],
+      "T_min_N": 5.098018654050895,
+      "T_max_N": 23.0
+    },
+    {
+      "k_N_mm": 0.03,
+      "c_N_s_m": 0.2,
+      "preload_N": 5.0,
+      "carrier_each_kg": 0.1,
+      "stop_time_s": 0.40847995336914356,
+      "event": "open_stop",
+      "max_upper_lower_diff_mm": 10.392085733680537,
+      "end_s_mm": [
+        10.392075733680532,
+        -1.0000000005144782e-05
+      ],
+      "T_min_N": 1.8057186274410546,
+      "T_max_N": 11.981001059752131
+    },
+    {
+      "k_N_mm": 0.1,
+      "c_N_s_m": 2,
+      "preload_N": 5.0,
+      "carrier_each_kg": 0.1,
+      "stop_time_s": 0.4080298567436909,
+      "event": "open_stop",
+      "max_upper_lower_diff_mm": 10.494764502053092,
+      "end_s_mm": [
+        10.494754502053093,
+        -9.999999999940612e-06
+      ],
+      "T_min_N": 2.852548828516295,
+      "T_max_N": 12.238187305574872
+    },
+    {
+      "k_N_mm": 0.3,
+      "c_N_s_m": 5,
+      "preload_N": 5.0,
+      "carrier_each_kg": 0.1,
+      "stop_time_s": 0.4198727434478331,
+      "event": "open_stop",
+      "max_upper_lower_diff_mm": 8.411955127339802,
+      "end_s_mm": [
+        7.894504402902135,
+        -9.999999995603803e-06
+      ],
+      "T_min_N": 5.33618765676726,
+      "T_max_N": 23.0
+    }
+  ],
+  "baseline": {
+    "k_N_mm": 0.03,
+    "c_N_s_m": 0.2,
+    "preload_N": 5.0,
+    "carrier_each_kg": 0.05,
+    "stop_time_s": 0.4057838796780535,
+    "event": "open_stop",
+    "max_upper_lower_diff_mm": 11.010995761290673,
+    "end_s_mm": [
+      11.010985761290673,
+      -9.99999999907325e-06
+    ],
+    "T_min_N": 1.7959045742981714,
+    "T_max_N": 12.13072866011358
+  },
+  "first_stop": {
+    "stopping_pair": "lower",
+    "upper_speed_m_s": -0.07732970521390657,
+    "lower_speed_m_s": -0.15390390260297754,
+    "upper_remaining_s_mm": 11.010985761290673,
+    "lower_q_deg": 0.0,
+    "upper_q_deg": 35.04382910852493,
+    "bilateral_maintain_mean_required_tension_impulse_per_leaf_N_s": -1.2079735288036417,
+    "tension_impulse_feasible": false,
+    "interpretation": "Stopping the lower pair at zero velocity while maintaining the prescribed mean velocity would require a negative cable impulse. The taut bilateral model must end; real rope slack/compliance and stop dynamics must be modeled."
+  },
+  "static_rect50x120": [
+    {
+      "k_N_mm": 0.03,
+      "preload_each_N": 5.0,
+      "contact_s_mm": [
+        60.0,
+        25.0,
+        60.0,
+        25.0
+      ],
+      "leaf_tension_N": 31.316625,
+      "second_tier_tension_N": 62.63325,
+      "input_force_N": 125.2665,
+      "normal_each_N": [
+        24.516624999999998,
+        25.566625,
+        24.516624999999998,
+        25.566625
+      ],
+      "ideal_lead4_hold_Nm": 0.07974713071528364
+    },
+    {
+      "k_N_mm": 0.1,
+      "preload_each_N": 5.0,
+      "contact_s_mm": [
+        60.0,
+        25.0,
+        60.0,
+        25.0
+      ],
+      "leaf_tension_N": 35.516625,
+      "second_tier_tension_N": 71.03325,
+      "input_force_N": 142.0665,
+      "normal_each_N": [
+        24.516624999999998,
+        28.016624999999998,
+        24.516624999999998,
+        28.016624999999998
+      ],
+      "ideal_lead4_hold_Nm": 0.09044234289105899
+    },
+    {
+      "k_N_mm": 0.3,
+      "preload_each_N": 5.0,
+      "contact_s_mm": [
+        60.0,
+        25.0,
+        60.0,
+        25.0
+      ],
+      "leaf_tension_N": 47.516625,
+      "second_tier_tension_N": 95.03325,
+      "input_force_N": 190.0665,
+      "normal_each_N": [
+        24.516624999999998,
+        35.016625,
+        24.516624999999998,
+        35.016625
+      ],
+      "ideal_lead4_hold_Nm": 0.1210000919647029
+    },
+    {
+      "k_N_mm": 1.0,
+      "preload_each_N": 5.0,
+      "contact_s_mm": [
+        60.0,
+        25.0,
+        60.0,
+        25.0
+      ],
+      "leaf_tension_N": 89.516625,
+      "second_tier_tension_N": 179.03325,
+      "input_force_N": 358.0665,
+      "normal_each_N": [
+        24.516625000000005,
+        59.516625000000005,
+        24.516625000000005,
+        59.516625000000005
+      ],
+      "ideal_lead4_hold_Nm": 0.22795221372245658
+    }
+  ],
+  "review": {
+    "full_four_coordinate_max_position_difference_m": 2.5811940702647222e-11,
+    "full_four_mean_constraint_error_m": 1.7728873924482969e-15,
+    "timestep_refinement_event_difference_s": 1.6455664608727716e-10,
+    "work_energy_residual_J": 1.7020024944969236e-08,
+    "mass_metric_FD": [
+      {
+        "kind": "upper",
+        "max_H_FD_error_kg": 1.3450645042212273e-09
+      },
+      {
+        "kind": "lower",
+        "max_H_FD_error_kg": 3.6150549220792527e-10
+      }
+    ]
+  },
+  "one_second_qualification": false,
+  "manufacturing_release": false
+}
