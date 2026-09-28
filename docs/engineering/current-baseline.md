@@ -19,6 +19,8 @@
 | [LIGHT-JOINT01](hardware/r5-light-joint01.md) | 原生EtherCAT全带闸eRob候选，七模块8.857kg；实际官方图纸/STEP核读 | 真实新连接件、零速热条件、动态、线缆与交付版本；未替换RH总装 |
 | [PETAL-HW01](hardware/r5-petal-hardware01.md) | 透明板/皮层与真实紧固件候选，台架堆叠及工具空间核查 | 法兰预压、M2沉头轮廓、板变形/公差、摩擦和磨耗实测 |
 | [HEAD-SERVO01](hardware/r5-head-servo01.md) | 外置MC5010与头内Gold Solo Twitter候选、79行针脚表及回生计算 | 头内驱动修订/STO、相电流定义、低电感兼容、温升及保持，未做新PCB |
+| [SLIDER-HARDWARE01](hardware/r5-slider-hardware01.md) | 真实KSS 2.5mm丝杆、推力座、联轴器及MGN9导轨；短轴请求仍有243.8mm名义直列长度 | 缩短轴端配置、折返布置、实际质量/摩擦、失电保持和循环器加速度条件 |
+| [MOTION02](r5-motion02.md) | 同一LINK01几何下1秒七段轨迹；峰速3200rpm，含电机摩擦峰矩25.403mN·m、RMS12.265mN·m | 峰矩高于旧五次；未包含全部硬件/载荷，不证明连续1Hz或硬件可运行 |
 
 表中各阶段都不是完整制造放行。下述旧RH/P16总装保留为历史可复现装配，不能与新头混合成已经验证的整机。
 
