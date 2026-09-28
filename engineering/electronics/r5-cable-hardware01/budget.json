@@ -1,0 +1,192 @@
+{
+  "revision": "R5-CABLE-HARDWARE01",
+  "status": "conditional component screening; not assembly-qualified",
+  "load_inputs_are_conditions_not_measured_or_solved": true,
+  "life_optimization_factor": 10.0,
+  "life_factor_scope": "manufacturer's 10x straight-cable guideline, extended here conservatively to weak-link break proxies; distinct from workpiece load factor",
+  "weak_link_model": "Bsystem_proxy=min(B*eta_bend, B*eta_term, anchor_failure_load, other_failure_load); unknown entries prevent a qualified rating",
+  "multiplication_warning": "eta_bend and eta_term refer to separate sites; do not multiply by default or once per pulley. Extra product derating is only a sensitivity.",
+  "pulley_force_model": "equalT: P=2*T*sin(deflection/2); unequalT: P=sqrt(T1^2+T2^2-2*T1*T2*cos(deflection)); add moving-body force separately",
+  "moving_pulley_velocity_model": "two parallel, no-slip runs: vc=(v1+v2)/2; abs(omega)=abs(v1-v2)/(Droot+d); signed run speeds share one spatial axis",
+  "cable_stiffness_N_per_m": null,
+  "friction_efficiency": null,
+  "cycle_life": null,
+  "pulley_max_rpm": null,
+  "temperature_limit": null,
+  "combinations": {
+    "leaf_upgrade": {
+      "cable": "2037",
+      "pulley": "SP3106",
+      "role": "leaf",
+      "selection_status": "preferred conditional candidate",
+      "diameter_nominal_mm": 0.9652,
+      "mass_g_per_m": 3.422777070209974,
+      "min_break_N": 711.71545844168,
+      "root_over_d_nominal": 27.973684210526315,
+      "legacy_full_tolerance_root_over_d": 22.673913043478258,
+      "nominal_root_over_d_ge25": true,
+      "legacy_full_tolerance_root_over_d_ge25": false,
+      "max_actual_d_mm_for_25_with_legacy_root_min": 1.059688,
+      "root_min_required_mm_for_legacy_cable_max": 29.209999999999997,
+      "bend_efficiency_screen": 0.91,
+      "bend_reduced_break_proxy_N": 647.6610671819288,
+      "conditional_T_ceiling_N_at_term_eta1_and_guideline10": 64.76610671819289,
+      "conditional_T_ceiling_N_at_term_eta085_and_guideline10": 60.4958139675428,
+      "extra_product_derating_sensitivity_N_eta085": 55.05119071046395,
+      "termination_eta_verified": null,
+      "qualified_working_tension_N": null,
+      "radial_load_legacy_basis_N_at500rpm": 400.33994537344495,
+      "fixed_pulley_rpm_at_cable_speed_m_s": {
+        "0.2": 136.5873055348927,
+        "0.225": 153.66071872675428,
+        "0.45": 307.32143745350857
+      },
+      "fixed_pulley_cable_speed_m_s_at500rpm": 0.7321324599558332
+    },
+    "secondary_upgrade": {
+      "cable": "2050",
+      "pulley": "SP4125",
+      "role": "secondary",
+      "selection_status": "preferred conditional candidate",
+      "diameter_nominal_mm": 1.1938,
+      "mass_g_per_m": 8.184901689632547,
+      "min_break_N": 1201.019836120335,
+      "root_over_d_nominal": 26.595744680851062,
+      "legacy_full_tolerance_root_over_d": 22.363636363636363,
+      "nominal_root_over_d_ge25": true,
+      "legacy_full_tolerance_root_over_d_ge25": false,
+      "max_actual_d_mm_for_25_with_legacy_root_min": 1.24968,
+      "root_min_required_mm_for_legacy_cable_max": 34.925,
+      "bend_efficiency_screen": 0.91,
+      "bend_reduced_break_proxy_N": 1092.928050869505,
+      "conditional_T_ceiling_N_at_term_eta1_and_guideline10": 109.2928050869505,
+      "conditional_T_ceiling_N_at_term_eta085_and_guideline10": 102.08668607022847,
+      "extra_product_derating_sensitivity_N_eta085": 92.89888432390791,
+      "termination_eta_verified": null,
+      "qualified_working_tension_N": null,
+      "radial_load_legacy_basis_N_at500rpm": 400.33994537344495,
+      "fixed_pulley_rpm_at_cable_speed_m_s": {
+        "0.2": 115.94650994133914,
+        "0.225": 130.43982368400654,
+        "0.45": 260.8796473680131
+      },
+      "fixed_pulley_cable_speed_m_s_at500rpm": 0.8624666671777618
+    },
+    "leaf_small_comparison": {
+      "cable": "2032",
+      "pulley": "SP3088",
+      "role": "leaf",
+      "selection_status": "rejected for middle50N under extended10x screen; historical comparison",
+      "diameter_nominal_mm": 0.8128,
+      "mass_g_per_m": 2.3810623097112864,
+      "min_break_N": 533.78659383126,
+      "root_over_d_nominal": 27.65625,
+      "legacy_full_tolerance_root_over_d": 24.027777777777775,
+      "nominal_root_over_d_ge25": true,
+      "legacy_full_tolerance_root_over_d_ge25": false,
+      "max_actual_d_mm_for_25_with_legacy_root_min": 0.87884,
+      "root_min_required_mm_for_legacy_cable_max": 22.860000000000003,
+      "bend_efficiency_screen": 0.91,
+      "bend_reduced_break_proxy_N": 485.7458003864466,
+      "conditional_T_ceiling_N_at_term_eta1_and_guideline10": 48.57458003864466,
+      "conditional_T_ceiling_N_at_term_eta085_and_guideline10": 45.3718604756571,
+      "extra_product_derating_sensitivity_N_eta085": 41.288393032847964,
+      "termination_eta_verified": null,
+      "qualified_working_tension_N": null,
+      "radial_load_legacy_basis_N_at500rpm": 400.33994537344495,
+      "fixed_pulley_rpm_at_cable_speed_m_s": {
+        "0.2": 163.99413674363888,
+        "0.225": 184.49340383659373,
+        "0.45": 368.98680767318746
+      },
+      "fixed_pulley_cable_speed_m_s_at500rpm": 0.6097778980740229
+    },
+    "secondary_small_comparison": {
+      "cable": "2037",
+      "pulley": "SP3106",
+      "role": "secondary",
+      "selection_status": "rejected for middle100N under extended10x screen; historical comparison",
+      "diameter_nominal_mm": 0.9652,
+      "mass_g_per_m": 3.422777070209974,
+      "min_break_N": 711.71545844168,
+      "root_over_d_nominal": 27.973684210526315,
+      "legacy_full_tolerance_root_over_d": 22.673913043478258,
+      "nominal_root_over_d_ge25": true,
+      "legacy_full_tolerance_root_over_d_ge25": false,
+      "max_actual_d_mm_for_25_with_legacy_root_min": 1.059688,
+      "root_min_required_mm_for_legacy_cable_max": 29.209999999999997,
+      "bend_efficiency_screen": 0.91,
+      "bend_reduced_break_proxy_N": 647.6610671819288,
+      "conditional_T_ceiling_N_at_term_eta1_and_guideline10": 64.76610671819289,
+      "conditional_T_ceiling_N_at_term_eta085_and_guideline10": 60.4958139675428,
+      "extra_product_derating_sensitivity_N_eta085": 55.05119071046395,
+      "termination_eta_verified": null,
+      "qualified_working_tension_N": null,
+      "radial_load_legacy_basis_N_at500rpm": 400.33994537344495,
+      "fixed_pulley_rpm_at_cable_speed_m_s": {
+        "0.2": 136.5873055348927,
+        "0.225": 153.66071872675428,
+        "0.45": 307.32143745350857
+      },
+      "fixed_pulley_cable_speed_m_s_at500rpm": 0.7321324599558332
+    }
+  },
+  "checks": [
+    {
+      "id": "leaf_upgrade_bend_bin_covers_nominal_and_legacy_worst",
+      "pass": true
+    },
+    {
+      "id": "leaf_upgrade_nominal_cable_fits_current_max",
+      "pass": true
+    },
+    {
+      "id": "secondary_upgrade_bend_bin_covers_nominal_and_legacy_worst",
+      "pass": true
+    },
+    {
+      "id": "secondary_upgrade_nominal_cable_fits_current_max",
+      "pass": true
+    },
+    {
+      "id": "leaf_small_comparison_bend_bin_covers_nominal_and_legacy_worst",
+      "pass": true
+    },
+    {
+      "id": "leaf_small_comparison_nominal_cable_fits_current_max",
+      "pass": true
+    },
+    {
+      "id": "secondary_small_comparison_bend_bin_covers_nominal_and_legacy_worst",
+      "pass": true
+    },
+    {
+      "id": "secondary_small_comparison_nominal_cable_fits_current_max",
+      "pass": true
+    },
+    {
+      "id": "middle50_100_bend_proxy10_pass_conditionally",
+      "pass": true
+    },
+    {
+      "id": "high75_150_bend_proxy10_fails",
+      "pass": true
+    },
+    {
+      "id": "full_tolerance25_ratio_gap_retained",
+      "pass": true
+    },
+    {
+      "id": "no_terminal_qualified_by_calculation",
+      "pass": true
+    },
+    {
+      "id": "force_vector180_is2T",
+      "pass": true
+    },
+    {
+      "id": "conversion90lbf",
+      "pass": true
+    }
+  ]
+}

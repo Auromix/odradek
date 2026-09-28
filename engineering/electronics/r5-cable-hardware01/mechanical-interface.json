@@ -1,0 +1,130 @@
+{
+  "revision": "R5-CABLE-HARDWARE01",
+  "unit": "mm",
+  "scope": "original catalogue envelopes only; no actual route, axle, fork or pull-point hole frozen",
+  "carrier_input": {
+    "A_local_mm": [
+      "R+13",
+      0,
+      -12
+    ],
+    "R_range_mm": [
+      31,
+      91
+    ],
+    "closing_pull_direction": "-er",
+    "initial_available_head_Z_mm": "less than -17; not clash-certified"
+  },
+  "pulley_local_frame": "wheel axis=Z; groove radial plane=XY; origin at nominal bearing/pulley midplane, centering not tolerance-certified",
+  "pulleys": {
+    "SP3106": {
+      "nominal_body_bbox_mm": [
+        [
+          -15.875,
+          -15.875,
+          -3.175
+        ],
+        [
+          15.875,
+          15.875,
+          3.175
+        ]
+      ],
+      "legacy_tolerance_planning_bbox_mm": [
+        [
+          -16.129,
+          -16.129,
+          -3.3019999999999996
+        ],
+        [
+          16.129,
+          16.129,
+          3.3019999999999996
+        ]
+      ],
+      "root_diameter_mm": 27.000199999999996,
+      "bore_legacy_mm": 4.762499999999999,
+      "bore_legacy_tolerance_mm": 0.0127,
+      "bore_current_web_mm": 4.7752,
+      "nylon_width_mm": 5.5626,
+      "bearing_width_mm": 6.35,
+      "groove_radius_reference_mm": 0.889,
+      "nominal_per_side_bearing_over_nylon_projection_mm": 0.39369999999999994,
+      "legacy_min_per_side_projection_mm_assuming_centered": 0.13969999999999977,
+      "axial_spacer_inner_land_OD_mm": null,
+      "extended_inner_race": false,
+      "mass_kg": null,
+      "geometry_kind": "bounding solid only, not manufacturer CAD; separate inner-race-only spacers required; envelopes exclude axle/fork/guards/cable"
+    },
+    "SP4125": {
+      "nominal_body_bbox_mm": [
+        [
+          -19.049999999999997,
+          -19.049999999999997,
+          -3.5687
+        ],
+        [
+          19.049999999999997,
+          19.049999999999997,
+          3.5687
+        ]
+      ],
+      "legacy_tolerance_planning_bbox_mm": [
+        [
+          -19.304,
+          -19.304,
+          -3.6957000000000004
+        ],
+        [
+          19.304,
+          19.304,
+          3.6957000000000004
+        ]
+      ],
+      "root_diameter_mm": 31.75,
+      "bore_legacy_mm": 6.35,
+      "bore_legacy_tolerance_mm": 0.0127,
+      "bore_current_web_mm": 6.35,
+      "nylon_width_mm": 7.1374,
+      "bearing_width_mm": 7.1374,
+      "groove_radius_reference_mm": 1.27,
+      "nominal_per_side_bearing_over_nylon_projection_mm": 0.0,
+      "legacy_min_per_side_projection_mm_assuming_centered": -0.2540000000000002,
+      "axial_spacer_inner_land_OD_mm": null,
+      "extended_inner_race": false,
+      "mass_kg": null,
+      "geometry_kind": "bounding solid only, not manufacturer CAD; separate inner-race-only spacers required; envelopes exclude axle/fork/guards/cable"
+    }
+  },
+  "termination_planning": {
+    "main_sleeves": {
+      "leaf": "7030C",
+      "secondary": "7047C"
+    },
+    "optional_thimbles": {
+      "leaf": "AN100C01",
+      "secondary": "AN100C03"
+    },
+    "actual_loop_bbox_mm": null,
+    "anchor_PN": null,
+    "bare_loop_geometric_example_only": {
+      "leaf_pin_P_mm": 6,
+      "leaf_bearing_point_to_sleeve_D_min_mm": 15,
+      "secondary_pin_P_mm": 7,
+      "secondary_bearing_point_to_sleeve_D_min_mm": 17.5,
+      "leaf_min_bearing_point_to_sleeve_far_end_mm": 22.112000000000002,
+      "secondary_min_bearing_point_to_sleeve_far_end_mm": 28.676000000000002,
+      "caveat": "P>=5*legacy cable OD max; D>=2.5P; bare smooth pins are original planning variables, not selected parts or qualified wear/retention. Thimble dimensions cannot be substituted for pin P without an assembly drawing. Cable tail length TBD."
+    }
+  },
+  "integration_gaps": [
+    "current controlled drawing/tolerance revisions",
+    "inner-race shoulder diameter and actual centering",
+    "axle fit/retention and double-shear fork design",
+    "groove conformity for actual wire OD",
+    "end eye geometry/strength/tool cavity verification",
+    "anti-derailment/fleet angle and all swept paths",
+    "slack take-up/preload and moving masses",
+    "friction/stretch and reversal fatigue"
+  ]
+}
