@@ -1,0 +1,30 @@
+{
+  "revision": "R5-LINK45-EROB01",
+  "status": "DRAFT_INCOMPLETE_QA",
+  "saved_date": "2026-09-28",
+  "reason": "User requested save/upload now; no further modeling or verification.",
+  "process_running": false,
+  "generated_snapshot_present": [
+    "STEP",
+    "STL",
+    "DXF",
+    "PDF",
+    "study.json",
+    "part-placements.json",
+    "manifest.json"
+  ],
+  "not_completed": [
+    "PDF rendering and visual dimension/layout review",
+    "Latest added prior_hardware_checks function not executed in generated run",
+    "Latest net_section and section-shift moment correction not executed; existing neck_strip result is superseded draft",
+    "Final source/runtime consistency and independent review"
+  ],
+  "provenance_warning": "Generation loaded earlier functions; final on-disk source hash is recorded but does not attest that all latest functions were executed. Existing manifest inventories the generated snapshot, not a released package.",
+  "do_not_use_for": [
+    "manufacturing release",
+    "loaded prototype operation",
+    "complete local motion or strength acceptance"
+  ],
+  "current_script_sha256": "7f15b91b0afb1dfa6645c19e0def22f88fd40dfeccb26a26b23555ec1ecc8fbf",
+  "snapshot_study_sha256": "180e1014c3be0c710fc346996284a9fa88b95e64af508b407f9bc47b2707bfe6"
+}

@@ -1,0 +1,116 @@
+{
+  "revision": "R5-LINK45-EROB01",
+  "license": "CC-BY-NC-4.0",
+  "status": "conditional original geometry candidate, not production release",
+  "sources": [
+    {
+      "id": "manual_cn344",
+      "publisher": "ZeroErr",
+      "url": "https://download.zeroerr.cn/static/download/eRob机器人关节模组用户手册_V3.44.pdf?=20260823",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/manual_cn344.pdf",
+      "sha256": "73e138369aa2780c980e0652008c8311c95d26ac3b4142ce2f05afdc1bf0e7b5",
+      "bytes": 11983463
+    },
+    {
+      "id": "vendor70_pdf",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob70I/V5/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.zip",
+      "local_only_path": "work/r5-light-joint01/eRob70Iv5_E/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.pdf",
+      "sha256": "84e06a8f8eba79a66ed87fabd46d395c6fcf416e5f51d8dadd5d9fe7ac28520a",
+      "bytes": 286531
+    },
+    {
+      "id": "vendor70_step",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob70I/V5/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.zip",
+      "local_only_path": "work/r5-light-joint01/eRob70Iv5_E/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.STEP",
+      "sha256": "a0dadd2685efecd6e24f8fb7c1acccb99c5f060a8c0faaef675726741fc554b8",
+      "bytes": 24730611
+    },
+    {
+      "id": "nbk_dimensions",
+      "publisher": "NBK",
+      "url": "https://www.nbk1560.com/images/ja-JP/product/technical_data/rokkaku_bolt_NBK/rokkaku_bolt_NBK_1.pdf",
+      "local_only_path": "work/r5-wrist-erob01/nbk-cap-dim.pdf",
+      "sha256": "4919cf13126b856fad9b5810e2b670b308cad49dd61ec242c93d080a9e5b318f",
+      "bytes": 132526,
+      "pdf_pages": [
+        1
+      ]
+    },
+    {
+      "id": "oem_mass_inertia",
+      "publisher": "ZeroErr",
+      "local_only_path": "work/r5-light-joint01/inertia.xlsx",
+      "sha256": "a2f83c14d8fc3db8c7501c4715b1951c1af85910e168c7be7a3b8a7d4f36dddf",
+      "url": "https://www.zeroerr.cn/download/eRob系列质量重心惯性参数表_V1.0.xlsx",
+      "scope": "Downloaded official mass/inertia workbook; sheet1 row11 mass .88kg, axial COM32.15mm. Transverse axis orientation and tensor reference ambiguity retained; not assigned rigid-body inertia in this candidate."
+    },
+    {
+      "id": "eRob80Iv6_E",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob80I/V6/eRob80HxxI-XX-18EX_V6_MC2E.EX.XX.zip",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/eRob80Iv6_E.zip",
+      "sha256": "4545d42897f2293e1ad0c78e90508178a777501e744733b7a23f7c663073a0a3",
+      "bytes": 15096251
+    },
+    {
+      "id": "eRob80Iv6_E_drawing",
+      "publisher": "ZeroErr",
+      "container_source": "eRob80Iv6_E",
+      "member_name": "eRob80HxxI-XX-18EX_V6_MC2E.EX.XX.pdf",
+      "local_only_path": "work/r5-light-joint01/eRob80Iv6_E/eRob80HxxI-XX-18EX_V6_MC2E.EX.XX.pdf",
+      "sha256": "ae5cffac156afda4fcfb7b9778fa17189d57df9d1f8fca202937e6dfef08616b",
+      "page": 1,
+      "visual_verified": true
+    },
+    {
+      "id": "vendor80_step",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob80I/V6/eRob80HxxI-XX-18EX_V6_MC2E.EX.XX.zip",
+      "local_only_path": "work/r5-light-joint01/eRob80Iv6_E/eRob80HxxI-XX-18EX_V6_MC2E.EX.XX.STEP",
+      "sha256": "aba24f43ac301cb1c78bcd4b6c54d1332b5ef1ec34becc3305360e239b037795",
+      "bytes": 26150470,
+      "private_input_only": true
+    }
+  ],
+  "authority": {
+    "manual_cn344": {
+      "pdf_pages": [
+        26,
+        28,
+        77,
+        78,
+        79,
+        80
+      ],
+      "claims": [
+        "80I output female60+0.019/0, depth>=7, no-load centre49x.3",
+        "80I V6 M3x.35 cap12.9 blackoxide, outputfulleng>=3mm, fixedfulleng>=4mm; threadstart/end unconfirmed",
+        "2.0+/-0.2Nm dry only for confirmed screw and stated conditions",
+        "Frontfixedholes and rearport angular relationship is not fixed"
+      ]
+    },
+    "eRob80Iv6_E_drawing": {
+      "claims": [
+        "Output16xM3 PCD54 and fixed12xM3 PCD74; depths marked6 do not prove full engagement",
+        "Actual native output+X; nativefaceX32.92358111047752",
+        "Front fixed holes and rear interface positions have no fixed angular relation",
+        "Fixedmount12 holesPCD74 at15+30k; facejointZ-11.5",
+        "Native40radius mainbodybehindfixedface; outputpilot30 radius; frontend not same as70I"
+      ]
+    }
+  },
+  "candidate_codes": {
+    "J4": "eRob80H100I-BS-18EN, incomplete controlled order suffix",
+    "J5": "eRob80H100I-BS-18EN, incomplete controlled order suffix"
+  },
+  "not_resolved": [
+    "CompleteOEMthread/actualscrewSKUandlength",
+    "Certifiedmaterial/preload/contact/localFEA/fatigue/thermalholding",
+    "J3/L34/actualhead/covers/fullinternalharness",
+    "Rearconnectorclocking and completewiredmateenvelope"
+  ]
+}

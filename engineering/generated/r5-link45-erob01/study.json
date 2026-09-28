@@ -1,0 +1,8705 @@
+{
+  "revision": "R5-LINK45-EROB01",
+  "license": "CC-BY-NC-4.0",
+  "status": "nominal original geometry candidate, not productionrelease",
+  "core_hash": "1defcca4e5b3eae7edcd9fb2f7e9c2a47e649f3467dae7588ca150a931ee61b2",
+  "source_hashes": [
+    {
+      "path": "engineering/r5_link45_erob01.py",
+      "sha256": "7f15b91b0afb1dfa6645c19e0def22f88fd40dfeccb26a26b23555ec1ecc8fbf"
+    },
+    {
+      "path": "docs/engineering/sources/r5-link45-erob01.json",
+      "sha256": "e811f13005107487fc85b1e78cca1443118e90902d3f9f27d5c9b8c908559be1"
+    },
+    {
+      "path": "engineering/generated/raised-arm-integration01/model.json",
+      "sha256": "e3b2a10a2f11cbc6a5085150dd1d5bcba3848431f40e4aea7485d4d5125d33a1"
+    },
+    {
+      "path": "engineering/r5_link56_erob01.py",
+      "sha256": "4ef7a820ea9a0e0db092877ba63fd46cb829620065f0c41a87356c99e3764f98"
+    },
+    {
+      "path": "engineering/generated/r5-link56-erob01/study.json",
+      "sha256": "beeb209d69fb46069e9e373ebe8ab622073112acbbd7d53c5dbe83b54ed9c14c"
+    },
+    {
+      "path": "engineering/generated/r5-link56-erob01/STEP/L56-E01.step",
+      "sha256": "866589d8f57f753e2b5d2de1e0f59274d28f7dc674d6f09ed1dfa17fb687bace"
+    },
+    {
+      "path": "engineering/r5_wrist_pair01.py",
+      "sha256": "163d930cb46acf6c4a6d84d24d1c0d2f4dc3ffd4101ff704571847d05bb2d370"
+    },
+    {
+      "path": "engineering/generated/r5-wrist-pair01/study.json",
+      "sha256": "cfde0cc969ae760d5ef6e4f163edfbbdfba6a2ca39a02a549cf13a8e55c331c0"
+    },
+    {
+      "path": "engineering/generated/r5-wrist-pair01/STEP/W01.step",
+      "sha256": "608704ecb35482b58bae4a593089d731bf4da7bdf8b8d9da04c69713074c0af7"
+    },
+    {
+      "path": "engineering/generated/r5-wrist-pair01/STEP/A01-P.step",
+      "sha256": "88833642a5fdaf4094be084af5abcad4f7d51b23fc2221c25efb5b6de2a8a201"
+    },
+    {
+      "path": "engineering/generated/r5-wrist-pair01/STEP/H01-reuse.step",
+      "sha256": "6f415f21192ab8b272f7a2d3c1e596b5c943283be9bb2b69c7ac9d1c0645c1fe"
+    },
+    {
+      "path": "engineering/build_layout.py",
+      "sha256": "9c21a65d2c7873809faf4f7ee733efb8a0e699758190046d73f5e2d1d0e44d2c"
+    },
+    {
+      "path": "engineering/draw_central_display01.py",
+      "sha256": "3fa9b112a6cd835749061dcee6e702cbc4a91c7ccfce53e68255e0ff847c63dd"
+    }
+  ],
+  "frames": {
+    "world_origin_mm": [
+      0.0,
+      0.0,
+      435.0
+    ],
+    "T4": [
+      [
+        1.0,
+        -0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T5": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -55.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        50.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T6": [
+      [
+        0.9659258262890683,
+        -0.25881904510252074,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -0.25881904510252074,
+        -0.9659258262890683,
+        0.0,
+        205.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T7": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        55.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        240.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "limits_deg": [
+      [
+        -120,
+        120
+      ],
+      [
+        -90,
+        90
+      ],
+      [
+        -100,
+        100
+      ],
+      [
+        -90,
+        90
+      ]
+    ]
+  },
+  "parts": {
+    "L45-E01": {
+      "volume_mm3": 61528.58638924053,
+      "mass_if_6061_kg": 0.16612718325094944,
+      "com_link_mm": [
+        6.407850015021789e-15,
+        -16.764573997548343,
+        11.71688155679954
+      ],
+      "com_world_mm": [
+        6.407850015021789e-15,
+        -16.764573997548343,
+        446.71688155679954
+      ],
+      "inertia_at_com_world_kg_m2": [
+        [
+          0.00021894044228888126,
+          -1.41332708475879e-20,
+          -1.0920993935032845e-21
+        ],
+        [
+          -1.41332708475879e-20,
+          0.000185076072664888,
+          6.410411423967547e-05
+        ],
+        [
+          -1.0920993935032845e-21,
+          6.410411423967547e-05,
+          0.00019095065307612143
+        ]
+      ],
+      "preceding_joints": 4,
+      "density_assumption_kg_m3": 2700,
+      "bbox_mm": [
+        [
+          -43.00000000000001,
+          -98.0,
+          -38.0
+        ],
+        [
+          43.00000000000001,
+          8.0,
+          45.5
+        ]
+      ],
+      "step_sha256": "5a7aee36499f3dc58dd93faf7d0b11b2995613830eff20074d4f5fcb2c682b99",
+      "stl_sha256": "c439042303f59fefa1092eecea74d247c71cdfc9f5633e71ab4d1947766946a6",
+      "step_valid": true,
+      "step_solids": 1,
+      "step_volume_relative_error": 1.951179243328434e-14,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_volume_relative_error": 8.292038085682669e-05,
+      "mesh_bbox_max_error_mm": 0.00335693359375,
+      "chordal_tolerance_mm": 0.01,
+      "angular_tolerance_rad": 0.05
+    },
+    "L45-G": {
+      "volume_mm3": 60063.00828047987,
+      "mass_if_6061_kg": 0.16217012235729567,
+      "com_link_mm": [
+        9.819809746216589e-15,
+        -16.724043481615105,
+        11.663014644482155
+      ],
+      "com_world_mm": [
+        9.819809746216589e-15,
+        -16.724043481615105,
+        446.66301464448213
+      ],
+      "inertia_at_com_world_kg_m2": [
+        [
+          0.0002131210381568145,
+          -3.827241374359252e-20,
+          -9.357285769732674e-21
+        ],
+        [
+          -3.827241374359252e-20,
+          0.00018115917077434412,
+          6.207400070965747e-05
+        ],
+        [
+          -9.357285769732674e-21,
+          6.207400070965747e-05,
+          0.0001859004285110472
+        ]
+      ],
+      "preceding_joints": 4,
+      "density_assumption_kg_m3": 2700,
+      "bbox_mm": [
+        [
+          -43.00000000000001,
+          -98.0,
+          -38.0
+        ],
+        [
+          43.00000000000001,
+          8.0,
+          45.5
+        ]
+      ],
+      "step_sha256": "13677a605529c06a9f2e1ea3a255c1cbb7486e3698c49a86944a1b376bb45786",
+      "stl_sha256": "bfb22b3e33bfd4a827427b99f58ab78de6ec4fcc0ff7d533aa2b058a643cc2f8",
+      "step_valid": true,
+      "step_solids": 1,
+      "step_volume_relative_error": 5.814659895986384e-15,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_volume_relative_error": 8.272711537930746e-05,
+      "mesh_bbox_max_error_mm": 0.00335693359375,
+      "chordal_tolerance_mm": 0.01,
+      "angular_tolerance_rad": 0.05
+    }
+  },
+  "print_oriented": {
+    "sha256": "b8d6acbfbb376a1b5b13c3b9675c18571316adbeec0d7d009537d9b101abe7fa",
+    "bbox_mm": [
+      [
+        -42.99797439575195,
+        -38.0,
+        0.0
+      ],
+      [
+        42.99797439575195,
+        45.5,
+        105.99664306640625
+      ]
+    ],
+    "watertight": true
+  },
+  "checks": {
+    "static": [
+      {
+        "against": "J4_0",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J4_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J4_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J4_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J4_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J5_0",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J5_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J5_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J5_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J5_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "J7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "W01",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "A01P",
+        "intersection_mm3": 0.0
+      },
+      {
+        "against": "H01",
+        "intersection_mm3": 0.0
+      }
+    ],
+    "known_hardware": [
+      {
+        "id": "J4_OUT_1",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_2",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_3",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_4",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_5",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_6",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_7",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_8",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_9",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_10",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_11",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_12",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_13",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_14",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_15",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J4_OUT_16",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 11.6,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_1",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_2",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_3",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_4",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_5",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_6",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_7",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_8",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_9",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_10",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_11",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      },
+      {
+        "id": "J5_FIXED_12",
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "known_free_length_mm": 7.0,
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0,
+          "J6": 0.0,
+          "J7": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0
+        },
+        "complete_screw": false
+      }
+    ],
+    "hardware_pairs": [
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_1",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_2",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_3",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_4",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_5",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_6",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J4_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J4_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J4_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_7",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J4_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J4_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_8",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J4_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_9",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J4_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_10",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J4_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_11",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J4_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_12",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J4_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_13",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J4_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_14",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J4_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_15",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J4_OUT_16",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_1",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_2",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_3",
+        "b": "J5_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_3",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_3",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_3",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_3",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_3",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_3",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_3",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_3",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_4",
+        "b": "J5_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_4",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_4",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_4",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_4",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_4",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_4",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_4",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_5",
+        "b": "J5_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_5",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_5",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_5",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_5",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_5",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_5",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_6",
+        "b": "J5_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_6",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_6",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_6",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_6",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_6",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_7",
+        "b": "J5_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_7",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_7",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_7",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_7",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_8",
+        "b": "J5_FIXED_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_8",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_8",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_8",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_9",
+        "b": "J5_FIXED_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_9",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_9",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_10",
+        "b": "J5_FIXED_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_10",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_FIXED_11",
+        "b": "J5_FIXED_12",
+        "intersection_mm3": 0.0
+      }
+    ],
+    "tool_probes": [
+      {
+        "id": "J4_OUT_1",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_2",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_3",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_4",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_5",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_6",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_7",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_8",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_9",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_10",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_11",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_12",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_13",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_14",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_15",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J4_OUT_16",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_1",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_2",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_3",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_4",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_5",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_6",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_7",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_8",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_9",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_10",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_11",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      },
+      {
+        "id": "J5_FIXED_12",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "actual_tool_selected": false
+      }
+    ],
+    "known_hardware_sweeps": [
+      {
+        "id": "J4_OUT_1",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_2",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_3",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_4",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_5",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_6",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_7",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_8",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_9",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_10",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_11",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_12",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_13",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_14",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_15",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J4_OUT_16",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_1",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_2",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_3",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_4",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_5",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_6",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_7",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_8",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_9",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_10",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_11",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      },
+      {
+        "id": "J5_FIXED_12",
+        "travel_mm": [
+          0,
+          60
+        ],
+        "intersections_mm3": {
+          "L45": 0.0,
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0,
+          "J5_0": 0.0,
+          "J5_1": 0.0,
+          "J5_2": 0.0,
+          "J5_3": 0.0,
+          "J5_4": 0.0
+        },
+        "unknown_thread_excluded": true
+      }
+    ],
+    "J5_insertion_vs_prior_J4_hardware": [
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      },
+      {
+        "J4_OUT_1": 0.0,
+        "J4_OUT_2": 0.0,
+        "J4_OUT_3": 0.0,
+        "J4_OUT_4": 0.0,
+        "J4_OUT_5": 0.0,
+        "J4_OUT_6": 0.0,
+        "J4_OUT_7": 0.0,
+        "J4_OUT_8": 0.0,
+        "J4_OUT_9": 0.0,
+        "J4_OUT_10": 0.0,
+        "J4_OUT_11": 0.0,
+        "J4_OUT_12": 0.0,
+        "J4_OUT_13": 0.0,
+        "J4_OUT_14": 0.0,
+        "J4_OUT_15": 0.0,
+        "J4_OUT_16": 0.0
+      }
+    ],
+    "discrete_pose_rows": [
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          0,
+          100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          -120,
+          90,
+          100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          -90,
+          100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          -100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          0,
+          100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          -100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          0,
+          90,
+          100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          -100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          -90,
+          100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          -100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          0,
+          100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          -100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          -90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          90
+        ],
+        "moving": "L56",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          90
+        ],
+        "moving": "W01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          90
+        ],
+        "moving": "A01P",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          90
+        ],
+        "moving": "H01",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          90
+        ],
+        "moving": "J6",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q_deg": [
+          120,
+          90,
+          100,
+          90
+        ],
+        "moving": "J7",
+        "L45_intersection_mm3": 0.0,
+        "J4_solid_intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      }
+    ],
+    "direct_q4_rows": [
+      {
+        "q4_deg": -120,
+        "moving": "L45",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -120,
+        "moving": "J5_0",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -120,
+        "moving": "J5_1",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -120,
+        "moving": "J5_2",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -120,
+        "moving": "J5_3",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -120,
+        "moving": "J5_4",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -60,
+        "moving": "L45",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -60,
+        "moving": "J5_0",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -60,
+        "moving": "J5_1",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -60,
+        "moving": "J5_2",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -60,
+        "moving": "J5_3",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": -60,
+        "moving": "J5_4",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 0,
+        "moving": "L45",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 0,
+        "moving": "J5_0",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 0,
+        "moving": "J5_1",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 0,
+        "moving": "J5_2",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 0,
+        "moving": "J5_3",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 0,
+        "moving": "J5_4",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 60,
+        "moving": "L45",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 60,
+        "moving": "J5_0",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 60,
+        "moving": "J5_1",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 60,
+        "moving": "J5_2",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 60,
+        "moving": "J5_3",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 60,
+        "moving": "J5_4",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 120,
+        "moving": "L45",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 120,
+        "moving": "J5_0",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 120,
+        "moving": "J5_1",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 120,
+        "moving": "J5_2",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 120,
+        "moving": "J5_3",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      },
+      {
+        "q4_deg": 120,
+        "moving": "J5_4",
+        "intersections_mm3": {
+          "J4_0": 0.0,
+          "J4_1": 0.0,
+          "J4_2": 0.0,
+          "J4_3": 0.0,
+          "J4_4": 0.0
+        }
+      }
+    ],
+    "contact_area_proxy_mm2": {
+      "J4_output": 444.21227956222424,
+      "J5_fixed": 891.9059350251698
+    },
+    "continuous": {
+      "q4_deg": [
+        -120,
+        120
+      ],
+      "q5_deg": [
+        -90,
+        90
+      ],
+      "q6_deg": [
+        -100,
+        100
+      ],
+      "q7_deg": [
+        -90,
+        90
+      ],
+      "vendor80_bound_escape_per_solid_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "J4_negative_original_subset_escape_mm3": 0.0,
+      "J4_rear_skirt_invariant_intersections_mm3": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "J4_aligned_insertion_0_80mm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "J5_aligned_insertion_0_100mm": 0.0,
+      "J5_insertion_beyond100": "OEM maxZ<=-50, while carrier minZ=-38: separated",
+      "J5_sleeve_sweep_intersection_mm3": 0.0,
+      "J5_known_output_shaft_sweep_intersection_mm3": 0.0,
+      "L45_max_Z_mm": 45.5,
+      "L56_main_min_Z_mm": 50,
+      "sleeve_to_fixed_ring_radial_gap_mm": 0.5,
+      "sleeve_to_fixed_head_radial_gap_mm": 1.16,
+      "fixed_head_top_to_L56_main_gap_mm": 1.5,
+      "L56_min_radial_distance_to_J4_axis_bound_mm": 42,
+      "J4_max_radius_bound_mm": 40.1,
+      "minimum_radial_gap_mm": 1.9,
+      "wrist_J7_continuous_min_Z_mm": 140.6,
+      "L56_low_subset_escape_mm3": 0.0,
+      "L56_low_Z_split_mm": 100,
+      "L56_low_invariant_radius_about_J5_mm": 38.1,
+      "q4_proof": "Carrier negative-Y halfspace plus its axisymmetric rear skirt. J5 full body Y<=-14.9 independent q4. L56 minZ42 under q5, thus RaboutJ4>=42 preserved by q4; J6 and wrist/J7 are farther using actual/frozen bounds. q5 sleeve/heads clear invariant ring, higher material separated inZ. No OEM rotor/thread internal certification.",
+      "port_proof": "J5 reserveY<=-11, clear carrierY>=-10 where rearZoverlaps. J4reserveY>=67.5: lowL56Z<=100 has invariantR38.1 aboutJ5 henceY<=-16.9; highL56Z>=100 and alllater members haveRaboutJ4>44. Full wired plugs not modeled."
+    },
+    "port_reserve": {
+      "radius_mm": 44,
+      "length_mm": 40,
+      "intersections_mm3": {
+        "J4_rear": {
+          "L45": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0,
+          "J4_OUT_1": 0.0,
+          "J4_OUT_2": 0.0,
+          "J4_OUT_3": 0.0,
+          "J4_OUT_4": 0.0,
+          "J4_OUT_5": 0.0,
+          "J4_OUT_6": 0.0,
+          "J4_OUT_7": 0.0,
+          "J4_OUT_8": 0.0,
+          "J4_OUT_9": 0.0,
+          "J4_OUT_10": 0.0,
+          "J4_OUT_11": 0.0,
+          "J4_OUT_12": 0.0,
+          "J4_OUT_13": 0.0,
+          "J4_OUT_14": 0.0,
+          "J4_OUT_15": 0.0,
+          "J4_OUT_16": 0.0,
+          "J5_FIXED_1": 0.0,
+          "J5_FIXED_2": 0.0,
+          "J5_FIXED_3": 0.0,
+          "J5_FIXED_4": 0.0,
+          "J5_FIXED_5": 0.0,
+          "J5_FIXED_6": 0.0,
+          "J5_FIXED_7": 0.0,
+          "J5_FIXED_8": 0.0,
+          "J5_FIXED_9": 0.0,
+          "J5_FIXED_10": 0.0,
+          "J5_FIXED_11": 0.0,
+          "J5_FIXED_12": 0.0
+        },
+        "J5_rear": {
+          "L45": 0.0,
+          "L56": 0.0,
+          "W01": 0.0,
+          "A01P": 0.0,
+          "H01": 0.0,
+          "J4_OUT_1": 0.0,
+          "J4_OUT_2": 0.0,
+          "J4_OUT_3": 0.0,
+          "J4_OUT_4": 0.0,
+          "J4_OUT_5": 0.0,
+          "J4_OUT_6": 0.0,
+          "J4_OUT_7": 0.0,
+          "J4_OUT_8": 0.0,
+          "J4_OUT_9": 0.0,
+          "J4_OUT_10": 0.0,
+          "J4_OUT_11": 0.0,
+          "J4_OUT_12": 0.0,
+          "J4_OUT_13": 0.0,
+          "J4_OUT_14": 0.0,
+          "J4_OUT_15": 0.0,
+          "J4_OUT_16": 0.0,
+          "J5_FIXED_1": 0.0,
+          "J5_FIXED_2": 0.0,
+          "J5_FIXED_3": 0.0,
+          "J5_FIXED_4": 0.0,
+          "J5_FIXED_5": 0.0,
+          "J5_FIXED_6": 0.0,
+          "J5_FIXED_7": 0.0,
+          "J5_FIXED_8": 0.0,
+          "J5_FIXED_9": 0.0,
+          "J5_FIXED_10": 0.0,
+          "J5_FIXED_11": 0.0,
+          "J5_FIXED_12": 0.0
+        }
+      },
+      "selected_mating_connector_model": false
+    },
+    "harness": {
+      "straight_J4_J5_each_bore_mm": 18,
+      "complete_route_verified": false,
+      "note": "Two orthogonal18mm bores do not prove complete harness. Existing LINK56 R35 underbody route failure remains. No cable bend/torsion, connector insertion or selected port angular contract."
+    },
+    "scope_excludes": [
+      "J3/L34 and whole arm",
+      "Actual complete head geometry",
+      "Unknown OEM female threads and rotor split",
+      "Cables, matingplugs, covers, elastic/tolerance effects"
+    ]
+  },
+  "mechanics": {
+    "body_rows": [
+      {
+        "id": "L45",
+        "m": 0.16612718325094944,
+        "p": [
+          6.407850015021789e-15,
+          -16.764573997548343,
+          11.71688155679954
+        ],
+        "pre": 4
+      },
+      {
+        "id": "J5_COM_proxy",
+        "m": 1.09,
+        "p": [
+          0,
+          -55,
+          19.99
+        ],
+        "pre": 4
+      },
+      {
+        "id": "L56",
+        "m": 0.2824757207493088,
+        "p": [
+          -8.84539496993846e-15,
+          -44.495363191900154,
+          110.72444214375813
+        ],
+        "pre": 5
+      },
+      {
+        "id": "J6_COM_proxy",
+        "m": 0.88,
+        "p": [
+          0,
+          -32.15,
+          205
+        ],
+        "pre": 5
+      },
+      {
+        "id": "J7_COM_proxy",
+        "m": 0.88,
+        "p": [
+          0,
+          55,
+          207.85
+        ],
+        "pre": 6
+      },
+      {
+        "id": "head_budget",
+        "m": 1.5,
+        "p": [
+          0,
+          55,
+          340
+        ],
+        "pre": 7
+      },
+      {
+        "id": "net_payload",
+        "m": 2,
+        "p": [
+          0,
+          55,
+          440
+        ],
+        "pre": 7
+      },
+      {
+        "id": "W01",
+        "m": 0.13433117391921745,
+        "p": [
+          1.0853680557330915e-13,
+          16.162845443776938,
+          212.69038974792156
+        ],
+        "pre": 6
+      },
+      {
+        "id": "A01-P",
+        "m": 0.09575648729466571,
+        "p": [
+          -3.5742144958568353e-16,
+          55.0,
+          243.3393785726223
+        ],
+        "pre": 7
+      },
+      {
+        "id": "H01-reuse",
+        "m": 0.045334182555289565,
+        "p": [
+          -3.72401010673791e-16,
+          55.0455848025379,
+          249.99979072382376
+        ],
+        "pre": 7
+      },
+      {
+        "id": "HEAD_SNS_M4_12_x4",
+        "m": 0.008,
+        "p": [
+          0.0,
+          55.0,
+          248.0
+        ],
+        "pre": 7
+      },
+      {
+        "id": "MS3_8_x2_proxy",
+        "m": 0.0008878140839044755,
+        "p": [
+          0.0,
+          55.0,
+          248.0
+        ],
+        "pre": 7
+      }
+    ],
+    "head_budget_kg": 1.5,
+    "head_excludes_actual_PAIR_interface": true,
+    "payload_net_kg": 2,
+    "head_COM_from_J7_output_mm": 100,
+    "TCP_from_J7_output_mm": 200,
+    "J4_self_mass_excluded": true,
+    "output_loaded_mass_kg": 7.082912561853336,
+    "gravity_m_s2": 9.80665,
+    "B_kg_mm": [
+      1.0645180736901238e-15,
+      -383.20824727974605,
+      315.07486145963543
+    ],
+    "C_kg_mm": [
+      -2.4986093194456772e-15,
+      279.612336035497,
+      876.5211775288848
+    ],
+    "D_kg_mm": [
+      1.4579876506104483e-14,
+      251.3199906186997,
+      682.1345080331408
+    ],
+    "off_axis_residual_bound_kg_mm": 0.002066549760018249,
+    "continuous_nominal_arbitrary_gravity_moment_Nm": 19.666205078368517,
+    "continuous_J4_axis_gravity_torque_bound_Nm": 19.098468744855854,
+    "maximizing_nominal_q5_q6_deg": [
+      -90,
+      17.827396962294312
+    ],
+    "analytic_formula": "By<0, wY>0 and q5in[-90,90]: min rotated wY=-abs(wX), attained at endpoint. max H*cos(q6)+abs(By)*abs(sin(q6))=hypot(H,By). q4 about-Y preserves norm and Y-axis moment bound; small residual uses triangle.",
+    "three_module_COM_uncertainty_Nm": 1.5368888679836443,
+    "J5_COM_uncertainty_Nm": 0.5875215990023284,
+    "fine_hardware_budgets": [
+      {
+        "mass_kg": 0.1,
+        "radius_from_J4_m": 0.335,
+        "role": "InheritedLINK56 entire downstream finehardware contingency"
+      },
+      {
+        "mass_kg": 0.05,
+        "radius_from_J4_m": 0.11,
+        "role": "NewJ4/J5 finehardware contingency"
+      }
+    ],
+    "planned_moment_Nm": 21.585553296352163,
+    "planned_J4_axis_torque_bound_Nm": 21.0178169628395,
+    "planned_force_N": 70.930641974699,
+    "J4_output_bolts": {
+      "S_mm2": [
+        [
+          5831.999999999999,
+          7.019004618984808e-14
+        ],
+        [
+          7.019004618984808e-14,
+          5832.0
+        ]
+      ],
+      "maximum_axial_increment_N": 99.93311711274151,
+      "direct_transverse_share_N": 4.4331651234186875,
+      "moment_Nm": 21.585553296352163,
+      "force_N": 70.930641974699,
+      "assumption": "Equal bolt stiffness and compatible compressed contact; no prying. Added axial load only, not preload or rated capacity."
+    },
+    "J5_fixed_bolts": {
+      "S_mm2": [
+        [
+          8214.0,
+          5.589225607363874e-14
+        ],
+        [
+          5.589225607363874e-14,
+          8214.000000000002
+        ]
+      ],
+      "maximum_axial_increment_N": 84.77701397807708,
+      "direct_transverse_share_N": 5.754693715255924,
+      "moment_Nm": 18.82049710313311,
+      "force_N": 69.05632458307109,
+      "assumption": "Equal bolt stiffness and compatible compressed contact; no prying. Added axial load only, not preload or rated capacity."
+    },
+    "neck_strip": {
+      "width_mm": 28,
+      "thickness_mm": 7,
+      "length_mm": 14,
+      "I_mm4": 800.3333333333334,
+      "area_mm2": 196,
+      "E_assumed_MPa": 69000,
+      "normal_stress_indicator_MPa": 94.75935442560923,
+      "cantilever_deflection_indicator_mm": 0.03948105167959069,
+      "condition": "Selected28x7 rectangular bridge strip, entire J4 moment plus force. Not actual fillet/notch/ring stress, prying, contactFEA or globally conservative assembly stress bound."
+    },
+    "independent_random_check": {
+      "seed": 4501,
+      "count": 10000,
+      "method": "per-body nested rotations, independently of aggregate analytic C/D",
+      "max_moment_Nm": 19.661277648102008,
+      "max_axis_bound_Nm": 19.09831543028081
+    },
+    "not_validated": [
+      "FullOEMthread/screwSKU/length/preload",
+      "Materialallowables/contact/localFEA/fatigue",
+      "Dynamicinertia/stop/bearinglife",
+      "Staticzerovelocitythermalhold",
+      "Upstreamstructure, fullhead and completeharness"
+    ]
+  },
+  "comparison": {
+    "selected": "one-piece original",
+    "split_variant": "Not detailed. A selected4xM3,8mm rowgap and1.5mm edge-to-headface budget requires8+5.68+3=16.68mm height; present15mm post insufficientby1.68. Other split architectures not ruledout. Avoid extra joint/preload while retaining axes."
+  },
+  "pdf": {
+    "file": "ODR-R5-LINK45-EROB01.pdf",
+    "sha256": "e9e15eeecde50953b51fcef8080b9abd7316a00a0b7312ff494eddca89a5b068",
+    "pages": 5
+  },
+  "dxf": {
+    "file": "DXF/ODR-L45-E01.dxf",
+    "sha256": "ce1356a8ab900d89626b2cb0d4fa953db362de0c94d4c2c0da0b420684c72d07",
+    "units_mm": true,
+    "audit_errors": 0
+  }
+}
