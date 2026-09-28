@@ -1,5 +1,5 @@
 {
-  "result": "PASS independent mesh mass/inertia and J6 gravity reconstruction",
+  "result": "PASS independent mesh mass/inertia and J6 gravity reconstruction; drawing projection regression PASS",
   "mesh_checks": [
     {
       "part": "W01",
@@ -42,5 +42,42 @@
   "J6_axis_moment_Nm": 6.6894543732031995,
   "source_hashes_checked": 10,
   "artifact_hashes_checked": 24,
+  "projection_regression": [
+    {
+      "part": "W01",
+      "section_X_mm": 0.0,
+      "curve_count": 50,
+      "out_of_shape_bounds": [],
+      "reflection_path_length_error_mm": 0.0
+    },
+    {
+      "part": "W01",
+      "section_X_mm": 10.5,
+      "curve_count": 696,
+      "out_of_shape_bounds": [],
+      "reflection_path_length_error_mm": 0.0
+    },
+    {
+      "part": "A01-P",
+      "section_X_mm": 0.0,
+      "curve_count": 52,
+      "out_of_shape_bounds": [],
+      "reflection_path_length_error_mm": 0.0
+    },
+    {
+      "part": "H01-reuse",
+      "section_X_mm": 0.0,
+      "curve_count": 16,
+      "out_of_shape_bounds": [],
+      "reflection_path_length_error_mm": 0.0
+    },
+    {
+      "part": "A01-P-translated-regression",
+      "section_X_mm": 0.0,
+      "curve_count": 774,
+      "out_of_shape_bounds": [],
+      "reflection_path_length_error_mm": 0.0
+    }
+  ],
   "scope": "No vendor geometry, thread qualification, stress or hardware test rerun"
 }

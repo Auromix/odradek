@@ -1,6 +1,6 @@
 {
   "revision": "R5-WRIST-PAIR01",
-  "pdf_sha256": "cf6b77159cf34ba47f3bb1e0e62a68f4699e87cdedd5289a89544c4916dd6bad",
+  "pdf_sha256": "f4390ef78206b6b22b9ec2f78f49310bd26573b444268b897cd868e0f16ef4e7",
   "reviewed_pages": [
     1,
     2,
@@ -8,12 +8,13 @@
     4,
     5
   ],
-  "render_method": "Poppler pdftoppm -scale-to1500 -png; actual images inspected",
+  "render_method": "Poppler pdftoppm -scale-to1600 -png; 2026-09-28 redraw, all five actual images inspected",
   "findings_resolved": [
     "Assembly view moved inside paper margin",
     "Correct view-specific scales1.25/1.5/1.75/2",
     "Page3 text moved beneath the whole A01P circle",
-    "Page5 includes both loose radial and tighter rectangular net-section indicators"
+    "Page5 includes both loose radial and tighter rectangular net-section indicators",
+    "YZ projection shared polyline endpoint alias: allocate reflected coordinates instead of mutating shared lists; translated CAD regression added"
   ],
   "nominal_feature_readback": {
     "J6_J7_origin_offset_pair_mm": [
@@ -50,23 +51,36 @@
   "rendered_page_hashes": [
     {
       "page": 1,
-      "sha256": "14021e4d99c62ae8ec332e0783eaefdaa71f48c5a15a43dfb08c4a5679213b58"
+      "sha256": "0eeba4b4caacc1b305940bb147681000a929399cd7f814a8e579bbb9f2e9cbb6"
     },
     {
       "page": 2,
-      "sha256": "e74094d72beff9991b6460031993a8bbed64ea566e72a63106735a77ac65f2fb"
+      "sha256": "ddbf3839e80b43b8c0801d67ae427b321d3731c2a9c262d6811eaab4451f87fd"
     },
     {
       "page": 3,
-      "sha256": "183684682745f3aedd903c92bca93477b9c4d5aa5e6a8aa22f871d9f2fc67be0"
+      "sha256": "ec7730f2955b34938e7fb7446147bf7c728f1cf4cba3a0e4dc0704117a0d9b35"
     },
     {
       "page": 4,
-      "sha256": "622436c26a84010473fb00af121b4609001f8299b5dc24854630ab1e2e546369"
+      "sha256": "ff5306630179d54dd1197027ec9e54981f5f134bcc5e59a1a0aaf4963119476b"
     },
     {
       "page": 5,
-      "sha256": "e22e0eaaaa0f72bc767a6d3cdb6e22e7dcda5832af72d27f3e761f175ceb82de"
+      "sha256": "b99314d0ab6ded6bcfb8033a159de77c926774f8aeef5e81a1a8c0eee0bce6c7"
     }
-  ]
+  ],
+  "projection_fix_scope": {
+    "date": "2026-09-28",
+    "changed_page_drawing_streams": [
+      2
+    ],
+    "unchanged_page_drawing_streams": [
+      1,
+      3,
+      4,
+      5
+    ],
+    "STEP_STL_load_parameters_unchanged": true
+  }
 }

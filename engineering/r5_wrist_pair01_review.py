@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC-BY-NC-4.0
 # Independent geometry-integral and load audit, not a manufacturing qualification.
 from pathlib import Path
-import hashlib, json
+import hashlib, json, math
 import numpy as np
 import trimesh
 
@@ -34,6 +34,35 @@ bound=g*np.linalg.norm(h)
 axisbound=g*np.linalg.norm(np.cross(np.array([0,1.,0]),h))
 assert abs(bound-s['mechanics']['J6_zero_geometry_arbitrary_gravity_moment_Nm'])<1e-10
 assert abs(axisbound-s['mechanics']['J6_axis_gravity_torque_abs_bound_Nm'])<1e-10
-r=dict(result='PASS independent mesh mass/inertia and J6 gravity reconstruction',mesh_checks=checks,J6_moment_Nm=bound,J6_axis_moment_Nm=axisbound,source_hashes_checked=len(s['source_hashes']),artifact_hashes_checked=len(m['outputs']),scope='No vendor geometry, thread qualification, stress or hardware test rerun')
+# Drawing-only regression for shared polyline endpoints. Geometry/load checks
+# above remain independent of the generator; here we exercise its projection.
+import cadquery as cq
+import r5_wrist_pair01 as drawing
+def path_length(cs):
+    total=0.
+    for c in cs:
+        if c['kind']=='LINE':total+=np.linalg.norm(np.array(c['p'])-c['q'])
+        elif c['kind']=='CIRCLE':total+=2*math.pi*c['r']
+        elif c['kind']=='ARC':total+=((c['end']-c['start'])%360)/180*math.pi*c['r']
+    return total
+projections=[]
+for n in ['W01','A01-P','H01-reuse','A01-P-translated-regression']:
+    file_name='A01-P' if n=='A01-P-translated-regression' else n
+    shape=cq.importers.importStep(str(P/'STEP'/f'{file_name}.step')).val()
+    if n!='W01':shape=drawing.moved(shape,drawing.T7)
+    if n=='A01-P-translated-regression':shape=shape.translate((0,55,0))
+    for cut_x in ([0.,10.5] if n=='W01' else [0.]):
+        raw=drawing.curves(drawing.section(shape.rotate((0,0,0),(0,0,1),90),'XZ',cut_x),'XZ')
+        cs=drawing.yzcs(shape,cut_x);bbox=np.array(drawing.bb(shape));outside=[]
+        for c in cs:
+            for key in ['p','q']:
+                if key in c:
+                    pt=np.array(c[key]);lo=bbox[0,[1,2]];hi=bbox[1,[1,2]]
+                    if np.any(pt<lo-.003) or np.any(pt>hi+.003):outside.append(pt.tolist())
+        length_error=abs(path_length(raw)-path_length(cs))
+        assert not outside,(n,cut_x,outside)
+        assert length_error<1e-8,(n,cut_x,length_error)
+        projections.append(dict(part=n,section_X_mm=cut_x,curve_count=len(cs),out_of_shape_bounds=outside,reflection_path_length_error_mm=float(length_error)))
+r=dict(result='PASS independent mesh mass/inertia and J6 gravity reconstruction; drawing projection regression PASS',mesh_checks=checks,J6_moment_Nm=bound,J6_axis_moment_Nm=axisbound,source_hashes_checked=len(s['source_hashes']),artifact_hashes_checked=len(m['outputs']),projection_regression=projections,scope='No vendor geometry, thread qualification, stress or hardware test rerun')
 (P/'independent-review.json').write_text(json.dumps(r,indent=2)+'\n')
 print(json.dumps(r,indent=2))

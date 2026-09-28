@@ -249,7 +249,9 @@ def yzcs(s,x=0):
  cs=curves(section(q,'XZ',x),'XZ')
  for r in cs:
   for k in ['p','q','c']:
-   if k in r:r[k][0]*=-1
+   # Fallback polyline segments share adjacent endpoint lists. Replace each
+   # coordinate value so the same point is not reflected twice in-place.
+   if k in r:r[k]=[-r[k][0],r[k][1]]
   if r['kind']=='ARC':r['start'],r['end']=(180-r['end'])%360,(180-r['start'])%360
  return cs
 
@@ -369,7 +371,7 @@ def main():
   for n,p in study['parts'].items():
    sp=OUT/'STEP'/(n+'.step');assert sha(sp)==p['step_sha256'];parts[n]=cq.importers.importStep(str(sp)).val()
   study['source_hashes'][0]['sha256']=sha(__file__);study['additional_checks']=additional_original_checks(parts,study);study['pdf'],study['dxfs']=drawings(parts,study);js(OUT/'study.json',study)
-  js(OUT/'manifest.json',{'revision':'R5-WRIST-PAIR01','outputs':[dict(path=str(p.relative_to(OUT)),sha256=sha(p)) for p in sorted(OUT.rglob('*')) if p.is_file() and p.name not in ['manifest.json','visual-qa.json'] and p.suffix!='.png']})
+  js(OUT/'manifest.json',{'revision':'R5-WRIST-PAIR01','outputs':[dict(path=str(p.relative_to(OUT)),sha256=sha(p)) for p in sorted(OUT.rglob('*')) if p.is_file() and p.name not in ['manifest.json','visual-qa.json','independent-review.json'] and p.suffix!='.png']})
   return
  assert args.vendor_step and sha(args.vendor_step)==vendorhash
  v=cq.importers.importStep(str(args.vendor_step)).val().rotate((0,0,0),(1,1,-1),120).translate((0,0,X0));assert v.isValid()
@@ -401,6 +403,6 @@ def main():
  for n,s in actual.items():
   if 'OEM' not in n:public.add(s,name=n)
  public.save(str(OUT/'STEP/ORIGINAL-assembly.step'))
- js(OUT/'manifest.json',{'revision':'R5-WRIST-PAIR01','outputs':[dict(path=str(p.relative_to(OUT)),sha256=sha(p)) for p in sorted(OUT.rglob('*')) if p.is_file() and p.name not in ['manifest.json','visual-qa.json'] and p.suffix!='.png']})
+ js(OUT/'manifest.json',{'revision':'R5-WRIST-PAIR01','outputs':[dict(path=str(p.relative_to(OUT)),sha256=sha(p)) for p in sorted(OUT.rglob('*')) if p.is_file() and p.name not in ['manifest.json','visual-qa.json','independent-review.json'] and p.suffix!='.png']})
  print(json.dumps({'mass':{n:props[n]['mass_6061_candidate_kg'] for n in ['W01','A01-P','H01-reuse']},'interface_mass':mechanics_data['interface_mass_with_known_hardware_kg'],'contact':checks['contact_area_mm2'],'loads':{k:mechanics_data[k] for k in ['J7_output_moment_Nm','J6_zero_geometry_arbitrary_gravity_moment_Nm','J6_axis_gravity_torque_abs_bound_Nm']},'neck':mechanics_data['neck_section']},indent=2),flush=True)
 if __name__=='__main__':main()

@@ -115,7 +115,9 @@ A01-P 的 OD56 后裙半径 28；固定侧 M3 最大头包络的内径半径为 
 
 可复算入口：
 
-另有不导入主生成器的 [独立复核脚本](../../engineering/r5_wrist_pair01_review.py)：对6个分件STL重新积分质量、COM与惯量，并重建J6的重力矩界。质量相对差小于0.000104、惯量相对差小于0.000212，COM最大差0.000504mm；结果见 [independent-review.json](../../engineering/generated/r5-wrist-pair01/independent-review.json)。它不重复原厂几何、螺纹或强度资格审查。
+另有 [独立复核脚本](../../engineering/r5_wrist_pair01_review.py)：质量/载荷部分不调用主生成器，对6个分件STL重新积分质量、COM与惯量，并重建J6的重力矩界。质量相对差小于0.000104、惯量相对差小于0.000212，COM最大差0.000504mm；结果见 [independent-review.json](../../engineering/generated/r5-wrist-pair01/independent-review.json)。它不重复原厂几何、螺纹或强度资格审查。
+
+2026-09-28 绘图勘误：YZ投影原先就地反转折线端点，而相邻线段可能共享同一个端点列表，造成重复反转；该辅助函数在后续平移装配中会画出错误长线。现改为逐点新建坐标，重出PDF/DXF，并在上述复核脚本中单独调用绘图函数检查5个实际/平移截面的端点范围及反射前后路径总长。此回归检查与独立质量积分分开。五页PDF重新视检，原第2页绘图流已变化，其余四页绘图流不变；全部STEP、STL、实体参数和载荷结果未变，不能把这次绘图修正写成结构重新验证。
 
 ```sh
 python engineering/r5_wrist_pair01.py \
