@@ -1,0 +1,3630 @@
+{
+  "revision": "R5-LINK56-EROB01",
+  "status": "conditional original geometry candidate, no manufacturing release",
+  "license": "CC-BY-NC-4.0",
+  "source_hashes": [
+    {
+      "path": "engineering/r5_link56_erob01.py",
+      "sha256": "4ef7a820ea9a0e0db092877ba63fd46cb829620065f0c41a87356c99e3764f98"
+    },
+    {
+      "path": "docs/engineering/sources/r5-link56-erob01.json",
+      "sha256": "b2806c3317c2546cbfdb14dedf4cabbddbc289984b20ef92387c1782660f5473"
+    },
+    {
+      "path": "engineering/r5_wrist_pair01.py",
+      "sha256": "163d930cb46acf6c4a6d84d24d1c0d2f4dc3ffd4101ff704571847d05bb2d370"
+    },
+    {
+      "path": "engineering/r5_wrist_erob01.py",
+      "sha256": "1d82e3ce6de149f22dbbc73c9ca6c1b44b3596a17d6f7ab15a0bb17ef774c05b"
+    },
+    {
+      "path": "engineering/build_layout.py",
+      "sha256": "9c21a65d2c7873809faf4f7ee733efb8a0e699758190046d73f5e2d1d0e44d2c"
+    },
+    {
+      "path": "engineering/draw_central_display01.py",
+      "sha256": "3fa9b112a6cd835749061dcee6e702cbc4a91c7ccfce53e68255e0ff847c63dd"
+    },
+    {
+      "path": "engineering/generated/raised-arm-integration01/model.json",
+      "sha256": "e3b2a10a2f11cbc6a5085150dd1d5bcba3848431f40e4aea7485d4d5125d33a1"
+    },
+    {
+      "path": "engineering/generated/r5-wrist-pair01/study.json",
+      "sha256": "cfde0cc969ae760d5ef6e4f163edfbbdfba6a2ca39a02a549cf13a8e55c331c0"
+    },
+    {
+      "path": "engineering/generated/r5-wrist-pair01/STEP/W01.step",
+      "sha256": "608704ecb35482b58bae4a593089d731bf4da7bdf8b8d9da04c69713074c0af7"
+    },
+    {
+      "path": "engineering/generated/r5-wrist-pair01/STEP/A01-P.step",
+      "sha256": "88833642a5fdaf4094be084af5abcad4f7d51b23fc2221c25efb5b6de2a8a201"
+    },
+    {
+      "path": "engineering/generated/r5-wrist-pair01/STEP/H01-reuse.step",
+      "sha256": "6f415f21192ab8b272f7a2d3c1e596b5c943283be9bb2b69c7ac9d1c0645c1fe"
+    }
+  ],
+  "core_hash": "fe7de92efd2081b90d20b3139fddb2e0fecf5b339c95bbf3a81c1026ca9ba80f",
+  "frames": {
+    "link_origin_world_mm": [
+      0.0,
+      -55.0,
+      485.0
+    ],
+    "J6_in_link": [
+      [
+        0.9659258262890683,
+        -0.25881904510252074,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        55.0
+      ],
+      [
+        -0.25881904510252074,
+        -0.9659258262890683,
+        0.0,
+        155.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "J7_in_link": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        110.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        190.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "J5_limit_deg": [
+      -90,
+      90
+    ],
+    "J6_limit_deg": [
+      -100,
+      100
+    ],
+    "PAIR_q7_limit_deg": [
+      -90,
+      90
+    ]
+  },
+  "parts": {
+    "L56-E01": {
+      "mass_if_6061_kg": 0.2824757207493088,
+      "volume_mm3": 104620.63731455881,
+      "com_link_mm": [
+        -8.84539496993846e-15,
+        10.504636808099848,
+        60.724442143758125
+      ],
+      "com_world_mm": [
+        -8.84539496993846e-15,
+        -44.495363191900154,
+        545.7244421437581
+      ],
+      "inertia_at_com_world_kg_m2": [
+        [
+          0.001010533182182396,
+          6.962103409837044e-20,
+          -6.387383444183753e-20
+        ],
+        [
+          6.962103409837044e-20,
+          0.0009395888305383143,
+          -0.00021576781111442393
+        ],
+        [
+          -6.387383444183753e-20,
+          -0.00021576781111442393,
+          0.00024334558382217955
+        ]
+      ],
+      "density_assumption_kg_m3": 2700,
+      "preceding_joints": 5,
+      "bbox_mm": [
+        [
+          -39.00000000000001,
+          -38.0,
+          -8.0
+        ],
+        [
+          39.0,
+          51.0,
+          194.0
+        ]
+      ],
+      "step_sha256": "866589d8f57f753e2b5d2de1e0f59274d28f7dc674d6f09ed1dfa17fb687bace",
+      "stl_sha256": "a31c4b236cb51981b4769e99c68fbf5c29ec302dccb8aba39119b5cf9f832503",
+      "step_valid": true,
+      "step_solids": 1,
+      "step_volume_relative_error": 9.180085590422617e-14,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_volume_relative_error": 6.736702229720359e-05,
+      "mesh_bbox_max_error_mm": 0.0030517578125,
+      "chordal_tolerance_mm": 0.01,
+      "angular_tolerance_rad": 0.05
+    },
+    "L56-G": {
+      "mass_if_6061_kg": 0.27949524403821707,
+      "volume_mm3": 103516.75705119151,
+      "com_link_mm": [
+        -1.555555269851293e-14,
+        10.514906105792802,
+        61.04663770779665
+      ],
+      "com_world_mm": [
+        -1.555555269851293e-14,
+        -44.485093894207196,
+        546.0466377077967
+      ],
+      "inertia_at_com_world_kg_m2": [
+        [
+          0.000994223848186673,
+          9.238926267896512e-20,
+          1.2780338277801483e-19
+        ],
+        [
+          9.238926267896512e-20,
+          0.0009240983262872678,
+          -0.00021213985604780425
+        ],
+        [
+          1.2780338277801483e-19,
+          -0.00021213985604780425,
+          0.00024057424062182324
+        ]
+      ],
+      "density_assumption_kg_m3": 2700,
+      "preceding_joints": 5,
+      "bbox_mm": [
+        [
+          -39.00000000000001,
+          -38.0,
+          -8.0
+        ],
+        [
+          39.0,
+          51.0,
+          194.0
+        ]
+      ],
+      "step_sha256": "1ca91b3dc5a4b1bbd74ca4c58689ba5d6189f6902c718ea6b0c5e340082961f4",
+      "stl_sha256": "852048898a10a2f08afc7c51abe7892f565f3211b02b4881ccfed5d0a783a664",
+      "step_valid": true,
+      "step_solids": 1,
+      "step_volume_relative_error": 1.2117604225805724e-13,
+      "mesh_watertight": true,
+      "mesh_winding_consistent": true,
+      "mesh_volume_relative_error": 6.715071565834158e-05,
+      "mesh_bbox_max_error_mm": 0.0030517578125,
+      "chordal_tolerance_mm": 0.01,
+      "angular_tolerance_rad": 0.05
+    }
+  },
+  "print_oriented": {
+    "file": "STL/L56-G-print-oriented.stl",
+    "sha256": "ce4c685577b8f8f481c7a926995e26f77b8519962bfdf4dd1a8a3db572d43d08",
+    "bbox_mm": [
+      [
+        -38.99853515625,
+        -38.0,
+        0.0
+      ],
+      [
+        38.99853515625,
+        51.0,
+        201.9969482421875
+      ]
+    ],
+    "watertight": true,
+    "winding_consistent": true
+  },
+  "checks": {
+    "static": [
+      {
+        "a": "L56",
+        "b": "J5_solid1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "L56",
+        "b": "J5_solid2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "L56",
+        "b": "J5_solid3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "L56",
+        "b": "J5_solid4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "L56",
+        "b": "J5_solid5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "L56",
+        "b": "J6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "L56",
+        "b": "J7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "L56",
+        "b": "PAIR_W01",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "L56",
+        "b": "PAIR_A01P",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "L56",
+        "b": "PAIR_H01",
+        "intersection_mm3": 0.0
+      }
+    ],
+    "known_hardware": [
+      {
+        "id": "J5_OUT_1",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_2",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_3",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_4",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_5",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_6",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_7",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_8",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_9",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_10",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_11",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_12",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_13",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_14",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_15",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J5_OUT_16",
+        "free_shaft_length_mm": 9.6,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J6_FIXED_1",
+        "free_shaft_length_mm": 22.5,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J6_FIXED_2",
+        "free_shaft_length_mm": 22.5,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J6_FIXED_3",
+        "free_shaft_length_mm": 22.5,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J6_FIXED_4",
+        "free_shaft_length_mm": 22.5,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J6_FIXED_5",
+        "free_shaft_length_mm": 22.5,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J6_FIXED_6",
+        "free_shaft_length_mm": 22.5,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J6_FIXED_7",
+        "free_shaft_length_mm": 22.5,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      },
+      {
+        "id": "J6_FIXED_8",
+        "free_shaft_length_mm": 22.5,
+        "head_max_mm": [
+          5.68,
+          3
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "PAIR_W01": 0.0,
+          "PAIR_A01P": 0.0,
+          "PAIR_H01": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0,
+          "J7": 0.0
+        },
+        "complete_fastener": false
+      }
+    ],
+    "hardware_pairs": [
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_1",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_2",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_3",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_4",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_5",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_6",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J5_OUT_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J5_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J5_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_7",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J5_OUT_9",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J5_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_8",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J5_OUT_10",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_9",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J5_OUT_11",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_10",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J5_OUT_12",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_11",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J5_OUT_13",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_12",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J5_OUT_14",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_13",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J5_OUT_15",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_14",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_15",
+        "b": "J5_OUT_16",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_15",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_15",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_15",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_15",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_15",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_15",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_15",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_15",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_16",
+        "b": "J6_FIXED_1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_16",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_16",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_16",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_16",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_16",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_16",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J5_OUT_16",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_1",
+        "b": "J6_FIXED_2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_1",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_1",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_1",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_1",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_1",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_1",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_2",
+        "b": "J6_FIXED_3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_2",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_2",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_2",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_2",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_2",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_3",
+        "b": "J6_FIXED_4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_3",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_3",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_3",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_3",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_4",
+        "b": "J6_FIXED_5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_4",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_4",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_4",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_5",
+        "b": "J6_FIXED_6",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_5",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_5",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_6",
+        "b": "J6_FIXED_7",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_6",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J6_FIXED_7",
+        "b": "J6_FIXED_8",
+        "intersection_mm3": 0.0
+      }
+    ],
+    "tools": [
+      {
+        "id": "J5_OUT_1",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_2",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_3",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_4",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_5",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_6",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_7",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_8",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_9",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_10",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_11",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_12",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_13",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_14",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_15",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J5_OUT_16",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J6_FIXED_1",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J6_FIXED_2",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J6_FIXED_3",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J6_FIXED_4",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J6_FIXED_5",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J6_FIXED_6",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J6_FIXED_7",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "selected_tool": false
+      },
+      {
+        "id": "J6_FIXED_8",
+        "diameter_length_mm": [
+          5.8,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "selected_tool": false
+      }
+    ],
+    "known_hardware_sweeps": [
+      {
+        "id": "J5_OUT_1",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_2",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_3",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_4",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_5",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_6",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_7",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_8",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_9",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_10",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_11",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_12",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_13",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_14",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_15",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J5_OUT_16",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J6_FIXED_1",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J6_FIXED_2",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J6_FIXED_3",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J6_FIXED_4",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J6_FIXED_5",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J6_FIXED_6",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J6_FIXED_7",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "thread_segment_unknown": true
+      },
+      {
+        "id": "J6_FIXED_8",
+        "translation_from_seated_mm": [
+          0,
+          60
+        ],
+        "intersection_mm3": {
+          "L56": 0.0,
+          "J5_solid1": 0.0,
+          "J5_solid2": 0.0,
+          "J5_solid3": 0.0,
+          "J5_solid4": 0.0,
+          "J5_solid5": 0.0,
+          "J6": 0.0
+        },
+        "thread_segment_unknown": true
+      }
+    ],
+    "J6_sweep_against_prior_J5_hardware": [
+      {
+        "J5_OUT_1": 0.0,
+        "J5_OUT_2": 0.0,
+        "J5_OUT_3": 0.0,
+        "J5_OUT_4": 0.0,
+        "J5_OUT_5": 0.0,
+        "J5_OUT_6": 0.0,
+        "J5_OUT_7": 0.0,
+        "J5_OUT_8": 0.0,
+        "J5_OUT_9": 0.0,
+        "J5_OUT_10": 0.0,
+        "J5_OUT_11": 0.0,
+        "J5_OUT_12": 0.0,
+        "J5_OUT_13": 0.0,
+        "J5_OUT_14": 0.0,
+        "J5_OUT_15": 0.0,
+        "J5_OUT_16": 0.0
+      },
+      {
+        "J5_OUT_1": 0.0,
+        "J5_OUT_2": 0.0,
+        "J5_OUT_3": 0.0,
+        "J5_OUT_4": 0.0,
+        "J5_OUT_5": 0.0,
+        "J5_OUT_6": 0.0,
+        "J5_OUT_7": 0.0,
+        "J5_OUT_8": 0.0,
+        "J5_OUT_9": 0.0,
+        "J5_OUT_10": 0.0,
+        "J5_OUT_11": 0.0,
+        "J5_OUT_12": 0.0,
+        "J5_OUT_13": 0.0,
+        "J5_OUT_14": 0.0,
+        "J5_OUT_15": 0.0,
+        "J5_OUT_16": 0.0
+      },
+      {
+        "J5_OUT_1": 0.0,
+        "J5_OUT_2": 0.0,
+        "J5_OUT_3": 0.0,
+        "J5_OUT_4": 0.0,
+        "J5_OUT_5": 0.0,
+        "J5_OUT_6": 0.0,
+        "J5_OUT_7": 0.0,
+        "J5_OUT_8": 0.0,
+        "J5_OUT_9": 0.0,
+        "J5_OUT_10": 0.0,
+        "J5_OUT_11": 0.0,
+        "J5_OUT_12": 0.0,
+        "J5_OUT_13": 0.0,
+        "J5_OUT_14": 0.0,
+        "J5_OUT_15": 0.0,
+        "J5_OUT_16": 0.0
+      },
+      {
+        "J5_OUT_1": 0.0,
+        "J5_OUT_2": 0.0,
+        "J5_OUT_3": 0.0,
+        "J5_OUT_4": 0.0,
+        "J5_OUT_5": 0.0,
+        "J5_OUT_6": 0.0,
+        "J5_OUT_7": 0.0,
+        "J5_OUT_8": 0.0,
+        "J5_OUT_9": 0.0,
+        "J5_OUT_10": 0.0,
+        "J5_OUT_11": 0.0,
+        "J5_OUT_12": 0.0,
+        "J5_OUT_13": 0.0,
+        "J5_OUT_14": 0.0,
+        "J5_OUT_15": 0.0,
+        "J5_OUT_16": 0.0
+      },
+      {
+        "J5_OUT_1": 0.0,
+        "J5_OUT_2": 0.0,
+        "J5_OUT_3": 0.0,
+        "J5_OUT_4": 0.0,
+        "J5_OUT_5": 0.0,
+        "J5_OUT_6": 0.0,
+        "J5_OUT_7": 0.0,
+        "J5_OUT_8": 0.0,
+        "J5_OUT_9": 0.0,
+        "J5_OUT_10": 0.0,
+        "J5_OUT_11": 0.0,
+        "J5_OUT_12": 0.0,
+        "J5_OUT_13": 0.0,
+        "J5_OUT_14": 0.0,
+        "J5_OUT_15": 0.0,
+        "J5_OUT_16": 0.0
+      },
+      {
+        "J5_OUT_1": 0.0,
+        "J5_OUT_2": 0.0,
+        "J5_OUT_3": 0.0,
+        "J5_OUT_4": 0.0,
+        "J5_OUT_5": 0.0,
+        "J5_OUT_6": 0.0,
+        "J5_OUT_7": 0.0,
+        "J5_OUT_8": 0.0,
+        "J5_OUT_9": 0.0,
+        "J5_OUT_10": 0.0,
+        "J5_OUT_11": 0.0,
+        "J5_OUT_12": 0.0,
+        "J5_OUT_13": 0.0,
+        "J5_OUT_14": 0.0,
+        "J5_OUT_15": 0.0,
+        "J5_OUT_16": 0.0
+      },
+      {
+        "J5_OUT_1": 0.0,
+        "J5_OUT_2": 0.0,
+        "J5_OUT_3": 0.0,
+        "J5_OUT_4": 0.0,
+        "J5_OUT_5": 0.0,
+        "J5_OUT_6": 0.0,
+        "J5_OUT_7": 0.0,
+        "J5_OUT_8": 0.0,
+        "J5_OUT_9": 0.0,
+        "J5_OUT_10": 0.0,
+        "J5_OUT_11": 0.0,
+        "J5_OUT_12": 0.0,
+        "J5_OUT_13": 0.0,
+        "J5_OUT_14": 0.0,
+        "J5_OUT_15": 0.0,
+        "J5_OUT_16": 0.0
+      },
+      {
+        "J5_OUT_1": 0.0,
+        "J5_OUT_2": 0.0,
+        "J5_OUT_3": 0.0,
+        "J5_OUT_4": 0.0,
+        "J5_OUT_5": 0.0,
+        "J5_OUT_6": 0.0,
+        "J5_OUT_7": 0.0,
+        "J5_OUT_8": 0.0,
+        "J5_OUT_9": 0.0,
+        "J5_OUT_10": 0.0,
+        "J5_OUT_11": 0.0,
+        "J5_OUT_12": 0.0,
+        "J5_OUT_13": 0.0,
+        "J5_OUT_14": 0.0,
+        "J5_OUT_15": 0.0,
+        "J5_OUT_16": 0.0
+      }
+    ],
+    "discrete_actual": [
+      {
+        "q6_deg": -100,
+        "moving": "PAIR_W01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": -100,
+        "moving": "PAIR_A01P",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": -100,
+        "moving": "PAIR_H01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": -100,
+        "moving": "J7",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": -50,
+        "moving": "PAIR_W01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": -50,
+        "moving": "PAIR_A01P",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": -50,
+        "moving": "PAIR_H01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": -50,
+        "moving": "J7",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 0,
+        "moving": "PAIR_W01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 0,
+        "moving": "PAIR_A01P",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 0,
+        "moving": "PAIR_H01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 0,
+        "moving": "J7",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 50,
+        "moving": "PAIR_W01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 50,
+        "moving": "PAIR_A01P",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 50,
+        "moving": "PAIR_H01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 50,
+        "moving": "J7",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 100,
+        "moving": "PAIR_W01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 100,
+        "moving": "PAIR_A01P",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 100,
+        "moving": "PAIR_H01",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q6_deg": 100,
+        "moving": "J7",
+        "against": "L56",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": -90,
+        "moving": "L56",
+        "against": "J5_solid1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": -90,
+        "moving": "L56",
+        "against": "J5_solid2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": -90,
+        "moving": "L56",
+        "against": "J5_solid3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": -90,
+        "moving": "L56",
+        "against": "J5_solid4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": -90,
+        "moving": "L56",
+        "against": "J5_solid5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 0,
+        "moving": "L56",
+        "against": "J5_solid1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 0,
+        "moving": "L56",
+        "against": "J5_solid2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 0,
+        "moving": "L56",
+        "against": "J5_solid3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 0,
+        "moving": "L56",
+        "against": "J5_solid4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 0,
+        "moving": "L56",
+        "against": "J5_solid5",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 90,
+        "moving": "L56",
+        "against": "J5_solid1",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 90,
+        "moving": "L56",
+        "against": "J5_solid2",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 90,
+        "moving": "L56",
+        "against": "J5_solid3",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 90,
+        "moving": "L56",
+        "against": "J5_solid4",
+        "intersection_mm3": 0.0
+      },
+      {
+        "q5_deg": 90,
+        "moving": "L56",
+        "against": "J5_solid5",
+        "intersection_mm3": 0.0
+      }
+    ],
+    "contact_area_mm2": {
+      "J5_output": 444.2122795503413,
+      "J6_fixed": 968.5732983585739
+    },
+    "q5_continuous": {
+      "range_deg": [
+        -90,
+        90
+      ],
+      "rear_subset_escape_mm3": 0.0,
+      "rear_invariant_annulus_vendor_intersections_mm3": {
+        "J5_solid1": 0.0,
+        "J5_solid2": 0.0,
+        "J5_solid3": 0.0,
+        "J5_solid4": 0.0,
+        "J5_solid5": 0.0
+      },
+      "positive_material_halfspace": "All other original material Z>=0; downstream modules/wrist remain above J5 at any q6 in requested range. OEM internal output/thread states excluded.",
+      "future_J5_fixed_head_radial_clearance_mm": 1.1599999999999966,
+      "future_fixed_bracket_not_designed": true,
+      "actual_downstream_XZ_corner_radius_mm": {
+        "PAIR_W01": 54.451813560247935,
+        "PAIR_A01P": 57.38466694161429,
+        "PAIR_H01": 60.440052945046304,
+        "J7": 52.700682181227464
+      },
+      "known_hardware_inclusive_radius_bound_mm": 64.4,
+      "continuous_downstream_min_Z_mm": 90.6
+    },
+    "J5_aligned_insertion": {
+      "swept_rear_intersections_mm3": {
+        "J5_solid1": 0.0,
+        "J5_solid2": 0.0,
+        "J5_solid3": 0.0,
+        "J5_solid4": 0.0,
+        "J5_solid5": 0.0
+      },
+      "translations_from_seat_mm": [
+        0,
+        70
+      ],
+      "beyond": "Skirt wholly Z>0; main original always Z>=0"
+    },
+    "J6_aligned_insertion": {
+      "vendor_BREP_escape_from_two_cylinder_bound_mm3": 0.0,
+      "direction_from_seat": "-jointZ = -worldY",
+      "translations_mm": [
+        0,
+        100
+      ],
+      "swept_bound_intersection_mm3": 0.0,
+      "beyond100": "All OEM world/link Y< -45, while L56 Y>=-38; separated"
+    },
+    "q6_continuous": {
+      "range_deg": [
+        -100,
+        100
+      ],
+      "link_max_Y_mm": 51.0,
+      "wrist_main_min_Y_mm": 55,
+      "invariant_rear_annulus_intersection_mm3": 0.0,
+      "known_output_shaft_sweep_intersection_mm3": 0.0,
+      "skirt_to_carrier_radial_gap_mm": 1.3,
+      "skirt_to_fixed_head_radial_gap_mm": 1.16,
+      "scope": "External geometry with PAIR q7 in[-90,90]. No OEM internal partition certification, upstream J4/L45, actual head, cables or tolerance/elastic clearance."
+    },
+    "harness": {
+      "base_nominal_through_diameter_mm": 18,
+      "beam_inner_diameter_mm": 34,
+      "beam_inner_Z_mm": [
+        8,
+        114
+      ],
+      "straight_18mm_probe_intersection_mm3": 0.0,
+      "underbody_gap_from_verified_bound_mm": 5.900000000000006,
+      "actual_J6_BREP_min_Z_mm": 119.99997287488517,
+      "actual_J6_min_Z_minus_foot_mm": 5.999972874885174,
+      "explicit_bend_counterexample": {
+        "centreline_radius_mm": 35,
+        "probe_diameter_mm": 3.5,
+        "start_link_mm": [
+          0,
+          0,
+          120
+        ],
+        "end_link_mm": [
+          0,
+          35,
+          155
+        ],
+        "formula": "[0,35*(1-cos(t)),120+35*sin(t)], t0..pi/2; starts along+Z, ends+Y",
+        "probe_volume_mm3": 528.9491108708822,
+        "actual_J6_intersection_mm3": 282.6120026786107,
+        "scope": "Pure geometric route, not selected cable; collision rejects only this explicit underbody turn, not every possible rear/side route."
+      },
+      "J6_rear_reserved_radius_mm": 40,
+      "J6_rear_reserved_length_mm": 40,
+      "rear_reserve_intersection_mm3": 0.0,
+      "minimum_rear_reserve_to_foot_Z_gap_mm": 1,
+      "example_quarter_bend_radius_mm": 35,
+      "example_bare_arc_height_deficit_mm": 29.099999999999994,
+      "example_status": "Pure geometric R35 example, not a selected cable specification; ignores cable radius, thus only a necessary screen.",
+      "complete_internal_harness_verified": false,
+      "reason": "5.9mm is planning gap to verified outer bound, not proof of actual material obstruction. Explicit R35/OD3.5 underbody route intersects actual J6 BREP; must develop rear/side path. No universal route infeasibility or preassembled18mm plug claim."
+    }
+  },
+  "mechanics": {
+    "gravity_m_s2": 9.80665,
+    "payload_kg": 2,
+    "head_budget_kg": 1.5,
+    "head_budget_excludes_PAIR_interface": true,
+    "PAIR_interface_mass_kg": 0.14997848393385976,
+    "PAIR_interface_world_COM_mm": [
+      -3.4076833261156965e-16,
+      55.013778974862234,
+      680.6288208186811
+    ],
+    "PAIR_W01_mass_kg": 0.13433117391921745,
+    "J6_and_J7_motor_mass_each_kg": 0.88,
+    "head_COM_from_J7_output_mm": 100,
+    "TCP_from_J7_output_mm": 200,
+    "output_loaded_mass_kg": 5.826785378602386,
+    "J5_module_self_mass_excluded": true,
+    "C_kg_mm": [
+      -2.4986093194456772e-15,
+      279.612336035497,
+      876.5211775288848
+    ],
+    "D_kg_mm": [
+      1.4579876506104483e-14,
+      251.3199906186997,
+      682.1345080331408
+    ],
+    "q7_off_axis_first_moment_bound_kg_mm": 0.002066549760000106,
+    "continuous_arbitrary_gravity_candidate_extrema": [
+      {
+        "q6_deg": -100.0,
+        "first_moment_kg_mm": [
+          -671.7713521082054,
+          530.9323266541967,
+          758.0697632852018
+        ],
+        "arbitrary_gravity_moment_Nm": 11.214968195244333
+      },
+      {
+        "q6_deg": -1.3879616299584435e-15,
+        "first_moment_kg_mm": [
+          -4.443100431106163e-15,
+          530.9323266541967,
+          1558.6556855620256
+        ],
+        "arbitrary_gravity_moment_Nm": 16.14766540733415
+      },
+      {
+        "q6_deg": 0.0,
+        "first_moment_kg_mm": [
+          1.2081267186658806e-14,
+          530.9323266541967,
+          1558.6556855620256
+        ],
+        "arbitrary_gravity_moment_Nm": 16.14766540733415
+      },
+      {
+        "q6_deg": 100.0,
+        "first_moment_kg_mm": [
+          671.7713521082054,
+          530.9323266541967,
+          758.0697632852018
+        ],
+        "arbitrary_gravity_moment_Nm": 11.214968195244333
+      }
+    ],
+    "worst_J5_output_moment_Nm": 16.14766540733415,
+    "continuous_J5_axis_gravity_torque_bound_Nm": 8.476941067674582,
+    "force_N": 57.141244833071084,
+    "two_motor_COM_geometry_uncertainty_Nm": 0.9493672689813161,
+    "unknown_fine_hardware_budget_kg": 0.1,
+    "unknown_hardware_radial_bound_from_J5_m": 0.26,
+    "planned_moment_with_COM_and_hardware_budget_Nm": 17.352005576315463,
+    "planned_force_N": 58.121909833071086,
+    "planned_J5_axis_torque_bound_Nm": 9.681281236655899,
+    "J5_bolt_group": {
+      "S_mm2": [
+        [
+          5831.999999999999,
+          7.019004618984808e-14
+        ],
+        [
+          7.019004618984808e-14,
+          5832.0
+        ]
+      ],
+      "maximum_axial_increment_N": 80.33335914960864,
+      "direct_transverse_share_N": 3.632619364566943,
+      "moment_Nm": 17.352005576315463,
+      "force_N": 58.121909833071086,
+      "assumption": "Equal bolt stiffness and compatible compressed contact; no prying. Added axial load only, not preload or rated capacity."
+    },
+    "J6_fixed_screen": {
+      "S_mm2": [
+        [
+          4096.0,
+          1.5737499478877398e-13
+        ],
+        [
+          1.5737499478877398e-13,
+          4096.0
+        ]
+      ],
+      "maximum_axial_increment_N": 69.09882186222326,
+      "direct_transverse_share_N": 6.91897116327311,
+      "moment_Nm": 8.844649198364577,
+      "force_N": 55.35176930618488,
+      "assumption": "Equal bolt stiffness and compatible compressed contact; no prying. Added axial load only, not preload or rated capacity."
+    },
+    "tube": {
+      "OD_ID_mm": [
+        40,
+        34
+      ],
+      "length_mm": 96,
+      "area_mm2": 348.71678454846705,
+      "I_mm4": 60066.46613847345,
+      "E_assumed_MPa": 69000,
+      "section_sigma_indicator_MPa": 5.944275291173805,
+      "selected_cantilever_deflection_mm": 0.02342788556845298,
+      "condition": "A selected uniform tube under the entire J5 moment bound plus transverse force; intentionally double-counts some moment, still does not bound whole assembly deflection or local plate roots."
+    },
+    "output_plate_strip": {
+      "width_mm": 8,
+      "thickness_mm": 4.4,
+      "radial_span_mm": 7,
+      "force_N": 80.33335914960864,
+      "sigma_MPa": 21.784614438814323,
+      "deflection_mm": 0.0023439747639479617,
+      "condition": "Selected bolt-to-tube strip at output plate. Not actual annular plate FEA/contact redistribution."
+    },
+    "foot_ligament_proxy": {
+      "foot_only_Y0_total_ligament_width_mm": 10,
+      "plate_thickness_mm": 10,
+      "I_for_bending_about_X_mm4": 833.3333333333334,
+      "whole_J5_moment_normal_stress_indicator_MPa": 104.11203345789278,
+      "condition": "Assigns whole J5 moment to foot-only two ligaments; real load also spreads into tube/ring. Neither local-notch maximum nor globally conservative stress solution. Requires FEA/fillet verification."
+    },
+    "not_validated": [
+      "Full OEM thread engagement and screw SKU/length",
+      "Source motor COM axes/rigid-body inertias",
+      "Static hold thermal guarantee; rated drive torque is not substitute",
+      "Metal certificate/preload/contact/FEA/fatigue/shock",
+      "Whole arm/cable geometry and complete head"
+    ]
+  },
+  "section_nonlinear_curve_chordal_target_mm": 0.002,
+  "pdf": {
+    "file": "ODR-R5-LINK56-EROB01.pdf",
+    "sha256": "17068b562cc86b3fa9d06bfaf14c5eef6b2a675f330e90da42c3db977ba0bf8d",
+    "pages": 5
+  },
+  "dxf": {
+    "file": "DXF/ODR-L56-E01.dxf",
+    "sha256": "3e4b307a96f3c402cbda478c4a645ac11c5711c318908e5cbc44cc4bfc958e56",
+    "units_mm": true,
+    "audit_errors": 0
+  }
+}

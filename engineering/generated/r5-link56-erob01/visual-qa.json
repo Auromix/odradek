@@ -1,0 +1,65 @@
+{
+  "revision": "R5-LINK56-EROB01",
+  "status": "render-and-dimension QA passed; geometry candidate only",
+  "pdf_sha256": "17068b562cc86b3fa9d06bfaf14c5eef6b2a675f330e90da42c3db977ba0bf8d",
+  "pages": 5,
+  "renderer": "Poppler pdftoppm at115dpi",
+  "visual_review": {
+    "pages_seen": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "legible_Chinese_English": true,
+    "no_observed_overlap_clipping_or_spurious_reflected_polyline": true,
+    "page_1": "Proper YZ section at0.75, invariant155/55 axis offsets and red explicit failed bend route. Vendor dashed rectangles marked bounds, not CAD projection.",
+    "page_2": "OD76, nonuniform16 holes, tubeOD40/ID34,96 tube/10plate, R2 and full nominal note dimensions read.",
+    "page_3": "Actual16/8 hole coordinates, clocking+15 and fixed ringOD78/ID58.6, full thread unknown read.",
+    "page_4": "Staged assembly and continuous external proof separated; R35 counterexample282.612mm3 and bounds-only planning gap distinguished.",
+    "page_5": "Actual282.476g, planned17.35201Nm and gauge modifications49.2x.5 visible; not production/load release."
+  },
+  "rendered_pages": [
+    {
+      "file": "work/r5-link56-erob01/page-1.png",
+      "sha256": "9898d293d5a5d0e6f546e4383d0a9d777750d864108782b9cc6d74403cdbe193"
+    },
+    {
+      "file": "work/r5-link56-erob01/page-2.png",
+      "sha256": "bd44c7f61ff192062d109fee520d1b4bc500ceed90a46d8a696ec4ecd418fb1a"
+    },
+    {
+      "file": "work/r5-link56-erob01/page-3.png",
+      "sha256": "779babc205d5421c117143a9483d35f007c92602463e96c90b50fff376de47d6"
+    },
+    {
+      "file": "work/r5-link56-erob01/page-4.png",
+      "sha256": "b18b2ade372ba2f7d5496a5cb7dd8ab000a54f6b3b84b5bb56cc8c740460d2d2"
+    },
+    {
+      "file": "work/r5-link56-erob01/page-5.png",
+      "sha256": "9df7a38fd48eeb4a805179e31c218f80d9cbc269b6279e4243d56fe8ed54e2da"
+    }
+  ],
+  "repo_source_hashes_matched": 11,
+  "manifest_outputs_matched": 14,
+  "independent_dimension_recheck": "dimension-qa.json: exported16/8 hole axes recovered;200001 seeded q6 samples remain below analytic bound",
+  "public_original_assembly": {
+    "sha256": "6517de1a828936db9304dba122061fcc458924552777709fad36875b59e1883f",
+    "valid_solids": 4,
+    "volume_relative_error": 7.718626192774288e-14,
+    "vendor_geometry_included": false
+  },
+  "print_oriented_STL": {
+    "watertight": true,
+    "winding_consistent": true,
+    "volume_relative_error": 6.715131072520772e-05,
+    "bbox_max_error_mm": 0.0030517578125
+  },
+  "review_limits": [
+    "No real hardware assembly, material or load test",
+    "Complete fine-thread screws/tools/ports/harness remain unselected",
+    "No FEA/fatigue/thermal hold or whole-arm collision certification"
+  ]
+}
