@@ -1,0 +1,70 @@
+{
+  "revision": "CD-DRAW01-VISUAL-QA",
+  "date": "2026-09-27",
+  "PDF_sha256": "4bbd40a5697d49bc7a2f7c2db573404870f117ccf92c93d24fff611c793c93fc",
+  "drawing_evidence_sha256": "65b8eaee1eeb256b45bc14a7cabc8416b7b4fe8fe169acfa72f41dad9c6f6c92",
+  "renderer": "pdftoppm / Poppler",
+  "render_command": "pdftoppm -png -r 100 ODR-CD01-geometry-prototype.pdf qa/page",
+  "inspected_pages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "review": "All four final page rasters visually read for CJK glyphs, dimensions, arrows, clipping and spacing. Pages1/3 final rasters hash-identical to the previously viewed corrected final files; pages2/4 viewed from final qa output. Final metadata wording update regenerated identical four raster hashes.",
+  "result": "PASS",
+  "resolved_findings": [
+    "PCB callout arrow now targets PCB layer, not spacer.",
+    "Right-ear section detail no longer clips the inner edge.",
+    "Assembly DXF has one view title instead of coincident per-part text.",
+    "Cup rear flats preserved and labelled; no fictitious full circular rear bore."
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "file": "qa/page-1.png",
+      "sha256": "442cacfb8b16178c5b650652334eaf4aac7089c8df9a2394314475f3cd0f107a",
+      "pixels": [
+        1654,
+        1170
+      ]
+    },
+    {
+      "page": 2,
+      "file": "qa/page-2.png",
+      "sha256": "33bf0f63cbd2c5e5888b5ae7f7eac7f83859e9a0dae8b969ddfe8bb6880f7339",
+      "pixels": [
+        1654,
+        1170
+      ]
+    },
+    {
+      "page": 3,
+      "file": "qa/page-3.png",
+      "sha256": "c86162583028dcf6be7d5c62e4ebae81dfedeec1c9785680bc542530293c3d90",
+      "pixels": [
+        1654,
+        1170
+      ]
+    },
+    {
+      "page": 4,
+      "file": "qa/page-4.png",
+      "sha256": "6afafcbd8fc35403cb42f6f49bfb8e385cdedb6f7fad9453b967679b4c134003",
+      "pixels": [
+        1654,
+        1170
+      ]
+    }
+  ],
+  "source_hash_checks": 29,
+  "artifact_hash_checks": 14,
+  "geometry_checks": {
+    "STEP_analytic_volume_max_error_mm3": 2.698470780160278e-09,
+    "STEP_bbox_max_error_mm": 0.0,
+    "DXF_face_area_max_error_mm2": 1.1577867553569376e-09,
+    "STL_bbox_max_error_mm": 0.002484466395280549,
+    "STL_volume_max_relative_error": 0.000103842663926633
+  },
+  "limits": "Visual/file/dimensional checks only; not physical printing, optics, tolerance stack, electrical or manufacturing validation."
+}
