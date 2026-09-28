@@ -1,0 +1,1496 @@
+{
+  "revision": "R5-LINK01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek — Auromix contributors (https://github.com/Auromix/odradek)",
+  "scope": "nominal single-DOF no-contact mechanism; real nonlinear kinematics, not complete head/grip/manufacturing release",
+  "parameters": {
+    "upper": {
+      "root_radius_mm": 62,
+      "slider_ear_radius_mm": 20,
+      "rod_mm": 72.66517438991922,
+      "crank_mm": 18.37836250979909,
+      "phase_rad": -1.808705682136206,
+      "phase_deg": -103.63120196773522,
+      "q_closed_deg": 105,
+      "x_open_mm": -80,
+      "x_closed_mm": -40,
+      "x_at90_mm": -45.525,
+      "method": "exact linear 3x3 in crank Cartesian components u,v and K=a²-L²",
+      "linear_system_residual_max_mm2": 4.547473508864641e-13
+    },
+    "lower": {
+      "root_radius_mm": 62,
+      "slider_ear_radius_mm": 20,
+      "rod_mm": 74.68930486990631,
+      "crank_mm": 17.7707988323901,
+      "phase_rad": -1.6112041022017878,
+      "phase_deg": -92.31519499032738,
+      "q_closed_deg": 113,
+      "x_open_mm": -80,
+      "x_closed_mm": -40,
+      "x_at90_mm": -45.525,
+      "method": "exact linear 3x3 in crank Cartesian components u,v and K=a²-L²",
+      "linear_system_residual_max_mm2": 9.094947017729282e-13
+    }
+  },
+  "coordinate_contract": {
+    "head_Z": "forward",
+    "root_plane_Z_mm": 0,
+    "root_radius_mm": 62,
+    "azimuths_deg": {
+      "UR": 35,
+      "UL": 145,
+      "LL": 225,
+      "LR": 315
+    },
+    "petal_local_hinge_mm": [
+      0,
+      0,
+      3.5
+    ],
+    "petal_basis_at_open": "local +X=er,+Y=et,+Z=ez; point=P+Rot(-et,q)*(x*er+y*et+(z-3.5)*ez)",
+    "positive_q_axis": "-et, petal tip folds toward +Z",
+    "crank_pin": "P+a*cos(phase+q)*er+a*sin(phase+q)*ez",
+    "slider_pin": "20*er+x*ez; x=-80 open,-40 reference closed",
+    "left_petal_material": "left silhouette may mirror local Y, but no electronic board is reflected by this transform"
+  },
+  "branch_certificate": {
+    "upper": {
+      "method": "4096 outward-rounded interval enclosures over nominal q; analytic derivatives, no sampled-sign inference",
+      "interval_count": 4096,
+      "dx_dq_mm_rad_certified_interval": [
+        6.495870595328165,
+        28.47245526134441
+      ],
+      "rod_axial_projection_mm_certified_min": 40.43118734037694,
+      "sin_transmission_angle_certified_min": 0.3022294315513251,
+      "acute_transmission_angle_deg_certified_min": 17.591557270207904,
+      "monotonic_and_no_dead_point": true,
+      "d2x_dq2_mm_rad2_certified_interval": [
+        -27.854779920843686,
+        27.58062986054215
+      ],
+      "rod_radial_projection_mm_certified_interval": [
+        37.668745837055624,
+        60.3783625097991
+      ],
+      "tolerance_included": false
+    },
+    "lower": {
+      "method": "4096 outward-rounded interval enclosures over nominal q; analytic derivatives, no sampled-sign inference",
+      "interval_count": 4096,
+      "dx_dq_mm_rad_certified_interval": [
+        8.672138820964896,
+        26.414457505999312
+      ],
+      "rod_axial_projection_mm_certified_min": 44.78776472305535,
+      "sin_transmission_angle_certified_min": 0.3023369841879931,
+      "acute_transmission_angle_deg_certified_min": 17.598022015020486,
+      "monotonic_and_no_dead_point": true,
+      "d2x_dq2_mm_rad2_certified_interval": [
+        -25.680656596619542,
+        25.528663686005874
+      ],
+      "rod_radial_projection_mm_certified_interval": [
+        41.28211694771005,
+        59.77079883239011
+      ],
+      "tolerance_included": false
+    }
+  },
+  "kinematic_summary": {
+    "upper": {
+      "q_open_deg": 6.361109362927034e-14,
+      "q_closed_deg": 105.00000000000006,
+      "qprime_open_rad_m": 153.9439533661883,
+      "qprime_closed_rad_m": 56.44076691665386,
+      "closed_vs_open_torque_gain_at_same_branch_axial_force": 2.7275312115003243,
+      "closed_dx_dq_mm_rad": 17.71768979462489,
+      "maximum_dx_dq_mm_rad": 28.464346139828724,
+      "angle_at_maximum_dx_dq_deg": 66.21709558809239,
+      "maximum_rod_angle_to_Z_deg": 56.19252967521122,
+      "finite_difference_first_derivative_error_rad_mm": 3.2953492712373134e-10,
+      "common90_slider_z_mm": -45.525,
+      "contact90_dq_dx_rad_m": 41.39988246541537,
+      "contact90_vs_open_torque_gain_at_same_branch_axial_force": 3.7184635365762206
+    },
+    "lower": {
+      "q_open_deg": -3.81666561775622e-14,
+      "q_closed_deg": 112.99999999999989,
+      "qprime_open_rad_m": 90.42665101018808,
+      "qprime_closed_rad_m": 115.29761646890775,
+      "closed_vs_open_torque_gain_at_same_branch_axial_force": 0.7842889886155919,
+      "closed_dx_dq_mm_rad": 8.673206182624508,
+      "maximum_dx_dq_mm_rad": 26.406685210307323,
+      "angle_at_maximum_dx_dq_deg": 55.09269056932213,
+      "maximum_rod_angle_to_Z_deg": 53.154853296094885,
+      "finite_difference_first_derivative_error_rad_mm": 6.526350293523109e-11,
+      "common90_slider_z_mm": -45.52499999999998,
+      "contact90_dq_dx_rad_m": 53.43682679230739,
+      "contact90_vs_open_torque_gain_at_same_branch_axial_force": 1.692215957389252
+    }
+  },
+  "motion_summary": [
+    {
+      "kind": "upper",
+      "q_stroke_deg": 105,
+      "peak_speed_deg_s": 315.91036843272224,
+      "peak_accel_rad_s2": 69.82678898997648,
+      "peak_accel_if_wrongly_drop_qdoubleprime_rad_s2": 89.79000459261822,
+      "body_J_kg_m2": 0.0005394643219889396,
+      "body_inertial_peak_torque_Nm": 0.03766906137914241,
+      "scope": "R5 known material only; new mechanism inertia excluded"
+    },
+    {
+      "kind": "lower",
+      "q_stroke_deg": 113,
+      "peak_speed_deg_s": 325.46189764775005,
+      "peak_accel_rad_s2": 61.124720072631064,
+      "peak_accel_if_wrongly_drop_qdoubleprime_rad_s2": 76.1102029388459,
+      "body_J_kg_m2": 0.00014915779453461304,
+      "body_inertial_peak_torque_Nm": 0.009117228437579242,
+      "scope": "R5 known material only; new mechanism inertia excluded"
+    }
+  ],
+  "known_material_inputs": {
+    "upper": {
+      "mass_kg": 0.07395097479650009,
+      "COM_from_pivot_local_m": [
+        0.07328981256867804,
+        -0.0017167557050667367,
+        0.0007075246775550292
+      ],
+      "J_hinge_kg_m2": 0.0005394643219889396,
+      "scope": "R5-PETAL-FORM01 known material only; assumed densities; electronics, fasteners, hinge, crank, rod, slider and drive excluded"
+    },
+    "lower": {
+      "mass_kg": 0.04729304357595186,
+      "COM_from_pivot_local_m": [
+        0.048832850770910985,
+        0.001215892597928442,
+        0.0006754134494728471
+      ],
+      "J_hinge_kg_m2": 0.00014915779453461304,
+      "scope": "R5-PETAL-FORM01 known material only; assumed densities; electronics, fasteners, hinge, crank, rod, slider and drive excluded"
+    }
+  },
+  "empty_slider_load": [
+    {
+      "gravity_head": "zero",
+      "peak_slider_force_abs_N": 11.787953733229934,
+      "RMS_slider_force_N": 3.933448539286467,
+      "positive_mechanical_work_J": 0.04201510340774052,
+      "braking_mechanical_work_J": 0.04201510340774053,
+      "positive_mechanical_peak_W": 0.23472441468992272,
+      "braking_mechanical_peak_W": 0.23472441468992025,
+      "cycle_energy_residual_J": -3.469446951953614e-18
+    },
+    {
+      "gravity_head": "minus_Z",
+      "peak_slider_force_abs_N": 31.019380867992503,
+      "RMS_slider_force_N": 12.066024807076108,
+      "positive_mechanical_work_J": 0.18681885944326326,
+      "braking_mechanical_work_J": 0.18681885944326326,
+      "positive_mechanical_peak_W": 0.8343917293048762,
+      "braking_mechanical_peak_W": 0.8343917293048776,
+      "cycle_energy_residual_J": -2.7755575615628914e-17
+    },
+    {
+      "gravity_head": "minus_X",
+      "peak_slider_force_abs_N": 11.787953733229934,
+      "RMS_slider_force_N": 3.933448539286467,
+      "positive_mechanical_work_J": 0.04201510340774051,
+      "braking_mechanical_work_J": 0.04201510340774052,
+      "positive_mechanical_peak_W": 0.23472441468992272,
+      "braking_mechanical_peak_W": 0.23472441468992025,
+      "cycle_energy_residual_J": 0.0
+    },
+    {
+      "gravity_head": "minus_Y",
+      "peak_slider_force_abs_N": 11.600682192751481,
+      "RMS_slider_force_N": 3.9323438312861274,
+      "positive_mechanical_work_J": 0.06285086290435798,
+      "braking_mechanical_work_J": 0.06285086290435798,
+      "positive_mechanical_peak_W": 0.22013662895103953,
+      "braking_mechanical_peak_W": 0.22013662895104047,
+      "cycle_energy_residual_J": 0.0
+    }
+  ],
+  "peak_slider_speed_mm_s": 150.0,
+  "peak_slider_accel_mm_s2": 923.7604204224,
+  "rejected_configuration": {
+    "parameters": {
+      "root_radius_mm": 62,
+      "slider_ear_radius_mm": 20,
+      "rod_mm": 72.66517438991922,
+      "crank_mm": 20.0,
+      "phase_rad": -3.141592653589793,
+      "phase_deg": -180.0,
+      "q_closed_deg": 100.0
+    },
+    "reason": "dx/dq changes sign: non-monotonic assembly branch with internal dead point; cannot use one-valued q(x)",
+    "toggle_q_deg": 63.0479475267794,
+    "toggle_slider_z_mm": -82.60045123795717,
+    "dx_dq_open_mm_rad": -20.0,
+    "dx_dq_end_mm_rad": 19.27515770364045
+  },
+  "continuous_reference_bounds": {
+    "UR": {
+      "crank_pin_continuous_bbox_mm": [
+        [
+          47.23947104400639,
+          33.07743372605258,
+          -18.378362509799096
+        ],
+        [
+          65.84209996650362,
+          46.10313472810311,
+          0.4390179137174662
+        ]
+      ],
+      "rod_diameter5_capsule_continuous_bbox_mm": [
+        [
+          13.883040885779835,
+          8.971528727020921,
+          -82.5
+        ],
+        [
+          68.34209996650362,
+          48.60313472810311,
+          2.9390179137174663
+        ]
+      ],
+      "crank_diameter8_capsule_continuous_bbox_mm": [
+        [
+          43.23947104400639,
+          29.077433726052583,
+          -22.378362509799096
+        ],
+        [
+          69.84209996650362,
+          50.10313472810311,
+          4.439017913717466
+        ]
+      ],
+      "method": "exact sine/cosine critical-point extrema; moving rod contained in endpoint convex hull, expanded isotropically by reference radius",
+      "scope": "reference rods/cranks only, no clevis, bearings, bolt heads, petal, camera, LED display, motor or cable"
+    },
+    "UL": {
+      "crank_pin_continuous_bbox_mm": [
+        [
+          -65.84209996650362,
+          33.077433726052575,
+          -18.378362509799096
+        ],
+        [
+          -47.2394710440064,
+          46.1031347281031,
+          0.4390179137174662
+        ]
+      ],
+      "rod_diameter5_capsule_continuous_bbox_mm": [
+        [
+          -68.34209996650362,
+          8.97152872702092,
+          -82.5
+        ],
+        [
+          -13.883040885779838,
+          48.6031347281031,
+          2.9390179137174663
+        ]
+      ],
+      "crank_diameter8_capsule_continuous_bbox_mm": [
+        [
+          -69.84209996650362,
+          29.077433726052575,
+          -22.378362509799096
+        ],
+        [
+          -43.2394710440064,
+          50.1031347281031,
+          4.439017913717466
+        ]
+      ],
+      "method": "exact sine/cosine critical-point extrema; moving rod contained in endpoint convex hull, expanded isotropically by reference radius",
+      "scope": "reference rods/cranks only, no clevis, bearings, bolt heads, petal, camera, LED display, motor or cable"
+    },
+    "LL": {
+      "crank_pin_continuous_bbox_mm": [
+        [
+          -56.40647279505101,
+          -56.40647279505099,
+          -17.770798832390106
+        ],
+        [
+          -43.33300045919283,
+          -43.33300045919282,
+          6.27712150140559
+        ]
+      ],
+      "rod_diameter5_capsule_continuous_bbox_mm": [
+        [
+          -58.90647279505101,
+          -58.90647279505099,
+          -82.5
+        ],
+        [
+          -11.642135623730955,
+          -11.64213562373095,
+          8.77712150140559
+        ]
+      ],
+      "crank_diameter8_capsule_continuous_bbox_mm": [
+        [
+          -60.40647279505101,
+          -60.40647279505099,
+          -21.770798832390106
+        ],
+        [
+          -39.33300045919283,
+          -39.33300045919282,
+          10.27712150140559
+        ]
+      ],
+      "method": "exact sine/cosine critical-point extrema; moving rod contained in endpoint convex hull, expanded isotropically by reference radius",
+      "scope": "reference rods/cranks only, no clevis, bearings, bolt heads, petal, camera, LED display, motor or cable"
+    },
+    "LR": {
+      "crank_pin_continuous_bbox_mm": [
+        [
+          43.33300045919281,
+          -56.40647279505101,
+          -17.770798832390106
+        ],
+        [
+          56.40647279505098,
+          -43.33300045919283,
+          6.27712150140559
+        ]
+      ],
+      "rod_diameter5_capsule_continuous_bbox_mm": [
+        [
+          11.642135623730947,
+          -58.90647279505101,
+          -82.5
+        ],
+        [
+          58.90647279505098,
+          -11.642135623730955,
+          8.77712150140559
+        ]
+      ],
+      "crank_diameter8_capsule_continuous_bbox_mm": [
+        [
+          39.33300045919281,
+          -60.40647279505101,
+          -21.770798832390106
+        ],
+        [
+          60.40647279505098,
+          -39.33300045919283,
+          10.27712150140559
+        ]
+      ],
+      "method": "exact sine/cosine critical-point extrema; moving rod contained in endpoint convex hull, expanded isotropically by reference radius",
+      "scope": "reference rods/cranks only, no clevis, bearings, bolt heads, petal, camera, LED display, motor or cable"
+    }
+  },
+  "reference_cross_branch_separation": [
+    {
+      "pair": [
+        "UR",
+        "UL"
+      ],
+      "azimuth_separation_deg": 110,
+      "reference_rod_crank_cross_branch_clearance_lower_bound_mm": 24.76608177155967,
+      "method": "all centerline points have radius>=20 and fixed radial plane; minimum XY distance of two rays outside radius20 minus two conservative radius4 capsules",
+      "includes": "reference rods and crank bars only; slider common joints intentionally excluded"
+    },
+    {
+      "pair": [
+        "UR",
+        "LL"
+      ],
+      "azimuth_separation_deg": 170,
+      "reference_rod_crank_cross_branch_clearance_lower_bound_mm": 31.84778792366982,
+      "method": "all centerline points have radius>=20 and fixed radial plane; minimum XY distance of two rays outside radius20 minus two conservative radius4 capsules",
+      "includes": "reference rods and crank bars only; slider common joints intentionally excluded"
+    },
+    {
+      "pair": [
+        "UR",
+        "LR"
+      ],
+      "azimuth_separation_deg": 80,
+      "reference_rod_crank_cross_branch_clearance_lower_bound_mm": 17.71150438746157,
+      "method": "all centerline points have radius>=20 and fixed radial plane; minimum XY distance of two rays outside radius20 minus two conservative radius4 capsules",
+      "includes": "reference rods and crank bars only; slider common joints intentionally excluded"
+    },
+    {
+      "pair": [
+        "UL",
+        "LL"
+      ],
+      "azimuth_separation_deg": 80,
+      "reference_rod_crank_cross_branch_clearance_lower_bound_mm": 17.71150438746157,
+      "method": "all centerline points have radius>=20 and fixed radial plane; minimum XY distance of two rays outside radius20 minus two conservative radius4 capsules",
+      "includes": "reference rods and crank bars only; slider common joints intentionally excluded"
+    },
+    {
+      "pair": [
+        "UL",
+        "LR"
+      ],
+      "azimuth_separation_deg": 170,
+      "reference_rod_crank_cross_branch_clearance_lower_bound_mm": 31.84778792366982,
+      "method": "all centerline points have radius>=20 and fixed radial plane; minimum XY distance of two rays outside radius20 minus two conservative radius4 capsules",
+      "includes": "reference rods and crank bars only; slider common joints intentionally excluded"
+    },
+    {
+      "pair": [
+        "LL",
+        "LR"
+      ],
+      "azimuth_separation_deg": 90,
+      "reference_rod_crank_cross_branch_clearance_lower_bound_mm": 20.2842712474619,
+      "method": "all centerline points have radius>=20 and fixed radial plane; minimum XY distance of two rays outside radius20 minus two conservative radius4 capsules",
+      "includes": "reference rods and crank bars only; slider common joints intentionally excluded"
+    }
+  ],
+  "reference_cad": [
+    {
+      "pose": "open",
+      "slider_Z_mm": -80,
+      "solids": 13,
+      "valid": true,
+      "parts": [
+        {
+          "name": "slider_reference_annulus",
+          "representation": "unvalidated R10..25, thickness6 placeholder"
+        },
+        {
+          "name": "UR_rod",
+          "start_mm": [
+            16.383040885779835,
+            11.471528727020921,
+            -80.0
+          ],
+          "end_mm": [
+            47.23947104400642,
+            33.077433726052604,
+            -17.86069556085557
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1426.7773627199463
+        },
+        {
+          "name": "UR_crank",
+          "start_mm": [
+            50.78742674591749,
+            35.56173905376485,
+            0.0
+          ],
+          "end_mm": [
+            47.23947104400642,
+            33.077433726052604,
+            -17.86069556085557
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 923.7972583327181
+        },
+        {
+          "name": "UR_fixed_pivot",
+          "start_mm": [
+            53.65530892767272,
+            31.465978832319895,
+            0.0
+          ],
+          "end_mm": [
+            47.919544564162265,
+            39.657499275209815,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.7433388230814
+        },
+        {
+          "name": "UL_rod",
+          "start_mm": [
+            -16.383040885779838,
+            11.47152872702092,
+            -80.0
+          ],
+          "end_mm": [
+            -47.23947104400643,
+            33.0774337260526,
+            -17.86069556085557
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1426.7773627199463
+        },
+        {
+          "name": "UL_crank",
+          "start_mm": [
+            -50.7874267459175,
+            35.561739053764846,
+            0.0
+          ],
+          "end_mm": [
+            -47.23947104400643,
+            33.0774337260526,
+            -17.86069556085557
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 923.7972583327181
+        },
+        {
+          "name": "UL_fixed_pivot",
+          "start_mm": [
+            -47.91954456416227,
+            39.65749927520981,
+            0.0
+          ],
+          "end_mm": [
+            -53.65530892767273,
+            31.465978832319887,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.7433388230814
+        },
+        {
+          "name": "LL_rod",
+          "start_mm": [
+            -14.142135623730955,
+            -14.14213562373095,
+            -80.0
+          ],
+          "end_mm": [
+            -43.33300045919284,
+            -43.333000459192824,
+            -17.756292829994447
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1466.5210717564128
+        },
+        {
+          "name": "LL_crank",
+          "start_mm": [
+            -43.84062043356596,
+            -43.840620433565945,
+            0.0
+          ],
+          "end_mm": [
+            -43.33300045919284,
+            -43.333000459192824,
+            -17.756292829994447
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 893.257776964141
+        },
+        {
+          "name": "LL_fixed_pivot",
+          "start_mm": [
+            -47.3761543394987,
+            -40.30508652763321,
+            0.0
+          ],
+          "end_mm": [
+            -40.30508652763322,
+            -47.37615433949868,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.74333882308144
+        },
+        {
+          "name": "LR_rod",
+          "start_mm": [
+            14.142135623730947,
+            -14.142135623730955,
+            -80.0
+          ],
+          "end_mm": [
+            43.33300045919282,
+            -43.33300045919284,
+            -17.756292829994447
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1466.5210717564128
+        },
+        {
+          "name": "LR_crank",
+          "start_mm": [
+            43.84062043356594,
+            -43.84062043356596,
+            0.0
+          ],
+          "end_mm": [
+            43.33300045919282,
+            -43.33300045919284,
+            -17.756292829994447
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 893.2577769641412
+        },
+        {
+          "name": "LR_fixed_pivot",
+          "start_mm": [
+            40.3050865276332,
+            -47.3761543394987,
+            0.0
+          ],
+          "end_mm": [
+            47.376154339498676,
+            -40.30508652763322,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.74333882308144
+        }
+      ]
+    },
+    {
+      "pose": "mid",
+      "slider_Z_mm": -60.0,
+      "solids": 13,
+      "valid": true,
+      "parts": [
+        {
+          "name": "slider_reference_annulus",
+          "representation": "unvalidated R10..25, thickness6 placeholder"
+        },
+        {
+          "name": "UR_rod",
+          "start_mm": [
+            16.383040885779835,
+            11.471528727020921,
+            -60.0
+          ],
+          "end_mm": [
+            61.61669977498252,
+            43.14447766204728,
+            -12.766876258584812
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1426.7773627199463
+        },
+        {
+          "name": "UR_crank",
+          "start_mm": [
+            50.78742674591749,
+            35.56173905376485,
+            0.0
+          ],
+          "end_mm": [
+            61.61669977498252,
+            43.14447766204728,
+            -12.766876258584812
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 923.7972583327187
+        },
+        {
+          "name": "UR_fixed_pivot",
+          "start_mm": [
+            53.65530892767272,
+            31.465978832319895,
+            0.0
+          ],
+          "end_mm": [
+            47.919544564162265,
+            39.657499275209815,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.7433388230814
+        },
+        {
+          "name": "UL_rod",
+          "start_mm": [
+            -16.383040885779838,
+            11.47152872702092,
+            -60.0
+          ],
+          "end_mm": [
+            -61.61669977498253,
+            43.14447766204727,
+            -12.766876258584812
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1426.7773627199463
+        },
+        {
+          "name": "UL_crank",
+          "start_mm": [
+            -50.7874267459175,
+            35.561739053764846,
+            0.0
+          ],
+          "end_mm": [
+            -61.61669977498253,
+            43.14447766204727,
+            -12.766876258584812
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 923.7972583327187
+        },
+        {
+          "name": "UL_fixed_pivot",
+          "start_mm": [
+            -47.91954456416227,
+            39.65749927520981,
+            0.0
+          ],
+          "end_mm": [
+            -53.65530892767273,
+            31.465978832319887,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.7433388230814
+        },
+        {
+          "name": "LL_rod",
+          "start_mm": [
+            -14.142135623730955,
+            -14.14213562373095,
+            -60.0
+          ],
+          "end_mm": [
+            -53.84671297276216,
+            -53.84671297276215,
+            -10.749768152632948
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1466.5210717564134
+        },
+        {
+          "name": "LL_crank",
+          "start_mm": [
+            -43.84062043356596,
+            -43.840620433565945,
+            0.0
+          ],
+          "end_mm": [
+            -53.84671297276216,
+            -53.84671297276215,
+            -10.749768152632948
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 893.2577769641412
+        },
+        {
+          "name": "LL_fixed_pivot",
+          "start_mm": [
+            -47.3761543394987,
+            -40.30508652763321,
+            0.0
+          ],
+          "end_mm": [
+            -40.30508652763322,
+            -47.37615433949868,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.74333882308144
+        },
+        {
+          "name": "LR_rod",
+          "start_mm": [
+            14.142135623730947,
+            -14.142135623730955,
+            -60.0
+          ],
+          "end_mm": [
+            53.846712972762134,
+            -53.84671297276216,
+            -10.749768152632948
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1466.5210717564128
+        },
+        {
+          "name": "LR_crank",
+          "start_mm": [
+            43.84062043356594,
+            -43.84062043356596,
+            0.0
+          ],
+          "end_mm": [
+            53.846712972762134,
+            -53.84671297276216,
+            -10.749768152632948
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 893.2577769641407
+        },
+        {
+          "name": "LR_fixed_pivot",
+          "start_mm": [
+            40.3050865276332,
+            -47.3761543394987,
+            0.0
+          ],
+          "end_mm": [
+            47.376154339498676,
+            -40.30508652763322,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.74333882308144
+        }
+      ]
+    },
+    {
+      "pose": "contact90",
+      "slider_Z_mm": -45.525,
+      "solids": 13,
+      "valid": true,
+      "parts": [
+        {
+          "name": "slider_reference_annulus",
+          "representation": "unvalidated R10..25, thickness6 placeholder"
+        },
+        {
+          "name": "UR_rod",
+          "start_mm": [
+            16.383040885779835,
+            11.471528727020921,
+            -45.52499999999999
+          ],
+          "end_mm": [
+            65.41805202701565,
+            45.80621316431134,
+            -4.331254162944364
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1426.7773627199463
+        },
+        {
+          "name": "UR_crank",
+          "start_mm": [
+            50.78742674591749,
+            35.56173905376485,
+            0.0
+          ],
+          "end_mm": [
+            65.41805202701565,
+            45.80621316431134,
+            -4.331254162944364
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 923.7972583327182
+        },
+        {
+          "name": "UR_fixed_pivot",
+          "start_mm": [
+            53.65530892767272,
+            31.465978832319895,
+            0.0
+          ],
+          "end_mm": [
+            47.919544564162265,
+            39.657499275209815,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.7433388230814
+        },
+        {
+          "name": "UL_rod",
+          "start_mm": [
+            -16.383040885779838,
+            11.47152872702092,
+            -45.52499999999999
+          ],
+          "end_mm": [
+            -65.41805202701566,
+            45.80621316431133,
+            -4.331254162944364
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1426.7773627199472
+        },
+        {
+          "name": "UL_crank",
+          "start_mm": [
+            -50.7874267459175,
+            35.561739053764846,
+            0.0
+          ],
+          "end_mm": [
+            -65.41805202701566,
+            45.80621316431133,
+            -4.331254162944364
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 923.7972583327185
+        },
+        {
+          "name": "UL_fixed_pivot",
+          "start_mm": [
+            -47.91954456416227,
+            39.65749927520981,
+            0.0
+          ],
+          "end_mm": [
+            -53.65530892767273,
+            31.465978832319887,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.7433388230814
+        },
+        {
+          "name": "LL_rod",
+          "start_mm": [
+            -14.142135623730955,
+            -14.14213562373095,
+            -45.52499999999999
+          ],
+          "end_mm": [
+            -56.39621550238911,
+            -56.39621550238909,
+            -0.7178830522899577
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1466.5210717564128
+        },
+        {
+          "name": "LL_crank",
+          "start_mm": [
+            -43.84062043356596,
+            -43.840620433565945,
+            0.0
+          ],
+          "end_mm": [
+            -56.39621550238911,
+            -56.39621550238909,
+            -0.7178830522899577
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 893.2577769641412
+        },
+        {
+          "name": "LL_fixed_pivot",
+          "start_mm": [
+            -47.3761543394987,
+            -40.30508652763321,
+            0.0
+          ],
+          "end_mm": [
+            -40.30508652763322,
+            -47.37615433949868,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.74333882308144
+        },
+        {
+          "name": "LR_rod",
+          "start_mm": [
+            14.142135623730947,
+            -14.142135623730955,
+            -45.52499999999999
+          ],
+          "end_mm": [
+            56.39621550238908,
+            -56.39621550238911,
+            -0.7178830522899577
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1466.5210717564128
+        },
+        {
+          "name": "LR_crank",
+          "start_mm": [
+            43.84062043356594,
+            -43.84062043356596,
+            0.0
+          ],
+          "end_mm": [
+            56.39621550238908,
+            -56.39621550238911,
+            -0.7178830522899577
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 893.2577769641412
+        },
+        {
+          "name": "LR_fixed_pivot",
+          "start_mm": [
+            40.3050865276332,
+            -47.3761543394987,
+            0.0
+          ],
+          "end_mm": [
+            47.376154339498676,
+            -40.30508652763322,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.74333882308144
+        }
+      ]
+    },
+    {
+      "pose": "closed",
+      "slider_Z_mm": -40,
+      "solids": 13,
+      "valid": true,
+      "parts": [
+        {
+          "name": "slider_reference_annulus",
+          "representation": "unvalidated R10..25, thickness6 placeholder"
+        },
+        {
+          "name": "UR_rod",
+          "start_mm": [
+            16.383040885779835,
+            11.471528727020921,
+            -39.99999999999999
+          ],
+          "end_mm": [
+            65.83780406652264,
+            46.10012670655303,
+            0.4390179137174824
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1426.777362719946
+        },
+        {
+          "name": "UR_crank",
+          "start_mm": [
+            50.78742674591749,
+            35.56173905376485,
+            0.0
+          ],
+          "end_mm": [
+            65.83780406652264,
+            46.10012670655303,
+            0.4390179137174824
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 923.7972583327186
+        },
+        {
+          "name": "UR_fixed_pivot",
+          "start_mm": [
+            53.65530892767272,
+            31.465978832319895,
+            0.0
+          ],
+          "end_mm": [
+            47.919544564162265,
+            39.657499275209815,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.7433388230814
+        },
+        {
+          "name": "UL_rod",
+          "start_mm": [
+            -16.383040885779838,
+            11.47152872702092,
+            -39.99999999999999
+          ],
+          "end_mm": [
+            -65.83780406652265,
+            46.10012670655302,
+            0.4390179137174824
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1426.7773627199465
+        },
+        {
+          "name": "UL_crank",
+          "start_mm": [
+            -50.7874267459175,
+            35.561739053764846,
+            0.0
+          ],
+          "end_mm": [
+            -65.83780406652265,
+            46.10012670655302,
+            0.4390179137174824
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 923.7972583327187
+        },
+        {
+          "name": "UL_fixed_pivot",
+          "start_mm": [
+            -47.91954456416227,
+            39.65749927520981,
+            0.0
+          ],
+          "end_mm": [
+            -53.65530892767273,
+            31.465978832319887,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.7433388230814
+        },
+        {
+          "name": "LL_rod",
+          "start_mm": [
+            -14.142135623730955,
+            -14.14213562373095,
+            -40.0
+          ],
+          "end_mm": [
+            -55.596449557831704,
+            -55.59644955783169,
+            6.277121501405555
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1466.5210717564128
+        },
+        {
+          "name": "LL_crank",
+          "start_mm": [
+            -43.84062043356596,
+            -43.840620433565945,
+            0.0
+          ],
+          "end_mm": [
+            -55.596449557831704,
+            -55.59644955783169,
+            6.277121501405555
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 893.257776964141
+        },
+        {
+          "name": "LL_fixed_pivot",
+          "start_mm": [
+            -47.3761543394987,
+            -40.30508652763321,
+            0.0
+          ],
+          "end_mm": [
+            -40.30508652763322,
+            -47.37615433949868,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.74333882308144
+        },
+        {
+          "name": "LR_rod",
+          "start_mm": [
+            14.142135623730947,
+            -14.142135623730955,
+            -40.0
+          ],
+          "end_mm": [
+            55.596449557831676,
+            -55.596449557831704,
+            6.277121501405555
+          ],
+          "reference_radius_mm": 2.5,
+          "volume_mm3": 1466.5210717564125
+        },
+        {
+          "name": "LR_crank",
+          "start_mm": [
+            43.84062043356594,
+            -43.84062043356596,
+            0.0
+          ],
+          "end_mm": [
+            55.596449557831676,
+            -55.596449557831704,
+            6.277121501405555
+          ],
+          "reference_radius_mm": 4,
+          "volume_mm3": 893.2577769641407
+        },
+        {
+          "name": "LR_fixed_pivot",
+          "start_mm": [
+            40.3050865276332,
+            -47.3761543394987,
+            0.0
+          ],
+          "end_mm": [
+            47.376154339498676,
+            -40.30508652763322,
+            0.0
+          ],
+          "reference_radius_mm": 3,
+          "volume_mm3": 282.74333882308144
+        }
+      ]
+    }
+  ],
+  "common90_contact_witness": [
+    {
+      "assumed_mu": 0.2,
+      "payload_kg": 2,
+      "design_factor": 2,
+      "contact_pose_q_deg": 90,
+      "slider_z_mm": -45.525,
+      "sphere_radius_mm": 56,
+      "sphere_center_head_mm": [
+        0,
+        0,
+        65
+      ],
+      "normal_moment_arm_mm": 65,
+      "tangent_moment_arm_mm": 6,
+      "normal_only_slider_force_N": 596.5197963724925,
+      "slider_force_including_actual_contact_sign_and_minusZ_material_gravity_N": 585.4311603355711,
+      "ideal_direct_screw_motor_static_torque_Nm": 0.2329356575185752,
+      "required_static_kappa_for_motor_budget0p140Nm": 1.6638261251326798,
+      "force_balance_residual_N": [
+        2.1316282072803006e-14,
+        1.7763568394002505e-14,
+        7.105427357601002e-15
+      ],
+      "moment_balance_residual_Nm": [
+        -3.3306690738754696e-16,
+        2.7755575615628914e-16,
+        0.0
+      ],
+      "slider_lateral_reaction_magnitude_N": 44.010816149554444,
+      "branches": [
+        {
+          "finger": "UR",
+          "normal_N": 54.145698333237526,
+          "tangent_N": 10.829139666647507,
+          "required_contact_hinge_torque_Nm": 3.454495553660554,
+          "gravity_hinge_torque_Nm": -0.0005131049102865085,
+          "dq_dx_rad_m": 41.39988246541537,
+          "slider_axial_contribution_N": 142.99446741586863,
+          "rod_compression_N": 252.24018113499153
+        },
+        {
+          "finger": "UL",
+          "normal_N": 54.145698333237526,
+          "tangent_N": 10.829139666647507,
+          "required_contact_hinge_torque_Nm": 3.4544955536605544,
+          "gravity_hinge_torque_Nm": -0.0005131049102865085,
+          "dq_dx_rad_m": 41.39988246541537,
+          "slider_axial_contribution_N": 142.99446741586866,
+          "rod_compression_N": 252.2401811349916
+        },
+        {
+          "finger": "LL",
+          "normal_N": 43.920801666762465,
+          "tangent_N": 8.784160333352494,
+          "required_contact_hinge_torque_Nm": 2.8021471463394456,
+          "gravity_hinge_torque_Nm": -0.0003132475221161822,
+          "dq_dx_rad_m": 53.43682679230739,
+          "slider_axial_contribution_N": 149.72111275191693,
+          "rod_compression_N": 249.57119755862914
+        },
+        {
+          "finger": "LR",
+          "normal_N": 43.920801666762465,
+          "tangent_N": 8.784160333352494,
+          "required_contact_hinge_torque_Nm": 2.802147146339445,
+          "gravity_hinge_torque_Nm": -0.0003132475221161822,
+          "dq_dx_rad_m": 53.43682679230739,
+          "slider_axial_contribution_N": 149.7211127519169,
+          "rod_compression_N": 249.57119755862908
+        }
+      ],
+      "scope": "conditional exact point-contact wrench witness on common90 planes; finite petal face containment/collision is separate root study; friction coefficient unmeasured; no allowance for contact-position/force errors, rod friction or unknown parts"
+    },
+    {
+      "assumed_mu": 0.4,
+      "payload_kg": 2,
+      "design_factor": 2,
+      "contact_pose_q_deg": 90,
+      "slider_z_mm": -45.525,
+      "sphere_radius_mm": 56,
+      "sphere_center_head_mm": [
+        0,
+        0,
+        65
+      ],
+      "normal_moment_arm_mm": 65,
+      "tangent_moment_arm_mm": 6,
+      "normal_only_slider_force_N": 298.25989818624623,
+      "slider_force_including_actual_contact_sign_and_minusZ_material_gravity_N": 287.17126214932495,
+      "ideal_direct_screw_motor_static_torque_Nm": 0.11426181471250892,
+      "required_static_kappa_for_motor_budget0p140Nm": 0.8161558193750637,
+      "force_balance_residual_N": [
+        1.0658141036401503e-14,
+        8.881784197001252e-15,
+        7.105427357601002e-15
+      ],
+      "moment_balance_residual_Nm": [
+        -3.3306690738754696e-16,
+        2.7755575615628914e-16,
+        0.0
+      ],
+      "slider_lateral_reaction_magnitude_N": 21.593469628151027,
+      "branches": [
+        {
+          "finger": "UR",
+          "normal_N": 27.072849166618763,
+          "tangent_N": 10.829139666647507,
+          "required_contact_hinge_torque_Nm": 1.6947603578303345,
+          "gravity_hinge_torque_Nm": -0.0005131049102865085,
+          "dq_dx_rad_m": 41.39988246541537,
+          "slider_axial_contribution_N": 70.14163713824286,
+          "rod_compression_N": 123.7288377416749
+        },
+        {
+          "finger": "UL",
+          "normal_N": 27.072849166618763,
+          "tangent_N": 10.829139666647507,
+          "required_contact_hinge_torque_Nm": 1.6947603578303347,
+          "gravity_hinge_torque_Nm": -0.0005131049102865085,
+          "dq_dx_rad_m": 41.39988246541537,
+          "slider_axial_contribution_N": 70.14163713824286,
+          "rod_compression_N": 123.7288377416749
+        },
+        {
+          "finger": "LL",
+          "normal_N": 21.960400833381232,
+          "tangent_N": 8.784160333352494,
+          "required_contact_hinge_torque_Nm": 1.3747210921696653,
+          "gravity_hinge_torque_Nm": -0.0003132475221161822,
+          "dq_dx_rad_m": 53.43682679230739,
+          "slider_axial_contribution_N": 73.44399393641962,
+          "rod_compression_N": 122.42432068062666
+        },
+        {
+          "finger": "LR",
+          "normal_N": 21.960400833381232,
+          "tangent_N": 8.784160333352494,
+          "required_contact_hinge_torque_Nm": 1.3747210921696653,
+          "gravity_hinge_torque_Nm": -0.0003132475221161822,
+          "dq_dx_rad_m": 53.43682679230739,
+          "slider_axial_contribution_N": 73.44399393641962,
+          "rod_compression_N": 122.42432068062666
+        }
+      ],
+      "scope": "conditional exact point-contact wrench witness on common90 planes; finite petal face containment/collision is separate root study; friction coefficient unmeasured; no allowance for contact-position/force errors, rod friction or unknown parts"
+    },
+    {
+      "assumed_mu": 0.8,
+      "payload_kg": 2,
+      "design_factor": 2,
+      "contact_pose_q_deg": 90,
+      "slider_z_mm": -45.525,
+      "sphere_radius_mm": 56,
+      "sphere_center_head_mm": [
+        0,
+        0,
+        65
+      ],
+      "normal_moment_arm_mm": 65,
+      "tangent_moment_arm_mm": 6,
+      "normal_only_slider_force_N": 149.12994909312312,
+      "slider_force_including_actual_contact_sign_and_minusZ_material_gravity_N": 138.0413130562018,
+      "ideal_direct_screw_motor_static_torque_Nm": 0.05492489330947577,
+      "required_static_kappa_for_motor_budget0p140Nm": 0.39232066649625547,
+      "force_balance_residual_N": [
+        5.329070518200751e-15,
+        4.440892098500626e-15,
+        7.105427357601002e-15
+      ],
+      "moment_balance_residual_Nm": [
+        -3.3306690738754696e-16,
+        2.7755575615628914e-16,
+        0.0
+      ],
+      "slider_lateral_reaction_magnitude_N": 10.384796367449319,
+      "branches": [
+        {
+          "finger": "UR",
+          "normal_N": 13.536424583309381,
+          "tangent_N": 10.829139666647507,
+          "required_contact_hinge_torque_Nm": 0.8148927599152247,
+          "gravity_hinge_torque_Nm": -0.0005131049102865085,
+          "dq_dx_rad_m": 41.39988246541537,
+          "slider_axial_contribution_N": 33.71522199942996,
+          "rod_compression_N": 59.47316604501655
+        },
+        {
+          "finger": "UL",
+          "normal_N": 13.536424583309381,
+          "tangent_N": 10.829139666647507,
+          "required_contact_hinge_torque_Nm": 0.8148927599152247,
+          "gravity_hinge_torque_Nm": -0.0005131049102865085,
+          "dq_dx_rad_m": 41.39988246541537,
+          "slider_axial_contribution_N": 33.71522199942996,
+          "rod_compression_N": 59.47316604501655
+        },
+        {
+          "finger": "LL",
+          "normal_N": 10.980200416690616,
+          "tangent_N": 8.784160333352494,
+          "required_contact_hinge_torque_Nm": 0.6610080650847752,
+          "gravity_hinge_torque_Nm": -0.0003132475221161822,
+          "dq_dx_rad_m": 53.43682679230739,
+          "slider_axial_contribution_N": 35.30543452867094,
+          "rod_compression_N": 58.8508822416254
+        },
+        {
+          "finger": "LR",
+          "normal_N": 10.980200416690616,
+          "tangent_N": 8.784160333352494,
+          "required_contact_hinge_torque_Nm": 0.661008065084775,
+          "gravity_hinge_torque_Nm": -0.0003132475221161822,
+          "dq_dx_rad_m": 53.43682679230739,
+          "slider_axial_contribution_N": 35.305434528670936,
+          "rod_compression_N": 58.850882241625385
+        }
+      ],
+      "scope": "conditional exact point-contact wrench witness on common90 planes; finite petal face containment/collision is separate root study; friction coefficient unmeasured; no allowance for contact-position/force errors, rod friction or unknown parts"
+    }
+  ],
+  "source_hashes": {
+    "engineering/generated/r5-petal-form01/study.json": "6239375fadc6c43a9e538674af1f0bf620ba53a4962bd5320f33bd06474869e9",
+    "engineering/electronics/fast-drive01/budget.json": "af0914f7d998c73ce67a4e425b69bc36e62d2248f44201b5c33df4db1d8994d9",
+    "docs/engineering/sources/fast-drive01.json": "d5ebbed0e6658cdc4de2e14549c8d38111d14cf0dcda966be9e0ef5c9c601a88"
+  },
+  "script_sha256": "ae267b91d3bdb5dc43f8db3bb799e31ec0cc09ca56a15a74fac7c598d3099939",
+  "missing": [
+    "actual petal closure/object contacts",
+    "series elasticity or passive differential after first contact",
+    "rod/crank/slider/guide/hinge electronics mass and friction",
+    "controlled bearings, fasteners, screw end machining, static transfer and thermal performance",
+    "complete cameras/display/body/actuator swept interference",
+    "manufacturing tolerances, rod buckling, pin-bearing and fatigue substantiation"
+  ],
+  "manufacturing_release": false,
+  "grasp_2kg_pass": false,
+  "artifact_sha256": {
+    "R5-LINK01-closed-reference.step": "84e5d12d0f15076fc0ad14c14c1aa4d5a99478741089267763592c4466d1b465",
+    "R5-LINK01-closed-reference.stl": "7d78a2a38aa89598e1087408d31e6d1f012129658ca04a7fc73a48ec88ae437d",
+    "R5-LINK01-contact90-reference.step": "80c15408a1e1d7f839013040a51ad650fdb25a65fb4ebdd0f8408327dd435363",
+    "R5-LINK01-contact90-reference.stl": "6ddb6934b3a650403a7c0a1172f66b84e91b5348f548f9737f361a398b6e2157",
+    "R5-LINK01-mid-reference.step": "36ad9cfe007ce4c7c3df6c707a6daa710aa45c6275b96595e567635848b19863",
+    "R5-LINK01-mid-reference.stl": "94ba0d4c31563f7c2d07495e5d73ebf4a822bd28bd808f05e3614d7695c337da",
+    "R5-LINK01-open-reference.step": "58209847f9c7026c61c34d42ce5e63d4443168a8fd6cdcedd40f274a0a86a3c9",
+    "R5-LINK01-open-reference.stl": "8c8c03fadca1d84499569c2267e239f336bd9ee533e27c734e2876217971317d",
+    "closure-angle-synthesis-scan.csv": "c5c53266f41348a37f730e3c41fdf0d2b6351f1f00625c54ad4c717ab1e3c9f9",
+    "common90-contact-summary.csv": "7b0fbde631c452fc59308894636b9e4d3e78fe0968121567a72590e37a262a36",
+    "common90-contact-witness.json": "b0382e815d2d23f340a913736dc13ec873a03327df9bd6e23732d48acf3dd385",
+    "contact-screw-demand.csv": "2383df7f7cec98c5526d7e6d173546be7df8a097241eff902ff312471fb7bb8b",
+    "cycle.csv": "10f045b17e68e3f1b6c240531de65e3b32dec46647a0c615fda5077ccbcda25a",
+    "direct-screw-dynamic-sensitivity.csv": "497f4f12a5eec8191e857df6d5050019f91b6cb59ecaa358615ce4c75faaf110",
+    "empty-slider-load.csv": "084f03e89cfb6045e44c93a73ba67e2283dad4922bf2c2df042ed1cd0e5fde73",
+    "guide-load-example.json": "5aa68e3229b1bbebc83e37edd34020562b931441c7efcb783e334276fddbe436",
+    "kinematics.csv": "d6a92ce9ad314766d8cda791b7405eb75fc36906d9cbc28949a8949b2c8ad695",
+    "kinematics.png": "7d1290f9b932753201481716f316a8e7650a046511ba2d2cfe79b51bbf74e057",
+    "kinematics.svg": "cb30916c985536e371126892fa044c7fcf89bee2137fd57f4713ccaecb8ba514",
+    "mechanism-side.png": "e422bdc97097a7d8ffd92ac7ceec8898f6a9943d57ddbcbe86c6e996381bc950",
+    "mechanism-side.svg": "65df7c6d00dfc7a835270c17b344d3789802e13c438731028ff7f2fa194cbbb9",
+    "motion.csv": "c850af690cea03c0cfa2fc20394a6e4e6b0ede0b30c0cb306a7699cd7ea9dedb",
+    "motion.png": "a88f409aac9c80590d7ca547fdc6f02d36face328c7c6de72ac2c9f0f50b80fe",
+    "motion.svg": "879bb44159e955670b4fe78935c9d362fd1d3af4a6e9349130b2bff01873753d",
+    "three-pose-common90-scan.csv": "8db358289e06b6066008a444386be20803f1aa6ef016d48162737cda7fa0fd66",
+    "two-pose-comparisons.csv": "37969628df8b5ff044a55f968facb4963f7c75687b6eae1236acaac6f24637e8"
+  }
+}

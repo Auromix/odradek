@@ -1,0 +1,221 @@
+[
+  {
+    "assumed_mu": 0.2,
+    "payload_kg": 2,
+    "design_factor": 2,
+    "contact_pose_q_deg": 90,
+    "slider_z_mm": -45.525,
+    "sphere_radius_mm": 56,
+    "sphere_center_head_mm": [
+      0,
+      0,
+      65
+    ],
+    "normal_moment_arm_mm": 65,
+    "tangent_moment_arm_mm": 6,
+    "normal_only_slider_force_N": 596.5197963724925,
+    "slider_force_including_actual_contact_sign_and_minusZ_material_gravity_N": 585.4311603355711,
+    "ideal_direct_screw_motor_static_torque_Nm": 0.2329356575185752,
+    "required_static_kappa_for_motor_budget0p140Nm": 1.6638261251326798,
+    "force_balance_residual_N": [
+      2.1316282072803006e-14,
+      1.7763568394002505e-14,
+      7.105427357601002e-15
+    ],
+    "moment_balance_residual_Nm": [
+      -3.3306690738754696e-16,
+      2.7755575615628914e-16,
+      0.0
+    ],
+    "slider_lateral_reaction_magnitude_N": 44.010816149554444,
+    "branches": [
+      {
+        "finger": "UR",
+        "normal_N": 54.145698333237526,
+        "tangent_N": 10.829139666647507,
+        "required_contact_hinge_torque_Nm": 3.454495553660554,
+        "gravity_hinge_torque_Nm": -0.0005131049102865085,
+        "dq_dx_rad_m": 41.39988246541537,
+        "slider_axial_contribution_N": 142.99446741586863,
+        "rod_compression_N": 252.24018113499153
+      },
+      {
+        "finger": "UL",
+        "normal_N": 54.145698333237526,
+        "tangent_N": 10.829139666647507,
+        "required_contact_hinge_torque_Nm": 3.4544955536605544,
+        "gravity_hinge_torque_Nm": -0.0005131049102865085,
+        "dq_dx_rad_m": 41.39988246541537,
+        "slider_axial_contribution_N": 142.99446741586866,
+        "rod_compression_N": 252.2401811349916
+      },
+      {
+        "finger": "LL",
+        "normal_N": 43.920801666762465,
+        "tangent_N": 8.784160333352494,
+        "required_contact_hinge_torque_Nm": 2.8021471463394456,
+        "gravity_hinge_torque_Nm": -0.0003132475221161822,
+        "dq_dx_rad_m": 53.43682679230739,
+        "slider_axial_contribution_N": 149.72111275191693,
+        "rod_compression_N": 249.57119755862914
+      },
+      {
+        "finger": "LR",
+        "normal_N": 43.920801666762465,
+        "tangent_N": 8.784160333352494,
+        "required_contact_hinge_torque_Nm": 2.802147146339445,
+        "gravity_hinge_torque_Nm": -0.0003132475221161822,
+        "dq_dx_rad_m": 53.43682679230739,
+        "slider_axial_contribution_N": 149.7211127519169,
+        "rod_compression_N": 249.57119755862908
+      }
+    ],
+    "scope": "conditional exact point-contact wrench witness on common90 planes; finite petal face containment/collision is separate root study; friction coefficient unmeasured; no allowance for contact-position/force errors, rod friction or unknown parts"
+  },
+  {
+    "assumed_mu": 0.4,
+    "payload_kg": 2,
+    "design_factor": 2,
+    "contact_pose_q_deg": 90,
+    "slider_z_mm": -45.525,
+    "sphere_radius_mm": 56,
+    "sphere_center_head_mm": [
+      0,
+      0,
+      65
+    ],
+    "normal_moment_arm_mm": 65,
+    "tangent_moment_arm_mm": 6,
+    "normal_only_slider_force_N": 298.25989818624623,
+    "slider_force_including_actual_contact_sign_and_minusZ_material_gravity_N": 287.17126214932495,
+    "ideal_direct_screw_motor_static_torque_Nm": 0.11426181471250892,
+    "required_static_kappa_for_motor_budget0p140Nm": 0.8161558193750637,
+    "force_balance_residual_N": [
+      1.0658141036401503e-14,
+      8.881784197001252e-15,
+      7.105427357601002e-15
+    ],
+    "moment_balance_residual_Nm": [
+      -3.3306690738754696e-16,
+      2.7755575615628914e-16,
+      0.0
+    ],
+    "slider_lateral_reaction_magnitude_N": 21.593469628151027,
+    "branches": [
+      {
+        "finger": "UR",
+        "normal_N": 27.072849166618763,
+        "tangent_N": 10.829139666647507,
+        "required_contact_hinge_torque_Nm": 1.6947603578303345,
+        "gravity_hinge_torque_Nm": -0.0005131049102865085,
+        "dq_dx_rad_m": 41.39988246541537,
+        "slider_axial_contribution_N": 70.14163713824286,
+        "rod_compression_N": 123.7288377416749
+      },
+      {
+        "finger": "UL",
+        "normal_N": 27.072849166618763,
+        "tangent_N": 10.829139666647507,
+        "required_contact_hinge_torque_Nm": 1.6947603578303347,
+        "gravity_hinge_torque_Nm": -0.0005131049102865085,
+        "dq_dx_rad_m": 41.39988246541537,
+        "slider_axial_contribution_N": 70.14163713824286,
+        "rod_compression_N": 123.7288377416749
+      },
+      {
+        "finger": "LL",
+        "normal_N": 21.960400833381232,
+        "tangent_N": 8.784160333352494,
+        "required_contact_hinge_torque_Nm": 1.3747210921696653,
+        "gravity_hinge_torque_Nm": -0.0003132475221161822,
+        "dq_dx_rad_m": 53.43682679230739,
+        "slider_axial_contribution_N": 73.44399393641962,
+        "rod_compression_N": 122.42432068062666
+      },
+      {
+        "finger": "LR",
+        "normal_N": 21.960400833381232,
+        "tangent_N": 8.784160333352494,
+        "required_contact_hinge_torque_Nm": 1.3747210921696653,
+        "gravity_hinge_torque_Nm": -0.0003132475221161822,
+        "dq_dx_rad_m": 53.43682679230739,
+        "slider_axial_contribution_N": 73.44399393641962,
+        "rod_compression_N": 122.42432068062666
+      }
+    ],
+    "scope": "conditional exact point-contact wrench witness on common90 planes; finite petal face containment/collision is separate root study; friction coefficient unmeasured; no allowance for contact-position/force errors, rod friction or unknown parts"
+  },
+  {
+    "assumed_mu": 0.8,
+    "payload_kg": 2,
+    "design_factor": 2,
+    "contact_pose_q_deg": 90,
+    "slider_z_mm": -45.525,
+    "sphere_radius_mm": 56,
+    "sphere_center_head_mm": [
+      0,
+      0,
+      65
+    ],
+    "normal_moment_arm_mm": 65,
+    "tangent_moment_arm_mm": 6,
+    "normal_only_slider_force_N": 149.12994909312312,
+    "slider_force_including_actual_contact_sign_and_minusZ_material_gravity_N": 138.0413130562018,
+    "ideal_direct_screw_motor_static_torque_Nm": 0.05492489330947577,
+    "required_static_kappa_for_motor_budget0p140Nm": 0.39232066649625547,
+    "force_balance_residual_N": [
+      5.329070518200751e-15,
+      4.440892098500626e-15,
+      7.105427357601002e-15
+    ],
+    "moment_balance_residual_Nm": [
+      -3.3306690738754696e-16,
+      2.7755575615628914e-16,
+      0.0
+    ],
+    "slider_lateral_reaction_magnitude_N": 10.384796367449319,
+    "branches": [
+      {
+        "finger": "UR",
+        "normal_N": 13.536424583309381,
+        "tangent_N": 10.829139666647507,
+        "required_contact_hinge_torque_Nm": 0.8148927599152247,
+        "gravity_hinge_torque_Nm": -0.0005131049102865085,
+        "dq_dx_rad_m": 41.39988246541537,
+        "slider_axial_contribution_N": 33.71522199942996,
+        "rod_compression_N": 59.47316604501655
+      },
+      {
+        "finger": "UL",
+        "normal_N": 13.536424583309381,
+        "tangent_N": 10.829139666647507,
+        "required_contact_hinge_torque_Nm": 0.8148927599152247,
+        "gravity_hinge_torque_Nm": -0.0005131049102865085,
+        "dq_dx_rad_m": 41.39988246541537,
+        "slider_axial_contribution_N": 33.71522199942996,
+        "rod_compression_N": 59.47316604501655
+      },
+      {
+        "finger": "LL",
+        "normal_N": 10.980200416690616,
+        "tangent_N": 8.784160333352494,
+        "required_contact_hinge_torque_Nm": 0.6610080650847752,
+        "gravity_hinge_torque_Nm": -0.0003132475221161822,
+        "dq_dx_rad_m": 53.43682679230739,
+        "slider_axial_contribution_N": 35.30543452867094,
+        "rod_compression_N": 58.8508822416254
+      },
+      {
+        "finger": "LR",
+        "normal_N": 10.980200416690616,
+        "tangent_N": 8.784160333352494,
+        "required_contact_hinge_torque_Nm": 0.661008065084775,
+        "gravity_hinge_torque_Nm": -0.0003132475221161822,
+        "dq_dx_rad_m": 53.43682679230739,
+        "slider_axial_contribution_N": 35.305434528670936,
+        "rod_compression_N": 58.850882241625385
+      }
+    ],
+    "scope": "conditional exact point-contact wrench witness on common90 planes; finite petal face containment/collision is separate root study; friction coefficient unmeasured; no allowance for contact-position/force errors, rod friction or unknown parts"
+  }
+]
