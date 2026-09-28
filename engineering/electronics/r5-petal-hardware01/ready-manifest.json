@@ -1,0 +1,59 @@
+{
+  "revision": "R5-PETAL-HW01",
+  "status": "READY-for-root-review",
+  "license": "CC-BY-NC-4.0",
+  "notice": "Odradek — Auromix contributors (https://github.com/Auromix/odradek)",
+  "files": [
+    {
+      "path": "docs/engineering/hardware/r5-petal-hardware01.md",
+      "bytes": 14089,
+      "sha256": "87ec6f64638b4a578416bea77ea703b49fd6bcd537740618641cd2ea187f69f0"
+    },
+    {
+      "path": "docs/engineering/sources/r5-petal-hardware01.json",
+      "bytes": 14252,
+      "sha256": "2b4ad86da1e8410e6a6229b75afc4eb9cecb20ab2f462d85de87a79f6e77d5da"
+    },
+    {
+      "path": "engineering/electronics/r5-petal-hardware01/audit.json",
+      "bytes": 509,
+      "sha256": "3e0f8a3b0e3a23d3f8909d3978272b5d82c559a5aefa6620a25d178b5537e947"
+    },
+    {
+      "path": "engineering/electronics/r5-petal-hardware01/audit.py",
+      "bytes": 2117,
+      "sha256": "4a88cd3d25dec16a4601e512ea057cd12dab5e89803e647f4463f2b4943bccf1"
+    },
+    {
+      "path": "engineering/electronics/r5-petal-hardware01/candidate-bom.csv",
+      "bytes": 2279,
+      "sha256": "d6678c4c8c1b3cd5e75d2542547ca43518008380ccd9b52d418b1ecced638518"
+    },
+    {
+      "path": "engineering/electronics/r5-petal-hardware01/check_stack.py",
+      "bytes": 6898,
+      "sha256": "381bad5600c0affb4820d81f7709a436d5f615fcab40c1ff36c8403aa473d79c"
+    },
+    {
+      "path": "engineering/electronics/r5-petal-hardware01/stack-check.json",
+      "bytes": 16999,
+      "sha256": "ead9b82ce1c93da30ae36ac5df6a60d2fc66181fc8c68631869a4f40ea2e88c1"
+    }
+  ],
+  "total_bytes_excluding_this_manifest": 57143,
+  "frozen_FORM01_modified": false,
+  "new_CAD_exported": false,
+  "purchases_or_supplier_contact": false,
+  "selected_scope": "unpowered material/process coupons and conditional nominal fastener stacks",
+  "blocking_interfaces": [
+    "M2 complete head profile and actual <=Z9 seating",
+    "Controlled skin flange compression/retention and cover thickness tolerance",
+    "Cover deflection/creep relative to 0.3 mm LED reservation",
+    "Actual new linkage root hub and full assembly installation path"
+  ],
+  "reproduction": [
+    "OPENBLAS_NUM_THREADS=1 ../../work/r4-runtime/venv/bin/python engineering/electronics/r5-petal-hardware01/check_stack.py",
+    "python3 engineering/electronics/r5-petal-hardware01/audit.py"
+  ],
+  "commit_performed": false
+}

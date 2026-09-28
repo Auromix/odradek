@@ -1,0 +1,563 @@
+{
+  "revision": "R5-PETAL-HW01",
+  "license": "CC-BY-NC-4.0",
+  "source_hashes": {
+    "engineering/generated/r5-petal-form01/parameters.json": "085f72e30225ca44d6d7502bf508fb766573531e4d192bdf80e72c5e8bd0fa53",
+    "engineering/generated/r5-petal-form01/study.json": "6239375fadc6c43a9e538674af1f0bf620ba53a4962bd5320f33bd06474869e9",
+    "engineering/electronics/r5-petal-hardware01/check_stack.py": "381bad5600c0affb4820d81f7709a436d5f615fcab40c1ff36c8403aa473d79c",
+    "engineering/build_link56_study.py": "c1119f288c0a9169764dc047ae3aa17be86ed97b62994e5917a02ea3f28fec40",
+    "engineering/generated/r5-petal-form01/upper-right/frame.step": "fc7bb7e67a95f68615fd5a923b5c04efe1fbf031076022640f5e13ad7c14e26d",
+    "engineering/generated/r5-petal-form01/upper-right/retainer.step": "84b390561c4ab898d0413615d9b1534d0163d6069e0f1b233d71213bfac05597",
+    "engineering/generated/r5-petal-form01/upper-right/bearing_cover.step": "f024ad32253e7006ba064472d8fa67fce529e8a7bc965107f03200e0d1faa735",
+    "engineering/generated/r5-petal-form01/upper-right/compliant_skin.step": "18fdbbf43e7a08f9e110af8d7daaf57710908fbf42ca5aefd4978acefa5624dd",
+    "engineering/generated/r5-petal-form01/upper-right/PCB_blank_reservation.step": "ae565c97801da5a349f6074b6254ae48336b49b2d8e40a2a3fb5f3fcbdb3be14",
+    "engineering/generated/r5-petal-form01/upper-right/back_electronics_reservation.step": "09a8993634144dd7dc83984928ac310caf756ed4c0be3a2a559af1e8bd624859",
+    "engineering/generated/r5-petal-form01/upper-right/LED_front_reservation.step": "9fc3e08554afe2329b4460bc273a8b97300a580e69727424b16d104b56ace20a",
+    "engineering/generated/r5-petal-form01/lower-right/frame.step": "e38f0a4cb021ef8872b2d1fb201a3568aa4e71a8cba0a571530f554bf3b36670",
+    "engineering/generated/r5-petal-form01/lower-right/retainer.step": "dfbd5c32e51c1c16afabd5115d5a3cbed14c3fad1b7ad1b9d74062d19d2371a2",
+    "engineering/generated/r5-petal-form01/lower-right/bearing_cover.step": "d404c6530afc9329e5caa1c21d1fecb6abf4aceed8f44917fd80e181e940afd4",
+    "engineering/generated/r5-petal-form01/lower-right/compliant_skin.step": "b14cf2fb5644421ccce4e4bac68d3cee6990d44fb7d0814cbfdfff9b69826bf2",
+    "engineering/generated/r5-petal-form01/lower-right/PCB_blank_reservation.step": "1457c2ea44d7a7e961fcb0286b10054aecd4efe68db839651c3e31260b2691dc",
+    "engineering/generated/r5-petal-form01/lower-right/back_electronics_reservation.step": "c2177e47635563e2f33face7349dda6c1143193446ddd5a63ff66b1393048d7b",
+    "engineering/generated/r5-petal-form01/lower-right/LED_front_reservation.step": "55c637d8165125d00b387c32169f3661f583122c6c70f3a6b29726b34240b9f4"
+  },
+  "geometry_units": "mm",
+  "inspection_scope": "Frozen right-hand isolated petals; left-hand reflects Y. No new CAD exported. Tool cylinders are allocations, not selected real tools. No assembled linkage clearance inferred.",
+  "fastener_probes": [
+    {
+      "kind": "upper",
+      "index": 0,
+      "xy_mm": [
+        26,
+        -19
+      ],
+      "washer_contact_area_mm2": 15.833626974092562,
+      "washer_entire_annulus_supported": true,
+      "ideal_cone_overlap_mm3": 0,
+      "ideal_head_top_z_mm": 8.8,
+      "real_vendor_head_top_qualified": false,
+      "front_D3_gauge_overlap_mm3": 0,
+      "rear_D8_gauge_overlap_mm3": 0,
+      "rear_tool_to_other_nut_circumscribed_gap_mm": 22.690598923241495
+    },
+    {
+      "kind": "upper",
+      "index": 1,
+      "xy_mm": [
+        26,
+        10
+      ],
+      "washer_contact_area_mm2": 15.833626974092562,
+      "washer_entire_annulus_supported": true,
+      "ideal_cone_overlap_mm3": 0,
+      "ideal_head_top_z_mm": 8.8,
+      "real_vendor_head_top_qualified": false,
+      "front_D3_gauge_overlap_mm3": 0,
+      "rear_D8_gauge_overlap_mm3": 0,
+      "rear_tool_to_other_nut_circumscribed_gap_mm": 22.690598923241495
+    },
+    {
+      "kind": "upper",
+      "index": 2,
+      "xy_mm": [
+        146.5,
+        -4
+      ],
+      "washer_contact_area_mm2": 15.833626974092567,
+      "washer_entire_annulus_supported": true,
+      "ideal_cone_overlap_mm3": 0,
+      "ideal_head_top_z_mm": 8.8,
+      "real_vendor_head_top_qualified": false,
+      "front_D3_gauge_overlap_mm3": 0,
+      "rear_D8_gauge_overlap_mm3": 0,
+      "rear_tool_to_other_nut_circumscribed_gap_mm": 4.690598923241497
+    },
+    {
+      "kind": "upper",
+      "index": 3,
+      "xy_mm": [
+        146.5,
+        7
+      ],
+      "washer_contact_area_mm2": 15.833626974092567,
+      "washer_entire_annulus_supported": true,
+      "ideal_cone_overlap_mm3": 0,
+      "ideal_head_top_z_mm": 8.8,
+      "real_vendor_head_top_qualified": false,
+      "front_D3_gauge_overlap_mm3": 0,
+      "rear_D8_gauge_overlap_mm3": 0,
+      "rear_tool_to_other_nut_circumscribed_gap_mm": 4.690598923241497
+    },
+    {
+      "kind": "upper",
+      "root_index": 0,
+      "xy_mm": [
+        7,
+        -4.5
+      ],
+      "root_head_D_mm": 6,
+      "root_head_height_mm": 1.3,
+      "root_head_top_z_mm": 8.3,
+      "head_full_annulus_supported": true,
+      "support_area_mm2": 20.23185668911828,
+      "front_D3_driver_gauge_overlap_mm3": 0,
+      "root_interface_qualified": false
+    },
+    {
+      "kind": "upper",
+      "root_index": 1,
+      "xy_mm": [
+        7,
+        4.5
+      ],
+      "root_head_D_mm": 6,
+      "root_head_height_mm": 1.3,
+      "root_head_top_z_mm": 8.3,
+      "head_full_annulus_supported": true,
+      "support_area_mm2": 20.23185668911828,
+      "front_D3_driver_gauge_overlap_mm3": 0,
+      "root_interface_qualified": false
+    },
+    {
+      "kind": "upper",
+      "root_index": 2,
+      "xy_mm": [
+        17,
+        -4.5
+      ],
+      "root_head_D_mm": 6,
+      "root_head_height_mm": 1.3,
+      "root_head_top_z_mm": 8.3,
+      "head_full_annulus_supported": true,
+      "support_area_mm2": 20.231856689118253,
+      "front_D3_driver_gauge_overlap_mm3": 0,
+      "root_interface_qualified": false
+    },
+    {
+      "kind": "upper",
+      "root_index": 3,
+      "xy_mm": [
+        17,
+        4.5
+      ],
+      "root_head_D_mm": 6,
+      "root_head_height_mm": 1.3,
+      "root_head_top_z_mm": 8.3,
+      "head_full_annulus_supported": true,
+      "support_area_mm2": 20.231856689118253,
+      "front_D3_driver_gauge_overlap_mm3": 0,
+      "root_interface_qualified": false
+    },
+    {
+      "kind": "lower",
+      "index": 0,
+      "xy_mm": [
+        26,
+        -10
+      ],
+      "washer_contact_area_mm2": 15.833626974092553,
+      "washer_entire_annulus_supported": true,
+      "ideal_cone_overlap_mm3": 0,
+      "ideal_head_top_z_mm": 8.8,
+      "real_vendor_head_top_qualified": false,
+      "front_D3_gauge_overlap_mm3": 0,
+      "rear_D8_gauge_overlap_mm3": 0,
+      "rear_tool_to_other_nut_circumscribed_gap_mm": 18.690598923241495
+    },
+    {
+      "kind": "lower",
+      "index": 1,
+      "xy_mm": [
+        26,
+        15
+      ],
+      "washer_contact_area_mm2": 15.833626974092553,
+      "washer_entire_annulus_supported": true,
+      "ideal_cone_overlap_mm3": 0,
+      "ideal_head_top_z_mm": 8.8,
+      "real_vendor_head_top_qualified": false,
+      "front_D3_gauge_overlap_mm3": 0,
+      "rear_D8_gauge_overlap_mm3": 0,
+      "rear_tool_to_other_nut_circumscribed_gap_mm": 18.690598923241495
+    },
+    {
+      "kind": "lower",
+      "index": 2,
+      "xy_mm": [
+        96.5,
+        -4
+      ],
+      "washer_contact_area_mm2": 15.833626974092615,
+      "washer_entire_annulus_supported": true,
+      "ideal_cone_overlap_mm3": 0,
+      "ideal_head_top_z_mm": 8.8,
+      "real_vendor_head_top_qualified": false,
+      "front_D3_gauge_overlap_mm3": 0,
+      "rear_D8_gauge_overlap_mm3": 0,
+      "rear_tool_to_other_nut_circumscribed_gap_mm": 1.6905989232414966
+    },
+    {
+      "kind": "lower",
+      "index": 3,
+      "xy_mm": [
+        96.5,
+        4
+      ],
+      "washer_contact_area_mm2": 15.833626974092615,
+      "washer_entire_annulus_supported": true,
+      "ideal_cone_overlap_mm3": 0,
+      "ideal_head_top_z_mm": 8.8,
+      "real_vendor_head_top_qualified": false,
+      "front_D3_gauge_overlap_mm3": 0,
+      "rear_D8_gauge_overlap_mm3": 0,
+      "rear_tool_to_other_nut_circumscribed_gap_mm": 1.6905989232414966
+    },
+    {
+      "kind": "lower",
+      "root_index": 0,
+      "xy_mm": [
+        7,
+        -4.5
+      ],
+      "root_head_D_mm": 6,
+      "root_head_height_mm": 1.3,
+      "root_head_top_z_mm": 8.3,
+      "head_full_annulus_supported": true,
+      "support_area_mm2": 20.23185668911826,
+      "front_D3_driver_gauge_overlap_mm3": 0,
+      "root_interface_qualified": false
+    },
+    {
+      "kind": "lower",
+      "root_index": 1,
+      "xy_mm": [
+        7,
+        4.5
+      ],
+      "root_head_D_mm": 6,
+      "root_head_height_mm": 1.3,
+      "root_head_top_z_mm": 8.3,
+      "head_full_annulus_supported": true,
+      "support_area_mm2": 20.23185668911826,
+      "front_D3_driver_gauge_overlap_mm3": 0,
+      "root_interface_qualified": false
+    },
+    {
+      "kind": "lower",
+      "root_index": 2,
+      "xy_mm": [
+        17,
+        -4.5
+      ],
+      "root_head_D_mm": 6,
+      "root_head_height_mm": 1.3,
+      "root_head_top_z_mm": 8.3,
+      "head_full_annulus_supported": true,
+      "support_area_mm2": 20.23185668911825,
+      "front_D3_driver_gauge_overlap_mm3": 0,
+      "root_interface_qualified": false
+    },
+    {
+      "kind": "lower",
+      "root_index": 3,
+      "xy_mm": [
+        17,
+        4.5
+      ],
+      "root_head_D_mm": 6,
+      "root_head_height_mm": 1.3,
+      "root_head_top_z_mm": 8.3,
+      "head_full_annulus_supported": true,
+      "support_area_mm2": 20.23185668911825,
+      "front_D3_driver_gauge_overlap_mm3": 0,
+      "root_interface_qualified": false
+    }
+  ],
+  "root_bench_stack": {
+    "bolt": "NBK SSHS-M3-16-FT",
+    "frame_z_mm": [
+      0,
+      7
+    ],
+    "head_z_mm": [
+      7,
+      8.3
+    ],
+    "proposed_bench_backing_plate_z_mm": [
+      -3,
+      0
+    ],
+    "washer_z_mm": [
+      -3.5,
+      -3
+    ],
+    "nut_z_mm": [
+      -5.9,
+      -3.5
+    ],
+    "tip_z_mm": -9,
+    "nominal_tail_beyond_nut_mm": 3.1,
+    "backing_plate_is_installed_CAD": false,
+    "backing_plate_hole_pattern_mm": [
+      [
+        7,
+        -4.5
+      ],
+      [
+        7,
+        4.5
+      ],
+      [
+        17,
+        -4.5
+      ],
+      [
+        17,
+        4.5
+      ]
+    ],
+    "backing_plate_plan_extent_mm": [
+      [
+        0,
+        -9
+      ],
+      [
+        24,
+        9
+      ]
+    ],
+    "robot_hub_interface_released": false
+  },
+  "M2_stack": {
+    "screw_catalogue": "Accu SIK-M2-12-A2 / separate Wurth 004802 12 alternative",
+    "head_D_mm": [
+      3.5,
+      3.8
+    ],
+    "catalogue_H_mm": 1.2,
+    "ideal_cone_head_top_z_mm": 8.8,
+    "hypothetical_edge_land_mm": [
+      0,
+      0.3
+    ],
+    "hypothetical_head_top_z_mm": [
+      8.8,
+      9.1
+    ],
+    "hypothetical_profile_is_not_vendor_geometry": true,
+    "washer_z_mm": [
+      -0.3,
+      0
+    ],
+    "nut_z_mm": [
+      -1.9,
+      -0.3
+    ],
+    "tip_z_mm_under_hypothetical_head_range": [
+      -3.2,
+      -2.9
+    ],
+    "tail_beyond_nut_mm": [
+      1.0,
+      1.3
+    ],
+    "final_head_top_qualified": false,
+    "thread_effective_tip_runout_unknown": true
+  },
+  "flange_stack_sensitivity_not_supplier_tolerances": [
+    {
+      "cover_mm": 2.4,
+      "flange_mm": 0.35,
+      "retainer_gap_mm": 0.5,
+      "compression_if_retainer_metal_seated_mm": -0.15000000000000002,
+      "interpretation": "loose gap"
+    },
+    {
+      "cover_mm": 2.4,
+      "flange_mm": 0.4,
+      "retainer_gap_mm": 0.5,
+      "compression_if_retainer_metal_seated_mm": -0.09999999999999998,
+      "interpretation": "loose gap"
+    },
+    {
+      "cover_mm": 2.4,
+      "flange_mm": 0.45,
+      "retainer_gap_mm": 0.5,
+      "compression_if_retainer_metal_seated_mm": -0.04999999999999999,
+      "interpretation": "loose gap"
+    },
+    {
+      "cover_mm": 2.5,
+      "flange_mm": 0.35,
+      "retainer_gap_mm": 0.40000000000000036,
+      "compression_if_retainer_metal_seated_mm": -0.05000000000000038,
+      "interpretation": "loose gap"
+    },
+    {
+      "cover_mm": 2.5,
+      "flange_mm": 0.4,
+      "retainer_gap_mm": 0.40000000000000036,
+      "compression_if_retainer_metal_seated_mm": -3.3306690738754696e-16,
+      "interpretation": "zero preload"
+    },
+    {
+      "cover_mm": 2.5,
+      "flange_mm": 0.45,
+      "retainer_gap_mm": 0.40000000000000036,
+      "compression_if_retainer_metal_seated_mm": 0.049999999999999656,
+      "interpretation": "requires compression / unknown stress"
+    },
+    {
+      "cover_mm": 2.6,
+      "flange_mm": 0.35,
+      "retainer_gap_mm": 0.3000000000000007,
+      "compression_if_retainer_metal_seated_mm": 0.04999999999999927,
+      "interpretation": "requires compression / unknown stress"
+    },
+    {
+      "cover_mm": 2.6,
+      "flange_mm": 0.4,
+      "retainer_gap_mm": 0.3000000000000007,
+      "compression_if_retainer_metal_seated_mm": 0.09999999999999931,
+      "interpretation": "requires compression / unknown stress"
+    },
+    {
+      "cover_mm": 2.6,
+      "flange_mm": 0.45,
+      "retainer_gap_mm": 0.3000000000000007,
+      "compression_if_retainer_metal_seated_mm": 0.1499999999999993,
+      "interpretation": "requires compression / unknown stress"
+    }
+  ],
+  "strip_bending_sensitivity": [
+    {
+      "kind": "upper",
+      "force_N": 27.07,
+      "span_mm": 35.6,
+      "effective_strip_width_mm": 5,
+      "E_typical_reference_MPa": 2350.0,
+      "t_mm": 2.5,
+      "deflection_mm": 1.6631076672272342,
+      "nominal_LED_gap_mm": 0.3,
+      "residual_gap_mm": -1.3631076672272342,
+      "not_a_plate_solution_or_bound": true
+    },
+    {
+      "kind": "upper",
+      "force_N": 27.07,
+      "span_mm": 35.6,
+      "effective_strip_width_mm": 10,
+      "E_typical_reference_MPa": 2350.0,
+      "t_mm": 2.5,
+      "deflection_mm": 0.8315538336136171,
+      "nominal_LED_gap_mm": 0.3,
+      "residual_gap_mm": -0.5315538336136172,
+      "not_a_plate_solution_or_bound": true
+    },
+    {
+      "kind": "upper",
+      "force_N": 27.07,
+      "span_mm": 35.6,
+      "effective_strip_width_mm": 20,
+      "E_typical_reference_MPa": 2350.0,
+      "t_mm": 2.5,
+      "deflection_mm": 0.41577691680680856,
+      "nominal_LED_gap_mm": 0.3,
+      "residual_gap_mm": -0.11577691680680857,
+      "not_a_plate_solution_or_bound": true
+    },
+    {
+      "kind": "upper-wing",
+      "force_N": 27.07,
+      "span_mm": 22.6,
+      "effective_strip_width_mm": 5,
+      "E_typical_reference_MPa": 2350.0,
+      "t_mm": 2.5,
+      "deflection_mm": 0.4254962033293617,
+      "nominal_LED_gap_mm": 0.3,
+      "residual_gap_mm": -0.12549620332936173,
+      "not_a_plate_solution_or_bound": true
+    },
+    {
+      "kind": "upper-wing",
+      "force_N": 27.07,
+      "span_mm": 22.6,
+      "effective_strip_width_mm": 10,
+      "E_typical_reference_MPa": 2350.0,
+      "t_mm": 2.5,
+      "deflection_mm": 0.21274810166468086,
+      "nominal_LED_gap_mm": 0.3,
+      "residual_gap_mm": 0.08725189833531913,
+      "not_a_plate_solution_or_bound": true
+    },
+    {
+      "kind": "upper-wing",
+      "force_N": 27.07,
+      "span_mm": 22.6,
+      "effective_strip_width_mm": 20,
+      "E_typical_reference_MPa": 2350.0,
+      "t_mm": 2.5,
+      "deflection_mm": 0.10637405083234043,
+      "nominal_LED_gap_mm": 0.3,
+      "residual_gap_mm": 0.19362594916765957,
+      "not_a_plate_solution_or_bound": true
+    },
+    {
+      "kind": "lower",
+      "force_N": 21.96,
+      "span_mm": 30.6,
+      "effective_strip_width_mm": 5,
+      "E_typical_reference_MPa": 2350.0,
+      "t_mm": 2.5,
+      "deflection_mm": 0.8567985666178725,
+      "nominal_LED_gap_mm": 0.3,
+      "residual_gap_mm": -0.5567985666178725,
+      "not_a_plate_solution_or_bound": true
+    },
+    {
+      "kind": "lower",
+      "force_N": 21.96,
+      "span_mm": 30.6,
+      "effective_strip_width_mm": 10,
+      "E_typical_reference_MPa": 2350.0,
+      "t_mm": 2.5,
+      "deflection_mm": 0.42839928330893623,
+      "nominal_LED_gap_mm": 0.3,
+      "residual_gap_mm": -0.12839928330893624,
+      "not_a_plate_solution_or_bound": true
+    },
+    {
+      "kind": "lower",
+      "force_N": 21.96,
+      "span_mm": 30.6,
+      "effective_strip_width_mm": 20,
+      "E_typical_reference_MPa": 2350.0,
+      "t_mm": 2.5,
+      "deflection_mm": 0.21419964165446811,
+      "nominal_LED_gap_mm": 0.3,
+      "residual_gap_mm": 0.08580035834553187,
+      "not_a_plate_solution_or_bound": true
+    }
+  ],
+  "load_reference": {
+    "upper_normal_N": 27.07,
+    "lower_normal_N": 21.96,
+    "lever_mm": 65,
+    "upper_moment_Nm": 1.7595500000000002,
+    "lower_moment_Nm": 1.4274,
+    "conditional_mu": 0.4,
+    "actual_friction": null,
+    "upper_tangential_reference_N": 10.828000000000001,
+    "lower_tangential_reference_N": 8.784
+  },
+  "qualified": {
+    "procurement_stock": false,
+    "real_fastener_tolerance_stack": false,
+    "skin_retention": false,
+    "material_wear": false,
+    "cover_load_deflection": false,
+    "payload": false,
+    "one_second_cycle": false,
+    "manufacturing": false
+  }
+}
