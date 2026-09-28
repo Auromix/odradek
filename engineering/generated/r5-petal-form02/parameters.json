@@ -1,0 +1,289 @@
+{
+  "revision": "R5-PETAL-FORM02",
+  "units": "mm",
+  "local_frame": "+x root to tip; +y in-plane; +z luminous gripping side",
+  "upper": {
+    "length_mm": 150.0,
+    "template_length_mm": 150.0,
+    "width_scale": 1.0,
+    "outline_knots_mm": [
+      [
+        0,
+        -9
+      ],
+      [
+        15,
+        -9
+      ],
+      [
+        21,
+        -23
+      ],
+      [
+        29,
+        -23
+      ],
+      [
+        51,
+        -23
+      ],
+      [
+        60,
+        -16
+      ],
+      [
+        143,
+        -16
+      ],
+      [
+        150,
+        -9
+      ],
+      [
+        150,
+        12
+      ],
+      [
+        145,
+        17
+      ],
+      [
+        28,
+        17
+      ],
+      [
+        21,
+        13
+      ],
+      [
+        15,
+        9
+      ],
+      [
+        0,
+        9
+      ]
+    ],
+    "module_x_mm": [
+      30.0,
+      142.0
+    ],
+    "retainer_x_start_mm": 21.0,
+    "retainer_holes_mm": [
+      [
+        26,
+        -19
+      ],
+      [
+        26,
+        10
+      ],
+      [
+        146.5,
+        -4
+      ],
+      [
+        146.5,
+        7
+      ]
+    ],
+    "section_x_mm": [
+      7.0,
+      17.0,
+      35.0,
+      80.0,
+      125.0,
+      145.0
+    ]
+  },
+  "lower": {
+    "length_mm": 100.0,
+    "template_length_mm": 100.0,
+    "width_scale": 1.0,
+    "outline_knots_mm": [
+      [
+        0,
+        -9
+      ],
+      [
+        15,
+        -9
+      ],
+      [
+        23,
+        -16
+      ],
+      [
+        91,
+        -16
+      ],
+      [
+        100,
+        -8
+      ],
+      [
+        100,
+        6
+      ],
+      [
+        94,
+        12
+      ],
+      [
+        57,
+        13
+      ],
+      [
+        49,
+        23
+      ],
+      [
+        29,
+        23
+      ],
+      [
+        21,
+        18
+      ],
+      [
+        15,
+        9
+      ],
+      [
+        0,
+        9
+      ]
+    ],
+    "module_x_mm": [
+      30.0,
+      92.0
+    ],
+    "retainer_x_start_mm": 21.0,
+    "retainer_holes_mm": [
+      [
+        26,
+        -10
+      ],
+      [
+        26,
+        15
+      ],
+      [
+        96.5,
+        -4
+      ],
+      [
+        96.5,
+        4
+      ]
+    ],
+    "section_x_mm": [
+      7.0,
+      17.0,
+      35.0,
+      65.0,
+      90.0
+    ]
+  },
+  "outline_corner_radius_mm": 0.8,
+  "outer_wall_to_cover_pocket_mm": 2.8,
+  "cover_radial_clearance_mm": 0.2,
+  "cover_support_ledge_inset_from_pocket_mm": 2.4,
+  "skin_face_inset_from_cover_mm": 1.2,
+  "skin_to_bezel_radial_clearance_mm": 0.15,
+  "z_mm": {
+    "frame_back": 0.0,
+    "floor_top": 1.5,
+    "frame_front": 7.0,
+    "cover_seat": 5.5,
+    "cover_front": 8.0,
+    "skin_flange_top": 8.4,
+    "skin_face": 9.5,
+    "retainer_back": 7.0,
+    "retainer_front": 9.0,
+    "PCB": [
+      3.5,
+      4.3
+    ],
+    "back_electronics": [
+      1.75,
+      3.4
+    ],
+    "front_LED": [
+      4.4,
+      5.2
+    ]
+  },
+  "root_interface_holes_mm": [
+    [
+      7,
+      -4.5
+    ],
+    [
+      7,
+      4.5
+    ],
+    [
+      17,
+      -4.5
+    ],
+    [
+      17,
+      4.5
+    ]
+  ],
+  "root_hole_D_mm": 3.2,
+  "retainer_hole_D_mm": 2.2,
+  "retainer_countersink_major_D_mm": 4.2,
+  "retainer_countersink_angle_deg": 90.0,
+  "densities_kg_m3": {
+    "frame": 2700.0,
+    "retainer": 2700.0,
+    "bearing_cover": 1200.0,
+    "compliant_skin": 1030.0
+  },
+  "form_preview": {
+    "UR": {
+      "kind": "upper",
+      "hand": "right",
+      "root_xy_mm": [
+        46.6690475583,
+        46.6690475583
+      ],
+      "angle_deg": 45.0
+    },
+    "UL": {
+      "kind": "upper",
+      "hand": "left",
+      "root_xy_mm": [
+        -46.6690475583,
+        46.6690475583
+      ],
+      "angle_deg": 135.0
+    },
+    "LR": {
+      "kind": "lower",
+      "hand": "right",
+      "root_xy_mm": [
+        46.6690475583,
+        -46.6690475583
+      ],
+      "angle_deg": 315.0
+    },
+    "LL": {
+      "kind": "lower",
+      "hand": "left",
+      "root_xy_mm": [
+        -46.6690475583,
+        -46.6690475583
+      ],
+      "angle_deg": 225.0
+    }
+  },
+  "qualification": {
+    "root_pattern": "Candidate flat mechanical attachment only; not a selected shaft, hinge, hub or fastener stack.",
+    "electronics": "New outlines/reservations; no FPL board is inserted.",
+    "form_preview": "Illustrative open arrangement only, not a head assembly or motion solution.",
+    "material_density": "Nominal mass assumptions; not procurement or mechanical allowables."
+  }
+}
