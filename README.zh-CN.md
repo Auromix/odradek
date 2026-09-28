@@ -6,11 +6,11 @@
 
 Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面／固定底座机械臂项目，灵感来自《死亡搁浅》中的探测器，面向实际操作任务。本体与末端的机构、外观和行为同步设计。
 
-**当前为 R4 工程研究与几何样件阶段。** 已确认末端负载要求2 kg、EtherCAT、内走线、外置计算与先打印后金属加工。计算保守地把2 kg视为净工件；当前P16条件分支的末端计量模型2.802 kg，完整规划2.987～3.252 kg，驱动速度和占空条件仍待确定。臂展仍是设计假设。六段承力连接、可拆整头、7＋4耦合数学与原生Blender总装已经集成；尚无制造发布版、2 kg实测样机或正式控制固件。
+**当前为工程研究阶段，末端正按已确认的“一秒空载完整往返”重选驱动。** 灯片面本身就是夹持面，正常夹持是主功能。用户已确认2kg净工件另计头重、约700mm臂展、GMSL／GMSL2、EtherCAT、内走线与外置计算。P16无法满足新节拍，其CAD与电路保留为历史分支；现有7＋4总装不代表已实现新速度要求。见[最新设计输入](docs/engineering/fast-grasp-requirements01.md)。尚无制造发布版或2kg实测样机。
 
 ## 当前工程包
 
-![当前结构检查总装](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
+![既有结构检查总装，头部为历史P16分支](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
 
 图中已合并24个原创连接件、加高35mm的肩架、修正后的底座和697对象的HEAD-INTEGRATED03快照。Blender中的关节仍为目录包络，臂侧紧固件、线束和外壳尚未完整集成，中央像素屏单独标为显示效果。[当前加高候选](docs/engineering/raised-arm-integration01.md)通过10个指定姿态的真实BREP检查，包括历史上发生肩部碰撞的姿态；离散几何通过仍不等于轨迹或带载资格。[当前基线与硬件选择](docs/engineering/current-baseline.md)统一列出P16条件8站分支与历史替代方案的区别。
 
@@ -18,7 +18,7 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 |---|---|
 | [工程总览](docs/engineering/README.md) | 输入、假设、一手来源和发布清单 |
 | [布局、闭合与抓取](docs/engineering/r4-layout-and-grasp.md) | 同参数实体、独立角域分离、条件抓取和名义光线检查 |
-| [当前原生Blender](engineering/generated/raised-arm-integration01/blender/odradek-integrated-7-plus-4.blend)／[模型使用说明](docs/engineering/raised-arm-integration01.md) | 736个产品网格、11个控制量、可独立重开的推杆随动；几何检查候选 |
+| [既有原生Blender／历史P16头](engineering/generated/raised-arm-integration01/blender/odradek-integrated-7-plus-4.blend)／[模型使用说明](docs/engineering/raised-arm-integration01.md) | 736个产品网格、11个控制量、可独立重开的推杆随动；几何检查候选 |
 | [整头STEP与证据](docs/engineering/head-integrated03-study.md)／[耦合动力学](docs/engineering/articulated-dynamics-review.md) | 实际候选实体、冻结灯板位置、明确的质量与惯量代理 |
 | [历史布局](docs/engineering/r4-layout-and-grasp.md)／[分组件场景](docs/engineering/subassembly-blender-review.md) | 保留早期设计阶段用于追溯 |
 | [A3 装配审查图](engineering/generated/layout/ODR-R4-assembly-review.pdf) | 轴坐标、布局尺寸和正交网格视图 |
@@ -42,7 +42,7 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 
 - **本体 7 DOF，末端 4 DOF。** J7 的轴线垂直于末端正面，带动整个头部旋转；四片夹指各有一个独立开合自由度。
 - **左右各一组近邻双瓣，左右镜像、非中心对称。** 上瓣较长、下瓣较短，借鉴小鹏 logo 的分组关系；视觉成组不要求动作联动。
-- **灯片就是夹指。** 向前包合时灯面转向工件，拟由同侧凸起软垫／边框先接触，灯窗凹入。空手全闭需达到有真实间隙的机械限位；不是四尖挤到同一点或密封壳。
+- **灯片就是夹指。** 向前包合时灯面转向工件，最新要求由发光面本身夹持，透光接触层与承力支承正在重构；旧尖端凸垫保留为历史接触研究。空手全闭需达到有真实间隙的机械限位；不是四尖挤到同一点或密封壳。
 - **中央仅圆形 LED 屏。** 环形图案由屏幕圆周像素绘制；照明由四片承担。两个鱼眼位于屏幕局部上方和下方，分别向上／下外倾，随整头旋转。
 - **可拆分界在 J7 输出法兰之后。** 四指执行器与端侧控制拟置于末端内，接口规格待定。
 

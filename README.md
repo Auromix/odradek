@@ -6,11 +6,11 @@
 
 Odradek is an independent Auromix robotics project sharing design material for noncommercial research and hobby use inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
 
-**Stage: R4 engineering research and geometry prototypes.** Requirements include a 2 kg end load, EtherCAT, internal cabling, and external computing. Calculations conservatively treat 2 kg as a net object. The current P16 head candidate has a 2.802 kg modeled subtotal and a 2.987–3.252 kg planning total; the actuator's speed and duty limits remain conditional. Reach is still a design assumption. Six structural links, a detachable head, coupled 7+4 mathematics and a native Blender review assembly are now integrated. There is no manufacturing release, tested 2 kg prototype, or production control firmware.
+**Stage: engineering research; the head drive is being redesigned for a confirmed ≤1-second empty closed–open–closed cycle.** Gripping is the primary function and the illuminated petal face is the contact face. The user has confirmed a 2 kg net object plus head mass, approximately 700 mm reach, EtherCAT, GMSL/GMSL2 cameras, internal cabling and external computing. P16 actuators cannot meet the new cycle; their CAD and electrical branch remain historical references. The existing 7+4 assembly does not demonstrate the new speed requirement. See [current requirements](docs/engineering/fast-grasp-requirements01.md). No manufacturing release or tested 2 kg prototype exists.
 
 ## Engineering package
 
-![Current structural review assembly](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
+![Existing structural review assembly — historical P16 head](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
 
 This model combines 24 original link parts, a shoulder raised by 35 mm, the corrected base and the 697-object HEAD-INTEGRATED03 snapshot. Joint housings in Blender remain catalog envelopes; arm fasteners, harnesses and exterior guards are not fully integrated. The central pixel display is a separate visual preview. [The raised candidate](docs/engineering/raised-arm-integration01.md) passes the stated actual-BREP checks for ten poses, including the historical shoulder-collision pose. These discrete checks do not qualify trajectories or payload. [Current baseline and hardware choices](docs/engineering/current-baseline.md) separate the conditional eight-node P16 branch from earlier alternatives.
 
@@ -18,7 +18,7 @@ This model combines 24 original link parts, a shoulder raised by 35 mm, the corr
 |---|---|
 | [Engineering index](docs/engineering/README.md) | Requirements, assumptions, source records, and release checklist |
 | [R4 layout and grasp](docs/engineering/r4-layout-and-grasp.md) | Same-parameter geometry, closure proof, conditional contact calculations, and optical sightlines |
-| [Current native Blender](engineering/generated/raised-arm-integration01/blender/odradek-integrated-7-plus-4.blend) / [model guide](docs/engineering/raised-arm-integration01.md) | 736 product meshes, 11 controls, persistent actuator linkage drivers; geometric review only |
+| [Existing native Blender / historical P16 head](engineering/generated/raised-arm-integration01/blender/odradek-integrated-7-plus-4.blend) / [model guide](docs/engineering/raised-arm-integration01.md) | 736 product meshes, 11 controls, persistent actuator linkage drivers; geometric review only |
 | [Integrated head STEP and evidence](docs/engineering/head-integrated03-study.md) / [coupled dynamics](docs/engineering/articulated-dynamics-review.md) | Actual candidate solids, frozen board placement and explicit mass/inertia assumptions |
 | [Historical layout](docs/engineering/r4-layout-and-grasp.md) / [subassembly scenes](docs/engineering/subassembly-blender-review.md) | Earlier design stages retained for traceability |
 | [A3 review drawings](engineering/generated/layout/ODR-R4-assembly-review.pdf) | Axes, dimensions, and orthographic mesh views |
@@ -42,7 +42,7 @@ The [geometry study](docs/r3-closure-study.md) includes counterexamples and a co
 
 - **Seven arm DOFs and four head DOFs.** J7 rotates the whole head about the normal to its front face. Each luminous finger has one independent opening coordinate.
 - **Two close petals on each side, with left/right mirror symmetry and different upper/lower proportions.** Longer upper and shorter lower petals avoid 180-degree rotational symmetry. The grouping is inspired by the XPENG logo composition; it does not require mechanically coupled pairs.
-- **The light petals are the fingers.** Forward curling turns the light face inward. Proud pads / structural borders on that same side are proposed to contact the object before the recessed windows. Empty full closure must reach a mechanical limit with real clearances; it does not imply a sealed pod or four tips meeting at one point.
+- **The light petals are the fingers.** Forward curling turns the light face inward. The latest requirement makes the illuminated face itself the gripping face; the contact skin and load-bearing support are being redesigned. Earlier proud tip pads are a historical contact study. Empty full closure must reach a mechanical limit with real clearances; it does not imply a sealed pod or four tips meeting at one point.
 - **One circular LED display in the center.** Ring graphics use pixels at its perimeter. The four fingers provide lighting. Two fisheye cameras sit above and below the screen, tilt upward/downward respectively, and rotate with the head.
 - **The detachable boundary is after the J7 output flange.** Four finger actuators and local control are proposed within the head; connection specifications remain open.
 
