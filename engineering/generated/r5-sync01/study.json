@@ -1,0 +1,246 @@
+{
+  "revision": "R5-SYNC01",
+  "script_sha256": "02391cd38daafbb024478a55706e5eeb518d2e95beef9f406ab62a65099a92e4",
+  "parameters": {
+    "rod_length_mm": 100.0,
+    "inner_pin_radius_mm": 33.0,
+    "outer_pin_radial_offset_mm": 30.0,
+    "outer_pin_z_mm": -34.0,
+    "radial_range_mm": [
+      31.0,
+      91.0
+    ],
+    "rod_width_mm": 12.0,
+    "rod_thickness_mm": 6.0,
+    "pin_nominal_D_mm": 4.0,
+    "pin_hole_D_mm": 4.3,
+    "clevis_inner_halfwidth_mm": 4.2,
+    "clevis_outer_halfwidth_mm": 8.2,
+    "spider_hub_outer_radius_mm": 16.0,
+    "spider_central_clearance_D_mm": 12.0,
+    "spider_plate_z_mm": [
+      -18.0,
+      -12.0
+    ],
+    "assumed_density_kg_m3": 2700.0
+  },
+  "input_hashes": {
+    "engineering/generated/r5-carrier01/parts-manifest.json": "cae92c4d08cefd00f5231a2938a715e91c976a719119deb33d3dbc4fd070f130",
+    "engineering/r5_passive02.py": "0236980c86aae20674dd359305e25a1c821c63dec9fe41bdbf49f52b6e21ddd8",
+    "engineering/r5_vision01.py": "6f3db2d672ae6ab1d6caf30346bc9947f76bf0790ffc60d13cabfd222dbebe93",
+    "engineering/generated/r5-petal-form02/study.json": "6198b33a7e2e44d206f98062d2e2d099d94d4f6d3f4945ee5e0d3eae832164f4"
+  },
+  "original_part_mass": {
+    "rod": {
+      "mass_kg": 0.020801663645438073,
+      "volume_mm3": 7704.319868680768,
+      "COM_mm": [
+        50.0,
+        0.0,
+        -1.9552025688016364e-16
+      ],
+      "inertia_COM_kg_m2": [
+        [
+          3.11630845651126e-07,
+          0.0,
+          -1.2477698874135965e-22
+        ],
+        [
+          0.0,
+          2.0335890823024824e-05,
+          2.762590156635269e-24
+        ],
+        [
+          -1.2477698874135965e-22,
+          2.762590156635269e-24,
+          2.0149069959246346e-05
+        ]
+      ]
+    },
+    "spider": {
+      "mass_kg": 0.06256144843733931,
+      "volume_mm3": 23170.90682864419,
+      "COM_mm": [
+        -6.721833065509222e-16,
+        5.0444950660059e-16,
+        -10.360433459033889
+      ],
+      "inertia_COM_kg_m2": [
+        [
+          2.9512342561534323e-05,
+          -2.0563920676344115e-21,
+          3.030805074213998e-22
+        ],
+        [
+          -2.0563920676344115e-21,
+          2.951234256153433e-05,
+          -9.898379683524983e-22
+        ],
+        [
+          3.030805074213998e-22,
+          -9.898379683524983e-22,
+          5.301271394094857e-05
+        ]
+      ]
+    },
+    "lug": {
+      "mass_kg": 0.01876440417376492,
+      "volume_mm3": 6949.779323616638,
+      "COM_mm": [
+        23.81849321886468,
+        2.6173340459381113e-16,
+        -21.976249854352133
+      ],
+      "inertia_COM_kg_m2": [
+        [
+          1.7930123237394949e-06,
+          1.1697908428856796e-22,
+          4.3462115976299487e-07
+        ],
+        [
+          1.1697908428856796e-22,
+          2.087772718354349e-06,
+          -2.9350984926624294e-23
+        ],
+        [
+          4.3462115976299487e-07,
+          -2.9350984926624294e-23,
+          1.9808066739647554e-06
+        ]
+      ]
+    }
+  },
+  "known_added_metal_subtotal_kg": 0.22082571971415127,
+  "STL_checks": {
+    "rod": {
+      "watertight": true,
+      "winding_consistent": true,
+      "relative_volume_error": 1.7259962974930108e-05
+    },
+    "spider": {
+      "watertight": true,
+      "winding_consistent": true,
+      "relative_volume_error": 3.940332320197328e-05
+    },
+    "lug": {
+      "watertight": true,
+      "winding_consistent": true,
+      "relative_volume_error": 2.495055595027987e-05
+    }
+  },
+  "h_range_mm": [
+    47.49736834815167,
+    96.0
+  ],
+  "axial_stroke_mm": 48.50263165184833,
+  "collision_samples": [
+    {
+      "R_mm": 31.0,
+      "exact_overlap_queries": 48,
+      "overlaps": [],
+      "minimum_distance_camera_including_unmated_reservation_mm": 7.616441710038781
+    },
+    {
+      "R_mm": 46.0,
+      "exact_overlap_queries": 48,
+      "overlaps": [],
+      "minimum_distance_camera_including_unmated_reservation_mm": 16.074047516223892
+    },
+    {
+      "R_mm": 66.0,
+      "exact_overlap_queries": 48,
+      "overlaps": [],
+      "minimum_distance_camera_including_unmated_reservation_mm": 13.185056691144984
+    },
+    {
+      "R_mm": 71.0,
+      "exact_overlap_queries": 48,
+      "overlaps": [],
+      "minimum_distance_camera_including_unmated_reservation_mm": 9.765669701050372
+    },
+    {
+      "R_mm": 76.0,
+      "exact_overlap_queries": 49,
+      "overlaps": [],
+      "minimum_distance_camera_including_unmated_reservation_mm": 7.026686010596101
+    },
+    {
+      "R_mm": 81.0,
+      "exact_overlap_queries": 45,
+      "overlaps": [],
+      "minimum_distance_camera_including_unmated_reservation_mm": 6.528396625918561
+    },
+    {
+      "R_mm": 86.0,
+      "exact_overlap_queries": 45,
+      "overlaps": [],
+      "minimum_distance_camera_including_unmated_reservation_mm": 6.528396625918561
+    },
+    {
+      "R_mm": 91.0,
+      "exact_overlap_queries": 45,
+      "overlaps": [],
+      "minimum_distance_camera_including_unmated_reservation_mm": 6.528396625918561
+    }
+  ],
+  "hold_conditions": [
+    {
+      "width_mm": 50,
+      "R_mm": 31.0,
+      "h_mm": 96.00000000000001,
+      "normal_each_N": 49.033249999999995,
+      "ideal_input_h_force_N": 336.228,
+      "rod_tension_each_active_N": 175.11874999999998,
+      "assumed_4mm_screw_ideal_torque_Nm": 0.21404939282360716,
+      "assumed_2to1_reduction_ideal_motor_torque_Nm": 0.10702469641180358,
+      "scope": "contact normal load only; missing gravity, all friction, screw/shaft/motor qualification"
+    },
+    {
+      "width_mm": 80,
+      "R_mm": 46.0,
+      "h_mm": 90.28288874421334,
+      "normal_each_N": 49.033249999999995,
+      "ideal_input_h_force_N": 205.9006257914976,
+      "rod_tension_each_active_N": 114.03081395348838,
+      "assumed_4mm_screw_ideal_torque_Nm": 0.13108040952172575,
+      "assumed_2to1_reduction_ideal_motor_torque_Nm": 0.06554020476086288,
+      "scope": "contact normal load only; missing gravity, all friction, screw/shaft/motor qualification"
+    },
+    {
+      "width_mm": 120,
+      "R_mm": 66.0,
+      "h_mm": 77.65951326141571,
+      "normal_each_N": 49.033249999999995,
+      "ideal_input_h_force_N": 120.88566122620036,
+      "rod_tension_each_active_N": 77.83055555555555,
+      "assumed_4mm_screw_ideal_torque_Nm": 0.07695820213232822,
+      "assumed_2to1_reduction_ideal_motor_torque_Nm": 0.03847910106616411,
+      "scope": "contact normal load only; missing gravity, all friction, screw/shaft/motor qualification"
+    }
+  ],
+  "no_load_cycle": {
+    "peak_radial_speed_m_s": 0.2046899792764323,
+    "peak_axial_speed_m_s": 0.16899200896270292,
+    "peak_axial_acceleration_m_s2": 2.930577017340236,
+    "axial_force_range_N": [
+      -21.737530221684295,
+      30.64698712713559
+    ],
+    "work_energy_residual_J": 3.061652584235297e-08,
+    "axial_velocity_FD_max_error_m_s": 8.408530043830827e-08,
+    "example_4mm_lead_2to1_peak_motor_rpm": 5069.7602688810875,
+    "scope": "positive rigid synchronization, inherited known rotor model; no motor/screw/pin/rail/support mass or losses"
+  },
+  "manufacturing_release": false,
+  "status": "geometry and kinematics candidate only; inspect collision rows before integration",
+  "exclusions": [
+    "actual motor/screw and bearings",
+    "spider guide/anti-rotation and common fixed palm",
+    "pin retention and bearing fits",
+    "M4 complete thread and fixation capacity",
+    "loaded root cam capacity",
+    "full optical/cable integration",
+    "joint tolerances and elastic load sharing",
+    "full closed exterior"
+  ]
+}
