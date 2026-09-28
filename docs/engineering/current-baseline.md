@@ -1,17 +1,21 @@
 # 当前集成基线与硬件选择
 
-**主末端路线已因新要求切换：发光面正常夹持，空载全闭→全开→全闭≤1秒，接触后限力。** 见[FAST-GRASP01](fast-grasp-requirements01.md)。P16无法满足该节拍，旋转伺服及发光承力面正在重选。七轴本体研究继续；下列 **SHOULDER-RAISE01 + HEAD-INTEGRATED03 + FPL01 + HEAD-CTRL02** 是仍可复现的历史完整几何基线，不是满足新要求的采购/运行配置。已确认2kg净工件另计头重、约700mm臂展、GMSL／GMSL2相机链路。
+**主末端路线已因新要求切换：发光面正常夹持，空载全闭→全开→全闭≤1秒，接触后限力。** 见[FAST-GRASP01](fast-grasp-requirements01.md)。P16无法满足该节拍，单个中央隐藏驱动、四瓣mimic联动及发光承力面正在重选。七轴本体研究继续；下列 **SHOULDER-RAISE01 + HEAD-INTEGRATED03 + FPL01 + HEAD-CTRL02** 是仍可复现的历史完整几何基线，不是满足新要求的采购/运行配置。已确认2kg净工件另计头重、约700mm臂展、GMSL／GMSL2相机链路。
+
+[R5本体与末端分离图稿](../r5-modular-design.md)定义最新外观方向。生成图不覆盖以下真实几何证据。
+
+新头的计算入口为[FAST-KIN01](fast-finger-kin01.md)和[FAST-DRIVE01](hardware/fast-drive01.md)。单中央3274/32GPT HT50是旋转原型候选，直接丝杆保留减重对照；实际连杆和接触约束未定，不能把线性角比算例当成机构。电源、线束、失电保持和完整头重均须重新闭合。
 
 ## 几何与数学基线
 
 | 项目 | 当前值与权威入口 |
 |---|---|
-| 自由度 | 本体7轴，末端四指各1轴；整头滚转属于J7 |
+| 自由度 | 本体7轴；最新末端允许1驱动四瓣联动，旧4独立指轴仅为历史几何快照。整头滚转属于J7 |
 | 当前整机 | [抬升肩部总装](raised-arm-integration01.md)，J2及下游在历史参数上整体抬高35mm；[原生Blender](../../engineering/generated/raised-arm-integration01/blender/odradek-integrated-7-plus-4.blend) |
 | 关节原点 mm | J1 `[0,0,105.2]`；J2 `[0,0,205]`；J3 `[0,55,255]`；J4 `[0,0,435]`；J5 `[0,-55,485]`；J6 `[0,0,640]`；J7 `[0,55,675]` |
 | 正面/TCP mm | 头面 `[0,55,839]`；名义TCP `[0,55,949]`。J2到TCP零姿态直线约746mm，是布局尺度，不能当有效可达球半径 |
 | 载荷口径 | 用户已确认2kg净工件另加可拆头自重；与当前研究计算口径一致 |
-| 头部质量 | [HEAD-MASS04](head-mass04-study.md)：可计量模型2.802kg；规划另加185～450g，合计2.987～3.252kg。新增控制/中央屏CAD尚未替代这项预算 |
+| 头部质量 | 历史主模型仍为HEAD-MASS04；[HEAD04归档](head-integrated04.md)已集成中央屏，可计量小计2.830643kg，另列185～450g仅为部分余量；完整头重未知。新单驱头必须重新计算 |
 | 整体数学模型 | [派生模型](../../engineering/generated/raised-arm-integration01/model.json)：21.51048kg子总量，含固定J1与2kg物体、不含固定底座或未知头部余量；不是整机实重 |
 | 几何证据 | 10个指定姿态的实际BREP筛查无新增交叠；对应桌面平面下界通过。局部肩部q2±90连续间隙4mm。不能据此执行任意两姿态之间的轨迹 |
 | 结构成熟度 | [加高肩架受力](shoulder-raise-strength-study.md)识别薄曲环柔度和后环M4铝牙边缘问题；加强候选单独比较，未自动替换整机 |
@@ -40,7 +44,7 @@
 | 双鱼眼 | Stereolabs `ZED-414012` ×2 | [固定光学台架](hardware/optical-bench-build.md)：ZED X One S Fisheye，头中上下各外倾8°是待标定的几何候选 |
 | 外置视觉链 | `ACC-210000` ZED Link Duo ×1；NVIDIA `945-13730-0050-000` AGX Orin 64GB开发套件×1 | 台架配置明确；PoC视频绕过EtherCAT和头部MCU，动态线材未放行 |
 | 外置运动控制 | Beckhoff `C6015-0040`及其配置选项 | [单轴台架](hardware/single-axis-bench-build.md)；这是台架选择，软件许可、完整七轴实时性能与柜体集成待验证 |
-| 指动力电源 | MEAN WELL `LRS-75-12` ×1 | 外置12V/6A候选，4.028A故障情景×1.25=5.035A规划预算；未证明回生吸收能力 |
+| 指动力电源 | 历史LRS-75-12；后续HEAD-POWER01评估LRS-150-12 | [局部稳压及线损](hardware/head-power01.md)仅对应旧P16分支；新驱动母线/回生需重新选择 |
 | 48V动力与辅助电源 | 整机额定、再生/分支保护尚未冻结 | 单轴实验电源与HEAD-CTRL02外置3.3V受控台测源不能直接当整臂电源方案 |
 | 内走线 | 双同轴穿轴、其余线束侧舱的研究路线 | [HARNESS02](hardware/internal-harness02.md)有真实孔/FAKRA/J5缓S弯证据；独立夹持段不足以覆盖当前J5/J6角域，连续自由段和实际端接待闭合 |
 
@@ -56,11 +60,12 @@ RH的B闸从模块自身DC口取电，未增加独立24V抱闸母线；J7 N无�
 
 | 局部候选 | 相对当前总装的变化 | 已关闭与仍开放 |
 |---|---|---|
+| [SHOULDER-RAISE03](shoulder-raise03.md) | 合并PORT01两块让位件和8颗具体长螺钉 | 39实体、原创金属1.227752kg，含0.20kg硬件预算1.427752kg；源/装入/质量一致性通过，未替换历史主整机 |
 | [SHOULDER-RAISE02](shoulder-raise02-study.md) | 后叉加厚并采用8块后置钢螺纹块；J2仍为205mm | 原创金属1.234570kg，比01增0.563117kg；名义装入/局部运动检查已完成。整机质量/Blender尚未换成02，螺栓预紧及真实接触未放行 |
 | [SHOULDER-PROC01](hardware/shoulder-procurement01.md) | 后叉按6061-T651厚板提出采购条件；M4×100精确候选 | 实体坯料包含检查与螺钉名义长度已核对；完整牙、公差、批次材质仍待确认 |
 | [SHOULDER-PORT01](shoulder-port01.md) | 两块钢件内缘34→38mm，保留承压面 | 尾盖开口连续通道遮挡消除；真实插头PN/注册基准及线缆外形尚不完整。该局部修改尚未并入RAISE02或主总装 |
 | [SHOULDER-FEA01](shoulder-fea01.md) | 01/02后叉实体的二次四面体线弹性比较 | 8个网格、24个载荷解；主比较最后两档最大变化0.459%。相同四处支承时02三方向响应降低43.1%/77.8%/53.5%；仅理想边界刚度，不含螺栓接触、疲劳或2kg资格 |
-| [CD-MOUNT01](central-display-mount01.md)与[装拆核查](central-display-review01.md) | 真实杯座、压框、Ø60 PCB、窗口与GH12参考替代旧显示占位 | 名义静态/四指连续避让及指定装拆检查已完成；中央板背面元件、线缆、质量/惯量仍待整头集成 |
+| [CD-MOUNT01](central-display-mount01.md)与[装拆核查](central-display-review01.md) | 真实杯座、压框、Ø60 PCB、窗口与GH12参考替代旧显示占位 | 名义静态/四指连续避让及指定装拆检查已完成；背面元件已在HEAD04历史快照集成；线缆、完整电子质量与新单驱适配仍待完成 |
 | [CD-PCB01](hardware/central-display-pcb01.md) | 中央285点六层布线、背面33件位置及最大本体/规划包络分列 | 原生ERC/DRC/未连/一致性为0；19个背面焊盘关联孔需填孔盖铜，实际叠层/回流/散热尚未制造认可 |
 | [HEAD-PASSIVES01](hardware/head-passives01.md) | 具体R/C/跳线料号、真实封装、温漂与偏压选型 | 242位置合并表有MPN；控制器PCB/板间连接、供电保护、回生和整舱装配尚未完成 |
 

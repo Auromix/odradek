@@ -1,12 +1,18 @@
 # Odradek
 
-**A 7-DOF desktop arm with a detachable 4-DOF luminous gripper, expressing attention through orientation, opening, and light.**
+**A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
 [中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Comparison](docs/concept-comparison.md) · [Nickname candidates](docs/nickname-candidates.md) · [Roadmap](docs/roadmap.md)
 
 Odradek is an independent Auromix robotics project sharing design material for noncommercial research and hobby use inspired by the articulated scanner in *Death Stranding*. The intended application is practical manipulation from a fixed desktop base. Mechanical design, appearance, and behavior develop together.
 
 **Stage: engineering research; the head drive is being redesigned for a confirmed ≤1-second empty closed–open–closed cycle.** Gripping is the primary function and the illuminated petal face is the contact face. The user has confirmed a 2 kg net object plus head mass, approximately 700 mm reach, EtherCAT, GMSL/GMSL2 cameras, internal cabling and external computing. P16 actuators cannot meet the new cycle; their CAD and electrical branch remain historical references. The existing 7+4 assembly does not demonstrate the new speed requirement. See [current requirements](docs/engineering/fast-grasp-requirements01.md). No manufacturing release or tested 2 kg prototype exists.
+
+## R5: single-drive head and separate arm body
+
+![Single central drive and four shaped luminous petals](docs/concepts/11-r5-single-drive-head.png)
+
+One concealed central actuator drives four coupled petals; their luminous faces also grip. The seven-axis body is developed separately with slender proportions and a detachable tool flange. [See both concept sheets and the current design brief](docs/r5-modular-design.md). Generated illustrations guide appearance; linkage, clearance and load capacity require engineering validation.
 
 ## Engineering package
 
@@ -28,7 +34,7 @@ This model combines 24 original link parts, a shoulder raised by 35 mm, the corr
 
 The old [finite-pad contact counterexample](docs/engineering/finite-pad-contact-study.md) remains documented. HEAD-INTEGRATED03 now combines the revised CONTACT-02 pads and retention, narrowed CARRIER02 roots, lamp cavities, board placement and EXT24. Its 17 scoped continuous checks pass nominal geometry conditions; dynamic harnesses, tolerances, deformation and grasp testing remain unresolved. Conditional force calculations are not a measured payload rating.
 
-## R3: keep the silhouette, resolve closure and contact
+## Historical R3: silhouette, closure and contact
 
 The larger upper / smaller lower, left-right mirrored open silhouette is selected. The upper fisheye tilts upward and the lower downward; the amount remains open pending near-grasp visibility checks.
 
@@ -40,11 +46,11 @@ The [geometry study](docs/r3-closure-study.md) includes counterexamples and a co
 
 ![R3 silhouette, camera, and contact study](docs/concepts/10-r3-closure-study.png)
 
-- **Seven arm DOFs and four head DOFs.** J7 rotates the whole head about the normal to its front face. Each luminous finger has one independent opening coordinate.
+- **Seven arm DOFs; a single-drive four-petal head is now the preferred route.** J7 rolls the head about its front normal. One motor with three mechanically coupled followers is permitted; linkage mapping and passive compliance remain to be designed.
 - **Two close petals on each side, with left/right mirror symmetry and different upper/lower proportions.** Longer upper and shorter lower petals avoid 180-degree rotational symmetry. The grouping is inspired by the XPENG logo composition; it does not require mechanically coupled pairs.
 - **The light petals are the fingers.** Forward curling turns the light face inward. The latest requirement makes the illuminated face itself the gripping face; the contact skin and load-bearing support are being redesigned. Earlier proud tip pads are a historical contact study. Empty full closure must reach a mechanical limit with real clearances; it does not imply a sealed pod or four tips meeting at one point.
 - **One circular LED display in the center.** Ring graphics use pixels at its perimeter. The four fingers provide lighting. Two fisheye cameras sit above and below the screen, tilt upward/downward respectively, and rotate with the head.
-- **The detachable boundary is after the J7 output flange.** Four finger actuators and local control are proposed within the head; connection specifications remain open.
+- **The detachable boundary is after the J7 output flange.** One concealed central actuator and local execution interfaces are proposed within the head; connection specifications remain open.
 
 ![Arm integration, detachable interface, and J7 axis](docs/concepts/08-r2-modular-arm.png)
 
@@ -57,10 +63,10 @@ The roll sketches show finite-angle pose intent without defining travel. Open, g
 | Count | Visual character | Role |
 | --- | --- | --- |
 | 3 | Light triangular silhouette; instrument or alien-tool associations | Aesthetic comparison |
-| **4** | Two visually grouped pairs; balance between tool and creature | **Current mechanical direction: one DOF per finger** |
+| **4** | Two visually grouped pairs; balance between tool and creature | **Four shaped petals, single-drive coupling permitted** |
 | 5 | Denser flower or biological silhouette; a hand-like reading needs an offset petal | Aesthetic comparison |
 
-Petal count is not a DOF count. Three- and five-petal variants would require their own motion allocation; the confirmed four independent coordinates apply to the four-petal design.
+Petal count is not a DOF count. Three- and five-petal variants would require their own motion allocation; the latest direction permits a single actuator with coupled motion.
 
 ## Nickname candidates
 
