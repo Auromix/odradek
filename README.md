@@ -16,6 +16,8 @@ One concealed central actuator drives four coupled petals; their luminous faces 
 
 The latest engineering includes [revised layered petal STEP and drawings](docs/engineering/r5-petal-form02.md), a [fold-then-radial path and passive differential study](docs/engineering/r5-stage01.md), a [detachable eRob wrist adapter](docs/engineering/r5-wrist-erob01.md), and a [separate arm mass/reach study](docs/engineering/r5-body01.md). Everyday boxes, bottles and cans of approximately **50–120 mm gripping width** are the first target. Bare-petal geometry now has a continuous separation bound, but the physical mechanism, final closed posture and complete grasp range remain unqualified. The earlier [single-slider Blender rig](docs/engineering/r5-linkage-blender01.md) remains a separate comparison. See the [current baseline](docs/engineering/current-baseline.md) for evidence and remaining work.
 
+The [native radial-candidate Blender model and guide](docs/engineering/r5-stage-blender01.md) contain 28 actual petal CAD meshes, including contact poses for an Ø80 mm cylinder and a 50×120 mm rectangular box. One mean input and three passive review offsets express the differential constraint; the physical transmission, central module and time simulation are not included.
+
 ## Engineering package
 
 ![Existing structural review assembly — historical P16 head](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)

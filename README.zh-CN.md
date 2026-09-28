@@ -16,6 +16,8 @@ Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面
 
 最新产物包括[削肩灯片FORM02的STEP与二维图](docs/engineering/r5-petal-form02.md)、[先折叠后径向夹持及被动差动数学](docs/engineering/r5-stage01.md)、[eRob可拆腕接口](docs/engineering/r5-wrist-erob01.md)及[本体质量/臂展独立分析](docs/engineering/r5-body01.md)。首版目标是**盒体、瓶罐等日常物体，夹持宽约50–120mm**。新裸灯片已有连续间隙与有限接触证据；真实传动、最终全闭姿态及完整抓取范围仍待验证。较早[单滑块Blender](docs/engineering/r5-linkage-blender01.md)保留为独立比较，不能与新径向机构混为已完成总装。
 
+[径向候选的原生 Blender 与使用说明](docs/engineering/r5-stage-blender01.md)现已包含28个真实灯片CAD网格，可查看Ø80圆柱和50×120mm长方盒的接触状态。一个平均输入与三个被动评审偏移表达差动约束；模型尚无真实传动、中央模块或时间仿真。
+
 ## 当前工程包
 
 ![既有结构检查总装，头部为历史P16分支](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)

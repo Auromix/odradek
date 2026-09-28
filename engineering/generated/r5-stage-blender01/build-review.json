@@ -1,0 +1,447 @@
+{
+  "revision": "R5-STAGE-BLENDER01",
+  "source_hashes": {
+    "engineering/r5_stage_blender01.py": "0b448523c5b26b93ed82061a9d4a574a425dbcfd931291e6c5b996636bb73557",
+    "engineering/generated/r5-stage01/study.json": "a3764e43a7cf973f2d83169cc960aed0158d6cf1c6ff54056fb7b161c47a790f",
+    "engineering/generated/r5-petal-form02/study.json": "6198b33a7e2e44d206f98062d2e2d099d94d4f6d3f4945ee5e0d3eae832164f4",
+    "engineering/generated/r5-petal-form02/parameters.json": "44826c2ef54e9a72a274b3f1aafa521c580ad442cf79032e85e7a803b6907f00",
+    "engineering/generated/r5-petal-form02/upper-right/LED_front_reservation.step": "78c0f6094c62fcbd82bc7e963593f0fdf9b250db5e7815e6cbbcdf6e7f532619",
+    "engineering/generated/r5-petal-form02/upper-right/PCB_blank_reservation.step": "a9f57311be1ebfc7359bb0de1ae0a3cdac76d9bd606faedcdd45edc4e6e9aa5c",
+    "engineering/generated/r5-petal-form02/upper-right/back_electronics_reservation.step": "99b12b51de41fe8c621cc9b70e17d8e340d691a7b7ebd9f2fa2f4b795ecb238e",
+    "engineering/generated/r5-petal-form02/upper-right/bearing_cover.step": "646c25b139cf6311d8f6916e32aec7a73a5f32555960c88d0c11cd9b9d18b716",
+    "engineering/generated/r5-petal-form02/upper-right/compliant_skin.step": "0191d4d83c357a971d8b88a44eeb825fb7358979016892c3a730614072b85e5c",
+    "engineering/generated/r5-petal-form02/upper-right/frame.step": "4fd5f6ee1f0a665241ff1bf17cbbc878e60ea6979f300983a91118f4eccaf33d",
+    "engineering/generated/r5-petal-form02/upper-right/retainer.step": "8a43a3ac8a46e91f6a0d5345c11b705fab42356eeb3bd3892d40c81e0dfc1ebf",
+    "engineering/generated/r5-petal-form02/upper-left/LED_front_reservation.step": "4ed20f698b2f9226223a2d3a533849e3921f7bfd6d1902e40822dea7cf236e84",
+    "engineering/generated/r5-petal-form02/upper-left/PCB_blank_reservation.step": "d40004ad14f4e31dce9ae28613f5e84da1b9fe26d5d0b8f46df9db735d79061f",
+    "engineering/generated/r5-petal-form02/upper-left/back_electronics_reservation.step": "9faf7cfb3f92a959126e4110e2e17d78146cd7f65050252098875d784fe66435",
+    "engineering/generated/r5-petal-form02/upper-left/bearing_cover.step": "6da203b5d760ce0946ebad79cb4f60696e1dc3693dd84358df2f18836b41e2b4",
+    "engineering/generated/r5-petal-form02/upper-left/compliant_skin.step": "7358467eb4c9da7a59d43d72a98ba45d7c230a43d9d19441a84fe99faa0e06b2",
+    "engineering/generated/r5-petal-form02/upper-left/frame.step": "4ee079eb0cd5f7f6f7a3d8454d5d2fe2ccfc3868ee107fc9c58c200c7fd64b4d",
+    "engineering/generated/r5-petal-form02/upper-left/retainer.step": "1fcdb2d2aa33835de3d8f75c90bfc1a3232b6b5035439384a67d88bb5b69e6b1",
+    "engineering/generated/r5-petal-form02/lower-left/LED_front_reservation.step": "0bb3ba6f47a0d8172e5a340e3744e85a4a0eb626ee110e0554f5302164dc21ed",
+    "engineering/generated/r5-petal-form02/lower-left/PCB_blank_reservation.step": "8e0598952546a1ef3683f90aa320bd6bf6a4931fb4821a42a32a9f2ced5095e2",
+    "engineering/generated/r5-petal-form02/lower-left/back_electronics_reservation.step": "d7cd41c20103464218b3dfcc6d22807858fade1761cce0c15b008ce70e51708d",
+    "engineering/generated/r5-petal-form02/lower-left/bearing_cover.step": "aaea1bf345b9fdcf20a0017092489411aebad002143757fc62161460d0f602a1",
+    "engineering/generated/r5-petal-form02/lower-left/compliant_skin.step": "69e56e61bb77fca52c08b765c7f85c0d74d3695baa990ecd6c7179f94e0f96af",
+    "engineering/generated/r5-petal-form02/lower-left/frame.step": "e29d0d6e7e73f76caf661849f8b64c9b8532d548b7a3d80164ad38290753d1b2",
+    "engineering/generated/r5-petal-form02/lower-left/retainer.step": "d57db8a4d6e2967e5be9d7fd55f821022ee40eed457ce960afd59753b11c9467",
+    "engineering/generated/r5-petal-form02/lower-right/LED_front_reservation.step": "498f5a835dfbe2d0f9ba5540d11e492bd34542560cf44da45e978017a5e36a6e",
+    "engineering/generated/r5-petal-form02/lower-right/PCB_blank_reservation.step": "e8e2ede91285a26cfcd87208e9195f362caf0da4a5d6c8b463e59687e450c502",
+    "engineering/generated/r5-petal-form02/lower-right/back_electronics_reservation.step": "dd4c2c39745a3379a790c08317b63655546f0f13c87a0acb2b2b901944af8798",
+    "engineering/generated/r5-petal-form02/lower-right/bearing_cover.step": "000e45f0d1e3033c714ac0e79c947c4647a8ea99b9adeb688b08b1e117683513",
+    "engineering/generated/r5-petal-form02/lower-right/compliant_skin.step": "69a6e53463fd4c3f6af7666fb6a795107ec9f7c9d8a812df586faf4e89029a1c",
+    "engineering/generated/r5-petal-form02/lower-right/frame.step": "3cbdab9fef1b82ea3800c019ac1194c99e1c6a7a9fee30a382e2f33d312b2698",
+    "engineering/generated/r5-petal-form02/lower-right/retainer.step": "3aa369645d058b854fdbbbd6240fa2085084f34990a138ef56f0c539ed49239e"
+  },
+  "generator_sha256": "0b448523c5b26b93ed82061a9d4a574a425dbcfd931291e6c5b996636bb73557",
+  "CAD_meshes": 28,
+  "independent_CAD_bound_checks": 140,
+  "max_CAD_bound_error_mm": 0.004223250850184712,
+  "max_q_error_rad": 4.371139006309477e-08,
+  "max_mean_constraint_error_mm": 2.304543016862226e-06,
+  "object_BREP_checks": [
+    {
+      "pose": "cylinder80",
+      "part": "UR_LED_front_reservation",
+      "distance_mm": 4.299999999999999,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UR_LED_front_reservation",
+      "distance_mm": 4.3000000000000025,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UR_PCB_blank_reservation",
+      "distance_mm": 5.1999999999999975,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UR_PCB_blank_reservation",
+      "distance_mm": 5.200000000000005,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UR_back_electronics_reservation",
+      "distance_mm": 6.100000000000005,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UR_back_electronics_reservation",
+      "distance_mm": 6.100000000000002,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UR_bearing_cover",
+      "distance_mm": 1.4999999999999996,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UR_bearing_cover",
+      "distance_mm": 1.5000000000000033,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UR_compliant_skin",
+      "distance_mm": 0.0,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UR_compliant_skin",
+      "distance_mm": 1.7763568394002505e-15,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UR_frame",
+      "distance_mm": 4.502696547512709,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UR_frame",
+      "distance_mm": 2.5000000000000027,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UR_retainer",
+      "distance_mm": 2.226206317878001,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UR_retainer",
+      "distance_mm": 0.499999999999999,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UL_LED_front_reservation",
+      "distance_mm": 4.299999999999997,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UL_LED_front_reservation",
+      "distance_mm": 4.299999999999996,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UL_PCB_blank_reservation",
+      "distance_mm": 5.2,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UL_PCB_blank_reservation",
+      "distance_mm": 5.1999999999999895,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UL_back_electronics_reservation",
+      "distance_mm": 6.099999999999999,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UL_back_electronics_reservation",
+      "distance_mm": 6.099999999999993,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UL_bearing_cover",
+      "distance_mm": 1.4999999999999996,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UL_bearing_cover",
+      "distance_mm": 1.4999999999999971,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UL_compliant_skin",
+      "distance_mm": 3.552713678800501e-15,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UL_compliant_skin",
+      "distance_mm": 0.0,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UL_frame",
+      "distance_mm": 4.502696547512711,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UL_frame",
+      "distance_mm": 2.4999999999999973,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "UL_retainer",
+      "distance_mm": 2.2262063178779967,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "UL_retainer",
+      "distance_mm": 0.49999999999999395,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LL_LED_front_reservation",
+      "distance_mm": 4.300000000000002,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LL_LED_front_reservation",
+      "distance_mm": 4.300000000000002,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LL_PCB_blank_reservation",
+      "distance_mm": 5.2,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LL_PCB_blank_reservation",
+      "distance_mm": 5.200000000000001,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LL_back_electronics_reservation",
+      "distance_mm": 6.1000000000000005,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LL_back_electronics_reservation",
+      "distance_mm": 6.099999999999998,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LL_bearing_cover",
+      "distance_mm": 1.4999999999999971,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LL_bearing_cover",
+      "distance_mm": 1.4999999999999976,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LL_compliant_skin",
+      "distance_mm": 0.0,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LL_compliant_skin",
+      "distance_mm": 0.0,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LL_frame",
+      "distance_mm": 2.5000000000000027,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LL_frame",
+      "distance_mm": 2.499999999999999,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LL_retainer",
+      "distance_mm": 0.500000000000004,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LL_retainer",
+      "distance_mm": 0.4999999999999977,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LR_LED_front_reservation",
+      "distance_mm": 4.299999999999999,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LR_LED_front_reservation",
+      "distance_mm": 4.2999999999999865,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LR_PCB_blank_reservation",
+      "distance_mm": 5.2,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LR_PCB_blank_reservation",
+      "distance_mm": 5.1999999999999895,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LR_back_electronics_reservation",
+      "distance_mm": 6.099999999999993,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LR_back_electronics_reservation",
+      "distance_mm": 6.099999999999993,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LR_bearing_cover",
+      "distance_mm": 1.4999999999999971,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LR_bearing_cover",
+      "distance_mm": 1.499999999999992,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LR_compliant_skin",
+      "distance_mm": 3.552713678800501e-15,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LR_compliant_skin",
+      "distance_mm": 0.0,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LR_frame",
+      "distance_mm": 2.5000000000000027,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LR_frame",
+      "distance_mm": 2.4999999999999902,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "cylinder80",
+      "part": "LR_retainer",
+      "distance_mm": 0.499999999999999,
+      "intersection_mm3": 0
+    },
+    {
+      "pose": "rectangle50x120",
+      "part": "LR_retainer",
+      "distance_mm": 0.49999999999999395,
+      "intersection_mm3": 0
+    }
+  ],
+  "drivers": [
+    {
+      "object": "HINGE_LL",
+      "path": "rotation_euler",
+      "expression": "-1.5707963267948966*(10*pow(min(1,max(0,(91-(m+c))/25)),3)-15*pow(min(1,max(0,(91-(m+c))/25)),4)+6*pow(min(1,max(0,(91-(m+c))/25)),5))"
+    },
+    {
+      "object": "HINGE_LR",
+      "path": "rotation_euler",
+      "expression": "-1.5707963267948966*(10*pow(min(1,max(0,(91-(m-a-b-c))/25)),3)-15*pow(min(1,max(0,(91-(m-a-b-c))/25)),4)+6*pow(min(1,max(0,(91-(m-a-b-c))/25)),5))"
+    },
+    {
+      "object": "HINGE_UL",
+      "path": "rotation_euler",
+      "expression": "-1.5707963267948966*(10*pow(min(1,max(0,(91-(m+b))/25)),3)-15*pow(min(1,max(0,(91-(m+b))/25)),4)+6*pow(min(1,max(0,(91-(m+b))/25)),5))"
+    },
+    {
+      "object": "HINGE_UR",
+      "path": "rotation_euler",
+      "expression": "-1.5707963267948966*(10*pow(min(1,max(0,(91-(m+a))/25)),3)-15*pow(min(1,max(0,(91-(m+a))/25)),4)+6*pow(min(1,max(0,(91-(m+a))/25)),5))"
+    },
+    {
+      "object": "RADIAL_LL",
+      "path": "location",
+      "expression": "(m+c)*-0.00070710678118654773"
+    },
+    {
+      "object": "RADIAL_LL",
+      "path": "location",
+      "expression": "(m+c)*-0.00070710678118654751"
+    },
+    {
+      "object": "RADIAL_LR",
+      "path": "location",
+      "expression": "(m-a-b-c)*0.0007071067811865474"
+    },
+    {
+      "object": "RADIAL_LR",
+      "path": "location",
+      "expression": "(m-a-b-c)*-0.00070710678118654773"
+    },
+    {
+      "object": "RADIAL_UL",
+      "path": "location",
+      "expression": "(m+b)*-0.00070710678118654751"
+    },
+    {
+      "object": "RADIAL_UL",
+      "path": "location",
+      "expression": "(m+b)*0.00070710678118654762"
+    },
+    {
+      "object": "RADIAL_UR",
+      "path": "location",
+      "expression": "(m+a)*0.00070710678118654762"
+    },
+    {
+      "object": "RADIAL_UR",
+      "path": "location",
+      "expression": "(m+a)*0.00070710678118654751"
+    }
+  ],
+  "commanded_coordinates": 1,
+  "passive_review_parameters": 3,
+  "physical_differential_simulated": false,
+  "manufacturing_release": false
+}

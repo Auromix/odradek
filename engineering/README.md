@@ -6,6 +6,10 @@
 
 代码不连接硬件、不发送运动指令。数值 IK 不包含碰撞或线束约束，质量和惯量假设必须在使用结果前核对。摩擦抓持下界不能作为力闭合证明。
 
+## R5当前模块入口
+
+[FORM02真实灯片](../docs/engineering/r5-petal-form02.md) → [STAGE01折叠/径向数学](../docs/engineering/r5-stage01.md) → [STAGE-BLENDER01原生模型](../docs/engineering/r5-stage-blender01.md)构成当前裸片研究链。Blender生成器为 `r5_stage_blender01.py`，先由CadQuery准备网格，再由Blender生成并以禁用自动脚本的进程重开核对。具体命令、输入及检查边界见模型说明。新的[eRob腕部接口](../docs/engineering/r5-wrist-erob01.md)单独保存，不与旧RH/P16整臂混成制造总装。
+
 ## 环境与单位
 
 本版实际使用 Python 3.12.14、CadQuery 2.8.0 / OCP 7.9.3.1.1、Blender 4.5.14 LTS；其余 Python 版本见 [requirements-lock.txt](requirements-lock.txt)。记录的是本次环境快照，不保证所有平台均有对应二进制包。
