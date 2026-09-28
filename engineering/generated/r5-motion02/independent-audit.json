@@ -1,0 +1,108 @@
+[
+  {
+    "check": "independent rod closure and five-point spatial derivatives",
+    "kind": "upper",
+    "step_m": 1e-06,
+    "positions": 129,
+    "maximum_q_error_rad": 1.7763568394002505e-15,
+    "maximum_qprime_error_rad_m": 7.846949756640242e-10,
+    "maximum_qdoubleprime_error_rad_m2": 0.006590981937733886
+  },
+  {
+    "check": "independent rod closure and five-point spatial derivatives",
+    "kind": "lower",
+    "step_m": 1e-06,
+    "positions": 129,
+    "maximum_q_error_rad": 1.6826817716975029e-15,
+    "maximum_qprime_error_rad_m": 1.6698962213013147e-09,
+    "maximum_qdoubleprime_error_rad_m2": 0.006843135540350431
+  },
+  {
+    "check": "independent finite-difference Lagrange force",
+    "trajectory": "quintic",
+    "gravity_head": "zero",
+    "points": 81,
+    "maximum_force_error_N": 5.164275309610389e-07
+  },
+  {
+    "check": "independent finite-difference Lagrange force",
+    "trajectory": "quintic",
+    "gravity_head": "minus_Z",
+    "points": 81,
+    "maximum_force_error_N": 5.164324710094093e-07
+  },
+  {
+    "check": "independent finite-difference Lagrange force",
+    "trajectory": "quintic",
+    "gravity_head": "minus_X",
+    "points": 81,
+    "maximum_force_error_N": 5.164302769311568e-07
+  },
+  {
+    "check": "independent finite-difference Lagrange force",
+    "trajectory": "quintic",
+    "gravity_head": "minus_Y",
+    "points": 81,
+    "maximum_force_error_N": 5.164293817028209e-07
+  },
+  {
+    "check": "five-point time derivatives away from joins",
+    "trajectory": "quintic",
+    "kind": "upper",
+    "step_s": 2.5e-05,
+    "maximum_qdot_error_rad_s": 6.534069380394539e-10,
+    "maximum_qddot_error_rad_s2": 7.075005166257142e-05
+  },
+  {
+    "check": "five-point time derivatives away from joins",
+    "trajectory": "quintic",
+    "kind": "lower",
+    "step_s": 2.5e-05,
+    "maximum_qdot_error_rad_s": 3.7506319271597525e-10,
+    "maximum_qddot_error_rad_s2": 4.021433927192675e-05
+  },
+  {
+    "check": "independent finite-difference Lagrange force",
+    "trajectory": "seven_segment",
+    "gravity_head": "zero",
+    "points": 81,
+    "maximum_force_error_N": 4.057946400015666e-07
+  },
+  {
+    "check": "independent finite-difference Lagrange force",
+    "trajectory": "seven_segment",
+    "gravity_head": "minus_Z",
+    "points": 81,
+    "maximum_force_error_N": 4.05789034374493e-07
+  },
+  {
+    "check": "independent finite-difference Lagrange force",
+    "trajectory": "seven_segment",
+    "gravity_head": "minus_X",
+    "points": 81,
+    "maximum_force_error_N": 4.0580201265960625e-07
+  },
+  {
+    "check": "independent finite-difference Lagrange force",
+    "trajectory": "seven_segment",
+    "gravity_head": "minus_Y",
+    "points": 81,
+    "maximum_force_error_N": 4.0578721993700384e-07
+  },
+  {
+    "check": "five-point time derivatives away from joins",
+    "trajectory": "seven_segment",
+    "kind": "upper",
+    "step_s": 2.5e-05,
+    "maximum_qdot_error_rad_s": 1.5012112386525445e-10,
+    "maximum_qddot_error_rad_s2": 2.155093764244498e-05
+  },
+  {
+    "check": "five-point time derivatives away from joins",
+    "trajectory": "seven_segment",
+    "kind": "lower",
+    "step_s": 2.5e-05,
+    "maximum_qdot_error_rad_s": 9.043852125523166e-11,
+    "maximum_qddot_error_rad_s2": 1.2453086760899623e-05
+  }
+]

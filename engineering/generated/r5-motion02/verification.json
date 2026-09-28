@@ -1,0 +1,388 @@
+{
+  "revision": "R5-MOTION02",
+  "documentation_sha256": "6225ebf97eef07341532c224833ff0af7810893e65349a760c43eeb84c17a859",
+  "passed": true,
+  "checks": [
+    {
+      "name": "seven segment exact displacement/time/endpoint velocity/acceleration",
+      "pass_": true,
+      "details": [
+        0.04000000000000001,
+        -1.0408340855860843e-17,
+        0.0
+      ]
+    },
+    {
+      "name": "derived jerk and maxima agree with proposed numbers",
+      "pass_": true,
+      "details": {
+        "jerk": 17.777777777777775,
+        "vmax": 0.13333333333333333,
+        "amax": 0.8888888888888888
+      }
+    },
+    {
+      "name": "quintic correct full-cycle endpoints",
+      "pass_": true,
+      "details": "closed -> open -> closed; zero velocity and acceleration at all three"
+    },
+    {
+      "name": "quintic numerical integration",
+      "pass_": true,
+      "details": {
+        "velocity_error_m_s": 1.5000009845334006e-09,
+        "position_error_m": 4.811266662851921e-11
+      }
+    },
+    {
+      "name": "seven_segment correct full-cycle endpoints",
+      "pass_": true,
+      "details": "closed -> open -> closed; zero velocity and acceleration at all three"
+    },
+    {
+      "name": "seven_segment numerical integration",
+      "pass_": true,
+      "details": {
+        "velocity_error_m_s": 9.742207041085749e-15,
+        "position_error_m": 4.630179573084092e-11
+      }
+    },
+    {
+      "name": "independent rod closure and five-point spatial derivatives  upper",
+      "pass_": true,
+      "details": {
+        "check": "independent rod closure and five-point spatial derivatives",
+        "kind": "upper",
+        "step_m": 1e-06,
+        "positions": 129,
+        "maximum_q_error_rad": 1.7763568394002505e-15,
+        "maximum_qprime_error_rad_m": 7.846949756640242e-10,
+        "maximum_qdoubleprime_error_rad_m2": 0.006590981937733886
+      }
+    },
+    {
+      "name": "independent rod closure and five-point spatial derivatives  lower",
+      "pass_": true,
+      "details": {
+        "check": "independent rod closure and five-point spatial derivatives",
+        "kind": "lower",
+        "step_m": 1e-06,
+        "positions": 129,
+        "maximum_q_error_rad": 1.6826817716975029e-15,
+        "maximum_qprime_error_rad_m": 1.6698962213013147e-09,
+        "maximum_qdoubleprime_error_rad_m2": 0.006843135540350431
+      }
+    },
+    {
+      "name": "independent finite-difference Lagrange force quintic zero",
+      "pass_": true,
+      "details": {
+        "check": "independent finite-difference Lagrange force",
+        "trajectory": "quintic",
+        "gravity_head": "zero",
+        "points": 81,
+        "maximum_force_error_N": 5.164275309610389e-07
+      }
+    },
+    {
+      "name": "independent finite-difference Lagrange force quintic minus_Z",
+      "pass_": true,
+      "details": {
+        "check": "independent finite-difference Lagrange force",
+        "trajectory": "quintic",
+        "gravity_head": "minus_Z",
+        "points": 81,
+        "maximum_force_error_N": 5.164324710094093e-07
+      }
+    },
+    {
+      "name": "independent finite-difference Lagrange force quintic minus_X",
+      "pass_": true,
+      "details": {
+        "check": "independent finite-difference Lagrange force",
+        "trajectory": "quintic",
+        "gravity_head": "minus_X",
+        "points": 81,
+        "maximum_force_error_N": 5.164302769311568e-07
+      }
+    },
+    {
+      "name": "independent finite-difference Lagrange force quintic minus_Y",
+      "pass_": true,
+      "details": {
+        "check": "independent finite-difference Lagrange force",
+        "trajectory": "quintic",
+        "gravity_head": "minus_Y",
+        "points": 81,
+        "maximum_force_error_N": 5.164293817028209e-07
+      }
+    },
+    {
+      "name": "five-point time derivatives away from joins quintic upper",
+      "pass_": true,
+      "details": {
+        "check": "five-point time derivatives away from joins",
+        "trajectory": "quintic",
+        "kind": "upper",
+        "step_s": 2.5e-05,
+        "maximum_qdot_error_rad_s": 6.534069380394539e-10,
+        "maximum_qddot_error_rad_s2": 7.075005166257142e-05
+      }
+    },
+    {
+      "name": "five-point time derivatives away from joins quintic lower",
+      "pass_": true,
+      "details": {
+        "check": "five-point time derivatives away from joins",
+        "trajectory": "quintic",
+        "kind": "lower",
+        "step_s": 2.5e-05,
+        "maximum_qdot_error_rad_s": 3.7506319271597525e-10,
+        "maximum_qddot_error_rad_s2": 4.021433927192675e-05
+      }
+    },
+    {
+      "name": "independent finite-difference Lagrange force seven_segment zero",
+      "pass_": true,
+      "details": {
+        "check": "independent finite-difference Lagrange force",
+        "trajectory": "seven_segment",
+        "gravity_head": "zero",
+        "points": 81,
+        "maximum_force_error_N": 4.057946400015666e-07
+      }
+    },
+    {
+      "name": "independent finite-difference Lagrange force seven_segment minus_Z",
+      "pass_": true,
+      "details": {
+        "check": "independent finite-difference Lagrange force",
+        "trajectory": "seven_segment",
+        "gravity_head": "minus_Z",
+        "points": 81,
+        "maximum_force_error_N": 4.05789034374493e-07
+      }
+    },
+    {
+      "name": "independent finite-difference Lagrange force seven_segment minus_X",
+      "pass_": true,
+      "details": {
+        "check": "independent finite-difference Lagrange force",
+        "trajectory": "seven_segment",
+        "gravity_head": "minus_X",
+        "points": 81,
+        "maximum_force_error_N": 4.0580201265960625e-07
+      }
+    },
+    {
+      "name": "independent finite-difference Lagrange force seven_segment minus_Y",
+      "pass_": true,
+      "details": {
+        "check": "independent finite-difference Lagrange force",
+        "trajectory": "seven_segment",
+        "gravity_head": "minus_Y",
+        "points": 81,
+        "maximum_force_error_N": 4.0578721993700384e-07
+      }
+    },
+    {
+      "name": "five-point time derivatives away from joins seven_segment upper",
+      "pass_": true,
+      "details": {
+        "check": "five-point time derivatives away from joins",
+        "trajectory": "seven_segment",
+        "kind": "upper",
+        "step_s": 2.5e-05,
+        "maximum_qdot_error_rad_s": 1.5012112386525445e-10,
+        "maximum_qddot_error_rad_s2": 2.155093764244498e-05
+      }
+    },
+    {
+      "name": "five-point time derivatives away from joins seven_segment lower",
+      "pass_": true,
+      "details": {
+        "check": "five-point time derivatives away from joins",
+        "trajectory": "seven_segment",
+        "kind": "lower",
+        "step_s": 2.5e-05,
+        "maximum_qdot_error_rad_s": 9.043852125523166e-11,
+        "maximum_qddot_error_rad_s2": 1.2453086760899623e-05
+      }
+    },
+    {
+      "name": "grid convergence quintic zero",
+      "pass_": true,
+      "details": {
+        "trajectory": "quintic",
+        "gravity_head": "zero",
+        "samples": 40001,
+        "finer_samples": 80001,
+        "peak_torque_change_Nm": 5.3912126499189306e-11,
+        "RMS_torque_change_Nm": 1.734723475976807e-18,
+        "braking_energy_change_J": 1.5314016721390544e-10,
+        "maximum_cumulative_energy_error_J": 2.3046255459568954e-09
+      }
+    },
+    {
+      "name": "grid convergence quintic minus_Z",
+      "pass_": true,
+      "details": {
+        "trajectory": "quintic",
+        "gravity_head": "minus_Z",
+        "samples": 40001,
+        "finer_samples": 80001,
+        "peak_torque_change_Nm": 0.0,
+        "RMS_torque_change_Nm": 2.7216810402630465e-11,
+        "braking_energy_change_J": 6.576468258856494e-10,
+        "maximum_cumulative_energy_error_J": 2.519482900087411e-09
+      }
+    },
+    {
+      "name": "grid convergence quintic minus_X",
+      "pass_": true,
+      "details": {
+        "trajectory": "quintic",
+        "gravity_head": "minus_X",
+        "samples": 40001,
+        "finer_samples": 80001,
+        "peak_torque_change_Nm": 5.3912126499189306e-11,
+        "RMS_torque_change_Nm": 1.734723475976807e-18,
+        "braking_energy_change_J": 1.5314016721390544e-10,
+        "maximum_cumulative_energy_error_J": 2.3046255459568954e-09
+      }
+    },
+    {
+      "name": "grid convergence quintic minus_Y",
+      "pass_": true,
+      "details": {
+        "trajectory": "quintic",
+        "gravity_head": "minus_Y",
+        "samples": 40001,
+        "finer_samples": 80001,
+        "peak_torque_change_Nm": 1.5532853649136147e-10,
+        "RMS_torque_change_Nm": 1.4072944198861848e-13,
+        "braking_energy_change_J": 3.1738260908298344e-09,
+        "maximum_cumulative_energy_error_J": 2.3042700525444104e-09
+      }
+    },
+    {
+      "name": "grid convergence seven_segment zero",
+      "pass_": true,
+      "details": {
+        "trajectory": "seven_segment",
+        "gravity_head": "zero",
+        "samples": 40001,
+        "finer_samples": 80001,
+        "peak_torque_change_Nm": 0.0,
+        "RMS_torque_change_Nm": 1.236450178354609e-10,
+        "braking_energy_change_J": 1.825203388428065e-08,
+        "maximum_cumulative_energy_error_J": 2.154168714935123e-09
+      }
+    },
+    {
+      "name": "grid convergence seven_segment minus_Z",
+      "pass_": true,
+      "details": {
+        "trajectory": "seven_segment",
+        "gravity_head": "minus_Z",
+        "samples": 40001,
+        "finer_samples": 80001,
+        "peak_torque_change_Nm": 0.0,
+        "RMS_torque_change_Nm": 9.164979539177942e-11,
+        "braking_energy_change_J": 1.2434511864611864e-08,
+        "maximum_cumulative_energy_error_J": 2.629236925399958e-09
+      }
+    },
+    {
+      "name": "grid convergence seven_segment minus_X",
+      "pass_": true,
+      "details": {
+        "trajectory": "seven_segment",
+        "gravity_head": "minus_X",
+        "samples": 40001,
+        "finer_samples": 80001,
+        "peak_torque_change_Nm": 0.0,
+        "RMS_torque_change_Nm": 1.236450178354609e-10,
+        "braking_energy_change_J": 1.825203388428065e-08,
+        "maximum_cumulative_energy_error_J": 2.1541687166698464e-09
+      }
+    },
+    {
+      "name": "grid convergence seven_segment minus_Y",
+      "pass_": true,
+      "details": {
+        "trajectory": "seven_segment",
+        "gravity_head": "minus_Y",
+        "samples": 40001,
+        "finer_samples": 80001,
+        "peak_torque_change_Nm": 0.0,
+        "RMS_torque_change_Nm": 1.2367046102468304e-10,
+        "braking_energy_change_J": 1.1503075825203268e-08,
+        "maximum_cumulative_energy_error_J": 2.1738241571395145e-09
+      }
+    },
+    {
+      "name": "energy balance quintic zero",
+      "pass_": true,
+      "details": -1.1102230246251565e-16
+    },
+    {
+      "name": "energy balance quintic minus_Z",
+      "pass_": true,
+      "details": -5.551115123125783e-17
+    },
+    {
+      "name": "energy balance quintic minus_X",
+      "pass_": true,
+      "details": -5.551115123125783e-17
+    },
+    {
+      "name": "energy balance quintic minus_Y",
+      "pass_": true,
+      "details": 0.0
+    },
+    {
+      "name": "energy balance seven_segment zero",
+      "pass_": true,
+      "details": 2.220446049250313e-16
+    },
+    {
+      "name": "energy balance seven_segment minus_Z",
+      "pass_": true,
+      "details": 1.1102230246251565e-16
+    },
+    {
+      "name": "energy balance seven_segment minus_X",
+      "pass_": true,
+      "details": 2.220446049250313e-16
+    },
+    {
+      "name": "energy balance seven_segment minus_Y",
+      "pass_": true,
+      "details": 2.6107588313450947e-16
+    }
+  ],
+  "numerical_grid_points": 40001,
+  "convergence_grid_points": 80001,
+  "extrema": "sampled with grid convergence; no continuous-interval extrema certificate",
+  "artifact_sha256": {
+    "boundary-states.csv": "c83aa902e0becbecf3aa79f78c314ebf41f4db2b15523571dbfab0a10389eb18",
+    "comparison.csv": "c1319eb2b255f5e5853e51389f85667e11d2fb5e259b7251bd2a6132ac9657e1",
+    "convergence.csv": "047cee57a5cd2412fc7dde69cc6e9b2637911fec88dfd3f88ec321985b8a92d9",
+    "current-convention-sensitivity.csv": "09a00d7a6fac93c2d0f24edf687041a85388692d688f4e0648a77a2c9ac0c980",
+    "dynamics-comparison.png": "a496987fc7afcf2a027fa261a9e4426778e3827ba0e6268e188dfd52880ad3aa",
+    "dynamics-comparison.svg": "b2ab6b9e414772b9d545519f2a862680ddbad30b916e7f7df92557617fb71225",
+    "finger-comparison.png": "483d110bbb1e50cd44bb8115c4b2389baec4a5be8829274b2e2389ed8d67ab6f",
+    "finger-comparison.svg": "f3c4bd35ef725eae01ee2f58fcaed68dd3d1b1af03fefc1a839a7ac076bd8887",
+    "finger-motion.csv": "b9319a6290994ab9445712a6657ed269d59bf29caa116de950a9ac787ac46dfd",
+    "independent-audit.json": "fc23f9e08b61a250c840fb8bcb54120697b84a0bcde83974b00d74ba763bb063",
+    "missing-hardware-sensitivity.csv": "76b0ee187a3d2421459c72de9f82165be10c9e953a9d49aa59f3a60d0565a0a5",
+    "positive-leg-segments.csv": "4bab17a4fce7df8fa0f89184c76fb867eb482c343a155cae7a369005f0e1aa7b",
+    "quintic-cycle.csv": "13be207adf902f8e36c0e03541cd62b3da11d7b722f056c96867520a03cd5e6f",
+    "regeneration-sensitivity.csv": "bd23e04cb873b118fbf15c7f17995ef9ec1d51a802dce4cd0d5e28c9edbe8ea9",
+    "seven_segment-cycle.csv": "ef86b30055cc0242b955ac53fe7c8d0bd2d43b33e7adcc5f91ec416858e631c3",
+    "study.json": "85a4f8ee2e660cd2257500920aff80c57b69ac14d8dd38726917df0246297ef1",
+    "trajectory-comparison.png": "b8f33fa5acaccb3d34812b52c4c6f3373c577a2d1d2ab92b5dd20431a80be606",
+    "trajectory-comparison.svg": "6b9701a3825e3e5825ad76933f1001b31d8c39cc6e59c7705b5cae53f7d5edd8"
+  }
+}
