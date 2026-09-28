@@ -1,0 +1,164 @@
+{
+  "revision": "SHOULDER-PORT01",
+  "date": "2026-09-27",
+  "license": "CC-BY-NC-4.0",
+  "attribution": "Odradek — Auromix contributors (https://github.com/Auromix/odradek)",
+  "sources": [
+    {
+      "id": "RH25_B_STEP",
+      "local_work_path": "work/r4-joints/cad25/RH-25-100-E-B-D/RH-25-100-E-B-D 3D-A0.STEP",
+      "sha256": "d844bc7dfe5c398b0447ea0d93eef77b7cb1bdaa0dbabd603031482c1909f07e",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_bc732701dadf4512a0d917ecaab12747.zip",
+      "pdf_pages_one_based": null,
+      "note": "Exact B-D model, actual apertures in rear cover; 42 solids. No registered connector models identified.",
+      "published_in_repo": false
+    },
+    {
+      "id": "RH25_B_2D",
+      "local_work_path": "work/r4-joints/cad25/RH-25-100-E-B-D/RH-25-100-E-B-D 2D-A0.PDF",
+      "sha256": "2ca7fc165dfae32adf45bbb4b6c9b4ab90d803aa5a9eaa251b00084149a324c4",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_bc732701dadf4512a0d917ecaab12747.zip",
+      "pdf_pages_one_based": [
+        1
+      ],
+      "note": "Exact B-D drawing; rear port shapes shown but no mating datum or PN.",
+      "published_in_repo": false
+    },
+    {
+      "id": "RH25_PRODUCT_260805",
+      "local_work_path": "work/r4-joints/cad25/RH-25 product manual  260805.pdf",
+      "sha256": "536975fd838cfb16bfd9b36cb382c3d3fc4dfbcc950f81e1869cd495fc1a5bac",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_bc732701dadf4512a0d917ecaab12747.zip",
+      "pdf_pages_one_based": [
+        2
+      ],
+      "note": "Accessory family names; illustrated rear cover is marked RH-25-100-N and is not B-D geometric registration.",
+      "published_in_repo": false
+    },
+    {
+      "id": "RH_USER_V14",
+      "local_work_path": "work/r4-joints/rh/User Manual for RH Series Products V1.4.pdf",
+      "sha256": "2aab4a0557c43860d55c62bcbd535f3565796607379e5373a4c96e6e9041614b",
+      "url": "https://www.myactuator.com/_files/archives/cab28a_be98b58973d34f7aaa50bdf3f2aa12ed.zip",
+      "pdf_pages_one_based": [
+        25
+      ],
+      "note": "Section5.2 port functions; check motor label for EtherCAT pin definitions. Not connector body/mate drawing.",
+      "published_in_repo": false
+    },
+    {
+      "id": "RH25_ACCESSORIES_260416",
+      "local_work_path": "work/shoulder-port01/RH25-accessories-260416.pdf",
+      "sha256": "f91f03de606fa47979106d98fcf6db0ea7dbeb71517e4f527bb28fc0a97e60ab",
+      "url": "https://www.myactuator.com/_files/ugd/cab28a_e9498ee9264e48ab8dac33f7e6a2635d.pdf",
+      "pdf_pages_one_based": [
+        1
+      ],
+      "note": "Live official RH25 product page accessory link; same family-level names, no mating/placement dimensions.",
+      "published_in_repo": false
+    },
+    {
+      "id": "AMASS_XT30UF_2025V0",
+      "local_work_path": "work/shoulder-port01/AMASS-XT30U-F-SPEC-2025V0.pdf",
+      "sha256": "976066c56b37b73b8a6a4709ab6e1093d04bde6f13b83dbecb531dc0d397b3d4",
+      "url": "https://www.china-amass.net/uploads/94.XT30U-F-SPEC-2025V0.pdf",
+      "pdf_pages_one_based": [
+        1
+      ],
+      "note": "XT30U-F.G.Y yellow and XT30U-F.G.B black; dimensions incl matching drawing. Not proof installed OEM mate is this exact item.",
+      "published_in_repo": false
+    },
+    {
+      "id": "AMASS_XT_CATALOG",
+      "local_work_path": "work/shoulder-port01/AMASS-XT-Catalog-20260207.pdf",
+      "sha256": "763e2058896f87fb8839ebfa82917bb04ab7421d2a320190fbaf9aef66ab8699",
+      "url": "https://www.china-amass.com/public/upload/20260207/7fa24f5a6f35ec66c7a115c07a34ab06.pdf",
+      "pdf_pages_one_based": [
+        9,
+        10
+      ],
+      "note": "P9 wire XT30U-F/M and P10 alternative board variants. Different board variants show why not inferring installed mate. Black suffix differs vs2025V0.",
+      "published_in_repo": false
+    }
+  ],
+  "port_candidates": [
+    {
+      "function": "DC power",
+      "OEM_accessory_name": "XT30U-F 14AWG 200mm; two supplied",
+      "connector_maker_confirmed_by_OEM": false,
+      "exact_candidate": "AMASS XT30U-F.G.Y",
+      "candidate_status": "Family-compatible source candidate, not confirmed RH-installed connector identity",
+      "mate": "XT30U-M.G.Y is same AMASS wire family; OEM board mate PN unknown",
+      "source_ids": [
+        "RH25_PRODUCT_260805",
+        "RH25_ACCESSORIES_260416",
+        "AMASS_XT30UF_2025V0",
+        "AMASS_XT_CATALOG"
+      ],
+      "dimensions_mm": {
+        "length": 12.4,
+        "length_tolerance": 0.3,
+        "width": 5.6,
+        "width_tolerance": 0.3,
+        "body_height_excluding_flange": 8.8,
+        "body_height_tolerance": 0.3,
+        "maximum_flange_height_from_matching_view": 10.2,
+        "flange_height_tolerance": 0.3,
+        "matched_pair_length": 20.1,
+        "matched_length_tolerance": 0.5
+      },
+      "catalog_upper_bound_candidate_mm": [
+        12.7,
+        5.9,
+        10.5
+      ],
+      "upper_bound_excludes": [
+        "wires",
+        "solder",
+        "heatshrink",
+        "strain relief",
+        "fingers or tools",
+        "unknown OEM mating seat"
+      ],
+      "position_in_joint_frame": null,
+      "registration_status": "blocked: cover cutout alone does not establish per-plug origin, orientation, insertion depth or seating plane",
+      "electrical_rating": {
+        "current_A": 20,
+        "source_condition": "16AWG, temperature rise <=85K",
+        "voltage_VDC": 80,
+        "not_motor_bus_or_14AWG_rating_validation": true
+      }
+    },
+    {
+      "function": "EtherCAT IN and OUT",
+      "OEM_accessory_name": "SH1.0mm(4pin), 480mm cable; two supplied",
+      "connector_maker": null,
+      "full_PN": null,
+      "mating_PN": null,
+      "registered_position": null,
+      "status": "No public controlled connector dimensions/PN observed. Do not infer JST SH."
+    },
+    {
+      "function": "CAN pair / BAT / RES",
+      "OEM_accessory_name": "GH1.25-2P, 300mm cable; two CAN, one battery, one bleeder",
+      "connector_maker": null,
+      "full_PN": null,
+      "mating_PN": null,
+      "registered_position": null,
+      "status": "No public controlled connector dimensions/PN observed. Do not infer JST GH."
+    },
+    {
+      "function": "rear small circle / LED",
+      "status": "Indicator-function inference from RH25-N illustration and B rear contour; actual source geometry confirmed but function not labelled in STEP",
+      "plug_required": false
+    }
+  ],
+  "source_discrepancies": [
+    "AMASS2025V0 black=XT30U-F.G.B; official XT catalog p9 black=XT30U-F.N.B. Yellow G.Y agrees. Do not silently substitute black material/plating variant.",
+    "AMASS product spec operating rating80VDC is different from catalog dielectric withstand500VDC; never use withstand as bus rating.",
+    "RH product/accessory rear face illustration is RH25-N; selected model is B. Borrow function names, not its clocking or pin-view coordinates.",
+    "8.8mm is the reduced body portion, not maximum flange height; use10.2 plus tolerance for an unregistered preliminary box."
+  ],
+  "release": false,
+  "no_contact_or_purchase": true
+}
