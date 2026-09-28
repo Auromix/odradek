@@ -32,10 +32,11 @@
 | 四指支承 | SKF `7201 BECBP` ×8，KM1/MB1各×4 | [实际轴系](p16-carrier-study.md)；旧BOM里的W61801不属于当前P16头，CB配对不能直接称为已预紧 |
 | 电机H桥 | TI `DRV8874PWPR` ×4；`REF3125AIDBZR` ×1 | [HEAD-CTRL02](hardware/head-ctrl02.md)；静态限流不是已获得的300N推力或2kg抓力 |
 | 头部MCU/ESC | `STM32G474VET6` ×1；`LAN9252I/PT` ×1 | 原生100脚分配和242器件网表已验证；没有PCB或通电结果。旧RET6为历史64脚候选 |
+| 控制器被动元件/调试件 | [HEAD-PASSIVES01 合并清单](../../engineering/electronics/head-passives01/bom-selected.csv) | 193个待定位置补齐具体候选MPN；11处封装必须变更。原HEAD-CTRL02电路冻结，清单不代表控制板已布完 |
 | 上/下灯板 | FPL01上片×2、下片×2 | [原生电路与六层PCB](hardware/final-petal-fpl01.md)：每片130/42点，ERC/DRC/未连与网表检查通过；层叠、填孔、去耦与热仍需制造审查 |
 | 发光器件 | Würth `150060YS75000`，四片344点；中央拟285点 | 合计规划629点。旧609=285+2×113+2×49仅属于HLIO01历史布局 |
-| LED驱动 | TI `LP5860`，四瓣各1、中央拟2，共6颗 | 中央双驱动板独立推进；六驱动数量不意味着中央PCBA已经完成 |
-| 中央屏安装/连接 | 两M2×20，GH12侧插 | [CD-HW01](hardware/central-display-hardware01.md)给精确候选PN和背装变换；插拔、线束、公差和紧固待整合 |
+| LED驱动 | TI `LP5860`，四瓣各1、中央2，共6颗 | [CD-EC01](hardware/central-display-cd01.md)已有中央318器件、285点、双驱动原生电路；PCB与整机装配另行推进 |
+| 中央屏安装/连接 | 两M2×20，GH12侧插 | [CD-HW01](hardware/central-display-hardware01.md)给精确候选PN；[CD-DRAW01](central-display-prototype01.md)提供4页图、9 DXF与4个无电打印样件。实际线束、公差和紧固待整合 |
 | 双鱼眼 | Stereolabs `ZED-414012` ×2 | [固定光学台架](hardware/optical-bench-build.md)：ZED X One S Fisheye，头中上下各外倾8°是待标定的几何候选 |
 | 外置视觉链 | `ACC-210000` ZED Link Duo ×1；NVIDIA `945-13730-0050-000` AGX Orin 64GB开发套件×1 | 台架配置明确；PoC视频绕过EtherCAT和头部MCU，动态线材未放行 |
 | 外置运动控制 | Beckhoff `C6015-0040`及其配置选项 | [单轴台架](hardware/single-axis-bench-build.md)；这是台架选择，软件许可、完整七轴实时性能与柜体集成待验证 |
@@ -49,7 +50,19 @@
 
 RH的B闸从模块自身DC口取电，未增加独立24V抱闸母线；J7 N无闸。相机两路GMSL2均有自己的PoC路径。HEAD-CTRL02的三路外置台测输入为12V电机、3.3V逻辑与3.3V LED，属于电路验证接口；通过整条机械臂输送低压大电流的压降、线规与板端稳压尚未设计完成，不能照台测接口直接制作整机线束。
 
-四灯片FPL01电流与功率按它们自己的130/42映射计算，基线2.264W含各自规划逻辑开销。中央285点另有0.5182A平均VLED预算；旧HLIO01的609点总功率、旧12站框图和24→5→3.3V电源候选不再代表这条支线的完整已设计电路。
+四灯片FPL01电流与功率按它们自己的130/42映射计算，基线2.264W含各自规划逻辑开销。CD-EC01中央285点的平均VLED预算0.51818A、规划功耗1.810W；二者合计4.074W，不含控制器、电机与相机，满20mA灯点仍需热验证。旧HLIO01的609点总功率、旧12站框图和24→5→3.3V电源候选不再代表这条支线的完整已设计电路。
+
+## 已完成、尚未替换整机的局部候选
+
+| 局部候选 | 相对当前总装的变化 | 已关闭与仍开放 |
+|---|---|---|
+| [SHOULDER-RAISE02](shoulder-raise02-study.md) | 后叉加厚并采用8块后置钢螺纹块；J2仍为205mm | 原创金属1.234570kg，比01增0.563117kg；名义装入/局部运动检查已完成。整机质量/Blender尚未换成02，螺栓预紧及真实接触未放行 |
+| [SHOULDER-PROC01](hardware/shoulder-procurement01.md) | 后叉按6061-T651厚板提出采购条件；M4×100精确候选 | 实体坯料包含检查与螺钉名义长度已核对；完整牙、公差、批次材质仍待确认 |
+| [SHOULDER-PORT01](shoulder-port01.md) | 两块钢件内缘34→38mm，保留承压面 | 尾盖开口连续通道遮挡消除；真实插头PN/注册基准及线缆外形尚不完整。该局部修改尚未并入RAISE02或主总装 |
+| [CD-MOUNT01](central-display-mount01.md)与[装拆核查](central-display-review01.md) | 真实杯座、压框、Ø60 PCB、窗口与GH12参考替代旧显示占位 | 名义静态/四指连续避让及指定装拆检查已完成；中央板背面元件、线缆、质量/惯量仍待整头集成 |
+| [HEAD-PASSIVES01](hardware/head-passives01.md) | 具体R/C/跳线料号、真实封装、温漂与偏压选型 | 242位置合并表有MPN；控制器PCB/板间连接、供电保护、回生和整舱装配尚未完成 |
+
+这些条目是下一轮集成的输入，不与当前21.51048kg子总量、697件整头或736网格Blender混算。
 
 ## 历史与下一次集成
 

@@ -41,6 +41,7 @@
 | 元件 | [主 BOM](hardware/bom.csv)／[BOM口径](hardware/bom-notes.md) | 候选、blocked 和 TBD 逐项区分，不是一键采购整机表 |
 | 关节运行与接口证据 | [RH-OPERATION-EVIDENCE01](rh-operation-evidence.md) | 四精确型号、官方ESI与固件关系；确认B闸无需独立外供24V、J7 N无闸；零速热额定/停止时序/满牙区间仍缺 |
 | 当前控制电路 | [HEAD-CTRL02](hardware/head-ctrl02.md) | 100脚MCU/ESC、四路H桥、242器件原生电路；ERC0、833连接脚一致；8站条件分支，无PCB/通电资格 |
+| 控制器具体被动件 | [HEAD-PASSIVES01](hardware/head-passives01.md) | 193个待定位置补齐MPN、23种板上料号及维修帽；11处封装变更、128温漂端点，未修改冻结电路或放行PCB |
 | 当前内走线 | [HARNESS02](hardware/internal-harness02.md) | 真实孔与装壳FAKRA、J5缓S弯；夹持策略和动态长度仍待闭合 |
 | 历史BLDC电气 | [架构](electrical-architecture.svg)／[旧线束](harness-and-connectors.md) | 7本体＋4指伺服＋1头IO，共12站，仅属BLDC替代分支 |
 | 动态相机线补查 | [CAM-CABLE02](camera-cable-refresh.md) | CG03现行PDF、R34.5/R37候选及资料冲突；半径较小的候选未获动态/通道资格 |
@@ -57,6 +58,9 @@
 | 现状肩部几何边界 | [SHOULDER-DOMAIN01](shoulder-domain-01.md) | q2±25局部连续下界1.245mm、±20为2.643mm；首次阻塞约±27.42°，不改实机控制限位 |
 | 肩部抬升候选 | [SHOULDER-RAISE01](shoulder-raise-study.md) | J2及下游抬高35mm、加长真实后叉；局部q2±90连续域最小4mm，增重0.127kg；整臂联动/结构刚度未放行 |
 | 加高肩架受力初筛 | [SHOULDER-RAISE-STRENGTH01](shoulder-raise-strength-study.md) | 真实77.8mm跨度、13状态反力、孔组/净截面/梁族参照；识别薄曲环与铝牙边缘问题，未做FEA或承载放行 |
+| 加强肩架候选 | [SHOULDER-RAISE02](shoulder-raise02-study.md) | 厚后环、双后柱、8块钢螺纹块；名义装入与局部运动通过，金属增重0.563117kg；真实接触/预紧未放行 |
+| 肩架采购条件 | [SHOULDER-PROC01](hardware/shoulder-procurement01.md) | 6061-T651厚板、完整坯料包含检查、M4×100具体候选；受控公差/有效螺纹/材质批次仍待确认 |
+| 肩部尾盖接口避让 | [SHOULDER-PORT01](shoulder-port01.md) | 两块钢件34→38mm独立候选、36连续开口通道与84原厂实体检查；未把开口通行当真实插头插拔资格 |
 | 完整末端载体 | [P16-CARRIER-01](p16-carrier-study.md) | 四轴承座/P16基叉/J7后架/双鱼眼前架及236实体端态；2.727kg已建模型，根部小间隙与腕旋转仍需修订 |
 | 灯爪近根修订 | [P16-CARRIER-02](p16-carrier02-study.md) | 四路同轴支承全角域名义间隙1mm；增厚钢桥、孔后截面和反力已计算，2.747kg已建模型；延伸件/正式灯板待合并 |
 | 四瓣整头集成 | [HEAD-INTEGRATED03](head-integrated03-study.md) | CARRIER02＋灯腔/软垫保持＋FPL机械快照＋EXT24；两态各697实体、17项连续检查，计量模型2.802kg、规划2.987～3.252kg；电气路由/线束/护壳未定版 |
@@ -64,6 +68,8 @@
 | 历史灯光与IO | [HLIO01的609点研究](hardware/head-lighting-io-selection.md) | 历史285+2×113+2×49；当前FPL01四片344、中央拟285，合计629点，电源预算不能混用 |
 | 末端控制板空间 | [HEAD-CTRL-VOLUME01](head-control-volume01.md) | 56×64×30mm完整电子装配预留，固定件最小2mm、四指/P16连续分离；实际PCB/插头/支架/热路径尚未集成 |
 | 中央圆屏安装 | [CD-MOUNT01](central-display-mount01.md)／[独立装拆审查](central-display-review01.md) | 285点、Ø60PCB、杯座/压框/窗口/侧耳、GH12参考；连续避让和全开装拆空间通过，材料/公差/实际中央板与线束待闭合 |
+| 中央屏几何样件图 | [CD-DRAW01](central-display-prototype01.md) | 4页A3、9份mm DXF、4个无电打印样件，保留杯座前后不同截面；不是金属制造公差版 |
+| 中央屏原生电路 | [CD-EC01](hardware/central-display-cd01.md) | 285点/318器件、双LP5860、GH12逐针与ERC通过；PCB、热与整头装配另行审查 |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
 | 放行差距 | [发布检查清单](release-checklist.md) | 对应证据和实际未完成事项 |
 
