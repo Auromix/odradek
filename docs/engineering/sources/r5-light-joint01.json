@@ -1,0 +1,462 @@
+{
+  "revision": "R5-LIGHT-JOINT01",
+  "status": "native-EtherCAT light platform shortlist; no replacement or purchase release",
+  "license": "CC-BY-NC-4.0",
+  "sources": [
+    {
+      "id": "manual_cn344",
+      "publisher": "ZeroErr",
+      "url": "https://download.zeroerr.cn/static/download/eRob机器人关节模组用户手册_V3.44.pdf?=20260823",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/manual_cn344.pdf",
+      "sha256": "73e138369aa2780c980e0652008c8311c95d26ac3b4142ce2f05afdc1bf0e7b5",
+      "bytes": 11983463
+    },
+    {
+      "id": "manual_en342",
+      "publisher": "ZeroErr",
+      "url": "https://dl.zeroerr.cn/static/en/eRob Rotary Actuator User Manual_V3.42.pdf",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/manual_en342.pdf",
+      "sha256": "96489367045a6a18bf63d1c0cca44a9ef5348ff8262be89408afe0a2593b4528",
+      "bytes": 49084726
+    },
+    {
+      "id": "parameters",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/d/file/eRob系列关节模组的参数总表1.xlsx",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/parameters.xlsx",
+      "sha256": "77b7fd18c9cc6d667c910c1ab30297509aea89066e80c5fcec1e9682859efcd0",
+      "bytes": 15564
+    },
+    {
+      "id": "inertia",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/download/eRob系列质量重心惯性参数表_V1.0.xlsx",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/inertia.xlsx",
+      "sha256": "a2f83c14d8fc3db8c7501c4715b1951c1af85910e168c7be7a3b8a7d4f36dddf",
+      "bytes": 9868
+    },
+    {
+      "id": "eRob70Iv5_E",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob70I/V5/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.zip",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/eRob70Iv5_E.zip",
+      "sha256": "8d41087fe0c2cb461f5263431e4b73fcf1b8d01c460ecdf292abae3c32e879dd",
+      "bytes": 12871014
+    },
+    {
+      "id": "eRob80Iv6_E",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob80I/V6/eRob80HxxI-XX-18EX_V6_MC2E.EX.XX.zip",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/eRob80Iv6_E.zip",
+      "sha256": "4545d42897f2293e1ad0c78e90508178a777501e744733b7a23f7c663073a0a3",
+      "bytes": 15096251
+    },
+    {
+      "id": "eRob90Iv6_E",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob90I/V6/eRob90H××I-XX-18EX_V6_MC2E.DX.XX.zip",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/eRob90Iv6_E.zip",
+      "sha256": "722c9eca09b3e54b0f6b6b5f3d8fd55bb8d358d631a5f25df20b3851f1de7db4",
+      "bytes": 11790037
+    },
+    {
+      "id": "eRob70",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/eRob/eRob70.html",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/eRob70.html",
+      "sha256": "644fb7ebaedfa6a39eaec566785a3af8427e53623a8bdcb32b8db8064c77e39c",
+      "bytes": 83412
+    },
+    {
+      "id": "eRob80",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.com/preview/erob80i_en.html",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/eRob80.html",
+      "sha256": "ad83e5ac4fbd6c3592cf00ae13d258668d7c680c37ab1c674219445316c1c279",
+      "bytes": 190660
+    },
+    {
+      "id": "eRob90",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.com/preview/erob90i_en.html",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/eRob90.html",
+      "sha256": "61e8b312edde34bb718663f53bd2dbfed92f3820926198b07c123ac13ae6140e",
+      "bytes": 190709
+    },
+    {
+      "id": "communication_cn110",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/d/file/download/eRob CANopen and EtherCAT用户手册v1.10.pdf",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/communication_cn110.pdf",
+      "sha256": "e61af7330543a79bd69435ad1663ba71531ee0f37babaa1e34b9eb8cc4ae5b05",
+      "bytes": 7108857
+    },
+    {
+      "id": "eRob70Iv5_E_drawing",
+      "publisher": "ZeroErr",
+      "container_source": "eRob70Iv5_E",
+      "member_name": "eRob70H××I-XX-18EX_V5_MC2D.DX.XX.pdf",
+      "local_only_path": "work/r5-light-joint01/eRob70Iv5_E/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.pdf",
+      "sha256": "84e06a8f8eba79a66ed87fabd46d395c6fcf416e5f51d8dadd5d9fe7ac28520a",
+      "page": 1,
+      "visual_verified": true
+    },
+    {
+      "id": "eRob80Iv6_E_drawing",
+      "publisher": "ZeroErr",
+      "container_source": "eRob80Iv6_E",
+      "member_name": "eRob80HxxI-XX-18EX_V6_MC2E.EX.XX.pdf",
+      "local_only_path": "work/r5-light-joint01/eRob80Iv6_E/eRob80HxxI-XX-18EX_V6_MC2E.EX.XX.pdf",
+      "sha256": "ae5cffac156afda4fcfb7b9778fa17189d57df9d1f8fca202937e6dfef08616b",
+      "page": 1,
+      "visual_verified": true
+    },
+    {
+      "id": "eRob90Iv6_E_drawing",
+      "publisher": "ZeroErr",
+      "container_source": "eRob90Iv6_E",
+      "member_name": "eRob90Hí┴í┴I-XX-18EX_V6_MC2E.DX.XX.pdf",
+      "local_only_path": "work/r5-light-joint01/eRob90Iv6_E/eRob90Hí┴í┴I-XX-18EX_V6_MC2E.DX.XX.pdf",
+      "sha256": "71e970268e30544757c4fe9f470a76a4b6d959de1276fcf4adca8dfff858c0fd",
+      "page": 1,
+      "visual_verified": true
+    },
+    {
+      "id": "joints",
+      "repository_path": "docs/engineering/sources/joints.json",
+      "sha256": "25d3c91bc587e8e2b80c44eaf0bdaf96d846448a16e7d717bb58297c998054d1",
+      "status": "frozen upstream project evidence; source URLs retained in referenced JSON"
+    },
+    {
+      "id": "rh-operation-evidence",
+      "repository_path": "docs/engineering/sources/rh-operation-evidence.json",
+      "sha256": "cbe125ab20c81cc6a0e042c92511eb33a0200a489975ae0a3ce32c4de1a5fd40",
+      "status": "frozen upstream project evidence; source URLs retained in referenced JSON"
+    },
+    {
+      "id": "study",
+      "repository_path": "engineering/generated/r5-body01/study.json",
+      "sha256": "26f3b184365ebe2a272038d2779543d7d0cea262310e016575d17602c8c0e5ad",
+      "status": "frozen upstream project evidence; source URLs retained in referenced JSON"
+    },
+    {
+      "id": "body-only-model",
+      "repository_path": "engineering/generated/r5-body01/body-only-model.json",
+      "sha256": "3a49083aba0bf578b12d50dad1bfbdca92527efeced2307e9cb7b03151dd2b87",
+      "status": "frozen upstream project evidence; source URLs retained in referenced JSON"
+    }
+  ],
+  "candidate_platform_count": 1,
+  "reference_platform": "MYACTUATOR RH existing frozen candidates",
+  "candidate_platform": "ZeroErr eRob I with B brake E EtherCAT",
+  "candidate_models": [
+    {
+      "short_model": "eRob70I V5",
+      "proposed_option_code": "eRob70H100I-BS-18EN",
+      "option_code_status": "constructed from official syntax; not factory-confirmed complete order PN; drawing/firmware/custom suffix pending",
+      "native_EtherCAT": true,
+      "communication_choice": "E required; C is physically different CANopen option",
+      "gear_ratio_catalog": 100,
+      "actual_motor_output_ratio_note": "manual says motor turns ratio+1 per output turn for this mechanism; do not silently use nominal100 as exact dynamics ratio",
+      "with_brake_mass_kg": 0.88,
+      "without_brake_mass_kg": 0.82,
+      "diameter_mm": 70,
+      "catalog_length_mm": 71,
+      "unmated_2D_overall_length_mm": 74.4,
+      "through_bore_mm": 18,
+      "mated_connector_envelope_mm": null,
+      "gear_continuous_rated_Nm": 10,
+      "gear_rated_definition": "gear allowable continuous load at input2000rpm; also identified L10 on official product page; not assembled thermal static certificate",
+      "gear_average_torque_limit_Nm": 14,
+      "gear_repeated_start_stop_peak_Nm": 36,
+      "gear_momentary_shock_limit_Nm": 70,
+      "catalog_output_peak_speed_rpm_at_ratio100": 30,
+      "motor_input_continuous_static_torque_Nm": 0.36,
+      "motor_input_continuous_static_current_A": 2.87,
+      "motor_rated_current_A": 2.55,
+      "motor_static_thermal_mounting_conditions": null,
+      "assembled_output_zero_speed_continuous_torque_guarantee_Nm": null,
+      "family_output_continuous_curve_zero_speed_Nm": 10,
+      "family_curve_limits": "ManualV3.44 PDF103 figure25.3 shows continuous region to0rpm; no structure version, ambient/mount/thermal duration defined on plot",
+      "brake": {
+        "type": "motor-side friction, power-off holding",
+        "output_factory_static_hold_acceptance_Nm": 50,
+        "definition": "V3.44 table7-1 output static friction acceptance under unpowered disabled test; family-level, delivered revision confirmation required",
+        "internal_motor_brake_Nm": 0.7,
+        "external_brake_supply_required": false,
+        "physical_action_ms_approx": 150,
+        "disable_to_enable_min_ms": 300,
+        "enable_to_command_wait_min_ms": 500,
+        "dynamic_braking_limit": "manual restricts to<10%maximum torque and<10%maximum speed, not frequent; not certified STO"
+      },
+      "output_bearing": {
+        "type": "cross roller",
+        "family_permissible_static_moment_Nm": 74,
+        "roller_pitch_diameter_m": 0.05,
+        "basic_static_load_N": 8600,
+        "basic_dynamic_load_N": 5800,
+        "limits": "family-level manualtable17-6; combined radial/axial/moment equivalentload and safety/life recalculation required for exactversion"
+      },
+      "source_model_COM_native_mm": [
+        32.15,
+        0.05,
+        -0.24
+      ],
+      "COM_coordinate_warning": "Official spreadsheet X along axis from output mounting flange; Y/Z directions and inertia reference not defined without corresponding CAD/delivery coordinates. Not mapped into current arm.",
+      "drawing_source": "eRob70Iv5_E_drawing",
+      "drawing_revision": "V5_MC2D.DX.XX",
+      "rear_port_clocking_note": "80/90 drawing note5 explicitly says front fixed holes and rear connector circumferential positions not fixed;70 drawing lacks this note; require exact unit/version assurance for all side-bay geometry"
+    },
+    {
+      "short_model": "eRob80I V6",
+      "proposed_option_code": "eRob80H100I-BS-18EN",
+      "option_code_status": "constructed from official syntax; not factory-confirmed complete order PN; drawing/firmware/custom suffix pending",
+      "native_EtherCAT": true,
+      "communication_choice": "E required; C is physically different CANopen option",
+      "gear_ratio_catalog": 100,
+      "actual_motor_output_ratio_note": "manual says motor turns ratio+1 per output turn for this mechanism; do not silently use nominal100 as exact dynamics ratio",
+      "with_brake_mass_kg": 1.09,
+      "without_brake_mass_kg": 1.03,
+      "diameter_mm": 80,
+      "catalog_length_mm": 64.2,
+      "unmated_2D_overall_length_mm": 67.5,
+      "through_bore_mm": 18,
+      "mated_connector_envelope_mm": null,
+      "gear_continuous_rated_Nm": 31,
+      "gear_rated_definition": "gear allowable continuous load at input2000rpm; also identified L10 on official product page; not assembled thermal static certificate",
+      "gear_average_torque_limit_Nm": 51,
+      "gear_repeated_start_stop_peak_Nm": 70,
+      "gear_momentary_shock_limit_Nm": 143,
+      "catalog_output_peak_speed_rpm_at_ratio100": 30,
+      "motor_input_continuous_static_torque_Nm": 0.44,
+      "motor_input_continuous_static_current_A": 3.96,
+      "motor_rated_current_A": 3.6,
+      "motor_static_thermal_mounting_conditions": null,
+      "assembled_output_zero_speed_continuous_torque_guarantee_Nm": null,
+      "family_output_continuous_curve_zero_speed_Nm": 31,
+      "family_curve_limits": "ManualV3.44 PDF103 figure25.3 shows continuous region to0rpm; no structure version, ambient/mount/thermal duration defined on plot",
+      "brake": {
+        "type": "motor-side friction, power-off holding",
+        "output_factory_static_hold_acceptance_Nm": 89,
+        "definition": "V3.44 table7-1 output static friction acceptance under unpowered disabled test; family-level, delivered revision confirmation required",
+        "internal_motor_brake_Nm": 1.3,
+        "external_brake_supply_required": false,
+        "physical_action_ms_approx": 150,
+        "disable_to_enable_min_ms": 300,
+        "enable_to_command_wait_min_ms": 500,
+        "dynamic_braking_limit": "manual restricts to<10%maximum torque and<10%maximum speed, not frequent; not certified STO"
+      },
+      "output_bearing": {
+        "type": "cross roller",
+        "family_permissible_static_moment_Nm": 124,
+        "roller_pitch_diameter_m": 0.06,
+        "basic_static_load_N": 16300,
+        "basic_dynamic_load_N": 10400,
+        "limits": "family-level manualtable17-6; combined radial/axial/moment equivalentload and safety/life recalculation required for exactversion"
+      },
+      "source_model_COM_native_mm": [
+        30.01,
+        -0.14,
+        0.01
+      ],
+      "COM_coordinate_warning": "Official spreadsheet X along axis from output mounting flange; Y/Z directions and inertia reference not defined without corresponding CAD/delivery coordinates. Not mapped into current arm.",
+      "drawing_source": "eRob80Iv6_E_drawing",
+      "drawing_revision": "V6_MC2E.EX.XX",
+      "rear_port_clocking_note": "80/90 drawing note5 explicitly says front fixed holes and rear connector circumferential positions not fixed;70 drawing lacks this note; require exact unit/version assurance for all side-bay geometry"
+    },
+    {
+      "short_model": "eRob90I V6",
+      "proposed_option_code": "eRob90H100I-BS-18EN",
+      "option_code_status": "constructed from official syntax; not factory-confirmed complete order PN; drawing/firmware/custom suffix pending",
+      "native_EtherCAT": true,
+      "communication_choice": "E required; C is physically different CANopen option",
+      "gear_ratio_catalog": 100,
+      "actual_motor_output_ratio_note": "manual says motor turns ratio+1 per output turn for this mechanism; do not silently use nominal100 as exact dynamics ratio",
+      "with_brake_mass_kg": 1.639,
+      "without_brake_mass_kg": 1.506,
+      "diameter_mm": 90,
+      "catalog_length_mm": 75.9,
+      "unmated_2D_overall_length_mm": 79,
+      "through_bore_mm": 18,
+      "mated_connector_envelope_mm": null,
+      "gear_continuous_rated_Nm": 52,
+      "gear_rated_definition": "gear allowable continuous load at input2000rpm; also identified L10 on official product page; not assembled thermal static certificate",
+      "gear_average_torque_limit_Nm": 64,
+      "gear_repeated_start_stop_peak_Nm": 107,
+      "gear_momentary_shock_limit_Nm": 191,
+      "catalog_output_peak_speed_rpm_at_ratio100": 30,
+      "motor_input_continuous_static_torque_Nm": 1.1,
+      "motor_input_continuous_static_current_A": 9.68,
+      "motor_rated_current_A": 8.8,
+      "motor_static_thermal_mounting_conditions": null,
+      "assembled_output_zero_speed_continuous_torque_guarantee_Nm": null,
+      "family_output_continuous_curve_zero_speed_Nm": 52,
+      "family_curve_limits": "ManualV3.44 PDF103 figure25.3 shows continuous region to0rpm; no structure version, ambient/mount/thermal duration defined on plot",
+      "brake": {
+        "type": "motor-side friction, power-off holding",
+        "output_factory_static_hold_acceptance_Nm": 132,
+        "definition": "V3.44 table7-1 output static friction acceptance under unpowered disabled test; family-level, delivered revision confirmation required",
+        "internal_motor_brake_Nm": 2.5,
+        "external_brake_supply_required": false,
+        "physical_action_ms_approx": 150,
+        "disable_to_enable_min_ms": 300,
+        "enable_to_command_wait_min_ms": 500,
+        "dynamic_braking_limit": "manual restricts to<10%maximum torque and<10%maximum speed, not frequent; not certified STO"
+      },
+      "output_bearing": {
+        "type": "cross roller",
+        "family_permissible_static_moment_Nm": 187,
+        "roller_pitch_diameter_m": 0.07,
+        "basic_static_load_N": 22000,
+        "basic_dynamic_load_N": 14600,
+        "limits": "family-level manualtable17-6; combined radial/axial/moment equivalentload and safety/life recalculation required for exactversion"
+      },
+      "source_model_COM_native_mm": [
+        35.5,
+        0.083,
+        0.063
+      ],
+      "COM_coordinate_warning": "Official spreadsheet X along axis from output mounting flange; Y/Z directions and inertia reference not defined without corresponding CAD/delivery coordinates. Not mapped into current arm.",
+      "drawing_source": "eRob90Iv6_E_drawing",
+      "drawing_revision": "V6_MC2E.DX.XX",
+      "rear_port_clocking_note": "80/90 drawing note5 explicitly says front fixed holes and rear connector circumferential positions not fixed;70 drawing lacks this note; require exact unit/version assurance for all side-bay geometry"
+    }
+  ],
+  "cad_readback": [
+    {
+      "path": "eRob70Iv5_E/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.STEP",
+      "sha256": "a0dadd2685efecd6e24f8fb7c1acccb99c5f060a8c0faaef675726741fc554b8",
+      "valid": true,
+      "solids": 1,
+      "bbox_min_mm": [
+        -9.774999998159108,
+        -35.00002712511484,
+        -35.00002712511484
+      ],
+      "bbox_max_mm": [
+        64.6250001476273,
+        35.00002712511484,
+        35.00002712511484
+      ],
+      "bbox_span_mm": [
+        74.40000014578641,
+        70.00005425022968,
+        70.00005425022968
+      ],
+      "note": "Native OEM STEP coordinates; these bounding extents do not include mated cable connectors; no input/output motion split asserted."
+    },
+    {
+      "path": "eRob80Iv6_E/eRob80HxxI-XX-18EX_V6_MC2E.EX.XX.STEP",
+      "sha256": "aba24f43ac301cb1c78bcd4b6c54d1332b5ef1ec34becc3305360e239b037795",
+      "valid": true,
+      "solids": 5,
+      "bbox_min_mm": [
+        -34.576418889522486,
+        -40.00000010000127,
+        -40.00000009999966
+      ],
+      "bbox_max_mm": [
+        32.92358111047752,
+        40.00000009999873,
+        40.00000010000034
+      ],
+      "bbox_span_mm": [
+        67.5,
+        80.0000002,
+        80.0000002
+      ],
+      "note": "Native OEM STEP coordinates; these bounding extents do not include mated cable connectors; no input/output motion split asserted."
+    },
+    {
+      "path": "eRob90Iv6_E/eRob90Hí┴í┴I-XX-18EX_V6_MC2E.DX.XX.STEP",
+      "sha256": "397a5885788021c308ab0fd568e16f6033580ef0b1ccda25dde4b037f11ec779",
+      "valid": true,
+      "solids": 1,
+      "bbox_min_mm": [
+        -64.50000005492511,
+        -45.00000010000004,
+        -45.00000009999998
+      ],
+      "bbox_max_mm": [
+        14.50000010000006,
+        45.000000100000065,
+        45.00000010000008
+      ],
+      "bbox_span_mm": [
+        79.00000015492517,
+        90.0000002000001,
+        90.00000020000006
+      ],
+      "note": "Native OEM STEP coordinates; these bounding extents do not include mated cable connectors; no input/output motion split asserted."
+    }
+  ],
+  "requirements": {
+    "net_object_kg": 2,
+    "head_mass_scenario_kg": 1.5,
+    "shoulder_TCP_target_mm_approx": 700,
+    "camera_interface": "GMSL/GMSL2 coaxial confirmed; specificSKU cable candidate only"
+  },
+  "official_evidence_locators": {
+    "manual_cn344.pdf": {
+      "torque_definitions_PDF_pages": [
+        16,
+        17
+      ],
+      "electrical_PDF_pages": [
+        18,
+        19
+      ],
+      "static_brake_PDF_pages": [
+        45,
+        46
+      ],
+      "bearing_PDF_page": 74,
+      "installation_PDF_pages": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "motor_vs_output_PDF_pages": [
+        101,
+        102
+      ],
+      "continuous_output_curve_PDF_page": 103
+    },
+    "parameters.xlsx": "Sheet1 columnsJ/T/AB; rows12(no brake)15(brake) and gear100columnsL/V/AD",
+    "inertia.xlsx": "Sheet1rows9..11; Sheet2coordinatewarnings"
+  },
+  "unresolved": [
+    "Factory-confirmed complete option/revision/firmware/ESI match and stock/leadtime",
+    "Specific module zero-speed continuous output under actual finite metal housing/ambient conditions",
+    "New7module output/input interfaces contactdatums/Pilots/holecenters and effective threads",
+    "Actual COM frame mapping plus rotating/fixed mass split",
+    "All links and base re-engineering, stiffness/fasteners/assembly/port accessibility",
+    "Mated connectors/shell clocking/cable guides and dynamic GMSL torsion routing",
+    "Body dynamic torque,speed,acceleration,regeneration,and combinedbearingloads",
+    "Shutdown/holdbrake/controlfault system safety; do not claim STO"
+  ],
+  "failed_downloads": [
+    {
+      "file": "communication_en117.pdf",
+      "url": "https://dl.zeroerr.cn/static/en/eRob CANopen and EtherCAT User Manual V1.17.pdf",
+      "error": "<HTTPError 404: 'Not Found'>"
+    }
+  ],
+  "third_party_CAD_distribution": "VendorPDF/STEP retained only in workspace work; no copies in repository"
+}
