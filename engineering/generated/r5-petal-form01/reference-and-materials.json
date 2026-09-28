@@ -1,0 +1,55 @@
+{
+  "revision": "R5-PETAL-FORM01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "visual_references": [
+    {
+      "id": "user-reference",
+      "file_name": "codex-clipboard-445b21aa-8e17-44ce-8350-8aa2e75926a4.png",
+      "sha256": "6deff8414160ace2480fbe21fc670a61ebc2179b2eb2edd10c210a1422fba064",
+      "scope": "User supplied visual proportions/shoulder/end treatment. Reference image not redistributed here; its old four-independent-finger label is superseded by one motor+mimic."
+    },
+    {
+      "id": "r5-concept",
+      "path": "docs/concepts/11-r5-single-drive-head.png",
+      "sha256": "97ab3106dd78efa4f475f44eeb9272a001dd08102c9bfec790230b8d2c1a193c",
+      "scope": "Form and layered luminous-grip-face concept; no dimensions traced as engineering evidence."
+    }
+  ],
+  "density_reference_sources": [
+    {
+      "id": "PC-density-reference",
+      "publisher": "Covestro",
+      "url": "https://solutions.covestro.com/en/products/makrolon/makrolon-1205_000000000000830205",
+      "online_checked_this_revision": true,
+      "supports": "PC listed for extrusion/solid-sheet use, typical density1200kg/m3. Used only as nominal density basis, not grade procurement, load capacity, optical or friction qualification.",
+      "value_used_kg_m3": 1200,
+      "specific_grade_selected_for_part": false
+    },
+    {
+      "id": "transparent-elastomer-density-reference",
+      "publisher": "Dow",
+      "url": "https://www.dow.com/en-us/pdp.sylgard-184-silicone-elastomer-kit.01064291z.html",
+      "online_checked_this_revision": true,
+      "supports": "SYLGARD184 listed transparent; typical specific gravity1.03 at25C. Approximate1030kg/m3 mass sensitivity reference, not evidence of a grip-skin service rating or a qualified cured-density batch. Manufacturer use is principally encapsulation; skin abrasion/friction/tear/optics require separate testing.",
+      "value_used_kg_m3": 1030,
+      "specific_grade_selected_for_part": false
+    },
+    {
+      "id": "metal-density-assumption",
+      "material_family": "Aluminum candidate",
+      "value_used_kg_m3": 2700,
+      "basis": "Explicit nominal mass assumption only. No alloy/temper/stock-thickness property guarantee is used. No yield or fatigue allowable assigned.",
+      "supplier_selected": false
+    }
+  ],
+  "not_inferred": [
+    "Coefficient of friction",
+    "Allowable normal pressure",
+    "Scratch or wear life",
+    "Transparent layer modulus or strength",
+    "PCB/LED/component mass",
+    "Guaranteed optical transmission of the full assembly",
+    "Manufacturing release"
+  ]
+}

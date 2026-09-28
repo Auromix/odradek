@@ -1,0 +1,1385 @@
+{
+  "revision": "R5-PETAL-FORM01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "source_hashes": {
+    "engineering/r5_petal_form01.py": "c41333aeddc28869f88602efb93454c5f8fe3530bcc19049482119887e37158e",
+    "engineering/head_mass04_study.py": "af397b2aca71a952bfd6593fdcc1ef4c42a57a3826b1e0900e3e8809c4f2806b",
+    "engineering/build_layout.py": "9c21a65d2c7873809faf4f7ee733efb8a0e699758190046d73f5e2d1d0e44d2c",
+    "engineering/build_link56_study.py": "c1119f288c0a9169764dc047ae3aa17be86ed97b62994e5917a02ea3f28fec40",
+    "engineering/screen_integrated_collisions.py": "72373f83c60555e45fb2d3297789b793996c372fb9159a1972dad0aace154e1b",
+    "docs/concepts/11-r5-single-drive-head.png": "97ab3106dd78efa4f475f44eeb9272a001dd08102c9bfec790230b8d2c1a193c"
+  },
+  "parameters_sha256": "085f72e30225ca44d6d7502bf508fb766573531e4d192bdf80e72c5e8bd0fa53",
+  "parts": {
+    "upper": {
+      "kind": "upper",
+      "outer_knots_mm": [
+        [
+          0.0,
+          -9.0
+        ],
+        [
+          15.0,
+          -9.0
+        ],
+        [
+          21.0,
+          -23.0
+        ],
+        [
+          29.0,
+          -29.0
+        ],
+        [
+          51.0,
+          -29.0
+        ],
+        [
+          60.0,
+          -16.0
+        ],
+        [
+          143.0,
+          -16.0
+        ],
+        [
+          150.0,
+          -9.0
+        ],
+        [
+          150.0,
+          12.0
+        ],
+        [
+          145.0,
+          17.0
+        ],
+        [
+          28.0,
+          17.0
+        ],
+        [
+          21.0,
+          13.0
+        ],
+        [
+          15.0,
+          9.0
+        ],
+        [
+          0.0,
+          9.0
+        ]
+      ],
+      "overall_bbox_mm": [
+        [
+          -1.1102230246251565e-16,
+          -29.0,
+          0.0
+        ],
+        [
+          150.0,
+          17.0,
+          9.5
+        ]
+      ],
+      "root_holes": [
+        [
+          7.0,
+          -4.5
+        ],
+        [
+          7.0,
+          4.5
+        ],
+        [
+          17.0,
+          -4.5
+        ],
+        [
+          17.0,
+          4.5
+        ]
+      ],
+      "retainer_holes": [
+        [
+          26.0,
+          -19.0
+        ],
+        [
+          26.0,
+          10.0
+        ],
+        [
+          146.5,
+          -4.0
+        ],
+        [
+          146.5,
+          7.0
+        ]
+      ],
+      "profile_areas_mm2": {
+        "outer": 5062.209616302509,
+        "cover": 3322.261689108961,
+        "contact_face": 2972.0453466072554,
+        "PCB_candidate": 2523.1941565932016
+      },
+      "contacts": {
+        "frame__bearing_cover": {
+          "origin_world_mm": [
+            0,
+            0,
+            5.5
+          ],
+          "normal_world": [
+            0,
+            0,
+            1
+          ],
+          "shared_planar_face_area_mm2": 633.1731325516272,
+          "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+        },
+        "bearing_cover__compliant_skin": {
+          "origin_world_mm": [
+            0,
+            0,
+            8.0
+          ],
+          "normal_world": [
+            0,
+            0,
+            1
+          ],
+          "shared_planar_face_area_mm2": 3322.261689108961,
+          "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+        },
+        "retainer__compliant_skin": {
+          "origin_world_mm": [
+            0,
+            0,
+            8.4
+          ],
+          "normal_world": [
+            0,
+            0,
+            1
+          ],
+          "shared_planar_face_area_mm2": 307.07569508097475,
+          "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+        },
+        "frame__retainer": {
+          "origin_world_mm": [
+            0,
+            0,
+            7.0
+          ],
+          "normal_world": [
+            0,
+            0,
+            1
+          ],
+          "shared_planar_face_area_mm2": 1233.4749564460537,
+          "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+        }
+      },
+      "all_pair_intersections_mm3": {
+        "frame__retainer": 0,
+        "frame__bearing_cover": 0,
+        "frame__compliant_skin": 0,
+        "frame__PCB_blank_reservation": 0,
+        "frame__back_electronics_reservation": 0,
+        "frame__LED_front_reservation": 0,
+        "retainer__bearing_cover": 0,
+        "retainer__compliant_skin": 0,
+        "retainer__PCB_blank_reservation": 0,
+        "retainer__back_electronics_reservation": 0,
+        "retainer__LED_front_reservation": 0,
+        "bearing_cover__compliant_skin": 0,
+        "bearing_cover__PCB_blank_reservation": 0,
+        "bearing_cover__back_electronics_reservation": 0,
+        "bearing_cover__LED_front_reservation": 0,
+        "compliant_skin__PCB_blank_reservation": 0,
+        "compliant_skin__back_electronics_reservation": 0,
+        "compliant_skin__LED_front_reservation": 0,
+        "PCB_blank_reservation__back_electronics_reservation": 0,
+        "PCB_blank_reservation__LED_front_reservation": 0,
+        "back_electronics_reservation__LED_front_reservation": 0
+      },
+      "section_results": [
+        {
+          "x_mm": 7.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 81.20029166838842,
+            "centroid_yz_mm": [
+              -1.7106804844487145e-14,
+              3.5
+            ],
+            "Iyy_mm4": 331.56785765374246,
+            "Izz_mm4": 2456.5773196215523,
+            "Iyz_tensor_mm4": -9.655337186105862e-14
+          },
+          "halved_slice_relative_change": 1.0776490534603949e-05,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        },
+        {
+          "x_mm": 17.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 123.20029166841479,
+            "centroid_yz_mm": [
+              -2.2727266270356337,
+              3.4999999999999996
+            ],
+            "Iyy_mm4": 503.06785764986677,
+            "Izz_mm4": 6948.897638292182,
+            "Iyz_tensor_mm4": 1.7763568394002505e-13
+          },
+          "halved_slice_relative_change": 1.0336095926540442e-05,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        },
+        {
+          "x_mm": 35.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 119.0000000093953,
+            "centroid_yz_mm": [
+              -5.99999999989837,
+              2.0995798320521146
+            ],
+            "Iyy_mm4": 421.9366457006355,
+            "Izz_mm4": 33497.586669037875,
+            "Iyz_tensor_mm4": -2.985647284958758e-08
+          },
+          "halved_slice_relative_change": 6.705223685784216e-13,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        },
+        {
+          "x_mm": 80.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 99.50000000509506,
+            "centroid_yz_mm": [
+              0.5000000005459185,
+              2.3640703518261614
+            ],
+            "Iyy_mm4": 375.8032181952643,
+            "Izz_mm4": 14544.171667291203,
+            "Iyz_tensor_mm4": -6.725291434861447e-08
+          },
+          "halved_slice_relative_change": 7.101142677423748e-13,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        },
+        {
+          "x_mm": 125.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 99.50000000509506,
+            "centroid_yz_mm": [
+              0.5000000005459185,
+              2.3640703518261605
+            ],
+            "Iyy_mm4": 375.8032181953552,
+            "Izz_mm4": 14544.171667292025,
+            "Iyz_tensor_mm4": -6.725295875753545e-08
+          },
+          "halved_slice_relative_change": 2.1705590084344754e-12,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        },
+        {
+          "x_mm": 145.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 216.4968130185632,
+            "centroid_yz_mm": [
+              1.464057645515474,
+              3.5
+            ],
+            "Iyy_mm4": 884.0286531535552,
+            "Izz_mm4": 17257.47712554138,
+            "Iyz_tensor_mm4": -3.552713678800501e-13
+          },
+          "halved_slice_relative_change": 7.285180576717925e-06,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        }
+      ],
+      "hole_checks": [
+        {
+          "pattern": "root",
+          "xy_mm": [
+            7.0,
+            -4.5
+          ],
+          "D_mm": 3.2,
+          "removed_frame_mm3": 56.297340352329094
+        },
+        {
+          "pattern": "root",
+          "xy_mm": [
+            7.0,
+            4.5
+          ],
+          "D_mm": 3.2,
+          "removed_frame_mm3": 56.297340352329094
+        },
+        {
+          "pattern": "root",
+          "xy_mm": [
+            17.0,
+            -4.5
+          ],
+          "D_mm": 3.2,
+          "removed_frame_mm3": 56.2973403523291
+        },
+        {
+          "pattern": "root",
+          "xy_mm": [
+            17.0,
+            4.5
+          ],
+          "D_mm": 3.2,
+          "removed_frame_mm3": 56.2973403523291
+        },
+        {
+          "pattern": "retainer",
+          "xy_mm": [
+            26.0,
+            -19.0
+          ],
+          "D_mm": 2.2,
+          "through_both_metal_parts": true,
+          "countersink_major_D_mm": 4.2,
+          "countersink_angle_deg": 90.0,
+          "countersink_depth_mm": 1.0000000000000002,
+          "fastener_head_must_not_exceed_z_mm": 9.0,
+          "fastener_selected": false
+        },
+        {
+          "pattern": "retainer",
+          "xy_mm": [
+            26.0,
+            10.0
+          ],
+          "D_mm": 2.2,
+          "through_both_metal_parts": true,
+          "countersink_major_D_mm": 4.2,
+          "countersink_angle_deg": 90.0,
+          "countersink_depth_mm": 1.0000000000000002,
+          "fastener_head_must_not_exceed_z_mm": 9.0,
+          "fastener_selected": false
+        },
+        {
+          "pattern": "retainer",
+          "xy_mm": [
+            146.5,
+            -4.0
+          ],
+          "D_mm": 2.2,
+          "through_both_metal_parts": true,
+          "countersink_major_D_mm": 4.2,
+          "countersink_angle_deg": 90.0,
+          "countersink_depth_mm": 1.0000000000000002,
+          "fastener_head_must_not_exceed_z_mm": 9.0,
+          "fastener_selected": false
+        },
+        {
+          "pattern": "retainer",
+          "xy_mm": [
+            146.5,
+            7.0
+          ],
+          "D_mm": 2.2,
+          "through_both_metal_parts": true,
+          "countersink_major_D_mm": 4.2,
+          "countersink_angle_deg": 90.0,
+          "countersink_depth_mm": 1.0000000000000002,
+          "fastener_head_must_not_exceed_z_mm": 9.0,
+          "fastener_selected": false
+        }
+      ],
+      "parts": [
+        {
+          "id": "frame",
+          "kind": "upper",
+          "volume_mm3": 19274.860149785105,
+          "bbox_local_mm": [
+            [
+              -1.1102230246251565e-16,
+              -29.0,
+              0.0
+            ],
+            [
+              150.0,
+              17.0,
+              7.0
+            ]
+          ],
+          "assumed_density_kg_m3": 2700.0,
+          "mass_kg": 0.05204212240441979,
+          "COM_local_m": [
+            0.07013998346016907,
+            -0.0017661699266756715,
+            0.00277627372975866
+          ],
+          "inertia_COM_local_axes_kg_m2": [
+            [
+              8.218193075663096e-06,
+              -4.537115398860888e-06,
+              4.4462540943535323e-07
+            ],
+            [
+              -4.537115398860888e-06,
+              0.00010847475850546173,
+              1.6394265619446553e-08
+            ],
+            [
+              4.4462540943535323e-07,
+              1.6394265619446553e-08,
+              0.00011626316427359453
+            ]
+          ],
+          "mass_status": "Nominal CAD volume times stated candidate density; not measured",
+          "representation": "original part candidate",
+          "tensor_check": {
+            "symmetry_error_kg_m2": 0.0,
+            "minimum_eigenvalue_kg_m2": 8.011455933425749e-06,
+            "principal_triangle_margin_kg_m2": 4.2612657103293684e-07
+          }
+        },
+        {
+          "id": "retainer",
+          "kind": "upper",
+          "volume_mm3": 2668.8770850942806,
+          "bbox_local_mm": [
+            [
+              21.0,
+              -29.0,
+              7.0
+            ],
+            [
+              150.0,
+              17.0,
+              9.0
+            ]
+          ],
+          "assumed_density_kg_m3": 2700.0,
+          "mass_kg": 0.007205968129754558,
+          "COM_local_m": [
+            0.07846028416671161,
+            -0.002194183672210143,
+            0.008053056151891148
+          ],
+          "inertia_COM_local_axes_kg_m2": [
+            [
+              1.5449603397294716e-06,
+              -9.565449515943698e-07,
+              -1.555379019794427e-09
+            ],
+            [
+              -9.565449515943698e-07,
+              1.5405114652291603e-05,
+              -1.2762212801826607e-10
+            ],
+            [
+              -1.555379019794427e-09,
+              -1.2762212801826607e-10,
+              1.6945108356306303e-05
+            ]
+          ],
+          "mass_status": "Nominal CAD volume times stated candidate density; not measured",
+          "representation": "original part candidate",
+          "tensor_check": {
+            "symmetry_error_kg_m2": 0.0,
+            "minimum_eigenvalue_kg_m2": 1.4792566361374112e-06,
+            "principal_triangle_margin_kg_m2": 4.9663202362059e-09
+          }
+        },
+        {
+          "id": "bearing_cover",
+          "kind": "upper",
+          "volume_mm3": 8305.654223549258,
+          "bbox_local_mm": [
+            [
+              30.2,
+              -26.0,
+              5.5
+            ],
+            [
+              141.8,
+              14.000000002928921,
+              8.0
+            ]
+          ],
+          "assumed_density_kg_m3": 1200.0,
+          "mass_kg": 0.009966785068259109,
+          "COM_local_m": [
+            0.08192890102801607,
+            -0.001321293681090696,
+            0.006749999999999999
+          ],
+          "inertia_COM_local_axes_kg_m2": [
+            [
+              8.896101194049455e-07,
+              -7.25116833837711e-07,
+              -1.1175870895385742e-21
+            ],
+            [
+              -7.25116833837711e-07,
+              1.1044689836624441e-05,
+              0.0
+            ],
+            [
+              -1.1175870895385742e-21,
+              0.0,
+              1.192391788825035e-05
+            ]
+          ],
+          "mass_status": "Nominal CAD volume times stated candidate density; not measured",
+          "representation": "original part candidate",
+          "tensor_check": {
+            "symmetry_error_kg_m2": 0.0,
+            "minimum_eigenvalue_kg_m2": 8.380949540862578e-07,
+            "principal_triangle_margin_kg_m2": 1.0382067779035893e-08
+          }
+        },
+        {
+          "id": "compliant_skin",
+          "kind": "upper",
+          "volume_mm3": 4598.15455734625,
+          "bbox_local_mm": [
+            [
+              30.2,
+              -26.0,
+              8.0
+            ],
+            [
+              141.8,
+              14.000000002928921,
+              9.5
+            ]
+          ],
+          "assumed_density_kg_m3": 1030.0,
+          "mass_kg": 0.0047360991940666375,
+          "COM_local_m": [
+            0.0818541603462146,
+            -0.0012795886178684473,
+            0.008733243800439388
+          ],
+          "inertia_COM_local_axes_kg_m2": [
+            [
+              3.787333691954219e-07,
+              -3.342741800153905e-07,
+              7.672720373610033e-11
+            ],
+            [
+              -3.342741800153905e-07,
+              5.107902996973054e-06,
+              -4.281353653682825e-11
+            ],
+            [
+              7.672720373610033e-11,
+              -4.281353653682825e-11,
+              5.484825954271187e-06
+            ]
+          ],
+          "mass_status": "Nominal CAD volume times stated candidate density; not measured",
+          "representation": "original part candidate",
+          "tensor_check": {
+            "symmetry_error_kg_m2": 0.0,
+            "minimum_eigenvalue_kg_m2": 3.5522258731481424e-07,
+            "principal_triangle_margin_kg_m2": 1.8103967008009094e-09
+          }
+        },
+        {
+          "id": "PCB_blank_reservation",
+          "kind": "upper",
+          "volume_mm3": 2018.5553254815704,
+          "bbox_local_mm": [
+            [
+              33.0,
+              -23.2,
+              3.5
+            ],
+            [
+              139.00000000292897,
+              11.200000002928924,
+              4.3
+            ]
+          ],
+          "assumed_density_kg_m3": null,
+          "mass_kg": null,
+          "COM_local_m": null,
+          "inertia_COM_local_axes_kg_m2": null,
+          "mass_status": "Unknown reservation; no density assigned",
+          "representation": "electronic allocation volume only",
+          "tensor_check": null
+        },
+        {
+          "id": "back_electronics_reservation",
+          "kind": "upper",
+          "volume_mm3": 4005.814171902272,
+          "bbox_local_mm": [
+            [
+              33.35,
+              -22.849999999999998,
+              1.75
+            ],
+            [
+              138.65000000292895,
+              10.85000000292893,
+              3.4
+            ]
+          ],
+          "assumed_density_kg_m3": null,
+          "mass_kg": null,
+          "COM_local_m": null,
+          "inertia_COM_local_axes_kg_m2": null,
+          "mass_status": "Unknown reservation; no density assigned",
+          "representation": "electronic allocation volume only",
+          "tensor_check": null
+        },
+        {
+          "id": "LED_front_reservation",
+          "kind": "upper",
+          "volume_mm3": 1942.2129318314044,
+          "bbox_local_mm": [
+            [
+              33.35,
+              -22.849999999999998,
+              4.4
+            ],
+            [
+              138.65000000292895,
+              10.85000000292893,
+              5.2
+            ]
+          ],
+          "assumed_density_kg_m3": null,
+          "mass_kg": null,
+          "COM_local_m": null,
+          "inertia_COM_local_axes_kg_m2": null,
+          "mass_status": "Unknown reservation; no density assigned",
+          "representation": "electronic allocation volume only",
+          "tensor_check": null
+        }
+      ],
+      "known_material_subtotal": {
+        "mass_kg": 0.07395097479650009,
+        "COM_local_m": [
+          0.07328981256867804,
+          -0.0017167557050667367,
+          0.004207524677555029
+        ],
+        "inertia_COM_local_axes_kg_m2": [
+          [
+            1.1410332728213697e-05,
+            -6.595146432969637e-06,
+            -3.372346604785018e-07
+          ],
+          [
+            -6.595146432969637e-06,
+            0.00014220728624663232,
+            6.381616029004043e-09
+          ],
+          [
+            -3.372346604785018e-07,
+            6.381616029004043e-09,
+            0.00015242146776803077
+          ]
+        ],
+        "tensor_check": {
+          "symmetry_error_kg_m2": 0.0,
+          "minimum_eigenvalue_kg_m2": 1.1077827242445475e-05,
+          "principal_triangle_margin_kg_m2": 1.194439105346094e-06
+        },
+        "mass_is_assumed_not_measured": true,
+        "PCB_LED_fasteners_connector_wire_mass_included": false
+      },
+      "compression_path": "Object -> replaceable skin -> PC bearing cover -> perimeter shelf -> integral dark frame/floor -> candidate root pad. PCB/LED are not structural supports.",
+      "skin_tangential_retention": "Peripheral skin flange captured under retainer lip; friction, shear, peel and cyclic retention capacity are unknown.",
+      "nominal_skin_face_stand_proud_mm": 0.5,
+      "LED_to_PC_gap_mm": 0.2999999999999998,
+      "back_electronics_to_floor_gap_mm": 0.25
+    },
+    "lower": {
+      "kind": "lower",
+      "outer_knots_mm": [
+        [
+          0.0,
+          -9.0
+        ],
+        [
+          15.0,
+          -9.0
+        ],
+        [
+          23.0,
+          -16.0
+        ],
+        [
+          91.0,
+          -16.0
+        ],
+        [
+          100.0,
+          -8.0
+        ],
+        [
+          100.0,
+          6.0
+        ],
+        [
+          94.0,
+          12.0
+        ],
+        [
+          57.0,
+          13.0
+        ],
+        [
+          49.0,
+          25.0
+        ],
+        [
+          29.0,
+          25.0
+        ],
+        [
+          21.0,
+          18.0
+        ],
+        [
+          15.0,
+          9.0
+        ],
+        [
+          0.0,
+          9.0
+        ]
+      ],
+      "overall_bbox_mm": [
+        [
+          -1.1102230246251565e-16,
+          -16.0,
+          0.0
+        ],
+        [
+          100.0,
+          25.0,
+          9.5
+        ]
+      ],
+      "root_holes": [
+        [
+          7.0,
+          -4.5
+        ],
+        [
+          7.0,
+          4.5
+        ],
+        [
+          17.0,
+          -4.5
+        ],
+        [
+          17.0,
+          4.5
+        ]
+      ],
+      "retainer_holes": [
+        [
+          26.0,
+          -10.0
+        ],
+        [
+          26.0,
+          15.0
+        ],
+        [
+          96.5,
+          -4.0
+        ],
+        [
+          96.5,
+          4.0
+        ]
+      ],
+      "profile_areas_mm2": {
+        "outer": 2987.185811302961,
+        "cover": 1653.6679892104876,
+        "contact_face": 1436.8694042443406,
+        "PCB_candidate": 1165.096979176897
+      },
+      "contacts": {
+        "frame__bearing_cover": {
+          "origin_world_mm": [
+            0,
+            0,
+            5.5
+          ],
+          "normal_world": [
+            0,
+            0,
+            1
+          ],
+          "shared_planar_face_area_mm2": 388.97229101032406,
+          "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+        },
+        "bearing_cover__compliant_skin": {
+          "origin_world_mm": [
+            0,
+            0,
+            8.0
+          ],
+          "normal_world": [
+            0,
+            0,
+            1
+          ],
+          "shared_planar_face_area_mm2": 1653.6679892104876,
+          "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+        },
+        "retainer__compliant_skin": {
+          "origin_world_mm": [
+            0,
+            0,
+            8.4
+          ],
+          "normal_world": [
+            0,
+            0,
+            1
+          ],
+          "shared_planar_face_area_mm2": 190.30669619226754,
+          "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+        },
+        "frame__retainer": {
+          "origin_world_mm": [
+            0,
+            0,
+            7.0
+          ],
+          "normal_world": [
+            0,
+            0,
+            1
+          ],
+          "shared_planar_face_area_mm2": 860.5862701943428,
+          "method": "Boolean common of coplanar BREP faces; nominal undeformed contact footprint only"
+        }
+      },
+      "all_pair_intersections_mm3": {
+        "frame__retainer": 0,
+        "frame__bearing_cover": 0,
+        "frame__compliant_skin": 0,
+        "frame__PCB_blank_reservation": 0,
+        "frame__back_electronics_reservation": 0,
+        "frame__LED_front_reservation": 0,
+        "retainer__bearing_cover": 0,
+        "retainer__compliant_skin": 0,
+        "retainer__PCB_blank_reservation": 0,
+        "retainer__back_electronics_reservation": 0,
+        "retainer__LED_front_reservation": 0,
+        "bearing_cover__compliant_skin": 0,
+        "bearing_cover__PCB_blank_reservation": 0,
+        "bearing_cover__back_electronics_reservation": 0,
+        "bearing_cover__LED_front_reservation": 0,
+        "compliant_skin__PCB_blank_reservation": 0,
+        "compliant_skin__back_electronics_reservation": 0,
+        "compliant_skin__LED_front_reservation": 0,
+        "PCB_blank_reservation__back_electronics_reservation": 0,
+        "PCB_blank_reservation__LED_front_reservation": 0,
+        "back_electronics_reservation__LED_front_reservation": 0
+      },
+      "section_results": [
+        {
+          "x_mm": 7.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 81.20029166836919,
+            "centroid_yz_mm": [
+              -1.728469690198412e-14,
+              3.499999999999999
+            ],
+            "Iyy_mm4": 331.56785765360314,
+            "Izz_mm4": 2456.5773196212035,
+            "Iyz_tensor_mm4": -1.62653620779122e-13
+          },
+          "halved_slice_relative_change": 1.0776491173558897e-05,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        },
+        {
+          "x_mm": 17.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 114.4502916683733,
+            "centroid_yz_mm": [
+              0.8696476149270213,
+              3.5
+            ],
+            "Iyy_mm4": 467.33869098424657,
+            "Izz_mm4": 5898.720983618449,
+            "Iyz_tensor_mm4": -4.884981308350689e-13
+          },
+          "halved_slice_relative_change": 7.645628147048926e-06,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        },
+        {
+          "x_mm": 35.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 111.50000001307643,
+            "centroid_yz_mm": [
+              4.500000000300574,
+              2.1903587445620327
+            ],
+            "Iyy_mm4": 405.9513023731442,
+            "Izz_mm4": 25107.81166922371,
+            "Iyz_tensor_mm4": -5.959606141914264e-08
+          },
+          "halved_slice_relative_change": 8.373507925716158e-13,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        },
+        {
+          "x_mm": 65.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 93.18480476672511,
+            "centroid_yz_mm": [
+              -1.6071681867238277,
+              2.4737716282179023
+            ],
+            "Iyy_mm4": 357.06308586926525,
+            "Izz_mm4": 10283.273469206542,
+            "Iyz_tensor_mm4": -0.1387718336317345
+          },
+          "halved_slice_relative_change": 3.302376503300842e-10,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        },
+        {
+          "x_mm": 90.0,
+          "result": {
+            "slice_width_mm": 0.02,
+            "area_mm2": 163.082205751158,
+            "centroid_yz_mm": [
+              -1.9517649223002183,
+              2.932157451886702
+            ],
+            "Iyy_mm4": 489.86058529294473,
+            "Izz_mm4": 11539.897926509864,
+            "Iyz_tensor_mm4": 3.1485382509220727
+          },
+          "halved_slice_relative_change": 1.1441826291873892e-07,
+          "scope": "Actual nominal frame net section only; not beam/plate deflection or strength qualification."
+        }
+      ],
+      "hole_checks": [
+        {
+          "pattern": "root",
+          "xy_mm": [
+            7.0,
+            -4.5
+          ],
+          "D_mm": 3.2,
+          "removed_frame_mm3": 56.2973403523291
+        },
+        {
+          "pattern": "root",
+          "xy_mm": [
+            7.0,
+            4.5
+          ],
+          "D_mm": 3.2,
+          "removed_frame_mm3": 56.2973403523291
+        },
+        {
+          "pattern": "root",
+          "xy_mm": [
+            17.0,
+            -4.5
+          ],
+          "D_mm": 3.2,
+          "removed_frame_mm3": 56.29734035232911
+        },
+        {
+          "pattern": "root",
+          "xy_mm": [
+            17.0,
+            4.5
+          ],
+          "D_mm": 3.2,
+          "removed_frame_mm3": 56.29734035232911
+        },
+        {
+          "pattern": "retainer",
+          "xy_mm": [
+            26.0,
+            -10.0
+          ],
+          "D_mm": 2.2,
+          "through_both_metal_parts": true,
+          "countersink_major_D_mm": 4.2,
+          "countersink_angle_deg": 90.0,
+          "countersink_depth_mm": 1.0000000000000002,
+          "fastener_head_must_not_exceed_z_mm": 9.0,
+          "fastener_selected": false
+        },
+        {
+          "pattern": "retainer",
+          "xy_mm": [
+            26.0,
+            15.0
+          ],
+          "D_mm": 2.2,
+          "through_both_metal_parts": true,
+          "countersink_major_D_mm": 4.2,
+          "countersink_angle_deg": 90.0,
+          "countersink_depth_mm": 1.0000000000000002,
+          "fastener_head_must_not_exceed_z_mm": 9.0,
+          "fastener_selected": false
+        },
+        {
+          "pattern": "retainer",
+          "xy_mm": [
+            96.5,
+            -4.0
+          ],
+          "D_mm": 2.2,
+          "through_both_metal_parts": true,
+          "countersink_major_D_mm": 4.2,
+          "countersink_angle_deg": 90.0,
+          "countersink_depth_mm": 1.0000000000000002,
+          "fastener_head_must_not_exceed_z_mm": 9.0,
+          "fastener_selected": false
+        },
+        {
+          "pattern": "retainer",
+          "xy_mm": [
+            96.5,
+            4.0
+          ],
+          "D_mm": 2.2,
+          "through_both_metal_parts": true,
+          "countersink_major_D_mm": 4.2,
+          "countersink_angle_deg": 90.0,
+          "countersink_depth_mm": 1.0000000000000002,
+          "fastener_head_must_not_exceed_z_mm": 9.0,
+          "fastener_selected": false
+        }
+      ],
+      "parts": [
+        {
+          "id": "frame",
+          "kind": "lower",
+          "volume_mm3": 12983.570355913951,
+          "bbox_local_mm": [
+            [
+              -1.1102230246251565e-16,
+              -16.0,
+              0.0
+            ],
+            [
+              100.0,
+              25.0,
+              7.0
+            ]
+          ],
+          "assumed_density_kg_m3": 2700.0,
+          "mass_kg": 0.03505563996096767,
+          "COM_local_m": [
+            0.04626105395091812,
+            0.001205697153448977,
+            0.0029627916215465865
+          ],
+          "inertia_COM_local_axes_kg_m2": [
+            [
+              4.279630881215077e-06,
+              1.2737070539399612e-06,
+              2.154915861692384e-07
+            ],
+            [
+              1.2737070539399612e-06,
+              2.910709096832505e-05,
+              -2.9557168241761877e-09
+            ],
+            [
+              2.154915861692384e-07,
+              -2.9557168241761877e-09,
+              3.3095763968238423e-05
+            ]
+          ],
+          "mass_status": "Nominal CAD volume times stated candidate density; not measured",
+          "representation": "original part candidate",
+          "tensor_check": {
+            "symmetry_error_kg_m2": 0.0,
+            "minimum_eigenvalue_kg_m2": 4.2128519901279795e-06,
+            "principal_triangle_margin_kg_m2": 2.8771316658633857e-07
+          }
+        },
+        {
+          "id": "retainer",
+          "kind": "lower",
+          "volume_mm3": 1839.672370716644,
+          "bbox_local_mm": [
+            [
+              21.0,
+              -16.0,
+              7.0
+            ],
+            [
+              100.0,
+              25.0,
+              9.0
+            ]
+          ],
+          "assumed_density_kg_m3": 2700.0,
+          "mass_kg": 0.00496711540093494,
+          "COM_local_m": [
+            0.054053242690179616,
+            0.0015694567538356264,
+            0.008045226101086099
+          ],
+          "inertia_COM_local_axes_kg_m2": [
+            [
+              8.071586165115283e-07,
+              2.9177728803981033e-07,
+              -8.69134609972418e-10
+            ],
+            [
+              2.9177728803981033e-07,
+              3.796745542207852e-06,
+              1.2053899788644051e-11
+            ],
+            [
+              -8.69134609972418e-10,
+              1.2053899788644051e-11,
+              4.600493936773635e-06
+            ]
+          ],
+          "mass_status": "Nominal CAD volume times stated candidate density; not measured",
+          "representation": "original part candidate",
+          "tensor_check": {
+            "symmetry_error_kg_m2": 0.0,
+            "minimum_eigenvalue_kg_m2": 7.789477850418945e-07,
+            "principal_triangle_margin_kg_m2": 3.4098159841205374e-09
+          }
+        },
+        {
+          "id": "bearing_cover",
+          "kind": "lower",
+          "volume_mm3": 4134.169972942812,
+          "bbox_local_mm": [
+            [
+              30.19999999752576,
+              -12.999999999999998,
+              5.5
+            ],
+            [
+              91.8,
+              22.000000004452996,
+              8.0
+            ]
+          ],
+          "assumed_density_kg_m3": 1200.0,
+          "mass_kg": 0.004961003967531375,
+          "COM_local_m": [
+            0.05768932369678018,
+            0.0010379221631850758,
+            0.006750000000000001
+          ],
+          "inertia_COM_local_axes_kg_m2": [
+            [
+              3.842442009671111e-07,
+              2.3260932569773847e-07,
+              2.793967723846436e-22
+            ],
+            [
+              2.3260932569773847e-07,
+              1.6044334749343404e-06,
+              -8.731149137020112e-24
+            ],
+            [
+              2.793967723846436e-22,
+              -8.731149137020112e-24,
+              1.9835099634352284e-06
+            ]
+          ],
+          "mass_status": "Nominal CAD volume times stated candidate density; not measured",
+          "representation": "original part candidate",
+          "tensor_check": {
+            "symmetry_error_kg_m2": 0.0,
+            "minimum_eigenvalue_kg_m2": 3.41405024706439e-07,
+            "principal_triangle_margin_kg_m2": 5.1677124662231845e-09
+          }
+        },
+        {
+          "id": "compliant_skin",
+          "kind": "lower",
+          "volume_mm3": 2242.0235403086135,
+          "bbox_local_mm": [
+            [
+              30.19999999752576,
+              -12.999999999999998,
+              8.0
+            ],
+            [
+              91.8,
+              22.000000004452996,
+              9.5
+            ]
+          ],
+          "assumed_density_kg_m3": 1030.0,
+          "mass_kg": 0.002309284246517872,
+          "COM_local_m": [
+            0.05761855871497976,
+            0.0009925012588051898,
+            0.008728726499596298
+          ],
+          "inertia_COM_local_axes_kg_m2": [
+            [
+              1.596148055183193e-07,
+              1.049904052865883e-07,
+              3.6159731678585526e-11
+            ],
+            [
+              1.049904052865883e-07,
+              7.094203486355821e-07,
+              2.3209328393132236e-11
+            ],
+            [
+              3.6159731678585526e-11,
+              2.3209328393132236e-11,
+              8.681483370215115e-07
+            ]
+          ],
+          "mass_status": "Nominal CAD volume times stated candidate density; not measured",
+          "representation": "original part candidate",
+          "tensor_check": {
+            "symmetry_error_kg_m2": 0.0,
+            "minimum_eigenvalue_kg_m2": 1.4024810905912504e-07,
+            "principal_triangle_margin_kg_m2": 8.868020411977202e-10
+          }
+        },
+        {
+          "id": "PCB_blank_reservation",
+          "kind": "lower",
+          "volume_mm3": 932.077583323855,
+          "bbox_local_mm": [
+            [
+              32.99999999752576,
+              -10.199999999999998,
+              3.5
+            ],
+            [
+              89.00000000000001,
+              19.200000004452995,
+              4.3
+            ]
+          ],
+          "assumed_density_kg_m3": null,
+          "mass_kg": null,
+          "COM_local_m": null,
+          "inertia_COM_local_axes_kg_m2": null,
+          "mass_status": "Unknown reservation; no density assigned",
+          "representation": "electronic allocation volume only",
+          "tensor_check": null
+        },
+        {
+          "id": "back_electronics_reservation",
+          "kind": "lower",
+          "volume_mm3": 1828.6639882203508,
+          "bbox_local_mm": [
+            [
+              33.34999999752576,
+              -9.849999999999998,
+              1.75
+            ],
+            [
+              88.65000000252594,
+              18.850000004452998,
+              3.4
+            ]
+          ],
+          "assumed_density_kg_m3": null,
+          "mass_kg": null,
+          "COM_local_m": null,
+          "inertia_COM_local_axes_kg_m2": null,
+          "mass_status": "Unknown reservation; no density assigned",
+          "representation": "electronic allocation volume only",
+          "tensor_check": null
+        },
+        {
+          "id": "LED_front_reservation",
+          "kind": "lower",
+          "volume_mm3": 886.6249639856246,
+          "bbox_local_mm": [
+            [
+              33.34999999752576,
+              -9.849999999999998,
+              4.4
+            ],
+            [
+              88.65000000252594,
+              18.850000004452998,
+              5.2
+            ]
+          ],
+          "assumed_density_kg_m3": null,
+          "mass_kg": null,
+          "COM_local_m": null,
+          "inertia_COM_local_axes_kg_m2": null,
+          "mass_status": "Unknown reservation; no density assigned",
+          "representation": "electronic allocation volume only",
+          "tensor_check": null
+        }
+      ],
+      "known_material_subtotal": {
+        "mass_kg": 0.04729304357595186,
+        "COM_local_m": [
+          0.048832850770910985,
+          0.001215892597928442,
+          0.004175413449472847
+        ],
+        "inertia_COM_local_axes_kg_m2": [
+          [
+            5.838239461837333e-06,
+            1.905348677558311e-06,
+            -2.0051225386162167e-07
+          ],
+          [
+            1.905348677558311e-06,
+            3.635899088275536e-05,
+            -5.5279260359207246e-09
+          ],
+          [
+            -2.0051225386162167e-07,
+            -5.5279260359207246e-09,
+            4.1483419686921225e-05
+          ]
+        ],
+        "tensor_check": {
+          "symmetry_error_kg_m2": 0.0,
+          "minimum_eigenvalue_kg_m2": 5.7186364037748376e-06,
+          "principal_triangle_margin_kg_m2": 7.114498099287524e-07
+        },
+        "mass_is_assumed_not_measured": true,
+        "PCB_LED_fasteners_connector_wire_mass_included": false
+      },
+      "compression_path": "Object -> replaceable skin -> PC bearing cover -> perimeter shelf -> integral dark frame/floor -> candidate root pad. PCB/LED are not structural supports.",
+      "skin_tangential_retention": "Peripheral skin flange captured under retainer lip; friction, shear, peel and cyclic retention capacity are unknown.",
+      "nominal_skin_face_stand_proud_mm": 0.5,
+      "LED_to_PC_gap_mm": 0.2999999999999998,
+      "back_electronics_to_floor_gap_mm": 0.25
+    }
+  },
+  "four_petal_known_material_subtotal_kg": 0.2424880367449039,
+  "excluded_mass": "LEDs/PCB/copper/solder/connectors/wires/fasteners/hinges/transmission/actuator are unknown and excluded, not physical zero.",
+  "kinematics_qualified": false,
+  "one_second_cycle_qualified": false,
+  "grip_force_qualified": false,
+  "manufacturing_release": false,
+  "reference_interpretation": "Manual interpretation of provided form: upper stepped shoulder and long wing, lower compact shoulder and flat/chamfered ends. Do not inherit the image label4 independent fingers; current architecture is one motor+mimic under separate study."
+}

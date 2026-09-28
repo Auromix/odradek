@@ -1,0 +1,72 @@
+{
+  "revision": "R5-PETAL-FORM01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek — Auromix contributors (https://github.com/Auromix/odradek)",
+  "frozen_study_sha256": "6239375fadc6c43a9e538674af1f0bf620ba53a4962bd5320f33bd06474869e9",
+  "script_ast_pass": true,
+  "source_hashes_all_match": true,
+  "referenced_export_hashes_checked": 81,
+  "independent_STL_checks": {
+    "count": 16,
+    "all_watertight": true,
+    "all_winding_consistent": true
+  },
+  "DXF_units_mm": true,
+  "DXF_four_files_circle_counts": [
+    12,
+    12,
+    12,
+    12
+  ],
+  "independent_aggregate_errors": {
+    "upper": {
+      "mass_kg": 0.0,
+      "COM_m": 0.0,
+      "inertia_kg_m2": 1.3552527156068805e-19
+    },
+    "lower": {
+      "mass_kg": 0.0,
+      "COM_m": 0.0,
+      "inertia_kg_m2": 2.710505431213761e-20
+    }
+  },
+  "mirror_max_tensor_error_kg_m2": 2.0328790734103208e-20,
+  "minimum_part_inertia_eigenvalue_kg_m2": 1.4024810905912504e-07,
+  "minimum_principal_triangle_margin_kg_m2": 8.868020411977202e-10,
+  "relative_document_links_all_exist": 15,
+  "alternative_parameter_rebuild": {
+    "results": [
+      {
+        "kind": "upper",
+        "length_parameter_mm": 155.0,
+        "actual_bbox_length_mm": 155.00000000000003,
+        "seven_solids_valid": true,
+        "layer_intersections_zero": true,
+        "four_contacts_positive": true,
+        "scope": "Alternate length parameter rebuild only, not a released variant; exports/frozen nominal files unchanged."
+      },
+      {
+        "kind": "lower",
+        "length_parameter_mm": 105.0,
+        "actual_bbox_length_mm": 105.0,
+        "seven_solids_valid": true,
+        "layer_intersections_zero": true,
+        "four_contacts_positive": true,
+        "scope": "Alternate length parameter rebuild only, not a released variant; exports/frozen nominal files unchanged."
+      }
+    ],
+    "private_result_sha256": "050ae97d221d1a1390252279759a3d3e1507c411bd29347f60fe0c98a66f3ac9",
+    "method": "Import r5_petal_form01, deepcopy DEFAULT, upper length=155/lower=105; build each without export; verify seven valid solids, zero layer intersection, four positive contact faces and actual bbox length."
+  },
+  "PDF_visual_review": {
+    "pages": 3,
+    "pdf_sha256": "d27b10b464bfacaff23b88bee7610c893c3f186df0393d395d36eba604027202",
+    "method": "Actual PDF pages rendered with PyMuPDF 1.28.2, scale 1.4, visually inspected; captions, dimensions, sections and exclusions legible and unclipped.",
+    "private_page_image_sha256": {
+      "page-1.png": "a7c72066f7a433a2bb3b0de2bbc93afeea3ca3a93b32c7a6586832f2e8ae20a3",
+      "page-2.png": "78b9072a88a94f59b62f496b619789a7042b63fea05ad0bdc02779c76b4136f1",
+      "page-3.png": "35d7d56ced3c38b22f84d15f814bffe54fa3c8890e4669601376569af58fdb19"
+    }
+  },
+  "scope": "Geometric form and layer interfaces only; not motion, one-second cycle, gripping, material strength, tolerance or manufacturing approval."
+}
