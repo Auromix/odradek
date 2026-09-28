@@ -1,0 +1,7269 @@
+{
+  "revision": "CD-PCB01",
+  "board_sha256": "cac04c3cc229d7ef42865aa11870219e4f6ecdcf6c1304a99ab894065f1e2cf3",
+  "coordinates": "head frame. Native PCB XY=(40+headX,40-headY). PCB bottom Z=-3,topZ=-2.",
+  "PCB": {
+    "diameter_mm": 60,
+    "thickness_mm": 1,
+    "head_z_mm": [
+      -3,
+      -2
+    ]
+  },
+  "components_back": [
+    {
+      "ref": "R12",
+      "manufacturer_part_number": "CRCW060333R0FKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        10.5,
+        10.399999999999999,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        9.0,
+        9.674999999999999,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        12.0,
+        11.124999999999998,
+        -3
+      ],
+      "radial_corner_mm": 16.363545612122085,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          9.675,
+          9.925,
+          -3.6
+        ],
+        "head_max_mm": [
+          11.325,
+          10.875,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            11.325,
+            9.925,
+            -3.1
+          ],
+          [
+            11.325,
+            9.925,
+            -3.6
+          ],
+          [
+            11.325,
+            10.875,
+            -3.1
+          ],
+          [
+            11.325,
+            10.875,
+            -3.6
+          ],
+          [
+            9.675,
+            9.925,
+            -3.1
+          ],
+          [
+            9.675,
+            9.925,
+            -3.6
+          ],
+          [
+            9.675,
+            10.875,
+            -3.1
+          ],
+          [
+            9.675,
+            10.875,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          9.675,
+          9.925,
+          -3.6
+        ],
+        "head_max_mm": [
+          11.325,
+          10.875,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            11.325,
+            9.925,
+            -3.1
+          ],
+          [
+            11.325,
+            9.925,
+            -3.6
+          ],
+          [
+            11.325,
+            10.875,
+            -3.1
+          ],
+          [
+            11.325,
+            10.875,
+            -3.6
+          ],
+          [
+            9.675,
+            9.925,
+            -3.1
+          ],
+          [
+            9.675,
+            9.925,
+            -3.6
+          ],
+          [
+            9.675,
+            10.875,
+            -3.1
+          ],
+          [
+            9.675,
+            10.875,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          9.0,
+          9.674999999999999,
+          -3.65
+        ],
+        "head_max_mm": [
+          12.0,
+          11.124999999999998,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C4",
+      "manufacturer_part_number": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        -6.0,
+        6.700001,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          1.0,
+          1.2246467991473532e-16,
+          0
+        ],
+        [
+          1.2246467991473532e-16,
+          -1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 180,
+      "native_board_rotation_deg": 0.0,
+      "envelope_head_min_mm": [
+        -7.35,
+        5.950001,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -4.65,
+        7.450001,
+        -3
+      ],
+      "radial_corner_mm": 10.46541995812882,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -6.85,
+          6.250001,
+          -4.0
+        ],
+        "head_max_mm": [
+          -5.15,
+          7.150001,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -6.85,
+            7.150001,
+            -3.1
+          ],
+          [
+            -6.85,
+            7.150001,
+            -4.0
+          ],
+          [
+            -6.85,
+            6.250001,
+            -3.1
+          ],
+          [
+            -6.85,
+            6.250001,
+            -4.0
+          ],
+          [
+            -5.15,
+            7.150001,
+            -3.1
+          ],
+          [
+            -5.15,
+            7.150001,
+            -4.0
+          ],
+          [
+            -5.15,
+            6.250001,
+            -3.1
+          ],
+          [
+            -5.15,
+            6.250001,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -6.85,
+          6.250001,
+          -4.0
+        ],
+        "head_max_mm": [
+          -5.15,
+          7.150001,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -6.85,
+            7.150001,
+            -3.1
+          ],
+          [
+            -6.85,
+            7.150001,
+            -4.0
+          ],
+          [
+            -6.85,
+            6.250001,
+            -3.1
+          ],
+          [
+            -6.85,
+            6.250001,
+            -4.0
+          ],
+          [
+            -5.15,
+            7.150001,
+            -3.1
+          ],
+          [
+            -5.15,
+            7.150001,
+            -4.0
+          ],
+          [
+            -5.15,
+            6.250001,
+            -3.1
+          ],
+          [
+            -5.15,
+            6.250001,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -7.35,
+          5.950001,
+          -4.05
+        ],
+        "head_max_mm": [
+          -4.65,
+          7.450001,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C5",
+      "manufacturer_part_number": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        -11.399999999999999,
+        8.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -6.123233995736766e-17,
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 90,
+      "native_board_rotation_deg": 90.0,
+      "envelope_head_min_mm": [
+        -12.149999999999999,
+        6.65,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -10.649999999999999,
+        9.35,
+        -3
+      ],
+      "radial_corner_mm": 15.331177384662924,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -11.85,
+          7.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          -10.95,
+          8.85,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -11.85,
+            7.15,
+            -3.1
+          ],
+          [
+            -11.85,
+            7.15,
+            -4.0
+          ],
+          [
+            -10.95,
+            7.15,
+            -3.1
+          ],
+          [
+            -10.95,
+            7.15,
+            -4.0
+          ],
+          [
+            -11.85,
+            8.85,
+            -3.1
+          ],
+          [
+            -11.85,
+            8.85,
+            -4.0
+          ],
+          [
+            -10.95,
+            8.85,
+            -3.1
+          ],
+          [
+            -10.95,
+            8.85,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -11.85,
+          7.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          -10.95,
+          8.85,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -11.85,
+            7.15,
+            -3.1
+          ],
+          [
+            -11.85,
+            7.15,
+            -4.0
+          ],
+          [
+            -10.95,
+            7.15,
+            -3.1
+          ],
+          [
+            -10.95,
+            7.15,
+            -4.0
+          ],
+          [
+            -11.85,
+            8.85,
+            -3.1
+          ],
+          [
+            -11.85,
+            8.85,
+            -4.0
+          ],
+          [
+            -10.95,
+            8.85,
+            -3.1
+          ],
+          [
+            -10.95,
+            8.85,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -12.149999999999999,
+          6.65,
+          -4.05
+        ],
+        "head_max_mm": [
+          -10.649999999999999,
+          9.35,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C17",
+      "manufacturer_part_number": "C1608C0G1H102J080AA",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        11.399999999999999,
+        8.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -6.123233995736766e-17,
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 90,
+      "native_board_rotation_deg": 90.0,
+      "envelope_head_min_mm": [
+        10.649999999999999,
+        6.65,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        12.149999999999999,
+        9.35,
+        -3
+      ],
+      "radial_corner_mm": 15.331177384662924,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H102J080AA",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          10.95,
+          7.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          11.85,
+          8.85,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            10.95,
+            7.15,
+            -3.1
+          ],
+          [
+            10.95,
+            7.15,
+            -4.0
+          ],
+          [
+            11.85,
+            7.15,
+            -3.1
+          ],
+          [
+            11.85,
+            7.15,
+            -4.0
+          ],
+          [
+            10.95,
+            8.85,
+            -3.1
+          ],
+          [
+            10.95,
+            8.85,
+            -4.0
+          ],
+          [
+            11.85,
+            8.85,
+            -3.1
+          ],
+          [
+            11.85,
+            8.85,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608C0G1H102J080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H102J080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          10.95,
+          7.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          11.85,
+          8.85,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            10.95,
+            7.15,
+            -3.1
+          ],
+          [
+            10.95,
+            7.15,
+            -4.0
+          ],
+          [
+            11.85,
+            7.15,
+            -3.1
+          ],
+          [
+            11.85,
+            7.15,
+            -4.0
+          ],
+          [
+            10.95,
+            8.85,
+            -3.1
+          ],
+          [
+            10.95,
+            8.85,
+            -4.0
+          ],
+          [
+            11.85,
+            8.85,
+            -3.1
+          ],
+          [
+            11.85,
+            8.85,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608C0G1H102J080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H102J080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          10.649999999999999,
+          6.65,
+          -4.05
+        ],
+        "head_max_mm": [
+          12.149999999999999,
+          9.35,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R9",
+      "manufacturer_part_number": "CRCW06031K00FKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        2.0,
+        13.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        0.5,
+        12.275,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        3.5,
+        13.725,
+        -3
+      ],
+      "radial_corner_mm": 14.164237536839037,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          1.175,
+          12.525,
+          -3.6
+        ],
+        "head_max_mm": [
+          2.825,
+          13.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            2.825,
+            12.525,
+            -3.1
+          ],
+          [
+            2.825,
+            12.525,
+            -3.6
+          ],
+          [
+            2.825,
+            13.475,
+            -3.1
+          ],
+          [
+            2.825,
+            13.475,
+            -3.6
+          ],
+          [
+            1.175,
+            12.525,
+            -3.1
+          ],
+          [
+            1.175,
+            12.525,
+            -3.6
+          ],
+          [
+            1.175,
+            13.475,
+            -3.1
+          ],
+          [
+            1.175,
+            13.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          1.175,
+          12.525,
+          -3.6
+        ],
+        "head_max_mm": [
+          2.825,
+          13.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            2.825,
+            12.525,
+            -3.1
+          ],
+          [
+            2.825,
+            12.525,
+            -3.6
+          ],
+          [
+            2.825,
+            13.475,
+            -3.1
+          ],
+          [
+            2.825,
+            13.475,
+            -3.6
+          ],
+          [
+            1.175,
+            12.525,
+            -3.1
+          ],
+          [
+            1.175,
+            12.525,
+            -3.6
+          ],
+          [
+            1.175,
+            13.475,
+            -3.1
+          ],
+          [
+            1.175,
+            13.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          0.5,
+          12.275,
+          -3.65
+        ],
+        "head_max_mm": [
+          3.5,
+          13.725,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "J1",
+      "manufacturer_part_number": "SM12B-GHS-TB(LF)(SN)",
+      "footprint": "JST_GH_12_SIDE",
+      "origin_head_mm": [
+        0.0,
+        -14.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -9.225,
+        -19.55,
+        -7.45
+      ],
+      "envelope_head_max_mm": [
+        9.225,
+        -11.3,
+        -3
+      ],
+      "radial_corner_mm": 21.617195123327175,
+      "height_from_board_including_0p1_solder_allowance_mm": 4.45,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+      "max_body": null,
+      "mated_reference": {
+        "kind": "catalogue_mated_reference_box",
+        "local_min_uvh_mm": [
+          -9.125,
+          -5.55,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          9.125,
+          1.6,
+          4.449999999999999
+        ],
+        "dimensions_uvh_mm": [
+          18.25,
+          7.15,
+          4.35
+        ],
+        "head_min_mm": [
+          -9.125,
+          -19.55,
+          -7.45
+        ],
+        "head_max_mm": [
+          9.125,
+          -12.4,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            9.125,
+            -19.55,
+            -3.1
+          ],
+          [
+            9.125,
+            -19.55,
+            -7.45
+          ],
+          [
+            9.125,
+            -12.4,
+            -3.1
+          ],
+          [
+            9.125,
+            -12.4,
+            -7.45
+          ],
+          [
+            -9.125,
+            -19.55,
+            -3.1
+          ],
+          [
+            -9.125,
+            -19.55,
+            -7.45
+          ],
+          [
+            -9.125,
+            -12.4,
+            -3.1
+          ],
+          [
+            -9.125,
+            -12.4,
+            -7.45
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "SM12B-GHS-TB(LF)(SN)",
+        "source_url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+        "source_locator": "eGH side-entry 12-circuit table and mated section; project CD-HW01 mounting-side origin",
+        "source_status": "catalogue reference dimensions ONLY; no controlled maximum tolerance or vendor BREP"
+      },
+      "mcad_material_envelope": {
+        "kind": "catalogue_mated_reference_box",
+        "local_min_uvh_mm": [
+          -9.125,
+          -5.55,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          9.125,
+          1.6,
+          4.449999999999999
+        ],
+        "dimensions_uvh_mm": [
+          18.25,
+          7.15,
+          4.35
+        ],
+        "head_min_mm": [
+          -9.125,
+          -19.55,
+          -7.45
+        ],
+        "head_max_mm": [
+          9.125,
+          -12.4,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            9.125,
+            -19.55,
+            -3.1
+          ],
+          [
+            9.125,
+            -19.55,
+            -7.45
+          ],
+          [
+            9.125,
+            -12.4,
+            -3.1
+          ],
+          [
+            9.125,
+            -12.4,
+            -7.45
+          ],
+          [
+            -9.125,
+            -19.55,
+            -3.1
+          ],
+          [
+            -9.125,
+            -19.55,
+            -7.45
+          ],
+          [
+            -9.125,
+            -12.4,
+            -3.1
+          ],
+          [
+            -9.125,
+            -12.4,
+            -7.45
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "SM12B-GHS-TB(LF)(SN)",
+        "source_url": "https://www.jst-mfg.com/product/pdf/eng/eGH.pdf",
+        "source_locator": "eGH side-entry 12-circuit table and mated section; project CD-HW01 mounting-side origin",
+        "source_status": "catalogue reference dimensions ONLY; no controlled maximum tolerance or vendor BREP"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -9.225,
+          -19.55,
+          -7.45
+        ],
+        "head_max_mm": [
+          9.225,
+          -11.3,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C7",
+      "manufacturer_part_number": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        -3.200000000000003,
+        6.5,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          1.0,
+          1.2246467991473532e-16,
+          0
+        ],
+        [
+          1.2246467991473532e-16,
+          -1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 180,
+      "native_board_rotation_deg": 0.0,
+      "envelope_head_min_mm": [
+        -4.5500000000000025,
+        5.75,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -1.8500000000000028,
+        7.25,
+        -3
+      ],
+      "radial_corner_mm": 8.559497648810941,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -4.05,
+          6.05,
+          -4.0
+        ],
+        "head_max_mm": [
+          -2.35,
+          6.95,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -4.05,
+            6.95,
+            -3.1
+          ],
+          [
+            -4.05,
+            6.95,
+            -4.0
+          ],
+          [
+            -4.05,
+            6.05,
+            -3.1
+          ],
+          [
+            -4.05,
+            6.05,
+            -4.0
+          ],
+          [
+            -2.35,
+            6.95,
+            -3.1
+          ],
+          [
+            -2.35,
+            6.95,
+            -4.0
+          ],
+          [
+            -2.35,
+            6.05,
+            -3.1
+          ],
+          [
+            -2.35,
+            6.05,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -4.05,
+          6.05,
+          -4.0
+        ],
+        "head_max_mm": [
+          -2.35,
+          6.95,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -4.05,
+            6.95,
+            -3.1
+          ],
+          [
+            -4.05,
+            6.95,
+            -4.0
+          ],
+          [
+            -4.05,
+            6.05,
+            -3.1
+          ],
+          [
+            -4.05,
+            6.05,
+            -4.0
+          ],
+          [
+            -2.35,
+            6.95,
+            -3.1
+          ],
+          [
+            -2.35,
+            6.95,
+            -4.0
+          ],
+          [
+            -2.35,
+            6.05,
+            -3.1
+          ],
+          [
+            -2.35,
+            6.05,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -4.5500000000000025,
+          5.75,
+          -4.05
+        ],
+        "head_max_mm": [
+          -1.8500000000000028,
+          7.25,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R10",
+      "manufacturer_part_number": "CRCW06034K70FKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        5.0,
+        7.700001,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        3.5,
+        6.975001000000001,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        6.5,
+        8.425001,
+        -3
+      ],
+      "radial_corner_mm": 10.640988762798361,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          4.175,
+          7.225001,
+          -3.6
+        ],
+        "head_max_mm": [
+          5.825,
+          8.175001,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            5.825,
+            7.225001,
+            -3.1
+          ],
+          [
+            5.825,
+            7.225001,
+            -3.6
+          ],
+          [
+            5.825,
+            8.175001,
+            -3.1
+          ],
+          [
+            5.825,
+            8.175001,
+            -3.6
+          ],
+          [
+            4.175,
+            7.225001,
+            -3.1
+          ],
+          [
+            4.175,
+            7.225001,
+            -3.6
+          ],
+          [
+            4.175,
+            8.175001,
+            -3.1
+          ],
+          [
+            4.175,
+            8.175001,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          4.175,
+          7.225001,
+          -3.6
+        ],
+        "head_max_mm": [
+          5.825,
+          8.175001,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            5.825,
+            7.225001,
+            -3.1
+          ],
+          [
+            5.825,
+            7.225001,
+            -3.6
+          ],
+          [
+            5.825,
+            8.175001,
+            -3.1
+          ],
+          [
+            5.825,
+            8.175001,
+            -3.6
+          ],
+          [
+            4.175,
+            7.225001,
+            -3.1
+          ],
+          [
+            4.175,
+            7.225001,
+            -3.6
+          ],
+          [
+            4.175,
+            8.175001,
+            -3.1
+          ],
+          [
+            4.175,
+            8.175001,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          3.5,
+          6.975001000000001,
+          -3.65
+        ],
+        "head_max_mm": [
+          6.5,
+          8.425001,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "U2",
+      "manufacturer_part_number": "LP5860RKPR",
+      "footprint": "TI_RKP0040B",
+      "origin_head_mm": [
+        10.0,
+        3.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        7.05,
+        0.04999999999999982,
+        -4.1
+      ],
+      "envelope_head_max_mm": [
+        12.95,
+        5.95,
+        -3
+      ],
+      "radial_corner_mm": 14.25149115005163,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0999999999999996,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -2.55,
+          -2.55,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          2.55,
+          2.55,
+          1.1
+        ],
+        "dimensions_uvh_mm": [
+          5.1,
+          5.1,
+          1.0
+        ],
+        "head_min_mm": [
+          7.45,
+          0.45,
+          -4.1
+        ],
+        "head_max_mm": [
+          12.55,
+          5.55,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            12.55,
+            0.45,
+            -3.1
+          ],
+          [
+            12.55,
+            0.45,
+            -4.1
+          ],
+          [
+            12.55,
+            5.55,
+            -3.1
+          ],
+          [
+            12.55,
+            5.55,
+            -4.1
+          ],
+          [
+            7.45,
+            0.45,
+            -3.1
+          ],
+          [
+            7.45,
+            0.45,
+            -4.1
+          ],
+          [
+            7.45,
+            5.55,
+            -3.1
+          ],
+          [
+            7.45,
+            5.55,
+            -4.1
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "LP5860RKPR",
+        "source_url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+        "source_locator": "RKP0040B PACKAGE OUTLINE, datasheet PDF page 58",
+        "source_status": "published maximum dimensions; no detailed supplier BREP"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -2.55,
+          -2.55,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          2.55,
+          2.55,
+          1.1
+        ],
+        "dimensions_uvh_mm": [
+          5.1,
+          5.1,
+          1.0
+        ],
+        "head_min_mm": [
+          7.45,
+          0.45,
+          -4.1
+        ],
+        "head_max_mm": [
+          12.55,
+          5.55,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            12.55,
+            0.45,
+            -3.1
+          ],
+          [
+            12.55,
+            0.45,
+            -4.1
+          ],
+          [
+            12.55,
+            5.55,
+            -3.1
+          ],
+          [
+            12.55,
+            5.55,
+            -4.1
+          ],
+          [
+            7.45,
+            0.45,
+            -3.1
+          ],
+          [
+            7.45,
+            0.45,
+            -4.1
+          ],
+          [
+            7.45,
+            5.55,
+            -3.1
+          ],
+          [
+            7.45,
+            5.55,
+            -4.1
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "LP5860RKPR",
+        "source_url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+        "source_locator": "RKP0040B PACKAGE OUTLINE, datasheet PDF page 58",
+        "source_status": "published maximum dimensions; no detailed supplier BREP"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          7.05,
+          0.04999999999999982,
+          -4.1
+        ],
+        "head_max_mm": [
+          12.95,
+          5.95,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R2",
+      "manufacturer_part_number": "CRCW060310K0FKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        -15.0,
+        10.399999999999999,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -16.5,
+        9.674999999999999,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        -13.5,
+        11.124999999999998,
+        -3
+      ],
+      "radial_corner_mm": 19.900141331156416,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -15.825,
+          9.925,
+          -3.6
+        ],
+        "head_max_mm": [
+          -14.175,
+          10.875,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -14.175,
+            9.925,
+            -3.1
+          ],
+          [
+            -14.175,
+            9.925,
+            -3.6
+          ],
+          [
+            -14.175,
+            10.875,
+            -3.1
+          ],
+          [
+            -14.175,
+            10.875,
+            -3.6
+          ],
+          [
+            -15.825,
+            9.925,
+            -3.1
+          ],
+          [
+            -15.825,
+            9.925,
+            -3.6
+          ],
+          [
+            -15.825,
+            10.875,
+            -3.1
+          ],
+          [
+            -15.825,
+            10.875,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -15.825,
+          9.925,
+          -3.6
+        ],
+        "head_max_mm": [
+          -14.175,
+          10.875,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -14.175,
+            9.925,
+            -3.1
+          ],
+          [
+            -14.175,
+            9.925,
+            -3.6
+          ],
+          [
+            -14.175,
+            10.875,
+            -3.1
+          ],
+          [
+            -14.175,
+            10.875,
+            -3.6
+          ],
+          [
+            -15.825,
+            9.925,
+            -3.1
+          ],
+          [
+            -15.825,
+            9.925,
+            -3.6
+          ],
+          [
+            -15.825,
+            10.875,
+            -3.1
+          ],
+          [
+            -15.825,
+            10.875,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -16.5,
+          9.674999999999999,
+          -3.65
+        ],
+        "head_max_mm": [
+          -13.5,
+          11.124999999999998,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C8",
+      "manufacturer_part_number": "C1608C0G1H102J080AA",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        -8.600000000000001,
+        8.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -6.123233995736766e-17,
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 90,
+      "native_board_rotation_deg": 90.0,
+      "envelope_head_min_mm": [
+        -9.350000000000001,
+        6.65,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -7.850000000000001,
+        9.35,
+        -3
+      ],
+      "radial_corner_mm": 13.22289680818844,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H102J080AA",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -9.05,
+          7.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          -8.15,
+          8.85,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -9.05,
+            7.15,
+            -3.1
+          ],
+          [
+            -9.05,
+            7.15,
+            -4.0
+          ],
+          [
+            -8.15,
+            7.15,
+            -3.1
+          ],
+          [
+            -8.15,
+            7.15,
+            -4.0
+          ],
+          [
+            -9.05,
+            8.85,
+            -3.1
+          ],
+          [
+            -9.05,
+            8.85,
+            -4.0
+          ],
+          [
+            -8.15,
+            8.85,
+            -3.1
+          ],
+          [
+            -8.15,
+            8.85,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608C0G1H102J080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H102J080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -9.05,
+          7.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          -8.15,
+          8.85,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -9.05,
+            7.15,
+            -3.1
+          ],
+          [
+            -9.05,
+            7.15,
+            -4.0
+          ],
+          [
+            -8.15,
+            7.15,
+            -3.1
+          ],
+          [
+            -8.15,
+            7.15,
+            -4.0
+          ],
+          [
+            -9.05,
+            8.85,
+            -3.1
+          ],
+          [
+            -9.05,
+            8.85,
+            -4.0
+          ],
+          [
+            -8.15,
+            8.85,
+            -3.1
+          ],
+          [
+            -8.15,
+            8.85,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608C0G1H102J080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H102J080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -9.350000000000001,
+          6.65,
+          -4.05
+        ],
+        "head_max_mm": [
+          -7.850000000000001,
+          9.35,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C16",
+      "manufacturer_part_number": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        16.799999999999997,
+        6.5,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          1.0,
+          1.2246467991473532e-16,
+          0
+        ],
+        [
+          1.2246467991473532e-16,
+          -1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 180,
+      "native_board_rotation_deg": 0.0,
+      "envelope_head_min_mm": [
+        15.449999999999998,
+        5.75,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        18.15,
+        7.25,
+        -3
+      ],
+      "radial_corner_mm": 19.5444365485424,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          15.95,
+          6.05,
+          -4.0
+        ],
+        "head_max_mm": [
+          17.65,
+          6.95,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            15.95,
+            6.95,
+            -3.1
+          ],
+          [
+            15.95,
+            6.95,
+            -4.0
+          ],
+          [
+            15.95,
+            6.05,
+            -3.1
+          ],
+          [
+            15.95,
+            6.05,
+            -4.0
+          ],
+          [
+            17.65,
+            6.95,
+            -3.1
+          ],
+          [
+            17.65,
+            6.95,
+            -4.0
+          ],
+          [
+            17.65,
+            6.05,
+            -3.1
+          ],
+          [
+            17.65,
+            6.05,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          15.95,
+          6.05,
+          -4.0
+        ],
+        "head_max_mm": [
+          17.65,
+          6.95,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            15.95,
+            6.95,
+            -3.1
+          ],
+          [
+            15.95,
+            6.95,
+            -4.0
+          ],
+          [
+            15.95,
+            6.05,
+            -3.1
+          ],
+          [
+            15.95,
+            6.05,
+            -4.0
+          ],
+          [
+            17.65,
+            6.95,
+            -3.1
+          ],
+          [
+            17.65,
+            6.95,
+            -4.0
+          ],
+          [
+            17.65,
+            6.05,
+            -3.1
+          ],
+          [
+            17.65,
+            6.05,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          15.449999999999998,
+          5.75,
+          -4.05
+        ],
+        "head_max_mm": [
+          18.15,
+          7.25,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R5",
+      "manufacturer_part_number": "CRCW0603100KFKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        0.0,
+        3.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -1.5,
+        2.275,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        1.5,
+        3.725,
+        -3
+      ],
+      "radial_corner_mm": 4.015672421898977,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -0.825,
+          2.525,
+          -3.6
+        ],
+        "head_max_mm": [
+          0.825,
+          3.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.825,
+            2.525,
+            -3.1
+          ],
+          [
+            0.825,
+            2.525,
+            -3.6
+          ],
+          [
+            0.825,
+            3.475,
+            -3.1
+          ],
+          [
+            0.825,
+            3.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            2.525,
+            -3.1
+          ],
+          [
+            -0.825,
+            2.525,
+            -3.6
+          ],
+          [
+            -0.825,
+            3.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            3.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -0.825,
+          2.525,
+          -3.6
+        ],
+        "head_max_mm": [
+          0.825,
+          3.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.825,
+            2.525,
+            -3.1
+          ],
+          [
+            0.825,
+            2.525,
+            -3.6
+          ],
+          [
+            0.825,
+            3.475,
+            -3.1
+          ],
+          [
+            0.825,
+            3.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            2.525,
+            -3.1
+          ],
+          [
+            -0.825,
+            2.525,
+            -3.6
+          ],
+          [
+            -0.825,
+            3.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            3.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -1.5,
+          2.275,
+          -3.65
+        ],
+        "head_max_mm": [
+          1.5,
+          3.725,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C1",
+      "manufacturer_part_number": "C2012X5R1V226M125AC",
+      "footprint": "C0805",
+      "origin_head_mm": [
+        -10.0,
+        -4.799999999999997,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -11.7,
+        -5.774999999999997,
+        -4.55
+      ],
+      "envelope_head_max_mm": [
+        -8.3,
+        -3.8249999999999975,
+        -3
+      ],
+      "radial_corner_mm": 13.047629094973535,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.5499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -1.1,
+          -0.725,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          1.1,
+          0.725,
+          1.55
+        ],
+        "dimensions_uvh_mm": [
+          2.2,
+          1.45,
+          1.45
+        ],
+        "head_min_mm": [
+          -11.1,
+          -5.525,
+          -4.55
+        ],
+        "head_max_mm": [
+          -8.9,
+          -4.075,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -8.9,
+            -5.525,
+            -3.1
+          ],
+          [
+            -8.9,
+            -5.525,
+            -4.55
+          ],
+          [
+            -8.9,
+            -4.075,
+            -3.1
+          ],
+          [
+            -8.9,
+            -4.075,
+            -4.55
+          ],
+          [
+            -11.1,
+            -5.525,
+            -3.1
+          ],
+          [
+            -11.1,
+            -5.525,
+            -4.55
+          ],
+          [
+            -11.1,
+            -4.075,
+            -3.1
+          ],
+          [
+            -11.1,
+            -4.075,
+            -4.55
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C2012X5R1V226M125AC",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -1.1,
+          -0.725,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          1.1,
+          0.725,
+          1.55
+        ],
+        "dimensions_uvh_mm": [
+          2.2,
+          1.45,
+          1.45
+        ],
+        "head_min_mm": [
+          -11.1,
+          -5.525,
+          -4.55
+        ],
+        "head_max_mm": [
+          -8.9,
+          -4.075,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -8.9,
+            -5.525,
+            -3.1
+          ],
+          [
+            -8.9,
+            -5.525,
+            -4.55
+          ],
+          [
+            -8.9,
+            -4.075,
+            -3.1
+          ],
+          [
+            -8.9,
+            -4.075,
+            -4.55
+          ],
+          [
+            -11.1,
+            -5.525,
+            -3.1
+          ],
+          [
+            -11.1,
+            -5.525,
+            -4.55
+          ],
+          [
+            -11.1,
+            -4.075,
+            -3.1
+          ],
+          [
+            -11.1,
+            -4.075,
+            -4.55
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C2012X5R1V226M125AC",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -11.7,
+          -5.774999999999997,
+          -4.55
+        ],
+        "head_max_mm": [
+          -8.3,
+          -3.8249999999999975,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R1",
+      "manufacturer_part_number": "CRCW06034K70FKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        -15.0,
+        7.700001,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -16.5,
+        6.975001000000001,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        -13.5,
+        8.425001,
+        -3
+      ],
+      "radial_corner_mm": 18.526484875712416,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -15.825,
+          7.225001,
+          -3.6
+        ],
+        "head_max_mm": [
+          -14.175,
+          8.175001,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -14.175,
+            7.225001,
+            -3.1
+          ],
+          [
+            -14.175,
+            7.225001,
+            -3.6
+          ],
+          [
+            -14.175,
+            8.175001,
+            -3.1
+          ],
+          [
+            -14.175,
+            8.175001,
+            -3.6
+          ],
+          [
+            -15.825,
+            7.225001,
+            -3.1
+          ],
+          [
+            -15.825,
+            7.225001,
+            -3.6
+          ],
+          [
+            -15.825,
+            8.175001,
+            -3.1
+          ],
+          [
+            -15.825,
+            8.175001,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -15.825,
+          7.225001,
+          -3.6
+        ],
+        "head_max_mm": [
+          -14.175,
+          8.175001,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -14.175,
+            7.225001,
+            -3.1
+          ],
+          [
+            -14.175,
+            7.225001,
+            -3.6
+          ],
+          [
+            -14.175,
+            8.175001,
+            -3.1
+          ],
+          [
+            -14.175,
+            8.175001,
+            -3.6
+          ],
+          [
+            -15.825,
+            7.225001,
+            -3.1
+          ],
+          [
+            -15.825,
+            7.225001,
+            -3.6
+          ],
+          [
+            -15.825,
+            8.175001,
+            -3.1
+          ],
+          [
+            -15.825,
+            8.175001,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -16.5,
+          6.975001000000001,
+          -3.65
+        ],
+        "head_max_mm": [
+          -13.5,
+          8.425001,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C10",
+      "manufacturer_part_number": "C2012X5R1V226M125AC",
+      "footprint": "C0805",
+      "origin_head_mm": [
+        10.0,
+        -4.799999999999997,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        8.3,
+        -5.774999999999997,
+        -4.55
+      ],
+      "envelope_head_max_mm": [
+        11.7,
+        -3.8249999999999975,
+        -3
+      ],
+      "radial_corner_mm": 13.047629094973535,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.5499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -1.1,
+          -0.725,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          1.1,
+          0.725,
+          1.55
+        ],
+        "dimensions_uvh_mm": [
+          2.2,
+          1.45,
+          1.45
+        ],
+        "head_min_mm": [
+          8.9,
+          -5.525,
+          -4.55
+        ],
+        "head_max_mm": [
+          11.1,
+          -4.075,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            11.1,
+            -5.525,
+            -3.1
+          ],
+          [
+            11.1,
+            -5.525,
+            -4.55
+          ],
+          [
+            11.1,
+            -4.075,
+            -3.1
+          ],
+          [
+            11.1,
+            -4.075,
+            -4.55
+          ],
+          [
+            8.9,
+            -5.525,
+            -3.1
+          ],
+          [
+            8.9,
+            -5.525,
+            -4.55
+          ],
+          [
+            8.9,
+            -4.075,
+            -3.1
+          ],
+          [
+            8.9,
+            -4.075,
+            -4.55
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C2012X5R1V226M125AC",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -1.1,
+          -0.725,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          1.1,
+          0.725,
+          1.55
+        ],
+        "dimensions_uvh_mm": [
+          2.2,
+          1.45,
+          1.45
+        ],
+        "head_min_mm": [
+          8.9,
+          -5.525,
+          -4.55
+        ],
+        "head_max_mm": [
+          11.1,
+          -4.075,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            11.1,
+            -5.525,
+            -3.1
+          ],
+          [
+            11.1,
+            -5.525,
+            -4.55
+          ],
+          [
+            11.1,
+            -4.075,
+            -3.1
+          ],
+          [
+            11.1,
+            -4.075,
+            -4.55
+          ],
+          [
+            8.9,
+            -5.525,
+            -3.1
+          ],
+          [
+            8.9,
+            -5.525,
+            -4.55
+          ],
+          [
+            8.9,
+            -4.075,
+            -3.1
+          ],
+          [
+            8.9,
+            -4.075,
+            -4.55
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C2012X5R1V226M125AC",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          8.3,
+          -5.774999999999997,
+          -4.55
+        ],
+        "head_max_mm": [
+          11.7,
+          -3.8249999999999975,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C13",
+      "manufacturer_part_number": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        14.0,
+        6.700001,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          1.0,
+          1.2246467991473532e-16,
+          0
+        ],
+        [
+          1.2246467991473532e-16,
+          -1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 180,
+      "native_board_rotation_deg": 0.0,
+      "envelope_head_min_mm": [
+        12.65,
+        5.950001,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        15.35,
+        7.450001,
+        -3
+      ],
+      "radial_corner_mm": 17.062385967384543,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          13.15,
+          6.250001,
+          -4.0
+        ],
+        "head_max_mm": [
+          14.85,
+          7.150001,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            13.15,
+            7.150001,
+            -3.1
+          ],
+          [
+            13.15,
+            7.150001,
+            -4.0
+          ],
+          [
+            13.15,
+            6.250001,
+            -3.1
+          ],
+          [
+            13.15,
+            6.250001,
+            -4.0
+          ],
+          [
+            14.85,
+            7.150001,
+            -3.1
+          ],
+          [
+            14.85,
+            7.150001,
+            -4.0
+          ],
+          [
+            14.85,
+            6.250001,
+            -3.1
+          ],
+          [
+            14.85,
+            6.250001,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          13.15,
+          6.250001,
+          -4.0
+        ],
+        "head_max_mm": [
+          14.85,
+          7.150001,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            13.15,
+            7.150001,
+            -3.1
+          ],
+          [
+            13.15,
+            7.150001,
+            -4.0
+          ],
+          [
+            13.15,
+            6.250001,
+            -3.1
+          ],
+          [
+            13.15,
+            6.250001,
+            -4.0
+          ],
+          [
+            14.85,
+            7.150001,
+            -3.1
+          ],
+          [
+            14.85,
+            7.150001,
+            -4.0
+          ],
+          [
+            14.85,
+            6.250001,
+            -3.1
+          ],
+          [
+            14.85,
+            6.250001,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          12.65,
+          5.950001,
+          -4.05
+        ],
+        "head_max_mm": [
+          15.35,
+          7.450001,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R6",
+      "manufacturer_part_number": "CRCW0603100KFKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        0.0,
+        6.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -1.5,
+        5.275,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        1.5,
+        6.725,
+        -3
+      ],
+      "radial_corner_mm": 6.890255800766761,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -0.825,
+          5.525,
+          -3.6
+        ],
+        "head_max_mm": [
+          0.825,
+          6.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.825,
+            5.525,
+            -3.1
+          ],
+          [
+            0.825,
+            5.525,
+            -3.6
+          ],
+          [
+            0.825,
+            6.475,
+            -3.1
+          ],
+          [
+            0.825,
+            6.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            5.525,
+            -3.1
+          ],
+          [
+            -0.825,
+            5.525,
+            -3.6
+          ],
+          [
+            -0.825,
+            6.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            6.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -0.825,
+          5.525,
+          -3.6
+        ],
+        "head_max_mm": [
+          0.825,
+          6.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.825,
+            5.525,
+            -3.1
+          ],
+          [
+            0.825,
+            5.525,
+            -3.6
+          ],
+          [
+            0.825,
+            6.475,
+            -3.1
+          ],
+          [
+            0.825,
+            6.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            5.525,
+            -3.1
+          ],
+          [
+            -0.825,
+            5.525,
+            -3.6
+          ],
+          [
+            -0.825,
+            6.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            6.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -1.5,
+          5.275,
+          -3.65
+        ],
+        "head_max_mm": [
+          1.5,
+          6.725,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R8",
+      "manufacturer_part_number": "CRCW060347K0FKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        -2.0,
+        13.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -3.5,
+        12.275,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        -0.5,
+        13.725,
+        -3
+      ],
+      "radial_corner_mm": 14.164237536839037,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -2.825,
+          12.525,
+          -3.6
+        ],
+        "head_max_mm": [
+          -1.175,
+          13.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -1.175,
+            12.525,
+            -3.1
+          ],
+          [
+            -1.175,
+            12.525,
+            -3.6
+          ],
+          [
+            -1.175,
+            13.475,
+            -3.1
+          ],
+          [
+            -1.175,
+            13.475,
+            -3.6
+          ],
+          [
+            -2.825,
+            12.525,
+            -3.1
+          ],
+          [
+            -2.825,
+            12.525,
+            -3.6
+          ],
+          [
+            -2.825,
+            13.475,
+            -3.1
+          ],
+          [
+            -2.825,
+            13.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -2.825,
+          12.525,
+          -3.6
+        ],
+        "head_max_mm": [
+          -1.175,
+          13.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -1.175,
+            12.525,
+            -3.1
+          ],
+          [
+            -1.175,
+            12.525,
+            -3.6
+          ],
+          [
+            -1.175,
+            13.475,
+            -3.1
+          ],
+          [
+            -1.175,
+            13.475,
+            -3.6
+          ],
+          [
+            -2.825,
+            12.525,
+            -3.1
+          ],
+          [
+            -2.825,
+            12.525,
+            -3.6
+          ],
+          [
+            -2.825,
+            13.475,
+            -3.1
+          ],
+          [
+            -2.825,
+            13.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -3.5,
+          12.275,
+          -3.65
+        ],
+        "head_max_mm": [
+          -0.5,
+          13.725,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "TH1",
+      "manufacturer_part_number": "NCU18XH103F6SRB",
+      "footprint": "NTC0603",
+      "origin_head_mm": [
+        0.0,
+        10.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -1.3,
+        9.275,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        1.3,
+        10.725,
+        -3
+      ],
+      "radial_corner_mm": 10.803500590086529,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.murata.com/-/media/webrenewal/products/thermistor/ntc/ncu/ncu18-s.ashx?cvid=20240402040000000000&la=en-us",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.875,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.875,
+          0.475,
+          1.05
+        ],
+        "dimensions_uvh_mm": [
+          1.75,
+          0.95,
+          0.95
+        ],
+        "head_min_mm": [
+          -0.875,
+          9.525,
+          -4.05
+        ],
+        "head_max_mm": [
+          0.875,
+          10.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.875,
+            9.525,
+            -3.1
+          ],
+          [
+            0.875,
+            9.525,
+            -4.05
+          ],
+          [
+            0.875,
+            10.475,
+            -3.1
+          ],
+          [
+            0.875,
+            10.475,
+            -4.05
+          ],
+          [
+            -0.875,
+            9.525,
+            -3.1
+          ],
+          [
+            -0.875,
+            9.525,
+            -4.05
+          ],
+          [
+            -0.875,
+            10.475,
+            -3.1
+          ],
+          [
+            -0.875,
+            10.475,
+            -4.05
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "NCU18XH103F6SRB",
+        "source_url": "https://www.murata.com/-/media/webrenewal/products/thermistor/ntc/ncu/ncu18-s.ashx?cvid=20240402040000000000&la=en",
+        "source_locator": "JEWB01BR-5300G page 5, section 3 Dimensions",
+        "source_status": "manufacturer document marked Reference Only; published dimensional maxima, order approval remains open"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.875,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.875,
+          0.475,
+          1.05
+        ],
+        "dimensions_uvh_mm": [
+          1.75,
+          0.95,
+          0.95
+        ],
+        "head_min_mm": [
+          -0.875,
+          9.525,
+          -4.05
+        ],
+        "head_max_mm": [
+          0.875,
+          10.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.875,
+            9.525,
+            -3.1
+          ],
+          [
+            0.875,
+            9.525,
+            -4.05
+          ],
+          [
+            0.875,
+            10.475,
+            -3.1
+          ],
+          [
+            0.875,
+            10.475,
+            -4.05
+          ],
+          [
+            -0.875,
+            9.525,
+            -3.1
+          ],
+          [
+            -0.875,
+            9.525,
+            -4.05
+          ],
+          [
+            -0.875,
+            10.475,
+            -3.1
+          ],
+          [
+            -0.875,
+            10.475,
+            -4.05
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "NCU18XH103F6SRB",
+        "source_url": "https://www.murata.com/-/media/webrenewal/products/thermistor/ntc/ncu/ncu18-s.ashx?cvid=20240402040000000000&la=en",
+        "source_locator": "JEWB01BR-5300G page 5, section 3 Dimensions",
+        "source_status": "manufacturer document marked Reference Only; published dimensional maxima, order approval remains open"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -1.3,
+          9.275,
+          -4.05
+        ],
+        "head_max_mm": [
+          1.3,
+          10.725,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R3",
+      "manufacturer_part_number": "CRCW0603100KFKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        0.0,
+        -3.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -1.5,
+        -3.725,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        1.5,
+        -2.275,
+        -3
+      ],
+      "radial_corner_mm": 4.015672421898977,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -0.825,
+          -3.475,
+          -3.6
+        ],
+        "head_max_mm": [
+          0.825,
+          -2.525,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.825,
+            -3.475,
+            -3.1
+          ],
+          [
+            0.825,
+            -3.475,
+            -3.6
+          ],
+          [
+            0.825,
+            -2.525,
+            -3.1
+          ],
+          [
+            0.825,
+            -2.525,
+            -3.6
+          ],
+          [
+            -0.825,
+            -3.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            -3.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            -2.525,
+            -3.1
+          ],
+          [
+            -0.825,
+            -2.525,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -0.825,
+          -3.475,
+          -3.6
+        ],
+        "head_max_mm": [
+          0.825,
+          -2.525,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.825,
+            -3.475,
+            -3.1
+          ],
+          [
+            0.825,
+            -3.475,
+            -3.6
+          ],
+          [
+            0.825,
+            -2.525,
+            -3.1
+          ],
+          [
+            0.825,
+            -2.525,
+            -3.6
+          ],
+          [
+            -0.825,
+            -3.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            -3.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            -2.525,
+            -3.1
+          ],
+          [
+            -0.825,
+            -2.525,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -1.5,
+          -3.725,
+          -3.65
+        ],
+        "head_max_mm": [
+          1.5,
+          -2.275,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C2",
+      "manufacturer_part_number": "C2012X5R1V226M125AC",
+      "footprint": "C0805",
+      "origin_head_mm": [
+        -10.0,
+        -7.5,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -11.7,
+        -8.475,
+        -4.55
+      ],
+      "envelope_head_max_mm": [
+        -8.3,
+        -6.525,
+        -3
+      ],
+      "radial_corner_mm": 14.446993631894491,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.5499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -1.1,
+          -0.725,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          1.1,
+          0.725,
+          1.55
+        ],
+        "dimensions_uvh_mm": [
+          2.2,
+          1.45,
+          1.45
+        ],
+        "head_min_mm": [
+          -11.1,
+          -8.225,
+          -4.55
+        ],
+        "head_max_mm": [
+          -8.9,
+          -6.775,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -8.9,
+            -8.225,
+            -3.1
+          ],
+          [
+            -8.9,
+            -8.225,
+            -4.55
+          ],
+          [
+            -8.9,
+            -6.775,
+            -3.1
+          ],
+          [
+            -8.9,
+            -6.775,
+            -4.55
+          ],
+          [
+            -11.1,
+            -8.225,
+            -3.1
+          ],
+          [
+            -11.1,
+            -8.225,
+            -4.55
+          ],
+          [
+            -11.1,
+            -6.775,
+            -3.1
+          ],
+          [
+            -11.1,
+            -6.775,
+            -4.55
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C2012X5R1V226M125AC",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -1.1,
+          -0.725,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          1.1,
+          0.725,
+          1.55
+        ],
+        "dimensions_uvh_mm": [
+          2.2,
+          1.45,
+          1.45
+        ],
+        "head_min_mm": [
+          -11.1,
+          -8.225,
+          -4.55
+        ],
+        "head_max_mm": [
+          -8.9,
+          -6.775,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -8.9,
+            -8.225,
+            -3.1
+          ],
+          [
+            -8.9,
+            -8.225,
+            -4.55
+          ],
+          [
+            -8.9,
+            -6.775,
+            -3.1
+          ],
+          [
+            -8.9,
+            -6.775,
+            -4.55
+          ],
+          [
+            -11.1,
+            -8.225,
+            -3.1
+          ],
+          [
+            -11.1,
+            -8.225,
+            -4.55
+          ],
+          [
+            -11.1,
+            -6.775,
+            -3.1
+          ],
+          [
+            -11.1,
+            -6.775,
+            -4.55
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C2012X5R1V226M125AC",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -11.7,
+          -8.475,
+          -4.55
+        ],
+        "head_max_mm": [
+          -8.3,
+          -6.525,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C11",
+      "manufacturer_part_number": "C2012X5R1V226M125AC",
+      "footprint": "C0805",
+      "origin_head_mm": [
+        10.0,
+        -7.5,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        8.3,
+        -8.475,
+        -4.55
+      ],
+      "envelope_head_max_mm": [
+        11.7,
+        -6.525,
+        -3
+      ],
+      "radial_corner_mm": 14.446993631894491,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.5499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -1.1,
+          -0.725,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          1.1,
+          0.725,
+          1.55
+        ],
+        "dimensions_uvh_mm": [
+          2.2,
+          1.45,
+          1.45
+        ],
+        "head_min_mm": [
+          8.9,
+          -8.225,
+          -4.55
+        ],
+        "head_max_mm": [
+          11.1,
+          -6.775,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            11.1,
+            -8.225,
+            -3.1
+          ],
+          [
+            11.1,
+            -8.225,
+            -4.55
+          ],
+          [
+            11.1,
+            -6.775,
+            -3.1
+          ],
+          [
+            11.1,
+            -6.775,
+            -4.55
+          ],
+          [
+            8.9,
+            -8.225,
+            -3.1
+          ],
+          [
+            8.9,
+            -8.225,
+            -4.55
+          ],
+          [
+            8.9,
+            -6.775,
+            -3.1
+          ],
+          [
+            8.9,
+            -6.775,
+            -4.55
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C2012X5R1V226M125AC",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -1.1,
+          -0.725,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          1.1,
+          0.725,
+          1.55
+        ],
+        "dimensions_uvh_mm": [
+          2.2,
+          1.45,
+          1.45
+        ],
+        "head_min_mm": [
+          8.9,
+          -8.225,
+          -4.55
+        ],
+        "head_max_mm": [
+          11.1,
+          -6.775,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            11.1,
+            -8.225,
+            -3.1
+          ],
+          [
+            11.1,
+            -8.225,
+            -4.55
+          ],
+          [
+            11.1,
+            -6.775,
+            -3.1
+          ],
+          [
+            11.1,
+            -6.775,
+            -4.55
+          ],
+          [
+            8.9,
+            -8.225,
+            -3.1
+          ],
+          [
+            8.9,
+            -8.225,
+            -4.55
+          ],
+          [
+            8.9,
+            -6.775,
+            -3.1
+          ],
+          [
+            8.9,
+            -6.775,
+            -4.55
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C2012X5R1V226M125AC",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X5R1V226M125AC",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          8.3,
+          -8.475,
+          -4.55
+        ],
+        "head_max_mm": [
+          11.7,
+          -6.525,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C14",
+      "manufacturer_part_number": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        8.600000000000001,
+        8.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -6.123233995736766e-17,
+          1.0,
+          0
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 90,
+      "native_board_rotation_deg": 90.0,
+      "envelope_head_min_mm": [
+        7.850000000000001,
+        6.65,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        9.350000000000001,
+        9.35,
+        -3
+      ],
+      "radial_corner_mm": 13.22289680818844,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          8.15,
+          7.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          9.05,
+          8.85,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            8.15,
+            7.15,
+            -3.1
+          ],
+          [
+            8.15,
+            7.15,
+            -4.0
+          ],
+          [
+            9.05,
+            7.15,
+            -3.1
+          ],
+          [
+            9.05,
+            7.15,
+            -4.0
+          ],
+          [
+            8.15,
+            8.85,
+            -3.1
+          ],
+          [
+            8.15,
+            8.85,
+            -4.0
+          ],
+          [
+            9.05,
+            8.85,
+            -3.1
+          ],
+          [
+            9.05,
+            8.85,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          8.15,
+          7.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          9.05,
+          8.85,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            8.15,
+            7.15,
+            -3.1
+          ],
+          [
+            8.15,
+            7.15,
+            -4.0
+          ],
+          [
+            9.05,
+            7.15,
+            -3.1
+          ],
+          [
+            9.05,
+            7.15,
+            -4.0
+          ],
+          [
+            8.15,
+            8.85,
+            -3.1
+          ],
+          [
+            8.15,
+            8.85,
+            -4.0
+          ],
+          [
+            9.05,
+            8.85,
+            -3.1
+          ],
+          [
+            9.05,
+            8.85,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          7.850000000000001,
+          6.65,
+          -4.05
+        ],
+        "head_max_mm": [
+          9.350000000000001,
+          9.35,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "U1",
+      "manufacturer_part_number": "LP5860RKPR",
+      "footprint": "TI_RKP0040B",
+      "origin_head_mm": [
+        -10.0,
+        3.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -12.95,
+        0.04999999999999982,
+        -4.1
+      ],
+      "envelope_head_max_mm": [
+        -7.05,
+        5.95,
+        -3
+      ],
+      "radial_corner_mm": 14.25149115005163,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0999999999999996,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -2.55,
+          -2.55,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          2.55,
+          2.55,
+          1.1
+        ],
+        "dimensions_uvh_mm": [
+          5.1,
+          5.1,
+          1.0
+        ],
+        "head_min_mm": [
+          -12.55,
+          0.45,
+          -4.1
+        ],
+        "head_max_mm": [
+          -7.45,
+          5.55,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -7.45,
+            0.45,
+            -3.1
+          ],
+          [
+            -7.45,
+            0.45,
+            -4.1
+          ],
+          [
+            -7.45,
+            5.55,
+            -3.1
+          ],
+          [
+            -7.45,
+            5.55,
+            -4.1
+          ],
+          [
+            -12.55,
+            0.45,
+            -3.1
+          ],
+          [
+            -12.55,
+            0.45,
+            -4.1
+          ],
+          [
+            -12.55,
+            5.55,
+            -3.1
+          ],
+          [
+            -12.55,
+            5.55,
+            -4.1
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "LP5860RKPR",
+        "source_url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+        "source_locator": "RKP0040B PACKAGE OUTLINE, datasheet PDF page 58",
+        "source_status": "published maximum dimensions; no detailed supplier BREP"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -2.55,
+          -2.55,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          2.55,
+          2.55,
+          1.1
+        ],
+        "dimensions_uvh_mm": [
+          5.1,
+          5.1,
+          1.0
+        ],
+        "head_min_mm": [
+          -12.55,
+          0.45,
+          -4.1
+        ],
+        "head_max_mm": [
+          -7.45,
+          5.55,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -7.45,
+            0.45,
+            -3.1
+          ],
+          [
+            -7.45,
+            0.45,
+            -4.1
+          ],
+          [
+            -7.45,
+            5.55,
+            -3.1
+          ],
+          [
+            -7.45,
+            5.55,
+            -4.1
+          ],
+          [
+            -12.55,
+            0.45,
+            -3.1
+          ],
+          [
+            -12.55,
+            0.45,
+            -4.1
+          ],
+          [
+            -12.55,
+            5.55,
+            -3.1
+          ],
+          [
+            -12.55,
+            5.55,
+            -4.1
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "LP5860RKPR",
+        "source_url": "https://www.ti.com/lit/ds/symlink/lp5860.pdf",
+        "source_locator": "RKP0040B PACKAGE OUTLINE, datasheet PDF page 58",
+        "source_status": "published maximum dimensions; no detailed supplier BREP"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -12.95,
+          0.04999999999999982,
+          -4.1
+        ],
+        "head_max_mm": [
+          -7.05,
+          5.95,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R11",
+      "manufacturer_part_number": "CRCW060310K0FKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        5.0,
+        10.399999999999999,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        3.5,
+        9.674999999999999,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        6.5,
+        11.124999999999998,
+        -3
+      ],
+      "radial_corner_mm": 12.884705080055188,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          4.175,
+          9.925,
+          -3.6
+        ],
+        "head_max_mm": [
+          5.825,
+          10.875,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            5.825,
+            9.925,
+            -3.1
+          ],
+          [
+            5.825,
+            9.925,
+            -3.6
+          ],
+          [
+            5.825,
+            10.875,
+            -3.1
+          ],
+          [
+            5.825,
+            10.875,
+            -3.6
+          ],
+          [
+            4.175,
+            9.925,
+            -3.1
+          ],
+          [
+            4.175,
+            9.925,
+            -3.6
+          ],
+          [
+            4.175,
+            10.875,
+            -3.1
+          ],
+          [
+            4.175,
+            10.875,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          4.175,
+          9.925,
+          -3.6
+        ],
+        "head_max_mm": [
+          5.825,
+          10.875,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            5.825,
+            9.925,
+            -3.1
+          ],
+          [
+            5.825,
+            9.925,
+            -3.6
+          ],
+          [
+            5.825,
+            10.875,
+            -3.1
+          ],
+          [
+            5.825,
+            10.875,
+            -3.6
+          ],
+          [
+            4.175,
+            9.925,
+            -3.1
+          ],
+          [
+            4.175,
+            9.925,
+            -3.6
+          ],
+          [
+            4.175,
+            10.875,
+            -3.1
+          ],
+          [
+            4.175,
+            10.875,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          3.5,
+          9.674999999999999,
+          -3.65
+        ],
+        "head_max_mm": [
+          6.5,
+          11.124999999999998,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C3",
+      "manufacturer_part_number": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        -10.2,
+        -1.7000000000000028,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -11.549999999999999,
+        -2.450000000000003,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -8.85,
+        -0.9500000000000028,
+        -3
+      ],
+      "radial_corner_mm": 11.8069894554031,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -11.05,
+          -2.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          -9.35,
+          -1.25,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -9.35,
+            -2.15,
+            -3.1
+          ],
+          [
+            -9.35,
+            -2.15,
+            -4.0
+          ],
+          [
+            -9.35,
+            -1.25,
+            -3.1
+          ],
+          [
+            -9.35,
+            -1.25,
+            -4.0
+          ],
+          [
+            -11.05,
+            -2.15,
+            -3.1
+          ],
+          [
+            -11.05,
+            -2.15,
+            -4.0
+          ],
+          [
+            -11.05,
+            -1.25,
+            -3.1
+          ],
+          [
+            -11.05,
+            -1.25,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -11.05,
+          -2.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          -9.35,
+          -1.25,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -9.35,
+            -2.15,
+            -3.1
+          ],
+          [
+            -9.35,
+            -2.15,
+            -4.0
+          ],
+          [
+            -9.35,
+            -1.25,
+            -3.1
+          ],
+          [
+            -9.35,
+            -1.25,
+            -4.0
+          ],
+          [
+            -11.05,
+            -2.15,
+            -3.1
+          ],
+          [
+            -11.05,
+            -2.15,
+            -4.0
+          ],
+          [
+            -11.05,
+            -1.25,
+            -3.1
+          ],
+          [
+            -11.05,
+            -1.25,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -11.549999999999999,
+          -2.450000000000003,
+          -4.05
+        ],
+        "head_max_mm": [
+          -8.85,
+          -0.9500000000000028,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C9",
+      "manufacturer_part_number": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        0.0,
+        16.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -1.35,
+        15.25,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        1.35,
+        16.75,
+        -3
+      ],
+      "radial_corner_mm": 16.804314922066894,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -0.85,
+          15.55,
+          -4.0
+        ],
+        "head_max_mm": [
+          0.85,
+          16.45,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.85,
+            15.55,
+            -3.1
+          ],
+          [
+            0.85,
+            15.55,
+            -4.0
+          ],
+          [
+            0.85,
+            16.45,
+            -3.1
+          ],
+          [
+            0.85,
+            16.45,
+            -4.0
+          ],
+          [
+            -0.85,
+            15.55,
+            -3.1
+          ],
+          [
+            -0.85,
+            15.55,
+            -4.0
+          ],
+          [
+            -0.85,
+            16.45,
+            -3.1
+          ],
+          [
+            -0.85,
+            16.45,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -0.85,
+          15.55,
+          -4.0
+        ],
+        "head_max_mm": [
+          0.85,
+          16.45,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.85,
+            15.55,
+            -3.1
+          ],
+          [
+            0.85,
+            15.55,
+            -4.0
+          ],
+          [
+            0.85,
+            16.45,
+            -3.1
+          ],
+          [
+            0.85,
+            16.45,
+            -4.0
+          ],
+          [
+            -0.85,
+            15.55,
+            -3.1
+          ],
+          [
+            -0.85,
+            15.55,
+            -4.0
+          ],
+          [
+            -0.85,
+            16.45,
+            -3.1
+          ],
+          [
+            -0.85,
+            16.45,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -1.35,
+          15.25,
+          -4.05
+        ],
+        "head_max_mm": [
+          1.35,
+          16.75,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C12",
+      "manufacturer_part_number": "C1608X7R1E105K080AB",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        9.799999999999997,
+        -1.7000000000000028,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        8.449999999999998,
+        -2.450000000000003,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        11.149999999999997,
+        -0.9500000000000028,
+        -3
+      ],
+      "radial_corner_mm": 11.415997547301766,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          8.95,
+          -2.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          10.65,
+          -1.25,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            10.65,
+            -2.15,
+            -3.1
+          ],
+          [
+            10.65,
+            -2.15,
+            -4.0
+          ],
+          [
+            10.65,
+            -1.25,
+            -3.1
+          ],
+          [
+            10.65,
+            -1.25,
+            -4.0
+          ],
+          [
+            8.95,
+            -2.15,
+            -3.1
+          ],
+          [
+            8.95,
+            -2.15,
+            -4.0
+          ],
+          [
+            8.95,
+            -1.25,
+            -3.1
+          ],
+          [
+            8.95,
+            -1.25,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          8.95,
+          -2.15,
+          -4.0
+        ],
+        "head_max_mm": [
+          10.65,
+          -1.25,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            10.65,
+            -2.15,
+            -3.1
+          ],
+          [
+            10.65,
+            -2.15,
+            -4.0
+          ],
+          [
+            10.65,
+            -1.25,
+            -3.1
+          ],
+          [
+            10.65,
+            -1.25,
+            -4.0
+          ],
+          [
+            8.95,
+            -2.15,
+            -3.1
+          ],
+          [
+            8.95,
+            -2.15,
+            -4.0
+          ],
+          [
+            8.95,
+            -1.25,
+            -3.1
+          ],
+          [
+            8.95,
+            -1.25,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1E105K080AB",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1E105K080AB",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          8.449999999999998,
+          -2.450000000000003,
+          -4.05
+        ],
+        "head_max_mm": [
+          11.149999999999997,
+          -0.9500000000000028,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C6",
+      "manufacturer_part_number": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        -14.100000000000001,
+        -0.7999999999999972,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -15.450000000000001,
+        -1.5499999999999972,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        -12.750000000000002,
+        -0.04999999999999716,
+        -3
+      ],
+      "radial_corner_mm": 15.527556150276837,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -14.95,
+          -1.25,
+          -4.0
+        ],
+        "head_max_mm": [
+          -13.25,
+          -0.35,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -13.25,
+            -1.25,
+            -3.1
+          ],
+          [
+            -13.25,
+            -1.25,
+            -4.0
+          ],
+          [
+            -13.25,
+            -0.35,
+            -3.1
+          ],
+          [
+            -13.25,
+            -0.35,
+            -4.0
+          ],
+          [
+            -14.95,
+            -1.25,
+            -3.1
+          ],
+          [
+            -14.95,
+            -1.25,
+            -4.0
+          ],
+          [
+            -14.95,
+            -0.35,
+            -3.1
+          ],
+          [
+            -14.95,
+            -0.35,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          -14.95,
+          -1.25,
+          -4.0
+        ],
+        "head_max_mm": [
+          -13.25,
+          -0.35,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -13.25,
+            -1.25,
+            -3.1
+          ],
+          [
+            -13.25,
+            -1.25,
+            -4.0
+          ],
+          [
+            -13.25,
+            -0.35,
+            -3.1
+          ],
+          [
+            -13.25,
+            -0.35,
+            -4.0
+          ],
+          [
+            -14.95,
+            -1.25,
+            -3.1
+          ],
+          [
+            -14.95,
+            -1.25,
+            -4.0
+          ],
+          [
+            -14.95,
+            -0.35,
+            -3.1
+          ],
+          [
+            -14.95,
+            -0.35,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -15.450000000000001,
+          -1.5499999999999972,
+          -4.05
+        ],
+        "head_max_mm": [
+          -12.750000000000002,
+          -0.04999999999999716,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R7",
+      "manufacturer_part_number": "CRCW060333R0FKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        -9.5,
+        10.399999999999999,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -11.0,
+        9.674999999999999,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        -8.0,
+        11.124999999999998,
+        -3
+      ],
+      "radial_corner_mm": 15.64498721635783,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -10.325,
+          9.925,
+          -3.6
+        ],
+        "head_max_mm": [
+          -8.675,
+          10.875,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -8.675,
+            9.925,
+            -3.1
+          ],
+          [
+            -8.675,
+            9.925,
+            -3.6
+          ],
+          [
+            -8.675,
+            10.875,
+            -3.1
+          ],
+          [
+            -8.675,
+            10.875,
+            -3.6
+          ],
+          [
+            -10.325,
+            9.925,
+            -3.1
+          ],
+          [
+            -10.325,
+            9.925,
+            -3.6
+          ],
+          [
+            -10.325,
+            10.875,
+            -3.1
+          ],
+          [
+            -10.325,
+            10.875,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -10.325,
+          9.925,
+          -3.6
+        ],
+        "head_max_mm": [
+          -8.675,
+          10.875,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            -8.675,
+            9.925,
+            -3.1
+          ],
+          [
+            -8.675,
+            9.925,
+            -3.6
+          ],
+          [
+            -8.675,
+            10.875,
+            -3.1
+          ],
+          [
+            -8.675,
+            10.875,
+            -3.6
+          ],
+          [
+            -10.325,
+            9.925,
+            -3.1
+          ],
+          [
+            -10.325,
+            9.925,
+            -3.6
+          ],
+          [
+            -10.325,
+            10.875,
+            -3.1
+          ],
+          [
+            -10.325,
+            10.875,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -11.0,
+          9.674999999999999,
+          -3.65
+        ],
+        "head_max_mm": [
+          -8.0,
+          11.124999999999998,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "R4",
+      "manufacturer_part_number": "CRCW0603100KFKEA",
+      "footprint": "R0603",
+      "origin_head_mm": [
+        0.0,
+        0.0,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        -1.5,
+        -0.725,
+        -3.65
+      ],
+      "envelope_head_max_mm": [
+        1.5,
+        0.725,
+        -3
+      ],
+      "radial_corner_mm": 1.6660207081546134,
+      "height_from_board_including_0p1_solder_allowance_mm": 0.6499999999999999,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -0.825,
+          -0.475,
+          -3.6
+        ],
+        "head_max_mm": [
+          0.825,
+          0.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.825,
+            -0.475,
+            -3.1
+          ],
+          [
+            0.825,
+            -0.475,
+            -3.6
+          ],
+          [
+            0.825,
+            0.475,
+            -3.1
+          ],
+          [
+            0.825,
+            0.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            -0.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            -0.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            0.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            0.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.825,
+          -0.475,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.825,
+          0.475,
+          0.6
+        ],
+        "dimensions_uvh_mm": [
+          1.65,
+          0.95,
+          0.5
+        ],
+        "head_min_mm": [
+          -0.825,
+          -0.475,
+          -3.6
+        ],
+        "head_max_mm": [
+          0.825,
+          0.475,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            0.825,
+            -0.475,
+            -3.1
+          ],
+          [
+            0.825,
+            -0.475,
+            -3.6
+          ],
+          [
+            0.825,
+            0.475,
+            -3.1
+          ],
+          [
+            0.825,
+            0.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            -0.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            -0.475,
+            -3.6
+          ],
+          [
+            -0.825,
+            0.475,
+            -3.1
+          ],
+          [
+            -0.825,
+            0.475,
+            -3.6
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "CRCW0603*FKEA",
+        "source_url": "https://www.vishay.com/docs/20035/dcrcwe3.pdf",
+        "source_locator": "Document 20035 revision 14-Apr-2026 page 11 DIMENSIONS AND MASS",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          -1.5,
+          -0.725,
+          -3.65
+        ],
+        "head_max_mm": [
+          1.5,
+          0.725,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    },
+    {
+      "ref": "C15",
+      "manufacturer_part_number": "C1608X7R1H104K080AA",
+      "footprint": "C0603",
+      "origin_head_mm": [
+        5.899999999999999,
+        -0.7999999999999972,
+        -3
+      ],
+      "mount_uvh_to_head_rotation": [
+        [
+          -1.0,
+          0.0,
+          0
+        ],
+        [
+          0.0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ],
+      "projection_rotation_deg": 0,
+      "native_board_rotation_deg": 180.0,
+      "envelope_head_min_mm": [
+        4.549999999999999,
+        -1.5499999999999972,
+        -4.05
+      ],
+      "envelope_head_max_mm": [
+        7.249999999999998,
+        -0.04999999999999716,
+        -3
+      ],
+      "radial_corner_mm": 7.4138384120508025,
+      "height_from_board_including_0p1_solder_allowance_mm": 1.0499999999999998,
+      "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+      "max_body": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          5.05,
+          -1.25,
+          -4.0
+        ],
+        "head_max_mm": [
+          6.75,
+          -0.35,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            6.75,
+            -1.25,
+            -3.1
+          ],
+          [
+            6.75,
+            -1.25,
+            -4.0
+          ],
+          [
+            6.75,
+            -0.35,
+            -3.1
+          ],
+          [
+            6.75,
+            -0.35,
+            -4.0
+          ],
+          [
+            5.05,
+            -1.25,
+            -3.1
+          ],
+          [
+            5.05,
+            -1.25,
+            -4.0
+          ],
+          [
+            5.05,
+            -0.35,
+            -3.1
+          ],
+          [
+            5.05,
+            -0.35,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "mated_reference": null,
+      "mcad_material_envelope": {
+        "kind": "published_package_maximum_box",
+        "local_min_uvh_mm": [
+          -0.85,
+          -0.45,
+          0.1
+        ],
+        "local_max_uvh_mm": [
+          0.85,
+          0.45,
+          1.0
+        ],
+        "dimensions_uvh_mm": [
+          1.7,
+          0.9,
+          0.9
+        ],
+        "head_min_mm": [
+          5.05,
+          -1.25,
+          -4.0
+        ],
+        "head_max_mm": [
+          6.75,
+          -0.35,
+          -3.1
+        ],
+        "head_corners_mm": [
+          [
+            6.75,
+            -1.25,
+            -3.1
+          ],
+          [
+            6.75,
+            -1.25,
+            -4.0
+          ],
+          [
+            6.75,
+            -0.35,
+            -3.1
+          ],
+          [
+            6.75,
+            -0.35,
+            -4.0
+          ],
+          [
+            5.05,
+            -1.25,
+            -3.1
+          ],
+          [
+            5.05,
+            -1.25,
+            -4.0
+          ],
+          [
+            5.05,
+            -0.35,
+            -3.1
+          ],
+          [
+            5.05,
+            -0.35,
+            -4.0
+          ]
+        ],
+        "solder_height_translation_h_mm": 0.1,
+        "xy_assembly_allowance_mm": 0,
+        "includes_PCB_copper_lands": false,
+        "includes_courtyard": false,
+        "not_vendor_BREP": true,
+        "source_key": "C1608X7R1H104K080AA",
+        "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA",
+        "source_locator": "Size: Length(L), Width(W), Thickness(T)",
+        "source_status": "published catalogue dimensions; not order-specific controlled drawing"
+      },
+      "planning_envelope": {
+        "head_min_mm": [
+          4.549999999999999,
+          -1.5499999999999972,
+          -4.05
+        ],
+        "head_max_mm": [
+          7.249999999999998,
+          -0.04999999999999716,
+          -3
+        ],
+        "basis": "Conservative max-body/land union plus0.25mm XY assembly allowance, except GH exact catalogue mated union; catalogue reference/dimension tolerance not controlled",
+        "material_solid": false,
+        "includes_PCB_lands_and_XY_assembly_margin": true
+      },
+      "legacy_envelope_fields_mean": "planning_envelope only; do not use as actual package material. Use max_body, or mated_reference for GH."
+    }
+  ],
+  "package_dimensions_source": "package-body-dimensions.json",
+  "package_dimensions_sha256": "1a1be70ca3012aaa8d5ce6b951d16dd90736208e72f892806f4c79674b8777b4",
+  "mcad_body_bbox_overlaps": [],
+  "body_geometry_semantics": "Package maximum/reference boxes only; transform includes actual native pose, no XY allowance, and 0.10 mm solder translation in h. Planning envelopes are NOT material solids. GH remains reference-only. Mounted solder menisci/PCB lands not modelled as package volumes.",
+  "front_LED": {
+    "count": 285,
+    "head_z_mm": [
+      -2,
+      -1.1
+    ],
+    "land_union_max_mm": [
+      2.4,
+      0.9
+    ],
+    "body_max_mm": [
+      1.7,
+      0.9,
+      0.8
+    ],
+    "solder_height_planning_mm": 0.1,
+    "pixel_map": "../pixel-map.csv"
+  },
+  "thermal_regions": [
+    {
+      "center_head_xy_mm": [
+        -10,
+        15
+      ],
+      "size_mm": [
+        4,
+        4
+      ],
+      "net": "GND",
+      "status": "bare B copper reservation; no engineered heat strap or thermal-performance claim"
+    },
+    {
+      "center_head_xy_mm": [
+        10,
+        15
+      ],
+      "size_mm": [
+        4,
+        4
+      ],
+      "net": "GND",
+      "status": "bare B copper reservation; no engineered heat strap or thermal-performance claim"
+    }
+  ],
+  "native_mounts": [],
+  "mount_status": "CD-MOUNT01 mechanical support contract remains separate. No added screw holes.",
+  "unknowns": [
+    "GH controlled tolerances and actual mated CAD",
+    "solder height distribution",
+    "board thickness and bow",
+    "heat-bridge material/clamp load",
+    "wire/latch/unmate envelope",
+    "physical part/assembly mass"
+  ],
+  "not_vendor_BREP": true,
+  "fabrication_release": false
+}

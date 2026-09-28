@@ -1,0 +1,68 @@
+{
+  "revision": "CD-PCB01",
+  "status": "candidate process evidence; no selected fabricator or manufacturing approval",
+  "retrieved": "2026-09-27",
+  "sources": [
+    {
+      "url": "https://jlcpcb.com/6-layer-pcb",
+      "used_facts": {
+        "six_layer_nominal_thicknesses_mm": [
+          0.8,
+          1,
+          1.2,
+          1.6,
+          2
+        ],
+        "thickness_tolerance_at_1mm": "\u00b110%",
+        "minimum_trace_spacing_mm": 0.09
+      },
+      "limits": "Only capability reference. Not a 1mm dielectric stackup, manufacturing agreement, or assembly approval."
+    },
+    {
+      "url": "https://jlcpcb.com/capabilities/Capabilities",
+      "used_facts": {
+        "preferred_min_via_hole_mm": 0.2,
+        "minimum_via_diameter_increase_over_hole_mm": 0.1,
+        "preferred_diameter_increase_mm": 0.15,
+        "average_hole_plating_um": 18,
+        "hole_position_tolerance_mm": 0.05,
+        "inner_copper_default_um": 17.5,
+        "outer_copper_1oz_um": 35,
+        "through_vias_only": true
+      },
+      "limits": "Vendor page differentiates small-via options. Finished hole tolerance is not a guaranteed annular-ring budget. Actual plated diameter, drill compensation, registration and finished copper minima must be agreed for this candidate."
+    },
+    {
+      "url": "https://www.jlc.com/portal/1/serviceGuide",
+      "used_facts": {
+        "six_layer_via_hole_mm": 0.2,
+        "regular_via_outer_mm": 0.45,
+        "limit_via_outer_mm": 0.4,
+        "hole_edge_to_hole_edge_min_mm": 0.254,
+        "solder_mask_expansion_per_side_mm": 0.05
+      },
+      "limits": "Chinese and global pages are not identical. Use the conservative 0.254mm hole-to-hole candidate. Narrow solder-mask bridges and resin-filled capped vias require explicit assembly/fabrication review; generic solder-mask filling is not accepted for via-in-pad."
+    }
+  ],
+  "candidate_rules": {
+    "layers": 6,
+    "thickness_mm": 1,
+    "track_min_mm": 0.127,
+    "copper_clearance_mm": 0.127,
+    "via_outer_mm": 0.4,
+    "via_drill_nominal_mm": 0.2,
+    "nominal_annular_ring_mm": 0.1,
+    "hole_to_hole_mm": 0.254,
+    "hole_to_copper_mm": 0.227,
+    "hole_to_copper_basis": "Nominal 0.10mm ring +0.127mm copper clearance; this is a stated design-rule candidate, not a sourced finished-hole tolerance guarantee. Requires manufacturer confirmation."
+  },
+  "not_frozen": [
+    "individual dielectric thicknesses",
+    "minimum finished copper and barrel plating",
+    "drill compensation and final annular ring",
+    "layer registration",
+    "via resin fill/cap and flatness",
+    "solder-mask colour and bridge process",
+    "panel/tooling and assembly process"
+  ]
+}

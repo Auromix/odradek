@@ -70,6 +70,7 @@
 | 中央圆屏安装 | [CD-MOUNT01](central-display-mount01.md)／[独立装拆审查](central-display-review01.md) | 285点、Ø60PCB、杯座/压框/窗口/侧耳、GH12参考；连续避让和全开装拆空间通过，材料/公差/实际中央板与线束待闭合 |
 | 中央屏几何样件图 | [CD-DRAW01](central-display-prototype01.md) | 4页A3、9份mm DXF、4个无电打印样件，保留杯座前后不同截面；不是金属制造公差版 |
 | 中央屏原生电路 | [CD-EC01](hardware/central-display-cd01.md) | 285点/318器件、双LP5860、GH12逐针与ERC通过；PCB、热与整头装配另行审查 |
+| 中央屏六层PCB | [CD-PCB01](hardware/central-display-pcb01.md) | 318器件、285点实际布线；独立原生DRC/未连/原理图一致性均为0，背面33器件MCAD分实体最大盒与规划包络；19个焊盘关联通孔须填孔盖铜审查 |
 | 复现 | [运行说明](../../engineering/README.md) | 固定依赖、生成顺序、单位与输出边界 |
 | 肩部实体刚度比较 | [SHOULDER-FEA01](shoulder-fea01.md) | 8网格24解、线弹性二次四面体、主收敛与同支承敏感性分开；尚不是螺栓接触/疲劳/整臂负载资格 |
 | 放行差距 | [发布检查清单](release-checklist.md) | 对应证据和实际未完成事项 |

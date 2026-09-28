@@ -1,0 +1,153 @@
+{
+  "revision": "CD-PCB01",
+  "parent_generation_invoked": false,
+  "netlist_path_metadata_normalized_to_project_relative": true,
+  "runtime_version": "10.0.6",
+  "runs": [
+    {
+      "program": "python3",
+      "args": [
+        "build_source.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "program": "python3",
+      "args": [
+        "tools/build_schematic.py",
+        "kicad"
+      ],
+      "returncode": 0,
+      "stdout": "Generated native schematic 322 symbols including 4 external-power flags\n",
+      "stderr": ""
+    },
+    {
+      "program": "python3",
+      "args": [
+        "tools/build_board.py",
+        "kicad"
+      ],
+      "returncode": 0,
+      "stdout": "Generated native unrouted PCB, 318 components; source LED coordinates unchanged\n",
+      "stderr": ""
+    },
+    {
+      "program": "python3.9",
+      "args": [
+        "tools/prepare_native.py",
+        "kicad"
+      ],
+      "returncode": 0,
+      "stdout": "Canonical all318 footprints; explicit native flip parity; ground reference In2\n",
+      "stderr": "08:59:53\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n08:59:53\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+    },
+    {
+      "program": "kicad-cli",
+      "args": [
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "--output",
+        "kicad/checks/central.xml",
+        "kicad/central.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    {
+      "program": "kicad-cli",
+      "args": [
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--output",
+        "kicad/checks/erc.json",
+        "kicad/central.kicad_sch"
+      ],
+      "returncode": 0,
+      "stdout": "Found 0 violations\nSaved ERC Report to kicad/checks/erc.json\n",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    {
+      "program": "python3.9",
+      "args": [
+        "tools/finalize_native.py",
+        "kicad"
+      ],
+      "returncode": 0,
+      "stdout": "Synchronized footprint identities, source fields, NC nets; GND refilled: central.kicad_pcb\n",
+      "stderr": "08:59:55\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+    },
+    {
+      "program": "python3.9",
+      "args": [
+        "tools/replay_routing.py",
+        "kicad"
+      ],
+      "returncode": 0,
+      "stdout": "Replayed source-matched routing snapshot; actual KiCad checks remain required\n",
+      "stderr": "08:59:55\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n08:59:55\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+    },
+    {
+      "program": "kicad-cli",
+      "args": [
+        "pcb",
+        "drc",
+        "--schematic-parity",
+        "--format",
+        "json",
+        "--output",
+        "kicad/checks/drc.json",
+        "kicad/central.kicad_pcb"
+      ],
+      "returncode": 0,
+      "stdout": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to kicad/checks/drc.json\n",
+      "stderr": "Fontconfig error: Cannot load default config file: File not found\n"
+    },
+    {
+      "program": "python3.9",
+      "args": [
+        "tools/audit_board.py",
+        "kicad"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"parts\": 318,\n  \"issues\": [],\n  \"ground_ok\": true,\n  \"via_count\": 453,\n  \"via_solder_overlap_count\": 19\n}\n",
+      "stderr": "08:59:57\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n08:59:57\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+    },
+    {
+      "program": "python3",
+      "args": [
+        "tools/dfm_evidence.py"
+      ],
+      "returncode": 0,
+      "stdout": "LED copper/mask/courtyard gaps {'count': 285, 'pitch_mm': 2.8, 'maximum_body_xy_mm': [1.7, 0.9], 'max_body_to_max_body_mm': 1.0999999999999972, 'conservative_two_land_union_xy_mm': [2.4, 0.8], 'inter_component_land_union_min_gap_mm': 0.39999999999999725, 'mask_expansion_per_side_mm': 0.05, 'inter_component_mask_union_min_gap_mm': 0.29999999999999716, 'courtyard_xy_mm': [2.7, 1.2], 'min_courtyard_gap_mm': 0.09999999999999698, 'assembler_accepted': False} VIP {'LP5860_EP': 8, 'passive_land': 11}\n",
+      "stderr": ""
+    },
+    {
+      "program": "python3",
+      "args": [
+        "tools/export_review_views.py",
+        "--kicad-cli",
+        "<kicad-cli>"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "program": "python3",
+      "args": [
+        "verify.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"revision\": \"CD-PCB01\",\n  \"maturity\": \"native routed manufacturing candidate; not fabrication release\",\n  \"components\": 318,\n  \"LEDs\": 285,\n  \"pins\": 726,\n  \"connected_pins_compared\": 716,\n  \"assigned_footprints\": 318,\n  \"exact_pixel_XY\": true,\n  \"parent_pin_net_mapping_unchanged\": true,\n  \"native_counts\": {\n    \"violations\": 0,\n    \"unconnected_items\": 0,\n    \"schematic_parity\": 0\n  },\n  \"ERC_violations\": 0,\n  \"custom_ERC_exclusions\": [],\n  \"custom_DRC_exclusions\": [],\n  \"DRC_ignored_checks\": [],\n  \"default_ERC_ignored_checks\": [\n    {\n      \"description\": \"Global label only appears once in the schematic\",\n      \"key\": \"single_global_label\"\n    },\n    {\n      \"description\": \"Four connection points are joined together\",\n      \"key\": \"four_way_junction\"\n    },\n    {\n      \"description\": \"SPICE model issue\",\n      \"key\": \"simulation_model_issue\"\n    },\n    {\n      \"description\": \"Assigned footprint doesn't match footprint filters\",\n      \"key\": \"footprint_filter\"\n    }\n  ],\n  \"backside_envelope_overlap_count\": 0,\n  \"backside_body_bbox_overlap_count\": 0,\n  \"package_only_body_records\": 32,\n  \"catalogue_mated_reference_records\": 1,\n  \"continuous_GND_geometry\": true,\n  \"hardware_tested\": false,\n  \"manufacturing_approved\": false\n}\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "revision": "CD-PCB01",
+  "board_sha256": "cac04c3cc229d7ef42865aa11870219e4f6ecdcf6c1304a99ab894065f1e2cf3",
+  "candidate_process": "6-layer 1mm;0.127 trace/clearance;0.40/0.20 through vias; source/process limits in fabrication-process-candidate.json",
+  "LED_geometry": {
+    "count": 285,
+    "pitch_mm": 2.8,
+    "maximum_body_xy_mm": [
+      1.7,
+      0.9
+    ],
+    "max_body_to_max_body_mm": 1.0999999999999972,
+    "conservative_two_land_union_xy_mm": [
+      2.4,
+      0.8
+    ],
+    "inter_component_land_union_min_gap_mm": 0.39999999999999725,
+    "mask_expansion_per_side_mm": 0.05,
+    "inter_component_mask_union_min_gap_mm": 0.29999999999999716,
+    "courtyard_xy_mm": [
+      2.7,
+      1.2
+    ],
+    "min_courtyard_gap_mm": 0.09999999999999698,
+    "assembler_accepted": false
+  },
+  "QFN_adjacent_pad": {
+    "pitch_mm": 0.4,
+    "land_width_mm": 0.2,
+    "copper_gap_mm": 0.2,
+    "soldermask_web_nominal_mm": 0.1,
+    "web_process_colour_registration_TBD": true
+  },
+  "via_total": 453,
+  "annulus_overlaps_SMD_land_count": 19,
+  "annulus_overlap_types": {
+    "LP5860_EP": 8,
+    "passive_land": 11
+  },
+  "vias_with_drill_intersecting_SMD_copper": 14,
+  "vias_with_drill_intersecting_SMD_mask": 19,
+  "LED_via_in_pad_count": 0,
+  "via_registry": [
+    {
+      "uuid": "0110d0f4-6c62-4461-9c79-041e242148e9",
+      "head_xy_mm": [
+        -11.100000000000001,
+        4.100000000000001
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "U1",
+          "pin": "41",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "293af4a6-050b-40c6-af15-4cdc6e061476",
+      "head_xy_mm": [
+        -0.45000000000000284,
+        -3.606200000000001
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "R3",
+          "pin": "2",
+          "drill_intersects_copper_land": false,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "31daf191-d4e7-4af2-b864-19db6eac3b88",
+      "head_xy_mm": [
+        -1.1499999999999986,
+        6.606200000000001
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "R6",
+          "pin": "2",
+          "drill_intersects_copper_land": false,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "3f1800dc-cda9-4cde-9218-85ca2f8ac9b9",
+      "head_xy_mm": [
+        -11.100000000000001,
+        1.8999999999999986
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "U1",
+          "pin": "41",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "83c3d896-bfe2-4e9e-a8c9-ed8beccae61c",
+      "head_xy_mm": [
+        -10.399999999999999,
+        4.100000000000001
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "U1",
+          "pin": "41",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "8d57a38f-c461-4655-9590-55317699be3f",
+      "head_xy_mm": [
+        9.600000000000001,
+        1.8999999999999986
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "U2",
+          "pin": "41",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "a7062204-dc38-48ee-b187-1d77a397b74d",
+      "head_xy_mm": [
+        8.899999999999999,
+        4.100000000000001
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "U2",
+          "pin": "41",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "a75a6db5-218f-4683-905b-92f7453979a1",
+      "head_xy_mm": [
+        8.899999999999999,
+        1.8999999999999986
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "U2",
+          "pin": "41",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "c8bc2b26-8141-4471-bae0-bccdca7cca1d",
+      "head_xy_mm": [
+        -11.100000000000001,
+        3.3999999999999986
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "U1",
+          "pin": "41",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "cc76523a-2ea3-4d9a-a548-5a47316d4654",
+      "head_xy_mm": [
+        -1.1499999999999986,
+        3.606200000000001
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "R5",
+          "pin": "2",
+          "drill_intersects_copper_land": false,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "dbd680e3-86ac-437f-831a-87b3619e0628",
+      "head_xy_mm": [
+        9.600000000000001,
+        4.100000000000001
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "GND",
+      "overlaps": [
+        {
+          "ref": "U2",
+          "pin": "41",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "b074c2d1-ad05-4029-898e-4392007cc748",
+      "head_xy_mm": [
+        -8.2,
+        6.799999999999997
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "LED_VIO",
+      "overlaps": [
+        {
+          "ref": "C8",
+          "pin": "1",
+          "drill_intersects_copper_land": false,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "2c851daa-4861-45d7-8bf7-510d6d1ef270",
+      "head_xy_mm": [
+        3.0,
+        12.399999999999999
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "NTC_NODE",
+      "overlaps": [
+        {
+          "ref": "R9",
+          "pin": "1",
+          "drill_intersects_copper_land": false,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "5404e0ed-6c08-4ffb-b426-af9a4a8c5fec",
+      "head_xy_mm": [
+        -2.6000000000000014,
+        12.8
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "NTC_NODE",
+      "overlaps": [
+        {
+          "ref": "R8",
+          "pin": "2",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "a908f37a-ca5f-4531-bd51-f76ffb01f769",
+      "head_xy_mm": [
+        1.3999999999999986,
+        13.0
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "NTC_C",
+      "overlaps": [
+        {
+          "ref": "R9",
+          "pin": "2",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "7b81c6c4-d81e-4583-a090-3e6b0b7a6cef",
+      "head_xy_mm": [
+        -9.600000000000001,
+        -2.0
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "LED_POWER4",
+      "overlaps": [
+        {
+          "ref": "C3",
+          "pin": "1",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "da6164f0-8e40-40e1-a07e-595205160745",
+      "head_xy_mm": [
+        -9.2,
+        -4.200000000000003
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "LED_POWER4",
+      "overlaps": [
+        {
+          "ref": "C1",
+          "pin": "1",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "7ae9889d-dc1f-4357-b3d8-a1a3358b472e",
+      "head_xy_mm": [
+        4.200000000000003,
+        7.799999999999997
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "B_IFS",
+      "overlaps": [
+        {
+          "ref": "R10",
+          "pin": "2",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    },
+    {
+      "uuid": "c14cd76b-36b7-4993-a3e6-b77eaebd1e1e",
+      "head_xy_mm": [
+        -15.399999999999999,
+        7.799999999999997
+      ],
+      "diameter_mm": 0.4,
+      "drill_mm": 0.2,
+      "net": "A_IFS",
+      "overlaps": [
+        {
+          "ref": "R1",
+          "pin": "2",
+          "drill_intersects_copper_land": true,
+          "drill_intersects_mask_opening": true
+        }
+      ]
+    }
+  ],
+  "required_process_review": "All19 annulus/SMD overlaps conservatively require resin filling+copper capping+planarity approval; native ordinary through-hole symbols and tenting alone do not express that operation. Remaining434 non-overlap through vias are not claimed to need VIP solely by this test. Manufacturer may choose global fill/cap. No plain soldermask plug substitution. Final paste, cap thickness, flatness, voiding, via tenting and panel assembly remain unapproved.",
+  "ground": {
+    "In2_single_continuous_island": true,
+    "geometry_only": true
+  },
+  "electrical_trace_bound": {
+    "length_mm": 51.271126429538455,
+    "widths_mm": [
+      0.127,
+      0.2,
+      0.3
+    ],
+    "trace_only_Rsum_20C_ohm": 0.27970585064669623,
+    "vias": 4,
+    "assumed_peak_A": 0.52,
+    "all_segments_in_series_trace_bound_V": 0.14544704233628206
+  },
+  "resistance_model": "35um outer /17.5um inner nominal copper,20C; sum ALL net segments in series is conservative trace-only bound after connectivity passes, not a network simulation. Excludes vias, pads, junctions, ground return, contact/wire/temperature. No temperature-rise qualification.",
+  "fabrication_release": false
+}

@@ -35,7 +35,7 @@
 | 控制器被动元件/调试件 | [HEAD-PASSIVES01 合并清单](../../engineering/electronics/head-passives01/bom-selected.csv) | 193个待定位置补齐具体候选MPN；11处封装必须变更。原HEAD-CTRL02电路冻结，清单不代表控制板已布完 |
 | 上/下灯板 | FPL01上片×2、下片×2 | [原生电路与六层PCB](hardware/final-petal-fpl01.md)：每片130/42点，ERC/DRC/未连与网表检查通过；层叠、填孔、去耦与热仍需制造审查 |
 | 发光器件 | Würth `150060YS75000`，四片344点；中央拟285点 | 合计规划629点。旧609=285+2×113+2×49仅属于HLIO01历史布局 |
-| LED驱动 | TI `LP5860`，四瓣各1、中央2，共6颗 | [CD-EC01](hardware/central-display-cd01.md)已有中央318器件、285点、双驱动原生电路；PCB与整机装配另行推进 |
+| LED驱动 | TI `LP5860`，四瓣各1、中央2，共6颗 | [CD-EC01](hardware/central-display-cd01.md)原生电路及[CD-PCB01](hardware/central-display-pcb01.md)中央六层板已完成318器件/285点布线；板厂工艺、热和整机装配仍待完成 |
 | 中央屏安装/连接 | 两M2×20，GH12侧插 | [CD-HW01](hardware/central-display-hardware01.md)给精确候选PN；[CD-DRAW01](central-display-prototype01.md)提供4页图、9 DXF与4个无电打印样件。实际线束、公差和紧固待整合 |
 | 双鱼眼 | Stereolabs `ZED-414012` ×2 | [固定光学台架](hardware/optical-bench-build.md)：ZED X One S Fisheye，头中上下各外倾8°是待标定的几何候选 |
 | 外置视觉链 | `ACC-210000` ZED Link Duo ×1；NVIDIA `945-13730-0050-000` AGX Orin 64GB开发套件×1 | 台架配置明确；PoC视频绕过EtherCAT和头部MCU，动态线材未放行 |
@@ -61,6 +61,7 @@ RH的B闸从模块自身DC口取电，未增加独立24V抱闸母线；J7 N无�
 | [SHOULDER-PORT01](shoulder-port01.md) | 两块钢件内缘34→38mm，保留承压面 | 尾盖开口连续通道遮挡消除；真实插头PN/注册基准及线缆外形尚不完整。该局部修改尚未并入RAISE02或主总装 |
 | [SHOULDER-FEA01](shoulder-fea01.md) | 01/02后叉实体的二次四面体线弹性比较 | 8个网格、24个载荷解；主比较最后两档最大变化0.459%。相同四处支承时02三方向响应降低43.1%/77.8%/53.5%；仅理想边界刚度，不含螺栓接触、疲劳或2kg资格 |
 | [CD-MOUNT01](central-display-mount01.md)与[装拆核查](central-display-review01.md) | 真实杯座、压框、Ø60 PCB、窗口与GH12参考替代旧显示占位 | 名义静态/四指连续避让及指定装拆检查已完成；中央板背面元件、线缆、质量/惯量仍待整头集成 |
+| [CD-PCB01](hardware/central-display-pcb01.md) | 中央285点六层布线、背面33件位置及最大本体/规划包络分列 | 原生ERC/DRC/未连/一致性为0；19个背面焊盘关联孔需填孔盖铜，实际叠层/回流/散热尚未制造认可 |
 | [HEAD-PASSIVES01](hardware/head-passives01.md) | 具体R/C/跳线料号、真实封装、温漂与偏压选型 | 242位置合并表有MPN；控制器PCB/板间连接、供电保护、回生和整舱装配尚未完成 |
 
 这些条目是下一轮集成的输入，不与当前21.51048kg子总量、697件整头或736网格Blender混算。
