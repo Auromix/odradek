@@ -1,0 +1,765 @@
+{
+  "single_master": {
+    "active_route": "one central motor, four mechanically coupled petals",
+    "coordinate": "s dimensionless:0 open,1 closed; Qs has units joule per unit s; it is not a physical shaft torque until divided by master angle in radians",
+    "linear_map": "q_i=Delta_i*s; upperDelta109deg,lower122deg",
+    "nonlinear_illustration": "upper same; lower q=Delta*(s+0.25*sin(2*pi*s)/(2*pi)); illustration only, not synthesized fourbar",
+    "equations": [
+      "qdot_i=fprime_i*sdot",
+      "qddot_i=fprime_i*sddot+fdoubleprime_i*sdot\u00b2",
+      "Ms=sum(Ji*fprime_i\u00b2)",
+      "Qs=Ms*sddot+sum(Ji*fprime_i*fdoubleprime_i)*sdot\u00b2-sum(tau_gravity_i*fprime_i)",
+      "theta=beta*s => torque=Qs/beta; x=L*s => force=Qs/L"
+    ],
+    "metadata": "Real linkage masses, constraints, singularity and contact Jacobians remain to be synthesized; four fingers do not have independent commanded forces",
+    "compliance_examples": [
+      {
+        "assumed_branch_stiffness_N_mm": 5,
+        "assumed_initial_gaps_mm": [
+          0.0,
+          0.5,
+          1.0,
+          1.5
+        ],
+        "global_sum_normal_limit_N": 98.06649999999999,
+        "closure_travel_at_limit_mm": 5.653325000000001,
+        "branch_forces_at_limit_N": [
+          28.266625000000005,
+          25.766625000000005,
+          23.266625000000005,
+          20.766625000000005
+        ],
+        "contacts_active_at_limit": 4,
+        "travel_to_reach_target_on_last_contact_mm": 6.403325,
+        "first_contact_force_when_last_reaches_target_N": 32.016625,
+        "status": "illustrative independent normal-compliance model only; not proposed material stiffness or actual contact Jacobian"
+      },
+      {
+        "assumed_branch_stiffness_N_mm": 20,
+        "assumed_initial_gaps_mm": [
+          0.0,
+          0.5,
+          1.0,
+          1.5
+        ],
+        "global_sum_normal_limit_N": 98.06649999999999,
+        "closure_travel_at_limit_mm": 1.9758312500000001,
+        "branch_forces_at_limit_N": [
+          39.516625000000005,
+          29.516625000000005,
+          19.516625000000005,
+          9.516625000000003
+        ],
+        "contacts_active_at_limit": 4,
+        "travel_to_reach_target_on_last_contact_mm": 2.7258312499999997,
+        "first_contact_force_when_last_reaches_target_N": 54.51662499999999,
+        "status": "illustrative independent normal-compliance model only; not proposed material stiffness or actual contact Jacobian"
+      },
+      {
+        "assumed_branch_stiffness_N_mm": 100,
+        "assumed_initial_gaps_mm": [
+          0.0,
+          0.5,
+          1.0,
+          1.5
+        ],
+        "global_sum_normal_limit_N": 98.06649999999999,
+        "closure_travel_at_limit_mm": 0.7403325000000001,
+        "branch_forces_at_limit_N": [
+          74.03325000000001,
+          24.033250000000006,
+          0.0,
+          0.0
+        ],
+        "contacts_active_at_limit": 2,
+        "travel_to_reach_target_on_last_contact_mm": 1.74516625,
+        "first_contact_force_when_last_reaches_target_N": 174.516625,
+        "status": "illustrative independent normal-compliance model only; not proposed material stiffness or actual contact Jacobian"
+      }
+    ]
+  },
+  "legacy_independent_results_status": "historical analysis only; not current requirement for four motors",
+  "revision": "FAST-KIN01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "source_hashes": {
+    "engineering/generated/head-mass04/mass-properties.json": "0be449070516295a490c7a36a0cc91bd172349789960588ffe887be24545b588"
+  },
+  "script_sha256": "3b0fa1fefe9aab4ad411b0394efc11a52808f7a3d06c6b63e6dbbadc4409f1f7",
+  "requirement": "CURRENT: one central motor with mechanically coupled four petals; empty full closed-open-closed <=1s; calculation1s,0.5s per stroke; contact face is lit petal face; force-limit mode after contact",
+  "two_contact_policy": "primary requirement is four-contact2kg; two-contact cases are comparison/derating, no full2kg requirement assigned",
+  "compact_90deg_alternative": [
+    {
+      "finger": "UR",
+      "profile": "quintic",
+      "alternative_stroke_deg": 90,
+      "peak_speed_deg_s": 337.5,
+      "peak_speed_rpm": 56.25,
+      "peak_accel_rad_s2": 36.275987284684355,
+      "body_only_peak_inertial_Nm": 0.01235090407506235,
+      "angular_expression_reduction_deg": 19.0,
+      "status": "unadopted redesigned-mechanism scenario; truncating old q at90 is NOT old full closure"
+    },
+    {
+      "finger": "UR",
+      "profile": "trapezoid_ta0p1",
+      "alternative_stroke_deg": 90,
+      "peak_speed_deg_s": 225.0,
+      "peak_speed_rpm": 37.5,
+      "peak_accel_rad_s2": 39.26990816987241,
+      "body_only_peak_inertial_Nm": 0.013370245860885924,
+      "angular_expression_reduction_deg": 19.0,
+      "status": "unadopted redesigned-mechanism scenario; truncating old q at90 is NOT old full closure"
+    },
+    {
+      "finger": "UL",
+      "profile": "quintic",
+      "alternative_stroke_deg": 90,
+      "peak_speed_deg_s": 337.5,
+      "peak_speed_rpm": 56.25,
+      "peak_accel_rad_s2": 36.275987284684355,
+      "body_only_peak_inertial_Nm": 0.012350904075062796,
+      "angular_expression_reduction_deg": 19.0,
+      "status": "unadopted redesigned-mechanism scenario; truncating old q at90 is NOT old full closure"
+    },
+    {
+      "finger": "UL",
+      "profile": "trapezoid_ta0p1",
+      "alternative_stroke_deg": 90,
+      "peak_speed_deg_s": 225.0,
+      "peak_speed_rpm": 37.5,
+      "peak_accel_rad_s2": 39.26990816987241,
+      "body_only_peak_inertial_Nm": 0.013370245860886407,
+      "angular_expression_reduction_deg": 19.0,
+      "status": "unadopted redesigned-mechanism scenario; truncating old q at90 is NOT old full closure"
+    },
+    {
+      "finger": "LL",
+      "profile": "quintic",
+      "alternative_stroke_deg": 90,
+      "peak_speed_deg_s": 337.5,
+      "peak_speed_rpm": 56.25,
+      "peak_accel_rad_s2": 36.275987284684355,
+      "body_only_peak_inertial_Nm": 0.0041412624062783735,
+      "angular_expression_reduction_deg": 32.0,
+      "status": "unadopted redesigned-mechanism scenario; truncating old q at90 is NOT old full closure"
+    },
+    {
+      "finger": "LL",
+      "profile": "trapezoid_ta0p1",
+      "alternative_stroke_deg": 90,
+      "peak_speed_deg_s": 225.0,
+      "peak_speed_rpm": 37.5,
+      "peak_accel_rad_s2": 39.26990816987241,
+      "body_only_peak_inertial_Nm": 0.00448304805946818,
+      "angular_expression_reduction_deg": 32.0,
+      "status": "unadopted redesigned-mechanism scenario; truncating old q at90 is NOT old full closure"
+    },
+    {
+      "finger": "LR",
+      "profile": "quintic",
+      "alternative_stroke_deg": 90,
+      "peak_speed_deg_s": 337.5,
+      "peak_speed_rpm": 56.25,
+      "peak_accel_rad_s2": 36.275987284684355,
+      "body_only_peak_inertial_Nm": 0.004141262406277433,
+      "angular_expression_reduction_deg": 32.0,
+      "status": "unadopted redesigned-mechanism scenario; truncating old q at90 is NOT old full closure"
+    },
+    {
+      "finger": "LR",
+      "profile": "trapezoid_ta0p1",
+      "alternative_stroke_deg": 90,
+      "peak_speed_deg_s": 225.0,
+      "peak_speed_rpm": 37.5,
+      "peak_accel_rad_s2": 39.26990816987241,
+      "body_only_peak_inertial_Nm": 0.004483048059467162,
+      "angular_expression_reduction_deg": 32.0,
+      "status": "unadopted redesigned-mechanism scenario; truncating old q at90 is NOT old full closure"
+    }
+  ],
+  "asymmetric_contact_example": [
+    {
+      "assumed_mu": 0.2,
+      "payload_kg": 2,
+      "design_factor": 2,
+      "phi_deg": [
+        35,
+        145,
+        225,
+        315
+      ],
+      "normal_N_per_upper": 54.145698333237526,
+      "normal_N_per_lower": 43.920801666762465,
+      "upper_vs_equal4_factor": 1.104264929068286,
+      "conditional_geometry": "radial normals; common contact plane, equal object radius, gravity along Z; no object COM moment"
+    },
+    {
+      "assumed_mu": 0.4,
+      "payload_kg": 2,
+      "design_factor": 2,
+      "phi_deg": [
+        35,
+        145,
+        225,
+        315
+      ],
+      "normal_N_per_upper": 27.072849166618763,
+      "normal_N_per_lower": 21.960400833381232,
+      "upper_vs_equal4_factor": 1.104264929068286,
+      "conditional_geometry": "radial normals; common contact plane, equal object radius, gravity along Z; no object COM moment"
+    },
+    {
+      "assumed_mu": 0.8,
+      "payload_kg": 2,
+      "design_factor": 2,
+      "phi_deg": [
+        35,
+        145,
+        225,
+        315
+      ],
+      "normal_N_per_upper": 13.536424583309381,
+      "normal_N_per_lower": 10.980200416690616,
+      "upper_vs_equal4_factor": 1.104264929068286,
+      "conditional_geometry": "radial normals; common contact plane, equal object radius, gravity along Z; no object COM moment"
+    }
+  ],
+  "model_status": "initial archived finger_rotor inertial proxy only; new structural illuminated face must be recomputed",
+  "excluded": [
+    "all old P16 body and slider masses",
+    "new linkage and output-stage mass; drive inertia only included in explicitly named conditional example CSV",
+    "unweighed electronics",
+    "friction, cables, bearing loss",
+    "object load during fast empty cycle",
+    "complete arm motion coupling"
+  ],
+  "sample_count": 20001,
+  "finger_inputs": [
+    {
+      "id": "UR",
+      "mass_kg": 0.16921126496541977,
+      "J_axis_kg_m2": 0.0003404705150582318,
+      "COM_from_pivot_home_m": [
+        0.01667100929535907,
+        0.01677639282194543,
+        -0.0014223101391269296
+      ],
+      "axis": [
+        0.573576436351046,
+        -0.8191520442889918,
+        0.0
+      ],
+      "COM_perpendicular_radius_m": 0.023322045610687694,
+      "worst_gravity_Nm": 0.038700501072165445,
+      "range_deg": 109.0,
+      "source_members": [
+        "HEAD_UR_M2x6_keeper_screw_0",
+        "HEAD_UR_M2x6_keeper_screw_1",
+        "HEAD_UR_nut_keeper_sheet",
+        "HEAD_UR_removable_upper_fork",
+        "HEAD_UR_metal_blade_with_narrow_tongue",
+        "HEAD_UR_M3x20_fork_screw_0",
+        "HEAD_UR_M3_washer_0",
+        "HEAD_UR_M3_hexnut_0",
+        "HEAD_UR_M3x20_fork_screw_1",
+        "HEAD_UR_M3_washer_1",
+        "HEAD_UR_M3_hexnut_1",
+        "HEAD_UR_tip_SBSM_pin",
+        "HEAD_UR_tip_outer_stack_spacer",
+        "HEAD_UR_tip_M3_retention_washer",
+        "HEAD_UR_tip_M3_retention_nut",
+        "HEAD_UR_tip_lug_spacer_-1",
+        "HEAD_UR_tip_lug_spacer_1",
+        "HEAD_UR_integral_steel_crank_spindle",
+        "HEAD_UR_inner_front_spacer",
+        "HEAD_UR_MB1",
+        "HEAD_UR_KM1",
+        "HEAD_UR_lamp_PCB_outline",
+        "HEAD_UR_lamp_optical_sheet",
+        "HEAD_UR_lamp_insulating_ring1",
+        "HEAD_UR_lamp_insulating_ring2",
+        "HEAD_UR_lamp_insulating_ring3",
+        "HEAD_UR_lamp_SSH_M2_4_1",
+        "HEAD_UR_lamp_SSH_M2_4_2",
+        "HEAD_UR_lamp_SSH_M2_4_3",
+        "HEAD_UR_retained_pad_minus",
+        "HEAD_UR_retained_pad_plus"
+      ]
+    },
+    {
+      "id": "UL",
+      "mass_kg": 0.1692112649654156,
+      "J_axis_kg_m2": 0.0003404705150582441,
+      "COM_from_pivot_home_m": [
+        -0.016671233946903848,
+        0.01677607198628738,
+        -0.0014223101391266514
+      ],
+      "axis": [
+        0.5735764363510459,
+        0.8191520442889919,
+        0.0
+      ],
+      "COM_perpendicular_radius_m": 0.02332204561068644,
+      "worst_gravity_Nm": 0.03870050107216241,
+      "range_deg": 109.0,
+      "source_members": [
+        "HEAD_UL_M2x6_keeper_screw_0",
+        "HEAD_UL_M2x6_keeper_screw_1",
+        "HEAD_UL_nut_keeper_sheet",
+        "HEAD_UL_removable_upper_fork",
+        "HEAD_UL_metal_blade_with_narrow_tongue",
+        "HEAD_UL_M3x20_fork_screw_0",
+        "HEAD_UL_M3_washer_0",
+        "HEAD_UL_M3_hexnut_0",
+        "HEAD_UL_M3x20_fork_screw_1",
+        "HEAD_UL_M3_washer_1",
+        "HEAD_UL_M3_hexnut_1",
+        "HEAD_UL_tip_SBSM_pin",
+        "HEAD_UL_tip_outer_stack_spacer",
+        "HEAD_UL_tip_M3_retention_washer",
+        "HEAD_UL_tip_M3_retention_nut",
+        "HEAD_UL_tip_lug_spacer_-1",
+        "HEAD_UL_tip_lug_spacer_1",
+        "HEAD_UL_integral_steel_crank_spindle",
+        "HEAD_UL_inner_front_spacer",
+        "HEAD_UL_MB1",
+        "HEAD_UL_KM1",
+        "HEAD_UL_lamp_PCB_outline",
+        "HEAD_UL_lamp_optical_sheet",
+        "HEAD_UL_lamp_insulating_ring1",
+        "HEAD_UL_lamp_insulating_ring2",
+        "HEAD_UL_lamp_insulating_ring3",
+        "HEAD_UL_lamp_SSH_M2_4_1",
+        "HEAD_UL_lamp_SSH_M2_4_2",
+        "HEAD_UL_lamp_SSH_M2_4_3",
+        "HEAD_UL_retained_pad_minus",
+        "HEAD_UL_retained_pad_plus"
+      ]
+    },
+    {
+      "id": "LL",
+      "mass_kg": 0.15040590391239306,
+      "J_axis_kg_m2": 0.00011415988140526243,
+      "COM_from_pivot_home_m": [
+        -0.012790236962503726,
+        -0.006139832598308401,
+        -0.0019084480148971045
+      ],
+      "axis": [
+        -0.7071067811865475,
+        0.7071067811865477,
+        0.0
+      ],
+      "COM_perpendicular_radius_m": 0.013520944516347872,
+      "worst_gravity_Nm": 0.019943096479673544,
+      "range_deg": 122.0,
+      "source_members": [
+        "HEAD_LL_M2x6_keeper_screw_0",
+        "HEAD_LL_M2x6_keeper_screw_1",
+        "HEAD_LL_nut_keeper_sheet",
+        "HEAD_LL_removable_upper_fork",
+        "HEAD_LL_metal_blade_with_narrow_tongue",
+        "HEAD_LL_M3x20_fork_screw_0",
+        "HEAD_LL_M3_washer_0",
+        "HEAD_LL_M3_hexnut_0",
+        "HEAD_LL_M3x20_fork_screw_1",
+        "HEAD_LL_M3_washer_1",
+        "HEAD_LL_M3_hexnut_1",
+        "HEAD_LL_tip_SBSM_pin",
+        "HEAD_LL_tip_outer_stack_spacer",
+        "HEAD_LL_tip_M3_retention_washer",
+        "HEAD_LL_tip_M3_retention_nut",
+        "HEAD_LL_tip_lug_spacer_-1",
+        "HEAD_LL_tip_lug_spacer_1",
+        "HEAD_LL_integral_steel_crank_spindle",
+        "HEAD_LL_inner_front_spacer",
+        "HEAD_LL_MB1",
+        "HEAD_LL_KM1",
+        "HEAD_LL_lamp_PCB_outline",
+        "HEAD_LL_lamp_optical_sheet",
+        "HEAD_LL_lamp_insulating_ring1",
+        "HEAD_LL_lamp_insulating_ring2",
+        "HEAD_LL_lamp_insulating_ring3",
+        "HEAD_LL_lamp_SSH_M2_4_1",
+        "HEAD_LL_lamp_SSH_M2_4_2",
+        "HEAD_LL_lamp_SSH_M2_4_3",
+        "HEAD_LL_retained_pad_minus",
+        "HEAD_LL_retained_pad_plus"
+      ]
+    },
+    {
+      "id": "LR",
+      "mass_kg": 0.1504059039123833,
+      "J_axis_kg_m2": 0.00011415988140523649,
+      "COM_from_pivot_home_m": [
+        0.012790548541015426,
+        -0.006139521019790463,
+        -0.001908448014898971
+      ],
+      "axis": [
+        -0.7071067811865477,
+        -0.7071067811865474,
+        0.0
+      ],
+      "COM_perpendicular_radius_m": 0.013520944516343768,
+      "worst_gravity_Nm": 0.019943096479666193,
+      "range_deg": 122.0,
+      "source_members": [
+        "HEAD_LR_M2x6_keeper_screw_0",
+        "HEAD_LR_M2x6_keeper_screw_1",
+        "HEAD_LR_nut_keeper_sheet",
+        "HEAD_LR_removable_upper_fork",
+        "HEAD_LR_metal_blade_with_narrow_tongue",
+        "HEAD_LR_M3x20_fork_screw_0",
+        "HEAD_LR_M3_washer_0",
+        "HEAD_LR_M3_hexnut_0",
+        "HEAD_LR_M3x20_fork_screw_1",
+        "HEAD_LR_M3_washer_1",
+        "HEAD_LR_M3_hexnut_1",
+        "HEAD_LR_tip_SBSM_pin",
+        "HEAD_LR_tip_outer_stack_spacer",
+        "HEAD_LR_tip_M3_retention_washer",
+        "HEAD_LR_tip_M3_retention_nut",
+        "HEAD_LR_tip_lug_spacer_-1",
+        "HEAD_LR_tip_lug_spacer_1",
+        "HEAD_LR_integral_steel_crank_spindle",
+        "HEAD_LR_inner_front_spacer",
+        "HEAD_LR_MB1",
+        "HEAD_LR_KM1",
+        "HEAD_LR_lamp_PCB_outline",
+        "HEAD_LR_lamp_optical_sheet",
+        "HEAD_LR_lamp_insulating_ring1",
+        "HEAD_LR_lamp_insulating_ring2",
+        "HEAD_LR_lamp_insulating_ring3",
+        "HEAD_LR_lamp_SSH_M2_4_1",
+        "HEAD_LR_lamp_SSH_M2_4_2",
+        "HEAD_LR_lamp_SSH_M2_4_3",
+        "HEAD_LR_retained_pad_minus",
+        "HEAD_LR_retained_pad_plus"
+      ]
+    }
+  ],
+  "kinematic_limits": [
+    {
+      "profile": "quintic",
+      "finger": "UR",
+      "stroke_deg": 109.0,
+      "leg_s": 0.5,
+      "peak_speed_rad_s": 7.134033317526822,
+      "peak_speed_deg_s": 408.75,
+      "peak_speed_rpm": 68.125,
+      "peak_accel_rad_s2": 43.93425126700661,
+      "peak_accel_deg_s2": 2517.2471736667685,
+      "peak_piecewise_jerk_rad_s3": 913.1562646434332,
+      "J_axis_kg_m2": 0.0003404705150582318,
+      "inertial_torque_peak_Nm": 0.014958317157575512,
+      "all_orientation_inertial_plus_gravity_peak_upper_bound_Nm": 0.05365881822974096,
+      "all_orientation_RMS_upper_bound_Nm": 0.04942766624070451,
+      "inertial_peak_kinetic_energy_J": 0.008664026632020247
+    },
+    {
+      "profile": "quintic",
+      "finger": "UL",
+      "stroke_deg": 109.0,
+      "leg_s": 0.5,
+      "peak_speed_rad_s": 7.134033317526822,
+      "peak_speed_deg_s": 408.75,
+      "peak_speed_rpm": 68.125,
+      "peak_accel_rad_s2": 43.93425126700661,
+      "peak_accel_deg_s2": 2517.2471736667685,
+      "peak_piecewise_jerk_rad_s3": 913.1562646434332,
+      "J_axis_kg_m2": 0.0003404705150582441,
+      "inertial_torque_peak_Nm": 0.014958317157576053,
+      "all_orientation_inertial_plus_gravity_peak_upper_bound_Nm": 0.05365881822973847,
+      "all_orientation_RMS_upper_bound_Nm": 0.049427666240701856,
+      "inertial_peak_kinetic_energy_J": 0.00866402663202056
+    },
+    {
+      "profile": "quintic",
+      "finger": "LL",
+      "stroke_deg": 122.0,
+      "leg_s": 0.5,
+      "peak_speed_rad_s": 7.984881327874057,
+      "peak_speed_deg_s": 457.5,
+      "peak_speed_rpm": 76.25,
+      "peak_accel_rad_s2": 49.174116097016565,
+      "peak_accel_deg_s2": 2817.4693136453734,
+      "peak_piecewise_jerk_rad_s3": 1022.0648099678793,
+      "J_axis_kg_m2": 0.00011415988140526243,
+      "inertial_torque_peak_Nm": 0.005613711261844017,
+      "all_orientation_inertial_plus_gravity_peak_upper_bound_Nm": 0.025556807741517563,
+      "all_orientation_RMS_upper_bound_Nm": 0.023968897462492728,
+      "inertial_peak_kinetic_energy_J": 0.0036393216854376334
+    },
+    {
+      "profile": "quintic",
+      "finger": "LR",
+      "stroke_deg": 122.0,
+      "leg_s": 0.5,
+      "peak_speed_rad_s": 7.984881327874057,
+      "peak_speed_deg_s": 457.5,
+      "peak_speed_rpm": 76.25,
+      "peak_accel_rad_s2": 49.174116097016565,
+      "peak_accel_deg_s2": 2817.4693136453734,
+      "peak_piecewise_jerk_rad_s3": 1022.0648099678793,
+      "J_axis_kg_m2": 0.00011415988140523649,
+      "inertial_torque_peak_Nm": 0.0056137112618427415,
+      "all_orientation_inertial_plus_gravity_peak_upper_bound_Nm": 0.025556807741508935,
+      "all_orientation_RMS_upper_bound_Nm": 0.023968897462484463,
+      "inertial_peak_kinetic_energy_J": 0.0036393216854368063
+    },
+    {
+      "profile": "trapezoid_ta0p1",
+      "finger": "UR",
+      "stroke_deg": 109.0,
+      "leg_s": 0.5,
+      "peak_speed_rad_s": 4.756022211684548,
+      "peak_speed_deg_s": 272.5,
+      "peak_speed_rpm": 45.416666666666664,
+      "peak_accel_rad_s2": 47.56022211684547,
+      "peak_accel_deg_s2": 2724.9999999999995,
+      "peak_piecewise_jerk_rad_s3": null,
+      "J_axis_kg_m2": 0.0003404705150582318,
+      "inertial_torque_peak_Nm": 0.016192853320406285,
+      "all_orientation_inertial_plus_gravity_peak_upper_bound_Nm": 0.05489335439257173,
+      "all_orientation_RMS_upper_bound_Nm": 0.0489411206353337,
+      "inertial_peak_kinetic_energy_J": 0.0038506785031201095
+    },
+    {
+      "profile": "trapezoid_ta0p1",
+      "finger": "UL",
+      "stroke_deg": 109.0,
+      "leg_s": 0.5,
+      "peak_speed_rad_s": 4.756022211684548,
+      "peak_speed_deg_s": 272.5,
+      "peak_speed_rpm": 45.416666666666664,
+      "peak_accel_rad_s2": 47.56022211684547,
+      "peak_accel_deg_s2": 2724.9999999999995,
+      "peak_piecewise_jerk_rad_s3": null,
+      "J_axis_kg_m2": 0.0003404705150582441,
+      "inertial_torque_peak_Nm": 0.01619285332040687,
+      "all_orientation_inertial_plus_gravity_peak_upper_bound_Nm": 0.05489335439256929,
+      "all_orientation_RMS_upper_bound_Nm": 0.048941120635331035,
+      "inertial_peak_kinetic_energy_J": 0.0038506785031202488
+    },
+    {
+      "profile": "trapezoid_ta0p1",
+      "finger": "LL",
+      "stroke_deg": 122.0,
+      "leg_s": 0.5,
+      "peak_speed_rad_s": 5.323254218582704,
+      "peak_speed_deg_s": 304.99999999999994,
+      "peak_speed_rpm": 50.83333333333333,
+      "peak_accel_rad_s2": 53.232542185827036,
+      "peak_accel_deg_s2": 3049.999999999999,
+      "peak_piecewise_jerk_rad_s3": null,
+      "J_axis_kg_m2": 0.00011415988140526243,
+      "inertial_torque_peak_Nm": 0.006077020702834644,
+      "all_orientation_inertial_plus_gravity_peak_upper_bound_Nm": 0.026020117182508188,
+      "all_orientation_RMS_upper_bound_Nm": 0.023786301618622184,
+      "inertial_peak_kinetic_energy_J": 0.0016174763046389476
+    },
+    {
+      "profile": "trapezoid_ta0p1",
+      "finger": "LR",
+      "stroke_deg": 122.0,
+      "leg_s": 0.5,
+      "peak_speed_rad_s": 5.323254218582704,
+      "peak_speed_deg_s": 304.99999999999994,
+      "peak_speed_rpm": 50.83333333333333,
+      "peak_accel_rad_s2": 53.232542185827036,
+      "peak_accel_deg_s2": 3049.999999999999,
+      "peak_piecewise_jerk_rad_s3": null,
+      "J_axis_kg_m2": 0.00011415988140523649,
+      "inertial_torque_peak_Nm": 0.006077020702833263,
+      "all_orientation_inertial_plus_gravity_peak_upper_bound_Nm": 0.026020117182499455,
+      "all_orientation_RMS_upper_bound_Nm": 0.023786301618613958,
+      "inertial_peak_kinetic_energy_J": 0.00161747630463858
+    }
+  ],
+  "common_bus_power": [
+    {
+      "profile": "quintic",
+      "gravity_head": "zero",
+      "all_four_positive_peak_W": 0.1874191224287951,
+      "all_four_negative_peak_W": -0.1874191224287946,
+      "common_bus_ideal_positive_work_J": 0.04921339195747336,
+      "common_bus_ideal_braking_work_J": 0.04921339195747337,
+      "sum_individual_braking_work_J": 0.049213391957473374,
+      "net_work_J": -6.938893903907228e-18,
+      "conservative_energy_change_J": 0.0,
+      "quadrature_energy_residual_J": -6.938893903907228e-18
+    },
+    {
+      "profile": "quintic",
+      "gravity_head": "minus_Z",
+      "all_four_positive_peak_W": 0.851649300925955,
+      "all_four_negative_peak_W": -0.8516493009259551,
+      "common_bus_ideal_positive_work_J": 0.1658268813787588,
+      "common_bus_ideal_braking_work_J": 0.1658268813787588,
+      "sum_individual_braking_work_J": 0.16583304707835975,
+      "net_work_J": 0.0,
+      "conservative_energy_change_J": 0.0,
+      "quadrature_energy_residual_J": 0.0
+    },
+    {
+      "profile": "quintic",
+      "gravity_head": "minus_X",
+      "all_four_positive_peak_W": 0.18741912242881478,
+      "all_four_negative_peak_W": -0.18741912242881434,
+      "common_bus_ideal_positive_work_J": 0.04921339195747372,
+      "common_bus_ideal_braking_work_J": 0.049213391957473734,
+      "sum_individual_braking_work_J": 0.13046192776123247,
+      "net_work_J": -1.3877787807814457e-17,
+      "conservative_energy_change_J": 0.0,
+      "quadrature_energy_residual_J": -1.3877787807814457e-17
+    },
+    {
+      "profile": "quintic",
+      "gravity_head": "minus_Y",
+      "all_four_positive_peak_W": 0.25534137242315924,
+      "all_four_negative_peak_W": -0.25534137242315896,
+      "common_bus_ideal_positive_work_J": 0.05637511311334084,
+      "common_bus_ideal_braking_work_J": 0.05637511311334085,
+      "sum_individual_braking_work_J": 0.11316154118818458,
+      "net_work_J": -6.938893903907228e-18,
+      "conservative_energy_change_J": 0.0,
+      "quadrature_energy_residual_J": -6.938893903907228e-18
+    },
+    {
+      "profile": "trapezoid_ta0p1",
+      "gravity_head": "zero",
+      "all_four_positive_peak_W": 0.2187261923103576,
+      "all_four_negative_peak_W": -0.21861682921420247,
+      "common_bus_ideal_positive_work_J": 0.021872619231035777,
+      "common_bus_ideal_braking_work_J": 0.021861682921420243,
+      "sum_individual_braking_work_J": 0.02186168292142024,
+      "net_work_J": 1.093630961553245e-05,
+      "conservative_energy_change_J": 0.0,
+      "quadrature_energy_residual_J": 1.093630961553245e-05
+    },
+    {
+      "profile": "trapezoid_ta0p1",
+      "gravity_head": "minus_Z",
+      "all_four_positive_peak_W": 0.7917899090663503,
+      "all_four_negative_peak_W": -0.791416394223579,
+      "common_bus_ideal_positive_work_J": 0.15542736638062704,
+      "common_bus_ideal_braking_work_J": 0.1554164300710115,
+      "sum_individual_braking_work_J": 0.15573147278421326,
+      "net_work_J": 1.0936309615544593e-05,
+      "conservative_energy_change_J": 0.0,
+      "quadrature_energy_residual_J": 1.0936309615544593e-05
+    },
+    {
+      "profile": "trapezoid_ta0p1",
+      "gravity_head": "minus_X",
+      "all_four_positive_peak_W": 0.21872619231037388,
+      "all_four_negative_peak_W": -0.2186168292142187,
+      "common_bus_ideal_positive_work_J": 0.021872619231041814,
+      "common_bus_ideal_braking_work_J": 0.021861682921426276,
+      "sum_individual_braking_work_J": 0.12969900178276286,
+      "net_work_J": 1.0936309615530715e-05,
+      "conservative_energy_change_J": 0.0,
+      "quadrature_energy_residual_J": 1.0936309615530715e-05
+    },
+    {
+      "profile": "trapezoid_ta0p1",
+      "gravity_head": "minus_Y",
+      "all_four_positive_peak_W": 0.28118798325314565,
+      "all_four_negative_peak_W": -0.2811879832531456,
+      "common_bus_ideal_positive_work_J": 0.03736435652822989,
+      "common_bus_ideal_braking_work_J": 0.03735342021861435,
+      "sum_individual_braking_work_J": 0.1096976786509839,
+      "net_work_J": 1.0936309615537654e-05,
+      "conservative_energy_change_J": 0.0,
+      "quadrature_energy_residual_J": 1.0936309615537654e-05
+    }
+  ],
+  "grasp_rank_examples": [
+    {
+      "contacts": 2,
+      "locations_m": [
+        [
+          0.04,
+          0,
+          0
+        ],
+        [
+          -0.04,
+          0,
+          0
+        ]
+      ],
+      "point_force_grasp_map_rank": 5,
+      "rank6_is_necessary_not_friction_force_closure": true
+    },
+    {
+      "contacts": 4,
+      "locations_m": [
+        [
+          0.04,
+          0,
+          0
+        ],
+        [
+          -0.04,
+          0,
+          0
+        ],
+        [
+          0,
+          0.04,
+          0
+        ],
+        [
+          0,
+          -0.04,
+          0
+        ]
+      ],
+      "point_force_grasp_map_rank": 6,
+      "rank6_is_necessary_not_friction_force_closure": true
+    }
+  ],
+  "checks": {
+    "unique_rotor_count": 4,
+    "no_P16_member_in_rotor_sources": true,
+    "closed_open_closed_endpoints": true,
+    "zero_endpoint_velocity": true,
+    "quintic_zero_endpoint_acceleration": true,
+    "maximum_numerical_cycle_energy_residual_J": 1.0936309615544593e-05
+  },
+  "manufacturing_or_grasp_rating": false,
+  "artifact_sha256": {
+    "added-inertia-sensitivity.csv": "c2ba9b1749c79cb0d40b108dd4a71c97968d5a8192ac1b0469e1618d0f48b102",
+    "asymmetric-four-contact-example.csv": "5898b994dcaaab0c0948acaae85a561d6f5de0233f76c69c99f9b28f36014e27",
+    "common-bus-mechanical-power.csv": "ea54c06a3ae1fc870cd3ce2966ad5898dbfac8011fc5b14f82f419de14bf25d0",
+    "compact-90deg-alternative.csv": "67cd4c5fc0aea0030d17c87597adb64db76467fb7708a8c964349265c49e6760",
+    "contact-compliance-example.json": "4cd74cc60bb7bd99d572ed47caf6460740550f2b0cbc14f8265173c3e0ee3605",
+    "contact-delay-scenarios.csv": "66a8ac427b13f74dd8c084dc45642149227ffc28e2cf066e48fe5f1188f3b74b",
+    "contact-scenarios.csv": "e6ffe5ab21b62b1bc3f3c2df65a9ed9d6f3fde696f47ef4a291bff26897780f7",
+    "contact-scenarios.png": "d5f970d5806aafc13aab452faa5bc0175529a4314fb5397d01a9a844499f6312",
+    "contact-scenarios.svg": "55ea1442a227096c2e1b39950063c02d737d33ef0109f5a893c5d9a747e0ed0e",
+    "cycle-timeseries.csv": "030a80fab9cc09762b3b7d2b6965acef3818a4e83eeda78d9fb9f80b7a236e0c",
+    "efficiency-scenarios.csv": "07f3471a51d749e0ea1e004026f58edf840d9414d0c10c2965520d68a1bb7083",
+    "finger-inputs.csv": "ca5f3fa109c5bc7758b877e2b7f8af781052ac355eb5cfe3b4fa66ac66eb0a77",
+    "motion-limits.csv": "da861f4c499f41b9399c33a0cfe3129a4bea0116c37217b9b16d9f6788ec2fa7",
+    "motion-profiles.png": "05e0677aed8f8c817fc81d7b7cd000bc000e904926551b3605980f9a8cb3c83c",
+    "motion-profiles.svg": "5a78b93265d6cd02d2158ae93af2dcca8c9f52c0999796842b09bff3ff4c856a",
+    "single-master-contact.csv": "25deb9f3fb85c17110d79d5b1018c3fac8eec2af465177c1ba5727233cad2891",
+    "single-master-drive-electrical-scenarios.csv": "04c49a86d14c36212bc23cd49ced4b7a4f9b1c8164a38fa441c281db647de94f",
+    "single-master-drive-inertia-example.csv": "c8eb2408d71fbebfb453d3632cb3bd6172a0bf215c6292e26aa017bfa836a837",
+    "single-master-electrical-scenarios.csv": "0e0732071982e421c6fd739ac8b8711d9407ef1bf116fa4dc01e51e9876b70e5",
+    "single-master-joint-derivatives.csv": "66b78f60500412e40cf94e4d3deca984e9a3e5de02cf3403a8cad70d2557c71a",
+    "single-master-motion.csv": "d3d5da4f3857c6999927f0d0b989c94d055b0a98f95632aa1f4e0945f75ef83f",
+    "single-master.png": "e717a79935d12a8f3f82d7ca4f1c3dd5b8f61df9ce2aae93774bf9946c069e1d",
+    "single-master.svg": "27a99f8af292c7d54313755712a393a001da8abed3a70794598b2e9f34cbca3d",
+    "sources.json": "32baf1ccbb51c79d55fc86332191466d39a86e00b767a3b708e739b717d24713",
+    "torque-power-scenarios.csv": "c483f2c49d0826f3edbad903879bd0e4c50b4f6f03b58c340206675219e1e6b7",
+    "torque-power.png": "9a0f6ef80f6805bf6f0960e8d15726f24b5860395a022fd4dc7e6d817794cbd1",
+    "torque-power.svg": "c4d400462c130c7709d8885d618eaf6c3460ac98936163bd7fb4687b01ea0ba0",
+    "two-contact-derating.csv": "3462ddc6aca4bdc451684912a2c5b30d33561ab4d1f9b168447718eeb670884b"
+  }
+}
