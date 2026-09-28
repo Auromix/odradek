@@ -1,0 +1,138 @@
+{
+  "revision": "HEAD-INTEGRATED04",
+  "mesh_count": 1027,
+  "drivers": [
+    {
+      "object": "FINGER_LL",
+      "expression": "q*pi/180",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "FINGER_LR",
+      "expression": "q*pi/180",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "FINGER_UL",
+      "expression": "q*pi/180",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "FINGER_UR",
+      "expression": "q*pi/180",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "J7_ROLL",
+      "expression": "q*pi/180",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_LL_body",
+      "expression": "atan2(26*cos(q*pi/180-68*pi/180),123+26*sin(q*pi/180-68*pi/180))-(0.098171159399031871)",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_LL_slider",
+      "expression": "(-0.069306045770645142)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_LL_slider",
+      "expression": "(-0.069306045770645142)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_LL_slider",
+      "expression": "(0.99518507719039917)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_LR_body",
+      "expression": "atan2(26*cos(q*pi/180-68*pi/180),123+26*sin(q*pi/180-68*pi/180))-(0.098171159399031871)",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_LR_slider",
+      "expression": "(0.069306045770645142)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_LR_slider",
+      "expression": "(-0.069306045770645142)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_LR_slider",
+      "expression": "(0.99518507719039917)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_UL_body",
+      "expression": "atan2(26*cos(q*pi/180-68*pi/180),123+26*sin(q*pi/180-68*pi/180))-(0.098171159399031871)",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_UL_slider",
+      "expression": "(-0.080288000404834747)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_UL_slider",
+      "expression": "(0.056218262761831284)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_UL_slider",
+      "expression": "(0.99518507719039917)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_UR_body",
+      "expression": "atan2(26*cos(q*pi/180-68*pi/180),123+26*sin(q*pi/180-68*pi/180))-(0.098171159399031871)",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_UR_slider",
+      "expression": "(0.080288000404834747)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_UR_slider",
+      "expression": "(0.056218262761831284)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    },
+    {
+      "object": "P16_UR_slider",
+      "expression": "(0.99518507719039917)*(sqrt(123*123+26*26+2*123*26*sin(q*pi/180-68*pi/180))-(99.371686441313997))*0.001",
+      "simple": true,
+      "valid": true
+    }
+  ],
+  "independent_closed_CAD_bbox_checks": 1027,
+  "maximum_bound_error_mm": 0.0027206976309059883,
+  "input_GLB_sha256": "d148cf90f29532d20a4a60e57208826d743da2ba9c9d748c07f8bd4b01788233",
+  "script_sha256": "d0b62a2920e7e9407c68d786e56a8574e10c24484db456fe818b70cbe70209c0",
+  "hardware_qualified": false,
+  "blend_sha256": "471120c4cd79e31d722a4fe20673325e792dddfd9fdd5138cd5ce8a4db648bd6"
+}

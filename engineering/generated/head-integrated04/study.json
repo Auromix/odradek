@@ -1,0 +1,77 @@
+{
+  "revision": "HEAD-INTEGRATED04",
+  "status": "nominal CAD and inertial integration; no manufacturing release",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "source_hashes": {
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-open.step": "1dd84e2e42dd2a09e4d8a7eecbf3944faf2e3787e339940b150b9da8a5ce7011",
+    "engineering/generated/head-integrated-03/HEAD-INTEGRATED03-closed.step": "3560b10fd2544c16b57890319438f36506782df996226cf370fae2d86be31a57",
+    "engineering/generated/head-integrated-03/blender-parts-manifest.json": "6491ee78f6d48e4b30c38f634157dfd2a26894655c380a19179cef2d0da0443a",
+    "engineering/generated/head-integrated-03/blender-parts-manifest-closed.json": "62792ee8ea3d4c9eb75ae8d080f8180b4206e2d6da268f10efc8539bbe046b73",
+    "engineering/generated/head-integrated-03/qa.json": "20629a4d78a4accf030d48ea800331480b93b92f26277a838d41ba808e090554",
+    "engineering/generated/central-display-mount01/study.json": "7aa6efd20381e41c7953924974b0c51c67a6c0801cbdb38ac2b4f8758a79a40a",
+    "engineering/generated/central-display-mount01/led-centres.csv": "f15e275efd8e3482e9b1a63f4cea29bf863157ce325dde517757e6b27ebd5850",
+    "engineering/electronics/central-display-cd01/pcb01/mechanical-interface.json": "9e72215615de8ed2a85ec52ee0dd7672565adf7790a3aca7b7b0cd5f776a7b98",
+    "engineering/electronics/central-display-cd01/pcb01/kicad/central.kicad_pcb": "cac04c3cc229d7ef42865aa11870219e4f6ecdcf6c1304a99ab894065f1e2cf3",
+    "engineering/generated/head-mass04/mass-properties.json": "0be449070516295a490c7a36a0cc91bd172349789960588ffe887be24545b588",
+    "engineering/head_mass04_study.py": "af397b2aca71a952bfd6593fdcc1ef4c42a57a3826b1e0900e3e8809c4f2806b",
+    "engineering/screen_integrated_collisions.py": "72373f83c60555e45fb2d3297789b793996c372fb9159a1972dad0aace154e1b",
+    "engineering/build_layout.py": "9c21a65d2c7873809faf4f7ee733efb8a0e699758190046d73f5e2d1d0e44d2c",
+    "engineering/gripper_root_support_study.py": "3ef2cbe6f1987f35a54fca22a0fb538ee502545ede5d4a58a4e7e06ef30dd732",
+    "engineering/central_display_mount01.py": "9dac871b22d8283f9b34b41b7f350435217768b4755d43c8e75167c699fc1e38",
+    "engineering/generated/central-display-mount01/CD01-cup.step": "ecd9fe1924cf899dd7d177ac430a2237306d08d501ace9f65231828e5fc3f620",
+    "engineering/generated/central-display-mount01/CD01-bezel.step": "fc18132a3d770e16d6607751dbcb5ac6132fa5a79aaffab1f6feb78edac1fcb8",
+    "engineering/generated/central-display-mount01/CD01-PCB-outline.step": "66cab8d0ba333bfa25d8b302f6a095063358c9b94558afe300ad6378a8659de3",
+    "engineering/generated/central-display-mount01/CD01-insulating-spacer.step": "f5632ab78b756f3a2a9b2866df0e3dc6763b167ac794675215800f5731a24104",
+    "engineering/generated/central-display-mount01/CD01-window.step": "2651727d390107123e35cdb28640d62a68ffc2bb16862527c4241409c6667a1a",
+    "engineering/generated/central-display-mount01/CD01-optical-frame.step": "cf9965ba92389a18c461b3b78edd09c7ccaa44ef7b805585d862c74183f59288",
+    "engineering/generated/central-display-mount01/CD01-GH12-mated-reference.step": "5b6f6826356886b5b3ddfb2afe5637143da2db5dfd8c476b0695e36138ad3196",
+    "engineering/generated/central-display-mount01/CD01-L-M2x20-envelope.step": "b86413c7a625a41fd7b5b89b3a84726e6cecd2a0b04fbcb0aebb1af8d0e505f3",
+    "engineering/generated/central-display-mount01/CD01-L-front-washer.step": "9fd89e44387d64a39b20afca58d9375d9b7e6c298a063ff070d03ad499eff6fd",
+    "engineering/generated/central-display-mount01/CD01-L-rear-washer.step": "71d3ad4082cccde0f4d35618992a09fcc210062e20024f5ae344c7c597e2b546",
+    "engineering/generated/central-display-mount01/CD01-L-M2-nut-envelope.step": "45a84900cbc94af9f5b2d0ac4003e238d9a915516871b2b7269da645a18721d3",
+    "engineering/generated/central-display-mount01/CD01-R-M2x20-envelope.step": "05f2180a672042ee907dc891608e6fa1693e723ba67e671c96092576afadcf7e",
+    "engineering/generated/central-display-mount01/CD01-R-front-washer.step": "1041666a696b0f79d82abb8d5f0c84720b16c49e2ba38c2fad83aa90cd3e9d08",
+    "engineering/generated/central-display-mount01/CD01-R-rear-washer.step": "94b37ecc14a2b6130f7432569d9c777eae7fd46db7d588304f8c3fd53c4e10b0",
+    "engineering/generated/central-display-mount01/CD01-R-M2-nut-envelope.step": "9fa2ecfd983a62e66e45b5c89700b0a1d5cfb6ff15fa94a3b3f8a44c70d022f6"
+  },
+  "script_sha256": "a36ec93256f372f01508bc9dd36b45d27eadc43dbf0dfdf8727db11d18c7a598",
+  "upstream_unchanged": true,
+  "part_count": 1027,
+  "new_CAD_parts_and_envelopes": 332,
+  "removed_old_parts": [
+    "display_including_candidate_GH_keepout",
+    "removable_optical_frame"
+  ],
+  "unchanged_old_parts": 695,
+  "LED_count_total": 629,
+  "coordinate_contract": "Head-local geometry, +Z toward workpiece. Head03 face804 is not baked; raised parent places face at839mm. J7 pivot remains headZ=-164mm.",
+  "exports": {
+    "open": {
+      "STEP": "HEAD-INTEGRATED04-open.step",
+      "STEP_sha256": "7a9776ead78e2402a13335b8670d3413b75b6851ed634f00a0c53a366627a6f9",
+      "GLB": "HEAD-INTEGRATED04-open.glb",
+      "GLB_sha256": "d148cf90f29532d20a4a60e57208826d743da2ba9c9d748c07f8bd4b01788233",
+      "STEP_roundtrip_max_volume_error_mm3": 1.4028046280145645e-08,
+      "STEP_roundtrip_max_COM_error_mm": 9.927239139304874e-12
+    },
+    "closed": {
+      "STEP": "HEAD-INTEGRATED04-closed.step",
+      "STEP_sha256": "81d7fa001033e8316a70d7164ee956a463a8a69ef65f9058f5cf93b4fc38bbb3",
+      "GLB": "HEAD-INTEGRATED04-closed.glb",
+      "GLB_sha256": "38c90d547845f962edd908af05b265fe19e1352b4c4fcb70bd72e35cf92b44fa",
+      "STEP_roundtrip_max_volume_error_mm3": 1.4028046280145645e-08,
+      "STEP_roundtrip_max_COM_error_mm": 9.927239139304874e-12
+    }
+  },
+  "exclusions": [
+    "Head controller/power PCB and actual harness not integrated",
+    "Plan allowance envelopes are not physical package solids or vendor BREP",
+    "No material procurement, full stack tolerance, insulation, thermal path or manufacturing release",
+    "No change to full-arm mass/Blender until separately integrated",
+    "P16 duty/force and actual gripper validation remain open"
+  ],
+  "geometry_generator_sha256_before_annotation": "d07cb292c5f1d4b75c3a104c3e83b7d5b801aa676eef94948350791c0d0605c8",
+  "annotation_refresh_only": "No STEP/GLB or numerical mass/COM/inertia changes; world metadata stripped and incomplete mass budget identified.",
+  "route_status": "Archived P16 integration; no current1s cycle capability"
+}
