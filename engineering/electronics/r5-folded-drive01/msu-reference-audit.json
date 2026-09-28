@@ -1,0 +1,119 @@
+{
+  "revision": "R5-FOLDED-DRIVE01",
+  "source_url": "https://www.kss-superdrive.co.jp/jp/cad/3d/MSU6C.zip",
+  "vendor_member": "MSU6C/MSU6C.igs",
+  "iges_sha256": "9c9d9faecbc067e4058ef3a39245465c98f2dfedfba093fe82249c4ec4bcf0df",
+  "script_sha256": "169812801be99ea0ba9db506fd513eafca60e6a202dd6af88362704b30351585",
+  "faces": 130,
+  "solids": 0,
+  "overall_bbox_mm": [
+    -17.5,
+    17.5,
+    -13.0,
+    9.5,
+    -17.0,
+    7.5
+  ],
+  "reference_groups": {
+    "body": {
+      "face_index_range_half_open": [
+        0,
+        48
+      ],
+      "bbox_mm": [
+        -17.5,
+        17.5,
+        -13.0,
+        9.5,
+        -17.0,
+        0.0
+      ]
+    },
+    "pressure_cover": {
+      "face_index_range_half_open": [
+        48,
+        54
+      ],
+      "bbox_mm": [
+        -7.45,
+        7.45,
+        -7.45,
+        7.45,
+        -3.0,
+        -0.1
+      ]
+    },
+    "bearing_reference_1": {
+      "face_index_range_half_open": [
+        54,
+        68
+      ],
+      "bbox_mm": [
+        -7.5,
+        7.5,
+        -7.5,
+        7.5,
+        -14.5,
+        -8.75
+      ]
+    },
+    "locknut_including_screw": {
+      "face_index_range_half_open": [
+        68,
+        110
+      ],
+      "bbox_mm": [
+        -7.25,
+        7.25,
+        -7.25,
+        7.25,
+        2.5,
+        7.5
+      ]
+    },
+    "collar": {
+      "face_index_range_half_open": [
+        110,
+        116
+      ],
+      "bbox_mm": [
+        -5.0,
+        5.0,
+        -5.0,
+        5.0,
+        -3.0,
+        2.5
+      ]
+    },
+    "bearing_reference_2": {
+      "face_index_range_half_open": [
+        116,
+        130
+      ],
+      "bbox_mm": [
+        -7.5,
+        7.5,
+        -7.5,
+        7.5,
+        -8.75,
+        -3.0
+      ]
+    }
+  },
+  "nominal_inference": {
+    "native_shoulder_z_mm": -14.5,
+    "native_nut_front_z_mm": 7.5,
+    "difference_mm": 22.0,
+    "catalogue_cross_check": "MSU-6C E107-108 reference (L2)=22mm, not a tolerance-controlled chain",
+    "screw_fixed_end_length_mm": 30.0,
+    "inferred_tip_to_nut_mm": 8.0,
+    "coupling_insert_mm": 6.5,
+    "nominal_gap_mm": 1.5
+  },
+  "unresolved": [
+    "IGES reference-bearing spans total11.5mm; separate MTA06-15HP5DF catalogue lists single B5.5. Do not use IGES as bearing preload/width authority.",
+    "Inference assumes proper shoulder seating. Actual tolerance stack, collar/nut adjustment, chamfer and wrench access remain unverified.",
+    "IGES surfaces are not closed solids; no claimed interference-volume or installed mass validation."
+  ],
+  "manufacturer_geometry_redistributed": false
+}

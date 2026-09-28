@@ -1,0 +1,305 @@
+{
+  "revision": "R5-FOLDED-DRIVE01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek — Auromix contributors (https://github.com/Auromix/odradek)",
+  "status": "one conditional parallel-axis candidate; interfaces and custom supports not released",
+  "script_sha256": "d5a3d006385ab76c5c9f6cac878f3475f6e4e5a450457ad792a1925ffafc217e",
+  "input_hashes": {
+    "engineering/generated/r5-motion02/study.json": "85a4f8ee2e660cd2257500920aff80c57b69ac14d8dd38726917df0246297ef1",
+    "engineering/generated/r5-motion02/seven_segment-cycle.csv": "ef86b30055cc0242b955ac53fe7c8d0bd2d43b33e7adcc5f91ec416858e631c3",
+    "engineering/electronics/r5-slider-hardware01/budget.json": "b03ca747b434a2a71f663948592c2e670ad786fa5f16588a7074180c63d58018"
+  },
+  "ratio": 1,
+  "belt": {
+    "catalogue_code": "Gates 180-3MGT3-6 / 9400-53250; SDP/SI catalogue-defined A36R53M060060 equivalent GT3",
+    "pitch_mm": 3,
+    "teeth": 60,
+    "width_mm": 6,
+    "length_mm": 180,
+    "catalogue_mass_kg": 0.003,
+    "live_stock_verified": false
+  },
+  "pulley": {
+    "part": "SDP/SI A 6D53M030DF0906",
+    "quantity": 2,
+    "teeth": 30,
+    "pitch_diameter_exact_mm": 28.647889756541158,
+    "catalogue_rounded_pitch_diameter_mm": 28.7,
+    "bore_mm": 6,
+    "overall_length_mm": 20.6,
+    "overall_length_tolerance_mm": 0.4,
+    "body_S_mm": 12.9,
+    "hub_projection_mm": 7.5,
+    "hub_OD_mm": 19.1,
+    "hub_OD_tolerance_mm": 0.4,
+    "flange_OD_mm": 31.8,
+    "flange_OD_tolerance_mm": 0.4,
+    "clamp": "M3 Fairloc; part-specific slip torque and tightening value still unverified",
+    "mass_kg": null
+  },
+  "tension": {
+    "assumed_static_motor_torque_Nm": 0.14,
+    "screening_service_factor": 2,
+    "design_torque_Nm": 0.28,
+    "formula": "T0=max(minimum,1.21*Qdesign/Dpitch + M*(belt_speed_ft_min/1000)^2*lbf_to_N)",
+    "minimum_span_N": 10.675731876625198,
+    "formula_span_N": 12.13611866717857,
+    "proposed_initial_span_screen_interval_N": [
+      12.13611866717857,
+      13.349730533896428
+    ],
+    "not_a_released_setting": true,
+    "pitch_speed_m_s": 4.8,
+    "wrap_each_deg": 180,
+    "teeth_in_mesh_each": 15,
+    "maximum_radial_screen_N": 27.467461067792858,
+    "general_table14lb_per_span_radial_N": 124.55020522729399
+  },
+  "belt_capacity_screen": {
+    "catalogue_30T_3200rpm_base6mm_Nm": 1.96,
+    "length_factor_180mm": 0.85,
+    "corrected_Nm": 1.666,
+    "design_torque_Nm": 0.28,
+    "qualification": "tabular running torque screen only; no zero-speed holding, reversal fatigue or registration guarantee"
+  },
+  "motor_direct_rejection": {
+    "catalogue_radial_N": 50,
+    "catalogue_rpm": 3000,
+    "catalogue_offset_mm": 5,
+    "proposed_direct_belt_offset_mm": 15.05,
+    "equal_moment_equivalent_at5mm_N": 82.6770578140565,
+    "actual3200rpm_allowance_verified": false,
+    "stock_pulley_bore6_fits_motor5": false,
+    "stock_pulley_bore6_fits_screw4p5": false,
+    "conclusion": "direct-stock installation rejected; custom thin pulley cannot inherit this stock part or load approval"
+  },
+  "main_load_path": "belt -> two independent jackshafts -> four626-2Z -> custom bearing bridge; flexible couplers only transmit torque to motor and supported screw; residual coupling reactions remain",
+  "bearing_screen": {
+    "model": "SKF626-2Z",
+    "d_D_B_mm": [
+      6,
+      19,
+      6
+    ],
+    "C_N": 2340,
+    "C0_N": 950,
+    "limiting_rpm": 40000,
+    "catalogue_mass_kg": 0.0088,
+    "rear_center_z_mm": 3,
+    "front_center_z_mm": 35,
+    "pulley_load_z_mm": 22.55,
+    "maximum_rear_N": 10.686559071688158,
+    "maximum_front_N": 16.7809019961047,
+    "scope": "nominal static beam reactions only; bearing fit/preload/life/housing deflection excluded",
+    "conservative_any_load_within_flanged_section_max_N": 22.403147933418552
+  },
+  "MSU_boundary": "MSU6C still carries screw axial load; ideal double-jackshaft path removes belt radial reaction. Primary IGES yields nominal1.5mm coupler/nut gap; tolerances, retention, tool access and residual coupling reaction remain unclosed.",
+  "layout": {
+    "coordinate": "Z from rear cartridge towards screw travel; axes parallel +Z; screw axis X0,Y0; motor axis X45,Y0; millimetres",
+    "axis_distance_mm": 45,
+    "adjustment_design_window_mm": [
+      42,
+      48
+    ],
+    "pulley_nominal": {
+      "z_range_mm": [
+        8.5,
+        29.1
+      ],
+      "hub_range_mm": [
+        8.5,
+        16
+      ],
+      "belt_pitch_plane_z_mm": 22.55,
+      "maximum_flange_diameter_mm": 32.2,
+      "maximum_length_mm": 21.0,
+      "belt_pitch_plane_basis": "planning midpoint of L-minus-hub section; actual flange/face location and tracking are not controlled here",
+      "conservative_load_z_interval_mm": [
+        16,
+        29.1
+      ]
+    },
+    "jackshaft": {
+      "nominal_z_range_mm": [
+        -3,
+        48.5
+      ],
+      "pulley_seat_mm": [
+        8.5,
+        29.1
+      ],
+      "rear_journal_mm": [
+        0,
+        6
+      ],
+      "front_journal_mm": [
+        32,
+        38
+      ],
+      "coupling_seat_mm": [
+        42,
+        48.5
+      ],
+      "nominal_diameter_mm": 6,
+      "shoulder_diameter_mm": 9,
+      "shoulder_range_mm": [
+        -3,
+        0
+      ],
+      "bearing_fit": "TBD after rotating ring load/clearance study; not h6 automatically",
+      "pulley_and_coupler_fit": "6 h6 candidate; Fairloc surface and clamp test pending",
+      "axial_retention": "rear locating bearing shoulder + unresolved retainer; front bearing floating outer ring; no bearing preload assigned",
+      "shaft_shoulder_fillet_max_mm": 0.3,
+      "shoulder_source": "SKF 626-2Z abutment da 8.4..9.4, ra<=0.3; chosen 9 is provisional",
+      "unsupported_end_coupler_screw_access": "TBD; housing and tool not designed"
+    },
+    "bearings_z_ranges_mm": [
+      [
+        0,
+        6
+      ],
+      [
+        32,
+        38
+      ]
+    ],
+    "couplers_z_mm": [
+      42,
+      65
+    ],
+    "motor": {
+      "shaft_tip_z_mm": 58.5,
+      "mounting_face_z_mm": 71.5,
+      "body_rear_z_mm": 162.3,
+      "body_diameter_mm": 32
+    },
+    "screw": {
+      "shaft_tip_z_mm": 58.5,
+      "diameter4p5_shoulder_z_mm": 66.0,
+      "thread_M6_start_z_mm": 66.0,
+      "thread_M6_end_z_mm": 73.0,
+      "bearing_diameter6_shoulder_z_mm": 88.5,
+      "end_z_for130request_mm": 188.5,
+      "end_z_for170stock_mm": 228.5,
+      "nominal_coupling_insertion_mm": 6.5,
+      "gap_coupler_to4p5shoulder_mm": 1.0,
+      "locknut_outer_face_z_mm": 66.5,
+      "locknut_note": "Nominal inference from hashed KSS MSU6C IGES, 130 faces / no solids: shoulder native -14.5, nut front +7.5; assembled gap not tolerance-qualified",
+      "nominal_coupler_to_locknut_gap_mm": 1.5,
+      "MSU_native_to_local": "X=x_native, Y=y_native, Z=74-z_native; surface reference only",
+      "MSU_body_z_mm": [
+        74,
+        91
+      ],
+      "MSU_locknut_z_mm": [
+        66.5,
+        71.5
+      ],
+      "MSU_bearing_pair_z_mm": [
+        77,
+        88.5
+      ],
+      "MSU_collar_z_mm": [
+        71.5,
+        77
+      ]
+    },
+    "reference_rear_cartridge_limit_z_mm": -5,
+    "nominal_component_union_width_mm": 78.5,
+    "nominal_component_union_height_mm": 32,
+    "nominal_component_union_depth_130_mm": 193.5,
+    "nominal_component_union_depth_170_mm": 233.5,
+    "optional_guard_allowance_mm": 3,
+    "guarded_reference_box_130_mm": [
+      84.5,
+      38,
+      199.5
+    ],
+    "scope": "only listed axial-chain references; excludes rail, nut ear bridge, real supports/retainers/tools/wiring, central camera/display and carrier; not a fitted head envelope"
+  },
+  "mass": {
+    "known_catalogue_or_typical_subtotal_kg": 0.5344,
+    "known_scope": "3274, typical IE3, MSU6C/6CS, two MGN9C and115mm rail, four626-2Z, catalogue180mm belt",
+    "coupler_max_bore_reference_kg": 0.0184,
+    "not_actual_pair_weight": true,
+    "pulley_geometric_proxy_each_kg": 0.03412687006123273,
+    "jackshaft_geometric_proxy_each_kg": 0.01226293203393057,
+    "screw130_geometric_proxy_kg": 0.0723353,
+    "nut_geometric_proxy_kg": 0.082961,
+    "illustrative_sum_with_references_and_proxies_kg": 0.8008759041903265,
+    "excluded": [
+      "jackshaft housings and motor plate",
+      "retainers/fasteners/tension adjustment",
+      "covers/cables",
+      "custom nut-to-ears plate",
+      "four rods/cranks and fingers",
+      "camera/display/electronics",
+      "actual tolerances/materials/grease variation"
+    ],
+    "whole_head_mass_kg": null
+  },
+  "extra_inertia": {
+    "pulley_proxy_each_kg_m2": 4.127225229786725e-06,
+    "jackshaft_proxy_each_kg_m2": 6.361049190224958e-08,
+    "belt_equivalent_J_kg_m2": 6.155261906272019e-07,
+    "couplings_max_bore_reference_J_kg_m2": 6.8e-07,
+    "mixed_proxy_total_kg_m2": 9.677197634005152e-06,
+    "not_an_actual_or_guaranteed_upper_bound": true
+  },
+  "inertia_sensitivity": [
+    {
+      "scenario": "zero_added",
+      "added_rotating_equivalent_J_kg_m2": 0,
+      "peak_torque_plus_motor_friction_Nm": 0.025402531612334724,
+      "RMS_torque_plus_motor_friction_Nm": 0.012264973074741234,
+      "ideal_braking_energy_J": 0.7176126046467604,
+      "additional_peak_kinetic_energy_J": 0.0,
+      "scope": "adds only stated rotating J; screw, slider, rods, carrier, bearing friction and belt losses absent; not actual installed demand"
+    },
+    {
+      "scenario": "explicit_5e-6",
+      "added_rotating_equivalent_J_kg_m2": 5e-06,
+      "peak_torque_plus_motor_friction_Nm": 0.03657263882509843,
+      "RMS_torque_plus_motor_friction_Nm": 0.019915688771079694,
+      "ideal_braking_energy_J": 1.2786398454259922,
+      "additional_peak_kinetic_energy_J": 0.2807354140754307,
+      "scope": "adds only stated rotating J; screw, slider, rods, carrier, bearing friction and belt losses absent; not actual installed demand"
+    },
+    {
+      "scenario": "explicit_10e-6",
+      "added_rotating_equivalent_J_kg_m2": 1e-05,
+      "peak_torque_plus_motor_friction_Nm": 0.04774274603786214,
+      "RMS_torque_plus_motor_friction_Nm": 0.02785553444171862,
+      "ideal_braking_energy_J": 1.8399597732071706,
+      "additional_peak_kinetic_energy_J": 0.5614708281508614,
+      "scope": "adds only stated rotating J; screw, slider, rods, carrier, bearing friction and belt losses absent; not actual installed demand"
+    },
+    {
+      "scenario": "mixed_catalogue_proxy_NOT_bound",
+      "added_rotating_equivalent_J_kg_m2": 9.677197634005152e-06,
+      "peak_torque_plus_motor_friction_Nm": 0.04702159863052289,
+      "RMS_torque_plus_motor_friction_Nm": 0.02733906391444359,
+      "ideal_braking_energy_J": 1.803718200256316,
+      "additional_peak_kinetic_energy_J": 0.5433464169744429,
+      "scope": "adds only stated rotating J; screw, slider, rods, carrier, bearing friction and belt losses absent; not actual installed demand"
+    }
+  ],
+  "manufacturing_release": false,
+  "full_head_fit_confirmed": false,
+  "static_hold_0140Nm_guaranteed": false,
+  "jackshaft_plain_beam_screen": {
+    "span_m": 0.032,
+    "load_N": 27.467461067792858,
+    "assumed_E_Pa": 210000000000.0,
+    "max_bending_moment_Nm": 0.2089222298515035,
+    "bending_stress_MPa": 9.852149808191976,
+    "load_point_deflection_mm": 0.0012687770544652943,
+    "scope": "plain6mm shaft/simply-supported bearings; excludes shoulders, fits, fatigue, torque, carrier deflection and dynamics; not strength approval"
+  },
+  "nominal_inline_comparison": {
+    "request130_inline_mm": 243.8,
+    "folded_reference_mm": 193.5,
+    "reduction_mm": 50.3,
+    "scope": "same130mm screw request; folded support rear planning datum-5; real carrier/guard/retention/limits omitted"
+  }
+}

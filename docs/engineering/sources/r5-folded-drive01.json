@@ -1,0 +1,326 @@
+{
+  "revision": "R5-FOLDED-DRIVE01",
+  "license": "CC-BY-NC-4.0",
+  "notice": "Odradek — Auromix contributors (https://github.com/Auromix/odradek)",
+  "scope": "One conditional1:1 parallel jackshaft candidate for frozen LINK01/MOTION02 only; no fabrication release",
+  "sources": [
+    {
+      "id": "FD01",
+      "url": "https://sdp-si.com/D815/D815-Metric-Section2-Belt-and-Chain-Drives.pdf",
+      "locator": "PDF170 / printed2-170; PDF163 / printed2-162",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "pulley": "A 6D53M030DF0906",
+        "teeth": 30,
+        "pitch_mm": 3,
+        "bore_mm": 6,
+        "L_mm": 20.6,
+        "L_tol_mm": 0.4,
+        "S_mm": 12.9,
+        "S_tol_mm": 0.4,
+        "hub_projection_mm": 7.5,
+        "flange_OD_mm": 31.8,
+        "flange_OD_tol_mm": 0.4,
+        "hub_OD_mm": 19.1,
+        "hub_OD_tol_mm": 0.4,
+        "clamp": "M3 Fairloc",
+        "compatibility": "GT2/GT3/FHT3; belts up to9mm wide",
+        "belt_catalogue_identity": "A36R53M060060 = 60teeth/180mm pitch/6mm wide GT3; catalogue construction, current stock unverified"
+      },
+      "local_reference": "r5-folded-drive01/sdp-metric.pdf",
+      "sha256": "43eabb711ffbfbaea73f7abf44dce50c9d2ab2478ecc4a01a4e3fac58d7c7156",
+      "redistributed": false
+    },
+    {
+      "id": "FD02",
+      "url": "https://sdp-si.com/D820/PDFS/Ref-Pages.pdf",
+      "locator": "Fairloc installation and test examples pp4–5",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "clamp": "Integral split hub mechanism",
+        "limitation": "Generic test curves do not qualify exact6mm/M3 pulley; no inferred tightening or slip torque"
+      },
+      "local_reference": "r5-folded-drive01/sdp-ref.pdf",
+      "sha256": "8f0a007d3918050535714f0b72e1558d1c19638fab3f5ef4cce92b5674f0a25f",
+      "redistributed": false
+    },
+    {
+      "id": "FD03",
+      "url": "https://www.gates.com/content/dam/documents-library/catalogs/light-power-and-precision-manual.pdf",
+      "locator": "PDF21 running torque; PDF67 printed65 tension table/formula",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "GT3_3mm_30T_3200rpm_base6mm_Nm": 1.96,
+        "length_factor_180mm": 0.85,
+        "tension_formula_imperial": "Tst=1.21Q/d+M*S^2",
+        "M_3MGT6": 0.078,
+        "minimum_lbf_per_span": 2.4,
+        "general_table_lbf_per_span": 14,
+        "normal_drive_service_factor_range": [
+          1.5,
+          2.0
+        ],
+        "scope": "Running torque and installation-tension screens; reversal needs application assessment"
+      },
+      "local_reference": "gripper-support/gates-light.pdf",
+      "sha256": "ef9f602173dbaec8483c81e17f4a9c90046ccd5f737c5cb10f1bf41c40912cdc",
+      "redistributed": false
+    },
+    {
+      "id": "FD04",
+      "url": "https://www.gates.com/content/dam/gates/home/knowledge-center/resource-library/catalogs/industrial-power-transmission-catalogue-en.pdf",
+      "locator": "2024 catalogue; 3mm pitch / 6mm wide table",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "description": "180-3MGT3-6",
+        "product_number": "9400-53250",
+        "teeth": 60,
+        "pitch_length_mm": 180,
+        "weight_kg": 0.003,
+        "stock_marker_in_2024_catalogue": "Y",
+        "limitation": "Official indexed table read; PDF download unsuccessful; catalogue marker is not current stock or price"
+      }
+    },
+    {
+      "id": "FD05",
+      "url": "https://www.nbk1560.com/en/products/coupling/couplicon/slit_type/MST-C/MST-16C/",
+      "locator": "Standard bore combinations table",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "exact_bore_variants": [
+          "MST-16C-5-6",
+          "MST-16C-4.5-6"
+        ],
+        "catalogue_status": "standard bore combinations; inventory not checked"
+      }
+    },
+    {
+      "id": "FD06",
+      "url": "https://www.nbk1560.com/images/en/product/slit_type/MST-C/MST-C_1.pdf",
+      "locator": "MST-16C table and dimensional drawing",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "body_diameter_mm": 16,
+        "length_mm": 23,
+        "shaft_insertion_L_mm": 6.5,
+        "M2p5_clamp_tightening_Nm": 1.0,
+        "rated_torque_Nm": 0.5,
+        "maximum_rpm": 39000,
+        "mass_max_bore_reference_kg": 0.0092,
+        "inertia_max_bore_reference_kg_m2": 3.4e-07,
+        "limitation": "Mass/inertia largest-bore references, not selected bore exact values or upper bounds"
+      },
+      "local_reference": "r5-slider-hardware01/nbk_mstc.pdf",
+      "sha256": "e037e1f38f3c55ce94c5b34065bcfe918e6b05cd1db81fb891ac2c58b39055a7",
+      "redistributed": false
+    },
+    {
+      "id": "FD07",
+      "url": "https://www.nbk1560.com/images/en-US/product/contents/yougo_kaitenchokkei_coupling_NBK/yougo_kaitenchokkei_coupling_NBK_1.pdf",
+      "locator": "MST-16C rotating diameter",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "reference_rotating_diameter_mm": 17.6,
+        "limitation": "Reference, not controlled maximum clearance"
+      }
+    },
+    {
+      "id": "FD08",
+      "url": "https://www.nbk1560.com/en-US/resources/coupling/article/couplicon-maintenance/",
+      "locator": "Coupling installation / shaft insertion",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "requirement": "Use insertion L; combined misalignment limits cannot each be maximized; preserve screw access",
+        "selected_recommended_insertion_mm": 6.5
+      }
+    },
+    {
+      "id": "FD09",
+      "url": "https://cdn.skfmediahub.skf.com/api/public/0901d196802809de/pdf_preview_medium/0901d196802809de_pdf_preview_medium.pdf",
+      "locator": "PDF262/263 printed260/261, 626-2Z row",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "model": "626-2Z",
+        "d_D_B_mm": [
+          6,
+          19,
+          6
+        ],
+        "C_N": 2340,
+        "C0_N": 950,
+        "reference_rpm": 80000,
+        "limiting_rpm": 40000,
+        "mass_kg": 0.0088,
+        "shaft_abutment_da_mm": [
+          8.4,
+          9.4
+        ],
+        "fillet_ra_max_mm": 0.3,
+        "limitation": "Bearing table, not assembled bridge load, fit or life release"
+      },
+      "local_reference": "gripper-support/skf.pdf",
+      "sha256": "65e0919bee24975b9563ca0d9adf721a9e7efcf6d0fa32c18b8d119d37b190b2",
+      "redistributed": false
+    },
+    {
+      "id": "FD10",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_3274_BP4_DFF.pdf",
+      "locator": "3274G024BP4 mechanical dimensions/load specification",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "shaft_diameter_mm": 5,
+        "shaft_projection_mm": 13,
+        "projection_tol_mm": 0.3,
+        "body_diameter_mm": 32,
+        "mass_kg": 0.325,
+        "max_radial_N": 50,
+        "radial_spec_rpm": 3000,
+        "radial_spec_distance_from_flange_mm": 5,
+        "axial_N_at3000rpm": 5,
+        "limitation": "Does not directly qualify3200rpm or load at15.05mm"
+      },
+      "local_reference": "fast-drive01/3274.pdf",
+      "sha256": "1b8e49bb4e3aabbac116ab53b40e112ecd5b886b375cd6baf881989fa4375f03",
+      "redistributed": false
+    },
+    {
+      "id": "FD11",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_IE3-1024L_DFF.pdf",
+      "locator": "3274 combination dimension row",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "motor_plus_encoder_body_L1_mm": 90.8,
+        "L1_tolerance_mm": 0.6,
+        "encoder_typical_mass_kg": 0.0135
+      },
+      "local_reference": "fast-drive01/IE3L.pdf",
+      "sha256": "50ee372e4e9bf730cf92e844b8559da6b34f45d46b9993eeee6f75064195a9eb",
+      "redistributed": false
+    },
+    {
+      "id": "FD12",
+      "url": "https://kssballscrew.com/us/pdf/catalog/A219.pdf",
+      "locator": "SG0802.5 standard fixed end",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "stock_model": "SG0802.5-129R170C5",
+        "shaft_tip_diameter_mm": 4.5,
+        "tip_fit": "h6",
+        "tip_segment_mm": 7.5,
+        "thread": "M6x0.75",
+        "thread_length_mm": 7,
+        "whole_fixed_end_mm": 30,
+        "derived_bearing_segment_mm": 15.5
+      },
+      "local_reference": "r5-slider-hardware01/kss_sg0802p5.pdf",
+      "sha256": "fa3773bf782e7a6f57020004a74ca7c95d71d146098ac46bf9049b34e210a009",
+      "redistributed": false
+    },
+    {
+      "id": "FD13",
+      "url": "https://kssballscrew.com/us/pdf/catalog/E107-E108.pdf",
+      "locator": "MSU-6C",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "body_W_H_L_mm": [
+          35,
+          22.5,
+          17
+        ],
+        "total_axial_mm": 24.5,
+        "mass_kg": 0.05,
+        "contains": "factory bearing pair/collar/locknut; do not duplicate BOM",
+        "limitation": "Do not dismantle adjusted support or substitute motor bearings",
+        "reference_L2_mm": 22
+      },
+      "local_reference": "r5-slider-hardware01/kss_support6.pdf",
+      "sha256": "24b9d522b5aeae1b0dbdbd324b2ae7891902e1f267475878c5a310ea5fddb29c",
+      "redistributed": false
+    },
+    {
+      "id": "FD14",
+      "url": "https://www.kssballscrew.com/2dcad/MSU-6C.zip",
+      "locator": "Official support-unit search page 2D link",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "member": "MSU-6C.dxf",
+        "use": "check assembly section/orientation; no redistribution"
+      },
+      "local_reference": "r5-folded-drive01/MSU-6C-2d.zip",
+      "sha256": "6e86d0b9394dd9334c00ba115a3008fa5e87fd041f09d953d8ebc0ba482c1ac1",
+      "redistributed": false
+    },
+    {
+      "id": "FD15",
+      "url": "https://www.kss-superdrive.co.jp/jp/cad/3d/MSU6C.zip",
+      "locator": "Official support-unit search page 3D link",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "member": "MSU6C/MSU6C.igs",
+        "shape_kind": "130 faces; no solids",
+        "native_body_z_mm": [
+          -17,
+          0
+        ],
+        "native_bearing_pair_z_mm": [
+          -14.5,
+          -3
+        ],
+        "native_collar_z_mm": [
+          -3,
+          2.5
+        ],
+        "native_nut_z_mm": [
+          2.5,
+          7.5
+        ],
+        "inferred_tip_to_nut_mm": 8,
+        "assumption": "shoulder seats at native bearing face−14.5; 30mm fixed end; tolerance/tool clearance unverified",
+        "internal_bearing_width_difference": "IGES pair11.5mm vs two catalogue B5.5mm; do not infer actual bearing width/preload from surface CAD"
+      },
+      "local_reference": "r5-folded-drive01/MSU6C-3d.zip",
+      "sha256": "dd733c5d51abe0e050912e527445da0dd97e23ba123768a511bb694999fe9574",
+      "redistributed": false
+    },
+    {
+      "id": "FD16",
+      "url": "https://kssballscrew.com/us/pdf/catalog/BS_Technical_Description.pdf",
+      "locator": "A816 circulation speed / high acceleration caution",
+      "accessed": "2026-09-27",
+      "authority": "manufacturer primary",
+      "facts": {
+        "scope": "Miniature screw circulation3500–4000rpm condition-dependent; high acceleration separate concern;3200rpm not blanket validation"
+      },
+      "local_reference": "r5-slider-hardware01/kss_technical.pdf",
+      "sha256": "43ed5ae25302da39894262f3ad46122c0b71a263e208c159ace686fc6c991c48",
+      "redistributed": false
+    }
+  ],
+  "inherited_quantities": {
+    "source": "engineering/electronics/r5-slider-hardware01/budget.json",
+    "sha256": "b03ca747b434a2a71f663948592c2e670ad786fa5f16588a7074180c63d58018",
+    "items": [
+      "MSU6CS",
+      "MGN9C two blocks plus115mm rail",
+      "130mm screw request code",
+      "screw/nut geometric proxies"
+    ],
+    "do_not_reinterpret": "configuration requests remain requests; proxy masses remain non-catalogue"
+  },
+  "third_party_reference_policy": "Manufacturer PDF/ZIP/IGES remain outside repository in work; only source links/hashes/factual dimensional audit redistributed."
+}

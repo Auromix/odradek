@@ -1,0 +1,123 @@
+{
+  "coordinate": "Z from rear cartridge towards screw travel; axes parallel +Z; screw axis X0,Y0; motor axis X45,Y0; millimetres",
+  "axis_distance_mm": 45,
+  "adjustment_design_window_mm": [
+    42,
+    48
+  ],
+  "pulley_nominal": {
+    "z_range_mm": [
+      8.5,
+      29.1
+    ],
+    "hub_range_mm": [
+      8.5,
+      16
+    ],
+    "belt_pitch_plane_z_mm": 22.55,
+    "maximum_flange_diameter_mm": 32.2,
+    "maximum_length_mm": 21.0,
+    "belt_pitch_plane_basis": "planning midpoint of L-minus-hub section; actual flange/face location and tracking are not controlled here",
+    "conservative_load_z_interval_mm": [
+      16,
+      29.1
+    ]
+  },
+  "jackshaft": {
+    "nominal_z_range_mm": [
+      -3,
+      48.5
+    ],
+    "pulley_seat_mm": [
+      8.5,
+      29.1
+    ],
+    "rear_journal_mm": [
+      0,
+      6
+    ],
+    "front_journal_mm": [
+      32,
+      38
+    ],
+    "coupling_seat_mm": [
+      42,
+      48.5
+    ],
+    "nominal_diameter_mm": 6,
+    "shoulder_diameter_mm": 9,
+    "shoulder_range_mm": [
+      -3,
+      0
+    ],
+    "bearing_fit": "TBD after rotating ring load/clearance study; not h6 automatically",
+    "pulley_and_coupler_fit": "6 h6 candidate; Fairloc surface and clamp test pending",
+    "axial_retention": "rear locating bearing shoulder + unresolved retainer; front bearing floating outer ring; no bearing preload assigned",
+    "shaft_shoulder_fillet_max_mm": 0.3,
+    "shoulder_source": "SKF 626-2Z abutment da 8.4..9.4, ra<=0.3; chosen 9 is provisional",
+    "unsupported_end_coupler_screw_access": "TBD; housing and tool not designed"
+  },
+  "bearings_z_ranges_mm": [
+    [
+      0,
+      6
+    ],
+    [
+      32,
+      38
+    ]
+  ],
+  "couplers_z_mm": [
+    42,
+    65
+  ],
+  "motor": {
+    "shaft_tip_z_mm": 58.5,
+    "mounting_face_z_mm": 71.5,
+    "body_rear_z_mm": 162.3,
+    "body_diameter_mm": 32
+  },
+  "screw": {
+    "shaft_tip_z_mm": 58.5,
+    "diameter4p5_shoulder_z_mm": 66.0,
+    "thread_M6_start_z_mm": 66.0,
+    "thread_M6_end_z_mm": 73.0,
+    "bearing_diameter6_shoulder_z_mm": 88.5,
+    "end_z_for130request_mm": 188.5,
+    "end_z_for170stock_mm": 228.5,
+    "nominal_coupling_insertion_mm": 6.5,
+    "gap_coupler_to4p5shoulder_mm": 1.0,
+    "locknut_outer_face_z_mm": 66.5,
+    "locknut_note": "Nominal inference from hashed KSS MSU6C IGES, 130 faces / no solids: shoulder native -14.5, nut front +7.5; assembled gap not tolerance-qualified",
+    "nominal_coupler_to_locknut_gap_mm": 1.5,
+    "MSU_native_to_local": "X=x_native, Y=y_native, Z=74-z_native; surface reference only",
+    "MSU_body_z_mm": [
+      74,
+      91
+    ],
+    "MSU_locknut_z_mm": [
+      66.5,
+      71.5
+    ],
+    "MSU_bearing_pair_z_mm": [
+      77,
+      88.5
+    ],
+    "MSU_collar_z_mm": [
+      71.5,
+      77
+    ]
+  },
+  "reference_rear_cartridge_limit_z_mm": -5,
+  "nominal_component_union_width_mm": 78.5,
+  "nominal_component_union_height_mm": 32,
+  "nominal_component_union_depth_130_mm": 193.5,
+  "nominal_component_union_depth_170_mm": 233.5,
+  "optional_guard_allowance_mm": 3,
+  "guarded_reference_box_130_mm": [
+    84.5,
+    38,
+    199.5
+  ],
+  "scope": "only listed axial-chain references; excludes rail, nut ear bridge, real supports/retainers/tools/wiring, central camera/display and carrier; not a fitted head envelope"
+}
