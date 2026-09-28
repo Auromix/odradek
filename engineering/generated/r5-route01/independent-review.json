@@ -1,0 +1,148 @@
+{
+  "revision": "R5-ROUTE01-independent-review",
+  "verdict": "PASS for nominal centerline/ideal velocity and stated scalar load formulas; support load addition documented",
+  "inputs": {
+    "engineering/r5_route01.py": "05a5784749cceb4c5bb367d633a1a1c418dddcef9831aeeab44ab3c714af0847",
+    "engineering/generated/r5-route01/study.json": "338c814aaa5d236b0489d7978f9b73d24b3dc1a0b2ea7592938b169dc6697d2b",
+    "docs/engineering/r5-route01.md": "93bd8dafe0cea82486dd3f511c7f572d49c232798a46db7c2a10059b109f6eb1"
+  },
+  "metrics": {
+    "configurations_reconstructed": 37,
+    "max_path_metric_vs_report_error_mm": 5.684341886080802e-14,
+    "max_tangent_join_XY_error_mm": 3.972054645195637e-15,
+    "length_span_mm": [
+      5.684341886080802e-14,
+      5.684341886080802e-14,
+      8.526512829121202e-14
+    ],
+    "leaf_and_secondary_centerline_lengths_mm": [
+      334.3760472375115,
+      334.3760472375115,
+      181.7480000306657
+    ],
+    "max_polyline_chord_shortfall_mm": 0.0039202262482262995,
+    "independent_velocity_cases": 1000,
+    "max_contact_velocity_solution_error": 8.526512829121202e-14,
+    "max_length_velocity_residual_mm_s": 5.684341886080802e-14,
+    "max_virtual_power_residual_W": 1.0658141036401503e-14,
+    "constraint_rank": 3,
+    "coordinate_count": 7,
+    "free_coordinates_before_mean_input": 4,
+    "wheel_plane_separation_bounds_mm": [
+      4.267300000000006,
+      21.615399999999994,
+      7.5563,
+      66.09230000000001
+    ]
+  },
+  "moment_vectors_Nm": {
+    "leaf_top": [
+      -0.2489200000000004,
+      2.7,
+      0.0
+    ],
+    "leaf_bottom": [
+      0.2489200000000004,
+      2.7,
+      0.0
+    ],
+    "radial_lug_about_root_hinge_local": [
+      0.0,
+      2.25,
+      0.0
+    ]
+  },
+  "speed_examples": [
+    {
+      "name": "equal_150",
+      "Rdot_mm_s": [
+        150,
+        150,
+        150,
+        150
+      ],
+      "signed_rpm": [
+        102.44047915116953,
+        102.44047915116953,
+        102.44047915116953,
+        102.44047915116953,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "order": [
+        "F_UR",
+        "F_UL",
+        "F_LL",
+        "F_LR",
+        "M_top_Y",
+        "M_bottom_Y",
+        "M_mean_X"
+      ]
+    },
+    {
+      "name": "one_leaf_150",
+      "Rdot_mm_s": [
+        150,
+        0,
+        0,
+        0
+      ],
+      "signed_rpm": [
+        102.44047915116953,
+        0.0,
+        0.0,
+        0.0,
+        -51.22023957558476,
+        0.0,
+        21.739970614001088
+      ],
+      "order": [
+        "F_UR",
+        "F_UL",
+        "F_LL",
+        "F_LR",
+        "M_top_Y",
+        "M_bottom_Y",
+        "M_mean_X"
+      ]
+    },
+    {
+      "name": "opposed_groups_150",
+      "Rdot_mm_s": [
+        150,
+        150,
+        -150,
+        -150
+      ],
+      "signed_rpm": [
+        102.44047915116953,
+        102.44047915116953,
+        -102.44047915116953,
+        -102.44047915116953,
+        0.0,
+        0.0,
+        86.95988245600435
+      ],
+      "order": [
+        "F_UR",
+        "F_UL",
+        "F_LL",
+        "F_LR",
+        "M_top_Y",
+        "M_bottom_Y",
+        "M_mean_X"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "severity": "engineering-load-check",
+      "text": "At T=50 N, each proposed carrier lug is 45 mm behind root hinge plane (Z -25 vs +20), so its inward force contributes +2.25 N m about local +Y, in addition to the documented 2.71145 N m moving-wheel-yoke moment. This is a carrier/guide support moment, not automatically a petal hinge/cam reaction. Actual support reactions require guide/support locations."
+    },
+    {
+      "severity": "scope",
+      "text": "Arc path metrics and instantaneous no-slip equations checked independently. Original 21-pose collision results not rerun; wheel-only plane bounds rederived. No continuous rope clearance, groove fit, axial retainers, yokes or actual load reachability proved."
+    }
+  ]
+}
