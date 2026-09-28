@@ -1,0 +1,319 @@
+{
+  "revision": "R5-SLIDER-HARDWARE01",
+  "source_sha256": "dd5c83d4fe578d7c58483d88f613f54845b99bfb17189e7b67e2076989ca1621",
+  "script_sha256": "ec36a3d15c1b1853efc5b2135e8d71ee5f302bdb50773a195036f99de6f0e10f",
+  "input_hashes": {
+    "engineering/generated/r5-link01/study.json": "8edfdaf93da46253c6cd61c7b98e7d7e55977951699d022ceaa4c064e79b2d03",
+    "engineering/generated/r5-link01/common90-contact-witness.json": "b0382e815d2d23f340a913736dc13ec873a03327df9bd6e23732d48acf3dd385",
+    "docs/engineering/sources/fast-drive01.json": "d5ebbed0e6658cdc4de2e14549c8d38111d14cf0dcda966be9e0ef5c9c601a88"
+  },
+  "static_point_scope": "conditional exact point-contact wrench witness on common90 planes; finite petal face containment/collision is separate root study; friction coefficient unmeasured; no allowance for contact-position/force errors, rod friction or unknown parts",
+  "operating_points": [
+    {
+      "candidate": "A",
+      "stock_PN": "SG0802.5-129R170C5",
+      "motion": "LINK01_quintic",
+      "motor_to_screw_ratio": 1,
+      "lead_mm": 2.5,
+      "slider_peak_mm_s": 150.0,
+      "screw_peak_rpm": 3600.0,
+      "motor_peak_rpm": 3600.0,
+      "common90_F_N": 287.17126214932495,
+      "ideal_screw_static_Nm": 0.11426181471250892,
+      "ideal_motor_static_Nm": 0.11426181471250892,
+      "required_static_kappa_for_motor_budget0p140": 0.8161558193750637,
+      "moving_torque_if_eta0p9_Nm": 0.1269575719027877,
+      "catalog_3500_floor_speed_only_pass": false,
+      "static_and_motion_release": false
+    },
+    {
+      "candidate": "A",
+      "stock_PN": "SG0802.5-129R170C5",
+      "motion": "proposed_7segment_only",
+      "motor_to_screw_ratio": 1,
+      "lead_mm": 2.5,
+      "slider_peak_mm_s": 133.33333333333331,
+      "screw_peak_rpm": 3199.999999999999,
+      "motor_peak_rpm": 3199.999999999999,
+      "common90_F_N": 287.17126214932495,
+      "ideal_screw_static_Nm": 0.11426181471250892,
+      "ideal_motor_static_Nm": 0.11426181471250892,
+      "required_static_kappa_for_motor_budget0p140": 0.8161558193750637,
+      "moving_torque_if_eta0p9_Nm": 0.1269575719027877,
+      "catalog_3500_floor_speed_only_pass": true,
+      "static_and_motion_release": false
+    },
+    {
+      "candidate": "B",
+      "stock_PN": "SG0804-098R140C5",
+      "motion": "LINK01_quintic",
+      "motor_to_screw_ratio": 1,
+      "lead_mm": 4,
+      "slider_peak_mm_s": 150.0,
+      "screw_peak_rpm": 2250.0,
+      "motor_peak_rpm": 2250.0,
+      "common90_F_N": 287.17126214932495,
+      "ideal_screw_static_Nm": 0.18281890354001426,
+      "ideal_motor_static_Nm": 0.18281890354001426,
+      "required_static_kappa_for_motor_budget0p140": 1.3058493110001017,
+      "moving_torque_if_eta0p9_Nm": 0.2031321150444603,
+      "catalog_3500_floor_speed_only_pass": true,
+      "static_and_motion_release": false
+    },
+    {
+      "candidate": "B",
+      "stock_PN": "SG0804-098R140C5",
+      "motion": "proposed_7segment_only",
+      "motor_to_screw_ratio": 1,
+      "lead_mm": 4,
+      "slider_peak_mm_s": 133.33333333333331,
+      "screw_peak_rpm": 1999.9999999999998,
+      "motor_peak_rpm": 1999.9999999999998,
+      "common90_F_N": 287.17126214932495,
+      "ideal_screw_static_Nm": 0.18281890354001426,
+      "ideal_motor_static_Nm": 0.18281890354001426,
+      "required_static_kappa_for_motor_budget0p140": 1.3058493110001017,
+      "moving_torque_if_eta0p9_Nm": 0.2031321150444603,
+      "catalog_3500_floor_speed_only_pass": true,
+      "static_and_motion_release": false
+    },
+    {
+      "candidate": "B",
+      "stock_PN": "SG0804-098R140C5",
+      "motion": "LINK01_quintic",
+      "motor_to_screw_ratio": 2,
+      "lead_mm": 4,
+      "slider_peak_mm_s": 150.0,
+      "screw_peak_rpm": 2250.0,
+      "motor_peak_rpm": 4500.0,
+      "common90_F_N": 287.17126214932495,
+      "ideal_screw_static_Nm": 0.18281890354001426,
+      "ideal_motor_static_Nm": 0.09140945177000713,
+      "required_static_kappa_for_motor_budget0p140": 0.6529246555000509,
+      "moving_torque_if_eta0p9_Nm": 0.10156605752223015,
+      "catalog_3500_floor_speed_only_pass": true,
+      "static_and_motion_release": false
+    },
+    {
+      "candidate": "B",
+      "stock_PN": "SG0804-098R140C5",
+      "motion": "proposed_7segment_only",
+      "motor_to_screw_ratio": 2,
+      "lead_mm": 4,
+      "slider_peak_mm_s": 133.33333333333331,
+      "screw_peak_rpm": 1999.9999999999998,
+      "motor_peak_rpm": 3999.9999999999995,
+      "common90_F_N": 287.17126214932495,
+      "ideal_screw_static_Nm": 0.18281890354001426,
+      "ideal_motor_static_Nm": 0.09140945177000713,
+      "required_static_kappa_for_motor_budget0p140": 0.6529246555000509,
+      "moving_torque_if_eta0p9_Nm": 0.10156605752223015,
+      "catalog_3500_floor_speed_only_pass": true,
+      "static_and_motion_release": false
+    }
+  ],
+  "shaft_screens": [
+    {
+      "candidate": "A",
+      "support_assumption": "fixed_supported",
+      "span_mm": 170.0,
+      "root_mm": 6.3,
+      "critical_allowable_rpm_with_factor0p8": 33049.33505738952,
+      "buckling_N_with_factor0p5": 5492.844874480659,
+      "yield_screen_N": 3054.900404313983,
+      "scope": "uniform root shaft only; ignores local journal bending, real support compliance, recirculator and high acceleration"
+    },
+    {
+      "candidate": "A",
+      "support_assumption": "fixed_free",
+      "span_mm": 170.0,
+      "root_mm": 6.3,
+      "critical_allowable_rpm_with_factor0p8": 7534.309692837435,
+      "buckling_N_with_factor0p5": 686.6056093100824,
+      "yield_screen_N": 3054.900404313983,
+      "scope": "uniform root shaft only; ignores local journal bending, real support compliance, recirculator and high acceleration"
+    },
+    {
+      "candidate": "B",
+      "support_assumption": "fixed_supported",
+      "span_mm": 170.0,
+      "root_mm": 6.200000000000001,
+      "critical_allowable_rpm_with_factor0p8": 32524.742437430963,
+      "buckling_N_with_factor0p5": 5152.308919015546,
+      "yield_screen_N": 2958.689129297796,
+      "scope": "uniform root shaft only; ignores local journal bending, real support compliance, recirculator and high acceleration"
+    },
+    {
+      "candidate": "B",
+      "support_assumption": "fixed_free",
+      "span_mm": 170.0,
+      "root_mm": 6.200000000000001,
+      "critical_allowable_rpm_with_factor0p8": 7414.71747549081,
+      "buckling_N_with_factor0p5": 644.0386148769433,
+      "yield_screen_N": 2958.689129297796,
+      "scope": "uniform root shaft only; ignores local journal bending, real support compliance, recirculator and high acceleration"
+    }
+  ],
+  "nominal_mass_inertia_proxies": [
+    {
+      "candidate": "A",
+      "shaft_total_mm": 170,
+      "shaft_full_enclosing_cylinder_steel_mass_kg": 0.094592274877114,
+      "shaft_full_enclosing_cylinder_J_kg_m2": 1.0671191009574424e-06,
+      "nut_full_flange_cylinder_steel_mass_kg": 0.08296129384040711,
+      "condition": "nominal envelope,assumed uniform7850kg/m3,no bracket/locknut/coupler/fasteners; not catalogmass or manufactured upper tolerance bound"
+    },
+    {
+      "candidate": "A",
+      "shaft_total_mm": 130,
+      "shaft_full_enclosing_cylinder_steel_mass_kg": 0.0723352690236754,
+      "shaft_full_enclosing_cylinder_J_kg_m2": 8.160322536733381e-07,
+      "nut_full_flange_cylinder_steel_mass_kg": 0.08296129384040711,
+      "condition": "nominal envelope,assumed uniform7850kg/m3,no bracket/locknut/coupler/fasteners; not catalogmass or manufactured upper tolerance bound"
+    },
+    {
+      "candidate": "B",
+      "shaft_total_mm": 140,
+      "shaft_full_enclosing_cylinder_steel_mass_kg": 0.07789952048703505,
+      "shaft_full_enclosing_cylinder_J_kg_m2": 8.788039654943642e-07,
+      "nut_full_flange_cylinder_steel_mass_kg": 0.26257101531474863,
+      "condition": "nominal envelope,assumed uniform7850kg/m3,no bracket/locknut/coupler/fasteners; not catalogmass or manufactured upper tolerance bound"
+    },
+    {
+      "candidate": "B",
+      "shaft_total_mm": 130,
+      "shaft_full_enclosing_cylinder_steel_mass_kg": 0.0723352690236754,
+      "shaft_full_enclosing_cylinder_J_kg_m2": 8.160322536733381e-07,
+      "nut_full_flange_cylinder_steel_mass_kg": 0.26257101531474863,
+      "condition": "nominal envelope,assumed uniform7850kg/m3,no bracket/locknut/coupler/fasteners; not catalogmass or manufactured upper tolerance bound"
+    }
+  ],
+  "common90_guide": {
+    "pin_forces": [
+      {
+        "finger": "UR",
+        "pin_m": [
+          0.016383040885779836,
+          0.01147152872702092,
+          0.0
+        ],
+        "force_on_slider_N": [
+          -83.49315869799747,
+          -58.462539109277415,
+          -70.14163713824286
+        ],
+        "moment_Nm": [
+          -0.8046318053916304,
+          1.149133309031366,
+          0.0
+        ]
+      },
+      {
+        "finger": "UL",
+        "pin_m": [
+          -0.01638304088577984,
+          0.011471528727020919,
+          0.0
+        ],
+        "force_on_slider_N": [
+          83.49315869799747,
+          -58.46253910927741,
+          -70.14163713824286
+        ],
+        "moment_Nm": [
+          -0.8046318053916303,
+          -1.1491333090313665,
+          2.220446049250313e-16
+        ]
+      },
+      {
+        "finger": "LL",
+        "pin_m": [
+          -0.014142135623730954,
+          -0.014142135623730949,
+          0.0
+        ],
+        "force_on_slider_N": [
+          69.25927392335295,
+          69.25927392335292,
+          -73.44399393641962
+        ],
+        "moment_Nm": [
+          1.0386549229973197,
+          -1.03865492299732,
+          1.1102230246251565e-16
+        ]
+      },
+      {
+        "finger": "LR",
+        "pin_m": [
+          0.014142135623730947,
+          -0.014142135623730954,
+          0.0
+        ],
+        "force_on_slider_N": [
+          -69.25927392335292,
+          69.25927392335295,
+          -73.44399393641962
+        ],
+        "moment_Nm": [
+          1.03865492299732,
+          1.0386549229973194,
+          0.0
+        ]
+      }
+    ],
+    "rod_resultant_N": [
+      2.842170943040401e-14,
+      21.59346962815104,
+      -287.17126214932495
+    ],
+    "rod_moment_about_slider_center_Nm": [
+      0.468046235211379,
+      -1.1102230246251565e-15,
+      3.3306690738754696e-16
+    ],
+    "transverse_guide_reaction_N": [
+      -2.842170943040401e-14,
+      -21.59346962815104,
+      0.0
+    ],
+    "two_blocks_separation_mm": 35,
+    "block_positiveZ_reaction_N": [
+      1.7509803131231035e-14,
+      2.5760147633924504,
+      0.0
+    ],
+    "block_negativeZ_reaction_N": [
+      -4.593151256163504e-14,
+      -24.16948439154349,
+      0.0
+    ],
+    "moment_balance_residual_Nm": [
+      -5.551115123125783e-17,
+      0.0,
+      3.3306690738754696e-16
+    ],
+    "screw_antirotation_torque_ideal_Nm": 0.11426181471250892,
+    "scope": "this112mm sphere/mu.4/SF2 only; assumes guide force plane through slider center. Real guide offset/fasteners/crossloads/friction and screw reaction torque distribution must be checked"
+  },
+  "geometry_budgets": {
+    "selected_short_screw_total_mm": 130,
+    "original_A_total_mm": 170,
+    "nominal_direct_train_length_mm": 243.8,
+    "original_A_direct_train_length_mm": 283.8,
+    "nominal_direct_train_formula": "motor+encoder L1 + motor shaft13 + coupling tip gap(23-2*6.5) + screw total; excludes tolerance/cables/cover/front stroke structure",
+    "thread_clearance_A_mm": 24,
+    "thread_clearance_B_mm": 11,
+    "guide_rail_mm": 115,
+    "guide_block_center_distance_mm": 35,
+    "guide_block_total_span_mm": 63.9,
+    "guide_remaining_end_margins_each_mm": 5.550000000000001,
+    "proposed_parallel_motor_screw_min_axis_distance_mm": 34.5,
+    "parallel_bare_width_lower_mm": 68.0,
+    "parallel_case": "rectangular MSU width35 andmotorOD32,1mm nominal gap along width; excludes pulley/cover/camera; not an assembled CAD certificate",
+    "catalog_common_support_guide_mass_kg": 0.1577
+  },
+  "manufacturing_release": false,
+  "grasp_2kg_certified": false
+}
