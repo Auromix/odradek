@@ -1,0 +1,4770 @@
+{
+  "revision": "SHOULDER-RAISE03",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek \u2014 Auromix contributors (https://github.com/Auromix/odradek)",
+  "world_units": "mm for geometry;kg,m,kgm2 for inertial fields",
+  "J1_origin_world_mm": [
+    0,
+    0,
+    105.2
+  ],
+  "J2_origin_world_mm": [
+    0,
+    0,
+    205
+  ],
+  "baseline_modified": false,
+  "parts": [
+    {
+      "material": "6061-T6_candidate_stock_certificate_unfrozen",
+      "mass_kg": 0.26379674898786837,
+      "com_world_m": [
+        8.031440505553873e-07,
+        -0.015775909754714986,
+        0.11108789238394919
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          0.0003460287013366191,
+          -7.590118716900036e-09,
+          -9.418075398100904e-10
+        ],
+        [
+          -7.590118716900036e-09,
+          0.000489858977049239,
+          1.4535847190221317e-05
+        ],
+        [
+          -9.418075398100904e-10,
+          1.4535847190221317e-05,
+          0.0008217755536874464
+        ]
+      ],
+      "density_kg_mm3": 2.7e-06,
+      "volume_mm3": 97702.49962513644,
+      "mass_measured": false,
+      "id": "L12_output_adapter",
+      "legacy_id": "L12_output_adapter",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-raise02/L12_output_adapter.step",
+        "sha256": "03843967fbdc0faa0abb9be6d7380cde8e401b294fefe695b75579c530efc8f1"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_output_adapter.step",
+      "sha256": "556068007e539d2e49a98005f5042d8d0010d67f9a3df22804ee7940b6b31042",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -66.0,
+          -66.0,
+          105.2
+        ],
+        [
+          66.0,
+          66.0,
+          127.20000000000081
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "6061-T651_101.6mm_wrought_plate_PROC01",
+      "mass_kg": 0.7202296200550251,
+      "com_world_m": [
+        -1.482595669925816e-10,
+        -0.05982223648945342,
+        0.1906495156889393
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          0.0015068464491758578,
+          -1.2971869133974513e-12,
+          -3.0487157412131507e-12
+        ],
+        [
+          -1.2971869133974513e-12,
+          0.002816424912110338,
+          0.00017936310088620885
+        ],
+        [
+          -3.0487157412131507e-12,
+          0.00017936310088620885,
+          0.0018050338648801679
+        ]
+      ],
+      "density_kg_mm3": 2.7e-06,
+      "volume_mm3": 266751.71113149077,
+      "mass_measured": false,
+      "id": "L12_rear_fork",
+      "legacy_id": "L12_rear_fork",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-raise02/L12_rear_fork.step",
+        "sha256": "c5af756a04674a71831daf07d21cffd0b36e9c49c6cfa25b8e5886467a3fc206"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_rear_fork.step",
+      "sha256": "50a76f333a98814ff9e862d9f73b5333fa5b0eacf602aea7120c78d013f250ca",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -65.0,
+          -104.5000001,
+          127.2
+        ],
+        [
+          65.0,
+          -18.0,
+          269.0000001
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "6061-T6_candidate_stock_certificate_unfrozen",
+      "mass_kg": 0.03436145867515884,
+      "com_world_m": [
+        -2.0023524554451394e-12,
+        -0.0135,
+        0.20499999999800053
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          4.433770119367468e-05,
+          -8.809593055048026e-23,
+          2.7087140655468467e-22
+        ],
+        [
+          -8.809593055048026e-23,
+          8.85837718308743e-05,
+          -8.046627044677735e-20
+        ],
+        [
+          2.7087140655468467e-22,
+          -8.046627044677735e-20,
+          4.4337701193666464e-05
+        ]
+      ],
+      "density_kg_mm3": 2.7e-06,
+      "volume_mm3": 12726.466175984757,
+      "mass_measured": false,
+      "id": "L12_front_ring",
+      "legacy_id": "L12_front_ring",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-raise02/L12_front_ring.step",
+        "sha256": "72e6848393a0746755907582e586ad740ecdab4a4976e5880c660b814900f57a"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_front_ring.step",
+      "sha256": "e15b78be9f38c1bcd01b898bfaa5805901298def9680df6c03def9c18cdbcba7",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -56.0,
+          -15.5,
+          149.0
+        ],
+        [
+          56.0,
+          -11.5,
+          261.0
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "42CrMo4+QT_D50_round_bar_candidate",
+      "mass_kg": 0.023613779521190762,
+      "com_world_m": [
+        0.044553937681072166,
+        -0.1082036639129695,
+        0.1792767726104259
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          7.807401489843539e-07,
+          -4.8805384549210574e-08,
+          4.313848298943701e-07
+        ],
+        [
+          -4.8805384549210574e-08,
+          1.7558866702235177e-06,
+          2.8177801333274313e-08
+        ],
+        [
+          4.313848298943701e-07,
+          2.8177801333274313e-08,
+          1.2788604646089158e-06
+        ]
+      ],
+      "density_kg_mm3": 7.85e-06,
+      "volume_mm3": 3008.124779769524,
+      "mass_measured": false,
+      "id": "L12_steel_thread_block_1",
+      "legacy_id": "STEEL_THREAD_BLOCK_1",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-port01/SHOULDER-PORT01-BLOCK-1-R38.step",
+        "sha256": "8ff50165615e7fedc77cdc6f387dfef6d2aa6a1a3e01e6c375284f96a5fa5fb8"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_steel_thread_block_1.step",
+      "sha256": "584f842c15fdcc5a2c785a7fd50d0ea9e04dcf34bda5ea25ac7dab454e5df8c1",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          29.408965564897,
+          -112.5,
+          167.66987343269
+        ],
+        [
+          58.193575269909,
+          -102.5,
+          192.06217814767706
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "42CrMo4+QT_D50_round_bar_candidate",
+      "mass_kg": 0.027022763558481367,
+      "com_world_m": [
+        0.02475202375397894,
+        -0.10824104739479493,
+        0.16212823812779528
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.8434854840470602e-06,
+          -3.497391679672542e-08,
+          7.162416572285e-07
+        ],
+        [
+          -3.497391679672542e-08,
+          2.5193267438608873e-06,
+          6.057659961688219e-08
+        ],
+        [
+          7.162416572285e-07,
+          6.057659961688219e-08,
+          1.0164408900101083e-06
+        ]
+      ],
+      "density_kg_mm3": 7.85e-06,
+      "volume_mm3": 3442.390262226926,
+      "mass_measured": false,
+      "id": "L12_steel_thread_block_2",
+      "legacy_id": "STEEL_THREAD_BLOCK_2",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_2.step",
+        "sha256": "6a26bc36408ba132b4c5426383187db780cf9ba5836058b797d3ac431d6b48d6"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_steel_thread_block_2.step",
+      "sha256": "0a7df7ef2ab97a0c54fd6802680a2a5729713bc8f9e9f4049cb035fef8d721cc",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          11.669873273548,
+          -112.5,
+          146.80642519698
+        ],
+        [
+          37.330127463517,
+          -102.5,
+          178.32308565768
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "42CrMo4+QT_D50_round_bar_candidate",
+      "mass_kg": 0.027022763558487265,
+      "com_world_m": [
+        -0.024752023045479007,
+        -0.10824104739479518,
+        0.16212823771874407
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.8434855077208664e-06,
+          3.497391579567557e-08,
+          -7.162416435615808e-07
+        ],
+        [
+          3.497391579567557e-08,
+          2.5193267438627593e-06,
+          6.05766001943834e-08
+        ],
+        [
+          -7.162416435615808e-07,
+          6.05766001943834e-08,
+          1.0164408663372963e-06
+        ]
+      ],
+      "density_kg_mm3": 7.85e-06,
+      "volume_mm3": 3442.3902622276773,
+      "mass_measured": false,
+      "id": "L12_steel_thread_block_3",
+      "legacy_id": "STEEL_THREAD_BLOCK_3",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_3.step",
+        "sha256": "a55ca80f299ce3f0dcedb7f7b1d7f3ce7124ee8d0d28afce2e87f3f895bf1dcc"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_steel_thread_block_3.step",
+      "sha256": "aaccdbe142101b9a1b3b2887a26ac537c42eae5636bf9394f45841fcc01e90a4",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -37.33012661749,
+          -112.5,
+          146.80642475623
+        ],
+        [
+          -11.669872717,
+          -102.5,
+          178.32308528866
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "42CrMo4+QT_D50_round_bar_candidate",
+      "mass_kg": 0.027022763558483966,
+      "com_world_m": [
+        -0.042871761914225114,
+        -0.10824104739479486,
+        0.18024797631881864
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.0164408875772221e-06,
+          6.057659967610034e-08,
+          -7.162416558244599e-07
+        ],
+        [
+          6.057659967610034e-08,
+          2.5193267438615895e-06,
+          3.497391669387593e-08
+        ],
+        [
+          -7.162416558244599e-07,
+          3.497391669387593e-08,
+          1.8434854864801219e-06
+        ]
+      ],
+      "density_kg_mm3": 7.85e-06,
+      "volume_mm3": 3442.390262227257,
+      "mass_measured": false,
+      "id": "L12_steel_thread_block_4",
+      "legacy_id": "STEEL_THREAD_BLOCK_4",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_4.step",
+        "sha256": "41bca2c5d28ae6e71e0f31de7e2b8651c85f6176a207852f285325adfee174e6"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_steel_thread_block_4.step",
+      "sha256": "d4ef508acfb268d1139eee28a9ea27bf198c3a17c0403f4e38820b4a5e0c4257",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -58.1935748483,
+          -112.5,
+          167.66987262341
+        ],
+        [
+          -26.67691438023,
+          -102.5,
+          193.33012678363
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "42CrMo4+QT_D50_round_bar_candidate",
+      "mass_kg": 0.027022763558479303,
+      "com_world_m": [
+        -0.0428717622392129,
+        -0.10824104739479497,
+        0.22975202311828105
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.0164408687705918e-06,
+          6.057660013526762e-08,
+          7.162416449653724e-07
+        ],
+        [
+          6.057660013526762e-08,
+          2.519326743861472e-06,
+          -3.4973915898334975e-08
+        ],
+        [
+          7.162416449653724e-07,
+          -3.4973915898334975e-08,
+          1.843485505287805e-06
+        ]
+      ],
+      "density_kg_mm3": 7.85e-06,
+      "volume_mm3": 3442.3902622266633,
+      "mass_measured": false,
+      "id": "L12_steel_thread_block_5",
+      "legacy_id": "STEEL_THREAD_BLOCK_5",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_5.step",
+        "sha256": "fdfa237de45acfc8a307b98db001872f80b84fc13edcf37db68a78c3377765b1"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_steel_thread_block_5.step",
+      "sha256": "bbed66e84f95ec9192846a23587c0e20a8a962a9951807f0c79f7704d0fa7d4b",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -58.19357519847,
+          -112.5,
+          216.66987277419
+        ],
+        [
+          -26.67691467341,
+          -102.5,
+          242.33012670442
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "42CrMo4+QT_D50_round_bar_candidate",
+      "mass_kg": 0.027022763558475757,
+      "com_world_m": [
+        -0.02475202363914121,
+        -0.10824104739479506,
+        0.24787176193849314
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.8434854878832267e-06,
+          3.497391663446771e-08,
+          7.162416550133028e-07
+        ],
+        [
+          3.497391663446771e-08,
+          2.5193267438598345e-06,
+          -6.057659971069544e-08
+        ],
+        [
+          7.162416550133028e-07,
+          -6.057659971069544e-08,
+          1.016440886173065e-06
+        ]
+      ],
+      "density_kg_mm3": 7.85e-06,
+      "volume_mm3": 3442.3902622262112,
+      "mass_measured": false,
+      "id": "L12_steel_thread_block_6",
+      "legacy_id": "STEEL_THREAD_BLOCK_6",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_6.step",
+        "sha256": "18ac06922c8a0c2cb9e20db7ca8d6c79097c71adb3585a1d1933d2b42988a1d8"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_steel_thread_block_6.step",
+      "sha256": "b578f1700e7a9aacd1b5c5d69c05ca62fb7f4c3c22cde1527f134cce067058b1",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -37.33012732639,
+          -112.5,
+          231.67691440212
+        ],
+        [
+          -11.66987318334,
+          -102.5,
+          263.19357487445
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "42CrMo4+QT_D50_round_bar_candidate",
+      "mass_kg": 0.027022763558483844,
+      "com_world_m": [
+        0.02475202307625526,
+        -0.10824104739479502,
+        0.24787176226347904
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.84348550669243e-06,
+          -3.497391583920456e-08,
+          -7.162416441549465e-07
+        ],
+        [
+          -3.497391583920456e-08,
+          2.5193267438624077e-06,
+          -6.057660016935096e-08
+        ],
+        [
+          -7.162416441549465e-07,
+          -6.057660016935096e-08,
+          1.0164408673655572e-06
+        ]
+      ],
+      "density_kg_mm3": 7.85e-06,
+      "volume_mm3": 3442.3902622272417,
+      "mass_measured": false,
+      "id": "L12_steel_thread_block_7",
+      "legacy_id": "STEEL_THREAD_BLOCK_7",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_7.step",
+        "sha256": "7bda0a05303d192a69b2ab64df72b802f83bf7340047c5c3ce4c443f1575db99"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_steel_thread_block_7.step",
+      "sha256": "4a32fb4178bedf2514d73d8e1cfd49577acb3ae533acd52878e0f539c77eef1d",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          11.669872741176,
+          -112.5,
+          231.67691469531
+        ],
+        [
+          37.330126654239,
+          -102.5,
+          263.19357522462
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "material": "42CrMo4+QT_D50_round_bar_candidate",
+      "mass_kg": 0.023613779521182116,
+      "com_world_m": [
+        0.04455393725597768,
+        -0.10820366391296947,
+        0.2307232281258615
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          7.807401632422118e-07,
+          -4.88053840834489e-08,
+          -4.313848381255755e-07
+        ],
+        [
+          -4.88053840834489e-08,
+          1.755886670221178e-06,
+          -2.817780213963538e-08
+        ],
+        [
+          -4.313848381255755e-07,
+          -2.817780213963538e-08,
+          1.2788604503489522e-06
+        ]
+      ],
+      "density_kg_mm3": 7.85e-06,
+      "volume_mm3": 3008.1247797684227,
+      "mass_measured": false,
+      "id": "L12_steel_thread_block_8",
+      "legacy_id": "STEEL_THREAD_BLOCK_8",
+      "kind": "original_metal",
+      "source": {
+        "path": "engineering/generated/shoulder-port01/SHOULDER-PORT01-BLOCK-8-R38.step",
+        "sha256": "54b80c304f666a7f2c98a65adb76294b09b5a3f5dbd4735cdda90906d342b324"
+      },
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed",
+      "inertia_is_proxy": false,
+      "geometry_is_envelope": false,
+      "preceding_joints": 1,
+      "material_certificate_bound": false,
+      "file": "L12_steel_thread_block_8.step",
+      "sha256": "fcbdb81d6e7cabe5b8c8c3197642854efa783d1aa2f2427a603ea4fdb42ff590",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          29.408965150727,
+          -112.5,
+          217.937822454
+        ],
+        [
+          58.193574829166,
+          -102.5,
+          242.33012741332
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FOOT_M6x35_1",
+      "legacy_id": "L12_HW_FOOT_M6x35_1",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": "Accu SSC-M6-35-HK-12.9",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.0099,
+      "volume_mm3": 1481.8031750595862,
+      "com_world_m": [
+        0.056999999999999974,
+        -0.052000000000000005,
+        0.11589064049936323
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.6440625813483522e-06,
+          0.0,
+          -1.2444423988121741e-20
+        ],
+        [
+          0.0,
+          1.6440625813483276e-06,
+          0.0
+        ],
+        [
+          -1.2444423988121741e-20,
+          0.0,
+          7.268590641554592e-08
+        ]
+      ],
+      "geometry_COM_world_m": [
+        0.056999999999999974,
+        -0.052000000000000005,
+        0.11589064049936323
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          57.0,
+          -52.0,
+          105.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "diameter_mm": 6,
+        "length_mm": 35,
+        "modeled_partial_length_mm": null,
+        "head_D_H_mm": [
+          10.22,
+          6
+        ],
+        "grip_mm": 22.0,
+        "nominal_geometric_engagement_mm": 13,
+        "thread_owner": "L12_rear_fork",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FOOT_M6x35_1.step",
+      "sha256": "5703fa0227283883eb6029ec738dae40f9f1e5381ec4d8ae6de16b8666e30d0d",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          51.89,
+          -57.11,
+          99.2
+        ],
+        [
+          62.11,
+          -46.89,
+          140.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FOOT_M6x35_2",
+      "legacy_id": "L12_HW_FOOT_M6x35_2",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": "Accu SSC-M6-35-HK-12.9",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.0099,
+      "volume_mm3": 1481.8031750595862,
+      "com_world_m": [
+        -0.05700000000000002,
+        -0.052000000000000005,
+        0.11589064049936323
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.6440625813483522e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.6440625813483027e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          7.268590641554592e-08
+        ]
+      ],
+      "geometry_COM_world_m": [
+        -0.05700000000000002,
+        -0.052000000000000005,
+        0.11589064049936323
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -57.0,
+          -52.0,
+          105.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "diameter_mm": 6,
+        "length_mm": 35,
+        "modeled_partial_length_mm": null,
+        "head_D_H_mm": [
+          10.22,
+          6
+        ],
+        "grip_mm": 22.0,
+        "nominal_geometric_engagement_mm": 13,
+        "thread_owner": "L12_rear_fork",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FOOT_M6x35_2.step",
+      "sha256": "7930a24c9eb857674f95c7f7ef3db548d942f94f40b56e0f5a57c926f10047df",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -62.11,
+          -57.11,
+          99.2
+        ],
+        [
+          -51.89,
+          -46.89,
+          140.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FOOT_M6x35_3",
+      "legacy_id": "L12_HW_FOOT_M6x35_3",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": "Accu SSC-M6-35-HK-12.9",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.0099,
+      "volume_mm3": 1481.803175059586,
+      "com_world_m": [
+        -0.05700000000000002,
+        -0.026000000000000002,
+        0.11589064049936325
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.6440625813483029e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.6440625813483029e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          7.268590641554594e-08
+        ]
+      ],
+      "geometry_COM_world_m": [
+        -0.05700000000000002,
+        -0.026000000000000002,
+        0.11589064049936325
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -57.0,
+          -26.0,
+          105.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "diameter_mm": 6,
+        "length_mm": 35,
+        "modeled_partial_length_mm": null,
+        "head_D_H_mm": [
+          10.22,
+          6
+        ],
+        "grip_mm": 22.0,
+        "nominal_geometric_engagement_mm": 13,
+        "thread_owner": "L12_rear_fork",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FOOT_M6x35_3.step",
+      "sha256": "33c29d79f0f73b03c624cdb72ce3c3bcfac6ce71bfd991a5af03639421d34755",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -62.11,
+          -31.11,
+          99.2
+        ],
+        [
+          -51.89,
+          -20.89,
+          140.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FOOT_M6x35_4",
+      "legacy_id": "L12_HW_FOOT_M6x35_4",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": "Accu SSC-M6-35-HK-12.9",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.0099,
+      "volume_mm3": 1481.803175059586,
+      "com_world_m": [
+        0.05699999999999998,
+        -0.026000000000000002,
+        0.11589064049936325
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.6440625813483029e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.6440625813483279e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          7.268590641555215e-08
+        ]
+      ],
+      "geometry_COM_world_m": [
+        0.05699999999999998,
+        -0.026000000000000002,
+        0.11589064049936325
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          57.0,
+          -26.0,
+          105.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "diameter_mm": 6,
+        "length_mm": 35,
+        "modeled_partial_length_mm": null,
+        "head_D_H_mm": [
+          10.22,
+          6
+        ],
+        "grip_mm": 22.0,
+        "nominal_geometric_engagement_mm": 13,
+        "thread_owner": "L12_rear_fork",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FOOT_M6x35_4.step",
+      "sha256": "8e7380c414000a0d8924754ebe1547dae8a760b9573895749cc65b43d26e7683",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          51.89,
+          -31.11,
+          99.2
+        ],
+        [
+          62.11,
+          -20.89,
+          140.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_1",
+      "legacy_id": "L12_HW_OUT_M4_unknown_1",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        0.0377472349,
+        0.0075760318,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          37.7472349,
+          7.5760318,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_1.step",
+      "sha256": "476b16334a226d2170643e38c273f474138e3982085b746945bab3e861e499e4",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          34.1372349,
+          3.9660318,
+          101.7
+        ],
+        [
+          41.3572349,
+          11.1860318,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_2",
+      "legacy_id": "L12_HW_OUT_M4_unknown_2",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        0.03197467590000001,
+        0.021444582100000005,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          31.9746759,
+          21.4445821,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_2.step",
+      "sha256": "e7511a49ed23b45d17609aec82943e604acb993dc6036b8a5494cf4019e65ab9",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          28.3646759,
+          17.834582100000002,
+          101.7
+        ],
+        [
+          35.5846759,
+          25.0545821,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_3",
+      "legacy_id": "L12_HW_OUT_M4_unknown_3",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        0.021334262300000004,
+        0.0320483892,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          21.3342623,
+          32.0483892,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_3.step",
+      "sha256": "1c389ce8c73c76147716b02826d09a827aa84725be4b6bf9514720b5c9ea8aee",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          17.7242623,
+          28.438389200000003,
+          101.7
+        ],
+        [
+          24.9442623,
+          35.6583892,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_4",
+      "legacy_id": "L12_HW_OUT_M4_unknown_4",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        0.007445900700000007,
+        0.0377731195,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          7.4459007,
+          37.7731195,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_4.step",
+      "sha256": "0b6446b550dbb7cf04f2d28eb9f43098ff0b44623a31942b5d27d3f74ff710e4",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          3.8359007000000003,
+          34.1631195,
+          101.7
+        ],
+        [
+          11.0559007,
+          41.3831195,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_5",
+      "legacy_id": "L12_HW_OUT_M4_unknown_5",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.0139780910839,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        -0.007576031799999994,
+        0.0377472348,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -7.5760318,
+          37.7472348,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_5.step",
+      "sha256": "6ac729ef16ee2870d40fcfbf3bf5d4d335aa0bcf4c7b363f7cafd2669c90700d",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -11.1860318,
+          34.1372348,
+          101.7
+        ],
+        [
+          -3.9660318,
+          41.3572348,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_6",
+      "legacy_id": "L12_HW_OUT_M4_unknown_6",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        -0.02144458209999999,
+        0.0319746758,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -21.4445821,
+          31.9746758,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_6.step",
+      "sha256": "65fe18f15d80fa28a963d8684cc842874128d842a184ab87e3b3fb93f066b12e",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -25.0545821,
+          28.3646758,
+          101.7
+        ],
+        [
+          -17.8345821,
+          35.5846758,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_7",
+      "legacy_id": "L12_HW_OUT_M4_unknown_7",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        -0.0320483892,
+        0.021334262200000002,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -32.0483892,
+          21.3342622,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_7.step",
+      "sha256": "48c98a7dd137857adee89351a842141fc8462ffbf3e067469aef2003c8566377",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -35.6583892,
+          17.724262200000002,
+          101.7
+        ],
+        [
+          -28.4383892,
+          24.9442622,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_8",
+      "legacy_id": "L12_HW_OUT_M4_unknown_8",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        -0.0377731195,
+        0.007445900600000002,
+        0.109099630334939
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -37.7731195,
+          7.4459006,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_8.step",
+      "sha256": "4272f21e170acda78729eefe7a24a13ef18ad16a8c1433b3f2c3f952aa008b87",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -41.3831195,
+          3.8359006,
+          101.7
+        ],
+        [
+          -34.1631195,
+          11.0559006,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_9",
+      "legacy_id": "L12_HW_OUT_M4_unknown_9",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.0139780910839,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        -0.037747234799999994,
+        -0.0075760319,
+        0.10909963033493897
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -37.7472348,
+          -7.5760319,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_9.step",
+      "sha256": "9d33e4092190f5869e955f086491ebc2083957696d2074d0886f1b8bb5e5d57f",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -41.3572348,
+          -11.1860319,
+          101.7
+        ],
+        [
+          -34.1372348,
+          -3.9660319000000004,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_10",
+      "legacy_id": "L12_HW_OUT_M4_unknown_10",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        -0.03197467579999999,
+        -0.021444582200000003,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -31.9746758,
+          -21.4445822,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_10.step",
+      "sha256": "0920761e9c00a1c7e243e01a49ba7544a63fd25df89ee6216f98014bea6dcb0d",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -35.5846758,
+          -25.0545822,
+          101.7
+        ],
+        [
+          -28.3646758,
+          -17.8345822,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_11",
+      "legacy_id": "L12_HW_OUT_M4_unknown_11",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        -0.021334262199999992,
+        -0.0320483893,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -21.3342622,
+          -32.0483893,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_11.step",
+      "sha256": "354a8acb0712346e3c7b487285dd4c9de2105e6951c776e2eec284be76158c01",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -24.9442622,
+          -35.658389299999996,
+          101.7
+        ],
+        [
+          -17.7242622,
+          -28.438389299999997,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_12",
+      "legacy_id": "L12_HW_OUT_M4_unknown_12",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        -0.007445900599999994,
+        -0.0377731196,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -7.4459006,
+          -37.7731196,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_12.step",
+      "sha256": "d3546aa039a02426e7998f2d714069fcc35ffed3e2a3a284b015792a1639775f",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -11.0559006,
+          -41.3831196,
+          101.7
+        ],
+        [
+          -3.8359006,
+          -34.1631196,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_13",
+      "legacy_id": "L12_HW_OUT_M4_unknown_13",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        0.007576031900000007,
+        -0.037747234899999996,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          7.5760319,
+          -37.7472349,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_13.step",
+      "sha256": "283a881bf323bd0cea6fa600341e37457c2e8af8c54387d24226bb556972781f",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          3.9660319000000004,
+          -41.3572349,
+          101.7
+        ],
+        [
+          11.1860319,
+          -34.1372349,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_14",
+      "legacy_id": "L12_HW_OUT_M4_unknown_14",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        0.021444582200000003,
+        -0.0319746759,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          21.4445822,
+          -31.9746759,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_14.step",
+      "sha256": "27346947e1a040cf8c83fb0bc7d90926beba3ef4e6e84b41ad8c3d038d12cd0a",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          17.8345822,
+          -35.5846759,
+          101.7
+        ],
+        [
+          25.0545822,
+          -28.3646759,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_15",
+      "legacy_id": "L12_HW_OUT_M4_unknown_15",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        0.032048389300000014,
+        -0.0213342623,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          32.0483893,
+          -21.3342623,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_15.step",
+      "sha256": "372f06699b3251b8a6df0c6a9deca0bace781928146b0d30a8a430004e33683e",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          28.438389299999997,
+          -24.9442623,
+          101.7
+        ],
+        [
+          35.6583893,
+          -17.7242623,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_OUT_M4_unknown_16",
+      "legacy_id": "L12_HW_OUT_M4_unknown_16",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "engineering/generated/link12-study/bom.json",
+        "sha256": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193"
+      },
+      "part_number": null,
+      "material": "unselected",
+      "mass_kg": null,
+      "volume_mm3": 258.01397809108386,
+      "com_world_m": null,
+      "inertia_about_COM_world_axes_kg_m2": null,
+      "geometry_COM_world_m": [
+        0.03777311960000001,
+        -0.0074459007,
+        0.10909963033493898
+      ],
+      "mass_basis": "Unknown: partial output channel proxy is not complete screw; no mass inferred",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          37.7731196,
+          -7.4459007,
+          109.2
+        ],
+        "head_outward_axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "diameter_mm": 4,
+        "length_mm": null,
+        "modeled_partial_length_mm": 7.5,
+        "head_D_H_mm": [
+          7.22,
+          4
+        ],
+        "grip_mm": 7.5,
+        "nominal_geometric_engagement_mm": null,
+        "thread_owner": "J1",
+        "effective_engagement_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_OUT_M4_unknown_16.step",
+      "sha256": "f933903fd7e0633a59a6a9c9070e04873756802185b2a907600ccb0d73cc75af",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          34.1631196,
+          -11.0559007,
+          101.7
+        ],
+        [
+          41.3831196,
+          -3.8359007000000003,
+          113.2
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_1",
+      "legacy_id": "L12_HW_FIX_M4x100_PROVISIONAL_1",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "docs/engineering/sources/shoulder-procurement01.json",
+        "sha256": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847"
+      },
+      "part_number": "Fabory 07000.040.100",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.011,
+      "volume_mm3": 1410.5751014618168,
+      "com_world_m": [
+        0.0441672958,
+        -0.05582516703786192,
+        0.1795000004
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.1073135417751676e-05,
+          0.0,
+          1.4525349710417493e-20
+        ],
+        [
+          0.0,
+          2.6951837416395216e-08,
+          -1.4525349710417493e-20
+        ],
+        [
+          1.4525349710417493e-20,
+          -1.4525349710417493e-20,
+          1.1073135417751711e-05
+        ]
+      ],
+      "geometry_COM_world_m": [
+        0.0441672958,
+        -0.05582516703786192,
+        0.1795000004
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          44.1672958,
+          -11.5,
+          179.5000004
+        ],
+        "head_outward_axis": [
+          0,
+          1,
+          0
+        ],
+        "diameter_mm": 4,
+        "length_mm": 100,
+        "head_D_H_mm": [
+          7,
+          4
+        ],
+        "nominal_thread_b_mm": 20,
+        "nominal_shank_mm": 80,
+        "nominal_thread_world_Y_mm": [
+          -111.5,
+          -91.5
+        ],
+        "grip_mm": 93,
+        "nominal_geometric_engagement_mm": 7,
+        "nominal_tip_clearance_mm": 1,
+        "thread_owner": "L12_steel_thread_block_1",
+        "effective_engagement_mm": null,
+        "washers_added": 0,
+        "socket_AF_mm": 3,
+        "socket_depth_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FIX_FABORY_07000_040_100_1.step",
+      "sha256": "7e18d07995f4b5a6e7b0a89d78ff9cdccc0228bf536153718f1d7006930e37d2",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          40.6672958,
+          -111.5,
+          176.0000004
+        ],
+        [
+          47.6672958,
+          -7.5,
+          183.0000004
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_2",
+      "legacy_id": "L12_HW_FIX_M4x100_PROVISIONAL_2",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "docs/engineering/sources/shoulder-procurement01.json",
+        "sha256": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847"
+      },
+      "part_number": "Fabory 07000.040.100",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.011,
+      "volume_mm3": 1410.5751014618163,
+      "com_world_m": [
+        0.025500000399999997,
+        -0.05582516703786191,
+        0.1608327046
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.1073135417751798e-05,
+          0.0,
+          -7.262674855208748e-21
+        ],
+        [
+          0.0,
+          2.695183741651143e-08,
+          1.4525349710417496e-20
+        ],
+        [
+          -7.262674855208748e-21,
+          1.4525349710417496e-20,
+          1.1073135417751745e-05
+        ]
+      ],
+      "geometry_COM_world_m": [
+        0.025500000399999997,
+        -0.05582516703786191,
+        0.1608327046
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          25.5000004,
+          -11.5,
+          160.8327046
+        ],
+        "head_outward_axis": [
+          0,
+          1,
+          0
+        ],
+        "diameter_mm": 4,
+        "length_mm": 100,
+        "head_D_H_mm": [
+          7,
+          4
+        ],
+        "nominal_thread_b_mm": 20,
+        "nominal_shank_mm": 80,
+        "nominal_thread_world_Y_mm": [
+          -111.5,
+          -91.5
+        ],
+        "grip_mm": 93,
+        "nominal_geometric_engagement_mm": 7,
+        "nominal_tip_clearance_mm": 1,
+        "thread_owner": "L12_steel_thread_block_2",
+        "effective_engagement_mm": null,
+        "washers_added": 0,
+        "socket_AF_mm": 3,
+        "socket_depth_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FIX_FABORY_07000_040_100_2.step",
+      "sha256": "7c5d03a0308f5f071fad287027b53fc4ad5b7a08cce1fd686e86856d44cc4a54",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          22.0000004,
+          -111.5,
+          157.3327046
+        ],
+        [
+          29.0000004,
+          -7.5,
+          164.3327046
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_3",
+      "legacy_id": "L12_HW_FIX_M4x100_PROVISIONAL_3",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "docs/engineering/sources/shoulder-procurement01.json",
+        "sha256": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847"
+      },
+      "part_number": "Fabory 07000.040.100",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.011,
+      "volume_mm3": 1410.5751014618163,
+      "com_world_m": [
+        -0.0254999996,
+        -0.05582516703786191,
+        0.1608327043
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.1073135417751798e-05,
+          -5.447006141406562e-21,
+          0.0
+        ],
+        [
+          -5.447006141406562e-21,
+          2.695183741645333e-08,
+          1.4525349710417496e-20
+        ],
+        [
+          0.0,
+          1.4525349710417496e-20,
+          1.1073135417751738e-05
+        ]
+      ],
+      "geometry_COM_world_m": [
+        -0.0254999996,
+        -0.05582516703786191,
+        0.1608327043
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -25.4999996,
+          -11.5,
+          160.8327043
+        ],
+        "head_outward_axis": [
+          0,
+          1,
+          0
+        ],
+        "diameter_mm": 4,
+        "length_mm": 100,
+        "head_D_H_mm": [
+          7,
+          4
+        ],
+        "nominal_thread_b_mm": 20,
+        "nominal_shank_mm": 80,
+        "nominal_thread_world_Y_mm": [
+          -111.5,
+          -91.5
+        ],
+        "grip_mm": 93,
+        "nominal_geometric_engagement_mm": 7,
+        "nominal_tip_clearance_mm": 1,
+        "thread_owner": "L12_steel_thread_block_3",
+        "effective_engagement_mm": null,
+        "washers_added": 0,
+        "socket_AF_mm": 3,
+        "socket_depth_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FIX_FABORY_07000_040_100_3.step",
+      "sha256": "5fee715b836a6c82efc38103c28c340ac39c3edd5564c85d979f217e2dae294a",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -28.9999996,
+          -111.5,
+          157.3327043
+        ],
+        [
+          -21.9999996,
+          -7.5,
+          164.3327043
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_4",
+      "legacy_id": "L12_HW_FIX_M4x100_PROVISIONAL_4",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "docs/engineering/sources/shoulder-procurement01.json",
+        "sha256": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847"
+      },
+      "part_number": "Fabory 07000.040.100",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.011,
+      "volume_mm3": 1410.5751014618163,
+      "com_world_m": [
+        -0.0441672954,
+        -0.055825167037861924,
+        0.17949999969999997
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.1073135417751855e-05,
+          3.631337427604374e-21,
+          1.4525349710417496e-20
+        ],
+        [
+          3.631337427604374e-21,
+          2.695183741656953e-08,
+          2.905069942083499e-20
+        ],
+        [
+          1.4525349710417496e-20,
+          2.905069942083499e-20,
+          1.107313541775173e-05
+        ]
+      ],
+      "geometry_COM_world_m": [
+        -0.0441672954,
+        -0.055825167037861924,
+        0.17949999969999997
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -44.1672954,
+          -11.5,
+          179.4999997
+        ],
+        "head_outward_axis": [
+          0,
+          1,
+          0
+        ],
+        "diameter_mm": 4,
+        "length_mm": 100,
+        "head_D_H_mm": [
+          7,
+          4
+        ],
+        "nominal_thread_b_mm": 20,
+        "nominal_shank_mm": 80,
+        "nominal_thread_world_Y_mm": [
+          -111.5,
+          -91.5
+        ],
+        "grip_mm": 93,
+        "nominal_geometric_engagement_mm": 7,
+        "nominal_tip_clearance_mm": 1,
+        "thread_owner": "L12_steel_thread_block_4",
+        "effective_engagement_mm": null,
+        "washers_added": 0,
+        "socket_AF_mm": 3,
+        "socket_depth_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FIX_FABORY_07000_040_100_4.step",
+      "sha256": "5904cd2c4cf463ca34259e4119c0bd6b9fca99f0be354b293a2db5d1121f0fb9",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -47.6672954,
+          -111.5,
+          175.9999997
+        ],
+        [
+          -40.6672954,
+          -7.5,
+          182.9999997
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_5",
+      "legacy_id": "L12_HW_FIX_M4x100_PROVISIONAL_5",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "docs/engineering/sources/shoulder-procurement01.json",
+        "sha256": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847"
+      },
+      "part_number": "Fabory 07000.040.100",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.011,
+      "volume_mm3": 1410.5751014618165,
+      "com_world_m": [
+        -0.0441672957,
+        -0.05582516703786191,
+        0.23049999969999996
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.1073135417751852e-05,
+          -3.631337427604374e-21,
+          0.0
+        ],
+        [
+          -3.631337427604374e-21,
+          2.695183741662763e-08,
+          2.905069942083499e-20
+        ],
+        [
+          0.0,
+          2.905069942083499e-20,
+          1.1073135417751735e-05
+        ]
+      ],
+      "geometry_COM_world_m": [
+        -0.0441672957,
+        -0.05582516703786191,
+        0.23049999969999996
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -44.1672957,
+          -11.5,
+          230.4999997
+        ],
+        "head_outward_axis": [
+          0,
+          1,
+          0
+        ],
+        "diameter_mm": 4,
+        "length_mm": 100,
+        "head_D_H_mm": [
+          7,
+          4
+        ],
+        "nominal_thread_b_mm": 20,
+        "nominal_shank_mm": 80,
+        "nominal_thread_world_Y_mm": [
+          -111.5,
+          -91.5
+        ],
+        "grip_mm": 93,
+        "nominal_geometric_engagement_mm": 7,
+        "nominal_tip_clearance_mm": 1,
+        "thread_owner": "L12_steel_thread_block_5",
+        "effective_engagement_mm": null,
+        "washers_added": 0,
+        "socket_AF_mm": 3,
+        "socket_depth_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FIX_FABORY_07000_040_100_5.step",
+      "sha256": "7623ab9597c62b91900f4daff593d7567c46e7de9c011f459ef325fddc421564",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -47.6672957,
+          -111.5,
+          226.9999997
+        ],
+        [
+          -40.6672957,
+          -7.5,
+          233.9999997
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_6",
+      "legacy_id": "L12_HW_FIX_M4x100_PROVISIONAL_6",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "docs/engineering/sources/shoulder-procurement01.json",
+        "sha256": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847"
+      },
+      "part_number": "Fabory 07000.040.100",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.011,
+      "volume_mm3": 1410.5751014618165,
+      "com_world_m": [
+        -0.025500000299999995,
+        -0.0558251670378619,
+        0.2491672955
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.1073135417751735e-05,
+          -3.631337427604374e-21,
+          0.0
+        ],
+        [
+          -3.631337427604374e-21,
+          2.6951837416395223e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.1073135417751745e-05
+        ]
+      ],
+      "geometry_COM_world_m": [
+        -0.025500000299999995,
+        -0.0558251670378619,
+        0.2491672955
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          -25.5000003,
+          -11.5,
+          249.1672955
+        ],
+        "head_outward_axis": [
+          0,
+          1,
+          0
+        ],
+        "diameter_mm": 4,
+        "length_mm": 100,
+        "head_D_H_mm": [
+          7,
+          4
+        ],
+        "nominal_thread_b_mm": 20,
+        "nominal_shank_mm": 80,
+        "nominal_thread_world_Y_mm": [
+          -111.5,
+          -91.5
+        ],
+        "grip_mm": 93,
+        "nominal_geometric_engagement_mm": 7,
+        "nominal_tip_clearance_mm": 1,
+        "thread_owner": "L12_steel_thread_block_6",
+        "effective_engagement_mm": null,
+        "washers_added": 0,
+        "socket_AF_mm": 3,
+        "socket_depth_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FIX_FABORY_07000_040_100_6.step",
+      "sha256": "afc4fa2af4927c99a0d501ce47280670fc7ed9b428d17edc088035c2371a4f38",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          -29.0000003,
+          -111.5,
+          245.6672955
+        ],
+        [
+          -22.0000003,
+          -7.5,
+          252.6672955
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_7",
+      "legacy_id": "L12_HW_FIX_M4x100_PROVISIONAL_7",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "docs/engineering/sources/shoulder-procurement01.json",
+        "sha256": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847"
+      },
+      "part_number": "Fabory 07000.040.100",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.011,
+      "volume_mm3": 1410.5751014618163,
+      "com_world_m": [
+        0.025499999700000008,
+        -0.05582516703786191,
+        0.24916729580000005
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.1073135417751505e-05,
+          -5.447006141406562e-21,
+          2.905069942083499e-20
+        ],
+        [
+          -5.447006141406562e-21,
+          2.6951837416395226e-08,
+          -2.905069942083499e-20
+        ],
+        [
+          2.905069942083499e-20,
+          -2.905069942083499e-20,
+          1.107313541775173e-05
+        ]
+      ],
+      "geometry_COM_world_m": [
+        0.025499999700000008,
+        -0.05582516703786191,
+        0.24916729580000005
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          25.4999997,
+          -11.5,
+          249.1672958
+        ],
+        "head_outward_axis": [
+          0,
+          1,
+          0
+        ],
+        "diameter_mm": 4,
+        "length_mm": 100,
+        "head_D_H_mm": [
+          7,
+          4
+        ],
+        "nominal_thread_b_mm": 20,
+        "nominal_shank_mm": 80,
+        "nominal_thread_world_Y_mm": [
+          -111.5,
+          -91.5
+        ],
+        "grip_mm": 93,
+        "nominal_geometric_engagement_mm": 7,
+        "nominal_tip_clearance_mm": 1,
+        "thread_owner": "L12_steel_thread_block_7",
+        "effective_engagement_mm": null,
+        "washers_added": 0,
+        "socket_AF_mm": 3,
+        "socket_depth_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FIX_FABORY_07000_040_100_7.step",
+      "sha256": "5c074d23d09396a6e12e46c47a64cbecb8859f4f325a5ff3d9570432d8967829",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          21.9999997,
+          -111.5,
+          245.6672958
+        ],
+        [
+          28.9999997,
+          -7.5,
+          252.6672958
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_8",
+      "legacy_id": "L12_HW_FIX_M4x100_PROVISIONAL_8",
+      "kind": "fastener_nominal_envelope",
+      "source": {
+        "path": "docs/engineering/sources/shoulder-procurement01.json",
+        "sha256": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847"
+      },
+      "part_number": "Fabory 07000.040.100",
+      "material": "class12.9_plain_steel_candidate",
+      "mass_kg": 0.011,
+      "volume_mm3": 1410.5751014618165,
+      "com_world_m": [
+        0.0441672955,
+        -0.05582516703786191,
+        0.23050000040000002
+      ],
+      "inertia_about_COM_world_axes_kg_m2": [
+        [
+          1.1073135417751735e-05,
+          0.0,
+          -1.4525349710417496e-20
+        ],
+        [
+          0.0,
+          2.6951837416395223e-08,
+          2.905069942083499e-20
+        ],
+        [
+          -1.4525349710417496e-20,
+          2.905069942083499e-20,
+          1.1073135417751745e-05
+        ]
+      ],
+      "geometry_COM_world_m": [
+        0.0441672955,
+        -0.05582516703786191,
+        0.23050000040000002
+      ],
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy",
+      "mass_measured": false,
+      "inertia_is_proxy": true,
+      "geometry_is_envelope": true,
+      "geometry_contains_thread_helix": false,
+      "preceding_joints": 1,
+      "stack": {
+        "seat_world_mm": [
+          44.1672955,
+          -11.5,
+          230.5000004
+        ],
+        "head_outward_axis": [
+          0,
+          1,
+          0
+        ],
+        "diameter_mm": 4,
+        "length_mm": 100,
+        "head_D_H_mm": [
+          7,
+          4
+        ],
+        "nominal_thread_b_mm": 20,
+        "nominal_shank_mm": 80,
+        "nominal_thread_world_Y_mm": [
+          -111.5,
+          -91.5
+        ],
+        "grip_mm": 93,
+        "nominal_geometric_engagement_mm": 7,
+        "nominal_tip_clearance_mm": 1,
+        "thread_owner": "L12_steel_thread_block_8",
+        "effective_engagement_mm": null,
+        "washers_added": 0,
+        "socket_AF_mm": 3,
+        "socket_depth_mm": null
+      },
+      "source_assembly": {
+        "path": "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step",
+        "sha256": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce"
+      },
+      "file": "L12_HW_FIX_FABORY_07000_040_100_8.step",
+      "sha256": "3d6999abbd3cc9ad51aa8f3d01baf7ecb4258555787bf1eca62dd8beb26ab4bb",
+      "T_world_from_part_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_frame": "World-home mm: J1=(0,0,105.2), J2=(0,0,205), no extra translation",
+      "bbox_world_mm": [
+        [
+          40.6672955,
+          -111.5,
+          227.0000004
+        ],
+        [
+          47.6672955,
+          -7.5,
+          234.0000004
+        ]
+      ],
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "follows_joints": [
+        "J1"
+      ],
+      "rigid_orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "integration_policy": "Choose exactly one planning model OR explicit quantified-body set plus independently resolved unknowns. Never sum both; do not retain oldL12 metal or0.20kg body alongside replacement.",
+  "source_hashes": {
+    "docs/engineering/sources/gripper-root-support.json": "2412dc2ff1d3d9dcc75e224b1b7b3760a01cd14cc9a2e63716b441796fd68c2b",
+    "docs/engineering/sources/p16-carrier02.json": "c2dcb4553d570f525f36883a201e34bb45c72d1869fc0d8891d94f51d51937a7",
+    "docs/engineering/sources/rh-interface-extraction.json": "49dbfa4aca9501ffa83e884226b287b909095688f2e1adfc24cab7d1e278026d",
+    "docs/engineering/sources/shoulder-port01.json": "f74faf8a4bebf0b16470131abf0fb651b8ecc427ae6a15a2a604055cba8fba2f",
+    "docs/engineering/sources/shoulder-procurement01.json": "2ff246f886335fe4904d7ad7c340192b712526b06d507ccf07eebf414f2d4847",
+    "engineering/build_layout.py": "9c21a65d2c7873809faf4f7ee733efb8a0e699758190046d73f5e2d1d0e44d2c",
+    "engineering/build_link56_study.py": "c1119f288c0a9169764dc047ae3aa17be86ed97b62994e5917a02ea3f28fec40",
+    "engineering/generated/base-study/ODR-BASE-ORIGINAL-ASSEMBLY.step": "acde0f22c491c1ec3b67691ef50b871f15bb1c48adbc67139923a41e810ce982",
+    "engineering/generated/link12-study/ODR-L12-FORK-R4.step": "1b2197f7409f905a2fb1724596efff74e07df5887d520a8257ffeb03c5ab960d",
+    "engineering/generated/link12-study/ODR-L12-FRONT-R4.step": "1d66911f77ee8d19cf9521a38cf80228629e811a3c2cadcb2995ff2da56971b4",
+    "engineering/generated/link12-study/ODR-L12-OUT-R4.step": "5cb2206e5ee2b195654731b9a0177d37cc103243504ba638212547854aa644f4",
+    "engineering/generated/link12-study/bom.json": "828409691676e608f243f46ca681e2668e62290cbb89e477aee4f72ebb357193",
+    "engineering/generated/link12-study/evidence.json": "3005afc00aaca2a880e40f3b085c3c036b73ae5258395979032844a1b1b7894c",
+    "engineering/generated/link12-study/part-placements.json": "ec50f20f19d5b4c1ffda70de8ce85851eef93836d98d599be5a13b425a5d3c8d",
+    "engineering/generated/link12-study/screw-stacks.csv": "02b1cdd305382d6ea56caceb2d7a3962ccd953f7bc2cda41da1c6bba679cf6a0",
+    "engineering/generated/link23-study/ODR-L23-CARRIER-R4.step": "748b7ebd940c72bae6fcc894c23743ddcdedad027145b8de0f4ccc689c01c74a",
+    "engineering/generated/link23-study/ODR-L23-FRONT-R4.step": "46d0e3c171fdb22a3ed4754a8411a104039976d423712aae665c864658329f0a",
+    "engineering/generated/link23-study/ODR-L23-OUT-R4.step": "2fa94dcb62dd206426afea83a01996ff347b2a0b3b5f2baa901d161a69958598",
+    "engineering/generated/link23-study/evidence.json": "7d34edde71076430f423679228d805ca77359bc39f7b174ddc14948de159e11c",
+    "engineering/generated/link23-study/part-placements.json": "8daa948492858dfd8a2c7100c97836ccea951c89f81fc408d65348f62d4f6fd6",
+    "engineering/generated/link34-study/ODR-L34-CARRIER-R4.step": "7d58debca1d857925f8dd1a80067ff93f9aa543f21dfc6e911a1c143fb934bb5",
+    "engineering/generated/link34-study/ODR-L34-FRONT-R4.step": "91c308a6e308a1beb6bb7a10089c599b119ebf9daf66ed40062f47d0e7279aba",
+    "engineering/generated/link34-study/ODR-L34-LOW-R4.step": "5192234cd1bef2d369a50fc8651ab6a2b55caeb3d836aece9b2cb1328712a431",
+    "engineering/generated/link34-study/ODR-L34-OUT-R4.step": "087ade434f0c2f238316abcc1caf5b77350b8fac716d007d126620f99bb527fe",
+    "engineering/generated/link34-study/ODR-L34-TUBE-R4.step": "a49486f95f25fb21d5d7993cbd6e9fbf6bade0e637e215018d05a7ff7ccdbf9d",
+    "engineering/generated/link34-study/ODR-L34-UP-R4.step": "da02499c7fd87d4637c33bed4a85702a3373bea07112e52c04eb23881ed46050",
+    "engineering/generated/link34-study/evidence.json": "46af9fde3d5990b27e2199b4095c7dc19d4ac71546e73b57b839d651d6b721f5",
+    "engineering/generated/link34-study/part-placements.json": "b352bb6bb82f1480c435b7dc1352d2af983e575d54d9662136966cd64420be85",
+    "engineering/generated/link45-study/ODR-L45-CARRIER-R4.step": "4a6f7302ecdeeb8fa2411bd02544dbb4036eb073b8b7bafc8f0610037f14bae3",
+    "engineering/generated/link45-study/ODR-L45-FRONT-R4.step": "7759763be2a7f0b8a85d28a181c9fbd69df44865f4e1ceb1a948fd0c5b67302f",
+    "engineering/generated/link45-study/ODR-L45-OUT-R4.step": "12b5dff7735ff53d9fea43c87a840fd920965ad5bdcc77294cded0b388bc4a6c",
+    "engineering/generated/link45-study/evidence.json": "f7be8c3d63bf1b1b7b6d99368904253a1e5eb517c5df001d815dccb7e63d240b",
+    "engineering/generated/link45-study/part-placements.json": "4eea6c767ac94da05a445574d701498671115a166a147539fd2e103676dcc587",
+    "engineering/generated/link56-study/ODR-L56-CARRIER-R4.step": "08a125b854dbdffdbca9b843cda446130092543cab7ed2964e1aed518bd17145",
+    "engineering/generated/link56-study/ODR-L56-FRONT-R4.step": "3cad09838550cd2e8d6bbfce6e722ada0054e7755feb1f67246dbdf90f583d70",
+    "engineering/generated/link56-study/ODR-L56-LOW-R4.step": "f5b6168a2005bd274f9386dc0c7b23eeb6a0fe19f41401d2d6940995ef25e367",
+    "engineering/generated/link56-study/ODR-L56-OUT-R4.step": "d4ddce09c985ed17978c6c8e4baa65a5bc8b2780bcdab693d9af9b195ed92965",
+    "engineering/generated/link56-study/ODR-L56-TUBE-R4.step": "35a80d7d70bfbb8b2a5d24be0702b658f70a10f099952dc56542c6800a15b04b",
+    "engineering/generated/link56-study/ODR-L56-UP-R4.step": "13e21bbd8f7b9f6566bc8ad91f43ec0085669b843efdc033fad297ab42345e76",
+    "engineering/generated/link56-study/evidence.json": "2e668b28467d1ccb7c8610df0c1279fdb0915246830167a4cbc86a5b81baab47",
+    "engineering/generated/link56-study/part-placements.json": "fb6329f3fdee45c3459e102a374ea117e69edb24a0233355f06f130c6103ae9e",
+    "engineering/generated/link67-study/ODR-L67-CARRIER-R4.step": "6db1857a6e49b65e654696349d24964fbac2309fe268716470cdef165bdc4ef1",
+    "engineering/generated/link67-study/ODR-L67-FRONT-R4.step": "fa53b24ae942a6da9981ee28cc6328675d508faa08c5cff8aa322c8dfb0c0acb",
+    "engineering/generated/link67-study/ODR-L67-OUT-R4.step": "cbd340a1bdcd539a2d2dac47f2ac7b6ca9859b18877d85477b1f3f218b23ec50",
+    "engineering/generated/link67-study/evidence.json": "a969db963b3a5d69a3dfb192eff33f64d824d20b5505f62b54c55446a3db66d7",
+    "engineering/generated/link67-study/part-placements.json": "29b202dbebb974e62aa57107afe236bd1f3d5bff15ae3ae546ad8b9424979297",
+    "engineering/generated/raised-arm-integration01/model.json": "e3b2a10a2f11cbc6a5085150dd1d5bcba3848431f40e4aea7485d4d5125d33a1",
+    "engineering/generated/shoulder-port01/SHOULDER-PORT01-BLOCK-1-R38.step": "8ff50165615e7fedc77cdc6f387dfef6d2aa6a1a3e01e6c375284f96a5fa5fb8",
+    "engineering/generated/shoulder-port01/SHOULDER-PORT01-BLOCK-8-R38.step": "54b80c304f666a7f2c98a65adb76294b09b5a3f5dbd4735cdda90906d342b324",
+    "engineering/generated/shoulder-port01/study.json": "b672a68c54b715ad0a0fdca8020de4dd44d3490424b045a0df1029fe568f6cb1",
+    "engineering/generated/shoulder-port01/verification.json": "6817eba7de72262c8fe6dd339b43ec1e4c9412f12063ebdc20f9969f39e1da36",
+    "engineering/generated/shoulder-procurement01/procurement-check.json": "5c0d7b54d2631d72c16091e13f8da3b38edbeaf7e32dea147880c6c2a4dbe576",
+    "engineering/generated/shoulder-raise-01/part-placements.json": "1f735370b9ad30c2dbff91338658504f2a109fb523f2badc39832e4d9f2beedc",
+    "engineering/generated/shoulder-raise-01/qa.json": "fa554cc8faa64909a2816c20b0e1e9dbb45b46757c2ba7cec182fbaa81907dbb",
+    "engineering/generated/shoulder-raise-strength01/sections.json": "00e9e84485697e5983884966914adcfc66a5a6131538ce6a33cfee05003bfd3b",
+    "engineering/generated/shoulder-raise-strength01/study.json": "23ca111695099b1f3b6c64888d44baf2c2ffbb2c033d3f23c1cd3118c1a01e13",
+    "engineering/generated/shoulder-raise02/L12_front_ring.step": "72e6848393a0746755907582e586ad740ecdab4a4976e5880c660b814900f57a",
+    "engineering/generated/shoulder-raise02/L12_output_adapter.step": "03843967fbdc0faa0abb9be6d7380cde8e401b294fefe695b75579c530efc8f1",
+    "engineering/generated/shoulder-raise02/L12_rear_fork.step": "c5af756a04674a71831daf07d21cffd0b36e9c49c6cfa25b8e5886467a3fc206",
+    "engineering/generated/shoulder-raise02/SHOULDER-RAISE02-original-assembly.step": "3ad7ccde240a069b1089efe2b19475d86003b63c3fbfed533c9fbb0398afe1ce",
+    "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_1.step": "b9d64df1fb76a60b75d74df07f7ea654ff0bb33f070494c094ee8c0a70d1a400",
+    "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_2.step": "6a26bc36408ba132b4c5426383187db780cf9ba5836058b797d3ac431d6b48d6",
+    "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_3.step": "a55ca80f299ce3f0dcedb7f7b1d7f3ce7124ee8d0d28afce2e87f3f895bf1dcc",
+    "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_4.step": "41bca2c5d28ae6e71e0f31de7e2b8651c85f6176a207852f285325adfee174e6",
+    "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_5.step": "fdfa237de45acfc8a307b98db001872f80b84fc13edcf37db68a78c3377765b1",
+    "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_6.step": "18ac06922c8a0c2cb9e20db7ca8d6c79097c71adb3585a1d1933d2b42988a1d8",
+    "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_7.step": "7bda0a05303d192a69b2ab64df72b802f83bf7340047c5c3ce4c443f1575db99",
+    "engineering/generated/shoulder-raise02/STEEL_THREAD_BLOCK_8.step": "49a4ebba69e18d4fdb97b4b4affe7163f24406129e8a4f07bb9f3d69d553d856",
+    "engineering/generated/shoulder-raise02/assembly-paths.json": "c1dd9ef7d33a300d1495cb9c59bd45faee4c597740fa633307707c7bcd77e45b",
+    "engineering/generated/shoulder-raise02/connections.json": "d617fc25f10bd8ef65f50961a1389a2b95fafe005e51ec608d5c8956cd8d96cf",
+    "engineering/generated/shoulder-raise02/continuous-motion.json": "677052fac3db4ed343e993d539efeb035ca186c4ea116a39be455b3557e070c1",
+    "engineering/generated/shoulder-raise02/geometry-first.json": "c070e2bf27e30483bd36e818d447e3dc900b30cf96c23f744be6ca8d7c88731b",
+    "engineering/generated/shoulder-raise02/part-placements.json": "de9eb4a228d7b4c55c07bc48d06a5a0eecef55d7e3499c85d19bcac754302b23",
+    "engineering/generated/shoulder-raise02/ready-manifest.json": "8b710ff18f61401a843bb93f1aae0cbef848b031a0ee5edbd75ce2c5bf53ec97",
+    "engineering/generated/shoulder-raise02/steel-block-paths.json": "1298825ba14dbc8f15758782483d9bf59f52e66254836640228927688304ca35",
+    "engineering/generated/shoulder-raise02/study.json": "d811839457cfd657bc9ec0193b1a444e850362a4d0a92f68e73ec8d1c8437c4c",
+    "engineering/head_mass04_study.py": "af397b2aca71a952bfd6593fdcc1ef4c42a57a3826b1e0900e3e8809c4f2806b",
+    "engineering/parameters/r4-layout.json": "4349d1797b906b67a7bc396fcb84bc439c2d70dd0b337659e552cee293d2dd81",
+    "engineering/screen_integrated_collisions.py": "72373f83c60555e45fb2d3297789b793996c372fb9159a1972dad0aace154e1b",
+    "engineering/shoulder_raise02_study.py": "750a88604e702e416ef084a2aaa094396a893e915ef614964fae1fe3c2b7dbf7",
+    "engineering/shoulder_raise_strength.py": "b713775c5a7aaa7eed53c70f696a036540bc9f4a3f9d817c800e2ce6ac5e016d",
+    "engineering/shoulder_raise_study.py": "410f1af346eb04d9a98872c8717d70042286c4acad68f1d05c51152c854f84f1",
+    "engineering/studies/link_interface_tools.py": "335a99418ecf6a4df08a9923e775e83ac4f882d18896e9e14796a50e740964fa"
+  }
+}

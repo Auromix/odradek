@@ -1,0 +1,2461 @@
+{
+  "revision": "SHOULDER-RAISE03",
+  "original_metal": {
+    "mass_kg": 1.2277519681113167,
+    "com_world_m": [
+      -0.00017319581572877458,
+      -0.05731718636632454,
+      0.17640354611423129
+    ],
+    "inertia_about_COM_world_axes_kg_m2": [
+      [
+        0.004710553913237761,
+        -1.0910821819514698e-05,
+        6.099743457057294e-06
+      ],
+      [
+        -1.0910821819514698e-05,
+        0.005406667359251735,
+        0.0011971391272840761
+      ],
+      [
+        6.099743457057294e-06,
+        0.0011971391272840761,
+        0.004009199924027803
+      ]
+    ],
+    "mass_basis": "Nominal material volume integration of11 original parts"
+  },
+  "known_catalogue_hardware": {
+    "mass_kg": 0.1276,
+    "com_world_m": [
+      3.4482751855335215e-11,
+      -0.05060356347438752,
+      0.1773453712239403
+    ],
+    "inertia_about_COM_world_axes_kg_m2": [
+      [
+        0.00044088610785521985,
+        2.2975049563300678e-14,
+        -1.2168047060397147e-13
+      ],
+      [
+        2.2975049563300678e-14,
+        0.0005811974562495563,
+        4.094584994443027e-05
+      ],
+      [
+        -1.2168047060397147e-13,
+        4.094584994443027e-05,
+        0.0003464038099850221
+      ]
+    ],
+    "mass_basis": "12 catalogue masses with external-envelope COM/I proxies"
+  },
+  "quantified_subtotal": {
+    "mass_kg": 1.3553519681113166,
+    "com_world_m": [
+      -0.0001568902427064497,
+      -0.05668513041247149,
+      0.17649221450947208
+    ],
+    "inertia_about_COM_world_axes_kg_m2": [
+      [
+        0.005156752375487521,
+        -1.1045223151703926e-05,
+        6.080888750734515e-06
+      ],
+      [
+        -1.1045223151703926e-05,
+        0.005987970812459051,
+        0.001237354113464057
+      ],
+      [
+        6.080888750734515e-06,
+        0.001237354113464057,
+        0.004360817025934114
+      ]
+    ],
+    "mass_basis": "Nominal original metal +12 catalogue fasteners;16 unresolved output screws and other unallocated items excluded"
+  },
+  "quantified_bodies": [
+    {
+      "id": "L12_output_adapter",
+      "mass_kg": 0.26379674898786837,
+      "com_home_m": [
+        8.031440505553873e-07,
+        -0.015775909754714986,
+        0.11108789238394919
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0003460287013366191,
+          -7.590118716900036e-09,
+          -9.418075398100904e-10
+        ],
+        [
+          -7.590118716900036e-09,
+          0.000489858977049239,
+          1.4535847190221317e-05
+        ],
+        [
+          -9.418075398100904e-10,
+          1.4535847190221317e-05,
+          0.0008217755536874464
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_rear_fork",
+      "mass_kg": 0.7202296200550251,
+      "com_home_m": [
+        -1.482595669925816e-10,
+        -0.05982223648945342,
+        0.1906495156889393
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          0.0015068464491758578,
+          -1.2971869133974513e-12,
+          -3.0487157412131507e-12
+        ],
+        [
+          -1.2971869133974513e-12,
+          0.002816424912110338,
+          0.00017936310088620885
+        ],
+        [
+          -3.0487157412131507e-12,
+          0.00017936310088620885,
+          0.0018050338648801679
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_front_ring",
+      "mass_kg": 0.03436145867515884,
+      "com_home_m": [
+        -2.0023524554451394e-12,
+        -0.0135,
+        0.20499999999800053
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          4.433770119367468e-05,
+          -8.809593055048026e-23,
+          2.7087140655468467e-22
+        ],
+        [
+          -8.809593055048026e-23,
+          8.85837718308743e-05,
+          -8.046627044677735e-20
+        ],
+        [
+          2.7087140655468467e-22,
+          -8.046627044677735e-20,
+          4.4337701193666464e-05
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_steel_thread_block_1",
+      "mass_kg": 0.023613779521190762,
+      "com_home_m": [
+        0.044553937681072166,
+        -0.1082036639129695,
+        0.1792767726104259
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          7.807401489843539e-07,
+          -4.8805384549210574e-08,
+          4.313848298943701e-07
+        ],
+        [
+          -4.8805384549210574e-08,
+          1.7558866702235177e-06,
+          2.8177801333274313e-08
+        ],
+        [
+          4.313848298943701e-07,
+          2.8177801333274313e-08,
+          1.2788604646089158e-06
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_steel_thread_block_2",
+      "mass_kg": 0.027022763558481367,
+      "com_home_m": [
+        0.02475202375397894,
+        -0.10824104739479493,
+        0.16212823812779528
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.8434854840470602e-06,
+          -3.497391679672542e-08,
+          7.162416572285e-07
+        ],
+        [
+          -3.497391679672542e-08,
+          2.5193267438608873e-06,
+          6.057659961688219e-08
+        ],
+        [
+          7.162416572285e-07,
+          6.057659961688219e-08,
+          1.0164408900101083e-06
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_steel_thread_block_3",
+      "mass_kg": 0.027022763558487265,
+      "com_home_m": [
+        -0.024752023045479007,
+        -0.10824104739479518,
+        0.16212823771874407
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.8434855077208664e-06,
+          3.497391579567557e-08,
+          -7.162416435615808e-07
+        ],
+        [
+          3.497391579567557e-08,
+          2.5193267438627593e-06,
+          6.05766001943834e-08
+        ],
+        [
+          -7.162416435615808e-07,
+          6.05766001943834e-08,
+          1.0164408663372963e-06
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_steel_thread_block_4",
+      "mass_kg": 0.027022763558483966,
+      "com_home_m": [
+        -0.042871761914225114,
+        -0.10824104739479486,
+        0.18024797631881864
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.0164408875772221e-06,
+          6.057659967610034e-08,
+          -7.162416558244599e-07
+        ],
+        [
+          6.057659967610034e-08,
+          2.5193267438615895e-06,
+          3.497391669387593e-08
+        ],
+        [
+          -7.162416558244599e-07,
+          3.497391669387593e-08,
+          1.8434854864801219e-06
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_steel_thread_block_5",
+      "mass_kg": 0.027022763558479303,
+      "com_home_m": [
+        -0.0428717622392129,
+        -0.10824104739479497,
+        0.22975202311828105
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.0164408687705918e-06,
+          6.057660013526762e-08,
+          7.162416449653724e-07
+        ],
+        [
+          6.057660013526762e-08,
+          2.519326743861472e-06,
+          -3.4973915898334975e-08
+        ],
+        [
+          7.162416449653724e-07,
+          -3.4973915898334975e-08,
+          1.843485505287805e-06
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_steel_thread_block_6",
+      "mass_kg": 0.027022763558475757,
+      "com_home_m": [
+        -0.02475202363914121,
+        -0.10824104739479506,
+        0.24787176193849314
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.8434854878832267e-06,
+          3.497391663446771e-08,
+          7.162416550133028e-07
+        ],
+        [
+          3.497391663446771e-08,
+          2.5193267438598345e-06,
+          -6.057659971069544e-08
+        ],
+        [
+          7.162416550133028e-07,
+          -6.057659971069544e-08,
+          1.016440886173065e-06
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_steel_thread_block_7",
+      "mass_kg": 0.027022763558483844,
+      "com_home_m": [
+        0.02475202307625526,
+        -0.10824104739479502,
+        0.24787176226347904
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.84348550669243e-06,
+          -3.497391583920456e-08,
+          -7.162416441549465e-07
+        ],
+        [
+          -3.497391583920456e-08,
+          2.5193267438624077e-06,
+          -6.057660016935096e-08
+        ],
+        [
+          -7.162416441549465e-07,
+          -6.057660016935096e-08,
+          1.0164408673655572e-06
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_steel_thread_block_8",
+      "mass_kg": 0.023613779521182116,
+      "com_home_m": [
+        0.04455393725597768,
+        -0.10820366391296947,
+        0.2307232281258615
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          7.807401632422118e-07,
+          -4.88053840834489e-08,
+          -4.313848381255755e-07
+        ],
+        [
+          -4.88053840834489e-08,
+          1.755886670221178e-06,
+          -2.817780213963538e-08
+        ],
+        [
+          -4.313848381255755e-07,
+          -2.817780213963538e-08,
+          1.2788604503489522e-06
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": false,
+      "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+    },
+    {
+      "id": "L12_HW_FOOT_M6x35_1",
+      "mass_kg": 0.0099,
+      "com_home_m": [
+        0.056999999999999974,
+        -0.052000000000000005,
+        0.11589064049936323
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.6440625813483522e-06,
+          0.0,
+          -1.2444423988121741e-20
+        ],
+        [
+          0.0,
+          1.6440625813483276e-06,
+          0.0
+        ],
+        [
+          -1.2444423988121741e-20,
+          0.0,
+          7.268590641554592e-08
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FOOT_M6x35_2",
+      "mass_kg": 0.0099,
+      "com_home_m": [
+        -0.05700000000000002,
+        -0.052000000000000005,
+        0.11589064049936323
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.6440625813483522e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.6440625813483027e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          7.268590641554592e-08
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FOOT_M6x35_3",
+      "mass_kg": 0.0099,
+      "com_home_m": [
+        -0.05700000000000002,
+        -0.026000000000000002,
+        0.11589064049936325
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.6440625813483029e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.6440625813483029e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          7.268590641554594e-08
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FOOT_M6x35_4",
+      "mass_kg": 0.0099,
+      "com_home_m": [
+        0.05699999999999998,
+        -0.026000000000000002,
+        0.11589064049936325
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.6440625813483029e-06,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.6440625813483279e-06,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          7.268590641555215e-08
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_1",
+      "mass_kg": 0.011,
+      "com_home_m": [
+        0.0441672958,
+        -0.05582516703786192,
+        0.1795000004
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.1073135417751676e-05,
+          0.0,
+          1.4525349710417493e-20
+        ],
+        [
+          0.0,
+          2.6951837416395216e-08,
+          -1.4525349710417493e-20
+        ],
+        [
+          1.4525349710417493e-20,
+          -1.4525349710417493e-20,
+          1.1073135417751711e-05
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_2",
+      "mass_kg": 0.011,
+      "com_home_m": [
+        0.025500000399999997,
+        -0.05582516703786191,
+        0.1608327046
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.1073135417751798e-05,
+          0.0,
+          -7.262674855208748e-21
+        ],
+        [
+          0.0,
+          2.695183741651143e-08,
+          1.4525349710417496e-20
+        ],
+        [
+          -7.262674855208748e-21,
+          1.4525349710417496e-20,
+          1.1073135417751745e-05
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_3",
+      "mass_kg": 0.011,
+      "com_home_m": [
+        -0.0254999996,
+        -0.05582516703786191,
+        0.1608327043
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.1073135417751798e-05,
+          -5.447006141406562e-21,
+          0.0
+        ],
+        [
+          -5.447006141406562e-21,
+          2.695183741645333e-08,
+          1.4525349710417496e-20
+        ],
+        [
+          0.0,
+          1.4525349710417496e-20,
+          1.1073135417751738e-05
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_4",
+      "mass_kg": 0.011,
+      "com_home_m": [
+        -0.0441672954,
+        -0.055825167037861924,
+        0.17949999969999997
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.1073135417751855e-05,
+          3.631337427604374e-21,
+          1.4525349710417496e-20
+        ],
+        [
+          3.631337427604374e-21,
+          2.695183741656953e-08,
+          2.905069942083499e-20
+        ],
+        [
+          1.4525349710417496e-20,
+          2.905069942083499e-20,
+          1.107313541775173e-05
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_5",
+      "mass_kg": 0.011,
+      "com_home_m": [
+        -0.0441672957,
+        -0.05582516703786191,
+        0.23049999969999996
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.1073135417751852e-05,
+          -3.631337427604374e-21,
+          0.0
+        ],
+        [
+          -3.631337427604374e-21,
+          2.695183741662763e-08,
+          2.905069942083499e-20
+        ],
+        [
+          0.0,
+          2.905069942083499e-20,
+          1.1073135417751735e-05
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_6",
+      "mass_kg": 0.011,
+      "com_home_m": [
+        -0.025500000299999995,
+        -0.0558251670378619,
+        0.2491672955
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.1073135417751735e-05,
+          -3.631337427604374e-21,
+          0.0
+        ],
+        [
+          -3.631337427604374e-21,
+          2.6951837416395223e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.1073135417751745e-05
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_7",
+      "mass_kg": 0.011,
+      "com_home_m": [
+        0.025499999700000008,
+        -0.05582516703786191,
+        0.24916729580000005
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.1073135417751505e-05,
+          -5.447006141406562e-21,
+          2.905069942083499e-20
+        ],
+        [
+          -5.447006141406562e-21,
+          2.6951837416395226e-08,
+          -2.905069942083499e-20
+        ],
+        [
+          2.905069942083499e-20,
+          -2.905069942083499e-20,
+          1.107313541775173e-05
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    },
+    {
+      "id": "L12_HW_FIX_FABORY_07000_040_100_8",
+      "mass_kg": 0.011,
+      "com_home_m": [
+        0.0441672955,
+        -0.05582516703786191,
+        0.23050000040000002
+      ],
+      "orientation_home": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "inertia_com_kg_m2": [
+        [
+          1.1073135417751735e-05,
+          0.0,
+          -1.4525349710417496e-20
+        ],
+        [
+          0.0,
+          2.6951837416395223e-08,
+          2.905069942083499e-20
+        ],
+        [
+          -1.4525349710417496e-20,
+          2.905069942083499e-20,
+          1.1073135417751745e-05
+        ]
+      ],
+      "preceding_joints": 1,
+      "attached_to": "J1_output__J2_stator_fixed_structure",
+      "inertia_is_proxy": true,
+      "mass_basis": "Manufacturer catalogue mass, uniformly distributed over nominal external envelope as COM/I proxy"
+    }
+  ],
+  "planning_models": {
+    "primary_preserve_200g_total": {
+      "aggregate": {
+        "mass_kg": 1.4277519681113167,
+        "com_world_m": [
+          -0.00017319581572877458,
+          -0.05731718636632454,
+          0.1764035461142313
+        ],
+        "inertia_about_COM_world_axes_kg_m2": [
+          [
+            0.0047938872465710936,
+            -1.0910821819514698e-05,
+            6.099743457057301e-06
+          ],
+          [
+            -1.0910821819514698e-05,
+            0.005490000692585068,
+            0.0011971391272840761
+          ],
+          [
+            6.099743457057301e-06,
+            0.0011971391272840761,
+            0.0040925332573611365
+          ]
+        ],
+        "mass_basis": "Original metal CAD + unweighed whole hardware planning allowance; not a measured assembly"
+      },
+      "bodies": [
+        {
+          "id": "L12_output_adapter",
+          "mass_kg": 0.26379674898786837,
+          "com_home_m": [
+            8.031440505553873e-07,
+            -0.015775909754714986,
+            0.11108789238394919
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              0.0003460287013366191,
+              -7.590118716900036e-09,
+              -9.418075398100904e-10
+            ],
+            [
+              -7.590118716900036e-09,
+              0.000489858977049239,
+              1.4535847190221317e-05
+            ],
+            [
+              -9.418075398100904e-10,
+              1.4535847190221317e-05,
+              0.0008217755536874464
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_rear_fork",
+          "mass_kg": 0.7202296200550251,
+          "com_home_m": [
+            -1.482595669925816e-10,
+            -0.05982223648945342,
+            0.1906495156889393
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              0.0015068464491758578,
+              -1.2971869133974513e-12,
+              -3.0487157412131507e-12
+            ],
+            [
+              -1.2971869133974513e-12,
+              0.002816424912110338,
+              0.00017936310088620885
+            ],
+            [
+              -3.0487157412131507e-12,
+              0.00017936310088620885,
+              0.0018050338648801679
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_front_ring",
+          "mass_kg": 0.03436145867515884,
+          "com_home_m": [
+            -2.0023524554451394e-12,
+            -0.0135,
+            0.20499999999800053
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              4.433770119367468e-05,
+              -8.809593055048026e-23,
+              2.7087140655468467e-22
+            ],
+            [
+              -8.809593055048026e-23,
+              8.85837718308743e-05,
+              -8.046627044677735e-20
+            ],
+            [
+              2.7087140655468467e-22,
+              -8.046627044677735e-20,
+              4.4337701193666464e-05
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_1",
+          "mass_kg": 0.023613779521190762,
+          "com_home_m": [
+            0.044553937681072166,
+            -0.1082036639129695,
+            0.1792767726104259
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              7.807401489843539e-07,
+              -4.8805384549210574e-08,
+              4.313848298943701e-07
+            ],
+            [
+              -4.8805384549210574e-08,
+              1.7558866702235177e-06,
+              2.8177801333274313e-08
+            ],
+            [
+              4.313848298943701e-07,
+              2.8177801333274313e-08,
+              1.2788604646089158e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_2",
+          "mass_kg": 0.027022763558481367,
+          "com_home_m": [
+            0.02475202375397894,
+            -0.10824104739479493,
+            0.16212823812779528
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.8434854840470602e-06,
+              -3.497391679672542e-08,
+              7.162416572285e-07
+            ],
+            [
+              -3.497391679672542e-08,
+              2.5193267438608873e-06,
+              6.057659961688219e-08
+            ],
+            [
+              7.162416572285e-07,
+              6.057659961688219e-08,
+              1.0164408900101083e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_3",
+          "mass_kg": 0.027022763558487265,
+          "com_home_m": [
+            -0.024752023045479007,
+            -0.10824104739479518,
+            0.16212823771874407
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.8434855077208664e-06,
+              3.497391579567557e-08,
+              -7.162416435615808e-07
+            ],
+            [
+              3.497391579567557e-08,
+              2.5193267438627593e-06,
+              6.05766001943834e-08
+            ],
+            [
+              -7.162416435615808e-07,
+              6.05766001943834e-08,
+              1.0164408663372963e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_4",
+          "mass_kg": 0.027022763558483966,
+          "com_home_m": [
+            -0.042871761914225114,
+            -0.10824104739479486,
+            0.18024797631881864
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.0164408875772221e-06,
+              6.057659967610034e-08,
+              -7.162416558244599e-07
+            ],
+            [
+              6.057659967610034e-08,
+              2.5193267438615895e-06,
+              3.497391669387593e-08
+            ],
+            [
+              -7.162416558244599e-07,
+              3.497391669387593e-08,
+              1.8434854864801219e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_5",
+          "mass_kg": 0.027022763558479303,
+          "com_home_m": [
+            -0.0428717622392129,
+            -0.10824104739479497,
+            0.22975202311828105
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.0164408687705918e-06,
+              6.057660013526762e-08,
+              7.162416449653724e-07
+            ],
+            [
+              6.057660013526762e-08,
+              2.519326743861472e-06,
+              -3.4973915898334975e-08
+            ],
+            [
+              7.162416449653724e-07,
+              -3.4973915898334975e-08,
+              1.843485505287805e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_6",
+          "mass_kg": 0.027022763558475757,
+          "com_home_m": [
+            -0.02475202363914121,
+            -0.10824104739479506,
+            0.24787176193849314
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.8434854878832267e-06,
+              3.497391663446771e-08,
+              7.162416550133028e-07
+            ],
+            [
+              3.497391663446771e-08,
+              2.5193267438598345e-06,
+              -6.057659971069544e-08
+            ],
+            [
+              7.162416550133028e-07,
+              -6.057659971069544e-08,
+              1.016440886173065e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_7",
+          "mass_kg": 0.027022763558483844,
+          "com_home_m": [
+            0.02475202307625526,
+            -0.10824104739479502,
+            0.24787176226347904
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.84348550669243e-06,
+              -3.497391583920456e-08,
+              -7.162416441549465e-07
+            ],
+            [
+              -3.497391583920456e-08,
+              2.5193267438624077e-06,
+              -6.057660016935096e-08
+            ],
+            [
+              -7.162416441549465e-07,
+              -6.057660016935096e-08,
+              1.0164408673655572e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_8",
+          "mass_kg": 0.023613779521182116,
+          "com_home_m": [
+            0.04455393725597768,
+            -0.10820366391296947,
+            0.2307232281258615
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              7.807401632422118e-07,
+              -4.88053840834489e-08,
+              -4.313848381255755e-07
+            ],
+            [
+              -4.88053840834489e-08,
+              1.755886670221178e-06,
+              -2.817780213963538e-08
+            ],
+            [
+              -4.313848381255755e-07,
+              -2.817780213963538e-08,
+              1.2788604503489522e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_hardware_reserve",
+          "mass_kg": 0.2,
+          "com_home_m": [
+            -0.00017319581572877458,
+            -0.05731718636632454,
+            0.17640354611423129
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              8.333333333333336e-05,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              8.333333333333336e-05,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              8.333333333333336e-05
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": true,
+          "mass_basis": "Whole hardware budget at new metalCOM; inherited50mm-cube inertia proxy, catalogue pieces are bookkeeping allocations inside this total"
+        }
+      ],
+      "hardware_ledger": {
+        "total_planning_kg": 0.2,
+        "known_catalogue_allocation_kg": 0.1276,
+        "unallocated_planning_kg": 0.07240000000000002,
+        "unallocated_is_guaranteed_upper_bound": false,
+        "known_parts_are_NOT_added_again": true
+      },
+      "unknown_individual_fastener_ids": [
+        "L12_HW_OUT_M4_unknown_1",
+        "L12_HW_OUT_M4_unknown_2",
+        "L12_HW_OUT_M4_unknown_3",
+        "L12_HW_OUT_M4_unknown_4",
+        "L12_HW_OUT_M4_unknown_5",
+        "L12_HW_OUT_M4_unknown_6",
+        "L12_HW_OUT_M4_unknown_7",
+        "L12_HW_OUT_M4_unknown_8",
+        "L12_HW_OUT_M4_unknown_9",
+        "L12_HW_OUT_M4_unknown_10",
+        "L12_HW_OUT_M4_unknown_11",
+        "L12_HW_OUT_M4_unknown_12",
+        "L12_HW_OUT_M4_unknown_13",
+        "L12_HW_OUT_M4_unknown_14",
+        "L12_HW_OUT_M4_unknown_15",
+        "L12_HW_OUT_M4_unknown_16"
+      ]
+    },
+    "sensitivity_preserve_historical_114_8g_unallocated": {
+      "aggregate": {
+        "mass_kg": 1.4701519681113167,
+        "com_world_m": [
+          -0.00017319581572877458,
+          -0.05731718636632454,
+          0.1764035461142313
+        ],
+        "inertia_about_COM_world_axes_kg_m2": [
+          [
+            0.00481155391323776,
+            -1.0910821819514698e-05,
+            6.099743457057301e-06
+          ],
+          [
+            -1.0910821819514698e-05,
+            0.005507667359251735,
+            0.0011971391272840761
+          ],
+          [
+            6.099743457057301e-06,
+            0.0011971391272840761,
+            0.004110199924027803
+          ]
+        ],
+        "mass_basis": "Original metal CAD + unweighed whole hardware planning allowance; not a measured assembly"
+      },
+      "bodies": [
+        {
+          "id": "L12_output_adapter",
+          "mass_kg": 0.26379674898786837,
+          "com_home_m": [
+            8.031440505553873e-07,
+            -0.015775909754714986,
+            0.11108789238394919
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              0.0003460287013366191,
+              -7.590118716900036e-09,
+              -9.418075398100904e-10
+            ],
+            [
+              -7.590118716900036e-09,
+              0.000489858977049239,
+              1.4535847190221317e-05
+            ],
+            [
+              -9.418075398100904e-10,
+              1.4535847190221317e-05,
+              0.0008217755536874464
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_rear_fork",
+          "mass_kg": 0.7202296200550251,
+          "com_home_m": [
+            -1.482595669925816e-10,
+            -0.05982223648945342,
+            0.1906495156889393
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              0.0015068464491758578,
+              -1.2971869133974513e-12,
+              -3.0487157412131507e-12
+            ],
+            [
+              -1.2971869133974513e-12,
+              0.002816424912110338,
+              0.00017936310088620885
+            ],
+            [
+              -3.0487157412131507e-12,
+              0.00017936310088620885,
+              0.0018050338648801679
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_front_ring",
+          "mass_kg": 0.03436145867515884,
+          "com_home_m": [
+            -2.0023524554451394e-12,
+            -0.0135,
+            0.20499999999800053
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              4.433770119367468e-05,
+              -8.809593055048026e-23,
+              2.7087140655468467e-22
+            ],
+            [
+              -8.809593055048026e-23,
+              8.85837718308743e-05,
+              -8.046627044677735e-20
+            ],
+            [
+              2.7087140655468467e-22,
+              -8.046627044677735e-20,
+              4.4337701193666464e-05
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_1",
+          "mass_kg": 0.023613779521190762,
+          "com_home_m": [
+            0.044553937681072166,
+            -0.1082036639129695,
+            0.1792767726104259
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              7.807401489843539e-07,
+              -4.8805384549210574e-08,
+              4.313848298943701e-07
+            ],
+            [
+              -4.8805384549210574e-08,
+              1.7558866702235177e-06,
+              2.8177801333274313e-08
+            ],
+            [
+              4.313848298943701e-07,
+              2.8177801333274313e-08,
+              1.2788604646089158e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_2",
+          "mass_kg": 0.027022763558481367,
+          "com_home_m": [
+            0.02475202375397894,
+            -0.10824104739479493,
+            0.16212823812779528
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.8434854840470602e-06,
+              -3.497391679672542e-08,
+              7.162416572285e-07
+            ],
+            [
+              -3.497391679672542e-08,
+              2.5193267438608873e-06,
+              6.057659961688219e-08
+            ],
+            [
+              7.162416572285e-07,
+              6.057659961688219e-08,
+              1.0164408900101083e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_3",
+          "mass_kg": 0.027022763558487265,
+          "com_home_m": [
+            -0.024752023045479007,
+            -0.10824104739479518,
+            0.16212823771874407
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.8434855077208664e-06,
+              3.497391579567557e-08,
+              -7.162416435615808e-07
+            ],
+            [
+              3.497391579567557e-08,
+              2.5193267438627593e-06,
+              6.05766001943834e-08
+            ],
+            [
+              -7.162416435615808e-07,
+              6.05766001943834e-08,
+              1.0164408663372963e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_4",
+          "mass_kg": 0.027022763558483966,
+          "com_home_m": [
+            -0.042871761914225114,
+            -0.10824104739479486,
+            0.18024797631881864
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.0164408875772221e-06,
+              6.057659967610034e-08,
+              -7.162416558244599e-07
+            ],
+            [
+              6.057659967610034e-08,
+              2.5193267438615895e-06,
+              3.497391669387593e-08
+            ],
+            [
+              -7.162416558244599e-07,
+              3.497391669387593e-08,
+              1.8434854864801219e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_5",
+          "mass_kg": 0.027022763558479303,
+          "com_home_m": [
+            -0.0428717622392129,
+            -0.10824104739479497,
+            0.22975202311828105
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.0164408687705918e-06,
+              6.057660013526762e-08,
+              7.162416449653724e-07
+            ],
+            [
+              6.057660013526762e-08,
+              2.519326743861472e-06,
+              -3.4973915898334975e-08
+            ],
+            [
+              7.162416449653724e-07,
+              -3.4973915898334975e-08,
+              1.843485505287805e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_6",
+          "mass_kg": 0.027022763558475757,
+          "com_home_m": [
+            -0.02475202363914121,
+            -0.10824104739479506,
+            0.24787176193849314
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.8434854878832267e-06,
+              3.497391663446771e-08,
+              7.162416550133028e-07
+            ],
+            [
+              3.497391663446771e-08,
+              2.5193267438598345e-06,
+              -6.057659971069544e-08
+            ],
+            [
+              7.162416550133028e-07,
+              -6.057659971069544e-08,
+              1.016440886173065e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_7",
+          "mass_kg": 0.027022763558483844,
+          "com_home_m": [
+            0.02475202307625526,
+            -0.10824104739479502,
+            0.24787176226347904
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              1.84348550669243e-06,
+              -3.497391583920456e-08,
+              -7.162416441549465e-07
+            ],
+            [
+              -3.497391583920456e-08,
+              2.5193267438624077e-06,
+              -6.057660016935096e-08
+            ],
+            [
+              -7.162416441549465e-07,
+              -6.057660016935096e-08,
+              1.0164408673655572e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_steel_thread_block_8",
+          "mass_kg": 0.023613779521182116,
+          "com_home_m": [
+            0.04455393725597768,
+            -0.10820366391296947,
+            0.2307232281258615
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              7.807401632422118e-07,
+              -4.88053840834489e-08,
+              -4.313848381255755e-07
+            ],
+            [
+              -4.88053840834489e-08,
+              1.755886670221178e-06,
+              -2.817780213963538e-08
+            ],
+            [
+              -4.313848381255755e-07,
+              -2.817780213963538e-08,
+              1.2788604503489522e-06
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": false,
+          "mass_basis": "Nominal CAD volume x nominal material density; not weighed"
+        },
+        {
+          "id": "L12_hardware_reserve",
+          "mass_kg": 0.2424,
+          "com_home_m": [
+            -0.00017319581572877458,
+            -0.05731718636632454,
+            0.17640354611423129
+          ],
+          "orientation_home": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "inertia_com_kg_m2": [
+            [
+              0.00010100000000000003,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.00010100000000000003,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.00010100000000000003
+            ]
+          ],
+          "preceding_joints": 1,
+          "attached_to": "J1_output__J2_stator_fixed_structure",
+          "inertia_is_proxy": true,
+          "mass_basis": "Whole hardware budget at new metalCOM; inherited50mm-cube inertia proxy, catalogue pieces are bookkeeping allocations inside this total"
+        }
+      ],
+      "hardware_ledger": {
+        "total_planning_kg": 0.2424,
+        "known_catalogue_allocation_kg": 0.1276,
+        "unallocated_planning_kg": 0.11480000000000001,
+        "unallocated_is_guaranteed_upper_bound": false,
+        "known_parts_are_NOT_added_again": true
+      },
+      "unknown_individual_fastener_ids": [
+        "L12_HW_OUT_M4_unknown_1",
+        "L12_HW_OUT_M4_unknown_2",
+        "L12_HW_OUT_M4_unknown_3",
+        "L12_HW_OUT_M4_unknown_4",
+        "L12_HW_OUT_M4_unknown_5",
+        "L12_HW_OUT_M4_unknown_6",
+        "L12_HW_OUT_M4_unknown_7",
+        "L12_HW_OUT_M4_unknown_8",
+        "L12_HW_OUT_M4_unknown_9",
+        "L12_HW_OUT_M4_unknown_10",
+        "L12_HW_OUT_M4_unknown_11",
+        "L12_HW_OUT_M4_unknown_12",
+        "L12_HW_OUT_M4_unknown_13",
+        "L12_HW_OUT_M4_unknown_14",
+        "L12_HW_OUT_M4_unknown_15",
+        "L12_HW_OUT_M4_unknown_16"
+      ]
+    }
+  },
+  "differences": {
+    "RAISE01": {
+      "metal_mass_delta_kg": 0.5562991493402764,
+      "metal_COM_delta_world_m": [
+        -0.0001735113503185204,
+        -0.024692848262692413,
+        0.020914439694095982
+      ],
+      "central_inertia_numeric_delta_kg_m2": [
+        [
+          0.002613354080820323,
+          -1.089966207712613e-05,
+          6.091278112199527e-06
+        ],
+        [
+          -1.089966207712613e-05,
+          0.002425696481542895,
+          0.0008084805317759296
+        ],
+        [
+          6.091278112199527e-06,
+          0.0008084805317759296,
+          0.002040475067628975
+        ]
+      ],
+      "inertia_delta_note": "Difference of each model central tensors in common world axes; centres differ; not the inertia of removed/added material."
+    },
+    "RAISE02": {
+      "metal_mass_delta_kg": -0.006817968030473187,
+      "metal_COM_delta_world_m": [
+        -0.000173367524956281,
+        0.0002826593928798374,
+        -0.00015792520641425
+      ],
+      "central_inertia_numeric_delta_kg_m2": [
+        [
+          -2.5639724977884193e-05,
+          -1.0894372651509004e-05,
+          6.086812417178353e-06
+        ],
+        [
+          -1.0894372651509004e-05,
+          -1.4556101188140103e-05,
+          -9.923988390863735e-06
+        ],
+        [
+          6.086812417178353e-06,
+          -9.923988390863735e-06,
+          -2.4513620781811685e-05
+        ]
+      ],
+      "inertia_delta_note": "Difference of each model central tensors in common world axes; centres differ; not the inertia of removed/added material."
+    }
+  },
+  "attachment": "Every part/group follows J1 only (preceding_joints=1); none follows J2 output. J1 and J2 OEM masses excluded.",
+  "unknown_individual_fastener_mass_kg": null,
+  "manufacturing_release": false
+}
