@@ -1,0 +1,115 @@
+{
+  "revision": "HEAD-POWER01",
+  "release": false,
+  "source_hashes": {
+    "docs/engineering/sources/head-power01.json": "53f28adae1c44f705695c3975ae89025fe274d30f65b049534d9bc183e772c07",
+    "engineering/electronics/head-ctrl02/control-contract.json": "b4893499a3035f1ebf338a3481d6ee035e50ecfc7a09d256e39068d629e42365",
+    "engineering/electronics/head-ctrl02/bom.csv": "a88487d60b68f323abc8a4e286604ff93b24958e765c41b227afb29216d30f55",
+    "engineering/electronics/head-passives01/catalog.json": "ae5dd4014268461489bac1c5079959831eb734d4ea097f46f34b9e5bb5a9a568",
+    "engineering/electronics/final-petal-fpl01/upper/mechanical-power-budget.json": "d0fc12e5aecd27e04c4e635ad9eb45fd9cc9175ddcc781a8454e9b2caffd35ef",
+    "engineering/electronics/final-petal-fpl01/lower/mechanical-power-budget.json": "70a712d774505cf02e643acc1f349b96480dfba8900b7210b62b11891679c3e3",
+    "engineering/electronics/central-display-cd01/power-budget.json": "2ecb716feb222e0f5fc062d011b2e8a9b1eefab1b86a9af09437c43c22394159"
+  },
+  "official_local_hash_checks": {
+    "TI_MODULE": {
+      "file": "tpsm63603.pdf",
+      "expected": "ffb05dbfc1fb35d79778fda2242d4880a0dfae146c28481afba8dff778b72dc6",
+      "actual": "ffb05dbfc1fb35d79778fda2242d4880a0dfae146c28481afba8dff778b72dc6"
+    },
+    "TI_EVM": {
+      "file": "tpsm63603evm.pdf",
+      "expected": "d772869b2f55f4a0409e91697c6ac24d00e862fd6502012b04f47df1e2bb132d",
+      "actual": "d772869b2f55f4a0409e91697c6ac24d00e862fd6502012b04f47df1e2bb132d"
+    },
+    "CIN": {
+      "file": "murata-in.pdf",
+      "expected": "99fa138dbe1339185a2b97596f7cf5b5797491b28fcb7bc944bf84fe4da0dbf4",
+      "actual": "99fa138dbe1339185a2b97596f7cf5b5797491b28fcb7bc944bf84fe4da0dbf4"
+    },
+    "CVCC_RENAME": {
+      "file": "yuden-vcc-metric.html",
+      "expected": "7599d3cc0ff3be58e590ee3e2c9aada852c53e19efc9a00acfd2a59ae5e35237",
+      "actual": "7599d3cc0ff3be58e590ee3e2c9aada852c53e19efc9a00acfd2a59ae5e35237"
+    },
+    "RRT": {
+      "file": "RRT.pdf",
+      "expected": "3c2c0003d95835d8ee7d88887d472b51e9a0e4778c19e5b2bf257ec5df48b861",
+      "actual": "3c2c0003d95835d8ee7d88887d472b51e9a0e4778c19e5b2bf257ec5df48b861"
+    },
+    "RPG": {
+      "file": "RPG.pdf",
+      "expected": "8dadaecc2316fe2e669753af9c2fedc891c0381c8476b0b1c6a5c67cec5e32b6",
+      "actual": "8dadaecc2316fe2e669753af9c2fedc891c0381c8476b0b1c6a5c67cec5e32b6"
+    },
+    "LRS150": {
+      "file": "lrs150.pdf",
+      "expected": "4ac9821cdbedc24656d04a900f93b300e8d45b0a7b7dab3c0985d65d64e1df12",
+      "actual": "4ac9821cdbedc24656d04a900f93b300e8d45b0a7b7dab3c0985d65d64e1df12"
+    },
+    "WIRE1": {
+      "file": "lapp1.html",
+      "expected": "8de004c47f44730183bdfdef93574a9ef1d040dad2528fc0b0ea8e5e6f1d79e8",
+      "actual": "8de004c47f44730183bdfdef93574a9ef1d040dad2528fc0b0ea8e5e6f1d79e8"
+    },
+    "WIRE25": {
+      "file": "lapp25.html",
+      "expected": "263a9545d51e5df7c8ba4a977f48300f4dc5ddf8f882815f9567b973c3a97ddd",
+      "actual": "263a9545d51e5df7c8ba4a977f48300f4dc5ddf8f882815f9567b973c3a97ddd"
+    },
+    "WIRE_FAMILY": {
+      "file": "lapp900.pdf",
+      "expected": "5a4f478459cdac225493ebafc5e7e63ecf934614acd70b128559a76b32d3907a",
+      "actual": "5a4f478459cdac225493ebafc5e7e63ecf934614acd70b128559a76b32d3907a"
+    },
+    "DAMP_CAP": {
+      "file": "panasonic-fr.pdf",
+      "expected": "47cf18461482e03270f72e475f855080e11e2154e3f343f735e5cb0e61e27df7",
+      "actual": "47cf18461482e03270f72e475f855080e11e2154e3f343f735e5cb0e61e27df7"
+    }
+  },
+  "rail_budgets": {
+    "logic_budget_W": 3.3,
+    "LED_budget_W": 9.899999999999999,
+    "VLED_baseline_W": 3.7739999999999996,
+    "lighting_VIO_planning_W": 0.30000000000000004,
+    "light_total_baseline_W": 4.074,
+    "VLED_baseline_mean_A": 1.1436363636363636,
+    "VLED_baseline_peak_A": 1.6,
+    "first_light_VLED_mean_W": 0.5660999999999999,
+    "first_light_VLED_peak_A": 0.24000000000000005,
+    "note": "logic 1A includes lighting VIO; no double counting 4.074W+3.3W; baseline is not measurement"
+  },
+  "resistive_only": true,
+  "check": {
+    "positive_solutions": true,
+    "max_energy_residual_W": 2.842170943040401e-14,
+    "max_KCL_residual_A": 3.197442310920451e-14,
+    "root_vs_bisection_max_V": 3.552713678800501e-15,
+    "catalogue_baseline_matches": true,
+    "local_12V_scenarios": 864,
+    "long_3V3_scenarios": 48,
+    "selected_unique_PN": 7,
+    "selected_piece_count": 17
+  },
+  "PSU_planning": {
+    "motor_allocation_W": 72,
+    "aux_W_at_eta80": 16.499999999999996,
+    "line_and_protection_reserve_W": 10,
+    "subtotal_W": 98.5,
+    "margin_fraction": 0.2,
+    "with20percent_W": 118.19999999999999,
+    "selected_W": 150,
+    "selected_A": 12.5
+  },
+  "not_modelled": [
+    "wire inductance",
+    "converter/input stability",
+    "ampacity",
+    "PSU current limit/startup",
+    "motor dynamic demand and regeneration",
+    "thermal",
+    "rail transients",
+    "connector thermal",
+    "common-return noise"
+  ]
+}

@@ -1,0 +1,8 @@
+refs,mpn,qty,value,body_max_mm,sources,role
+U_BUCK_LOGIC U_BUCK_LED,TPSM63603V3RDHR,2,fixed3.3V 3A module,4.1 x 6.1 x 1.9,TI_MODULE;TI_ORDER,one per independent rail; LED3A is IC ceiling not thermal approval
+CIN_L1 CIN_L2 CIN_E1 CIN_E2,GRM31CC72A475KE11L,4,4.7uF100VX7S10%,3.5 x 1.9 x 1.9,TI_EVM;CIN,two symmetric local input ceramics per module
+COUT_L1 COUT_L2 COUT_E1 COUT_E2,C3216X5R1E476M160AC,4,47uF25VX5R20%,3.4 x 1.8 x 1.8,TI_EVM;COUT;COUT_CURVE,"two per rail; require >=40uF effective per module acrossactualbias,temp,age before release"
+CVCC_L CVCC_E,MMASE105SB5105KFNA01,2,1uF16VX5R10%,1.05 x 0.55 x 0.55,TI_EVM;CVCC_RENAME,renamed EVM EMK105BJ105KVHF; VCC23 to PGND; never load VCC externally
+RRT_L RRT_E,RC0603FR-0716K5L,2,16.5k1%,1.7 x 0.9 x 0.55,TI_MODULE;RRT,800kHz design point from Table7-4; RT1 toAGND
+RPG_L RPG_E,RC0603FR-0749K9L,2,49.9k1%,1.7 x 0.9 x 0.55,TI_EVM;RPG,"PG26 pullup to same local rail/testpoint; diagnostic only, notwiredintoexistingreset"
+CIN_DAMP,EEUFR1E101,1,100uF25V20% aluminium,6.8 x 6.8 x 12.7,TI_MODULE;DAMP_CAP,shared buck input damping candidate from TI §9 general guidance; ESR/frequency and C82 interaction require waveforms; not a frozen/reference-exact PN

@@ -1,0 +1,363 @@
+{
+  "revision": "HEAD-POWER01",
+  "release": false,
+  "scope": "Independent candidate; no frozen schematic or mechanical parameter changes",
+  "sources": {
+    "TI_MODULE": {
+      "url": "https://www.ti.com/lit/ds/symlink/tpsm63603.pdf",
+      "local": "tpsm63603.pdf",
+      "revision": "SLVSFS5A, Nov 2021; orderable addendum Sep 2026",
+      "pages_1based": [
+        3,
+        4,
+        7,
+        8,
+        11,
+        16,
+        17,
+        18,
+        19,
+        22,
+        23,
+        26,
+        36,
+        44,
+        35
+      ],
+      "sha256": "ffb05dbfc1fb35d79778fda2242d4880a0dfae146c28481afba8dff778b72dc6",
+      "accessed_UTC": "2026-09-28"
+    },
+    "TI_ORDER": {
+      "url": "https://www.ti.com/product/TPSM63603/part-details/TPSM63603V3RDHR",
+      "claim": "Exact fixed-3.3 V orderable PN; not a stock promise",
+      "sha256": null,
+      "accessed_UTC": "2026-09-28"
+    },
+    "TI_EVM": {
+      "url": "https://www.ti.com/lit/pdf/SLVUBY5",
+      "local": "tpsm63603evm.pdf",
+      "revision": "SLVUBY5A, July 2021",
+      "pages_1based": [
+        8,
+        9
+      ],
+      "claim": "Reference topology and explicit capacitor BOM; bench jumpers not copied to final PCB",
+      "sha256": "d772869b2f55f4a0409e91697c6ac24d00e862fd6502012b04f47df1e2bb132d",
+      "accessed_UTC": "2026-09-28"
+    },
+    "CIN": {
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM31CC72A475KE11-01A.pdf",
+      "local": "murata-in.pdf",
+      "pages_1based": [
+        1
+      ],
+      "claim": "GRM31CC72A475KE11L 4.7 uF 100 V X7S; 3.2/1.6/1.6 each +/-0.3 mm",
+      "sha256": "99fa138dbe1339185a2b97596f7cf5b5797491b28fcb7bc944bf84fe4da0dbf4",
+      "accessed_UTC": "2026-09-28"
+    },
+    "COUT": {
+      "url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3216X5R1E476M160AC",
+      "claim": "47 uF +/-20%,25 V,X5R;3.2x1.6x1.6 +/-0.2 mm each; Production observed, no stock assertion",
+      "sha256": null,
+      "accessed_UTC": "2026-09-28"
+    },
+    "COUT_CURVE": {
+      "url": "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c3216x5r1e476m160ac_20190710.pdf",
+      "claim": "Official typical-characteristic link; local fetch403; no visual curve-derived effective minimum used",
+      "sha256": null,
+      "accessed_UTC": "2026-09-28"
+    },
+    "CVCC_RENAME": {
+      "url": "https://ds.yuden.co.jp/TYCOMPAS/ap/detail?pn=MMASE105SB5105KFNA01&u=M",
+      "local": "yuden-vcc-metric.html",
+      "claim": "Official renamed EVM EMK105BJ105KVHF to MMASE105SB5105KFNA01; 1uF +/-10%,16V,X5R;1.0x0.5x0.5 +/-0.05mm each; mass production previous category",
+      "sha256": "7599d3cc0ff3be58e590ee3e2c9aada852c53e19efc9a00acfd2a59ae5e35237",
+      "accessed_UTC": "2026-09-28"
+    },
+    "RRT": {
+      "url": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0716K5L",
+      "local": "RRT.pdf",
+      "pages_1based": [
+        1
+      ],
+      "claim": "16.5k +/-1%,100ppm/K,0.1W@70C; max1.7x.9x.55",
+      "sha256": "3c2c0003d95835d8ee7d88887d472b51e9a0e4778c19e5b2bf257ec5df48b861",
+      "accessed_UTC": "2026-09-28"
+    },
+    "RPG": {
+      "url": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0749K9L",
+      "local": "RPG.pdf",
+      "pages_1based": [
+        1
+      ],
+      "claim": "49.9k +/-1%; same value as EVM R3, YAGEO substitution explicitly selected",
+      "sha256": "8dadaecc2316fe2e669753af9c2fedc891c0381c8476b0b1c6a5c67cec5e32b6",
+      "accessed_UTC": "2026-09-28"
+    },
+    "LRS150": {
+      "url": "https://www.meanwell.com/Upload/PDF/LRS-150/LRS-150-SPEC.PDF",
+      "local": "lrs150.pdf",
+      "revision": "2025-04-07",
+      "pages_1based": [
+        2,
+        3,
+        4
+      ],
+      "claim": "LRS-150-12,12V,12.5A,150W;159x97x30mm named dimensions, no assembly tolerance stated; no reverse-energy absorption rating",
+      "sha256": "4ac9821cdbedc24656d04a900f93b300e8d45b0a7b7dab3c0985d65d64e1df12",
+      "accessed_UTC": "2026-09-28"
+    },
+    "WIRE1": {
+      "url": "https://vn.lapp.com/products/0028170",
+      "local": "lapp1.html",
+      "claim": "0028170,2x1mm2,maxR20=19.5ohm/km;OD6.2nom,Rbend93mm,80C maxconductor,±360deg/m",
+      "sha256": "8de004c47f44730183bdfdef93574a9ef1d040dad2528fc0b0ea8e5e6f1d79e8",
+      "accessed_UTC": "2026-09-28"
+    },
+    "WIRE25": {
+      "url": "https://vn.lapp.com/products/0028181",
+      "local": "lapp25.html",
+      "claim": "0028181,3G2.5mm2,maxR20=7.98ohm/km;OD9.3nom,Rbend139.5mm,GN/YE is not supply return",
+      "sha256": "263a9545d51e5df7c8ba4a977f48300f4dc5ddf8f882815f9567b973c3a97ddd",
+      "accessed_UTC": "2026-09-28"
+    },
+    "WIRE_FAMILY": {
+      "url": "https://imager.lapp.com/e/lapp/lAUzcxc1cryysgLtBn-t8A~~/DB0028110EN.pdf",
+      "local": "lapp900.pdf",
+      "pages_1based": [
+        1
+      ],
+      "claim": "ROBOT900P family: flex15D,fixed4D,±360deg/m,-40..80C conductor; compulsory guidance not permitted; installed motion unqualified",
+      "sha256": "5a4f478459cdac225493ebafc5e7e63ecf934614acd70b128559a76b32d3907a",
+      "accessed_UTC": "2026-09-28"
+    },
+    "COPPER_ALPHA": {
+      "url": "https://www.essexfurukawa.mx/wp-content/uploads/2019/09/Essex-Wire-Engineering-Data-Handbook-EN.pdf",
+      "claim": "Manufacturer handbook indexed alpha20=.00393/K for copper; transferTLSfailure, alpha used as explicit linear-model assumption, not exact cable thermal test",
+      "sha256": null,
+      "accessed_UTC": "2026-09-28"
+    },
+    "TPS22919": {
+      "url": "https://www.ti.com/lit/ds/symlink/tps22919.pdf",
+      "local_external": "work/r4-head-ctrl02/tps22919.pdf",
+      "pages_1based": [
+        4,
+        5,
+        12,
+        14
+      ],
+      "claim": "Existing6loadswitches; typical rise1.1ms at3.6V and0.1uF/100ohm does not prove actual capacitive startup",
+      "sha256": "743c59b01fb0891d2d0f1faba779161cd2d2b6c18edf68e6d5b3279016240c84",
+      "accessed_UTC": "2026-09-28"
+    },
+    "DAMP_CAP": {
+      "url": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDF0000/ABA0000C1259.pdf",
+      "local": "panasonic-fr.pdf",
+      "sha256": "47cf18461482e03270f72e475f855080e11e2154e3f343f735e5cb0e61e27df7",
+      "pages_1based": [
+        1,
+        2,
+        5
+      ],
+      "revision": "FR-A 01-Sep-25",
+      "accessed_UTC": "2026-09-28",
+      "claim": "EEUFR1E101,100uF25V20%; body nominal6.3diamx11.2, maximum6.8diamx12.7; pitch2.5 +/-0.5; pin0.5 +/-0.05; 100kHz20C impedance max0.130ohm, not ESR lower bound; 455mArms100kHz105C"
+    }
+  },
+  "parts": [
+    {
+      "ref": "U_BUCK_LOGIC U_BUCK_LED",
+      "mpn": "TPSM63603V3RDHR",
+      "qty_total": 2,
+      "value": "fixed3.3V 3A module",
+      "body_max_mm": [
+        4.1,
+        6.1,
+        1.9
+      ],
+      "source_ids": [
+        "TI_MODULE",
+        "TI_ORDER"
+      ],
+      "role": "one per independent rail; LED3A is IC ceiling not thermal approval"
+    },
+    {
+      "ref": "CIN_L1 CIN_L2 CIN_E1 CIN_E2",
+      "mpn": "GRM31CC72A475KE11L",
+      "qty_total": 4,
+      "value": "4.7uF100VX7S10%",
+      "body_max_mm": [
+        3.5,
+        1.9,
+        1.9
+      ],
+      "source_ids": [
+        "TI_EVM",
+        "CIN"
+      ],
+      "role": "two symmetric local input ceramics per module"
+    },
+    {
+      "ref": "COUT_L1 COUT_L2 COUT_E1 COUT_E2",
+      "mpn": "C3216X5R1E476M160AC",
+      "qty_total": 4,
+      "value": "47uF25VX5R20%",
+      "body_max_mm": [
+        3.4,
+        1.8,
+        1.8
+      ],
+      "source_ids": [
+        "TI_EVM",
+        "COUT",
+        "COUT_CURVE"
+      ],
+      "role": "two per rail; require >=40uF effective per module acrossactualbias,temp,age before release"
+    },
+    {
+      "ref": "CVCC_L CVCC_E",
+      "mpn": "MMASE105SB5105KFNA01",
+      "qty_total": 2,
+      "value": "1uF16VX5R10%",
+      "body_max_mm": [
+        1.05,
+        0.55,
+        0.55
+      ],
+      "source_ids": [
+        "TI_EVM",
+        "CVCC_RENAME"
+      ],
+      "role": "renamed EVM EMK105BJ105KVHF; VCC23 to PGND; never load VCC externally"
+    },
+    {
+      "ref": "RRT_L RRT_E",
+      "mpn": "RC0603FR-0716K5L",
+      "qty_total": 2,
+      "value": "16.5k1%",
+      "body_max_mm": [
+        1.7,
+        0.9,
+        0.55
+      ],
+      "source_ids": [
+        "TI_MODULE",
+        "RRT"
+      ],
+      "role": "800kHz design point from Table7-4; RT1 toAGND"
+    },
+    {
+      "ref": "RPG_L RPG_E",
+      "mpn": "RC0603FR-0749K9L",
+      "qty_total": 2,
+      "value": "49.9k1%",
+      "body_max_mm": [
+        1.7,
+        0.9,
+        0.55
+      ],
+      "source_ids": [
+        "TI_EVM",
+        "RPG"
+      ],
+      "role": "PG26 pullup to same local rail/testpoint; diagnostic only, notwiredintoexistingreset"
+    },
+    {
+      "ref": "CIN_DAMP",
+      "mpn": "EEUFR1E101",
+      "qty_total": 1,
+      "value": "100uF25V20% aluminium",
+      "body_max_mm": [
+        6.8,
+        6.8,
+        12.7
+      ],
+      "source_ids": [
+        "TI_MODULE",
+        "DAMP_CAP"
+      ],
+      "role": "shared buck input damping candidate from TI §9 general guidance; ESR/frequency and C82 interaction require waveforms; not a frozen/reference-exact PN",
+      "nominal_lead_pitch_mm": 2.5
+    }
+  ],
+  "selection": {
+    "module": "TPSM63603V3RDHR",
+    "architecture": "single12Vpositive/return trunk; local split to motorVM and two3V3buckrails; no48Vconversion",
+    "external_psu": "LRS-150-12",
+    "wire_candidate": "LAPP0028181, 3G2.5mm2; two numbered cores power+return; GN/YE not used as current return",
+    "wire_dynamic_or_thermal_release": false
+  },
+  "assumptions": {
+    "one_way_lengths_m": [
+      1,
+      2,
+      3
+    ],
+    "conductor_temperatures_C": [
+      20,
+      70
+    ],
+    "copper_alpha_per_K": 0.00393,
+    "loop_other_resistance_ohm": [
+      0.04,
+      0.1
+    ],
+    "loop_other_decomposition_ohm": {
+      "4_mated_contact_paths_each5mohm": 0.02,
+      "crimps_terminals_total": 0.01,
+      "short_tail_protection_and_board_input_budget": 0.01
+    },
+    "external_12V_static_bounds_V": [
+      11.88,
+      12.12
+    ],
+    "source_3V3_comparison_nominal_V": 3.3,
+    "logic_budget_A": 1,
+    "led_budget_A": 3,
+    "motor_head_current_budget_A": 6,
+    "converter_efficiency_sensitivity": [
+      0.8,
+      0.9,
+      0.95
+    ],
+    "all_are_planning_not_measured": true
+  },
+  "layout": {
+    "two_islands_each_budget_mm": [
+      22,
+      24,
+      2.5
+    ],
+    "budget_not_fit_or_thermal_proof": true,
+    "module_body_max_mm": [
+      4.1,
+      6.1,
+      1.9
+    ],
+    "total_region_area_mm2": 1056,
+    "one50x58board_area_fraction": 0.3641379310344828,
+    "testboard_in_TI_thermalplots_mm": [
+      64,
+      83
+    ],
+    "wire25_OD_nominal_mm": 9.3,
+    "wire25_OD_max_mm": null,
+    "wire25_dynamic_bend_radius_nominal_basis_mm": 139.5,
+    "additional_input_damping_region_budget_mm": [
+      8,
+      8,
+      16
+    ],
+    "input_damping_region_is_not_lead_vent_or_fit_approval": true
+  },
+  "pending": [
+    "inputprotection/regen/clamp/fuseexactratings",
+    "completecurrent-ratedheadconnectorandtrunk-to-short-tailtermination",
+    "effectiveCOUTminandstability",
+    "fixedV3rail±3%totalerrorandloadstepqualification",
+    "two-boardlayout,thermalcoupling,EMI",
+    "full3Ddynamicpowercablepathandconductorampacity",
+    "PGdiagnosticfirmwareorhardwareintegration innewrevision",
+    "long-wire input stability with added CIN_DAMP, existing C82 and full motor switching; ESR and 455mArms limit not qualified"
+  ]
+}
