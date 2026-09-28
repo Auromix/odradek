@@ -1,0 +1,247 @@
+{
+  "revision": "R5-HEAD-SERVO01",
+  "license": "CC-BY-NC-4.0",
+  "original_analysis_notice": "Odradek — Auromix contributors (https://github.com/Auromix/odradek)",
+  "vendor_material_rights": "vendor documents remain vendor copyright; not republished",
+  "sources": [
+    {
+      "id": "F1",
+      "publisher": "FAULHABER",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_3274_BP4_DFF.pdf",
+      "document_revision": "2026-07-28",
+      "local_archive": "work/fast-drive01/3274.pdf",
+      "sha256": "1b8e49bb4e3aabbac116ab53b40e112ecd5b886b375cd6baf881989fa4375f03",
+      "bytes": 306081,
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "use": "motor inertia, friction, 24V, Hall, Kt, phase lead colors",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "F2",
+      "publisher": "FAULHABER",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_IE3-1024L_DFF.pdf",
+      "document_revision": "2026-07-28",
+      "local_archive": "work/fast-drive01/IE3L.pdf",
+      "sha256": "50ee372e4e9bf730cf92e844b8559da6b34f45d46b9993eeee6f75064195a9eb",
+      "bytes": 635044,
+      "reviewed_pages": [
+        1,
+        2,
+        3
+      ],
+      "use": "5V differential ABZ; 1024 lines; inertia and mass; pinout",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "F3",
+      "publisher": "FAULHABER",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_MC5010S_DFF.pdf",
+      "document_revision": "2026-07-28",
+      "local_archive": "work/fast-drive01/MC5010.pdf",
+      "sha256": "fe37c5d67bb30d3f31e38f8e46e485f5ae676452ddb83645ef53e901b71b210e",
+      "bytes": 337862,
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "use": "24V ranges, 10/30A, S2 3s, CSP/CST, thermal and dimension data",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "F4",
+      "publisher": "FAULHABER",
+      "url": "https://www.faulhaber.com/fileadmin/Import/Media/EN_7000_05057.pdf",
+      "document_revision": "7th edition 2023-05-22",
+      "local_archive": "work/r5-head-servo01/mc-manual.pdf",
+      "sha256": "7cffffb94459f5e38681d0ad327b5b2a536074403c91fa9058be5f63ebc74ac0",
+      "bytes": 3636149,
+      "reviewed_pages": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        29,
+        30,
+        31
+      ],
+      "use": "MC actual wiring, maximum guide cable lengths, bus regeneration",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "F5",
+      "publisher": "FAULHABER",
+      "url": "https://eshop.faulhaber.com/media/bb/9a/ae/1775629773/EN_7000_05059.pdf",
+      "document_revision": "11th edition 2025-12-20",
+      "local_archive": "work/r5-head-servo01/mc-accessories.pdf",
+      "sha256": "8f8f7debbd3460c539ca338129de34f793037ba0f38b75aef4a61814d0bd237f",
+      "bytes": 3643984,
+      "reviewed_pages": [
+        28,
+        31,
+        41
+      ],
+      "use": "6501.00262/263/00377 cable mappings and mating connector PNs",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "F6",
+      "publisher": "FAULHABER",
+      "url": "https://eshop.faulhaber.com/media/b0/fe/85/1775629774/EN_7000_05048.pdf",
+      "document_revision": "6th edition 2025-05-05",
+      "local_archive": "work/r5-head-servo01/mc-functions.pdf",
+      "sha256": "44008999a829b5371ab9afb701203cc08a159831e8755e6e6b159f21e30047d9",
+      "bytes": 5130447,
+      "reviewed_pages": [
+        31,
+        32,
+        157,
+        161,
+        162
+      ],
+      "use": "Iq control, thermal current configuration; no unproven RMS normalization",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "F7",
+      "publisher": "FAULHABER",
+      "url": "https://eshop.faulhaber.com/media/39/ea/a1/1755094024/EN_TI_BRUSHLESS_DC-MOTORS.pdf",
+      "document_revision": "retrieved PDF; internal 2020 print stamp",
+      "local_archive": "work/r5-head-servo01/faul-bldc-ti.pdf",
+      "sha256": "41802d199e1e753a0e3d22273daf7cea6586fcb3d164f4bda4dafc44de57624d",
+      "bytes": 4708318,
+      "reviewed_pages": [
+        4,
+        5
+      ],
+      "use": "Kt definition does not resolve phase peak/RMS normalization",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "E1",
+      "publisher": "Elmo Motion Control",
+      "url": "https://elmomc.cn/wp-content/uploads/dlm_uploads/2018/05/MAN-G-SOLTWIIG-3.pdf",
+      "document_revision": "MAN-G-SOLTWI 4.003 / January 2020",
+      "local_archive": "work/r5-head-servo01/solo-guide.pdf",
+      "sha256": "8f1107bc619a9fbd04c5f5f82a97cc554fc57eefaa17093e44478b42d2e46620",
+      "bytes": 42265283,
+      "reviewed_pages": [
+        3,
+        11,
+        13,
+        15,
+        18,
+        20,
+        25,
+        26,
+        28,
+        31,
+        33,
+        38,
+        40,
+        42,
+        43,
+        45,
+        48,
+        53,
+        54,
+        62,
+        68,
+        72,
+        73,
+        82,
+        83,
+        85,
+        87,
+        90,
+        98
+      ],
+      "use": "catalog-derived G-SOLTWI10/100EE7S; physical limits, connection maps, thermal and STO version gap",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "E2",
+      "publisher": "Elmo Motion Control",
+      "url": "https://elmomc.cn/wp-content/uploads/dlm_uploads/2018/05/MAN-G-SOLTWI-CBLKIT-1.pdf",
+      "document_revision": "MAN-G-SOLTWI-CBLKIT 1.002 / January 2019",
+      "local_archive": "work/r5-head-servo01/solo-cable.pdf",
+      "sha256": "138532e6874d0f5b3b8098ea0eacd85689e626a9eddc223947ff84706096691a",
+      "bytes": 8290284,
+      "reviewed_pages": [
+        4,
+        5,
+        8,
+        10,
+        14,
+        16
+      ],
+      "use": "CBL-GSOLTWIKIT03; feedback/I-O/EtherCAT wiring; no power cable",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "E3",
+      "publisher": "Elmo Motion Control",
+      "url": "https://elmomc.cn/wp-content/uploads/dlm_uploads/2018/05/G-Solo-Twitter-ECAT-STEP.zip",
+      "document_revision": "ZIP members dated 2016-12-18",
+      "local_archive": "work/r5-head-servo01/solo-step.zip",
+      "sha256": "4d45d7b7c21a7cf032974e9ef43d5f65d43841bce2add1c0cc099f286149b471",
+      "bytes": 5524333,
+      "reviewed_pages": [],
+      "use": "only nominal older CAD evidence, not latest controlled envelope or complete mated assembly",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "E4",
+      "publisher": "Elmo Motion Control",
+      "url": "https://elmomc.cn/products/servo-drives/servo-drive-gold-series/gold-solo-twitter/",
+      "document_revision": "webpage retrieved 2026-09-28",
+      "local_archive": "work/r5-head-servo01/solo-cn.html",
+      "sha256": "9f0259bef40450db907d4deca7a07404d903dfcb2d167ef3b9859c82dda56795",
+      "bytes": 254153,
+      "reviewed_pages": [],
+      "use": "official CN source discovery and cross-check of product values",
+      "downloaded_utc_date": "2026-09-28",
+      "redistributed_in_repository": false
+    },
+    {
+      "id": "E5",
+      "publisher": "Elmo Motion Control",
+      "url": "https://www.elmomc.com/product/gold-solo-twitter/",
+      "retrieval": "web tool read successful; local HTTP403",
+      "document_revision": "current product page lists 5.004 January 2023 guide",
+      "use": "live catalogue electrical/physical/feedback summary and revision discrepancy; no newer PDF read claimed"
+    },
+    {
+      "id": "E6",
+      "publisher": "Elmo Motion Control",
+      "url": "https://www.elmomc.com/elmo-case-study/robotics/",
+      "retrieval": "web tool read",
+      "use": "Gold family CSP/CSV/CST and simultaneous Hall+incremental capability; not specific Solo firmware/ESI validation"
+    }
+  ],
+  "access_gaps": [
+    {
+      "url": "https://www.elmomc.com/download/4151/",
+      "status": "HTTP403 locally; timeout web tool; 5.004 not inspected"
+    },
+    {
+      "url": "https://elmomc.cn/download/4122/?tmstv=1790561247",
+      "status": "redirects to login; received HTML not PDF; no access bypass",
+      "consequence": "board manual STO timings, input receiver limits, peak duration, minimum motor L remain TBD"
+    }
+  ]
+}

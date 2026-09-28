@@ -1,0 +1,18 @@
+qty,manufacturer_part_number,role,selection_status,unit_mass_g,source,gap
+1,3274G024BP4 (article 3274.00001),common 24V motor,candidate,325,F1,combined encoder article/configuration and thermal duty pending; no gear
+1,IE3-1024 L,common differential feedback,candidate,13.5,F2,assembled motor/encoder delivery configuration to confirm
+1,MC 5010 S ET,A external fixed-bench servo,selected-for-single-mechanism-bench,270,F3/F4,current limits/regen/protective circuit not validated; not a completed safe bench
+1,6501.00262,A 2m 3274 phase cable,candidate,,F5 p10/28,not torsion-qualified by these sources
+1,6501.00263,A 2m 3274 Hall cable,candidate,,F5 p10/28,not torsion-qualified by these sources
+1,6501.00377,A 2m IE3L line-driver cable,candidate,,F5 p10/31,not substitute 6501.00267 non-L cable
+1,6501.00221,A supply side connector set,candidate,,F5 p41,wire gauge/fuse/assembly not frozen
+1,6501.00222,A motor side connector set if custom harness,candidate,,F5 p41,not additionally needed if complete preterminated cables suffice
+1,G-SOLTWI10/100EE7S,B head-native EtherCAT servo configuration,candidate,36.5,E1 p3/11/87,derived from primary catalog fields; current SKU/revision confirmation pending; no invented article number
+1,CBL-GSOLTWIKIT03,B EtherCAT/feedback/IO cable kit,candidate,,E2 p4,power cable not included; 0.25m tails /1m EtherCAT not robot-rated by this source
+2,501189-3010 + 501193-3000 contacts,B J10/J11 alternative custom harness mates,candidate,,E1 p25,instead of kit; exact contact count from wiring; crimp qualification needed
+2,501330-0500 + 501334-0100 contacts,B J17/J18 alternative custom EtherCAT mates,candidate,,E1 p25,1mm 5way; data pairs/shield mapping must follow cable guide
+1,G-TWIHSFLAT01,B optional flat heat-sink kit,candidate,21,E1 p87/90/98,21g inferred model difference; mass not separately specified; dimensions then48.5x41.3x29; no natural-convection performance guarantee in sealed head
+1,TBD,24V source with rated reverse-energy path or external chopper,TBD,,F4 p20/22; E1 p38,"regen, cable inductance, current, clamp thresholds and duty need measurement"
+1,TBD,normally holding brake or mechanical retention if required,TBD,,project requirement,motor has no brake; ball screw self-lock not assumed; valve/clutch/coil design absent
+1,TBD,safety output pair and delivered Elmo STO conditioning,blocked,,E1 p68,v4.003 diagram vs24V option ambiguity and latest manual inaccessible
+1,TBD,head metal heat spreader and insulation/strain relief,TBD,,E1 p18/20/82,full fitted envelope and head temperature unknown

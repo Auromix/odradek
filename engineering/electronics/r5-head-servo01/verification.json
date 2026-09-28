@@ -1,0 +1,254 @@
+{
+  "revision": "R5-HEAD-SERVO01",
+  "status": "engineering calculation and mapping checks only; no hardware energization, thermal, current normalization, EtherCAT hardware or functional safety acceptance",
+  "checks": [
+    {
+      "check": "input hash engineering/generated/r5-link01/study.json",
+      "pass": true
+    },
+    {
+      "check": "input hash engineering/generated/r5-link01/cycle.csv",
+      "pass": true
+    },
+    {
+      "check": "input hash engineering/generated/r5-link01/common90-contact-summary.csv",
+      "pass": true
+    },
+    {
+      "check": "input hash engineering/generated/r5-link01/direct-screw-dynamic-sensitivity.csv",
+      "pass": true
+    },
+    {
+      "check": "79 audited functional connection rows",
+      "pass": true
+    },
+    {
+      "check": "no duplicate driver contact",
+      "pass": true
+    },
+    {
+      "check": "MC complement polarity M3.3",
+      "pass": true
+    },
+    {
+      "check": "MC complement polarity M3.4",
+      "pass": true
+    },
+    {
+      "check": "MC complement polarity M3.5",
+      "pass": true
+    },
+    {
+      "check": "MC complement polarity M3.6",
+      "pass": true
+    },
+    {
+      "check": "MC complement polarity M3.7",
+      "pass": true
+    },
+    {
+      "check": "MC complement polarity M3.8",
+      "pass": true
+    },
+    {
+      "check": "Elmo complement polarity J10.1",
+      "pass": true
+    },
+    {
+      "check": "Elmo complement polarity J10.3",
+      "pass": true
+    },
+    {
+      "check": "Elmo complement polarity J10.5",
+      "pass": true
+    },
+    {
+      "check": "Elmo complement polarity J10.7",
+      "pass": true
+    },
+    {
+      "check": "Elmo complement polarity J10.9",
+      "pass": true
+    },
+    {
+      "check": "Elmo complement polarity J10.11",
+      "pass": true
+    },
+    {
+      "check": "MC5010 has six encoder signals",
+      "pass": true
+    },
+    {
+      "check": "Elmo has six encoder signals",
+      "pass": true
+    },
+    {
+      "check": "actual 3600 rpm",
+      "pass": true
+    },
+    {
+      "check": "reintegrated braking matches denser upstream to 100uJ",
+      "pass": true
+    },
+    {
+      "check": "entire grip range not overclaimed",
+      "pass": true
+    },
+    {
+      "check": "current convention unresolved",
+      "pass": true
+    },
+    {
+      "check": "9 native EtherCAT stations",
+      "pass": true
+    },
+    {
+      "check": "only two servo candidates",
+      "pass": true
+    },
+    {
+      "check": "no control characters in document",
+      "pass": true
+    },
+    {
+      "check": "local link ../r5-link01.md",
+      "pass": true
+    },
+    {
+      "check": "local link ../../../engineering/electronics/r5-head-servo01/",
+      "pass": true
+    },
+    {
+      "check": "local link ../../../engineering/electronics/r5-head-servo01/connection-map.csv",
+      "pass": true
+    },
+    {
+      "check": "local link ../../../engineering/electronics/r5-head-servo01/candidate-bom.csv",
+      "pass": true
+    },
+    {
+      "check": "local link ../sources/r5-head-servo01.json",
+      "pass": true
+    },
+    {
+      "check": "local link ../../../engineering/electronics/r5-head-servo01/catalogue-geometry-evidence.json",
+      "pass": true
+    },
+    {
+      "check": "local link ../../../engineering/electronics/r5-head-servo01/connection-map.csv",
+      "pass": true
+    },
+    {
+      "check": "source revision gap explicit",
+      "pass": true
+    },
+    {
+      "check": "archived source F1",
+      "pass": true
+    },
+    {
+      "check": "archived source F2",
+      "pass": true
+    },
+    {
+      "check": "archived source F3",
+      "pass": true
+    },
+    {
+      "check": "archived source F4",
+      "pass": true
+    },
+    {
+      "check": "archived source F5",
+      "pass": true
+    },
+    {
+      "check": "archived source F6",
+      "pass": true
+    },
+    {
+      "check": "archived source F7",
+      "pass": true
+    },
+    {
+      "check": "archived source E1",
+      "pass": true
+    },
+    {
+      "check": "archived source E2",
+      "pass": true
+    },
+    {
+      "check": "archived source E3",
+      "pass": true
+    },
+    {
+      "check": "archived source E4",
+      "pass": true
+    }
+  ],
+  "passed": 46,
+  "failed": 0,
+  "artifacts": [
+    {
+      "path": "engineering/electronics/r5-head-servo01/README.md",
+      "sha256": "5c75dd342edbcba7e8653f7d60bf86ececd39257debfc585a638053ee88f121d",
+      "bytes": 1649
+    },
+    {
+      "path": "engineering/electronics/r5-head-servo01/build.py",
+      "sha256": "e2316fc332d4f33a85582afe16fafee429448bcc9f7d7b2f3ca9be3f7052a7bc",
+      "bytes": 6279
+    },
+    {
+      "path": "engineering/electronics/r5-head-servo01/candidate-bom.csv",
+      "sha256": "7d100efeb85593905c970cb3966333520f439097f87360cc19f4b0d306d844dd",
+      "bytes": 2573
+    },
+    {
+      "path": "engineering/electronics/r5-head-servo01/catalogue-geometry-evidence.json",
+      "sha256": "480324ec2f8936a824ab221969adebd1fc78054ba3fc9f3f21b7d794364b6eac",
+      "bytes": 2440
+    },
+    {
+      "path": "engineering/electronics/r5-head-servo01/connection-map.csv",
+      "sha256": "07b648d48beaa45d24062d8d975a4196a8820c62530deb1afe2dffa0933c908b",
+      "bytes": 13880
+    },
+    {
+      "path": "engineering/electronics/r5-head-servo01/cycle-demand.csv",
+      "sha256": "2ac91c73464e9011b6a81a3545abc4e728d94dd4172862b834c6a442d35016b8",
+      "bytes": 228362
+    },
+    {
+      "path": "engineering/electronics/r5-head-servo01/hold-sensitivity.csv",
+      "sha256": "2f70265bc0a787620e380d1b46e010dada71fe92ea2eb6db3dcf4e7ac9bdf1ad",
+      "bytes": 1059
+    },
+    {
+      "path": "engineering/electronics/r5-head-servo01/regen-capacitor-sensitivity.csv",
+      "sha256": "7da913f3af7ee805b5c945615575e1548b4f78953f594f52a9bc3104a3371bef",
+      "bytes": 569
+    },
+    {
+      "path": "engineering/electronics/r5-head-servo01/study.json",
+      "sha256": "0d6e88e7d6c7e7bb6bd931de8ed97288556e593240978f17148ea696c2b17517",
+      "bytes": 4140
+    },
+    {
+      "path": "engineering/electronics/r5-head-servo01/verify.py",
+      "sha256": "eab3d8a3fd2119f29fb8cbd63ea377c9758a3b4a194dc7ba963a3663ce60a09e",
+      "bytes": 3138
+    },
+    {
+      "path": "docs/engineering/hardware/r5-head-servo01.md",
+      "sha256": "eb898bb2f68bcfe4e330b428b9030bfba0b84efce7dd162ec9e2aa99180deb8a",
+      "bytes": 18255
+    },
+    {
+      "path": "docs/engineering/sources/r5-head-servo01.json",
+      "sha256": "4449ea00d63eac6c01efd08ce79314293071f426b51bfd3b7dcbb933bbff5df2",
+      "bytes": 8566
+    }
+  ]
+}

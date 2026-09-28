@@ -1,0 +1,80 @@
+candidate,connector,pin,signal,destination,group,source,status,notes
+MC5010,M1,1,Phase A,3274 A / motor lead brown,motor,F1 p2; F4 p23; F5 p28,candidate-not-energizing-release,"6501.00262 uses different extension colors; map by function, not like color"
+MC5010,M1,2,Phase B,3274 B / motor lead orange,motor,F1 p2; F4 p23; F5 p28,candidate-not-energizing-release,"6501.00262 uses different extension colors; map by function, not like color"
+MC5010,M1,3,Phase C,3274 C / motor lead yellow,motor,F1 p2; F4 p23; F5 p28,candidate-not-energizing-release,"6501.00262 uses different extension colors; map by function, not like color"
+MC5010,M2,1,+5V,3274 red,Hall,F1 p2; F4 p24-25,candidate-not-energizing-release,5V sensor output <100mA; do not parallel with encoder supply
+MC5010,M2,2,GND,3274 black,Hall,F1 p2; F4 p24-25,candidate-not-energizing-release,5V sensor output <100mA; do not parallel with encoder supply
+MC5010,M2,3,Hall A,3274 green,Hall,F1 p2; F4 p24-25,candidate-not-energizing-release,5V sensor output <100mA; do not parallel with encoder supply
+MC5010,M2,4,Hall B,3274 blue,Hall,F1 p2; F4 p24-25,candidate-not-energizing-release,5V sensor output <100mA; do not parallel with encoder supply
+MC5010,M2,5,Hall C,3274 grey,Hall,F1 p2; F4 p24-25,candidate-not-energizing-release,5V sensor output <100mA; do not parallel with encoder supply
+MC5010,M3,1,5V,IE3L pin 2,encoder,F4 p25; F5 p31,candidate-not-energizing-release,6501.00377; encoder pins1/4 NC; complementary marks visually checked
+MC5010,M3,2,GND,IE3L pin 3,encoder,F4 p25; F5 p31,candidate-not-energizing-release,6501.00377; encoder pins1/4 NC; complementary marks visually checked
+MC5010,M3,3,A-,IE3L pin 5,encoder,F4 p25; F5 p31,candidate-not-energizing-release,6501.00377; encoder pins1/4 NC; complementary marks visually checked
+MC5010,M3,4,A+,IE3L pin 6,encoder,F4 p25; F5 p31,candidate-not-energizing-release,6501.00377; encoder pins1/4 NC; complementary marks visually checked
+MC5010,M3,5,B-,IE3L pin 7,encoder,F4 p25; F5 p31,candidate-not-energizing-release,6501.00377; encoder pins1/4 NC; complementary marks visually checked
+MC5010,M3,6,B+,IE3L pin 8,encoder,F4 p25; F5 p31,candidate-not-energizing-release,6501.00377; encoder pins1/4 NC; complementary marks visually checked
+MC5010,M3,7,Z-,IE3L pin 9,encoder,F4 p25; F5 p31,candidate-not-energizing-release,6501.00377; encoder pins1/4 NC; complementary marks visually checked
+MC5010,M3,8,Z+,IE3L pin 10,encoder,F4 p25; F5 p31,candidate-not-energizing-release,6501.00377; encoder pins1/4 NC; complementary marks visually checked
+MC5010,X4,1,0V,external isolated 24V branches,power,F4 p30,candidate-not-energizing-release,
+MC5010,X4,2,24V control keepalive,external isolated 24V branches,power,F4 p30,candidate-not-energizing-release,
+MC5010,X5,1,0V power,external isolated 24V branches,power,F4 p30,candidate-not-energizing-release,
+MC5010,X5,2,24V motor switched,external isolated 24V branches,power,F4 p30,candidate-not-energizing-release,
+MC5010,RJ45-IN,1,TX+,native EtherCAT chain,EtherCAT,F4 p31,candidate-not-energizing-release,other contacts not repurposed for power
+MC5010,RJ45-IN,2,TX-,native EtherCAT chain,EtherCAT,F4 p31,candidate-not-energizing-release,other contacts not repurposed for power
+MC5010,RJ45-IN,3,RX+,native EtherCAT chain,EtherCAT,F4 p31,candidate-not-energizing-release,other contacts not repurposed for power
+MC5010,RJ45-IN,6,RX-,native EtherCAT chain,EtherCAT,F4 p31,candidate-not-energizing-release,other contacts not repurposed for power
+MC5010,RJ45-OUT,1,TX+,native EtherCAT chain,EtherCAT,F4 p31,candidate-not-energizing-release,other contacts not repurposed for power
+MC5010,RJ45-OUT,2,TX-,native EtherCAT chain,EtherCAT,F4 p31,candidate-not-energizing-release,other contacts not repurposed for power
+MC5010,RJ45-OUT,3,RX+,native EtherCAT chain,EtherCAT,F4 p31,candidate-not-energizing-release,other contacts not repurposed for power
+MC5010,RJ45-OUT,6,RX-,native EtherCAT chain,EtherCAT,F4 p31,candidate-not-energizing-release,other contacts not repurposed for power
+MC5010,X3,2,GND,local logic reference,auxiliary,F4 p29,candidate-not-energizing-release,functional inputs/outputs are not safety STO; brake load requires separate design
+MC5010,X3,3,DigOut1,"optional external brake driver, not installed",auxiliary,F4 p29,candidate-not-energizing-release,functional inputs/outputs are not safety STO; brake load requires separate design
+MC5010,X3,5,DigIn1,home switch candidate,auxiliary,F4 p29,candidate-not-energizing-release,functional inputs/outputs are not safety STO; brake load requires separate design
+MC5010,X3,6,DigIn2,open travel limit candidate,auxiliary,F4 p29,candidate-not-energizing-release,functional inputs/outputs are not safety STO; brake load requires separate design
+MC5010,X3,7,DigIn3,closed travel limit candidate,auxiliary,F4 p29,candidate-not-energizing-release,functional inputs/outputs are not safety STO; brake load requires separate design
+Elmo,horizontal power,M1,M1,3274 Phase A brown,power/motor,E1 p28-32,candidate-not-energizing-release,terminal labels are authority; position/order requires actual delivered unit; do not copy MC pin numbers
+Elmo,horizontal power,M2,M2,3274 Phase B orange,power/motor,E1 p28-32,candidate-not-energizing-release,terminal labels are authority; position/order requires actual delivered unit; do not copy MC pin numbers
+Elmo,horizontal power,M3,M3,3274 Phase C yellow,power/motor,E1 p28-32,candidate-not-energizing-release,terminal labels are authority; position/order requires actual delivered unit; do not copy MC pin numbers
+Elmo,horizontal power,PE,PE,motor frame + head bonded structure,power/motor,E1 p28-32,candidate-not-energizing-release,terminal labels are authority; position/order requires actual delivered unit; do not copy MC pin numbers
+Elmo,horizontal power,VP+,VP+,24V motor switched,power/motor,E1 p28-32,candidate-not-energizing-release,terminal labels are authority; position/order requires actual delivered unit; do not copy MC pin numbers
+Elmo,horizontal power,PR,PR,motor power return,power/motor,E1 p28-32,candidate-not-energizing-release,terminal labels are authority; position/order requires actual delivered unit; do not copy MC pin numbers
+Elmo,J10,1,A+,IE3L pin 6,encoder,E1 p42-45; F2 p2; F5 p31,candidate-not-energizing-release,Port A integrated120ohm diagram; do not add parallel100ohm blindly; loaded supply/receiver limits not fully qualified
+Elmo,J10,3,A-,IE3L pin 5,encoder,E1 p42-45; F2 p2; F5 p31,candidate-not-energizing-release,Port A integrated120ohm diagram; do not add parallel100ohm blindly; loaded supply/receiver limits not fully qualified
+Elmo,J10,5,B+,IE3L pin 8,encoder,E1 p42-45; F2 p2; F5 p31,candidate-not-energizing-release,Port A integrated120ohm diagram; do not add parallel100ohm blindly; loaded supply/receiver limits not fully qualified
+Elmo,J10,7,B-,IE3L pin 7,encoder,E1 p42-45; F2 p2; F5 p31,candidate-not-energizing-release,Port A integrated120ohm diagram; do not add parallel100ohm blindly; loaded supply/receiver limits not fully qualified
+Elmo,J10,9,Z+,IE3L pin 10,encoder,E1 p42-45; F2 p2; F5 p31,candidate-not-energizing-release,Port A integrated120ohm diagram; do not add parallel100ohm blindly; loaded supply/receiver limits not fully qualified
+Elmo,J10,11,Z-,IE3L pin 9,encoder,E1 p42-45; F2 p2; F5 p31,candidate-not-energizing-release,Port A integrated120ohm diagram; do not add parallel100ohm blindly; loaded supply/receiver limits not fully qualified
+Elmo,J10,19,5V encoder,IE3L pin 2,encoder,E1 p42-45; F2 p2; F5 p31,candidate-not-energizing-release,Port A integrated120ohm diagram; do not add parallel100ohm blindly; loaded supply/receiver limits not fully qualified
+Elmo,J10,21,encoder return,IE3L pin 3,encoder,E1 p42-45; F2 p2; F5 p31,candidate-not-energizing-release,Port A integrated120ohm diagram; do not add parallel100ohm blindly; loaded supply/receiver limits not fully qualified
+Elmo,J10,13,HA,3274 Hall A green,Hall/control,"E1 p33,42-48",candidate-not-energizing-release,"pins19/26 share total200mA, not200mA each; all feedback supply loads must be summed"
+Elmo,J10,15,HB,3274 Hall B blue,Hall/control,"E1 p33,42-48",candidate-not-energizing-release,"pins19/26 share total200mA, not200mA each; all feedback supply loads must be summed"
+Elmo,J10,17,HC,3274 Hall C grey,Hall/control,"E1 p33,42-48",candidate-not-energizing-release,"pins19/26 share total200mA, not200mA each; all feedback supply loads must be summed"
+Elmo,J10,26,5V Hall,3274 red,Hall/control,"E1 p33,42-48",candidate-not-energizing-release,"pins19/26 share total200mA, not200mA each; all feedback supply loads must be summed"
+Elmo,J10,23,COMRET Hall,3274 black,Hall/control,"E1 p33,42-48",candidate-not-energizing-release,"pins19/26 share total200mA, not200mA each; all feedback supply loads must be summed"
+Elmo,J10,25,COMRET bond,PE bond plan per E1 p26,Hall/control,"E1 p33,42-48",candidate-not-energizing-release,"pins19/26 share total200mA, not200mA each; all feedback supply loads must be summed"
+Elmo,J10,29,VL-,control return,Hall/control,"E1 p33,42-48",candidate-not-energizing-release,"pins19/26 share total200mA, not200mA each; all feedback supply loads must be summed"
+Elmo,J10,30,VL+,"24V control, common supply option or separate keepalive",Hall/control,"E1 p33,42-48",candidate-not-energizing-release,"pins19/26 share total200mA, not200mA each; all feedback supply loads must be summed"
+Elmo,J11,15,STO1,independent safety channel A,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J11,16,STO2,independent safety channel B,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J11,17,STO_RET,safety output common,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J11,18,STO_RET,same internal return; optional second return conductor,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J11,1,IN1,home switch candidate,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J11,2,IN2,open travel limit candidate,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J11,3,IN3,closed travel limit candidate,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J11,7,INRET,input return,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J11,9,OUT1,optional external brake interface,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J11,13,OUTRET,output return,safety/IO,E1 p53-68,candidate-not-energizing-release,24V STO conditioning location/version MUST resolve before energizing; 30mA output is not direct brake drive
+Elmo,J17-IN,1,TX+,RJ45 pin1,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J17-IN,2,TX-,RJ45 pin2,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J17-IN,3,RX+,RJ45 pin3,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J17-IN,4,RX-,RJ45 pin6,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J17-IN,5,COMRET/shield drain,RJ45 shield,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J18-OUT,1,TX+,RJ45 pin1,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J18-OUT,2,TX-,RJ45 pin2,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J18-OUT,3,RX+,RJ45 pin3,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J18-OUT,4,RX-,RJ45 pin6,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J18-OUT,5,COMRET/shield drain,RJ45 shield,EtherCAT,E1 p72-73; E2 p8,candidate-not-energizing-release,501330-0500 +501334-0100; CAT5e; qualified flex/torsion cable not established by kit
+Elmo,J11,27,USB_VBUS,service USB VBUS detector,commissioning,"E1 p54,71",candidate-not-energizing-release,service only; disconnect USB during EtherCAT FoE per E1 p74
+Elmo,J11,28,COMRET,USB GND,commissioning,"E1 p54,71",candidate-not-energizing-release,service only; disconnect USB during EtherCAT FoE per E1 p74
+Elmo,J11,29,USB D+,USB D+,commissioning,"E1 p54,71",candidate-not-energizing-release,service only; disconnect USB during EtherCAT FoE per E1 p74
+Elmo,J11,30,USB D-,USB D-,commissioning,"E1 p54,71",candidate-not-energizing-release,service only; disconnect USB during EtherCAT FoE per E1 p74

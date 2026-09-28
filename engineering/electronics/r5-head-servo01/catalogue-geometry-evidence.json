@@ -1,0 +1,99 @@
+{
+  "scope": "official older STEP verification and current/published outline; no assembled head fit claim",
+  "download_zip_sha256": "4d45d7b7c21a7cf032974e9ef43d5f65d43841bce2add1c0cc099f286149b471",
+  "step_members": {
+    "TWI_PCB_PELM027 - ECAT CONNECTOR.STEP": {
+      "bbox_mm": {
+        "min": [
+          -14.9371545246262,
+          -14.377600099999997,
+          -31.177016100000007
+        ],
+        "max": [
+          15.064115475373914,
+          10.100000099999999,
+          16.186784100000004
+        ],
+        "extent": [
+          30.001270000000112,
+          24.477600199999998,
+          47.363800200000014
+        ]
+      },
+      "solids": 143,
+      "is_valid": true
+    },
+    "TWI_PCB_PELM027 - ECAT WIRES.STEP": {
+      "bbox_mm": {
+        "min": [
+          -14.9371545246262,
+          -14.377600099999997,
+          -335.0870201
+        ],
+        "max": [
+          15.064115475373914,
+          8.026200000000003,
+          16.186784100000004
+        ],
+        "extent": [
+          30.001270000000112,
+          22.403800099999998,
+          351.27380420000003
+        ]
+      },
+      "solids": 138,
+      "is_valid": true
+    },
+    "TWI_PCB_PELM027 - ECAT PLUG.STEP": {
+      "bbox_mm": {
+        "min": [
+          -14.9371545246262,
+          -14.377600099999997,
+          -32.27701609999972
+        ],
+        "max": [
+          15.064115475373914,
+          20.29999999999995,
+          16.186784100000004
+        ],
+        "extent": [
+          30.001270000000112,
+          34.67760009999995,
+          48.463800199999724
+        ]
+      },
+      "solids": 134,
+      "is_valid": true
+    }
+  },
+  "selected_horizontal_nominal_manual_mm": [
+    48.1,
+    30,
+    25
+  ],
+  "selected_horizontal_nominal_mass_g": 36.5,
+  "max_with_tolerance_and_mates_mm": null,
+  "MC5010_ET_drawing_max_without_mates_mm": [
+    115.5,
+    75.5,
+    45
+  ],
+  "MC5010_ET_mass_g": 270,
+  "no_scale_fit_claim": "the 2016 STEP extents are smaller than 2020 manual; use manual outline plus unallocated cable/thermal mounting clearance, never smaller STEP as fit boundary",
+  "heatsink_variant_only_not_third_candidate": {
+    "manual_outline_mm": [
+      48.5,
+      41.3,
+      29
+    ],
+    "catalogue_mass_g": 57.5
+  },
+  "excluded_from_head_mass_delta": [
+    "heatsink/spreader",
+    "insulation",
+    "local cables/connectors",
+    "strain relief",
+    "brake/retention",
+    "regen capacitor/chopper"
+  ]
+}

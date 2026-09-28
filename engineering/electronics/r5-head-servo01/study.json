@@ -1,0 +1,99 @@
+{
+  "revision": "R5-HEAD-SERVO01",
+  "license": "CC-BY-NC-4.0",
+  "required_notice": "Odradek — Auromix contributors (https://github.com/Auromix/odradek)",
+  "status": "engineering candidates; not energized wiring/manufacturing release",
+  "requirements": {
+    "empty_close_open_close_s": 1,
+    "slider_travel_mm": 40,
+    "leg_time_s": 0.5,
+    "priority_objects": "boxes and bottles/cans, approximately 50–120 mm grasp width",
+    "range_load_bound_completed": false
+  },
+  "model": {
+    "motor": "3274G024BP4",
+    "encoder": "IE3-1024 L",
+    "direct_screw_lead_mm": 2.5,
+    "motor_encoder_inertia_kg_m2": 4.808e-06,
+    "known_four_petal_material_mass_kg": 0.242488036745,
+    "gravity_head": "minus Z",
+    "motor_friction_model": "C0 + Cv*abs(rpm); applied against velocity; zero at exactly zero speed; estimate only",
+    "C0_Nm": 0.00204,
+    "Cv_Nm_per_rpm": 9.24e-07,
+    "excluded": [
+      "screw/coupler inertia",
+      "slider/rod/crank/hinge mass and friction",
+      "new electronics and fasteners",
+      "actual screw efficiency",
+      "gripped-object dynamics",
+      "motor current-normalization calibration",
+      "temperature rise and actual thermal installation"
+    ],
+    "catalogue_Kt_Nm_per_A": 0.0281,
+    "Kt_phase_RMS_or_amplitude": "not established by the retrieved primary text; do not compare derived A directly with Elmo phase RMS",
+    "R_phase_to_phase_ohm_at22C": 0.253
+  },
+  "demand": {
+    "peak_rpm": 3600.0,
+    "peak_alpha_rad_s2": 2321.644152934991,
+    "ideal_peak_Nm": 0.01948353925320582,
+    "ideal_rms_Nm": 0.01164636549950166,
+    "ideal_positive_work_J": 0.8407684992450745,
+    "ideal_braking_work_J": 0.8407684992450739,
+    "ideal_positive_peak_W": 3.3668986117904276,
+    "ideal_braking_peak_W": 3.366898611790428,
+    "with_catalogue_motor_friction_peak_Nm": 0.021939725849812155,
+    "with_catalogue_motor_friction_rms_Nm": 0.012309572734253076,
+    "with_catalogue_motor_friction_positive_work_J": 1.3834958945218616,
+    "with_catalogue_motor_friction_braking_work_J": 0.46375820271523116,
+    "motor_friction_energy_J": 0.9197376918066317,
+    "rotor_plus_encoder_peak_kinetic_energy_J": 0.3416620173151509,
+    "encoder_channel_frequency_Hz": 61440.0,
+    "encoder_quadrature_edges_per_s": 245760.0,
+    "motor_electrical_frequency_Hz": 120.0
+  },
+  "conditional_contact": {
+    "object": "112mm sphere center Z65 at four q90 finite faces",
+    "friction_mu_assumed": 0.4,
+    "force_design_factor": 2,
+    "payload_kg": 2,
+    "slider_force_N": 287.171262149,
+    "ideal_hold_input_Nm": 0.1142618147131171,
+    "static_transfer_needed_if_net_shaft_torque_budget_Nm_014": 0.8161558193794077,
+    "not_whole_50_120mm_range_bound": true
+  },
+  "regeneration": {
+    "whole_cycle_braking_energy_J": 0.8407684992450739,
+    "min_C_F_for_lumped_energy_24_to28V": 0.008084312492741096,
+    "actual_regen_solution": "TBD; supply sink/chopper/capacitor must be validated, not TVS-only",
+    "stop_energy_bound": "TBD after all inertia, load orientation and stop path"
+  },
+  "native_network": {
+    "joint_slaves": 7,
+    "head_servo_slaves": 1,
+    "head_io_slaves": 1,
+    "total": 9,
+    "note": "assumes existing separate head I/O slave; not old 4-servo or P16 architecture"
+  },
+  "inputs": [
+    {
+      "path": "engineering/generated/r5-link01/study.json",
+      "sha256": "8edfdaf93da46253c6cd61c7b98e7d7e55977951699d022ceaa4c064e79b2d03"
+    },
+    {
+      "path": "engineering/generated/r5-link01/cycle.csv",
+      "sha256": "10f045b17e68e3f1b6c240531de65e3b32dec46647a0c615fda5077ccbcda25a"
+    },
+    {
+      "path": "engineering/generated/r5-link01/common90-contact-summary.csv",
+      "sha256": "7b0fbde631c452fc59308894636b9e4d3e78fe0968121567a72590e37a262a36"
+    },
+    {
+      "path": "engineering/generated/r5-link01/direct-screw-dynamic-sensitivity.csv",
+      "sha256": "497f4f12a5eec8191e857df6d5050019f91b6cb59ecaa358615ce4c75faaf110"
+    }
+  ],
+  "generated_by": "engineering/electronics/r5-head-servo01/build.py",
+  "reference_braking_work_J_finer_R5_LINK01_grid": 0.8407698102076219,
+  "braking_work_reintegration_error_J": -1.3109625479623688e-06
+}
