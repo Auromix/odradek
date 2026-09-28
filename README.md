@@ -14,6 +14,8 @@ Odradek is an independent Auromix robotics project sharing design material for n
 
 One concealed central actuator drives four coupled petals; their luminous faces also grip. The seven-axis body is developed separately with slender proportions and a detachable tool flange. [See both concept sheets and the current design brief](docs/r5-modular-design.md). Generated illustrations guide appearance; linkage, clearance and load capacity require engineering validation.
 
+The current engineering includes [shaped petal STEP and drawings](docs/engineering/r5-petal-form01.md), [nonlinear single-slider kinematics](docs/engineering/r5-link01.md), a [native one-control Blender rig](docs/engineering/r5-linkage-blender01.md), and a [separate arm mass/reach study](docs/engineering/r5-body01.md). Everyday boxes, bottles and cans of approximately **50–120 mm gripping width** are the first target; that range is not yet qualified. See the [current baseline](docs/engineering/current-baseline.md) for evidence and remaining work.
+
 ## Engineering package
 
 ![Existing structural review assembly — historical P16 head](engineering/generated/raised-arm-integration01/blender/arm-open-oblique.png)
