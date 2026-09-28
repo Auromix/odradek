@@ -1,0 +1,120 @@
+{
+  "states": [
+    {
+      "state": "open",
+      "R_mm": 91,
+      "q_deg": 0,
+      "known_mass_kg": 0.8046809370011618,
+      "COM_head_m": [
+        6.087638282209289e-13,
+        0.009308698670465085,
+        0.013403231887395301
+      ],
+      "inertia_COM_head_axes_kg_m2": [
+        [
+          0.005768152159228468,
+          -5.075898468903661e-14,
+          -3.3079889196797885e-15
+        ],
+        [
+          -5.075898468903661e-14,
+          0.0058716087974524465,
+          -5.51846977468564e-05
+        ],
+        [
+          -3.3079889196797885e-15,
+          -5.51846977468564e-05,
+          0.011410532545264192
+        ]
+      ],
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 0.005768152159228468,
+        "principal_triangle_margin_kg_m2": 0.00022812890227958196
+      }
+    },
+    {
+      "state": "folded",
+      "R_mm": 66,
+      "q_deg": 90,
+      "known_mass_kg": 0.8046809370011618,
+      "COM_head_m": [
+        2.4163473633942835e-13,
+        0.0028290631033018273,
+        0.03429588623777097
+      ],
+      "inertia_COM_head_axes_kg_m2": [
+        [
+          0.0035090487698420238,
+          -7.0139477992975374e-15,
+          -1.2688041941969277e-14
+        ],
+        [
+          -7.0139477992975374e-15,
+          0.003539573736849585,
+          -0.00024849043062126155
+        ],
+        [
+          -1.2688041941969277e-14,
+          -0.00024849043062126155,
+          0.004327540906622569
+        ]
+      ],
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 0.0034677563349720408,
+        "principal_triangle_margin_kg_m2": 0.0025774467963139494
+      }
+    },
+    {
+      "state": "minimum_aperture",
+      "R_mm": 31,
+      "q_deg": 90,
+      "known_mass_kg": 0.8046809370011618,
+      "COM_head_m": [
+        1.1678565266730438e-13,
+        0.001293599887642313,
+        0.03429588623777097
+      ],
+      "inertia_COM_head_axes_kg_m2": [
+        [
+          0.0022384877314698447,
+          -1.2026991171910657e-15,
+          -6.309544188932547e-15
+        ],
+        [
+          -1.2026991171910657e-15,
+          0.002251002969630586,
+          -0.00011549399831036482
+        ],
+        [
+          -6.309544188932547e-15,
+          -0.00011549399831036482,
+          0.001768409101031391
+        ]
+      ],
+      "tensor_check": {
+        "symmetry_error_kg_m2": 0.0,
+        "minimum_eigenvalue_kg_m2": 0.0017421932802180802,
+        "principal_triangle_margin_kg_m2": 0.001703462221244028
+      }
+    }
+  ],
+  "per_branch_mass_by_group_kg": {
+    "rotor": 0.05374395904837327,
+    "carrier": 0.04518447258593929,
+    "bearing": 0.0144,
+    "guide": 0.02886495366459816
+  },
+  "whole_head_mass_kg": null,
+  "unknown_excluded": [
+    "rail and carriage",
+    "palm backbone and guide fixation screws",
+    "motor/transmission/differential",
+    "return mechanism and hard stops",
+    "all actual PCB/LED/connectors/cables",
+    "real central display/cameras"
+  ],
+  "mass_is_assumed_not_measured": true,
+  "CFS4_outer_ring_mass_split_and_spin_unidentified": true
+}

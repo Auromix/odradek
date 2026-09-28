@@ -1,0 +1,1891 @@
+{
+  "revision": "R5-CARRIER01",
+  "part_coordinates": "Hinge at origin, except fixed guide already in head branch coords. Rotor rotates about -Y then translates to [R,0,20]. Carrier/bearing translate only. Entire branch rotates about head Z by phi. Internal C4 has no reflection.",
+  "parts": [
+    {
+      "id": "rotor_split_trunnion_cradle",
+      "group": "rotor",
+      "representation": "original steel",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "Monolithic manufacturing candidate; two short journals, no through shaft. Fits, fillets and pin retention unreleased.",
+      "source_step": "parts/rotor_split_trunnion_cradle.step",
+      "sha256": "0ee1b325c5683ab0c6183f1bb38760c4e64dc88657a708b7177a5f944f3dba04",
+      "volume_mm3": 4193.4347723016845,
+      "mass_kg": 0.03291846296256822,
+      "COM_part_m": [
+        0.005524852995910479,
+        0.002746977417154473,
+        -0.00255827680567256
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          5.264882570490566e-06,
+          4.995919430979054e-07,
+          5.372097025815491e-07
+        ],
+        [
+          4.995919430979054e-07,
+          2.422856935917894e-06,
+          -2.3133533716951867e-07
+        ],
+        [
+          5.372097025815491e-07,
+          -2.3133533716951867e-07,
+          6.817074491200657e-06
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          -7.5,
+          -18.8,
+          -7.5
+        ],
+        [
+          23.0,
+          29.0000001,
+          7.5
+        ]
+      ]
+    },
+    {
+      "id": "radial_carrier_foot",
+      "group": "carrier",
+      "representation": "original aluminium",
+      "density_kg_m3": 2700,
+      "catalogue_mass_kg": null,
+      "note": "4xD4.5 mounting interface only; rail/block/backbone not selected or included.",
+      "source_step": "parts/radial_carrier_foot.step",
+      "sha256": "bc8ab9eea89873c0d7ddedab93612541a4f3eab49cf26256774d361c9318a3bd",
+      "volume_mm3": 4792.683219068857,
+      "mass_kg": 0.012940244691485915,
+      "COM_part_m": [
+        0.02132867913058068,
+        -2.3720916347920777e-20,
+        -0.032
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.564956781020167e-06,
+          -6.5469332244638086e-24,
+          -1.257285475730896e-21
+        ],
+        [
+          -6.5469332244638086e-24,
+          7.985900156271496e-07,
+          0.0
+        ],
+        [
+          -1.257285475730896e-21,
+          0.0,
+          3.3290394774700387e-06
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          8.0,
+          -24.0,
+          -34.0
+        ],
+        [
+          35.0,
+          24.0,
+          -30.0
+        ]
+      ]
+    },
+    {
+      "id": "bearing_pedestal_negative",
+      "group": "carrier",
+      "representation": "original aluminium",
+      "density_kg_m3": 2700,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/bearing_pedestal_negative.step",
+      "sha256": "35480aad9c2246b3cbe56117b7a289cb62772d50465b289ac235d321cfeb25e4",
+      "volume_mm3": 3409.827946305986,
+      "mass_kg": 0.009206535455026163,
+      "COM_part_m": [
+        0.011648827106995075,
+        -0.01605811417137992,
+        -0.01648122468106035
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.1828106083257122e-06,
+          2.8249225944907954e-08,
+          7.117715521454926e-07
+        ],
+        [
+          2.8249225944907954e-08,
+          2.0957095556397425e-06,
+          -3.608844740465661e-08
+        ],
+        [
+          7.117715521454926e-07,
+          -3.608844740465661e-08,
+          1.0216778636219843e-06
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          -11.0,
+          -22.0,
+          -30.0
+        ],
+        [
+          35.0,
+          -11.0,
+          11.0
+        ]
+      ]
+    },
+    {
+      "id": "outer_cap_negative",
+      "group": "carrier",
+      "representation": "original steel",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "D16 shoulder opening <= SKF D17; shield contact has not been tolerance-qualified.",
+      "source_step": "parts/outer_cap_negative.step",
+      "sha256": "e01711f2a241a9e70c19c1545f798162783065e737ca0a115f41d9b8b126d4fc",
+      "volume_mm3": 249.57918679439751,
+      "mass_kg": 0.0019591966163360207,
+      "COM_part_m": [
+        0.0031678795689161527,
+        -0.019499999999999997,
+        -0.007105742529427785
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.2866257550383543e-07,
+          1.4279066817834972e-23,
+          3.2627703713996385e-08
+        ],
+        [
+          1.4279066817834972e-23,
+          2.138495257594686e-07,
+          0.0
+        ],
+        [
+          3.2627703713996385e-08,
+          0.0,
+          8.551348302502265e-08
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          -10.000000000000002,
+          -20.0,
+          -18.0
+        ],
+        [
+          14.0,
+          -19.0,
+          10.000000000000002
+        ]
+      ]
+    },
+    {
+      "id": "SKF_607_8_2Z_negative",
+      "group": "bearing",
+      "representation": "catalogue bearing envelope",
+      "density_kg_m3": null,
+      "catalogue_mass_kg": 0.0072,
+      "note": "8x19x6 catalogue annular allocation, not detailed supplier CAD.",
+      "source_step": "parts/SKF_607_8_2Z_negative.step",
+      "sha256": "a25e6f3c5dabc74b01e3780cc7178441c45649864534259107e2667f38a2c509",
+      "volume_mm3": 1399.579527174253,
+      "mass_kg": 0.0072,
+      "COM_part_m": [
+        6.018522432747586e-19,
+        -0.016000000000000004,
+        5.482976420570103e-19
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.1284999999999815e-07,
+          -2.190710301967687e-26,
+          1.1945758110590977e-23
+        ],
+        [
+          -2.190710301967687e-26,
+          3.825000000000021e-07,
+          -1.8715226182212634e-23
+        ],
+        [
+          1.1945758110590977e-23,
+          -1.8715226182212634e-23,
+          2.1285000000000202e-07
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          -9.5,
+          -19.0,
+          -9.5
+        ],
+        [
+          9.5,
+          -13.0,
+          9.5
+        ]
+      ]
+    },
+    {
+      "id": "cap_M3x6_negative_0",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "ISO4762 nominal envelope; exact SKU/grade/thread engagement/torque TBD. Tap engagement is an intentional CAD intersection.",
+      "source_step": "parts/cap_M3x6_negative_0.step",
+      "sha256": "ade5acce587e2c360dc2abfb547611ea774e74a7bfe5bf8325ee14fe85726294",
+      "volume_mm3": 113.68638415178066,
+      "mass_kg": 0.0008924381155914783,
+      "COM_part_m": [
+        2.7553715540716564e-20,
+        -0.019821243523316063,
+        -0.014
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.8902628035431705e-09,
+          3.997454861913708e-26,
+          2.4241703147838284e-26
+        ],
+        [
+          3.997454861913708e-26,
+          2.490185564441039e-09,
+          2.8558133635669955e-23
+        ],
+        [
+          2.4241703147838284e-26,
+          2.8558133635669955e-23,
+          6.8902628035432275e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          -2.75,
+          -23.0,
+          -16.75
+        ],
+        [
+          2.75,
+          -14.0,
+          -11.25
+        ]
+      ]
+    },
+    {
+      "id": "cap_M3x6_negative_10",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "ISO4762 nominal envelope; exact SKU/grade/thread engagement/torque TBD. Tap engagement is an intentional CAD intersection.",
+      "source_step": "parts/cap_M3x6_negative_10.step",
+      "sha256": "f91335d51b15f2fe56b0c4d0d531e62c9cc982d7cfdc1ece89cde4a526a7c95d",
+      "volume_mm3": 113.68638415178063,
+      "mass_kg": 0.000892438115591478,
+      "COM_part_m": [
+        0.009999999999999998,
+        -0.019821243523316063,
+        -0.014000000000000002
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.890262803543171e-09,
+          2.855813363566995e-23,
+          0.0
+        ],
+        [
+          2.855813363566995e-23,
+          2.490185564441096e-09,
+          2.855813363566995e-23
+        ],
+        [
+          0.0,
+          2.855813363566995e-23,
+          6.890262803543285e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          7.25,
+          -23.0,
+          -16.75
+        ],
+        [
+          12.75,
+          -14.0,
+          -11.25
+        ]
+      ]
+    },
+    {
+      "id": "foot_M3x12_negative_24",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "Nominal envelope; nut contact only, no preload claim.",
+      "source_step": "parts/foot_M3x12_negative_24.step",
+      "sha256": "608c91f98a25eb5c48f56a9379c10ec019f8207aaebc78e7189ad40f97eb3e64",
+      "volume_mm3": 156.0978849752428,
+      "mass_kg": 0.001225368397055656,
+      "COM_part_m": [
+        0.024,
+        -0.016,
+        -0.031424528301886794
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.6944261267718074e-08,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.694426126771853e-08,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          2.8647321310882563e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          21.25,
+          -18.75,
+          -37.0
+        ],
+        [
+          26.75,
+          -13.25,
+          -22.0
+        ]
+      ]
+    },
+    {
+      "id": "foot_M3_nut_negative_24",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/foot_M3_nut_negative_24.step",
+      "sha256": "f2eea206b3b3ab8c0d4f38d29f147f8f9ff9357b2e5c60ead14cfdb805ede6a8",
+      "volume_mm3": 45.908843985365365,
+      "mass_kg": 0.00036038442528511815,
+      "COM_part_m": [
+        0.024,
+        -0.016,
+        -0.024799999999999996
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.1348866879318641e-09,
+          0.0,
+          2.8558133635669943e-23
+        ],
+        [
+          0.0,
+          1.1348866879319783e-09,
+          0.0
+        ],
+        [
+          2.8558133635669943e-23,
+          0.0,
+          1.923804327589879e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          20.824573519457058,
+          -18.75,
+          -26.0
+        ],
+        [
+          27.175426480542942,
+          -13.25,
+          -23.6
+        ]
+      ]
+    },
+    {
+      "id": "foot_M3x12_negative_31",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "Nominal envelope; nut contact only, no preload claim.",
+      "source_step": "parts/foot_M3x12_negative_31.step",
+      "sha256": "2eaa04ace1c98f763ea626d19a81c95b060dd68264725c50cd2b3ed793ba40c2",
+      "volume_mm3": 156.09788497524283,
+      "mass_kg": 0.0012253683970556563,
+      "COM_part_m": [
+        0.031,
+        -0.016,
+        -0.031424528301886794
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.694426126771807e-08,
+          0.0,
+          -2.2846506908535955e-22
+        ],
+        [
+          0.0,
+          2.6944261267717846e-08,
+          0.0
+        ],
+        [
+          -2.2846506908535955e-22,
+          0.0,
+          2.8647321310883704e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          28.25,
+          -18.75,
+          -37.0
+        ],
+        [
+          33.75,
+          -13.25,
+          -22.0
+        ]
+      ]
+    },
+    {
+      "id": "foot_M3_nut_negative_31",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/foot_M3_nut_negative_31.step",
+      "sha256": "740aa720391916c96485f208defdca34892c851c19ca5f138a0b25f7117c5677",
+      "volume_mm3": 45.908843985365316,
+      "mass_kg": 0.0003603844252851177,
+      "COM_part_m": [
+        0.031,
+        -0.016,
+        -0.0248
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.134886687931864e-09,
+          -2.8558133635669943e-23,
+          5.711626727133989e-23
+        ],
+        [
+          -2.8558133635669943e-23,
+          1.134886687931921e-09,
+          -5.711626727133989e-23
+        ],
+        [
+          5.711626727133989e-23,
+          -5.711626727133989e-23,
+          1.923804327589936e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          27.824573519457058,
+          -18.75,
+          -26.0
+        ],
+        [
+          34.17542648054294,
+          -13.25,
+          -23.6
+        ]
+      ]
+    },
+    {
+      "id": "bearing_pedestal_positive",
+      "group": "carrier",
+      "representation": "original aluminium",
+      "density_kg_m3": 2700,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/bearing_pedestal_positive.step",
+      "sha256": "b12dfaf9fc2aa65d3b3464ff264aefbaa958e4a3eba6079b305bdfab5a7b31d6",
+      "volume_mm3": 3409.827946305986,
+      "mass_kg": 0.009206535455026163,
+      "COM_part_m": [
+        0.011648827106995075,
+        0.01605811417137992,
+        -0.01648122468106035
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.1828106083257122e-06,
+          -2.8249225944907322e-08,
+          7.11771552145492e-07
+        ],
+        [
+          -2.8249225944907322e-08,
+          2.0957095556397425e-06,
+          3.608844740465661e-08
+        ],
+        [
+          7.11771552145492e-07,
+          3.608844740465661e-08,
+          1.0216778636219843e-06
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          -11.0,
+          11.0,
+          -30.0
+        ],
+        [
+          35.0,
+          22.0,
+          11.0
+        ]
+      ]
+    },
+    {
+      "id": "outer_cap_positive",
+      "group": "carrier",
+      "representation": "original steel",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "D16 shoulder opening <= SKF D17; shield contact has not been tolerance-qualified.",
+      "source_step": "parts/outer_cap_positive.step",
+      "sha256": "e5342f7947eeac96b07461b374310977aaafa978e092c77839351934b86df529",
+      "volume_mm3": 249.57918679439751,
+      "mass_kg": 0.0019591966163360207,
+      "COM_part_m": [
+        0.0031678795689161527,
+        0.019499999999999997,
+        -0.007105742529427785
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.2866257550383543e-07,
+          -1.4279066817834972e-23,
+          3.2627703713996385e-08
+        ],
+        [
+          -1.4279066817834972e-23,
+          2.138495257594686e-07,
+          0.0
+        ],
+        [
+          3.2627703713996385e-08,
+          0.0,
+          8.551348302502265e-08
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          -10.000000000000002,
+          19.0,
+          -18.0
+        ],
+        [
+          14.0,
+          20.0,
+          10.000000000000002
+        ]
+      ]
+    },
+    {
+      "id": "SKF_607_8_2Z_positive",
+      "group": "bearing",
+      "representation": "catalogue bearing envelope",
+      "density_kg_m3": null,
+      "catalogue_mass_kg": 0.0072,
+      "note": "8x19x6 catalogue annular allocation, not detailed supplier CAD.",
+      "source_step": "parts/SKF_607_8_2Z_positive.step",
+      "sha256": "9442a61644efbc52514371eae39f70f46dbc12727a3dc29dcadf31eb3eab0e9f",
+      "volume_mm3": 1399.579527174253,
+      "mass_kg": 0.0072,
+      "COM_part_m": [
+        6.018522432747586e-19,
+        0.016000000000000004,
+        5.482976420570103e-19
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.1284999999999815e-07,
+          2.190710301967687e-26,
+          1.1945758110590977e-23
+        ],
+        [
+          2.190710301967687e-26,
+          3.825000000000021e-07,
+          1.8715226182212634e-23
+        ],
+        [
+          1.1945758110590977e-23,
+          1.8715226182212634e-23,
+          2.1285000000000202e-07
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          -9.5,
+          13.0,
+          -9.5
+        ],
+        [
+          9.5,
+          19.0,
+          9.5
+        ]
+      ]
+    },
+    {
+      "id": "cap_M3x6_positive_0",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "ISO4762 nominal envelope; exact SKU/grade/thread engagement/torque TBD. Tap engagement is an intentional CAD intersection.",
+      "source_step": "parts/cap_M3x6_positive_0.step",
+      "sha256": "9fda0de74a1dd4486b99e99dfef3fa499438559736696b5a19179ad96fe2a46f",
+      "volume_mm3": 113.68638415178066,
+      "mass_kg": 0.0008924381155914783,
+      "COM_part_m": [
+        2.7553715540716564e-20,
+        0.019821243523316063,
+        -0.014
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.8902628035431705e-09,
+          -3.997454861913708e-26,
+          2.4241703147838284e-26
+        ],
+        [
+          -3.997454861913708e-26,
+          2.490185564441039e-09,
+          -2.8558133635669955e-23
+        ],
+        [
+          2.4241703147838284e-26,
+          -2.8558133635669955e-23,
+          6.8902628035432275e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          -2.75,
+          14.0,
+          -16.75
+        ],
+        [
+          2.75,
+          23.0,
+          -11.25
+        ]
+      ]
+    },
+    {
+      "id": "cap_M3x6_positive_10",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "ISO4762 nominal envelope; exact SKU/grade/thread engagement/torque TBD. Tap engagement is an intentional CAD intersection.",
+      "source_step": "parts/cap_M3x6_positive_10.step",
+      "sha256": "ce604ae470a653fec29c3771de9224f906901fb1f0b31c44e8ff355ede444af9",
+      "volume_mm3": 113.68638415178063,
+      "mass_kg": 0.000892438115591478,
+      "COM_part_m": [
+        0.009999999999999998,
+        0.019821243523316063,
+        -0.014000000000000002
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.890262803543171e-09,
+          -2.855813363566995e-23,
+          0.0
+        ],
+        [
+          -2.855813363566995e-23,
+          2.490185564441096e-09,
+          -2.855813363566995e-23
+        ],
+        [
+          0.0,
+          -2.855813363566995e-23,
+          6.890262803543285e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          7.25,
+          14.0,
+          -16.75
+        ],
+        [
+          12.75,
+          23.0,
+          -11.25
+        ]
+      ]
+    },
+    {
+      "id": "foot_M3x12_positive_24",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "Nominal envelope; nut contact only, no preload claim.",
+      "source_step": "parts/foot_M3x12_positive_24.step",
+      "sha256": "e348f8ae091480da987bcd90e8ced1040f595b94a18bedde9193f5fcaf964bec",
+      "volume_mm3": 156.0978849752428,
+      "mass_kg": 0.001225368397055656,
+      "COM_part_m": [
+        0.024,
+        0.016,
+        -0.031424528301886794
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.6944261267718302e-08,
+          0.0,
+          1.1423253454267977e-22
+        ],
+        [
+          0.0,
+          2.694426126771853e-08,
+          0.0
+        ],
+        [
+          1.1423253454267977e-22,
+          0.0,
+          2.8647321310883704e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          21.25,
+          13.25,
+          -37.0
+        ],
+        [
+          26.75,
+          18.75,
+          -22.0
+        ]
+      ]
+    },
+    {
+      "id": "foot_M3_nut_positive_24",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/foot_M3_nut_positive_24.step",
+      "sha256": "d24c211991cacbaaef14673da1ffecf708cd16af0709880ced2cff0f2483787d",
+      "volume_mm3": 45.908843985365365,
+      "mass_kg": 0.00036038442528511815,
+      "COM_part_m": [
+        0.024,
+        0.016,
+        -0.024799999999999996
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.1348866879319212e-09,
+          0.0,
+          2.8558133635669943e-23
+        ],
+        [
+          0.0,
+          1.1348866879319783e-09,
+          0.0
+        ],
+        [
+          2.8558133635669943e-23,
+          0.0,
+          1.923804327589879e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          20.824573519457058,
+          13.25,
+          -26.0
+        ],
+        [
+          27.175426480542942,
+          18.75,
+          -23.6
+        ]
+      ]
+    },
+    {
+      "id": "foot_M3x12_positive_31",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "Nominal envelope; nut contact only, no preload claim.",
+      "source_step": "parts/foot_M3x12_positive_31.step",
+      "sha256": "2a78cda83fa8a8d92162da36345cd6eae5b691756e9c2040f37640a46357e12a",
+      "volume_mm3": 156.09788497524283,
+      "mass_kg": 0.0012253683970556563,
+      "COM_part_m": [
+        0.031,
+        0.016,
+        -0.031424528301886794
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          2.694426126771807e-08,
+          0.0,
+          -2.2846506908535955e-22
+        ],
+        [
+          0.0,
+          2.6944261267717846e-08,
+          0.0
+        ],
+        [
+          -2.2846506908535955e-22,
+          0.0,
+          2.8647321310883704e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          28.25,
+          13.25,
+          -37.0
+        ],
+        [
+          33.75,
+          18.75,
+          -22.0
+        ]
+      ]
+    },
+    {
+      "id": "foot_M3_nut_positive_31",
+      "group": "carrier",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/foot_M3_nut_positive_31.step",
+      "sha256": "37f5f282abf2bb70a4e8c9cdea492b79446737e9af527257dca5dece883b3b47",
+      "volume_mm3": 45.908843985365316,
+      "mass_kg": 0.0003603844252851177,
+      "COM_part_m": [
+        0.030999999999999993,
+        0.015999999999999997,
+        -0.0248
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.134886687931864e-09,
+          -2.8558133635669943e-23,
+          1.713488018140197e-22
+        ],
+        [
+          -2.8558133635669943e-23,
+          1.134886687931921e-09,
+          5.711626727133989e-23
+        ],
+        [
+          1.713488018140197e-22,
+          5.711626727133989e-23,
+          1.9238043275899927e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          27.824573519457058,
+          13.25,
+          -26.0
+        ],
+        [
+          34.17542648054294,
+          18.75,
+          -23.6
+        ]
+      ]
+    },
+    {
+      "id": "detachable_cam_crank",
+      "group": "rotor",
+      "representation": "original steel",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "4mm mounting seat,2mm main ligament between D8 shaft and D4 stud. Rear D10.4 service relief deliberately opens into D8 bore; no0.4mm metal sliver. CFS tightened off-shaft; net section and pin retention not strength released.",
+      "source_step": "parts/detachable_cam_crank.step",
+      "sha256": "2238fa82f33f8fa5cfbd0bd664293b2dd668acb68c7851a37c319db410317fce",
+      "volume_mm3": 850.0298537421841,
+      "mass_kg": 0.006672734351876146,
+      "COM_part_m": [
+        0.0011317555881391506,
+        0.025426211050106926,
+        -0.0011317435287022857
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.794583307096934e-07,
+          -1.6745208620206327e-08,
+          4.724262460170258e-08
+        ],
+        [
+          -1.6745208620206327e-08,
+          3.030536374660363e-07,
+          1.6745384105598968e-08
+        ],
+        [
+          4.724262460170258e-08,
+          1.6745384105598968e-08,
+          1.79458180474098e-07
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          -7.0000001,
+          20.9999999,
+          -10.65685424949238
+        ],
+        [
+          10.65685424949238,
+          28.5000001,
+          7.0000001
+        ]
+      ]
+    },
+    {
+      "id": "custom_D3_crosspin",
+      "group": "rotor",
+      "representation": "custom pin envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "Unselected custom pin; end retention/fit/fatigue and tool path unresolved.",
+      "source_step": "parts/custom_D3_crosspin.step",
+      "sha256": "bcf9a5625a49262f1c356f963b96e5e0ddc2fdf7e7b587886bd115bb919001a5",
+      "volume_mm3": 98.96016858807847,
+      "mass_kg": 0.0007768373234164161,
+      "COM_part_m": [
+        1.0052123437711858e-18,
+        0.023,
+        1.5796193973547203e-18
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.999627966199985e-09,
+          -1.673328142715036e-24,
+          -6.125685977356534e-09
+        ],
+        [
+          -1.673328142715036e-24,
+          1.312531394355653e-08,
+          -3.34665628543004e-25
+        ],
+        [
+          -6.125685977356534e-09,
+          -3.34665628543004e-25,
+          6.999627966199985e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          -6.010407640085653,
+          21.5,
+          -6.010407640085653
+        ],
+        [
+          6.010407640085656,
+          24.5,
+          6.0104076400856545
+        ]
+      ]
+    },
+    {
+      "id": "positive_inner_ring_spacer",
+      "group": "rotor",
+      "representation": "original steel",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "D10/D8x2 contacts only inner-ring abutment region. Crank crosspin locates the stack axially; zero nominal preload and no fit release.",
+      "source_step": "parts/positive_inner_ring_spacer.step",
+      "sha256": "dea6d1d975ebb6bccd82e065d2ba9f80b3286bda5d938801b6ae72515ef8b6d8",
+      "volume_mm3": 56.54866776461627,
+      "mass_kg": 0.00044390704195223775,
+      "COM_part_m": [
+        -5.40977909984105e-20,
+        0.020000000000000007,
+        3.7695462891419463e-19
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          4.6980161939943605e-09,
+          8.984804985731118e-28,
+          9.43499372623168e-25
+        ],
+        [
+          8.984804985731118e-28,
+          9.100094360020927e-09,
+          -2.0079937712580416e-24
+        ],
+        [
+          9.43499372623168e-25,
+          -2.0079937712580416e-24,
+          4.6980161939944755e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          -5.0,
+          19.0,
+          -5.0
+        ],
+        [
+          5.0,
+          21.0,
+          5.0
+        ]
+      ]
+    },
+    {
+      "id": "negative_inner_ring_end_washer",
+      "group": "rotor",
+      "representation": "original steel",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "D10 abutment,1mm thick; negative shaft ends at -18.8 leaving0.2 nominal end gap.",
+      "source_step": "parts/negative_inner_ring_end_washer.step",
+      "sha256": "a92f6cdc57f623f476414387bdb7f0fc4788cecb54b5855f0382d286e45fcc0d",
+      "volume_mm3": 70.49733914655496,
+      "mass_kg": 0.0005534041123004565,
+      "COM_part_m": [
+        1.182842180552329e-19,
+        -0.019499999999999997,
+        -5.480456670376825e-19
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          3.8590713431084965e-09,
+          3.963237187830364e-40,
+          2.715932671497818e-25
+        ],
+        [
+          3.963237187830364e-40,
+          7.625908667500332e-09,
+          5.037414929631708e-25
+        ],
+        [
+          2.715932671497818e-25,
+          5.037414929631708e-25,
+          3.859071343108611e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          -5.0,
+          -20.0,
+          -5.0
+        ],
+        [
+          5.0,
+          -19.0,
+          5.0
+        ]
+      ]
+    },
+    {
+      "id": "negative_end_M3x8",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "Nominal ISO4762 envelope, exact SKU/grade/preload TBD. Nominal tapped depth7.3; thread intersection intentional.",
+      "source_step": "parts/negative_end_M3x8.step",
+      "sha256": "ce27369149bcc78635b96fa8c56445e49a188e9d7d939397194f16e4fe1e40b2",
+      "volume_mm3": 127.82355109293471,
+      "mass_kg": 0.0010034148760795375,
+      "COM_part_m": [
+        5.2300557056658054e-20,
+        -0.019066820276497698,
+        -3.7521751080859923e-19
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.1582259453601496e-08,
+          -4.780857430282195e-26,
+          -1.173724679441939e-26
+        ],
+        [
+          -4.780857430282195e-26,
+          2.615034419990133e-09,
+          7.0843341433801585e-25
+        ],
+        [
+          -1.173724679441939e-26,
+          7.0843341433801585e-25,
+          1.1582259453601554e-08
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          -2.75,
+          -23.0,
+          -2.75
+        ],
+        [
+          2.75,
+          -12.0,
+          2.75
+        ]
+      ]
+    },
+    {
+      "id": "IKO_CFS4",
+      "group": "rotor",
+      "representation": "catalogue follower envelope",
+      "density_kg_m3": null,
+      "catalogue_mass_kg": 0.004,
+      "note": "D8 front-unit conservative envelope; rolling part y29.5..34.5. Catalogue mass excludes nut.",
+      "source_step": "parts/IKO_CFS4.step",
+      "sha256": "69b6a2878dab30dcd45b646fba488e60916c68e9db3eb68b45a5a567f78fffab",
+      "volume_mm3": 452.3893421169301,
+      "mass_kg": 0.004,
+      "COM_part_m": [
+        0.005656854249492379,
+        0.03033333333333334,
+        -0.005656854249492381
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          6.966666666666519e-08,
+          -1.2866718000271179e-22,
+          3.2166795000677946e-23
+        ],
+        [
+          -1.2866718000271179e-22,
+          2.666666666666684e-08,
+          -1.2866718000271179e-22
+        ],
+        [
+          3.2166795000677946e-23,
+          -1.2866718000271179e-22,
+          6.96666666666657e-08
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          1.6568542494923797,
+          20.5,
+          -9.65685424949238
+        ],
+        [
+          9.65685424949238,
+          35.5,
+          -1.6568542494923797
+        ]
+      ],
+      "outer_ring_spin_inertia_kg_m2": null,
+      "outer_ring_spin_sensitivity_upper_bound_kg_m2": 6.4e-08,
+      "spin_note": "Total4g allocation is a rigid-to-crank uniform envelope proxy. Actual ring/stud mass split and independent ring spin are unknown.0..m*R^2 is only an upper sensitivity interval, not a measured or identified inertia."
+    },
+    {
+      "id": "IKO_CFS4_supplied_nut",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "Nominal AF7x3.2 envelope minus thread major diameter; calculated proxy mass, not catalogue mass.",
+      "source_step": "parts/IKO_CFS4_supplied_nut.step",
+      "sha256": "14cd5801c1fb4d59a540b60c0412202fc838b06e92de8fdf811f5c4c87651db8",
+      "volume_mm3": 95.58039734745066,
+      "mass_kg": 0.0007503061191774877,
+      "COM_part_m": [
+        0.00565685424949238,
+        0.0229,
+        -0.005656854249492379
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          3.9518644155805194e-09,
+          1.4279066817834975e-23,
+          0.0
+        ],
+        [
+          1.4279066817834975e-23,
+          6.62320638776506e-09,
+          1.4279066817834975e-23
+        ],
+        [
+          0.0,
+          1.4279066817834975e-23,
+          3.951864415580634e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          1.7531114987159429,
+          21.3,
+          -9.560597000268817
+        ],
+        [
+          9.560597000268817,
+          24.5,
+          -1.7531114987159417
+        ]
+      ]
+    },
+    {
+      "id": "root_NBK_SSHS_M3_16_FT_7_-4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "NBK head D6x1.3; head on FORM02 Z7; candidate underhead16. Mass is nominal solid proxy.",
+      "source_step": "parts/root_NBK_SSHS_M3_16_FT_7_-4.5.step",
+      "sha256": "4ba3c6685cad1011985a6cd689488865aefd365c451ab75ee623a914ebb9a94a",
+      "volume_mm3": 149.85396957623314,
+      "mass_kg": 0.00117635366117343,
+      "COM_part_m": [
+        0.007,
+        -0.0045000000000000005,
+        -0.0023783018867924548
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          3.64230547384271e-08,
+          0.0,
+          -7.139533408917486e-24
+        ],
+        [
+          0.0,
+          3.6423054738427096e-08,
+          1.7848833522293715e-24
+        ],
+        [
+          -7.139533408917486e-24,
+          1.7848833522293715e-24,
+          2.2972189421028456e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          4.0,
+          -7.5,
+          -12.5
+        ],
+        [
+          10.0,
+          -1.5,
+          4.8
+        ]
+      ]
+    },
+    {
+      "id": "root_Wurth_51493_7_-4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/root_Wurth_51493_7_-4.5.step",
+      "sha256": "d4bb7809a9cee5f8dd159eee0cf18ece71d913e55c9558235b0fc4e4c5161ac1",
+      "volume_mm3": 15.221016406642551,
+      "mass_kg": 0.00011948497879214404,
+      "COM_part_m": [
+        0.007,
+        -0.004499999999999999,
+        -0.007749999999999999
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          4.448824043694254e-10,
+          8.924416761146857e-25,
+          1.7848833522293715e-24
+        ],
+        [
+          8.924416761146857e-25,
+          4.4488240436941476e-10,
+          -1.7848833522293715e-24
+        ],
+        [
+          1.7848833522293715e-24,
+          -1.7848833522293715e-24,
+          8.84786267955832e-10
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          3.5,
+          -8.0,
+          -8.0
+        ],
+        [
+          10.5,
+          -1.0,
+          -7.5
+        ]
+      ]
+    },
+    {
+      "id": "root_Wurth_031093_7_-4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/root_Wurth_031093_7_-4.5.step",
+      "sha256": "dd3b432563c3ae001a33fd4a49469e783bb7636021aabfcfb1452bc9c7cb51a0",
+      "volume_mm3": 45.90884398536537,
+      "mass_kg": 0.0003603844252851182,
+      "COM_part_m": [
+        0.007,
+        -0.004499999999999999,
+        -0.009200000000000002
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.1348866879318284e-09,
+          3.569766704458743e-24,
+          3.569766704458743e-24
+        ],
+        [
+          3.569766704458743e-24,
+          1.134886687931807e-09,
+          0.0
+        ],
+        [
+          3.569766704458743e-24,
+          0.0,
+          1.9238043275899286e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          3.8245735194570583,
+          -7.25,
+          -10.4
+        ],
+        [
+          10.175426480542942,
+          -1.7499999999999996,
+          -8.0
+        ]
+      ]
+    },
+    {
+      "id": "root_NBK_SSHS_M3_16_FT_7_4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "NBK head D6x1.3; head on FORM02 Z7; candidate underhead16. Mass is nominal solid proxy.",
+      "source_step": "parts/root_NBK_SSHS_M3_16_FT_7_4.5.step",
+      "sha256": "4e99a7834595cda2e591d740769f5ac1c9d33f1db0075b5785cca67ddb16fb6e",
+      "volume_mm3": 149.85396957623314,
+      "mass_kg": 0.00117635366117343,
+      "COM_part_m": [
+        0.006999999999999999,
+        0.0045000000000000005,
+        -0.0023783018867924548
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          3.6423054738427136e-08,
+          0.0,
+          -3.569766704458743e-24
+        ],
+        [
+          0.0,
+          3.642305473842711e-08,
+          -1.7848833522293715e-24
+        ],
+        [
+          -3.569766704458743e-24,
+          -1.7848833522293715e-24,
+          2.2972189421028593e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          4.0,
+          1.5,
+          -12.5
+        ],
+        [
+          10.0,
+          7.5,
+          4.8
+        ]
+      ]
+    },
+    {
+      "id": "root_Wurth_51493_7_4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/root_Wurth_51493_7_4.5.step",
+      "sha256": "b98e020ee8a1b2a20416262b0954f16b1d4530b60733b9b4d35c7fca6329c1a6",
+      "volume_mm3": 15.221016406642551,
+      "mass_kg": 0.00011948497879214404,
+      "COM_part_m": [
+        0.007,
+        0.004499999999999999,
+        -0.007749999999999999
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          4.448824043694254e-10,
+          -8.924416761146857e-25,
+          1.7848833522293715e-24
+        ],
+        [
+          -8.924416761146857e-25,
+          4.4488240436941476e-10,
+          1.7848833522293715e-24
+        ],
+        [
+          1.7848833522293715e-24,
+          1.7848833522293715e-24,
+          8.84786267955832e-10
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          3.5,
+          1.0,
+          -8.0
+        ],
+        [
+          10.5,
+          8.0,
+          -7.5
+        ]
+      ]
+    },
+    {
+      "id": "root_Wurth_031093_7_4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/root_Wurth_031093_7_4.5.step",
+      "sha256": "d35a13fc285ad815b9049b9689c75b0ffd0d45e555d576f82182cc62a7b5af51",
+      "volume_mm3": 45.908843985365365,
+      "mass_kg": 0.00036038442528511815,
+      "COM_part_m": [
+        0.007000000000000001,
+        0.004500000000000001,
+        -0.0092
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.1348866879318141e-09,
+          1.7848833522293715e-24,
+          3.569766704458743e-24
+        ],
+        [
+          1.7848833522293715e-24,
+          1.1348866879318284e-09,
+          0.0
+        ],
+        [
+          3.569766704458743e-24,
+          0.0,
+          1.9238043275899075e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          3.8245735194570583,
+          1.75,
+          -10.4
+        ],
+        [
+          10.175426480542942,
+          7.25,
+          -8.0
+        ]
+      ]
+    },
+    {
+      "id": "root_NBK_SSHS_M3_16_FT_17_-4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "NBK head D6x1.3; head on FORM02 Z7; candidate underhead16. Mass is nominal solid proxy.",
+      "source_step": "parts/root_NBK_SSHS_M3_16_FT_17_-4.5.step",
+      "sha256": "dd13e544b47b727cd22248f278dfd5af4011921f1566ca6163100ee086f15ba5",
+      "volume_mm3": 149.85396957623314,
+      "mass_kg": 0.00117635366117343,
+      "COM_part_m": [
+        0.017,
+        -0.0045000000000000005,
+        -0.0023783018867924548
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          3.64230547384271e-08,
+          0.0,
+          -1.4279066817834972e-23
+        ],
+        [
+          0.0,
+          3.64230547384271e-08,
+          1.7848833522293715e-24
+        ],
+        [
+          -1.4279066817834972e-23,
+          1.7848833522293715e-24,
+          2.2972189421028737e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          14.0,
+          -7.5,
+          -12.5
+        ],
+        [
+          20.0,
+          -1.5,
+          4.8
+        ]
+      ]
+    },
+    {
+      "id": "root_Wurth_51493_17_-4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/root_Wurth_51493_17_-4.5.step",
+      "sha256": "8e264b083187219e77aaa6d7c4e9e37a0fdaf0a456ff06f9c73ca001f775d6bd",
+      "volume_mm3": 15.221016406642555,
+      "mass_kg": 0.00011948497879214407,
+      "COM_part_m": [
+        0.016999999999999998,
+        -0.004499999999999999,
+        -0.007749999999999998
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          4.448824043694254e-10,
+          0.0,
+          3.569766704458744e-24
+        ],
+        [
+          0.0,
+          4.4488240436942903e-10,
+          0.0
+        ],
+        [
+          3.569766704458744e-24,
+          0.0,
+          8.847862679558355e-10
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          13.5,
+          -8.0,
+          -8.0
+        ],
+        [
+          20.5,
+          -1.0,
+          -7.5
+        ]
+      ]
+    },
+    {
+      "id": "root_Wurth_031093_17_-4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/root_Wurth_031093_17_-4.5.step",
+      "sha256": "88b32d5cad2a4e6e36098e7bb09263ddb8bab705f066c184d044aa3466fd73f2",
+      "volume_mm3": 45.9088439853654,
+      "mass_kg": 0.0003603844252851184,
+      "COM_part_m": [
+        0.017,
+        -0.004499999999999998,
+        -0.009200000000000003
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.1348866879317998e-09,
+          1.070930011337623e-23,
+          -7.139533408917487e-24
+        ],
+        [
+          1.070930011337623e-23,
+          1.1348866879317785e-09,
+          -1.784883352229372e-24
+        ],
+        [
+          -7.139533408917487e-24,
+          -1.784883352229372e-24,
+          1.923804327589879e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          13.824573519457058,
+          -7.25,
+          -10.4
+        ],
+        [
+          20.175426480542942,
+          -1.7499999999999996,
+          -8.0
+        ]
+      ]
+    },
+    {
+      "id": "root_NBK_SSHS_M3_16_FT_17_4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "NBK head D6x1.3; head on FORM02 Z7; candidate underhead16. Mass is nominal solid proxy.",
+      "source_step": "parts/root_NBK_SSHS_M3_16_FT_17_4.5.step",
+      "sha256": "00a285f4544596c39d8d966dfe2714a59676f56cebe91cccce766dff75d73c6a",
+      "volume_mm3": 149.85396957623314,
+      "mass_kg": 0.00117635366117343,
+      "COM_part_m": [
+        0.017,
+        0.0045000000000000005,
+        -0.0023783018867924548
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          3.6423054738427136e-08,
+          0.0,
+          -1.4279066817834972e-23
+        ],
+        [
+          0.0,
+          3.64230547384271e-08,
+          -1.7848833522293715e-24
+        ],
+        [
+          -1.4279066817834972e-23,
+          -1.7848833522293715e-24,
+          2.2972189421028737e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          14.0,
+          1.5,
+          -12.5
+        ],
+        [
+          20.0,
+          7.5,
+          4.8
+        ]
+      ]
+    },
+    {
+      "id": "root_Wurth_51493_17_4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/root_Wurth_51493_17_4.5.step",
+      "sha256": "8875125bda6599813c6a58b24ce2d0bd7b8e98ceb725edc5297ab3bfbc5f20c0",
+      "volume_mm3": 15.221016406642555,
+      "mass_kg": 0.00011948497879214407,
+      "COM_part_m": [
+        0.016999999999999998,
+        0.0045000000000000005,
+        -0.007749999999999998
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          4.4488240436942365e-10,
+          -1.784883352229372e-24,
+          3.569766704458744e-24
+        ],
+        [
+          -1.784883352229372e-24,
+          4.4488240436942903e-10,
+          0.0
+        ],
+        [
+          3.569766704458744e-24,
+          0.0,
+          8.847862679558355e-10
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          13.5,
+          1.0,
+          -8.0
+        ],
+        [
+          20.5,
+          8.0,
+          -7.5
+        ]
+      ]
+    },
+    {
+      "id": "root_Wurth_031093_17_4.5",
+      "group": "rotor",
+      "representation": "catalogue screw envelope",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "",
+      "source_step": "parts/root_Wurth_031093_17_4.5.step",
+      "sha256": "ea756cbfd872d81d89df3cb3796b69d0e74ed14a789cd8aedb2cb9be597ad726",
+      "volume_mm3": 45.9088439853654,
+      "mass_kg": 0.0003603844252851184,
+      "COM_part_m": [
+        0.017,
+        0.0045000000000000005,
+        -0.0092
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          1.1348866879318356e-09,
+          -3.569766704458744e-24,
+          1.4279066817834975e-23
+        ],
+        [
+          -3.569766704458744e-24,
+          1.134886687931807e-09,
+          -1.784883352229372e-24
+        ],
+        [
+          1.4279066817834975e-23,
+          -1.784883352229372e-24,
+          1.9238043275899075e-09
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": true,
+      "bbox_part_mm": [
+        [
+          13.824573519457058,
+          1.75,
+          -10.4
+        ],
+        [
+          20.175426480542942,
+          7.25,
+          -8.0
+        ]
+      ]
+    },
+    {
+      "id": "fixed_fold_guide",
+      "group": "guide",
+      "representation": "original steel",
+      "density_kg_m3": 7850,
+      "catalogue_mass_kg": null,
+      "note": "4mm plate, slot8.3/wall3; two D4.5 attachment holes at head x45/94,z-9. Hardening/curved-track contact/palm interface unqualified. Not a load-closed palm.",
+      "source_step": "parts/fixed_fold_guide.step",
+      "sha256": "e054a68aaa8f1106553b35970c8fe2a5108cb8b03f9869dd46d76730e7b49177",
+      "volume_mm3": 3677.064161095307,
+      "mass_kg": 0.02886495366459816,
+      "COM_part_m": [
+        0.06608207986198053,
+        0.03200000000000006,
+        0.011825364599400461
+      ],
+      "inertia_COM_part_axes_kg_m2": [
+        [
+          5.813228499493264e-06,
+          1.389067620038986e-19,
+          1.6223976312519498e-06
+        ],
+        [
+          1.389067620038986e-19,
+          2.1163407825566128e-05,
+          2.3760367184877395e-20
+        ],
+        [
+          1.6223976312519498e-06,
+          2.3760367184877395e-20,
+          1.5427152535844917e-05
+        ]
+      ],
+      "inertia_is_uniform_envelope_proxy": false,
+      "bbox_part_mm": [
+        [
+          29.506854249492385,
+          30.0,
+          -16.0
+        ],
+        [
+          103.8068538109395,
+          34.00000000000001,
+          32.80685424949238
+        ]
+      ]
+    }
+  ],
+  "known_branch_nominal_mass_excluding_FORM02_kg": 0.14219338529891073,
+  "scope": "Assumed-material and catalogue envelope mass. No rail/palm/motor/differential/wires/complete electronics. Not whole-head mass."
+}

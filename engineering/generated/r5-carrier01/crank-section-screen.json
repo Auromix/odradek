@@ -1,0 +1,135 @@
+{
+  "load": {
+    "follower_N": 282,
+    "head_force": "+Z at q90; normal-load-only conditional grip screen",
+    "application_in_crank_basis_mm": [
+      8,
+      32,
+      0
+    ],
+    "catalogue_load_inputs": "CAM-HARDWARE01, not a measured grasp"
+  },
+  "basis": "s=(x-z)/sqrt2 along center line; t=(x+z)/sqrt2 transverse; y tangent unchanged",
+  "actual_crank_sections": [
+    {
+      "section_s_mm": 4.25,
+      "convergence_relative_change": 4.2905297780924435e-06,
+      "result": {
+        "slice_width_mm": 0.02,
+        "area_mm2": 62.77448706509953,
+        "centroid_y_t_mm": [
+          25.680514918917957,
+          -3.558733805417181e-14
+        ],
+        "I_about_y_mm4": 907.307087193442,
+        "I_about_t_mm4": 230.16618260378382,
+        "I_tensor_yt_mm4": 3.3387058524400887e-12,
+        "force_st_N": [
+          199.4041122946064,
+          199.4041122946064
+        ],
+        "moment_syt_Nmm": [
+          1260.1313127521735,
+          -747.7669777007281,
+          -1260.1313127521735
+        ],
+        "maximum_abs_axial_plus_linear_bending_MPa": 27.039114631302265,
+        "average_transverse_shear_MPa": 3.17651519936462,
+        "torsion_about_s_is_not_resolved_Nmm": 1260.1313127521735
+      }
+    },
+    {
+      "section_s_mm": 4.75,
+      "convergence_relative_change": 1.0770833215558268e-06,
+      "result": {
+        "slice_width_mm": 0.02,
+        "area_mm2": 55.60110305505591,
+        "centroid_y_t_mm": [
+          25.98894106052401,
+          3.909290276573549e-15
+        ],
+        "I_about_y_mm4": 737.965267621102,
+        "I_about_t_mm4": 163.80278850653323,
+        "I_tensor_yt_mm4": -6.749437267965824e-12,
+        "force_st_N": [
+          199.4041122946064,
+          199.4041122946064
+        ],
+        "moment_syt_Nmm": [
+          1198.6298717767681,
+          -648.0650549252581,
+          -1198.6298717767681
+        ],
+        "maximum_abs_axial_plus_linear_bending_MPa": 37.4437948613167,
+        "average_transverse_shear_MPa": 3.586333747680465,
+        "torsion_about_s_is_not_resolved_Nmm": 1198.6298717767681
+      }
+    },
+    {
+      "section_s_mm": 5.25,
+      "convergence_relative_change": 1.050279306618223e-05,
+      "result": {
+        "slice_width_mm": 0.02,
+        "area_mm2": 48.50799361482806,
+        "centroid_y_t_mm": [
+          26.382717154175204,
+          -7.351154544821023e-14
+        ],
+        "I_about_y_mm4": 571.455622700852,
+        "I_about_t_mm4": 84.87032142961785,
+        "I_tensor_yt_mm4": -2.1987852200827475e-12,
+        "force_st_N": [
+          199.4041122946064,
+          199.4041122946064
+        ],
+        "moment_syt_Nmm": [
+          1120.1092993794139,
+          -548.3632771190499,
+          -1120.1092993794139
+        ],
+        "maximum_abs_axial_plus_linear_bending_MPa": 71.38359226074225,
+        "average_transverse_shear_MPa": 4.110747475518179,
+        "torsion_about_s_is_not_resolved_Nmm": 1120.1092993794139
+      }
+    },
+    {
+      "section_s_mm": 5.75,
+      "convergence_relative_change": 6.059809063828921e-07,
+      "result": {
+        "slice_width_mm": 0.02,
+        "area_mm2": 45.95811875812254,
+        "centroid_y_t_mm": [
+          26.500000000000025,
+          1.2999634912619705e-14
+        ],
+        "I_about_y_mm4": 505.57499722962575,
+        "I_about_t_mm4": 61.27749167738738,
+        "I_tensor_yt_mm4": 1.0581813203459785e-13,
+        "force_st_N": [
+          199.4041122946064,
+          199.4041122946064
+        ],
+        "moment_syt_Nmm": [
+          1096.7226176203303,
+          -448.6595513956191,
+          -1096.7226176203303
+        ],
+        "maximum_abs_axial_plus_linear_bending_MPa": 45.234441958309816,
+        "average_transverse_shear_MPa": 4.338822338313492,
+        "torsion_about_s_is_not_resolved_Nmm": 1096.7226176203303
+      }
+    }
+  ],
+  "nominal_shaft_torque_Nm": 1.5952328983568511,
+  "unnotched_D8_shaft_torsional_shear_MPa": 15.868075072268994,
+  "D3_pin_double_shear_average_MPa": 28.209911239589324,
+  "removed_sliver": {
+    "previous_back_hub_ligament_mm": 0.4,
+    "current_service_relief_D_mm": 10.4,
+    "deliberate_opening_to_shaft_bore": true,
+    "full_main_plate_thickness_mm": 4,
+    "main_plate_root_to_stud_hole_nearest_ligament_mm": 2,
+    "crosspin_line_to_relief_edge_min_mm": 1.2999999999999998
+  },
+  "interpretation": "Sections are between root-bore edge s4 and stud-bore edge s6. They include actual relief. Beam linear bending and average shear are diagnostics, not complete stresses; out-of-plane torsion, bore contact, crosspin bearing/notches, fatigue and preload require a separate analysis. No material allowable or FEA is asserted."
+}
