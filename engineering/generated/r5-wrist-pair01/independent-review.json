@@ -1,0 +1,46 @@
+{
+  "result": "PASS independent mesh mass/inertia and J6 gravity reconstruction",
+  "mesh_checks": [
+    {
+      "part": "W01",
+      "mass_relative_error": 8.433389049178341e-05,
+      "inertia_relative_error": 0.00012956499727992724,
+      "COM_error_mm": 0.0004940561368975693
+    },
+    {
+      "part": "A01-P",
+      "mass_relative_error": 0.00010358207388005969,
+      "inertia_relative_error": 0.00021051510334417256,
+      "COM_error_mm": 8.008865113318109e-07
+    },
+    {
+      "part": "H01-reuse",
+      "mass_relative_error": 0.0001035768149211247,
+      "inertia_relative_error": 0.0002098959680824714,
+      "COM_error_mm": 4.72866595093574e-06
+    },
+    {
+      "part": "W01-G",
+      "mass_relative_error": 8.408741884025073e-05,
+      "inertia_relative_error": 0.00012965972844462584,
+      "COM_error_mm": 0.0005034463534165923
+    },
+    {
+      "part": "A01-P-G",
+      "mass_relative_error": 0.00010365383275645623,
+      "inertia_relative_error": 0.0002112310072742807,
+      "COM_error_mm": 1.248706889445117e-06
+    },
+    {
+      "part": "H01-G",
+      "mass_relative_error": 0.0001035680326059163,
+      "inertia_relative_error": 0.0002099672869203071,
+      "COM_error_mm": 4.4482207890717e-06
+    }
+  ],
+  "J6_moment_Nm": 7.1290383845214125,
+  "J6_axis_moment_Nm": 6.6894543732031995,
+  "source_hashes_checked": 10,
+  "artifact_hashes_checked": 24,
+  "scope": "No vendor geometry, thread qualification, stress or hardware test rerun"
+}

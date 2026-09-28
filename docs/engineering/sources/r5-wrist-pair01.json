@@ -1,0 +1,176 @@
+{
+  "revision": "R5-WRIST-PAIR01",
+  "license": "CC-BY-NC-4.0",
+  "status": "geometry and conditional-load candidate; no production release",
+  "sources": [
+    {
+      "id": "manual_cn344",
+      "publisher": "ZeroErr",
+      "url": "https://download.zeroerr.cn/static/download/eRob机器人关节模组用户手册_V3.44.pdf?=20260823",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/manual_cn344.pdf",
+      "sha256": "73e138369aa2780c980e0652008c8311c95d26ac3b4142ce2f05afdc1bf0e7b5",
+      "bytes": 11983463
+    },
+    {
+      "id": "manual_en342",
+      "publisher": "ZeroErr",
+      "url": "https://dl.zeroerr.cn/static/en/eRob Rotary Actuator User Manual_V3.42.pdf",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/manual_en342.pdf",
+      "sha256": "96489367045a6a18bf63d1c0cca44a9ef5348ff8262be89408afe0a2593b4528",
+      "bytes": 49084726
+    },
+    {
+      "id": "eRob70Iv5_E",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob70I/V5/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.zip",
+      "retrieved": "2026-09-27",
+      "local_only_path": "work/r5-light-joint01/eRob70Iv5_E.zip",
+      "sha256": "8d41087fe0c2cb461f5263431e4b73fcf1b8d01c460ecdf292abae3c32e879dd",
+      "bytes": 12871014
+    },
+    {
+      "id": "vendor_pdf",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob70I/V5/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.zip",
+      "local_only_path": "work/r5-light-joint01/eRob70Iv5_E/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.pdf",
+      "sha256": "84e06a8f8eba79a66ed87fabd46d395c6fcf416e5f51d8dadd5d9fe7ac28520a",
+      "bytes": 286531
+    },
+    {
+      "id": "vendor_step",
+      "publisher": "ZeroErr",
+      "url": "https://www.zeroerr.cn/static/download/eRobI/eRob70I/V5/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.zip",
+      "local_only_path": "work/r5-light-joint01/eRob70Iv5_E/eRob70H××I-XX-18EX_V5_MC2D.DX.XX.STEP",
+      "sha256": "a0dadd2685efecd6e24f8fb7c1acccb99c5f060a8c0faaef675726741fc554b8",
+      "bytes": 24730611
+    },
+    {
+      "id": "nbk_sns",
+      "publisher": "NBK",
+      "url": "https://www.nbk1560.com/images/en-US/product/highintensity/SNS-J/SNS-J_1.pdf",
+      "local_only_path": "work/r5-wrist-erob01/nbk-sns.pdf",
+      "sha256": "bb891ee6380f9ef5dbafd1f2a411583084da931643b8b11b1363a8428dab3349",
+      "bytes": 401341,
+      "pdf_pages": [
+        1
+      ]
+    },
+    {
+      "id": "nbk_dimensions",
+      "publisher": "NBK",
+      "url": "https://www.nbk1560.com/images/ja-JP/product/technical_data/rokkaku_bolt_NBK/rokkaku_bolt_NBK_1.pdf",
+      "local_only_path": "work/r5-wrist-erob01/nbk-cap-dim.pdf",
+      "sha256": "4919cf13126b856fad9b5810e2b670b308cad49dd61ec242c93d080a9e5b318f",
+      "bytes": 132526,
+      "pdf_pages": [
+        1
+      ]
+    },
+    {
+      "id": "pin_MS3_8",
+      "publisher": "MISUMI",
+      "url": "https://uk.misumi-ec.com/vona2/detail/110300255260/?HissuCode=MS3-8",
+      "retrieved": "2026-09-27",
+      "local_only_path": null,
+      "sha256": null,
+      "status": "Official indexed exact PN title confirms 3x8 positive tolerance .005/.010; live body dynamically unavailable; end geometry not modeled exactly."
+    },
+    {
+      "id": "nbk_SNS_M4_12",
+      "publisher": "NBK",
+      "url": "https://static.nbk1560.com/en-US/products/specialscrew/nedzicom/highintensity/SNS-J/SNS-M4/",
+      "retrieved": "2026-09-27",
+      "local_only_path": null,
+      "sha256": null,
+      "status": "Official web exact row: SNS-M4-12 / M4x.7 / length12 / head7x4 / hex3 / mass2g; local family PDF covers PN syntax."
+    },
+    {
+      "id": "oem_mass_inertia",
+      "publisher": "ZeroErr",
+      "local_only_path": "work/r5-light-joint01/inertia.xlsx",
+      "sha256": "a2f83c14d8fc3db8c7501c4715b1951c1af85910e168c7be7a3b8a7d4f36dddf",
+      "url": "https://www.zeroerr.cn/download/eRob系列质量重心惯性参数表_V1.0.xlsx",
+      "scope": "Downloaded official mass/inertia workbook; sheet1 row11 mass .88kg, axial COM32.15mm. Transverse axis orientation and tensor reference ambiguity retained; not assigned rigid-body inertia in this candidate."
+    }
+  ],
+  "authority": {
+    "manual_cn344": {
+      "pdf_pages": [
+        77,
+        78,
+        79,
+        80,
+        26,
+        28
+      ],
+      "printed_pages": [
+        66,
+        67,
+        68,
+        69
+      ],
+      "claims": [
+        "50 +0/.016 female register; depth >=6",
+        "39 diameter no-load central region; .3 relief",
+        "M3x.35 12.9 black oxide socket head for eRob70I V5 flange, >=3mm FULL engagement",
+        "dry torque2.0+/-0.2Nm; does NOT supply full thread start/end",
+        "eRob70I V5 fixed interface M3x.35 class12.9 dry screws; >=4.5mm FULL engagement; thread start/end not supplied",
+        "EtherCAT board JST BM04B-GHS-TBT / mating GHR-04V-S / SSHL-002T-P0.2 terminals",
+        "Power board AMASS XT30UPB-M / mating XT30U-F; actual wired mating envelope not yet modeled"
+      ]
+    }
+  },
+  "not_resolved": [
+    "Exact ordered brake/EtherCAT motor variant remains candidate, STEP wildcard filename.",
+    "OEM M3x.35 uncommon pitch differs from usual M3x.5; controlled full-depth or supplied screw required.",
+    "STEP smooth bore transitions do not prove complete threads or acceptable screw depth.",
+    "No OEM output screw complete procurement PN or length selected.",
+    "MS3-8 pin full end drawing and controlled length tolerance needed before pin-depth release.",
+    "Original head interface is project-specific, not an ISO interface.",
+    "No complete fine-thread J6 output / J7 fixed / J7 output screw SKU or length. Known shaft/channel geometry is partial only.",
+    "Old WRIST01 studied output interface alone and omitted fixed-side installation hardware. This candidate records actual OD60 skirt/head overlap.",
+    "New J6 upstream fixed bracket and whole-arm replacement are outside scope.",
+    "Mated plugs, latch access, full cable bend and dynamic torsion still unresolved. R40x40 rear space is only a reservation.",
+    "3mm skirt and 3mm ribs require local stress/FEA/material/preload validation."
+  ],
+  "derived_geometry_contract": {
+    "OEM_STEP_private_only": true,
+    "J6_world_origin_mm": [
+      0,
+      0,
+      640
+    ],
+    "J6_axis": [
+      0,
+      1,
+      0
+    ],
+    "J7_world_origin_mm": [
+      0,
+      55,
+      675
+    ],
+    "J7_axis": [
+      0,
+      0,
+      1
+    ],
+    "J6_native_clocking_deg": 15,
+    "J7_fixed_contact_joint_z_mm": -10,
+    "J7_fixed_8_holes_pcd_mm": 64,
+    "J7_fixed_hole_angles_deg": [
+      0,
+      45,
+      90,
+      135,
+      180,
+      225,
+      270,
+      315
+    ],
+    "A01P_only_change": "Original A01 rear skirt OD60 to56, wall5 to3; all headside geometry and output plane retained",
+    "fine_screw_space_envelope": "M3 maximum conventional cap head5.68x3 from NBK dimensional sheet used as required compatibility envelope; NOT a purchased M3x.35 complete screw PN"
+  }
+}

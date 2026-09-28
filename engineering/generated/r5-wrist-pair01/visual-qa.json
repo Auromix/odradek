@@ -1,0 +1,72 @@
+{
+  "revision": "R5-WRIST-PAIR01",
+  "pdf_sha256": "cf6b77159cf34ba47f3bb1e0e62a68f4699e87cdedd5289a89544c4916dd6bad",
+  "reviewed_pages": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "render_method": "Poppler pdftoppm -scale-to1500 -png; actual images inspected",
+  "findings_resolved": [
+    "Assembly view moved inside paper margin",
+    "Correct view-specific scales1.25/1.5/1.75/2",
+    "Page3 text moved beneath the whole A01P circle",
+    "Page5 includes both loose radial and tighter rectangular net-section indicators"
+  ],
+  "nominal_feature_readback": {
+    "J6_J7_origin_offset_pair_mm": [
+      0,
+      55,
+      35
+    ],
+    "W01_ring_OD_ID_thickness_mm": [
+      78,
+      58.6,
+      6
+    ],
+    "W01_neck_mm": [
+      28,
+      16,
+      5
+    ],
+    "W01_ribs_thickness_mm": 3,
+    "A01P_skirt_OD_ID_depth_mm": [
+      56,
+      50,
+      6.5
+    ],
+    "A01P_main_OD_thickness_mm": [
+      76,
+      8
+    ],
+    "head_interface_front_z_mm": 12,
+    "J7_fixed_PCD_mm": 64
+  },
+  "source_hashes_checked": 10,
+  "manifest_hashes_checked": 24,
+  "scope": "Nominal drawing/mesh review only, not production or experimental acceptance",
+  "rendered_page_hashes": [
+    {
+      "page": 1,
+      "sha256": "14021e4d99c62ae8ec332e0783eaefdaa71f48c5a15a43dfb08c4a5679213b58"
+    },
+    {
+      "page": 2,
+      "sha256": "e74094d72beff9991b6460031993a8bbed64ea566e72a63106735a77ac65f2fb"
+    },
+    {
+      "page": 3,
+      "sha256": "183684682745f3aedd903c92bca93477b9c4d5aa5e6a8aa22f871d9f2fc67be0"
+    },
+    {
+      "page": 4,
+      "sha256": "622436c26a84010473fb00af121b4609001f8299b5dc24854630ab1e2e546369"
+    },
+    {
+      "page": 5,
+      "sha256": "e22e0eaaaa0f72bc767a6d3cdb6e22e7dcda5832af72d27f3e761f175ceb82de"
+    }
+  ]
+}
