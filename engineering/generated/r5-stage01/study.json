@@ -1,0 +1,385 @@
+{
+  "revision": "R5-STAGE01",
+  "source_hashes": {
+    "engineering/r5_stage01.py": "98b18fb89d42042ed9c227f68f09095045aa9523b6f59f9a8a8f1af282112704",
+    "engineering/generated/r5-petal-form02/study.json": "6198b33a7e2e44d206f98062d2e2d099d94d4f6d3f4945ee5e0d3eae832164f4",
+    "engineering/generated/r5-petal-form02/parameters.json": "44826c2ef54e9a72a274b3f1aafa521c580ad442cf79032e85e7a803b6907f00",
+    "engineering/generated/r5-petal-form02/radial-study.json": "33d748108c7ef8d95de5eb794565ce355b5d7f43befc9f0e38aa37348bca7d50"
+  },
+  "parameters": {
+    "root_R_open_mm": 91,
+    "root_R_folded_mm": 66,
+    "root_R_grip_min_mm": 31,
+    "root_Z_mm": 20,
+    "fold_cam_crank_mm": 8,
+    "fold_cam_phase_deg": -45,
+    "assumed_follower_D_mm": 6,
+    "assumed_slot_width_mm": 6.3
+  },
+  "fold_stage_continuous_petal_separation": [
+    {
+      "pair": "UR-UL",
+      "normal": [
+        1.0,
+        -7.850462293418876e-17,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 60.81118318204308
+    },
+    {
+      "pair": "UR-LL",
+      "normal": [
+        0.7071067811865477,
+        0.7071067811865475,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 120.0
+    },
+    {
+      "pair": "UR-LR",
+      "normal": [
+        1.570092458683775e-16,
+        1.0,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 52.32590180780451
+    },
+    {
+      "pair": "UL-LL",
+      "normal": [
+        1.5700924586837752e-16,
+        1.0,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 52.3259018078045
+    },
+    {
+      "pair": "UL-LR",
+      "normal": [
+        -0.7071067811865475,
+        0.7071067811865477,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 120.0
+    },
+    {
+      "pair": "LL-LR",
+      "normal": [
+        -1.0,
+        1.5700924586837752e-16,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 62.225396744416166
+    }
+  ],
+  "fold_stage_min_projection_gap_mm": 52.3259018078045,
+  "object_approach_proof": "For bare petal points in fold stage, radial projection on own er >= R-6 >=60 mm; centered cylinder D<=120 and square yaw45 side<=120 support at <=60. This excludes precontact petal/object volume intersection, not hub/mechanism/object intersection. Different widths may contact during radial stage.",
+  "cam": {
+    "pressure_angle_max": {
+      "radius_input_mm": 72.48334614546579,
+      "value": 53.90759394226975,
+      "method": "12001-point seed plus bounded local refinement; not a global interval proof"
+    },
+    "minimum_curvature_radius_mm": 5.453589616203929,
+    "curvature_max": {
+      "radius_input_mm": 85.42329950472283,
+      "value": 0.18336546575282436,
+      "method": "12001-point seed plus bounded local refinement; not a global interval proof"
+    },
+    "sampled_minimum_dr_dR": 0.6640608125071996,
+    "pitch_is_simple_polyline": true,
+    "nominal_buffer_is_valid": true,
+    "nominal_minimum_local_offset_regularity_margin": 0.4223987828786032,
+    "bearing_selected": false,
+    "offset_solid_not_manufacturing_geometry": true,
+    "assembly_branch_requirement": "Actual q must be constrained to [0,90] deg. Outside that range an alternative q=270 deg-q(tau) can lie on the same slot. Nominal local determinant a*cos(q-45deg)>=sqrt(32) mm/rad. Real angular stops, assembly keying and backlash control are not designed."
+  },
+  "rigid_scroll_comparison": {
+    "root_to_pitch_offset_mm": 13.0,
+    "rotation_deg": 80,
+    "logarithmic_slope_k": 1.0501865673180952,
+    "constant_pressure_angle_deg": 46.40226474858761,
+    "minimum_pitch_curvature_radius_mm": 26.10243191123804,
+    "nominal_plate_outside_D_mm": 168.3,
+    "nominal_18mm_bore_to_slot_radial_clearance_mm": 5.85,
+    "slot_pair_polyline_distances": [
+      {
+        "pair": "UR-UL",
+        "sampled_polyline_centerline_distance_mm": 25.45584412271571,
+        "nominal_width_subtracted_gap_mm": 19.15584412271571
+      },
+      {
+        "pair": "UR-LL",
+        "sampled_polyline_centerline_distance_mm": 36.0,
+        "nominal_width_subtracted_gap_mm": 29.7
+      },
+      {
+        "pair": "UR-LR",
+        "sampled_polyline_centerline_distance_mm": 25.455844122715714,
+        "nominal_width_subtracted_gap_mm": 19.155844122715713
+      },
+      {
+        "pair": "UL-LL",
+        "sampled_polyline_centerline_distance_mm": 25.45584412271571,
+        "nominal_width_subtracted_gap_mm": 19.15584412271571
+      },
+      {
+        "pair": "UL-LR",
+        "sampled_polyline_centerline_distance_mm": 36.0,
+        "nominal_width_subtracted_gap_mm": 29.7
+      },
+      {
+        "pair": "LL-LR",
+        "sampled_polyline_centerline_distance_mm": 25.45584412271571,
+        "nominal_width_subtracted_gap_mm": 19.15584412271571
+      }
+    ],
+    "finite_slot_contact_and_strength_unverified": true,
+    "rectangular_box_adaptation": false
+  },
+  "ideal_differential": {
+    "equations": [
+      "R1 + R2 = 2*yA",
+      "R3 + R4 = 2*yB",
+      "yA + yB = 2*u",
+      "sum(Ri) = 4*u"
+    ],
+    "force_relation": "For massless frictionless pulleys with parallel straight strands: Ti=N and input force=4*N. Constants from cable routing are absorbed into coordinate zeros.",
+    "active_DOF": 1,
+    "passive_redistribution_DOF": 3,
+    "synchronized_motion_guaranteed": false,
+    "physical_routing_selected": false,
+    "ordinary_urdf_mimic_is_not_contact_differential": true
+  },
+  "force_scenarios": [
+    {
+      "width_mm": 50,
+      "contact_radius_mm": 31.0,
+      "normal_each_N": 24.516624999999998,
+      "total_normal_N": 98.06649999999999,
+      "assumed_mu": 0.4,
+      "gravity_factor": 2.0,
+      "ideal_scroll_torque_Nm": 1.8537861780701996,
+      "assumed_spring_N_per_mm": 10.0,
+      "spring_compression_at_normal_mm": 2.4516625,
+      "radial_command_for_that_spring_mm": 28.5483375,
+      "ideal_two_tier_differential_input_force_N": 98.06649999999999,
+      "ideal_lead4_hold_motor_torque_Nm": 0.06243107290688541
+    },
+    {
+      "width_mm": 65,
+      "contact_radius_mm": 38.5,
+      "normal_each_N": 24.516624999999998,
+      "total_normal_N": 98.06649999999999,
+      "assumed_mu": 0.4,
+      "gravity_factor": 2.0,
+      "ideal_scroll_torque_Nm": 2.6261970855994496,
+      "assumed_spring_N_per_mm": 10.0,
+      "spring_compression_at_normal_mm": 2.4516625,
+      "radial_command_for_that_spring_mm": 36.0483375,
+      "ideal_two_tier_differential_input_force_N": 98.06649999999999,
+      "ideal_lead4_hold_motor_torque_Nm": 0.06243107290688541
+    },
+    {
+      "width_mm": 80,
+      "contact_radius_mm": 46.0,
+      "normal_each_N": 24.516624999999998,
+      "total_normal_N": 98.06649999999999,
+      "assumed_mu": 0.4,
+      "gravity_factor": 2.0,
+      "ideal_scroll_torque_Nm": 3.398607993128699,
+      "assumed_spring_N_per_mm": 10.0,
+      "spring_compression_at_normal_mm": 2.4516625,
+      "radial_command_for_that_spring_mm": 43.5483375,
+      "ideal_two_tier_differential_input_force_N": 98.06649999999999,
+      "ideal_lead4_hold_motor_torque_Nm": 0.06243107290688541
+    },
+    {
+      "width_mm": 100,
+      "contact_radius_mm": 56.0,
+      "normal_each_N": 24.516624999999998,
+      "total_normal_N": 98.06649999999999,
+      "assumed_mu": 0.4,
+      "gravity_factor": 2.0,
+      "ideal_scroll_torque_Nm": 4.4284892031676995,
+      "assumed_spring_N_per_mm": 10.0,
+      "spring_compression_at_normal_mm": 2.4516625,
+      "radial_command_for_that_spring_mm": 53.5483375,
+      "ideal_two_tier_differential_input_force_N": 98.06649999999999,
+      "ideal_lead4_hold_motor_torque_Nm": 0.06243107290688541
+    },
+    {
+      "width_mm": 120,
+      "contact_radius_mm": 66.0,
+      "normal_each_N": 24.516624999999998,
+      "total_normal_N": 98.06649999999999,
+      "assumed_mu": 0.4,
+      "gravity_factor": 2.0,
+      "ideal_scroll_torque_Nm": 5.458370413206699,
+      "assumed_spring_N_per_mm": 10.0,
+      "spring_compression_at_normal_mm": 2.4516625,
+      "radial_command_for_that_spring_mm": 63.5483375,
+      "ideal_two_tier_differential_input_force_N": 98.06649999999999,
+      "ideal_lead4_hold_motor_torque_Nm": 0.06243107290688541
+    }
+  ],
+  "rectangular_examples": [
+    {
+      "width_mm": 50,
+      "depth_mm": 50,
+      "opposed_pair_contact_radius_difference_mm": 0.0,
+      "early_pair_extra_force_if_rigid_common_drive_and_10N_per_mm_spring_N": 0.0,
+      "terminal_offset_from_adjacent_pair_mean_mm": 0.0,
+      "ideal_mean_contact_radius_mm": 31.0,
+      "pulley_center_stroke_is_not_inferred": true
+    },
+    {
+      "width_mm": 50,
+      "depth_mm": 80,
+      "opposed_pair_contact_radius_difference_mm": 15.0,
+      "early_pair_extra_force_if_rigid_common_drive_and_10N_per_mm_spring_N": 150.0,
+      "terminal_offset_from_adjacent_pair_mean_mm": 7.5,
+      "ideal_mean_contact_radius_mm": 38.5,
+      "pulley_center_stroke_is_not_inferred": true
+    },
+    {
+      "width_mm": 50,
+      "depth_mm": 120,
+      "opposed_pair_contact_radius_difference_mm": 35.0,
+      "early_pair_extra_force_if_rigid_common_drive_and_10N_per_mm_spring_N": 350.0,
+      "terminal_offset_from_adjacent_pair_mean_mm": 17.5,
+      "ideal_mean_contact_radius_mm": 48.5,
+      "pulley_center_stroke_is_not_inferred": true
+    },
+    {
+      "width_mm": 80,
+      "depth_mm": 120,
+      "opposed_pair_contact_radius_difference_mm": 20.0,
+      "early_pair_extra_force_if_rigid_common_drive_and_10N_per_mm_spring_N": 200.0,
+      "terminal_offset_from_adjacent_pair_mean_mm": 10.0,
+      "ideal_mean_contact_radius_mm": 56.0,
+      "pulley_center_stroke_is_not_inferred": true
+    },
+    {
+      "width_mm": 120,
+      "depth_mm": 120,
+      "opposed_pair_contact_radius_difference_mm": 0.0,
+      "early_pair_extra_force_if_rigid_common_drive_and_10N_per_mm_spring_N": 0.0,
+      "terminal_offset_from_adjacent_pair_mean_mm": 0.0,
+      "ideal_mean_contact_radius_mm": 66.0,
+      "pulley_center_stroke_is_not_inferred": true
+    }
+  ],
+  "synchronous_path_dynamics": {
+    "timing": "quintic",
+    "bernstein_speed_mm_s": null,
+    "period_s": 1.0,
+    "radial_travel_mm": 60.0,
+    "peak_speed_mm_s": 224.99999999999997,
+    "peak_accel_m_s2": 1.3856406306336,
+    "peak_q_speed_deg_s": 1220.0487249144473,
+    "peak_q_accel_rad_s2": 614.6449924480422,
+    "peak_ideal_path_force_N": 69.28379210299836,
+    "RMS_ideal_path_force_N": 21.732309877454593,
+    "peak_hypothetical_lead4_rpm": 3374.9999999999995,
+    "peak_hypothetical_lead4_ideal_motor_torque_Nm": 0.04410743195737365,
+    "work_energy_max_residual_J": 3.7300335264944806e-08,
+    "scope": "Synchronous known bare-petal material only, head gravity -Z; excludes cams, carriers, cables, pulleys, screw, rotor, friction, contact and head acceleration. Equal branch positions are imposed, not guaranteed by a passive differential.",
+    "one_second_hardware_qualification": false
+  },
+  "unresolved": [
+    "Complete fixed-cam, follower and radial carrier 3D packaging",
+    "Guide pressure/curvature interval certification and tolerances",
+    "Physical passive differential and cable bending/creep/life",
+    "Selected actuator transmission and its full moving mass",
+    "Series compliance, contact force sensing and power-loss retention",
+    "Real gripping friction and luminous stack strength",
+    "Final fully closed visual posture; minimum aperture here is 50 mm"
+  ],
+  "all_independent_phase_continuous_separation": [
+    {
+      "pair": "UR-UL",
+      "normal": [
+        1.0,
+        -7.850462293418876e-17,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 11.313708498984754
+    },
+    {
+      "pair": "UR-LL",
+      "normal": [
+        0.7071067811865477,
+        0.7071067811865475,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 50.0
+    },
+    {
+      "pair": "UR-LR",
+      "normal": [
+        1.570092458683775e-16,
+        1.0,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 2.8284271247461916
+    },
+    {
+      "pair": "UL-LL",
+      "normal": [
+        1.5700924586837752e-16,
+        1.0,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 2.8284271247461845
+    },
+    {
+      "pair": "UL-LR",
+      "normal": [
+        -0.7071067811865475,
+        0.7071067811865477,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 50.0
+    },
+    {
+      "pair": "LL-LR",
+      "normal": [
+        -1.0,
+        1.5700924586837752e-16,
+        0.0
+      ],
+      "minimum_projection_gap_mm": 12.72792206135785
+    }
+  ],
+  "all_independent_phase_minimum_gap_mm": 2.8284271247461845,
+  "synchronous_bernstein_dynamics": {
+    "timing": "bernstein9",
+    "bernstein_speed_mm_s": [
+      0.0,
+      0.0,
+      378.998876,
+      0.0,
+      0.0,
+      188.755374,
+      387.828233,
+      244.417517,
+      0.0,
+      0.0
+    ],
+    "period_s": 1.0,
+    "radial_travel_mm": 60.0,
+    "peak_speed_mm_s": 204.6899792764323,
+    "peak_accel_m_s2": 2.0000061125567323,
+    "peak_q_speed_deg_s": 837.4750680904931,
+    "peak_q_accel_rad_s2": 230.7758756615642,
+    "peak_ideal_path_force_N": 39.75785167941544,
+    "RMS_ideal_path_force_N": 13.053459694910043,
+    "peak_hypothetical_lead4_rpm": 3070.3496891464843,
+    "peak_hypothetical_lead4_ideal_motor_torque_Nm": 0.025310634485973517,
+    "work_energy_max_residual_J": 7.324656492446735e-09,
+    "scope": "Synchronous known bare-petal material only, head gravity -Z; excludes cams, carriers, cables, pulleys, screw, rotor, friction, contact and head acceleration. Equal branch positions are imposed, not guaranteed by a passive differential.",
+    "one_second_hardware_qualification": false
+  },
+  "timing_optimization_scope": "Frozen Bernstein coefficients came from a bounded local SLSQP sample-based minimax search, not a global optimum or certified continuous hardware limit. Reproduction uses the explicit polynomial, not an optimizer dependency."
+}

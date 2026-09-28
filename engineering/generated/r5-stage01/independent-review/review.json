@@ -1,0 +1,284 @@
+{
+  "revision": "R5-STAGE01-independent-review",
+  "input_hashes": {
+    "engineering/r5_stage01.py": "98b18fb89d42042ed9c227f68f09095045aa9523b6f59f9a8a8f1af282112704",
+    "engineering/generated/r5-stage01/study.json": "a3764e43a7cf973f2d83169cc960aed0158d6cf1c6ff54056fb7b161c47a790f",
+    "engineering/generated/r5-stage01/synchronous-empty-cycle.csv": "90952f53a74b3fc6ceb684c134a9a3f87fab1e32a66582fc3406e6d7e3a28da5",
+    "engineering/generated/r5-stage01/synchronous-bernstein-cycle.csv": "7f4b07a089c0aaba5fdc6825c0dc4af7f53c5eb24b739b13bfd7ea2fc2d3ad5f",
+    "engineering/generated/r5-petal-form02/parameters.json": "44826c2ef54e9a72a274b3f1aafa521c580ad442cf79032e85e7a803b6907f00",
+    "engineering/generated/r5-petal-form02/study.json": "6198b33a7e2e44d206f98062d2e2d099d94d4f6d3f4945ee5e0d3eae832164f4",
+    "engineering/generated/r5-petal-form02/radial-study.json": "33d748108c7ef8d95de5eb794565ce355b5d7f43befc9f0e38aa37348bca7d50"
+  },
+  "script_sha256": "306d860a7957219be97fa4c13276223d1af22d1dbba19dbeda36e68113bf3030",
+  "guide_rank": {
+    "analytic_determinant": "a*cos(q-45deg)",
+    "minimum_over_assumed_q0to90_mm_per_rad": 5.65685424949238,
+    "maximum_mm_per_rad": 8.0,
+    "sample_count": 1201,
+    "chosen_branch_unique_on_q0to90": true,
+    "unrestricted_global_assembly_unique": false,
+    "alternate_branch_witness": {
+      "groove_parameter_mm": 60.0,
+      "actual_root_radius_mm": 71.31370849898477,
+      "alternative_q_deg": 180.0,
+      "nominal_q_at_actual_R_deg": 83.87899367705337,
+      "closure_residual_mm": [
+        0.0,
+        0.0
+      ],
+      "within_actual_R_range": true,
+      "within_assumed_q0to90": false,
+      "formula": "q_alt=270deg-q(tau); R_alt=tau+2*a*cos(q(tau)-45deg). Plus 360deg periodic branches if unlimited rotation."
+    },
+    "clearance": {
+      "assumed_diametral_gap_mm": 0.3,
+      "normal_center_play_mm": 0.15,
+      "minimum_first_order_normal_q_sensitivity_mm_per_rad": 4.712714094146495,
+      "first_order_q_half_play_deg": 1.8236554892301071,
+      "scope": "Linearized at zero-clearance nominal branch; not a guaranteed finite tolerance bound or a chosen bearing preload."
+    },
+    "analytic_pitch_radial_derivative_lower_bound": 0.33356755927624526,
+    "pitch_injectivity_argument": "q_R magnitude <= (pi/2)*1.875/25; |sin(q-45deg)| <= 1/sqrt2, so dC_r/dR >= 0.33356756 >0. The nominal pitch centerline is globally injective. This does not prove finite slot wall shape or roller clearance."
+  },
+  "mixed_phase_certificate": {
+    "pairs": [
+      {
+        "pair": [
+          "UR",
+          "UL"
+        ],
+        "unit_normal": [
+          1.0,
+          -7.850462293418876e-17,
+          0.0
+        ],
+        "all_independent_R_ge31_q0to90_gap_mm": 11.313708498984761,
+        "both_fold_R_ge66_gap_mm": 60.811183182043095,
+        "A_fold_B_radial_gap_mm": 36.06244584051392,
+        "A_radial_B_fold_gap_mm": 36.06244584051393
+      },
+      {
+        "pair": [
+          "UR",
+          "LL"
+        ],
+        "unit_normal": [
+          0.7071067811865477,
+          0.7071067811865475,
+          0.0
+        ],
+        "all_independent_R_ge31_q0to90_gap_mm": 50.0,
+        "both_fold_R_ge66_gap_mm": 120.0,
+        "A_fold_B_radial_gap_mm": 85.0,
+        "A_radial_B_fold_gap_mm": 85.0
+      },
+      {
+        "pair": [
+          "UR",
+          "LR"
+        ],
+        "unit_normal": [
+          1.570092458683775e-16,
+          1.0,
+          0.0
+        ],
+        "all_independent_R_ge31_q0to90_gap_mm": 2.8284271247461916,
+        "both_fold_R_ge66_gap_mm": 52.32590180780451,
+        "A_fold_B_radial_gap_mm": 27.577164466275352,
+        "A_radial_B_fold_gap_mm": 27.577164466275352
+      },
+      {
+        "pair": [
+          "UL",
+          "LL"
+        ],
+        "unit_normal": [
+          1.5700924586837752e-16,
+          1.0,
+          0.0
+        ],
+        "all_independent_R_ge31_q0to90_gap_mm": 2.8284271247461916,
+        "both_fold_R_ge66_gap_mm": 52.32590180780451,
+        "A_fold_B_radial_gap_mm": 27.577164466275352,
+        "A_radial_B_fold_gap_mm": 27.577164466275352
+      },
+      {
+        "pair": [
+          "UL",
+          "LR"
+        ],
+        "unit_normal": [
+          -0.7071067811865475,
+          0.7071067811865477,
+          0.0
+        ],
+        "all_independent_R_ge31_q0to90_gap_mm": 50.0,
+        "both_fold_R_ge66_gap_mm": 120.0,
+        "A_fold_B_radial_gap_mm": 85.0,
+        "A_radial_B_fold_gap_mm": 85.0
+      },
+      {
+        "pair": [
+          "LL",
+          "LR"
+        ],
+        "unit_normal": [
+          -1.0,
+          1.5700924586837752e-16,
+          0.0
+        ],
+        "all_independent_R_ge31_q0to90_gap_mm": 12.727922061357857,
+        "both_fold_R_ge66_gap_mm": 62.22539674441618,
+        "A_fold_B_radial_gap_mm": 37.47665940288702,
+        "A_radial_B_fold_gap_mm": 37.476659402887016
+      }
+    ],
+    "global_minimum_gap_mm": 2.8284271247461916,
+    "mixed_minimum_gap_mm": 27.577164466275352,
+    "all_fold_minimum_gap_mm": 52.32590180780451,
+    "independent_Rodrigues_projection_sample_minimum_slack_mm": 0.0,
+    "scope": "All 28 FORM02-contained bare petal solids; arbitrary independent R>=31 and q0..90. No added screws/root/hub/guide/camera/wire geometry."
+  },
+  "rectangle_counterexample": {
+    "width_mm": 50.0,
+    "depth_mm": 120.0,
+    "yaw_deg": 45.0,
+    "required_R_mm": [
+      31.0,
+      66.0,
+      31.0,
+      66.0
+    ],
+    "rigid_common_R_feasible": false,
+    "at_first_contact_common_R_mm": 66.0,
+    "late_pair_remaining_gap_mm": 35.0,
+    "at_late_pair_contact_common_R_mm": 31.0,
+    "early_pair_rigid_penetration_mm": 35.0,
+    "spring_N_per_mm": 10.0,
+    "conditional_extra_early_pair_force_N": 350.0
+  },
+  "ideal_differential": {
+    "constraint_rank": 3,
+    "coordinates": 7,
+    "configuration_DOF": 4,
+    "prescribed_input_remaining_passive_DOF": 3,
+    "rectangle_solution": {
+      "Ri_mm": [
+        31.0,
+        66.0,
+        31.0,
+        66.0
+      ],
+      "yA_mm": 48.5,
+      "yB_mm": 48.5,
+      "u_mm": 48.5,
+      "first_tier_branch_offsets_mm": [
+        -17.5,
+        17.5,
+        -17.5,
+        17.5
+      ]
+    },
+    "branch_relative_difference_mm": 35.0,
+    "pulley_center_stroke_determined": false,
+    "conditional_equal_branch_generalized_force_N": 24.516624999999998,
+    "conditional_input_force_N": 98.06649999999999,
+    "limits": "Taut massless inextensible cables, parallel strands, frictionless massless pulleys, free travel. At radial q90 only, branch generalized force equals radial object normal. During folding it also drives hinge rotation. Slack, unequal preload/friction/inertia/endstops invalidate simple equal-force equilibrium; sum constraint never guarantees synchronous R_i."
+  },
+  "original_synchronous_dynamics": {
+    "source": "synchronous-empty-cycle.csv",
+    "sample_count": 2001,
+    "dense_peak_sample_count": 40001,
+    "finite_time_step_s": 1e-05,
+    "finite_path_step_m": 1e-07,
+    "independent_method": "Direct 3D COM acceleration and full reflected/rotated inertia Newton-Euler torque, projected onto numerical virtual-work Jacobians. Timing uses scipy beta integral or BPoly antiderivative; no implementation imports.",
+    "finite_difference_step_halving_force_change_N": 1.5077897780731327e-05,
+    "max_force_error_interior_N": 7.840620050103553e-06,
+    "max_force_error_all_including_reversal_N": 1.5135100733589254e-05,
+    "max_angular_velocity_error_rad_s": 2.4012081212276826e-10,
+    "max_angular_acceleration_error_rad_s2": 3.982751789521899e-05,
+    "independent_work_energy_residual_J": 3.9405941343328976e-08,
+    "dense_peak_values": {
+      "peak_speed_mm_s": 225.00000000062974,
+      "peak_accel_m_s2": 1.3856407745741852,
+      "peak_q_speed_deg_s": 1220.0487249112568,
+      "peak_q_accel_rad_s2": 614.644999526644,
+      "peak_ideal_path_force_N": 69.28379179912082,
+      "RMS_ideal_path_force_N": 21.73230988540183
+    },
+    "peak_absolute_errors": {
+      "peak_speed_mm_s": 6.29768237558892e-10,
+      "peak_accel_m_s2": 1.4394058522881892e-07,
+      "peak_q_speed_deg_s": 3.1905074138194323e-09,
+      "peak_q_accel_rad_s2": 7.078601811372209e-06,
+      "peak_ideal_path_force_N": 3.0387754179628246e-07,
+      "RMS_ideal_path_force_N": 7.947235758365423e-09
+    },
+    "time_reversal_position_error_m": 2.7755575615628914e-17,
+    "nominal_material_mass_kg": 0.2359073958096778,
+    "scope": "Imposed synchronous bare petals only; no hardware/differential synchronization qualification."
+  },
+  "bernstein_synchronous_dynamics": {
+    "source": "synchronous-bernstein-cycle.csv",
+    "sample_count": 2001,
+    "dense_peak_sample_count": 40001,
+    "finite_time_step_s": 1e-05,
+    "finite_path_step_m": 1e-07,
+    "independent_method": "Direct 3D COM acceleration and full reflected/rotated inertia Newton-Euler torque, projected onto numerical virtual-work Jacobians. Timing uses scipy beta integral or BPoly antiderivative; no implementation imports.",
+    "finite_difference_step_halving_force_change_N": 5.7293648403049204e-05,
+    "max_force_error_interior_N": 8.739509483213226e-06,
+    "max_force_error_all_including_reversal_N": 5.7130344060851624e-05,
+    "max_angular_velocity_error_rad_s": 1.978506247723999e-10,
+    "max_angular_acceleration_error_rad_s2": 4.9921315948608935e-05,
+    "independent_work_energy_residual_J": 7.731459222837245e-09,
+    "dense_peak_values": {
+      "peak_speed_mm_s": 204.6899792768411,
+      "peak_accel_m_s2": 2.000006202318438,
+      "peak_q_speed_deg_s": 837.4750680861845,
+      "peak_q_accel_rad_s2": 230.7758822696811,
+      "peak_ideal_path_force_N": 39.75785115870787,
+      "RMS_ideal_path_force_N": 13.053459699338891
+    },
+    "peak_absolute_errors": {
+      "peak_speed_mm_s": 4.0878944673750084e-10,
+      "peak_accel_m_s2": 8.976170562391417e-08,
+      "peak_q_speed_deg_s": 4.308617462811526e-09,
+      "peak_q_accel_rad_s2": 6.60811687680507e-06,
+      "peak_ideal_path_force_N": 5.20707565954126e-07,
+      "RMS_ideal_path_force_N": 4.4288483991294925e-09
+    },
+    "time_reversal_position_error_m": 2.7755575615628914e-17,
+    "nominal_material_mass_kg": 0.2359073958096778,
+    "scope": "Imposed synchronous bare petals only; no hardware/differential synchronization qualification."
+  },
+  "bernstein_nominal_polynomial_extrema": {
+    "speed_m_s": {
+      "maximum_absolute_value": 0.204689979586267,
+      "at_closing_time_s": 0.3363947281765253,
+      "stationary_candidates_s": [
+        0.0,
+        0.5,
+        0.0,
+        0.1314326239146808,
+        0.17127500055320838,
+        0.3363947281765253,
+        0.4999999999999925
+      ],
+      "method": "All in-domain real roots of derivative of the explicit low-degree polynomial, plus endpoints; floating-point root solve, not a rigorous interval bound."
+    },
+    "acceleration_m_s2": {
+      "maximum_absolute_value": 2.0000061125572586,
+      "at_closing_time_s": 0.4373750405433289,
+      "stationary_candidates_s": [
+        0.0,
+        0.5,
+        0.03800946946395765,
+        0.1505243629723047,
+        0.26756886570085187,
+        0.4373750405433289
+      ],
+      "method": "All in-domain real roots of derivative of the explicit low-degree polynomial, plus endpoints; floating-point root solve, not a rigorous interval bound."
+    }
+  },
+  "manufacturing_release": false
+}
