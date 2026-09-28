@@ -1,0 +1,640 @@
+[
+  {
+    "case": {
+      "shape": "cylinder",
+      "width_mm": 50,
+      "height_mm": 60,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "UR",
+    "result": {
+      "reached": false,
+      "reason": "Whole object stays strictly ahead of the face plane throughout admitted angle interval"
+    }
+  },
+  {
+    "case": {
+      "shape": "cylinder",
+      "width_mm": 50,
+      "height_mm": 100,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "LR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 108.53308983234722,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 7.210556471626328
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 7.95263439238344
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 8.917208913005872
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 3.5545290856419767
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 2.513741460451944
+        },
+        {
+          "part": "frame",
+          "distance_mm": 1.8962805895733679
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.91516402236345e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "cylinder",
+      "width_mm": 80,
+      "height_mm": 100,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "LR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 99.54143781255219,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 5.628816688636799
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 6.458349763195785
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 7.403915446954002
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 2.3454052120802027
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 1.0650692911573967
+        },
+        {
+          "part": "frame",
+          "distance_mm": 1.972332052589324
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.890354300582905e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "cylinder",
+      "width_mm": 120,
+      "height_mm": 60,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "UR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 80.60980250553375,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 5.764071505623808
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 6.594906576671884
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 7.539951667539477
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 2.4876461645671664
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 1.2035346350423242
+        },
+        {
+          "part": "frame",
+          "distance_mm": 1.7363436033210917
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.984322074351199e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "cylinder",
+      "width_mm": 120,
+      "height_mm": 60,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "LR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 80.60980250529845,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 5.76407150576008
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 6.594906576806146
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 7.539951667674555
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 2.4876461646925474
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 1.2035346351735887
+        },
+        {
+          "part": "frame",
+          "distance_mm": 1.7363436034007957
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.99319987849302e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "cylinder",
+      "width_mm": 120,
+      "height_mm": 100,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "UR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 80.60980250553375,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 5.764071505623808
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 6.594906576671884
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 7.539951667539477
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 2.4876461645671664
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 1.2035346350423242
+        },
+        {
+          "part": "frame",
+          "distance_mm": 1.7363436033210917
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.984322074351199e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "cylinder",
+      "width_mm": 120,
+      "height_mm": 100,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "LR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 80.60980250529845,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 5.76407150576008
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 6.594906576806146
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 7.539951667674555
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 2.4876461646925474
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 1.2035346351735887
+        },
+        {
+          "part": "frame",
+          "distance_mm": 1.7363436034007957
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.99319987849302e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "box",
+      "width_mm": 50,
+      "height_mm": 100,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "LR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 102.2809314758,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 6.127246571929715
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 6.932204526835208
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 7.886056125507451
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 2.721299202747352
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 1.510870821223171
+        },
+        {
+          "part": "frame",
+          "distance_mm": 1.9542329372769889
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.996838975990009e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "box",
+      "width_mm": 80,
+      "height_mm": 60,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "LR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 88.96430893247877,
+      "first_touch_parts_at_1um": [
+        "compliant_skin"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 4.334544314603027
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 5.228070949069775
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 6.1342502478810745
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 1.478064762175488
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 9.951066133345699e-08
+        },
+        {
+          "part": "frame",
+          "distance_mm": 2.2920748612443402
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 0.31193597261932976
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "box",
+      "width_mm": 80,
+      "height_mm": 100,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "LR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 88.96430893247877,
+      "first_touch_parts_at_1um": [
+        "compliant_skin"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 4.334544314603027
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 5.228070949069775
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 6.1342502478810745
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 1.478064762175488
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 9.951066133345699e-08
+        },
+        {
+          "part": "frame",
+          "distance_mm": 2.2920748612443402
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 0.31193597261932976
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "box",
+      "width_mm": 120,
+      "height_mm": 60,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "UR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 32.06730843766689,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 7.028799687725433
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 7.173506793267567
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 8.143956373271266
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 1.8029406087593725
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 1.6049895250863713
+        },
+        {
+          "part": "frame",
+          "distance_mm": 2.000000099882391
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.988239584108744e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "box",
+      "width_mm": 120,
+      "height_mm": 60,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "LR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 30.756987798090144,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 5.1551486573385095
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 5.648852009194229
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 6.595116226347427
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 1.0541810012073134
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 0.6865111094200094
+        },
+        {
+          "part": "frame",
+          "distance_mm": 2.000000099936687
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.99366963618504e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "box",
+      "width_mm": 120,
+      "height_mm": 100,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "UR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 32.06730843766689,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 7.028799687725433
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 7.173506793267567
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 8.143956373271266
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 1.8029406087593725
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 1.6049895250863713
+        },
+        {
+          "part": "frame",
+          "distance_mm": 2.000000099882391
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.988239584108744e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  },
+  {
+    "case": {
+      "shape": "box",
+      "width_mm": 120,
+      "height_mm": 100,
+      "rear_Z_mm": 20,
+      "yaw_deg": 0
+    },
+    "finger": "LR",
+    "result": {
+      "reached": true,
+      "contact_angle_deg": 30.756987798090144,
+      "first_touch_parts_at_1um": [
+        "retainer"
+      ],
+      "parts": [
+        {
+          "part": "LED_front_reservation",
+          "distance_mm": 5.1551486573385095
+        },
+        {
+          "part": "PCB_blank_reservation",
+          "distance_mm": 5.648852009194229
+        },
+        {
+          "part": "back_electronics_reservation",
+          "distance_mm": 6.595116226347427
+        },
+        {
+          "part": "bearing_cover",
+          "distance_mm": 1.0541810012073134
+        },
+        {
+          "part": "compliant_skin",
+          "distance_mm": 0.6865111094200094
+        },
+        {
+          "part": "frame",
+          "distance_mm": 2.000000099936687
+        },
+        {
+          "part": "retainer",
+          "distance_mm": 9.99366963618504e-08
+        }
+      ],
+      "method": "Analytic plane supplies collision-free approach lower bound; <=1deg grid then bisection of BRep distance for subsequent first observed zero; no continuous global root certification beyond plane bound"
+    }
+  }
+]
