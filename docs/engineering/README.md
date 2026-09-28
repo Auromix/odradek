@@ -6,7 +6,7 @@
 
 [R5单驱动末端与独立本体](../r5-modular-design.md)包含最新概念图及确认输入。[SHOULDER-RAISE03](shoulder-raise03.md)已合并让位钢块与具体螺钉；[HEAD04](head-integrated04.md)和[HEAD-POWER01](hardware/head-power01.md)归档为旧P16集成证据。
 
-R5真实工程入口：[造型灯片与二维图](r5-petal-form01.md)、[连续闭合避让](r5-head-geometry01.md)、[单滑块连杆数学](r5-link01.md)、[一个主控的原生Blender](r5-linkage-blender01.md)、[独立本体质量/臂展](r5-body01.md)、[轻量EtherCAT关节](hardware/r5-light-joint01.md)、[透明夹持面材料与紧固件](hardware/r5-petal-hardware01.md)。盒体、瓶罐50–120mm为新增确认目标，现阶段没有完整抓取范围资格。
+R5最新工程入口：[削肩灯片FORM02与二维图](r5-petal-form02.md)、[折叠后径向夹持/差动数学](r5-stage01.md)、[eRob可拆腕接口](r5-wrist-erob01.md)、[独立本体质量/臂展](r5-body01.md)、[轻量EtherCAT关节](hardware/r5-light-joint01.md)、[透明夹持面材料与紧固件](hardware/r5-petal-hardware01.md)。盒体、瓶罐50–120mm为确认目标，现阶段没有完整抓取范围资格。较早[单滑块数学](r5-link01.md)、[一个主控的原生Blender](r5-linkage-blender01.md)和[折返带传动](hardware/r5-folded-drive01.md)保留为固定根轴比较方案，不与新径向机构混算。
 
 ## 当前可查看的工程结果
 
