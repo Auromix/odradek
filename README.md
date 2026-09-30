@@ -6,7 +6,7 @@
 
 **Selected appearance directions:** the [dedicated selected-design folder](docs/concepts/selected/README.md) contains only the four-petal open silhouette and option B shield-shaped base. Other proposals and comparisons remain in the [research artwork directory](docs/concepts/README.md). Selection is not a manufacturing release.
 
-**Current base work:** develop the desktop pet one module at a time. The user has withdrawn the off-the-shelf clamp constraint; [B02 explores a custom base, clamp and controller holder](docs/base-design-study01.md). The new structural concept is stored separately in [proposals](docs/concepts/proposals/README.md).
+**Current base work:** develop the desktop pet one module at a time. The user has withdrawn the off-the-shelf clamp constraint; [B03 places the custom controller cradle inward under the desktop](docs/base-design-study01.md). The new structural concept is stored separately in [proposals](docs/concepts/proposals/README.md).
 
 **2026-09-28 checkpoint:** preserve the current research and drafts without adding complexity. The preferred head uses positive single-input synchronization and permits one opposed petal pair to carry the grasp. Passive differential studies remain comparisons. [Saved scope and draft status](docs/engineering/checkpoint-2026-09-28.md).
 

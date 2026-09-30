@@ -6,7 +6,7 @@
 
 **已选外观方向：** [收敛设计图专用目录](docs/concepts/selected/README.md)，只收录四瓣末端展开外形与 B 收腰盾形底座。其他候选与历史比较保留在 [研究图稿目录](docs/concepts/README.md)，不作为制造定稿。
 
-**当前底座设计：** 按模块逐项推进桌面机械宠物。用户已撤销现成夹具总成的限制，[B02 自设计底座与下挂盒架](docs/base-design-study01.md)继续沿 B 外形深化；新结构图单独放在 [待确认目录](docs/concepts/proposals/README.md)。
+**当前底座设计：** 按模块逐项推进桌面机械宠物。用户已撤销现成夹具总成的限制，[B03 内收盒架与靠墙布置](docs/base-design-study01.md)继续沿 B 外形深化；新结构图单独放在 [待确认目录](docs/concepts/proposals/README.md)。
 
 **2026-09-28保存点：** 先保存当前成果和草案，不再扩展复杂度。末端优先单输入正向同步，允许一对相对灯片主夹持；多级差动只保留作比较。[保存范围与未完成状态](docs/engineering/checkpoint-2026-09-28.md)。
 
