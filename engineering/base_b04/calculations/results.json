@@ -1,0 +1,151 @@
+{
+  "status": "nominal research screen; no production or tabletop release",
+  "contract_sha256": "54f6246143602ff73145d50c9cb3a4e0863de73b699a6d70ca07ec02125fcb89",
+  "script_sha256": "32857082189db54f0f6d2bddde824dc6d94883144a757b097ad5d899abdae525",
+  "cad_contract_checks": {
+    "parameters_sha256": "298c28aa11a281297550bb541b824b8aa7a559650e4f48b46bad70a670ab2ad5",
+    "manifest_sha256": "0cf11ebc37d5bf0d488cfac80bb6ae77b976ac722bf3acf5a7852d67687736c8",
+    "model_source_sha256": "153bb04a9884f9586b6a2922c3e3215ae0b544a0c122ac2364cf1312bc035cc0",
+    "nominal_model_mass_kg": 7.577928523489653,
+    "modeled_weight_N": 74.31409275487981,
+    "reserve_unallocated_N": 25.68590724512019,
+    "unassigned_mass_ids": [
+      "PCB-C1",
+      "PCB-C2",
+      "PCB-C3",
+      "PCB-C4",
+      "PCB-C5",
+      "PCB-C6",
+      "PCB-C7",
+      "PCB-D1",
+      "PCB-D2",
+      "PCB-D3",
+      "PCB-D4",
+      "PCB-F1",
+      "PCB-J1",
+      "PCB-J2",
+      "PCB-J3",
+      "PCB-L1",
+      "PCB-Q1",
+      "PCB-Q2",
+      "PCB-R1",
+      "PCB-R10",
+      "PCB-R11",
+      "PCB-R12",
+      "PCB-R13",
+      "PCB-R14",
+      "PCB-R16",
+      "PCB-R17",
+      "PCB-R18",
+      "PCB-R19",
+      "PCB-R2",
+      "PCB-R20",
+      "PCB-R22",
+      "PCB-R3",
+      "PCB-R4",
+      "PCB-R5",
+      "PCB-R6",
+      "PCB-R7",
+      "PCB-R8",
+      "PCB-U1",
+      "PCB-U2",
+      "PCB-U3",
+      "PCB-J1_mating_plug_extension",
+      "PCB-J2_mating_plug_extension",
+      "PCB-J3_mating_plug_extension",
+      "PCB-J1_mated_height_reservation",
+      "PCB-J2_mated_height_reservation",
+      "PCB-J3_mated_height_reservation",
+      "PCB-pin-J1-1",
+      "PCB-pin-J1-2",
+      "PCB-pin-J2-1",
+      "PCB-pin-J2-2",
+      "PCB-pin-J2-3",
+      "PCB-pin-J2-4",
+      "PCB-pin-J3-1",
+      "PCB-pin-J3-2",
+      "PCB-pin-J3-3",
+      "PCB-pin-J3-4",
+      "PCB-pin-U2-1",
+      "PCB-pin-U2-2",
+      "PCB-pin-U2-3",
+      "PCB-pin-U2-4",
+      "PCB-pin-U3-1",
+      "PCB-pin-U3-2",
+      "PCB-pin-U3-3",
+      "PCB-pin-U3-4",
+      "ROUTE-GMSL-A",
+      "ROUTE-GMSL-B",
+      "ROUTE-ECAT",
+      "ROUTE-POWER"
+    ],
+    "mass_note": "nominal CAD+hardware envelopes; excludes controller gauge and PCB/other envelope entries; not a certified mass upper bound",
+    "verified": "load datum, scalar envelopes, post/bolt coordinates, side profile, critical bbox, D15x8.5 bottom counterbores, pad and pressure-plate bbox",
+    "inner_rectangles_note": "analytical contained subregions avoid known open holes/taper; actual pressure needs contact film; no full CAD contact solution"
+  },
+  "inputs_sha256": {
+    "engineering/generated/r5-body01/study.json": "26f3b184365ebe2a272038d2779543d7d0cea262310e016575d17602c8c0e5ad",
+    "engineering/generated/r5-body01/body-only-model.json": "3a49083aba0bf578b12d50dad1bfbdca92527efeced2307e9cb7b03151dd2b87",
+    "engineering/generated/shoulder-raise03/mass-properties.json": "97f7bf392d4db22b56d79536293527da9c03961eedf64855d59bc960d7b76262",
+    "engineering/base_b04/calculations/sources.json": "266e72e163ade1b4a84075501635fe3d862ff6f1e0eaa5abbce43216a3104b4d"
+  },
+  "tests": [
+    {
+      "test": "partial/full contact numerical force and first-moment integrals",
+      "max_force_error_N": 3.319655661471188e-11,
+      "max_moment_error_Nmm": 0.0012500000011641532,
+      "pass": true
+    },
+    {
+      "test": "500 independent vector force/moment equilibrium witnesses including unequal clamps",
+      "max_moment_residual_Nmm": 1.1641532182693481e-10,
+      "max_force_residual_N": 1.8189894035458565e-12,
+      "pass": true
+    },
+    {
+      "test": "500 interior-weight states below analytical combined scalar envelope",
+      "maximum_positive_violation": 0.0,
+      "pass": true
+    },
+    {
+      "test": "bolt force/moment sums and three nominal screw engagement stacks",
+      "pass": true
+    },
+    {
+      "test": "rejected/support-updated preload necessary inequality",
+      "old_each_N": 6330.0,
+      "new_J1_only_each_N": 408.0,
+      "pass": true
+    }
+  ],
+  "tables": {
+    "contact_rows": 1344,
+    "torque_rows": 108,
+    "sections": 7
+  },
+  "bounds": {
+    "note": "No load amplification added again to the stated 100Nm/500N envelope; source arm gravity is reference, not extra load.",
+    "total_applied_vertical_including_base_reserve_box_N": 629.41995,
+    "source_body_including_J1_excluding_old_base_kg": 17.264287919717244,
+    "source_old_fixed_base_removed_kg": 4.259645819283661
+  },
+  "not_closed": [
+    "tabletop local/global strength",
+    "measured rubber friction/compression and creep",
+    "retained clamp-force redistribution with applied moments",
+    "actual bolt axial preload and joint slip/prying",
+    "3D stress concentration at C-root R5 and flange holes",
+    "fatigue, stop dynamics and vibration",
+    "J1 exact mating interface and payload certification"
+  ],
+  "output_sha256": {
+    "contract.json": "54f6246143602ff73145d50c9cb3a4e0863de73b699a6d70ca07ec02125fcb89",
+    "contact-sensitivity.csv": "5fcc5a402eb044dae2c3b3f537ac26445b805474310822e39897af5989351c7b",
+    "all-weight-contact-envelope.csv": "1822bfe4cf235f267d1210ba3523a2f3a06215019bb77681eac9d28ef73f89d4",
+    "torque-force-sensitivity.csv": "b194cd20a6eea46fb25b1d8636de006c5a174094b78aa947f218292c12f864da",
+    "metal-section-sensitivity.csv": "76711ca842438157e4dd1dd3de126b82745a2369d7060ec3a52927f9037e3f72",
+    "screw-stack.csv": "45608f26504090fefb649ca934deabfd3de50c080cda52277d0af7811e546683",
+    "bolts-and-sections.json": "a5b325d77ca398c69faa052f1d94faa99a2b2ef6903e2ef40f81dc7807ad4e52",
+    "thin-web-M8.csv": "03db3d6bef1624434254fba3994d8ccd55c6e0be96eed12da89093cb8d76057b"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "status": "Primary sources for B04 nominal component/material screening; no stock, tabletop, preload or assembly qualification",
+  "retrieved_utc": "2026-09-30",
+  "records": [
+    {
+      "url": "https://live-katalog.ganternorm.com/pdf/ganter/EN/6332.pdf?dispositiontype=attachment",
+      "sha256": "dc85a606bb1f562c9626d1428fadaa412287e750a8813c7332346279605145f8",
+      "page_1_based": 1,
+      "verified_facts": "DIN 6332-M12-L-SK; L=50,60,65,70,80,100 mm; 5.8; AF6; pin8h11, neck7.2; z1 about10; pin tip to pad contact about4.6 mm; no load rating",
+      "local_cache": "../../work/base-b04/sources/ganter-din6332.pdf"
+    },
+    {
+      "url": "https://live-katalog.ganternorm.com/pdf/ganter/en/6311.pdf?dispositiontype=attachment",
+      "sha256": "f59af674db6623f01785d15f96528e1d1e6e38dc8e8ee6e3a8440bd193862140",
+      "page_1_based": 1,
+      "verified_facts": "DIN 6311-25-S; d1=25,d2=8.1 +0.2,d3=18,h1=13,h2=6 mm; fits M10/M12; swivel approximately5deg; hardened steel snap-ring pad",
+      "local_cache": "../../work/base-b04/sources/ganter-din6311.pdf"
+    },
+    {
+      "url": "https://live-katalog.ganternorm.com/pdf/ganter/en/802.pdf?dispositiontype=attachment",
+      "sha256": "e6441d553f36db4063f65a755437046859b7478582b1d41cb8249b0f1fc253c4",
+      "page_1_based": 1,
+      "verified_facts": "GN 802-M12-105 alternative assembly; dimension l105 includes pad; pad25,h13; two ISO4032 nuts supplied; screw5.8; no load rating",
+      "local_cache": "../../work/base-b04/sources/ganter-gn802.pdf"
+    },
+    {
+      "url": "https://live-katalog.ganternorm.com/pdf/ganter/en/898_1.pdf?dispositiontype=attachment",
+      "sha256": "42e15dae2822477a428b3cfe5b852b584fa13cc56c8ef1ebd1dcbf4de48cdb83",
+      "page_1_based": 1,
+      "verified_facts": "Supplier simplified table:5.8 minimum tensile500/yield400 MPa; use as supplier screening value, not product full compressive or buckling rating",
+      "local_cache": "../../work/base-b04/sources/ganter-strength.pdf"
+    },
+    {
+      "url": "https://ucpcdn.thyssenkrupp.com/_legacy/UCPthyssenkruppBAMXUK/assets.files/material-data-sheets/aluminium/aluminium-6061.pdf",
+      "sha256": "8ba9513baddb01a517cc7fd2cd71aad00ab46618c13d0410782a5a169182227c",
+      "page_1_based": 2,
+      "verified_facts": "6061 T6/T62/T651 plate thickness<=150mm Rp0.2>=240MPa; p3 E70000MPa,density2700kg/m3 guidance only; not welded heat-affected zone allowable",
+      "local_cache": "../../work/base-b04/sources/6061-thyssenkrupp.pdf"
+    },
+    {
+      "id": "S355-10",
+      "url": "https://www.ssab.com/-/media/files/en/zero/data_sheet_2422_ssab_s355j2n_zero_2025_01_21.pdf",
+      "secondary_official_url": "https://www.ssab.com/en/brands-and-products/ssab-zero/s355j2-plus-n-zero",
+      "page_1_based": 1,
+      "retrieval": "official PDF parsed by web tool; direct local download returned HTTP403; no fabricated PDF hash",
+      "sha256": null,
+      "verified_facts": "SSAB S355J2+N Zero normalized/normalized rolled heavy plate;6-16mm minimum yield355MPa, tensile470-630MPa. Application requires the delivered plate certificate; generic S355 label is insufficient. PDF tolerance ClassC and current webpage ClassA differ: do not freeze incoming thickness tolerance from these conflicting versions."
+    },
+    {
+      "id": "M6-25",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16077-SSC-M6-25-12-9",
+      "part": "SSC-M6-25-12.9",
+      "verified_facts": "M6x25 full thread DIN912 steel12.9, pitch1, head maximum10.22mm diameter and6mm height, AF5. Catalog identity only; page contains mixed availability template states and no stock assertion is made."
+    },
+    {
+      "id": "M6-20",
+      "url": "https://www.accu.co.uk/metric-cap-head-screws/16076-SSCF-M6-20-12-9",
+      "part": "SSCF-M6-20-12.9",
+      "verified_facts": "M6x20 full thread DIN912 steel12.9, pitch1, head maximum10.22mm diameter and6mm height, AF5. Catalog identity only, no stock assertion."
+    }
+  ],
+  "not_sourced_as_ratings": [
+    "rubber/table friction0.1-0.4 are test sensitivities",
+    "thread/tip friction0.08-0.20 and effective tip radius0-4mm are calculation assumptions",
+    "steelE210GPa is an elastic screening assumption",
+    "Kt1.5/2 are sensitivities, not fitted notch factors",
+    "M6/M8 installation axial preload4/6/8kN are sensitivities, not torque instructions",
+    "wood compressive strength and global desk bending remain unknown",
+    "exact M8/washer procurement identities belong to root BOM; nominal geometry comes from frozen build contract"
+  ]
+}

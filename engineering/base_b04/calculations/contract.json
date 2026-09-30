@@ -1,0 +1,266 @@
+{
+  "revision": "B04-CALC-04-contained-pads-solid34mm-C-spine",
+  "status": "nominal research screen; no production or tabletop release",
+  "coordinates": "x left/right; +y into desk; desk rear y=0; desk top z=0; mm",
+  "J1_load_point_mm": [
+    0.0,
+    135.0,
+    58.0
+  ],
+  "J1_force_N": {
+    "vertical_down": 500.0,
+    "horizontal_magnitude": 100.0
+  },
+  "vertical_down_intervals_N": {
+    "J1": [
+      0.0,
+      500.0
+    ],
+    "base": [
+      0.0,
+      100.0
+    ],
+    "removable_box": [
+      0.0,
+      29.41995
+    ]
+  },
+  "J1_moment_Nm": {
+    "pitch_Mx_separate_case": 100.0,
+    "roll_My_separate_case": 100.0,
+    "yaw_Mz_both_cases": 30.0
+  },
+  "load_definition": "500 N is a stipulated whole-arm applied envelope, not measured weight; base and box are additional. Pitch and roll 100 Nm are separate cases, each combined with horizontal 100 N and yaw 30 Nm.",
+  "base_weight_reserve_N": 100.0,
+  "base_reserve_COM_xy_bounds_mm": [
+    [
+      -128.0,
+      128.0
+    ],
+    [
+      -42.0,
+      290.0
+    ]
+  ],
+  "base_reserve_note": "Design reserve, not weighed mass or CAD integration. Entire reserve is adversarially placed within the base envelope for each separate scalar bound; extrema need not coincide. It includes base/tray metal, fasteners, cover, pads and harness, excludes the 3 kg box.",
+  "external_box_mass_kg": 3.0,
+  "external_box_COM_mm": [
+    0.0,
+    195.0,
+    -145.0
+  ],
+  "desk_thickness_examples_mm": [
+    15.0,
+    30.0,
+    60.0
+  ],
+  "upper_pad_rectangles_mm": [
+    [
+      -96.5,
+      -53.5,
+      8.0,
+      162.0
+    ],
+    [
+      53.5,
+      96.5,
+      8.0,
+      162.0
+    ]
+  ],
+  "upper_analysis_rectangles_mm": [
+    [
+      -96.5,
+      -53.5,
+      11.0,
+      159.0
+    ],
+    [
+      53.5,
+      96.5,
+      11.0,
+      159.0
+    ]
+  ],
+  "upper_pad_model": "compatible pressure field restricted to two 43x148 inner rectangles, resultant x=+-75; subset avoids pad R3 corners, deck taper, counterbores/cover screw entries. Nominal pad is43x154 R3. No lower-face friction credited.",
+  "lower_screw_axes_xy_mm": [
+    [
+      -85.0,
+      55.0
+    ],
+    [
+      85.0,
+      55.0
+    ]
+  ],
+  "lower_pad_plate_mm": [
+    70.0,
+    90.0,
+    8.0
+  ],
+  "lower_liner_mm": 2.0,
+  "preload_each_screw_N": [
+    500.0,
+    1000.0,
+    1500.0,
+    2000.0,
+    2500.0,
+    3000.0,
+    4000.0
+  ],
+  "preload_relative_imbalance": [
+    0.0,
+    0.1,
+    0.2
+  ],
+  "table_friction_sensitivity": [
+    0.1,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "clamp_preload_definition": "P is the mean actual retained compressive force under the evaluated load; PL/PR=P(1+-epsilon). These examples do not predict load-dependent redistribution from an installation torque.",
+  "side_plate_thickness_mm": 10.0,
+  "side_plate_YZ_polygon_mm": [
+    [
+      -42.0,
+      -118.0
+    ],
+    [
+      98.0,
+      -118.0
+    ],
+    [
+      98.0,
+      -80.0
+    ],
+    [
+      -8.0,
+      -80.0
+    ],
+    [
+      -8.0,
+      2.0
+    ],
+    [
+      98.0,
+      2.0
+    ],
+    [
+      98.0,
+      30.0
+    ],
+    [
+      -42.0,
+      30.0
+    ]
+  ],
+  "side_inner_radius_mm": 5.0,
+  "deck_mm": [
+    220.0,
+    256.0,
+    12.0
+  ],
+  "deck_y_range_mm": [
+    -38.0,
+    218.0
+  ],
+  "crossbeam_mm": [
+    220.0,
+    68.0,
+    22.0
+  ],
+  "crossbeam_y_range_mm": [
+    22.0,
+    90.0
+  ],
+  "crossbeam_z_range_mm": [
+    -112.0,
+    -90.0
+  ],
+  "upper_side_M6_y_mm": [
+    15.0,
+    45.0,
+    75.0
+  ],
+  "upper_side_M6_z_mm": 8.0,
+  "beam_side_M8_y_mm": [
+    40.0,
+    75.0
+  ],
+  "beam_side_M8_z_mm": -101.0,
+  "side_screw_engagement_nominal_mm": 13.4,
+  "interface_annulus_OD_ID_t_mm": [
+    160.0,
+    60.0,
+    12.0
+  ],
+  "interface_holes": {
+    "count": 8,
+    "PCD_mm": 120.0,
+    "angle_start_deg": 22.5,
+    "thread": "M6; mating module and bolt length not frozen"
+  },
+  "pillars_xy_mm": [
+    [
+      -45.0,
+      90.0
+    ],
+    [
+      45.0,
+      90.0
+    ],
+    [
+      -45.0,
+      180.0
+    ],
+    [
+      45.0,
+      180.0
+    ]
+  ],
+  "pillar_OD_length_mm": [
+    22.0,
+    32.0
+  ],
+  "pillar_engagement_upper_lower_mm": [
+    11.4,
+    12.5
+  ],
+  "bottom_M8_counterbore": {
+    "diameter_mm": 15.0,
+    "depth_mm": 8.5,
+    "seat_z_mm": 10.5,
+    "remaining_web_mm": 3.5,
+    "head_nominal_OD_mm": 13.0,
+    "clearance_mm": 8.5
+  },
+  "box_sidearm_mm": {
+    "thickness": 8.0,
+    "beam_height": 20.0,
+    "beam_y_end": 285.0,
+    "root_y": -6.0,
+    "attachment_y": [
+      10.0,
+      50.0
+    ],
+    "attachment_z": -88.0,
+    "M6_nominal_steel_engagement_mm": 6.4
+  },
+  "materials": {
+    "Al_6061_T651": {
+      "yield_MPa": 240.0,
+      "E_MPa": 70000.0,
+      "density_kg_m3": 2700.0
+    },
+    "S355J2_plus_N_10mm": {
+      "yield_MPa": 355.0,
+      "E_MPa": 210000.0,
+      "density_kg_m3": 7850.0
+    },
+    "DIN6332_5_8": {
+      "supplier_yield_MPa": 400.0,
+      "E_MPa_assumption": 210000.0
+    }
+  }
+}

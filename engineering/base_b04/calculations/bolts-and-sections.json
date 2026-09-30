@@ -1,0 +1,105 @@
+{
+  "evaluation_P_each_N": 2500.0,
+  "bolt_shear_areas_mm2": {
+    "M6": 20.1233297739974,
+    "M8": 36.60846284207682
+  },
+  "side_upper_M6": {
+    "preload_only_each_vertical_N": [
+      416.6666666666667,
+      833.3333333333334,
+      1250.0
+    ],
+    "preload_force_sum_N": 2500.0,
+    "moment_about_group_Nmm": 25000.0,
+    "with_separate_external_path_screen_max_shear_N": 2278.349747731649,
+    "average_thread_section_shear_MPa": 113.21932171859777,
+    "thread_proxy_for_assembly_axial_preload_4000N": {
+      "d_mm": 6,
+      "pitch_mm": 1,
+      "nominal_engagement_mm": 13.4,
+      "assumed_full_thread_mm": 11.4,
+      "proxy_shear_area_mm2": 88.05748804806477,
+      "axial_force_N": 4000,
+      "mean_proxy_shear_MPa": 45.424870600631536,
+      "limitation": "half-circumference shear proxy; first-thread concentration, root tolerances, splitting, actual full-thread depth and cyclic wear not resolved"
+    },
+    "note": "500 N at J1 is normally reacted by table and is not added again as a side clamp load. External-Mx half/all roll shared by side spacing are alternative gross path demands; C/deck contact stiffness and prying not solved. 4kN bolt assembly preload is sensitivity only, not prescribed torque."
+  },
+  "side_lower_M8": {
+    "each_vertical_N": [
+      1428.5714285714287,
+      1071.4285714285713
+    ],
+    "thread_section_shear_MPa": 39.02298314829722,
+    "thread_proxy_for_assembly_axial_preload_6000N": {
+      "d_mm": 8,
+      "pitch_mm": 1.25,
+      "nominal_engagement_mm": 13.4,
+      "assumed_full_thread_mm": 10.9,
+      "proxy_shear_area_mm2": 113.80498688058327,
+      "axial_force_N": 6000,
+      "mean_proxy_shear_MPa": 52.72176698456862,
+      "limitation": "half-circumference shear proxy; first-thread concentration, root tolerances, splitting, actual full-thread depth and cyclic wear not resolved"
+    }
+  },
+  "J1_eight_M6_ring": {
+    "elastic_group_tension_bound_at_W0_N": 416.6666666666667,
+    "shear_vector_triangle_bound_N": 75.0,
+    "note": "no favorable500N deducted for uplift; requires actual matched mating flange, preload and contact circle; bolt length not frozen"
+  },
+  "four_pillars": {
+    "max_compression_N": 705.0,
+    "max_uplift_N": 580.0,
+    "shear_each_triangle_bound_N": 142.85113019775793,
+    "solid_minus_8mm_axial_hole_area_mm2": 329.8672286269283,
+    "post_max_compression_MPa": 2.1372235215197373,
+    "post_bending_proxy_MPa": 4.4506823224344565,
+    "upper_M8_assembly_6000N_thread_proxy": {
+      "d_mm": 8,
+      "pitch_mm": 1.25,
+      "nominal_engagement_mm": 11.4,
+      "assumed_full_thread_mm": 8.9,
+      "proxy_shear_area_mm2": 92.92333791166891,
+      "axial_force_N": 6000,
+      "mean_proxy_shear_MPa": 64.56935507098854,
+      "limitation": "half-circumference shear proxy; first-thread concentration, root tolerances, splitting, actual full-thread depth and cyclic wear not resolved"
+    },
+    "lower_M8_assembly_6000N_thread_proxy": {
+      "d_mm": 8,
+      "pitch_mm": 1.25,
+      "nominal_engagement_mm": 12.5,
+      "assumed_full_thread_mm": 10.0,
+      "proxy_shear_area_mm2": 104.40824484457181,
+      "axial_force_N": 6000,
+      "mean_proxy_shear_MPa": 57.466726013179795,
+      "limitation": "half-circumference shear proxy; first-thread concentration, root tolerances, splitting, actual full-thread depth and cyclic wear not resolved"
+    },
+    "note": "rigid plate/equal stiffness axial group;100Nm+100N*(58-14) transferred to bottom plane, W500 for compression/W0 for uplift. Axial and cantilever post-bending proxies are separate load-sharing extremes, not one solved3Dframe; lower bolt is a socket cap in a counterbore"
+  },
+  "tray_3kg": {
+    "vertical_force_total_N": 29.41995,
+    "each_sidearm_root_moment_Nmm": 2956.704975,
+    "beam_bend_MPa": 5.543821828125,
+    "beam_at_box_COM_deflection_mm": 0.10665521222765625,
+    "each_M6_attachment_max_vertical_shear_N": 68.033634375,
+    "M6_steel_thread_proxy_at_2000N_assembly_preload": {
+      "d_mm": 6,
+      "pitch_mm": 1,
+      "nominal_engagement_mm": 6.4,
+      "assumed_full_thread_mm": 4.4,
+      "proxy_shear_area_mm2": 33.98710065013026,
+      "axial_force_N": 2000,
+      "mean_proxy_shear_MPa": 58.84585509627267,
+      "limitation": "half-circumference shear proxy; first-thread concentration, root tolerances, splitting, actual full-thread depth and cyclic wear not resolved"
+    },
+    "note": "3kg box only; tray/arm own weight and hand/service pull must be added; 5kg total-load sensitivity is obtained by multiplying these values by5/3"
+  },
+  "gross_plate_metrics": {
+    "deck_220wide_12thick_100Nm_MPa": 18.939393939393938,
+    "deck_100wide_strip_100Nm_MPa": 41.666666666666664,
+    "annulus_diametral_net_width_mm": 100,
+    "annulus_net_section_100Nm_MPa": 41.666666666666664,
+    "note": "net/gross section indices only; central hole, post bearing, plate load spreading and bolt prying not bounded"
+  }
+}
