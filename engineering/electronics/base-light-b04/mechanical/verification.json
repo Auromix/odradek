@@ -1,7 +1,7 @@
 {
   "revision": "BASE-LIGHT-B04-01",
   "license": "CC-BY-NC-4.0",
-  "input_contract_sha256": "e95eb6e5d328a8c90d6eb11a5d547993b30562a655c1e99a6a0de8416c338b34",
+  "input_contract_sha256": "bf58ae059159e9d0df991f2cc58a49b0405a7dd86375ec1d43a4f3a5b578a5a7",
   "export_checks": [
     {
       "file": "base-light-b04-local.step",
@@ -44,5 +44,6 @@
   "required_ceiling_mm": 32.0,
   "margin_to_ceiling_mm": 1.52,
   "models": "Original nominal board and LED planning boxes; wire reservation separate; no detailed internal LED die/lens or photometric simulation",
-  "mass": "not evaluated; no assumed package density"
+  "mass": "not evaluated; no assumed package density",
+  "contract_revision_note": "Only root-owned window top changed from flat z37 to curved CAD surface reference; PCB, LED, mount and wire geometry fields and STEP exports unchanged. Native interface readback rerun."
 }
