@@ -1,0 +1,157 @@
+{
+  "revision": "B04-P1",
+  "limitations": [
+    "Nominal rigid geometry; no FEA or physical load test.",
+    "Sliding paths are sampled, not continuous collision proof.",
+    "Fastener thread engagement is intentional; only head/washer free geometry is checked.",
+    "Controller is an allocation gauge. Harness plugs, wire compliance and human hands need prototype verification."
+  ],
+  "cases": [
+    {
+      "table_mm": 15,
+      "tested_pairs": 8337,
+      "interferences": [],
+      "nominal_foot_bridge_gap_mm": 52,
+      "thrust_thread_engagement_mm": 22,
+      "required_tool": "AF6 long driver, shank <=D10, 120mm unobstructed axial path; handle below cradle"
+    },
+    {
+      "table_mm": 30,
+      "tested_pairs": 8337,
+      "interferences": [],
+      "nominal_foot_bridge_gap_mm": 37,
+      "thrust_thread_engagement_mm": 22,
+      "required_tool": "AF6 long driver, shank <=D10, 120mm unobstructed axial path; handle below cradle"
+    },
+    {
+      "table_mm": 60,
+      "tested_pairs": 8337,
+      "interferences": [],
+      "nominal_foot_bridge_gap_mm": 7,
+      "thrust_thread_engagement_mm": 22,
+      "required_tool": "AF6 long driver, shank <=D10, 120mm unobstructed axial path; handle below cradle"
+    }
+  ],
+  "failures": [],
+  "sampled_paths": [
+    {
+      "name": "Lift REAR cover after removing its screws",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "sample_positions_mm": [
+        0.2,
+        1,
+        3,
+        6,
+        10,
+        20,
+        40,
+        80,
+        120
+      ],
+      "interferences": []
+    },
+    {
+      "name": "Lift FRONT cover after removing its screws",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "sample_positions_mm": [
+        0.2,
+        1,
+        3,
+        6,
+        10,
+        20,
+        40,
+        80,
+        120
+      ],
+      "interferences": []
+    },
+    {
+      "name": "Controller extraction: remove front stop/strap and unplug all cables",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "sample_positions_mm": [
+        1,
+        5,
+        10,
+        20,
+        40,
+        80,
+        120,
+        180,
+        240
+      ],
+      "interferences": []
+    },
+    {
+      "name": "J1 plug removal with rear hood removed",
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "sample_positions_mm": [
+        1,
+        3,
+        5,
+        10,
+        15,
+        20,
+        30
+      ],
+      "interferences": []
+    },
+    {
+      "name": "J2 plug removal with rear hood removed",
+      "axis": [
+        -1,
+        0,
+        0
+      ],
+      "sample_positions_mm": [
+        1,
+        3,
+        5,
+        10,
+        15,
+        20,
+        30
+      ],
+      "interferences": []
+    },
+    {
+      "name": "J3 plug removal with rear hood removed",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "sample_positions_mm": [
+        1,
+        3,
+        5,
+        10,
+        15,
+        20
+      ],
+      "interferences": []
+    }
+  ],
+  "inputs_sha256": {
+    "model.py": "153bb04a9884f9586b6a2922c3e3215ae0b544a0c122ac2364cf1312bc035cc0",
+    "parameters.json": "298c28aa11a281297550bb541b824b8aa7a559650e4f48b46bad70a670ab2ad5",
+    "build.py": "1544fd2c84e9a1aa944c33157a74536a6a425bc98a812826e6646bcf56219946"
+  },
+  "passed_nominal_geometry": true
+}
