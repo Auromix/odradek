@@ -1,0 +1,350 @@
+{
+  "revision": "BASE-LIGHT-B04-01",
+  "stage": "native ECAD/nominal assembly review; not optical or production validation",
+  "coordinates": {
+    "local": "u,v,w; PCB bottom w0; physical +u,+v,+w",
+    "to_global": "x=u-25,y=v+235,z=w+28",
+    "native_KiCad": "x=u,y=12-v; PCB top F.Cu"
+  },
+  "PCB": {
+    "size_mm": [
+      50,
+      12,
+      1.6
+    ],
+    "global_min_mm": [
+      -25,
+      235,
+      28
+    ],
+    "global_max_mm": [
+      25,
+      247,
+      29.6
+    ]
+  },
+  "mounts": [
+    {
+      "ref": "H1",
+      "uv_mm": [
+        3,
+        6
+      ],
+      "global_xyz_mm": [
+        -22,
+        241,
+        28
+      ],
+      "drill_mm": 2.2,
+      "keepout_radius_mm": 3,
+      "requirement": "no copper or non-mount component within R3"
+    },
+    {
+      "ref": "H2",
+      "uv_mm": [
+        47,
+        6
+      ],
+      "global_xyz_mm": [
+        22,
+        241,
+        28
+      ],
+      "drill_mm": 2.2,
+      "keepout_radius_mm": 3,
+      "requirement": "no copper or non-mount component within R3"
+    }
+  ],
+  "LEDs": [
+    {
+      "ref": "D1",
+      "role": "POWER",
+      "MPN": "150120AS75000",
+      "center_uv_mm": [
+        13,
+        6
+      ],
+      "center_global_xy_mm": [
+        -12,
+        241
+      ],
+      "optical_axis": [
+        0,
+        0,
+        1
+      ],
+      "cathode": "left / -u / pin1",
+      "land_centers_relative_uv_mm": [
+        [
+          -1.5,
+          0
+        ],
+        [
+          1.5,
+          0
+        ]
+      ],
+      "land_size_mm": [
+        1.4,
+        1.6
+      ],
+      "nominal_body_mm": [
+        3.2,
+        1.6,
+        0.68
+      ],
+      "specified_width_height_max_mm": [
+        1.7,
+        0.78
+      ],
+      "XY_planning_box_mm": [
+        3.4,
+        1.7
+      ],
+      "solder_planning_mm": 0.1,
+      "body_global_z_mm": [
+        29.7,
+        30.48
+      ],
+      "source": "Wurth p1; length3.2 nominal with general tolerance;3.4 selected planning envelope"
+    },
+    {
+      "ref": "D2",
+      "role": "RUN",
+      "MPN": "150120AS75000",
+      "center_uv_mm": [
+        25,
+        6
+      ],
+      "center_global_xy_mm": [
+        0,
+        241
+      ],
+      "optical_axis": [
+        0,
+        0,
+        1
+      ],
+      "cathode": "left / -u / pin1",
+      "land_centers_relative_uv_mm": [
+        [
+          -1.5,
+          0
+        ],
+        [
+          1.5,
+          0
+        ]
+      ],
+      "land_size_mm": [
+        1.4,
+        1.6
+      ],
+      "nominal_body_mm": [
+        3.2,
+        1.6,
+        0.68
+      ],
+      "specified_width_height_max_mm": [
+        1.7,
+        0.78
+      ],
+      "XY_planning_box_mm": [
+        3.4,
+        1.7
+      ],
+      "solder_planning_mm": 0.1,
+      "body_global_z_mm": [
+        29.7,
+        30.48
+      ],
+      "source": "Wurth p1; length3.2 nominal with general tolerance;3.4 selected planning envelope"
+    },
+    {
+      "ref": "D3",
+      "role": "FAULT",
+      "MPN": "150120AS75000",
+      "center_uv_mm": [
+        37,
+        6
+      ],
+      "center_global_xy_mm": [
+        12,
+        241
+      ],
+      "optical_axis": [
+        0,
+        0,
+        1
+      ],
+      "cathode": "left / -u / pin1",
+      "land_centers_relative_uv_mm": [
+        [
+          -1.5,
+          0
+        ],
+        [
+          1.5,
+          0
+        ]
+      ],
+      "land_size_mm": [
+        1.4,
+        1.6
+      ],
+      "nominal_body_mm": [
+        3.2,
+        1.6,
+        0.68
+      ],
+      "specified_width_height_max_mm": [
+        1.7,
+        0.78
+      ],
+      "XY_planning_box_mm": [
+        3.4,
+        1.7
+      ],
+      "solder_planning_mm": 0.1,
+      "body_global_z_mm": [
+        29.7,
+        30.48
+      ],
+      "source": "Wurth p1; length3.2 nominal with general tolerance;3.4 selected planning envelope"
+    }
+  ],
+  "window": {
+    "shape": "38x6 capsule; root-owned",
+    "global_xy_bbox_mm": [
+      [
+        -19,
+        238
+      ],
+      [
+        19,
+        244
+      ]
+    ],
+    "top_z_mm": 37,
+    "zone_intent": "POWER left, RUN middle, FAULT right; not uniformity proof"
+  },
+  "harness": {
+    "type": "four backside solder lands; no on-board plug",
+    "J1_pads": [
+      {
+        "pin": "1",
+        "net": "GND",
+        "center_uv_mm": [
+          19,
+          2.5
+        ],
+        "center_global_xy_mm": [
+          -6,
+          237.5
+        ],
+        "size_mm": [
+          2.5,
+          3
+        ],
+        "layer": "B.Cu"
+      },
+      {
+        "pin": "2",
+        "net": "LED_PWR_A",
+        "center_uv_mm": [
+          23,
+          2.5
+        ],
+        "center_global_xy_mm": [
+          -2,
+          237.5
+        ],
+        "size_mm": [
+          2.5,
+          3
+        ],
+        "layer": "B.Cu"
+      },
+      {
+        "pin": "3",
+        "net": "LED_RUN_A",
+        "center_uv_mm": [
+          27,
+          2.5
+        ],
+        "center_global_xy_mm": [
+          2,
+          237.5
+        ],
+        "size_mm": [
+          2.5,
+          3
+        ],
+        "layer": "B.Cu"
+      },
+      {
+        "pin": "4",
+        "net": "LED_FAULT_A",
+        "center_uv_mm": [
+          31,
+          2.5
+        ],
+        "center_global_xy_mm": [
+          6,
+          237.5
+        ],
+        "size_mm": [
+          2.5,
+          3
+        ],
+        "layer": "B.Cu"
+      }
+    ],
+    "service_board_ref": "base-b04 J3",
+    "service_pin_order": [
+      "GND",
+      "LED_PWR_A",
+      "LED_RUN_A",
+      "LED_FAULT_A"
+    ],
+    "mate": "JST XHP-4",
+    "contacts": "4 x SXH-001T-P0.6",
+    "wire_target": "26AWG stranded, insulation OD1.0..1.5mm; exact wire PN and final cut length not frozen",
+    "exit_vector": [
+      0,
+      -1,
+      0
+    ],
+    "local_reservation_global_min_mm": [
+      -8,
+      225,
+      25
+    ],
+    "local_reservation_global_max_mm": [
+      8,
+      239.5,
+      28
+    ],
+    "reservation_status": "planning space including solder and wire; not full routed harness or manufacturer bend limit",
+    "assembly": "solder wires before installing board; mechanical strain relief on lamp box; unplug service J3 before removing lamp module"
+  },
+  "electrical": {
+    "no_onboard_resistors": true,
+    "upstream_limit_resistors_ohm": 2200,
+    "upstream_refs": {
+      "POWER": "R22",
+      "RUN": "R14",
+      "FAULT": "R20"
+    },
+    "supply_V_nominal": 5,
+    "nominal_current_at_Vf2_mA": 1.3636363636363638,
+    "conditional_current_upper_bound_mA": 2.3415977961432506,
+    "current_bound_assumptions": "V5<=5.1V measured at board, 2.2k -1%, Vf>=0 and switch drop>=0; not a regulator tolerance proof",
+    "brightness": "20mA catalogue flux does not rate brightness at ~1.3mA; test actual guide and ambient light"
+  },
+  "not_included": [
+    "root-owned guide/box/fixing screws",
+    "whole harness path or shell interference check",
+    "optical cross-talk, photometry, temperature and electrical bench qualification"
+  ]
+}

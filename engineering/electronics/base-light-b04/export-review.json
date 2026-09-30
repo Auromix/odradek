@@ -1,0 +1,97 @@
+{
+  "stage": "geometry/electrical-file review candidate; no physical verification",
+  "native_kicad_STEP": {
+    "sha256": "a44e0bab5e124f733f360e4c8283c9d6af89ebbaea89254dc49b911840e1aff5",
+    "valid": true,
+    "solids": [
+      {
+        "volume_mm3": 4.508399999999999,
+        "min_mm": [
+          23.3,
+          -6.85,
+          1.695
+        ],
+        "max_mm": [
+          26.7,
+          -5.1499999999999995,
+          2.475
+        ]
+      },
+      {
+        "volume_mm3": 4.508399999999999,
+        "min_mm": [
+          11.3,
+          -6.85,
+          1.695
+        ],
+        "max_mm": [
+          14.700000000000001,
+          -5.1499999999999995,
+          2.475
+        ]
+      },
+      {
+        "volume_mm3": 4.508400000000002,
+        "min_mm": [
+          35.3,
+          -6.85,
+          1.695
+        ],
+        "max_mm": [
+          38.7,
+          -5.1499999999999995,
+          2.475
+        ]
+      },
+      {
+        "volume_mm3": 894.5199921252523,
+        "min_mm": [
+          0.0,
+          -12.0,
+          0.0
+        ],
+        "max_mm": [
+          50.0,
+          0.0,
+          1.51
+        ]
+      }
+    ],
+    "coordinates": "x=u,y=v-12; board bottom reference0. Native STEP contains default1.51mm dielectric, not the entire copper/mask stack; native components use the KiCad stackup reference."
+  },
+  "native_LED_xy_verified": true,
+  "native_LED_top_below32_global": true,
+  "MCAD_contract": "mechanical/base-light-b04-assembly.step uses full1.6mm PCB-envelope and LED upper boundz30.48; authoritative global assembly envelope",
+  "renders": [
+    {
+      "svg": "previews/board-front.svg",
+      "svg_sha256": "a3b3437f139e79b35ce45ebb0e863cb71ac436a13e37bff549a65b643ef465cd",
+      "png": "previews/board-front.png",
+      "png_sha256": "c4961b3c5f3b5270c07efb1f1f344befd56d123d3fc335db55eb6cd76f1047ab"
+    },
+    {
+      "svg": "previews/board-back.svg",
+      "svg_sha256": "7f5e54824de25084e086d15ac38acba6edd8490083e5ade061d2a697d28f3bb7",
+      "png": "previews/board-back.png",
+      "png_sha256": "18a4c140e193d718f4d1ededdeba68f57babb58b3b144dd79f80891c64b6ba8c"
+    },
+    {
+      "svg": "previews/base-light-b04.svg",
+      "svg_sha256": "2c1eacec17edcbcdc25520daba92b3a27c57b365c450516fe26eac1bdccf86b5",
+      "png": "previews/base-light-b04.png",
+      "png_sha256": "d97b93c08fd86fe76aaa27d1f0fe40102462931df9620de54855569d4cdc281e"
+    },
+    {
+      "svg": "previews/assembly-isometric.svg",
+      "svg_sha256": "133dbeb9c6d52b3653ca336959826b7d3dedbd00b4f9b604725b5d71fdd86778",
+      "png": "previews/assembly-isometric.png",
+      "png_sha256": "8c73b688a08b06a78b6f6914b00e6b22490d46cd44aca2902db7c62c52e857ef"
+    }
+  ],
+  "visual_review": "Rendered front/back copper, readable schematic and 3D projection inspected. Back artwork is shown in board-coordinate projection; use numbered pads/continuity, not apparent left-to-right pin order.",
+  "remaining": [
+    "root cover/light-guide and physical connector/harness assembly",
+    "optical cross-talk and brightness at actual service current",
+    "production stackup/stencil/solder/wire-crimp process"
+  ]
+}

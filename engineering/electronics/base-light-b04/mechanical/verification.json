@@ -1,0 +1,48 @@
+{
+  "revision": "BASE-LIGHT-B04-01",
+  "license": "CC-BY-NC-4.0",
+  "input_contract_sha256": "e95eb6e5d328a8c90d6eb11a5d547993b30562a655c1e99a6a0de8416c338b34",
+  "export_checks": [
+    {
+      "file": "base-light-b04-local.step",
+      "sha256": "0f6ae50bfb22c10637295e5d66a315ebf91b8b421f92d136c05651296fb197da",
+      "solid_count": 8,
+      "valid": true,
+      "volume_mm3": 962.4109532452995,
+      "volume_delta_mm3": -7.958078640513122e-13,
+      "bbox_min_mm": [
+        0.0,
+        0.0,
+        -0.035
+      ],
+      "bbox_max_mm": [
+        50.0,
+        12.0,
+        2.48
+      ]
+    },
+    {
+      "file": "base-light-b04-assembly.step",
+      "sha256": "96ff31f441b6700515fe37832117bceb2d32e5b422e4ec8f0a405a7190c14629",
+      "solid_count": 8,
+      "valid": true,
+      "volume_mm3": 962.4109532453006,
+      "volume_delta_mm3": 2.2737367544323206e-13,
+      "bbox_min_mm": [
+        -25.0,
+        235.0,
+        27.965
+      ],
+      "bbox_max_mm": [
+        25.0,
+        247.0,
+        30.48
+      ]
+    }
+  ],
+  "highest_LED_global_z_mm": 30.48,
+  "required_ceiling_mm": 32.0,
+  "margin_to_ceiling_mm": 1.52,
+  "models": "Original nominal board and LED planning boxes; wire reservation separate; no detailed internal LED die/lens or photometric simulation",
+  "mass": "not evaluated; no assumed package density"
+}

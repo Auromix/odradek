@@ -1,0 +1,143 @@
+{
+  "revision": "BASE-LIGHT-B04-01",
+  "components": [
+    {
+      "ref": "D1",
+      "value": "POWER AMBER",
+      "MPN": "150120AS75000",
+      "footprint": "WE_150120AS75000",
+      "u_mm": 13,
+      "v_mm": 6,
+      "side": "F",
+      "source_url": "https://www.we-online.com/components/products/datasheet/150120AS75000.pdf"
+    },
+    {
+      "ref": "D2",
+      "value": "RUN AMBER",
+      "MPN": "150120AS75000",
+      "footprint": "WE_150120AS75000",
+      "u_mm": 25,
+      "v_mm": 6,
+      "side": "F",
+      "source_url": "https://www.we-online.com/components/products/datasheet/150120AS75000.pdf"
+    },
+    {
+      "ref": "D3",
+      "value": "FAULT AMBER",
+      "MPN": "150120AS75000",
+      "footprint": "WE_150120AS75000",
+      "u_mm": 37,
+      "v_mm": 6,
+      "side": "F",
+      "source_url": "https://www.we-online.com/components/products/datasheet/150120AS75000.pdf"
+    },
+    {
+      "ref": "J1",
+      "value": "SOLDER HARNESS",
+      "MPN": "PCB_FEATURE",
+      "footprint": "Wire4_Back",
+      "u_mm": 25,
+      "v_mm": 2.5,
+      "side": "B",
+      "source_url": ""
+    },
+    {
+      "ref": "H1",
+      "value": "M2 NPTH",
+      "MPN": "PCB_FEATURE",
+      "footprint": "Mount_M2_R3",
+      "u_mm": 3,
+      "v_mm": 6,
+      "side": "F",
+      "source_url": ""
+    },
+    {
+      "ref": "H2",
+      "value": "M2 NPTH",
+      "MPN": "PCB_FEATURE",
+      "footprint": "Mount_M2_R3",
+      "u_mm": 47,
+      "v_mm": 6,
+      "side": "F",
+      "source_url": ""
+    }
+  ],
+  "pins": [
+    {
+      "ref": "D1",
+      "pin": "1",
+      "name": "K",
+      "role": "passive",
+      "net": "GND"
+    },
+    {
+      "ref": "D1",
+      "pin": "2",
+      "name": "A",
+      "role": "passive",
+      "net": "LED_PWR_A"
+    },
+    {
+      "ref": "D2",
+      "pin": "1",
+      "name": "K",
+      "role": "passive",
+      "net": "GND"
+    },
+    {
+      "ref": "D2",
+      "pin": "2",
+      "name": "A",
+      "role": "passive",
+      "net": "LED_RUN_A"
+    },
+    {
+      "ref": "D3",
+      "pin": "1",
+      "name": "K",
+      "role": "passive",
+      "net": "GND"
+    },
+    {
+      "ref": "D3",
+      "pin": "2",
+      "name": "A",
+      "role": "passive",
+      "net": "LED_FAULT_A"
+    },
+    {
+      "ref": "J1",
+      "pin": "1",
+      "name": "GND",
+      "role": "passive",
+      "net": "GND"
+    },
+    {
+      "ref": "J1",
+      "pin": "2",
+      "name": "LED_PWR_A",
+      "role": "passive",
+      "net": "LED_PWR_A"
+    },
+    {
+      "ref": "J1",
+      "pin": "3",
+      "name": "LED_RUN_A",
+      "role": "passive",
+      "net": "LED_RUN_A"
+    },
+    {
+      "ref": "J1",
+      "pin": "4",
+      "name": "LED_FAULT_A",
+      "role": "passive",
+      "net": "LED_FAULT_A"
+    }
+  ],
+  "nets": [
+    "GND",
+    "LED_FAULT_A",
+    "LED_PWR_A",
+    "LED_RUN_A"
+  ]
+}

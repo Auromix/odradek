@@ -1,0 +1,157 @@
+[
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "erc",
+      "--severity-all",
+      "--format",
+      "json",
+      "-o",
+      "kicad/checks/erc.json",
+      "kicad/base-light-b04.kicad_sch"
+    ],
+    "returncode": 0,
+    "output": "Found 0 violations\nSaved ERC Report to kicad/checks/erc.json\nFontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "svg",
+      "--exclude-drawing-sheet",
+      "-o",
+      "previews/",
+      "kicad/base-light-b04.kicad_sch"
+    ],
+    "returncode": 0,
+    "output": "Plotted to '${MODULE_DIR}/previews/base-light-b04.svg'.\nDone.\nFontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "kicad/checks/base-light-b04.xml",
+      "kicad/base-light-b04.kicad_sch"
+    ],
+    "returncode": 0,
+    "output": "Fontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "drc",
+      "--all-track-errors",
+      "--schematic-parity",
+      "--severity-all",
+      "--format",
+      "json",
+      "-o",
+      "kicad/checks/drc.json",
+      "kicad/base-light-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to kicad/checks/drc.json\nFontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "F.Cu,F.Silkscreen,Edge.Cuts",
+      "--mode-single",
+      "--page-size-mode",
+      "2",
+      "--exclude-drawing-sheet",
+      "-o",
+      "previews/board-front.svg",
+      "kicad/base-light-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-front.svg'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "B.Cu,B.Silkscreen,Edge.Cuts",
+      "--mode-single",
+      "--page-size-mode",
+      "2",
+      "--exclude-drawing-sheet",
+      "-o",
+      "previews/board-back.svg",
+      "kicad/base-light-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-back.svg'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "--layers",
+      "F.Cu,B.Cu,F.Paste,B.Paste,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "-o",
+      "fabrication/",
+      "kicad/base-light-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'fabrication/base-light-b04-F_Cu.gtl'.\nPlotted to 'fabrication/base-light-b04-B_Cu.gbl'.\nPlotted to 'fabrication/base-light-b04-F_Paste.gtp'.\nPlotted to 'fabrication/base-light-b04-B_Paste.gbp'.\nPlotted to 'fabrication/base-light-b04-F_Silkscreen.gto'.\nPlotted to 'fabrication/base-light-b04-B_Silkscreen.gbo'.\nPlotted to 'fabrication/base-light-b04-F_Mask.gts'.\nPlotted to 'fabrication/base-light-b04-B_Mask.gbs'.\nPlotted to 'fabrication/base-light-b04-Edge_Cuts.gm1'.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "svg",
+      "--generate-report",
+      "-o",
+      "fabrication/",
+      "kicad/base-light-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Created file 'fabrication/base-light-b04-PTH.drl'\nCreated file 'fabrication/base-light-b04-NPTH.drl'\nCreated file 'fabrication/base-light-b04-PTH-drl_map.svg'.\nCreated file 'fabrication/base-light-b04-NPTH-drl_map.svg'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "step",
+      "--force",
+      "--subst-models",
+      "-o",
+      "mechanical/native-kicad.step",
+      "kicad/base-light-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "STEP file 'mechanical/native-kicad.step' created.\n\nExport time 0.096 s\n2026-09-30 18:22:12.629 kicad-cli[36193:24418899] Error retrieving source file attributes: Error Domain=NSCocoaErrorDomain Code=260 \"The file \u201cnative-kicad.step\u201d couldn\u2019t be opened because there is no such file.\" UserInfo={NSFilePath=mechanical/native-kicad.step, NSURL=mechanical/native-kicad.step -- file://${MODULE_DIR}/mechanical/, NSUnderlyingError=0x74eb008390 {Error Domain=NSPOSIXErrorDomain Code=2 \"No such file or directory\"}}\n"
+  },
+  {
+    "command": [
+      "python3.9",
+      "tools/verify_native.py"
+    ],
+    "returncode": 0,
+    "output": "native readback, 4-net parity, R3, upstream J3, ERC/DRC passed\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n06:22:14\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+  }
+]
