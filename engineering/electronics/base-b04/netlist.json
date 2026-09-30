@@ -1,0 +1,2044 @@
+{
+  "revision": "B04-SERVICE01",
+  "components": [
+    {
+      "ref": "J1",
+      "qty": 1,
+      "value": "20-55V SERVICE",
+      "MPN": "1803277",
+      "footprint": "MC2",
+      "u_mm": 8,
+      "v_mm": 12,
+      "rotation_ccw_deg": 0,
+      "height_mm": 7.25,
+      "body_mm": [
+        9.2,
+        9.01
+      ],
+      "source_url": "https://www.phoenixcontact.com/en-gb/products/pcb-header-mc-15-2-g-381-1803277",
+      "notes": "mate1803578; insertion towards+u; removal-u; not motor power",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "J2",
+      "qty": 1,
+      "value": "24V isolated status",
+      "MPN": "1803293",
+      "footprint": "MC4",
+      "u_mm": 8,
+      "v_mm": 25,
+      "rotation_ccw_deg": 0,
+      "height_mm": 7.25,
+      "body_mm": [
+        9.2,
+        16.63
+      ],
+      "source_url": "https://www.phoenixcontact.com/en-nl/products/pcb-header-mc-15-4-g-381-1803293",
+      "notes": "mate1803594; each channel has independent return; no MCU GPIO direct connection",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "J3",
+      "qty": 1,
+      "value": "REMOTE LEDS",
+      "MPN": "S4B-XH-A(LF)(SN)",
+      "footprint": "XH4",
+      "u_mm": 73,
+      "v_mm": 21,
+      "rotation_ccw_deg": 0,
+      "height_mm": 6.1,
+      "body_mm": [
+        11.7,
+        12.4
+      ],
+      "source_url": "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf",
+      "notes": "mateXHP-4; four SXH-001T-P0.6 contacts; externally mounted bare LEDs, max3mA/channel",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "F1",
+      "qty": 1,
+      "value": "250mA 125VDC",
+      "MPN": "0451.250MRL",
+      "footprint": "F2410",
+      "u_mm": 17,
+      "v_mm": 12,
+      "rotation_ccw_deg": 0,
+      "height_mm": 2.6,
+      "body_mm": [
+        6.1,
+        2.69
+      ],
+      "source_url": "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_451_453_datasheet.pdf.pdf",
+      "notes": "50A interrupt @125VDC is component data; prospective branch fault current must be <=50A; upstream protected branch required",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "D1",
+      "qty": 1,
+      "value": "100V reverse block",
+      "MPN": "STPS1H100A",
+      "footprint": "SMA",
+      "u_mm": 25,
+      "v_mm": 12,
+      "rotation_ccw_deg": 180,
+      "height_mm": 2.45,
+      "body_mm": [
+        4.6,
+        2.95
+      ],
+      "source_url": "https://www.st.com/resource/en/datasheet/stps1h100.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R1",
+      "qty": 1,
+      "value": "10R 1W",
+      "MPN": "RC2512FK-0710RL",
+      "footprint": "R2512",
+      "u_mm": 24,
+      "v_mm": 18,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.7,
+      "body_mm": [
+        6.3,
+        3.2
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "D2",
+      "qty": 1,
+      "value": "58V standoff TVS",
+      "MPN": "SMBJ58A",
+      "footprint": "SMB",
+      "u_mm": 17,
+      "v_mm": 18,
+      "rotation_ccw_deg": 90,
+      "height_mm": 2.44,
+      "body_mm": [
+        4.57,
+        3.94
+      ],
+      "source_url": "https://m.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smbj_datasheet.pdf.pdf",
+      "notes": "transient candidate only; not regeneration absorber; published clamp93.6V leaves limited100V margin; actual overshoot test required",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "C1",
+      "qty": 1,
+      "value": "2.2u 100V",
+      "MPN": "CGA6N3X7R2A225K230AB",
+      "footprint": "C1210",
+      "u_mm": 31,
+      "v_mm": 17,
+      "rotation_ccw_deg": 90,
+      "height_mm": 2.5,
+      "body_mm": [
+        3.6,
+        2.8
+      ],
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA6N3X7R2A225K230AB",
+      "notes": "TDK catalogue maximum body including size tolerance; dielectric DC-bias/loss under actual conditions still requires bench validation",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "C2",
+      "qty": 1,
+      "value": "2.2u 100V",
+      "MPN": "CGA6N3X7R2A225K230AB",
+      "footprint": "C1210",
+      "u_mm": 31,
+      "v_mm": 12,
+      "rotation_ccw_deg": 90,
+      "height_mm": 2.5,
+      "body_mm": [
+        3.6,
+        2.8
+      ],
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA6N3X7R2A225K230AB",
+      "notes": "TDK catalogue maximum body including size tolerance; dielectric DC-bias/loss under actual conditions still requires bench validation",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "U1",
+      "qty": 1,
+      "value": "LM5164DDAR",
+      "MPN": "LM5164DDAR",
+      "footprint": "TI_DDA8",
+      "u_mm": 39,
+      "v_mm": 16,
+      "rotation_ccw_deg": 0,
+      "height_mm": 1.75,
+      "body_mm": [
+        4.9,
+        3.98
+      ],
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "C3",
+      "qty": 1,
+      "value": "2.2n 50V C0G",
+      "MPN": "C1608C0G1H222J080AA",
+      "footprint": "C0603",
+      "u_mm": 45,
+      "v_mm": 17.435,
+      "rotation_ccw_deg": 90,
+      "height_mm": 0.9,
+      "body_mm": [
+        1.7,
+        0.9
+      ],
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H222J080AA",
+      "notes": "TDK catalogue maximum body including size tolerance; dielectric DC-bias/loss under actual conditions still requires bench validation",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "L1",
+      "qty": 1,
+      "value": "68uH shielded",
+      "MPN": "MSS1246T-683MLB",
+      "footprint": "MSS1246T",
+      "u_mm": 54,
+      "v_mm": 16,
+      "rotation_ccw_deg": 0,
+      "height_mm": 4.8,
+      "body_mm": [
+        12.3,
+        12.3
+      ],
+      "source_url": "https://www.coilcraft.com/pdfs/mss1246t.pdf",
+      "notes": "I_sat20%=2.26A; actual loss/temperature not yet measured",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "C4",
+      "qty": 1,
+      "value": "22u 25V X7R",
+      "MPN": "CGA6P3X7R1E226M250AE",
+      "footprint": "C1210",
+      "u_mm": 64,
+      "v_mm": 14,
+      "rotation_ccw_deg": 90,
+      "height_mm": 2.8,
+      "body_mm": [
+        3.7,
+        2.8
+      ],
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA6P3X7R1E226M250AE",
+      "notes": "TDK catalogue maximum body including size tolerance; dielectric DC-bias/loss under actual conditions still requires bench validation",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "C5",
+      "qty": 1,
+      "value": "22u 25V X7R",
+      "MPN": "CGA6P3X7R1E226M250AE",
+      "footprint": "C1210",
+      "u_mm": 64,
+      "v_mm": 19,
+      "rotation_ccw_deg": 90,
+      "height_mm": 2.8,
+      "body_mm": [
+        3.7,
+        2.8
+      ],
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA6P3X7R1E226M250AE",
+      "notes": "TDK catalogue maximum body including size tolerance; dielectric DC-bias/loss under actual conditions still requires bench validation",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R2",
+      "qty": 1,
+      "value": "41.2k",
+      "MPN": "RC0603FR-0741K2L",
+      "footprint": "R0603",
+      "u_mm": 34,
+      "v_mm": 8,
+      "rotation_ccw_deg": 90,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R3",
+      "qty": 1,
+      "value": "158k",
+      "MPN": "RC0603FR-07158KL",
+      "footprint": "R0603",
+      "u_mm": 45,
+      "v_mm": 9,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R4",
+      "qty": 1,
+      "value": "49.9k",
+      "MPN": "RC0603FR-0749K9L",
+      "footprint": "R0603",
+      "u_mm": 40,
+      "v_mm": 9,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R5",
+      "qty": 1,
+      "value": "1M",
+      "MPN": "RC0603FR-071ML",
+      "footprint": "R0603",
+      "u_mm": 25,
+      "v_mm": 6,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R6",
+      "qty": 1,
+      "value": "90.9k",
+      "MPN": "RC0603FR-0790K9L",
+      "footprint": "R0603",
+      "u_mm": 30,
+      "v_mm": 6,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R7",
+      "qty": 1,
+      "value": "220k",
+      "MPN": "RC0603FR-07220KL",
+      "footprint": "R0603",
+      "u_mm": 50,
+      "v_mm": 6,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "C6",
+      "qty": 1,
+      "value": "3.3n 100V X7R",
+      "MPN": "CGA3E2X7R2A332K080AA",
+      "footprint": "C0603",
+      "u_mm": 55,
+      "v_mm": 6,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.9,
+      "body_mm": [
+        1.7,
+        0.9
+      ],
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA3E2X7R2A332K080AA",
+      "notes": "TDK catalogue maximum body including size tolerance; dielectric DC-bias/loss under actual conditions still requires bench validation",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "C7",
+      "qty": 1,
+      "value": "220p 50V C0G",
+      "MPN": "C1608C0G1H221J080AA",
+      "footprint": "C0603",
+      "u_mm": 45,
+      "v_mm": 5,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.9,
+      "body_mm": [
+        1.7,
+        0.9
+      ],
+      "source_url": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H221J080AA",
+      "notes": "TDK catalogue maximum body including size tolerance; dielectric DC-bias/loss under actual conditions still requires bench validation",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R8",
+      "qty": 1,
+      "value": "47k",
+      "MPN": "RC0603FR-0747KL",
+      "footprint": "R0603",
+      "u_mm": 39,
+      "v_mm": 24,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R10",
+      "qty": 1,
+      "value": "1.5k 0.25W",
+      "MPN": "RC1206FR-071K5L",
+      "footprint": "R1206",
+      "u_mm": 15,
+      "v_mm": 28,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.7,
+      "body_mm": [
+        3.2,
+        1.6
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R11",
+      "qty": 1,
+      "value": "1.5k 0.25W",
+      "MPN": "RC1206FR-071K5L",
+      "footprint": "R1206",
+      "u_mm": 21,
+      "v_mm": 28,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.7,
+      "body_mm": [
+        3.2,
+        1.6
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "D3",
+      "qty": 1,
+      "value": "opto reverse clamp",
+      "MPN": "1N4148WS-E3-08",
+      "footprint": "SOD323",
+      "u_mm": 21,
+      "v_mm": 32,
+      "rotation_ccw_deg": 0,
+      "height_mm": 1.1,
+      "body_mm": [
+        1.8,
+        1.35
+      ],
+      "source_url": "https://www.vishay.com/docs/86455/1n4148ws.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "U2",
+      "qty": 1,
+      "value": "VO617A-3",
+      "MPN": "VO617A-3",
+      "footprint": "DIP4",
+      "u_mm": 27,
+      "v_mm": 28,
+      "rotation_ccw_deg": 0,
+      "height_mm": 4.55,
+      "body_mm": [
+        9.91,
+        4.83
+      ],
+      "source_url": "https://www.vishay.com/docs/83430/vo617a.pdf",
+      "notes": "CTR100..200%@IF5mA,VCE5V,25C; use~.45mA output load; temperature/aging test remains",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R12",
+      "qty": 1,
+      "value": "10k",
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "R0603",
+      "u_mm": 43,
+      "v_mm": 28,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R13",
+      "qty": 1,
+      "value": "47k",
+      "MPN": "RC0603FR-0747KL",
+      "footprint": "R0603",
+      "u_mm": 49,
+      "v_mm": 31,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "Q1",
+      "qty": 1,
+      "value": "BC857B PNP",
+      "MPN": "BC857B,215",
+      "footprint": "SOT23",
+      "u_mm": 50,
+      "v_mm": 28,
+      "rotation_ccw_deg": 0,
+      "height_mm": 1.1,
+      "body_mm": [
+        3.0,
+        1.4
+      ],
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BC856_BC857_BC858.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R14",
+      "qty": 1,
+      "value": "2.2k LED limit",
+      "MPN": "RC0603FR-072K2L",
+      "footprint": "R0603",
+      "u_mm": 58,
+      "v_mm": 28,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R16",
+      "qty": 1,
+      "value": "1.5k 0.25W",
+      "MPN": "RC1206FR-071K5L",
+      "footprint": "R1206",
+      "u_mm": 15,
+      "v_mm": 39,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.7,
+      "body_mm": [
+        3.2,
+        1.6
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R17",
+      "qty": 1,
+      "value": "1.5k 0.25W",
+      "MPN": "RC1206FR-071K5L",
+      "footprint": "R1206",
+      "u_mm": 21,
+      "v_mm": 39,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.7,
+      "body_mm": [
+        3.2,
+        1.6
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "D4",
+      "qty": 1,
+      "value": "opto reverse clamp",
+      "MPN": "1N4148WS-E3-08",
+      "footprint": "SOD323",
+      "u_mm": 21,
+      "v_mm": 43,
+      "rotation_ccw_deg": 0,
+      "height_mm": 1.1,
+      "body_mm": [
+        1.8,
+        1.35
+      ],
+      "source_url": "https://www.vishay.com/docs/86455/1n4148ws.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "U3",
+      "qty": 1,
+      "value": "VO617A-3",
+      "MPN": "VO617A-3",
+      "footprint": "DIP4",
+      "u_mm": 27,
+      "v_mm": 39,
+      "rotation_ccw_deg": 0,
+      "height_mm": 4.55,
+      "body_mm": [
+        9.91,
+        4.83
+      ],
+      "source_url": "https://www.vishay.com/docs/83430/vo617a.pdf",
+      "notes": "CTR100..200%@IF5mA,VCE5V,25C; use~.45mA output load; temperature/aging test remains",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R18",
+      "qty": 1,
+      "value": "10k",
+      "MPN": "RC0603FR-0710KL",
+      "footprint": "R0603",
+      "u_mm": 43,
+      "v_mm": 39,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R19",
+      "qty": 1,
+      "value": "47k",
+      "MPN": "RC0603FR-0747KL",
+      "footprint": "R0603",
+      "u_mm": 49,
+      "v_mm": 42,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "Q2",
+      "qty": 1,
+      "value": "BC857B PNP",
+      "MPN": "BC857B,215",
+      "footprint": "SOT23",
+      "u_mm": 50,
+      "v_mm": 39,
+      "rotation_ccw_deg": 0,
+      "height_mm": 1.1,
+      "body_mm": [
+        3.0,
+        1.4
+      ],
+      "source_url": "https://assets.nexperia.com/documents/data-sheet/BC856_BC857_BC858.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R20",
+      "qty": 1,
+      "value": "2.2k LED limit",
+      "MPN": "RC0603FR-072K2L",
+      "footprint": "R0603",
+      "u_mm": 58,
+      "v_mm": 39,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "R22",
+      "qty": 1,
+      "value": "2.2k LED limit",
+      "MPN": "RC0603FR-072K2L",
+      "footprint": "R0603",
+      "u_mm": 66,
+      "v_mm": 24,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0.65,
+      "body_mm": [
+        1.6,
+        0.85
+      ],
+      "source_url": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+      "notes": "",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "TP1",
+      "qty": 1,
+      "value": "GND",
+      "MPN": "PCB_FEATURE",
+      "footprint": "TP",
+      "u_mm": 64,
+      "v_mm": 34,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0,
+      "body_mm": [
+        1.5,
+        1.5
+      ],
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+      "notes": "fabricated copper test pad; no purchased component",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "TP2",
+      "qty": 1,
+      "value": "V5",
+      "MPN": "PCB_FEATURE",
+      "footprint": "TP",
+      "u_mm": 69,
+      "v_mm": 34,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0,
+      "body_mm": [
+        1.5,
+        1.5
+      ],
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+      "notes": "fabricated copper test pad; no purchased component",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "TP3",
+      "qty": 1,
+      "value": "VIN_PROT",
+      "MPN": "PCB_FEATURE",
+      "footprint": "TP",
+      "u_mm": 35,
+      "v_mm": 22,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0,
+      "body_mm": [
+        1.5,
+        1.5
+      ],
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+      "notes": "fabricated copper test pad; no purchased component",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "TP4",
+      "qty": 1,
+      "value": "PGOOD",
+      "MPN": "PCB_FEATURE",
+      "footprint": "TP",
+      "u_mm": 44,
+      "v_mm": 24,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0,
+      "body_mm": [
+        1.5,
+        1.5
+      ],
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+      "notes": "fabricated copper test pad; no purchased component",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "H1",
+      "qty": 1,
+      "value": "M3 NPTH R3.5 clear",
+      "MPN": "PCB_FEATURE",
+      "footprint": "M3",
+      "u_mm": 5,
+      "v_mm": 5,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0,
+      "body_mm": [
+        7,
+        7
+      ],
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+      "notes": "no copper, no electrical grounding through mount",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "H2",
+      "qty": 1,
+      "value": "M3 NPTH R3.5 clear",
+      "MPN": "PCB_FEATURE",
+      "footprint": "M3",
+      "u_mm": 75,
+      "v_mm": 5,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0,
+      "body_mm": [
+        7,
+        7
+      ],
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+      "notes": "no copper, no electrical grounding through mount",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "H3",
+      "qty": 1,
+      "value": "M3 NPTH R3.5 clear",
+      "MPN": "PCB_FEATURE",
+      "footprint": "M3",
+      "u_mm": 75,
+      "v_mm": 45,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0,
+      "body_mm": [
+        7,
+        7
+      ],
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+      "notes": "no copper, no electrical grounding through mount",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    },
+    {
+      "ref": "H4",
+      "qty": 1,
+      "value": "M3 NPTH R3.5 clear",
+      "MPN": "PCB_FEATURE",
+      "footprint": "M3",
+      "u_mm": 5,
+      "v_mm": 45,
+      "rotation_ccw_deg": 0,
+      "height_mm": 0,
+      "body_mm": [
+        7,
+        7
+      ],
+      "source_url": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+      "notes": "no copper, no electrical grounding through mount",
+      "status": "B04 fabrication-review candidate; not bench validated"
+    }
+  ],
+  "pins": [
+    {
+      "ref": "J1",
+      "pin": "1",
+      "name": "1",
+      "net": "VIN_RAW",
+      "role": "passive"
+    },
+    {
+      "ref": "J1",
+      "pin": "2",
+      "name": "2",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "J2",
+      "pin": "1",
+      "name": "1",
+      "net": "FIELD_RUN_P",
+      "role": "passive"
+    },
+    {
+      "ref": "J2",
+      "pin": "2",
+      "name": "2",
+      "net": "FIELD_RUN_N",
+      "role": "passive"
+    },
+    {
+      "ref": "J2",
+      "pin": "3",
+      "name": "3",
+      "net": "FIELD_FAULT_P",
+      "role": "passive"
+    },
+    {
+      "ref": "J2",
+      "pin": "4",
+      "name": "4",
+      "net": "FIELD_FAULT_N",
+      "role": "passive"
+    },
+    {
+      "ref": "J3",
+      "pin": "1",
+      "name": "1",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "J3",
+      "pin": "2",
+      "name": "2",
+      "net": "LED_PWR_A",
+      "role": "passive"
+    },
+    {
+      "ref": "J3",
+      "pin": "3",
+      "name": "3",
+      "net": "LED_RUN_A",
+      "role": "passive"
+    },
+    {
+      "ref": "J3",
+      "pin": "4",
+      "name": "4",
+      "net": "LED_FAULT_A",
+      "role": "passive"
+    },
+    {
+      "ref": "F1",
+      "pin": "1",
+      "name": "1",
+      "net": "VIN_RAW",
+      "role": "passive"
+    },
+    {
+      "ref": "F1",
+      "pin": "2",
+      "name": "2",
+      "net": "VIN_FUSED",
+      "role": "passive"
+    },
+    {
+      "ref": "D1",
+      "pin": "1",
+      "name": "K",
+      "net": "VIN_DIODE",
+      "role": "passive"
+    },
+    {
+      "ref": "D1",
+      "pin": "2",
+      "name": "A",
+      "net": "VIN_FUSED",
+      "role": "passive"
+    },
+    {
+      "ref": "R1",
+      "pin": "1",
+      "name": "1",
+      "net": "VIN_DIODE",
+      "role": "passive"
+    },
+    {
+      "ref": "R1",
+      "pin": "2",
+      "name": "2",
+      "net": "VIN_PROT",
+      "role": "passive"
+    },
+    {
+      "ref": "D2",
+      "pin": "1",
+      "name": "K",
+      "net": "VIN_PROT",
+      "role": "passive"
+    },
+    {
+      "ref": "D2",
+      "pin": "2",
+      "name": "A",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "C1",
+      "pin": "1",
+      "name": "1",
+      "net": "VIN_PROT",
+      "role": "passive"
+    },
+    {
+      "ref": "C1",
+      "pin": "2",
+      "name": "2",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "C2",
+      "pin": "1",
+      "name": "1",
+      "net": "VIN_PROT",
+      "role": "passive"
+    },
+    {
+      "ref": "C2",
+      "pin": "2",
+      "name": "2",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "U1",
+      "pin": "1",
+      "name": "GND",
+      "net": "GND",
+      "role": "power_in"
+    },
+    {
+      "ref": "U1",
+      "pin": "2",
+      "name": "VIN",
+      "net": "VIN_PROT",
+      "role": "power_in"
+    },
+    {
+      "ref": "U1",
+      "pin": "3",
+      "name": "EN_UVLO",
+      "net": "UVLO",
+      "role": "input"
+    },
+    {
+      "ref": "U1",
+      "pin": "4",
+      "name": "RON",
+      "net": "RON",
+      "role": "input"
+    },
+    {
+      "ref": "U1",
+      "pin": "5",
+      "name": "FB",
+      "net": "FB",
+      "role": "input"
+    },
+    {
+      "ref": "U1",
+      "pin": "6",
+      "name": "PGOOD",
+      "net": "PGOOD",
+      "role": "open_collector"
+    },
+    {
+      "ref": "U1",
+      "pin": "7",
+      "name": "BST",
+      "net": "BST",
+      "role": "power_in"
+    },
+    {
+      "ref": "U1",
+      "pin": "8",
+      "name": "SW",
+      "net": "SW",
+      "role": "power_out"
+    },
+    {
+      "ref": "U1",
+      "pin": "9",
+      "name": "EP",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "C3",
+      "pin": "1",
+      "name": "1",
+      "net": "BST",
+      "role": "passive"
+    },
+    {
+      "ref": "C3",
+      "pin": "2",
+      "name": "2",
+      "net": "SW",
+      "role": "passive"
+    },
+    {
+      "ref": "L1",
+      "pin": "1",
+      "name": "1",
+      "net": "SW",
+      "role": "passive"
+    },
+    {
+      "ref": "L1",
+      "pin": "2",
+      "name": "2",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "C4",
+      "pin": "1",
+      "name": "1",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "C4",
+      "pin": "2",
+      "name": "2",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "C5",
+      "pin": "1",
+      "name": "1",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "C5",
+      "pin": "2",
+      "name": "2",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "R2",
+      "pin": "1",
+      "name": "1",
+      "net": "RON",
+      "role": "passive"
+    },
+    {
+      "ref": "R2",
+      "pin": "2",
+      "name": "2",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "R3",
+      "pin": "1",
+      "name": "1",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "R3",
+      "pin": "2",
+      "name": "2",
+      "net": "FB",
+      "role": "passive"
+    },
+    {
+      "ref": "R4",
+      "pin": "1",
+      "name": "1",
+      "net": "FB",
+      "role": "passive"
+    },
+    {
+      "ref": "R4",
+      "pin": "2",
+      "name": "2",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "R5",
+      "pin": "1",
+      "name": "1",
+      "net": "VIN_PROT",
+      "role": "passive"
+    },
+    {
+      "ref": "R5",
+      "pin": "2",
+      "name": "2",
+      "net": "UVLO",
+      "role": "passive"
+    },
+    {
+      "ref": "R6",
+      "pin": "1",
+      "name": "1",
+      "net": "UVLO",
+      "role": "passive"
+    },
+    {
+      "ref": "R6",
+      "pin": "2",
+      "name": "2",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "R7",
+      "pin": "1",
+      "name": "1",
+      "net": "SW",
+      "role": "passive"
+    },
+    {
+      "ref": "R7",
+      "pin": "2",
+      "name": "2",
+      "net": "RIPPLE",
+      "role": "passive"
+    },
+    {
+      "ref": "C6",
+      "pin": "1",
+      "name": "1",
+      "net": "RIPPLE",
+      "role": "passive"
+    },
+    {
+      "ref": "C6",
+      "pin": "2",
+      "name": "2",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "C7",
+      "pin": "1",
+      "name": "1",
+      "net": "RIPPLE",
+      "role": "passive"
+    },
+    {
+      "ref": "C7",
+      "pin": "2",
+      "name": "2",
+      "net": "FB",
+      "role": "passive"
+    },
+    {
+      "ref": "R8",
+      "pin": "1",
+      "name": "1",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "R8",
+      "pin": "2",
+      "name": "2",
+      "net": "PGOOD",
+      "role": "passive"
+    },
+    {
+      "ref": "R10",
+      "pin": "1",
+      "name": "1",
+      "net": "FIELD_RUN_P",
+      "role": "passive"
+    },
+    {
+      "ref": "R10",
+      "pin": "2",
+      "name": "2",
+      "net": "FIELD_RUN_MID",
+      "role": "passive"
+    },
+    {
+      "ref": "R11",
+      "pin": "1",
+      "name": "1",
+      "net": "FIELD_RUN_MID",
+      "role": "passive"
+    },
+    {
+      "ref": "R11",
+      "pin": "2",
+      "name": "2",
+      "net": "FIELD_RUN_A",
+      "role": "passive"
+    },
+    {
+      "ref": "D3",
+      "pin": "1",
+      "name": "K",
+      "net": "FIELD_RUN_A",
+      "role": "passive"
+    },
+    {
+      "ref": "D3",
+      "pin": "2",
+      "name": "A",
+      "net": "FIELD_RUN_N",
+      "role": "passive"
+    },
+    {
+      "ref": "U2",
+      "pin": "1",
+      "name": "A",
+      "net": "FIELD_RUN_A",
+      "role": "passive"
+    },
+    {
+      "ref": "U2",
+      "pin": "2",
+      "name": "K",
+      "net": "FIELD_RUN_N",
+      "role": "passive"
+    },
+    {
+      "ref": "U2",
+      "pin": "3",
+      "name": "E",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "U2",
+      "pin": "4",
+      "name": "C",
+      "net": "RUN_OC",
+      "role": "open_collector"
+    },
+    {
+      "ref": "R12",
+      "pin": "1",
+      "name": "1",
+      "net": "RUN_OC",
+      "role": "passive"
+    },
+    {
+      "ref": "R12",
+      "pin": "2",
+      "name": "2",
+      "net": "RUN_BASE",
+      "role": "passive"
+    },
+    {
+      "ref": "R13",
+      "pin": "1",
+      "name": "1",
+      "net": "RUN_BASE",
+      "role": "passive"
+    },
+    {
+      "ref": "R13",
+      "pin": "2",
+      "name": "2",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "Q1",
+      "pin": "1",
+      "name": "B",
+      "net": "RUN_BASE",
+      "role": "passive"
+    },
+    {
+      "ref": "Q1",
+      "pin": "2",
+      "name": "E",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "Q1",
+      "pin": "3",
+      "name": "C",
+      "net": "RUN_DRIVE",
+      "role": "passive"
+    },
+    {
+      "ref": "R14",
+      "pin": "1",
+      "name": "1",
+      "net": "RUN_DRIVE",
+      "role": "passive"
+    },
+    {
+      "ref": "R14",
+      "pin": "2",
+      "name": "2",
+      "net": "LED_RUN_A",
+      "role": "passive"
+    },
+    {
+      "ref": "R16",
+      "pin": "1",
+      "name": "1",
+      "net": "FIELD_FAULT_P",
+      "role": "passive"
+    },
+    {
+      "ref": "R16",
+      "pin": "2",
+      "name": "2",
+      "net": "FIELD_FAULT_MID",
+      "role": "passive"
+    },
+    {
+      "ref": "R17",
+      "pin": "1",
+      "name": "1",
+      "net": "FIELD_FAULT_MID",
+      "role": "passive"
+    },
+    {
+      "ref": "R17",
+      "pin": "2",
+      "name": "2",
+      "net": "FIELD_FAULT_A",
+      "role": "passive"
+    },
+    {
+      "ref": "D4",
+      "pin": "1",
+      "name": "K",
+      "net": "FIELD_FAULT_A",
+      "role": "passive"
+    },
+    {
+      "ref": "D4",
+      "pin": "2",
+      "name": "A",
+      "net": "FIELD_FAULT_N",
+      "role": "passive"
+    },
+    {
+      "ref": "U3",
+      "pin": "1",
+      "name": "A",
+      "net": "FIELD_FAULT_A",
+      "role": "passive"
+    },
+    {
+      "ref": "U3",
+      "pin": "2",
+      "name": "K",
+      "net": "FIELD_FAULT_N",
+      "role": "passive"
+    },
+    {
+      "ref": "U3",
+      "pin": "3",
+      "name": "E",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "U3",
+      "pin": "4",
+      "name": "C",
+      "net": "FAULT_OC",
+      "role": "open_collector"
+    },
+    {
+      "ref": "R18",
+      "pin": "1",
+      "name": "1",
+      "net": "FAULT_OC",
+      "role": "passive"
+    },
+    {
+      "ref": "R18",
+      "pin": "2",
+      "name": "2",
+      "net": "FAULT_BASE",
+      "role": "passive"
+    },
+    {
+      "ref": "R19",
+      "pin": "1",
+      "name": "1",
+      "net": "FAULT_BASE",
+      "role": "passive"
+    },
+    {
+      "ref": "R19",
+      "pin": "2",
+      "name": "2",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "Q2",
+      "pin": "1",
+      "name": "B",
+      "net": "FAULT_BASE",
+      "role": "passive"
+    },
+    {
+      "ref": "Q2",
+      "pin": "2",
+      "name": "E",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "Q2",
+      "pin": "3",
+      "name": "C",
+      "net": "FAULT_DRIVE",
+      "role": "passive"
+    },
+    {
+      "ref": "R20",
+      "pin": "1",
+      "name": "1",
+      "net": "FAULT_DRIVE",
+      "role": "passive"
+    },
+    {
+      "ref": "R20",
+      "pin": "2",
+      "name": "2",
+      "net": "LED_FAULT_A",
+      "role": "passive"
+    },
+    {
+      "ref": "R22",
+      "pin": "1",
+      "name": "1",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "R22",
+      "pin": "2",
+      "name": "2",
+      "net": "LED_PWR_A",
+      "role": "passive"
+    },
+    {
+      "ref": "TP1",
+      "pin": "1",
+      "name": "1",
+      "net": "GND",
+      "role": "passive"
+    },
+    {
+      "ref": "TP2",
+      "pin": "1",
+      "name": "1",
+      "net": "V5",
+      "role": "passive"
+    },
+    {
+      "ref": "TP3",
+      "pin": "1",
+      "name": "1",
+      "net": "VIN_PROT",
+      "role": "passive"
+    },
+    {
+      "ref": "TP4",
+      "pin": "1",
+      "name": "1",
+      "net": "PGOOD",
+      "role": "passive"
+    }
+  ],
+  "nets": {
+    "VIN_RAW": [
+      [
+        "J1",
+        "1"
+      ],
+      [
+        "F1",
+        "1"
+      ]
+    ],
+    "GND": [
+      [
+        "J1",
+        "2"
+      ],
+      [
+        "J3",
+        "1"
+      ],
+      [
+        "D2",
+        "2"
+      ],
+      [
+        "C1",
+        "2"
+      ],
+      [
+        "C2",
+        "2"
+      ],
+      [
+        "U1",
+        "1"
+      ],
+      [
+        "U1",
+        "9"
+      ],
+      [
+        "C4",
+        "2"
+      ],
+      [
+        "C5",
+        "2"
+      ],
+      [
+        "R2",
+        "2"
+      ],
+      [
+        "R4",
+        "2"
+      ],
+      [
+        "R6",
+        "2"
+      ],
+      [
+        "U2",
+        "3"
+      ],
+      [
+        "U3",
+        "3"
+      ],
+      [
+        "TP1",
+        "1"
+      ]
+    ],
+    "FIELD_RUN_P": [
+      [
+        "J2",
+        "1"
+      ],
+      [
+        "R10",
+        "1"
+      ]
+    ],
+    "FIELD_RUN_N": [
+      [
+        "J2",
+        "2"
+      ],
+      [
+        "D3",
+        "2"
+      ],
+      [
+        "U2",
+        "2"
+      ]
+    ],
+    "FIELD_FAULT_P": [
+      [
+        "J2",
+        "3"
+      ],
+      [
+        "R16",
+        "1"
+      ]
+    ],
+    "FIELD_FAULT_N": [
+      [
+        "J2",
+        "4"
+      ],
+      [
+        "D4",
+        "2"
+      ],
+      [
+        "U3",
+        "2"
+      ]
+    ],
+    "LED_PWR_A": [
+      [
+        "J3",
+        "2"
+      ],
+      [
+        "R22",
+        "2"
+      ]
+    ],
+    "LED_RUN_A": [
+      [
+        "J3",
+        "3"
+      ],
+      [
+        "R14",
+        "2"
+      ]
+    ],
+    "LED_FAULT_A": [
+      [
+        "J3",
+        "4"
+      ],
+      [
+        "R20",
+        "2"
+      ]
+    ],
+    "VIN_FUSED": [
+      [
+        "F1",
+        "2"
+      ],
+      [
+        "D1",
+        "2"
+      ]
+    ],
+    "VIN_DIODE": [
+      [
+        "D1",
+        "1"
+      ],
+      [
+        "R1",
+        "1"
+      ]
+    ],
+    "VIN_PROT": [
+      [
+        "R1",
+        "2"
+      ],
+      [
+        "D2",
+        "1"
+      ],
+      [
+        "C1",
+        "1"
+      ],
+      [
+        "C2",
+        "1"
+      ],
+      [
+        "U1",
+        "2"
+      ],
+      [
+        "R5",
+        "1"
+      ],
+      [
+        "TP3",
+        "1"
+      ]
+    ],
+    "UVLO": [
+      [
+        "U1",
+        "3"
+      ],
+      [
+        "R5",
+        "2"
+      ],
+      [
+        "R6",
+        "1"
+      ]
+    ],
+    "RON": [
+      [
+        "U1",
+        "4"
+      ],
+      [
+        "R2",
+        "1"
+      ]
+    ],
+    "FB": [
+      [
+        "U1",
+        "5"
+      ],
+      [
+        "R3",
+        "2"
+      ],
+      [
+        "R4",
+        "1"
+      ],
+      [
+        "C7",
+        "2"
+      ]
+    ],
+    "PGOOD": [
+      [
+        "U1",
+        "6"
+      ],
+      [
+        "R8",
+        "2"
+      ],
+      [
+        "TP4",
+        "1"
+      ]
+    ],
+    "BST": [
+      [
+        "U1",
+        "7"
+      ],
+      [
+        "C3",
+        "1"
+      ]
+    ],
+    "SW": [
+      [
+        "U1",
+        "8"
+      ],
+      [
+        "C3",
+        "2"
+      ],
+      [
+        "L1",
+        "1"
+      ],
+      [
+        "R7",
+        "1"
+      ]
+    ],
+    "V5": [
+      [
+        "L1",
+        "2"
+      ],
+      [
+        "C4",
+        "1"
+      ],
+      [
+        "C5",
+        "1"
+      ],
+      [
+        "R3",
+        "1"
+      ],
+      [
+        "C6",
+        "2"
+      ],
+      [
+        "R8",
+        "1"
+      ],
+      [
+        "R13",
+        "2"
+      ],
+      [
+        "Q1",
+        "2"
+      ],
+      [
+        "R19",
+        "2"
+      ],
+      [
+        "Q2",
+        "2"
+      ],
+      [
+        "R22",
+        "1"
+      ],
+      [
+        "TP2",
+        "1"
+      ]
+    ],
+    "RIPPLE": [
+      [
+        "R7",
+        "2"
+      ],
+      [
+        "C6",
+        "1"
+      ],
+      [
+        "C7",
+        "1"
+      ]
+    ],
+    "FIELD_RUN_MID": [
+      [
+        "R10",
+        "2"
+      ],
+      [
+        "R11",
+        "1"
+      ]
+    ],
+    "FIELD_RUN_A": [
+      [
+        "R11",
+        "2"
+      ],
+      [
+        "D3",
+        "1"
+      ],
+      [
+        "U2",
+        "1"
+      ]
+    ],
+    "RUN_OC": [
+      [
+        "U2",
+        "4"
+      ],
+      [
+        "R12",
+        "1"
+      ]
+    ],
+    "RUN_BASE": [
+      [
+        "R12",
+        "2"
+      ],
+      [
+        "R13",
+        "1"
+      ],
+      [
+        "Q1",
+        "1"
+      ]
+    ],
+    "RUN_DRIVE": [
+      [
+        "Q1",
+        "3"
+      ],
+      [
+        "R14",
+        "1"
+      ]
+    ],
+    "FIELD_FAULT_MID": [
+      [
+        "R16",
+        "2"
+      ],
+      [
+        "R17",
+        "1"
+      ]
+    ],
+    "FIELD_FAULT_A": [
+      [
+        "R17",
+        "2"
+      ],
+      [
+        "D4",
+        "1"
+      ],
+      [
+        "U3",
+        "1"
+      ]
+    ],
+    "FAULT_OC": [
+      [
+        "U3",
+        "4"
+      ],
+      [
+        "R18",
+        "1"
+      ]
+    ],
+    "FAULT_BASE": [
+      [
+        "R18",
+        "2"
+      ],
+      [
+        "R19",
+        "1"
+      ],
+      [
+        "Q2",
+        "1"
+      ]
+    ],
+    "FAULT_DRIVE": [
+      [
+        "Q2",
+        "3"
+      ],
+      [
+        "R20",
+        "1"
+      ]
+    ]
+  }
+}

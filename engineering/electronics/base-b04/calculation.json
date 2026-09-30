@@ -1,0 +1,77 @@
+{
+  "buck": {
+    "Vout_nom": 4.999599198396793,
+    "fsw_Hz": 303373.73776679573,
+    "L_H": 6.8e-05,
+    "RA_Ohm": 220000.0,
+    "CA_F": 3.3e-09,
+    "CB_F": 2.2e-10,
+    "cases": [
+      {
+        "Vin": 18,
+        "ton_ns": 915.5555555555553,
+        "deltaIL_A": 0.17503807615230463,
+        "Ipeak_at_025A": 0.3375190380761523,
+        "FB_ripple_V": 0.016394750934375632
+      },
+      {
+        "Vin": 20,
+        "ton_ns": 823.9999999999999,
+        "deltaIL_A": 0.1817695626547212,
+        "Ipeak_at_025A": 0.3408847813273606,
+        "FB_ripple_V": 0.017025248292728702
+      },
+      {
+        "Vin": 48,
+        "ton_ns": 343.3333333333333,
+        "deltaIL_A": 0.21710986679240835,
+        "Ipeak_at_025A": 0.35855493339620415,
+        "FB_ripple_V": 0.02033535942408232
+      },
+      {
+        "Vin": 55,
+        "ton_ns": 299.6363636363636,
+        "deltaIL_A": 0.22032262171401623,
+        "Ipeak_at_025A": 0.3601613108570081,
+        "FB_ripple_V": 0.02063627861784174
+      }
+    ],
+    "CA_min_F": 8.69198312236287e-10,
+    "CB_min_75us_F": 1.582278481012658e-10,
+    "UVLO_on_nom_V": 18.0016501650165,
+    "UVLO_off_nom_V": 16.8015401540154,
+    "bootstrap_nom_F": 2.2e-09,
+    "bootstrap_tolerance_fraction": 0.05,
+    "bootstrap_temp_fraction_planning": 0.003,
+    "bootstrap_min_F": 2.0837299999999998e-09,
+    "bootstrap_max_F": 2.3169299999999998e-09,
+    "input_C_nom_F": 4.4e-06,
+    "input_hotplug_E_55V_J": 0.006655,
+    "input_hotplug_I2t_10ohm_A2s": 0.0006655000000000001,
+    "input_R_loss_at_100mA_W": 0.1,
+    "efficiency_test_threshold_for_2W_input_at_1p25W_out": 0.625,
+    "measured": false
+  },
+  "status_input": {
+    "V_high_range": [
+      18,
+      30
+    ],
+    "V_low_max": 2,
+    "Rs_each": [
+      1500,
+      1500
+    ],
+    "IF_min_at18V_Vf1p65_mA": 5.396039603960396,
+    "IF_max30V_Vf0_mA": 10.101010101010102,
+    "resistor_each_worst30V_W": 0.15457606366697277,
+    "external_status_power_max_two_W": 0.6060606060606061,
+    "optocoupler_CTR_margin_not_fulltemperature_guarantee": true
+  },
+  "limits": [
+    "No 2W current limiter:2W is design/acceptance budget; fuse is250mA,notpowerlimiter",
+    "No whole-arm power/regen/stop function",
+    "0.25A output only at testpads under supervised bench load; J3 is resistor-limited LED output only",
+    "No production or enclosure EMC/temperature qualification"
+  ]
+}

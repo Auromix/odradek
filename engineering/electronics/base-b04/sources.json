@@ -1,0 +1,55 @@
+{
+  "revision": "B04-SERVICE01",
+  "checked": "2026-09-30",
+  "primary_sources": {
+    "TI": "https://www.ti.com/lit/ds/symlink/lm5164.pdf",
+    "EVM": "https://www.ti.com/lit/pdf/SNVU620",
+    "MC2": "https://www.phoenixcontact.com/en-gb/products/pcb-header-mc-15-2-g-381-1803277",
+    "MC4": "https://www.phoenixcontact.com/en-nl/products/pcb-header-mc-15-4-g-381-1803293",
+    "MC2mate": "https://www.phoenixcontact.com/us/products/1803578/pdf",
+    "MC4mate": "https://www.phoenixcontact.com/en-us/products/pcb-plug-mc-15-4-st-381-1803594",
+    "XH": "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf",
+    "OPTO": "https://www.vishay.com/docs/83430/vo617a.pdf",
+    "PNP": "https://assets.nexperia.com/documents/data-sheet/BC856_BC857_BC858.pdf",
+    "RECT": "https://www.st.com/resource/en/datasheet/stps1h100.pdf",
+    "FUSE": "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_451_453_datasheet.pdf.pdf",
+    "TVS": "https://m.littelfuse.com/~/media/electronics/datasheets/tvs_diodes/littelfuse_tvs_diode_smbj_datasheet.pdf.pdf",
+    "L": "https://www.coilcraft.com/pdfs/mss1246t.pdf",
+    "R": "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L.pdf",
+    "C22": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=CGA6P3X7R1E226M250AE",
+    "C220": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H221J080AA",
+    "CAP": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc",
+    "D4148": "https://www.vishay.com/docs/86455/1n4148ws.pdf",
+    "LED": "https://www.we-online.com/components/products/datasheet/151031YS06000.pdf"
+  },
+  "notes": "Official catalogues are part evidence, not system qualification; vendor PDFs not redistributed. Footprints authored from dimensional data.",
+  "changes": [
+    {
+      "ref": "C3",
+      "old": "2.2nF X7R ±10%",
+      "new": "C1608C0G1H222J080AA C0G ±5%; keeps1.5..2.5nF across selected tolerance planning"
+    },
+    {
+      "ref": "C7",
+      "old": "C1608C0G1H181J080AA 180pF obsolete",
+      "new": "C1608C0G1H221J080AA 220pF production; TI Eq26 minimum158.2pF"
+    },
+    {
+      "ref": "C4/C5",
+      "old": "TMK325B7226KMHT non-preferred reference",
+      "new": "CGA6P3X7R1E226M250AE production; max3.7x2.8x2.8mm"
+    },
+    {
+      "ref": "calculation",
+      "issue": "initial RON frequency conversion1000x low",
+      "fix": "source formula now2.5e9 with R inOhm; independent Eq15 kOhm/kHz and volt-second audit"
+    }
+  ],
+  "dimension_evidence": {
+    "input_caps": "TDK max3.6x2.8x2.5mm; land gap2.2, pad1.1x2.5mm",
+    "output_caps": "TDK max3.7x2.8x2.8mm; same land",
+    "U1": "TI DDA8 pin9 EP; bodymax5.0x4.0x1.7 and leadspan6.2 reference",
+    "XH": "JST eXH side-entry4way14.3 projection/6.1 height reference; model reserves7.0 height",
+    "MC": "Phoenix straight-mated catalogue18.7 projection11.1 height reference"
+  }
+}

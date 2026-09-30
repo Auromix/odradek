@@ -1,0 +1,168 @@
+[
+  {
+    "command": [
+      "python3",
+      "build_source.py"
+    ],
+    "returncode": 0,
+    "output": "B04 48 components 101 pins 30 nets\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/build_schematic.py"
+    ],
+    "returncode": 0,
+    "output": "schematic generated 51\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/build_board.py"
+    ],
+    "returncode": 0,
+    "output": "native PCB 48 footprints\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/replay_routing.py"
+    ],
+    "returncode": 0,
+    "output": "05:58:56\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n05:58:56\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "erc",
+      "--severity-all",
+      "--format",
+      "json",
+      "-o",
+      "kicad/checks/erc.json",
+      "kicad/base-b04.kicad_sch"
+    ],
+    "returncode": 0,
+    "output": "Found 0 violations\nSaved ERC Report to kicad/checks/erc.json\nFontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "kicad/checks/base-b04.xml",
+      "kicad/base-b04.kicad_sch"
+    ],
+    "returncode": 0,
+    "output": "Fontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "drc",
+      "--all-track-errors",
+      "--schematic-parity",
+      "--severity-all",
+      "--format",
+      "json",
+      "-o",
+      "kicad/checks/drc.json",
+      "kicad/base-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to kicad/checks/drc.json\nFontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/native_readback.py"
+    ],
+    "returncode": 0,
+    "output": "48 footprints 106 pads 163 tracks 29 vias 40 physical component envelopes\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n05:59:00\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+  },
+  {
+    "command": [
+      "python",
+      "tools/build_mechanical.py"
+    ],
+    "returncode": 0,
+    "output": "MCAD 65 solids [-9.500000100000006, -1.0000002847803213e-07, -2.500130643559664] [87.3000001, 50.00000010000003, 12.700000100000006]\n/Users/hermanye/Documents/Codex/2026-09-27/wo-x/work/r4-runtime/venv/lib/python3.12/site-packages/cadquery/utils.py:82: FutureWarning: save will be removed in the next release.\n  warn(f\"{f.__name__} will be removed in the next release.\", FutureWarning)\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "F.Cu,F.Silkscreen,Edge.Cuts",
+      "--mode-single",
+      "--page-size-mode",
+      "2",
+      "--exclude-drawing-sheet",
+      "-o",
+      "previews/board-front.svg",
+      "kicad/base-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-front.svg'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "B.Cu,Edge.Cuts",
+      "--mode-single",
+      "--page-size-mode",
+      "2",
+      "--exclude-drawing-sheet",
+      "-o",
+      "previews/board-back.svg",
+      "kicad/base-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-back.svg'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "--layers",
+      "F.Cu,B.Cu,F.Paste,B.Paste,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "-o",
+      "fabrication/",
+      "kicad/base-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'fabrication/base-b04-F_Cu.gtl'.\nPlotted to 'fabrication/base-b04-B_Cu.gbl'.\nPlotted to 'fabrication/base-b04-F_Paste.gtp'.\nPlotted to 'fabrication/base-b04-B_Paste.gbp'.\nPlotted to 'fabrication/base-b04-F_Silkscreen.gto'.\nPlotted to 'fabrication/base-b04-B_Silkscreen.gbo'.\nPlotted to 'fabrication/base-b04-F_Mask.gts'.\nPlotted to 'fabrication/base-b04-B_Mask.gbs'.\nPlotted to 'fabrication/base-b04-Edge_Cuts.gm1'.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "svg",
+      "--generate-report",
+      "-o",
+      "fabrication/",
+      "kicad/base-b04.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Created file 'fabrication/base-b04-PTH.drl'\nCreated file 'fabrication/base-b04-NPTH.drl'\nCreated file 'fabrication/base-b04-PTH-drl_map.svg'.\nCreated file 'fabrication/base-b04-NPTH-drl_map.svg'.\nDone.\n"
+  }
+]

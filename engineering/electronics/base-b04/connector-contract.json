@@ -1,0 +1,169 @@
+{
+  "revision": "B04-SERVICE01",
+  "coordinates": "u/v board mm, z=0 PCB bottom; native KiCad x=u,y=50-v",
+  "PCB": {
+    "size_mm": [
+      80,
+      50,
+      1.6
+    ],
+    "origin_assembly_mm": [
+      -40,
+      -2,
+      23
+    ]
+  },
+  "connectors": [
+    {
+      "ref": "J1",
+      "pin1_uv": [
+        8,
+        12
+      ],
+      "pin_step_uv": [
+        0,
+        3.81
+      ],
+      "pins": [
+        "48V_SERVICE",
+        "RETURN"
+      ],
+      "removal_vector": [
+        -1,
+        0,
+        0
+      ],
+      "header_uv_box": [
+        [
+          0,
+          9.4
+        ],
+        [
+          9.2,
+          18.41
+        ]
+      ],
+      "mated_uv_box": [
+        [
+          -9.5,
+          9.4
+        ],
+        [
+          9.2,
+          18.41
+        ]
+      ],
+      "mated_z_mm": [
+        1.6,
+        12.7
+      ],
+      "through_pin_lowest_z_mm": -1.8,
+      "plug": "1803578",
+      "retention": "friction only; harness strain relief required"
+    },
+    {
+      "ref": "J2",
+      "pin1_uv": [
+        8,
+        25
+      ],
+      "pin_step_uv": [
+        0,
+        3.81
+      ],
+      "pins": [
+        "RUN+",
+        "RUN-",
+        "FAULT+",
+        "FAULT-"
+      ],
+      "removal_vector": [
+        -1,
+        0,
+        0
+      ],
+      "header_uv_box": [
+        [
+          0,
+          22.4
+        ],
+        [
+          9.2,
+          39.03
+        ]
+      ],
+      "mated_uv_box": [
+        [
+          -9.5,
+          22.4
+        ],
+        [
+          9.2,
+          39.03
+        ]
+      ],
+      "mated_z_mm": [
+        1.6,
+        12.7
+      ],
+      "through_pin_lowest_z_mm": -1.8,
+      "plug": "1803594",
+      "retention": "friction only; harness strain relief required"
+    },
+    {
+      "ref": "J3",
+      "pin1_uv": [
+        73,
+        21
+      ],
+      "pin_step_uv": [
+        0,
+        2.5
+      ],
+      "pins": [
+        "LED common cathode GND",
+        "POWER anode current-limited",
+        "RUN anode current-limited",
+        "FAULT anode current-limited"
+      ],
+      "removal_vector": [
+        1,
+        0,
+        0
+      ],
+      "header_uv_box": [
+        [
+          70.7,
+          18.55
+        ],
+        [
+          82.2,
+          30.95
+        ]
+      ],
+      "mated_uv_box": [
+        [
+          70.7,
+          18.55
+        ],
+        [
+          87.3,
+          30.95
+        ]
+      ],
+      "mated_z_mm": [
+        1.6,
+        8.6
+      ],
+      "through_pin_lowest_z_mm": -1.8,
+      "plug": "XHP-4",
+      "contacts": "4x SXH-001T-P0.6",
+      "retention": "XH friction lock; not a latch-released positive lock"
+    }
+  ],
+  "notes": [
+    "Connector dimensions are catalogue references; mating housing tolerance not provided as controlled max. Add assembly tolerance margin.",
+    "Do not infer externalLED installed geometry from this board package.",
+    "mated MC18.7mm total,11.1mm installed height; XH14.3mm assembly projection from PCBpin line,6.1mm height; exact CAD mating verification remains."
+  ]
+}
