@@ -3,7 +3,9 @@
 
 状态：用户明确选择 **B 收腰盾形：呼应灯瓣折线，保留圆润边缘**，随后要求现成桌夹采购拼装，并在下面连接外置盒托架。A/C 作为比较过程保留；范围限于底座、隐藏桌夹、后部接线仓与托架的布置，不冻结尺寸、连接器或加工方案。
 
-![底座三案与桌夹、后盖布置](concepts/13-base-study01.png)
+![已选 B 收腰盾形](concepts/selected/base-b-shield.png)
+
+已选方向图单独放在 [selected/](concepts/selected/README.md)。上图为 B 方案参考摘编，夹具及后仓仍是原布置示意，尚未体现新增的桌下外置盒托架；完整 [A/B/C 三案比较板](concepts/13-base-study01.png)保留在研究目录。
 
 ## 共同输入
 

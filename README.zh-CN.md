@@ -4,6 +4,8 @@
 
 [English](README.md) · [设计简报](docs/design-brief.md) · [方案比较](docs/concept-comparison.md) · [昵称候选](docs/nickname-candidates.md) · [路线图](docs/roadmap.md)
 
+**已选外观方向：** [收敛设计图专用目录](docs/concepts/selected/README.md)，只收录四瓣末端展开外形与 B 收腰盾形底座。其他候选与历史比较保留在 [研究图稿目录](docs/concepts/README.md)，不作为制造定稿。
+
 **2026-09-28保存点：** 先保存当前成果和草案，不再扩展复杂度。末端优先单输入正向同步，允许一对相对灯片主夹持；多级差动只保留作比较。[保存范围与未完成状态](docs/engineering/checkpoint-2026-09-28.md)。
 
 Odradek 是 Auromix 面向非商业研究与爱好者公开设计资料的桌面／固定底座机械臂项目，灵感来自《死亡搁浅》中的探测器，面向实际操作任务。本体与末端的机构、外观和行为同步设计。
