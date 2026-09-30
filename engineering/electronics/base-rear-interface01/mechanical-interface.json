@@ -1,0 +1,1878 @@
+{
+  "revision": "BRI01",
+  "status": "mechanical contract populated; pin/net/routing audit separate",
+  "transform": "X=u-58;Y=z-27;Z=-9-v",
+  "board_size_mm": [
+    116,
+    56,
+    1.6
+  ],
+  "mount_holes_mm": [
+    [
+      6,
+      6
+    ],
+    [
+      110,
+      6
+    ],
+    [
+      110,
+      50
+    ],
+    [
+      6,
+      50
+    ]
+  ],
+  "bracket_holes_mm": [
+    [
+      48,
+      38
+    ],
+    [
+      68,
+      38
+    ]
+  ],
+  "parts": [
+    {
+      "name": "BRI01_PCB",
+      "role": "PCB",
+      "basis": "actual board outline and all current native footprint drills; no copper thickness geometry",
+      "bbox_local": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          116.0,
+          56.0,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -58.0,
+          -27.0,
+          -65.0
+        ],
+        [
+          58.0,
+          -25.39999999999999,
+          -9.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_shell_reference",
+      "role": "connector",
+      "basis": "Original shell/cavity abstraction; cavity not controlled mating geometry",
+      "bbox_local": [
+        [
+          12.5,
+          42.55,
+          1.6
+        ],
+        [
+          27.5,
+          56.0,
+          16.3
+        ]
+      ],
+      "bbox_global": [
+        [
+          -45.5,
+          -25.399999999999995,
+          -65.0
+        ],
+        [
+          -30.5,
+          -10.699999999999992,
+          -51.55
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_spring_reservation_-8.65",
+      "role": "spring-envelope",
+      "basis": "Bounds derived from private vendor STEP; rectangular envelope, not metal distribution",
+      "bbox_local": [
+        [
+          27.5,
+          47.5,
+          2.6
+        ],
+        [
+          28.650000000000002,
+          55.0,
+          17.44
+        ]
+      ],
+      "bbox_global": [
+        [
+          -30.5,
+          -24.399999999999995,
+          -64.0
+        ],
+        [
+          -29.349999999999998,
+          -9.559999999999992,
+          -56.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_spring_reservation_7.5",
+      "role": "spring-envelope",
+      "basis": "Bounds derived from private vendor STEP; rectangular envelope, not metal distribution",
+      "bbox_local": [
+        [
+          11.35,
+          47.5,
+          2.6
+        ],
+        [
+          12.500000000000002,
+          55.0,
+          17.44
+        ]
+      ],
+      "bbox_global": [
+        [
+          -46.65,
+          -24.399999999999995,
+          -64.0
+        ],
+        [
+          -45.5,
+          -9.559999999999992,
+          -56.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_0",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          23.34,
+          49.410000000000004,
+          -1.6999999999999997
+        ],
+        [
+          23.8,
+          49.87,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -34.66,
+          -28.699999999999996,
+          -58.87
+        ],
+        [
+          -34.2,
+          -25.399999999999995,
+          -58.410000000000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_1",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          22.32,
+          45.410000000000004,
+          -1.6999999999999997
+        ],
+        [
+          22.78,
+          45.87,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -35.68,
+          -28.699999999999996,
+          -54.87
+        ],
+        [
+          -35.220000000000006,
+          -25.399999999999995,
+          -54.410000000000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_2",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          21.3,
+          49.410000000000004,
+          -1.6999999999999997
+        ],
+        [
+          21.76,
+          49.87,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -36.7,
+          -28.699999999999996,
+          -58.87
+        ],
+        [
+          -36.24,
+          -25.399999999999995,
+          -58.410000000000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_3",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          20.28,
+          45.410000000000004,
+          -1.6999999999999997
+        ],
+        [
+          20.740000000000002,
+          45.87,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -37.72,
+          -28.699999999999996,
+          -54.87
+        ],
+        [
+          -37.26,
+          -25.399999999999995,
+          -54.410000000000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_4",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          19.26,
+          49.410000000000004,
+          -1.6999999999999997
+        ],
+        [
+          19.720000000000002,
+          49.87,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -38.739999999999995,
+          -28.699999999999996,
+          -58.87
+        ],
+        [
+          -38.28,
+          -25.399999999999995,
+          -58.410000000000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_5",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          18.240000000000002,
+          45.410000000000004,
+          -1.6999999999999997
+        ],
+        [
+          18.700000000000003,
+          45.87,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -39.76,
+          -28.699999999999996,
+          -54.87
+        ],
+        [
+          -39.300000000000004,
+          -25.399999999999995,
+          -54.410000000000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_6",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          17.22,
+          49.410000000000004,
+          -1.6999999999999997
+        ],
+        [
+          17.68,
+          49.87,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -40.78,
+          -28.699999999999996,
+          -58.87
+        ],
+        [
+          -40.32,
+          -25.399999999999995,
+          -58.410000000000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_7",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          16.2,
+          45.410000000000004,
+          -1.6999999999999997
+        ],
+        [
+          16.66,
+          45.87,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -41.8,
+          -28.699999999999996,
+          -54.87
+        ],
+        [
+          -41.34,
+          -25.399999999999995,
+          -54.410000000000004
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_8",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          12.370000000000001,
+          51.760000000000005,
+          -1.6999999999999997
+        ],
+        [
+          12.830000000000002,
+          52.22,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -45.629999999999995,
+          -28.699999999999996,
+          -61.22
+        ],
+        [
+          -45.17,
+          -25.399999999999995,
+          -60.760000000000005
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J1_tail_9",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          27.17,
+          51.760000000000005,
+          -1.6999999999999997
+        ],
+        [
+          27.630000000000003,
+          52.22,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -30.83,
+          -28.699999999999996,
+          -61.22
+        ],
+        [
+          -30.369999999999997,
+          -25.399999999999995,
+          -60.760000000000005
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_shell_reference",
+      "role": "connector",
+      "basis": "Original shell/cavity abstraction; cavity not controlled mating geometry",
+      "bbox_local": [
+        [
+          12.5,
+          0.0,
+          1.6
+        ],
+        [
+          27.5,
+          13.45,
+          16.3
+        ]
+      ],
+      "bbox_global": [
+        [
+          -45.5,
+          -25.4,
+          -22.45
+        ],
+        [
+          -30.5,
+          -10.699999999999998,
+          -8.999999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_spring_reservation_-8.65",
+      "role": "spring-envelope",
+      "basis": "Bounds derived from private vendor STEP; rectangular envelope, not metal distribution",
+      "bbox_local": [
+        [
+          11.35,
+          1.0,
+          2.6
+        ],
+        [
+          12.5,
+          8.5,
+          17.44
+        ]
+      ],
+      "bbox_global": [
+        [
+          -46.65,
+          -24.4,
+          -17.5
+        ],
+        [
+          -45.5,
+          -9.559999999999999,
+          -9.999999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_spring_reservation_7.5",
+      "role": "spring-envelope",
+      "basis": "Bounds derived from private vendor STEP; rectangular envelope, not metal distribution",
+      "bbox_local": [
+        [
+          27.5,
+          1.0,
+          2.6
+        ],
+        [
+          28.65,
+          8.5,
+          17.44
+        ]
+      ],
+      "bbox_global": [
+        [
+          -30.5,
+          -24.4,
+          -17.5
+        ],
+        [
+          -29.35,
+          -9.559999999999999,
+          -9.999999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_0",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          16.2,
+          6.13,
+          -1.6999999999999997
+        ],
+        [
+          16.66,
+          6.590000000000001,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -41.8,
+          -28.7,
+          -15.59
+        ],
+        [
+          -41.34,
+          -25.4,
+          -15.129999999999999
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_1",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          17.22,
+          10.129999999999999,
+          -1.6999999999999997
+        ],
+        [
+          17.68,
+          10.59,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -40.779999999999994,
+          -28.7,
+          -19.59
+        ],
+        [
+          -40.32,
+          -25.4,
+          -19.13
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_2",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          18.24,
+          6.13,
+          -1.6999999999999997
+        ],
+        [
+          18.7,
+          6.590000000000001,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -39.76,
+          -28.7,
+          -15.59
+        ],
+        [
+          -39.3,
+          -25.4,
+          -15.129999999999999
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_3",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          19.26,
+          10.129999999999999,
+          -1.6999999999999997
+        ],
+        [
+          19.720000000000002,
+          10.59,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -38.739999999999995,
+          -28.7,
+          -19.59
+        ],
+        [
+          -38.28,
+          -25.4,
+          -19.13
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_4",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          20.28,
+          6.13,
+          -1.6999999999999997
+        ],
+        [
+          20.740000000000002,
+          6.590000000000001,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -37.71999999999999,
+          -28.7,
+          -15.59
+        ],
+        [
+          -37.26,
+          -25.4,
+          -15.129999999999999
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_5",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          21.3,
+          10.129999999999999,
+          -1.6999999999999997
+        ],
+        [
+          21.76,
+          10.59,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -36.699999999999996,
+          -28.7,
+          -19.59
+        ],
+        [
+          -36.24,
+          -25.4,
+          -19.13
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_6",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          22.32,
+          6.13,
+          -1.6999999999999997
+        ],
+        [
+          22.78,
+          6.590000000000001,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -35.68,
+          -28.7,
+          -15.59
+        ],
+        [
+          -35.22,
+          -25.4,
+          -15.129999999999999
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_7",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          23.34,
+          10.129999999999999,
+          -1.6999999999999997
+        ],
+        [
+          23.8,
+          10.59,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -34.66,
+          -28.7,
+          -19.59
+        ],
+        [
+          -34.2,
+          -25.4,
+          -19.13
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_8",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          27.169999999999998,
+          3.78,
+          -1.6999999999999997
+        ],
+        [
+          27.630000000000003,
+          4.24,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -30.830000000000002,
+          -28.7,
+          -13.24
+        ],
+        [
+          -30.369999999999997,
+          -25.4,
+          -12.78
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J2_tail_9",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          12.37,
+          3.78,
+          -1.6999999999999997
+        ],
+        [
+          12.83,
+          4.24,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -45.629999999999995,
+          -28.7,
+          -13.24
+        ],
+        [
+          -45.17,
+          -25.4,
+          -12.78
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J3_header_reference",
+      "role": "connector",
+      "basis": "Original catalogue-envelope/cavity abstraction; exact6-pin footprint independently audited",
+      "bbox_local": [
+        [
+          87.47999999999999,
+          26.749999999999996,
+          1.6
+        ],
+        [
+          105.52000000000001,
+          56.0,
+          15.889999999999999
+        ]
+      ],
+      "bbox_global": [
+        [
+          29.479999999999997,
+          -25.4,
+          -65.0
+        ],
+        [
+          47.52000000000001,
+          -11.109999999999996,
+          -35.75
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J3_tail_0",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          99.91,
+          35.7,
+          -3.4
+        ],
+        [
+          100.71000000000001,
+          36.7,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          41.91,
+          -30.399999999999995,
+          -45.7
+        ],
+        [
+          42.71000000000001,
+          -25.399999999999995,
+          -44.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J3_tail_1",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          99.91,
+          33.16,
+          -3.4
+        ],
+        [
+          100.71000000000001,
+          34.16,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          41.91,
+          -30.399999999999995,
+          -43.16
+        ],
+        [
+          42.71000000000001,
+          -25.399999999999995,
+          -42.16
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J3_tail_2",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          99.91,
+          28.08,
+          -3.4
+        ],
+        [
+          100.71000000000001,
+          29.08,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          41.91,
+          -30.4,
+          -38.08
+        ],
+        [
+          42.71000000000001,
+          -25.399999999999995,
+          -37.08
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J3_tail_3",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          92.29,
+          35.7,
+          -3.4
+        ],
+        [
+          93.09,
+          36.7,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          34.290000000000006,
+          -30.399999999999995,
+          -45.7
+        ],
+        [
+          35.09,
+          -25.399999999999995,
+          -44.7
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J3_tail_4",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          92.29,
+          33.16,
+          -3.4
+        ],
+        [
+          93.09,
+          34.16,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          34.290000000000006,
+          -30.399999999999995,
+          -43.16
+        ],
+        [
+          35.09,
+          -25.399999999999995,
+          -42.16
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J3_tail_5",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          92.29,
+          28.08,
+          -3.4
+        ],
+        [
+          93.09,
+          29.08,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          34.290000000000006,
+          -30.4,
+          -38.08
+        ],
+        [
+          35.09,
+          -25.399999999999995,
+          -37.08
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J4_M3_stud",
+      "role": "terminal",
+      "basis": "Nominal manufacturer dimensions; no thread helix.0.5mm stand-off included",
+      "bbox_local": [
+        [
+          97.5,
+          8.5,
+          2.1
+        ],
+        [
+          104.5,
+          15.5,
+          10.1
+        ]
+      ],
+      "bbox_global": [
+        [
+          39.5,
+          -24.9,
+          -24.5
+        ],
+        [
+          46.5,
+          -16.9,
+          -17.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J4_lug_nut_reservation",
+      "role": "planned-lug",
+      "basis": "M3 ring/nut upper envelope; exact wire lug and insulation part not yet selected",
+      "bbox_local": [
+        [
+          96.0,
+          5.0,
+          5.1
+        ],
+        [
+          106.0,
+          15.5,
+          13.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          38.0,
+          -21.9,
+          -24.5
+        ],
+        [
+          48.0,
+          -13.399999999999999,
+          -13.999999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J4_tail_0",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          97.465,
+          8.465,
+          -0.8999999999999999
+        ],
+        [
+          98.665,
+          9.665,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          39.465,
+          -27.9,
+          -18.665
+        ],
+        [
+          40.665000000000006,
+          -25.4,
+          -17.465
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J4_tail_1",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          97.465,
+          14.335,
+          -0.8999999999999999
+        ],
+        [
+          98.665,
+          15.535,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          39.465,
+          -27.9,
+          -24.535
+        ],
+        [
+          40.665000000000006,
+          -25.4,
+          -23.335
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J4_tail_2",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          103.335,
+          8.465,
+          -0.8999999999999999
+        ],
+        [
+          104.535,
+          9.665,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          45.334999999999994,
+          -27.9,
+          -18.665
+        ],
+        [
+          46.535,
+          -25.4,
+          -17.465
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J4_tail_3",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          103.335,
+          14.335,
+          -0.8999999999999999
+        ],
+        [
+          104.535,
+          15.535,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          45.334999999999994,
+          -27.9,
+          -24.535
+        ],
+        [
+          46.535,
+          -25.4,
+          -23.335
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J5_M3_stud",
+      "role": "terminal",
+      "basis": "Nominal manufacturer dimensions; no thread helix.0.5mm stand-off included",
+      "bbox_local": [
+        [
+          81.5,
+          8.5,
+          2.1
+        ],
+        [
+          88.5,
+          15.5,
+          10.1
+        ]
+      ],
+      "bbox_global": [
+        [
+          23.5,
+          -24.9,
+          -24.5
+        ],
+        [
+          30.5,
+          -16.9,
+          -17.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J5_lug_nut_reservation",
+      "role": "planned-lug",
+      "basis": "M3 ring/nut upper envelope; exact wire lug and insulation part not yet selected",
+      "bbox_local": [
+        [
+          80.0,
+          5.0,
+          5.1
+        ],
+        [
+          90.0,
+          15.5,
+          13.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          22.0,
+          -21.9,
+          -24.5
+        ],
+        [
+          32.0,
+          -13.399999999999999,
+          -13.999999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J5_tail_0",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          81.465,
+          8.465,
+          -0.8999999999999999
+        ],
+        [
+          82.665,
+          9.665,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          23.465000000000003,
+          -27.9,
+          -18.665
+        ],
+        [
+          24.665000000000006,
+          -25.4,
+          -17.465
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J5_tail_1",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          81.465,
+          14.335,
+          -0.8999999999999999
+        ],
+        [
+          82.665,
+          15.535,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          23.465000000000003,
+          -27.9,
+          -24.535
+        ],
+        [
+          24.665000000000006,
+          -25.4,
+          -23.335
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J5_tail_2",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          87.335,
+          8.465,
+          -0.8999999999999999
+        ],
+        [
+          88.535,
+          9.665,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          29.334999999999994,
+          -27.9,
+          -18.665
+        ],
+        [
+          30.534999999999997,
+          -25.4,
+          -17.465
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J5_tail_3",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          87.335,
+          14.335,
+          -0.8999999999999999
+        ],
+        [
+          88.535,
+          15.535,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          29.334999999999994,
+          -27.9,
+          -24.535
+        ],
+        [
+          30.534999999999997,
+          -25.4,
+          -23.335
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J6_M3_stud",
+      "role": "terminal",
+      "basis": "Nominal manufacturer dimensions; no thread helix.0.5mm stand-off included",
+      "bbox_local": [
+        [
+          42.5,
+          8.5,
+          2.1
+        ],
+        [
+          49.5,
+          15.5,
+          10.1
+        ]
+      ],
+      "bbox_global": [
+        [
+          -15.5,
+          -24.9,
+          -24.5
+        ],
+        [
+          -8.5,
+          -16.9,
+          -17.5
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J6_lug_nut_reservation",
+      "role": "planned-lug",
+      "basis": "M3 ring/nut upper envelope; exact wire lug and insulation part not yet selected",
+      "bbox_local": [
+        [
+          41.0,
+          5.0,
+          5.1
+        ],
+        [
+          51.0,
+          15.5,
+          13.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -17.0,
+          -21.9,
+          -24.5
+        ],
+        [
+          -7.0,
+          -13.399999999999999,
+          -13.999999999999998
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J6_tail_0",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          42.465,
+          8.465,
+          -0.8999999999999999
+        ],
+        [
+          43.665000000000006,
+          9.665,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -15.534999999999997,
+          -27.9,
+          -18.665
+        ],
+        [
+          -14.334999999999997,
+          -25.4,
+          -17.465
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J6_tail_1",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          42.465,
+          14.335,
+          -0.8999999999999999
+        ],
+        [
+          43.665000000000006,
+          15.535,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -15.534999999999997,
+          -27.9,
+          -24.535
+        ],
+        [
+          -14.334999999999997,
+          -25.4,
+          -23.335
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J6_tail_2",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          48.335,
+          8.465,
+          -0.8999999999999999
+        ],
+        [
+          49.535000000000004,
+          9.665,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -9.665,
+          -27.9,
+          -18.665
+        ],
+        [
+          -8.465,
+          -25.4,
+          -17.465
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "J6_tail_3",
+      "role": "tail",
+      "basis": "Physical pin planning; alloy/contact details omitted",
+      "bbox_local": [
+        [
+          48.335,
+          14.335,
+          -0.8999999999999999
+        ],
+        [
+          49.535000000000004,
+          15.535,
+          1.6
+        ]
+      ],
+      "bbox_global": [
+        [
+          -9.665,
+          -27.9,
+          -24.535
+        ],
+        [
+          -8.465,
+          -25.4,
+          -23.335
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "BRI01_COAX_LEDGE",
+      "role": "original-bracket",
+      "basis": "1.5mm right-angle carrier; no bend radius/manufacturing relief included yet; supplied as interface reference",
+      "bbox_local": [
+        [
+          36.0,
+          34.0,
+          1.6
+        ],
+        [
+          80.0,
+          56.0,
+          20.0
+        ]
+      ],
+      "bbox_global": [
+        [
+          -22.0,
+          -25.399999999999995,
+          -65.0
+        ],
+        [
+          22.0,
+          -6.999999999999993,
+          -43.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "X1_132170_reference",
+      "role": "coax-adapter",
+      "basis": "Original old manufacturer catalogue p47 axial reference: longend41.4; bearingface56; shortend63.5. Not current tolerance-controlled vendorCAD",
+      "bbox_local": [
+        [
+          44.825,
+          41.4,
+          7.825
+        ],
+        [
+          51.175,
+          63.5,
+          14.175
+        ]
+      ],
+      "bbox_global": [
+        [
+          -13.175,
+          -19.174999999999994,
+          -72.5
+        ],
+        [
+          -6.825,
+          -12.824999999999992,
+          -50.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "X1_fixed_flange",
+      "role": "coax-flange",
+      "basis": "AF9.5 fixed flange, nominal1.7 axial thickness from catalogue14.6/16.3",
+      "bbox_local": [
+        [
+          42.51517244269856,
+          56.0,
+          6.25
+        ],
+        [
+          53.48482755730144,
+          57.7,
+          15.75
+        ]
+      ],
+      "bbox_global": [
+        [
+          -15.484827557301443,
+          -20.749999999999993,
+          -66.70000000000002
+        ],
+        [
+          -4.515172442698557,
+          -11.249999999999993,
+          -65.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "X1_nut_washer_reservation",
+      "role": "planned-nut-washer",
+      "basis": "AF8 removable nut;2.5mm combined nut/washer axial planning only, thickness not dimensioned by source",
+      "bbox_local": [
+        [
+          43.38119784648299,
+          52.0,
+          7.0
+        ],
+        [
+          52.61880215351701,
+          54.5,
+          15.0
+        ]
+      ],
+      "bbox_global": [
+        [
+          -14.61880215351701,
+          -19.999999999999993,
+          -63.5
+        ],
+        [
+          -5.381197846482991,
+          -11.999999999999995,
+          -61.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "X2_132170_reference",
+      "role": "coax-adapter",
+      "basis": "Original old manufacturer catalogue p47 axial reference: longend41.4; bearingface56; shortend63.5. Not current tolerance-controlled vendorCAD",
+      "bbox_local": [
+        [
+          64.825,
+          41.4,
+          7.825
+        ],
+        [
+          71.175,
+          63.5,
+          14.175
+        ]
+      ],
+      "bbox_global": [
+        [
+          6.825,
+          -19.174999999999994,
+          -72.5
+        ],
+        [
+          13.175,
+          -12.824999999999992,
+          -50.4
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "X2_fixed_flange",
+      "role": "coax-flange",
+      "basis": "AF9.5 fixed flange, nominal1.7 axial thickness from catalogue14.6/16.3",
+      "bbox_local": [
+        [
+          62.51517244269856,
+          56.0,
+          6.25
+        ],
+        [
+          73.48482755730144,
+          57.7,
+          15.75
+        ]
+      ],
+      "bbox_global": [
+        [
+          4.515172442698557,
+          -20.749999999999993,
+          -66.70000000000002
+        ],
+        [
+          15.484827557301443,
+          -11.249999999999993,
+          -65.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    },
+    {
+      "name": "X2_nut_washer_reservation",
+      "role": "planned-nut-washer",
+      "basis": "AF8 removable nut;2.5mm combined nut/washer axial planning only, thickness not dimensioned by source",
+      "bbox_local": [
+        [
+          63.38119784648299,
+          52.0,
+          7.0
+        ],
+        [
+          72.61880215351701,
+          54.5,
+          15.0
+        ]
+      ],
+      "bbox_global": [
+        [
+          5.381197846482991,
+          -19.999999999999993,
+          -63.5
+        ],
+        [
+          14.61880215351701,
+          -11.999999999999995,
+          -61.0
+        ]
+      ],
+      "valid": true,
+      "solid_count": 1
+    }
+  ],
+  "connector_contract": "connector-contract.json",
+  "not_mass_model": true,
+  "excluded": [
+    "externalpluggeometry until mateddatum closure",
+    "cableminimum bend path",
+    "3Dtest of latch access",
+    "formal tolerance stack",
+    "RFperformance"
+  ]
+}

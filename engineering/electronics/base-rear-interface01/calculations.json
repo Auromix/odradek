@@ -1,0 +1,53 @@
+{
+  "revision": "BRI01",
+  "power_paths": [
+    {
+      "net": "VIN48",
+      "conservative_main_path_length_mm": 24.23392493562449,
+      "width_each_outer_mm": 4,
+      "finished_copper_assumption_um": 35,
+      "parallel_outer_layers": 2,
+      "ideal_roomtemp_resistance_ohm": 0.0014921173781791653
+    },
+    {
+      "net": "RETURN48",
+      "conservative_main_path_length_mm": 27.598850898055993,
+      "width_each_outer_mm": 4,
+      "finished_copper_assumption_um": 35,
+      "parallel_outer_layers": 2,
+      "ideal_roomtemp_resistance_ohm": 0.001699300676723162
+    }
+  ],
+  "rho_assumed_20C_ohm_m": 1.724e-08,
+  "examples": [
+    {
+      "current_A": 10,
+      "ideal_copper_drop_V": 0.03191418054902327,
+      "ideal_copper_heat_W": 0.31914180549023274
+    },
+    {
+      "current_A": 20,
+      "ideal_copper_drop_V": 0.06382836109804654,
+      "ideal_copper_heat_W": 1.276567221960931
+    }
+  ],
+  "excluded_from_resistance": [
+    "contact and crimp resistance",
+    "throughhole barrel current distribution",
+    "solder joint resistance",
+    "temperature dependence",
+    "cable loss",
+    "fuse and source impedance"
+  ],
+  "current_rating": null,
+  "thermal_model": "No temperature-rise prediction; actual finished copper/plating, assembly and closedhood test required",
+  "pulse_duration_s": null,
+  "internal_RJ45": {
+    "plug_total_reference_mm": 22.78,
+    "max_cable_OD_mm": 5.9,
+    "fixed_Rmin_4D_mm": 23.6,
+    "height_conservative_before_insertion_mm": 52.28,
+    "space_mm": 48,
+    "necessary_insertion_minus_straight_mm": 4.280000000000001
+  }
+}

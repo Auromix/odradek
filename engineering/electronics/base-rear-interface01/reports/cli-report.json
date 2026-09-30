@@ -1,0 +1,291 @@
+[
+  {
+    "command": [
+      "python3",
+      "build_source.py"
+    ],
+    "returncode": 0,
+    "output": "BRI01 source 12 footprints 25 logical pins\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/build_schematic.py"
+    ],
+    "returncode": 0,
+    "output": ""
+  },
+  {
+    "command": [
+      "python3",
+      "tools/calculate.py"
+    ],
+    "returncode": 0,
+    "output": "power ideal copper pair R 0.003191418054902327\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/build_board.py"
+    ],
+    "returncode": 0,
+    "output": "placed 12\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/replay_routing.py"
+    ],
+    "returncode": 0,
+    "output": "replayed 108 tracks 14 vias\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n06:56:32\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "erc",
+      "--severity-all",
+      "--format",
+      "json",
+      "-o",
+      "reports/erc.json",
+      "kicad/base-rear-interface01.kicad_sch"
+    ],
+    "returncode": 0,
+    "output": "Found 0 violations\nSaved ERC Report to reports/erc.json\nFontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "netlist",
+      "--format",
+      "kicadxml",
+      "-o",
+      "reports/netlist.xml",
+      "kicad/base-rear-interface01.kicad_sch"
+    ],
+    "returncode": 0,
+    "output": "Fontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "sch",
+      "export",
+      "pdf",
+      "-o",
+      "previews/schematic.pdf",
+      "kicad/base-rear-interface01.kicad_sch"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/schematic.pdf'.\nDone.\nFontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "drc",
+      "--all-track-errors",
+      "--schematic-parity",
+      "--severity-all",
+      "--format",
+      "json",
+      "-o",
+      "reports/drc.json",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Found 0 violations\nFound 0 unconnected items\nFound 0 schematic parity issues\nSaved DRC Report to reports/drc.json\nFontconfig error: Cannot load default config file: File not found\n"
+  },
+  {
+    "command": [
+      "python3",
+      "tools/native_readback.py"
+    ],
+    "returncode": 0,
+    "output": "12 footprints 48 pads 108 tracks 14 vias\n[{\"nets\": [\"ETH_1\", \"ETH_2\"], \"copper_track_length_mm\": [59.83311537724772, 55.67037492075988], \"track_length_difference_mm\": 4.162740456487839, \"through_vias\": [2, 2], \"coupled_trunk_mm\": 22, \"limitations\": \"track sum excludes barrel electrical length; fanout not impedance-tuned; no fabricatedchannel qualification\"}, {\"nets\": [\"ETH_3\", \"ETH_6\"], \"copper_track_length_mm\": [53.29866813596584, 37.583027406794415], \"track_length_difference_mm\": 15.715640729171426, \"through_vias\": [2, 1], \"coupled_trunk_mm\": 22, \"limitations\": \"track sum excludes barrel electrical length; fanout not impedance-tuned; no fabricatedchannel qualification\"}, {\"nets\": [\"ETH_4\", \"ETH_5\"], \"copper_track_length_mm\": [38.4114545315406, 54.51300839341674], \"track_length_difference_mm\": 16.10155386187614, \"through_vias\": [2, 2], \"coupled_trunk_mm\": 22, \"limitations\": \"track sum excludes barrel electrical length; fanout not impedance-tuned; no fabricatedchannel qualification\"}, {\"nets\": [\"ETH_7\", \"ETH_8\"], \"copper_track_length_mm\": [53.78620992198031, 53.96690611365442], \"track_length_difference_mm\": 0.18069619167410877, \"through_vias\": [2, 1], \"coupled_trunk_mm\": 22, \"limitations\": \"track sum excludes barrel electrical length; fanout not impedance-tuned; no fabricatedchannel qualification\"}]\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'PNG file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'JPEG file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'TIFF file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'GIF file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'PNM file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'PCX file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'IFF file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'Windows icon file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'Windows cursor file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'Windows animated cursor file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'TGA file'\n06:56:35\u202fPM: Debug: Adding duplicate image handler for 'XPM file'\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "F.Cu,F.Silkscreen,Edge.Cuts",
+      "--mode-single",
+      "--page-size-mode",
+      "2",
+      "--exclude-drawing-sheet",
+      "-o",
+      "previews/board-front.svg",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-front.svg'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "B.Cu,Edge.Cuts",
+      "--mode-single",
+      "--page-size-mode",
+      "2",
+      "--exclude-drawing-sheet",
+      "-o",
+      "previews/board-back.svg",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-back.svg'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "In1.Cu,Edge.Cuts",
+      "--mode-single",
+      "--page-size-mode",
+      "2",
+      "--exclude-drawing-sheet",
+      "-o",
+      "previews/board-inner1.svg",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-inner1.svg'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "svg",
+      "--layers",
+      "In2.Cu,Edge.Cuts",
+      "--mode-single",
+      "--page-size-mode",
+      "2",
+      "--exclude-drawing-sheet",
+      "-o",
+      "previews/board-inner2.svg",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-inner2.svg'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "F.Cu,F.Silkscreen,Edge.Cuts",
+      "--mode-single",
+      "--scale",
+      "2",
+      "-o",
+      "previews/board-front.pdf",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-front.pdf'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "B.Cu,Edge.Cuts",
+      "--mode-single",
+      "--scale",
+      "2",
+      "-o",
+      "previews/board-back.pdf",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-back.pdf'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "In1.Cu,Edge.Cuts",
+      "--mode-single",
+      "--scale",
+      "2",
+      "-o",
+      "previews/board-inner1.pdf",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-inner1.pdf'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "pdf",
+      "--layers",
+      "In2.Cu,Edge.Cuts",
+      "--mode-single",
+      "--scale",
+      "2",
+      "-o",
+      "previews/board-inner2.pdf",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'previews/board-inner2.pdf'.\nDone.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "gerbers",
+      "--layers",
+      "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts",
+      "-o",
+      "fabrication/",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Plotted to 'fabrication/base-rear-interface01-F_Cu.gtl'.\nPlotted to 'fabrication/base-rear-interface01-In1_Cu.g1'.\nPlotted to 'fabrication/base-rear-interface01-In2_Cu.g2'.\nPlotted to 'fabrication/base-rear-interface01-B_Cu.gbl'.\nPlotted to 'fabrication/base-rear-interface01-F_Silkscreen.gto'.\nPlotted to 'fabrication/base-rear-interface01-B_Silkscreen.gbo'.\nPlotted to 'fabrication/base-rear-interface01-F_Mask.gts'.\nPlotted to 'fabrication/base-rear-interface01-B_Mask.gbs'.\nPlotted to 'fabrication/base-rear-interface01-Edge_Cuts.gm1'.\n"
+  },
+  {
+    "command": [
+      "kicad-cli",
+      "pcb",
+      "export",
+      "drill",
+      "--excellon-separate-th",
+      "--generate-map",
+      "--map-format",
+      "svg",
+      "--generate-report",
+      "-o",
+      "fabrication/",
+      "kicad/base-rear-interface01.kicad_pcb"
+    ],
+    "returncode": 0,
+    "output": "Created file 'fabrication/base-rear-interface01-PTH.drl'\nCreated file 'fabrication/base-rear-interface01-NPTH.drl'\nCreated file 'fabrication/base-rear-interface01-PTH-drl_map.svg'.\nCreated file 'fabrication/base-rear-interface01-NPTH-drl_map.svg'.\nDone.\n"
+  }
+]

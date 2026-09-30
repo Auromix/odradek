@@ -1,0 +1,50 @@
+{
+  "main_voltage_nominal_V": 48,
+  "main_current_validation_target_cont_A": 10,
+  "main_current_short_test_target_A": 20,
+  "short_duration_s": null,
+  "not_certified_current": true,
+  "power_return_is_not_chassis": true,
+  "ethernet": {
+    "passive_pin_identity": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "impedance_target_ohm": 100,
+    "controlled_tolerance_percent": 10,
+    "width_mm": 0.24,
+    "gap_mm": 0.2,
+    "preliminary_closed_form_no_mask_ohm": 99.79553767476281,
+    "model": "IPC-style first-order coupled microstrip estimate only; not field solver or factory coupon",
+    "reference_planes": "CHASSIS inner1/inner2 in EtherCAT region; no split under routed pair trunks"
+  },
+  "gmsl": {
+    "route": "50ohm coax adapters and matched cable assemblies only; no PCB signal trace",
+    "two_channels": true,
+    "PoC_and_6Gbps_validation": false
+  }
+}

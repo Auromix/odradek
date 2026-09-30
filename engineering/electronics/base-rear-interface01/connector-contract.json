@@ -1,0 +1,317 @@
+{
+  "revision": "BRI01",
+  "status": "native placement frozen; connector mated/cable validation explicitly partial",
+  "units": "mm",
+  "board": {
+    "size": [
+      116,
+      56,
+      1.6
+    ],
+    "local_axes": "u+x;v downward;z normal from PCB back toward components",
+    "assembly_transform": "X=u-58; Y=z-27; Z=-9-v",
+    "holes": [
+      {
+        "uv": [
+          6,
+          6
+        ],
+        "diameter": 3.2,
+        "copper_keepout_radius": 3.5,
+        "role": "PCB chassis standoff"
+      },
+      {
+        "uv": [
+          110,
+          6
+        ],
+        "diameter": 3.2,
+        "copper_keepout_radius": 3.5,
+        "role": "PCB chassis standoff"
+      },
+      {
+        "uv": [
+          110,
+          50
+        ],
+        "diameter": 3.2,
+        "copper_keepout_radius": 3.5,
+        "role": "PCB chassis standoff"
+      },
+      {
+        "uv": [
+          6,
+          50
+        ],
+        "diameter": 3.2,
+        "copper_keepout_radius": 3.5,
+        "role": "PCB chassis standoff"
+      },
+      {
+        "uv": [
+          48,
+          38
+        ],
+        "diameter": 3.2,
+        "copper_keepout_radius": 3.5,
+        "role": "coax bracket M3"
+      },
+      {
+        "uv": [
+          68,
+          38
+        ],
+        "diameter": 3.2,
+        "copper_keepout_radius": 3.5,
+        "role": "coax bracket M3"
+      }
+    ],
+    "mechanical_parts_file": "mechanical/parts.json"
+  },
+  "ports": [
+    {
+      "ref": "J1",
+      "kind": "RJ45 plain8P8C",
+      "axis_global": [
+        0,
+        0,
+        -1
+      ],
+      "front_plane_global_Z": -65,
+      "centre_X": -38,
+      "cutout_global_xy": [
+        -47.4,
+        -26.0,
+        -28.6,
+        -8.6
+      ],
+      "cutout_kind": "18.8x17.4 nominal rectangular planning opening incl.EMI springs, not vendor panel recommendation",
+      "plug_service_bbox_global": [
+        [
+          -50,
+          -28,
+          -105
+        ],
+        [
+          -26,
+          -3.1,
+          -65
+        ]
+      ],
+      "release_service_bbox_global": [
+        [
+          -53,
+          -28,
+          -105
+        ],
+        [
+          -23,
+          -3.1,
+          -65
+        ]
+      ],
+      "notes": "Unshielded case walls must not prevent shield springs; tabs need actual panel compression design. Plug/boot PN and hand access unverified."
+    },
+    {
+      "ref": "X1",
+      "kind": "SMA50ohmcoax",
+      "axis_global": [
+        0,
+        0,
+        -1
+      ],
+      "axis_global_xy": [
+        -10,
+        -16
+      ],
+      "panel_global_Z": -65,
+      "cutout": {
+        "diameter": 6.5,
+        "overall_flat_to_opposite_arc": 6.0,
+        "flat_plane_from_axis": 2.75,
+        "max_panel_thickness": 6.4,
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "flat_direction_global": "+X",
+        "provenance": "originalmaker2001catalogue; reference only"
+      },
+      "notes": "Reference D-hole only in separate horizontal metallic ledge sharing PCB bracket bolts; not FR4 RF routing.",
+      "body_axial_reference_global_Z": {
+        "internal_end": -50.4,
+        "fixed_shoulder_panel_bearing": -65,
+        "fixed_shoulder_outside": -66.7,
+        "external_end": -72.5
+      },
+      "nut": {
+        "removable_AF": 8,
+        "fixed_flange_AF": 9.5,
+        "nut_plus_washer_axial_planning": 2.5,
+        "not_controlled_nut_thickness": true
+      },
+      "mating_SMA_male_cable_PN": null
+    },
+    {
+      "ref": "X2",
+      "kind": "SMA50ohmcoax",
+      "axis_global": [
+        0,
+        0,
+        -1
+      ],
+      "axis_global_xy": [
+        10,
+        -16
+      ],
+      "panel_global_Z": -65,
+      "cutout": {
+        "diameter": 6.5,
+        "overall_flat_to_opposite_arc": 6.0,
+        "flat_plane_from_axis": 2.75,
+        "max_panel_thickness": 6.4,
+        "normal": [
+          0,
+          0,
+          -1
+        ],
+        "flat_direction_global": "+X",
+        "provenance": "originalmaker2001catalogue; reference only"
+      },
+      "notes": "A/B identification mandatory; same gender two ports have no intrinsic channel coding.",
+      "body_axial_reference_global_Z": {
+        "internal_end": -50.4,
+        "fixed_shoulder_panel_bearing": -65,
+        "fixed_shoulder_outside": -66.7,
+        "external_end": -72.5
+      },
+      "nut": {
+        "removable_AF": 8,
+        "fixed_flange_AF": 9.5,
+        "nut_plus_washer_axial_planning": 2.5,
+        "not_controlled_nut_thickness": true
+      },
+      "mating_SMA_male_cable_PN": null
+    },
+    {
+      "ref": "J3",
+      "kind": "48Vpositive-lock2P",
+      "axis_global": [
+        0,
+        0,
+        -1
+      ],
+      "front_plane_global_Z": -65,
+      "centre_X": 38.5,
+      "cutout_global_xy": [
+        28.9,
+        -25.9,
+        48.1,
+        -10.6
+      ],
+      "plug_service_bbox_global": [
+        [
+          26.3,
+          -26,
+          -104
+        ],
+        [
+          50.7,
+          -3.5,
+          -65
+        ]
+      ],
+      "notes": "19.2x15.3 header opening planning; mating plug reserved larger23.24x19.8. Actual overlap/datum pending source drawing. No live mating."
+    }
+  ],
+  "internal": {
+    "RJ45": {
+      "ref": "J2",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "mouth_Z": -9,
+      "candidate_plug": "Stewart SS-37200-028",
+      "candidate_cable": "HELUKABEL800068",
+      "plug_total_length_reference_mm": 22.78,
+      "plug_width_reference_mm": 11.68,
+      "plug_height_reference_mm": 8.15,
+      "actual_Wurth_mated_insertion_mm": null,
+      "cable_OD_mm": [
+        5.5,
+        5.9
+      ],
+      "fixed_Rmin_mm": 23.6,
+      "Rmin_basis": "4xlargestOD; manufacturer does not specify which radius convention in cited line",
+      "roof_inner_Z": 39,
+      "available_mouth_to_roof_mm": 48,
+      "conservative_height_formula_mm": "52.28 - actual_insertion_I + straight_exit_S; hereRtreatedasinnerradius andODadded",
+      "required_inequality_mm": "I-S >=4.28 before assemblytolerance",
+      "notes": "This is a measured-datum check still required, not 30mm whole-plug exposure; no boot. Match crimp tooling and shielding termination before prototype; fixed cable only."
+    },
+    "power": {
+      "refs": [
+        "J4",
+        "J5"
+      ],
+      "lug_centres_global": [
+        [
+          43,
+          -21.9,
+          -21
+        ],
+        [
+          27,
+          -21.9,
+          -21
+        ]
+      ],
+      "wire_direction": [
+        0,
+        0,
+        1
+      ],
+      "max_lug_nut_height_above_PCB_top": 12.0,
+      "notes": "M3 eyelet+nut hardware and actual cableRmin TBD. Separate upstream fuse/limited source. Strain relief before wires leave removable core.",
+      "ref_order": [
+        "J4 VIN48",
+        "J5 RETURN48"
+      ],
+      "ring_lug_candidate": {
+        "MPN": "TE165295",
+        "total_length_mm": 14.35,
+        "plate_thickness_mm": 0.79,
+        "hole_mm": 3.2,
+        "wire_mm2": [
+          1.5,
+          2.5
+        ],
+        "controlled_hole_centre_to_wire_end": null,
+        "barrel_outer_diameter": null,
+        "assembly_BREP_status": "NOT included as a frozenpart; oldplannedlugnutbox does not close this candidate length",
+        "no_insulation_or_strain_relief": true
+      }
+    }
+  },
+  "requirements": [
+    "F-side complete package/mated envelope Y<-3mm",
+    "PCB mounts independent of cables,NPTH not electrical bond",
+    "externals unplug before lifting interface core",
+    "coax ledge carries coupling torque,FR4 not sole reaction",
+    "no new EtherCAT slave,PHY,magnetics or PoE on board"
+  ],
+  "assembly_limits": {
+    "mount_to_table_edge_clearance_target_mm": 2,
+    "max_allowed_F_side_Y": -3,
+    "external_plug_shape": "unfrozen; serviceboxes are conservative reservations, not supplierBREP",
+    "power_PLUG_nominal_mated_inference": "1718481 total38.45 and spigot14.7 suggest23.75 exposed if shoulder seatsflush; actual offset/engagement not guaranteed by standalone drawings",
+    "power_plug_full_dimensions_mm": [
+      23.24,
+      38.45,
+      19.8
+    ]
+  }
+}

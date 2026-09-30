@@ -1,0 +1,59 @@
+{
+  "revision": "BRI01",
+  "metadata_sha256": "fb9d11bc0bc990f87ae87d9f213528edcbe81f3c36ea74098f8edc0d78806fe2",
+  "model_sha256": "f3b844e94b099bb5428e9ffa2ce20007f33d9a55a7892b5db132cdd385c4e177",
+  "scope": "Nominal bbox/dimensional comparison only, not general interference/swept-wire proof",
+  "root_hood": {
+    "outer_X": [
+      -64.5,
+      64.5
+    ],
+    "outer_Y": [
+      -37,
+      -3
+    ],
+    "outer_Z": [
+      -67,
+      -1
+    ],
+    "wall": 2,
+    "rear_open": true,
+    "top_open": true
+  },
+  "results": {
+    "ledge_to_front_innerwall_mm": 2,
+    "longest_tail_to_Yminus35_mm": 4.6,
+    "SMA_flange_circumscribed_radius_mm": 5.484827557301445,
+    "radial_clearance_in_D14_mm": 1.5151724426985549,
+    "RJ1_full_width_extents_X": [
+      -46.65,
+      -29.35
+    ],
+    "power_header_X": [
+      29.48,
+      47.52
+    ],
+    "SMA_fixed_flange_Z": [
+      -66.7,
+      -65
+    ]
+  },
+  "boundaries": [
+    "powerplug nominal aperture compatibility assumes actual matedverticaloffset not yet verified",
+    "slot hand/tool access not proven",
+    "actual TE165295 lug barrel and longer end not closed by existing planned-lug box",
+    "source P3 plug fit and internal RJ45cable bend pending",
+    "root owns full assemblycollisioncheck"
+  ],
+  "visual_QA": {
+    "schematic": "onepage rendered; header/titleblock and all12 symbols clear",
+    "board": "front/back/inner1 nativePDF rendered and inspected",
+    "native": {
+      "ERC": 0,
+      "DRC": 0,
+      "unconnected": 0,
+      "schematic_parity": 0,
+      "exclusions": 0
+    }
+  }
+}
