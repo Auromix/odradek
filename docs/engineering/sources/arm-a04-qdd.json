@@ -1,0 +1,216 @@
+{
+  "id": "ARM-A04-QDD-01",
+  "reviewed_on": "2026-09-30",
+  "status": "candidate_for_packaging_and_bench_evaluation_not_purchase_release",
+  "user_confirmed": [
+    "QDD",
+    "motor_and_output_encoders",
+    "any_communication_protocol",
+    "prefer_model_specific_open_robot_adoption"
+  ],
+  "not_yet_confirmed": [
+    "motor_models_and_axis_assignment",
+    "head_mass_and_COM",
+    "full_arm_load_capacity",
+    "continuous_stall_thermal_capacity",
+    "axis_bore_and_internal_GMSL_path"
+  ],
+  "actuators": [
+    {
+      "model": "RobStride03",
+      "proposed_axes": [
+        "J1",
+        "J3",
+        "J4"
+      ],
+      "quantity": 3,
+      "reduction_ratio": 9,
+      "rated_torque_Nm": 20,
+      "peak_torque_Nm": 60,
+      "rated_speed_rpm": 100,
+      "dimensions_mm": [
+        106,
+        106,
+        56
+      ],
+      "mass_kg": 0.88,
+      "rated_test_heatsink_mm": [
+        215,
+        220
+      ],
+      "notes": [
+        "Manufacturer overload curve footnote says 6 Nm despite 20 Nm rating.",
+        "Rated phase current differs between tables: 13 and 12 Apk."
+      ],
+      "encoders": {
+        "count": 2,
+        "type": "magnetic",
+        "resolution_bits": 14,
+        "locations": [
+          "motor",
+          "gear_output"
+        ]
+      },
+      "communication": {
+        "protocol": "CAN",
+        "bitrate_bps": 1000000
+      },
+      "through_bore_verified": false,
+      "brake_verified": false,
+      "manual_url": "https://raw.githubusercontent.com/RobStride/Product_Information/3f0cae4986e175337c7b03d891b899247b1f2933/产品资料/RS03/RS03使用说明书260713.pdf"
+    },
+    {
+      "model": "RobStride04",
+      "proposed_axes": [
+        "J2"
+      ],
+      "quantity": 1,
+      "reduction_ratio": 9,
+      "rated_torque_Nm": 40,
+      "peak_torque_Nm": 120,
+      "rated_speed_rpm": 50,
+      "dimensions_mm": [
+        120,
+        120,
+        56
+      ],
+      "mass_kg": 1.42,
+      "rated_test_heatsink_mm": [
+        345,
+        345
+      ],
+      "notes": [
+        "Manual lists 35 Nm with a 220 x 200 mm heatsink.",
+        "40 Nm is not established for continuous zero-speed holding in the proposed enclosure."
+      ],
+      "encoders": {
+        "count": 2,
+        "type": "magnetic",
+        "resolution_bits": 14,
+        "locations": [
+          "motor",
+          "gear_output"
+        ]
+      },
+      "communication": {
+        "protocol": "CAN",
+        "bitrate_bps": 1000000
+      },
+      "through_bore_verified": false,
+      "brake_verified": false,
+      "manual_url": "https://raw.githubusercontent.com/RobStride/Product_Information/3f0cae4986e175337c7b03d891b899247b1f2933/产品资料/RS04/RS04使用说明书260713.pdf"
+    },
+    {
+      "model": "RobStride06",
+      "proposed_axes": [
+        "J5",
+        "J6"
+      ],
+      "quantity": 2,
+      "reduction_ratio": 9,
+      "rated_torque_Nm": 11,
+      "peak_torque_Nm": 36,
+      "rated_speed_rpm": 100,
+      "dimensions_mm": [
+        88,
+        88,
+        49
+      ],
+      "mass_kg": 0.621,
+      "rated_test_heatsink_mm": [
+        130,
+        160
+      ],
+      "notes": [],
+      "encoders": {
+        "count": 2,
+        "type": "magnetic",
+        "resolution_bits": 14,
+        "locations": [
+          "motor",
+          "gear_output"
+        ]
+      },
+      "communication": {
+        "protocol": "CAN",
+        "bitrate_bps": 1000000
+      },
+      "through_bore_verified": false,
+      "brake_verified": false,
+      "manual_url": "https://raw.githubusercontent.com/RobStride/Product_Information/3f0cae4986e175337c7b03d891b899247b1f2933/产品资料/RS06/RS06使用说明书260713.pdf"
+    },
+    {
+      "model": "RobStride00",
+      "proposed_axes": [
+        "J7"
+      ],
+      "quantity": 1,
+      "reduction_ratio": 10,
+      "rated_torque_Nm": 5,
+      "peak_torque_Nm": 14,
+      "rated_speed_rpm": 100,
+      "dimensions_mm": [
+        57,
+        57,
+        51
+      ],
+      "mass_kg": 0.31,
+      "rated_test_heatsink_mm": [
+        90,
+        85
+      ],
+      "notes": [],
+      "encoders": {
+        "count": 2,
+        "type": "magnetic",
+        "resolution_bits": 14,
+        "locations": [
+          "motor",
+          "gear_output"
+        ]
+      },
+      "communication": {
+        "protocol": "CAN",
+        "bitrate_bps": 1000000
+      },
+      "through_bore_verified": false,
+      "brake_verified": false,
+      "manual_url": "https://raw.githubusercontent.com/RobStride/Product_Information/3f0cae4986e175337c7b03d891b899247b1f2933/产品资料/RS00/RS00使用说明书260713.pdf"
+    }
+  ],
+  "actuator_mass_sum_kg": 5.612,
+  "adoption_sources": [
+    {
+      "project": "Seeed reBot B601-RS",
+      "models": [
+        "RobStride06",
+        "RobStride00"
+      ],
+      "url": "https://github.com/Seeed-Projects/reBot-DevArm/blob/main/hardware/reBot_B601_RS/README_zh.md"
+    },
+    {
+      "project": "K-Scale K-Bot v2",
+      "models": [
+        "RobStride03",
+        "RobStride04",
+        "RobStride00"
+      ],
+      "url": "https://github.com/kscalelabs/kscale-assets/blob/master/kbot-v2/metadata.json",
+      "note": "Model integration evidence only; software torque limits are not rated torque."
+    },
+    {
+      "project": "AIZEE",
+      "models": [
+        "RobStride04",
+        "RobStride03"
+      ],
+      "url": "https://github.com/ltrlab/aizee/blob/main/config/hardware_jetson_rover.yaml",
+      "note": "Small community project hardware configuration, not independent endurance or thermal certification."
+    }
+  ],
+  "limits": [
+    "No bench tests were performed.",
+    "Rated and peak values are manufacturer specifications under stated conditions.",
+    "No whole-arm manufacturing or payload release."
+  ]
+}
