@@ -1,5 +1,7 @@
 # Odradek
 
+当前工作聚焦底座：[B04-P2 三维审查包](engineering/base_b04/README.md)，含飞碟盾形外罩、底座灯、隐藏桌夹、内收盒架与后部接口 PCB。
+
 **7自由度本体＋可拆四瓣发光夹爪，以朝向、张合与灯光表达主动注意力。**
 
 [English](README.md) · [设计简报](docs/design-brief.md) · [方案比较](docs/concept-comparison.md) · [昵称候选](docs/nickname-candidates.md) · [路线图](docs/roadmap.md)

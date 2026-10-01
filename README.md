@@ -1,5 +1,7 @@
 # Odradek
 
+Current review: [B04-P2 base 3D package](engineering/base_b04/README.md), with a saucer-shaped shield cover, front light, desk clamp and removable rear interface PCB.
+
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
 [中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Comparison](docs/concept-comparison.md) · [Nickname candidates](docs/nickname-candidates.md) · [Roadmap](docs/roadmap.md)

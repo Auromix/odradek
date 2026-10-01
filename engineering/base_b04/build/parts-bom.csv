@@ -1,9 +1,9 @@
 id,category,quantity,material,process,mass_kg
-B04-101-DECK,custom,1,6061-T651,CNC profile + mill + drill/tap,1.711763414290755
+B04-101-DECK,custom,1,6061-T651,CNC profile + mill + drill/tap,1.5805939480633266
 B04-102-CPLATE-L,custom,1,S355,Profile cut oversize; finish mill + drill/tap,0.9224648072629437
 B04-102-CPLATE-R,custom,1,S355,Profile cut oversize; finish mill + drill/tap,0.9224648072629436
 B04-103-BRIDGE,custom,1,6061-T651,CNC mill + drill/tap,0.8718565283264427
-B04-104-FLANGE,custom,1,6061-T651,CNC turn/mill + drill/tap,0.5473882765280974
+B04-104-FLANGE,custom,1,6061-T651,"CNC turn/mill + drill/tap; champagne anodize, mask mating faces",0.5473882765280974
 B04-105-POST-1,custom,1,6061-T651,Turn + drill/tap,0.029705693760766105
 B04-105-POST-2,custom,1,6061-T651,Turn + drill/tap,0.029705693760766098
 B04-105-POST-3,custom,1,6061-T651,Turn + drill/tap,0.029705693760766108
@@ -23,74 +23,94 @@ B04-201-CRADLE-R,custom,1,6061-T651,CNC profile + drill/tap,0.22389638231067172
 B04-202-TRAY,custom,1,6061-T651,CNC profile + drill/tap,0.6458674541106519
 B04-203-STOP-REAR,custom,1,6061-T651,Mill + drill,0.06892558813196618
 B04-203-STOP-FRONT,custom,1,6061-T651,Mill + drill,0.06892558813196618
-HW-COVER-POST-0,hardware,1,brass,Purchase M3 F/F hex AF5.5 x35,0.008110198149828817
-HW-COVER-POST-1,hardware,1,brass,Purchase M3 F/F hex AF5.5 x35,0.008110198149828817
-HW-COVER-POST-2,hardware,1,brass,Purchase M3 F/F hex AF5.5 x35,0.008110198149828815
-HW-COVER-POST-3,hardware,1,brass,Purchase M3 F/F hex AF5.5 x35,0.008110198149828815
-HW-COVER-POST-4,hardware,1,brass,Purchase M3 F/F hex AF5.5 x35,0.008110198149828819
-HW-COVER-POST-5,hardware,1,brass,Purchase M3 F/F hex AF5.5 x35,0.008110198149828819
+HW-COVER-POST-0,hardware,1,brass,Purchase M3 M/F hex AF5.5 x10; male6; female depth>=6,0.0028445943381010482
+HW-COVER-POST-1,hardware,1,brass,Purchase M3 M/F hex AF5.5 x10; male6; female depth>=6,0.0028445943381010482
+HW-COVER-POST-2,hardware,1,brass,Purchase M3 M/F hex AF5.5 x10; male6; female depth>=6,0.0028445943381010482
+HW-COVER-POST-3,hardware,1,brass,Purchase M3 M/F hex AF5.5 x10; male6; female depth>=6,0.0028445943381010482
+HW-COVER-POST-4,hardware,1,brass,Purchase M3 M/F hex AF5.5 x10; male6; female depth>=6,0.002844594338101049
+HW-COVER-POST-5,hardware,1,brass,Purchase M3 M/F hex AF5.5 x10; male6; female depth>=6,0.002844594338101049
 HW-PCB-POST-0,hardware,1,brass,Purchase M3 M/F hex AF5.5 x9; male6,0.0020854795242416955
 HW-PCB-POST-1,hardware,1,brass,Purchase M3 M/F hex AF5.5 x9; male6,0.0020854795242416955
 HW-PCB-POST-2,hardware,1,brass,Purchase M3 M/F hex AF5.5 x9; male6,0.0020854795242416955
 HW-PCB-POST-3,hardware,1,brass,Purchase M3 M/F hex AF5.5 x9; male6,0.0020854795242416955
-B04-301-COVER-REAR,custom,1,PETG,FDM; 0.2mm layer; 4 walls; supports under roof,0.11833180076861413
-B04-301-COVER-FRONT,custom,1,PETG,FDM; 0.2mm layer; 4 walls; supports under roof,0.13455667192872578
+B04-301-COVER-REAR,custom,1,PETG,FDM; 0.2mm layer; 4 walls; supports under roof,0.12138910894894502
+B04-301-COVER-FRONT,custom,1,PETG,FDM; 0.2mm layer; 4 walls; supports under roof,0.19703306210851107
+B04-302-LIGHT-LENS,custom,1,PETG,"Translucent amber PETG prototype; later frosted polycarbonate, no optical performance claim",0.001224342668698023
 ENV-PCB,envelope,1,FR4,"Actual KiCad drilled board, see electronics/base-b04",
 ENV-CONTROLLER,envelope,1,FR4,Controller volume gauge; electronics not yet designed,
 HW-THRUST-FOOT--1,hardware,1,steel,Ganter DIN6311-25-S envelope; articulation not simulated,0.03710323025650787
-HW-THRUST-SCREW--1,hardware,1,steel,Ganter DIN6332-M12-100-SK; threads/neck simplified,0.08132377008564992
+HW-THRUST-SCREW--1,hardware,1,steel,"Ganter DIN6332-M12-100-SK; AF6 tool socket shown, depth8 allocation, threads/neck simplified",0.07936585985277411
 HW-THRUST-FOOT-1,hardware,1,steel,Ganter DIN6311-25-S envelope; articulation not simulated,0.03710323025650787
-HW-THRUST-SCREW-1,hardware,1,steel,Ganter DIN6332-M12-100-SK; threads/neck simplified,0.08132377008564992
-HW-M8-FLANGE-0,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.02009419209903796
-HW-M8-DECK-0,fastener,1,steel,Purchase ISO4762 cap screw M8x16; class8.8 minimum,0.014648932384423843
-HW-M8-FLANGE-1,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.02009419209903796
-HW-M8-DECK-1,fastener,1,steel,Purchase ISO4762 cap screw M8x16; class8.8 minimum,0.014648932384423843
-HW-M8-FLANGE-2,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.020094192099037952
-HW-M8-DECK-2,fastener,1,steel,Purchase ISO4762 cap screw M8x16; class8.8 minimum,0.014648932384423843
-HW-M8-FLANGE-3,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.020094192099037952
-HW-M8-DECK-3,fastener,1,steel,Purchase ISO4762 cap screw M8x16; class8.8 minimum,0.014648932384423843
-HW-M6-DECK--1-0,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.010313440274690324
-HW-M6-DECK--1-1,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.010313440274690324
-HW-M6-DECK--1-2,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.010313440274690326
-HW-M8-BRIDGE--1-0,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.020094192099037962
-HW-M8-BRIDGE--1-1,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.02009419209903796
-HW-M6-CRADLE--1-0,fastener,1,steel,Purchase ISO4762 cap screw M6x16; class8.8 minimum; washer t1.6,0.008315858585905254
-HW-M6-CRADLE--1-1,fastener,1,steel,Purchase ISO4762 cap screw M6x16; class8.8 minimum; washer t1.6,0.008315858585905252
-HW-M3-CAGE--1--1,fastener,1,steel,Purchase ISO4762 cap screw M3x14; class8.8 minimum,0.001336345157543716
-HW-M3-CAGE--1-1,fastener,1,steel,Purchase ISO4762 cap screw M3x14; class8.8 minimum,0.0013363451575437162
-HW-M6-DECK-1-0,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.010313440274690324
-HW-M6-DECK-1-1,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.010313440274690323
-HW-M6-DECK-1-2,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.010313440274690326
-HW-M8-BRIDGE-1-0,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.020094192099037962
-HW-M8-BRIDGE-1-1,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.02009419209903796
-HW-M6-CRADLE-1-0,fastener,1,steel,Purchase ISO4762 cap screw M6x16; class8.8 minimum; washer t1.6,0.008315858585905252
-HW-M6-CRADLE-1-1,fastener,1,steel,Purchase ISO4762 cap screw M6x16; class8.8 minimum; washer t1.6,0.008315858585905252
-HW-M3-CAGE-1--1,fastener,1,steel,Purchase ISO4762 cap screw M3x14; class8.8 minimum,0.001336345157543716
-HW-M3-CAGE-1-1,fastener,1,steel,Purchase ISO4762 cap screw M3x14; class8.8 minimum,0.0013363451575437162
-HW-M3-COVER-BOTTOM-0,fastener,1,steel,Purchase ISO10642 flat head M3x20; class8.8 minimum,0.00124740653207591
-HW-M3-COVER-TOP-0,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0011267223877329368
-HW-M3-COVER-BOTTOM-1,fastener,1,steel,Purchase ISO10642 flat head M3x20; class8.8 minimum,0.00124740653207591
-HW-M3-COVER-TOP-1,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0011267223877329368
-HW-M3-COVER-BOTTOM-2,fastener,1,steel,Purchase ISO10642 flat head M3x20; class8.8 minimum,0.0012474065320759104
-HW-M3-COVER-TOP-2,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0011267223877329368
-HW-M3-COVER-BOTTOM-3,fastener,1,steel,Purchase ISO10642 flat head M3x20; class8.8 minimum,0.0012474065320759104
-HW-M3-COVER-TOP-3,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0011267223877329368
-HW-M3-COVER-BOTTOM-4,fastener,1,steel,Purchase ISO10642 flat head M3x20; class8.8 minimum,0.0012474065320759108
-HW-M3-COVER-TOP-4,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0011267223877329375
-HW-M3-COVER-BOTTOM-5,fastener,1,steel,Purchase ISO10642 flat head M3x20; class8.8 minimum,0.0012474065320759108
-HW-M3-COVER-TOP-5,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0011267223877329375
-HW-M3-PCB-0,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0011267223877329368
-HW-M3-PCB-1,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0011267223877329368
-HW-M3-PCB-2,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.001126722387732937
-HW-M3-PCB-3,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.001126722387732937
-HW-M4-TRAY--124-140,fastener,1,steel,Purchase ISO4762 cap screw M4x12; class8.8 minimum,0.0023921657260759475
-HW-M4-TRAY--124-250,fastener,1,steel,Purchase ISO4762 cap screw M4x12; class8.8 minimum,0.0023921657260759475
-HW-M4-TRAY-124-140,fastener,1,steel,Purchase ISO4762 cap screw M4x12; class8.8 minimum,0.0023921657260759475
-HW-M4-TRAY-124-250,fastener,1,steel,Purchase ISO4762 cap screw M4x12; class8.8 minimum,0.0023921657260759475
-HW-M4-STOP--100-112,fastener,1,steel,Purchase ISO4762 cap screw M4x16; class8.8 minimum,0.0027867497633668253
-HW-M4-STOP--100-278,fastener,1,steel,Purchase ISO4762 cap screw M4x16; class8.8 minimum,0.002786749763366831
-HW-M4-STOP-100-112,fastener,1,steel,Purchase ISO4762 cap screw M4x16; class8.8 minimum,0.0027867497633668253
-HW-M4-STOP-100-278,fastener,1,steel,Purchase ISO4762 cap screw M4x16; class8.8 minimum,0.002786749763366831
+HW-THRUST-SCREW-1,hardware,1,steel,"Ganter DIN6332-M12-100-SK; AF6 tool socket shown, depth8 allocation, threads/neck simplified",0.07936585985277411
+HW-LIGHT-INSERT--22,hardware,1,brass,"ruthex RX-M2x4, OD3.6 L4 from vendor STEP; knurl/thread simplified",0.00022831524609963818
+HW-M2-LIGHT--22,fastener,1,steel,Purchase ISO4762 cap screw M2x6; class8.8 minimum; washer t0.3,0.0003465115185491978
+HW-LIGHT-INSERT-22,hardware,1,brass,"ruthex RX-M2x4, OD3.6 L4 from vendor STEP; knurl/thread simplified",0.00022831524609963818
+HW-M2-LIGHT-22,fastener,1,steel,Purchase ISO4762 cap screw M2x6; class8.8 minimum; washer t0.3,0.00034651151854919786
+HW-M8-FLANGE-0,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.01891944595931244
+HW-M8-DECK-0,fastener,1,steel,Purchase ISO4762 cap screw M8x16; class8.8 minimum,0.013474186244698332
+HW-M8-FLANGE-1,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.01891944595931244
+HW-M8-DECK-1,fastener,1,steel,Purchase ISO4762 cap screw M8x16; class8.8 minimum,0.013474186244698332
+HW-M8-FLANGE-2,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.01891944595931244
+HW-M8-DECK-2,fastener,1,steel,Purchase ISO4762 cap screw M8x16; class8.8 minimum,0.013474186244698332
+HW-M8-FLANGE-3,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.01891944595931244
+HW-M8-DECK-3,fastener,1,steel,Purchase ISO4762 cap screw M8x16; class8.8 minimum,0.013474186244698332
+HW-M6-DECK--1-0,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.009701593326916617
+HW-M6-DECK--1-1,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.009701593326916617
+HW-M6-DECK--1-2,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.009701593326916618
+HW-M8-BRIDGE--1-0,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.018919445959312445
+HW-M8-BRIDGE--1-1,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.018919445959312442
+HW-M6-CRADLE--1-0,fastener,1,steel,Purchase ISO4762 cap screw M6x16; class8.8 minimum; washer t1.6,0.0077040116381315495
+HW-M6-CRADLE--1-1,fastener,1,steel,Purchase ISO4762 cap screw M6x16; class8.8 minimum; washer t1.6,0.0077040116381315495
+HW-M3-CAGE--1--1,fastener,1,steel,Purchase ISO4762 cap screw M3x14; class8.8 minimum,0.0012598642890720023
+HW-M3-CAGE--1-1,fastener,1,steel,Purchase ISO4762 cap screw M3x14; class8.8 minimum,0.0012598642890720025
+HW-M6-DECK-1-0,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.009701593326916617
+HW-M6-DECK-1-1,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.009701593326916617
+HW-M6-DECK-1-2,fastener,1,steel,Purchase ISO4762 cap screw M6x25; class8.8 minimum; washer t1.6,0.009701593326916618
+HW-M8-BRIDGE-1-0,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.018919445959312445
+HW-M8-BRIDGE-1-1,fastener,1,steel,Purchase ISO4762 cap screw M8x25; class8.8 minimum; washer t1.6,0.018919445959312442
+HW-M6-CRADLE-1-0,fastener,1,steel,Purchase ISO4762 cap screw M6x16; class8.8 minimum; washer t1.6,0.0077040116381315495
+HW-M6-CRADLE-1-1,fastener,1,steel,Purchase ISO4762 cap screw M6x16; class8.8 minimum; washer t1.6,0.0077040116381315495
+HW-M3-CAGE-1--1,fastener,1,steel,Purchase ISO4762 cap screw M3x14; class8.8 minimum,0.0012598642890720023
+HW-M3-CAGE-1-1,fastener,1,steel,Purchase ISO4762 cap screw M3x14; class8.8 minimum,0.0012598642890720025
+HW-M3-COVER-TOP-0,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612234
+HW-M3-COVER-TOP-1,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612234
+HW-M3-COVER-TOP-2,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612234
+HW-M3-COVER-TOP-3,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612234
+HW-M3-COVER-TOP-4,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.001050241519261224
+HW-M3-COVER-TOP-5,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.001050241519261224
+HW-M3-PCB-0,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612234
+HW-M3-PCB-1,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612234
+HW-M3-PCB-2,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612238
+HW-M3-PCB-3,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612238
+HW-M4-TRAY--124-140,fastener,1,steel,Purchase ISO4762 cap screw M4x12; class8.8 minimum,0.0022453224586102593
+HW-M4-TRAY--124-250,fastener,1,steel,Purchase ISO4762 cap screw M4x12; class8.8 minimum,0.0022453224586102593
+HW-M4-TRAY-124-140,fastener,1,steel,Purchase ISO4762 cap screw M4x12; class8.8 minimum,0.0022453224586102593
+HW-M4-TRAY-124-250,fastener,1,steel,Purchase ISO4762 cap screw M4x12; class8.8 minimum,0.0022453224586102593
+HW-M4-STOP--100-112,fastener,1,steel,Purchase ISO4762 cap screw M4x16; class8.8 minimum,0.0026399064959011344
+HW-M4-STOP--100-278,fastener,1,steel,Purchase ISO4762 cap screw M4x16; class8.8 minimum,0.0026399064959011405
+HW-M4-STOP-100-112,fastener,1,steel,Purchase ISO4762 cap screw M4x16; class8.8 minimum,0.002639906495901134
+HW-M4-STOP-100-278,fastener,1,steel,Purchase ISO4762 cap screw M4x16; class8.8 minimum,0.00263990649590114
+B04-401-INTERFACE-CARRIER,custom,1,6061-T651,Machine from angle billet; internal filletR2 allowance; drill/tap,0.12575451253123943
+HW-M4-CARRIER--80--18,fastener,1,steel,Purchase ISO4762 cap screw M4x10; class8.8 minimum; washer t0.8,0.0023686299702636586
+HW-M4-CARRIER--80--6,fastener,1,steel,Purchase ISO4762 cap screw M4x10; class8.8 minimum; washer t0.8,0.0023686299702636586
+HW-M4-CARRIER-80--18,fastener,1,steel,Purchase ISO4762 cap screw M4x10; class8.8 minimum; washer t0.8,0.002368629970263658
+HW-M4-CARRIER-80--6,fastener,1,steel,Purchase ISO4762 cap screw M4x10; class8.8 minimum; washer t0.8,0.002368629970263658
+HW-INTERFACE-POST--52--59,hardware,1,brass,M3 F/F hex AF5.5 x10; each female depth>=4.5,0.0023171994713796617
+HW-M3-INTERFACE-BACK--52--59,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.001050241519261224
+HW-M3-INTERFACE-FRONT--52--59,fastener,1,steel,Purchase ISO4762 cap screw M3x6; class8.8 minimum; washer t0.5,0.0009392647587731642
+HW-INTERFACE-POST--52--15,hardware,1,brass,M3 F/F hex AF5.5 x10; each female depth>=4.5,0.0023171994713796617
+HW-M3-INTERFACE-BACK--52--15,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612238
+HW-M3-INTERFACE-FRONT--52--15,fastener,1,steel,Purchase ISO4762 cap screw M3x6; class8.8 minimum; washer t0.5,0.0009392647587731641
+HW-INTERFACE-POST-52--59,hardware,1,brass,M3 F/F hex AF5.5 x10; each female depth>=4.5,0.0023171994713796617
+HW-M3-INTERFACE-BACK-52--59,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.001050241519261224
+HW-M3-INTERFACE-FRONT-52--59,fastener,1,steel,Purchase ISO4762 cap screw M3x6; class8.8 minimum; washer t0.5,0.0009392647587731642
+HW-INTERFACE-POST-52--15,hardware,1,brass,M3 F/F hex AF5.5 x10; each female depth>=4.5,0.0023171994713796617
+HW-M3-INTERFACE-BACK-52--15,fastener,1,steel,Purchase ISO4762 cap screw M3x8; class8.8 minimum; washer t0.5,0.0010502415192612238
+HW-M3-INTERFACE-FRONT-52--15,fastener,1,steel,Purchase ISO4762 cap screw M3x6; class8.8 minimum; washer t0.5,0.0009392647587731641
+HW-M3-PORT-HOOD--61.5,fastener,1,steel,Purchase ISO4762 cap screw M3x35; class8.8 minimum; washer t0.5,0.0025484277858500264
+HW-M3-PORT-HOOD-61.5,fastener,1,steel,Purchase ISO4762 cap screw M3x35; class8.8 minimum; washer t0.5,0.0025484277858500264
+B04-402-PORT-HOOD,custom,1,PETG,"FDM U-hood, 2mm walls; post-drill mounting holes",0.03869241153557974
+GUIDE-AF6-CLAMP-KEY,guide,1,steel,Removable AF6 long key: insert from below; side frame bolts do not tighten the desk,
 ENV-DESK,environment,1,wood,Test environment; not part of BOM,
 ENV-WALL,environment,1,wall,Clearance plane at y=-48,
 PCB-C1,component,1,FR4,Purchased component outer envelope; see PCB BOM,
@@ -157,7 +177,70 @@ PCB-pin-U3-1,component,1,steel,Trimmed lead allocation from native PTH readback,
 PCB-pin-U3-2,component,1,steel,Trimmed lead allocation from native PTH readback,
 PCB-pin-U3-3,component,1,steel,Trimmed lead allocation from native PTH readback,
 PCB-pin-U3-4,component,1,steel,Trimmed lead allocation from native PTH readback,
-ROUTE-GMSL-A,routing,1,silicone,Routing gauge only: R35 centerline; cable/connector qualification pending,
-ROUTE-GMSL-B,routing,1,silicone,Routing gauge only: R35 centerline; cable/connector qualification pending,
-ROUTE-ECAT,routing,1,silicone,Routing gauge only: R35 centerline; cable/connector qualification pending,
-ROUTE-POWER,routing,1,silicone,Routing gauge only: R35 centerline; cable/connector qualification pending,
+LIGHT-BOARD-0,component,1,FR4,Native light PCB or original LED/pad reference; see base-light-b04,
+LIGHT-LED-1,component,1,FR4,Native light PCB or original LED/pad reference; see base-light-b04,
+LIGHT-LED-2,component,1,FR4,Native light PCB or original LED/pad reference; see base-light-b04,
+LIGHT-LED-3,component,1,FR4,Native light PCB or original LED/pad reference; see base-light-b04,
+LIGHT-PAD-4,component,1,FR4,Native light PCB or original LED/pad reference; see base-light-b04,
+LIGHT-PAD-5,component,1,FR4,Native light PCB or original LED/pad reference; see base-light-b04,
+LIGHT-PAD-6,component,1,FR4,Native light PCB or original LED/pad reference; see base-light-b04,
+LIGHT-PAD-7,component,1,FR4,Native light PCB or original LED/pad reference; see base-light-b04,
+BRI-BRI01_PCB-0,component,1,FR4,actual board outline and all current native footprint drills; no copper thickness geometry,
+BRI-J1_shell_reference-1,component,1,FR4,Original shell/cavity abstraction; cavity not controlled mating geometry,
+BRI-J1_spring_reservation_-8.65-2,component,1,FR4,"Bounds derived from private vendor STEP; rectangular envelope, not metal distribution",
+BRI-J1_spring_reservation_7.5-3,component,1,FR4,"Bounds derived from private vendor STEP; rectangular envelope, not metal distribution",
+BRI-J1_tail_0-4,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J1_tail_1-5,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J1_tail_2-6,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J1_tail_3-7,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J1_tail_4-8,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J1_tail_5-9,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J1_tail_6-10,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J1_tail_7-11,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J1_tail_8-12,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J1_tail_9-13,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_shell_reference-14,component,1,FR4,Original shell/cavity abstraction; cavity not controlled mating geometry,
+BRI-J2_spring_reservation_-8.65-15,component,1,FR4,"Bounds derived from private vendor STEP; rectangular envelope, not metal distribution",
+BRI-J2_spring_reservation_7.5-16,component,1,FR4,"Bounds derived from private vendor STEP; rectangular envelope, not metal distribution",
+BRI-J2_tail_0-17,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_tail_1-18,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_tail_2-19,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_tail_3-20,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_tail_4-21,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_tail_5-22,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_tail_6-23,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_tail_7-24,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_tail_8-25,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J2_tail_9-26,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J3_header_reference-27,component,1,FR4,Original catalogue-envelope/cavity abstraction; exact6-pin footprint independently audited,
+BRI-J3_tail_0-28,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J3_tail_1-29,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J3_tail_2-30,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J3_tail_3-31,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J3_tail_4-32,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J3_tail_5-33,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J4_M3_stud-34,component,1,FR4,Nominal manufacturer dimensions; no thread helix.0.5mm stand-off included,
+BRI-J4_lug_nut_reservation-35,component,1,FR4,M3 ring/nut upper envelope; exact wire lug and insulation part not yet selected,
+BRI-J4_tail_0-36,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J4_tail_1-37,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J4_tail_2-38,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J4_tail_3-39,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J5_M3_stud-40,component,1,FR4,Nominal manufacturer dimensions; no thread helix.0.5mm stand-off included,
+BRI-J5_lug_nut_reservation-41,component,1,FR4,M3 ring/nut upper envelope; exact wire lug and insulation part not yet selected,
+BRI-J5_tail_0-42,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J5_tail_1-43,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J5_tail_2-44,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J5_tail_3-45,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J6_M3_stud-46,component,1,FR4,Nominal manufacturer dimensions; no thread helix.0.5mm stand-off included,
+BRI-J6_lug_nut_reservation-47,component,1,FR4,M3 ring/nut upper envelope; exact wire lug and insulation part not yet selected,
+BRI-J6_tail_0-48,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J6_tail_1-49,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J6_tail_2-50,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-J6_tail_3-51,component,1,FR4,Physical pin planning; alloy/contact details omitted,
+BRI-BRI01_COAX_LEDGE-52,component,1,FR4,1.5mm right-angle carrier; no bend radius/manufacturing relief included yet; supplied as interface reference,
+BRI-X1_132170_reference-53,component,1,FR4,Original old manufacturer catalogue p47 axial reference: longend41.4; bearingface56; shortend63.5. Not current tolerance-controlled vendorCAD,
+BRI-X1_fixed_flange-54,component,1,FR4,"AF9.5 fixed flange, nominal1.7 axial thickness from catalogue14.6/16.3",
+BRI-X1_nut_washer_reservation-55,component,1,FR4,"AF8 removable nut;2.5mm combined nut/washer axial planning only, thickness not dimensioned by source",
+BRI-X2_132170_reference-56,component,1,FR4,Original old manufacturer catalogue p47 axial reference: longend41.4; bearingface56; shortend63.5. Not current tolerance-controlled vendorCAD,
+BRI-X2_fixed_flange-57,component,1,FR4,"AF9.5 fixed flange, nominal1.7 axial thickness from catalogue14.6/16.3",
+BRI-X2_nut_washer_reservation-58,component,1,FR4,"AF8 removable nut;2.5mm combined nut/washer axial planning only, thickness not dimensioned by source",

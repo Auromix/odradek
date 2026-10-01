@@ -53,15 +53,14 @@ def make(t=30, covers=True, environment=False):
     for sign in [-1,1]:
         for y in [15,45,75]:d.hole((sign*110,y,8),(-sign,0,0),5,17,'M6x1-6H; FULL THREAD >=14; DRILL 17')
     for x,y in P['cover_posts']:
-        d.hole((x,y,2),(0,0,1),3.4,12,'D3.4 THRU')
-        # 90 degree flat head, D6.3 major diameter, 1.45 deep.
-        d.shape=d.shape.cut(cq.Solid.makeCone(3.15,1.70,1.45,cq.Vector(x,y,2),cq.Vector(0,0,1)))
-        d.features.append({'type':'countersink','entry_xyz':[x,y,2],'axis':[0,0,1],'callout':'CSK D6.3 x 90 DEG FROM BOTTOM; M3x20 FLAT HEAD'})
+        d.hole((x,y,14),(0,0,-1),2.5,8,'M3x0.5-6H; FULL THREAD6; DRILL8; M/F10 COVER POST')
     for u,v in P['pcb_holes_local']:
         d.hole((u-40,v-2,14),(0,0,-1),2.5,8,'M3x0.5-6H; FULL THREAD 6; DRILL 8')
-    d.hole((90,-15,14),(0,0,-1),3.3,9,'M4x0.7-6H; FULL THREAD 7; CHASSIS BOND LUG')
-    d.shape=d.shape.cut(rounded_box(43,-34,1,36,16,14,4))
-    d.features.append({'type':'slot','entry_xyz':[61,-26,2],'callout':'36 x16 THRU WINDOW, R4; X43..79 Y-34..-18; CABLE DROP'})
+    d.hole((100,-12,14),(0,0,-1),3.3,9,'M4x0.7-6H; FULL THREAD 7; CHASSIS BOND LUG')
+    d.shape=d.shape.cut(box(-66,-42,1,132,39,14))
+    d.features.append({'type':'rear_open_slot','entry_xyz':[0,-3,2],'callout':'REAR OPEN U-NOTCH X-66..66 TO Y-3; THROUGH; INTERFACE MODULE LIFTS UP'})
+    for x in [-80,80]:
+        for y in [-18,-6]:d.hole((x,y,14),(0,0,-1),3.3,9,'M4x0.7-6H; FULL THREAD7; REMOVABLE INTERFACE CARRIER')
     for sign in [-1,1]:
         s=cq.Workplane('YZ').polyline(P['side_profile_yz']).close().extrude(10).edges('|X').fillet(5).translate((110 if sign>0 else -120,0,0)).val()
         p=add(f'B04-102-CPLATE-{"R" if sign>0 else "L"}',s,'S355','Profile cut oversize; finish mill + drill/tap',
@@ -76,9 +75,9 @@ def make(t=30, covers=True, environment=False):
     for sign in [-1,1]:
         for y in [40,75]:bridge.hole((sign*110,y,-101),(-sign,0,0),6.8,18,'M8x1.25-6H; FULL THREAD >=15; DRILL 18')
     flange=cyl((0,135,46),(0,0,1),80,12).cut(cyl((0,135,46),(0,0,1),30,12))
-    f=add('B04-104-FLANGE',flange,'6061-T651','CNC turn/mill + drill/tap',
+    f=add('B04-104-FLANGE',flange,'6061-T651','CNC turn/mill + drill/tap; champagne anodize, mask mating faces',
            ['Base test interface only. OD160 / ID60, PCD120: 8 x M6 phase22.5deg.',
-            'Face z58 flatness0.1; no commercial motor compatibility claimed.'])
+            'Face z58 flatness0.1; no commercial motor compatibility claimed.'],color=[.49,.32,.14,1])
     for x,y in P['flange_posts']:f.hole((x,y,46),(0,0,1),8.5,12,'D8.5 THRU; M8x25 + WASHER')
     for i in range(8):
         a=math.radians(22.5+45*i)
@@ -136,31 +135,69 @@ def make(t=30, covers=True, environment=False):
         tray.features.append({'type':'slot','entry_xyz':[x,187,-175], 'callout':'4 x24 THRU SLOT, R1.5; 20mm RETAINING STRAP'})
     # Real cover screw posts and PCB standoffs are purchased envelopes, not custom blanks.
     for i,(x,y) in enumerate(P['cover_posts']):
-        p=add(f'HW-COVER-POST-{i}',cyl((x,y,14),(0,0,1),3.2,35),'brass','Purchase M3 F/F hex AF5.5 x35',category='hardware')
-        p.hole((x,y,14),(0,0,1),2.5,35,'M3 F/F; envelope only')
+        sh=cyl((x,y,14),(0,0,1),3.2,10).fuse(cyl((x,y,8),(0,0,1),1.5,6))
+        p=add(f'HW-COVER-POST-{i}',sh,'brass','Purchase M3 M/F hex AF5.5 x10; male6; female depth>=6',category='hardware')
+        p.hole((x,y,24),(0,0,-1),2.5,6,'M3 female depth6; integral male6; envelope only')
     for i,(u,v) in enumerate(P['pcb_holes_local']):
         x,y=u-40,v-2
         p=add(f'HW-PCB-POST-{i}',cyl((x,y,14),(0,0,1),3.2,9),'brass','Purchase M3 M/F hex AF5.5 x9; male6',category='hardware')
         p.hole((x,y,14),(0,0,1),2.5,9,'M3 M/F; envelope only')
     # Split roof at y50; same global dimensions as contract.
-    outline=[(-126,-42),(126,-42),(126,50),(118,100),(126,170),(100,212),(45,232),(-45,232),(-100,212),(-126,170),(-118,100),(-126,50)]
-    outer=cq.Workplane('XY').polyline(outline).close().extrude(38).edges('|Z').fillet(6).translate((0,0,14)).val()
-    # A polygon offset creates a constant wall, preserving an open bottom and 3mm roof.
-    inner=cq.Workplane('XY').polyline(outline).close().wires().offset2D(-2.5).extrude(35.1).translate((0,0,13.9)).val()
-    shell=outer.cut(inner).cut(cyl((0,135,13),(0,0,1),81,41))
+    # Broad flying-shield planform, with outward shoulders and a rounded front lip.
+    # Periodic B-spline sections make the shoulder a real double-curved CAD surface.
+    outline=[(138,75),(133,128),(134,175),(117,194),(92,215),(67,247),(35,260),(0,261),
+             (-35,260),(-67,247),(-92,215),(-117,194),(-134,175),(-133,128),(-138,75),
+             (-137,15),(-125,-38),(-98,-45),(-45,-45),(0,-45),(45,-45),(98,-45),(125,-38),(137,15)]
+    def profile(scale,z,inside=False):
+        pts=[cq.Vector(x*scale*(.975 if inside else 1),100+(y-100)*scale*(.98 if inside else 1),z) for x,y in outline]
+        return cq.Wire.assembleEdges([cq.Edge.makeSpline(pts,periodic=True,parameters=list(range(len(pts)+1)))])
+    def circle(radius,z):
+        pts=[cq.Vector(radius*x/math.hypot(x,y-135),135+radius*(y-135)/math.hypot(x,y-135),z) for x,y in outline]
+        return cq.Wire.assembleEdges([cq.Edge.makeSpline(pts,periodic=True,parameters=list(range(len(pts)+1)))])
+    outer=cq.Solid.makeLoft([profile(1,2),profile(.995,8),profile(.98,21),profile(.9,37),circle(95,49),circle(88,53)],ruled=True)
+    outer=outer.intersect(box(-300,-45,0,600,400,80))
+    inner=cq.Solid.makeLoft([profile(1,1.9,True),profile(.98,18,True),profile(.9,34,True),circle(92,46),circle(84,50)],ruled=True)
+    shell=outer.cut(inner)
+    deck_relief=cq.Workplane('XY').polyline(P['deck_outline']).close().wires().offset2D(.5).extrude(14.5).val()
+    shell=shell.cut(deck_relief)
+    shell=shell.cut(cyl((0,135,1),(0,0,1),81,60))
+    # Molded bosses with recessed screw seats: top of metal M/F10 posts is z24.
+    for x,y in P['cover_posts']:
+        shell=shell.fuse(cyl((x,y,24),(0,0,1),5,40).intersect(outer))
+        shell=shell.cut(cyl((x,y,24),(0,0,1),1.7,40)).cut(cyl((x,y,27),(0,0,1),4,40))
+    # Local PCB pocket clears the downturned front lip; roof remains above it.
+    shell=shell.cut(box(-25.8,234.2,23,51.6,13.6,7.4))
+    # Removable carrier top flange relief, nominal1mm around the metal.
+    shell=shell.cut(box(-89,-41,10,178,39,9))
+    # Front light has a real opening, lens, optical cavity and two board mounting bosses.
+    window=rounded_box(-19,238,20,38,6,45,2.9)
+    shell=shell.cut(window)
+    for x in [-22,22]:
+        shell=shell.fuse(cyl((x,241,29.6),(0,0,1),3,35).intersect(outer))
+        shell=shell.cut(cyl((x,241,29.6),(0,0,1),1.6,4.5))
     # Metal C-arms penetrate sidewall at z14..30: deliberate clearance windows.
-    for sign in [-1,1]:shell=shell.cut(box(109 if sign>0 else -128,-43,13,19,143,18))
+    for sign in [-1,1]:shell=shell.cut(box(109 if sign>0 else -150,-43,1,41,143,30))
     # Rear feed-down slots, generous cable envelope, opening from underside.
     shell=shell.cut(box(48,-44,13,54,7,33))
-    rear=shell.intersect(box(-150,-50,0,300,99.6,80))
-    front=shell.intersect(box(-150,50.4,0,300,220,80))
+    rear=shell.intersect(box(-170,-50,0,340,99.6,80))
+    front=shell.intersect(box(-170,50.4,0,340,250,80))
     if covers:
         for label,sh,positions in [('REAR',rear,P['cover_posts'][:2]),('FRONT',front,P['cover_posts'][2:])]:
             p=add('B04-301-COVER-'+label,sh,'PETG','FDM; 0.2mm layer; 4 walls; supports under roof',
-                  ['Nominal wall2.5, roof3.0; clearances checked on nominal geometry.',
+                  ['Flying-shield periodic B-spline sections with aligned parameters; skin and local bosses vary in thickness, section-check before printing.',
                    'Print as separate front/rear pieces; rear lifts vertically for PCB access; seam0.8mm.',
                    'Cosmetic shroud carries no arm or clamp load. Post-drill screw holes D3.4 +0.2/0 at assembly jig.'])
-            for x,y in positions:p.hole((x,y,49),(0,0,1),3.4,3,'D3.4 THRU; M3x8 + WASHER')
+            for x,y in positions:
+                p.features.append({'type':'recessed_mount','entry_xyz':[x,y,24],'axis':[0,0,1],'callout':'POST-DRILL D3.4 to z27; CBORE D8 from z27 to exterior; M3x8 + 0.5 WASHER'})
+            if label=='FRONT':p.note('Light window X-19..19 Y238..244 R2.9. Lens seats from below; light PCB installed before front cover. Two ruthex RX-M2x4 heat-set inserts OD3.6x4, trial-print pilotD3.2, x+/-22,y241.')
+        lens=rounded_box(-18.7,238.3,20,37.4,5.4,45,2.6).intersect(outer.translate((0,0,.4))).cut(outer.translate((0,0,-2)))
+        flange_lens=rounded_box(-20.2,236.8,20,40.4,8.4,45,3.5).intersect(outer.translate((0,0,-2))).cut(outer.translate((0,0,-3.5)))
+        add('B04-302-LIGHT-LENS',lens.fuse(flange_lens),'PETG','Translucent amber PETG prototype; later frosted polycarbonate, no optical performance claim',
+            ['Lens follows the actual curved roof; top0.4 proud, face thickness2.4; lower curved retaining lip1.5. Retain with optical-neutral silicone dots after trial fit.'],color=[1,.38,.025,1])
+        # Seat clearance cut for the lens flange, leaving a 2mm perimeter retaining shoulder.
+        frontpart=next(p for p in parts if p.id=='B04-301-COVER-FRONT')
+        pocket=rounded_box(-20.5,236.5,15,41,9,50,3.5).intersect(outer.translate((0,0,-1.9)))
+        frontpart.shape=frontpart.shape.cut(pocket)
     # Service PCB envelope is replaced/augmented by the actual PCB assembly during build.
     pcb_path=HERE.parent/'electronics/base-b04/mechanical/base-b04-board-only.step'
     pcb_shape=cq.importers.importStep(str(pcb_path)).val().translate(tuple(P['pcb_origin'])) if pcb_path.exists() else box(-40,-2,23,80,50,1.6)
@@ -173,10 +210,13 @@ def make(t=30, covers=True, environment=False):
         foot=cyl((x,55,-t-16),(0,0,1),12.5,6).fuse(cyl((x,55,-t-23),(0,0,1),9,7))
         add(f'HW-THRUST-FOOT-{sign}',foot,'steel','Ganter DIN6311-25-S envelope; articulation not simulated',category='hardware')
         # Manufacturer pin is smaller; conservative shank envelope excludes the foot overlap.
-        add(f'HW-THRUST-SCREW-{sign}',cyl((x,55,-t-114.6),(0,0,1),6,91.6),'steel','Ganter DIN6332-M12-100-SK; threads/neck simplified',category='hardware')
+        screw=cyl((x,55,-t-114.6),(0,0,1),6,91.6)
+        socket=cq.Workplane('XY').polygon(6,6/math.cos(math.pi/6)).extrude(8).translate((x,55,-t-114.6)).val()
+        screw=screw.cut(socket)
+        add(f'HW-THRUST-SCREW-{sign}',screw,'steel','Ganter DIN6332-M12-100-SK; AF6 tool socket shown, depth8 allocation, threads/neck simplified',category='hardware')
     # Fasteners: purchasing envelopes, all assembly positions and lengths explicit.
     def bolt(id,seat,axis,size,length,washer=0,countersunk=False,engagement=None):
-        diam={3:5.5,4:7,6:10,8:13}[size]
+        diam={2:3.8,3:5.5,4:7,6:10,8:13}[size]
         q=list(seat); a=list(axis)
         headbase=[q[k]-a[k]*size for k in range(3)]
         if countersunk:
@@ -184,11 +224,20 @@ def make(t=30, covers=True, environment=False):
             sh=sh.fuse(cyl(q,a,size/2,length))
         else:
             sh=cyl(q,a,size/2,length).fuse(cyl(headbase,a,diam/2,size))
+            af={2:1.5,3:2.5,4:3,6:5,8:6}[size]
+            drive=cq.Workplane(cq.Plane(origin=tuple(headbase),normal=tuple(a))).polygon(6,af/math.cos(math.pi/6)).extrude(size*.6).val()
+            sh=sh.cut(drive)
         if washer:
-            sh=sh.fuse(cyl(q,a,{3:3.5,4:4.5,6:6,8:8}[size],washer))
+            sh=sh.fuse(cyl(q,a,{2:2.5,3:3.5,4:4.5,6:6,8:8}[size],washer))
         p=add(id,sh,'steel',f'Purchase {"ISO10642 flat head" if countersunk else "ISO4762 cap screw"} M{size}x{length}; class8.8 minimum'+(f'; washer t{washer}' if washer else ''),category='fastener')
         p.notes=['Thread and drive simplified. Washer is included in this visualization group, purchase separately.',f'Nominal engaged length {engagement}mm' if engagement else 'See assembly stack.']
         p.free_shape=sh.cut(cyl(q,a,size/2+.001,length+.01))
+    if covers:
+        for x in [-22,22]:
+            ins=cyl((x,241,29.6),(0,0,1),1.8,4).cut(cyl((x,241,29.6),(0,0,1),1.05,4))
+            add(f'HW-LIGHT-INSERT-{x}',ins,'brass','ruthex RX-M2x4, OD3.6 L4 from vendor STEP; knurl/thread simplified',
+                ['Heat-set from underside before PCB installation; pilotD3.2 is a trial-print value, validate insertion/pullout.'],category='hardware')
+            bolt(f'HW-M2-LIGHT-{x}',(x,241,27.7),(0,0,1),2,6,.3,engagement=4)
     for i,(x,y) in enumerate(P['flange_posts']):
         bolt(f'HW-M8-FLANGE-{i}',(x,y,59.6),(0,0,-1),8,25,1.6,engagement=11.4)
         bolt(f'HW-M8-DECK-{i}',(x,y,10.5),(0,0,1),8,16,engagement=12.5)
@@ -198,13 +247,54 @@ def make(t=30, covers=True, environment=False):
         for i,y in enumerate([10,50]):bolt(f'HW-M6-CRADLE-{s}-{i}',(s*129.6,y,-88),(-s,0,0),6,16,1.6,engagement=6.4)
         for h in [-1,1]:bolt(f'HW-M3-CAGE-{s}-{h}',(s*85,55+h*23,-t-20),(0,0,1),3,14,engagement=4)
     for i,(x,y) in enumerate(P['cover_posts']):
-        bolt(f'HW-M3-COVER-BOTTOM-{i}',(x,y,2),(0,0,1),3,20,countersunk=True,engagement=8)
-        if covers:bolt(f'HW-M3-COVER-TOP-{i}',(x,y,52.5),(0,0,-1),3,8,.5,engagement=4.5)
+        if covers:bolt(f'HW-M3-COVER-TOP-{i}',(x,y,27.5),(0,0,-1),3,8,.5,engagement=4.5)
     for i,(u,v) in enumerate(P['pcb_holes_local']):bolt(f'HW-M3-PCB-{i}',(u-40,v-2,25.1),(0,0,-1),3,8,.5,engagement=5.9)
     for x in [-124,124]:
         for y in [140,250]:bolt(f'HW-M4-TRAY-{x}-{y}',(x,y,-170),(0,0,-1),4,12,engagement=7)
     for x in [-100,100]:
         for y in [112,278]:bolt(f'HW-M4-STOP-{x}-{y}',(x,y,-158),(0,0,-1),4,16,engagement=4)
+    # Interface cartridge backbone. Board/port solids are generated by its native KiCad package.
+    carrier=box(-64,-40,-76,128,3,93).fuse(box(-88,-40,14,176,37,3))
+    carrier=carrier.cut(box(-51,-41,13.5,102,24,4))
+    cp=add('B04-401-INTERFACE-CARRIER',carrier,'6061-T651','Machine from angle billet; internal filletR2 allowance; drill/tap',
+        ['Removable upward after disconnecting all cables and four top M4 screws.',
+         'PCB116x56, plane Y-27, local transform X=u-58, Y=w-27, Z=-9-v; +v is down.',
+         'Backbone128x93x3; top176x37x3. Open deck notch132mm leaves2mm each side around the backbone.'])
+    for x in [-80,80]:
+        for y in [-18,-6]:
+            cp.hole((x,y,14),(0,0,1),4.5,3,'D4.5 THRU; M4x10 + WASHER0.8')
+            bolt(f'HW-M4-CARRIER-{x}-{y}',(x,y,17.8),(0,0,-1),4,10,.8,engagement=6.2)
+    for x in [-52,52]:
+        for z in [-59,-15]:
+            cp.hole((x,-40,z),(0,1,0),3.4,3,'D3.4 THRU; M3x8 + WASHER0.5 INTO F/F10')
+            post=add(f'HW-INTERFACE-POST-{x}-{z}',cyl((x,-37,z),(0,1,0),3.2,10),'brass','M3 F/F hex AF5.5 x10; each female depth>=4.5',category='hardware')
+            post.hole((x,-37,z),(0,1,0),2.5,10,'M3 F/F THROUGH')
+            bolt(f'HW-M3-INTERFACE-BACK-{x}-{z}',(x,-40.5,z),(0,1,0),3,8,.5,engagement=4.5)
+            bolt(f'HW-M3-INTERFACE-FRONT-{x}-{z}',(x,-24.9,z),(0,-1,0),3,6,.5,engagement=3.9)
+    # Printed U-hood: independent protection, no cable load through FR4.
+    hood=box(-64.5,-37,-67,129,34,66).cut(box(-62.5,-37.1,-65,125,32.1,66))
+    for x in [-61.5,61.5]:
+        hood=hood.fuse(cyl((x,-37,-37),(0,1,0),3,32))
+        hood=hood.cut(cyl((x,-37,-37),(0,1,0),1.7,36))
+        hood=hood.cut(cyl((x,-7,-37),(0,1,0),4,5))
+        cp.hole((x,-40,-37),(0,1,0),2.5,3,'M3x0.5 THRU; NON-LOAD-BEARING HOOD')
+        bolt(f'HW-M3-PORT-HOOD-{x}',(x,-6.5,-37),(0,-1,0),3,35,.5,engagement=3)
+    # Opening includes plug/latch approach, not just jack/header metal outline.
+    for x,y,dx,dy in [(-53.3,-28.3,30.6,25.5),(26,-26.3,25,23.1)]:
+        hood=hood.cut(box(x,y,-68,dx,dy,4))
+    for x in [-10,10]:hood=hood.cut(cyl((x,-16,-68),(0,0,1),7,4))
+    hp=add('B04-402-PORT-HOOD',hood,'PETG','FDM U-hood, 2mm walls; post-drill mounting holes',
+        ['Down-facing RJ45 EtherCAT, two coax and 48V ports. Bottom openings include plug/latch service allocation.',
+         'No top cap: harness passes up through deck U-notch; unplug all cables before removing cartridge.',
+         'Two M3x35 screws in D8 open-edge recesses, 3mm engagement into 3mm carrier; non-load-bearing protection only.',
+         'Nominal3mm from desk rear face;129mm hood /130mm washer envelope through132mm deck notch,1mm per side nominal. Print tolerances and plug samples still need fit verification.'])
+    hp.features.append({'type':'port_windows','callout':'BOTTOM Z-67..-65: RJ45 30.6x25.5; 48V25x23.1; 2xD14 coax wrench access; datum from BRI01 contract'})
+    # Driver is a removable operation guide, never a component to manufacture with the base.
+    sz=-t-114.6
+    key=cq.Workplane('XY').polygon(6,6/math.cos(math.pi/6)).extrude(124).translate((85,55,sz-120)).val()
+    key=key.fuse(cyl((85,55,sz-117),(1,0,0),3,60))
+    add('GUIDE-AF6-CLAMP-KEY',key,'steel','Removable AF6 long key: insert from below; side frame bolts do not tighten the desk',
+        ['This tool envelope is an operation illustration; remove before arm operation.'],category='guide',color=[.95,.57,.10,1])
     if environment:
         add('ENV-DESK',box(-450,0,-t,900,600,t),'wood','Test environment; not part of BOM',category='environment',color=[.46,.31,.19,1])
         add('ENV-WALL',box(-450,-58,-260,900,10,380),'wall','Clearance plane at y=-48',category='environment',color=[.75,.77,.80,1])

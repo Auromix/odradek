@@ -1,5 +1,5 @@
 {
-  "revision": "B04-P1",
+  "revision": "B04-P2",
   "stage": "base prototype manufacturing review; physical qualification pending",
   "units": "mm",
   "coordinates": {"x": "right", "y": "inward from desk rear edge", "z": "up from desk top"},
@@ -19,7 +19,7 @@
   "pcb_origin": [-40,-2,23],
   "pcb_size": [80,50,1.6],
   "pcb_holes_local": [[5,5],[75,5],[75,45],[5,45]],
-  "cover_posts": [[-100,35],[100,35],[-100,75],[100,75],[-88,185],[88,185]],
+  "cover_posts": [[-100,35],[100,35],[-98,95],[98,95],[-80,190],[80,190]],
   "controller_gauge": {"min": [-90,120,-170], "size": [180,150,50], "mass_limit_kg":3, "status":"allocation gauge only; controller not selected"},
   "tolerances": {"machined_unless_noted_mm":0.2,"mounting_hole_position_mm":0.1,"printed_unless_noted_mm":0.5,"mating_face_flatness_mm":0.1},
   "notes": ["All tapped holes use pilot cylinders in STEP, with complete thread callouts in feature tables.","Base-only interface is new; arm motor adapter is a later module.","48 mm rear design clearance is a prototype allocation, not a measured installation minimum.","No load-bearing printed components; never test the full arm on an unqualified desktop."]

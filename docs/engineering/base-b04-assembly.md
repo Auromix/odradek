@@ -1,6 +1,8 @@
 <!-- SPDX-License-Identifier: CC-BY-NC-4.0 -->
 # B04 底座：三维装配与加工审查
 
+> 当前入口：[B04-P2 三维审查包](../../engineering/base_b04/README.md)。P2 已加入飞碟盾形曲面、底座灯和独立后接口仓。下文 P1 骨架检查仅保留历史依据；数值以 P2 包绑定的记录为准。
+
 本轮主交付是可拆分的三维装配与零件实体；PDF 和坐标表用于辅助核对加工特征。B04 是新底座原型，不继承早期 R4 穿桌锚固底座的尺寸或承载结论。实际采购件适配、制造和实物验证状态以本轮审查记录为准。
 
 ## 同一套三维数据
@@ -8,7 +10,7 @@
 - [参数源](../../engineering/base_b04/parameters.json)定义 X 左右、+Y 向桌内、+Z 向上，桌面为 Z=0、后桌边为 Y=0。
 - [实体源](../../engineering/base_b04/model.py)建立真实孔、沉孔、螺纹底孔、槽、间隙及分件；每个零件保留全局装配坐标。螺纹不建螺旋牙型，攻牙要求由特征表定义。
 - [装配清单](../../engineering/base_b04/build/manifest.json)给出实体路径、材料、工艺和特征；加工必须同时读取对应 STEP 与该版清单。
-- [三维装配 STEP](../../engineering/base_b04/build/ODR-BASE-B04-P1.step)保留零件装配关系；[GLB 预览模型](../../engineering/base_b04/build/ODR-BASE-B04-P1.glb)用于交互查看。GLB 是显示网格，制造尺寸以 STEP 与特征表为准。
+- [三维装配 STEP](../../engineering/base_b04/build/ODR-BASE-B04-P2.step)保留零件装配关系；[GLB 预览模型](../../engineering/base_b04/build/ODR-BASE-B04-P2.glb)用于交互查看。GLB 是显示网格，制造尺寸以 STEP 与特征表为准。
 - [辅助图册](../../engineering/base_b04/build/drawings/base-b04-manufacturing-review.pdf)和[特征坐标表](../../engineering/base_b04/build/drawings/feature-coordinates.csv)暂存为较早 P1 机械骨架检查点。它们基于清单散列 `ad065c979d159c1636a3b4f45636eb2d2e782b9553024c0c5ffa4498b730d9ef`，**不对应当前三维装配，不能配合当前 STEP 用于加工**。详情见[检查点说明](../../engineering/base_b04/build/drawings/README.md)。新版外罩、底座灯与接口开孔协同完成后再重生图册。
 - [服务板接口合同](../../engineering/electronics/base-b04/connector-contract.json)规定 PCB 坐标、插头包络与拔出方向。电气板不承担整臂动力分配或机械载荷。
 

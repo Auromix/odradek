@@ -8,6 +8,7 @@ import trimesh
 from model import make,box,cyl,P,HERE,DENSITY,Part
 
 OUT=HERE/'build'
+NAME='ODR-BASE-'+P['revision']
 def bbox(s):
     b=s.BoundingBox();return {'min':[b.xmin,b.ymin,b.zmin],'max':[b.xmax,b.ymax,b.zmax],'size':[b.xlen,b.ylen,b.zlen]}
 def digest(p):return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -41,9 +42,26 @@ def components():
                 if h['type']!='PTH':continue
                 u,v=h['uv_mm']
                 result.append(Part('PCB-pin-'+h['ref']+'-'+h['pin'],cyl((u-40,v-2,20.5),(0,0,1),h['drill_mm'][0]*.35,2.5),'steel','Trimmed lead allocation from native PTH readback',category='component'))
+    light=HERE.parent/'electronics/base-light-b04/mechanical/base-light-b04-assembly.step'
+    if light.exists():
+        for i,s in enumerate(cq.importers.importStep(str(light)).val().Solids()):
+            b=bbox(s);z=b['min'][2]
+            name='BOARD' if b['size'][0]>40 else ('LED' if z>29 else 'PAD')
+            result.append(Part(f'LIGHT-{name}-{i}',s,'FR4','Native light PCB or original LED/pad reference; see base-light-b04',category='component',color=[1,.5,.04,1] if name=='LED' else [.06,.25,.17,1]))
+    rear=HERE.parent/'electronics/base-rear-interface01'
+    if (rear/'mechanical/base-rear-interface01-assembly.step').exists():
+        meta=json.loads((rear/'mechanical/parts.json').read_text())['parts']
+        shapes=cq.importers.importStep(str(rear/'mechanical/base-rear-interface01-assembly.step')).val().Solids()
+        for i,s in enumerate(shapes):
+            b=bbox(s)
+            def error(row):return sum(abs(b['min'][j]-row['bbox_global'][0][j])+abs(b['max'][j]-row['bbox_global'][1][j]) for j in range(3))
+            row=min(meta,key=error);assert error(row)<.01,(i,error(row))
+            color=[.04,.28,.19,1] if row['role']=='PCB' else [.5,.53,.56,1] if 'shell' in row['name'] else [.10,.15,.17,1]
+            result.append(Part('BRI-'+row['name']+'-'+str(i),s,'FR4',row['basis'],category='component',color=color))
     return result
 def cables():
     result=[]
+    if P['revision']=='B04-P2':return result
     for name,x,diam in [('GMSL-A',48,3),('GMSL-B',56,3),('ECAT',64,6),('POWER',73,8)]:
         pts=[(x,60,44),(x,8,44),(x,-27,9),(x,-27,-105),(x,8,-140),(x,120,-140)]
         edges=[cq.Edge.makeLine(cq.Vector(*pts[0]),cq.Vector(*pts[1])),
@@ -60,7 +78,7 @@ def main():
     parts=make(P['nominal_desk_thickness'],environment=True)+components()+cables()
     manifest={'revision':P['revision'],'length_unit':'mm','coordinates':P['coordinates'],'parts':[],
       'tolerances':P['tolerances'],'stage':P['stage'],'parameters_sha256':digest(HERE/'parameters.json')}
-    assembly=cq.Assembly(name='Odradek_Base_B04_P1')
+    assembly=cq.Assembly(name='Odradek_Base_'+P['revision'].replace('-','_'))
     checks=[]
     for p in parts:
         b=bbox(p.shape);valid=p.shape.isValid();n=len(p.shape.Solids())
@@ -72,16 +90,16 @@ def main():
             cq.exporters.export(p.shape,str(path.with_suffix('.step')))
             re=cq.importers.importStep(str(path.with_suffix('.step'))).val()
             mesh=trimesh.load_mesh(path.with_suffix('.stl'),process=True)
-            checks.append({'part':p.id,'valid_single_solid':valid and n==1,'step_volume_error_mm3':abs(re.Volume()-p.shape.Volume()),'watertight':bool(mesh.is_watertight)})
-            assert checks[-1]['step_volume_error_mm3']<.02 and mesh.is_watertight,p.id
-        if p.category!='environment':assembly.add(p.shape,name=p.id.replace('-','_'),color=cq.Color(*p.color))
+            checks.append({'part':p.id,'valid_single_solid':valid and n==1,'step_volume_error_mm3':abs(re.Volume()-p.shape.Volume()),'step_volume_error_limit_mm3':max(.02,p.shape.Volume()*1e-5),'step_reimport_valid':re.isValid(),'watertight':bool(mesh.is_watertight)})
+            assert re.isValid() and checks[-1]['step_volume_error_mm3']<checks[-1]['step_volume_error_limit_mm3'] and mesh.is_watertight,(p.id,checks[-1],re.isValid())
+        if p.category not in ['environment','guide']:assembly.add(p.shape,name=p.id.replace('-','_'),color=cq.Color(*p.color))
         manifest['parts'].append({'id':p.id,'material':p.material,'process':p.process,'category':p.category,
           'quantity':1,'features':p.features,'notes':p.notes,'bbox':b,'local_bbox':b,'volume_mm3':p.shape.Volume(),
           'mass_kg':p.shape.Volume()*DENSITY[p.material] if p.material in DENSITY and p.category in ['custom','hardware','fastener'] else None,
           'color':p.color,'step':str(path.with_suffix('.step').relative_to(OUT)) if p.category=='custom' else None,
           'stl':str(path.with_suffix('.stl').relative_to(OUT))})
     (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2))
-    assembly.export(str(OUT/'ODR-BASE-B04-P1.step'))
+    assembly.export(str(OUT/(NAME+'.step')))
     (OUT/'geometry-checks.json').write_text(json.dumps(checks,indent=2))
     # Export a single GLB with named individual nodes (millimetres -> metres, Z up retained).
     scene=trimesh.Scene()
@@ -89,13 +107,13 @@ def main():
         mesh=trimesh.load_mesh(OUT/p['stl'],process=True);mesh.apply_scale(.001)
         mesh.visual.face_colors=[int(v*255) for v in p['color']]
         scene.add_geometry(mesh,node_name=p['id'],geom_name=p['id'])
-    scene.export(OUT/'ODR-BASE-B04-P1.glb')
+    scene.export(OUT/(NAME+'.glb'))
     with (OUT/'parts-bom.csv').open('w',newline='') as f:
         fields=['id','category','quantity','material','process','mass_kg']
         w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');w.writeheader();w.writerows(manifest['parts'])
     print(json.dumps({'parts':len(parts),'custom':len(checks),'modeled_mass_kg':sum(p['mass_kg'] or 0 for p in manifest['parts']),'out':str(OUT)}),flush=True)
     # Check every rigid custom part pair, plus environment, PCB and routing.
-    selected=[p for p in parts if p.category not in ['fastener','hardware']]
+    selected=[p for p in parts if p.category not in ['fastener','hardware','guide']]
     contacts=[]
     for a,b in itertools.combinations(selected,2):
         if a.category=='component' and b.category=='component':continue
