@@ -1,0 +1,203 @@
+{
+  "id": "ARM-A05-PROXY-CHECK",
+  "units": "mm",
+  "method": "Conservative convex SAT; cylinders circumscribed by 16-sided prisms. Only sampled poses and declared pair sets. overlap_mm is a proxy SAT overlap, not an exact CAD penetration depth.",
+  "scope": "motor-motor, motor-mainlink, head-motor, head-mainlink, cross-rigid-carrier bracket pairs, table; same-carrier bracket joins, declared adjacent motor-mainlink joins and cables excluded",
+  "poses": [
+    {
+      "name": "idle",
+      "angles_deg": [
+        0,
+        100,
+        0,
+        -140,
+        130,
+        0,
+        0
+      ],
+      "head_mm": [
+        310.500168509475,
+        90,
+        269.4759553446835
+      ],
+      "tcp_mm": [
+        400.500168509475,
+        90,
+        269.4759553446835
+      ],
+      "conflicts": [],
+      "table_min_mm": 33
+    },
+    {
+      "name": "attention",
+      "angles_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "head_mm": [
+        446.6047772843468,
+        90,
+        463.55758493628133
+      ],
+      "tcp_mm": [
+        533.5381016503629,
+        90,
+        486.8512989955082
+      ],
+      "conflicts": [],
+      "table_min_mm": 33
+    },
+    {
+      "name": "reference",
+      "angles_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "head_mm": [
+        610,
+        90,
+        175
+      ],
+      "tcp_mm": [
+        700,
+        90,
+        175
+      ],
+      "conflicts": [],
+      "table_min_mm": 33
+    }
+  ],
+  "transition": {
+    "samples": 101,
+    "conflicting_samples": []
+  },
+  "bracket_motor_at_presets": [],
+  "cross_carrier_brackets": {
+    "scope": "Every checked pair involving a bracket on different rigid carriers, plus bracket-table; same-carrier joins excluded. Included in live viewer checks; offline report reuses those results.",
+    "presets": [
+      {
+        "name": "idle",
+        "conflicts": [],
+        "table_min_mm": 98.93964115723806
+      },
+      {
+        "name": "attention",
+        "conflicts": [],
+        "table_min_mm": 98.93964115723806
+      },
+      {
+        "name": "reference",
+        "conflicts": [],
+        "table_min_mm": 98.93964115723806
+      }
+    ],
+    "transition": {
+      "samples": 101,
+      "conflicting_samples": [],
+      "table_min_mm": 98.93964115723806
+    },
+    "regression_witnesses": [
+      {
+        "restored_id": "shoulder-idler-cheek",
+        "old_y_mm": -42,
+        "conflict": {
+          "a": "shoulder-idler-cheek",
+          "b": "shoulder-output--1",
+          "overlap_mm": 3.789277120570617
+        }
+      },
+      {
+        "restored_id": "elbow-idler-cheek",
+        "old_y_mm": 107,
+        "conflict": {
+          "a": "forearm-link",
+          "b": "elbow-idler-cheek",
+          "overlap_mm": 1.8314317253605878
+        }
+      },
+      {
+        "restored_id": "wrist-pitch-idler",
+        "old_y_mm": -54,
+        "conflict": {
+          "a": "wrist-pitch-idler",
+          "b": "wrist-open-cheek--1",
+          "overlap_mm": 0.7371400221316833
+        }
+      }
+    ]
+  },
+  "negative_yaw_witness": {
+    "angles": [
+      0,
+      100,
+      0,
+      -140,
+      130,
+      -60,
+      0
+    ],
+    "conflicts": [
+      {
+        "a": "J4-motor",
+        "b": "camera--1",
+        "overlap_mm": 12.664220963717383
+      },
+      {
+        "a": "J7-motor",
+        "b": "wrist-open-cheek--1",
+        "overlap_mm": 2.2380053239486273
+      },
+      {
+        "a": "J7-motor",
+        "b": "yaw-stator-cheek--1",
+        "overlap_mm": 9.438644517960498
+      },
+      {
+        "a": "wrist-open-cheek--1",
+        "b": "roll-rear-adapter",
+        "overlap_mm": 7.074796112060056
+      }
+    ]
+  },
+  "table_witness": {
+    "angles_deg": [
+      0,
+      90,
+      0,
+      0,
+      0,
+      0,
+      45
+    ],
+    "tcp_mm": [
+      700,
+      90,
+      175
+    ],
+    "tcp_delta_from_reference_mm": 0,
+    "table_min_mm": -30.768073325285314,
+    "conflicts": [
+      {
+        "a": "桌面",
+        "b": "检测包络",
+        "overlap_mm": 30.768073325285314
+      }
+    ]
+  },
+  "limitations": [
+    "Not an exact vendor CAD collision test.",
+    "No complete bolt, bearing, flange, connector, assembly-tool or flex-harness collision model.",
+    "Positive samples do not prove unsampled motions safe.",
+    "No load, thermal or physical validation."
+  ]
+}

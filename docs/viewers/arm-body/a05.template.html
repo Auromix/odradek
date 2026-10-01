@@ -1,0 +1,62 @@
+<!-- Odradek A05 packaging viewer. CC-BY-NC-4.0; embedded Three.js retains MIT. -->
+<div id="odradek-a05-viewer">
+  <style>
+    #odradek-a05-viewer {color:var(--foreground);width:100%}
+    #odradek-a05-viewer .av-header {display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:12px}
+    #odradek-a05-viewer h3 {margin:0}
+    #odradek-a05-viewer .av-toolbar {display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
+    #odradek-a05-viewer .av-layout {display:grid;grid-template-columns:minmax(0,1fr) 215px;gap:18px;align-items:start}
+    #odradek-a05-viewer .av-stage {height:465px;position:relative;min-width:0;overflow:hidden}
+    #odradek-a05-viewer canvas {width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+    #odradek-a05-viewer canvas:active {cursor:grabbing}
+    #odradek-a05-viewer .av-label-layer {position:absolute;inset:0;pointer-events:none}
+    #odradek-a05-viewer .av-label {position:absolute;white-space:nowrap;color:var(--foreground);background:var(--background);padding:2px 3px}
+    #odradek-a05-viewer .av-label.is-active {text-decoration:underline;text-underline-offset:3px}
+    #odradek-a05-viewer .av-tools {display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-top:8px}
+    #odradek-a05-viewer .av-control {margin-bottom:13px}
+    #odradek-a05-viewer .av-control-top {display:flex;justify-content:space-between;gap:7px;margin-bottom:3px}
+    #odradek-a05-viewer .av-control-top output {min-width:45px;text-align:right}
+    #odradek-a05-viewer .av-detail {margin-top:12px;min-height:38px}
+    #odradek-a05-viewer .av-footer {display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:12px;justify-content:space-between}
+    #odradek-a05-viewer .av-status {margin-top:8px;min-height:36px}
+    @media(max-width:620px){
+      #odradek-a05-viewer .av-layout {grid-template-columns:1fr;gap:14px}
+      #odradek-a05-viewer .av-stage {height:370px}
+      #odradek-a05-viewer .av-controls {display:grid;grid-template-columns:1fr 1fr;column-gap:18px}
+    }
+    @media(max-width:370px){#odradek-a05-viewer .av-stage{height:325px}}
+  </style>
+  <div class="av-header"><h3>实尺寸装配 · A05</h3><span class="text-small">RobStride · 7轴 · J2竖直为0°</span></div>
+  <div class="av-toolbar" role="group" aria-label="姿态">
+    <button type="button" class="btn" data-pose="idle" aria-pressed="true">Z字收拢</button>
+    <button type="button" class="btn" data-pose="attention" aria-pressed="false">抬起互动</button>
+    <button type="button" class="btn" data-pose="reference" aria-pressed="false">参考伸展</button>
+    <button type="button" class="btn" id="a05-transition">收拢 → 互动</button>
+  </div>
+  <div class="av-layout">
+    <div>
+      <div class="av-stage"><canvas aria-label="实尺寸电机、叉架与线束占位三维模型；拖动旋转视角，使用七个滑条改变关节角度。">机械臂装配三维视图</canvas><div class="av-label-layer" aria-hidden="true"></div></div>
+      <div class="av-tools">
+        <label class="form-check"><input class="form-check-input" type="checkbox" id="a05-head" checked><span class="form-check-label">头部</span></label>
+        <label class="form-check"><input class="form-check-input" type="checkbox" id="a05-brackets" checked><span class="form-check-label">支架</span></label>
+        <label class="form-check"><input class="form-check-input" type="checkbox" id="a05-wires"><span class="form-check-label">线束占位</span></label>
+        <label class="form-check"><input class="form-check-input" type="checkbox" id="a05-axes" checked><span class="form-check-label">轴线</span></label>
+      </div>
+      <div class="av-tools" role="group" aria-label="观察方向">
+        <button type="button" class="btn" data-view="perspective" aria-pressed="true">斜视</button>
+        <button type="button" class="btn" data-view="side" aria-pressed="false">侧视</button>
+        <button type="button" class="btn" data-view="front" aria-pressed="false">正视</button>
+        <button type="button" class="btn" data-view="wrist" aria-pressed="false">腕部近看</button>
+        <button type="button" class="btn" id="a05-fit">适配</button>
+      </div>
+      <div class="av-status text-small" aria-live="polite"></div>
+      <div class="av-detail text-small text-muted"></div>
+    </div>
+    <div class="av-controls" aria-label="关节角控制"></div>
+  </div>
+  <div class="av-footer text-small"><output class="av-tcp tabular-nums"></output><span>装配研究 · 支架／线束仍需细化</span></div>
+  <script type="application/json" id="a05-layout-data">@@LAYOUT@@</script>
+  <script>@@THREE@@</script>
+  <script>@@MODEL@@</script>
+  <script>@@VIEWER@@</script>
+</div>
