@@ -1,0 +1,138 @@
+{
+  "manifest_sha256": "28160f11431e2a5de9eeee26060b77ada006088f617d220acfb771768c24fa86",
+  "sources": [
+    {
+      "joint": "J2",
+      "file": "RS04.stp",
+      "sha256": "841f5deaa15575e98bdca3a6d0b69f4207c305f56f1743f0a7122a42366996b1",
+      "reference_frame": "J2.fixed"
+    },
+    {
+      "joint": "J3",
+      "file": "RS03.stp",
+      "sha256": "8eccaf6291e395d8622300396289df898ab18a1648193a5cd327cfbd2bf72500",
+      "reference_frame": "J3.fixed"
+    },
+    {
+      "joint": "J6",
+      "file": "RS00.step",
+      "sha256": "4133dea27ccff90d69588dbc37662c9eafeed0bf858fc0a4cee93417e508abfe",
+      "reference_frame": "J6.fixed"
+    },
+    {
+      "joint": "J7",
+      "file": "RS00.step",
+      "sha256": "4133dea27ccff90d69588dbc37662c9eafeed0bf858fc0a4cee93417e508abfe",
+      "reference_frame": "J7.fixed"
+    }
+  ],
+  "pose": "reference",
+  "checks": [
+    {
+      "a": "J2_actual_supplier_CAD",
+      "b": "J3_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "J6_actual_supplier_CAD",
+      "b": "J7_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P01-flat-back-plate",
+      "b": "J2_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P01-flat-back-plate",
+      "b": "J3_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P01-flat-top-plate",
+      "b": "J2_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P01-flat-top-plate",
+      "b": "J3_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P01-output-seat",
+      "b": "J2_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P01-output-seat",
+      "b": "J3_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P01-J2-fixed-seat",
+      "b": "J2_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P01-J2-fixed-seat",
+      "b": "J3_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P02-cross-shoulder-adapter",
+      "b": "J2_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P02-cross-shoulder-adapter",
+      "b": "J3_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P05-end-carrier",
+      "b": "J6_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P05-end-carrier",
+      "b": "J7_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P06-end-carrier",
+      "b": "J6_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "P06-end-carrier",
+      "b": "J7_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "A03-in-motor-seat",
+      "b": "J2_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "A03-in-motor-seat",
+      "b": "J3_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "A04-out-motor-seat",
+      "b": "J6_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "A04-out-motor-seat",
+      "b": "J7_actual_supplier_CAD",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "status": "focused_shoulder_and_wrist_check_only",
+  "limitations": [
+    "Local source CAD only; not distributed in this package.",
+    "Supplier CAD omits actual cable plugs and assembly tolerances.",
+    "No bolt head/tool sweeps or full joint-domain qualification."
+  ]
+}

@@ -1,0 +1,3428 @@
+{
+  "revision": "A09-long",
+  "status": "manufacturing_architecture_and_silhouette_proposal_not_assembly_release",
+  "units": "mm",
+  "layout": {
+    "id": "arm-a09-slim-architecture",
+    "units": "mm",
+    "status": "visual_and_manufacturing_architecture_proposal_not_print_release",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "底部转向",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          110
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 57,
+        "motor_center": [
+          0,
+          0,
+          -28.5
+        ],
+        "mass_kg": 0.92
+      },
+      {
+        "id": "J2",
+        "name": "肩部俯仰",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          90
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -70,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 57,
+        "motor_center": [
+          0,
+          98.5,
+          0
+        ],
+        "mass_kg": 1.44,
+        "limit_status": "Packaging exploration; rear range reduced for flat shoulder bridge, two-sided upright zero retained."
+      },
+      {
+        "id": "J3",
+        "name": "上臂旋转",
+        "model": "RS03",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 106,
+        "length_mm": 57,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.92
+      },
+      {
+        "id": "J4",
+        "name": "肘部回折",
+        "model": "RS03",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -155,
+          135
+        ],
+        "diameter_mm": 106,
+        "length_mm": 57,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.92
+      },
+      {
+        "id": "J5",
+        "name": "腕部俯仰",
+        "model": "RS06",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 88,
+        "length_mm": 51,
+        "motor_center": [
+          0,
+          60,
+          0
+        ],
+        "mass_kg": 0.621,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "腕部横摆",
+        "model": "RS00",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 52,
+        "motor_center": [
+          0,
+          0,
+          72
+        ],
+        "mass_kg": 0.313
+      },
+      {
+        "id": "J7",
+        "name": "整头旋转",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          25,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 52,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.313
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -150,
+        130,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      65.7,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "shoulder_cross_adapter": {
+      "RS04_side_offset_change_mm": 15,
+      "RS04_output_plate_thickness_mm": 10,
+      "fastener_proposal": "retain source output bolt locations; ordinary head-envelope clearance review pending",
+      "status": "crossed_axis_packaging_proposal_not_frozen"
+    },
+    "mass_assumption": "Use official 2026-07-13 table upper mass tolerance for RS03(920g), RS04(1440g), RS00(313g); RS06 nominal621g.",
+    "wrist_cross_adapter": {
+      "J6_motor_center_z_mm": 72,
+      "J6_J7_axis_offset_x_mm": 25,
+      "purpose": "Reduce end cantilever and J6 torque; keep5mm horizontal webs below fixed carrier."
+    },
+    "pedestal": {
+      "id_mm": 108,
+      "od_mm": 120,
+      "motor_lower_cable_cavity_height_mm": 21.8,
+      "rear_channel_width_mm": 14,
+      "rear_shell_clearance_depth_target_mm": 9.5,
+      "route_status": "split-bundle reservation only; not a validated cable system"
+    }
+  },
+  "flange_from_J7_mm": [
+    65.7,
+    0,
+    0
+  ],
+  "base_interface": {
+    "rotation_deg": 90,
+    "translation_mm": [
+      0,
+      135,
+      34.6
+    ]
+  },
+  "omissions": [
+    "End-seat to flat-plate fasteners are not complete.",
+    "Fairing split lines, fixtures and connector ports are not complete.",
+    "Tube fits require shims and metal crush spacers.",
+    "No thermal/strength/cable-life qualification."
+  ],
+  "parts": [
+    {
+      "id": "P00-open-pedestal",
+      "owner": 0,
+      "frame": "world",
+      "role": "cnc_adapter",
+      "material": "6061 open-ended turned pedestal blank",
+      "note": "D160 / PCD120 inherited base interface. Top ring separate: internal boring from open108mm mouth; rear14mm split-bundle channel. SixM4 tapped holes, patternPCD114, thread/edge strength and bolt access require validation.",
+      "solid_count": 1,
+      "volume_mm3": 277802.90190735925,
+      "mass_kg": 0.7500678351498715,
+      "density_assumption_kg_mm3": 2.7000000000000055e-06,
+      "com_mm": [
+        1.3081548014967463,
+        -4.855978679002139e-15,
+        50.31460160683033
+      ],
+      "bbox_size_mm": [
+        160.0,
+        160.0,
+        83.9
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          1857.9688627893545,
+          -4.404221173514021e-14,
+          -18.725336548730926
+        ],
+        [
+          -4.404221173514021e-14,
+          1801.0122862254484,
+          -4.369864539795975e-14
+        ],
+        [
+          -18.725336548730926,
+          -4.369864539795975e-14,
+          2581.5627988457154
+        ]
+      ]
+    },
+    {
+      "id": "P00-top-motor-ring",
+      "owner": 0,
+      "frame": "world",
+      "role": "cnc_adapter",
+      "material": "6061 separate flat motor ring8mm",
+      "note": "Bolted top ring; actual motor pattern plus sixM4 clearance holes onPCD114. Pedestal design target includes21.8mm cable-loop space below J1 motor; no cable-life qualification.",
+      "solid_count": 1,
+      "volume_mm3": 55048.911693863956,
+      "mass_kg": 0.14863206157343267,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        0.7338806906481883,
+        2.0486752516928297e-15,
+        111.3000000000001
+      ],
+      "bbox_size_mm": [
+        119.59026766175833,
+        120.0,
+        8.000000000000014
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          184.57255395668787,
+          1.6784617355698943e-16,
+          -1.7875617483819375e-13
+        ],
+        [
+          1.6784617355698943e-16,
+          178.3700262458295,
+          4.2968620430589294e-14
+        ],
+        [
+          -1.7875617483819375e-13,
+          4.2968620430589294e-14,
+          361.3571715457428
+        ]
+      ]
+    },
+    {
+      "id": "P01-flat-back-plate",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "role": "cnc_support_plate",
+      "material": "6061 constant8mm XZ plate",
+      "note": "Separate planar plate / motor seat. Shoulder bridge plate-to-seat fasteners not frozen; geometry partitions do not prove a bolted load path.",
+      "solid_count": 1,
+      "volume_mm3": 16696.644968778757,
+      "mass_kg": 0.045080941415702645,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        -67.77641340038396,
+        4.577046031469995e-15,
+        32.71237995947241
+      ],
+      "bbox_size_mm": [
+        77.990651168656,
+        8.000000000000012,
+        76.990651168656
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          21.668590660759666,
+          3.1429908734137913e-15,
+          13.125306384961021
+        ],
+        [
+          3.1429908734137913e-15,
+          43.955304153246054,
+          -3.4963881280388547e-15
+        ],
+        [
+          13.125306384961021,
+          -3.4963881280388547e-15,
+          22.774445262305335
+        ]
+      ]
+    },
+    {
+      "id": "P01-flat-top-plate",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "role": "cnc_support_plate",
+      "material": "6061 constant12mm XY plate",
+      "note": "Separate planar plate / motor seat. Shoulder bridge plate-to-seat fasteners not frozen; geometry partitions do not prove a bolted load path.",
+      "solid_count": 1,
+      "volume_mm3": 18904.096492588844,
+      "mass_kg": 0.051041060529991196,
+      "density_assumption_kg_mm3": 2.70000000000007e-06,
+      "com_mm": [
+        -71.5227200834548,
+        35.14982375700954,
+        90.0
+      ],
+      "bbox_size_mm": [
+        45.0,
+        79.15,
+        12.000000000000014
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          25.079934837733155,
+          -9.97845877872841,
+          -4.023204483859957e-14
+        ],
+        [
+          -9.97845877872841,
+          6.4827541133289035,
+          -2.0116022419299785e-14
+        ],
+        [
+          -4.023204483859957e-14,
+          -2.0116022419299785e-14,
+          30.33770349834217
+        ]
+      ]
+    },
+    {
+      "id": "P01-output-seat",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "role": "cnc_adapter",
+      "material": "6061 output disk with flat plate pocket",
+      "note": "Separate planar plate / motor seat. Shoulder bridge plate-to-seat fasteners not frozen; geometry partitions do not prove a bolted load path.",
+      "solid_count": 1,
+      "volume_mm3": 72466.77073997533,
+      "mass_kg": 0.19566028305470481,
+      "density_assumption_kg_mm3": 2.70000002838227e-06,
+      "com_mm": [
+        0.886547268127189,
+        -2.004211861059737e-09,
+        9.647576566050189
+      ],
+      "bbox_size_mm": [
+        70.0000002,
+        70.0000002,
+        20.000000200000002
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          68.97680833212056,
+          -1.8180490948501122e-11,
+          -0.7543247209047408
+        ],
+        [
+          -1.8180490948501122e-11,
+          64.91292587259785,
+          8.263651624911955e-14
+        ],
+        [
+          -0.7543247209047408,
+          8.263651624911955e-14,
+          120.77926073703392
+        ]
+      ]
+    },
+    {
+      "id": "P01-J2-fixed-seat",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "role": "cnc_adapter",
+      "material": "6061 stator ring with flat plate pockets",
+      "note": "Separate planar plate / motor seat. Shoulder bridge plate-to-seat fasteners not frozen; geometry partitions do not prove a bolted load path.",
+      "solid_count": 1,
+      "volume_mm3": 105780.17711160767,
+      "mass_kg": 0.2856064782017199,
+      "density_assumption_kg_mm3": 2.7000000000035846e-06,
+      "com_mm": [
+        1.2636462048592836,
+        68.65188014341841,
+        90.00000000000958
+      ],
+      "bbox_size_mm": [
+        134.0,
+        11.000000000000014,
+        134.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          425.5767043032813,
+          0.035610407158333135,
+          -4.3585043413373985e-07
+        ],
+        [
+          0.035610407158333135,
+          824.0282847103645,
+          -6.445844336346355e-13
+        ],
+        [
+          -4.3585043413373985e-07,
+          -6.445844336346355e-13,
+          404.21330872448056
+        ]
+      ]
+    },
+    {
+      "id": "P02-cross-shoulder-adapter",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "role": "cnc_adapter",
+      "material": "6061 compact cross-adapter proposal",
+      "note": "J2/J3 co-located axes; J2 motor shifted sideways15mm to keep10mm output plate and original bolt positions. Head/tool access and carrier strength still require validation.",
+      "solid_count": 1,
+      "volume_mm3": 93153.84135442782,
+      "mass_kg": 0.2515153716569549,
+      "density_assumption_kg_mm3": 2.699999999999998e-06,
+      "com_mm": [
+        18.28435501868528,
+        26.93449366960638,
+        1.8115918727590447e-14
+      ],
+      "bbox_size_mm": [
+        70.0,
+        133.65,
+        120.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          687.5260876024596,
+          120.71293924074928,
+          1.4356056042009686e-07
+        ],
+        [
+          120.71293924074928,
+          302.3554581577684,
+          -2.58640576291279e-14
+        ],
+        [
+          1.4356056042009686e-07,
+          -2.58640576291279e-14,
+          554.0847743800691
+        ]
+      ]
+    },
+    {
+      "id": "P05-end-carrier",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "cnc_adapter",
+      "material": "6061 planar end-seat proposal",
+      "note": "Flat-faced end carrier: finish bolt/pilot interfaces from actual motor drawings. Small-carrier milling/setup review pending.",
+      "solid_count": 1,
+      "volume_mm3": 49683.80269259532,
+      "mass_kg": 0.13414626727000717,
+      "density_assumption_kg_mm3": 2.6999999999999957e-06,
+      "com_mm": [
+        28.09262524894164,
+        17.83687550940148,
+        22.402004694908676
+      ],
+      "bbox_size_mm": [
+        133.0,
+        66.75,
+        74.19999999999999
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          103.55844352073036,
+          57.626408940295775,
+          -76.00885716317622
+        ],
+        [
+          57.626408940295775,
+          262.80649951050395,
+          29.275840398363226
+        ],
+        [
+          -76.00885716317622,
+          29.275840398363226,
+          236.10549502112616
+        ]
+      ]
+    },
+    {
+      "id": "P06-end-carrier",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "role": "cnc_adapter",
+      "material": "6061 planar end-seat proposal",
+      "note": "Flat-faced end carrier: finish bolt/pilot interfaces from actual motor drawings. Small-carrier milling/setup review pending.",
+      "solid_count": 1,
+      "volume_mm3": 55272.94526134926,
+      "mass_kg": 0.14923695220564295,
+      "density_assumption_kg_mm3": 2.699999999999999e-06,
+      "com_mm": [
+        39.63756557283256,
+        -3.7125711524370413e-14,
+        13.121306512028312
+      ],
+      "bbox_size_mm": [
+        75.8,
+        88.0,
+        88.3
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          189.29144279131444,
+          6.090154309121194e-14,
+          54.96153244839652
+        ],
+        [
+          6.090154309121194e-14,
+          177.82511466260047,
+          -5.5340987336677775e-14
+        ],
+        [
+          54.96153244839652,
+          -5.5340987336677775e-14,
+          172.74669207975833
+        ]
+      ]
+    },
+    {
+      "id": "T03-straight-tube",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "stock_tube",
+      "material": "aluminum hollow tube 20x40x2, square cut",
+      "note": "Cut length 200mm; two coaxial clearance holes, no curved extrusion or bent tube.",
+      "solid_count": 1,
+      "volume_mm3": 44672.765497529595,
+      "mass_kg": 0.12061646684332991,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        170.00000000000014,
+        -3.5535102461302764e-16,
+        3.0220452727934365e-15
+      ],
+      "bbox_size_mm": [
+        200.0,
+        20.0,
+        40.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          31.647642028902375,
+          -2.3013686425813173e-14,
+          -7.853813246935282e-14
+        ],
+        [
+          -2.3013686425813173e-14,
+          424.3027773603615,
+          8.3184341150676e-16
+        ],
+        [
+          -7.853813246935282e-14,
+          8.3184341150676e-16,
+          408.18316873263745
+        ]
+      ]
+    },
+    {
+      "id": "P03-flat-plate-A",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "cnc_plate",
+      "material": "6061 flat plate 4mm",
+      "note": "Constant-thickness planar profile. 0.2mm fit gap to tube; metal shims and internal tube crush spacers required. End-seat bolting still under design.",
+      "solid_count": 1,
+      "volume_mm3": 16272.978054867272,
+      "mass_kg": 0.043937040748141636,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        171.63390010072632,
+        3.8840808622729144,
+        22.199999999999992
+      ],
+      "bbox_size_mm": [
+        268.7,
+        43.8,
+        4.0000000000000036
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          4.686571517167251,
+          -18.018798395466536,
+          1.6093085195200247e-13
+        ],
+        [
+          -18.018798395466536,
+          277.02890732795,
+          6.286361404375097e-16
+        ],
+        [
+          1.6093085195200247e-13,
+          6.286361404375097e-16,
+          281.5983134031224
+        ]
+      ],
+      "manufacturing": {
+        "thickness_mm": 4,
+        "z_mm": 20.2,
+        "outer_xy_mm": [
+          [
+            263.0337069132946,
+            30.486119982306928
+          ],
+          [
+            263.1345030371774,
+            31.1656322541129
+          ],
+          [
+            263.30141764987457,
+            31.83199274078124
+          ],
+          [
+            263.532843272421,
+            32.47878402655563
+          ],
+          [
+            263.8265511495615,
+            33.099777157781986
+          ],
+          [
+            264.17971271388217,
+            33.68899163113721
+          ],
+          [
+            264.58892682646086,
+            34.24075298914552
+          ],
+          [
+            265.0502525316942,
+            34.749747468305834
+          ],
+          [
+            265.5592470108545,
+            35.21107317353916
+          ],
+          [
+            266.11100836886277,
+            35.620287286117815
+          ],
+          [
+            266.700222842218,
+            35.97344885043849
+          ],
+          [
+            267.3212159734444,
+            36.26715672757901
+          ],
+          [
+            267.9680072592188,
+            36.49858235012546
+          ],
+          [
+            268.6343677458871,
+            36.665496962822616
+          ],
+          [
+            269.31388001769307,
+            36.76629308670538
+          ],
+          [
+            270.0,
+            36.8
+          ],
+          [
+            290.0,
+            36.8
+          ],
+          [
+            290.68611998230693,
+            36.766293086705375
+          ],
+          [
+            291.3656322541129,
+            36.665496962822616
+          ],
+          [
+            292.0319927407812,
+            36.49858235012546
+          ],
+          [
+            292.6787840265556,
+            36.26715672757901
+          ],
+          [
+            293.299777157782,
+            35.97344885043849
+          ],
+          [
+            293.88899163113723,
+            35.620287286117815
+          ],
+          [
+            294.4407529891455,
+            35.21107317353916
+          ],
+          [
+            294.9497474683058,
+            34.749747468305834
+          ],
+          [
+            295.41107317353914,
+            34.24075298914552
+          ],
+          [
+            295.82028728611783,
+            33.68899163113721
+          ],
+          [
+            296.1734488504385,
+            33.099777157781986
+          ],
+          [
+            296.467156727579,
+            32.47878402655563
+          ],
+          [
+            296.69858235012543,
+            31.83199274078124
+          ],
+          [
+            296.8654969628226,
+            31.1656322541129
+          ],
+          [
+            296.9662930867054,
+            30.486119982306924
+          ],
+          [
+            297.0,
+            29.8
+          ],
+          [
+            296.9662930867054,
+            29.113880017693077
+          ],
+          [
+            296.8654969628226,
+            28.4343677458871
+          ],
+          [
+            296.69858235012543,
+            27.768007259218763
+          ],
+          [
+            296.467156727579,
+            27.12121597344437
+          ],
+          [
+            296.1734488504385,
+            26.500222842218015
+          ],
+          [
+            295.82028728611783,
+            25.911008368862788
+          ],
+          [
+            295.73795786871,
+            25.8
+          ],
+          [
+            284.0,
+            25.8
+          ],
+          [
+            284.0,
+            22.8
+          ],
+          [
+            277.0,
+            22.8
+          ],
+          [
+            277.0,
+            0.0
+          ],
+          [
+            276.9662930867054,
+            -0.6861199823069242
+          ],
+          [
+            276.8654969628226,
+            -1.3656322541128978
+          ],
+          [
+            276.69858235012543,
+            -2.031992740781236
+          ],
+          [
+            276.467156727579,
+            -2.6787840265556286
+          ],
+          [
+            276.1734488504385,
+            -3.2997771577819837
+          ],
+          [
+            275.82028728611783,
+            -3.8889916311372152
+          ],
+          [
+            275.41107317353914,
+            -4.440752989145518
+          ],
+          [
+            274.9497474683058,
+            -4.949747468305832
+          ],
+          [
+            274.4407529891455,
+            -5.411073173539159
+          ],
+          [
+            273.88899163113723,
+            -5.820287286117817
+          ],
+          [
+            273.299777157782,
+            -6.173448850438485
+          ],
+          [
+            272.6787840265556,
+            -6.467156727579007
+          ],
+          [
+            272.0319927407812,
+            -6.698582350125462
+          ],
+          [
+            271.3656322541129,
+            -6.865496962822613
+          ],
+          [
+            270.68611998230693,
+            -6.966293086705377
+          ],
+          [
+            270.0,
+            -7.0
+          ],
+          [
+            33.3,
+            -7.000000000000001
+          ],
+          [
+            32.61388001769308,
+            -6.966293086705378
+          ],
+          [
+            31.934367745887098,
+            -6.865496962822612
+          ],
+          [
+            31.26800725921876,
+            -6.698582350125462
+          ],
+          [
+            30.621215973444365,
+            -6.467156727579006
+          ],
+          [
+            30.00022284221801,
+            -6.173448850438485
+          ],
+          [
+            29.41100836886278,
+            -5.820287286117817
+          ],
+          [
+            28.859247010854475,
+            -5.411073173539156
+          ],
+          [
+            28.350252531694164,
+            -4.949747468305832
+          ],
+          [
+            28.3,
+            -4.894302343731165
+          ],
+          [
+            28.3,
+            4.894302343731162
+          ],
+          [
+            28.350252531694167,
+            4.949747468305833
+          ],
+          [
+            28.85924701085448,
+            5.41107317353916
+          ],
+          [
+            29.411008368862785,
+            5.820287286117818
+          ],
+          [
+            30.000222842218015,
+            6.1734488504384855
+          ],
+          [
+            30.621215973444368,
+            6.467156727579007
+          ],
+          [
+            31.268007259218763,
+            6.698582350125463
+          ],
+          [
+            31.934367745887098,
+            6.865496962822613
+          ],
+          [
+            32.61388001769307,
+            6.966293086705378
+          ],
+          [
+            33.3,
+            7.000000000000001
+          ],
+          [
+            263.0,
+            7.0
+          ],
+          [
+            263.0,
+            29.8
+          ]
+        ],
+        "holes_xy_mm": [
+          [
+            80,
+            0
+          ],
+          [
+            260.0,
+            0
+          ]
+        ],
+        "clearance_hole_diameter_mm": 4.5,
+        "drawing_status": "profile_and_tube_holes_only_end_seat_fastening_not_frozen"
+      }
+    },
+    {
+      "id": "P03-flat-plate-B",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "cnc_plate",
+      "material": "6061 flat plate 4mm",
+      "note": "Constant-thickness planar profile. 0.2mm fit gap to tube; metal shims and internal tube crush spacers required. End-seat bolting still under design.",
+      "solid_count": 1,
+      "volume_mm3": 16272.978054867272,
+      "mass_kg": 0.043937040748141636,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        171.63390010072632,
+        3.8840808622729144,
+        -22.199999999999992
+      ],
+      "bbox_size_mm": [
+        268.7,
+        43.8,
+        4.0000000000000036
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          4.686571517167289,
+          -18.018798395466536,
+          -8.046542597600124e-14
+        ],
+        [
+          -18.018798395466536,
+          277.02890732794964,
+          1.2572722808750193e-15
+        ],
+        [
+          -8.046542597600124e-14,
+          1.2572722808750193e-15,
+          281.59831340312206
+        ]
+      ],
+      "manufacturing": {
+        "thickness_mm": 4,
+        "z_mm": -24.2,
+        "outer_xy_mm": [
+          [
+            263.0337069132946,
+            30.486119982306928
+          ],
+          [
+            263.1345030371774,
+            31.1656322541129
+          ],
+          [
+            263.30141764987457,
+            31.83199274078124
+          ],
+          [
+            263.532843272421,
+            32.47878402655563
+          ],
+          [
+            263.8265511495615,
+            33.099777157781986
+          ],
+          [
+            264.17971271388217,
+            33.68899163113721
+          ],
+          [
+            264.58892682646086,
+            34.24075298914552
+          ],
+          [
+            265.0502525316942,
+            34.749747468305834
+          ],
+          [
+            265.5592470108545,
+            35.21107317353916
+          ],
+          [
+            266.11100836886277,
+            35.620287286117815
+          ],
+          [
+            266.700222842218,
+            35.97344885043849
+          ],
+          [
+            267.3212159734444,
+            36.26715672757901
+          ],
+          [
+            267.9680072592188,
+            36.49858235012546
+          ],
+          [
+            268.6343677458871,
+            36.665496962822616
+          ],
+          [
+            269.31388001769307,
+            36.76629308670538
+          ],
+          [
+            270.0,
+            36.8
+          ],
+          [
+            290.0,
+            36.8
+          ],
+          [
+            290.68611998230693,
+            36.766293086705375
+          ],
+          [
+            291.3656322541129,
+            36.665496962822616
+          ],
+          [
+            292.0319927407812,
+            36.49858235012546
+          ],
+          [
+            292.6787840265556,
+            36.26715672757901
+          ],
+          [
+            293.299777157782,
+            35.97344885043849
+          ],
+          [
+            293.88899163113723,
+            35.620287286117815
+          ],
+          [
+            294.4407529891455,
+            35.21107317353916
+          ],
+          [
+            294.9497474683058,
+            34.749747468305834
+          ],
+          [
+            295.41107317353914,
+            34.24075298914552
+          ],
+          [
+            295.82028728611783,
+            33.68899163113721
+          ],
+          [
+            296.1734488504385,
+            33.099777157781986
+          ],
+          [
+            296.467156727579,
+            32.47878402655563
+          ],
+          [
+            296.69858235012543,
+            31.83199274078124
+          ],
+          [
+            296.8654969628226,
+            31.1656322541129
+          ],
+          [
+            296.9662930867054,
+            30.486119982306924
+          ],
+          [
+            297.0,
+            29.8
+          ],
+          [
+            296.9662930867054,
+            29.113880017693077
+          ],
+          [
+            296.8654969628226,
+            28.4343677458871
+          ],
+          [
+            296.69858235012543,
+            27.768007259218763
+          ],
+          [
+            296.467156727579,
+            27.12121597344437
+          ],
+          [
+            296.1734488504385,
+            26.500222842218015
+          ],
+          [
+            295.82028728611783,
+            25.911008368862788
+          ],
+          [
+            295.73795786871,
+            25.8
+          ],
+          [
+            284.0,
+            25.8
+          ],
+          [
+            284.0,
+            22.8
+          ],
+          [
+            277.0,
+            22.8
+          ],
+          [
+            277.0,
+            0.0
+          ],
+          [
+            276.9662930867054,
+            -0.6861199823069242
+          ],
+          [
+            276.8654969628226,
+            -1.3656322541128978
+          ],
+          [
+            276.69858235012543,
+            -2.031992740781236
+          ],
+          [
+            276.467156727579,
+            -2.6787840265556286
+          ],
+          [
+            276.1734488504385,
+            -3.2997771577819837
+          ],
+          [
+            275.82028728611783,
+            -3.8889916311372152
+          ],
+          [
+            275.41107317353914,
+            -4.440752989145518
+          ],
+          [
+            274.9497474683058,
+            -4.949747468305832
+          ],
+          [
+            274.4407529891455,
+            -5.411073173539159
+          ],
+          [
+            273.88899163113723,
+            -5.820287286117817
+          ],
+          [
+            273.299777157782,
+            -6.173448850438485
+          ],
+          [
+            272.6787840265556,
+            -6.467156727579007
+          ],
+          [
+            272.0319927407812,
+            -6.698582350125462
+          ],
+          [
+            271.3656322541129,
+            -6.865496962822613
+          ],
+          [
+            270.68611998230693,
+            -6.966293086705377
+          ],
+          [
+            270.0,
+            -7.0
+          ],
+          [
+            33.3,
+            -7.000000000000001
+          ],
+          [
+            32.61388001769308,
+            -6.966293086705378
+          ],
+          [
+            31.934367745887098,
+            -6.865496962822612
+          ],
+          [
+            31.26800725921876,
+            -6.698582350125462
+          ],
+          [
+            30.621215973444365,
+            -6.467156727579006
+          ],
+          [
+            30.00022284221801,
+            -6.173448850438485
+          ],
+          [
+            29.41100836886278,
+            -5.820287286117817
+          ],
+          [
+            28.859247010854475,
+            -5.411073173539156
+          ],
+          [
+            28.350252531694164,
+            -4.949747468305832
+          ],
+          [
+            28.3,
+            -4.894302343731165
+          ],
+          [
+            28.3,
+            4.894302343731162
+          ],
+          [
+            28.350252531694167,
+            4.949747468305833
+          ],
+          [
+            28.85924701085448,
+            5.41107317353916
+          ],
+          [
+            29.411008368862785,
+            5.820287286117818
+          ],
+          [
+            30.000222842218015,
+            6.1734488504384855
+          ],
+          [
+            30.621215973444368,
+            6.467156727579007
+          ],
+          [
+            31.268007259218763,
+            6.698582350125463
+          ],
+          [
+            31.934367745887098,
+            6.865496962822613
+          ],
+          [
+            32.61388001769307,
+            6.966293086705378
+          ],
+          [
+            33.3,
+            7.000000000000001
+          ],
+          [
+            263.0,
+            7.0
+          ],
+          [
+            263.0,
+            29.8
+          ]
+        ],
+        "holes_xy_mm": [
+          [
+            80,
+            0
+          ],
+          [
+            260.0,
+            0
+          ]
+        ],
+        "clearance_hole_diameter_mm": 4.5,
+        "drawing_status": "profile_and_tube_holes_only_end_seat_fastening_not_frozen"
+      }
+    },
+    {
+      "id": "A03-in-motor-seat",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "cnc_adapter",
+      "material": "6061 motor flange/pilot seat",
+      "note": "Motor pattern exact; plate-to-seat fastening and tolerances not frozen.",
+      "solid_count": 1,
+      "volume_mm3": 36462.91197847214,
+      "mass_kg": 0.09844986234187478,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        33.29454141878518,
+        -8.81189701196708e-16,
+        -4.793734332029858e-17
+      ],
+      "bbox_size_mm": [
+        10.000000100000015,
+        70.0,
+        70.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          61.49090733513095,
+          -1.0466424274561285e-14,
+          -1.927874942752174e-15
+        ],
+        [
+          -1.0466424274561285e-14,
+          30.875611656645706,
+          -3.546386640433764e-16
+        ],
+        [
+          -1.927874942752174e-15,
+          -3.546386640433764e-16,
+          32.258082622184986
+        ]
+      ]
+    },
+    {
+      "id": "A03-out-motor-seat",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "cnc_adapter",
+      "material": "6061 motor flange/pilot seat",
+      "note": "Motor pattern exact; plate-to-seat fastening and tolerances not frozen.",
+      "solid_count": 1,
+      "volume_mm3": 55766.871378046155,
+      "mass_kg": 0.15057055272074193,
+      "density_assumption_kg_mm3": 2.7000000000003104e-06,
+      "com_mm": [
+        340.67626642573254,
+        29.800000000000015,
+        -2.0011575702230503e-12
+      ],
+      "bbox_size_mm": [
+        120.0,
+        8.000000000000036,
+        120.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          186.95504502067953,
+          6.445530237690411e-13,
+          7.659017692021998e-14
+        ],
+        [
+          6.445530237690411e-13,
+          368.1808678808475,
+          1.4076776708743158e-08
+        ],
+        [
+          7.659017692021998e-14,
+          1.4076776708743158e-08,
+          182.83250061866318
+        ]
+      ]
+    },
+    {
+      "id": "S03-blade-fairing",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "printed_cover",
+      "material": "PETG cosmetic fairing",
+      "note": "Thin independent cosmetic blade. Can be split for printing after silhouette approval; not part of the load path.",
+      "solid_count": 1,
+      "volume_mm3": 53577.499500000034,
+      "mass_kg": 0.06804342436500004,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        169.97060916537922,
+        -0.004291811073687667,
+        1.303703863525039e-14
+      ],
+      "bbox_size_mm": [
+        216.0,
+        30.0,
+        54.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          37.38638804864618,
+          0.027446079227628324,
+          2.229642153704632e-14
+        ],
+        [
+          0.027446079227628324,
+          246.43359180566708,
+          -1.8931299254673733e-15
+        ],
+        [
+          2.229642153704632e-14,
+          -1.8931299254673733e-15,
+          229.3655855271229
+        ]
+      ]
+    },
+    {
+      "id": "T04-straight-tube",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "stock_tube",
+      "material": "aluminum hollow tube 20x40x2, square cut",
+      "note": "Cut length 95mm; two coaxial clearance holes, no curved extrusion or bent tube.",
+      "solid_count": 1,
+      "volume_mm3": 21152.765497529603,
+      "mass_kg": 0.05711246684332993,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        67.50000000000003,
+        62.00000000000002,
+        2.923761421539986e-15
+      ],
+      "bbox_size_mm": [
+        95.0,
+        20.0,
+        40.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          14.967258174632109,
+          4.0232810393813085e-14,
+          -1.950872212324999e-14
+        ],
+        [
+          4.0232810393813085e-14,
+          54.00806990567131,
+          -1.1734569698195486e-15
+        ],
+        [
+          -1.950872212324999e-14,
+          -1.1734569698195486e-15,
+          46.416140948684266
+        ]
+      ]
+    },
+    {
+      "id": "P04-flat-plate-A",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "cnc_plate",
+      "material": "6061 flat plate 4mm",
+      "note": "Constant-thickness planar profile. 0.2mm fit gap to tube; metal shims and internal tube crush spacers required. End-seat bolting still under design.",
+      "solid_count": 1,
+      "volume_mm3": 11515.648354357209,
+      "mass_kg": 0.031092250556764463,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        68.16090911575492,
+        65.72408270035521,
+        22.200000000000014
+      ],
+      "bbox_size_mm": [
+        159.0,
+        72.95,
+        4.000000000000011
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          7.506404891621487,
+          -17.23035489220484,
+          4.0232538557252075e-14
+        ],
+        [
+          -17.23035489220484,
+          74.73807019785856,
+          3.0174403917939055e-14
+        ],
+        [
+          4.0232538557252075e-14,
+          3.0174403917939055e-14,
+          82.1615624213287
+        ]
+      ],
+      "manufacturing": {
+        "thickness_mm": 4,
+        "z_mm": 20.2,
+        "outer_xy_mm": [
+          [
+            -6.698582350125462,
+            64.03199274078123
+          ],
+          [
+            -6.467156727579007,
+            64.67878402655563
+          ],
+          [
+            -6.173448850438485,
+            65.29977715778199
+          ],
+          [
+            -5.820287286117818,
+            65.88899163113722
+          ],
+          [
+            -5.411073173539159,
+            66.44075298914552
+          ],
+          [
+            -4.949747468305832,
+            66.94974746830583
+          ],
+          [
+            -4.440752989145517,
+            67.41107317353917
+          ],
+          [
+            -3.8889916311372135,
+            67.82028728611782
+          ],
+          [
+            -3.2997771577819837,
+            68.17344885043849
+          ],
+          [
+            -2.678784026555628,
+            68.46715672757901
+          ],
+          [
+            -2.0319927407812353,
+            68.69858235012546
+          ],
+          [
+            -1.3656322541128973,
+            68.86549696282262
+          ],
+          [
+            -0.6861199823069245,
+            68.96629308670538
+          ],
+          [
+            0.0,
+            69.0
+          ],
+          [
+            113.0,
+            69.0
+          ],
+          [
+            113.0,
+            94.25
+          ],
+          [
+            113.03370691329462,
+            94.93611998230692
+          ],
+          [
+            113.13450303717738,
+            95.6156322541129
+          ],
+          [
+            113.30141764987454,
+            96.28199274078123
+          ],
+          [
+            113.53284327242099,
+            96.92878402655563
+          ],
+          [
+            113.82655114956151,
+            97.54977715778199
+          ],
+          [
+            114.17971271388218,
+            98.13899163113722
+          ],
+          [
+            114.58892682646083,
+            98.69075298914552
+          ],
+          [
+            115.05025253169417,
+            99.19974746830583
+          ],
+          [
+            115.55924701085448,
+            99.66107317353917
+          ],
+          [
+            116.11100836886278,
+            100.07028728611782
+          ],
+          [
+            116.70022284221801,
+            100.42344885043849
+          ],
+          [
+            117.32121597344437,
+            100.71715672757901
+          ],
+          [
+            117.96800725921877,
+            100.94858235012546
+          ],
+          [
+            118.6343677458871,
+            101.11549696282262
+          ],
+          [
+            119.31388001769308,
+            101.21629308670538
+          ],
+          [
+            120.0,
+            101.25
+          ],
+          [
+            138.0,
+            101.25
+          ],
+          [
+            138.0,
+            98.25
+          ],
+          [
+            150.73795786870997,
+            98.25
+          ],
+          [
+            150.8202872861178,
+            98.13899163113722
+          ],
+          [
+            151.1734488504385,
+            97.54977715778199
+          ],
+          [
+            151.467156727579,
+            96.92878402655563
+          ],
+          [
+            151.69858235012546,
+            96.28199274078123
+          ],
+          [
+            151.86549696282262,
+            95.6156322541129
+          ],
+          [
+            151.96629308670538,
+            94.93611998230692
+          ],
+          [
+            152.0,
+            94.25
+          ],
+          [
+            151.96629308670538,
+            93.56388001769308
+          ],
+          [
+            151.86549696282262,
+            92.8843677458871
+          ],
+          [
+            151.69858235012546,
+            92.21800725921877
+          ],
+          [
+            151.467156727579,
+            91.57121597344437
+          ],
+          [
+            151.1734488504385,
+            90.95022284221801
+          ],
+          [
+            150.82028728611783,
+            90.36100836886278
+          ],
+          [
+            150.73795786870997,
+            90.25
+          ],
+          [
+            133.0,
+            90.25
+          ],
+          [
+            133.0,
+            87.25
+          ],
+          [
+            127.0,
+            87.25
+          ],
+          [
+            127.0,
+            62.0
+          ],
+          [
+            126.96629308670538,
+            61.31388001769307
+          ],
+          [
+            126.86549696282262,
+            60.634367745887104
+          ],
+          [
+            126.69858235012546,
+            59.968007259218766
+          ],
+          [
+            126.46715672757901,
+            59.321215973444374
+          ],
+          [
+            126.17344885043849,
+            58.70022284221802
+          ],
+          [
+            125.82028728611782,
+            58.111008368862784
+          ],
+          [
+            125.41107317353917,
+            57.559247010854484
+          ],
+          [
+            124.94974746830583,
+            57.05025253169417
+          ],
+          [
+            124.44075298914552,
+            56.58892682646084
+          ],
+          [
+            123.88899163113722,
+            56.17971271388218
+          ],
+          [
+            123.29977715778199,
+            55.82655114956152
+          ],
+          [
+            122.67878402655563,
+            55.53284327242099
+          ],
+          [
+            122.03199274078123,
+            55.30141764987454
+          ],
+          [
+            121.3656322541129,
+            55.13450303717739
+          ],
+          [
+            120.68611998230692,
+            55.03370691329462
+          ],
+          [
+            120.0,
+            55.0
+          ],
+          [
+            7.000000000000001,
+            55.0
+          ],
+          [
+            7.000000000000001,
+            33.3
+          ],
+          [
+            6.966293086705378,
+            32.61388001769307
+          ],
+          [
+            6.865496962822613,
+            31.934367745887098
+          ],
+          [
+            6.698582350125462,
+            31.268007259218763
+          ],
+          [
+            6.467156727579007,
+            30.621215973444368
+          ],
+          [
+            6.1734488504384855,
+            30.000222842218015
+          ],
+          [
+            5.820287286117817,
+            29.41100836886278
+          ],
+          [
+            5.411073173539159,
+            28.859247010854478
+          ],
+          [
+            4.949747468305833,
+            28.350252531694167
+          ],
+          [
+            4.894302343731162,
+            28.3
+          ],
+          [
+            -4.894302343731165,
+            28.3
+          ],
+          [
+            -4.949747468305832,
+            28.350252531694164
+          ],
+          [
+            -5.411073173539159,
+            28.859247010854478
+          ],
+          [
+            -5.820287286117818,
+            29.41100836886278
+          ],
+          [
+            -6.173448850438485,
+            30.00022284221801
+          ],
+          [
+            -6.467156727579007,
+            30.621215973444368
+          ],
+          [
+            -6.698582350125462,
+            31.26800725921876
+          ],
+          [
+            -6.865496962822613,
+            31.934367745887098
+          ],
+          [
+            -6.966293086705377,
+            32.61388001769307
+          ],
+          [
+            -7.000000000000001,
+            33.3
+          ],
+          [
+            -7.000000000000001,
+            62.0
+          ],
+          [
+            -6.966293086705377,
+            62.68611998230693
+          ],
+          [
+            -6.865496962822613,
+            63.3656322541129
+          ]
+        ],
+        "holes_xy_mm": [
+          [
+            30,
+            62
+          ],
+          [
+            105.0,
+            62
+          ]
+        ],
+        "clearance_hole_diameter_mm": 4.5,
+        "drawing_status": "profile_and_tube_holes_only_end_seat_fastening_not_frozen"
+      }
+    },
+    {
+      "id": "P04-flat-plate-B",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "cnc_plate",
+      "material": "6061 flat plate 4mm",
+      "note": "Constant-thickness planar profile. 0.2mm fit gap to tube; metal shims and internal tube crush spacers required. End-seat bolting still under design.",
+      "solid_count": 1,
+      "volume_mm3": 11515.648354357212,
+      "mass_kg": 0.031092250556764473,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        68.16090911575488,
+        65.72408270035521,
+        -22.200000000000006
+      ],
+      "bbox_size_mm": [
+        159.0,
+        72.95,
+        4.000000000000021
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          7.506404891621485,
+          -17.230354892204797,
+          -0.0
+        ],
+        [
+          -17.230354892204797,
+          74.73807019785859,
+          -2.0116269278626035e-14
+        ],
+        [
+          -0.0,
+          -2.0116269278626035e-14,
+          82.16156242132868
+        ]
+      ],
+      "manufacturing": {
+        "thickness_mm": 4,
+        "z_mm": -24.2,
+        "outer_xy_mm": [
+          [
+            -6.698582350125462,
+            64.03199274078123
+          ],
+          [
+            -6.467156727579007,
+            64.67878402655563
+          ],
+          [
+            -6.173448850438485,
+            65.29977715778199
+          ],
+          [
+            -5.820287286117818,
+            65.88899163113722
+          ],
+          [
+            -5.411073173539159,
+            66.44075298914552
+          ],
+          [
+            -4.949747468305832,
+            66.94974746830583
+          ],
+          [
+            -4.440752989145517,
+            67.41107317353917
+          ],
+          [
+            -3.8889916311372135,
+            67.82028728611782
+          ],
+          [
+            -3.2997771577819837,
+            68.17344885043849
+          ],
+          [
+            -2.678784026555628,
+            68.46715672757901
+          ],
+          [
+            -2.0319927407812353,
+            68.69858235012546
+          ],
+          [
+            -1.3656322541128973,
+            68.86549696282262
+          ],
+          [
+            -0.6861199823069245,
+            68.96629308670538
+          ],
+          [
+            0.0,
+            69.0
+          ],
+          [
+            113.0,
+            69.0
+          ],
+          [
+            113.0,
+            94.25
+          ],
+          [
+            113.03370691329462,
+            94.93611998230692
+          ],
+          [
+            113.13450303717738,
+            95.6156322541129
+          ],
+          [
+            113.30141764987454,
+            96.28199274078123
+          ],
+          [
+            113.53284327242099,
+            96.92878402655563
+          ],
+          [
+            113.82655114956151,
+            97.54977715778199
+          ],
+          [
+            114.17971271388218,
+            98.13899163113722
+          ],
+          [
+            114.58892682646083,
+            98.69075298914552
+          ],
+          [
+            115.05025253169417,
+            99.19974746830583
+          ],
+          [
+            115.55924701085448,
+            99.66107317353917
+          ],
+          [
+            116.11100836886278,
+            100.07028728611782
+          ],
+          [
+            116.70022284221801,
+            100.42344885043849
+          ],
+          [
+            117.32121597344437,
+            100.71715672757901
+          ],
+          [
+            117.96800725921877,
+            100.94858235012546
+          ],
+          [
+            118.6343677458871,
+            101.11549696282262
+          ],
+          [
+            119.31388001769308,
+            101.21629308670538
+          ],
+          [
+            120.0,
+            101.25
+          ],
+          [
+            138.0,
+            101.25
+          ],
+          [
+            138.0,
+            98.25
+          ],
+          [
+            150.73795786870997,
+            98.25
+          ],
+          [
+            150.8202872861178,
+            98.13899163113722
+          ],
+          [
+            151.1734488504385,
+            97.54977715778199
+          ],
+          [
+            151.467156727579,
+            96.92878402655563
+          ],
+          [
+            151.69858235012546,
+            96.28199274078123
+          ],
+          [
+            151.86549696282262,
+            95.6156322541129
+          ],
+          [
+            151.96629308670538,
+            94.93611998230692
+          ],
+          [
+            152.0,
+            94.25
+          ],
+          [
+            151.96629308670538,
+            93.56388001769308
+          ],
+          [
+            151.86549696282262,
+            92.8843677458871
+          ],
+          [
+            151.69858235012546,
+            92.21800725921877
+          ],
+          [
+            151.467156727579,
+            91.57121597344437
+          ],
+          [
+            151.1734488504385,
+            90.95022284221801
+          ],
+          [
+            150.82028728611783,
+            90.36100836886278
+          ],
+          [
+            150.73795786870997,
+            90.25
+          ],
+          [
+            133.0,
+            90.25
+          ],
+          [
+            133.0,
+            87.25
+          ],
+          [
+            127.0,
+            87.25
+          ],
+          [
+            127.0,
+            62.0
+          ],
+          [
+            126.96629308670538,
+            61.31388001769307
+          ],
+          [
+            126.86549696282262,
+            60.634367745887104
+          ],
+          [
+            126.69858235012546,
+            59.968007259218766
+          ],
+          [
+            126.46715672757901,
+            59.321215973444374
+          ],
+          [
+            126.17344885043849,
+            58.70022284221802
+          ],
+          [
+            125.82028728611782,
+            58.111008368862784
+          ],
+          [
+            125.41107317353917,
+            57.559247010854484
+          ],
+          [
+            124.94974746830583,
+            57.05025253169417
+          ],
+          [
+            124.44075298914552,
+            56.58892682646084
+          ],
+          [
+            123.88899163113722,
+            56.17971271388218
+          ],
+          [
+            123.29977715778199,
+            55.82655114956152
+          ],
+          [
+            122.67878402655563,
+            55.53284327242099
+          ],
+          [
+            122.03199274078123,
+            55.30141764987454
+          ],
+          [
+            121.3656322541129,
+            55.13450303717739
+          ],
+          [
+            120.68611998230692,
+            55.03370691329462
+          ],
+          [
+            120.0,
+            55.0
+          ],
+          [
+            7.000000000000001,
+            55.0
+          ],
+          [
+            7.000000000000001,
+            33.3
+          ],
+          [
+            6.966293086705378,
+            32.61388001769307
+          ],
+          [
+            6.865496962822613,
+            31.934367745887098
+          ],
+          [
+            6.698582350125462,
+            31.268007259218763
+          ],
+          [
+            6.467156727579007,
+            30.621215973444368
+          ],
+          [
+            6.1734488504384855,
+            30.000222842218015
+          ],
+          [
+            5.820287286117817,
+            29.41100836886278
+          ],
+          [
+            5.411073173539159,
+            28.859247010854478
+          ],
+          [
+            4.949747468305833,
+            28.350252531694167
+          ],
+          [
+            4.894302343731162,
+            28.3
+          ],
+          [
+            -4.894302343731165,
+            28.3
+          ],
+          [
+            -4.949747468305832,
+            28.350252531694164
+          ],
+          [
+            -5.411073173539159,
+            28.859247010854478
+          ],
+          [
+            -5.820287286117818,
+            29.41100836886278
+          ],
+          [
+            -6.173448850438485,
+            30.00022284221801
+          ],
+          [
+            -6.467156727579007,
+            30.621215973444368
+          ],
+          [
+            -6.698582350125462,
+            31.26800725921876
+          ],
+          [
+            -6.865496962822613,
+            31.934367745887098
+          ],
+          [
+            -6.966293086705377,
+            32.61388001769307
+          ],
+          [
+            -7.000000000000001,
+            33.3
+          ],
+          [
+            -7.000000000000001,
+            62.0
+          ],
+          [
+            -6.966293086705377,
+            62.68611998230693
+          ],
+          [
+            -6.865496962822613,
+            63.3656322541129
+          ]
+        ],
+        "holes_xy_mm": [
+          [
+            30,
+            62
+          ],
+          [
+            105.0,
+            62
+          ]
+        ],
+        "clearance_hole_diameter_mm": 4.5,
+        "drawing_status": "profile_and_tube_holes_only_end_seat_fastening_not_frozen"
+      }
+    },
+    {
+      "id": "A04-in-motor-seat",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "cnc_adapter",
+      "material": "6061 motor flange/pilot seat",
+      "note": "Motor pattern exact; plate-to-seat fastening and tolerances not frozen.",
+      "solid_count": 1,
+      "volume_mm3": 36462.91197847214,
+      "mass_kg": 0.09844986234187478,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        9.628390786406312e-16,
+        33.29454141878518,
+        -3.515405176821896e-16
+      ],
+      "bbox_size_mm": [
+        70.0,
+        10.000000100000001,
+        70.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          30.875611656645706,
+          4.1213920477754366e-16,
+          9.823017074944952e-16
+        ],
+        [
+          4.1213920477754366e-16,
+          61.49090733513093,
+          2.1832628483190364e-16
+        ],
+        [
+          9.823017074944952e-16,
+          2.1832628483190364e-16,
+          32.258082622184986
+        ]
+      ]
+    },
+    {
+      "id": "A04-out-motor-seat",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "cnc_adapter",
+      "material": "6061 motor flange/pilot seat",
+      "note": "Motor pattern exact; plate-to-seat fastening and tolerances not frozen.",
+      "solid_count": 1,
+      "volume_mm3": 45361.02548943584,
+      "mass_kg": 0.12247476882147666,
+      "density_assumption_kg_mm3": 2.699999999999998e-06,
+      "com_mm": [
+        185.69881249411065,
+        94.25000000000004,
+        3.630828889564276e-14
+      ],
+      "bbox_size_mm": [
+        102.0,
+        8.00000020000006,
+        102.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          103.52995778269607,
+          -9.668202803546675e-13,
+          1.717561507796827e-13
+        ],
+        [
+          -9.668202803546675e-13,
+          203.35254038572026,
+          1.1411227864103618e-13
+        ],
+        [
+          1.717561507796827e-13,
+          1.1411227864103618e-13,
+          101.12958868473693
+        ]
+      ]
+    },
+    {
+      "id": "S04-blade-fairing",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "printed_cover",
+      "material": "PETG cosmetic fairing",
+      "note": "Thin independent cosmetic blade. Can be split for printing after silhouette approval; not part of the load path.",
+      "solid_count": 1,
+      "volume_mm3": 24820.05828571429,
+      "mass_kg": 0.03152147402285715,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        67.5000000000001,
+        61.99999999999998,
+        -1.531367839998204e-14
+      ],
+      "bbox_size_mm": [
+        111.00000000000001,
+        30.0,
+        54.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          17.58255475874082,
+          1.8924474716186557e-13,
+          3.347939694257509e-15
+        ],
+        [
+          1.8924474716186557e-13,
+          35.74470093255989,
+          -1.1317720821857333e-15
+        ],
+        [
+          3.347939694257509e-15,
+          -1.1317720821857333e-15,
+          27.250420241906955
+        ]
+      ]
+    },
+    {
+      "id": "J1-motor-envelope",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "motor_envelope",
+      "material": "purchased RS03",
+      "note": "",
+      "solid_count": 1,
+      "volume_mm3": 487039.2241304336,
+      "mass_kg": 0.92,
+      "density_assumption_kg_mm3": 1.8889649014257127e-06,
+      "com_mm": [
+        5.079314901667656e-15,
+        5.555052604239723e-15,
+        -29.19095281282131
+      ],
+      "bbox_size_mm": [
+        106.0,
+        106.0,
+        56.599999999999994
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          872.2492087526965,
+          -9.042880950695743e-15,
+          -3.6445463355040894e-14
+        ],
+        [
+          -9.042880950695743e-15,
+          872.2492087526965,
+          7.498598057655657e-14
+        ],
+        [
+          -3.6445463355040894e-14,
+          7.498598057655657e-14,
+          1276.0316038449919
+        ]
+      ]
+    },
+    {
+      "id": "J2-motor-envelope",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "role": "motor_envelope",
+      "material": "purchased RS04",
+      "note": "",
+      "solid_count": 1,
+      "volume_mm3": 592292.3169629179,
+      "mass_kg": 1.44,
+      "density_assumption_kg_mm3": 2.431231941997578e-06,
+      "com_mm": [
+        5.872600678230337e-15,
+        100.1643947330036,
+        -1.1498201364145103e-14
+      ],
+      "bbox_size_mm": [
+        120.0,
+        52.7,
+        120.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          1620.6431817043976,
+          1.85972910418017e-13,
+          -4.7235510614566476e-17
+        ],
+        [
+          1.85972910418017e-13,
+          2582.9738366065526,
+          1.9277970546204319e-13
+        ],
+        [
+          -4.7235510614566476e-17,
+          1.9277970546204319e-13,
+          1620.6431817043976
+        ]
+      ]
+    },
+    {
+      "id": "J2-dark-cuff",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "role": "printed_cover",
+      "material": "dark graphite PETG cuff",
+      "note": "2mm-class cosmetic cuff; bolt-on fixing, split line, ventilation and thermal validation pending.",
+      "solid_count": 1,
+      "volume_mm3": 36185.916526400484,
+      "mass_kg": 0.04595611398852861,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        -2.4103449704359302e-14,
+        98.25000000000007,
+        8.449659442481008e-14
+      ],
+      "bbox_size_mm": [
+        127.4488947760398,
+        44.2,
+        127.4488947760398
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          95.45136719528392,
+          -1.4883784040085363e-13,
+          -2.501264981002138e-14
+        ],
+        [
+          -1.4883784040085363e-13,
+          175.93911730181077,
+          -5.0731077574730675e-14
+        ],
+        [
+          -2.501264981002138e-14,
+          -5.0731077574730675e-14,
+          95.45136719528399
+        ]
+      ]
+    },
+    {
+      "id": "J3-motor-envelope",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "role": "motor_envelope",
+      "material": "purchased RS03",
+      "note": "",
+      "solid_count": 1,
+      "volume_mm3": 487039.2241304336,
+      "mass_kg": 0.92,
+      "density_assumption_kg_mm3": 1.8889649014257127e-06,
+      "com_mm": [
+        -0.6909528128213096,
+        -5.572102395937476e-15,
+        4.900044963961739e-15
+      ],
+      "bbox_size_mm": [
+        56.6,
+        106.0,
+        106.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          1276.0316038449917,
+          -5.045480157103933e-15,
+          -6.95035196823709e-15
+        ],
+        [
+          -5.045480157103933e-15,
+          872.2492087526961,
+          -2.671393280848794e-14
+        ],
+        [
+          -6.95035196823709e-15,
+          -2.671393280848794e-14,
+          872.2492087526962
+        ]
+      ]
+    },
+    {
+      "id": "J3-dark-cuff",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "role": "printed_cover",
+      "material": "dark graphite PETG cuff",
+      "note": "2mm-class cosmetic cuff; bolt-on fixing, split line, ventilation and thermal validation pending.",
+      "solid_count": 1,
+      "volume_mm3": 32733.105556769136,
+      "mass_kg": 0.0415710440570968,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        0.7499999999999828,
+        -2.028316962296106e-14,
+        -4.6653190547672056e-14
+      ],
+      "bbox_size_mm": [
+        46.1,
+        113.17461856112334,
+        113.17461856112334
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          125.06017954159341,
+          -7.170549142899025e-16,
+          1.4667376440421946e-18
+        ],
+        [
+          -7.170549142899025e-16,
+          69.89235631584528,
+          -3.596902488978537e-14
+        ],
+        [
+          1.4667376440421946e-18,
+          -3.596902488978537e-14,
+          69.89235631584525
+        ]
+      ]
+    },
+    {
+      "id": "J4-motor-envelope",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "role": "motor_envelope",
+      "material": "purchased RS03",
+      "note": "",
+      "solid_count": 1,
+      "volume_mm3": 487039.2241304336,
+      "mass_kg": 0.92,
+      "density_assumption_kg_mm3": 1.8889649014257127e-06,
+      "com_mm": [
+        5.572102395937476e-15,
+        -0.6909528128213096,
+        4.900044963961739e-15
+      ],
+      "bbox_size_mm": [
+        106.0,
+        56.6,
+        106.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          872.2492087526961,
+          1.1228513307138288e-14,
+          -8.279520870442204e-15
+        ],
+        [
+          1.1228513307138288e-14,
+          1276.0316038449917,
+          3.1494890935789314e-15
+        ],
+        [
+          -8.279520870442204e-15,
+          3.1494890935789314e-15,
+          872.2492087526962
+        ]
+      ]
+    },
+    {
+      "id": "J4-dark-cuff",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "role": "printed_cover",
+      "material": "dark graphite PETG cuff",
+      "note": "2mm-class cosmetic cuff; bolt-on fixing, split line, ventilation and thermal validation pending.",
+      "solid_count": 1,
+      "volume_mm3": 32733.105556769107,
+      "mass_kg": 0.041571044057096766,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        -1.0613932597220728e-14,
+        0.750000000000011,
+        4.5097221371116174e-14
+      ],
+      "bbox_size_mm": [
+        113.17461856112334,
+        46.1,
+        113.17461856112334
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          69.8923563158452,
+          -1.1821716154509186e-15,
+          1.0697684126703398e-14
+        ],
+        [
+          -1.1821716154509186e-15,
+          125.06017954159329,
+          1.057915279941777e-15
+        ],
+        [
+          1.0697684126703398e-14,
+          1.057915279941777e-15,
+          69.89235631584518
+        ]
+      ]
+    },
+    {
+      "id": "J5-motor-envelope",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "motor_envelope",
+      "material": "purchased RS06",
+      "note": "",
+      "solid_count": 1,
+      "volume_mm3": 301209.6204408823,
+      "mass_kg": 0.621,
+      "density_assumption_kg_mm3": 2.0616871369879843e-06,
+      "com_mm": [
+        1.0846837482790962e-15,
+        60.48295750850036,
+        7.584919391052448e-15
+      ],
+      "bbox_size_mm": [
+        88.0,
+        50.5,
+        88.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          425.1765469746528,
+          2.942740581583856e-14,
+          8.700111203336964e-15
+        ],
+        [
+          2.942740581583856e-14,
+          596.189272314096,
+          -4.0605005790054483e-14
+        ],
+        [
+          8.700111203336964e-15,
+          -4.0605005790054483e-14,
+          425.1765469746528
+        ]
+      ]
+    },
+    {
+      "id": "J5-dark-cuff",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "printed_cover",
+      "material": "dark graphite PETG cuff",
+      "note": "2mm-class cosmetic cuff; bolt-on fixing, split line, ventilation and thermal validation pending.",
+      "solid_count": 1,
+      "volume_mm3": 23627.075838637495,
+      "mass_kg": 0.030006386315069616,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        8.430130797758398e-15,
+        58.74999999999998,
+        -1.8484577037649886e-14
+      ],
+      "bbox_size_mm": [
+        94.82197771337361,
+        41.0,
+        94.82197771337361
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          35.697198964496096,
+          -1.6467379390644425e-14,
+          -1.232200015161917e-14
+        ],
+        [
+          -1.6467379390644425e-14,
+          62.987608696387014,
+          -2.42341172416505e-14
+        ],
+        [
+          -1.232200015161917e-14,
+          -2.42341172416505e-14,
+          35.69719896449613
+        ]
+      ]
+    },
+    {
+      "id": "J6-motor-envelope",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "role": "motor_envelope",
+      "material": "purchased RS00",
+      "note": "",
+      "solid_count": 1,
+      "volume_mm3": 130524.53537685855,
+      "mass_kg": 0.313,
+      "density_assumption_kg_mm3": 2.3980165805324413e-06,
+      "com_mm": [
+        -5.016958561743389e-16,
+        2.270735184291075e-15,
+        72.12422482835807
+      ],
+      "bbox_size_mm": [
+        57.0,
+        57.0,
+        51.39999999999999
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          131.6071645627965,
+          -2.088404889376669e-15,
+          9.86414162601307e-15
+        ],
+        [
+          -2.088404889376669e-15,
+          131.6071645627965,
+          -2.4778708535387463e-14
+        ],
+        [
+          9.86414162601307e-15,
+          -2.4778708535387463e-14,
+          126.71337476176825
+        ]
+      ]
+    },
+    {
+      "id": "J6-dark-cuff",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "role": "printed_cover",
+      "material": "dark graphite PETG cuff",
+      "note": "2mm-class cosmetic cuff; bolt-on fixing, split line, ventilation and thermal validation pending.",
+      "solid_count": 1,
+      "volume_mm3": 15542.379396920762,
+      "mass_kg": 0.019738821834089367,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        -6.2905863988856174e-15,
+        -3.710653852322309e-14,
+        70.20000000000002
+      ],
+      "bbox_size_mm": [
+        63.21465180891574,
+        63.21465180891574,
+        43.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          12.08168747609775,
+          1.4833312474653323e-15,
+          5.621044727237049e-15
+        ],
+        [
+          1.4833312474653323e-15,
+          12.08168747609775,
+          2.3168978800042975e-14
+        ],
+        [
+          5.621044727237049e-15,
+          2.3168978800042975e-14,
+          18.080528023656736
+        ]
+      ]
+    },
+    {
+      "id": "J7-motor-envelope",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "motor_envelope",
+      "material": "purchased RS00",
+      "note": "",
+      "solid_count": 1,
+      "volume_mm3": 130524.53537685855,
+      "mass_kg": 0.313,
+      "density_assumption_kg_mm3": 2.3980165805324413e-06,
+      "com_mm": [
+        -0.12422482835807282,
+        -1.939810708255767e-15,
+        1.1427516723971053e-15
+      ],
+      "bbox_size_mm": [
+        51.39999999999999,
+        57.0,
+        57.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          126.71337476176824,
+          2.5223936225326077e-15,
+          7.460652001293607e-19
+        ],
+        [
+          2.5223936225326077e-15,
+          131.60716456279636,
+          2.2159455114551657e-16
+        ],
+        [
+          7.460652001293607e-19,
+          2.2159455114551657e-16,
+          131.60716456279633
+        ]
+      ]
+    },
+    {
+      "id": "J7-dark-cuff",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "printed_cover",
+      "material": "dark graphite PETG cuff",
+      "note": "2mm-class cosmetic cuff; bolt-on fixing, split line, ventilation and thermal validation pending.",
+      "solid_count": 1,
+      "volume_mm3": 15542.379396920776,
+      "mass_kg": 0.019738821834089385,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        1.800000000000014,
+        4.432669020610094e-15,
+        3.1222052990131313e-14
+      ],
+      "bbox_size_mm": [
+        43.0,
+        63.21465180891574,
+        63.21465180891574
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          18.08052802365678,
+          6.831130744906152e-17,
+          -9.765429233126871e-17
+        ],
+        [
+          6.831130744906152e-17,
+          12.08168747609766,
+          -1.4833312474653356e-15
+        ],
+        [
+          -9.765429233126871e-17,
+          -1.4833312474653356e-15,
+          12.081687476097667
+        ]
+      ]
+    },
+    {
+      "id": "J7-6807-1",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "hardware",
+      "material": "NSK 6807 purchased steel bearing",
+      "note": "Original envelope, not supplier internal CAD; 35x47x7mm, C0r4100N; mounted mass assigned stator for gravity bookkeeping.",
+      "solid_count": 1,
+      "volume_mm3": 5409.822549481742,
+      "mass_kg": 0.027,
+      "density_assumption_kg_mm3": 4.990921560372916e-06,
+      "com_mm": [
+        39.699999999999996,
+        3.0782614100822313e-13,
+        -8.723266956820911e-16
+      ],
+      "bbox_size_mm": [
+        7.0,
+        47.0,
+        47.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          11.574197691277094,
+          -2.5865888070480382e-15,
+          3.4447447936413452e-15
+        ],
+        [
+          -2.5865888070480382e-15,
+          5.897348845638511,
+          3.975637903991386e-16
+        ],
+        [
+          3.4447447936413452e-15,
+          3.975637903991386e-16,
+          5.897348845638511
+        ]
+      ]
+    },
+    {
+      "id": "J7-6807-2",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "hardware",
+      "material": "NSK 6807 purchased steel bearing",
+      "note": "Original envelope, not supplier internal CAD; 35x47x7mm, C0r4100N; mounted mass assigned stator for gravity bookkeeping.",
+      "solid_count": 1,
+      "volume_mm3": 5409.822549481742,
+      "mass_kg": 0.027,
+      "density_assumption_kg_mm3": 4.990921560372916e-06,
+      "com_mm": [
+        50.70000000000001,
+        3.0782614100822313e-13,
+        -8.723266956820911e-16
+      ],
+      "bbox_size_mm": [
+        7.0,
+        47.0,
+        47.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          11.574197691277105,
+          -6.8579753843852165e-15,
+          -1.2120847268266618e-17
+        ],
+        [
+          -6.8579753843852165e-15,
+          5.89734884563859,
+          3.975637903991389e-16
+        ],
+        [
+          -1.2120847268266618e-17,
+          3.975637903991389e-16,
+          5.89734884563859
+        ]
+      ]
+    },
+    {
+      "id": "B7-output-flange",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "D60 project flange, 3 M4 on PCD45 with rear nut traps; 6 recessed M3 motor bolts. Journal must be fit-tested; printed journal is not a precision metal shaft.",
+      "solid_count": 1,
+      "volume_mm3": 49417.86626374736,
+      "mass_kg": 0.05683054620330844,
+      "density_assumption_kg_mm3": 1.1499999999999792e-06,
+      "com_mm": [
+        49.92444803807125,
+        -2.3141207044729748e-14,
+        1.4642585933442988e-13
+      ],
+      "bbox_size_mm": [
+        40.0,
+        60.0,
+        60.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          16.005543102438562,
+          1.5546851179023257e-14,
+          6.952039154347432e-15
+        ],
+        [
+          1.5546851179023257e-14,
+          16.479214584591904,
+          1.949670274944646e-14
+        ],
+        [
+          6.952039154347432e-15,
+          1.949670274944646e-14,
+          16.47921476520813
+        ]
+      ]
+    },
+    {
+      "id": "J7-bearing-cage",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "47.2mm prototype seat; 6807 outer rings supported by 44.8mm shoulders; gauge fit and axial stack before load test.",
+      "solid_count": 1,
+      "volume_mm3": 78175.63790117955,
+      "mass_kg": 0.08990198358635304,
+      "density_assumption_kg_mm3": 1.149999999999956e-06,
+      "com_mm": [
+        43.82127713177396,
+        1.5478792924522942e-12,
+        1.4819087440197681e-13
+      ],
+      "bbox_size_mm": [
+        20.900000000000006,
+        84.0,
+        84.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          103.86743646078804,
+          -2.2203759308147842e-05,
+          -2.2897638595180986e-14
+        ],
+        [
+          -2.2203759308147842e-05,
+          55.15129779595518,
+          2.288203382377558e-15
+        ],
+        [
+          -2.2897638595180986e-14,
+          2.288203382377558e-15,
+          55.15139519303737
+        ]
+      ]
+    },
+    {
+      "id": "J7-bearing-retainer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "Bolted outer-ring front retainer; 1mm nominal clearance to rotating flange.",
+      "solid_count": 1,
+      "volume_mm3": 9739.816872071764,
+      "mass_kg": 0.011200789402882067,
+      "density_assumption_kg_mm3": 1.1499999999999526e-06,
+      "com_mm": [
+        55.44739894461153,
+        1.4518922552052742e-12,
+        -1.6030845854461668e-13
+      ],
+      "bbox_size_mm": [
+        2.5,
+        84.0,
+        84.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          12.65290920166918,
+          -1.0921781293086007e-14,
+          -9.129127770838768e-16
+        ],
+        [
+          -1.0921781293086007e-14,
+          6.3322659335665215,
+          1.7092338968293608e-16
+        ],
+        [
+          -9.129127770838768e-16,
+          1.7092338968293608e-16,
+          6.332265933566547
+        ]
+      ]
+    },
+    {
+      "id": "J7-inner-spacer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "Axial inner-ring spacer; shim to avoid binding; do not preload by deforming printed cage.",
+      "solid_count": 1,
+      "volume_mm3": 376.5709304133652,
+      "mass_kg": 0.00043305656997536164,
+      "density_assumption_kg_mm3": 1.1499999999999778e-06,
+      "com_mm": [
+        55.949999999999974,
+        -3.974516081106283e-13,
+        -1.020960327106276e-14
+      ],
+      "bbox_size_mm": [
+        3.5,
+        37.0,
+        37.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.14060912143725138,
+          4.587282149579446e-17,
+          1.2972861847667187e-16
+        ],
+        [
+          4.587282149579446e-17,
+          0.07074663930047607,
+          1.955006091144894e-17
+        ],
+        [
+          1.2972861847667187e-16,
+          1.955006091144894e-17,
+          0.07074663930047635
+        ]
+      ]
+    },
+    {
+      "id": "S00-waisted-base-transition",
+      "owner": 0,
+      "frame": "world",
+      "role": "printed_cover",
+      "material": "grey PETG removable pedestal",
+      "note": "Body-side transition proposal only; does not modify original B04 desk clamp files.",
+      "solid_count": 1,
+      "volume_mm3": 69150.64280863816,
+      "mass_kg": 0.08782131636697046,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        0.00013372075405961552,
+        -4.3652376628918247e-10,
+        71.29209173768938
+      ],
+      "bbox_size_mm": [
+        166.00000020000041,
+        156.0000001527954,
+        82.00000020000002
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          245.6983627124104,
+          0.062416913296318835,
+          0.6740616302665646
+        ],
+        [
+          0.062416913296318835,
+          257.07948264312205,
+          -0.302980713723502
+        ],
+        [
+          0.6740616302665646,
+          -0.302980713723502,
+          403.1445509532576
+        ]
+      ]
+    }
+  ]
+}
