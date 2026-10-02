@@ -1,0 +1,912 @@
+{
+  "status": "candidate-layout-audit; findings remain; not assembly or manufacturing release",
+  "io_transform_local": "X=58-u;Y=76-v;Z=20+w",
+  "io_transform_old_global": "X=-Xold;Y=85+Zold;Z=47+Yold",
+  "service_transform_local": "X=-60-v;Y=87+u;Z=23+w",
+  "io_native_candidate_changes": {
+    "J2": "u=58,v unchanged, all J2 shapes X-38",
+    "J6": "u=42,v=20, all J6 shapes X+4,Y-8"
+  },
+  "sources_sha256": {
+    "engineering/base_b04/build/manifest.json": "cc1c627922433898e8360e8b082aee711af7e6cf6be167912eaa3bd1fe528e1c",
+    "engineering/base_b04/build/parts/B04-101-DECK.step": "5c7143b3a46f77873657e9427e9778b4737395a23bfd28948a385bac0b133d3b",
+    "engineering/base_b04/build/parts/B04-102-CPLATE-L.step": "0ae3fb645368fe141c6aed7717177385b616d669994a87ab205231e7ca8c0deb",
+    "engineering/base_b04/build/parts/B04-102-CPLATE-R.step": "f9a107fc6c2f704d4a62669121f7f06fa6b95b71f82f788d962274229469cd30",
+    "engineering/base_b04/build/parts/B04-103-BRIDGE.step": "2c7e0e592b36daccdeef9cea839ea828a75f73feb04eb4344c9b52136b6a2ace",
+    "engineering/base_b04/build/parts/B04-104-FLANGE.step": "cc60e916f18fd599cd1cd7adb0bcf594ca01e5f8cab2e96495bbc17ada9595eb",
+    "engineering/base_b04/build/parts/B04-105-POST-1.step": "c9bbf896d46153d6bcf1d1392176582f0e242b307c462df04f65577f3f58e3c8",
+    "engineering/base_b04/build/parts/B04-105-POST-2.step": "99af7ad5e990f3e1f0e19708263b10e88d036f5775a8a0d7bbb8e78bd483edce",
+    "engineering/base_b04/build/parts/B04-105-POST-3.step": "9ec5005d8bf51ba84da64bff509f9fb1b33713b78d16fa4bfa39f69776f81e5c",
+    "engineering/base_b04/build/parts/B04-105-POST-4.step": "dc906e56d031a343d96a9759f18007b01d4006486ff8490f91ceab32fecfedde",
+    "engineering/base_b04/build/parts/B04-107-PRESSPAD--1.step": "451f2b2b4e6afea9a3812cb5eff7f16ab94b95b87b0b71c7f0645c298731e4dd",
+    "engineering/base_b04/build/parts/B04-107-PRESSPAD-1.step": "e41338d6212aa828d8318dece76896fbdc8473694cf592778ef7ade883ec71e6",
+    "engineering/base_b04/build/parts/B04-201-CRADLE-L.step": "0a014fa384f15f56e4dcc999d0525b7f544acafac144c87a4b90f0ce312c794d",
+    "engineering/base_b04/build/parts/B04-201-CRADLE-R.step": "e687cdbb54aa99db9e0233c3698c38cc01a4938cb5f24ed80f84ae3d2a5d23a6",
+    "engineering/base_b04/build/parts/B04-202-TRAY.step": "1ad7379404d906c259e53e75d567306e829159833adc6c5e9741b7e49309c7a5",
+    "engineering/base_b04/build/parts/B04-203-STOP-REAR.step": "646c982f2aef21ce2ae98be7183394be15e645256783baeab7b638ae329adaa1",
+    "engineering/base_b04/build/parts/B04-203-STOP-FRONT.step": "5a2b5c56dfc1d170a7ca347be08a34c136a9fd8337f6f783a3b4a7bd487b29b2",
+    "engineering/electronics/base-rear-interface01/mechanical/parts.json": "fb9d11bc0bc990f87ae87d9f213528edcbe81f3c36ea74098f8edc0d78806fe2",
+    "engineering/electronics/base-rear-interface01/mechanical/base-rear-interface01-local.step": "869e15e8723bc72f99aac7b4a8fe299c91e8642b56a71e6d51cec6fe0b3efdfc",
+    "engineering/electronics/base-b04/mechanical/verification.json": "323c1df85c69039e714f55a22716d1fa8228ffb191c9710226d7b872ff699783",
+    "engineering/electronics/base-b04/mechanical/base-b04-local.step": "69b9df4cb73f9e7782d5da529ccf7528e488fa1add484129f3fee3f49de47257",
+    "engineering/base_b04/parameters.json": "ade8ac2c6b0f32550a06f205436ecb0b6e69a4a5d23e0dd507bbba71dee457e7"
+  },
+  "scope": "Exact STEP BREP for metal; native board and component planning envelopes read from STEP. Connector plugs include stated rectangular planning reserves. No current B05 shell yet.",
+  "bounds_mm": {
+    "io_fixed": [
+      [
+        -58.00000000000001,
+        12.500000000000007,
+        16.6
+      ],
+      [
+        58.0,
+        76.00000000000001,
+        40.0
+      ]
+    ],
+    "service_native_plus_mated": [
+      [
+        -110.0,
+        77.5,
+        20.5
+      ],
+      [
+        -59.99999999999999,
+        174.3,
+        35.7
+      ]
+    ]
+  },
+  "pairs_with_less_than_5mm_distance": {
+    "io_fixed_vs_metal": [
+      {
+        "a": "J3_tail_0",
+        "b": "B04-101-DECK",
+        "distance_mm": 2.6000000000000014,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J3_tail_1",
+        "b": "B04-101-DECK",
+        "distance_mm": 2.6000000000000014,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J3_tail_2",
+        "b": "B04-101-DECK",
+        "distance_mm": 2.6000000000000014,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J3_tail_3",
+        "b": "B04-101-DECK",
+        "distance_mm": 2.6000000000000014,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J3_tail_4",
+        "b": "B04-101-DECK",
+        "distance_mm": 2.6000000000000014,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J3_tail_5",
+        "b": "B04-101-DECK",
+        "distance_mm": 2.6000000000000014,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "BRI01_PCB",
+        "b": "B04-105-POST-1",
+        "distance_mm": 2.999999999999986,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "BRI01_PCB",
+        "b": "B04-105-POST-2",
+        "distance_mm": 3.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_0",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_1",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_2",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_3",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_4",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_5",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_6",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_7",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_8",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J1_tail_9",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_0",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_1",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_2",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_3",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_4",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_5",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_6",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_7",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_8",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_tail_9",
+        "b": "B04-101-DECK",
+        "distance_mm": 4.300000000000001,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "old_J2_plug_counterexample": [
+      {
+        "a": "old_J2_plug",
+        "b": "B04-105-POST-2",
+        "distance_mm": 0.0,
+        "intersection_mm3": 6469.882078666312
+      },
+      {
+        "a": "old_J2_plug",
+        "b": "B04-104-FLANGE",
+        "distance_mm": 2.1000000000000014,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "io_J2_moved_vs_other_components": [
+      {
+        "a": "J2_shell_reference",
+        "b": "J6_lug_nut_reservation",
+        "distance_mm": 3.5,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "io_J6_moved_vs_other_components": [
+      {
+        "a": "J6_lug_nut_reservation",
+        "b": "J2_shell_reference",
+        "distance_mm": 3.5,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "service_fixed_and_mated_vs_metal": [
+      {
+        "a": "PCB",
+        "b": "B04-102-CPLATE-L",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "PCB",
+        "b": "B04-105-POST-1",
+        "distance_mm": 4.0,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "io_plug_planning_vs_metal": [
+      {
+        "a": "J2_internal_plug_planning",
+        "b": "B04-104-FLANGE",
+        "distance_mm": 2.1000000000000014,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "J2_internal_release_planning",
+        "b": "B04-104-FLANGE",
+        "distance_mm": 2.1000000000000014,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "service_vs_io_fixed": [],
+    "service_vs_io_plug_planning": [],
+    "service_support_vs_board_components": [
+      {
+        "a": "SERVICE-POST-0",
+        "b": "PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-1",
+        "b": "PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-2",
+        "b": "PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-3",
+        "b": "PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-0",
+        "b": "J1",
+        "distance_mm": 2.0000000000000027,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-1",
+        "b": "J2",
+        "distance_mm": 3.198890432634413,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-0",
+        "b": "J1_mating_plug_extension",
+        "distance_mm": 3.8123333981057352,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-0",
+        "b": "PIN-41",
+        "distance_mm": 3.9957731058639094,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-1",
+        "b": "J2_mating_plug_extension",
+        "distance_mm": 4.858255755654403,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "service_head_vs_board_components": [
+      {
+        "a": "SERVICE-M3-HEAD-0",
+        "b": "PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-1",
+        "b": "PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-2",
+        "b": "PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-3",
+        "b": "PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-0",
+        "b": "J1",
+        "distance_mm": 0.9000000000000057,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-1",
+        "b": "J2",
+        "distance_mm": 2.469999999999999,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-0",
+        "b": "J1_mating_plug_extension",
+        "distance_mm": 3.160330322138688,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-0",
+        "b": "PIN-41",
+        "distance_mm": 4.027249539080858,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-0",
+        "b": "J1_mated_height_reservation",
+        "distance_mm": 4.096950085124301,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-1",
+        "b": "J2_mating_plug_extension",
+        "distance_mm": 4.287226720726709,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-M3-HEAD-1",
+        "b": "J2_mated_height_reservation",
+        "distance_mm": 4.942762385549197,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "service_support_vs_metal": [
+      {
+        "a": "SERVICE-POST-0",
+        "b": "B04-101-DECK",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-1",
+        "b": "B04-101-DECK",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-2",
+        "b": "B04-101-DECK",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-3",
+        "b": "B04-101-DECK",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "SERVICE-POST-1",
+        "b": "B04-102-CPLATE-L",
+        "distance_mm": 1.7999999999999972,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "io_support_vs_components": [
+      {
+        "a": "IO-POST-0",
+        "b": "BRI01_PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "IO-POST-1",
+        "b": "BRI01_PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "IO-POST-2",
+        "b": "BRI01_PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "IO-POST-3",
+        "b": "BRI01_PCB",
+        "distance_mm": 0.0,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "IO-POST-2",
+        "b": "J3_header_reference",
+        "distance_mm": 2.0489997559785134,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "IO-POST-1",
+        "b": "J4_tail_2",
+        "distance_mm": 2.795202248465015,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "IO-POST-3",
+        "b": "J1_spring_reservation_7.5",
+        "distance_mm": 3.373796081567473,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "IO-POST-3",
+        "b": "J1_tail_8",
+        "distance_mm": 3.4634824290774886,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "IO-POST-1",
+        "b": "J4_M3_stud",
+        "distance_mm": 3.533306225689665,
+        "intersection_mm3": 0.0
+      },
+      {
+        "a": "IO-POST-3",
+        "b": "J1_shell_reference",
+        "distance_mm": 3.667424164178454,
+        "intersection_mm3": 0.0
+      }
+    ],
+    "service_vs_central_d60_keepout": []
+  },
+  "service_support_footprints": [
+    {
+      "name": "SERVICE-POST-0",
+      "centre": [
+        -65.0,
+        92.0
+      ],
+      "footprint_outside_deck_area_mm2": 0.0,
+      "centre_to_straight_deck_edge_mm": 45.0,
+      "pilot_edge_ligament_mm": 43.75
+    },
+    {
+      "name": "SERVICE-POST-1",
+      "centre": [
+        -105.0,
+        92.0
+      ],
+      "footprint_outside_deck_area_mm2": 0.0,
+      "centre_to_straight_deck_edge_mm": 5.0,
+      "pilot_edge_ligament_mm": 3.75
+    },
+    {
+      "name": "SERVICE-POST-2",
+      "centre": [
+        -105.0,
+        162.0
+      ],
+      "footprint_outside_deck_area_mm2": 0.0,
+      "centre_to_straight_deck_edge_mm": 5.0,
+      "pilot_edge_ligament_mm": 3.75
+    },
+    {
+      "name": "SERVICE-POST-3",
+      "centre": [
+        -65.0,
+        162.0
+      ],
+      "footprint_outside_deck_area_mm2": 0.0,
+      "centre_to_straight_deck_edge_mm": 45.0,
+      "pilot_edge_ligament_mm": 43.75
+    }
+  ],
+  "service_plug_pull_samples": {
+    "J1": [],
+    "J2": [],
+    "J3": []
+  },
+  "global_min_distances_mm": {
+    "service_vs_io_fixed": 11.267652816802604,
+    "service_vs_frame": 0.0,
+    "io_fixed_vs_frame": 2.6000000000000014
+  },
+  "not_checked": [
+    "B05 Blender shell yet unavailable",
+    "screw shaft/thread and new deck tapping geometry",
+    "flexible cable bend path",
+    "RJ45 plug actual mated position and latch movement",
+    "power ring terminal final wire envelope",
+    "FDM dimensional errors",
+    "electrical insulation or load strength"
+  ],
+  "recommended_service_candidate": {
+    "transform_local": "X=-58-v;Y=87+u;Z=23+w",
+    "holes_xyz": [
+      [
+        -63,
+        92,
+        23
+      ],
+      [
+        -103,
+        92,
+        23
+      ],
+      [
+        -103,
+        162,
+        23
+      ],
+      [
+        -63,
+        162,
+        23
+      ]
+    ],
+    "bounds_mm": [
+      [
+        -108.0,
+        77.5,
+        20.5
+      ],
+      [
+        -57.99999999999999,
+        174.3,
+        35.7
+      ]
+    ],
+    "minimum_vs_metal_mm": 2.0,
+    "minimum_vs_io_mm": 9.980480950335012,
+    "pairs_less_than_5mm": {
+      "service_vs_frame": [
+        {
+          "a": "PCB",
+          "b": "B04-102-CPLATE-L",
+          "distance_mm": 2.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PCB",
+          "b": "B04-105-POST-1",
+          "distance_mm": 2.0,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "service_vs_io": [],
+      "service_vs_io_plugs": [],
+      "service_vs_old_cover_posts_if_retained": [
+        {
+          "a": "PCB",
+          "b": "OLD-COVER-POST-2",
+          "distance_mm": 0.0,
+          "intersection_mm3": 27.11978102203054
+        },
+        {
+          "a": "PIN-46",
+          "b": "OLD-COVER-POST-2",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.03165714384617594
+        },
+        {
+          "a": "J2",
+          "b": "OLD-COVER-POST-2",
+          "distance_mm": 0.6000000000000014,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "R16",
+          "b": "OLD-COVER-POST-2",
+          "distance_mm": 2.2839230327591853,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "PIN-45",
+          "b": "OLD-COVER-POST-2",
+          "distance_mm": 3.759999999999991,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "J2_mating_plug_extension",
+          "b": "OLD-COVER-POST-2",
+          "distance_mm": 4.895499279376798,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "new_service_support_vs_board": [
+        {
+          "a": "SERVICE-POST-0",
+          "b": "PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-POST-1",
+          "b": "PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-POST-2",
+          "b": "PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-POST-3",
+          "b": "PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-POST-0",
+          "b": "J1",
+          "distance_mm": 2.0000000000000027,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-POST-1",
+          "b": "J2",
+          "distance_mm": 3.198890432634413,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-POST-0",
+          "b": "J1_mating_plug_extension",
+          "distance_mm": 3.8123333981057352,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-POST-0",
+          "b": "PIN-41",
+          "distance_mm": 3.9957731058639094,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-POST-1",
+          "b": "J2_mating_plug_extension",
+          "distance_mm": 4.858255755654403,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "new_service_head_vs_board": [
+        {
+          "a": "SERVICE-M3-HEAD-0",
+          "b": "PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-1",
+          "b": "PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-2",
+          "b": "PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-3",
+          "b": "PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-0",
+          "b": "J1",
+          "distance_mm": 0.9000000000000057,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-1",
+          "b": "J2",
+          "distance_mm": 2.469999999999999,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-0",
+          "b": "J1_mating_plug_extension",
+          "distance_mm": 3.160330322138688,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-0",
+          "b": "PIN-41",
+          "distance_mm": 4.027249539080858,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-0",
+          "b": "J1_mated_height_reservation",
+          "distance_mm": 4.096950085124301,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-1",
+          "b": "J2_mating_plug_extension",
+          "distance_mm": 4.287226720726709,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-1",
+          "b": "J2_mated_height_reservation",
+          "distance_mm": 4.942762385549197,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "new_service_heads_vs_metal": [
+        {
+          "a": "SERVICE-M3-HEAD-1",
+          "b": "B04-102-CPLATE-L",
+          "distance_mm": 3.5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "SERVICE-M3-HEAD-0",
+          "b": "B04-105-POST-1",
+          "distance_mm": 3.6107702762748346,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "new_io_heads_vs_board": [
+        {
+          "a": "IO-M3-HEAD-0",
+          "b": "BRI01_PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-1",
+          "b": "BRI01_PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-2",
+          "b": "BRI01_PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-3",
+          "b": "BRI01_PCB",
+          "distance_mm": 0.0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-2",
+          "b": "J3_header_reference",
+          "distance_mm": 0.980000000000004,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-1",
+          "b": "J4_lug_nut_reservation",
+          "distance_mm": 1.25,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-3",
+          "b": "J1_spring_reservation_7.5",
+          "distance_mm": 1.9163767896736883,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-1",
+          "b": "J4_tail_2",
+          "distance_mm": 2.495202248465012,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-1",
+          "b": "J4_M3_stud",
+          "distance_mm": 2.541522986797284,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-3",
+          "b": "J1_shell_reference",
+          "distance_mm": 3.000000000000007,
+          "intersection_mm3": 0.0
+        },
+        {
+          "a": "IO-M3-HEAD-3",
+          "b": "J1_tail_8",
+          "distance_mm": 3.1634824290774888,
+          "intersection_mm3": 0.0
+        }
+      ],
+      "new_io_heads_vs_frame": [],
+      "service_vs_d60": []
+    },
+    "sampled_service_plug_pull_collisions": {
+      "J1": [],
+      "J2": [],
+      "J3": []
+    },
+    "required_support_geometry": "four new D6.4 posts from Z14 to23 with new deck holes; X-63/-103, Y92/162",
+    "old_cover_posts_not_allowed": "Remove/move OLD-COVER-POST-2 at(-98,95); shell mounting must be redesigned",
+    "housing_allocation_without_clearance_mm": [
+      [
+        -108.0,
+        77.5,
+        20.5
+      ],
+      [
+        -57.99999999999999,
+        174.3,
+        35.7
+      ]
+    ]
+  },
+  "method": {
+    "units": "mm",
+    "kernel": "CadQuery/OCC STEP BREP",
+    "pair_distance": "Shape.distance; rectangular connector reserves remain envelopes",
+    "positive_intersection_reporting_threshold_mm3": 0.01,
+    "near_pair_reporting_limit_mm": 5,
+    "transforms": "rigid rotations and translations preserve geometry",
+    "component_self_intersections": "Designed PCB/pin engagement excluded for moved J2/J6 because native PCB holes are not yet relocated",
+    "old_cover_posts": "D6.4 nominal envelope with D2.5 female bore, conditionally reconstructed from B04 model",
+    "new_screw_heads": "M3 D5.5 head x3 plus D7x0.5 washer reference, threads and tips excluded",
+    "metal_scope_excludes": "Purchased fastener bodies and thread shafts except separately stated new PCB heads; old cover-post envelopes examined conditionally"
+  },
+  "checked_at_utc": "2026-10-02T12:53:52.727063+00:00",
+  "audit_generators_sha256": {
+    "layout_audit_run.py": "ec783be65ef16351e6c9bfefaa06873398e8a9ea0ec49ed8d48e6a9daf7f62f5",
+    "layout_audit_alternative.py": "466d663d94a92e52d0462b9a18906d4dd066019f689c21c2b3438eba8261d25f"
+  }
+}
