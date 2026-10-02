@@ -1,5 +1,7 @@
 # Odradek
 
+**2026-10-03 arm body / 本体更新：** [A09直管与平板重做](docs/arm-body-redesign-a09.md) · [七轴查看器](docs/viewers/arm-body-a09/index.html)。当前本体目标为裸臂法兰总外负载3 kg，不装四瓣头；A08外观被否定，A09是加工与比例提案，尚非承载发布版。
+
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
 [中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Comparison](docs/concept-comparison.md) · [Nickname candidates](docs/nickname-candidates.md) · [Roadmap](docs/roadmap.md)

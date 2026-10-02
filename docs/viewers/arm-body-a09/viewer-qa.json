@@ -1,0 +1,43 @@
+{
+  "scope": "design_viewer_only",
+  "checks": [
+    "Seven slider controls present; J2 and J7 keyboard input changes displayed angles and flange position.",
+    "Three representative presets and both variants exercised.",
+    "Cover visibility toggle visually checked.",
+    "J2=-70 and J4=-155 exact reference-pose conflict messages visibly verified.",
+    "Mobile default and desktop breakpoint visually reviewed.",
+    "Browser console error list empty after final review."
+  ],
+  "fk_sample": {
+    "variant": "long",
+    "q_deg": [
+      0,
+      74,
+      0,
+      -65,
+      65,
+      0,
+      1
+    ],
+    "displayed_flange_mm": [
+      -62.0,
+      650.05,
+      556.71
+    ],
+    "independent_flange_mm": [
+      -62.0,
+      650.05041567,
+      556.71215385
+    ],
+    "scope": "one browser displayed sample compared to analytic FK, not system validation"
+  },
+  "source_hashes": {
+    "slim": "28160f11431e2a5de9eeee26060b77ada006088f617d220acfb771768c24fa86",
+    "long": "1e2a795fe9956d22eb4c3d29739ea1df38e1655766cc634fb1023200c8dace7b"
+  },
+  "proof_sha256": "3e7736f6b4a9d5bd6180f349f885e466d39e0e28d560b8f5256710332e0b4026",
+  "limitations": [
+    "No real-time collision engine or control connection.",
+    "No physical load, cable life, thermal or assembly qualification."
+  ]
+}
