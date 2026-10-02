@@ -1,0 +1,50 @@
+{
+  "verified_at": "2026-10-02T13:05:22.195Z",
+  "desktop_version": "4.1.60.198f38ab",
+  "desktop_signature": "codesign --verify --deep --strict returned 0",
+  "adapter": {
+    "name": "odradek-lceda-cli-adapter",
+    "version": "0.1.0"
+  },
+  "configured_server_name": "lceda-pro",
+  "transport": "stdio",
+  "scope": "MCP transport and editor API readback; not PCB electrical or mechanical qualification",
+  "source_sha256": "b24a33416221a675251df03468293aee0ff9c93940c2d378ea1dbbfd1d0a8d2e",
+  "tools": [
+    "lceda_doctor",
+    "lceda_list_sessions",
+    "lceda_api_reference",
+    "lceda_format_reference",
+    "lceda_open_project",
+    "lceda_close_session",
+    "lceda_invoke"
+  ],
+  "doctor": {
+    "ok": true,
+    "value": {
+      "endpoint": "JLCEDAPro6c2cb8f9",
+      "connected": true,
+      "bridgeVersion": "4.1.60.198f38ab",
+      "versionMatch": true,
+      "resultChannel": true
+    },
+    "logs": [],
+    "durationMs": 92
+  },
+  "editor": {
+    "ok": true,
+    "value": {
+      "version": "4.1.60",
+      "client": true
+    },
+    "logs": [],
+    "durationMs": 3
+  },
+  "invalid_arguments_rejected": true,
+  "previous_codex_configuration_preserved": true,
+  "vendor_mcp_entrypoint": {
+    "supported_on_tested_build": false,
+    "actual_error": "MCP_NOT_SUPPORTED"
+  },
+  "limitation": "Adapter maintained by Odradek; vendor CLI/API remains the execution backend."
+}
