@@ -1,0 +1,30 @@
+{
+  "id": "ARM-A06-STATIC-BUDGET",
+  "date": "2026-10-02",
+  "status": "conditional_static_calculation_not_payload_rating",
+  "geometry": "arm-a05-layout.json",
+  "gravity_m_s2": [0, 0, -9.81],
+  "confirmed_net_workpiece_target_kg": 2,
+  "reference_scenario": {"payload_kg": 2, "head_kg": 1.5, "structure_scale": 1, "payload_com_in_tcp_mm": [0,0,0], "head_com_in_head_mm": [0,0,0]},
+  "sensitivity": {"payload_kg": [0,0.5,1,2], "head_kg": [0.8,1.2,1.5], "structure_scale": [0.6,1,1.6]},
+  "motor_mass_assumption": "Entire actuator catalogue mass at envelope centre on fixed carrier. Its own output-side mass is unknown; own-joint support wrench excludes that mass, while upstream gravitational torque includes it. No measured CAD mass properties.",
+  "structure_budget_note": "1.40 kg nominal bookkeeping allowance, not a measured or CAD-derived mass. Covers added brackets, links, bearings, housing and wires; excludes motors, detachable head, fixed base and workpiece. Sensitivity 0.84 to 2.24 kg is not a certified bound.",
+  "structure_groups": [
+    {"id":"shoulder_fixed_carrier", "frame":"J1.rotor", "mass_kg":0.22, "com_mm":[-25,20,50]},
+    {"id":"shoulder_output_and_upper_roll_mount", "frame":"J2.rotor", "mass_kg":0.20, "com_mm":[50,0,0]},
+    {"id":"upper_link_and_elbow_mount", "frame":"J3.rotor", "mass_kg":0.30, "com_mm":[90,30,0]},
+    {"id":"forearm_and_pitch_mount", "frame":"J4.rotor", "mass_kg":0.35, "com_mm":[95,88,0]},
+    {"id":"pitch_fork_and_yaw_mount", "frame":"J5.rotor", "mass_kg":0.18, "com_mm":[38,0,32]},
+    {"id":"yaw_output_and_roll_mount", "frame":"J6.rotor", "mass_kg":0.10, "com_mm":[35,0,0]},
+    {"id":"roll_output_quick_interface", "frame":"J7.rotor", "mass_kg":0.05, "com_mm":[29,0,0]}
+  ],
+  "sampling": {"halton_count": 2048, "basis": [2,3,5,7,11,13,17], "preset_transition_samples": 101},
+  "limitations": [
+    "Static gravity only. No speed, acceleration, reflected rotor inertia, friction, cable torque, shock or contact process forces.",
+    "All wrench moments are reported at the kinematic joint origin, not at a confirmed physical bearing or flange plane.",
+    "Motor centre-of-mass and output mass split remain unverified.",
+    "Only existing A05 proxy collision pairs are screened; no continuous collision or cable sweep proof.",
+    "Catalogue rated torque is a comparator, not the enclosed arm's continuous zero-speed holding capacity.",
+    "Structure allowance and head mass are scenarios, not revised requirements or selected manufactured masses."
+  ]
+}
