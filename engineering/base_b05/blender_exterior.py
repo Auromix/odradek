@@ -26,13 +26,14 @@ WALL = 3.0
 PARAMETERS = {
     "schema": "odradek.b05.blender-exterior.v1", "length_unit": "mm",
     "center_xy": CENTER, "wall_nominal_mm": WALL,
-    "outer_half_control_points": [[0, -45], [106, -45], [131, -28], [145, 23],
-                                  [138, 61], [119, 97], [90, 127], [64, 153],
-                                  [37, 184], [18, 202], [0, 205]],
+    "outer_half_control_points": [[0, -45], [106, -45], [130, -33], [146, -8],
+                                  [165, 17], [174, 35], [174, 44], [159, 53],
+                                  [135, 67], [126, 94], [117, 112], [94, 139],
+                                  [63, 166], [35, 196], [17, 205], [0, 207]],
     "inner_body_radius_mm": INNER_RADIUS,
     "collar_radius_mm": [52, 72], "collar_top_z_mm": [74, 58.5],
-    "design_intent": "Minimal alien carapace: swept shield shoulders, continuous flowing surfaces, rising neck, restrained seams",
-    "splits_mm": {"main_y_min": 30.4, "front_nose_seam": "Y = 145.4 - 0.24 * abs(X); nominal 0.8 mm gap",
+    "design_intent": "Manta-inspired alien mecha: swept wing shoulders, recessed waist, rounded wing tips, continuous crown and distinct outer chine, restrained seams",
+    "splits_mm": {"main_y_min": 30.4, "front_nose_seam": "Y = 145.4 - 0.12 * abs(X); nominal 0.8 mm gap",
                   "rear_y_max": 29.6, "rear_lid_x": [-75.6, 75.6],
                   "rear_shoulder_abs_x_min": 76.4, "main_center_gap": .8},
     "rear_cable_exit": {"x": [-42, 42], "y": [-60, -33], "z": [-8, 21], "corner_radius_mm": 4},
@@ -156,33 +157,32 @@ def radial_boundary(theta):
     return max(candidates)
 
 
+SURFACE_FRACTIONS = sorted(set([i/32 for i in range(33)] + [.08,.66,.70,.73]))
+
+
 def profile_height(fraction, x, y):
-    # Monotone cubic interpolation keeps the shell flowing without concentric
-    # polygonal bands. The small saddle changes the highlight near each shoulder.
-    keys = [(0., 58), (.09, 57.2), (.46, 43), (.67, 34), (.87, 19), (1., 8)]
-    secants = [(b[1]-a[1])/(b[0]-a[0]) for a,b in zip(keys,keys[1:])]
-    slopes = [secants[0]] + [2*a*b/(a+b) if a*b>0 else 0 for a,b in zip(secants,secants[1:])] + [secants[-1]]
-    z = 8.
-    for i, ((a, za), (b, zb)) in enumerate(zip(keys, keys[1:])):
+    # Broad crown and steep apron meet along a deliberate chine. The same
+    # piecewise profile drives both wings and nose, without the old local
+    # nose blend/saddle that produced lumpy, unrelated highlights.
+    keys = [(0.,58),(.08,58),(.66,41),(.70,40),(.73,37),(1.,8)]
+    z=8.
+    for (a,za),(b,zb) in zip(keys,keys[1:]):
         if a <= fraction <= b:
-            t=(fraction-a)/(b-a); h=b-a
-            z=(2*t**3-3*t**2+1)*za+(t**3-2*t**2+t)*h*slopes[i]+(-2*t**3+3*t**2)*zb+(t**3-t**2)*h*slopes[i+1]
+            z=za+(zb-za)*(fraction-a)/(b-a)
             break
-    theta=math.atan2(y-CENTER[1],x)
-    z-=2.2*math.sin(2*theta)**2*math.exp(-((fraction-.53)/.19)**2)
-    # The selected reference has a restrained planar nose highlight and a
-    # straight light slit; avoid a domed, eyebrow-like optical window.
-    nose_mix=smoothstep(155,173,y)*(1-smoothstep(24,65,abs(x)))*(1-smoothstep(.86,1.,fraction))
-    nose_plane=58-(y-147.6)*50/(205-147.6)-.007*x*x
-    z=(1-nose_mix)*z+nose_mix*nose_plane
-    rear_roof = (1 - smoothstep(22, 76, y)) * (1 - smoothstep(82, 143, abs(x)))
-    return z + max(0., 54 - z) * rear_roof
+    # A restrained lift reaches the wing extremity. The lower edge still
+    # returns to Z3; there is no separate ornamental spike or thin overhang.
+    wing = smoothstep(88,164,abs(x)) * (1-smoothstep(78,140,y))
+    z += 9.0 * wing * fraction**2
+    # Preserve only a central rear connection-bay volume; wings stay low.
+    rear_roof=(1-smoothstep(0,54,y))*(1-smoothstep(76,122,abs(x)))
+    return z+max(0.,54-z)*rear_roof
 
 
 def make_native_loft():
     vertices, faces = [], []
     # The first ring is the inner return wall, the last is the bottom skirt.
-    rings = [("inner_return", 0.)] + [("surface",i/24) for i in range(25)] + [("outer_skirt", 1.)]
+    rings = [("inner_return", 0.)] + [("surface",f) for f in SURFACE_FRACTIONS] + [("outer_skirt", 1.)]
     for kind, fraction in rings:
         for index in range(SEGMENTS):
             theta = 2 * math.pi * index / SEGMENTS
@@ -330,6 +330,22 @@ def finalize_mesh(obj):
     bmesh.ops.remove_doubles(bm, verts=list(bm.verts), dist=0.001 * M)
     bmesh.ops.dissolve_degenerate(bm, dist=0.001 * M, edges=list(bm.edges))
     bmesh.ops.triangulate(bm, faces=list(bm.faces))
+    # Boolean clipping can leave an pair of coincident opposite
+    # triangles (zero enclosed volume). Remove only that exact zero-volume artifact;
+    # preserve all legitimate disconnected solids so validation can reject them.
+    bm.verts.index_update()
+    bm.normal_update()
+    groups={}
+    for f in bm.faces:
+        groups.setdefault(tuple(sorted(v.index for v in f.verts)),[]).append(f)
+    artifacts=[]
+    for pair in groups.values():
+        if len(pair)==2 and all(len(f.verts)==3 for f in pair):
+            if pair[0].normal.dot(pair[1].normal)<-0.99999:
+                artifacts.extend(pair)
+    obj["Zero-volume Boolean artifact faces removed"]=len(artifacts)
+    if artifacts:
+        bmesh.ops.delete(bm,geom=artifacts,context="FACES")
     bmesh.ops.recalc_face_normals(bm, faces=list(bm.faces))
     bm.to_mesh(obj.data)
     bm.free()
@@ -371,8 +387,8 @@ def material(name, color, metallic=.65, roughness=.29, emission=0):
 
 
 MATERIALS = {
-    "armor": material("Graphite armor / finish reference", (.048, .059, .072, 1), .65, .29),
-    "nose": material("Nose graphite / finish reference", (.048, .059, .072, 1), .65, .29),
+    "armor": material("Graphite armor / finish reference", (.048, .059, .072, 1), .58, .36),
+    "nose": material("Nose graphite / finish reference", (.048, .059, .072, 1), .58, .36),
     "rear": material("Rear enclosure graphite", (.035, .045, .056, 1), .58, .31),
     "collar": material("Titanium-grey collar", (.072, .084, .096, 1), .72, .26),
     "lens": material("Amber light-window appearance", (1., .28, .015, 1), .02, .25, 1.6),
@@ -500,9 +516,9 @@ def main():
             obj = copy_mesh(master, pid)
             boolean(obj, box("Module split cutter", bounds), "INTERSECT")
             if pid == "B05-301-ARMOR-L":
-                boolean(obj,contour_prism("Swept shoulder boundary",[(-200,30.4),(-.4,30.4),(-.4,144.6),(-200,96.6)]),"INTERSECT")
+                boolean(obj,contour_prism("Swept shoulder boundary",[(-200,30.4),(-.4,30.4),(-.4,144.6),(-200,120.6)]),"INTERSECT")
             if pid == "B05-302-NOSE":
-                boolean(obj,contour_prism("Swept nose boundary",[(-200,97.4),(0,145.4),(200,97.4),(200,290),(-200,290)]),"INTERSECT")
+                boolean(obj,contour_prism("Swept nose boundary",[(-200,121.4),(0,145.4),(200,121.4),(200,290),(-200,290)]),"INTERSECT")
         notes = ["Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
                  "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm; new J1 axis XY(0,75), R70 flange reservation requires redesign",
                  "No load-bearing or manufacturing release; underside mounts are a separate integration task"]
@@ -539,7 +555,7 @@ def main():
     source.hide_set(True); master.hide_set(True); master.hide_render = True
     bpy.data.texts.new("B05 exterior parameters.json").write(json.dumps(PARAMETERS, ensure_ascii=False, indent=2))
     bpy.data.texts.new("B05 read me.txt").write("Native Blender exterior construction. Seven armor parts plus one lens. All STL coordinates are global millimetres. Print-parts are translations only, not optimized orientations. Shape review and unpowered fit prototype only. No mounting, physical strength or finished assembly claim. Source loft and solid master remain in the hidden construction collection.")
-    manifest = {"revision": "B05-EXTERIOR-SHAPE-04", "length_unit": "mm",
+    manifest = {"revision": "B05-EXTERIOR-SHAPE-05", "length_unit": "mm",
                 "scope": PARAMETERS["prototype_scope"], "parameters": PARAMETERS,
                 "parts": descriptors, "assembly_manifest": False,
                 "not_verified": ["physical printing", "supports/overhangs", "minimum wall audit", "self-intersections",
@@ -561,7 +577,7 @@ def main():
     bpy.ops.wm.save_as_mainfile(filepath=str(OUT / "ODR-BASE-B05-EXTERIOR.blend"))
     if "--no-render" not in sys.argv:
         views = [("front-three-quarter", (.39, .53, .34), .43),
-                 ("top", (0, .080, .85), .40),
+                 ("top", (0, .080, .85), .43),
                  ("rear", (-.36, -.47, .26), .43)]
         for name, position, scale in views:
             point_camera(camera, position, target, scale)

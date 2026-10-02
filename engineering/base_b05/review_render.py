@@ -8,7 +8,7 @@ out=Path(bpy.data.filepath).parent
 scene=bpy.context.scene
 camera=scene.camera
 target=Vector((0,.080,.034))
-views=[('front-three-quarter',(.39,.53,.34),.43),('top',(0,.080,.85),.40),('rear',(-.36,-.47,.26),.43)]
+views=[('front-three-quarter',(.39,.53,.34),.43),('top',(0,.080,.85),.43),('rear',(-.36,-.47,.26),.43)]
 for name,position,scale in views:
     camera.location=position
     camera.rotation_euler=(target-camera.location).to_track_quat('-Z','Y').to_euler()
