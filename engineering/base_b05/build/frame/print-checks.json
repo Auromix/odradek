@@ -1,0 +1,551 @@
+{
+  "schema": "odradek.print-checks.v1",
+  "checked_at_utc": "2026-10-02T13:07:10.985528+00:00",
+  "scope": "mesh integrity and per-instance print-bed envelope only; not manufacturing or load release",
+  "script_sha256": "93c87f2a77470376bbb73a7543d782ae6efb689d14cec6c067688be353c1321b",
+  "python": "3.12.14",
+  "trimesh_version": "5.1.0",
+  "numpy_version": "2.5.3",
+  "bed_mm": [
+    220,
+    220,
+    250
+  ],
+  "edge_margin_mm": 5.0,
+  "orthogonal_rotation_allowed": false,
+  "mesh_and_envelope_pass": true,
+  "files": [
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/frame/print-parts/B04-109-FOOT-CAGE--1--1-trial-mm.stl",
+      "sha256": "ab352966fd5b939ab40caeb1b049db64999846b9c0102e7cf04b3121aece2e21",
+      "instances": [
+        {
+          "name": "B04-109-FOOT-CAGE--1--1-trial-mm",
+          "vertices_before_weld": 3354,
+          "vertices_after_weld": 559,
+          "faces": 1118,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 2898.0913881932597,
+          "surface_area_mm2": 2148.1469430922602,
+          "bbox_mm": [
+            [
+              -16.998825073242188,
+              -14.899999618530273,
+              0.0
+            ],
+            [
+              16.998825073242188,
+              14.899999618530273,
+              10.0
+            ]
+          ],
+          "size_mm": [
+            33.997650146484375,
+            29.799999237060547,
+            10.0
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          33.997650146484375,
+          29.799999237060547,
+          10.0
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/frame/print-parts/B04-109-FOOT-CAGE--1-1-trial-mm.stl",
+      "sha256": "5e95147ad6d143ccc4132a538065db3e50bbf7c1aedd35569d8eb83d6e0736dd",
+      "instances": [
+        {
+          "name": "B04-109-FOOT-CAGE--1-1-trial-mm",
+          "vertices_before_weld": 3384,
+          "vertices_after_weld": 564,
+          "faces": 1128,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 2898.089024897335,
+          "surface_area_mm2": 2148.1454128009937,
+          "bbox_mm": [
+            [
+              -16.998825073242188,
+              -14.899999618530273,
+              0.0
+            ],
+            [
+              16.998825073242188,
+              14.899999618530273,
+              10.0
+            ]
+          ],
+          "size_mm": [
+            33.997650146484375,
+            29.799999237060547,
+            10.0
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          33.997650146484375,
+          29.799999237060547,
+          10.0
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/frame/print-parts/B04-109-FOOT-CAGE-1--1-trial-mm.stl",
+      "sha256": "74152e1d23d3dc5504d6b2074e7fd9e0bbd72c17cd8af36f49aec7221d7e01b1",
+      "instances": [
+        {
+          "name": "B04-109-FOOT-CAGE-1--1-trial-mm",
+          "vertices_before_weld": 3354,
+          "vertices_after_weld": 559,
+          "faces": 1118,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 2898.0913881932597,
+          "surface_area_mm2": 2148.1469430922602,
+          "bbox_mm": [
+            [
+              -16.998825073242188,
+              -14.899999618530273,
+              0.0
+            ],
+            [
+              16.998825073242188,
+              14.899999618530273,
+              10.0
+            ]
+          ],
+          "size_mm": [
+            33.997650146484375,
+            29.799999237060547,
+            10.0
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          33.997650146484375,
+          29.799999237060547,
+          10.0
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/frame/print-parts/B04-109-FOOT-CAGE-1-1-trial-mm.stl",
+      "sha256": "73ca141f9066c032de793b6520b975bfe439bc0404eb38fd47ff46831dab8cb1",
+      "instances": [
+        {
+          "name": "B04-109-FOOT-CAGE-1-1-trial-mm",
+          "vertices_before_weld": 3384,
+          "vertices_after_weld": 564,
+          "faces": 1128,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 2898.089024897335,
+          "surface_area_mm2": 2148.1454128009937,
+          "bbox_mm": [
+            [
+              -16.998825073242188,
+              -14.899999618530273,
+              0.0
+            ],
+            [
+              16.998825073242188,
+              14.899999618530273,
+              10.0
+            ]
+          ],
+          "size_mm": [
+            33.997650146484375,
+            29.799999237060547,
+            10.0
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          33.997650146484375,
+          29.799999237060547,
+          10.0
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    }
+  ],
+  "not_checked": [
+    "self intersections",
+    "minimum walls",
+    "supports and overhangs",
+    "layer strength",
+    "bed adhesion and distortion",
+    "mating tolerances",
+    "insert retention",
+    "assembly collision",
+    "connector or cable fit",
+    "payload or clamp capacity"
+  ]
+}
