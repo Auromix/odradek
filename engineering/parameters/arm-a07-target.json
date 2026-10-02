@@ -1,0 +1,15 @@
+{
+  "id": "ARM-A07-BARE-FLANGE",
+  "date": "2026-10-02",
+  "status": "confirmed_design_target_physical_qualification_pending",
+  "payload_kg": 3,
+  "payload_definition": "Total external load carried by bare-arm output flange; no petal head installed in this revision.",
+  "flange_frame": {"parent":"J7.rotor","translation_mm":[65.7,0,0],"axial_direction":[1,0,0],"note":"Prototype flange: source RS00 output face at +25.7 mm from centred 51.4 mm housing, 32 mm journal and 8 mm flange, with separate double-6807 bearing cartridge. Actual contact-face mismatch requires fit coupon and shims before powered assembly."},
+  "nominal_com_in_flange_mm": [0,0,0],
+  "com_screening_mm": {"axial":[0,50,100,150],"radial":[0,25,50,100]},
+  "proposed_motion_screening": {"joint_speed_deg_s":25,"joint_acceleration_deg_s2":30,"status":"engineering screening assumption, not confirmed performance"},
+  "head_installed": false,
+  "geometry_source":"arm-a05-layout.json",
+  "reach_note":"Current geometry is 550 mm shoulder-to-J7 axial chain plus 65.7 mm prototype flange; do not reinterpret the historical 700 mm shoulder-to-head-task-TCP as a 700 mm bare-flange requirement.",
+  "qualification_gates":["exact motor interface and purchased hardware fit","load-path and bearing qualification","enclosed zero-speed thermal test","dynamic trajectory and cable sweep","printed material and assembled prototype proof test"]
+}
