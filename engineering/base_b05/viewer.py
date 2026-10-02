@@ -106,8 +106,11 @@ def collect(build_dir):
         if isinstance(notes, str):
             notes = [notes]
         part = {key: source.get(key, "") for key in ("id", "name", "material", "process", "category")}
+        color=source.get("color", [.4,.45,.5])
+        if source.get("color_space") == "linear":
+            color=[max(0,min(1,float(c)))**(1/2.2) for c in color[:3]]
         part.update(group=GROUP_NAMES.get(group_key, group_key), group_key=group_key, role=role,
-                    color=source.get("color", [.4, .45, .5]), notes=notes, bbox=bbox,
+                    color=color, notes=notes, bbox=bbox,
                     prototype_status=source.get("prototype_status", "数字几何模型；实物试装待验证"),
                     explode_mm=explode_vector(source, role, bbox), stl=stl,
                     v=encoded(vertices * .001), n=encoded(normals))
@@ -123,6 +126,7 @@ def collect(build_dir):
     bounds = np.array([[p["bbox"]["min"], p["bbox"]["max"]] for p in visible_parts or parts])
     assembly_min, assembly_max = bounds[:, 0].min(axis=0), bounds[:, 1].max(axis=0)
     meta = {"revision": manifest.get("revision", "B05"), "length_unit": "mm",
+            "exterior_only": all(p["group_key"] in ("cover", "rear_lid") for p in parts),
             "files": files, "bounds": {"min": assembly_min.tolist(), "max": assembly_max.tolist()},
             "review_status": manifest.get("review_status", "数字装配审阅 · 实物试装待验证")}
     return parts, meta

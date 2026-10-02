@@ -1,0 +1,1071 @@
+{
+  "schema": "odradek.print-checks.v1",
+  "checked_at_utc": "2026-10-02T17:15:40.927679+00:00",
+  "scope": "mesh integrity and per-instance print-bed envelope only; not manufacturing or load release",
+  "script_sha256": "93c87f2a77470376bbb73a7543d782ae6efb689d14cec6c067688be353c1321b",
+  "python": "3.12.14",
+  "trimesh_version": "5.1.0",
+  "numpy_version": "2.5.3",
+  "bed_mm": [
+    220,
+    220,
+    250
+  ],
+  "edge_margin_mm": 5.0,
+  "orthogonal_rotation_allowed": false,
+  "mesh_and_envelope_pass": true,
+  "files": [
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-301-ARMOR-L.stl",
+      "sha256": "ab957c2132d7cd382a9899f4ce64d992c8f450329b1bd5c673870e236bf4feac",
+      "instances": [
+        {
+          "name": "B05-301-ARMOR-L",
+          "vertices_before_weld": 19860,
+          "vertices_after_weld": 3312,
+          "faces": 6620,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 26966.172738744994,
+          "surface_area_mm2": 19694.71512099133,
+          "bbox_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              103.99867248535156,
+              104.39623260498047,
+              55.0
+            ]
+          ],
+          "size_mm": [
+            103.99867248535156,
+            104.39623260498047,
+            55.0
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          103.99867248535156,
+          104.39623260498047,
+          55.0
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-301-ARMOR-R.stl",
+      "sha256": "338aee5b1cdc882457cd423124d5214daa519aad8a0e4e1787631c86e7e7e61d",
+      "instances": [
+        {
+          "name": "B05-301-ARMOR-R",
+          "vertices_before_weld": 19860,
+          "vertices_after_weld": 3312,
+          "faces": 6620,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 26966.17297217892,
+          "surface_area_mm2": 19694.71501654765,
+          "bbox_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              103.99867248535156,
+              104.39623260498047,
+              55.0
+            ]
+          ],
+          "size_mm": [
+            103.99867248535156,
+            104.39623260498047,
+            55.0
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          103.99867248535156,
+          104.39623260498047,
+          55.0
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-302-NOSE.stl",
+      "sha256": "997c85f4b2995671d60a876c0e66f0edd1399335944ab654a7bd69359979d463",
+      "instances": [
+        {
+          "name": "B05-302-NOSE",
+          "vertices_before_weld": 30156,
+          "vertices_after_weld": 5026,
+          "faces": 10052,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 36675.578980870545,
+          "surface_area_mm2": 26967.182585587154,
+          "bbox_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              188.57540893554688,
+              82.24641418457031,
+              55.0
+            ]
+          ],
+          "size_mm": [
+            188.57540893554688,
+            82.24641418457031,
+            55.0
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          188.57540893554688,
+          82.24641418457031,
+          55.0
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-303-REAR-SHOULDER-L.stl",
+      "sha256": "808ef840b850fb0ed6ddf3ec0c62431896c574ba6571014d14339b8230162ae8",
+      "instances": [
+        {
+          "name": "B05-303-REAR-SHOULDER-L",
+          "vertices_before_weld": 7284,
+          "vertices_after_weld": 1216,
+          "faces": 2428,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 23697.73810516416,
+          "surface_area_mm2": 16833.713508146557,
+          "bbox_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              68.80986785888672,
+              75.85704803466797,
+              51.85578536987305
+            ]
+          ],
+          "size_mm": [
+            68.80986785888672,
+            75.85704803466797,
+            51.85578536987305
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          68.80986785888672,
+          75.85704803466797,
+          51.85578536987305
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-303-REAR-SHOULDER-R.stl",
+      "sha256": "f21c83c3d5d7a6fa4bf47dcded53c5f71065b8e0b129bb74d24974a5c63fdf19",
+      "instances": [
+        {
+          "name": "B05-303-REAR-SHOULDER-R",
+          "vertices_before_weld": 7284,
+          "vertices_after_weld": 1216,
+          "faces": 2428,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 23697.737722150796,
+          "surface_area_mm2": 16833.71319205198,
+          "bbox_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              68.80986785888672,
+              75.85704803466797,
+              51.85578536987305
+            ]
+          ],
+          "size_mm": [
+            68.80986785888672,
+            75.85704803466797,
+            51.85578536987305
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          68.80986785888672,
+          75.85704803466797,
+          51.85578536987305
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-304-REAR-LID.stl",
+      "sha256": "65d675611b39a0eb16f156f4a41da6696866cc84f708086c2f08d843cdd4c758",
+      "instances": [
+        {
+          "name": "B05-304-REAR-LID",
+          "vertices_before_weld": 26412,
+          "vertices_after_weld": 4404,
+          "faces": 8804,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 46445.641690459415,
+          "surface_area_mm2": 33245.49269485131,
+          "bbox_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              151.1999969482422,
+              75.85530853271484,
+              55.0
+            ]
+          ],
+          "size_mm": [
+            151.1999969482422,
+            75.85530853271484,
+            55.0
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          151.1999969482422,
+          75.85530853271484,
+          55.0
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-305-COLLAR.stl",
+      "sha256": "ab972b104fdddbeed096b0207cdfd0dca4ada256528fdaed6c668953cf2d5e0d",
+      "instances": [
+        {
+          "name": "B05-305-COLLAR",
+          "vertices_before_weld": 69120,
+          "vertices_after_weld": 11520,
+          "faces": 23040,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 24487.73733503741,
+          "surface_area_mm2": 24960.536585063557,
+          "bbox_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              144.0,
+              144.0,
+              18.514122009277344
+            ]
+          ],
+          "size_mm": [
+            144.0,
+            144.0,
+            18.514122009277344
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          144.0,
+          144.0,
+          18.514122009277344
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    },
+    {
+      "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-306-LIGHT-LENS.stl",
+      "sha256": "62188bb2d922ac5ad10a11e7fefeeb911666f88dcb05f4ab55e0b923612c2ae4",
+      "instances": [
+        {
+          "name": "B05-306-LIGHT-LENS",
+          "vertices_before_weld": 1728,
+          "vertices_after_weld": 290,
+          "faces": 576,
+          "coincident_vertex_weld_precision_mm": 1e-08,
+          "watertight": true,
+          "winding_consistent": true,
+          "face_connected_components": 1,
+          "degenerate_faces": 0,
+          "duplicate_faces": 0,
+          "signed_volume_mm3": 393.7992795404501,
+          "surface_area_mm2": 726.8954756470071,
+          "bbox_mm": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              37.400001525878906,
+              5.4000020027160645,
+              7.002081871032715
+            ]
+          ],
+          "size_mm": [
+            37.400001525878906,
+            5.4000020027160645,
+            7.002081871032715
+          ],
+          "usable_bed_mm": [
+            210.0,
+            210.0,
+            250.0
+          ],
+          "fits_exported_orientation_after_translation": true,
+          "orthogonal_axis_orders_that_fit": [
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "arbitrary_angle_nesting_checked": false,
+          "topology_pass": true,
+          "envelope_pass": true,
+          "mesh_and_envelope_pass": true,
+          "self_intersection_checked": false,
+          "wall_thickness_checked": false
+        }
+      ],
+      "input_units": "assumed mm; STL has no unit",
+      "whole_file_arrangement": {
+        "size_mm": [
+          37.400001525878906,
+          5.4000020027160645,
+          7.002081871032715
+        ],
+        "usable_bed_mm": [
+          210.0,
+          210.0,
+          250.0
+        ],
+        "fits_exported_orientation_after_translation": true,
+        "orthogonal_axis_orders_that_fit": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            1,
+            0,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            2,
+            1,
+            0
+          ]
+        ],
+        "arbitrary_angle_nesting_checked": false
+      },
+      "mesh_and_envelope_pass": true,
+      "multiple_objects_need_separate_slicer_placement": false
+    }
+  ],
+  "not_checked": [
+    "self intersections",
+    "minimum walls",
+    "supports and overhangs",
+    "layer strength",
+    "bed adhesion and distortion",
+    "mating tolerances",
+    "insert retention",
+    "assembly collision",
+    "connector or cable fit",
+    "payload or clamp capacity"
+  ]
+}

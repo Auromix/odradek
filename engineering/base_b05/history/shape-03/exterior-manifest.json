@@ -1,0 +1,508 @@
+{
+  "revision": "B05-EXTERIOR-SHAPE-03",
+  "length_unit": "mm",
+  "scope": "exterior shape and unpowered fit prototype; mounting details and full assembly not released",
+  "parameters": {
+    "schema": "odradek.b05.blender-exterior.v1",
+    "length_unit": "mm",
+    "center_xy": [
+      0.0,
+      135.0
+    ],
+    "wall_nominal_mm": 3.0,
+    "outer_half_control_points": [
+      [
+        0,
+        -45
+      ],
+      [
+        104,
+        -45
+      ],
+      [
+        132,
+        -28
+      ],
+      [
+        145,
+        30
+      ],
+      [
+        141,
+        82
+      ],
+      [
+        121,
+        132
+      ],
+      [
+        100,
+        171
+      ],
+      [
+        72,
+        214
+      ],
+      [
+        37,
+        251
+      ],
+      [
+        18,
+        264
+      ],
+      [
+        0,
+        269
+      ]
+    ],
+    "inner_body_radius_mm": 85.6,
+    "collar_radius_mm": [
+      62,
+      85
+    ],
+    "collar_top_z_mm": [
+      74,
+      58.5
+    ],
+    "design_intent": "Minimal alien carapace: swept shield shoulders, continuous flowing surfaces, rising neck, restrained seams",
+    "splits_mm": {
+      "main_y_min": 30.4,
+      "front_nose_seam": "Y = 205.4 - 0.24 * abs(X); nominal 0.8 mm gap",
+      "rear_y_max": 29.6,
+      "rear_lid_x": [
+        -75.6,
+        75.6
+      ],
+      "rear_shoulder_abs_x_min": 76.4,
+      "main_center_gap": 0.8
+    },
+    "rear_cable_exit": {
+      "x": [
+        -42,
+        42
+      ],
+      "y": [
+        -60,
+        -33
+      ],
+      "z": [
+        -8,
+        21
+      ],
+      "corner_radius_mm": 4
+    },
+    "light_aperture_xy_mm": [
+      [
+        -19,
+        247
+      ],
+      [
+        19,
+        253
+      ]
+    ],
+    "prototype_scope": "exterior shape and unpowered fit prototype; mounting details and full assembly not released"
+  },
+  "parts": [
+    {
+      "id": "B05-301-ARMOR-L",
+      "name": "左主肩甲",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.04800000041723251,
+        0.05900000035762787,
+        0.07199999690055847,
+        1.0
+      ],
+      "bbox": {
+        "min": [
+          -145.55835723876953,
+          30.400000512599945,
+          3.000000026077032
+        ],
+        "max": [
+          -0.39999998989515007,
+          188.8204663991928,
+          57.999998331069946
+        ],
+        "size": [
+          145.15835724887438,
+          158.42046588659286,
+          54.999998304992914
+        ]
+      },
+      "stl": "stl/B05-301-ARMOR-L.stl",
+      "print_stl": "print-parts/B05-301-ARMOR-L.stl",
+      "print_translation_mm": [
+        145.55835723876953,
+        -30.400000512599945,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "cover",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "notes": [
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm",
+        "No load-bearing or manufacturing release; underside mounts are a separate integration task"
+      ],
+      "color_space": "linear"
+    },
+    {
+      "id": "B05-301-ARMOR-R",
+      "name": "右主肩甲",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.04800000041723251,
+        0.05900000035762787,
+        0.07199999690055847,
+        1.0
+      ],
+      "bbox": {
+        "min": [
+          0.39999998989515007,
+          30.400000512599945,
+          3.000000026077032
+        ],
+        "max": [
+          145.55835723876953,
+          188.8204663991928,
+          57.999998331069946
+        ],
+        "size": [
+          145.15835724887438,
+          158.42046588659286,
+          54.999998304992914
+        ]
+      },
+      "stl": "stl/B05-301-ARMOR-R.stl",
+      "print_stl": "print-parts/B05-301-ARMOR-R.stl",
+      "print_translation_mm": [
+        -0.39999998989515007,
+        -30.400000512599945,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "cover",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "notes": [
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm",
+        "No load-bearing or manufacturing release; underside mounts are a separate integration task",
+        "Mirrored native left part for exact bilateral symmetry; face winding recalculated"
+      ],
+      "color_space": "linear"
+    },
+    {
+      "id": "B05-306-LIGHT-LENS",
+      "name": "琥珀灯窗试装件",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        1.0,
+        0.2800000011920929,
+        0.014999999664723873,
+        1.0
+      ],
+      "bbox": {
+        "min": [
+          -18.699999898672104,
+          247.29999899864197,
+          19.30754818022251
+        ],
+        "max": [
+          18.699999898672104,
+          252.70000100135803,
+          28.296267613768578
+        ],
+        "size": [
+          37.39999979734421,
+          5.4000020027160645,
+          8.988719433546066
+        ]
+      },
+      "stl": "stl/B05-306-LIGHT-LENS.stl",
+      "print_stl": "print-parts/B05-306-LIGHT-LENS.stl",
+      "print_translation_mm": [
+        18.699999898672104,
+        -247.29999899864197,
+        -19.30754818022251
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "cover",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "notes": [
+        "Separate lens contour, 0.3 mm nominal XY clearance",
+        "Optical diffusion and lamp-board retention are not validated"
+      ],
+      "color_space": "linear"
+    },
+    {
+      "id": "B05-302-NOSE",
+      "name": "前鼻与底座灯窗",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.04800000041723251,
+        0.05900000035762787,
+        0.07199999690055847,
+        1.0
+      ],
+      "bbox": {
+        "min": [
+          -92.72769093513489,
+          183.14535915851593,
+          3.000000026077032
+        ],
+        "max": [
+          92.72769093513489,
+          268.99999380111694,
+          57.999998331069946
+        ],
+        "size": [
+          185.45538187026978,
+          85.85463464260101,
+          54.999998304992914
+        ]
+      },
+      "stl": "stl/B05-302-NOSE.stl",
+      "print_stl": "print-parts/B05-302-NOSE.stl",
+      "print_translation_mm": [
+        92.72769093513489,
+        -183.14535915851593,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "cover",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "notes": [
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm",
+        "No load-bearing or manufacturing release; underside mounts are a separate integration task",
+        "Real light aperture X -19..19, Y 247..253 mm; illumination cavity and PCB position remain integration work"
+      ],
+      "color_space": "linear"
+    },
+    {
+      "id": "B05-303-REAR-SHOULDER-L",
+      "name": "左后肩甲",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.04800000041723251,
+        0.05900000035762787,
+        0.07199999690055847,
+        1.0
+      ],
+      "bbox": {
+        "min": [
+          -144.9652910232544,
+          -46.253517270088196,
+          3.000000026077032
+        ],
+        "max": [
+          -76.39999687671661,
+          29.600000008940697,
+          54.00000140070915
+        ],
+        "size": [
+          68.56529414653778,
+          75.85351727902889,
+          51.00000137463212
+        ]
+      },
+      "stl": "stl/B05-303-REAR-SHOULDER-L.stl",
+      "print_stl": "print-parts/B05-303-REAR-SHOULDER-L.stl",
+      "print_translation_mm": [
+        144.9652910232544,
+        46.253517270088196,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "cover",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "notes": [
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm",
+        "No load-bearing or manufacturing release; underside mounts are a separate integration task"
+      ],
+      "color_space": "linear"
+    },
+    {
+      "id": "B05-303-REAR-SHOULDER-R",
+      "name": "右后肩甲",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.04800000041723251,
+        0.05900000035762787,
+        0.07199999690055847,
+        1.0
+      ],
+      "bbox": {
+        "min": [
+          76.39999687671661,
+          -46.253517270088196,
+          3.000000026077032
+        ],
+        "max": [
+          144.9652910232544,
+          29.600000008940697,
+          54.00000140070915
+        ],
+        "size": [
+          68.56529414653778,
+          75.85351727902889,
+          51.00000137463212
+        ]
+      },
+      "stl": "stl/B05-303-REAR-SHOULDER-R.stl",
+      "print_stl": "print-parts/B05-303-REAR-SHOULDER-R.stl",
+      "print_translation_mm": [
+        -76.39999687671661,
+        46.253517270088196,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "cover",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "notes": [
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm",
+        "No load-bearing or manufacturing release; underside mounts are a separate integration task",
+        "Mirrored native left part for exact bilateral symmetry; face winding recalculated"
+      ],
+      "color_space": "linear"
+    },
+    {
+      "id": "B05-304-REAR-LID",
+      "name": "可拆后盖与下出线口",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.03500000014901161,
+        0.04500000178813934,
+        0.0560000017285347,
+        1.0
+      ],
+      "bbox": {
+        "min": [
+          -75.59999823570251,
+          -46.25898227095604,
+          3.000000026077032
+        ],
+        "max": [
+          75.59999823570251,
+          29.600000008940697,
+          54.022274911403656
+        ],
+        "size": [
+          151.19999647140503,
+          75.85898227989674,
+          51.022274885326624
+        ]
+      },
+      "stl": "stl/B05-304-REAR-LID.stl",
+      "print_stl": "print-parts/B05-304-REAR-LID.stl",
+      "print_translation_mm": [
+        75.59999823570251,
+        46.25898227095604,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "rear_lid",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "notes": [
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm",
+        "No load-bearing or manufacturing release; underside mounts are a separate integration task",
+        "Actual rear-bottom cable exit, X ±42 mm, top Z 21 mm; cable comb and bend envelopes require integration"
+      ],
+      "color_space": "linear"
+    },
+    {
+      "id": "B05-305-COLLAR",
+      "name": "中央独立装甲环",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.07199999690055847,
+        0.08399999886751175,
+        0.09600000083446503,
+        1.0
+      ],
+      "bbox": {
+        "min": [
+          -85.00000089406967,
+          50.00000074505806,
+          55.48587813973427
+        ],
+        "max": [
+          85.00000089406967,
+          219.9999988079071,
+          74.00000095367432
+        ],
+        "size": [
+          170.00000178813934,
+          169.99999806284904,
+          18.514122813940048
+        ]
+      },
+      "stl": "stl/B05-305-COLLAR.stl",
+      "print_stl": "print-parts/B05-305-COLLAR.stl",
+      "print_translation_mm": [
+        85.00000089406967,
+        -50.00000074505806,
+        -55.48587813973427
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "cover",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "notes": [
+        "R62 inner clearance; R85 outer radius; 170 mm print envelope",
+        "3.15 mm vertical section thickness; top Z 74..58.5 mm",
+        "Collar retention/supports are not included in this exterior module"
+      ],
+      "color_space": "linear"
+    }
+  ],
+  "assembly_manifest": false,
+  "not_verified": [
+    "physical printing",
+    "supports/overhangs",
+    "minimum wall audit",
+    "self-intersections",
+    "mounting supports",
+    "complete assembly clearance",
+    "load",
+    "optics",
+    "cable routing"
+  ]
+}
