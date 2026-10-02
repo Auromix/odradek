@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "LCEDA-Pro",
+    "doc",
+    "api",
+    "--class-name",
+    "SYS_FileManager",
+    "--method-name",
+    "importProjectByProjectFile"
+  ],
+  "returncode": 0,
+  "stdout": "{\"ok\":true,\"value\":{\"title\":\"使用工程文件导入工程\",\"remarks\":\"暂不支持提取库的相关配置，如果需求提取库，将会按照默认配置提取\",\"params\":[{\"name\":\"projectFile\",\"description\":\"工程文件\",\"required\":true},{\"name\":\"fileType\",\"type\":\"\\\"JLCEDA\\\" | \\\"JLCEDA Pro\\\" | \\\"EasyEDA\\\" | \\\"EasyEDA Pro\\\" | \\\"Allegro\\\" | \\\"OrCAD\\\" | \\\"EAGLE\\\" | \\\"KiCad\\\" | \\\"PADS\\\" | \\\"LTspice\\\"\",\"description\":\"文件类型\",\"required\":false},{\"name\":\"props\",\"type\":\"{ importOption?: ESYS_ImportProjectImportOption; schematicObjectStyle?: ESYS_ImportProjectSchematicObjectStyle; associateFootprint?: boolean; associate3DModel?: boolean; importFootprintNotesLayer?: boolean }\",\"description\":\"导入参数，参考 EDA 前端 **导入** 窗口内的配置项\",\"required\":false},{\"name\":\"saveTo\",\"type\":\"{ operation: \\\"New Project\\\"; newProjectOwnerTeamUuid: string; newProjectOwnerFolderUuid?: string; newProjectName?: string; newProjectFriendlyName?: string; newProjectDescription?: string; newProjectCollaborationMode?: EDMT_ProjectCollaborationMode } | { operation: \\\"Existing Project\\\"; existingProjectUuid: string } | { operation: \\\"Offline Client Local Path\\\"; folderPath: string }\",\"description\":\"保存到工程参数\\n\\n`Offline Client Local Path` 仅离线客户端可用，该形态在 `folderPath` 下创建客户端本地工程，\\n同名工程已存在时报错不覆盖，该形态需要启用扩展的外部交互权限，如若未启用将始终 `throw Error`\",\"required\":false},{\"name\":\"librariesImportSetting\",\"type\":\"{ ownerTeamUuid: string; deviceClassification?: Array<string>; symbolClassification?: Array<string>; footprintClassification?: Array<string>; createDeviceForSingleSymbol?: boolean; updateExistingLibrariesWithTheSameName?: boolean }\",\"description\":\"库导入配置\",\"required\":false}],\"returns\":{\"type\":\"IDMT_BriefProjectItem | null\"}},\"logs\":[],\"durationMs\":132}\n",
+  "stderr": ""
+}

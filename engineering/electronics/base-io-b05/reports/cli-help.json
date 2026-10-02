@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "LCEDA-Pro",
+    "--help"
+  ],
+  "returncode": 0,
+  "stdout": "JLCEDA Pro 4.1.60.198f38ab\n\nUsage:\n  LCEDA-Pro <command> [options]\n  LCEDA-Pro [global flags]\n\nCommands:\n  activate          Bring the server window up and focus it\n  open              Open a project and return its session id (visible editor window; --headless for a hidden render)\n  stop              Gracefully stop the server\n  doctor            Probe the endpoint and report its identity\n  session/          Manage sessions (one per opened project)\n    list            List sessions\n    close           Close a session (visible windows are kept by default; --destroy also closes them)\n  invoke            Invoke a registered function by extension id + name (source runs on the editor command space; omit extUuid to run with independent script permission)\n  functions         List extensions known to the session (editor command space extension index)\n  doc/              Query the editor API reference (eda / external / format)\n    api             Query the eda namespace (static editor API) progressively (surface / class / method)\n    external        Query the external namespace (extension-injected API; requires a session) progressively (group / interface)\n    format          Query the format namespace (design format reference) progressively (surface / type)\n\nGlobal flags:\n  --help              Show help for any command:\n    LCEDA-Pro <command> --help\n  --search <query>    Fuzzy-search commands when unsure of the name:\n    LCEDA-Pro --search <query>\n  --mcp stdio|http    Start MCP server (details: LCEDA-Pro --mcp --help):\n    LCEDA-Pro --mcp http --port 3030\n",
+  "stderr": ""
+}

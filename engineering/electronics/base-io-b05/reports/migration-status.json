@@ -1,0 +1,77 @@
+{
+  "revision": "BASE-IO-B05-MIGRATION-01",
+  "status": "Native import and relocation saved; unrouted; not manufacturing released",
+  "source_revision": "BRI01",
+  "source_hashes": {
+    "engineering/electronics/base-rear-interface01/kicad/base-rear-interface01.kicad_pcb": "e475b50a283441862c268cdb66986b549d91df3e688067886ee3501d9051138b",
+    "engineering/electronics/base-rear-interface01/kicad/base-rear-interface01.kicad_sch": "6122e134c1ecc41d4f1a364251297330b7300d63eec74a397376454fd768f875",
+    "engineering/electronics/base-rear-interface01/kicad/base-rear-interface01.kicad_pro": "8aee48ab618d01fc0967d0017a71d44f6d3b95846842cd2624934e76c45ca069",
+    "engineering/electronics/base-rear-interface01/native-readback.json": "20dc37a87c34db1063609bce9307faa44eb0d9d20c3bb12429cc3ff03e6d9102",
+    "engineering/electronics/base-rear-interface01/pin-net.csv": "e2212dbd1ab67962d5828adc940ab2639bce98dee77a64e516c94bae2e83d7b5",
+    "engineering/electronics/base-rear-interface01/connector-contract.json": "29fc100b7a92146e1f069fd7f8cc71494aa2fc059726ffaaf040d9145c1a3f27",
+    "engineering/electronics/base-rear-interface01/mechanical/parts.json": "fb9d11bc0bc990f87ae87d9f213528edcbe81f3c36ea74098f8edc0d78806fe2",
+    "engineering/electronics/base-rear-interface01/mechanical/base-rear-interface01-assembly.step": "f3b844e94b099bb5428e9ffa2ce20007f33d9a55a7892b5db132cdd385c4e177"
+  },
+  "target": "JLCEDA Pro desktop 4.1.60 arm64; official CLI/MCP; local project",
+  "observed_web_version": "4.1.60",
+  "observed_web_import_requires_login": true,
+  "desktop_installation": "installed in /Applications; codesign deep/strict verification exit 0; GUI activation required",
+  "evidence_scope": "Actual native project with 48 pads, 38 electrical pads assigned nets, 10 mechanical pads unassigned. No tracks imported; routing pending; current DRC 98 issues.",
+  "official_sources": [
+    "https://lceda.cn/page/download",
+    "https://prodocs.lceda.cn/cn/import-export/import-kicad/index.html",
+    "https://prodocs.lceda.cn/cn/faq/client/",
+    "https://github.com/easyeda/easyeda-client-cli",
+    "https://raw.githubusercontent.com/easyeda/easyeda-client-cli/main/cli-for-ai.md"
+  ],
+  "package_url": "https://image.lceda.cn/files/lceda-pro-mac-arm64-4.1.60.zip",
+  "package_expected_size_bytes": 363959765,
+  "desktop_version": "4.1.60.198f38ab",
+  "desktop_binary": "/Applications/嘉立创EDA(专业版).app/Contents/MacOS/LCEDA-Pro",
+  "package_sha256": "89a5e0d313d7f6427097c42bbacefe61dcfd8ba234278948831e4e98bc66067b",
+  "doctor_connected": true,
+  "doctor_version_match": true,
+  "editor_activation": "Completed by user; native project editable",
+  "MCP_native": "Vendor Mac entry rejects --mcp. Local MCP adapter invokes official CLI. Verified network sync, component relocation and save.",
+  "import_completed": true,
+  "PCB_revision_required": {
+    "J2": {
+      "old_uv_mm": [
+        20,
+        0
+      ],
+      "candidate_uv_mm": [
+        58,
+        0
+      ],
+      "angle_native_KiCad_deg": 0,
+      "actual_native_uv_mm": [
+        58,
+        0
+      ]
+    },
+    "J6": {
+      "old_uv_mm": [
+        46,
+        12
+      ],
+      "candidate_uv_mm": [
+        42,
+        20
+      ],
+      "actual_native_uv_mm": [
+        42,
+        20
+      ]
+    },
+    "reason": "Relocations applied in native editor and read back. Routing, copper regeneration, rules, signal integrity and physical fit remain open."
+  },
+  "native_project": "base-io-b05/base-io-b05.eprj3",
+  "native_checks": {
+    "clearance": 56,
+    "via_minimum_drill": 14,
+    "connection": 28,
+    "total": 98
+  },
+  "updated_client_date": "2026-10-03"
+}
