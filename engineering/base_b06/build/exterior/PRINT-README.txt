@@ -1,4 +1,4 @@
-ODRADEK B06 compact fit candidate. Units: mm. 5 printable parts only.
+ODRADEK B06-COMPACT-02 refined exterior fit candidate. Units: mm. 5 printable parts only.
 Main cover approx239x224x71mm. Bed256x256x256mm, checked with5mm XY edge margin.
 PETG/ASA candidate. Slicer orientation/supports, physical dimensions and M3 nut pockets need trials.
 Do not mount a powered/load-bearing arm on the cosmetic carrier.

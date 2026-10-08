@@ -24,11 +24,12 @@ SEGMENTS = 240
 INNER_RADIUS = 84.
 WALL = 3.
 PARAMETERS = {
- "schema":"odradek.b06.compact.v1", "length_unit":"mm", "center_xy":CENTER,
+ "schema":"odradek.b06.compact.v2", "length_unit":"mm", "center_xy":CENTER,
  "wall_nominal_mm":WALL,
  "outer_half_control_points":[[0,-38],[76,-38],[97,-26],[114,-3],[119,15],[118,25],[108,38],[98,48],[96,63],[95,79],[98,89],[103,103],[105,117],[101,128],[86,145],[57,171],[25,182],[0,185]],
  "inner_body_radius_mm":84, "collar_radius_mm":[68,84], "collar_top_z_mm":[74,60],
- "design_intent":"One continuous four-petal-family manta shield; reduced wing span; no visible top fixing holes; integral neck",
+ "design_intent":"Compact four-petal manta armor; low swept shoulders, crisp collar lip and continuous outward-sloping chine; integral nose/wings/neck; concealed fixings",
+ "shoulder_profile":{"root_z_mm":60,"radial_drop":0.8,"chine_fraction":0.51,"chine_blend":[0.49,0.53],"petal_ridge_height_mm":2.8},
  "prototype_scope":"Five printed cosmetic/PCB locating parts; A11 root snapshot and connector envelopes; no load chassis or PCB release",
  "printer_volume_mm":[256,256,256], "outer_limit_xy_mm":[240,230],
  "fastening":"Four underside M3x10 screws with captive M3 nuts; rear lid two bottom M3x10; lamp two M2x6",
@@ -180,28 +181,36 @@ def radial_boundary(theta):
     return max(candidates)
 
 
-SURFACE_FRACTIONS=sorted(set([i/40 for i in range(41)]+[.69,.73,.77]))
+SURFACE_FRACTIONS=sorted(set([i/40 for i in range(1,41)]+[.49,.51,.53]))
 
 
 def profile_height(fraction,x,y):
     r=math.hypot(x,y-CENTER[1])
     outer=INNER_RADIUS+(r-INNER_RADIUS)/fraction if fraction>1e-8 else INNER_RADIUS
-    crown=60-.22*(r-INNER_RADIUS)
-    chine_r=INNER_RADIUS+.69*(outer-INNER_RADIUS)
-    chine_z=60-.22*(chine_r-INNER_RADIUS)
+    theta=math.atan2(y-CENTER[1],x)
+    profile=PARAMETERS['shoulder_profile']
+    # Four shallow raised shoulder sectors echo the head petals. Their height
+    # converges at the collar and boundary, keeping one continuous printable skin.
+    petal=abs(math.sin(2*theta))**6
+    def crown_at(f):
+        return profile['root_z_mm']-profile['radial_drop']*f*(outer-INNER_RADIUS)+profile['petal_ridge_height_mm']*petal*math.sin(math.pi*f)
+    chine=profile['chine_fraction']
     edge_z=8+3*smoothstep(94,118,abs(x))
-    apron=chine_z+(edge_z-chine_z)*(fraction-.69)/.31
-    blend=smoothstep(.66,.72,fraction)
-    z=crown*(1-blend)+apron*blend
+    apron=crown_at(chine)+(edge_z-crown_at(chine))*(fraction-chine)/(1-chine)
+    blend=smoothstep(*profile['chine_blend'],fraction)
+    z=crown_at(fraction)*(1-blend)+apron*blend
+    # Back connector chamber stays full height despite the lower appearance.
     rear=(1-smoothstep(2,35,y))*(1-smoothstep(64,99,abs(x)))
     lifted=max(z,44)+max(0.,3-abs(z-44))**2/12
     return z*(1-rear)+lifted*rear
 
 
 def make_native_loft():
-    rings=[(68,68),(68,74),(71,73),(77,65),(84,60)]
+    # Flat 3 mm upper land, a small lip bevel, then a straight swept neck flank.
+    # Keep the circular ID136 and Z74 tool aperture; no cosmetic split ring.
+    rings=[(68,68),(68,74),(71,74),(72,72.7),(72,70.8),(82,62),(84,60)]
     vertices=[(r*math.cos(2*math.pi*i/SEGMENTS),75+r*math.sin(2*math.pi*i/SEGMENTS),z) for r,z in rings for i in range(SEGMENTS)]
-    fractions=sorted(set([i/40 for i in range(1,41)]+[.66,.69,.72]))
+    fractions=SURFACE_FRACTIONS
     for f in fractions:
         for i in range(SEGMENTS):
             t=2*math.pi*i/SEGMENTS;outer=radial_boundary(t)
@@ -213,7 +222,7 @@ def make_native_loft():
     count=len(rings)+len(fractions)+1
     faces=[(k*SEGMENTS+i,(k+1)*SEGMENTS+i,(k+1)*SEGMENTS+(i+1)%SEGMENTS,k*SEGMENTS+(i+1)%SEGMENTS) for k in range(count-1) for i in range(SEGMENTS)]
     o=mesh_object('Native_Shield_Loft_Source',vertices,faces,'90_Construction_native_loft')
-    if o.data.polygons[SEGMENTS*7].normal.z<0:
+    if o.data.polygons[SEGMENTS*9].normal.z<0:
         bm=bmesh.new();bm.from_mesh(o.data);bmesh.ops.reverse_faces(bm,faces=list(bm.faces));bm.to_mesh(o.data);bm.free()
     o.hide_render=True
     return o
@@ -263,13 +272,13 @@ def contour_prism(name, contour, z_bounds=(-20,100)):
 def light_lens(nose):
     # Independent closed optical blank. Intersecting the shell return wall
     # produced a second disconnected sliver in SHAPE-02, so it is not reused.
-    temp=rounded_rect_prism("Lens planar contour",((-18.7,168.3),(18.7,173.7)),(0,1),2.4)
+    temp=rounded_rect_prism("Lens planar contour",((-18.7,162.3),(18.7,167.7)),(0,1),2.4)
     n=len(temp.data.vertices)//2
     contour=[(v.co.x/M,v.co.y/M) for v in list(temp.data.vertices)[:n]]
     bpy.data.objects.remove(temp,do_unlink=True)
     from mathutils.bvhtree import BVHTree
     tree=BVHTree.FromObject(nose,bpy.context.evaluated_depsgraph_get())
-    samples=[(0.,171.)]+[(x*f,171+(y-171)*f) for f in (.25,.5,.75,1.) for x,y in contour]
+    samples=[(0.,165.)]+[(x*f,165+(y-165)*f) for f in (.25,.5,.75,1.) for x,y in contour]
     ztop=[]
     for x,y in samples:
         hit,_,_,_=tree.ray_cast(Vector((x*M,y*M,.10)),Vector((0,0,-1)))
@@ -424,6 +433,14 @@ def finalize_mesh(obj):
         bmesh.ops.dissolve_degenerate(bm,dist=(.01 if obj.name == "B06-301-MAIN-SHIELD" else .001)*M,edges=list(bm.edges))
         bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
         bm.to_mesh(obj.data);bm.free()
+    # A final cap triangulation may expose a single isolated zero-volume sheet.
+    # Remove only faces with three boundary edges; preserve all solid components.
+    bm=bmesh.new();bm.from_mesh(obj.data)
+    sheets=[f for f in bm.faces if len(f.verts)==3 and all(len(e.link_faces)==1 for e in f.edges)]
+    obj["Final isolated zero-volume cap sheets removed"]=len(sheets)
+    if sheets:bmesh.ops.delete(bm,geom=sheets,context="FACES")
+    bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+    bm.to_mesh(obj.data);bm.free()
     obj.data.update()
     obj.data.set_sharp_from_angle(angle=math.radians(27))
     for polygon in obj.data.polygons:

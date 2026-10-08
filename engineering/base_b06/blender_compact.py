@@ -43,21 +43,25 @@ def add(o,title,role,mat,notes,printable=True,group=None):
     DESCRIPTORS.append(d);PAYLOAD[o.name]=render_payload(o)
     return d
 
-def boss(owner,x,y,top):
-    # M3 captive nut is inserted from the interior before lowering the cover.
+def conformal_post(owner,x,y,r,z0,inset):
+    # Curved roofs cannot safely use a flat-ended vertical cylinder.
     from mathutils.bvhtree import BVHTree
     t=BVHTree.FromObject(owner,bpy.context.evaluated_depsgraph_get())
     n=64;upper=[]
     for i in range(n):
-        a=i*math.tau/n;px=x+5.6*math.cos(a);py=y+5.6*math.sin(a)
+        a=i*math.tau/n;px=x+r*math.cos(a);py=y+r*math.sin(a)
         h,_,_,_=t.ray_cast(Vector((px*M,py*M,.2)),Vector((0,0,-1)))
         if h is None:raise ValueError('Conformal post extends beyond the cover outline')
-        upper.append((px,py,h.z/M-.5))
-    verts=[(px,py,7.8) for px,py,_ in upper]+upper
+        if h.z/M-inset<=z0:raise ValueError('Conformal post has no local thickness')
+        upper.append((px,py,h.z/M-inset))
+    verts=[(px,py,z0) for px,py,_ in upper]+upper
     faces=[tuple(range(n-1,-1,-1)),tuple(range(n,2*n))]
     faces += [(i,(i+1)%n,(i+1)%n+n,i+n) for i in range(n)]
-    post=mesh_object('Integral conformal hidden post',verts,faces)
-    boolean(owner,post,'UNION')
+    return mesh_object('Integral conformal hidden post',verts,faces)
+
+def boss(owner,x,y,top):
+    # M3 captive nut is inserted from the interior before lowering the cover.
+    boolean(owner,conformal_post(owner,x,y,5.6,7.8,.5),'UNION')
     boolean(owner,cylinder('M3 clearance',x,y,1.7,7,17),'DIFFERENCE')
     boolean(owner,hexagon('M3 captive nut pocket',x,y,5.8,10,12.8),'DIFFERENCE')
     sign=1 if x>0 else -1
@@ -76,13 +80,21 @@ def hardware(index,x,y,zseat=7):
 def lamp_retainer(surface,lens):
     from mathutils.bvhtree import BVHTree
     tree=BVHTree.FromObject(surface,bpy.context.evaluated_depsgraph_get())
-    hit,_,_,_=tree.ray_cast(Vector((23*M,169.5*M,.2)),Vector((0,0,-1)))
+    hit,_,_,_=tree.ray_cast(Vector((23*M,163.5*M,.2)),Vector((0,0,-1)))
     z=hit.z/M
-    bar=box('B06-308-LENS-RETAINER',((-27,168,z-10.3),(27,171,z-8.3)))
+    bar=box('B06-308-LENS-RETAINER',((-27,162,z-12.3),(27,165,z-10.3)))
     lt=BVHTree.FromObject(lens,bpy.context.evaluated_depsgraph_get())
-    low,_,_,_=lt.ray_cast(Vector((0,169.5*M,0)),Vector((0,0,1)))
-    boolean(bar,cylinder('Lens central support pad',0,169.5,1.35,z-9,low.z/M-.4),'UNION')
-    for x in (-23,23):boolean(bar,cylinder('M2 clamp-bar hole',x,169.5,1.2,z-12,z-3),'DIFFERENCE')
+    # Use the lowest underside over the entire pad footprint, not just its
+    # centre. The lamp is sloped; a centre sample could pierce its lower edge.
+    heights=[]
+    for r in (0,.675,1.35):
+        for k in range(64):
+            a=k*math.tau/64
+            low,_,_,_=lt.ray_cast(Vector((r*math.cos(a)*M,(164.5+r*math.sin(a))*M,0)),Vector((0,0,1)))
+            if low is None:raise ValueError('Support pad misses lens')
+            heights.append(low.z/M)
+    boolean(bar,cylinder('Lens central support pad',0,164.5,1.35,z-11,min(heights)-.4),'UNION')
+    for x in (-23,23):boolean(bar,cylinder('M2 clamp-bar hole',x,163.5,1.2,z-14,z-5),'DIFFERENCE')
     return bar
 
 def native_context():
@@ -122,7 +134,7 @@ def main():
     boolean(cover,box('Rear service opening',((-67,-80,-10),(67,-21.6,100))),'DIFFERENCE')
     # Sample the actual continuous surface for the lens before cutting the window.
     lens=light_lens(cover);lens.name='B06-306-LIGHT-LENS'
-    boolean(cover,rounded_rect_prism('Amber window',((-19,168),(19,174)),(-10,100),2.7),'DIFFERENCE')
+    boolean(cover,rounded_rect_prism('Amber window',((-19,162),(19,168)),(-10,100),2.7),'DIFFERENCE')
     from mathutils.bvhtree import BVHTree
     tree=BVHTree.FromObject(cover,bpy.context.evaluated_depsgraph_get())
     for x,y in MOUNTS:
@@ -131,17 +143,17 @@ def main():
         boss(cover,x,y,hit.z/M-1)
     # Lens ears are lower and shifted rearward to clear the steep front apron.
     for x in (-23,23):
-        hit,_,_,_=tree.ray_cast(Vector((x*M,169.5*M,.2)),Vector((0,0,-1)))
+        hit,_,_,_=tree.ray_cast(Vector((x*M,163.5*M,.2)),Vector((0,0,-1)))
         z=hit.z/M
-        boolean(cover,cylinder('Lens M2 mounting boss',x,169.5,3.8,z-8,z-1),'UNION')
-        boolean(cover,cylinder('Lens pilot hole',x,169.5,.8,z-9,z-4),'DIFFERENCE')
+        boolean(cover,conformal_post(cover,x,163.5,3.8,z-10,1),'UNION')
+        boolean(cover,cylinder('Lens pilot hole',x,163.5,.8,z-11,z-5),'DIFFERENCE')
     retainer=lamp_retainer(cover,lens)
     add(cover,'前鼻＋双翼＋颈台一体外罩','cover','armor',
         ['3mm nominal wall; four concealed underside M3 captive-nut fixings',
-         'Integral ID136 neck, Z74 top; continuous shoulder chine; no cosmetic top screw holes',
+         'Integral ID136 neck, Z74 top; lower swept four-petal shoulders with continuous chine; no cosmetic top screw holes',
          'A11 root snapshot required; old A10 waist is not compatible without redesign'])
     add(lens,'琥珀透光灯窗','cover','lens',['Curved closed optical blank; retained from inside by a separate screw bar; optical PCB pending'])
-    add(retainer,'灯窗内藏压条','cover_support','support',['Two M2x6 screws into hidden cover pilot bosses; 0.3mm seat allowance; central pad nominal0.4mm below lens; compliant optical shim to be trial-fitted; physical fit coupon required'])
+    add(retainer,'灯窗内藏压条','cover_support','support',['Two M2x6 screws into hidden cover pilot bosses; 0.3mm seat allowance; central pad nominal minimum0.4mm below sampled lens underside; compliant optical shim to be trial-fitted; physical fit coupon required'])
     lid=copy_mesh(master,'B06-304-REAR-LID')
     boolean(lid,box('Rear lid partition',((-66.6,-80,-10),(66.6,-22.4,100))),'INTERSECT')
     boolean(lid,rounded_rect_prism('Cable egress',((-54,-8),(54,18)),(-80,-25),4,'XZ'),'DIFFERENCE')
@@ -176,7 +188,7 @@ def main():
     camera,target=render_setup();SCENE.cycles.samples=20
     SCENE.render.resolution_x=1440;SCENE.render.resolution_y=1080
     point_camera(camera,(.30,.43,.29),target,.32)
-    manifest=dict(revision='B06-COMPACT-01',length_unit='mm',module='compact_integration_candidate',
+    manifest=dict(revision='B06-COMPACT-02',length_unit='mm',module='compact_integration_candidate',
         scope=PARAMETERS['prototype_scope'],parameters=PARAMETERS,parts=DESCRIPTORS,
         review_status='紧凑一体底座 · 无动力试装候选',not_verified=['load chassis and clamp','dynamic collisions','physical fit','PCB routing','thermal','slicing/supports'])
     for name in ('exterior-manifest.json','manifest.json'):(OUT/name).write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

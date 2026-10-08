@@ -1,10 +1,10 @@
 {
-  "revision": "B06-COMPACT-01",
+  "revision": "B06-COMPACT-02",
   "length_unit": "mm",
   "module": "compact_integration_candidate",
   "scope": "Five printed cosmetic/PCB locating parts; A11 root snapshot and connector envelopes; no load chassis or PCB release",
   "parameters": {
-    "schema": "odradek.b06.compact.v1",
+    "schema": "odradek.b06.compact.v2",
     "length_unit": "mm",
     "center_xy": [
       0.0,
@@ -94,7 +94,17 @@
       74,
       60
     ],
-    "design_intent": "One continuous four-petal-family manta shield; reduced wing span; no visible top fixing holes; integral neck",
+    "design_intent": "Compact four-petal manta armor; low swept shoulders, crisp collar lip and continuous outward-sloping chine; integral nose/wings/neck; concealed fixings",
+    "shoulder_profile": {
+      "root_z_mm": 60,
+      "radial_drop": 0.8,
+      "chine_fraction": 0.51,
+      "chine_blend": [
+        0.49,
+        0.53
+      ],
+      "petal_ridge_height_mm": 2.8
+    },
     "prototype_scope": "Five printed cosmetic/PCB locating parts; A11 root snapshot and connector envelopes; no load chassis or PCB release",
     "printer_volume_mm": [
       256,
@@ -152,7 +162,7 @@
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
         "3mm nominal wall; four concealed underside M3 captive-nut fixings",
-        "Integral ID136 neck, Z74 top; continuous shoulder chine; no cosmetic top screw holes",
+        "Integral ID136 neck, Z74 top; lower swept four-petal shoulders with continuous chine; no cosmetic top screw holes",
         "A11 root snapshot required; old A10 waist is not compatible without redesign"
       ]
     },
@@ -173,26 +183,26 @@
       "bbox": {
         "min": [
           -18.699999898672104,
-          168.30000281333923,
-          54.613012820482254
+          162.3000055551529,
+          50.02439022064209
         ],
         "max": [
           18.699999898672104,
-          173.7000048160553,
-          57.79140815138817
+          167.69999265670776,
+          56.30534887313843
         ],
         "size": [
           37.39999979734421,
-          5.4000020027160645,
-          3.1783953309059143
+          5.399987101554871,
+          6.280958652496338
         ]
       },
       "stl": "stl/B06-306-LIGHT-LENS.stl",
       "print_stl": "print-parts/B06-306-LIGHT-LENS.stl",
       "print_translation_mm": [
         18.699999898672104,
-        -168.30000281333923,
-        -54.613012820482254
+        -162.3000055551529,
+        -50.02439022064209
       ],
       "viewer_group": "cover",
       "assembly_role": "cover",
@@ -219,33 +229,33 @@
       "bbox": {
         "min": [
           -27.000000700354576,
-          168.00004243850708,
-          46.782370656728745
+          162.00004518032074,
+          41.772857308387756
         ],
         "max": [
           27.000000700354576,
-          171.00003361701965,
-          55.34014850854874
+          165.85004329681396,
+          52.13522911071777
         ],
         "size": [
           54.00000140070915,
-          2.9999911785125732,
-          8.557777851819992
+          3.849998116493225,
+          10.362371802330017
         ]
       },
       "stl": "stl/B06-308-LENS-RETAINER.stl",
       "print_stl": "print-parts/B06-308-LENS-RETAINER.stl",
       "print_translation_mm": [
         27.000000700354576,
-        -168.00004243850708,
-        -46.782370656728745
+        -162.00004518032074,
+        -41.772857308387756
       ],
       "viewer_group": "cover_support",
       "assembly_role": "cover_support",
       "wall_nominal_mm": null,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Two M2x6 screws into hidden cover pilot bosses; 0.3mm seat allowance; central pad nominal0.4mm below lens; compliant optical shim to be trial-fitted; physical fit coupon required"
+        "Two M2x6 screws into hidden cover pilot bosses; 0.3mm seat allowance; central pad nominal minimum0.4mm below sampled lens underside; compliant optical shim to be trial-fitted; physical fit coupon required"
       ]
     },
     {
@@ -271,12 +281,12 @@
         "max": [
           66.6000097990036,
           -22.400015965104103,
-          57.05203860998154
+          49.280036240816116
         ],
         "size": [
           133.2000195980072,
           16.488024964928627,
-          54.052038583904505
+          46.280036214739084
         ]
       },
       "stl": "stl/B06-304-REAR-LID.stl",
