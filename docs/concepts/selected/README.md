@@ -21,7 +21,7 @@
 
 ![用户澄清的飞碟盾形参考](base-shield-saucer-reference.png)
 
-最新形态澄清：盾形特指低矮飞碟式护盾，中央抬起、肩部向外铺展、外缘下扣。[B04-P2 实际三维深化](../../../engineering/base_b04/README.md)单独存放在工程模块内，供本轮评审；其新增结构细节仍待确认。
+最新形态澄清：盾形特指低矮飞碟式护盾，中央抬起、肩部向外铺展、外缘下扣。早期[B04-P2三维研究](../../../engineering/base_b04/README.md)保留为历史；当前已确认的实际外观以[B06-COMPACT-02](../../../engineering/base_b06/README.md)为准。
 
 ## 归档规则
 
@@ -33,4 +33,4 @@
 
 ![最新用户提供的 B 盾形参考](base-shield-current-reference.png)
 
-最新约束以此图的短宽盾形、后置环台、肩部大曲面及简约琥珀灯窗为准。[B05 原生 Blender 深化](../../../engineering/base_b05/README.md)是待检查的实际模型，不代表外观已再次确认或结构制造放行。
+最新约束以此图的短宽盾形、后置环台、肩部大曲面及简约琥珀灯窗为准。[B05原生模型](../../../engineering/base_b05/README.md)保留为历史比较。用户已确认[B06-COMPACT-02](../../../engineering/base_b06/README.md)的紧凑一体方向与本轮外观；此后的底座修改遵循[同源规则](../../engineering/base-authority.md)，不另建并行底座。外观确认仍不等于制造放行。

@@ -1,6 +1,6 @@
 # Odradek
 
-Current review: [B04-P2 base 3D package](engineering/base_b04/README.md), with a saucer-shaped shield cover, front light, desk clamp and removable rear interface PCB.
+Current base: [B06-COMPACT-02](engineering/base_b06/README.md), the approved compact one-piece nose, wings and neck. [Shared base authority](docs/engineering/base-authority.md) applies to all arm-body work in Auromix/odradek; B04/B05 are historical references.
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
@@ -8,7 +8,7 @@ Current review: [B04-P2 base 3D package](engineering/base_b04/README.md), with a
 
 **Selected appearance directions:** the [dedicated selected-design folder](docs/concepts/selected/README.md) contains only the four-petal open silhouette and option B shield-shaped base. Other proposals and comparisons remain in the [research artwork directory](docs/concepts/README.md). Selection is not a manufacturing release.
 
-**Current base work:** develop the desktop pet one module at a time. The user has withdrawn the off-the-shelf clamp constraint; [B03 places the custom controller cradle inward under the desktop](docs/base-design-study01.md). The new structural concept is stored separately in [proposals](docs/concepts/proposals/README.md).
+**Current base work:** refine the single B06 source and integrate the arm against it. The approximately 239×224×71 mm exterior has five printed parts and underside fixings. The hidden desk clamp, inward controller cradle and electrical manufacturing checks remain separate unfinished modules; old B03/B04 hardware is not an approved fit for B06.
 
 **2026-09-28 checkpoint:** preserve the current research and drafts without adding complexity. The preferred head uses positive single-input synchronization and permits one opposed petal pair to carry the grasp. Passive differential studies remain comparisons. [Saved scope and draft status](docs/engineering/checkpoint-2026-09-28.md).
 

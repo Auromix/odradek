@@ -1,5 +1,9 @@
 # 可复现计算与建模
 
+## 当前底座唯一入口
+
+[B06-COMPACT-02](base_b06/README.md)是已确认的底座外观源；前鼻、双翼和颈台一体，五件打印结构。所有本体模块遵循[底座同源规则](../docs/engineering/base-authority.md)，读取同一模型，不在本体目录维护可编辑的替代底座。B04/B05与下文R4底座只作历史研究。
+
 新增原创工程研究源稿、参数及模型按 CC BY-NC 4.0 共享。历史 Apache / PolyForm 授权继续有效；CC 缺少软件专用条款的限制见 [LICENSING.md](../LICENSING.md)。依赖库保留各自许可，不打包重新许可。
 
 `kinematics.py` 使用空间轴乘积形式计算位姿、Jacobian、重力、质量矩阵及数值 Christoffel 项；`gripper.py` 定义四片各自的径向转动与接触力映射。所有计算使用米、千克、秒和弧度；外部配置中的角度字段名称明确带 `_deg`。
