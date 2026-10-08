@@ -1,0 +1,364 @@
+{
+  "schema": "odradek.base-compact-fit-study.v1",
+  "date": "2026-10-08",
+  "status": "packaging_constraints_only_not_new_cad_or_assembly_qualification",
+  "confirmed_print_volume_mm": [
+    256,
+    256,
+    256
+  ],
+  "candidate_outer_upper_target_mm": [
+    240,
+    230
+  ],
+  "centered_xy_margin_without_support_mm": [
+    8,
+    13
+  ],
+  "source_sha256": {
+    "odradek-arm-body/engineering/arm_a10/build/manifest.json": "fea5df1edbb54549ac29fd1a70e44f73f521b1412828fc3d94523097ca67a7f8",
+    "odradek/engineering/base_b05/build/exterior/exterior-manifest.json": "7e7d23bc17eaf8ce2e8484bb09d519e80bd10101d144b7bf2b7960301e54b7cb"
+  },
+  "source_base_transform": {
+    "rotation_deg": 90,
+    "translation_mm": [
+      0,
+      135,
+      34.6
+    ],
+    "pcd_mm": 120,
+    "bolt": "8xM6x20 with1.6mm washers",
+    "source": "B04-104-FLANGE M6x1 THRU12mm",
+    "source_note": "A09 inherited M8 was wrong; A10 holes6.6 match actual base."
+  },
+  "current_j1": {
+    "id": "J1",
+    "name": "底部转向",
+    "model": "RS03",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "offset": [
+      0,
+      0,
+      130
+    ],
+    "zero_deg": 0,
+    "limits_deg": [
+      -120,
+      120
+    ],
+    "diameter_mm": 106,
+    "length_mm": 57,
+    "motor_center": [
+      0,
+      0,
+      -28.5
+    ],
+    "mass_kg": 0.92
+  },
+  "current_j1_mounting": {
+    "joint": "J1",
+    "model": "RS03",
+    "fixed_holes": {
+      "pcd_measured_mm": 98.0,
+      "measured_cylinder_radius_mm": 1.65,
+      "raw_step_axial_span_mm": [
+        -1.5,
+        7.0
+      ],
+      "count": 8,
+      "raw_step_xy_mm": [
+        [
+          -45.2701,
+          -18.75149
+        ],
+        [
+          -45.2701,
+          18.75149
+        ],
+        [
+          -18.75149,
+          -45.2701
+        ],
+        [
+          -18.75149,
+          45.2701
+        ],
+        [
+          18.75149,
+          -45.2701
+        ],
+        [
+          18.75149,
+          45.2701
+        ],
+        [
+          45.2701,
+          -18.75149
+        ],
+        [
+          45.2701,
+          18.75149
+        ]
+      ],
+      "note": "Cylinder is geometric evidence only. Thread designation/depth comes from 2D, not cylinder diameter; screw access and preload unverified.",
+      "drawing": "8 x M4 depth 8 mm; PCD 98 +/-0.2"
+    },
+    "output_holes": {
+      "pcd_measured_mm": 30.36,
+      "measured_cylinder_radius_mm": 2.0,
+      "raw_step_axial_span_mm": [
+        31.9,
+        37.5
+      ],
+      "count": 6,
+      "raw_step_xy_mm": [
+        [
+          -13.14627,
+          -7.59
+        ],
+        [
+          -13.14627,
+          7.59
+        ],
+        [
+          0.0,
+          -15.18
+        ],
+        [
+          -0.0,
+          15.18
+        ],
+        [
+          13.14627,
+          -7.59
+        ],
+        [
+          13.14627,
+          7.59
+        ]
+      ],
+      "note": "Cylinder is geometric evidence only. Thread designation/depth comes from 2D, not cylinder diameter; screw access and preload unverified.",
+      "drawing": "6 x M4 blind depth 6 mm; PCD 30.36 +/-0.2"
+    },
+    "output_thickness_mm": 20,
+    "fixed_thickness_mm": 8,
+    "assembly": "Fasten upstream output before installing downstream motor; covers installed last."
+  },
+  "old_b05_neck": {
+    "inner_d_mm": 104,
+    "outer_d_mm": 170,
+    "top_z_mm": 74,
+    "axis_xy_mm": [
+      0,
+      75
+    ]
+  },
+  "sections": [
+    {
+      "base_z_mm": 58.0,
+      "part": "P00-root-open",
+      "max_radius_about_axis_mm": 80.00000000000001,
+      "section_bbox_local_xy_mm": [
+        160.0,
+        159.83889064661037
+      ]
+    },
+    {
+      "base_z_mm": 66.0,
+      "part": "P00-root-open",
+      "max_radius_about_axis_mm": 80.00000000000001,
+      "section_bbox_local_xy_mm": [
+        160.0,
+        159.83889064661037
+      ]
+    },
+    {
+      "base_z_mm": 66.0,
+      "part": "S00-waist-A",
+      "max_radius_about_axis_mm": 85.0,
+      "section_bbox_local_xy_mm": [
+        84.80000000000001,
+        159.99955709281258
+      ]
+    },
+    {
+      "base_z_mm": 66.0,
+      "part": "S00-waist-B",
+      "max_radius_about_axis_mm": 84.99389206130068,
+      "section_bbox_local_xy_mm": [
+        84.74649434566571,
+        159.99955709281258
+      ]
+    },
+    {
+      "base_z_mm": 74.0,
+      "part": "P00-root-open",
+      "max_radius_about_axis_mm": 63.63961030678928,
+      "section_bbox_local_xy_mm": [
+        126.0,
+        126.0
+      ]
+    },
+    {
+      "base_z_mm": 74.0,
+      "part": "S00-waist-A",
+      "max_radius_about_axis_mm": 81.33333333333333,
+      "section_bbox_local_xy_mm": [
+        81.13333333333333,
+        151.99954024465023
+      ]
+    },
+    {
+      "base_z_mm": 74.0,
+      "part": "S00-waist-B",
+      "max_radius_about_axis_mm": 81.32660540201378,
+      "section_bbox_local_xy_mm": [
+        81.09257269263689,
+        151.9995402446546
+      ]
+    },
+    {
+      "base_z_mm": 90.0,
+      "part": "P00-root-open",
+      "max_radius_about_axis_mm": 63.63961030678928,
+      "section_bbox_local_xy_mm": [
+        126.0,
+        126.0
+      ]
+    },
+    {
+      "base_z_mm": 90.0,
+      "part": "S00-waist-A",
+      "max_radius_about_axis_mm": 74.0,
+      "section_bbox_local_xy_mm": [
+        73.80000000000001,
+        135.9995032861638
+      ]
+    },
+    {
+      "base_z_mm": 90.0,
+      "part": "S00-waist-B",
+      "max_radius_about_axis_mm": 73.99762428249886,
+      "section_bbox_local_xy_mm": [
+        73.7847293865793,
+        135.9995032861638
+      ]
+    },
+    {
+      "base_z_mm": 110.0,
+      "part": "P00-root-open",
+      "max_radius_about_axis_mm": 63.63961030678928,
+      "section_bbox_local_xy_mm": [
+        126.0,
+        126.0
+      ]
+    },
+    {
+      "base_z_mm": 110.0,
+      "part": "S00-waist-A",
+      "max_radius_about_axis_mm": 72.53115596595512,
+      "section_bbox_local_xy_mm": [
+        72.3220682701342,
+        135.99948172161078
+      ]
+    },
+    {
+      "base_z_mm": 110.0,
+      "part": "S00-waist-B",
+      "max_radius_about_axis_mm": 72.53599552381853,
+      "section_bbox_local_xy_mm": [
+        72.33197055290866,
+        135.9994817215575
+      ]
+    },
+    {
+      "base_z_mm": 130.0,
+      "part": "P00-root-open",
+      "max_radius_about_axis_mm": 63.63961030678928,
+      "section_bbox_local_xy_mm": [
+        126.0,
+        126.0
+      ]
+    },
+    {
+      "base_z_mm": 130.0,
+      "part": "S00-waist-A",
+      "max_radius_about_axis_mm": 71.06993103555126,
+      "section_bbox_local_xy_mm": [
+        70.84359758522552,
+        135.99946015705774
+      ]
+    },
+    {
+      "base_z_mm": 130.0,
+      "part": "S00-waist-B",
+      "max_radius_about_axis_mm": 71.07269673909062,
+      "section_bbox_local_xy_mm": [
+        70.8704911462134,
+        135.99946015695122
+      ]
+    },
+    {
+      "base_z_mm": 164.6,
+      "part": "P00-J1-top-ring",
+      "max_radius_about_axis_mm": 62.99999999999999,
+      "section_bbox_local_xy_mm": [
+        125.6091479166409,
+        125.9517940616513
+      ]
+    },
+    {
+      "base_z_mm": 164.6,
+      "part": "S00-waist-A",
+      "max_radius_about_axis_mm": 68.53993174848074,
+      "section_bbox_local_xy_mm": [
+        68.28067520571572,
+        135.99942091482063
+      ]
+    },
+    {
+      "base_z_mm": 164.6,
+      "part": "S00-waist-B",
+      "max_radius_about_axis_mm": 68.53116879224817,
+      "section_bbox_local_xy_mm": [
+        68.29188446202835,
+        135.99942091488185
+      ]
+    }
+  ],
+  "neck_z74": {
+    "structure_circular_envelope_d_mm": 127.27922061357856,
+    "with_old_waist_circular_envelope_d_mm": 162.66666666666666,
+    "old_opening_radial_difference_structure_mm": -11.63961030678928,
+    "old_opening_radial_difference_with_waist_mm": -29.33333333333333,
+    "interpretation": "Negative radial differences reject concentric circular-envelope fit; not a solid-volume collision test"
+  },
+  "old_b04_chassis": {
+    "deck_bbox_xy_mm": [
+      220,
+      256
+    ],
+    "c_plate_total_width_mm": 240,
+    "fits_240x230_without_redesign": false
+  },
+  "proposal": {
+    "main_cover": "nose + both wings in one part; bottom fasteners",
+    "collar": "redesign around A10 root and waist; do not scale 104mm aperture",
+    "load_interface": "retain 8xM6 on PCD120, flange OD160; no automatic load qualification",
+    "pcb_reservation_mm": [
+      116,
+      56
+    ],
+    "electronics": "A10 uses CAN motors; historic EtherCAT panel is not verified CAN wiring"
+  },
+  "limits": [
+    "Only listed horizontal mesh sections were measured; no continuous height or motion envelope proof.",
+    "A10 XY rotation does not alter radius; axis relocation must be explicit in new CAD.",
+    "No new compact clamp/chassis geometry, mated connectors, tool paths, tolerances, thermal or load checks.",
+    "Print margin excludes supports, brim, calibration and excluded bed areas."
+  ]
+}
