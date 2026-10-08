@@ -1,5 +1,5 @@
 {
-  "revision": "B05-EXTERIOR-SHAPE-07",
+  "revision": "B05-EXTERIOR-SHAPE-08",
   "length_unit": "mm",
   "scope": "eight printable parts, integrated two-piece support frame; unpowered prototype, arm-load chassis and PCB integration not released",
   "parameters": {
@@ -74,14 +74,14 @@
     ],
     "inner_body_radius_mm": 72.6,
     "collar_radius_mm": [
-      52,
+      66,
       85
     ],
     "collar_top_z_mm": [
       74,
       61
     ],
-    "design_intent": "Integrated alien shield: continuous crown, flowing shoulder tips, restrained chine, fasteners as intentional repeated details",
+    "design_intent": "Approved arm coordination: original manta plan contour, narrower crown-to-skirt transition, faceted collar with R66 opening for A11 root posts; common bevel and fastening language",
     "splits_mm": {
       "main_y_min": -80.0,
       "front_nose_seam": "Y = 145.4 - 0.12 * abs(X); nominal 0.8 mm gap",
@@ -177,8 +177,7 @@
         "Former rear-shoulder split is a shallow groove; actual nose and service-lid seams retain 0.8 mm nominal clearance; J1 XY(0,75)",
         "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
         "Reduced fastening count; shallow M3 button-head seats match integrated-frame captive-nut towers"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
+      ]
     },
     {
       "id": "B05-301-ARMOR-R",
@@ -228,8 +227,7 @@
         "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
         "Reduced fastening count; shallow M3 button-head seats match integrated-frame captive-nut towers",
         "Mirrored native left part for exact bilateral symmetry; face winding recalculated"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
+      ]
     },
     {
       "id": "B05-306-LIGHT-LENS",
@@ -276,8 +274,7 @@
       "notes": [
         "Separate lens contour, 0.3 mm nominal XY clearance",
         "Optical diffusion and lamp-board retention are not validated"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
+      ]
     },
     {
       "id": "B05-302-NOSE",
@@ -327,8 +324,7 @@
         "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
         "Real light aperture X -19..19, Y 178..184 mm; illumination cavity and PCB position remain integration work",
         "Reduced fastening count; shallow M3 button-head seats match integrated-frame captive-nut towers"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
+      ]
     },
     {
       "id": "B05-304-REAR-LID",
@@ -378,8 +374,7 @@
         "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
         "Actual rear-bottom cable exit, X ±42 mm, top Z 21 mm; cable comb and bend envelopes require integration",
         "Reduced fastening count; shallow M3 button-head seats match integrated-frame captive-nut towers"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
+      ]
     },
     {
       "id": "B05-305-COLLAR",
@@ -424,11 +419,10 @@
       "wall_nominal_mm": 3.0,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "R52 inner clearance; R85 outer land radius; 170 mm print envelope",
+        "R66 inner clearance; R85 outer land radius; 170 mm print envelope",
         "Four M3 x10 fasteners attach collar to independent posts through hidden shell apertures",
         "Arm joint interface is not the cosmetic collar"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
+      ]
     },
     {
       "id": "B05-307-FRAME-L",
@@ -476,8 +470,7 @@
         "Exterior-only locating/support module; does not carry arm joint loads",
         "Integrated annular base, radial ties, conformal towers and independent collar posts",
         "Two overlapping lap joints locate frame halves; insert captive nuts before installing panels"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
+      ]
     },
     {
       "id": "B05-307-FRAME-R",
@@ -525,8 +518,7 @@
         "Exterior-only locating/support module; does not carry arm joint loads",
         "Integrated annular base, radial ties, conformal towers and independent collar posts",
         "Two overlapping lap joints locate frame halves; insert captive nuts before installing panels"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
+      ]
     },
     {
       "id": "STD-SCREW-01",
@@ -546,17 +538,17 @@
         "min": [
           -101.85001790523529,
           -30.85000067949295,
-          29.240233823657036
+          29.196681454777718
         ],
         "max": [
           -96.15001082420349,
           -25.150001049041748,
-          40.89023545384407
+          40.846679359674454
         ],
         "size": [
           5.700007081031799,
           5.699999630451202,
-          11.650001630187035
+          11.649997904896736
         ]
       },
       "stl": "stl/STD-SCREW-01.stl",
@@ -816,17 +808,17 @@
         "min": [
           96.15001082420349,
           -30.85000067949295,
-          29.240233823657036
+          29.196681454777718
         ],
         "max": [
           101.85001790523529,
           -25.150001049041748,
-          40.89023545384407
+          40.846679359674454
         ],
         "size": [
           5.700007081031799,
           5.699999630451202,
-          11.650001630187035
+          11.649997904896736
         ]
       },
       "stl": "stl/STD-SCREW-04.stl",
@@ -1446,12 +1438,12 @@
         "min": [
           -68.85000318288803,
           -30.85000067949295,
-          35.69155931472778
+          35.56431829929352
         ],
         "max": [
           -63.14999610185623,
           -25.150001049041748,
-          47.34155908226967
+          47.2143180668354
         ],
         "size": [
           5.700007081031799,
@@ -1491,12 +1483,12 @@
         "min": [
           -68.75000149011612,
           -31.17542713880539,
-          38.1050631403923
+          38.00458461046219
         ],
         "max": [
           -63.24999779462814,
           -24.82457458972931,
-          40.5050590634346
+          40.404580533504486
         ],
         "size": [
           5.500003695487976,
@@ -1536,12 +1528,12 @@
         "min": [
           63.14999610185623,
           -30.85000067949295,
-          35.69155931472778
+          35.56431829929352
         ],
         "max": [
           68.85000318288803,
           -25.150001049041748,
-          47.34155908226967
+          47.2143180668354
         ],
         "size": [
           5.700007081031799,
@@ -1581,12 +1573,12 @@
         "min": [
           63.24999779462814,
           -31.17542713880539,
-          38.1050631403923
+          38.00458461046219
         ],
         "max": [
           68.75000149011612,
           -24.82457458972931,
-          40.5050590634346
+          40.404580533504486
         ],
         "size": [
           5.500003695487976,
@@ -2153,6 +2145,7 @@
   "module": "exterior",
   "review_status": "外壳与紧固结构试装候选 · 未完成实物与整机验证",
   "not_verified": [
+    "load chassis to A11 root",
     "physical printing",
     "supports/overhangs",
     "minimum wall audit",

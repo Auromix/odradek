@@ -1,15 +1,15 @@
 {
   "schema": "odradek.print-checks.v1",
-  "checked_at_utc": "2026-10-08T05:18:35.920294+00:00",
+  "checked_at_utc": "2026-10-08T06:14:35.118816+00:00",
   "scope": "mesh integrity and per-instance print-bed envelope only; not manufacturing or load release",
   "script_sha256": "93c87f2a77470376bbb73a7543d782ae6efb689d14cec6c067688be353c1321b",
   "python": "3.12.14",
   "trimesh_version": "5.1.0",
   "numpy_version": "2.5.3",
   "bed_mm": [
-    220,
-    220,
-    250
+    220.0,
+    220.0,
+    250.0
   ],
   "edge_margin_mm": 5.0,
   "orthogonal_rotation_allowed": false,
@@ -17,21 +17,21 @@
   "files": [
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-301-ARMOR-L.stl",
-      "sha256": "ea06f4cd4765dfd6b3e87e9de5cfeaf1da87cf74115455243d4091ee43063416",
+      "sha256": "c1115b7ebbf0849fe56f0ef4e85ef570516e28ebc4751c512737b4b117cfa31f",
       "instances": [
         {
           "name": "B05-301-ARMOR-L",
-          "vertices_before_weld": 78222,
-          "vertices_after_weld": 13029,
-          "faces": 26074,
+          "vertices_before_weld": 78228,
+          "vertices_after_weld": 13030,
+          "faces": 26076,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 67412.4164125545,
-          "surface_area_mm2": 48969.41489553349,
+          "signed_volume_mm3": 67369.17073133592,
+          "surface_area_mm2": 48918.942381171495,
           "bbox_mm": [
             [
               0.00032782554626464844,
@@ -147,7 +147,7 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-301-ARMOR-R.stl",
-      "sha256": "2a88acbc12b75c84fb53bc6a3a6d5ee338ce9c1a3acfa6e5d97b1df09947bb6a",
+      "sha256": "dd359f4c3d559e09e3fcc39da241a608d2fbcb84d8601767eb9ab232e10b6526",
       "instances": [
         {
           "name": "B05-301-ARMOR-R",
@@ -160,8 +160,8 @@
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 67412.4128970082,
-          "surface_area_mm2": 48969.41374016068,
+          "signed_volume_mm3": 67369.1679575671,
+          "surface_area_mm2": 48918.94041481828,
           "bbox_mm": [
             [
               0.0,
@@ -277,21 +277,21 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-302-NOSE.stl",
-      "sha256": "50374586403e4f4e8bac654419854d2bec65f46f4fd54a9669e3ab2e3b28e2ea",
+      "sha256": "00517585cc9776dfee343657a53f6264c6568a97a2c3f9f49b3015db3e99826e",
       "instances": [
         {
           "name": "B05-302-NOSE",
-          "vertices_before_weld": 63924,
-          "vertices_after_weld": 10646,
-          "faces": 21308,
+          "vertices_before_weld": 63870,
+          "vertices_after_weld": 10637,
+          "faces": 21290,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 45696.49417095804,
-          "surface_area_mm2": 33775.243051242855,
+          "signed_volume_mm3": 45633.07294910719,
+          "surface_area_mm2": 33522.786929534246,
           "bbox_mm": [
             [
               0.00019371509552001953,
@@ -407,21 +407,21 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-304-REAR-LID.stl",
-      "sha256": "383c38faa305ecc093fda563bf3ea8e3ce157a231849ecd0d61148f7d93bfeaf",
+      "sha256": "b1084922e4b2d959becd6558355e24478273109617dafa06546ace39dce95fa5",
       "instances": [
         {
           "name": "B05-304-REAR-LID",
-          "vertices_before_weld": 32664,
-          "vertices_after_weld": 5434,
-          "faces": 10888,
+          "vertices_before_weld": 32928,
+          "vertices_after_weld": 5479,
+          "faces": 10976,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 27794.99726761985,
-          "surface_area_mm2": 20975.40152658723,
+          "signed_volume_mm3": 27752.909020022664,
+          "surface_area_mm2": 20925.439385075442,
           "bbox_mm": [
             [
               4.470348358154297e-05,
@@ -537,21 +537,21 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-305-COLLAR.stl",
-      "sha256": "5020d214aa350edaae54b27ed717763fa0673f7ead5536532de936b5bdd73a13",
+      "sha256": "e8fd28fbd8ed68f1777478835c34ed2baeba66fd7ae5536729ddac3de5ca86d7",
       "instances": [
         {
           "name": "B05-305-COLLAR",
-          "vertices_before_weld": 34416,
-          "vertices_after_weld": 5728,
-          "faces": 11472,
+          "vertices_before_weld": 30564,
+          "vertices_after_weld": 5086,
+          "faces": 10188,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 44572.57848280155,
-          "surface_area_mm2": 35998.6320184562,
+          "signed_volume_mm3": 28225.07347693171,
+          "surface_area_mm2": 26599.88697497455,
           "bbox_mm": [
             [
               0.0,
@@ -797,21 +797,21 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-307-FRAME-L.stl",
-      "sha256": "0836d41de96123cdea82debc50219294c53bc943547ab2efdcec5a242af5f325",
+      "sha256": "aad88f4b8b66d67827f9ce87f16a723017f54b9ce5b43d1605ce3e10822a0bdb",
       "instances": [
         {
           "name": "B05-307-FRAME-L",
-          "vertices_before_weld": 50136,
-          "vertices_after_weld": 8316,
-          "faces": 16712,
+          "vertices_before_weld": 50094,
+          "vertices_after_weld": 8309,
+          "faces": 16698,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 93594.44605744914,
-          "surface_area_mm2": 36549.3141029105,
+          "signed_volume_mm3": 93585.59239416651,
+          "surface_area_mm2": 36544.48546915151,
           "bbox_mm": [
             [
               0.00023096799850463867,
@@ -927,21 +927,21 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b05/build/exterior/print-parts/B05-307-FRAME-R.stl",
-      "sha256": "f662f9d74eee9064e3b40155523041bd5c46243258d603299cde688630cc34ca",
+      "sha256": "ada05e94f6bd5ae2b923c21fcfc5dc797ddbef5da6695e6744842369efc1fd9a",
       "instances": [
         {
           "name": "B05-307-FRAME-R",
-          "vertices_before_weld": 52386,
-          "vertices_after_weld": 8695,
-          "faces": 17462,
+          "vertices_before_weld": 52368,
+          "vertices_after_weld": 8692,
+          "faces": 17456,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 91315.02160661247,
-          "surface_area_mm2": 36104.7097751831,
+          "signed_volume_mm3": 91306.1381187724,
+          "surface_area_mm2": 36099.88221021283,
           "bbox_mm": [
             [
               2.270098775625229e-06,

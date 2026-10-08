@@ -30,8 +30,8 @@ PARAMETERS = {
                                   [173,16],[178,28],[171,40],[149,56],
                                   [129,86],[117,112],[95,138],[64,167],[35,194],[17,205],[0,207]],
     "inner_body_radius_mm": INNER_RADIUS,
-    "collar_radius_mm": [52,85], "collar_top_z_mm": [74,61],
-    "design_intent": "Integrated alien shield: continuous crown, flowing shoulder tips, restrained chine, fasteners as intentional repeated details",
+    "collar_radius_mm": [66,85], "collar_top_z_mm": [74,61],
+    "design_intent": "Approved arm coordination: original manta plan contour, narrower crown-to-skirt transition, faceted collar with R66 opening for A11 root posts; common bevel and fastening language",
     "splits_mm": {"main_y_min": -80.0, "front_nose_seam": "Y = 145.4 - 0.12 * abs(X); nominal 0.8 mm gap",
                   "rear_y_max": -14.4, "rear_lid_x": [-75.6, 75.6],
                   "rear_shoulder_abs_x_min": 76.4, "shoulder_groove_depth": .4, "main_center_gap": .8},
@@ -198,7 +198,7 @@ def profile_height(fraction,x,y):
     chine_z=58-.24*(chine_r-INNER_RADIUS)
     edge_z=8+4*smoothstep(105,158,abs(x))
     apron=chine_z+(edge_z-chine_z)*(fraction-.73)/.27
-    blend=smoothstep(.69,.77,fraction)
+    blend=smoothstep(.715,.755,fraction)
     z=crown*(1-blend)+apron*blend
     rear=(1-smoothstep(-2,45,y))*(1-smoothstep(76,120,abs(x)))
     # Smooth maximum avoids the former ridge around the service-bay roof.
@@ -424,6 +424,10 @@ def finalize_mesh(obj):
                 fragments.extend(component)
     obj["Submicrometre Boolean cap faces removed"]=len(fragments)
     if fragments: bmesh.ops.delete(bm,geom=fragments,context="FACES")
+    # Native Boolean edges below the declared 1 micrometre construction
+    # grid collapse when encoded in float32 STL. Dissolve them in the native
+    # source, before export; never repair a failed STL after the fact.
+    bmesh.ops.dissolve_degenerate(bm, dist=.001*M, edges=list(bm.edges))
     bmesh.ops.recalc_face_normals(bm, faces=list(bm.faces))
     bm.to_mesh(obj.data)
     bm.free()
@@ -435,7 +439,7 @@ def finalize_mesh(obj):
 
 
 def collar():
-    top=[(85,61),(76,61),(69,70),(64,73),(60,74),(52,74)]
+    top=[(85,61),(77,61),(71,69),(68,72),(66,74)]
     section=top+[(r,z-3.15) for r,z in reversed(top)]
     vertices = [(r * math.cos(2 * math.pi * i / SEGMENTS),
                  CENTER[1] + r * math.sin(2 * math.pi * i / SEGMENTS), z)
@@ -513,6 +517,16 @@ def render_payload(obj):
 
 
 def export_part(obj, name_cn, role, mat_key, notes):
+    # Final closed source part only: tiny Boolean edges are below the1um
+    # construction grid and collapse in float32STL. Do not touch open lofts
+    # or intermediate Boolean cutters with this operation.
+    if obj.name.startswith('B05-307-FRAME'):
+        bm=bmesh.new();bm.from_mesh(obj.data)
+        bmesh.ops.dissolve_degenerate(bm,dist=.001*M,edges=list(bm.edges))
+        bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+        bm.to_mesh(obj.data);bm.free();obj.data.update()
+        obj['Final edge cleanup tolerance mm']=.001
+
     finalize_mesh(obj)
     obj.data.materials.clear()
     obj.data.materials.append(MATERIALS[mat_key])
@@ -635,7 +649,7 @@ def main():
     bevel_and_shade(ring, 0)
     objects.append(ring)
     descriptors.append(export_part(ring, "中央独立装甲环", "cover", "collar",
-                                   ["R52 inner clearance; R85 outer land radius; 170 mm print envelope",
+                                   ["R66 inner clearance; R85 outer land radius; 170 mm print envelope",
                                     "Four M3 x10 fasteners attach collar to independent posts through hidden shell apertures", "Arm joint interface is not the cosmetic collar"]))
     payload[ring.name] = render_payload(ring)
     for obj,title in integrated_frames():
@@ -652,11 +666,11 @@ def main():
     source.hide_set(True); master.hide_set(True); master.hide_render = True
     bpy.data.texts.new("B05 exterior parameters.json").write(json.dumps(PARAMETERS, ensure_ascii=False, indent=2))
     bpy.data.texts.new("B05 read me.txt").write("Native Blender exterior: eight-piece continuous shield with two integrated support frames, shallow decorative grooves and two captive-nut lap joints. Standard screw/nut geometry is a purchased-hardware reference only; never print it. All STL coordinates are global millimetres. No loaded chassis, completed PCB or physical assembly claim.")
-    manifest = {"revision": "B05-EXTERIOR-SHAPE-07", "length_unit": "mm",
+    manifest = {"revision": "B05-EXTERIOR-SHAPE-08", "length_unit": "mm",
                 "scope": PARAMETERS["prototype_scope"], "parameters": PARAMETERS,
                 "parts": descriptors, "assembly_manifest": False, "module":"exterior",
                 "review_status":"外壳与紧固结构试装候选 · 未完成实物与整机验证",
-                "not_verified": ["physical printing", "supports/overhangs", "minimum wall audit", "self-intersections",
+                "not_verified": ["load chassis to A11 root", "physical printing", "supports/overhangs", "minimum wall audit", "self-intersections",
                                  "physical fastening fit", "complete assembly clearance", "load", "optics", "cable routing"]}
     (OUT / "exterior-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     (OUT / "render-meshes.json").write_text(json.dumps(payload, separators=(",", ":")))

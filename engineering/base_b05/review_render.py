@@ -9,7 +9,7 @@ manifest=json.loads((out/'exterior-manifest.json').read_text())
 for text in list(bpy.data.texts):
  if text.name.startswith(('B05 exterior parameters.json','B05 read me.txt')): bpy.data.texts.remove(text)
 bpy.data.texts.new('B05 exterior parameters.json').write(json.dumps(manifest['parameters'],ensure_ascii=False,indent=2))
-bpy.data.texts.new('B05 read me.txt').write('SHAPE-07: eight printable parts, integrated two-piece support frame and shallow shoulder grooves. Purchased hardware is not printable. Unpowered assembly candidate; no arm load/PCB integration qualification.')
+bpy.data.texts.new('B05 read me.txt').write('SHAPE-08: eight printable parts, integrated two-piece support frame and shallow shoulder grooves. Purchased hardware is not printable. Unpowered assembly candidate; no arm load/PCB integration qualification.')
 scene=bpy.context.scene
 camera=scene.camera
 target=Vector((0,.080,.034))

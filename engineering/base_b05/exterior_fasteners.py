@@ -207,7 +207,7 @@ def integrated_frames():
 
 
 def mounting_contract():
-    return dict(schema='odradek.exterior-mount.v2',revision='B05-EXTERIOR-SHAPE-07',length_unit='mm',module_scope='Cosmetic exterior fastening only; this is not the arm load deck',mounts=MOUNTS,deck_fixings=DECK_FIXES,
+    return dict(schema='odradek.exterior-mount.v2',revision='B05-EXTERIOR-SHAPE-08',length_unit='mm',module_scope='Cosmetic exterior fastening only; this is not the arm load deck',mounts=MOUNTS,deck_fixings=DECK_FIXES,
       nominal=dict(cover_clearance_d=3.4,head_well_d=6.6,cover_head_well_depth=.5,cover_screw='ISO7380-1 M3x10',collar_screw='ISO7380-1 M3x10',nut='DIN934 M3, AF5.5 H2.4',nut_pocket_af=5.8,nut_slot_height=2.8,frame_lap_xy_clearance=.3,frame_lap_z_clearance=.3,frame_lap_tongue_z=[3,11.5],frame_lap_receiver_top_z=15),
       rear_service=dict(split_y=-14.4,collar_back_y=-10.,nominal_xy_gap=4.4,steps=['Remove only two rear-lid screws','Lift rear lid 2 mm, then withdraw toward -Y','Final flexible cable and actual tool access to be verified']),
       pcb_reservation=dict(x=[-58,58],y=[-40,16],z=[18,34],status='116x56 PCB size reservation only; native EDA components and panel interface not integrated in this module',lid_standoff_inner_abs_x=59.5,nominal_lateral_gap=1.5),
