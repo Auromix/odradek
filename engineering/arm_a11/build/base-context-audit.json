@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "f44e1f225fdf5b64d11ccb011156371719717feee68ee1394279e62654f0b638",
+  "manifest_sha256": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559",
   "base_manifest_sha256": "7e7d23bc17eaf8ce2e8484bb09d519e80bd10101d144b7bf2b7960301e54b7cb",
   "base_revision": "B05-EXTERIOR-SHAPE-08",
   "checks": [
@@ -24,5 +24,17 @@
   ],
   "scope": "Own CAD parts/analytic motor envelope vs current canonical base native surface, plus vertex table Z0 at3 named poses. Surface BVH does not prove solid containment, tolerance or load safety.",
   "head_excluded": true,
-  "complete_assembly_qualified": false
+  "complete_assembly_qualified": false,
+  "metadata_only_source_correction": {
+    "old_manifest_sha256": "f44e1f225fdf5b64d11ccb011156371719717feee68ee1394279e62654f0b638",
+    "new_manifest_sha256": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559",
+    "changed_fields": [
+      "changed_parts"
+    ],
+    "addition": "P01-shoulder-monobloc",
+    "all_other_manifest_fields_identical": true,
+    "geometry_and_parameters_sha256": "0888c6957baff1c6eff133d5df0c276c311c196385d77683cf89c94347548340",
+    "step_and_stl_modified": false,
+    "scope": "Index metadata only. Existing intersection/print/tool/FK results apply to byte-identical geometry and parameters; native files and viewer metadata are refreshed separately."
+  }
 }

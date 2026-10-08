@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "f44e1f225fdf5b64d11ccb011156371719717feee68ee1394279e62654f0b638",
+  "manifest_sha256": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559",
   "checks": [
     {
       "screw": "ROOT-M6-1",
@@ -835,5 +835,17 @@
       "assembly_rule": "Root before J1; upstream output before downstream motor; covers absent. Tool starts above head."
     }
   ],
-  "scope": "Nominal straight shaft only at reference assembly pose, no wrench handle/fingers, tolerances or physical verification."
+  "scope": "Nominal straight shaft only at reference assembly pose, no wrench handle/fingers, tolerances or physical verification.",
+  "metadata_only_source_correction": {
+    "old_manifest_sha256": "f44e1f225fdf5b64d11ccb011156371719717feee68ee1394279e62654f0b638",
+    "new_manifest_sha256": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559",
+    "changed_fields": [
+      "changed_parts"
+    ],
+    "addition": "P01-shoulder-monobloc",
+    "all_other_manifest_fields_identical": true,
+    "geometry_and_parameters_sha256": "0888c6957baff1c6eff133d5df0c276c311c196385d77683cf89c94347548340",
+    "step_and_stl_modified": false,
+    "scope": "Index metadata only. Existing intersection/print/tool/FK results apply to byte-identical geometry and parameters; native files and viewer metadata are refreshed separately."
+  }
 }

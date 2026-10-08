@@ -1,5 +1,5 @@
 {
-  "manifest_sha256": "f44e1f225fdf5b64d11ccb011156371719717feee68ee1394279e62654f0b638",
+  "manifest_sha256": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559",
   "prior_report_sha256": "2441dafe0f7b2ab7d4d6e43ab722590892e6e1ba45736bc4006f63df1c600979",
   "unchanged_pinned_items": 403,
   "path_samples": [
@@ -907,5 +907,17 @@
     }
   ],
   "status": "22_discrete_samples_only",
-  "scope": "Body/analytic motor envelopes and exposed hardware; original BREP. Recomputed every changed/new part. Not continuous-time, full joint domain, supplier-motor path, cable, tolerance or load qualification. Base checked separately at named poses."
+  "scope": "Body/analytic motor envelopes and exposed hardware; original BREP. Recomputed every changed/new part. Not continuous-time, full joint domain, supplier-motor path, cable, tolerance or load qualification. Base checked separately at named poses.",
+  "metadata_only_source_correction": {
+    "old_manifest_sha256": "f44e1f225fdf5b64d11ccb011156371719717feee68ee1394279e62654f0b638",
+    "new_manifest_sha256": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559",
+    "changed_fields": [
+      "changed_parts"
+    ],
+    "addition": "P01-shoulder-monobloc",
+    "all_other_manifest_fields_identical": true,
+    "geometry_and_parameters_sha256": "0888c6957baff1c6eff133d5df0c276c311c196385d77683cf89c94347548340",
+    "step_and_stl_modified": false,
+    "scope": "Index metadata only. Existing intersection/print/tool/FK results apply to byte-identical geometry and parameters; native files and viewer metadata are refreshed separately."
+  }
 }

@@ -11,7 +11,7 @@ M=json.loads((OUT/'motion-audit.json').read_text());assert len(M['path_samples']
 T=json.loads((OUT/'tool-access-audit.json').read_text());assert len(T['checks'])==119 and all(not p['overlaps'] for p in T['checks'])
 for p in P['parts']:assert hashlib.sha256((OUT/p['path']).read_bytes()).hexdigest()==p['sha256']
 name='odradek-a11-long-supported-fit';archive=OUT/(name+'.zip');D=json.loads((OUT/'manifest.json').read_text())
-files=[OUT/f for f in reports+['manifest.json','parts.json','hardware-BOM.csv','assembly-guide.md','print-README.md','odradek-a11-long-validation.blend']]+list((OUT/'print-ready').glob('*.stl'))+list((OUT/'drawings').glob('*'))+[OUT/'step'/(p['id']+'.step') for p in D['parts'] if p['role'] in ['printed_structure','printed_cover','fit_coupon']]
+files=[OUT/f for f in reports+['manifest.json','parts.json','metadata-correction.json','render-source.json','hardware-BOM.csv','assembly-guide.md','print-README.md','odradek-a11-long-validation.blend']]+list((OUT/'print-ready').glob('*.stl'))+list((OUT/'drawings').glob('*'))+[OUT/'step'/(p['id']+'.step') for p in D['parts'] if p['role'] in ['printed_structure','printed_cover','fit_coupon']]
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
  for f in files:z.write(f,name+'/'+f.relative_to(OUT).as_posix())
  z.write(ROOT/'docs/viewers/arm-body-a11/index.html',name+'/viewer/index.html')

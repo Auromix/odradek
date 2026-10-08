@@ -134,7 +134,7 @@ def main():
  data['baseline_manifest_sha256']=hashlib.sha256((BASE/'manifest.json').read_bytes()).hexdigest()
  data['base_interface']['root_land_diameter_mm']=140
  data['base_interface']['source_note']='PCD120 retained; SHAPE08 cosmetic collar is not the threaded load chassis. New chassis and hidden desk-clamp integration remain pending.'
- data['changed_parts']=[p['id'] for p in b.PARTS if p['role']=='printed_cover']+['P00-root-open'];data['physical_gates']+=['Shared B05 cosmetic collar is not a completed load chassis.','A11 armour requires slicer review and unpowered supported fit.']
+ data['changed_parts']=sorted(set((current.get('changed_parts',[]) if incremental else [])+[p['id'] for p in b.PARTS if p['role']=='printed_cover']+['P00-root-open']));data['physical_gates']+=['Shared B05 cosmetic collar is not a completed load chassis.','A11 armour requires slicer review and unpowered supported fit.']
  (OUT/'manifest.json').write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n')
  compact={k:v for k,v in data.items() if k!='parts'};compact['parts']=[{k:v for k,v in p.items() if k not in ['vertices_mm','triangles']} for p in b.PARTS]
  (OUT/'parts.json').write_text(json.dumps(compact,ensure_ascii=False,indent=2)+'\n')
