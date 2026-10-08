@@ -1,6 +1,6 @@
 # Odradek
 
-**2026-10-08 arm body / 本体更新：** 长版保留，用户否定A10外观；当前先选择[A11三组风格候选](docs/concepts/exploration/arm-body-a11-style-study/README.md)，共用另一个会话的最新魔鬼鱼底座。此前[A10机械试装文件](engineering/arm_a10/README.md)及[查看器](docs/viewers/arm-body-a10/index.html)仅作为机械输入与历史记录。裸法兰总外负载目标3 kg，实物承载、温升与线束待验证。
+**2026-10-08 arm body / 本体更新：** 用户已确认并实现[A11长版翼脊外观](engineering/arm_a11/README.md)：收腰连杆、可拆肩板与折面关节护罩，同源魔鬼鱼B05 SHAPE08底座，四瓣轮廓保留。[查看器](docs/viewers/arm-body-a11/index.html)与[验证记录](docs/engineering/arm-body-a11-validation.md)已更新；51个打印文件用于受支撑试配。裸法兰3 kg是目标，实物装配、温升、承力底盘和线束仍需验证。
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
