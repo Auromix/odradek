@@ -1,6 +1,6 @@
 # Odradek
 
-**2026-10-08 arm body / 本体更新：** 用户认为A11外观仍需重构，已选择[A12 A连续甲壳](docs/concepts/selected/arm-body-a12-manta-carapace/README.md)，围绕实际电机包覆、可拆背脊和活动线弯逐模块深化。目前只有[J2肩罩空间初稿](engineering/arm_a12/shoulder01/README.md)，其余本体仍保留A11结构；B06底座作为同源只读上下文，不代表新旧模块已完成整机适配。
+**2026-10-08 arm body / 本体更新：** 用户认为A11外观仍需重构，已选择[A12 A连续甲壳](docs/concepts/selected/arm-body-a12-manta-carapace/README.md)，围绕实际电机包覆、可拆背脊和活动线弯逐模块深化。新增[连续甲壳整臂造型初稿](engineering/arm_a12/whole_style01/README.md)与[七轴交互预览](docs/viewers/arm-body-a12-style/index.html)，保留真实长版拓扑；新增外罩尚未完成运动干涉和打印装配验证。内部承力结构仍为A11，[J2肩罩局部空间初稿](engineering/arm_a12/shoulder01/README.md)的检查不延伸为整臂结论；B06底座作为同源只读上下文，不代表新旧模块已完成整机适配。
 
 [A11长版](engineering/arm_a11/README.md)与其[查看器](docs/viewers/arm-body-a11/index.html)、[验证记录](docs/engineering/arm-body-a11-validation.md)保留为历史结构基线；51个打印文件只适用于该版本受支撑试配，不移用于A12。裸法兰3 kg是目标，实物装配、温升、承力底盘和线束仍需验证。
 

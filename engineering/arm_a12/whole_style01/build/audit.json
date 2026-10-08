@@ -1,0 +1,220 @@
+{
+  "scope": "Closed owned style meshes and actual supplier invariance ONLY",
+  "style_mesh_checks": [
+    {
+      "id": "A12-W01-root-carapace",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W02-shoulder-lower-cowl",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W03-bridge-spine",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W04-J3-fixed-guard",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W05-J4-fixed-guard",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W06-J5-fixed-guard",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W07-J6-fixed-guard",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W08-J7-fixed-guard",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W13-J3-rotor-lip",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W14-J4-rotor-lip",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W15-J5-rotor-lip",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W16-J6-rotor-lip",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W17-J7-rotor-lip",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W20-upper-blade",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W21-fore-blade",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W22-upper-dorsal-lid",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    },
+    {
+      "id": "A12-W23-fore-dorsal-lid",
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "components": 1
+    }
+  ],
+  "supplier_groups": [
+    {
+      "id": "J1-supplier-stator",
+      "model": "RS03",
+      "source_sha256": "8eccaf6291e395d8622300396289df898ab18a1648193a5cd327cfbd2bf72500",
+      "export_vertex_error_mm": 0.0008509115080057113
+    },
+    {
+      "id": "J1-supplier-external-output",
+      "model": "RS03",
+      "source_sha256": "8eccaf6291e395d8622300396289df898ab18a1648193a5cd327cfbd2bf72500",
+      "export_vertex_error_mm": 0.000747342994257057
+    },
+    {
+      "id": "J2-supplier-stator",
+      "model": "RS04",
+      "source_sha256": "841f5deaa15575e98bdca3a6d0b69f4207c305f56f1743f0a7122a42366996b1",
+      "export_vertex_error_mm": 0.000862979094726352
+    },
+    {
+      "id": "J2-supplier-external-output",
+      "model": "RS04",
+      "source_sha256": "841f5deaa15575e98bdca3a6d0b69f4207c305f56f1743f0a7122a42366996b1",
+      "export_vertex_error_mm": 0.0008356409723347958
+    },
+    {
+      "id": "J3-supplier-stator",
+      "model": "RS03",
+      "source_sha256": "8eccaf6291e395d8622300396289df898ab18a1648193a5cd327cfbd2bf72500",
+      "export_vertex_error_mm": 0.0008509115080097629
+    },
+    {
+      "id": "J3-supplier-external-output",
+      "model": "RS03",
+      "source_sha256": "8eccaf6291e395d8622300396289df898ab18a1648193a5cd327cfbd2bf72500",
+      "export_vertex_error_mm": 0.0007473429942588043
+    },
+    {
+      "id": "J4-supplier-stator",
+      "model": "RS03",
+      "source_sha256": "8eccaf6291e395d8622300396289df898ab18a1648193a5cd327cfbd2bf72500",
+      "export_vertex_error_mm": 0.0008509115080097629
+    },
+    {
+      "id": "J4-supplier-external-output",
+      "model": "RS03",
+      "source_sha256": "8eccaf6291e395d8622300396289df898ab18a1648193a5cd327cfbd2bf72500",
+      "export_vertex_error_mm": 0.0007473429942588043
+    },
+    {
+      "id": "J5-supplier-stator",
+      "model": "RS06",
+      "source_sha256": "ee6af519b6ef8d4a22e7e1f3d2196e1d60af0780e2c7cb78ba6118dd9b185d0e",
+      "export_vertex_error_mm": 0.0008467606395944638
+    },
+    {
+      "id": "J5-supplier-external-output",
+      "model": "RS06",
+      "source_sha256": "ee6af519b6ef8d4a22e7e1f3d2196e1d60af0780e2c7cb78ba6118dd9b185d0e",
+      "export_vertex_error_mm": 0.0007398254612407936
+    },
+    {
+      "id": "J6-supplier-stator",
+      "model": "RS00",
+      "source_sha256": "4133dea27ccff90d69588dbc37662c9eafeed0bf858fc0a4cee93417e508abfe",
+      "export_vertex_error_mm": 0.0008256589042220344
+    },
+    {
+      "id": "J6-supplier-external-output",
+      "model": "RS00",
+      "source_sha256": "4133dea27ccff90d69588dbc37662c9eafeed0bf858fc0a4cee93417e508abfe",
+      "export_vertex_error_mm": 0.0006672532197197377
+    },
+    {
+      "id": "J7-supplier-stator",
+      "model": "RS00",
+      "source_sha256": "4133dea27ccff90d69588dbc37662c9eafeed0bf858fc0a4cee93417e508abfe",
+      "export_vertex_error_mm": 0.0008537076620502617
+    },
+    {
+      "id": "J7-supplier-external-output",
+      "model": "RS00",
+      "source_sha256": "4133dea27ccff90d69588dbc37662c9eafeed0bf858fc0a4cee93417e508abfe",
+      "export_vertex_error_mm": 0.0007199712068944553
+    }
+  ],
+  "seven_axis_layout_identical": true,
+  "public_supplier_groups": 0,
+  "actual_native_sha256": "983f6110e7c844eefbf87b062ac7027d74d5ca784d1584bb60e0a504f9a96f2a",
+  "public_native_sha256": "1884e6edf4b8983fa8f5ade8ad8caa975714ae505b7ba7119f9cad812f99ea47",
+  "style_manifest_sha256": "a641f1238c9dc8ce3507e93f41f01ef20667a39207484f8a3a558b64a40aa65b",
+  "base_native_sha256": "a4f33dcb371f9de8f90768dc2ddb52e731ceace7660939186d57d400851032e4",
+  "full_collision_check": false,
+  "connected_harness_check": false,
+  "print_release": false,
+  "load_3kg_qualified": false
+}
