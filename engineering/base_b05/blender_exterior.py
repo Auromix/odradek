@@ -5,7 +5,7 @@
 Run with Blender --background --python engineering/base_b05/blender_exterior.py.
 The editable .blend retains the native loft surface and construction parameters.
 STLs use global assembly millimetres; print-parts are translated to XYZ >= 0.
-These are exterior shape/fit prototypes. Mounting supports are integrated later.
+These are unpowered exterior shape and fastening fit prototypes.
 """
 import bpy
 import bmesh
@@ -26,19 +26,18 @@ WALL = 3.0
 PARAMETERS = {
     "schema": "odradek.b05.blender-exterior.v1", "length_unit": "mm",
     "center_xy": CENTER, "wall_nominal_mm": WALL,
-    "outer_half_control_points": [[0, -45], [106, -45], [130, -33], [146, -8],
-                                  [165, 17], [174, 35], [174, 44], [159, 53],
-                                  [135, 67], [126, 94], [117, 112], [94, 139],
-                                  [63, 166], [35, 196], [17, 205], [0, 207]],
+    "outer_half_control_points": [[0,-45],[106,-45],[133,-30],[157,-5],
+                                  [173,16],[178,28],[171,40],[149,56],
+                                  [129,86],[117,112],[95,138],[64,167],[35,194],[17,205],[0,207]],
     "inner_body_radius_mm": INNER_RADIUS,
-    "collar_radius_mm": [52, 72], "collar_top_z_mm": [74, 58.5],
-    "design_intent": "Manta-inspired alien mecha: swept wing shoulders, recessed waist, rounded wing tips, continuous crown and distinct outer chine, restrained seams",
-    "splits_mm": {"main_y_min": 30.4, "front_nose_seam": "Y = 145.4 - 0.12 * abs(X); nominal 0.8 mm gap",
-                  "rear_y_max": 29.6, "rear_lid_x": [-75.6, 75.6],
+    "collar_radius_mm": [52,85], "collar_top_z_mm": [74,61],
+    "design_intent": "Integrated alien shield: continuous crown, flowing shoulder tips, restrained chine, fasteners as intentional repeated details",
+    "splits_mm": {"main_y_min": -13.6, "front_nose_seam": "Y = 145.4 - 0.12 * abs(X); nominal 0.8 mm gap",
+                  "rear_y_max": -14.4, "rear_lid_x": [-75.6, 75.6],
                   "rear_shoulder_abs_x_min": 76.4, "main_center_gap": .8},
     "rear_cable_exit": {"x": [-42, 42], "y": [-60, -33], "z": [-8, 21], "corner_radius_mm": 4},
     "light_aperture_xy_mm": [[-19, 178], [19, 184]],
-    "prototype_scope": "exterior shape and unpowered fit prototype; mounting details and full assembly not released",
+    "prototype_scope": "exterior with screw seats, captive-nut carriers and locating deck; unpowered prototype, arm-load chassis and PCB integration not released",
 }
 
 
@@ -48,7 +47,7 @@ def reset_scene():
     for obj in list(bpy.data.objects):
         bpy.data.objects.remove(obj, do_unlink=True)
     for collection in list(bpy.data.collections):
-        if collection.name.startswith(("01_Exterior", "02_Light", "90_Construction", "99_Render")):
+        if collection.name.startswith(("01_Exterior", "02_Light", "03_Exterior", "04_Purchased", "90_Construction", "99_Render")):
             bpy.data.collections.remove(collection)
     scene = bpy.context.scene
     scene.unit_settings.system = "METRIC"
@@ -67,14 +66,14 @@ def reset_scene():
     scene.view_settings.view_transform = "AgX"
     scene.render.image_settings.file_format = "PNG"
     scene["Scope"] = PARAMETERS["prototype_scope"]
-    scene["Geometry source"] = "Native Blender loft, solidify and manifold Boolean operations; not imported CAD"
+    scene["Geometry source"] = "Native Blender loft, solidify and exact Boolean operations; not imported CAD"
     scene["Units"] = "Blender SI metres with millimetre display; all exported STL coordinates are millimetres"
     return scene
 
 
 SCENE = reset_scene()
 COLLECTIONS = {}
-for name in ("01_Exterior_fit_parts", "02_Light_lens_fit_part", "90_Construction_native_loft", "99_Render_only"):
+for name in ("01_Exterior_fit_parts", "02_Light_lens_fit_part", "03_Exterior_mount_carriers", "04_Purchased_fasteners_reference", "90_Construction_native_loft", "99_Render_only"):
     collection = bpy.data.collections.new(name)
     SCENE.collection.children.link(collection)
     COLLECTIONS[name] = collection
@@ -106,6 +105,29 @@ def mesh_object(name, vertices_mm, faces, collection="01_Exterior_fit_parts"):
 def recalc(obj):
     bm = bmesh.new()
     bm.from_mesh(obj.data)
+    # Boolean caps may retain a flattened tetrahedron attached along a
+    # non-manifold edge. Remove only four-face/four-vertex fragments whose
+    # shortest altitude is below the declared 1 micrometre construction grid.
+    unseen=set(bm.faces)
+    fragments=[]
+    while unseen:
+        face=unseen.pop(); component={face}; pending=[face]
+        while pending:
+            current=pending.pop()
+            for edge in current.edges:
+                if len(edge.link_faces)!=2: continue
+                for adjacent in edge.link_faces:
+                    if adjacent in unseen:
+                        unseen.remove(adjacent); component.add(adjacent); pending.append(adjacent)
+        vertices={v for f in component for v in f.verts}
+        if len(component)==4 and len(vertices)==4:
+            origin=next(iter(vertices)).co
+            volume=abs(sum((f.verts[0].co-origin).dot((f.verts[1].co-origin).cross(f.verts[2].co-origin))/6 for f in component))
+            largest_area=max(f.calc_area() for f in component)
+            if largest_area and 3*volume/largest_area < .001*M:
+                fragments.extend(component)
+    obj["Submicrometre Boolean cap faces removed"]=len(fragments)
+    if fragments: bmesh.ops.delete(bm,geom=fragments,context="FACES")
     bmesh.ops.recalc_face_normals(bm, faces=list(bm.faces))
     bm.to_mesh(obj.data)
     bm.free()
@@ -157,26 +179,24 @@ def radial_boundary(theta):
     return max(candidates)
 
 
-SURFACE_FRACTIONS = sorted(set([i/32 for i in range(33)] + [.08,.66,.70,.73]))
+SURFACE_FRACTIONS=sorted(set([i/40 for i in range(41)]+[.69,.73,.77]))
 
 
-def profile_height(fraction, x, y):
-    # Broad crown and steep apron meet along a deliberate chine. The same
-    # piecewise profile drives both wings and nose, without the old local
-    # nose blend/saddle that produced lumpy, unrelated highlights.
-    keys = [(0.,58),(.08,58),(.66,41),(.70,40),(.73,37),(1.,8)]
-    z=8.
-    for (a,za),(b,zb) in zip(keys,keys[1:]):
-        if a <= fraction <= b:
-            z=za+(zb-za)*(fraction-a)/(b-a)
-            break
-    # A restrained lift reaches the wing extremity. The lower edge still
-    # returns to Z3; there is no separate ornamental spike or thin overhang.
-    wing = smoothstep(88,164,abs(x)) * (1-smoothstep(78,140,y))
-    z += 9.0 * wing * fraction**2
-    # Preserve only a central rear connection-bay volume; wings stay low.
-    rear_roof=(1-smoothstep(0,54,y))*(1-smoothstep(76,122,abs(x)))
-    return z+max(0.,54-z)*rear_roof
+def profile_height(fraction,x,y):
+    # The crown uses a physical radial gradient, not a fraction-based height
+    # bump. Longer wing spans therefore flow from the neck without a bulge.
+    r=math.hypot(x,y-CENTER[1]);outer=INNER_RADIUS+(r-INNER_RADIUS)/fraction if fraction>1e-8 else INNER_RADIUS
+    crown=58-.24*(r-INNER_RADIUS)
+    chine_r=INNER_RADIUS+.73*(outer-INNER_RADIUS)
+    chine_z=58-.24*(chine_r-INNER_RADIUS)
+    edge_z=8+4*smoothstep(105,158,abs(x))
+    apron=chine_z+(edge_z-chine_z)*(fraction-.73)/.27
+    blend=smoothstep(.69,.77,fraction)
+    z=crown*(1-blend)+apron*blend
+    rear=(1-smoothstep(-2,45,y))*(1-smoothstep(76,120,abs(x)))
+    # Smooth maximum avoids the former ridge around the service-bay roof.
+    lifted=max(z,42)+max(0.,3-abs(z-42))**2/12
+    return z*(1-rear)+lifted*rear
 
 
 def make_native_loft():
@@ -279,12 +299,26 @@ def light_lens(nose):
 
 
 def boolean(obj, tool, operation):
+    # Keep the editable scene in SI metres, but perform CSG in millimetres
+    # to avoid tolerance artifacts in small screw seats on the curved loft.
+    for operand in (obj, tool):
+        bm = bmesh.new(); bm.from_mesh(operand.data)
+        bmesh.ops.triangulate(bm, faces=list(bm.faces))
+        bm.to_mesh(operand.data); bm.free()
+        for vertex in operand.data.vertices: vertex.co *= 1000
+        operand.location *= 1000
+        operand.data.update()
+    bpy.context.view_layer.update()
     modifier = obj.modifiers.new(operation + " " + tool.name, "BOOLEAN")
     modifier.operation = operation
     modifier.solver = "MANIFOLD"
     modifier.object = tool
     apply_modifier(obj, modifier)
+    for vertex in obj.data.vertices: vertex.co *= .001
+    obj.location *= .001
+    obj.data.update()
     bpy.data.objects.remove(tool, do_unlink=True)
+    bpy.context.view_layer.update()
     recalc(obj)
 
 
@@ -327,6 +361,10 @@ def finalize_mesh(obj):
     # allowances. This runs before export; the independent checker never repairs.
     bm = bmesh.new()
     bm.from_mesh(obj.data)
+    # Snap construction vertices to the same 1 micrometre grid before welding.
+    # This avoids near-coincident cap slivers splitting after float32 STL export.
+    for v in bm.verts:
+        v.co = Vector([round(c / M, 3) * M for c in v.co])
     bmesh.ops.remove_doubles(bm, verts=list(bm.verts), dist=0.001 * M)
     bmesh.ops.dissolve_degenerate(bm, dist=0.001 * M, edges=list(bm.edges))
     bmesh.ops.triangulate(bm, faces=list(bm.faces))
@@ -346,6 +384,35 @@ def finalize_mesh(obj):
     obj["Zero-volume Boolean artifact faces removed"]=len(artifacts)
     if artifacts:
         bmesh.ops.delete(bm,geom=artifacts,context="FACES")
+    # Partition clipping can also leave one isolated triangle sheet. Such a
+    # sheet encloses no solid and is not part of this closed-shell design.
+    # Keep all multi-face disconnected components for the independent gate.
+    sheets=[f for f in bm.faces if len(f.verts)==3 and all(len(e.link_faces)==1 for e in f.edges)]
+    obj["Isolated Boolean triangle sheets removed"]=len(sheets)
+    if sheets: bmesh.ops.delete(bm,geom=sheets,context="FACES")
+    # Boolean caps may retain a flattened tetrahedron attached along a
+    # non-manifold edge. Remove only four-face/four-vertex fragments whose
+    # shortest altitude is below the declared 1 micrometre construction grid.
+    unseen=set(bm.faces)
+    fragments=[]
+    while unseen:
+        face=unseen.pop(); component={face}; pending=[face]
+        while pending:
+            current=pending.pop()
+            for edge in current.edges:
+                if len(edge.link_faces)!=2: continue
+                for adjacent in edge.link_faces:
+                    if adjacent in unseen:
+                        unseen.remove(adjacent); component.add(adjacent); pending.append(adjacent)
+        vertices={v for f in component for v in f.verts}
+        if len(component)==4 and len(vertices)==4:
+            origin=next(iter(vertices)).co
+            volume=abs(sum((f.verts[0].co-origin).dot((f.verts[1].co-origin).cross(f.verts[2].co-origin))/6 for f in component))
+            largest_area=max(f.calc_area() for f in component)
+            if largest_area and 3*volume/largest_area < .001*M:
+                fragments.extend(component)
+    obj["Submicrometre Boolean cap faces removed"]=len(fragments)
+    if fragments: bmesh.ops.delete(bm,geom=fragments,context="FACES")
     bmesh.ops.recalc_face_normals(bm, faces=list(bm.faces))
     bm.to_mesh(obj.data)
     bm.free()
@@ -357,7 +424,7 @@ def finalize_mesh(obj):
 
 
 def collar():
-    top=[(72,58.5),(70,59.5),(65,70),(63,73),(60,74),(52,74)]
+    top=[(85,61),(76,61),(69,70),(64,73),(60,74),(52,74)]
     section=top+[(r,z-3.15) for r,z in reversed(top)]
     vertices = [(r * math.cos(2 * math.pi * i / SEGMENTS),
                  CENTER[1] + r * math.sin(2 * math.pi * i / SEGMENTS), z)
@@ -391,6 +458,9 @@ MATERIALS = {
     "nose": material("Nose graphite / finish reference", (.048, .059, .072, 1), .58, .36),
     "rear": material("Rear enclosure graphite", (.035, .045, .056, 1), .58, .31),
     "collar": material("Titanium-grey collar", (.072, .084, .096, 1), .72, .26),
+    "support": material("Black exterior carrier",(.022,.030,.040,1),.15,.46),
+    "hardware": material("Black screw hardware",(.016,.021,.027,1),.65,.34),
+    "nut": material("Purchased nut reference",(.18,.21,.25,1),.75,.32),
     "lens": material("Amber light-window appearance", (1., .28, .015, 1), .02, .25, 1.6),
 }
 
@@ -437,8 +507,8 @@ def export_part(obj, name_cn, role, mat_key, notes):
     obj.data.materials.append(MATERIALS[mat_key])
     obj["Part number"] = obj.name
     obj["Chinese name"] = name_cn
-    obj["Status"] = "Shape review / unpowered fit prototype; mounting supports not included"
-    obj["Nominal wall mm"] = WALL
+    obj["Status"] = "Shape and exterior fastening trial; full chassis and PCB not integrated"
+    obj["Nominal wall mm"] = WALL if role != "cover_support" else 0
     bbox = bounding_box_mm(obj)
     shift = [-v for v in bbox["min"]]
     write_stl(obj, OUT / "stl" / (obj.name + ".stl"))
@@ -448,9 +518,9 @@ def export_part(obj, name_cn, role, mat_key, notes):
             "process": "3D print for unpowered fit; orientation/supports to be sliced",
             "color": list(MATERIALS[mat_key].diffuse_color), "color_space": "linear", "bbox": bbox,
             "stl": "stl/" + obj.name + ".stl", "print_stl": "print-parts/" + obj.name + ".stl",
-            "print_translation_mm": shift, "viewer_group": "cover", "assembly_role": role,
-            "wall_nominal_mm": WALL,
-            "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+            "print_translation_mm": shift, "viewer_group": "cover_support" if role=="cover_support" else "cover", "assembly_role": role,
+            "wall_nominal_mm": WALL if role != "cover_support" else None,
+            "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
             "notes": notes}
 
 
@@ -489,6 +559,9 @@ def point_camera(camera, location, target, scale):
     camera.data.ortho_scale = scale
 
 
+exec(compile((HERE/"exterior_fasteners.py").read_text(),str(HERE/"exterior_fasteners.py"),"exec"),globals())
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for folder in ("stl", "print-parts"):
@@ -496,12 +569,12 @@ def main():
     source = make_native_loft()
     master = make_solid_shell(source)
     specifications = [
-        ("B05-301-ARMOR-L", "左主肩甲", ((-200, 30.4, -20), (-.4, 290, 100)), "armor", "cover"),
-        ("B05-301-ARMOR-R", "右主肩甲", ((.4, 30.4, -20), (200, 290, 100)), "armor", "cover"),
-        ("B05-302-NOSE", "前鼻与底座灯窗", ((-200, 30.4, -20), (200, 290, 100)), "nose", "cover"),
-        ("B05-303-REAR-SHOULDER-L", "左后肩甲", ((-200, -80, -20), (-76.4, 29.6, 100)), "armor", "cover"),
-        ("B05-303-REAR-SHOULDER-R", "右后肩甲", ((76.4, -80, -20), (200, 29.6, 100)), "armor", "cover"),
-        ("B05-304-REAR-LID", "可拆后盖与下出线口", ((-75.6, -80, -20), (75.6, 29.6, 100)), "rear", "rear_lid"),
+        ("B05-301-ARMOR-L", "左主肩甲", ((-200, -13.6, -20), (-.4, 290, 100)), "armor", "cover"),
+        ("B05-301-ARMOR-R", "右主肩甲", ((.4, -13.6, -20), (200, 290, 100)), "armor", "cover"),
+        ("B05-302-NOSE", "前鼻与底座灯窗", ((-200, -13.6, -20), (200, 290, 100)), "nose", "cover"),
+        ("B05-303-REAR-SHOULDER-L", "左后肩甲", ((-200, -80, -20), (-76.4, -14.4, 100)), "armor", "cover"),
+        ("B05-303-REAR-SHOULDER-R", "右后肩甲", ((76.4, -80, -20), (200, -14.4, 100)), "armor", "cover"),
+        ("B05-304-REAR-LID", "可拆后盖与下出线口", ((-75.6, -80, -20), (75.6, -14.4, 100)), "rear", "rear_lid"),
     ]
     objects, descriptors, payload = [], [], {}
     for pid, title, bounds, mat, role in specifications:
@@ -516,12 +589,12 @@ def main():
             obj = copy_mesh(master, pid)
             boolean(obj, box("Module split cutter", bounds), "INTERSECT")
             if pid == "B05-301-ARMOR-L":
-                boolean(obj,contour_prism("Swept shoulder boundary",[(-200,30.4),(-.4,30.4),(-.4,144.6),(-200,120.6)]),"INTERSECT")
+                boolean(obj,contour_prism("Swept shoulder boundary",[(-200,-13.6),(-.4,-13.6),(-.4,144.6),(-200,120.6)]),"INTERSECT")
             if pid == "B05-302-NOSE":
                 boolean(obj,contour_prism("Swept nose boundary",[(-200,121.4),(0,145.4),(200,121.4),(200,290),(-200,290)]),"INTERSECT")
         notes = ["Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
-                 "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm; new J1 axis XY(0,75), R70 flange reservation requires redesign",
-                 "No load-bearing or manufacturing release; underside mounts are a separate integration task"]
+                 "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+                 "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open"]
         if pid == "B05-302-NOSE":
             lens = light_lens(obj)
             bevel_and_shade(lens, 0)
@@ -535,6 +608,8 @@ def main():
         if pid == "B05-304-REAR-LID":
             boolean(obj, rounded_rect_prism("Downward cable outlet", ((-42, -8), (42, 21)), (-60, -33), 4, "XZ"), "DIFFERENCE")
             notes.append("Actual rear-bottom cable exit, X ±42 mm, top Z 21 mm; cable comb and bend envelopes require integration")
+        cover_mounts(obj,mirrored)
+        notes.append("Functional shallow M3 button-head seats and matching conformal captive-nut standoffs")
         if not mirrored:
             # Dense curved loft edges already carry the exterior radius. A
             # mesh bevel across the thin Boolean cap can create sliver faces.
@@ -545,21 +620,33 @@ def main():
         descriptors.append(export_part(obj, title, role, mat, notes))
         payload[obj.name] = render_payload(obj)
     ring = collar()
-    bevel_and_shade(ring, .38)
+    collar_mounts(ring)
+    bevel_and_shade(ring, 0)
     objects.append(ring)
     descriptors.append(export_part(ring, "中央独立装甲环", "cover", "collar",
-                                   ["R52 inner clearance; R72 outer radius; 144 mm print envelope",
-                                    "3.15 mm vertical section thickness; top Z 74..58.5 mm", "Collar retention/supports are not included in this exterior module"]))
+                                   ["R52 inner clearance; R85 outer land radius; 170 mm print envelope",
+                                    "Four M3 x10 fasteners attach collar to independent posts through hidden shell apertures", "Arm joint interface is not the cosmetic collar"]))
     payload[ring.name] = render_payload(ring)
+    for obj,title in carriers()+deck_halves():
+        objects.append(obj)
+        descriptors.append(export_part(obj,title,"cover_support","support",["Exterior-only locating/support module; does not carry arm joint loads","M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features","Insert nuts and assemble carriers to the split deck before installing exterior panels"]))
+        move_collection(obj,"03_Exterior_mount_carriers")
+        payload[obj.name]=render_payload(obj)
+    for index,m in enumerate(MOUNTS+DECK_FIXES,1):
+        for obj,title in ((make_screw(index,m),f"M3×{m['length']} 内六角圆头螺钉 {index}"),(make_nut(index,m),f"M3 防转槽内六角螺母 {index}")):
+            objects.append(obj);descriptors.append(hardware_descriptor(obj,title));payload[obj.name]=render_payload(obj)
+    (OUT/"mounting-contract.json").write_text(json.dumps(mounting_contract(),ensure_ascii=False,indent=2)+"\n")
+    PARAMETERS["fastening"]={"cover_hole_d_mm":3.4,"head_well_d_mm":6.6,"cover_screw":"M3x10 ISO7380-1","collar_screw":"M3x10 ISO7380-1","nut_pocket_af_mm":5.8,"deck_pins_mm":[2.8,3.1]}
     move_collection(master, "90_Construction_native_loft")
     source.hide_set(True); master.hide_set(True); master.hide_render = True
     bpy.data.texts.new("B05 exterior parameters.json").write(json.dumps(PARAMETERS, ensure_ascii=False, indent=2))
-    bpy.data.texts.new("B05 read me.txt").write("Native Blender exterior construction. Seven armor parts plus one lens. All STL coordinates are global millimetres. Print-parts are translations only, not optimized orientations. Shape review and unpowered fit prototype only. No mounting, physical strength or finished assembly claim. Source loft and solid master remain in the hidden construction collection.")
-    manifest = {"revision": "B05-EXTERIOR-SHAPE-05", "length_unit": "mm",
+    bpy.data.texts.new("B05 read me.txt").write("Native Blender exterior: continuous shield, functional screw wells, four captive-nut carriers and two locating deck halves. Standard screw/nut geometry is a purchased-hardware reference only; never print it. All STL coordinates are global millimetres. No loaded chassis, completed PCB or physical assembly claim.")
+    manifest = {"revision": "B05-EXTERIOR-SHAPE-06", "length_unit": "mm",
                 "scope": PARAMETERS["prototype_scope"], "parameters": PARAMETERS,
-                "parts": descriptors, "assembly_manifest": False,
+                "parts": descriptors, "assembly_manifest": False, "module":"exterior",
+                "review_status":"外壳与紧固结构试装候选 · 未完成实物与整机验证",
                 "not_verified": ["physical printing", "supports/overhangs", "minimum wall audit", "self-intersections",
-                                 "mounting supports", "complete assembly clearance", "load", "optics", "cable routing"]}
+                                 "physical fastening fit", "complete assembly clearance", "load", "optics", "cable routing"]}
     (OUT / "exterior-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     (OUT / "render-meshes.json").write_text(json.dumps(payload, separators=(",", ":")))
     camera, target = render_setup()

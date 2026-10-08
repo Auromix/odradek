@@ -1,7 +1,7 @@
 {
-  "revision": "B05-EXTERIOR-SHAPE-05",
+  "revision": "B05-EXTERIOR-SHAPE-06",
   "length_unit": "mm",
-  "scope": "exterior shape and unpowered fit prototype; mounting details and full assembly not released",
+  "scope": "exterior with screw seats, captive-nut carriers and locating deck; unpowered prototype, arm-load chassis and PCB integration not released",
   "parameters": {
     "schema": "odradek.b05.blender-exterior.v1",
     "length_unit": "mm",
@@ -20,52 +20,48 @@
         -45
       ],
       [
-        130,
-        -33
+        133,
+        -30
       ],
       [
-        146,
-        -8
+        157,
+        -5
       ],
       [
-        165,
-        17
+        173,
+        16
       ],
       [
-        174,
-        35
+        178,
+        28
       ],
       [
-        174,
-        44
+        171,
+        40
       ],
       [
-        159,
-        53
+        149,
+        56
       ],
       [
-        135,
-        67
-      ],
-      [
-        126,
-        94
+        129,
+        86
       ],
       [
         117,
         112
       ],
       [
-        94,
-        139
+        95,
+        138
       ],
       [
-        63,
-        166
+        64,
+        167
       ],
       [
         35,
-        196
+        194
       ],
       [
         17,
@@ -79,17 +75,17 @@
     "inner_body_radius_mm": 72.6,
     "collar_radius_mm": [
       52,
-      72
+      85
     ],
     "collar_top_z_mm": [
       74,
-      58.5
+      61
     ],
-    "design_intent": "Manta-inspired alien mecha: swept wing shoulders, recessed waist, rounded wing tips, continuous crown and distinct outer chine, restrained seams",
+    "design_intent": "Integrated alien shield: continuous crown, flowing shoulder tips, restrained chine, fasteners as intentional repeated details",
     "splits_mm": {
-      "main_y_min": 30.4,
+      "main_y_min": -13.6,
       "front_nose_seam": "Y = 145.4 - 0.12 * abs(X); nominal 0.8 mm gap",
-      "rear_y_max": 29.6,
+      "rear_y_max": -14.4,
       "rear_lid_x": [
         -75.6,
         75.6
@@ -122,7 +118,18 @@
         184
       ]
     ],
-    "prototype_scope": "exterior shape and unpowered fit prototype; mounting details and full assembly not released"
+    "prototype_scope": "exterior with screw seats, captive-nut carriers and locating deck; unpowered prototype, arm-load chassis and PCB integration not released",
+    "fastening": {
+      "cover_hole_d_mm": 3.4,
+      "head_well_d_mm": 6.6,
+      "cover_screw": "M3x10 ISO7380-1",
+      "collar_screw": "M3x10 ISO7380-1",
+      "nut_pocket_af_mm": 5.8,
+      "deck_pins_mm": [
+        2.8,
+        3.1
+      ]
+    }
   },
   "parts": [
     {
@@ -141,37 +148,39 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -175.50207674503326,
-          30.400000512599945,
+          -177.94132232666016,
+          -13.600008562207222,
           3.000000026077032
         ],
         "max": [
-          -30.20547702908516,
-          141.0161852836609,
-          57.999998331069946
+          -0.4000015323981643,
+          141.01630449295044,
+          58.00000950694084
         ],
         "size": [
-          145.2965997159481,
-          110.61618477106094,
-          54.999998304992914
+          177.541320794262,
+          154.61631305515766,
+          55.00000948086381
         ]
       },
       "stl": "stl/B05-301-ARMOR-L.stl",
       "print_stl": "print-parts/B05-301-ARMOR-L.stl",
       "print_translation_mm": [
-        175.50207674503326,
-        -30.400000512599945,
+        177.94132232666016,
+        13.600008562207222,
         -3.000000026077032
       ],
       "viewer_group": "cover",
       "assembly_role": "cover",
       "wall_nominal_mm": 3.0,
-      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
-        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm; new J1 axis XY(0,75), R70 flange reservation requires redesign",
-        "No load-bearing or manufacturing release; underside mounts are a separate integration task"
-      ]
+        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
+        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
+        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
       "id": "B05-301-ARMOR-R",
@@ -189,38 +198,40 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          30.20547702908516,
-          30.400000512599945,
+          0.4000015323981643,
+          -13.600008562207222,
           3.000000026077032
         ],
         "max": [
-          175.50207674503326,
-          141.0161852836609,
-          57.999998331069946
+          177.94132232666016,
+          141.01630449295044,
+          58.00000950694084
         ],
         "size": [
-          145.2965997159481,
-          110.61618477106094,
-          54.999998304992914
+          177.541320794262,
+          154.61631305515766,
+          55.00000948086381
         ]
       },
       "stl": "stl/B05-301-ARMOR-R.stl",
       "print_stl": "print-parts/B05-301-ARMOR-R.stl",
       "print_translation_mm": [
-        -30.20547702908516,
-        -30.400000512599945,
+        -0.4000015323981643,
+        13.600008562207222,
         -3.000000026077032
       ],
       "viewer_group": "cover",
       "assembly_role": "cover",
       "wall_nominal_mm": 3.0,
-      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
-        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm; new J1 axis XY(0,75), R70 flange reservation requires redesign",
-        "No load-bearing or manufacturing release; underside mounts are a separate integration task",
+        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
+        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
+        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs",
         "Mirrored native left part for exact bilateral symmetry; face winding recalculated"
-      ]
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
       "id": "B05-306-LIGHT-LENS",
@@ -240,17 +251,17 @@
         "min": [
           -18.699999898672104,
           178.29999327659607,
-          39.639148861169815
+          47.187551856040955
         ],
         "max": [
           18.699999898672104,
           183.69999527931213,
-          44.4912426173687
+          50.475120544433594
         ],
         "size": [
           37.39999979734421,
           5.4000020027160645,
-          4.852093756198883
+          3.287568688392639
         ]
       },
       "stl": "stl/B05-306-LIGHT-LENS.stl",
@@ -258,16 +269,17 @@
       "print_translation_mm": [
         18.699999898672104,
         -178.29999327659607,
-        -39.639148861169815
+        -47.187551856040955
       ],
       "viewer_group": "cover",
       "assembly_role": "cover",
       "wall_nominal_mm": 3.0,
-      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
         "Separate lens contour, 0.3 mm nominal XY clearance",
         "Optical diffusion and lamp-board retention are not validated"
-      ]
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
       "id": "B05-302-NOSE",
@@ -285,38 +297,40 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -99.30860996246338,
-          133.48296284675598,
+          -99.3121787905693,
+          133.48254561424255,
           3.000000026077032
         ],
         "max": [
-          99.30860996246338,
-          207.0000022649765,
-          57.999998331069946
+          99.3121787905693,
+          207.00275897979736,
+          58.00000950694084
         ],
         "size": [
-          198.61721992492676,
-          73.51703941822052,
-          54.999998304992914
+          198.6243575811386,
+          73.52021336555481,
+          55.00000948086381
         ]
       },
       "stl": "stl/B05-302-NOSE.stl",
       "print_stl": "print-parts/B05-302-NOSE.stl",
       "print_translation_mm": [
-        99.30860996246338,
-        -133.48296284675598,
+        99.3121787905693,
+        -133.48254561424255,
         -3.000000026077032
       ],
       "viewer_group": "cover",
       "assembly_role": "cover",
       "wall_nominal_mm": 3.0,
-      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
-        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm; new J1 axis XY(0,75), R70 flange reservation requires redesign",
-        "No load-bearing or manufacturing release; underside mounts are a separate integration task",
-        "Real light aperture X -19..19, Y 178..184 mm; illumination cavity and PCB position remain integration work"
-      ]
+        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
+        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
+        "Real light aperture X -19..19, Y 178..184 mm; illumination cavity and PCB position remain integration work",
+        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
       "id": "B05-303-REAR-SHOULDER-L",
@@ -334,37 +348,39 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -171.8820482492447,
-          -45.88783532381058,
+          -148.81937205791473,
+          -46.109069138765335,
           3.000000026077032
         ],
         "max": [
           -76.39999687671661,
-          29.600000008940697,
-          55.333539843559265
+          -14.400006271898746,
+          47.200385481119156
         ],
         "size": [
-          95.48205137252808,
-          75.48783533275127,
-          52.33353981748223
+          72.41937518119812,
+          31.70906286686659,
+          44.200385455042124
         ]
       },
       "stl": "stl/B05-303-REAR-SHOULDER-L.stl",
       "print_stl": "print-parts/B05-303-REAR-SHOULDER-L.stl",
       "print_translation_mm": [
-        171.8820482492447,
-        45.88783532381058,
+        148.81937205791473,
+        46.109069138765335,
         -3.000000026077032
       ],
       "viewer_group": "cover",
       "assembly_role": "cover",
       "wall_nominal_mm": 3.0,
-      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
-        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm; new J1 axis XY(0,75), R70 flange reservation requires redesign",
-        "No load-bearing or manufacturing release; underside mounts are a separate integration task"
-      ]
+        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
+        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
+        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
       "id": "B05-303-REAR-SHOULDER-R",
@@ -383,37 +399,39 @@
       "bbox": {
         "min": [
           76.39999687671661,
-          -45.88783532381058,
+          -46.109069138765335,
           3.000000026077032
         ],
         "max": [
-          171.8820482492447,
-          29.600000008940697,
-          55.333539843559265
+          148.81937205791473,
+          -14.400006271898746,
+          47.200385481119156
         ],
         "size": [
-          95.48205137252808,
-          75.48783533275127,
-          52.33353981748223
+          72.41937518119812,
+          31.70906286686659,
+          44.200385455042124
         ]
       },
       "stl": "stl/B05-303-REAR-SHOULDER-R.stl",
       "print_stl": "print-parts/B05-303-REAR-SHOULDER-R.stl",
       "print_translation_mm": [
         -76.39999687671661,
-        45.88783532381058,
+        46.109069138765335,
         -3.000000026077032
       ],
       "viewer_group": "cover",
       "assembly_role": "cover",
       "wall_nominal_mm": 3.0,
-      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
-        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm; new J1 axis XY(0,75), R70 flange reservation requires redesign",
-        "No load-bearing or manufacturing release; underside mounts are a separate integration task",
+        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
+        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
+        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs",
         "Mirrored native left part for exact bilateral symmetry; face winding recalculated"
-      ]
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
       "id": "B05-304-REAR-LID",
@@ -431,38 +449,40 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -75.59999823570251,
-          -45.88622972369194,
+          -75.6000429391861,
+          -46.107713133096695,
           3.000000026077032
         ],
         "max": [
-          75.59999823570251,
-          29.600000008940697,
-          57.999998331069946
+          75.6000429391861,
+          -14.400007203221321,
+          53.968023508787155
         ],
         "size": [
-          151.19999647140503,
-          75.48622973263264,
-          54.999998304992914
+          151.2000858783722,
+          31.707705929875374,
+          50.96802348271012
         ]
       },
       "stl": "stl/B05-304-REAR-LID.stl",
       "print_stl": "print-parts/B05-304-REAR-LID.stl",
       "print_translation_mm": [
-        75.59999823570251,
-        45.88622972369194,
+        75.6000429391861,
+        46.107713133096695,
         -3.000000026077032
       ],
       "viewer_group": "cover",
       "assembly_role": "rear_lid",
       "wall_nominal_mm": 3.0,
-      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
-        "0.8 mm nominal panel seams; central collar/body radial gap 0.6 mm; new J1 axis XY(0,75), R70 flange reservation requires redesign",
-        "No load-bearing or manufacturing release; underside mounts are a separate integration task",
-        "Actual rear-bottom cable exit, X ±42 mm, top Z 21 mm; cable comb and bend envelopes require integration"
-      ]
+        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
+        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
+        "Actual rear-bottom cable exit, X ±42 mm, top Z 21 mm; cable comb and bend envelopes require integration",
+        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
       "id": "B05-305-COLLAR",
@@ -480,46 +500,2773 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -71.99999690055847,
-          3.000000026077032,
-          55.48587813973427
+          -85.00000089406967,
+          -10.000007227063179,
+          57.84999951720238
         ],
         "max": [
-          71.99999690055847,
-          146.9999998807907,
+          85.00000089406967,
+          160.00011563301086,
           74.00000095367432
         ],
         "size": [
-          143.99999380111694,
-          143.99999985471368,
-          18.514122813940048
+          170.00000178813934,
+          170.00012286007404,
+          16.15000143647194
         ]
       },
       "stl": "stl/B05-305-COLLAR.stl",
       "print_stl": "print-parts/B05-305-COLLAR.stl",
       "print_translation_mm": [
-        71.99999690055847,
-        -3.000000026077032,
-        -55.48587813973427
+        85.00000089406967,
+        10.000007227063179,
+        -57.84999951720238
       ],
       "viewer_group": "cover",
       "assembly_role": "cover",
       "wall_nominal_mm": 3.0,
-      "prototype_status": "外观与无动力试装原型；安装支座、实物装配及强度尚未验证",
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "R52 inner clearance; R72 outer radius; 144 mm print envelope",
-        "3.15 mm vertical section thickness; top Z 74..58.5 mm",
-        "Collar retention/supports are not included in this exterior module"
+        "R52 inner clearance; R85 outer land radius; 170 mm print envelope",
+        "Four M3 x10 fasteners attach collar to independent posts through hidden shell apertures",
+        "Arm joint interface is not the cosmetic collar"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
+    },
+    {
+      "id": "B05-307-CARRIER-L",
+      "name": "左外罩与环台支架",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -118.5002326965332,
+          -38.500070571899414,
+          9.000004269182682
+        ],
+        "max": [
+          -51.67984962463379,
+          139.74058628082275,
+          57.84999951720238
+        ],
+        "size": [
+          66.82038307189941,
+          178.24065685272217,
+          48.849995248019695
+        ]
+      },
+      "stl": "stl/B05-307-CARRIER-L.stl",
+      "print_stl": "print-parts/B05-307-CARRIER-L.stl",
+      "print_translation_mm": [
+        118.5002326965332,
+        38.500070571899414,
+        -9.000004269182682
+      ],
+      "viewer_group": "cover_support",
+      "assembly_role": "cover_support",
+      "wall_nominal_mm": null,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "Exterior-only locating/support module; does not carry arm joint loads",
+        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
+        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
+    },
+    {
+      "id": "B05-307-CARRIER-R",
+      "name": "右外罩与环台支架",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          51.67984962463379,
+          -38.500070571899414,
+          9.000004269182682
+        ],
+        "max": [
+          118.5002326965332,
+          139.74058628082275,
+          57.84999951720238
+        ],
+        "size": [
+          66.82038307189941,
+          178.24065685272217,
+          48.849995248019695
+        ]
+      },
+      "stl": "stl/B05-307-CARRIER-R.stl",
+      "print_stl": "print-parts/B05-307-CARRIER-R.stl",
+      "print_translation_mm": [
+        -51.67984962463379,
+        38.500070571899414,
+        -9.000004269182682
+      ],
+      "viewer_group": "cover_support",
+      "assembly_role": "cover_support",
+      "wall_nominal_mm": null,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "Exterior-only locating/support module; does not carry arm joint loads",
+        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
+        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
+    },
+    {
+      "id": "B05-308-NOSE-CARRIER",
+      "name": "前鼻支架",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -61.500001698732376,
+          140.5804455280304,
+          9.000004269182682
+        ],
+        "max": [
+          61.500001698732376,
+          173.50000143051147,
+          51.81879550218582
+        ],
+        "size": [
+          123.00000339746475,
+          32.91955590248108,
+          42.81879123300314
+        ]
+      },
+      "stl": "stl/B05-308-NOSE-CARRIER.stl",
+      "print_stl": "print-parts/B05-308-NOSE-CARRIER.stl",
+      "print_translation_mm": [
+        61.500001698732376,
+        -140.5804455280304,
+        -9.000004269182682
+      ],
+      "viewer_group": "cover_support",
+      "assembly_role": "cover_support",
+      "wall_nominal_mm": null,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "Exterior-only locating/support module; does not carry arm joint loads",
+        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
+        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
+    },
+    {
+      "id": "B05-309-REAR-CARRIER",
+      "name": "独立后盖支架",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -72.5000724196434,
+          -34.50004383921623,
+          9.000004269182682
+        ],
+        "max": [
+          72.5000724196434,
+          6.740720476955175,
+          44.53577101230621
+        ],
+        "size": [
+          145.0001448392868,
+          41.24076431617141,
+          35.53576674312353
+        ]
+      },
+      "stl": "stl/B05-309-REAR-CARRIER.stl",
+      "print_stl": "print-parts/B05-309-REAR-CARRIER.stl",
+      "print_translation_mm": [
+        72.5000724196434,
+        34.50004383921623,
+        -9.000004269182682
+      ],
+      "viewer_group": "cover_support",
+      "assembly_role": "cover_support",
+      "wall_nominal_mm": null,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "Exterior-only locating/support module; does not carry arm joint loads",
+        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
+        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
+    },
+    {
+      "id": "B05-310-DECK-L",
+      "name": "外罩定位底环左",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -96.00000083446503,
+          -20.99224179983139,
+          3.000000026077032
+        ],
+        "max": [
+          -0.39999771979637444,
+          170.99225521087646,
+          11.000003665685654
+        ],
+        "size": [
+          95.60000311466865,
+          191.98449701070786,
+          8.000003639608622
+        ]
+      },
+      "stl": "stl/B05-310-DECK-L.stl",
+      "print_stl": "print-parts/B05-310-DECK-L.stl",
+      "print_translation_mm": [
+        96.00000083446503,
+        20.99224179983139,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover_support",
+      "assembly_role": "cover_support",
+      "wall_nominal_mm": null,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "Exterior-only locating/support module; does not carry arm joint loads",
+        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
+        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
+    },
+    {
+      "id": "B05-310-DECK-R",
+      "name": "外罩定位底环右",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          0.39999771979637444,
+          -20.99224179983139,
+          3.000000026077032
+        ],
+        "max": [
+          96.00000083446503,
+          170.99225521087646,
+          11.000003665685654
+        ],
+        "size": [
+          95.60000311466865,
+          191.98449701070786,
+          8.000003639608622
+        ]
+      },
+      "stl": "stl/B05-310-DECK-R.stl",
+      "print_stl": "print-parts/B05-310-DECK-R.stl",
+      "print_translation_mm": [
+        -0.39999771979637444,
+        20.99224179983139,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover_support",
+      "assembly_role": "cover_support",
+      "wall_nominal_mm": null,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "Exterior-only locating/support module; does not carry arm joint loads",
+        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
+        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
+      ],
+      "native_cleanup_isolated_triangle_sheets_removed": 0
+    },
+    {
+      "id": "STD-SCREW-01",
+      "name": "M3×10 内六角圆头螺钉 1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -101.85001790523529,
+          5.149999633431435,
+          36.23305261135101
+        ],
+        "max": [
+          -96.15001082420349,
+          10.850001126527786,
+          47.8830523788929
+        ],
+        "size": [
+          5.700007081031799,
+          5.700001493096352,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-01.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-01",
+      "name": "M3 防转槽内六角螺母 1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -101.75000131130219,
+          4.824573639780283,
+          38.64786773920059
+        ],
+        "max": [
+          -96.2500050663948,
+          11.17542665451765,
+          41.04786366224289
+        ],
+        "size": [
+          5.499996244907379,
+          6.350853014737368,
+          2.3999959230422974
+        ]
+      },
+      "stl": "stl/STD-NUT-01.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-02",
+      "name": "M3×10 内六角圆头螺钉 2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -114.8500069975853,
+          64.14999812841415,
+          37.97431290149689
+        ],
+        "max": [
+          -109.1499999165535,
+          69.85000520944595,
+          49.62431266903877
+        ],
+        "size": [
+          5.700007081031799,
+          5.700007081031799,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-02.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-02",
+      "name": "M3 防转槽内六角螺母 2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -114.75000530481339,
+          63.82457911968231,
+          40.38912057876587
+        ],
+        "max": [
+          -109.25000160932541,
+          70.1754242181778,
+          42.78911650180817
+        ],
+        "size": [
+          5.500003695487976,
+          6.350845098495483,
+          2.3999959230422974
+        ]
+      },
+      "stl": "stl/STD-NUT-02.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-03",
+      "name": "M3×10 内六角圆头螺钉 3",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -81.85000717639923,
+          122.1499964594841,
+          42.48477518558502
+        ],
+        "max": [
+          -76.15000009536743,
+          127.8499960899353,
+          54.13477495312691
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-03.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-03",
+      "name": "M3 防转槽内六角螺母 3",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -81.75000548362732,
+          121.82457745075226,
+          44.89957168698311
+        ],
+        "max": [
+          -76.25000178813934,
+          128.17542254924774,
+          47.299575060606
+        ],
+        "size": [
+          5.500003695487976,
+          6.350845098495483,
+          2.4000033736228943
+        ]
+      },
+      "stl": "stl/STD-NUT-03.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-04",
+      "name": "M3×10 内六角圆头螺钉 4",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          96.15001082420349,
+          5.149999633431435,
+          36.23305261135101
+        ],
+        "max": [
+          101.85001790523529,
+          10.850001126527786,
+          47.8830523788929
+        ],
+        "size": [
+          5.700007081031799,
+          5.700001493096352,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-04.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-04",
+      "name": "M3 防转槽内六角螺母 4",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          96.2500050663948,
+          4.824573639780283,
+          38.64786773920059
+        ],
+        "max": [
+          101.75000131130219,
+          11.17542665451765,
+          41.04786366224289
+        ],
+        "size": [
+          5.499996244907379,
+          6.350853014737368,
+          2.3999959230422974
+        ]
+      },
+      "stl": "stl/STD-NUT-04.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-05",
+      "name": "M3×10 内六角圆头螺钉 5",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          109.1499999165535,
+          64.14999812841415,
+          37.97431290149689
+        ],
+        "max": [
+          114.8500069975853,
+          69.85000520944595,
+          49.62431266903877
+        ],
+        "size": [
+          5.700007081031799,
+          5.700007081031799,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-05.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-05",
+      "name": "M3 防转槽内六角螺母 5",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          109.25000160932541,
+          63.82457911968231,
+          40.38912057876587
+        ],
+        "max": [
+          114.75000530481339,
+          70.1754242181778,
+          42.78911650180817
+        ],
+        "size": [
+          5.500003695487976,
+          6.350845098495483,
+          2.3999959230422974
+        ]
+      },
+      "stl": "stl/STD-NUT-05.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-06",
+      "name": "M3×10 内六角圆头螺钉 6",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          76.15000009536743,
+          122.1499964594841,
+          42.48477518558502
+        ],
+        "max": [
+          81.85000717639923,
+          127.8499960899353,
+          54.13477495312691
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-06.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-06",
+      "name": "M3 防转槽内六角螺母 6",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          76.25000178813934,
+          121.82457745075226,
+          44.89957168698311
+        ],
+        "max": [
+          81.75000548362732,
+          128.17542254924774,
+          47.299575060606
+        ],
+        "size": [
+          5.500003695487976,
+          6.350845098495483,
+          2.4000033736228943
+        ]
+      },
+      "stl": "stl/STD-NUT-06.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-07",
+      "name": "M3×10 内六角圆头螺钉 7",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -57.850006967782974,
+          148.1500267982483,
+          42.40836948156357
+        ],
+        "max": [
+          -52.15000733733177,
+          153.8500189781189,
+          54.05836924910545
+        ],
+        "size": [
+          5.699999630451202,
+          5.6999921798706055,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-07.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-07",
+      "name": "M3 防转槽内六角螺母 7",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -57.750001549720764,
+          147.82457053661346,
+          44.82315853238106
+        ],
+        "max": [
+          -52.25000157952309,
+          154.17543053627014,
+          47.22316190600395
+        ],
+        "size": [
+          5.499999970197678,
+          6.350859999656677,
+          2.4000033736228943
+        ]
+      },
+      "stl": "stl/STD-NUT-07.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-08",
+      "name": "M3×10 内六角圆头螺钉 8",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          52.15000733733177,
+          148.1500267982483,
+          42.40836203098297
+        ],
+        "max": [
+          57.850006967782974,
+          153.8500189781189,
+          54.05836179852486
+        ],
+        "size": [
+          5.699999630451202,
+          5.6999921798706055,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-08.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-08",
+      "name": "M3 防转槽内六角螺母 8",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          52.25000157952309,
+          147.82457053661346,
+          44.82316970825195
+        ],
+        "max": [
+          57.750001549720764,
+          154.17543053627014,
+          47.22316935658455
+        ],
+        "size": [
+          5.499999970197678,
+          6.350859999656677,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/STD-NUT-08.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-09",
+      "name": "M3×10 内六角圆头螺钉 9",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -2.850000513717532,
+          164.15002942085266,
+          42.8440198302269
+        ],
+        "max": [
+          2.850000513717532,
+          169.85002160072327,
+          54.494019597768784
+        ],
+        "size": [
+          5.700001027435064,
+          5.6999921798706055,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-09.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-09",
+      "name": "M3 防转槽内六角螺母 9",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -2.7500002179294825,
+          163.82457315921783,
+          45.25880888104439
+        ],
+        "max": [
+          2.7500002179294825,
+          170.1754331588745,
+          47.65881225466728
+        ],
+        "size": [
+          5.500000435858965,
+          6.350859999656677,
+          2.4000033736228943
+        ]
+      },
+      "stl": "stl/STD-NUT-09.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-10",
+      "name": "M3×10 内六角圆头螺钉 10",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -92.85000711679459,
+          -34.85000133514404,
+          29.79889325797558
+        ],
+        "max": [
+          -87.15000003576279,
+          -29.15000170469284,
+          41.44889488816261
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.650001630187035
+        ]
+      },
+      "stl": "stl/STD-SCREW-10.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-10",
+      "name": "M3 防转槽内六角螺母 10",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -92.75000542402267,
+          -35.17542779445648,
+          31.894687563180923
+        ],
+        "max": [
+          -87.2500017285347,
+          -28.8245752453804,
+          34.29468721151352
+        ],
+        "size": [
+          5.500003695487976,
+          6.35085254907608,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/STD-NUT-10.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-11",
+      "name": "M3×10 内六角圆头螺钉 11",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -99.85000640153885,
+          -24.85000342130661,
+          32.27908909320831
+        ],
+        "max": [
+          -94.14999932050705,
+          -19.150003790855408,
+          43.9290888607502
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-11.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-11",
+      "name": "M3 防转槽内六角螺母 11",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -99.75000470876694,
+          -25.1754280179739,
+          34.73757579922676
+        ],
+        "max": [
+          -94.25000101327896,
+          -18.82457360625267,
+          37.137579172849655
+        ],
+        "size": [
+          5.500003695487976,
+          6.3508544117212296,
+          2.4000033736228943
+        ]
+      },
+      "stl": "stl/STD-NUT-11.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-12",
+      "name": "M3×10 内六角圆头螺钉 12",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          87.15000003576279,
+          -34.85000133514404,
+          29.79889325797558
+        ],
+        "max": [
+          92.85000711679459,
+          -29.15000170469284,
+          41.44889488816261
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.650001630187035
+        ]
+      },
+      "stl": "stl/STD-SCREW-12.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-12",
+      "name": "M3 防转槽内六角螺母 12",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          87.2500017285347,
+          -35.17542779445648,
+          31.894687563180923
+        ],
+        "max": [
+          92.75000542402267,
+          -28.8245752453804,
+          34.29468721151352
+        ],
+        "size": [
+          5.500003695487976,
+          6.35085254907608,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/STD-NUT-12.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-13",
+      "name": "M3×10 内六角圆头螺钉 13",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          94.14999932050705,
+          -24.85000342130661,
+          32.27908909320831
+        ],
+        "max": [
+          99.85000640153885,
+          -19.150003790855408,
+          43.9290888607502
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-13.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-13",
+      "name": "M3 防转槽内六角螺母 13",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          94.25000101327896,
+          -25.1754280179739,
+          34.73757579922676
+        ],
+        "max": [
+          99.75000470876694,
+          -18.82457360625267,
+          37.137579172849655
+        ],
+        "size": [
+          5.500003695487976,
+          6.3508544117212296,
+          2.4000033736228943
+        ]
+      },
+      "stl": "stl/STD-NUT-13.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-14",
+      "name": "M3×10 内六角圆头螺钉 14",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -68.85000318288803,
+          -30.85000067949295,
+          35.69155931472778
+        ],
+        "max": [
+          -63.14999610185623,
+          -25.150001049041748,
+          47.34155908226967
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-14.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-14",
+      "name": "M3 防转槽内六角螺母 14",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -68.75000149011612,
+          -31.17542713880539,
+          38.1050631403923
+        ],
+        "max": [
+          -63.24999779462814,
+          -24.82457458972931,
+          40.5050590634346
+        ],
+        "size": [
+          5.500003695487976,
+          6.35085254907608,
+          2.3999959230422974
+        ]
+      },
+      "stl": "stl/STD-NUT-14.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-15",
+      "name": "M3×10 内六角圆头螺钉 15",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          63.14999610185623,
+          -30.85000067949295,
+          35.69155931472778
+        ],
+        "max": [
+          68.85000318288803,
+          -25.150001049041748,
+          47.34155908226967
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.649999767541885
+        ]
+      },
+      "stl": "stl/STD-SCREW-15.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-15",
+      "name": "M3 防转槽内六角螺母 15",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          63.24999779462814,
+          -31.17542713880539,
+          38.1050631403923
+        ],
+        "max": [
+          68.75000149011612,
+          -24.82457458972931,
+          40.5050590634346
+        ],
+        "size": [
+          5.500003695487976,
+          6.35085254907608,
+          2.3999959230422974
+        ]
+      },
+      "stl": "stl/STD-NUT-15.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-16",
+      "name": "M3×10 内六角圆头螺钉 16",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          53.71854454278946,
+          128.7185698747635,
+          50.50000548362732
+        ],
+        "max": [
+          59.41854417324066,
+          134.4185620546341,
+          62.14999780058861
+        ],
+        "size": [
+          5.699999630451202,
+          5.6999921798706055,
+          11.649992316961288
+        ]
+      },
+      "stl": "stl/STD-SCREW-16.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-16",
+      "name": "M3 防转槽内六角螺母 16",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          53.81854623556137,
+          128.39311361312866,
+          52.85000428557396
+        ],
+        "max": [
+          59.31854620575905,
+          134.74397361278534,
+          55.250003933906555
+        ],
+        "size": [
+          5.499999970197678,
+          6.350859999656677,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/STD-NUT-16.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-17",
+      "name": "M3×10 内六角圆头螺钉 17",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -59.41854417324066,
+          128.7185698747635,
+          50.50000548362732
+        ],
+        "max": [
+          -53.71854454278946,
+          134.4185620546341,
+          62.14999780058861
+        ],
+        "size": [
+          5.699999630451202,
+          5.6999921798706055,
+          11.649992316961288
+        ]
+      },
+      "stl": "stl/STD-SCREW-17.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-17",
+      "name": "M3 防转槽内六角螺母 17",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -59.31854620575905,
+          128.39311361312866,
+          52.85000428557396
+        ],
+        "max": [
+          -53.81854623556137,
+          134.74397361278534,
+          55.250003933906555
+        ],
+        "size": [
+          5.499999970197678,
+          6.350859999656677,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/STD-NUT-17.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-18",
+      "name": "M3×10 内六角圆头螺钉 18",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -59.41854417324066,
+          15.581459738314152,
+          50.50000548362732
+        ],
+        "max": [
+          -53.71854454278946,
+          21.28146030008793,
+          62.14999780058861
+        ],
+        "size": [
+          5.699999630451202,
+          5.700000561773777,
+          11.649992316961288
+        ]
+      },
+      "stl": "stl/STD-SCREW-18.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-18",
+      "name": "M3 防转槽内六角螺母 18",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -59.31854620575905,
+          15.256031416356564,
+          52.85000428557396
+        ],
+        "max": [
+          -53.81854623556137,
+          21.60688489675522,
+          55.250003933906555
+        ],
+        "size": [
+          5.499999970197678,
+          6.350853480398655,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/STD-NUT-18.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-19",
+      "name": "M3×10 内六角圆头螺钉 19",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          53.71854454278946,
+          15.581459738314152,
+          50.50000548362732
+        ],
+        "max": [
+          59.41854417324066,
+          21.28146030008793,
+          62.14999780058861
+        ],
+        "size": [
+          5.699999630451202,
+          5.700000561773777,
+          11.649992316961288
+        ]
+      },
+      "stl": "stl/STD-SCREW-19.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-19",
+      "name": "M3 防转槽内六角螺母 19",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          53.81854623556137,
+          15.256031416356564,
+          52.85000428557396
+        ],
+        "max": [
+          59.31854620575905,
+          21.60688489675522,
+          55.250003933906555
+        ],
+        "size": [
+          5.499999970197678,
+          6.350853480398655,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/STD-NUT-19.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-20",
+      "name": "M3×10 内六角圆头螺钉 20",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -85.91964095830917,
+          94.40843760967255,
+          1.8500004662200809
+        ],
+        "max": [
+          -80.21963387727737,
+          100.10844469070435,
+          13.500001281499863
+        ],
+        "size": [
+          5.700007081031799,
+          5.700007081031799,
+          11.650000815279782
+        ]
+      },
+      "stl": "stl/STD-SCREW-20.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-20",
+      "name": "M3 防转槽内六角螺母 20",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -85.81963181495667,
+          94.08301115036011,
+          10.500000789761543
+        ],
+        "max": [
+          -80.31962066888809,
+          100.43386369943619,
+          12.900001369416714
+        ],
+        "size": [
+          5.500011146068573,
+          6.35085254907608,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/STD-NUT-20.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-21",
+      "name": "M3×10 内六角圆头螺钉 21",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -85.91964095830917,
+          49.89156872034073,
+          1.8500004662200809
+        ],
+        "max": [
+          -80.21963387727737,
+          55.59156835079193,
+          13.500001281499863
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.650000815279782
+        ]
+      },
+      "stl": "stl/STD-SCREW-21.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-21",
+      "name": "M3 防转槽内六角螺母 21",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -85.81963181495667,
+          49.56613853573799,
+          10.500000789761543
+        ],
+        "max": [
+          -80.31962066888809,
+          55.91699108481407,
+          12.900001369416714
+        ],
+        "size": [
+          5.500011146068573,
+          6.35085254907608,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/STD-NUT-21.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-22",
+      "name": "M3×10 内六角圆头螺钉 22",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          80.21963387727737,
+          49.89156872034073,
+          1.8500004662200809
+        ],
+        "max": [
+          85.91964095830917,
+          55.59156835079193,
+          13.500001281499863
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.650000815279782
+        ]
+      },
+      "stl": "stl/STD-SCREW-22.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-22",
+      "name": "M3 防转槽内六角螺母 22",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          80.31962066888809,
+          49.56613853573799,
+          10.500000789761543
+        ],
+        "max": [
+          85.81963181495667,
+          55.91699108481407,
+          12.900001369416714
+        ],
+        "size": [
+          5.500011146068573,
+          6.35085254907608,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/STD-NUT-22.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-23",
+      "name": "M3×10 内六角圆头螺钉 23",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          80.21963387727737,
+          94.40843760967255,
+          1.8500004662200809
+        ],
+        "max": [
+          85.91964095830917,
+          100.10844469070435,
+          13.500001281499863
+        ],
+        "size": [
+          5.700007081031799,
+          5.700007081031799,
+          11.650000815279782
+        ]
+      },
+      "stl": "stl/STD-SCREW-23.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-23",
+      "name": "M3 防转槽内六角螺母 23",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          80.31962066888809,
+          94.08301115036011,
+          10.500000789761543
+        ],
+        "max": [
+          85.81963181495667,
+          100.43386369943619,
+          12.900001369416714
+        ],
+        "size": [
+          5.500011146068573,
+          6.35085254907608,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/STD-NUT-23.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-24",
+      "name": "M3×10 内六角圆头螺钉 24",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          33.49516913294792,
+          150.0924676656723,
+          1.8500004662200809
+        ],
+        "max": [
+          39.195168763399124,
+          155.7924598455429,
+          13.500001281499863
+        ],
+        "size": [
+          5.699999630451202,
+          5.6999921798706055,
+          11.650000815279782
+        ]
+      },
+      "stl": "stl/STD-SCREW-24.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-24",
+      "name": "M3 防转槽内六角螺母 24",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          33.59517082571983,
+          149.76705610752106,
+          10.500000789761543
+        ],
+        "max": [
+          39.09517079591751,
+          156.11791610717773,
+          12.900001369416714
+        ],
+        "size": [
+          5.499999970197678,
+          6.350859999656677,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/STD-NUT-24.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-25",
+      "name": "M3×10 内六角圆头螺钉 25",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -39.195168763399124,
+          150.0924676656723,
+          1.8500004662200809
+        ],
+        "max": [
+          -33.49516913294792,
+          155.7924598455429,
+          13.500001281499863
+        ],
+        "size": [
+          5.699999630451202,
+          5.6999921798706055,
+          11.650000815279782
+        ]
+      },
+      "stl": "stl/STD-SCREW-25.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-25",
+      "name": "M3 防转槽内六角螺母 25",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -39.09517079591751,
+          149.76705610752106,
+          10.500000789761543
+        ],
+        "max": [
+          -33.59517082571983,
+          156.11791610717773,
+          12.900001369416714
+        ],
+        "size": [
+          5.499999970197678,
+          6.350859999656677,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/STD-NUT-25.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-26",
+      "name": "M3×10 内六角圆头螺钉 26",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -25.108441710472107,
+          -10.919622145593166,
+          1.8500004662200809
+        ],
+        "max": [
+          -19.408442080020905,
+          -5.219620652496815,
+          13.500001281499863
+        ],
+        "size": [
+          5.699999630451202,
+          5.700001493096352,
+          11.650000815279782
+        ]
+      },
+      "stl": "stl/STD-SCREW-26.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-26",
+      "name": "M3 防转槽内六角螺母 26",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -25.008440017700195,
+          -11.24504767358303,
+          10.500000789761543
+        ],
+        "max": [
+          -19.50843818485737,
+          -4.894194658845663,
+          12.900001369416714
+        ],
+        "size": [
+          5.500001832842827,
+          6.350853014737368,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/STD-NUT-26.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
+      ]
+    },
+    {
+      "id": "STD-SCREW-27",
+      "name": "M3×10 内六角圆头螺钉 27",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          19.408442080020905,
+          -10.919622145593166,
+          1.8500004662200809
+        ],
+        "max": [
+          25.108441710472107,
+          -5.219620652496815,
+          13.500001281499863
+        ],
+        "size": [
+          5.699999630451202,
+          5.700001493096352,
+          11.650000815279782
+        ]
+      },
+      "stl": "stl/STD-SCREW-27.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        25
+      ]
+    },
+    {
+      "id": "STD-NUT-27",
+      "name": "M3 防转槽内六角螺母 27",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "Purchased steel hardware; reference geometry only",
+      "process": "Buy standard hardware; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          19.50843818485737,
+          -11.24504767358303,
+          10.500000789761543
+        ],
+        "max": [
+          25.008440017700195,
+          -4.894194658845663,
+          12.900001369416714
+        ],
+        "size": [
+          5.500001832842827,
+          6.350853014737368,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/STD-NUT-27.stl",
+      "viewer_group": "fasteners",
+      "assembly_role": "fasteners",
+      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
+      "notes": [
+        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
+        "Screw threads are simplified cylinders; not a screw manufacturing model"
+      ],
+      "explode_mm": [
+        0,
+        0,
+        -8
       ]
     }
   ],
   "assembly_manifest": false,
+  "module": "exterior",
+  "review_status": "外壳与紧固结构试装候选 · 未完成实物与整机验证",
   "not_verified": [
     "physical printing",
     "supports/overhangs",
     "minimum wall audit",
     "self-intersections",
-    "mounting supports",
+    "physical fastening fit",
     "complete assembly clearance",
     "load",
     "optics",

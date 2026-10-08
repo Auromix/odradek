@@ -15,7 +15,7 @@ import trimesh
 
 HERE = Path(__file__).resolve().parent
 GROUP_NAMES = {
-    "cover": "外罩 / 底座灯", "rear_lid": "可拆后盖",
+    "cover": "外罩 / 底座灯", "cover_support":"外罩安装支架 / 定位底环", "rear_lid": "可拆后盖",
     "interface": "后部接口组件", "electronics": "PCB / 元件",
     "structure": "承力结构 / 参考件", "fasteners": "标准件",
     "cradle": "盒架 / 盒体检具", "routing": "线束空间",
@@ -126,7 +126,7 @@ def collect(build_dir):
     bounds = np.array([[p["bbox"]["min"], p["bbox"]["max"]] for p in visible_parts or parts])
     assembly_min, assembly_max = bounds[:, 0].min(axis=0), bounds[:, 1].max(axis=0)
     meta = {"revision": manifest.get("revision", "B05"), "length_unit": "mm",
-            "exterior_only": all(p["group_key"] in ("cover", "rear_lid") for p in parts),
+            "exterior_only": manifest.get("module")=="exterior" or all(p["group_key"] in ("cover", "rear_lid") for p in parts),
             "files": files, "bounds": {"min": assembly_min.tolist(), "max": assembly_max.tolist()},
             "review_status": manifest.get("review_status", "数字装配审阅 · 实物试装待验证")}
     return parts, meta
