@@ -6,15 +6,22 @@ read from its original manifest; no supplier geometry is redistributed.
 """
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 ARM = ROOT.parent / 'odradek-arm-body'
-source = ARM / 'engineering/arm_a10/build/manifest.json'
-outer = HERE / 'build/exterior/exterior-manifest.json'
-arm = json.loads(source.read_text())
+arm_ref = '939b772baf1fb0d05439f3f7b1f5bd1df993ba04'
+base_ref = '075e799'
+arm_path = 'engineering/arm_a10/build/manifest.json'
+base_path = 'engineering/base_b05/build/exterior/exterior-manifest.json'
+arm_bytes = subprocess.check_output(['git', 'show', f'{arm_ref}:{arm_path}'], cwd=ARM)
+base_bytes = subprocess.check_output(['git', 'show', f'{base_ref}:{base_path}'], cwd=ROOT)
+arm = json.loads(arm_bytes)
+base = json.loads(base_bytes)
+neck_radius = base['parameters']['collar_radius_mm'][0]
 rows = []
 translation_z = arm['base_interface']['translation_mm'][2]
 ids = ['P00-root-open', 'P00-J1-top-ring', 'S00-waist-A', 'S00-waist-B']
@@ -51,17 +58,19 @@ report = dict(
     confirmed_print_volume_mm=[256, 256, 256],
     candidate_outer_upper_target_mm=[240, 230],
     centered_xy_margin_without_support_mm=[8, 13],
-    source_sha256={str(p.relative_to(ROOT.parent)): hashlib.sha256(p.read_bytes()).hexdigest()
-                   for p in [source, outer]},
+    source_snapshots=[dict(repository='odradek-arm-body', ref=arm_ref, path=arm_path,
+                           sha256=hashlib.sha256(arm_bytes).hexdigest()),
+                      dict(repository='odradek', ref=base_ref, path=base_path,
+                           sha256=hashlib.sha256(base_bytes).hexdigest())],
     source_base_transform=arm['base_interface'],
     current_j1=arm['layout']['joints'][0], current_j1_mounting=mount,
-    old_b05_neck=dict(inner_d_mm=104, outer_d_mm=170, top_z_mm=74,
+    old_b05_neck=dict(revision=base['revision'], inner_d_mm=2*neck_radius, outer_d_mm=170, top_z_mm=74,
                      axis_xy_mm=[0, 75]),
     sections=rows,
     neck_z74=dict(structure_circular_envelope_d_mm=2*radius_structure,
                  with_old_waist_circular_envelope_d_mm=2*radius_all,
-                 old_opening_radial_difference_structure_mm=52-radius_structure,
-                 old_opening_radial_difference_with_waist_mm=52-radius_all,
+                 old_opening_radial_difference_structure_mm=neck_radius-radius_structure,
+                 old_opening_radial_difference_with_waist_mm=neck_radius-radius_all,
                  interpretation='Negative radial differences reject concentric circular-envelope fit; not a solid-volume collision test'),
     old_b04_chassis=dict(deck_bbox_xy_mm=[220, 256],
                         c_plate_total_width_mm=240,

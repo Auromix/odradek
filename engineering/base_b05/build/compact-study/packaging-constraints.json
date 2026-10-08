@@ -15,10 +15,20 @@
     8,
     13
   ],
-  "source_sha256": {
-    "odradek-arm-body/engineering/arm_a10/build/manifest.json": "fea5df1edbb54549ac29fd1a70e44f73f521b1412828fc3d94523097ca67a7f8",
-    "odradek/engineering/base_b05/build/exterior/exterior-manifest.json": "7e7d23bc17eaf8ce2e8484bb09d519e80bd10101d144b7bf2b7960301e54b7cb"
-  },
+  "source_snapshots": [
+    {
+      "repository": "odradek-arm-body",
+      "ref": "939b772baf1fb0d05439f3f7b1f5bd1df993ba04",
+      "path": "engineering/arm_a10/build/manifest.json",
+      "sha256": "fea5df1edbb54549ac29fd1a70e44f73f521b1412828fc3d94523097ca67a7f8"
+    },
+    {
+      "repository": "odradek",
+      "ref": "075e799",
+      "path": "engineering/base_b05/build/exterior/exterior-manifest.json",
+      "sha256": "01011afb524cf23930379a205158e685020f060d2aee6063772b5c5c37253794"
+    }
+  ],
   "source_base_transform": {
     "rotation_deg": 90,
     "translation_mm": [
@@ -149,6 +159,7 @@
     "assembly": "Fasten upstream output before installing downstream motor; covers installed last."
   },
   "old_b05_neck": {
+    "revision": "B05-EXTERIOR-SHAPE-07",
     "inner_d_mm": 104,
     "outer_d_mm": 170,
     "top_z_mm": 74,
