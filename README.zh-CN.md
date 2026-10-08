@@ -1,6 +1,6 @@
 # Odradek
 
-**2026-10-08：本体已按长版推进至[A10机械试装原型](engineering/arm_a10/README.md)，[查看七轴模型](docs/viewers/arm-body-a10/index.html)。裸法兰总外负载目标3 kg，尚未通过实物承载、热与线束验证。**
+**2026-10-08：保留长版，A10外观已被用户否定。当前选择[A11三组风格候选](docs/concepts/exploration/arm-body-a11-style-study/README.md)，共用另一个会话的魔鬼鱼底座；[A10机械试装文件](engineering/arm_a10/README.md)与[查看器](docs/viewers/arm-body-a10/index.html)保留作机械输入。裸法兰总外负载目标3 kg，尚未通过实物承载、热与线束验证。**
 
 **2026-10-03 arm body / 本体更新：** [A09直管与平板重做](docs/arm-body-redesign-a09.md) · [七轴查看器](docs/viewers/arm-body-a09/index.html)。当前本体目标为裸臂法兰总外负载3 kg，不装四瓣头；A08外观被否定，A09是加工与比例提案，尚非承载发布版。
 

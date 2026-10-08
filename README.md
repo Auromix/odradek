@@ -1,6 +1,6 @@
 # Odradek
 
-**2026-10-08 arm body / 本体更新：** [A10长版打印装配验证](engineering/arm_a10/README.md) · [七轴查看器](docs/viewers/arm-body-a10/index.html)。裸法兰总外负载目标3 kg；打印结构、实物电机接口、散热与线束尚需试验，当前交付用于受支撑的机械试装。A09保留为此前比例提案。
+**2026-10-08 arm body / 本体更新：** 长版保留，用户否定A10外观；当前先选择[A11三组风格候选](docs/concepts/exploration/arm-body-a11-style-study/README.md)，共用另一个会话的最新魔鬼鱼底座。此前[A10机械试装文件](engineering/arm_a10/README.md)及[查看器](docs/viewers/arm-body-a10/index.html)仅作为机械输入与历史记录。裸法兰总外负载目标3 kg，实物承载、温升与线束待验证。
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-08",
+  "status": "unselected_style_exploration",
+  "base_authoritative_checkout": "../odradek",
+  "source_thread": "01a0e333-57b3-7cc3-963d-365298d0dcba",
+  "source_thread_title": "调研七轴机械臂外观风格",
+  "base_revision": "B05-EXTERIOR-SHAPE-06",
+  "base_in_progress": "Approved target simplification to approximately eight custom parts is active in source thread. No separate base redesign or frozen body mating interface here.",
+  "long_arm_retained": true,
+  "head_role": "style reference only; excluded from3kg bare-flange payload calculations",
+  "sources": [
+    {
+      "path": "odradek/engineering/base_b05/build/exterior/exterior-manifest.json",
+      "sha256": "ec7965708535d2640019ce0bfb15b7dc0458f00c54432464a5c984294237372b"
+    },
+    {
+      "path": "odradek/engineering/base_b05/build/exterior/front-three-quarter.png",
+      "sha256": "2295c6f0a9349787b3e0017cfc1e6331ac4e4404aaf6e5d8db8756ddd4b60d56"
+    },
+    {
+      "path": "odradek/engineering/base_b05/build/exterior/top.png",
+      "sha256": "3fab6d5dfcdaa75816e73162eb109c13f3a2842a4670862f933b297f0c4cbab5"
+    },
+    {
+      "path": "odradek/engineering/base_b05/build/exterior/ODR-BASE-B05-EXTERIOR.blend",
+      "sha256": "71b13655050b9c1eb7846acbc01529e5f0f1fb7c69962e5ff6250e3d02486963"
+    },
+    {
+      "path": "odradek/docs/concepts/selected/head-open-reference.png",
+      "sha256": "98e52828f9642e14ac4a42e0ad25d8df6047bb034cb58205ed4efdcccd467e13"
+    },
+    {
+      "path": "odradek-arm-body/engineering/arm_a10/build/manifest.json",
+      "sha256": "fea5df1edbb54549ac29fd1a70e44f73f521b1412828fc3d94523097ca67a7f8"
+    },
+    {
+      "path": "odradek-arm-body/docs/engineering/sources/arm-a05-mechanical-sources.json",
+      "sha256": "40dd32af078347cb4094784618ecb2aa02154f7304c2bdffe956dad4760fbd15"
+    }
+  ],
+  "limits": [
+    "Generated drawings are style proposals, not exact motor CAD or dimensional manufacturing evidence.",
+    "Use same source base/head files for future Blender integration; do not promote old B04 snapshot to current style baseline.",
+    "A10 arm appearance rejected; mechanical geometry retained only as input to next approved direction."
+  ],
+  "source_recheck_after_generation": {
+    "latest_base_revision": "B05-EXTERIOR-SHAPE-07",
+    "latest_manifest_sha256": "01011afb524cf23930379a205158e685020f060d2aee6063772b5c5c37253794",
+    "latest_blend_sha256": "c4e3b1466759b2f49a511196d9d5c868fcd8c9c3fed1cd4b9b57e5f34338a9c5",
+    "note": "Source manifest/native model changed during style image generation; attached source renders remained unchanged. Concepts reference completed SHAPE-06 renders. Always import latest same-source native model after selection."
+  }
+}
