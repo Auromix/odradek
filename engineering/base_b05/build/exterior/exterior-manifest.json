@@ -1,7 +1,7 @@
 {
-  "revision": "B05-EXTERIOR-SHAPE-06",
+  "revision": "B05-EXTERIOR-SHAPE-07",
   "length_unit": "mm",
-  "scope": "exterior with screw seats, captive-nut carriers and locating deck; unpowered prototype, arm-load chassis and PCB integration not released",
+  "scope": "eight printable parts, integrated two-piece support frame; unpowered prototype, arm-load chassis and PCB integration not released",
   "parameters": {
     "schema": "odradek.b05.blender-exterior.v1",
     "length_unit": "mm",
@@ -83,7 +83,7 @@
     ],
     "design_intent": "Integrated alien shield: continuous crown, flowing shoulder tips, restrained chine, fasteners as intentional repeated details",
     "splits_mm": {
-      "main_y_min": -13.6,
+      "main_y_min": -80.0,
       "front_nose_seam": "Y = 145.4 - 0.12 * abs(X); nominal 0.8 mm gap",
       "rear_y_max": -14.4,
       "rear_lid_x": [
@@ -91,6 +91,7 @@
         75.6
       ],
       "rear_shoulder_abs_x_min": 76.4,
+      "shoulder_groove_depth": 0.4,
       "main_center_gap": 0.8
     },
     "rear_cable_exit": {
@@ -118,23 +119,20 @@
         184
       ]
     ],
-    "prototype_scope": "exterior with screw seats, captive-nut carriers and locating deck; unpowered prototype, arm-load chassis and PCB integration not released",
+    "prototype_scope": "eight printable parts, integrated two-piece support frame; unpowered prototype, arm-load chassis and PCB integration not released",
     "fastening": {
       "cover_hole_d_mm": 3.4,
       "head_well_d_mm": 6.6,
       "cover_screw": "M3x10 ISO7380-1",
       "collar_screw": "M3x10 ISO7380-1",
       "nut_pocket_af_mm": 5.8,
-      "deck_pins_mm": [
-        2.8,
-        3.1
-      ]
+      "frame_lap_clearance_mm": 0.3
     }
   },
   "parts": [
     {
       "id": "B05-301-ARMOR-L",
-      "name": "左主肩甲",
+      "name": "左一体翼肩外罩",
       "category": "custom",
       "quantity": 1,
       "material": "PETG / ASA fit-prototype candidate; appearance finish only",
@@ -149,17 +147,17 @@
       "bbox": {
         "min": [
           -177.94132232666016,
-          -13.600008562207222,
+          -46.109095215797424,
           3.000000026077032
         ],
         "max": [
           -0.4000015323981643,
-          141.01630449295044,
+          141.01633429527283,
           58.00000950694084
         ],
         "size": [
           177.541320794262,
-          154.61631305515766,
+          187.12542951107025,
           55.00000948086381
         ]
       },
@@ -167,7 +165,7 @@
       "print_stl": "print-parts/B05-301-ARMOR-L.stl",
       "print_translation_mm": [
         177.94132232666016,
-        13.600008562207222,
+        46.109095215797424,
         -3.000000026077032
       ],
       "viewer_group": "cover",
@@ -175,16 +173,16 @@
       "wall_nominal_mm": 3.0,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
-        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "Former rear-shoulder split is a shallow groove; actual nose and service-lid seams retain 0.8 mm nominal clearance; J1 XY(0,75)",
         "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
-        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs"
+        "Reduced fastening count; shallow M3 button-head seats match integrated-frame captive-nut towers"
       ],
       "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
       "id": "B05-301-ARMOR-R",
-      "name": "右主肩甲",
+      "name": "右一体翼肩外罩",
       "category": "custom",
       "quantity": 1,
       "material": "PETG / ASA fit-prototype candidate; appearance finish only",
@@ -198,26 +196,26 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          0.4000015323981643,
-          -13.600008562207222,
+          0.39999998989515007,
+          -46.108998358249664,
           3.000000026077032
         ],
         "max": [
-          177.94132232666016,
-          141.01630449295044,
-          58.00000950694084
+          177.9409945011139,
+          141.01600646972656,
+          57.999998331069946
         ],
         "size": [
-          177.541320794262,
-          154.61631305515766,
-          55.00000948086381
+          177.54099451121874,
+          187.12500482797623,
+          54.999998304992914
         ]
       },
       "stl": "stl/B05-301-ARMOR-R.stl",
       "print_stl": "print-parts/B05-301-ARMOR-R.stl",
       "print_translation_mm": [
-        -0.4000015323981643,
-        13.600008562207222,
+        -0.39999998989515007,
+        46.108998358249664,
         -3.000000026077032
       ],
       "viewer_group": "cover",
@@ -225,10 +223,10 @@
       "wall_nominal_mm": 3.0,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
-        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "Former rear-shoulder split is a shallow groove; actual nose and service-lid seams retain 0.8 mm nominal clearance; J1 XY(0,75)",
         "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
-        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs",
+        "Reduced fastening count; shallow M3 button-head seats match integrated-frame captive-nut towers",
         "Mirrored native left part for exact bilateral symmetry; face winding recalculated"
       ],
       "native_cleanup_isolated_triangle_sheets_removed": 0
@@ -251,17 +249,17 @@
         "min": [
           -18.699999898672104,
           178.29999327659607,
-          47.187551856040955
+          47.18799889087677
         ],
         "max": [
           18.699999898672104,
           183.69999527931213,
-          50.475120544433594
+          50.47500133514404
         ],
         "size": [
           37.39999979734421,
           5.4000020027160645,
-          3.287568688392639
+          3.287002444267273
         ]
       },
       "stl": "stl/B05-306-LIGHT-LENS.stl",
@@ -269,7 +267,7 @@
       "print_translation_mm": [
         18.699999898672104,
         -178.29999327659607,
-        -47.187551856040955
+        -47.18799889087677
       ],
       "viewer_group": "cover",
       "assembly_role": "cover",
@@ -297,25 +295,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -99.3121787905693,
+          -99.3121936917305,
           133.48254561424255,
           3.000000026077032
         ],
         "max": [
-          99.3121787905693,
-          207.00275897979736,
+          99.3121936917305,
+          207.00278878211975,
           58.00000950694084
         ],
         "size": [
-          198.6243575811386,
-          73.52021336555481,
+          198.624387383461,
+          73.5202431678772,
           55.00000948086381
         ]
       },
       "stl": "stl/B05-302-NOSE.stl",
       "print_stl": "print-parts/B05-302-NOSE.stl",
       "print_translation_mm": [
-        99.3121787905693,
+        99.3121936917305,
         -133.48254561424255,
         -3.000000026077032
       ],
@@ -324,112 +322,11 @@
       "wall_nominal_mm": 3.0,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
-        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "Former rear-shoulder split is a shallow groove; actual nose and service-lid seams retain 0.8 mm nominal clearance; J1 XY(0,75)",
         "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
         "Real light aperture X -19..19, Y 178..184 mm; illumination cavity and PCB position remain integration work",
-        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
-    },
-    {
-      "id": "B05-303-REAR-SHOULDER-L",
-      "name": "左后肩甲",
-      "category": "custom",
-      "quantity": 1,
-      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
-      "process": "3D print for unpowered fit; orientation/supports to be sliced",
-      "color": [
-        0.04800000041723251,
-        0.05900000035762787,
-        0.07199999690055847,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -148.81937205791473,
-          -46.109069138765335,
-          3.000000026077032
-        ],
-        "max": [
-          -76.39999687671661,
-          -14.400006271898746,
-          47.200385481119156
-        ],
-        "size": [
-          72.41937518119812,
-          31.70906286686659,
-          44.200385455042124
-        ]
-      },
-      "stl": "stl/B05-303-REAR-SHOULDER-L.stl",
-      "print_stl": "print-parts/B05-303-REAR-SHOULDER-L.stl",
-      "print_translation_mm": [
-        148.81937205791473,
-        46.109069138765335,
-        -3.000000026077032
-      ],
-      "viewer_group": "cover",
-      "assembly_role": "cover",
-      "wall_nominal_mm": 3.0,
-      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
-      "notes": [
-        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
-        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
-        "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
-        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
-    },
-    {
-      "id": "B05-303-REAR-SHOULDER-R",
-      "name": "右后肩甲",
-      "category": "custom",
-      "quantity": 1,
-      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
-      "process": "3D print for unpowered fit; orientation/supports to be sliced",
-      "color": [
-        0.04800000041723251,
-        0.05900000035762787,
-        0.07199999690055847,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          76.39999687671661,
-          -46.109069138765335,
-          3.000000026077032
-        ],
-        "max": [
-          148.81937205791473,
-          -14.400006271898746,
-          47.200385481119156
-        ],
-        "size": [
-          72.41937518119812,
-          31.70906286686659,
-          44.200385455042124
-        ]
-      },
-      "stl": "stl/B05-303-REAR-SHOULDER-R.stl",
-      "print_stl": "print-parts/B05-303-REAR-SHOULDER-R.stl",
-      "print_translation_mm": [
-        -76.39999687671661,
-        46.109069138765335,
-        -3.000000026077032
-      ],
-      "viewer_group": "cover",
-      "assembly_role": "cover",
-      "wall_nominal_mm": 3.0,
-      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
-      "notes": [
-        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
-        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
-        "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
-        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs",
-        "Mirrored native left part for exact bilateral symmetry; face winding recalculated"
+        "Reduced fastening count; shallow M3 button-head seats match integrated-frame captive-nut towers"
       ],
       "native_cleanup_isolated_triangle_sheets_removed": 0
     },
@@ -476,11 +373,11 @@
       "wall_nominal_mm": 3.0,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Native Blender loft + inward 3 mm solidify + exact Boolean partition",
-        "0.8 mm nominal panel seams; collar now has a four-screw mounting land and dedicated shell seats; new J1 axis XY(0,75), R70 flange reservation requires redesign",
+        "Native Blender loft + inward 3 mm solidify + manifold Boolean partition",
+        "Former rear-shoulder split is a shallow groove; actual nose and service-lid seams retain 0.8 mm nominal clearance; J1 XY(0,75)",
         "Non-load-bearing exterior fastening module; full arm chassis, optical and PCB integration remain open",
         "Actual rear-bottom cable exit, X ±42 mm, top Z 21 mm; cable comb and bend envelopes require integration",
-        "Functional shallow M3 button-head seats and matching conformal captive-nut standoffs"
+        "Reduced fastening count; shallow M3 button-head seats match integrated-frame captive-nut towers"
       ],
       "native_cleanup_isolated_triangle_sheets_removed": 0
     },
@@ -534,8 +431,8 @@
       "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
-      "id": "B05-307-CARRIER-L",
-      "name": "左外罩与环台支架",
+      "id": "B05-307-FRAME-L",
+      "name": "左一体安装骨架",
       "category": "custom",
       "quantity": 1,
       "material": "PETG / ASA fit-prototype candidate; appearance finish only",
@@ -550,26 +447,26 @@
       "bbox": {
         "min": [
           -118.5002326965332,
-          -38.500070571899414,
-          9.000004269182682
+          -34.50009226799011,
+          2.9999916441738605
         ],
         "max": [
-          -51.67984962463379,
-          139.74058628082275,
-          57.84999951720238
+          9.000004269182682,
+          173.50009083747864,
+          57.850003242492676
         ],
         "size": [
-          66.82038307189941,
-          178.24065685272217,
-          48.849995248019695
+          127.50023696571589,
+          208.00018310546875,
+          54.850011598318815
         ]
       },
-      "stl": "stl/B05-307-CARRIER-L.stl",
-      "print_stl": "print-parts/B05-307-CARRIER-L.stl",
+      "stl": "stl/B05-307-FRAME-L.stl",
+      "print_stl": "print-parts/B05-307-FRAME-L.stl",
       "print_translation_mm": [
         118.5002326965332,
-        38.500070571899414,
-        -9.000004269182682
+        34.50009226799011,
+        -2.9999916441738605
       ],
       "viewer_group": "cover_support",
       "assembly_role": "cover_support",
@@ -577,210 +474,14 @@
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
         "Exterior-only locating/support module; does not carry arm joint loads",
-        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
-        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
+        "Integrated annular base, radial ties, conformal towers and independent collar posts",
+        "Two overlapping lap joints locate frame halves; insert captive nuts before installing panels"
       ],
       "native_cleanup_isolated_triangle_sheets_removed": 0
     },
     {
-      "id": "B05-307-CARRIER-R",
-      "name": "右外罩与环台支架",
-      "category": "custom",
-      "quantity": 1,
-      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
-      "process": "3D print for unpowered fit; orientation/supports to be sliced",
-      "color": [
-        0.02199999988079071,
-        0.029999999329447746,
-        0.03999999910593033,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          51.67984962463379,
-          -38.500070571899414,
-          9.000004269182682
-        ],
-        "max": [
-          118.5002326965332,
-          139.74058628082275,
-          57.84999951720238
-        ],
-        "size": [
-          66.82038307189941,
-          178.24065685272217,
-          48.849995248019695
-        ]
-      },
-      "stl": "stl/B05-307-CARRIER-R.stl",
-      "print_stl": "print-parts/B05-307-CARRIER-R.stl",
-      "print_translation_mm": [
-        -51.67984962463379,
-        38.500070571899414,
-        -9.000004269182682
-      ],
-      "viewer_group": "cover_support",
-      "assembly_role": "cover_support",
-      "wall_nominal_mm": null,
-      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
-      "notes": [
-        "Exterior-only locating/support module; does not carry arm joint loads",
-        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
-        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
-    },
-    {
-      "id": "B05-308-NOSE-CARRIER",
-      "name": "前鼻支架",
-      "category": "custom",
-      "quantity": 1,
-      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
-      "process": "3D print for unpowered fit; orientation/supports to be sliced",
-      "color": [
-        0.02199999988079071,
-        0.029999999329447746,
-        0.03999999910593033,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -61.500001698732376,
-          140.5804455280304,
-          9.000004269182682
-        ],
-        "max": [
-          61.500001698732376,
-          173.50000143051147,
-          51.81879550218582
-        ],
-        "size": [
-          123.00000339746475,
-          32.91955590248108,
-          42.81879123300314
-        ]
-      },
-      "stl": "stl/B05-308-NOSE-CARRIER.stl",
-      "print_stl": "print-parts/B05-308-NOSE-CARRIER.stl",
-      "print_translation_mm": [
-        61.500001698732376,
-        -140.5804455280304,
-        -9.000004269182682
-      ],
-      "viewer_group": "cover_support",
-      "assembly_role": "cover_support",
-      "wall_nominal_mm": null,
-      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
-      "notes": [
-        "Exterior-only locating/support module; does not carry arm joint loads",
-        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
-        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
-    },
-    {
-      "id": "B05-309-REAR-CARRIER",
-      "name": "独立后盖支架",
-      "category": "custom",
-      "quantity": 1,
-      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
-      "process": "3D print for unpowered fit; orientation/supports to be sliced",
-      "color": [
-        0.02199999988079071,
-        0.029999999329447746,
-        0.03999999910593033,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -72.5000724196434,
-          -34.50004383921623,
-          9.000004269182682
-        ],
-        "max": [
-          72.5000724196434,
-          6.740720476955175,
-          44.53577101230621
-        ],
-        "size": [
-          145.0001448392868,
-          41.24076431617141,
-          35.53576674312353
-        ]
-      },
-      "stl": "stl/B05-309-REAR-CARRIER.stl",
-      "print_stl": "print-parts/B05-309-REAR-CARRIER.stl",
-      "print_translation_mm": [
-        72.5000724196434,
-        34.50004383921623,
-        -9.000004269182682
-      ],
-      "viewer_group": "cover_support",
-      "assembly_role": "cover_support",
-      "wall_nominal_mm": null,
-      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
-      "notes": [
-        "Exterior-only locating/support module; does not carry arm joint loads",
-        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
-        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
-    },
-    {
-      "id": "B05-310-DECK-L",
-      "name": "外罩定位底环左",
-      "category": "custom",
-      "quantity": 1,
-      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
-      "process": "3D print for unpowered fit; orientation/supports to be sliced",
-      "color": [
-        0.02199999988079071,
-        0.029999999329447746,
-        0.03999999910593033,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -96.00000083446503,
-          -20.99224179983139,
-          3.000000026077032
-        ],
-        "max": [
-          -0.39999771979637444,
-          170.99225521087646,
-          11.000003665685654
-        ],
-        "size": [
-          95.60000311466865,
-          191.98449701070786,
-          8.000003639608622
-        ]
-      },
-      "stl": "stl/B05-310-DECK-L.stl",
-      "print_stl": "print-parts/B05-310-DECK-L.stl",
-      "print_translation_mm": [
-        96.00000083446503,
-        20.99224179983139,
-        -3.000000026077032
-      ],
-      "viewer_group": "cover_support",
-      "assembly_role": "cover_support",
-      "wall_nominal_mm": null,
-      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
-      "notes": [
-        "Exterior-only locating/support module; does not carry arm joint loads",
-        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
-        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
-      ],
-      "native_cleanup_isolated_triangle_sheets_removed": 0
-    },
-    {
-      "id": "B05-310-DECK-R",
-      "name": "外罩定位底环右",
+      "id": "B05-307-FRAME-R",
+      "name": "右一体安装骨架",
       "category": "custom",
       "quantity": 1,
       "material": "PETG / ASA fit-prototype candidate; appearance finish only",
@@ -795,26 +496,26 @@
       "bbox": {
         "min": [
           0.39999771979637444,
-          -20.99224179983139,
-          3.000000026077032
+          -34.50009226799011,
+          2.9999916441738605
         ],
         "max": [
-          96.00000083446503,
-          170.99225521087646,
-          11.000003665685654
+          118.5002326965332,
+          173.50009083747864,
+          57.850003242492676
         ],
         "size": [
-          95.60000311466865,
-          191.98449701070786,
-          8.000003639608622
+          118.10023497673683,
+          208.00018310546875,
+          54.850011598318815
         ]
       },
-      "stl": "stl/B05-310-DECK-R.stl",
-      "print_stl": "print-parts/B05-310-DECK-R.stl",
+      "stl": "stl/B05-307-FRAME-R.stl",
+      "print_stl": "print-parts/B05-307-FRAME-R.stl",
       "print_translation_mm": [
         -0.39999771979637444,
-        20.99224179983139,
-        -3.000000026077032
+        34.50009226799011,
+        -2.9999916441738605
       ],
       "viewer_group": "cover_support",
       "assembly_role": "cover_support",
@@ -822,8 +523,8 @@
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
         "Exterior-only locating/support module; does not carry arm joint loads",
-        "M3 captive nut slots and matching 2.8/3.1 mm pin/socket locating features",
-        "Insert nuts and assemble carriers to the split deck before installing exterior panels"
+        "Integrated annular base, radial ties, conformal towers and independent collar posts",
+        "Two overlapping lap joints locate frame halves; insert captive nuts before installing panels"
       ],
       "native_cleanup_isolated_triangle_sheets_removed": 0
     },
@@ -844,18 +545,18 @@
       "bbox": {
         "min": [
           -101.85001790523529,
-          5.149999633431435,
-          36.23305261135101
+          -30.85000067949295,
+          29.240233823657036
         ],
         "max": [
           -96.15001082420349,
-          10.850001126527786,
-          47.8830523788929
+          -25.150001049041748,
+          40.89023545384407
         ],
         "size": [
           5.700007081031799,
-          5.700001493096352,
-          11.649999767541885
+          5.699999630451202,
+          11.650001630187035
         ]
       },
       "stl": "stl/STD-SCREW-01.stl",
@@ -889,18 +590,18 @@
       "bbox": {
         "min": [
           -101.75000131130219,
-          4.824573639780283,
-          38.64786773920059
+          -31.17542713880539,
+          30.598405748605728
         ],
         "max": [
           -96.2500050663948,
-          11.17542665451765,
-          41.04786366224289
+          -24.82457458972931,
+          32.998405396938324
         ],
         "size": [
           5.499996244907379,
-          6.350853014737368,
-          2.3999959230422974
+          6.35085254907608,
+          2.399999648332596
         ]
       },
       "stl": "stl/STD-NUT-01.stl",
@@ -935,12 +636,12 @@
         "min": [
           -114.8500069975853,
           64.14999812841415,
-          37.97431290149689
+          37.97433525323868
         ],
         "max": [
           -109.1499999165535,
           69.85000520944595,
-          49.62431266903877
+          49.62433502078056
         ],
         "size": [
           5.700007081031799,
@@ -980,12 +681,12 @@
         "min": [
           -114.75000530481339,
           63.82457911968231,
-          40.38912057876587
+          40.389128029346466
         ],
         "max": [
           -109.25000160932541,
           70.1754242181778,
-          42.78911650180817
+          42.78912395238876
         ],
         "size": [
           5.500003695487976,
@@ -1025,12 +726,12 @@
         "min": [
           -81.85000717639923,
           122.1499964594841,
-          42.48477518558502
+          42.484790086746216
         ],
         "max": [
           -76.15000009536743,
           127.8499960899353,
-          54.13477495312691
+          54.1347898542881
         ],
         "size": [
           5.700007081031799,
@@ -1070,12 +771,12 @@
         "min": [
           -81.75000548362732,
           121.82457745075226,
-          44.89957168698311
+          44.899579137563705
         ],
         "max": [
           -76.25000178813934,
           128.17542254924774,
-          47.299575060606
+          47.2995825111866
         ],
         "size": [
           5.500003695487976,
@@ -1114,18 +815,18 @@
       "bbox": {
         "min": [
           96.15001082420349,
-          5.149999633431435,
-          36.23305261135101
+          -30.85000067949295,
+          29.240233823657036
         ],
         "max": [
           101.85001790523529,
-          10.850001126527786,
-          47.8830523788929
+          -25.150001049041748,
+          40.89023545384407
         ],
         "size": [
           5.700007081031799,
-          5.700001493096352,
-          11.649999767541885
+          5.699999630451202,
+          11.650001630187035
         ]
       },
       "stl": "stl/STD-SCREW-04.stl",
@@ -1159,18 +860,18 @@
       "bbox": {
         "min": [
           96.2500050663948,
-          4.824573639780283,
-          38.64786773920059
+          -31.17542713880539,
+          30.598405748605728
         ],
         "max": [
           101.75000131130219,
-          11.17542665451765,
-          41.04786366224289
+          -24.82457458972931,
+          32.998405396938324
         ],
         "size": [
           5.499996244907379,
-          6.350853014737368,
-          2.3999959230422974
+          6.35085254907608,
+          2.399999648332596
         ]
       },
       "stl": "stl/STD-NUT-04.stl",
@@ -1205,12 +906,12 @@
         "min": [
           109.1499999165535,
           64.14999812841415,
-          37.97431290149689
+          37.97433525323868
         ],
         "max": [
           114.8500069975853,
           69.85000520944595,
-          49.62431266903877
+          49.62433502078056
         ],
         "size": [
           5.700007081031799,
@@ -1250,12 +951,12 @@
         "min": [
           109.25000160932541,
           63.82457911968231,
-          40.38912057876587
+          40.389128029346466
         ],
         "max": [
           114.75000530481339,
           70.1754242181778,
-          42.78911650180817
+          42.78912395238876
         ],
         "size": [
           5.500003695487976,
@@ -1295,12 +996,12 @@
         "min": [
           76.15000009536743,
           122.1499964594841,
-          42.48477518558502
+          42.484790086746216
         ],
         "max": [
           81.85000717639923,
           127.8499960899353,
-          54.13477495312691
+          54.1347898542881
         ],
         "size": [
           5.700007081031799,
@@ -1340,12 +1041,12 @@
         "min": [
           76.25000178813934,
           121.82457745075226,
-          44.89957168698311
+          44.899579137563705
         ],
         "max": [
           81.75000548362732,
           128.17542254924774,
-          47.299575060606
+          47.2995825111866
         ],
         "size": [
           5.500003695487976,
@@ -1563,17 +1264,17 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -2.850000513717532,
+          -22.850003093481064,
           164.15002942085266,
-          42.8440198302269
+          42.32791066169739
         ],
         "max": [
-          2.850000513717532,
+          -17.15000346302986,
           169.85002160072327,
-          54.494019597768784
+          53.97791042923927
         ],
         "size": [
-          5.700001027435064,
+          5.699999630451202,
           5.6999921798706055,
           11.649999767541885
         ]
@@ -1608,17 +1309,17 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -2.7500002179294825,
+          -22.750001400709152,
           163.82457315921783,
-          45.25880888104439
+          44.74271461367607
         ],
         "max": [
-          2.7500002179294825,
+          -17.250001430511475,
           170.1754331588745,
-          47.65881225466728
+          47.142717987298965
         ],
         "size": [
-          5.500000435858965,
+          5.499999970197678,
           6.350859999656677,
           2.4000033736228943
         ]
@@ -1653,19 +1354,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -92.85000711679459,
-          -34.85000133514404,
-          29.79889325797558
+          17.15000346302986,
+          164.15002942085266,
+          42.327918112277985
         ],
         "max": [
-          -87.15000003576279,
-          -29.15000170469284,
-          41.44889488816261
+          22.850003093481064,
+          169.85002160072327,
+          53.97791787981987
         ],
         "size": [
-          5.700007081031799,
           5.699999630451202,
-          11.650001630187035
+          5.6999921798706055,
+          11.649999767541885
         ]
       },
       "stl": "stl/STD-SCREW-10.stl",
@@ -1698,19 +1399,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -92.75000542402267,
-          -35.17542779445648,
-          31.894687563180923
+          17.250001430511475,
+          163.82457315921783,
+          44.74272206425667
         ],
         "max": [
-          -87.2500017285347,
-          -28.8245752453804,
-          34.29468721151352
+          22.750001400709152,
+          170.1754331588745,
+          47.14272543787956
         ],
         "size": [
-          5.500003695487976,
-          6.35085254907608,
-          2.399999648332596
+          5.499999970197678,
+          6.350859999656677,
+          2.4000033736228943
         ]
       },
       "stl": "stl/STD-NUT-10.stl",
@@ -1743,14 +1444,14 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -99.85000640153885,
-          -24.85000342130661,
-          32.27908909320831
+          -68.85000318288803,
+          -30.85000067949295,
+          35.69155931472778
         ],
         "max": [
-          -94.14999932050705,
-          -19.150003790855408,
-          43.9290888607502
+          -63.14999610185623,
+          -25.150001049041748,
+          47.34155908226967
         ],
         "size": [
           5.700007081031799,
@@ -1788,19 +1489,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -99.75000470876694,
-          -25.1754280179739,
-          34.73757579922676
+          -68.75000149011612,
+          -31.17542713880539,
+          38.1050631403923
         ],
         "max": [
-          -94.25000101327896,
-          -18.82457360625267,
-          37.137579172849655
+          -63.24999779462814,
+          -24.82457458972931,
+          40.5050590634346
         ],
         "size": [
           5.500003695487976,
-          6.3508544117212296,
-          2.4000033736228943
+          6.35085254907608,
+          2.3999959230422974
         ]
       },
       "stl": "stl/STD-NUT-11.stl",
@@ -1833,19 +1534,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          87.15000003576279,
-          -34.85000133514404,
-          29.79889325797558
+          63.14999610185623,
+          -30.85000067949295,
+          35.69155931472778
         ],
         "max": [
-          92.85000711679459,
-          -29.15000170469284,
-          41.44889488816261
+          68.85000318288803,
+          -25.150001049041748,
+          47.34155908226967
         ],
         "size": [
           5.700007081031799,
           5.699999630451202,
-          11.650001630187035
+          11.649999767541885
         ]
       },
       "stl": "stl/STD-SCREW-12.stl",
@@ -1878,19 +1579,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          87.2500017285347,
-          -35.17542779445648,
-          31.894687563180923
+          63.24999779462814,
+          -31.17542713880539,
+          38.1050631403923
         ],
         "max": [
-          92.75000542402267,
-          -28.8245752453804,
-          34.29468721151352
+          68.75000149011612,
+          -24.82457458972931,
+          40.5050590634346
         ],
         "size": [
           5.500003695487976,
           6.35085254907608,
-          2.399999648332596
+          2.3999959230422974
         ]
       },
       "stl": "stl/STD-NUT-12.stl",
@@ -1923,19 +1624,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          94.14999932050705,
-          -24.85000342130661,
-          32.27908909320831
+          53.71854454278946,
+          128.7185698747635,
+          50.50000548362732
         ],
         "max": [
-          99.85000640153885,
-          -19.150003790855408,
-          43.9290888607502
+          59.41854417324066,
+          134.4185620546341,
+          62.14999780058861
         ],
         "size": [
-          5.700007081031799,
           5.699999630451202,
-          11.649999767541885
+          5.6999921798706055,
+          11.649992316961288
         ]
       },
       "stl": "stl/STD-SCREW-13.stl",
@@ -1968,19 +1669,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          94.25000101327896,
-          -25.1754280179739,
-          34.73757579922676
+          53.81854623556137,
+          128.39311361312866,
+          52.85000428557396
         ],
         "max": [
-          99.75000470876694,
-          -18.82457360625267,
-          37.137579172849655
+          59.31854620575905,
+          134.74397361278534,
+          55.250003933906555
         ],
         "size": [
-          5.500003695487976,
-          6.3508544117212296,
-          2.4000033736228943
+          5.499999970197678,
+          6.350859999656677,
+          2.399999648332596
         ]
       },
       "stl": "stl/STD-NUT-13.stl",
@@ -2013,19 +1714,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -68.85000318288803,
-          -30.85000067949295,
-          35.69155931472778
+          -59.41854417324066,
+          128.7185698747635,
+          50.50000548362732
         ],
         "max": [
-          -63.14999610185623,
-          -25.150001049041748,
-          47.34155908226967
+          -53.71854454278946,
+          134.4185620546341,
+          62.14999780058861
         ],
         "size": [
-          5.700007081031799,
           5.699999630451202,
-          11.649999767541885
+          5.6999921798706055,
+          11.649992316961288
         ]
       },
       "stl": "stl/STD-SCREW-14.stl",
@@ -2058,19 +1759,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -68.75000149011612,
-          -31.17542713880539,
-          38.1050631403923
+          -59.31854620575905,
+          128.39311361312866,
+          52.85000428557396
         ],
         "max": [
-          -63.24999779462814,
-          -24.82457458972931,
-          40.5050590634346
+          -53.81854623556137,
+          134.74397361278534,
+          55.250003933906555
         ],
         "size": [
-          5.500003695487976,
-          6.35085254907608,
-          2.3999959230422974
+          5.499999970197678,
+          6.350859999656677,
+          2.399999648332596
         ]
       },
       "stl": "stl/STD-NUT-14.stl",
@@ -2103,19 +1804,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          63.14999610185623,
-          -30.85000067949295,
-          35.69155931472778
+          -59.41854417324066,
+          15.581459738314152,
+          50.50000548362732
         ],
         "max": [
-          68.85000318288803,
-          -25.150001049041748,
-          47.34155908226967
+          -53.71854454278946,
+          21.28146030008793,
+          62.14999780058861
         ],
         "size": [
-          5.700007081031799,
           5.699999630451202,
-          11.649999767541885
+          5.700000561773777,
+          11.649992316961288
         ]
       },
       "stl": "stl/STD-SCREW-15.stl",
@@ -2148,19 +1849,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          63.24999779462814,
-          -31.17542713880539,
-          38.1050631403923
+          -59.31854620575905,
+          15.256031416356564,
+          52.85000428557396
         ],
         "max": [
-          68.75000149011612,
-          -24.82457458972931,
-          40.5050590634346
+          -53.81854623556137,
+          21.60688489675522,
+          55.250003933906555
         ],
         "size": [
-          5.500003695487976,
-          6.35085254907608,
-          2.3999959230422974
+          5.499999970197678,
+          6.350853480398655,
+          2.399999648332596
         ]
       },
       "stl": "stl/STD-NUT-15.stl",
@@ -2194,17 +1895,17 @@
       "bbox": {
         "min": [
           53.71854454278946,
-          128.7185698747635,
+          15.581459738314152,
           50.50000548362732
         ],
         "max": [
           59.41854417324066,
-          134.4185620546341,
+          21.28146030008793,
           62.14999780058861
         ],
         "size": [
           5.699999630451202,
-          5.6999921798706055,
+          5.700000561773777,
           11.649992316961288
         ]
       },
@@ -2239,17 +1940,17 @@
       "bbox": {
         "min": [
           53.81854623556137,
-          128.39311361312866,
+          15.256031416356564,
           52.85000428557396
         ],
         "max": [
           59.31854620575905,
-          134.74397361278534,
+          21.60688489675522,
           55.250003933906555
         ],
         "size": [
           5.499999970197678,
-          6.350859999656677,
+          6.350853480398655,
           2.399999648332596
         ]
       },
@@ -2283,19 +1984,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -59.41854417324066,
-          128.7185698747635,
-          50.50000548362732
+          2.1500003058463335,
+          -10.850001126527786,
+          4.49999887496233
         ],
         "max": [
-          -53.71854454278946,
-          134.4185620546341,
-          62.14999780058861
+          7.8500015661120415,
+          -5.149999633431435,
+          16.15000143647194
         ],
         "size": [
-          5.699999630451202,
-          5.6999921798706055,
-          11.649992316961288
+          5.700001260265708,
+          5.700001493096352,
+          11.65000256150961
         ]
       },
       "stl": "stl/STD-SCREW-17.stl",
@@ -2328,18 +2029,18 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -59.31854620575905,
-          128.39311361312866,
-          52.85000428557396
+          2.250000135973096,
+          -11.17542665451765,
+          6.500000134110451
         ],
         "max": [
-          -53.81854623556137,
-          134.74397361278534,
-          55.250003933906555
+          7.750000339001417,
+          -4.824573639780283,
+          8.899999782443047
         ],
         "size": [
-          5.499999970197678,
-          6.350859999656677,
+          5.500000203028321,
+          6.350853014737368,
           2.399999648332596
         ]
       },
@@ -2373,19 +2074,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -59.41854417324066,
-          15.581459738314152,
-          50.50000548362732
+          2.1500003058463335,
+          156.15002810955048,
+          4.49999887496233
         ],
         "max": [
-          -53.71854454278946,
-          21.28146030008793,
-          62.14999780058861
+          7.8500015661120415,
+          161.85002028942108,
+          16.15000143647194
         ],
         "size": [
-          5.699999630451202,
-          5.700000561773777,
-          11.649992316961288
+          5.700001260265708,
+          5.6999921798706055,
+          11.65000256150961
         ]
       },
       "stl": "stl/STD-SCREW-18.stl",
@@ -2418,832 +2119,22 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -59.31854620575905,
-          15.256031416356564,
-          52.85000428557396
+          2.250000135973096,
+          155.82457184791565,
+          6.500000134110451
         ],
         "max": [
-          -53.81854623556137,
-          21.60688489675522,
-          55.250003933906555
+          7.750000339001417,
+          162.17543184757233,
+          8.899999782443047
         ],
         "size": [
-          5.499999970197678,
-          6.350853480398655,
+          5.500000203028321,
+          6.350859999656677,
           2.399999648332596
         ]
       },
       "stl": "stl/STD-NUT-18.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        -8
-      ]
-    },
-    {
-      "id": "STD-SCREW-19",
-      "name": "M3×10 内六角圆头螺钉 19",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.01600000075995922,
-        0.020999999716877937,
-        0.027000000700354576,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          53.71854454278946,
-          15.581459738314152,
-          50.50000548362732
-        ],
-        "max": [
-          59.41854417324066,
-          21.28146030008793,
-          62.14999780058861
-        ],
-        "size": [
-          5.699999630451202,
-          5.700000561773777,
-          11.649992316961288
-        ]
-      },
-      "stl": "stl/STD-SCREW-19.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        25
-      ]
-    },
-    {
-      "id": "STD-NUT-19",
-      "name": "M3 防转槽内六角螺母 19",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.18000000715255737,
-        0.20999999344348907,
-        0.25,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          53.81854623556137,
-          15.256031416356564,
-          52.85000428557396
-        ],
-        "max": [
-          59.31854620575905,
-          21.60688489675522,
-          55.250003933906555
-        ],
-        "size": [
-          5.499999970197678,
-          6.350853480398655,
-          2.399999648332596
-        ]
-      },
-      "stl": "stl/STD-NUT-19.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        -8
-      ]
-    },
-    {
-      "id": "STD-SCREW-20",
-      "name": "M3×10 内六角圆头螺钉 20",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.01600000075995922,
-        0.020999999716877937,
-        0.027000000700354576,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -85.91964095830917,
-          94.40843760967255,
-          1.8500004662200809
-        ],
-        "max": [
-          -80.21963387727737,
-          100.10844469070435,
-          13.500001281499863
-        ],
-        "size": [
-          5.700007081031799,
-          5.700007081031799,
-          11.650000815279782
-        ]
-      },
-      "stl": "stl/STD-SCREW-20.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        25
-      ]
-    },
-    {
-      "id": "STD-NUT-20",
-      "name": "M3 防转槽内六角螺母 20",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.18000000715255737,
-        0.20999999344348907,
-        0.25,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -85.81963181495667,
-          94.08301115036011,
-          10.500000789761543
-        ],
-        "max": [
-          -80.31962066888809,
-          100.43386369943619,
-          12.900001369416714
-        ],
-        "size": [
-          5.500011146068573,
-          6.35085254907608,
-          2.4000005796551704
-        ]
-      },
-      "stl": "stl/STD-NUT-20.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        -8
-      ]
-    },
-    {
-      "id": "STD-SCREW-21",
-      "name": "M3×10 内六角圆头螺钉 21",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.01600000075995922,
-        0.020999999716877937,
-        0.027000000700354576,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -85.91964095830917,
-          49.89156872034073,
-          1.8500004662200809
-        ],
-        "max": [
-          -80.21963387727737,
-          55.59156835079193,
-          13.500001281499863
-        ],
-        "size": [
-          5.700007081031799,
-          5.699999630451202,
-          11.650000815279782
-        ]
-      },
-      "stl": "stl/STD-SCREW-21.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        25
-      ]
-    },
-    {
-      "id": "STD-NUT-21",
-      "name": "M3 防转槽内六角螺母 21",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.18000000715255737,
-        0.20999999344348907,
-        0.25,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -85.81963181495667,
-          49.56613853573799,
-          10.500000789761543
-        ],
-        "max": [
-          -80.31962066888809,
-          55.91699108481407,
-          12.900001369416714
-        ],
-        "size": [
-          5.500011146068573,
-          6.35085254907608,
-          2.4000005796551704
-        ]
-      },
-      "stl": "stl/STD-NUT-21.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        -8
-      ]
-    },
-    {
-      "id": "STD-SCREW-22",
-      "name": "M3×10 内六角圆头螺钉 22",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.01600000075995922,
-        0.020999999716877937,
-        0.027000000700354576,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          80.21963387727737,
-          49.89156872034073,
-          1.8500004662200809
-        ],
-        "max": [
-          85.91964095830917,
-          55.59156835079193,
-          13.500001281499863
-        ],
-        "size": [
-          5.700007081031799,
-          5.699999630451202,
-          11.650000815279782
-        ]
-      },
-      "stl": "stl/STD-SCREW-22.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        25
-      ]
-    },
-    {
-      "id": "STD-NUT-22",
-      "name": "M3 防转槽内六角螺母 22",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.18000000715255737,
-        0.20999999344348907,
-        0.25,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          80.31962066888809,
-          49.56613853573799,
-          10.500000789761543
-        ],
-        "max": [
-          85.81963181495667,
-          55.91699108481407,
-          12.900001369416714
-        ],
-        "size": [
-          5.500011146068573,
-          6.35085254907608,
-          2.4000005796551704
-        ]
-      },
-      "stl": "stl/STD-NUT-22.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        -8
-      ]
-    },
-    {
-      "id": "STD-SCREW-23",
-      "name": "M3×10 内六角圆头螺钉 23",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.01600000075995922,
-        0.020999999716877937,
-        0.027000000700354576,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          80.21963387727737,
-          94.40843760967255,
-          1.8500004662200809
-        ],
-        "max": [
-          85.91964095830917,
-          100.10844469070435,
-          13.500001281499863
-        ],
-        "size": [
-          5.700007081031799,
-          5.700007081031799,
-          11.650000815279782
-        ]
-      },
-      "stl": "stl/STD-SCREW-23.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        25
-      ]
-    },
-    {
-      "id": "STD-NUT-23",
-      "name": "M3 防转槽内六角螺母 23",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.18000000715255737,
-        0.20999999344348907,
-        0.25,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          80.31962066888809,
-          94.08301115036011,
-          10.500000789761543
-        ],
-        "max": [
-          85.81963181495667,
-          100.43386369943619,
-          12.900001369416714
-        ],
-        "size": [
-          5.500011146068573,
-          6.35085254907608,
-          2.4000005796551704
-        ]
-      },
-      "stl": "stl/STD-NUT-23.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        -8
-      ]
-    },
-    {
-      "id": "STD-SCREW-24",
-      "name": "M3×10 内六角圆头螺钉 24",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.01600000075995922,
-        0.020999999716877937,
-        0.027000000700354576,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          33.49516913294792,
-          150.0924676656723,
-          1.8500004662200809
-        ],
-        "max": [
-          39.195168763399124,
-          155.7924598455429,
-          13.500001281499863
-        ],
-        "size": [
-          5.699999630451202,
-          5.6999921798706055,
-          11.650000815279782
-        ]
-      },
-      "stl": "stl/STD-SCREW-24.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        25
-      ]
-    },
-    {
-      "id": "STD-NUT-24",
-      "name": "M3 防转槽内六角螺母 24",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.18000000715255737,
-        0.20999999344348907,
-        0.25,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          33.59517082571983,
-          149.76705610752106,
-          10.500000789761543
-        ],
-        "max": [
-          39.09517079591751,
-          156.11791610717773,
-          12.900001369416714
-        ],
-        "size": [
-          5.499999970197678,
-          6.350859999656677,
-          2.4000005796551704
-        ]
-      },
-      "stl": "stl/STD-NUT-24.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        -8
-      ]
-    },
-    {
-      "id": "STD-SCREW-25",
-      "name": "M3×10 内六角圆头螺钉 25",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.01600000075995922,
-        0.020999999716877937,
-        0.027000000700354576,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -39.195168763399124,
-          150.0924676656723,
-          1.8500004662200809
-        ],
-        "max": [
-          -33.49516913294792,
-          155.7924598455429,
-          13.500001281499863
-        ],
-        "size": [
-          5.699999630451202,
-          5.6999921798706055,
-          11.650000815279782
-        ]
-      },
-      "stl": "stl/STD-SCREW-25.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        25
-      ]
-    },
-    {
-      "id": "STD-NUT-25",
-      "name": "M3 防转槽内六角螺母 25",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.18000000715255737,
-        0.20999999344348907,
-        0.25,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -39.09517079591751,
-          149.76705610752106,
-          10.500000789761543
-        ],
-        "max": [
-          -33.59517082571983,
-          156.11791610717773,
-          12.900001369416714
-        ],
-        "size": [
-          5.499999970197678,
-          6.350859999656677,
-          2.4000005796551704
-        ]
-      },
-      "stl": "stl/STD-NUT-25.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        -8
-      ]
-    },
-    {
-      "id": "STD-SCREW-26",
-      "name": "M3×10 内六角圆头螺钉 26",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.01600000075995922,
-        0.020999999716877937,
-        0.027000000700354576,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -25.108441710472107,
-          -10.919622145593166,
-          1.8500004662200809
-        ],
-        "max": [
-          -19.408442080020905,
-          -5.219620652496815,
-          13.500001281499863
-        ],
-        "size": [
-          5.699999630451202,
-          5.700001493096352,
-          11.650000815279782
-        ]
-      },
-      "stl": "stl/STD-SCREW-26.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        25
-      ]
-    },
-    {
-      "id": "STD-NUT-26",
-      "name": "M3 防转槽内六角螺母 26",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.18000000715255737,
-        0.20999999344348907,
-        0.25,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -25.008440017700195,
-          -11.24504767358303,
-          10.500000789761543
-        ],
-        "max": [
-          -19.50843818485737,
-          -4.894194658845663,
-          12.900001369416714
-        ],
-        "size": [
-          5.500001832842827,
-          6.350853014737368,
-          2.4000005796551704
-        ]
-      },
-      "stl": "stl/STD-NUT-26.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        -8
-      ]
-    },
-    {
-      "id": "STD-SCREW-27",
-      "name": "M3×10 内六角圆头螺钉 27",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.01600000075995922,
-        0.020999999716877937,
-        0.027000000700354576,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          19.408442080020905,
-          -10.919622145593166,
-          1.8500004662200809
-        ],
-        "max": [
-          25.108441710472107,
-          -5.219620652496815,
-          13.500001281499863
-        ],
-        "size": [
-          5.699999630451202,
-          5.700001493096352,
-          11.650000815279782
-        ]
-      },
-      "stl": "stl/STD-SCREW-27.stl",
-      "viewer_group": "fasteners",
-      "assembly_role": "fasteners",
-      "prototype_status": "标准件尺寸参考；螺纹与强度未建模",
-      "notes": [
-        "ISO7380-1 M3: head D5.7, H1.65, 2 mm hex; DIN934 M3 nut AF5.5, H2.4",
-        "Screw threads are simplified cylinders; not a screw manufacturing model"
-      ],
-      "explode_mm": [
-        0,
-        0,
-        25
-      ]
-    },
-    {
-      "id": "STD-NUT-27",
-      "name": "M3 防转槽内六角螺母 27",
-      "category": "hardware",
-      "quantity": 1,
-      "material": "Purchased steel hardware; reference geometry only",
-      "process": "Buy standard hardware; do not print",
-      "color": [
-        0.18000000715255737,
-        0.20999999344348907,
-        0.25,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          19.50843818485737,
-          -11.24504767358303,
-          10.500000789761543
-        ],
-        "max": [
-          25.008440017700195,
-          -4.894194658845663,
-          12.900001369416714
-        ],
-        "size": [
-          5.500001832842827,
-          6.350853014737368,
-          2.4000005796551704
-        ]
-      },
-      "stl": "stl/STD-NUT-27.stl",
       "viewer_group": "fasteners",
       "assembly_role": "fasteners",
       "prototype_status": "标准件尺寸参考；螺纹与强度未建模",

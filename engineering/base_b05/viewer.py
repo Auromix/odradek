@@ -15,7 +15,7 @@ import trimesh
 
 HERE = Path(__file__).resolve().parent
 GROUP_NAMES = {
-    "cover": "外罩 / 底座灯", "cover_support":"外罩安装支架 / 定位底环", "rear_lid": "可拆后盖",
+    "cover": "外罩 / 底座灯", "cover_support":"两半一体安装骨架", "rear_lid": "可拆后盖",
     "interface": "后部接口组件", "electronics": "PCB / 元件",
     "structure": "承力结构 / 参考件", "fasteners": "标准件",
     "cradle": "盒架 / 盒体检具", "routing": "线束空间",
@@ -59,6 +59,8 @@ def explode_vector(part, role, bbox):
     center = (np.asarray(bbox["min"]) + np.asarray(bbox["max"])) / 2
     if role == "rear_lid":
         return [85, -85, 65]
+    if role == "cover_support":
+        return [float(np.sign(center[0])*35),0,-25]
     if role == "cover":
         x = 0 if abs(center[0]) < 25 else np.sign(center[0]) * 65
         y = 55 if "NOSE" in part["id"] else -35 if "REAR" in part["id"] else 0

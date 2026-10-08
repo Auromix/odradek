@@ -7,11 +7,9 @@ Standard hardware meshes are simplified references, never print parts.
 from mathutils.bvhtree import BVHTree
 
 COVER_POINTS={
- 'B05-301-ARMOR-L':[(-99,8),(-112,67),(-79,125)],
- 'B05-301-ARMOR-R':[(99,8),(112,67),(79,125)],
- 'B05-302-NOSE':[(-55,151),(55,151),(0,167)],
- 'B05-303-REAR-SHOULDER-L':[(-90,-32),(-97,-22)],
- 'B05-303-REAR-SHOULDER-R':[(90,-32),(97,-22)],
+ 'B05-301-ARMOR-L':[(-99,-28),(-112,67),(-79,125)],
+ 'B05-301-ARMOR-R':[(99,-28),(112,67),(79,125)],
+ 'B05-302-NOSE':[(-55,151),(55,151),(-20,167),(20,167)],
  'B05-304-REAR-LID':[(-66,-28),(66,-28)],
 }
 COLLAR_POINTS=[(80*math.cos(math.radians(a)),75+80*math.sin(math.radians(a))) for a in (45,135,225,315)]
@@ -146,65 +144,71 @@ def make_nut(index,m):
     return nut
 
 
-def carriers():
-    groups={
-      'B05-307-CARRIER-L':('左外罩与环台支架',lambda m:m['x']<0 and m['owner']!='B05-302-NOSE' and m['owner']!='B05-304-REAR-LID',[165,195]),
-      'B05-307-CARRIER-R':('右外罩与环台支架',lambda m:m['x']>0 and m['owner']!='B05-302-NOSE' and m['owner']!='B05-304-REAR-LID',[-15,15]),
-      'B05-308-NOSE-CARRIER':('前鼻支架',lambda m:m['owner']=='B05-302-NOSE',[65,115]),
-      'B05-309-REAR-CARRIER':('独立后盖支架',lambda m:m['owner']=='B05-304-REAR-LID',[-105,-75]),
-    }
-    out=[]
-    for name,(cn,selector,fix_angles) in groups.items():
-        selected=[m for m in MOUNTS if selector(m)]
-        angles=[math.degrees(math.atan2(m['y']-75,m['x'])) for m in selected]
-        if name.endswith('-L'): angles=[a+360 if a<0 else a for a in angles]
-        obj=arc_prism(name,82,90,min(angles)-1,max(angles)+1,9,15)
-        for m,a in zip(selected,angles):
-            p=(m['x'],m['y']);q=(86*math.cos(math.radians(a)),75+86*math.sin(math.radians(a)))
-            b=beam_mm('Radial tie',p,q)
-            if b: boolean(obj,b,'UNION')
-            if m['kind']=='collar':
-                tower=cylinder_mm('Independent collar standoff',*p,4.5,9,m['seat_top'])
-            else:
-                profile=m['seat_profile'];n=len(profile)
-                verts=[(x,y,9) for x,y,z in profile]+[tuple(v) for v in profile]+[(m['x'],m['y'],m['seat_top'])]
-                faces=[tuple(range(n-1,-1,-1))]+[(i+n,(i+1)%n+n,2*n) for i in range(n)]+[(i,(i+1)%n,(i+1)%n+n,i+n) for i in range(n)]
-                tower=mesh_object('Surface-matched exterior standoff',verts,faces,'90_Construction_native_loft')
-            boolean(obj,tower,'UNION')
-        for m in selected: nut_slot(obj,m['x'],m['y'],m['seat_top'])
-        for a in fix_angles:
-            x,y=86*math.cos(math.radians(a)),75+86*math.sin(math.radians(a))
-            # Base fastening pocket: slot floor10.5, ceiling13.3, 1.7 mm roof.
-            boolean(obj,nut_channel('Deck captive M3 nut insertion channel',x,y,10.5,13.3),'DIFFERENCE')
-            boolean(obj,cylinder_mm('Deck M3 clearance',x,y,1.7,2,17),'DIFFERENCE')
-            pa=a+7
-            px,py=86*math.cos(math.radians(pa)),75+86*math.sin(math.radians(pa))
-            boolean(obj,cylinder_mm('Deck locating pin socket',px,py,1.55,8,11.3),'DIFFERENCE')
-            DECK_FIXES.append(dict(owner=name,x=x,y=y,angle=a,pin_xy=[px,py],upward=True,head_floor=1.85,length=10,nut_top=12.9,seat_top=15))
-        move_collection(obj,'03_Exterior_mount_carriers');out.append((obj,cn))
-    return out
+def shoulder_groove(obj):
+    # Cosmetic cut: 0.8 mm width, 0.4 mm depth. This never divides the wing.
+    tree=BVHTree.FromObject(obj,bpy.context.evaluated_depsgraph_get())
+    profile=[]
+    for x in [-76.4-i*.5 for i in range(152)]:
+        samples=[]
+        for y in (-14.4,-13.6):
+            hit,_,_,_=tree.ray_cast(Vector((x*M,y*M,.12)),Vector((0,0,-1)))
+            if hit is None: break
+            samples.append((x,y,hit.z/M-.4))
+        if len(samples)==2: profile.append(samples)
+    if len(profile)<2: raise ValueError('Decorative wing groove missed surface')
+    n=len(profile);vertices=[p for pair in profile for p in pair]
+    vertices += [(x,y,100) for x,y,z in vertices]
+    faces=[]
+    for i in range(n-1):
+        a=2*i; b=a+2
+        faces.extend([(a,a+1,b+1,b),(a+2*n,b+2*n,b+1+2*n,a+1+2*n),
+                      (a,b,b+2*n,a+2*n),(a+1,a+1+2*n,b+1+2*n,b+1)])
+    faces.extend([(0,2*n,2*n+1,1),(2*n-2,2*n-1,4*n-1,4*n-2)])
+    boolean(obj,mesh_object('Shallow rear shoulder armor groove',vertices,faces,'90_Construction_native_loft'),'DIFFERENCE')
 
 
-def deck_halves():
+def integrated_frames():
     out=[]
     for side in ('L','R'):
-        obj=cylinder_mm('B05-310-DECK-'+side,0,75,96,3,9,n=160)
-        boolean(obj,cylinder_mm('Central load-chassis reserve',0,75,80,2,10,n=160),'DIFFERENCE')
-        bounds=((-120,-30,2),(-.4,180,10)) if side=='L' else ((.4,-30,2),(120,180,10))
-        boolean(obj,box('Split exterior locating deck',bounds),'INTERSECT')
-        for f in DECK_FIXES:
-            if (f['x']<0)!=(side=='L'): continue
-            x,y=f['x'],f['y'];px,py=f['pin_xy']
-            boolean(obj,cylinder_mm('M3 deck clearance',x,y,1.7,1,12),'DIFFERENCE')
-            boolean(obj,cylinder_mm('Underside button head spotface',x,y,3.3,1,3.5),'DIFFERENCE')
-            boolean(obj,cylinder_mm('2.8 mm locating pin',px,py,1.4,8.8,11),'UNION')
-        move_collection(obj,'03_Exterior_mount_carriers');out.append((obj,'外罩定位底环'+('左' if side=='L' else '右')))
+        name='B05-307-FRAME-'+side
+        obj=cylinder_mm(name,0,75,96,3,15,n=160)
+        boolean(obj,cylinder_mm('Central future load-chassis reserve',0,75,80,2,16,n=160),'DIFFERENCE')
+        bounds=((-120,-30,2),(-.4,180,16)) if side=='L' else ((.4,-30,2),(120,180,16))
+        boolean(obj,box('Integrated frame half',bounds),'INTERSECT')
+        selected=[m for m in MOUNTS if (m['x']<0)==(side=='L')]
+        for m in selected:
+            p=(m['x'],m['y']);a=math.atan2(p[1]-75,p[0]);q=(88*math.cos(a),75+88*math.sin(a))
+            b=beam_mm('Integral radial tie',p,q,3,15)
+            if b: boolean(obj,b,'UNION')
+            if m['kind']=='collar':
+                tower=cylinder_mm('Integral independent collar post',*p,4.5,3,m['seat_top'])
+            else:
+                profile=m['seat_profile'];n=len(profile)
+                verts=[(x,y,3) for x,y,z in profile]+[tuple(v) for v in profile]+[(m['x'],m['y'],m['seat_top'])]
+                faces=[tuple(range(n-1,-1,-1))]+[(i+n,(i+1)%n+n,2*n) for i in range(n)]+[(i,(i+1)%n,(i+1)%n+n,i+n) for i in range(n)]
+                tower=mesh_object('Integral surface-matched tower',verts,faces,'90_Construction_native_loft')
+            boolean(obj,tower,'UNION')
+        for m in selected: nut_slot(obj,m['x'],m['y'],m['seat_top'])
+        # Two lap joints at the annular frame ends. Their walls locate X/Y;
+        # the screw clamps Z. They are printed as part of the two frame halves.
+        for y in (-8,159):
+            if side=='L':
+                boolean(obj,box('Integral locating lap tongue',((-2.5,y-6,3),(9,y+6,11.5))),'UNION')
+                nut_slot(obj,5,y,11.5)
+            else:
+                boolean(obj,box('Integral lap-joint receiver',((.4,y-8,3),(15,y+8,15))),'UNION')
+                boolean(obj,box('Lap tongue clearance',((-.5,y-6.3,2),(9.3,y+6.3,11.8))),'DIFFERENCE')
+                boolean(obj,cylinder_mm('Frame lap M3 through hole',5,y,1.7,1,20),'DIFFERENCE')
+                boolean(obj,cylinder_mm('Frame lap shallow head seat',5,y,3.3,14.5,20),'DIFFERENCE')
+                DECK_FIXES.append(dict(owner=name,support_owner='B05-307-FRAME-L',x=5,y=y,kind='frame_lap',head_floor=14.5,seat_top=11.5,length=10))
+        move_collection(obj,'03_Exterior_mount_carriers')
+        out.append((obj,('左' if side=='L' else '右')+'一体安装骨架'))
     return out
 
 
 def mounting_contract():
-    return dict(schema='odradek.exterior-mount.v1',length_unit='mm',module_scope='Cosmetic exterior fastening only; this is not the arm load deck',mounts=MOUNTS,deck_fixings=DECK_FIXES,
-      nominal=dict(cover_clearance_d=3.4,head_well_d=6.6,cover_head_well_depth=.5,cover_screw='ISO7380-1 M3x10',collar_screw='ISO7380-1 M3x10',nut='DIN934 M3, AF5.5 H2.4',nut_pocket_af=5.8,nut_slot_height=2.8,locating_pin_d=2.8,locating_socket_d=3.1,locating_pin_h=2.0,locating_socket_depth=2.3),
+    return dict(schema='odradek.exterior-mount.v2',revision='B05-EXTERIOR-SHAPE-07',length_unit='mm',module_scope='Cosmetic exterior fastening only; this is not the arm load deck',mounts=MOUNTS,deck_fixings=DECK_FIXES,
+      nominal=dict(cover_clearance_d=3.4,head_well_d=6.6,cover_head_well_depth=.5,cover_screw='ISO7380-1 M3x10',collar_screw='ISO7380-1 M3x10',nut='DIN934 M3, AF5.5 H2.4',nut_pocket_af=5.8,nut_slot_height=2.8,frame_lap_xy_clearance=.3,frame_lap_z_clearance=.3,frame_lap_tongue_z=[3,11.5],frame_lap_receiver_top_z=15),
       rear_service=dict(split_y=-14.4,collar_back_y=-10.,nominal_xy_gap=4.4,steps=['Remove only two rear-lid screws','Lift rear lid 2 mm, then withdraw toward -Y','Final flexible cable and actual tool access to be verified']),
       pcb_reservation=dict(x=[-58,58],y=[-40,16],z=[18,34],status='116x56 PCB size reservation only; native EDA components and panel interface not integrated in this module',lid_standoff_inner_abs_x=59.5,nominal_lateral_gap=1.5),
       sources=['https://www.accu.co.uk/socket-button-screws/8288-SSB-M3-35-A4','https://www.accu.co.uk/api/product-datasheet?id=268686'],
