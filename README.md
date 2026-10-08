@@ -1,6 +1,8 @@
 # Odradek
 
-**2026-10-08 arm body / 本体更新：** 用户已确认并实现[A11长版翼脊外观](engineering/arm_a11/README.md)：收腰连杆、可拆肩板与折面关节护罩，同源魔鬼鱼B05 SHAPE08底座，四瓣轮廓保留。[查看器](docs/viewers/arm-body-a11/index.html)与[验证记录](docs/engineering/arm-body-a11-validation.md)已更新；51个打印文件用于受支撑试配。裸法兰3 kg是目标，实物装配、温升、承力底盘和线束仍需验证。
+**2026-10-08 arm body / 本体更新：** 用户认为A11外观仍需重构，已选择[A12 A连续甲壳](docs/concepts/selected/arm-body-a12-manta-carapace/README.md)，围绕实际电机包覆、可拆背脊和活动线弯逐模块深化。目前只有[J2肩罩空间初稿](engineering/arm_a12/shoulder01/README.md)，其余本体仍保留A11结构；B06底座作为同源只读上下文，不代表新旧模块已完成整机适配。
+
+[A11长版](engineering/arm_a11/README.md)与其[查看器](docs/viewers/arm-body-a11/index.html)、[验证记录](docs/engineering/arm-body-a11-validation.md)保留为历史结构基线；51个打印文件只适用于该版本受支撑试配，不移用于A12。裸法兰3 kg是目标，实物装配、温升、承力底盘和线束仍需验证。
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 

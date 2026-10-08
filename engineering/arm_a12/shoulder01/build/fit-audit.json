@@ -1,0 +1,129 @@
+{
+  "manifest_sha256": "455e730f19433e736ffb0708afde7cc814ae07761cb3f3ddadcb7434f6582051",
+  "baseline_manifest_sha256": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559",
+  "scope": "New J2 shields against existing exact geometry at seven discrete poses. Not full-arm/domain clearance.",
+  "checks": {
+    "idle": {
+      "q_deg": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "narrow_phase_checks": 56,
+      "overlaps": []
+    },
+    "attention": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "narrow_phase_checks": 55,
+      "overlaps": []
+    },
+    "reference": {
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "narrow_phase_checks": 55,
+      "overlaps": []
+    },
+    "J2_-60": {
+      "q_deg": [
+        0,
+        -60,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "narrow_phase_checks": 56,
+      "overlaps": []
+    },
+    "J2_0": {
+      "q_deg": [
+        0,
+        0,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "narrow_phase_checks": 55,
+      "overlaps": []
+    },
+    "J2_45": {
+      "q_deg": [
+        0,
+        45,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "narrow_phase_checks": 56,
+      "overlaps": []
+    },
+    "J2_110": {
+      "q_deg": [
+        0,
+        110,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "narrow_phase_checks": 56,
+      "overlaps": []
+    }
+  },
+  "wire_reservation": {
+    "status": "stationary unconnected D10 U-space only",
+    "intersection_checks": [
+      {
+        "other": "A12-201-J2-shield-left",
+        "intersection_mm3": 0
+      },
+      {
+        "other": "A12-201-J2-shield-right",
+        "intersection_mm3": 0
+      },
+      {
+        "other": "J2-stator",
+        "intersection_mm3": 0
+      },
+      {
+        "other": "J2-external-output",
+        "intersection_mm3": 0
+      }
+    ],
+    "sampled_sphere_spacing_mm": 2.355773963167884,
+    "bend_radius_target_mm": 36,
+    "cable_selected": false,
+    "endpoints_connected": false
+  },
+  "limitations": [
+    "Attachment ribs are nominal split clamps; grip, liner, vibration and practical removal not qualified.",
+    "Three vents are planned openings, not thermal validation.",
+    "J3, bridge, root, elbow, wrist and link armour are not yet A12 redesigned.",
+    "Raw STLs are in J2 object coordinates, NOT sliced, bed-placed or released print files."
+  ]
+}
