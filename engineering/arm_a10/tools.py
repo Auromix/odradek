@@ -17,8 +17,8 @@ def run():
    if h['id'].startswith('J7-fixed-') and (id.startswith('J7-bearing') or id.startswith('J7-6807') or id.startswith('J7-cage')):continue
    # Connect proximal module to motor before inserting pipe and captive nuts.
    if output and h['owner'] in [3,4]:
-    prefix=f'T{h['owner']}'
-    if id.startswith(prefix) or id.startswith(f'T0{h['owner']}') or id.startswith(f'S0{h['owner']}'):continue
+    prefix=f"T{h['owner']}"
+    if id.startswith(prefix) or id.startswith(f"T0{h['owner']}") or id.startswith(f"S0{h['owner']}"):continue
    if output and a['frame']==nextframe and a['role'] in ['motor_envelope','hardware']:continue
    cb=x.bbox(s)
    if any(getattr(bb,k+'max')<=getattr(cb,k+'min')+1e-5 or getattr(cb,k+'max')<=getattr(bb,k+'min')+1e-5 for k in ['x','y','z']):continue

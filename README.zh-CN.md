@@ -1,5 +1,7 @@
 # Odradek
 
+**2026-10-08：本体已按长版推进至[A10机械试装原型](engineering/arm_a10/README.md)，[查看七轴模型](docs/viewers/arm-body-a10/index.html)。裸法兰总外负载目标3 kg，尚未通过实物承载、热与线束验证。**
+
 **2026-10-03 arm body / 本体更新：** [A09直管与平板重做](docs/arm-body-redesign-a09.md) · [七轴查看器](docs/viewers/arm-body-a09/index.html)。当前本体目标为裸臂法兰总外负载3 kg，不装四瓣头；A08外观被否定，A09是加工与比例提案，尚非承载发布版。
 
 **7自由度本体＋可拆四瓣发光夹爪，以朝向、张合与灯光表达主动注意力。**

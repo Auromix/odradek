@@ -1,0 +1,60 @@
+{
+  "manifest_sha256": "fea5df1edbb54549ac29fd1a70e44f73f521b1412828fc3d94523097ca67a7f8",
+  "mode": "quick",
+  "parts": 42,
+  "unchanged_rigid_geometry": {
+    "reused_rigid_pairs": 88,
+    "source_report_sha256": "6a7764f051176ba2067ef4892c4afbc910a3c81d665241a95a6e8037d135064a",
+    "scope": "Exact unchanged original STEP hashes only; altered and moving-owner pairs recomputed."
+  },
+  "checks": {
+    "idle": {
+      "q_deg": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "intentional_fits": [],
+      "narrow_phase_checks": 57
+    },
+    "attention": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "intentional_fits": [],
+      "narrow_phase_checks": 41
+    },
+    "reference": {
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "intentional_fits": [],
+      "narrow_phase_checks": 23
+    }
+  },
+  "scope": "Named poses only; exact original BREP and analytic motor envelopes",
+  "limitations": [
+    "Thread-zone exemptions are geometrically confined, not whole-motor pair suppression.",
+    "No hardware plugs, flexible harness, printer shrinkage, deflection or continuous-time proof.",
+    "Table/base geometry must be checked separately."
+  ]
+}

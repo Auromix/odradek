@@ -46,6 +46,8 @@ def run():
   assert error<max(.5,source_volume*1e-4)
   rawdatum=np.array(source['interface_frame']['T_raw_from_interface_mm'])@np.array([0,0,0,1]);mapped=T@rawdatum;assert np.linalg.norm(mapped[:3]-inf['out'])<1e-8
   audit.append(dict(joint=j['id'],model=j['model'],file=f,source_url=EXPECTED[f]['url'],source_sha256=sha,T_joint_from_raw_mm=T.tolist(),volume_mm3=source_volume,bbox_joint_mm=[bb.xmin,bb.ymin,bb.zmin,bb.xmax,bb.ymax,bb.zmax],partition_volume_error_mm3=error,source_solids=len(raw[f].Solids()),imported_scale=1.0,interface_origin_error_mm=float(np.linalg.norm(mapped[:3]-inf['out']))))
+ for item in audit:
+  item['partition_cache']=dict(stator=f'work/arm-a10/vendor/{item["joint"]}-stator.step',external_output=f'work/arm-a10/vendor/{item["joint"]}-external-output.step')
  (CACHE/'meshes.json').write_text(json.dumps(data,separators=(',',':'))+'\n')
  report=dict(official_repo=c.SOURCE['official_repository'],pinned_commit=c.SOURCE['commit'],actuators=audit,geometry_status='exact STEP externally partitioned for visual output motion',partition_note='Geometric output-boss/pin partition does not establish internal rotor/stator mass or encoder zero. At mechanical reference pose the two parts reconstruct the original source.',distribution='Local cache and full-supplier Blender remain in ignored work/. Public reproduction uses importer and pinned source URLs, original model uses original analytic envelopes.')
  (c.OUT/'motor-import-audit.json').write_text(json.dumps(report,indent=2)+'\n')
