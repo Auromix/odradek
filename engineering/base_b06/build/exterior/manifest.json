@@ -1,0 +1,3693 @@
+{
+  "revision": "B06-COMPACT-01",
+  "length_unit": "mm",
+  "module": "compact_integration_candidate",
+  "scope": "Five printed cosmetic/PCB locating parts; A11 root snapshot and connector envelopes; no load chassis or PCB release",
+  "parameters": {
+    "schema": "odradek.b06.compact.v1",
+    "length_unit": "mm",
+    "center_xy": [
+      0.0,
+      75.0
+    ],
+    "wall_nominal_mm": 3.0,
+    "outer_half_control_points": [
+      [
+        0,
+        -38
+      ],
+      [
+        76,
+        -38
+      ],
+      [
+        97,
+        -26
+      ],
+      [
+        114,
+        -3
+      ],
+      [
+        119,
+        15
+      ],
+      [
+        118,
+        25
+      ],
+      [
+        108,
+        38
+      ],
+      [
+        98,
+        48
+      ],
+      [
+        96,
+        63
+      ],
+      [
+        95,
+        79
+      ],
+      [
+        98,
+        89
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        105,
+        117
+      ],
+      [
+        101,
+        128
+      ],
+      [
+        86,
+        145
+      ],
+      [
+        57,
+        171
+      ],
+      [
+        25,
+        182
+      ],
+      [
+        0,
+        185
+      ]
+    ],
+    "inner_body_radius_mm": 84,
+    "collar_radius_mm": [
+      68,
+      84
+    ],
+    "collar_top_z_mm": [
+      74,
+      60
+    ],
+    "design_intent": "One continuous four-petal-family manta shield; reduced wing span; no visible top fixing holes; integral neck",
+    "prototype_scope": "Five printed cosmetic/PCB locating parts; A11 root snapshot and connector envelopes; no load chassis or PCB release",
+    "printer_volume_mm": [
+      256,
+      256,
+      256
+    ],
+    "outer_limit_xy_mm": [
+      240,
+      230
+    ],
+    "fastening": "Four underside M3x10 screws with captive M3 nuts; rear lid two bottom M3x10; lamp two M2x6"
+  },
+  "parts": [
+    {
+      "id": "B06-301-MAIN-SHIELD",
+      "name": "前鼻＋双翼＋颈台一体外罩",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.04800000041723251,
+        0.05900000035762787,
+        0.07199999690055847,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -119.38842386007309,
+          -38.663629442453384,
+          3.000000026077032
+        ],
+        "max": [
+          119.38842386007309,
+          185.0000023841858,
+          74.00000095367432
+        ],
+        "size": [
+          238.77684772014618,
+          223.66363182663918,
+          71.00000092759728
+        ]
+      },
+      "stl": "stl/B06-301-MAIN-SHIELD.stl",
+      "print_stl": "print-parts/B06-301-MAIN-SHIELD.stl",
+      "print_translation_mm": [
+        119.38842386007309,
+        38.663629442453384,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "cover",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "3mm nominal wall; four concealed underside M3 captive-nut fixings",
+        "Integral ID136 neck, Z74 top; continuous shoulder chine; no cosmetic top screw holes",
+        "A11 root snapshot required; old A10 waist is not compatible without redesign"
+      ]
+    },
+    {
+      "id": "B06-306-LIGHT-LENS",
+      "name": "琥珀透光灯窗",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        1.0,
+        0.2800000011920929,
+        0.014999999664723873,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -18.699999898672104,
+          168.30000281333923,
+          54.613012820482254
+        ],
+        "max": [
+          18.699999898672104,
+          173.7000048160553,
+          57.79140815138817
+        ],
+        "size": [
+          37.39999979734421,
+          5.4000020027160645,
+          3.1783953309059143
+        ]
+      },
+      "stl": "stl/B06-306-LIGHT-LENS.stl",
+      "print_stl": "print-parts/B06-306-LIGHT-LENS.stl",
+      "print_translation_mm": [
+        18.699999898672104,
+        -168.30000281333923,
+        -54.613012820482254
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "cover",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "Curved closed optical blank; retained from inside by a separate screw bar; optical PCB pending"
+      ]
+    },
+    {
+      "id": "B06-308-LENS-RETAINER",
+      "name": "灯窗内藏压条",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -27.000000700354576,
+          168.00004243850708,
+          46.782370656728745
+        ],
+        "max": [
+          27.000000700354576,
+          171.00003361701965,
+          55.34014850854874
+        ],
+        "size": [
+          54.00000140070915,
+          2.9999911785125732,
+          8.557777851819992
+        ]
+      },
+      "stl": "stl/B06-308-LENS-RETAINER.stl",
+      "print_stl": "print-parts/B06-308-LENS-RETAINER.stl",
+      "print_translation_mm": [
+        27.000000700354576,
+        -168.00004243850708,
+        -46.782370656728745
+      ],
+      "viewer_group": "cover_support",
+      "assembly_role": "cover_support",
+      "wall_nominal_mm": null,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "Two M2x6 screws into hidden cover pilot bosses; 0.3mm seat allowance; central pad nominal0.4mm below lens; compliant optical shim to be trial-fitted; physical fit coupon required"
+      ]
+    },
+    {
+      "id": "B06-304-REAR-LID",
+      "name": "独立后部检修盖",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.03500000014901161,
+        0.04500000178813934,
+        0.0560000017285347,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -66.6000097990036,
+          -38.88804093003273,
+          3.000000026077032
+        ],
+        "max": [
+          66.6000097990036,
+          -22.400015965104103,
+          57.05203860998154
+        ],
+        "size": [
+          133.2000195980072,
+          16.488024964928627,
+          54.052038583904505
+        ]
+      },
+      "stl": "stl/B06-304-REAR-LID.stl",
+      "print_stl": "print-parts/B06-304-REAR-LID.stl",
+      "print_translation_mm": [
+        66.6000097990036,
+        38.88804093003273,
+        -3.000000026077032
+      ],
+      "viewer_group": "cover",
+      "assembly_role": "rear_lid",
+      "wall_nominal_mm": 3.0,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "0.8mm partition seam; two bottom M3 fixings; bottom cable throat 108x18mm",
+        "Lift after unplugging cables; paired full-size I/O remains under main cover"
+      ]
+    },
+    {
+      "id": "B06-307-LOWER-CARRIER",
+      "name": "一体底部外罩／接口板安装架",
+      "category": "custom",
+      "quantity": 1,
+      "material": "PETG / ASA fit-prototype candidate; appearance finish only",
+      "process": "3D print for unpowered fit; orientation/supports to be sliced",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -89.45448696613312,
+          -31.99833631515503,
+          2.999997930601239
+        ],
+        "max": [
+          89.45447206497192,
+          159.00011360645294,
+          20.00000700354576
+        ],
+        "size": [
+          178.90895903110504,
+          190.99844992160797,
+          17.000009072944522
+        ]
+      },
+      "stl": "stl/B06-307-LOWER-CARRIER.stl",
+      "print_stl": "print-parts/B06-307-LOWER-CARRIER.stl",
+      "print_translation_mm": [
+        89.45448696613312,
+        31.99833631515503,
+        -2.999997930601239
+      ],
+      "viewer_group": "cover_support",
+      "assembly_role": "cover_support",
+      "wall_nominal_mm": null,
+      "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
+      "notes": [
+        "Ø156 centre clearance for future chassis; DOES NOT carry arm load",
+        "PCB 116x56 retained; four board holes x±52,y-10/34 at Z20; M3 pilot holes",
+        "Main hidden posts start Z7.8; carrier top Z7; nominal Z gap0.8"
+      ]
+    },
+    {
+      "id": "HW-M3-1",
+      "name": "M3×10 底部固定螺钉",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -89.85001593828201,
+          33.15000608563423,
+          5.349999293684959
+        ],
+        "max": [
+          -84.15000885725021,
+          38.850005716085434,
+          17.000000923871994
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.650001630187035
+        ]
+      },
+      "stl": "stl/HW-M3-1.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Nominal standard hardware; simplified threads; buy, do not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-NUT-1",
+      "name": "M3 内藏螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -89.7500067949295,
+          32.824575901031494,
+          10.000000707805157
+        ],
+        "max": [
+          -84.25000309944153,
+          39.175428450107574,
+          12.400001287460327
+        ],
+        "size": [
+          5.500003695487976,
+          6.35085254907608,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/HW-NUT-1.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "DIN934 nominal dimensions; thread omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-M3-2",
+      "name": "M3×10 底部固定螺钉",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          84.15000885725021,
+          33.15000608563423,
+          5.349999293684959
+        ],
+        "max": [
+          89.85001593828201,
+          38.850005716085434,
+          17.000000923871994
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.650001630187035
+        ]
+      },
+      "stl": "stl/HW-M3-2.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Nominal standard hardware; simplified threads; buy, do not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-NUT-2",
+      "name": "M3 内藏螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          84.25000309944153,
+          32.824575901031494,
+          10.000000707805157
+        ],
+        "max": [
+          89.7500067949295,
+          39.175428450107574,
+          12.400001287460327
+        ],
+        "size": [
+          5.500003695487976,
+          6.35085254907608,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/HW-NUT-2.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "DIN934 nominal dimensions; thread omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-M3-3",
+      "name": "M3×10 底部固定螺钉",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -74.85001534223557,
+          122.1499964594841,
+          5.349999293684959
+        ],
+        "max": [
+          -69.15000826120377,
+          127.8499960899353,
+          17.000000923871994
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.650001630187035
+        ]
+      },
+      "stl": "stl/HW-M3-3.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Nominal standard hardware; simplified threads; buy, do not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-NUT-3",
+      "name": "M3 内藏螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -74.75000619888306,
+          121.82457745075226,
+          10.000000707805157
+        ],
+        "max": [
+          -69.25000250339508,
+          128.17542254924774,
+          12.400001287460327
+        ],
+        "size": [
+          5.500003695487976,
+          6.350845098495483,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/HW-NUT-3.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "DIN934 nominal dimensions; thread omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-M3-4",
+      "name": "M3×10 底部固定螺钉",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          69.15000826120377,
+          122.1499964594841,
+          5.349999293684959
+        ],
+        "max": [
+          74.85001534223557,
+          127.8499960899353,
+          17.000000923871994
+        ],
+        "size": [
+          5.700007081031799,
+          5.699999630451202,
+          11.650001630187035
+        ]
+      },
+      "stl": "stl/HW-M3-4.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Nominal standard hardware; simplified threads; buy, do not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-NUT-4",
+      "name": "M3 内藏螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          69.25000250339508,
+          121.82457745075226,
+          10.000000707805157
+        ],
+        "max": [
+          74.75000619888306,
+          128.17542254924774,
+          12.400001287460327
+        ],
+        "size": [
+          5.500003695487976,
+          6.350845098495483,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/HW-NUT-4.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "DIN934 nominal dimensions; thread omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-M3-5",
+      "name": "M3×10 底部固定螺钉",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -62.85000592470169,
+          -31.850002706050873,
+          5.349999293684959
+        ],
+        "max": [
+          -57.15000629425049,
+          -26.15000307559967,
+          17.000000923871994
+        ],
+        "size": [
+          5.699999630451202,
+          5.699999630451202,
+          11.650001630187035
+        ]
+      },
+      "stl": "stl/HW-M3-5.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Nominal standard hardware; simplified threads; buy, do not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-NUT-5",
+      "name": "M3 内藏螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -62.74999678134918,
+          -32.17542916536331,
+          10.000000707805157
+        ],
+        "max": [
+          -57.2500042617321,
+          -25.824574753642082,
+          12.400001287460327
+        ],
+        "size": [
+          5.499992519617081,
+          6.3508544117212296,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/HW-NUT-5.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "DIN934 nominal dimensions; thread omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-M3-6",
+      "name": "M3×10 底部固定螺钉",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          57.15000629425049,
+          -31.850002706050873,
+          5.349999293684959
+        ],
+        "max": [
+          62.85000592470169,
+          -26.15000307559967,
+          17.000000923871994
+        ],
+        "size": [
+          5.699999630451202,
+          5.699999630451202,
+          11.650001630187035
+        ]
+      },
+      "stl": "stl/HW-M3-6.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Nominal standard hardware; simplified threads; buy, do not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-NUT-6",
+      "name": "M3 内藏螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          57.2500042617321,
+          -32.17542916536331,
+          10.000000707805157
+        ],
+        "max": [
+          62.74999678134918,
+          -25.824574753642082,
+          12.400001287460327
+        ],
+        "size": [
+          5.499992519617081,
+          6.3508544117212296,
+          2.4000005796551704
+        ]
+      },
+      "stl": "stl/HW-NUT-6.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "DIN934 nominal dimensions; thread omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "REF-P00-J1-top-ring",
+      "name": "本体参考 P00-J1-top-ring",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -62.99799680709839,
+          12.389999814331532,
+          161.89999878406525
+        ],
+        "max": [
+          62.99799680709839,
+          137.9999965429306,
+          169.90000009536743
+        ],
+        "size": [
+          125.99599361419678,
+          125.60999672859907,
+          8.000001311302185
+        ]
+      },
+      "stl": "stl/REF-P00-J1-top-ring.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Frozen A11 project mesh; yaw90; translation(0,75,34.6); source a96f2f2d51372380b8d50dc52be296d66e2690ac2550bc54c36e01025eb48895"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "structure",
+      "print_stl": null
+    },
+    {
+      "id": "REF-P00-root-open",
+      "name": "本体参考 P00-root-open",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -69.93000209331512,
+          4.999999888241291,
+          57.999998331069946
+        ],
+        "max": [
+          69.93000209331512,
+          144.99999582767487,
+          161.89999878406525
+        ],
+        "size": [
+          139.86000418663025,
+          139.99999593943357,
+          103.9000004529953
+        ]
+      },
+      "stl": "stl/REF-P00-root-open.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Frozen A11 project mesh; yaw90; translation(0,75,34.6); source a96f2f2d51372380b8d50dc52be296d66e2690ac2550bc54c36e01025eb48895"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "structure",
+      "print_stl": null
+    },
+    {
+      "id": "REF-S00-waist-A",
+      "name": "本体参考 S00-waist-A",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.04800000041723251,
+        0.05900000035762787,
+        0.07199999690055847,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -76.49999856948853,
+          75.19999891519547,
+          75.10299980640411
+        ],
+        "max": [
+          76.49999856948853,
+          152.99999713897705,
+          172.0000058412552
+        ],
+        "size": [
+          152.99999713897705,
+          77.79999822378159,
+          96.89700603485107
+        ]
+      },
+      "stl": "stl/REF-S00-waist-A.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Frozen A11 project mesh; yaw90; translation(0,75,34.6); source a96f2f2d51372380b8d50dc52be296d66e2690ac2550bc54c36e01025eb48895"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "structure",
+      "print_stl": null
+    },
+    {
+      "id": "REF-S00-waist-B",
+      "name": "本体参考 S00-waist-B",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.04800000041723251,
+        0.05900000035762787,
+        0.07199999690055847,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -76.49999856948853,
+          -3.000000026077032,
+          75.10299980640411
+        ],
+        "max": [
+          76.49999856948853,
+          74.79999959468842,
+          172.0000058412552
+        ],
+        "size": [
+          152.99999713897705,
+          77.79999962076545,
+          96.89700603485107
+        ]
+      },
+      "stl": "stl/REF-S00-waist-B.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Frozen A11 project mesh; yaw90; translation(0,75,34.6); source a96f2f2d51372380b8d50dc52be296d66e2690ac2550bc54c36e01025eb48895"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "structure",
+      "print_stl": null
+    },
+    {
+      "id": "REF-J1-RS03",
+      "name": "J1 RS03 Ø106×57包络",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.07199999690055847,
+        0.08399999886751175,
+        0.09600000083446503,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -52.99999937415123,
+          22.00000360608101,
+          107.59999603033066
+        ],
+        "max": [
+          52.99999937415123,
+          128.00000607967377,
+          164.59999978542328
+        ],
+        "size": [
+          105.99999874830246,
+          106.00000247359276,
+          57.00000375509262
+        ]
+      },
+      "stl": "stl/REF-J1-RS03.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Motor dimensional envelope only; fixed M4 PC98 interface remains in original top-ring mesh"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "structure",
+      "print_stl": null
+    },
+    {
+      "id": "REF-LOAD-FLANGE",
+      "name": "Ø160 / PCD120八M6承载接口空间",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.07199999690055847,
+        0.08399999886751175,
+        0.09600000083446503,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -80.00006526708603,
+          -5.00006228685379,
+          46.00000008940697
+        ],
+        "max": [
+          80.00006526708603,
+          155.00006079673767,
+          58.000002056360245
+        ],
+        "size": [
+          160.00013053417206,
+          160.00012308359146,
+          12.000001966953278
+        ]
+      },
+      "stl": "stl/REF-LOAD-FLANGE.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Mating-plane Z58. Thread minor bore is nominal; no manufacturing drawing or support chassis released."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "structure",
+      "print_stl": null
+    },
+    {
+      "id": "IO-BRI01_PCB",
+      "name": "IO-BRI01_PCB",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.04800000041723251,
+        0.05900000035762787,
+        0.07199999690055847,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -57.999998331069946,
+          -16.00000075995922,
+          19.999999552965164
+        ],
+        "max": [
+          57.999998331069946,
+          39.99999910593033,
+          21.60000056028366
+        ],
+        "size": [
+          115.99999666213989,
+          55.99999986588955,
+          1.6000010073184967
+        ]
+      },
+      "stl": "stl/IO-BRI01_PCB.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_shell_reference",
+      "name": "IO-J1_shell_reference",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          30.500000342726707,
+          -16.00000075995922,
+          21.60000056028366
+        ],
+        "max": [
+          45.499999076128006,
+          -2.5500000920146704,
+          36.29999980330467
+        ],
+        "size": [
+          14.999998733401299,
+          13.45000066794455,
+          14.699999243021011
+        ]
+      },
+      "stl": "stl/IO-J1_shell_reference.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_spring_reservation_-8.65",
+      "name": "IO-J1_spring_reservation_-8.65",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          29.349999502301216,
+          -14.999999664723873,
+          22.600000724196434
+        ],
+        "max": [
+          30.500000342726707,
+          -7.499999832361937,
+          37.43999823927879
+        ],
+        "size": [
+          1.1500008404254913,
+          7.499999832361937,
+          14.83999751508236
+        ]
+      },
+      "stl": "stl/IO-J1_spring_reservation_-8.65.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_spring_reservation_7.5",
+      "name": "IO-J1_spring_reservation_7.5",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          45.499999076128006,
+          -14.999999664723873,
+          22.600000724196434
+        ],
+        "max": [
+          46.6499999165535,
+          -7.499999832361937,
+          37.43999823927879
+        ],
+        "size": [
+          1.1500008404254913,
+          7.499999832361937,
+          14.83999751508236
+        ]
+      },
+      "stl": "stl/IO-J1_spring_reservation_7.5.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_0",
+      "name": "IO-J1_tail_0",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          34.20000150799751,
+          -9.870000183582306,
+          18.300000578165054
+        ],
+        "max": [
+          34.66000035405159,
+          -9.410000406205654,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999884605407715,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_0.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_1",
+      "name": "IO-J1_tail_1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          35.22000089287758,
+          -5.869999993592501,
+          18.300000578165054
+        ],
+        "max": [
+          35.679999738931656,
+          -5.410000216215849,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999884605407715,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_2",
+      "name": "IO-J1_tail_2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          36.240000277757645,
+          -9.870000183582306,
+          18.300000578165054
+        ],
+        "max": [
+          36.69999912381172,
+          -9.410000406205654,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999884605407715,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_3",
+      "name": "IO-J1_tail_3",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          37.25999966263771,
+          -5.869999993592501,
+          18.300000578165054
+        ],
+        "max": [
+          37.71999850869179,
+          -5.410000216215849,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999884605407715,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_3.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_4",
+      "name": "IO-J1_tail_4",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          38.27999904751778,
+          -9.870000183582306,
+          18.300000578165054
+        ],
+        "max": [
+          38.74000161886215,
+          -9.410000406205654,
+          21.60000056028366
+        ],
+        "size": [
+          0.4600025713443756,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_4.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_5",
+      "name": "IO-J1_tail_5",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          39.29999843239784,
+          -5.869999993592501,
+          18.300000578165054
+        ],
+        "max": [
+          39.76000100374222,
+          -5.410000216215849,
+          21.60000056028366
+        ],
+        "size": [
+          0.4600025713443756,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_5.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_6",
+      "name": "IO-J1_tail_6",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          40.32000154256821,
+          -9.870000183582306,
+          18.300000578165054
+        ],
+        "max": [
+          40.780000388622284,
+          -9.410000406205654,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999884605407715,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_6.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_7",
+      "name": "IO-J1_tail_7",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          41.34000092744827,
+          -5.869999993592501,
+          18.300000578165054
+        ],
+        "max": [
+          41.79999977350235,
+          -5.410000216215849,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999884605407715,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_7.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_8",
+      "name": "IO-J1_tail_8",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          45.170001685619354,
+          -12.21999991685152,
+          18.300000578165054
+        ],
+        "max": [
+          45.63000053167343,
+          -11.760000139474869,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999884605407715,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_8.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J1_tail_9",
+      "name": "IO-J1_tail_9",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          30.37000074982643,
+          -12.21999991685152,
+          18.300000578165054
+        ],
+        "max": [
+          30.82999959588051,
+          -11.760000139474869,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999884605407715,
+          0.45999977737665176,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J1_tail_9.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_shell_reference",
+      "name": "IO-J2_shell_reference",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -7.499999832361937,
+          26.55000053346157,
+          21.60000056028366
+        ],
+        "max": [
+          7.499999832361937,
+          39.99999910593033,
+          36.29999980330467
+        ],
+        "size": [
+          14.999999664723873,
+          13.449998572468758,
+          14.699999243021011
+        ]
+      },
+      "stl": "stl/IO-J2_shell_reference.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_spring_reservation_-8.65",
+      "name": "IO-J2_spring_reservation_-8.65",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          7.499999832361937,
+          31.50000050663948,
+          22.600000724196434
+        ],
+        "max": [
+          8.65000020712614,
+          39.000000804662704,
+          37.43999823927879
+        ],
+        "size": [
+          1.150000374764204,
+          7.500000298023224,
+          14.83999751508236
+        ]
+      },
+      "stl": "stl/IO-J2_spring_reservation_-8.65.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_spring_reservation_7.5",
+      "name": "IO-J2_spring_reservation_7.5",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -8.65000020712614,
+          31.50000050663948,
+          22.600000724196434
+        ],
+        "max": [
+          -7.499999832361937,
+          39.000000804662704,
+          37.43999823927879
+        ],
+        "size": [
+          1.150000374764204,
+          7.500000298023224,
+          14.83999751508236
+        ]
+      },
+      "stl": "stl/IO-J2_spring_reservation_7.5.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_0",
+      "name": "IO-J2_tail_0",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          3.3400000538676977,
+          33.410001546144485,
+          18.300000578165054
+        ],
+        "max": [
+          3.800000064074993,
+          33.87000039219856,
+          21.60000056028366
+        ],
+        "size": [
+          0.4600000102072954,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_0.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_1",
+      "name": "IO-J2_tail_1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          2.319999970495701,
+          29.410000890493393,
+          18.300000578165054
+        ],
+        "max": [
+          2.7799999807029963,
+          29.86999973654747,
+          21.60000056028366
+        ],
+        "size": [
+          0.4600000102072954,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_2",
+      "name": "IO-J2_tail_2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          1.3000000035390258,
+          33.410001546144485,
+          18.300000578165054
+        ],
+        "max": [
+          1.7600000137463212,
+          33.87000039219856,
+          21.60000056028366
+        ],
+        "size": [
+          0.4600000102072954,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_3",
+      "name": "IO-J2_tail_3",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          0.2800000074785203,
+          29.410000890493393,
+          18.300000578165054
+        ],
+        "max": [
+          0.7399999885819852,
+          29.86999973654747,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999998110346496,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_3.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_4",
+      "name": "IO-J2_tail_4",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -0.7399999885819852,
+          33.410001546144485,
+          18.300000578165054
+        ],
+        "max": [
+          -0.2800000074785203,
+          33.87000039219856,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999998110346496,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_4.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_5",
+      "name": "IO-J2_tail_5",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -1.7600000137463212,
+          29.410000890493393,
+          18.300000578165054
+        ],
+        "max": [
+          -1.3000000035390258,
+          29.86999973654747,
+          21.60000056028366
+        ],
+        "size": [
+          0.4600000102072954,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_5.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_6",
+      "name": "IO-J2_tail_6",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -2.7799999807029963,
+          33.410001546144485,
+          18.300000578165054
+        ],
+        "max": [
+          -2.319999970495701,
+          33.87000039219856,
+          21.60000056028366
+        ],
+        "size": [
+          0.4600000102072954,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_6.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_7",
+      "name": "IO-J2_tail_7",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -3.800000064074993,
+          29.410000890493393,
+          18.300000578165054
+        ],
+        "max": [
+          -3.3400000538676977,
+          29.86999973654747,
+          21.60000056028366
+        ],
+        "size": [
+          0.4600000102072954,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_7.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_8",
+      "name": "IO-J2_tail_8",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -7.6299998909235,
+          35.760000348091125,
+          18.300000578165054
+        ],
+        "max": [
+          -7.170000113546848,
+          36.2199991941452,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999977737665176,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_8.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J2_tail_9",
+      "name": "IO-J2_tail_9",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          7.170000113546848,
+          35.760000348091125,
+          18.300000578165054
+        ],
+        "max": [
+          7.6299998909235,
+          36.2199991941452,
+          21.60000056028366
+        ],
+        "size": [
+          0.45999977737665176,
+          0.45999884605407715,
+          3.2999999821186066
+        ]
+      },
+      "stl": "stl/IO-J2_tail_9.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J3_header_reference",
+      "name": "IO-J3_header_reference",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -47.520000487565994,
+          -16.00000075995922,
+          21.60000056028366
+        ],
+        "max": [
+          -29.479999095201492,
+          13.249999843537807,
+          35.89000180363655
+        ],
+        "size": [
+          18.040001392364502,
+          29.25000060349703,
+          14.29000124335289
+        ]
+      },
+      "stl": "stl/IO-J3_header_reference.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J3_tail_0",
+      "name": "IO-J3_tail_0",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -42.70999878644943,
+          3.2999999821186066,
+          16.599999740719795
+        ],
+        "max": [
+          -41.91000014543533,
+          4.30000014603138,
+          21.60000056028366
+        ],
+        "size": [
+          0.7999986410140991,
+          1.0000001639127731,
+          5.000000819563866
+        ]
+      },
+      "stl": "stl/IO-J3_tail_0.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J3_tail_1",
+      "name": "IO-J3_tail_1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -42.70999878644943,
+          5.840000230818987,
+          16.599999740719795
+        ],
+        "max": [
+          -41.91000014543533,
+          6.839999929070473,
+          21.60000056028366
+        ],
+        "size": [
+          0.7999986410140991,
+          0.9999996982514858,
+          5.000000819563866
+        ]
+      },
+      "stl": "stl/IO-J3_tail_1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J3_tail_2",
+      "name": "IO-J3_tail_2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -42.70999878644943,
+          10.92000026255846,
+          16.599999740719795
+        ],
+        "max": [
+          -41.91000014543533,
+          11.920000426471233,
+          21.60000056028366
+        ],
+        "size": [
+          0.7999986410140991,
+          1.0000001639127731,
+          5.000000819563866
+        ]
+      },
+      "stl": "stl/IO-J3_tail_2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J3_tail_3",
+      "name": "IO-J3_tail_3",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -35.08999943733215,
+          3.2999999821186066,
+          16.599999740719795
+        ],
+        "max": [
+          -34.290000796318054,
+          4.30000014603138,
+          21.60000056028366
+        ],
+        "size": [
+          0.7999986410140991,
+          1.0000001639127731,
+          5.000000819563866
+        ]
+      },
+      "stl": "stl/IO-J3_tail_3.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J3_tail_4",
+      "name": "IO-J3_tail_4",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -35.08999943733215,
+          5.840000230818987,
+          16.599999740719795
+        ],
+        "max": [
+          -34.290000796318054,
+          6.839999929070473,
+          21.60000056028366
+        ],
+        "size": [
+          0.7999986410140991,
+          0.9999996982514858,
+          5.000000819563866
+        ]
+      },
+      "stl": "stl/IO-J3_tail_4.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J3_tail_5",
+      "name": "IO-J3_tail_5",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -35.08999943733215,
+          10.92000026255846,
+          16.599999740719795
+        ],
+        "max": [
+          -34.290000796318054,
+          11.920000426471233,
+          21.60000056028366
+        ],
+        "size": [
+          0.7999986410140991,
+          1.0000001639127731,
+          5.000000819563866
+        ]
+      },
+      "stl": "stl/IO-J3_tail_5.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J4_M3_stud",
+      "name": "IO-J4_M3_stud",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -46.50000110268593,
+          24.49999935925007,
+          22.099999710917473
+        ],
+        "max": [
+          -39.500001817941666,
+          31.50000050663948,
+          30.09999915957451
+        ],
+        "size": [
+          6.999999284744263,
+          7.000001147389412,
+          7.999999448657036
+        ]
+      },
+      "stl": "stl/IO-J4_M3_stud.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J4_lug_nut_reservation",
+      "name": "IO-J4_lug_nut_reservation",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -48.00000041723251,
+          24.49999935925007,
+          25.100000202655792
+        ],
+        "max": [
+          -37.99999877810478,
+          35.00000014901161,
+          33.59999880194664
+        ],
+        "size": [
+          10.000001639127731,
+          10.500000789761543,
+          8.499998599290848
+        ]
+      },
+      "stl": "stl/IO-J4_lug_nut_reservation.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J4_tail_0",
+      "name": "IO-J4_tail_0",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -40.665000677108765,
+          30.334999784827232,
+          19.099999219179153
+        ],
+        "max": [
+          -39.46499899029732,
+          31.53499960899353,
+          21.60000056028366
+        ],
+        "size": [
+          1.2000016868114471,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J4_tail_0.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J4_tail_1",
+      "name": "IO-J4_tail_1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -40.665000677108765,
+          24.46500025689602,
+          19.099999219179153
+        ],
+        "max": [
+          -39.46499899029732,
+          25.665000081062317,
+          21.60000056028366
+        ],
+        "size": [
+          1.2000016868114471,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J4_tail_1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J4_tail_2",
+      "name": "IO-J4_tail_2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -46.53500020503998,
+          30.334999784827232,
+          19.099999219179153
+        ],
+        "max": [
+          -45.33499851822853,
+          31.53499960899353,
+          21.60000056028366
+        ],
+        "size": [
+          1.2000016868114471,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J4_tail_2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J4_tail_3",
+      "name": "IO-J4_tail_3",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -46.53500020503998,
+          24.46500025689602,
+          19.099999219179153
+        ],
+        "max": [
+          -45.33499851822853,
+          25.665000081062317,
+          21.60000056028366
+        ],
+        "size": [
+          1.2000016868114471,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J4_tail_3.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J5_M3_stud",
+      "name": "IO-J5_M3_stud",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -30.500000342726707,
+          24.49999935925007,
+          22.099999710917473
+        ],
+        "max": [
+          -23.499999195337296,
+          31.50000050663948,
+          30.09999915957451
+        ],
+        "size": [
+          7.000001147389412,
+          7.000001147389412,
+          7.999999448657036
+        ]
+      },
+      "stl": "stl/IO-J5_M3_stud.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J5_lug_nut_reservation",
+      "name": "IO-J5_lug_nut_reservation",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -32.00000151991844,
+          24.49999935925007,
+          25.100000202655792
+        ],
+        "max": [
+          -21.99999988079071,
+          35.00000014901161,
+          33.59999880194664
+        ],
+        "size": [
+          10.000001639127731,
+          10.500000789761543,
+          8.499998599290848
+        ]
+      },
+      "stl": "stl/IO-J5_lug_nut_reservation.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J5_tail_0",
+      "name": "IO-J5_tail_0",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -24.664999917149544,
+          30.334999784827232,
+          19.099999219179153
+        ],
+        "max": [
+          -23.465000092983246,
+          31.53499960899353,
+          21.60000056028366
+        ],
+        "size": [
+          1.199999824166298,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J5_tail_0.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J5_tail_1",
+      "name": "IO-J5_tail_1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -24.664999917149544,
+          24.46500025689602,
+          19.099999219179153
+        ],
+        "max": [
+          -23.465000092983246,
+          25.665000081062317,
+          21.60000056028366
+        ],
+        "size": [
+          1.199999824166298,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J5_tail_1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J5_tail_2",
+      "name": "IO-J5_tail_2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -30.534999445080757,
+          30.334999784827232,
+          19.099999219179153
+        ],
+        "max": [
+          -29.33499962091446,
+          31.53499960899353,
+          21.60000056028366
+        ],
+        "size": [
+          1.199999824166298,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J5_tail_2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J5_tail_3",
+      "name": "IO-J5_tail_3",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -30.534999445080757,
+          24.46500025689602,
+          19.099999219179153
+        ],
+        "max": [
+          -29.33499962091446,
+          25.665000081062317,
+          21.60000056028366
+        ],
+        "size": [
+          1.199999824166298,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J5_tail_3.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J6_M3_stud",
+      "name": "IO-J6_M3_stud",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          12.500000186264515,
+          16.499999910593033,
+          22.099999710917473
+        ],
+        "max": [
+          19.500000402331352,
+          23.499999195337296,
+          30.09999915957451
+        ],
+        "size": [
+          7.000000216066837,
+          6.999999284744263,
+          7.999999448657036
+        ]
+      },
+      "stl": "stl/IO-J6_M3_stud.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J6_lug_nut_reservation",
+      "name": "IO-J6_lug_nut_reservation",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          10.999999940395355,
+          16.499999910593033,
+          25.100000202655792
+        ],
+        "max": [
+          20.999999716877937,
+          27.000000700354576,
+          33.59999880194664
+        ],
+        "size": [
+          9.999999776482582,
+          10.500000789761543,
+          8.499998599290848
+        ]
+      },
+      "stl": "stl/IO-J6_lug_nut_reservation.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J6_tail_0",
+      "name": "IO-J6_tail_0",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          18.334999680519104,
+          22.335000336170197,
+          19.099999219179153
+        ],
+        "max": [
+          19.534999504685402,
+          23.535000160336494,
+          21.60000056028366
+        ],
+        "size": [
+          1.199999824166298,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J6_tail_0.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J6_tail_1",
+      "name": "IO-J6_tail_1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          18.334999680519104,
+          16.465000808238983,
+          19.099999219179153
+        ],
+        "max": [
+          19.534999504685402,
+          17.66500063240528,
+          21.60000056028366
+        ],
+        "size": [
+          1.199999824166298,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J6_tail_1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J6_tail_2",
+      "name": "IO-J6_tail_2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          12.46500015258789,
+          22.335000336170197,
+          19.099999219179153
+        ],
+        "max": [
+          13.664999976754189,
+          23.535000160336494,
+          21.60000056028366
+        ],
+        "size": [
+          1.199999824166298,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J6_tail_2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-J6_tail_3",
+      "name": "IO-J6_tail_3",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          12.46500015258789,
+          16.465000808238983,
+          19.099999219179153
+        ],
+        "max": [
+          13.664999976754189,
+          17.66500063240528,
+          21.60000056028366
+        ],
+        "size": [
+          1.199999824166298,
+          1.199999824166298,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-J6_tail_3.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-BRI01_COAX_LEDGE",
+      "name": "IO-BRI01_COAX_LEDGE",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -21.99999988079071,
+          -16.00000075995922,
+          21.60000056028366
+        ],
+        "max": [
+          21.99999988079071,
+          6.000000052154064,
+          39.99999910593033
+        ],
+        "size": [
+          43.99999976158142,
+          22.000000812113285,
+          18.399998545646667
+        ]
+      },
+      "stl": "stl/IO-BRI01_COAX_LEDGE.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-X1_132170_reference",
+      "name": "IO-X1_132170_reference",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          6.827000062912703,
+          -23.499999195337296,
+          27.824999764561653
+        ],
+        "max": [
+          13.172999955713749,
+          -1.39999995008111,
+          34.175001084804535
+        ],
+        "size": [
+          6.345999892801046,
+          22.099999245256186,
+          6.350001320242882
+        ]
+      },
+      "stl": "stl/IO-X1_132170_reference.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-X1_fixed_flange",
+      "name": "IO-X1_fixed_flange",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          4.515000153332949,
+          -17.69999973475933,
+          26.249999180436134
+        ],
+        "max": [
+          15.484999865293503,
+          -16.00000075995922,
+          35.750001668930054
+        ],
+        "size": [
+          10.969999711960554,
+          1.6999989748001099,
+          9.50000248849392
+        ]
+      },
+      "stl": "stl/IO-X1_fixed_flange.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-X1_nut_washer_reservation",
+      "name": "IO-X1_nut_washer_reservation",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.381000228226185,
+          -14.499999582767487,
+          27.000000700354576
+        ],
+        "max": [
+          14.619000256061554,
+          -12.000000104308128,
+          35.00000014901161
+        ],
+        "size": [
+          9.238000027835369,
+          2.499999478459358,
+          7.999999448657036
+        ]
+      },
+      "stl": "stl/IO-X1_nut_washer_reservation.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-X2_132170_reference",
+      "name": "IO-X2_132170_reference",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -13.172999955713749,
+          -23.499999195337296,
+          27.824999764561653
+        ],
+        "max": [
+          -6.827000062912703,
+          -1.39999995008111,
+          34.175001084804535
+        ],
+        "size": [
+          6.345999892801046,
+          22.099999245256186,
+          6.350001320242882
+        ]
+      },
+      "stl": "stl/IO-X2_132170_reference.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-X2_fixed_flange",
+      "name": "IO-X2_fixed_flange",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -15.484999865293503,
+          -17.69999973475933,
+          26.249999180436134
+        ],
+        "max": [
+          -4.515000153332949,
+          -16.00000075995922,
+          35.750001668930054
+        ],
+        "size": [
+          10.969999711960554,
+          1.6999989748001099,
+          9.50000248849392
+        ]
+      },
+      "stl": "stl/IO-X2_fixed_flange.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-X2_nut_washer_reservation",
+      "name": "IO-X2_nut_washer_reservation",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -14.619000256061554,
+          -14.499999582767487,
+          27.000000700354576
+        ],
+        "max": [
+          -5.381000228226185,
+          -12.000000104308128,
+          35.00000014901161
+        ],
+        "size": [
+          9.238000027835369,
+          2.499999478459358,
+          7.999999448657036
+        ]
+      },
+      "stl": "stl/IO-X2_nut_washer_reservation.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
+        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
+        "Replace this whole module using a verified JLCEDA native export before fabrication."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "REF-IO-J2-PLUG",
+      "name": "插头与释放区 REF-IO-J2-PLUG",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -14.999999664723873,
+          39.99999910593033,
+          18.99999938905239
+        ],
+        "max": [
+          14.999999664723873,
+          79.99999821186066,
+          43.89999806880951
+        ],
+        "size": [
+          29.999999329447746,
+          39.99999910593033,
+          24.89999867975712
+        ]
+      },
+      "stl": "stl/REF-IO-J2-PLUG.stl",
+      "assembly_role": "routing",
+      "notes": [
+        "Planning envelope; actual cables, latch action and bend radius still need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "routing",
+      "print_stl": null
+    },
+    {
+      "id": "REF-REAR-PLUGS",
+      "name": "插头与释放区 REF-REAR-PLUGS",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -56.0000017285347,
+          -70.00000029802322,
+          17.999999225139618
+        ],
+        "max": [
+          56.0000017285347,
+          -30.000001192092896,
+          39.99999910593033
+        ],
+        "size": [
+          112.0000034570694,
+          39.99999910593033,
+          21.99999988079071
+        ]
+      },
+      "stl": "stl/REF-REAR-PLUGS.stl",
+      "assembly_role": "routing",
+      "notes": [
+        "Planning envelope; actual cables, latch action and bend radius still need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "routing",
+      "print_stl": null
+    }
+  ],
+  "review_status": "紧凑一体底座 · 无动力试装候选",
+  "not_verified": [
+    "load chassis and clamp",
+    "dynamic collisions",
+    "physical fit",
+    "PCB routing",
+    "thermal",
+    "slicing/supports"
+  ]
+}

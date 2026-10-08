@@ -1,0 +1,33 @@
+{
+  "revision": "B06-COMPACT-01",
+  "manifest_sha256": "969310847a6b9f6207ec84214ba8425cd5b608fa856d8fcd4c2020973f411475",
+  "frozen_inputs": {
+    "inputs/root-snapshot.json": "42a0366a201978a9eccd9e087ddc144f78a2526de5c7aa9bb8175e6934e4509d",
+    "inputs/io-snapshot.json": "d2f0a05ce534dcdead092e220196af9ff89be414a20298248196f67ee3aaca3f"
+  },
+  "generator_sha256": {
+    "viewer.py": "7317fc480b9ac5556e90dfc8c37a9af23a743fe5375b5fac5ae25880cd28e418",
+    "check_solids.py": "2729898fea31e6ff3ed481654138af7eeaa6d9b388709d9502243fa2686081b3",
+    "render.py": "313519107205e74b55e9500582395c3f43f937850b86dcb771d233479fba7aa4",
+    "refresh_rear.py": "e632c637c5004a2c33828bb9593ecb8bf0ff6fde8e54c32906399f90a3a5de01",
+    "geometry.py": "cff6446823882f46ccac16502366c0b806e59ec71988aa1f925cc0d93ccbd6a4",
+    "blender_compact.py": "d43c353cb04495773ae4c707c87d4fe5b650a66e71a6535f9a69d8a80f72a9ab",
+    "refresh_lens.py": "51920ea5bb032268e46f6f77d230d1b4393e79e7ecbc96022558d0463b8bc141",
+    "check_fit.py": "440d8ca83eab81c62833c6f901a400aff88aa9640cfc63b1834bd8284f59a95f"
+  },
+  "print_parts": [
+    "print-parts/B06-301-MAIN-SHIELD.stl",
+    "print-parts/B06-306-LIGHT-LENS.stl",
+    "print-parts/B06-308-LENS-RETAINER.stl",
+    "print-parts/B06-304-REAR-LID.stl",
+    "print-parts/B06-307-LOWER-CARRIER.stl"
+  ],
+  "validation": {
+    "print_mesh_pass": true,
+    "static_closed_solid_pass": true,
+    "solid_pairs": 108,
+    "root_tool_rays": 128,
+    "root_tool_rays_blocked": 0
+  },
+  "status": "Unpowered geometric fit candidate; not a load, clamp, PCB or manufacturing release"
+}

@@ -1,0 +1,732 @@
+{
+  "revision": "B06-COMPACT-01",
+  "manifest_sha256": "969310847a6b9f6207ec84214ba8425cd5b608fa856d8fcd4c2020973f411475",
+  "scope": "Reference pose surface contacts and sampled tool rays; solid-fit-checks.json governs penetration",
+  "pairs": [
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "B06-306-LIGHT-LENS",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "B06-308-LENS-RETAINER",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "B06-304-REAR-LID",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "B06-307-LOWER-CARRIER",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-306-LIGHT-LENS",
+      "b": "B06-308-LENS-RETAINER",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-304-REAR-LID",
+      "b": "B06-307-LOWER-CARRIER",
+      "triangle_pairs": 70,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "REF-P00-root-open",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "REF-LOAD-FLANGE",
+      "triangle_pairs": 44,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-BRI01_PCB",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_shell_reference",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_spring_reservation_-8.65",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_spring_reservation_7.5",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_4",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_5",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_6",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_7",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_8",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J1_tail_9",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_shell_reference",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_spring_reservation_-8.65",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_spring_reservation_7.5",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_4",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_5",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_6",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_7",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_8",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J2_tail_9",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J3_header_reference",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J3_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J3_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J3_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J3_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J3_tail_4",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J3_tail_5",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J4_M3_stud",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J4_lug_nut_reservation",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J4_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J4_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J4_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J4_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J5_M3_stud",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J5_lug_nut_reservation",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J5_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J5_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J5_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J5_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J6_M3_stud",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J6_lug_nut_reservation",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J6_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J6_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J6_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-J6_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-BRI01_COAX_LEDGE",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-X1_132170_reference",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-X1_fixed_flange",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-X1_nut_washer_reservation",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-X2_132170_reference",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-X2_fixed_flange",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "IO-X2_nut_washer_reservation",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-304-REAR-LID",
+      "b": "IO-X1_132170_reference",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-304-REAR-LID",
+      "b": "IO-X2_132170_reference",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-BRI01_PCB",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_4",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_5",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_6",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_7",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_8",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_tail_9",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_4",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_5",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_6",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_7",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_8",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_tail_9",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J3_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J3_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J3_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J3_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J3_tail_4",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J3_tail_5",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J4_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J4_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J4_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J4_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J5_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J5_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J5_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J5_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J6_tail_0",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J6_tail_1",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J6_tail_2",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J6_tail_3",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    }
+  ],
+  "root_tool_rays": [
+    {
+      "hole": 1,
+      "sample_rays": 16,
+      "blocked": 0,
+      "tool_diameter_mm": 13,
+      "scope": "Vertical envelope rays Z70..190; original root geometry itself not checked"
+    },
+    {
+      "hole": 2,
+      "sample_rays": 16,
+      "blocked": 0,
+      "tool_diameter_mm": 13,
+      "scope": "Vertical envelope rays Z70..190; original root geometry itself not checked"
+    },
+    {
+      "hole": 3,
+      "sample_rays": 16,
+      "blocked": 0,
+      "tool_diameter_mm": 13,
+      "scope": "Vertical envelope rays Z70..190; original root geometry itself not checked"
+    },
+    {
+      "hole": 4,
+      "sample_rays": 16,
+      "blocked": 0,
+      "tool_diameter_mm": 13,
+      "scope": "Vertical envelope rays Z70..190; original root geometry itself not checked"
+    },
+    {
+      "hole": 5,
+      "sample_rays": 16,
+      "blocked": 0,
+      "tool_diameter_mm": 13,
+      "scope": "Vertical envelope rays Z70..190; original root geometry itself not checked"
+    },
+    {
+      "hole": 6,
+      "sample_rays": 16,
+      "blocked": 0,
+      "tool_diameter_mm": 13,
+      "scope": "Vertical envelope rays Z70..190; original root geometry itself not checked"
+    },
+    {
+      "hole": 7,
+      "sample_rays": 16,
+      "blocked": 0,
+      "tool_diameter_mm": 13,
+      "scope": "Vertical envelope rays Z70..190; original root geometry itself not checked"
+    },
+    {
+      "hole": 8,
+      "sample_rays": 16,
+      "blocked": 0,
+      "tool_diameter_mm": 13,
+      "scope": "Vertical envelope rays Z70..190; original root geometry itself not checked"
+    }
+  ],
+  "surface_pairs_present": [
+    {
+      "a": "B06-304-REAR-LID",
+      "b": "B06-307-LOWER-CARRIER",
+      "triangle_pairs": 70,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "REF-LOAD-FLANGE",
+      "triangle_pairs": 44,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    }
+  ],
+  "limits": [
+    "BVH contacts alone cannot distinguish touching from volume interference.",
+    "Expected PCB/post face contact can yield triangle pairs; read each pair.",
+    "No flange support, clamp load, motion clearance, plug latch or physical printing verification."
+  ]
+}
