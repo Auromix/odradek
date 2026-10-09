@@ -1,0 +1,352 @@
+{
+  "date": "2026-10-09",
+  "before": {
+    "ok": true,
+    "value": {
+      "summary": [
+        {
+          "name": "Clearance Error",
+          "count": 56,
+          "types": [
+            {
+              "name": "Copper Region(Filled) to Prohibited Region",
+              "count": 8
+            },
+            {
+              "name": "Copper Region(Filled) to TH Pad",
+              "count": 24
+            },
+            {
+              "name": "Copper Region(Filled) to Hole",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "name": "Physical Error",
+          "count": 14,
+          "types": [
+            {
+              "name": "Via Diameter",
+              "count": 14
+            }
+          ]
+        },
+        {
+          "name": "Connection Error",
+          "count": 28,
+          "types": [
+            {
+              "name": "ETH_1",
+              "count": 2
+            },
+            {
+              "name": "ETH_2",
+              "count": 2
+            },
+            {
+              "name": "ETH_3",
+              "count": 2
+            },
+            {
+              "name": "ETH_4",
+              "count": 2
+            },
+            {
+              "name": "ETH_5",
+              "count": 2
+            },
+            {
+              "name": "ETH_6",
+              "count": 2
+            },
+            {
+              "name": "ETH_7",
+              "count": 2
+            },
+            {
+              "name": "ETH_8",
+              "count": 2
+            },
+            {
+              "name": "VIN48",
+              "count": 6
+            },
+            {
+              "name": "RETURN48",
+              "count": 6
+            }
+          ]
+        }
+      ],
+      "total": 98
+    },
+    "logs": [],
+    "durationMs": 895
+  },
+  "afterNativePourRebuild": {
+    "ok": true,
+    "value": {
+      "signalLineCount": 0,
+      "signalLines": [],
+      "vias": [
+        {
+          "id": "ie135",
+          "net": "",
+          "x": 353.54327,
+          "y": -637.79528,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie136",
+          "net": "",
+          "x": 353.54327,
+          "y": -1566.92913,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie147",
+          "net": "",
+          "x": 433.85827,
+          "y": -1566.92913,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie148",
+          "net": "",
+          "x": 433.85827,
+          "y": -637.79528,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie159",
+          "net": "",
+          "x": 629.13386,
+          "y": -637.79528,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie160",
+          "net": "",
+          "x": 629.13386,
+          "y": -1566.92913,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie173",
+          "net": "",
+          "x": 904.72441,
+          "y": -637.79528,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie174",
+          "net": "",
+          "x": 904.72441,
+          "y": -1566.92913,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie182",
+          "net": "",
+          "x": 985.03937,
+          "y": -1566.92913,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie183",
+          "net": "",
+          "x": 985.03937,
+          "y": -637.79528,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie200",
+          "net": "",
+          "x": 709.44882,
+          "y": -1566.92913,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie206",
+          "net": "",
+          "x": 1180.31496,
+          "y": -1566.92913,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie207",
+          "net": "",
+          "x": 1180.31496,
+          "y": -637.79528,
+          "hole": 11.8,
+          "diameter": 27.6
+        },
+        {
+          "id": "ie219",
+          "net": "",
+          "x": 1260.62988,
+          "y": -637.79528,
+          "hole": 11.8,
+          "diameter": 27.6
+        }
+      ],
+      "drc": [
+        {
+          "name": "Physical Error",
+          "count": 14
+        },
+        {
+          "name": "Connection Error",
+          "count": 28
+        }
+      ]
+    },
+    "logs": [],
+    "durationMs": 2251
+  },
+  "cleanup": {
+    "ok": true,
+    "value": {
+      "deleted": true,
+      "saved": true,
+      "removed": [
+        {
+          "id": "ie135",
+          "x": 353.54327,
+          "y": -637.79528,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie136",
+          "x": 353.54327,
+          "y": -1566.92913,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie147",
+          "x": 433.85827,
+          "y": -1566.92913,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie148",
+          "x": 433.85827,
+          "y": -637.79528,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie159",
+          "x": 629.13386,
+          "y": -637.79528,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie160",
+          "x": 629.13386,
+          "y": -1566.92913,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie173",
+          "x": 904.72441,
+          "y": -637.79528,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie174",
+          "x": 904.72441,
+          "y": -1566.92913,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie182",
+          "x": 985.03937,
+          "y": -1566.92913,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie183",
+          "x": 985.03937,
+          "y": -637.79528,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie200",
+          "x": 709.44882,
+          "y": -1566.92913,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie206",
+          "x": 1180.31496,
+          "y": -1566.92913,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie207",
+          "x": 1180.31496,
+          "y": -637.79528,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        },
+        {
+          "id": "ie219",
+          "x": 1260.62988,
+          "y": -637.79528,
+          "holeDiameter": 11.8,
+          "diameter": 27.6,
+          "net": ""
+        }
+      ],
+      "remainingVias": 0,
+      "summary": [
+        {
+          "name": "Connection Error",
+          "count": 28
+        }
+      ],
+      "total": 28,
+      "scope": "Native imported unrouted layout cleanup; no copper routing release; no rules relaxed"
+    },
+    "logs": [],
+    "durationMs": 3287
+  }
+}
