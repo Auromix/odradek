@@ -1,7 +1,7 @@
 {
   "revision": "A16-ROOT01",
   "layout": {
-    "id": "A16-CONVENTIONAL02-FLAT-WRIST",
+    "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
     "units": "mm",
     "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
     "joints": [
@@ -73,7 +73,7 @@
         ],
         "offset": [
           0,
-          -10,
+          -15,
           0
         ],
         "zero_deg": 0,
@@ -388,13 +388,13 @@
       "material": "PA12 fit prototype",
       "note": "RS03 front at rawZ35; use front tap drills rawZ26..34.5, not same-PCD rear holes. Ring ID72.4 clears output D70; thickness6mm.",
       "solid_count": 1,
-      "volume_mm3": 58559.91538144448,
-      "mass_kg": 0.06734390268866115,
+      "volume_mm3": 57644.6233748568,
+      "mass_kg": 0.06629131688108532,
       "density_assumption_kg_mm3": 1.15e-06,
       "com_mm": [
-        -1.2752052221004634e-13,
-        5.435853920673355e-16,
-        0.5
+        -1.3423595245587458e-13,
+        1.7039824712311301e-15,
+        0.49999999999999994
       ],
       "bbox_size_mm": [
         134.0,
@@ -404,19 +404,19 @@
       "watertight": true,
       "inertia_kg_mm2": [
         [
-          97.68566502339947,
-          2.5749103416883917e-15,
-          1.175063372896641e-16
+          95.53869980679613,
+          1.4917834205146778,
+          -1.903290334959117e-16
         ],
         [
-          2.5749103416883917e-15,
-          97.68566502339947,
-          -3.32132969663504e-18
+          1.4917834205146778,
+          96.62462932887443,
+          9.202888369406496e-17
         ],
         [
-          1.175063372896641e-16,
-          -3.32132969663504e-18,
-          194.96726663066696
+          -1.903290334959117e-16,
+          9.202888369406496e-17,
+          191.76558123438403
         ]
       ]
     },
@@ -426,15 +426,15 @@
       "frame": "J1.rotor",
       "role": "printed_structure",
       "material": "PA12 fit prototype",
-      "note": "One-piece lathe/mill geometry; print flat on output face for unloaded fit. D70x20 stem, D120x10 upper plate; six recessed M4x25.",
+      "note": "One-piece lathe/mill geometry; broad upper plate DOWN, motor contact UP for supported unloaded fit. D70x20 stem, D120x10 upper plate; six recessed M4x25.",
       "solid_count": 1,
-      "volume_mm3": 182919.70349416378,
-      "mass_kg": 0.21035765901828835,
+      "volume_mm3": 181394.2168165175,
+      "mass_kg": 0.20860334933899513,
       "density_assumption_kg_mm3": 1.15e-06,
       "com_mm": [
-        2.5541046190898038e-15,
-        1.94906243714944e-15,
-        18.84479902585052
+        -6.502417563592153e-17,
+        1.7573762745361345e-15,
+        18.793035098372066
       ],
       "bbox_size_mm": [
         120.0,
@@ -444,19 +444,19 @@
       "watertight": true,
       "inertia_kg_mm2": [
         [
-          157.59579052823005,
-          3.0028893559982257e-15,
-          -4.872751002816689e-15
+          153.940026660764,
+          2.4862899947456922,
+          6.378285397426169e-15
         ],
         [
-          3.0028893559982257e-15,
-          156.8480205621773,
-          -6.59973378329802e-15
+          2.4862899947456922,
+          155.00212247927513,
+          1.2596802211462943e-15
         ],
         [
-          -4.872751002816689e-15,
-          -6.59973378329802e-15,
-          283.7174916727423
+          6.378285397426169e-15,
+          1.2596802211462943e-15,
+          278.3790370911856
         ]
       ]
     },
@@ -662,6 +662,29 @@
     }
   ],
   "simple_structure": "Two flat annular plates, four stock tube spacers, one coaxial pedestal, ordinary bolts.",
+  "wire_passages": {
+    "parts": [
+      "R102",
+      "R103 upper plate",
+      "S101 foot"
+    ],
+    "capsule_mm": [
+      6,
+      14
+    ],
+    "end_radius_mm": 3,
+    "centre_radius_mm": 55,
+    "angles_deg": [
+      55,
+      235
+    ],
+    "effective_allocation_mm": [
+      4,
+      10
+    ],
+    "allocation_centre_radius_mm": 55.5,
+    "scope": "Only peripheral plate slots. Internal actuator shafts remain solid; rotating loop, exact connectors and actual wires not qualified."
+  },
   "theoretical_mating_checks": {
     "adapter_neck_radial_gap_mm": 1,
     "plate_to_B06_bore_mm": 0,

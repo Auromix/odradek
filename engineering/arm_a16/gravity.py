@@ -7,7 +7,7 @@ sys.path.insert(0,str(c.ROOT/'engineering/arm_a15/robstride01'));import study as
 
 def main():
     budget=[];sources=[]
-    for name in ['root01','skeleton01','covers01','hardware01']:
+    for name in ['root01','skeleton01','covers02','hardware01']:
         p=c.OUT/name/'manifest.json';D=json.loads(p.read_text());sources.append(dict(path=str(p.relative_to(c.ROOT)),sha256=c.sha(p)))
         assert D['layout']==c.L
         budget += [dict(id=x['id'],owner=x['owner'],frame=x['frame'],mass_kg=x['mass_kg'],com_mm=x['com_mm'],mass_kind='nominal purchased steel CAD envelope' if name=='hardware01' else 'prototype uniform printed CAD or purchased stock material') for x in D['parts']]

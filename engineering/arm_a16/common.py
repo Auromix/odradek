@@ -15,12 +15,12 @@ sys.path.insert(0,str(ROOT/'engineering/arm_a08'))
 import build as cad
 SRC=json.loads((ROOT/'docs/engineering/sources/arm-a05-mechanical-sources.json').read_text())
 L=copy.deepcopy(json.loads((ROOT/'engineering/arm_a15/shoulder01/build/study.json').read_text())['layout'])
-L['id']='A16-CONVENTIONAL02-FLAT-WRIST'
+L['id']='A16-CONVENTIONAL03-SHOULDER-GAP'
 L['joints'][0].update(offset=[0,0,165],motor_center=[0,0,-28.3],length_mm=56.6)
 L['joints'][1].update(length_mm=55.7)
 L['joints'][1]['offset']=[0,0,114]
 L['joints'][1]['motor_center']=[0,94.35,0]
-L['joints'][2].update(motor_center=[1.5,0,0])
+L['joints'][2].update(motor_center=[1.5,0,0],offset=[0,-15,0])
 L['joints'][3].update(motor_center=[0,1.5,0])
 L['joints'][4].update(motor_center=[0,70.3,0])
 L['joints'][5].update(motor_center=[0,0,0],offset=[55,0,0])
@@ -43,6 +43,17 @@ def base_context():
 
 def transform(s,T):
     t=gp_Trsf();t.SetValues(*map(float,np.asarray(T)[:3,:].flatten()));return s.transformShape(cq.Matrix(t))
+
+def root_wire_slots(s,z,h):
+    """Ordinary D6 end-mill capsule14 long, centresR55 at55/235deg.
+
+    These are peripheral plate passages, never a through-motor bore.
+    Actual harness, connectors and rotating service loops remain unqualified.
+    """
+    for angle in [55,235]:
+        cutter=cq.Workplane('XY').slot2D(14,6,90).extrude(h+.2).val().translate((55,0,z-.1)).rotate((0,0,0),(0,0,1),angle)
+        s=s.cut(cutter)
+    return s.fix()
 
 def frames(q):
     T=np.array(L['root_transform_mm'],float);f={'world':T.copy()}

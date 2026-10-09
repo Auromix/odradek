@@ -1,7 +1,7 @@
 {
-  "revision": "A16-CONVENTIONAL02-FLAT-WRIST",
+  "revision": "A16-CONVENTIONAL03-SHOULDER-GAP",
   "layout": {
-    "id": "A16-CONVENTIONAL02-FLAT-WRIST",
+    "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
     "units": "mm",
     "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
     "joints": [
@@ -73,7 +73,7 @@
         ],
         "offset": [
           0,
-          -10,
+          -15,
           0
         ],
         "zero_deg": 0,
@@ -2091,5 +2091,6 @@
   "partition_note": "Externally visible output boss and pins only; this is not an internal rotor/stator mass model.",
   "measured_internal_COM": false,
   "production_release": false,
-  "supplier_rights": "Exact vendor meshes remain in ignored work cache; published material is import scripts and source fingerprints."
+  "supplier_rights": "Exact vendor meshes remain in ignored work cache; published material is import scripts and source fingerprints.",
+  "layout_only_sync": "Only parent frame offsets changed. All seven motor-local interface matrices unchanged; local STEP bytes pinned below."
 }

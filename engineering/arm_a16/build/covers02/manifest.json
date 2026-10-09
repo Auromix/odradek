@@ -1,0 +1,855 @@
+{
+  "revision": "A16-COVERS02-CONVENTIONAL-WINDOWS",
+  "layout": {
+    "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          94.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -15,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
+  },
+  "parts": [
+    {
+      "id": "A16-C02-fore-dorsal",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Nominal2.6mm cross-section wall; global3D minimum not audited. Dorsal/ventral seam0.5. Ruled fore facets bound the fold-side surface atY45.5, with a conventional socket window; belly endsX100. No continuous sweep proof or qualified attachment.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 21212.957959752635,
+      "mass_kg": 0.026940456608885846,
+      "com_mm": [
+        88.92403986143347,
+        86.55683941081438,
+        23.010825730438658
+      ],
+      "bbox_size_mm": [
+        88.52351570620806,
+        71.73289235686273,
+        41.010000200000015
+      ]
+    },
+    {
+      "id": "A16-C02-fore-ventral",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Nominal2.6mm cross-section wall; global3D minimum not audited. Dorsal/ventral seam0.5. Ruled fore facets bound the fold-side surface atY45.5, with a conventional socket window; belly endsX100. No continuous sweep proof or qualified attachment.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 13074.151025691863,
+      "mass_kg": 0.016604171802628666,
+      "com_mm": [
+        72.66358767865523,
+        86.07031069044666,
+        -24.310546024946483
+      ],
+      "bbox_size_mm": [
+        55.99690562539061,
+        70.29617746122707,
+        38.65250020000002
+      ]
+    },
+    {
+      "id": "A16-C02-J1-cowl-a",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 76570.89986719712,
+      "mass_kg": 0.09724504283134033,
+      "com_mm": [
+        -4.649238678952637e-15,
+        49.237676974698694,
+        -31.182028862202774
+      ],
+      "bbox_size_mm": [
+        146.9750002,
+        79.0676613545228,
+        120.41860296044797
+      ]
+    },
+    {
+      "id": "A16-C02-J1-cowl-b",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 75782.05594970207,
+      "mass_kg": 0.09624321105612163,
+      "com_mm": [
+        -7.700630346899406e-15,
+        -48.114821170115235,
+        -31.183037007296633
+      ],
+      "bbox_size_mm": [
+        146.9750002,
+        74.73049849996555,
+        120.31964596450544
+      ]
+    },
+    {
+      "id": "A16-C02-J2-cowl-a",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 58904.792508855215,
+      "mass_kg": 0.07480908648624612,
+      "com_mm": [
+        -0.24243069317163005,
+        103.30495157178433,
+        41.28138130226772
+      ],
+      "bbox_size_mm": [
+        143.6250002,
+        68.50000020000007,
+        77.73827447470536
+      ]
+    },
+    {
+      "id": "A16-C02-J2-cowl-b",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 55477.48385712693,
+      "mass_kg": 0.0704564044985512,
+      "com_mm": [
+        -2.0197337634668207e-14,
+        105.5995786582158,
+        -39.16658731984061
+      ],
+      "bbox_size_mm": [
+        143.6250002,
+        68.50000020000006,
+        73.46438734416093
+      ]
+    },
+    {
+      "id": "A16-C02-J3-cowl-a",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 57860.204511140124,
+      "mass_kg": 0.07348245972914795,
+      "com_mm": [
+        -8.004194197157744,
+        -1.3418363569602092,
+        41.76458886136963
+      ],
+      "bbox_size_mm": [
+        68.50000020000007,
+        141.36730309292685,
+        77.56086261741969
+      ]
+    },
+    {
+      "id": "A16-C02-J3-cowl-b",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 55356.40592528371,
+      "mass_kg": 0.0703026355251103,
+      "com_mm": [
+        -9.64575110747032,
+        -1.144557622283231,
+        -39.98225422677265
+      ],
+      "bbox_size_mm": [
+        68.50000020000049,
+        141.46501935680692,
+        73.30261498919563
+      ]
+    },
+    {
+      "id": "A16-C02-J5-cowl-a",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 27378.478941971734,
+      "mass_kg": 0.0347706682563041,
+      "com_mm": [
+        0.4715833068662414,
+        76.35495535043962,
+        22.6699146670668
+      ],
+      "bbox_size_mm": [
+        74.78983486556119,
+        76.68000020000001,
+        40.39113942573567
+      ]
+    },
+    {
+      "id": "A16-C02-J5-cowl-b",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 26994.873145046993,
+      "mass_kg": 0.03428348889420968,
+      "com_mm": [
+        0.47828465675851706,
+        76.25514986863223,
+        -22.15126916852818
+      ],
+      "bbox_size_mm": [
+        74.83816029182682,
+        76.66250020000015,
+        38.169155924361334
+      ]
+    },
+    {
+      "id": "A16-C02-J6-cowl-a",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 26623.30170115691,
+      "mass_kg": 0.03381159316046927,
+      "com_mm": [
+        -1.115034769131523e-13,
+        -21.090021770160252,
+        5.70148509494138
+      ],
+      "bbox_size_mm": [
+        74.4200002,
+        34.79133660593435,
+        76.68000020000014
+      ]
+    },
+    {
+      "id": "A16-C02-J6-cowl-b",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 25493.455102946533,
+      "mass_kg": 0.03237668798074209,
+      "com_mm": [
+        0.02961350280616187,
+        20.471413552206428,
+        6.752998717623944
+      ],
+      "bbox_size_mm": [
+        74.41408458377543,
+        32.85800013333843,
+        76.66250020000021
+      ]
+    },
+    {
+      "id": "A16-C02-J7-cowl-a",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 39524.60794463127,
+      "mass_kg": 0.05019625208968171,
+      "com_mm": [
+        12.919271394790261,
+        -1.8848724003737323e-13,
+        26.93631376813823
+      ],
+      "bbox_size_mm": [
+        98.36221560552573,
+        97.2500002,
+        53.82002843581961
+      ]
+    },
+    {
+      "id": "A16-C02-J7-cowl-b",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split armour with2.6mm rear cap (J1 base transition open), simple straight-edged connection windows, rear20x14 service allocation. Attachment and exact plug/airflow/motion qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 34501.94321717188,
+      "mass_kg": 0.04381746788580829,
+      "com_mm": [
+        13.427950294789863,
+        4.9993039003443395e-09,
+        -24.838091061564764
+      ],
+      "bbox_size_mm": [
+        98.19139312045448,
+        97.2500002,
+        49.216145945789116
+      ]
+    },
+    {
+      "id": "A16-C02-upper-dorsal",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Rigid J3-frame upper/elbow armour; former overlapping skins unioned and split atX275 with0.5 seam. Each closed CAD segment fits250mm envelope. Standard joining tabs/fasteners and motion/hardware checks pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 62279.795797747975,
+      "mass_kg": 0.07909534066313992,
+      "com_mm": [
+        165.77360496842908,
+        0.5152327003994701,
+        22.381411097338102
+      ],
+      "bbox_size_mm": [
+        239.18179945143768,
+        100.09144172479704,
+        55.67891294305916
+      ]
+    },
+    {
+      "id": "A16-C02-elbow-dorsal",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Rigid J3-frame upper/elbow armour; former overlapping skins unioned and split atX275 with0.5 seam. Each closed CAD segment fits250mm envelope. Standard joining tabs/fasteners and motion/hardware checks pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 56245.29867095871,
+      "mass_kg": 0.07143152931211756,
+      "com_mm": [
+        343.22889615152354,
+        -9.082169634731768,
+        42.04427534161296
+      ],
+      "bbox_size_mm": [
+        137.1799219754069,
+        90.47083440994834,
+        73.46438734416091
+      ]
+    },
+    {
+      "id": "A16-C02-upper-ventral",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Rigid J3-frame upper/elbow armour; former overlapping skins unioned and split atX275 with0.5 seam. Each closed CAD segment fits250mm envelope. Standard joining tabs/fasteners and motion/hardware checks pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 61568.90669605403,
+      "mass_kg": 0.07819251150398861,
+      "com_mm": [
+        165.87509878731598,
+        0.5325340321010019,
+        -21.899356277908687
+      ],
+      "bbox_size_mm": [
+        239.18179945143757,
+        100.09144172479691,
+        55.6815251598313
+      ]
+    },
+    {
+      "id": "A16-C02-elbow-ventral",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Rigid J3-frame upper/elbow armour; former overlapping skins unioned and split atX275 with0.5 seam. Each closed CAD segment fits250mm envelope. Standard joining tabs/fasteners and motion/hardware checks pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 56223.29968475333,
+      "mass_kg": 0.07140359059963672,
+      "com_mm": [
+        343.14840407682664,
+        -9.076912816567171,
+        -42.64726167199284
+      ],
+      "bbox_size_mm": [
+        137.0690362041097,
+        90.45297964206468,
+        77.73827447470535
+      ]
+    }
+  ],
+  "connection_windows_mm": {
+    "J2": [
+      [
+        [
+          -56.5,
+          59,
+          -90
+        ],
+        [
+          113,
+          11,
+          50
+        ]
+      ]
+    ],
+    "J3": [
+      [
+        [
+          26,
+          50.5,
+          -13.5
+        ],
+        [
+          11,
+          26,
+          27
+        ]
+      ],
+      [
+        [
+          24,
+          -80,
+          -80
+        ],
+        [
+          14,
+          160,
+          14
+        ]
+      ],
+      [
+        [
+          8,
+          65.5,
+          -19
+        ],
+        [
+          16,
+          9,
+          38
+        ]
+      ]
+    ],
+    "J4": [
+      [
+        [
+          -96.5,
+          -15.5,
+          -25.5
+        ],
+        [
+          36,
+          52.35,
+          51
+        ]
+      ]
+    ],
+    "J5": [
+      [
+        [
+          -123.5,
+          32,
+          -13.5
+        ],
+        [
+          103,
+          11,
+          27
+        ]
+      ]
+    ],
+    "J6": [
+      [
+        [
+          -41.5,
+          20.5,
+          -38.3
+        ],
+        [
+          76,
+          8,
+          11
+        ]
+      ]
+    ],
+    "J7": [
+      [
+        [
+          -92.5,
+          -19.5,
+          -49.8
+        ],
+        [
+          127.3,
+          39,
+          16.5
+        ]
+      ]
+    ]
+  },
+  "style": "Selected A continuous hard-ridge carapace; thinner rear profile, covered rear cases and explicit folding belly pocket. No new mechanism.",
+  "fixed_joins": "Upper/J4 same-frame skins unioned, then divided atX275 with0.5mm seam for250mm printing; attachment not designed. No same-frame collision waiver.",
+  "collision_qualified": false,
+  "attachment_qualified": false,
+  "manufacture_release": false
+}

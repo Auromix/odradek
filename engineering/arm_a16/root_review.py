@@ -8,7 +8,10 @@ def shape(p):
     w=cq.importers.importStep(str(p));return cq.Compound.makeCompound([s for v in w.vals() for s in v.Solids()])
 
 def main():
-    O=c.OUT/'root01';D=json.loads((O/'manifest.json').read_text());F=c.frames([0]*7)
+    O=c.OUT/'root01';D=json.loads((O/'manifest.json').read_text());assert D['layout']==c.L;F=c.frames([0]*7)
+    sources={str((O/'manifest.json').relative_to(c.ROOT)):c.sha(O/'manifest.json')}
+    for p in D['parts']:
+        path=O/'step'/(p['id']+'.step');sources[str(path.relative_to(c.ROOT))]=c.sha(path)
     parts={p['id']:c.transform(shape(O/'step'/(p['id']+'.step')),F[p['frame']]) for p in D['parts']}
     parts['RS03-full']=c.transform(shape(c.CACHE/'vendor/J1-full.step'),F['J1.fixed'])
     h=c.base_context();parts['B06-load-flange']=shape(c.BASE/h['base_sources']['flange_step']['path'])
@@ -23,7 +26,7 @@ def main():
     # insertion proof or the assembled base cover's tolerance qualification.
     checks=D['theoretical_mating_checks']
     assert checks['adapter_neck_radial_gap_mm']>0 and checks['column_screw_tip_above_base_mm']>0
-    result=dict(revision='A16-ROOT01',all_scoped_BREP_pairs_clear=True,pairs=tests,
+    result=dict(revision='A16-ROOT01',layout=c.L,source_sha256=sources,vendor_audit_sha256=c.sha(c.OUT/'vendor-audit.json'),all_scoped_BREP_pairs_clear=True,pairs=tests,
       verified_sources=c.base_context(),print_meshes_closed=all(p['watertight'] for p in D['parts']),
       scope='Seven root structural parts, exact unscaled RS03, canonical B06 load flange, q1=0 reference. Fastener thread envelopes and moving shoulder are outside this test.',
       minimum_noncontact_gap_mm=min(x['distance_mm'] for x in tests if x['distance_mm']>.01),

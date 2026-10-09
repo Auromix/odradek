@@ -14,8 +14,8 @@ from vendor import interfaces
 
 O=c.OUT/'manufacture01';O.mkdir(exist_ok=True)
 DETAIL={
-'S101':['Foot8 thick: X-55..55; Y-36..68.5; Z30..38.','4xD5.6: X+/-38,Y+/-28, parallelZ.','J2 fixed annulus OD134 ID80, faceY68.5, Z centre114.','8-thick annulus, native10xD4.5 RS04 front holes.'],
-'S102':['J2 output faceY68;10-thick,OD70; native9xD5.5.','J3 annulus shiftedY-10: OD134 ID80,8thick.','Native J3 front10xD4.5;3xD6.5x3.6 locating-pin reliefs.','Output /fixed tool boresD10 /D9.5; native point table attached.'],
+'S101':['Foot8 thick: X-55..55; Y-36..68.5; Z30..38.','4xD5.6: X+/-38,Y+/-28, parallelZ.','J2 fixed annulus OD134 ID80, faceY68.5, Z centre114.','8-thick annulus, native10xD4.5 RS04 front holes.','Wire capsule6x14,endR3,centreR55 at55deg;235deg port lies outside foot.'],
+'S102':['J2 output faceY68;10-thick,OD70; native9xD5.5.','J3 annulus shiftedY-15: OD134 ID80,8thick.','Native J3 front10xD4.5;3xD6.5x3.6 locating-pin reliefs.','Output /fixed tool boresD10 /D9.5; native point table attached.'],
 'S103':['Native J3 output faceX27.85; OD70 x10.','SocketX50..75.1; nominal20.4x40.4 internal.','Stock tube startsX50; clamp centresX60/72, Z0.','2xD4.5 parallelY; M4x35 with OD8/ID4.5/L16 crush sleeves.'],
 'S104':['Native J4 fixed faceY27.35, centreX340;8 thick.','SocketX244.9..270;20.4x40.4; tube endsX270.','ClampX250/262,Z0; D4.5 parallelY.','D11 open tool reliefs fromY14 towards+Y,36deep.'],
 'S105':['Purchased rectangular6061-T6 tube20x40x2, L220.','4xD4.5 through the20mm width; holesX10/22/200/212 from cut end.','Hole axisparallelY; Z0 (20 from bottom40mm face).','8x nominal material surfaces: verify stock dimensions and squareness.'],
@@ -119,7 +119,8 @@ def main():
     target=O/'A16-core-supported-fit.zip'
     with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:
         for path in files:z.write(path,str(path.relative_to(O)) if path.is_relative_to(O) else 'step/'+path.name)
-        z.write(c.HERE/'README.md','README.md');z.write(c.HERE/'assembly01.md','assembly01.md');z.writestr('SHA256SUMS.txt',''.join(c.sha(p)+'  '+(str(p.relative_to(O)) if p.is_relative_to(O) else 'step/'+p.name)+'\n' for p in files)+c.sha(c.HERE/'README.md')+'  README.md\n'+c.sha(c.HERE/'assembly01.md')+'  assembly01.md\n')
+        for name in ['README.md','assembly01.md','first-sample.md']:z.write(c.HERE/name,name)
+        z.writestr('SHA256SUMS.txt',''.join(c.sha(p)+'  '+(str(p.relative_to(O)) if p.is_relative_to(O) else 'step/'+p.name)+'\n' for p in files)+''.join(c.sha(c.HERE/name)+'  '+name+'\n' for name in ['README.md','assembly01.md','first-sample.md']))
     with zipfile.ZipFile(target) as z:assert z.testzip() is None
     print('CORE_MANUFACTURE',len(bed),'printable body parts',len(stock),'stock tubes',len(H['parts']),'hardware envelopes',flush=True)
 

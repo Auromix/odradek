@@ -1,5 +1,319 @@
 {
   "revision": "A16-ROOT01",
+  "layout": {
+    "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          94.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -15,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "source_sha256": {
+    "engineering/arm_a16/build/root01/manifest.json": "03407990554696d00cea63bb83b54b0ca42166c79e8da587b843642ac76c9fca",
+    "engineering/arm_a16/build/root01/step/A16-R101-base-adapter.step": "55756b0e5229b30a81daa8d13c3cfab6d4c4c5d63874ef3b0b123c052104cdae",
+    "engineering/arm_a16/build/root01/step/A16-R102-J1-front-holder.step": "548c8be7233c2759301e5ba529ad7262427e680024a238031a10fdcf61890a05",
+    "engineering/arm_a16/build/root01/step/A16-R103-J1-output-pedestal.step": "094bb4641d5956545241361e55f84fa74694b7d9a8b077dd74b77f7e17daf29e",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-1.step": "96b3881a86998ac3f49d394e0922e22a0a8580971a486ca7bb48a6d23123bc10",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-2.step": "a952703f05a73d2bce6f41da8318a5885b333e510f625b77b6d3f3ea6334b40b",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-3.step": "3707d84df517b4f386aa5cc5a1fcb890d29070e1dfa81b726ba17a95d58d0146",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-4.step": "ae6f45510686e21f5ede29906cda8645dea1d0dcbfb9a303d388dce879f7914c"
+  },
+  "vendor_audit_sha256": "c2d7e3a6263c4b4b66c1786b80a1afcd202c4574df01fd045dd218c4503b2a75",
   "all_scoped_BREP_pairs_clear": true,
   "pairs": [
     {

@@ -43,6 +43,10 @@ def main():
     def coords(points,x,y):
         text(x,y,'Hole coordinates in local XY; datum B at centre',9)
         for k,(a,b) in enumerate(points,1):text(x,y-5-k*4.6,f'{k:02d}   X {a:9.3f}   Y {b:9.3f}',8)
+    def wire_slots():
+        for a in [55,235]:
+            h=math.radians(a);pdf.saveState();pdf.translate((100+55*math.cos(h))*mm,(170+55*math.sin(h))*mm);pdf.rotate(a)
+            pdf.roundRect(-3*mm,-7*mm,6*mm,14*mm,3*mm,stroke=1,fill=0);pdf.restoreState()
     base=[(60*math.cos(math.radians(22.5+45*k)),60*math.sin(math.radians(22.5+45*k))) for k in range(8)]
     cols=[(60,0),(0,60),(-60,0),(0,-60)]
     sheet('A16-R101 BASE ADAPTER','PETG / PA12 trial; planar plate. Bottom datum A at assembly Z58. OD134 +/-0.15 after coupon compensation.')
@@ -66,19 +70,21 @@ def main():
     fixed=c.SRC['models']['RS03']['fixed_front_fasteners']['raw_step_xy_mm']
     sheet('A16-R102 J1 FRONT HOLDER','PETG / PA12 trial; flat plate. Bottom datum A at J1local Z-2.5. Ring ID72.4 +0.2/0.')
     plan(67,36.2,fixed,4.5)
+    wire_slots()
     for x,y in cols:circle(100+x,170+y,2.8)
     coords(fixed,195,232)
     text(195,175,'8x D4.5 THRU / native RS03 front PCD98')
     text(195,164,'4x D5.6 THRU at (+/-60,0), (0,+/-60)')
     text(195,153,'8x M4x12 +0.8 washer: nominal insertion5.2')
     text(195,142,'Source front depth8; do NOT use rear-hole datum')
+    text(195,131,'2x wire slots6x14 /endR3 /centreR55 /55 and235deg')
     pdf.rect(195*mm,95*mm,134*mm,6*mm);dimension(345,95,345,101,'6')
     text(195,81,'OD134 +/-0.15; print flat. Hole positions retained from native STEP.')
     text(195,70,'Check RS03 actual output register;1.2mm nominal radial running gap.')
     pdf.showPage()
     output=c.SRC['models']['RS03']['output_fasteners']['raw_step_xy_mm']
     sheet('A16-R103 J1 OUTPUT PEDESTAL','PETG / PA12 trial; conventional coaxial turned/milled form. Bottom datum A at J1 rotorZ0.')
-    plan(60,0,output,4.5);circle(100,170,35)
+    plan(60,0,output,4.5);circle(100,170,35);wire_slots()
     for x,y in output:circle(100+x,170+y,4.75)
     for x in [-38,38]:
         for y in [-28,28]:circle(100+x,170+y,2.8)
@@ -86,6 +92,7 @@ def main():
     text(195,181,'6x D4.5 THRU / source output PCD30.36')
     text(195,170,'6x counterbore D9.5 x10 FROM TOP')
     text(195,159,'4x D5.6 through upper plate at X+/-38,Y+/-28')
+    text(195,148,'2x6x14 slots /endR3 /R55 /55 and235deg; THRU upper10 only')
     pdf.rect(227*mm,80*mm,70*mm,20*mm);pdf.rect(202*mm,100*mm,120*mm,10*mm)
     dimension(340,80,340,100,'20');dimension(354,100,354,110,'10')
     text(195,66,'M4x25 +0.8 washer:20 grip /4.2 insertion /source blind depth6')
@@ -106,7 +113,8 @@ def main():
     with zipfile.ZipFile(target,'w',zipfile.ZIP_DEFLATED) as z:
         for p in files:z.write(p,p.relative_to(O))
         z.write(c.HERE/'README.md','README.md')
-        z.writestr('SHA256SUMS.txt',''.join(f'{c.sha(p)}  {p.relative_to(O)}\n' for p in files))
+        for name in ['assembly01.md','first-sample.md']:z.write(c.HERE/name,name)
+        z.writestr('SHA256SUMS.txt',''.join(f'{c.sha(p)}  {p.relative_to(O)}\n' for p in files)+''.join(c.sha(c.HERE/name)+'  '+name+'\n' for name in ['README.md','assembly01.md','first-sample.md']))
     with zipfile.ZipFile(target) as z:assert z.testzip() is None
     print('ROOT_PACKAGE',len(files),'files',target,flush=True)
 

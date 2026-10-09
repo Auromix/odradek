@@ -1,7 +1,7 @@
 {
-  "revision": "A16-CONVENTIONAL02-FLAT-WRIST",
+  "revision": "A16-CONVENTIONAL03-SHOULDER-GAP",
   "layout": {
-    "id": "A16-CONVENTIONAL02-FLAT-WRIST",
+    "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
     "units": "mm",
     "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
     "joints": [
@@ -73,7 +73,7 @@
         ],
         "offset": [
           0,
-          -10,
+          -15,
           0
         ],
         "zero_deg": 0,
@@ -306,19 +306,19 @@
   "sources": [
     {
       "path": "engineering/arm_a16/build/root01/manifest.json",
-      "sha256": "94e5795e3725f2d245b5d271d79feef9312f971fb1f445be8613564b4c484ffe"
+      "sha256": "03407990554696d00cea63bb83b54b0ca42166c79e8da587b843642ac76c9fca"
     },
     {
       "path": "engineering/arm_a16/build/skeleton01/manifest.json",
-      "sha256": "cf119168771009a32396bde13db156bcd6c699152a7e9280edaad29e94107ae1"
+      "sha256": "8c5cd7ccfc472f944d13d629507950ffab2a69f916c4f1362402e85dc4b6d42e"
     },
     {
-      "path": "engineering/arm_a16/build/covers01/manifest.json",
-      "sha256": "9bc9817816761ef4606b61699a48c952b47b92ad04d39666eab0c63cd25fa1f1"
+      "path": "engineering/arm_a16/build/covers02/manifest.json",
+      "sha256": "7c9d2e0dc8afca0eb8a817eb9e0b00b18c7db7500c3b554327bf70a60d930603"
     },
     {
       "path": "engineering/arm_a16/build/hardware01/manifest.json",
-      "sha256": "4df86be3ef7486753566a758f7a33e94b44e0faa46c6585022cf81c05dbfe79a"
+      "sha256": "7ae73d2ae4091ec3b0812b5ba930bc79ffa8a79038cde0ac4bea7a42d114c783"
     }
   ],
   "prototype_CAD_and_allowance_ledger": [
@@ -338,11 +338,11 @@
       "id": "A16-R102-J1-front-holder",
       "owner": 0,
       "frame": "J1.fixed",
-      "mass_kg": 0.06734390268866115,
+      "mass_kg": 0.06629131688108532,
       "com_mm": [
-        -1.2752052221004634e-13,
-        5.435853920673355e-16,
-        0.5
+        -1.3423595245587458e-13,
+        1.7039824712311301e-15,
+        0.49999999999999994
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -350,11 +350,11 @@
       "id": "A16-R103-J1-output-pedestal",
       "owner": 1,
       "frame": "J1.rotor",
-      "mass_kg": 0.21035765901828835,
+      "mass_kg": 0.20860334933899513,
       "com_mm": [
-        2.5541046190898038e-15,
-        1.94906243714944e-15,
-        18.84479902585052
+        -6.502417563592153e-17,
+        1.7573762745361345e-15,
+        18.793035098372066
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -410,11 +410,11 @@
       "id": "A16-S101-root-to-shoulder-L",
       "owner": 1,
       "frame": "J1.rotor",
-      "mass_kg": 0.2046656686074781,
+      "mass_kg": 0.20396394473576096,
       "com_mm": [
-        -9.540053439078919e-14,
-        39.854105252575714,
-        67.34221045833016
+        -0.10853425736108241,
+        39.83621756715444,
+        67.45692203171508
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -422,11 +422,11 @@
       "id": "A16-S102-shoulder-cross-adapter",
       "owner": 2,
       "frame": "J2.rotor",
-      "mass_kg": 0.12379222960467583,
+      "mass_kg": 0.1248962296046758,
       "com_mm": [
-        20.867742956132815,
-        14.596961268807584,
-        1.7193688025663452e-15
+        20.960399170119917,
+        11.662306921589336,
+        -1.0551622150967123e-15
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -623,218 +623,218 @@
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-upper-dorsal",
-      "owner": 3,
-      "frame": "J3.rotor",
-      "mass_kg": 0.07766675786584556,
-      "com_mm": [
-        165.58038720562243,
-        8.891870932353175e-15,
-        21.948076054330304
-      ],
-      "mass_kind": "prototype uniform printed CAD or purchased stock material"
-    },
-    {
-      "id": "A16-C-upper-ventral",
-      "owner": 3,
-      "frame": "J3.rotor",
-      "mass_kg": 0.07667487821760144,
-      "com_mm": [
-        165.55259799500575,
-        -1.1036664364878819e-15,
-        -21.440431777898493
-      ],
-      "mass_kind": "prototype uniform printed CAD or purchased stock material"
-    },
-    {
-      "id": "A16-C-fore-dorsal",
+      "id": "A16-C02-fore-dorsal",
       "owner": 4,
       "frame": "J4.rotor",
-      "mass_kg": 0.04832092863559603,
+      "mass_kg": 0.026940456608885846,
       "com_mm": [
-        74.10222906362826,
-        76.94454064697217,
-        22.680158741197708
+        88.92403986143347,
+        86.55683941081438,
+        23.010825730438658
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-fore-ventral",
+      "id": "A16-C02-fore-ventral",
       "owner": 4,
       "frame": "J4.rotor",
-      "mass_kg": 0.047740679612389356,
+      "mass_kg": 0.016604171802628666,
       "com_mm": [
-        74.06107357253187,
-        76.93375156822165,
-        -22.156987766534655
+        72.66358767865523,
+        86.07031069044666,
+        -24.310546024946483
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J1-cowl-a",
+      "id": "A16-C02-J1-cowl-a",
       "owner": 0,
       "frame": "J1.fixed",
-      "mass_kg": 0.0773984339595438,
+      "mass_kg": 0.09724504283134033,
       "com_mm": [
-        4.780456403638934e-15,
-        49.04170315659386,
-        -43.419734609272474
+        -4.649238678952637e-15,
+        49.237676974698694,
+        -31.182028862202774
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J1-cowl-b",
+      "id": "A16-C02-J1-cowl-b",
       "owner": 0,
       "frame": "J1.fixed",
-      "mass_kg": 0.07660069881089385,
+      "mass_kg": 0.09624321105612163,
       "com_mm": [
-        -9.527628604350694e-17,
-        -47.923246497582504,
-        -43.42136520738666
+        -7.700630346899406e-15,
+        -48.114821170115235,
+        -31.183037007296633
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J2-cowl-a",
+      "id": "A16-C02-J2-cowl-a",
       "owner": 1,
       "frame": "J2.fixed",
-      "mass_kg": 0.0521019449574873,
+      "mass_kg": 0.07480908648624612,
       "com_mm": [
-        -0.353597059125877,
-        92.78133130597733,
-        46.61016769293544
+        -0.24243069317163005,
+        103.30495157178433,
+        41.28138130226772
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J2-cowl-b",
+      "id": "A16-C02-J2-cowl-b",
       "owner": 1,
       "frame": "J2.fixed",
-      "mass_kg": 0.05259155213190488,
+      "mass_kg": 0.0704564044985512,
       "com_mm": [
-        7.65620233691142e-15,
-        93.18260210460657,
-        -45.92068726687644
+        -2.0197337634668207e-14,
+        105.5995786582158,
+        -39.16658731984061
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J3-cowl-a",
+      "id": "A16-C02-J3-cowl-a",
       "owner": 2,
       "frame": "J3.fixed",
-      "mass_kg": 0.052101944957487566,
+      "mass_kg": 0.07348245972914795,
       "com_mm": [
-        3.0686686940226617,
-        -0.3535970591258135,
-        46.610167692935526
+        -8.004194197157744,
+        -1.3418363569602092,
+        41.76458886136963
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J3-cowl-b",
+      "id": "A16-C02-J3-cowl-b",
       "owner": 2,
       "frame": "J3.fixed",
-      "mass_kg": 0.05259155213190492,
+      "mass_kg": 0.0703026355251103,
       "com_mm": [
-        2.6673978953935014,
-        1.9263547463851478e-14,
-        -45.92068726687641
+        -9.64575110747032,
+        -1.144557622283231,
+        -39.98225422677265
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J4-cowl-a",
-      "owner": 3,
-      "frame": "J4.fixed",
-      "mass_kg": 0.052101944957212716,
-      "com_mm": [
-        -0.35359705488792387,
-        3.0686686940415293,
-        -46.610167691449575
-      ],
-      "mass_kind": "prototype uniform printed CAD or purchased stock material"
-    },
-    {
-      "id": "A16-C-J4-cowl-b",
-      "owner": 3,
-      "frame": "J4.fixed",
-      "mass_kg": 0.05259155213190493,
-      "com_mm": [
-        9.468134168458352e-15,
-        2.667397895393498,
-        45.92068726687644
-      ],
-      "mass_kind": "prototype uniform printed CAD or purchased stock material"
-    },
-    {
-      "id": "A16-C-J5-cowl-a",
+      "id": "A16-C02-J5-cowl-a",
       "owner": 4,
       "frame": "J5.fixed",
-      "mass_kg": 0.02980097675582792,
+      "mass_kg": 0.0347706682563041,
       "com_mm": [
-        9.392055542240192e-15,
-        70.04977297492142,
-        23.648346805892047
+        0.4715833068662414,
+        76.35495535043962,
+        22.6699146670668
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J5-cowl-b",
+      "id": "A16-C02-J5-cowl-b",
       "owner": 4,
       "frame": "J5.fixed",
-      "mass_kg": 0.029485385470715924,
+      "mass_kg": 0.03428348889420968,
       "com_mm": [
-        5.415028652659881e-15,
-        70.0486412105245,
-        -23.098388903531117
+        0.47828465675851706,
+        76.25514986863223,
+        -22.15126916852818
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J6-cowl-a",
+      "id": "A16-C02-J6-cowl-a",
       "owner": 5,
       "frame": "J6.fixed",
-      "mass_kg": 0.02870250916884489,
+      "mass_kg": 0.03381159316046927,
       "com_mm": [
-        -4.299329779428375e-15,
-        -22.147989620886868,
-        0.05940421420157094
+        -1.115034769131523e-13,
+        -21.090021770160252,
+        5.70148509494138
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J6-cowl-b",
+      "id": "A16-C02-J6-cowl-b",
       "owner": 5,
       "frame": "J6.fixed",
-      "mass_kg": 0.02841999335132064,
+      "mass_kg": 0.03237668798074209,
       "com_mm": [
-        3.3535303076253285e-15,
-        21.629505167405235,
-        0.051971729520019494
+        0.02961350280616187,
+        20.471413552206428,
+        6.752998717623944
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J7-cowl-a",
+      "id": "A16-C02-J7-cowl-a",
       "owner": 6,
       "frame": "J7.fixed",
-      "mass_kg": 0.04207497896720472,
+      "mass_kg": 0.05019625208968171,
       "com_mm": [
-        15.801617829960469,
-        5.068737226392058e-15,
-        28.00820284952981
+        12.919271394790261,
+        -1.8848724003737323e-13,
+        26.93631376813823
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "A16-C-J7-cowl-b",
+      "id": "A16-C02-J7-cowl-b",
       "owner": 6,
       "frame": "J7.fixed",
-      "mass_kg": 0.041631670089223895,
+      "mass_kg": 0.04381746788580829,
       "com_mm": [
-        15.804005373397965,
-        3.2436345736160833e-15,
-        -27.360971035138807
+        13.427950294789863,
+        4.9993039003443395e-09,
+        -24.838091061564764
+      ],
+      "mass_kind": "prototype uniform printed CAD or purchased stock material"
+    },
+    {
+      "id": "A16-C02-upper-dorsal",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.07909534066313992,
+      "com_mm": [
+        165.77360496842908,
+        0.5152327003994701,
+        22.381411097338102
+      ],
+      "mass_kind": "prototype uniform printed CAD or purchased stock material"
+    },
+    {
+      "id": "A16-C02-elbow-dorsal",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.07143152931211756,
+      "com_mm": [
+        343.22889615152354,
+        -9.082169634731768,
+        42.04427534161296
+      ],
+      "mass_kind": "prototype uniform printed CAD or purchased stock material"
+    },
+    {
+      "id": "A16-C02-upper-ventral",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.07819251150398861,
+      "com_mm": [
+        165.87509878731598,
+        0.5325340321010019,
+        -21.899356277908687
+      ],
+      "mass_kind": "prototype uniform printed CAD or purchased stock material"
+    },
+    {
+      "id": "A16-C02-elbow-ventral",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.07140359059963672,
+      "com_mm": [
+        343.14840407682664,
+        -9.076912816567171,
+        -42.64726167199284
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -5112,18 +5112,18 @@
     }
   ],
   "motor_catalogue_mass_kg": 6.39,
-  "own_CAD_mass_kg": 2.8299877386843284,
+  "own_CAD_mass_kg": 2.964447336036962,
   "nominal_hardware_envelope_mass_kg": 0.7367661917433164,
   "remaining_allowance_kg": 0.49,
   "unfiltered_sample_count": 4099,
   "loaded3kg_sampled_abs_max_Nm": [
     0.0,
-    43.6087450649092,
-    18.218555546262323,
-    18.524394146402702,
-    8.950962365928046,
-    6.486738215064354,
-    0.0013478250184027058
+    43.68873253708419,
+    18.240407237418296,
+    18.560329607902222,
+    8.968164924314511,
+    6.493478033219526,
+    0.0013478250184026895
   ],
   "catalogue_zero_speed_reference_Nm": [
     13,
@@ -5134,9 +5134,9 @@
     9.5,
     3.6
   ],
-  "proposed_gas_spring_order_F1_N": 303.6778508941796,
-  "proposed_force_envelope_worst_shoulder_Nm": 30.482002959433107,
-  "virtual_work_max_error_Nm": 4.5006371962585945e-09,
+  "proposed_gas_spring_order_F1_N": 304.2431596045662,
+  "proposed_force_envelope_worst_shoulder_Nm": 30.527587187002418,
+  "virtual_work_max_error_Nm": 6.569242930122739e-09,
   "geometry_qualified_workspace": false,
   "selection_frozen": false,
   "production_release": false,

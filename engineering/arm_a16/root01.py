@@ -25,6 +25,7 @@ def main():
     g.add('A16-R101-base-adapter',p,0,frame='world',note='OD134; PCD120 8xD6.6 phase22.5; 4xD5.6 at cardinal phase with top-entry AF8.3 depth5 captive M5 nuts; boreD56. Install above B06 neck.')
     p=holes(g.ring([0,0,-2.5],[0,0,1],67,36.2,6),fixed,4.5,-2.5,6)
     p=holes(p,cols,5.6,-2.5,6)
+    p=c.root_wire_slots(p,-2.5,6)
     g.add('A16-R102-J1-front-holder',p,0,frame='J1.fixed',note='RS03 front at rawZ35; use front tap drills rawZ26..34.5, not same-PCD rear holes. Ring ID72.4 clears output D70; thickness6mm.')
     # Conventional turned pedestal with a thin upper load plate. Small lower
     # disc leaves an independent static-annulus radial clearance of 1.2mm.
@@ -34,7 +35,8 @@ def main():
     for x,y in output:p=g.drill(p,[x,y,20],[0,0,1],9.5,10.1)
     # Four ordinary through holes for the upcoming shoulder carrier.
     p=holes(p,[(x,y) for x in [-38,38] for y in [-28,28]],5.6,20,10)
-    g.add('A16-R103-J1-output-pedestal',p,1,frame='J1.rotor',note='One-piece lathe/mill geometry; print flat on output face for unloaded fit. D70x20 stem, D120x10 upper plate; six recessed M4x25.')
+    p=c.root_wire_slots(p,20,10)
+    g.add('A16-R103-J1-output-pedestal',p,1,frame='J1.rotor',note='One-piece lathe/mill geometry; broad upper plate DOWN, motor contact UP for supported unloaded fit. D70x20 stem, D120x10 upper plate; six recessed M4x25.')
     for k,(x,y) in enumerate(cols,1):
         p=g.ring([x,y,66],[0,0,1],6,3,96.5)
         g.add(f'A16-R104-spacer-{k}',p,0,role='purchased_structure',material='stock steel precision tube OD12 ID6 (wall3), cut length96.5 +0/-0.1mm',frame='world',mass=p.Volume()*7.85e-6,note='Purchase metal spacer for prototype as well; do not print as a loaded column. Tube covers captive nut and bears on plate around the pocket.')
@@ -50,6 +52,7 @@ def main():
         summary.append({k:v for k,v in p.items() if k not in ['vertices_mm','triangles']})
     result=dict(revision='A16-ROOT01',layout=c.L,base_context=context,parts=summary,hardware=hardware,
       simple_structure='Two flat annular plates, four stock tube spacers, one coaxial pedestal, ordinary bolts.',
+      wire_passages={'parts':['R102','R103 upper plate','S101 foot'],'capsule_mm':[6,14],'end_radius_mm':3,'centre_radius_mm':55,'angles_deg':[55,235],'effective_allocation_mm':[4,10],'allocation_centre_radius_mm':55.5,'scope':'Only peripheral plate slots. Internal actuator shafts remain solid; rotating loop, exact connectors and actual wires not qualified.'},
       theoretical_mating_checks={'adapter_neck_radial_gap_mm':1,'plate_to_B06_bore_mm':0,'static_holder_rotor_radial_gap_mm':1.2,'motor_rear_to_adapter_top_mm':42.4,'columns_to_RS03_max_envelope_radial_gap_mm':1,'column_screw_tip_above_base_mm':1.5,'fixed_front_holes_corrected_axial_span_raw_mm':[26,34.5]},
       print_process={'material':'PETG or PA12 for supported fit; coupons before full prints','nozzle_mm':.4,'layer_mm':.2,'perimeters':5,'top_bottom_layers':6,'infill_percent':35,'orientation':'R101/R102 flat; R103 broad upper plate down, motor contact face up','support':'R103 is inverted to avoid25mm peripheral overhang.2.5mm internal counterbore ledges need slicer/bridge check and final drilling. Keep mating faces clear of brim.'},
       acceptance='Supported unpowered no-payload dimensional/assembly validation only; metal stock spacers. Neither PETG nor nominal metal density makes this a3kg-rated product.',
