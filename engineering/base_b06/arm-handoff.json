@@ -1,0 +1,65 @@
+{
+  "schema": "odradek.base.arm-handoff.v1",
+  "date": "2026-10-10",
+  "base_revision": "B06-COMPACT-07-DFM",
+  "source_commit": "37627bd1d20da58b85a47bb48edaef40f10f0dce",
+  "authority": {
+    "base_branch": "main",
+    "arm_branch": "design/arm-body",
+    "base_priority": true,
+    "change_rule": "Arm adapter, root, assembly order and harness remedies first; unresolved integration problems require explicit review before changing base."
+  },
+  "sources": {
+    "interface": {
+      "path": "engineering/base_b06/interface-contract.json",
+      "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+    },
+    "manifest": {
+      "path": "engineering/base_b06/build/exterior/manifest.json",
+      "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+    },
+    "native": {
+      "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+      "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+    },
+    "load_frame": {
+      "path": "engineering/base_b06/build/load-frame/manifest.json",
+      "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+    },
+    "flange_step": {
+      "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+      "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+    }
+  },
+  "receipt_required": {
+    "schema": "odradek.base.arm-handoff-receipt.v1",
+    "base_priority": true,
+    "arm_commit": "actual arm Git SHA",
+    "arm_model": "path to current native model",
+    "base_cache_path": "optional path to byte-identical native cache",
+    "base_context": {
+      "base_revision": "B06-COMPACT-07-DFM",
+      "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+      "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+      "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+    },
+    "base_sources": {
+      "interface": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+      "manifest": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+      "native": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+      "load_frame": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a",
+      "flange_step": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+    },
+    "integration_status": {
+      "source_sync": "pending",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    },
+    "push": {
+      "requested_base_commit": "37627bd1d20da58b85a47bb48edaef40f10f0dce",
+      "remote_main_sha": "verified SHA or null",
+      "result": "pending"
+    }
+  }
+}

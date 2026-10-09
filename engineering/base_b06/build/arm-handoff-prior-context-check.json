@@ -1,0 +1,15 @@
+{
+  "schema": "odradek.base.arm-handoff-check.v1",
+  "base_revision": "B06-COMPACT-07-DFM",
+  "canonical_sources_pass": true,
+  "arm_context_checked": true,
+  "receipt_checked": false,
+  "pass": false,
+  "errors": [
+    "arm context missing or stale: base_revision",
+    "arm context missing or stale: base_native_sha256",
+    "arm context missing or stale: base_manifest_sha256",
+    "arm context missing or stale: base_interface_contract_sha256"
+  ],
+  "limits": "Fingerprint and metadata consistency only; no model mesh, mating, wiring, load or production qualification."
+}
