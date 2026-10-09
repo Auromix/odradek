@@ -1,0 +1,692 @@
+{
+  "revision": "A16-ROOT01",
+  "layout": {
+    "id": "A16-CONVENTIONAL01",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "底部转向",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "肩部俯仰",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          110
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          91.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "上臂旋转",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -10,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "肘部回折",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "腕部俯仰",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          60.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "腕部横摆",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          76.6
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "整头旋转",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          25,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
+  },
+  "parts": [
+    {
+      "id": "A16-R101-base-adapter",
+      "owner": 0,
+      "frame": "world",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "OD134; PCD120 8xD6.6 phase22.5; 4xD5.6 at cardinal phase with top-entry AF8.3 depth5 captive M5 nuts; boreD56. Install above B06 neck.",
+      "solid_count": 1,
+      "volume_mm3": 89438.47099837163,
+      "mass_kg": 0.10285424164812737,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        -6.852628153038681e-14,
+        1.1732417833815838e-15,
+        61.98824988734539
+      ],
+      "bbox_size_mm": [
+        134.0,
+        134.0,
+        8.000000000000014
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          133.89466796579143,
+          -4.289918861219505e-16,
+          8.894759314526729e-15
+        ],
+        [
+          -4.289918861219505e-16,
+          133.8946679657915,
+          3.793994482841116e-15
+        ],
+        [
+          8.894759314526729e-15,
+          3.793994482841116e-15,
+          266.69063743687605
+        ]
+      ]
+    },
+    {
+      "id": "A16-R102-J1-front-holder",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "RS03 front at rawZ35; use front tap drills rawZ26..34.5, not same-PCD rear holes. Ring ID72.4 clears output D70; thickness6mm.",
+      "solid_count": 1,
+      "volume_mm3": 58559.91538144448,
+      "mass_kg": 0.06734390268866115,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        -1.2752052221004634e-13,
+        5.435853920673355e-16,
+        0.5
+      ],
+      "bbox_size_mm": [
+        134.0,
+        134.0,
+        6.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          97.68566502339947,
+          2.5749103416883917e-15,
+          1.175063372896641e-16
+        ],
+        [
+          2.5749103416883917e-15,
+          97.68566502339947,
+          -3.32132969663504e-18
+        ],
+        [
+          1.175063372896641e-16,
+          -3.32132969663504e-18,
+          194.96726663066696
+        ]
+      ]
+    },
+    {
+      "id": "A16-R103-J1-output-pedestal",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "One-piece lathe/mill geometry; print flat on output face for unloaded fit. D70x20 stem, D120x10 upper plate; six recessed M4x25.",
+      "solid_count": 1,
+      "volume_mm3": 182919.70349416378,
+      "mass_kg": 0.21035765901828835,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        2.5541046190898038e-15,
+        1.94906243714944e-15,
+        18.84479902585052
+      ],
+      "bbox_size_mm": [
+        120.0,
+        120.0,
+        30.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          157.59579052823005,
+          3.0028893559982257e-15,
+          -4.872751002816689e-15
+        ],
+        [
+          3.0028893559982257e-15,
+          156.8480205621773,
+          -6.59973378329802e-15
+        ],
+        [
+          -4.872751002816689e-15,
+          -6.59973378329802e-15,
+          283.7174916727423
+        ]
+      ]
+    },
+    {
+      "id": "A16-R104-spacer-1",
+      "owner": 0,
+      "frame": "world",
+      "role": "purchased_structure",
+      "material": "stock steel tube OD12 ID5.5, cut length96.5 +0/-0.1mm",
+      "note": "Purchase metal spacer for prototype as well; do not print as a loaded column. Tube covers captive nut and bears on plate around the pocket.",
+      "solid_count": 1,
+      "volume_mm3": 8621.217464843367,
+      "mass_kg": 0.06767655709902042,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        59.99999999999999,
+        2.3769220965419407e-16,
+        114.25
+      ],
+      "bbox_size_mm": [
+        12.0,
+        12.0,
+        96.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          53.25446920631117,
+          6.2473858933349946e-15,
+          2.3426267274122797e-13
+        ],
+        [
+          6.2473858933349946e-15,
+          53.25446920631117,
+          3.369980455088375e-15
+        ],
+        [
+          2.3426267274122797e-13,
+          3.369980455088375e-15,
+          1.4721019383978813
+        ]
+      ]
+    },
+    {
+      "id": "A16-R104-spacer-2",
+      "owner": 0,
+      "frame": "world",
+      "role": "purchased_structure",
+      "material": "stock steel tube OD12 ID5.5, cut length96.5 +0/-0.1mm",
+      "note": "Purchase metal spacer for prototype as well; do not print as a loaded column. Tube covers captive nut and bears on plate around the pocket.",
+      "solid_count": 1,
+      "volume_mm3": 8621.217464843365,
+      "mass_kg": 0.0676765570990204,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -8.492341573714255e-15,
+        59.99999999999999,
+        114.25
+      ],
+      "bbox_size_mm": [
+        12.0,
+        12.0,
+        96.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          53.25446920631164,
+          -7.091936381814635e-16,
+          -2.552239201923162e-15
+        ],
+        [
+          -7.091936381814635e-16,
+          53.25446920631199,
+          -5.856566818530699e-14
+        ],
+        [
+          -2.552239201923162e-15,
+          -5.856566818530699e-14,
+          1.4721019383978227
+        ]
+      ]
+    },
+    {
+      "id": "A16-R104-spacer-3",
+      "owner": 0,
+      "frame": "world",
+      "role": "purchased_structure",
+      "material": "stock steel tube OD12 ID5.5, cut length96.5 +0/-0.1mm",
+      "note": "Purchase metal spacer for prototype as well; do not print as a loaded column. Tube covers captive nut and bears on plate around the pocket.",
+      "solid_count": 1,
+      "volume_mm3": 8621.217464843365,
+      "mass_kg": 0.0676765570990204,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -60.00000000000001,
+        2.417123713486735e-16,
+        114.25
+      ],
+      "bbox_size_mm": [
+        12.0,
+        12.0,
+        96.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          53.25446920631128,
+          2.4154525257416643e-15,
+          -1.7569700455592094e-13
+        ],
+        [
+          2.4154525257416643e-15,
+          53.25446920631139,
+          1.4177915155781416e-15
+        ],
+        [
+          -1.7569700455592094e-13,
+          1.4177915155781416e-15,
+          1.472101938397998
+        ]
+      ]
+    },
+    {
+      "id": "A16-R104-spacer-4",
+      "owner": 0,
+      "frame": "world",
+      "role": "purchased_structure",
+      "material": "stock steel tube OD12 ID5.5, cut length96.5 +0/-0.1mm",
+      "note": "Purchase metal spacer for prototype as well; do not print as a loaded column. Tube covers captive nut and bears on plate around the pocket.",
+      "solid_count": 1,
+      "volume_mm3": 8621.217464843365,
+      "mass_kg": 0.0676765570990204,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -8.492341573714255e-15,
+        -59.99999999999999,
+        114.25
+      ],
+      "bbox_size_mm": [
+        12.0,
+        12.0,
+        96.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          53.25446920631164,
+          -6.119654781081779e-16,
+          -2.336454645682132e-15
+        ],
+        [
+          -6.119654781081779e-16,
+          53.25446920631199,
+          -5.856566818530699e-14
+        ],
+        [
+          -2.336454645682132e-15,
+          -5.856566818530699e-14,
+          1.4721019383978813
+        ]
+      ]
+    }
+  ],
+  "hardware": [
+    {
+      "part": "M6x20 ISO4762 + DIN125 washer",
+      "qty": 8,
+      "interface": "B06/R101",
+      "grip_mm": 8,
+      "washer_mm": 1.6,
+      "engagement_mm": 10.4,
+      "minimum_source_depth_mm": null,
+      "note": "Base has THRU thread; underside tip clearance needs assembled verification."
+    },
+    {
+      "part": "M4x12 ISO4762 + washer0.8",
+      "qty": 8,
+      "interface": "RS03 front/R102",
+      "grip_mm": 6,
+      "washer_mm": 0.8,
+      "engagement_mm": 5.2,
+      "minimum_source_depth_mm": 8
+    },
+    {
+      "part": "M4x25 ISO4762 + washer0.8",
+      "qty": 6,
+      "interface": "RS03 output/R103",
+      "grip_mm": 20,
+      "washer_mm": 0.8,
+      "engagement_mm": 4.2,
+      "minimum_source_depth_mm": 6
+    },
+    {
+      "part": "M5x110 ISO4762 + washer1.0 + nut4.7",
+      "qty": 4,
+      "interface": "R102/spacer/R101 captive nut",
+      "grip_mm": 102.8,
+      "washer_mm": 1,
+      "nut_mm": 4.7,
+      "nominal_tip_protrusion_mm": 1.5,
+      "note": "Top holder6 + spacer96.5 + pocket roof gap0.3 + washer1 + nut4.7; tip atZ59.5,1.5mm above unchanged base plane58. No lower washer in captive pocket."
+    }
+  ],
+  "simple_structure": "Two flat annular plates, four stock tube spacers, one coaxial pedestal, ordinary bolts.",
+  "theoretical_mating_checks": {
+    "adapter_neck_radial_gap_mm": 1,
+    "plate_to_B06_bore_mm": 0,
+    "static_holder_rotor_radial_gap_mm": 1.2,
+    "motor_rear_to_adapter_top_mm": 42.4,
+    "columns_to_RS03_max_envelope_radial_gap_mm": 1,
+    "column_screw_tip_above_base_mm": 1.5,
+    "fixed_front_holes_corrected_axial_span_raw_mm": [
+      26,
+      34.5
+    ]
+  },
+  "print_process": {
+    "material": "PETG or PA12 for supported fit; coupons before full prints",
+    "nozzle_mm": 0.4,
+    "layer_mm": 0.2,
+    "perimeters": 5,
+    "top_bottom_layers": 6,
+    "infill_percent": 35,
+    "orientation": "R101/R102 flat; R103 output contact plane flat",
+    "support": "No designed supports required; drill/ream holes after coupon review. Keep mating faces clear of brim."
+  },
+  "acceptance": "Supported unpowered no-payload dimensional/assembly validation only; metal stock spacers. Neither PETG nor nominal metal density makes this a3kg-rated product.",
+  "assembly_qualified": false,
+  "wiring_qualified": false,
+  "loads_qualified": false,
+  "production_release": false
+}

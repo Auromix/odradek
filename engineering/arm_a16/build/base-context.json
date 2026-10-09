@@ -1,0 +1,36 @@
+{
+  "base_revision": "B06-COMPACT-07-DFM",
+  "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+  "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+  "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+  "base_priority": true,
+  "canonical_checkout": "../odradek",
+  "base_sources": {
+    "interface": {
+      "path": "engineering/base_b06/interface-contract.json",
+      "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+    },
+    "manifest": {
+      "path": "engineering/base_b06/build/exterior/manifest.json",
+      "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+    },
+    "native": {
+      "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+      "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+    },
+    "load_frame": {
+      "path": "engineering/base_b06/build/load-frame/manifest.json",
+      "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+    },
+    "flange_step": {
+      "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+      "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+    }
+  },
+  "integration_status": {
+    "source_sync": "fingerprints verified; native inclusion checked separately",
+    "assembly": "pending",
+    "wiring": "pending",
+    "loads": "pending"
+  }
+}
