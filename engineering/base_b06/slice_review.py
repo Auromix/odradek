@@ -4,17 +4,25 @@ The embedded G-code is for the reference P1S only, not a universal print job.
 """
 from pathlib import Path
 import json,zipfile,hashlib,shutil,re,xml.etree.ElementTree as ET
+import numpy as np,trimesh
+from scipy.spatial import cKDTree
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[3]
 OUT=HERE/'build/exterior';WORK=ROOT/'work/b06-slicing';DEST=OUT/'slice-review';DEST.mkdir(exist_ok=True)
-CFG=ROOT/'work/b06-slice-config';(DEST/'reference-config').mkdir(exist_ok=True)
-for p in sorted(CFG.glob('*.json')):shutil.copy2(p,DEST/'reference-config'/p.name)
+CFG=ROOT/'work/b06-slice-config'
+if not CFG.exists():CFG=DEST/'reference-config'
+(DEST/'reference-config').mkdir(exist_ok=True)
+for p in sorted(CFG.glob('*.json')):
+ if p.resolve()!=(DEST/'reference-config'/p.name).resolve():shutil.copy2(p,DEST/'reference-config'/p.name)
 digest=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 rows=[]
 for stl in sorted((OUT/'print-parts').glob('*.stl')):
- p=WORK/stl.stem/(stl.stem+'-review.3mf');g=p.parent/'plate_1.gcode'
+ p=WORK/stl.stem/(stl.stem+'-review.3mf')
+ if not p.exists():p=DEST/(stl.stem+'-review.3mf')
+ g=p.parent/'plate_1.gcode'
  with zipfile.ZipFile(p) as z:
   assert z.testzip() is None
-  assert z.read('Metadata/plate_1.gcode')==g.read_bytes()
+  gcode=z.read('Metadata/plate_1.gcode')
+  if g.exists():assert gcode==g.read_bytes()
   info=json.loads(z.read('Metadata/plate_1.json'));bbox=info['bbox_all']
   assert all(0<=v<=256 for v in bbox),bbox
   settings=json.loads(z.read('Metadata/project_settings.config'))
@@ -28,12 +36,28 @@ for stl in sorted((OUT/'print-parts').glob('*.stl')):
   model=ET.fromstring(z.read(modelpath));ns={'c':'http://schemas.microsoft.com/3dmanufacturing/core/2015/02'}
   vertexcount=len(model.findall('.//c:vertex',ns));tricount=len(model.findall('.//c:triangle',ns))
   assert vertexcount and tricount
-  header=g.read_text().split('; HEADER_BLOCK_END')[0]
+  # Compare the actual source triangle soup, independent of reindexing and
+  # translation used by the slicer. A current filename/hash alone cannot bind
+  # a historical sliced mesh to today's geometry.
+  vs=np.array([[float(v.attrib[k]) for k in ('x','y','z')] for v in model.findall('.//c:vertex',ns)])
+  ts=np.array([[int(t.attrib[k]) for k in ('v1','v2','v3')] for t in model.findall('.//c:triangle',ns)])
+  mesh=trimesh.load_mesh(stl,process=True)
+  vs-=vs.min(axis=0);current=mesh.vertices-mesh.vertices.min(axis=0)
+  assert len(ts)==len(mesh.faces),('Stale slice triangles',stl.name)
+  # Slicer may retain duplicate vertices; map actual coordinates instead of
+  # demanding equal indexed vertex counts. Triangle counts/topology must agree.
+  error=max(cKDTree(vs).query(current)[0].max(),cKDTree(current).query(vs)[0].max())
+  assert error<=.00001,('Stale slice source geometry',stl.name,error)
+  # Compare sorted mapped indices rather than rounding near cell boundaries.
+  mapping=cKDTree(current).query(vs)[1]
+  assert sorted(map(tuple,np.sort(mapping[ts],axis=1)))==sorted(map(tuple,np.sort(mesh.faces,axis=1))),('Stale slice triangle topology',stl.name)
+  header=gcode.decode().split('; HEADER_BLOCK_END')[0]
   times=re.search(r'total estimated time: ([^\n]+)',header)
-  support=re.findall(r'^; FEATURE: ([^\n]+)',g.read_text(),re.M)
- shutil.copy2(p,DEST/p.name)
- rows.append(dict(part=stl.name,source_stl_sha256=digest(stl),slice_3mf_sha256=digest(p),gcode_sha256=digest(g),
+  support=re.findall(r'^; FEATURE: ([^\n]+)',gcode.decode(),re.M)
+ if p.resolve()!=(DEST/p.name).resolve():shutil.copy2(p,DEST/p.name)
+ rows.append(dict(part=stl.name,source_stl_sha256=digest(stl),slice_3mf_sha256=digest(p),gcode_sha256=hashlib.sha256(gcode).hexdigest(),
    bed_xy_with_brim_support=bbox,mesh_repair_counters=stats[0],source_vertex_count=vertexcount,source_triangle_count=tricount,
+   source_mesh_match=True,source_vertex_max_error_mm=float(error),
    estimated_time=times.group(1) if times else None,feature_types=sorted(set(support))))
 report=dict(revision=json.loads((OUT/'manifest.json').read_text())['revision'],
  manifest_sha256=digest(OUT/'manifest.json'),slicer='OrcaSlicer2.4.2',reference_machine='Bambu P1S 0.4,256mm cube; not user-selected machine',

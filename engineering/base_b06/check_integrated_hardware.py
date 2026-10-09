@@ -30,10 +30,10 @@ for i in range(8):
  t.apply_translation((60*math.cos(angle),75+60*math.sin(angle),136.8))
  tool=md.Manifold(md.Mesh(vert_properties=np.asarray(t.vertices,dtype=np.float32),tri_verts=np.asarray(t.faces,dtype=np.uint32)))
  hits=[]
- for k in ('B06-301-MAIN-SHIELD','REF-P00-root-open'):
+ for k in ['B06-301-MAIN-SHIELD']+(['REF-P00-root-open'] if 'REF-P00-root-open' in parts else []):
   v=(tool^solid(k)).volume()
   if v>.01:hits.append({'part':k,'intersection_mm3':v})
- tools.append({'root_bolt':i+1,'tool_diameter_mm':13,'z_mm':[73.6,200],'stage':'Bare root only; motor/top ring/waists not yet fitted','collisions':hits})
+ tools.append({'root_bolt':i+1,'tool_diameter_mm':13,'z_mm':[73.6,200],'stage':'Base flange access; arm reference checked only if present','arm_reference_present':'REF-P00-root-open' in parts,'collisions':hits})
 # Straight driver-body checks at documented assembly stages. The circular
 # bodies do not certify handles, turning sweep, fingers or actual bought tools.
 parts={p['id']:p for p in D['parts']}

@@ -31,7 +31,7 @@ for a,b in [*itertools.combinations(printed,2),*itertools.product(printed,refs)]
     pairs.append(dict(a=a,b=b,volume_mm3=volume,intersection_status=str(result.status()),penetration_over_0_01mm3=volume>.01))
     if volume>.01:print('INTERFERENCE',a,b,round(volume,5),flush=True)
 report=dict(revision=D['revision'],manifest_sha256=hashlib.sha256(MF.read_bytes()).hexdigest(),
-            scope='Static closed STL solid intersections; cosmetic parts vs frozen root and I/O meshes',
+            scope='Static closed STL solid intersections; current base cosmetic/structural/electronic parts; arm reference optional',
             engine='manifold3d',numerical_volume_threshold_mm3=.01,
             pairs=pairs,invalid_solids=invalid,
             interferences=[p for p in pairs if p['penetration_over_0_01mm3']],

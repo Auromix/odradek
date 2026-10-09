@@ -7,6 +7,7 @@ HERE=Path(__file__).resolve().parent;OUT=HERE/'build';F=OUT/'load-frame'
 D=json.loads((F/'manifest.json').read_text());groups=defaultdict(list)
 for p in D['parts']:
  if p['category']=='environment':continue
+ if p['id'].startswith('HW-ROOT-'):continue # Mating-module / test-fixture screws, not base product hardware.
  if p['category']=='hardware':key=(p['category'],p['process'],tuple(p['notes']),round(p['volume_mm3'],3))
  elif p['id'].startswith('B06-105-POST-'):key=('custom','B06-105-POST')
  elif p['id'].startswith(('B06-107-SPREADER','B06-108-PRESS-PAD')):key=('custom',p['id'].rsplit('-',1)[0].rstrip('-'))

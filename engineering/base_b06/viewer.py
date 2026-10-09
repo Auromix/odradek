@@ -20,6 +20,7 @@ GROUP_NAMES = {
     "structure": "承力结构 / 参考件", "fasteners": "标准件",
     "cradle": "盒架 / 盒体检具", "routing": "线束空间",
     "environment": "桌面 / 墙面", "guide": "拧紧工具示意",
+    "fixture": "独立验证工装（非产品件）",
 }
 
 

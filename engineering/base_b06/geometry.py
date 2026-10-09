@@ -18,6 +18,9 @@ from mathutils import Vector
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "build" / "exterior"
+WITH_ARM_ROOT = '--with-arm-root' in sys.argv
+if WITH_ARM_ROOT:
+    OUT = HERE / 'build' / 'arm-integration'
 M = .001
 CENTER = (0.,75.)
 SEGMENTS = 240

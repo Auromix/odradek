@@ -46,7 +46,7 @@ screen={'assumed_loads':{'overturning_Nm':150,'vertical_N':500,'lateral_N':100,'
  'shelf_3kg_each_side_force_N':3*9.81/2,'shelf_cantilever_assumed_mm':315,
  'shelf_simple_beam_deflection_mm':(3*9.81/2)*315**3/(3*69000*(8*20**3/12)),
  'status':'Screen only; no certified material, actual weld/desk strength, friction, deflection model or operating-load qualification'}
-report={'revision':'B06-LOAD-01','cad_source_sha256':hashlib.sha256(Path(cad.__file__).read_bytes()).hexdigest(),
+report={'revision':'B06-LOAD-02-STANDALONE','arm_required':False,'cad_source_sha256':hashlib.sha256(Path(cad.__file__).read_bytes()).hexdigest(),
  'desk_samples':results,'masses':masses,'total_modeled_mass_kg':sum(m['mass_kg'] for m in masses),
  'screening':screen,'exact_static_clearance_pass':all(not p['interferences'] for p in results),
  'limits':['Exact nominal BREP only; threads, supplier swivels and weld beads simplified/omitted.',

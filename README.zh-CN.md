@@ -1,6 +1,6 @@
 # Odradek
 
-当前底座候选以[B06-COMPACT-03](engineering/base_b06/README.md)为唯一依据：前鼻、双翼与颈台一体。所有本体设计统一遵循[底座同源规则](docs/engineering/base-authority.md)，B04/B05仅保留为历史参考。
+当前底座候选以[B06-COMPACT-06-STANDALONE](engineering/base_b06/README.md)为唯一依据：前鼻、双翼与颈台一体，默认建模不依赖臂身。已增加独立金属测试工装和20项无臂验证计划，实物生产资格仍未通过。所有本体设计统一遵循[底座同源规则](docs/engineering/base-authority.md)，B04/B05仅保留为历史参考。
 
 **7自由度本体＋可拆四瓣发光夹爪，以朝向、张合与灯光表达主动注意力。**
 

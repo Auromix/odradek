@@ -75,14 +75,15 @@ def washer(id,x,y,z,od,idiam,t,axis=(0,0,1)):
  if axis==(1,0,0):s=s.rotate((0,0,0),(0,1,0),90)
  elif axis==(-1,0,0):s=s.rotate((0,0,0),(0,1,0),-90)
  return add(id,s.translate((x,y,z)),'steel','Purchase ISO7089 washer',category='hardware')
-def make_hardware():
+def make_hardware(mating_hardware=False):
  for i,(x,y) in enumerate(POSTS,1):
   bolt(f'HW-M8-TOP-{i}',x,y,49.5,8,16,13,8,af=6)
   bolt(f'HW-M8-BOTTOM-{i}',x,y,10.5,8,20,13,8,axis=(0,0,-1),af=6)
- for i in range(8):
-  a=math.radians(22.5+45*i);x=60*math.cos(a);y=75+60*math.sin(a)
-  washer(f'HW-ROOT-WASHER-{i+1}',x,y,66,12,6.4,1.6)
-  bolt(f'HW-ROOT-M6-{i+1}',x,y,67.6,6,20,10,6,af=5)
+ if mating_hardware:
+  for i in range(8):
+   a=math.radians(22.5+45*i);x=60*math.cos(a);y=75+60*math.sin(a)
+   washer(f'HW-ROOT-WASHER-{i+1}',x,y,66,12,6.4,1.6)
+   bolt(f'HW-ROOT-M6-{i+1}',x,y,67.6,6,20,10,6,af=5)
  for side in (-1,1):
   for i,z in enumerate((-80,-67),1):
    washer(f'HW-HANGER-WASHER-{side}-{i}',side*78,-55,z,12,6.4,1.6,axis=(side,0,0))
@@ -98,7 +99,7 @@ def make_hardware():
   r=5.5/math.sqrt(3);n=cq.Workplane('XY').polyline([(x+r*math.cos(math.pi/6+i*math.pi/3),-8+r*math.sin(math.pi/6+i*math.pi/3)) for i in range(6)]).close().extrude(2.4).translate((0,0,21.1)).val().cut(cyl(x,-8,21.1,1.5,2.4))
   add(f'HW-COAX-NUT-{side}',n,'steel','Purchase DIN934 M3 nut; nominal unthreaded bore envelope',category='hardware')
 
-def make(desk=30):
+def make(desk=30,mating_hardware=False):
  PARTS.clear()
  # 15 mm top plate + 2 mm desk protection. Flat pad seats, rear weld lands.
  outline=box(-70,-59,2,140,134,15).fuse(cyl(0,75,2,76,15).intersect(box(-70,75,2,140,80,15)))
@@ -123,7 +124,7 @@ def make(desk=30):
  # J2 plug/latch reserve is kept, not silently removed to pass intersection tests.
  flange=flange.cut(box(-17,28,46,34,55,2))
  f=add('B06-104-LOAD-FLANGE',flange,'6061-T651','CNC turn/mill + drill/tap; clear anodize, mask datums',
-       ['OD160/ID56 x12; upper mating datum Z58 flatness0.1; 8xM6 PCD120 phase22.5deg','Bottom open cable pocket X±17/Y28..83/Z46..48; breaks into central bore','No motor interface added: this mates to the frozen A11 root-foot pattern'])
+       ['OD160/ID56 x12; upper mating datum Z58 flatness0.1; 8xM6 PCD120 phase22.5deg; interface-contract.json governs','Bottom open cable pocket X±17/Y28..83/Z46..48; breaks into central bore','No motor dependency: independent test adapter or arm module fits this same base interface'])
  for k in range(8):
   a=math.radians(22.5+45*k);hole(f,60*math.cos(a),75+60*math.sin(a),46,5,12,'M6x1-6H THRU; PCD120, 22.5deg + k45deg')
  for x,y in POSTS:
@@ -194,7 +195,7 @@ def make(desk=30):
   p['features'].append({'entry_mm':[x,-19,35],'axis':[0,1,0],'model_diameter_mm':9.8,'depth_mm':3,'callout':'AF9.8 rear HEX pocket depth3, six R1.05 corner reliefs; flange seat Y-16; source nominal AF9.5'})
  add('B06-307-LOWER-CARRIER',make_carrier(),'PETG','FDM print; exported exact CAD geometry',
      ['Printed PCB/cover locating scaffold only; no arm or clamp load','Board bottom Z24; side-insert nuts Z19.2..21.6; rear screw axis Z32','Retain 1mm nut-pocket floor and >=2.2mm roof; verify print fit coupon'],category='printed')
- make_hardware()
+ make_hardware(mating_hardware)
  add('REF-DESK',box(-400,-45,-desk,800,700,desk),'none','Environment only',category='environment')
  add('REF-BOX',box(-90,120,-152,180,150,50),'none','Confirmed clearance budget only',category='environment')
  return PARTS
@@ -212,7 +213,11 @@ def build():
   cq.exporters.export(s,str(OUT/'stl'/(p['id']+'.stl')),tolerance=.05,angularTolerance=.1)
   item['step']='step/'+p['id']+'.step';item['stl']='stl/'+p['id']+'.stl';manifest.append(item);ass.add(s,name=p['id'])
  ass.export(str(OUT/'B06-load-frame.step'))
- report={'revision':'B06-LOAD-01','datum':'Z0 desk, axis XY(0,75), +Y toward desk interior','desk_thickness_mm':[15,60],'desk_model_mm':30,'posts_mm':POSTS,'parts':manifest,'release':'Candidate; integrated clearance, drawings, load and physical fit checks pending'}
+ active={p['id'] for p in parts}
+ for folder,extension in [('step','*.step'),('stl','*.stl')]:
+  for path in (OUT/folder).glob(extension):
+   if path.stem not in active:path.unlink()
+ report={'revision':'B06-LOAD-02-STANDALONE','arm_required':False,'datum':'Z0 desk, axis XY(0,75), +Y toward desk interior','desk_thickness_mm':[15,60],'desk_model_mm':30,'posts_mm':POSTS,'parts':manifest,'release':'Candidate; drawings, loads and physical fit qualification pending'}
  (OUT/'manifest.json').write_text(json.dumps(report,indent=2)+'\n')
  print('LOAD_FRAME_BUILT',len(parts),flush=True)
 if __name__=='__main__':build()

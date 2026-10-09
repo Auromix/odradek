@@ -21,12 +21,13 @@ for p in parts:
  if p['id'].startswith('B06-105-POST-') and not p['id'].endswith('-1'):continue
  if p['id'].endswith('--1') and ('SPREADER' in p['id'] or 'PRESS-PAD' in p['id']):continue
  selected.append(p)
+REV='B06-LOAD-02-STANDALONE'
 W,H=landscape(A3);c=canvas.Canvas(str(OUT/'B06-load-frame-review.pdf'),pagesize=(W,H))
 c.setTitle('B06 load frame - coordinated engineering review')
 def text(x,y,s,size=9):c.setFont('Helvetica',size);c.drawString(x*mm,y*mm,s)
 def border(title,page):
  c.setStrokeColorRGB(.2,.25,.3);c.setLineWidth(.5);c.rect(10*mm,10*mm,W-20*mm,H-20*mm)
- text(16,280,'AUROMIX / ODRADEK  |  B06-LOAD-01',13);text(16,270,title,12)
+ text(16,280,'AUROMIX / ODRADEK  |  '+REV,13);text(16,270,title,12)
  text(16,16,'REVIEW CANDIDATE - NOT COMPLETE BASE MANUFACTURING RELEASE',10)
  text(16,11,'Units mm. Do not scale drawing. Exact STEP profile governs. '+f'Sheet {page}/{len(selected)+1}',8)
 def view(p,xyz,box,label):
@@ -78,7 +79,7 @@ notes=[
  'Shelf mounts: 4x M6x20 + washers; tray:4x M4x10 in D8.4x3 counterbores, no washer; stops:4x M4x20. Standard-hardware static audit passes; physical seats/tools still require samples.',
  'No printed cosmetic part transmits motor load or clamp preload. Never replace steel threaded jaw with printed polymer.',
  'Desk thickness budget15..60; controller box budget180x150x50,3kg; box removes toward desk interior (+Y).',
- 'Root M6 screws and washer/seat stack must be coordinated with frozen root-foot before full assembly release; nominal 8mm foot+1.6 washer gives10.4mm engagement with M6x20.',
+ 'Base flange follows interface-contract.json independently of any arm; T01 test plate8mm + washer1.6mm gives10.4mm engagement with M6x20.',
  'Native IO PCB Gerber/IPC356 exists separately; passive board is not an EtherCAT master/ESC or GMSL decoder.',
  'Remaining gates: full bolts/tools/weld clearance; material/load screening; LED PCB/power; cable bend/strain relief; slicing.',
  'After coordinated files pass: unpowered prototype build and inspection, then restrained desk/thermal/electrical tests.',

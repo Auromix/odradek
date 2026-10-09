@@ -1,6 +1,6 @@
 # Odradek
 
-Current base candidate: [B06-COMPACT-05-LIGHT](engineering/base_b06/README.md), retaining the approved one-piece nose, wings and neck, with the native PWM lamp board and five reference-sliced print parts. [Shared base authority](docs/engineering/base-authority.md) applies to all arm-body work in Auromix/odradek; B04/B05 are historical references.
+Current base candidate: [B06-COMPACT-06-STANDALONE](engineering/base_b06/README.md), retaining the approved one-piece nose, wings and neck. Its build no longer requires arm assets; a separate metal test fixture and 20-test plan cover independent base qualification. [Shared base authority](docs/engineering/base-authority.md) applies to all arm-body work in Auromix/odradek; B04/B05 are historical references. Physical production qualification remains blocked.
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 

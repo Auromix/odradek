@@ -1,18 +1,21 @@
 <!-- SPDX-License-Identifier: CC-BY-NC-4.0 -->
-# B06 当前底座：COMPACT-05-LIGHT 工程集成候选
+# B06 当前底座：COMPACT-06-STANDALONE 独立验证候选
 
 这是 Auromix/odradek 唯一当前底座源。外观、装配与接口板继续在同一仓库收敛，B04/B05保留为历史。**当前尚不是完整底座的制造放行包**；缺口见下方，不用几何检查替代载荷、真实插头或电气测试。
+
+默认建模与验证不读取机械臂文件，机械臂仅为可选集成参考。[接口定义](interface-contract.json)固定法兰/供电/通讯边界；[独立验证方案](standalone-validation.md)、[20项验证计划](validation-plan.json)和[生产资格状态](build/qualification/qualification-status.json)覆盖不装臂时的完整底座检查。当前实物记录全部未测，生产状态BLOCKED。
 
 主罩维持约239×224×71 mm，前鼻、双翼与颈台一体；五件打印件适配256×256×256 mm打印空间，床边检查余量每侧5 mm。颈口Ø136，轴心XY(0,75)，Z0桌面，+Y朝桌内。主视觉面不新增固定孔。为承力底板增加后部下沿退出口，后盖保留四个独立接口窗。
 
 ## 当前文件
 
 - [Blender 总装](build/exterior/ODR-BASE-B06-COMPACT.blend)、[离线3D查看器](build/exterior/index.html)。本地预览通过HTTP打开。
+- [独立试验工装3D](build/standalone-test/index.html)、[工装STEP总装](build/standalone-test/B06-standalone-fixture.step)、[工装加工评审图](build/standalone-test/drawings/B06-standalone-fixture-review.pdf)。这套工装不属于产品五件打印件，装置本身仍须校验后才能加载。
 - [五件打印STL包](build/exterior/B06-print-fit.zip)、[打印件目录](build/exterior/print-parts/)。这个ZIP只包含打印件及当前几何报告，不含完整制造BOM。
 - [机械BOM](build/B06-mechanical-bom.csv)与[装配顺序](assembly.md)：37行备料规划，含灯板及其隐藏紧固件，尚缺最终线束、光学垫片与外置盒电气项。
 - [原生PWM灯板](../electronics/base-light-b06/README.md)、[灯板制造审计](../electronics/base-light-b06/reports/manufacturing-audit.json)、[灯板安装检查](build/exterior/light-fit-checks.json)。
 - [实际切片评审](build/exterior/slice-review-checks.json)、[五件参考3MF](build/exterior/slice-review/)；参考P1S配置，实际打印机必须重新切片。
-- [精确结构STEP总装](build/load-frame/B06-load-frame.step)、[分件STEP](build/load-frame/step/)、[结构清单](build/load-frame/manifest.json)。74个有效单实体，包含环境和采购件包络；螺纹用底孔加明确加工注释表示。
+- [精确结构STEP总装](build/load-frame/B06-load-frame.step)、[分件STEP](build/load-frame/step/)、[结构清单](build/load-frame/manifest.json)。58个有效单实体，包含环境和采购件包络；机械臂安装螺钉不再计入底座本体。螺纹用底孔加明确加工注释表示。
 - [加工评审图PDF](build/load-frame/drawings/B06-load-frame-review.pdf)：从实际BREP生成的投影、包络、孔位表及加工注释，尚未作为全套制造图放行。
 - [原生嘉立创接口板](../electronics/base-io-b05/README.md)：布线、叠层修正、原生复开DRC0及真实Gerber/IPC356导出已完成。原生目录沿用B05命名，不代表采用旧底座。
 
@@ -22,7 +25,7 @@
 
 螺杆从下方用AF6内六角扳手转动。采购Ganter DIN6332-M12-100-SK与DIN6311-25-S；压脚Ø25平面朝上，经70×90×8金属分压板及2 mm保护垫接触桌底。模型只表达供应商尺寸包络，球面座、卡环与真实工具操作仍需样件核对。禁止将螺杆、压脚或承力件作为塑料STL打印替代。
 
-法兰Ø160/ID56×12、上安装面Z58、PCD120八M6与冻结A11根座配合。四柱Ø18×29，顶底M8螺钉分别16/20 mm，名义有效咬合12.5/13.5 mm、两端尖端间隔3 mm。八颗根座M6×20配1.6厚垫圈，名义咬合10.4 mm；安装顺序见装配文件。几何配合不等于承载证明。
+法兰Ø160/ID56×12、上安装面Z58、PCD120八M6由独立接口定义固定，可连接测试适配盘或机械臂模块。四柱Ø18×29，顶底M8螺钉分别16/20 mm，名义有效咬合12.5/13.5 mm、两端尖端间隔3 mm。测试适配盘OD134可从颈口上方插入，八颗M6×20配1.6厚垫圈，名义咬合10.4 mm。机械臂OD140根座的下方装入顺序另列可选集成步骤。几何配合不等于承载证明。
 
 接口板保持116×56×1.6 mm，额外相对冻结I/O快照位移(0,-10,+4)。板底Z24；四个安装点(X±52,Y−20/24)。原生EDA屏幕局部u/v(mm)转换为全局`(X,Y,Z)=(58-u,30-v,24)`。不缩放封装、焊盘和板框。PCB固定为M3×10，上垫面Z25.6，尖端Z15.6；内藏螺母Z19.2..21.6。金属底板对应Ø3.6孔避让螺钉末端。
 
@@ -35,11 +38,12 @@
 ## 当前验证与限制
 
 - 五件STL：闭合、法向一致、单一面连通体、无退化/重复三角面，均通过256³包络检查。未修补失败STL；源几何重建后重新独立检查。
-- 322组打印件之间、打印件与结构/I/O/灯板实体及GH插合预留交集：无超过0.01 mm³的穿透；该阈值只用于数值判断，不是加工公差。
-- Blender复开：八个根孔各16条Ø13工具边缘射线共128条，无阻挡；另以八个Ø13工具实体核对裸根座阶段；其余22条直线工具体积含两颗灯板M2按装配阶段核对通过，仍未验证手柄转动或实物操作。
+- 305组打印件之间、打印件与结构/I/O/灯板实体及GH插合预留交集：无超过0.01 mm³的穿透；该阈值只用于数值判断，不是加工公差。
+- Blender复开：不含外部链接库或未打包图片依赖；八个法兰孔共128条Ø13工具边缘射线无阻挡；八个工具实体及另外22条分阶段直线工具路径通过。机械臂参考未参与本次检查。
+- 独立工装26个有效BREP分件；与金属底座无非预期交叠，与打印/电子件17组相交候选检查通过；12条M6/M8直线工具路径通过。工装尚无实物载荷资格。
 - 13个后盖退出位置采样及四个原生EDA安装坐标通过；需要先拔插头、拆后盖螺钉。不是连续扫掠或靠墙原位拆卸证明。
 - 15/30/60 mm桌厚的精确结构BREP静态检查通过。M12牙的底孔/大径包络重叠明确列为有意螺纹配合，不隐去其他干涉。
-- 当前结构与采购件包络计算质量约7.55 kg，含桌夹/盒架/底架，含本轮新增的承力/盒架/同轴支架标准紧固件，不含臂身和控制盒；需减重与载荷计算后再冻结。简支梁筛查只是保守假设，不是额定载荷或有限元结论。
+- 当前结构与采购件包络计算质量约7.5 kg，含桌夹/盒架/底架和标准紧固件，不含臂身、工装和控制盒；需减重与载荷计算后再冻结。简支梁筛查只是保守假设，不是额定载荷或有限元结论。
 - IO板原生DRC0、Gerber ZIP CRC/铜层/钻孔复核通过；差分线长接近不等于整个通道已证明100Ω或EtherCAT合格。
 
 ## 完整底座打样放行仍须完成
@@ -52,6 +56,6 @@
 
 ## 复现
 
-先用含CadQuery的Python执行`load_frame.py`与`check_load_frame.py`；再用Blender运行`blender_compact.py -- --no-render`。用科学Python运行B05的`print_checks.py`指定256³和5 mm余量，再运行本目录`check_solids.py`、`check_service.py`。Blender复开.blend执行`check_fit.py`和`render.py`，最后`package.py`与`viewer.py --build-dir build/exterior`。加工评审图由`draw_load_frame.py`生成。每次改变几何，所有受影响报告和打包指纹必须重新生成。
+用含CadQuery、trimesh、manifold3d、numpy、scipy、shapely、reportlab及svglib的Python运行`verify_base.py --blender /绝对路径/Blender`；添加`--render`生成评审图片。重建默认拒绝读取臂身文件并记录输入哈希。现有切片需与实际STL的顶点及三角面匹配，不匹配即停止。机械臂参考通过`blender_compact.py -- --with-arm-root --no-render`输出到单独`build/arm-integration/`；它不是第二份底座源。修改后重新生成受影响报告及指纹，实物记录版本失配后不可沿用。
 
 CC-BY-NC-4.0；Odradek / Auromix contributors。

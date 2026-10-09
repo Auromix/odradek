@@ -36,8 +36,13 @@ for k in range(8):
         blocked+=h is not None
     tools.append(dict(hole=k+1,sample_rays=16,blocked=blocked,tool_diameter_mm=13,
                       scope='Vertical envelope rays Z70..190; original root geometry itself not checked'))
+external_libraries=[l.filepath for l in bpy.data.libraries]
+external_images=[i.filepath for i in bpy.data.images if i.source=='FILE' and i.filepath and not i.packed_file]
+if not D.get('arm_reference_included'):
+    assert not external_libraries and not external_images, 'Standalone blend has external asset dependencies'
 report=dict(revision=D['revision'],manifest_sha256=hashlib.sha256((OUT/'manifest.json').read_bytes()).hexdigest(),
-            scope='Reference pose surface contacts and sampled tool rays; solid-fit-checks.json governs penetration',
+            arm_reference_included=D.get('arm_reference_included',False),external_libraries=external_libraries,external_images=external_images,
+            scope='Current base surface contacts and flange tool rays; arm references only if explicitly included; solid-fit-checks.json governs penetration',
             pairs=pairs,root_tool_rays=tools,
             surface_pairs_present=[p for p in pairs if p['triangle_pairs']],
             limits=['BVH contacts alone cannot distinguish touching from volume interference.',

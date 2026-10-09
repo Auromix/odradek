@@ -153,18 +153,22 @@ def light_context():
         add(n,'DIN934 M2内藏螺母','fasteners','nut',['AF4 x1.6; internal forward insertion; thread omitted'],False,'fasteners')
 
 def native_context():
-    root=json.loads((HERE/'inputs/root-snapshot.json').read_text())
-    for p in root['parts']:
-        vertices=[(-v[1],75+v[0],34.6+v[2]) for v in p['vertices_mm']]
-        o=mesh_object('REF-'+p['id'],vertices,p['triangles'],'03_Exterior_mount_carriers')
-        add(o,'本体参考 '+p['id'],'structure','armor' if p['id'].startswith('S') else 'support',
-            ['Frozen A11 project mesh; yaw90; translation(0,75,34.6); source '+root['source_sha256']],False,'structure')
-    motor=cylinder('REF-J1-RS03',0,75,53,107.6,164.6)
-    add(motor,'J1 RS03 Ø106×57包络','structure','collar',
-        ['Motor dimensional envelope only; fixed M4 PC98 interface remains in original top-ring mesh'],False,'structure')
+    # Base build must not read any arm asset. Arm integration is opt-in and
+    # writes a separate output directory, never replacing the base deliverable.
+    if WITH_ARM_ROOT:
+        root=json.loads((HERE/'inputs/root-snapshot.json').read_text())
+        for p in root['parts']:
+            vertices=[(-v[1],75+v[0],34.6+v[2]) for v in p['vertices_mm']]
+            o=mesh_object('REF-'+p['id'],vertices,p['triangles'],'03_Exterior_mount_carriers')
+            add(o,'本体参考 '+p['id'],'structure','armor' if p['id'].startswith('S') else 'support',
+                ['Frozen A11 project mesh; yaw90; translation(0,75,34.6); source '+root['source_sha256']],False,'structure')
+        motor=cylinder('REF-J1-RS03',0,75,53,107.6,164.6)
+        add(motor,'J1 RS03 Ø106×57包络','structure','collar',
+            ['Optional motor dimensional reference; not an EtherCAT selection'],False,'structure')
     frame=HERE/'build/load-frame'
     for p in json.loads((frame/'manifest.json').read_text())['parts']:
         if p['category']=='printed':continue
+        if p['id'].startswith('HW-ROOT-') and not WITH_ARM_ROOT:continue
         data=(frame/p['stl']).read_bytes();vertices=[];faces=[];vertex_index={}
         count=struct.unpack_from('<I',data,80)[0]
         for k in range(count):
@@ -229,7 +233,7 @@ def main():
     add(cover,'前鼻＋双翼＋颈台一体外罩','cover','armor',
         ['3mm nominal wall; four concealed underside M3 captive-nut fixings',
          'Integral ID136 neck, Z74 top; lower swept four-petal shoulders with continuous chine; no cosmetic top screw holes',
-         'A11 root snapshot required; old A10 waist is not compatible without redesign'])
+         'Base-independent mounting interface in interface-contract.json; arm reference optional'])
     add(lens,'琥珀透光灯窗','cover','lens',['Curved optical blank above three native amber LEDs; translucent print needs optical sample'])
     add(retainer,'灯窗／灯板内藏压条','cover_support','support',['Two M2x8 into captive DIN934 M2 nuts; PCB50x14 seated Z44.073..45.673; two pins through D3.2 NPTH, minimum0.4mm below lens; compliant shims need physical trial'])
     lid=copy_mesh(master,'B06-304-REAR-LID')
@@ -277,11 +281,16 @@ def main():
     camera,target=render_setup();SCENE.cycles.samples=20
     SCENE.render.resolution_x=1440;SCENE.render.resolution_y=1080
     point_camera(camera,(.30,.43,.29),target,.32)
-    manifest=dict(revision='B06-COMPACT-05-LIGHT',length_unit='mm',module='compact_integration_candidate',
+    manifest=dict(revision='B06-COMPACT-06-STANDALONE'+('-ARM-REF' if WITH_ARM_ROOT else ''),length_unit='mm',module='arm_integration_reference' if WITH_ARM_ROOT else 'standalone_base',
+        arm_reference_included=WITH_ARM_ROOT,
+        interface_contract_sha256=__import__('hashlib').sha256((HERE/'interface-contract.json').read_bytes()).hexdigest(),
         scope=PARAMETERS['prototype_scope'],parameters=PARAMETERS,parts=DESCRIPTORS,
-        review_status='紧凑一体底座 · 无动力试装候选',not_verified=['load chassis and clamp','dynamic collisions','physical fit','PCB signal integrity','thermal','slicing/supports'])
+        review_status='独立底座 · 生产验证准备中',not_verified=['physical load/clamp tests','physical assembly/tolerances','actual connector mating/service','PCB signal integrity/current/thermal','production qualification'])
     for name in ('exterior-manifest.json','manifest.json'):(OUT/name).write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     (OUT/'render-meshes.json').write_text(json.dumps(PAYLOAD,separators=(',',':')))
+    active={p['id'] for p in DESCRIPTORS}
+    for path in (OUT/'stl').glob('*.stl'):
+        if path.stem not in active:path.unlink()
     bpy.data.texts.new('B06 compact parameters.json').write(json.dumps(PARAMETERS,ensure_ascii=False,indent=2))
     bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ODR-BASE-B06-COMPACT.blend'))
     if '--no-render' not in sys.argv:

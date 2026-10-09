@@ -1,0 +1,348 @@
+{
+  "schema": "odradek.base.qualification.v1",
+  "qualification_complete": false,
+  "production_released": false,
+  "status": "BLOCKED",
+  "arm_required": false,
+  "definition_issues": [
+    "Missing base serial number",
+    "DEF-WELD: Approved WPS, post-weld datum/thread inspection and weld quality record for B06-W01",
+    "DEF-CONNECTORS: Actual Phoenix mate/RJ45 latch/SMA/ground lug/cable samples; fit, release, bend and strain-relief geometry checked",
+    "DEF-HARNESS: Final power/ground/RJ45/dual coax/5V-PWM harness lengths, routing, clamps and crimp inspection; rear auxiliary route pending",
+    "DEF-RATINGS: Continuous/peak48V current, PoC and GMSL mode fixed and protection/fuse coordination reviewed; connector current is not PCB current rating",
+    "DEF-PRINT-OPTICS: Actual PETG/transparent material/process, shrink compensation, captive nuts, lamp shim and optical recipe",
+    "DEF-FIXTURE: Loading apparatus inspected and calibrated, rated load-pin/clevis/lifting accessory, restraint and stiffness known",
+    "DEF-RELEASE: Complete drawings/BOM/harness/native PCB version frozen, first-article and repeat-build review approved"
+  ],
+  "tests": [
+    {
+      "id": "M01",
+      "module": "frame",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric max_hole_position_error_mm",
+        "Missing/failing metric flange_flatness_mm",
+        "Missing/failing metric deck_flatness_mm",
+        "Missing/failing metric thread_gauge_failures",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "M02",
+      "module": "shell",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric completed_cycles",
+        "Missing/failing metric interference_or_crack_events",
+        "Missing/failing metric nut_spin_events",
+        "Missing/failing metric visible_sharp_edge_defects",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "M03",
+      "module": "interfaces",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric cycles_per_port",
+        "Missing/failing metric latch_or_release_failures",
+        "Missing/failing metric bent_contacts_or_solder_damage",
+        "Missing/failing metric wire_scuff_events",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "M04",
+      "module": "clamp",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric tested_thicknesses",
+        "Missing/failing metric surface_crack_or_crush_events",
+        "Missing/failing metric pad_displacement_events",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "M05",
+      "module": "clamp",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric tested_thicknesses",
+        "Missing/failing metric max_bending_Nm",
+        "Missing/failing metric slip_mm",
+        "Missing/failing metric residual_flange_displacement_mm",
+        "Missing/failing metric crack_or_loose_fastener_events",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "M06",
+      "module": "frame",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric axial_down_N",
+        "Missing/failing metric horizontal_N",
+        "Missing/failing metric residual_flange_displacement_mm",
+        "Missing/failing metric damage_events",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "M07",
+      "module": "frame",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric positive_torque_Nm",
+        "Missing/failing metric negative_torque_abs_Nm",
+        "Missing/failing metric residual_rotation_deg",
+        "Missing/failing metric slip_or_loosen_events",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "M08",
+      "module": "shelf",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric dummy_mass_kg",
+        "Missing/failing metric hold_h",
+        "Missing/failing metric max_loaded_deflection_mm",
+        "Missing/failing metric residual_deflection_mm",
+        "Missing/failing metric retention_or_extraction_failures",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "E01",
+      "module": "interfaces",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric mapping_errors",
+        "Missing/failing metric unintended_shorts",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "E02",
+      "module": "interfaces",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric max_bond_resistance_ohm",
+        "Missing/failing metric unbonded_required_members",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "E03",
+      "module": "power",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric fraction_of_required_current",
+        "Missing/failing metric max_temperature_rise_C",
+        "Missing/failing metric max_component_temperature_C",
+        "Missing/failing metric voltage_drop_V",
+        "Missing/failing metric fault_or_discolouration_events",
+        "Undefined configuration continuous_current_A",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "E04",
+      "module": "power",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric completed_peak_cycles",
+        "Missing/failing metric out_of_reviewed_limits_events",
+        "Missing/failing metric damage_events",
+        "Undefined configuration peak_current_A",
+        "Undefined configuration peak_duration_s",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "L01",
+      "module": "lamp",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric max_total_current_mA",
+        "Missing/failing metric off_current_mA",
+        "Missing/failing metric brightness_monotonic",
+        "Missing/failing metric power_on_flash_events",
+        "Missing/failing metric max_temperature_rise_C",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "L02",
+      "module": "lamp",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric duration_h",
+        "Missing/failing metric missed_or_stuck_sequences",
+        "Missing/failing metric optical_or_mount_damage_events",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "C01",
+      "module": "ethercat",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric duration_h",
+        "Missing/failing metric added_crc_errors",
+        "Missing/failing metric link_drops",
+        "Missing/failing metric wc_mismatch_events",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "C02",
+      "module": "coax",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric channels_tested",
+        "Missing/failing metric channel_mask_fail_points",
+        "Missing/failing metric assembly_to_bypass_loss_increase_dB",
+        "Undefined configuration GMSL_mode_Gbps",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "C03",
+      "module": "coax",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric duration_h",
+        "Missing/failing metric channels_tested",
+        "Missing/failing metric added_crc_or_frame_errors",
+        "Missing/failing metric link_drops",
+        "Undefined configuration GMSL_mode_Gbps",
+        "Undefined configuration PoC_V",
+        "Undefined configuration PoC_A",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "Q01",
+      "module": "combined",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric duration_h",
+        "Missing/failing metric functional_error_events",
+        "Missing/failing metric thermal_limit_events",
+        "Undefined configuration continuous_current_A",
+        "Undefined configuration GMSL_mode_Gbps",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "Q02",
+      "module": "durability",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric completed_cycles",
+        "Missing/failing metric crack_or_loose_events",
+        "Missing/failing metric post_endurance_static_retest_pass",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    },
+    {
+      "id": "Q03",
+      "module": "production",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric independent_serials",
+        "Missing/failing metric critical_rework_events",
+        "Missing/failing metric end_of_line_failures",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
+    }
+  ],
+  "limits": [
+    "Evidence/file consistency and numeric criteria only; no proof of record authenticity or independent certification",
+    "Even all PASS requires accountable release review; this script does not authorize manufacture or operation"
+  ],
+  "configuration_fingerprint": "6552ea5b02c5a63e8e8a6e11d2e3691dddbcbc0bfb4e27a4bd4c581f941a6e41",
+  "record_sha256": "3c9f1ea767e76c30ca1b99fd026803a658a5e12b815699080194652b0d01ba74",
+  "validation_plan_sha256": "5ee5621368b914d0866ee29b90bcf45e44090d770e24f7db7da92c36671a956b"
+}
