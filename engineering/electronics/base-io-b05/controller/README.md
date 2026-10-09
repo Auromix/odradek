@@ -6,7 +6,7 @@
 
 新器件及原理图/PCB 引脚契约以 [specification.json](specification.json) 为准。C5/C6 为有极性的钽电容，1脚正；U2 的 SWCLK 为封装19脚，20脚不用。模型中的最大包络采用 [package-envelopes.json](../local5v/package-envelopes.json)，不替代厂商插头模型。
 
-原理图检查另有201项警告尚未闭环，见 `schematic-review.json`；PCB严格网络/间距检查为0不能替代原理图清洁审查。EDA元件总装STEP约16.7MB，MCP返回超限且系统下载保存按钮不可用；本包只包含真正单次导出的 `BoardOnly.step` 板体，完整电子元件包络在Blender中独立检查，不声称是厂商元件精确STEP总装。
+原理图保存重开后的检查为0错误、0警告，见 `schematic-review.json`；全部32个器件的引脚网络与PCB逐项一致，见 `check_schematic.py`。这些数字检查不能替代实物电气测试。EDA元件总装STEP约16.7MB，MCP返回超限且系统下载保存按钮不可用；本包只包含真正单次导出的 `BoardOnly.step` 板体，完整电子元件包络在Blender中独立检查，不声称是厂商元件精确STEP总装。
 
 | 接口 | 端子定义 | 连接方式 |
 |---|---|---|

@@ -22,10 +22,11 @@ io=ROOT/'engineering/electronics/base-io-b05';lamp=ROOT/'engineering/electronics
 for folder in (io/'base-io-b05',io/'manufacturing/b06-io-control01',io/'local5v',io/'controller',lamp/'manufacturing'):
     files += [p for p in folder.rglob('*') if p.is_file() and p.suffix not in ('.bak','.zipbak') and '.history' not in p.parts and '__pycache__' not in p.parts]
 files += [io/'reports/b06-routed-audit.json',lamp/'pin-nets.json',lamp/'README.md',io/'README.md']
-files += [io/'reports/b06-controller-native-audit.json',io/'reports/b06-controller-fit.json',io/'reports/control01-native-drc0.png']
+files += [io/'reports/b06-controller-native-audit.json',io/'reports/b06-controller-fit.json',io/'reports/control01-native-drc0.png',io/'reports/b06-schematic-audit.json']
 audit=json.loads((io/'reports/b06-controller-native-audit.json').read_text())
 fit=json.loads((io/'reports/b06-controller-fit.json').read_text())
 assert audit['candidate_data_consistent'] and fit['pass']
+assert json.loads((io/'reports/b06-schematic-audit.json').read_text())['pass']
 assert fit['hashes'][str((E/'manifest.json').relative_to(ROOT))]==sha(E/'manifest.json')
 files=sorted(set(files));assert all(p.is_file() for p in files)
 readme='''B06-COMPACT-07-DFM / CURRENT ENGINEERING REVIEW ASSETS
@@ -38,7 +39,8 @@ and STM32 PWM candidate implemented in IO board. No current/GMSL rating inferred
 CONTROL-01 native PCB DRC0 and current manufacturing files audited.
 Use manufacturing/b06-io-control01 ONLY; historical LOCAL5V files are excluded.
 Firmware/host digital tests are NOT physical board tests. First-article validation required.
-Schematic warnings remain open. EDA STEP is BoardOnly, not a full component-model assembly.
+Saved/reopened schematic DRC0; all schematic pins match the PCB.
+EDA STEP is BoardOnly, not a full component-model assembly.
 Offline 3D viewers embed meshes. Reference Orca 3MF includes P1S G-code:
 select the actual printer and reslice before use; never run reference G-code blindly.
 This asset packet is for review/fit preparation; editable generators live in the same repository.

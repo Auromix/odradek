@@ -17,6 +17,7 @@ def main():
     py=sys.executable
     # Fail before rebuilding the release bundle if current native PCB is invalid.
     run('current controller native DRC and source audit',[py,HERE.parent/'electronics/base-io-b05/controller/check_native.py'])
+    run('current schematic DRC and pin-net audit',[py,HERE.parent/'electronics/base-io-b05/controller/check_schematic.py'])
     for name in ('load_frame','check_load_frame','standalone_fixture'):
         run(name,[py,HERE/(name+'.py')])
     run('base-only Blender rebuild',[blender,'--background','--python-exit-code','1','--python',HERE/'blender_standalone_entry.py','--','--no-render'])

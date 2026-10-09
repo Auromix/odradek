@@ -21,7 +21,7 @@ BOM和坐标同时保留原生UTF16与UTF8转换副本；转换仅改变编码�
 
 灯板使用 `../electronics/base-light-b06/manufacturing/`：50×14 mm、2层、名义1.6 mm、12件；不能把48V接到灯板。先用独立限流5V源和PWM验证，再将它接到底座板J7内部5V/PWM/GND短线，不另接桌下5V线。
 
-`BoardOnly.step` 是单次嘉立创导出的真实PCB板体；不包含完整厂商元件模型。元件总装STEP的MCP返回超限、下载保存不可用，本次不提供拼接替代品。Blender中的保守元件/插合包络供空间核对，不能代替真实接插件的释放、弯曲半径和线束资格。原理图尚有201项警告待关闭，见 `controller/schematic-review.json`；整套首件设计审核不能以PCB DRC0替代。
+`BoardOnly.step` 是单次嘉立创导出的真实PCB板体；不包含完整厂商元件模型。元件总装STEP的MCP返回超限、下载保存不可用，本次不提供拼接替代品。Blender中的保守元件/插合包络供空间核对，不能代替真实接插件的释放、弯曲半径和线束资格。原理图与PCB保存重开检查均为0错误、0警告，见 `controller/schematic-review.json`；32个器件的全部引脚网络逐项一致。整套首件仍需真实接插件模型、工艺与电气测试审核。
 
 ## 上电顺序与记录
 

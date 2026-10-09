@@ -21,6 +21,8 @@ def inputs():
     paths += [io/'controller/native-readback.json', io/'controller/specification.json', io/'controller/schematic-review.json', io/'reports/b06-controller-fit.json', HERE/'first-sample.md']
     paths += [io/'controller/lamp_cli.py', io/'controller/check_native.py', io/'controller/README.md',
               io/'reports/b06-controller-native-audit.json']
+    paths += [io/'controller/check_schematic.py', io/'controller/schematic-netlist.enet',
+              io/'controller/schematic-netlist-before-cleanup.enet', io/'reports/b06-schematic-audit.json']
     paths += sorted((io/'controller/firmware').glob('*'))
     paths += sorted((io/'controller/firmware/vendor').glob('*'))
     return {str(p.relative_to(HERE.parent)):sha(p) for p in paths if p.is_file()}
