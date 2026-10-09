@@ -7,6 +7,14 @@ from shapely.ops import unary_union
 R=Path(__file__).resolve().parent
 r=json.loads((R/'reports/b06-data-reopened.json').read_text())['value']
 assert r['drc']==[]
+final=json.loads((R/'reports/b06-native-bom-final.json').read_text())
+assert final['ok'] and final['value']['drc']==[] and final['verification']['native_reopened']
+for key in ('lines','vias','pads'):assert final['value'][key]==r[key]
+for name,expected in final['source_sha256'].items():assert hashlib.sha256((R/name).read_bytes()).hexdigest()==expected, 'Stale native BOM/DRC readback: '+name
+bom=R/'manufacturing/b06-io-prototype/B06-IO-Native-BOM.csv'
+assert bom.read_text()==final['value']['bom_text']
+rows=bom.read_text().strip().splitlines()
+assert len(rows)==7 and all(row.split('\t')[3].startswith('J') and row.split('\t')[6] for row in rows[1:])
 assert len(r['vias'])==16 and len(r['lines'])==217 and len(r['pads'])==48
 old=json.loads((R/'reports/b06-power-reopened.json').read_text())['value']
 assert r['pads']==old['pads']
