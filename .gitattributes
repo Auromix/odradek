@@ -15,3 +15,5 @@ engineering/electronics/base-light-b06/manufacturing/*.csv -text whitespace=cr-a
 engineering/electronics/base-io-b05/controller/eco-review.tsv -text whitespace=-blank-at-eol,-blank-at-eof
 engineering/electronics/base-io-b05/manufacturing/b06-io-control01/*.ipc -text whitespace=-blank-at-eol,-blank-at-eof
 engineering/electronics/base-io-b05/manufacturing/b06-io-control01/*.csv -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+# Keep upstream CMSIS headers byte-identical to their recorded source hashes.
+engineering/electronics/base-io-b05/controller/firmware/vendor/*.h -text whitespace=-blank-at-eol,-blank-at-eof
