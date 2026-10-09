@@ -1,6 +1,8 @@
 # Odradek
 
-**2026-10-09 arm body / 本体更新：** 用户已选择[A12 A连续甲壳](docs/concepts/selected/arm-body-a12-manta-carapace/README.md)。当前为[A14五件CAD外罩集成](engineering/arm_a14/wrist-tail01/README.md)：四件修长连杆分壳＋缩短J6后罩，提供[七轴交互预览](docs/viewers/arm-body-a14-wrist-tail01/index.html)、STEP、增量试配 STL 和同版本Blender。65个离散配置通过报告所列新件干涉检查，预览网格与原生模型一致；全尺寸电机、长版轴距及同源B06底座保持。**[持续载荷复核](engineering/arm_a14/qualification01/README.md)未通过，整臂尚非生产发布。** 部分关节造型罩、金属骨架、连通线束、制造工艺与实物验证仍待完成；[下一版候选关节](engineering/arm_a14/candidate01/README.md)未冻结。历史腕罩、肩罩和整臂造型按各模块范围保留。
+**最新供应商决策（2026-10-09）：** 本体七个关节统一使用灵足RobStride，不采用脉塔MYACTUATOR。[A15-RS01](engineering/arm_a15/robstride01/README.md)保留长版与法兰中心3 kg目标，提供独立质量预算、空载/满载重力及理想肩部补偿筛查；RS02/RS10P原厂STEP已取得并按原尺度导入本机Blender检查场景。新版总装、真实补偿和生产资格尚未冻结。
+
+**2026-10-09 arm body / 本体更新：** 用户已选择[A12 A连续甲壳](docs/concepts/selected/arm-body-a12-manta-carapace/README.md)。当前为[A14五件CAD外罩集成](engineering/arm_a14/wrist-tail01/README.md)：四件修长连杆分壳＋缩短J6后罩，提供[七轴交互预览](docs/viewers/arm-body-a14-wrist-tail01/index.html)、STEP、增量试配 STL 和同版本Blender。65个离散配置通过报告所列新件干涉检查，预览网格与原生模型一致；全尺寸电机、长版轴距及同源B06底座保持。**[持续载荷复核](engineering/arm_a14/qualification01/README.md)未通过，整臂尚非生产发布。** 部分关节造型罩、金属骨架、连通线束、制造工艺与实物验证仍待完成；[下一版全灵足关节链](engineering/arm_a15/robstride01/README.md)正在复核，具体型号及补偿机构未冻结。历史腕罩、肩罩和整臂造型按各模块范围保留。
 
 [A11长版](engineering/arm_a11/README.md)与其[查看器](docs/viewers/arm-body-a11/index.html)、[验证记录](docs/engineering/arm-body-a11-validation.md)保留为历史结构基线；51个打印文件只适用于该版本受支撑试配，不移用于A12。裸法兰3 kg是目标，实物装配、温升、承力底盘和线束仍需验证。
 
