@@ -1,6 +1,6 @@
 # Odradek
 
-**2026-10-09 arm body / 本体更新：** 用户已选择[A12 A连续甲壳](docs/concepts/selected/arm-body-a12-manta-carapace/README.md)。当前推进到[腕部六件分体 CAD 外罩](engineering/arm_a12/wrist02/README.md)，提供[七轴交互预览](docs/viewers/arm-body-a12-wrist02/index.html)、STEP、试配 STL 与三向查看图，保留真实长版拓扑和全尺寸电机。内部承力结构仍为A11，腕部数字检查只按模块报告范围使用，尚未完成实物试配、整臂运动与线束验证。B06-COMPACT-03作为同源只读上下文，不代表新旧模块已完成整机适配。上一轮[整臂造型初稿](engineering/arm_a12/whole_style01/README.md)与[J2肩罩初稿](engineering/arm_a12/shoulder01/README.md)独立保留。
+**2026-10-09 arm body / 本体更新：** 用户已选择[A12 A连续甲壳](docs/concepts/selected/arm-body-a12-manta-carapace/README.md)。当前为[A14五件CAD外罩集成](engineering/arm_a14/wrist-tail01/README.md)：四件修长连杆分壳＋缩短J6后罩，提供[七轴交互预览](docs/viewers/arm-body-a14-wrist-tail01/index.html)、STEP、增量试配 STL 和同版本Blender。65个离散配置通过报告所列新件干涉检查，预览网格与原生模型一致；全尺寸电机、长版轴距及同源B06底座保持。**[持续载荷复核](engineering/arm_a14/qualification01/README.md)未通过，整臂尚非生产发布。** 部分关节造型罩、金属骨架、连通线束、制造工艺与实物验证仍待完成；[下一版候选关节](engineering/arm_a14/candidate01/README.md)未冻结。历史腕罩、肩罩和整臂造型按各模块范围保留。
 
 [A11长版](engineering/arm_a11/README.md)与其[查看器](docs/viewers/arm-body-a11/index.html)、[验证记录](docs/engineering/arm-body-a11-validation.md)保留为历史结构基线；51个打印文件只适用于该版本受支撑试配，不移用于A12。裸法兰3 kg是目标，实物装配、温升、承力底盘和线束仍需验证。
 
@@ -10,7 +10,7 @@
 
 **工具接口上一阶段（2026-10-09）：** [TOOL-IF02](engineering/arm_a13/tool-if02/README.md)将旧突出小仓改为端面Ø54凹腔、外圈Ø76定位和可拆背部检修盖。保留RS00与原J7核心，两路GMSL采用原厂具体HFM壳体尺寸作空间检查，供电/控制使用可换嵌件预算；工具侧试验杯用于验证后腔，不是最终四瓣头。工具平面前移44.3 mm，整臂TCP/负载与动态线束须后续重算。本轮是受支撑、无载、不通电的局部塑料试配；[TOOL-IF01](engineering/arm_a13/tool-if01/README.md)作为历史方案保留。
 
-**当前整腕集成（2026-10-09）：** [WRIST-ROUTE01](engineering/arm_a13/wrist-route01/README.md)将J7核心和凹腔接口装回长版整臂，并用108支架替换105，修正J6中间角度的固定螺钉头干涉。73个离散整腕姿态通过所列模块检查；工具基准更新为J7局部X110。[新版交互预览](docs/viewers/arm-body-a13-wrist-route01/index.html)、Blender与14件局部打印包同时提供。动态GMSL线束仍未通过，直连侧边路线被否定；整臂制造与3 kg均未放行。旧105及历史TOOL-IF02包不再作为当前打印来源。
+**整腕核心上一阶段（2026-10-09）：** [WRIST-ROUTE01](engineering/arm_a13/wrist-route01/README.md)将J7核心和凹腔接口装回长版整臂，并用108支架替换105，修正J6中间角度的固定螺钉头干涉。73个离散整腕姿态通过所列模块检查；工具基准更新为J7局部X110。[该阶段交互预览](docs/viewers/arm-body-a13-wrist-route01/index.html)、Blender与14件局部打印包保留核心试配范围；J6后罩B以后续A14替换件为准。动态GMSL线束仍未通过，直连侧边路线被否定；整臂制造与3 kg均未放行。旧105及历史TOOL-IF02包不再作为当前打印来源。
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
