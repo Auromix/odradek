@@ -4,6 +4,8 @@
 
 [A11长版](engineering/arm_a11/README.md)与其[查看器](docs/viewers/arm-body-a11/index.html)、[验证记录](docs/engineering/arm-body-a11-validation.md)保留为历史结构基线；51个打印文件只适用于该版本受支撑试配，不移用于A12。裸法兰3 kg是目标，实物装配、温升、承力底盘和线束仍需验证。
 
+**制造目标补充（2026-10-09）：** 用户要求整臂可制造且造型优雅。新增[A13制造重构前置审查](engineering/arm_a13/README.md)：当前A12按现有账本/外罩体积估算约9.11 kg，3 kg中心法兰负载水平伸展时J2静态需求约38.95 N·m。需要收敛外罩质量、承力结构、关节包装与热条件；审查不构成新模型或制造放行。
+
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
 [中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Comparison](docs/concept-comparison.md) · [Nickname candidates](docs/nickname-candidates.md) · [Roadmap](docs/roadmap.md)
