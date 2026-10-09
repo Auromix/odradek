@@ -64,8 +64,9 @@ def main():
         for edge in shape.Edges():
             count=2 if edge.geomType()=='LINE' else 40
             samples.append(np.array([edge.positionAt(float(t)).toTuple() for t in np.linspace(0,1,count)]))
+        bb=shape.BoundingBox();minimum=np.array([bb.xmin,bb.ymin,bb.zmin]);maximum=np.array([bb.xmax,bb.ymax,bb.zmax])
         for k,(label,axes) in enumerate([('XY',(0,1)),('XZ',(0,2)),('YZ',(1,2))]):
-            lo=np.min(np.concatenate(samples)[:,axes],axis=0);hi=np.max(np.concatenate(samples)[:,axes],axis=0);span=hi-lo;scale=min(113/max(span[0],1),135/max(span[1],1),1.1)
+            lo=minimum[list(axes)];hi=maximum[list(axes)];span=hi-lo;scale=min(113/max(span[0],1),135/max(span[1],1),1.1)
             origin=np.array([18+131*k,108]);txt(origin[0],249,label+' all edges, hidden included',8)
             for points in samples:
                 q=(points[:,axes]-lo)*scale+origin

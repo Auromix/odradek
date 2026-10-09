@@ -1,0 +1,1542 @@
+{
+  "revision": "A16-ROOT-COVER03-FOUR-M3",
+  "layout": {
+    "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          94.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -15,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "source_sha256": {
+    "engineering/arm_a16/build/root01/manifest.json": "03407990554696d00cea63bb83b54b0ca42166c79e8da587b843642ac76c9fca",
+    "engineering/arm_a16/build/root01/step/A16-R101-base-adapter.step": "55756b0e5229b30a81daa8d13c3cfab6d4c4c5d63874ef3b0b123c052104cdae",
+    "engineering/arm_a16/build/root01/step/A16-R102-J1-front-holder.step": "548c8be7233c2759301e5ba529ad7262427e680024a238031a10fdcf61890a05",
+    "engineering/arm_a16/build/root01/step/A16-R103-J1-output-pedestal.step": "094bb4641d5956545241361e55f84fa74694b7d9a8b077dd74b77f7e17daf29e",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-1.step": "96b3881a86998ac3f49d394e0922e22a0a8580971a486ca7bb48a6d23123bc10",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-2.step": "a952703f05a73d2bce6f41da8318a5885b333e510f625b77b6d3f3ea6334b40b",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-3.step": "3707d84df517b4f386aa5cc5a1fcb890d29070e1dfa81b726ba17a95d58d0146",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-4.step": "ae6f45510686e21f5ede29906cda8645dea1d0dcbfb9a303d388dce879f7914c",
+    "engineering/arm_a16/build/skeleton01/manifest.json": "8c5cd7ccfc472f944d13d629507950ffab2a69f916c4f1362402e85dc4b6d42e",
+    "engineering/arm_a16/build/skeleton01/step/A16-S101-root-to-shoulder-L.step": "e3b9f640062d19bb932fc40df6689f6bbc9005ec5e7f9910d6212662d727a25c",
+    "engineering/arm_a16/build/skeleton01/step/A16-S102-shoulder-cross-adapter.step": "44416d1d4440fb925a486cb04333563e0fae79f9a2220c1fd31926a7d14bf7dd",
+    "engineering/arm_a16/build/skeleton01/step/A16-S103-upper-proximal-socket.step": "cea16da70ff1cd11f5655e13ccb67dc1fd141ef2f6576ff5ec5aa0dbb0037d76",
+    "engineering/arm_a16/build/skeleton01/step/A16-S104-upper-distal-socket.step": "414d9f8cce586bb1a89d708a37e0621aac8d29419be084c00182b62356cc6772",
+    "engineering/arm_a16/build/skeleton01/step/A16-S105-upper-stock-tube.step": "a66010652900c36fc0b93ceeba8311ee85e89a56cc23b3eac554b824b085701f",
+    "engineering/arm_a16/build/skeleton01/step/A16-S106-fore-proximal-socket.step": "b4e20cb545aac369fff7964df6e96fa39fb23414bad48b38a25d09499bb42a11",
+    "engineering/arm_a16/build/skeleton01/step/A16-S107-fore-distal-socket.step": "8fb2110a76a65e5f623d2f4cc7d2b61bc09db61492a5d3a2beead13221a78016",
+    "engineering/arm_a16/build/skeleton01/step/A16-S108-fore-stock-tube.step": "e7814395da9ba8dae93c7daa689dc3ac9c4b31874ec5496a19be646bf3a0dcee",
+    "engineering/arm_a16/build/skeleton01/step/A16-S109-wrist-pitch-yaw-L.step": "944daf6cfcb1062eede8e96f0694b4154756725dfb20d108d8a4c81e0213a0ee",
+    "engineering/arm_a16/build/skeleton01/step/A16-S110-wrist-yaw-roll-L.step": "382752ba1eca9eb44c4cce83b8f8ded68df8b33f440254adc58cd8691ebb8cab",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-101-bearing-housing.step": "cfa25d13341237a6a0efbcdd81b0a2ffecc75d7310baab801178f71b3cf497ac",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-102-bearing-retainer.step": "eb87eaca2be00607076e04015d35d6885c50d7e17df72ffeb6c0dbd7a8d1582e",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-103-output-journal.step": "06e985a75ede4e12223c240463832fc74690ee422381150be507a8501d16fbb0",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-104-inner-spacer.step": "edbd983066063fcb01777220aa2220f82d81b8a3a3a2f2444c0a51733275517a",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-107-piloted-flange.step": "300de7429924e9a09948397a48a4307fc51d02958c383513c5c4d26cc7d3ff99",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-301-recessed-carrier.step": "2186ae8a5f4f2f30a31f84847edb8c4b7fc932960e4cd4213049e352db1861a8",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-302-dorsal-cover.step": "990caf7c49523f9747d3f504afed467b664fe3c44e83c9e2c8b54a334ed9a913",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-303-face-insert.step": "ece3c97977b80e64309b9c346f377b2ef85c8e24c52f78315700233bcea437f2",
+    "engineering/arm_a16/build/hardware01/manifest.json": "7ae73d2ae4091ec3b0812b5ba930bc79ffa8a79038cde0ac4bea7a42d114c783",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-1.step": "f46a278c4d381c48d2dd3d898051a4d293da2f41fb55b4f96c8bd6d692754e4f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-1-washer.step": "b712aab6d6937b9c95f6e6564f40b3a6ea53cd649392b92ed3188d853fe37724",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-2.step": "047a7e187f6263d3230876f9a702390f21286b78b5b2cc17b415511e88ae046b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-2-washer.step": "0b73701e454f001f41204fee1785010d77a9a4d90526a43adc4d7f14a53d4553",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-3.step": "02ec8ca38ef2384fb3ba548510f20a8c10a3b75ca0367ea9ed38cd5c15d658ea",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-3-washer.step": "c974ee42024a13357d3ce086ef40bf131140bdf4b658e0c92bb3e0f1f24c99fe",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-4.step": "4c5234fc182949841651fb3e7803c45015fe0d8a8116d5818be2885c43be72d2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-4-washer.step": "4e4c49be26dd1db03fe37f7058aff5952b5f60759540b1a8ab2f77a05d10cbad",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-5.step": "75c66ff6fe67d42c5f847ff3e6fc4d7179e7a38d618ac7c0bb9267e80d79c648",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-5-washer.step": "da68c88d80e00224197f0f35eb25b92e08bbc1257cdca3e4555497a3b7d1fab6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-6.step": "c39d681bdc43e29eb8d2257fb134ad6f09a99a8079d7354fffe0bc6b599688d3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-6-washer.step": "c8c02874952b1dc08a4cd7653dcfb9ce2da8868fe80ec1c0ef64c0b9fbe2a472",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-7.step": "78fb2443762cd670c567d236bcca6733cdceffd674dd9e777c37c6545cbb42a4",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-7-washer.step": "673a1963088879024553ef0657b522ffa304f61e3b44efeb786eab06c6d2d519",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-8.step": "04c8e865fe41c9329e7771b9eb8eaabaf48a2afb96155c8c2db9e254a5d12b88",
+    "engineering/arm_a16/build/hardware01/step/A16-H-base-M6-8-washer.step": "9d231acd6530f607d5532e5659f80b23c8ce53ac1ee74d7ff906e3f6c28e87ab",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-M5-1.step": "b59ccd7e3bdec7a55d537eb05bfac81f8eddc7c57c2e63dd9bee8533d893e8e0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-M5-1-washer.step": "9111d8cfe6905ae7b4323c81b3b80110f86a372957ac4834d73d6c0b09730383",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-nut-1.step": "1a56c32959eb48641b7c3b46c5dd41e0ab09764b79b78a7fd24a2b7bed95b839",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-M5-2.step": "c44411365755af1c773a7e05d25fc3bca9d50583de7095888aa03260e46faadd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-M5-2-washer.step": "67a7b109c738add45d035804bce61ee2b5faeab650e85a9b2e607b8773c76071",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-nut-2.step": "bf990b1f40aec2cc410571e25b698eb93a48e62ff42062cd9ab31cfa54552417",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-M5-3.step": "1c843323e53b0c7ebbcd2d21c676131652df6e6cdfb2c6e6856cd05bc84d454b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-M5-3-washer.step": "ade63eab3cb4dd85e69f109d58f51b34ab567ed4ba6dea92af08e275f365446c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-nut-3.step": "1de930cc735981b534dbb478a5bb2062d4b79409b915d81d6d3f86bb2008b9f3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-M5-4.step": "f7e6761df8a2ad2c35c7bc5d01b8c1d5067c801777e873bf13b50f07e8d81115",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-M5-4-washer.step": "72fefdddbc1fef9135da26cbc79e9b7c2427fc4777ab2d7625e60fb04c412432",
+    "engineering/arm_a16/build/hardware01/step/A16-H-column-nut-4.step": "68cbe6f6e8ab61a02ef05ee073e4085fe238972eb3a7faa56f4a25431c6ba43f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-M5-1.step": "de2050618796690aefee397daca47da7ddcce36842c8a154a783ee2d71ab8706",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-M5-1-washer.step": "b03a629c618b12d2bb37a38548675469a1c524a6ccdaf6f639e9f5c5700860e2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-rear-washer-1.step": "57693e07ed1fafdd587d9302991bd68940cd741fa72d46e753595c66b33b9e65",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-nut-1.step": "9d96af703d7a8d9ddd70d70d9af5354dfd2bfa197d5f9411571eb55884e14741",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-M5-2.step": "907499f2c4bf9701f29db5ee4516234a5a7235cdd15ef19753ceaef13cc262d1",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-M5-2-washer.step": "5e0d71147339a089fb8b5af6fa0bfe7ed863298cce5325948f37f3c64bd27030",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-rear-washer-2.step": "2f43bce7a63e8c94db2b8501ae06f70050976fb2881eeb9f91a314de419e6655",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-nut-2.step": "bd90e9801feaf2db289508265b0c8224dab72a181cfd88820e45b7ed4058c3d0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-M5-3.step": "a78c43643c27e491c9878212d0ca98a3e7a72fd8358029ad857285e2b96cd9f5",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-M5-3-washer.step": "4e7769de4620295d89a37c8b7fe8fa79ac5254ec44cfee603cdf2205eae82a90",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-rear-washer-3.step": "e5f3f8c285f0d6fc9d02972c8b01c22dc93d9f353c1a1241f58cc90826517ed5",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-nut-3.step": "500ab5df2e423db539ef9b8e6a0d47e524ba33ff492e0fe15cf96e0c94abfb16",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-M5-4.step": "d8fab0fd93f6c0b3baaaa2a356356f7fc7651f2d62afb492e5db8df78281461f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-M5-4-washer.step": "3ee512d8055a84131abfcca9a3656c7f423dde03cabb4ab65d6113e6d1c3bbdb",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-rear-washer-4.step": "b9cfdb0a6fd7e9317541b10cb318fb38615481a3cdaf4c6c753561a996122ea8",
+    "engineering/arm_a16/build/hardware01/step/A16-H-shoulder-foot-nut-4.step": "bf2e498aaa21ae4e2d4b344648b17c9403f9d2e66f7fc85312489b38a66e0fda",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-1.step": "d76e9447fa7de23bfea5aac5910cd4fabb0caffa7d16ba961cf91d794ec892a3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-1-washer.step": "0db135407ea653ef22db12dd54d0a9562308c355a524583c83bc7df7e0f33e05",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-2.step": "e72eb8ae38b75fe89f5d04682e2f28fbfd26af50d438ec130949ef3e501b704f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-2-washer.step": "158050133903145d0e60c3c3650635ef092bfac4450b3506039eb11ad460a7ed",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-3.step": "e00d3e75ac40a6ae340a43bc11a438e7079e9519f1e220432fa59856d9cb8fae",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-3-washer.step": "fe217b347eec068860e22fa04062f6e817e496345ed4ba41e881be58b50f9668",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-4.step": "15420455ad1115106270c87009a32067027e8120dfd2bd12722e505582a19968",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-4-washer.step": "9a6805e74d8fc8e4117efe82bac110e2bb8de71feab42a23752497c2ef32df58",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-5.step": "3831cbecef1fde067a1a7c70c3028958af1252b7ebb19edd85e1c41f63fdf2ba",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-5-washer.step": "2f72327f8b547c2f6e3fc801aa56e728f2f65607ede9cf707b20f2e0e090f994",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-6.step": "74d5a2495c713f90513a32300dba067a07d121780d8934eb9e3fdc777e3d2b86",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-6-washer.step": "d7747f76c0073fc105ba47e2982a3b624f34dce43596c28e67c781ff401ece58",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-7.step": "3b5fe58d6d8606982abbe786873137a3907799c2abe7a1fb44d1ebb862e5003a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-7-washer.step": "349c86b21230e79e0847a1e5e5ef12c756c0e6a594f464f024ec861d8f8b00e6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-8.step": "59be547de01a4c9286e948617c021de06ad4fa037a39a70e4351d3143f20c9be",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-fixed-8-washer.step": "4a99f4f94b75b585a64fb044d5d51fcb0dd2c2081cac3e26cf65f5c4f441501d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-1.step": "735d69945308e61373eeeedb66a60ae938fc16b6d0e57edd4340d71171a88461",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-1-washer.step": "6aca8c52865f1cb9e5571b252dd98ff8c84cf5bcb6fd618d7588101ddb5ccb21",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-2.step": "bec38c5d6f082de2776c596a6eafe74859bbb77e5ee25f0389063e9e67ff9d4e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-2-washer.step": "82560b6e507552fe82fd8d938ba5fcdcf1478eaf37f0d770476b8fb6c1d453a9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-3.step": "e18eec7417e0f43c2668bae24ac94a9852b65543c307143c67bd05e1fdde0742",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-3-washer.step": "b2b3810965a6fc8d8afd1d3217251c6533ad378f5d9b499bf7e1d7c3fdb73850",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-4.step": "c3da42ad90390fcf868adc8d1a0d1b060fe666dcd6d0036c64c81c04b2890edd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-4-washer.step": "bd83e26a4725d0c3b1fa07e4a9dd9e6373a85326ebbbe6cc506e4bd845662961",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-5.step": "7ab30f53fc17ad002852166202d2a8298c981691f7e70b71f6e5697501e21cdd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-5-washer.step": "202d8047f740d55f278347b6030646a9cf8edc01ded497e622596b41c4022ef0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-6.step": "f9ad025b1fa7a224138284225c445d38596962316125f1401d7de3b952c51102",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J1-output-6-washer.step": "656d40fa63eb0ed060035d077dd3819ded33f937e86541ce07356b7212bb8733",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-1.step": "e2b5ce640315d7d762b240face2bc8bc578ce421839bb187c4b368647c3afeba",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-1-washer.step": "14630529c26144b8f398b513382b8f665ddaf93d4fa3be5c45166b20a077e133",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-2.step": "22568eda43334b054c3eace3bd390f375145aab7e831a211d150b2aa88401da3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-2-washer.step": "4191aaac865e97ef1321e66ea397b2d18d9ddd9807425fb53908da3516fadef8",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-3.step": "e480eea0d422e52e74cacd1c1fe26823a4e3f7bcb4375c406099c95fb12cad16",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-3-washer.step": "f5740df443b146953cd40a9e1b5ade84972f9ff812186d4945f8ba37b8914328",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-4.step": "6ab62f3de972d62aa712cd0597c3cff03dadd0d2e75df7d11ca31c3f7c28562b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-4-washer.step": "20b7f9893b8f623ac7b96d1ce4e2a6bd9d16d69a4602ed624de049d9d4cbdf68",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-5.step": "86101a0ed4cad0468c0b5ff12369108323b222e3f4b983515d167a07501b9be8",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-5-washer.step": "9b9e2945f3c751d64299c7e096919a57534801dcc14205095c19e55a4338621f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-6.step": "61f3667fa3f1a7bba60bfc981d2b1621d5b4c8383ff588efe8b9d29a4b857651",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-6-washer.step": "e9859c35a3be81402df3f69595956f0e30684b2985448517ddbabb9b74a4c9d1",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-7.step": "26a5f895c754baa3358fd997d5127d3e319ec8a7051827922c13197f5856c0f3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-7-washer.step": "c02f033c2b4167a73461996027d165fb0ccb2411255f9039f01cc0dee4922192",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-8.step": "260549d65a95e831ec608923397d2e4c86ac51b2e8416f6fd9e20c965df9c9b4",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-8-washer.step": "0e0c4990d543786b3d2dd2c68abe2e037215f49a8efd2c8fb9e4fbba6359ae62",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-9.step": "b8e4c843a4790c333b603eda3df894f67e28ef2ea7222faa9f56ca65d69d00ae",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-9-washer.step": "9a9b65ff60a8392bf1b8e11bd6f7e24a98613ca3c6e1b92ef030e783efee8ce4",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-10.step": "dc373eb17fd1afc55e557a69620d93f5544fa08099f225b7a05fa1b5031714ab",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-fixed-10-washer.step": "864e68d45b783e4ed60033863f20385c4e1e7f948903a54130168c28addc7510",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-1.step": "735231973366dee4effdc4cdba8a57aebe695765d5599563f7ca594481b38d87",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-1-washer.step": "7866b5a4ed111e829fbb16648813ff212616b04c2fa212e72aeea9f0700a5dde",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-2.step": "759b3b534556171fc82ba39658fcf2eec371323b2349971e164c80cb5ebf7267",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-2-washer.step": "49e6320683ddbf2821f31caca646a72ae5ef3210c45810986de576c5633123f7",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-3.step": "8366b831ed6a7bbdf9ede838447f4ad1e65552afb3116d3838b9bfde94773a39",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-3-washer.step": "3387b40ad7b92ba9246cbd9f5218111b885f2f7ada040c864da9644a8a9ba749",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-4.step": "09fd01a61b472db3f60cc84a583fc101ce0b08344d4107daf2419f210f7f85d0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-4-washer.step": "51d56d338056b2d258b5dd39c3dd958c66313a206a3980538d361f810b553a8d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-5.step": "e38dd3f7d233a84685f7c97123e8a43c1553a0d131a05aa3997f2bdb63d701d8",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-5-washer.step": "f5801615e178bd3f4fdeef67f628a789dac80bceedb05a35a2242aa552126b6e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-6.step": "967e7a9cae4da0042ab77b2624bc2541d09075804953e7de6f04062f08fe2985",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-6-washer.step": "fed8a49752e6a1a8586263d34a177683c0dcfcda1d47ce062e1c097f03a48a95",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-7.step": "bbc09dc04d0fa06efe651100de41fa4fb36e4435b6c77216dda9c93450e4f73b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-7-washer.step": "58ba2308854a296031f1db715f5fda827d6e29cd2811f17d101ff55864e50c97",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-8.step": "ff538ef9834c2ce2df4da95ce4e72527406cd875f18bbbfa7984e8cd8bb4644e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-8-washer.step": "3335e3e9c92c576bd11e96e8d7a50bb8854e7b917e6affccaa66e20a660c9676",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-9.step": "5aa22b72af14c8763731721e85a91d9b73057d4da5f239182f7a86880e6f8168",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J2-output-9-washer.step": "071d37f51d1ca26283511d2581b96b64b0dd80b254f036311e73b2957c5b5173",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-1.step": "9e277cfb45652060a3a1a704f0333b72da975d7da365a688f1322982e862576a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-1-washer.step": "ce120ac5749df4c5259f43da6f5bfed61cd8218434896a72480264060ecf91e9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-2.step": "e6137fd59b5f069fa89f1aa09197639bbbacf912e1a933c7be6836df94df5b6d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-2-washer.step": "d10106acc7a924eef3c255a169744da9ba9c39b9668e9fcd9ffd3fee17b89234",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-3.step": "feaef2e0a9a411beb8a9e4f3489b7a11ded9122cca73e7b9002a65eb222f55a9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-3-washer.step": "a5119fda37ba3b74875642a25e80f8634c486f162feb465113c51f5934c8e878",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-4.step": "1454113db96f9a664308e4e0db3aed4dcf9d3e542200484133abad29fd255e51",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-4-washer.step": "10ba79f9c43660fa617a771d7d6e68d76b81d4240edbe6f2e4064c175777cac8",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-5.step": "b605d4ffdbb3cf92b2edafe82fb1e9e81bf2eca922845daf33815c3388becacd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-5-washer.step": "044f4b0b3bede25b7cfce2645168ce0db38a4db3a444c5bf1823140a7df9593f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-6.step": "73663efa08c9e18b0fb60c3cd22e4ae95e6e1e6dc076207f0f9d49aec551b32d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-6-washer.step": "31bb42877003eef25edba990f8d5ebc0a81d197b27ae42b2b5ecf0033c4f1d78",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-7.step": "d847aec99bc9340f78d872503c2e0ec2ea0682b3615cd50ea2ee58adb6677caf",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-7-washer.step": "d540aa1bcb8ee4fb997bfc95634d750f3de5162abb8cf6754343d56a4d22f567",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-8.step": "847f2c963d328a527e5fad5492fbb1af32858ace46d47c70003a841aea56e1e2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-8-washer.step": "485f121fad1ea51dea9941eae64d964494302c4e1de1cc97190127f64e9c5f1c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-9.step": "1d121e0224e63b5a29d98043d8ab5215fac56b4400d86ffced5d93299fd63f82",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-9-washer.step": "701e1658764b831381d518a61a8226bcbfff6442376462e5637fd2f257314ae2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-10.step": "ea5ae0e457d8b389dfc0ba815a54c0837900542c60dd94f7cfac194445d65f5c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-fixed-10-washer.step": "2eff30311db1e0e816dabf69fab028629fe57335cd3dd36ac0cb7428f4b349fd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-1.step": "9681ea084d644846da8f3754e596249298f0635eb5b7203eade5d07167fccc62",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-1-washer.step": "6fb7780d522ae22e326e3e4918d290677355406fc4f3513e612bab704cf31012",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-2.step": "172434dac09baaf33a651412facd83770f1bb4b85b2086638521f00113987cbf",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-2-washer.step": "c93cadf9d287e3f0499f9b057d5c75e31ff2b0b14b19e9dc5ae36b386c988911",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-3.step": "135af96cb84542a659baae2c1d3cef64c72053ce3a125643181dae76fa1d427a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-3-washer.step": "c72d3f4b55ecf9484516214cabf9ad8ee4d632f9de88e2008186a3e0e9c318a4",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-4.step": "6b4061c542ce97f459bdbe9e8a4d40c17f3adb929fbf3ff7657e2e7dae8bd0ad",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-4-washer.step": "73e0dcc00c2e22a22baab451eb5abc4b731c9d86d0196781ef41fee55bf7bd49",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-5.step": "13d2d2db355fd2a259eea1e9892eb2807376b2922a80f32ecaa2f51cec898b50",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-5-washer.step": "4b724c01b79da890d0d20be04d72e2ea644c20f70773459da4f33c88d6f066ad",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-6.step": "63f678b5c21ac222b10291193d39211d81cad88baf849a7cc1f147c4697e7d1a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-6-washer.step": "4939c8237a50bf31e80a9e08868d97f3b8414c13bbfe9bf14dd69deb084f5583",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-7.step": "1e3351446009a44ff1d133c0c519e9e278c5a169ce13a72985d580b1ac3be1be",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-7-washer.step": "a64b8261c7294d7b8f227b083123c95e4eed2b0a60aa6e6ee9156df491f417c2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-8.step": "46f8c44245cd9eeff4790d9baea88ff696f5c6a5c850916327b32e83ac3dc708",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-8-washer.step": "e536597be93472b58bfdc3aa282ad26bee345b4997e93f2a1b0e16950fb57ace",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-9.step": "09a16f3e3fd959a693b4fd3d5de476b7f10e300ad867ab3712af5bf02d8f9fa5",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J3-output-9-washer.step": "b10dff4322f46070bbd68ebdec0fd95e74863e5b8fc9d2d66ddf475e02af3db7",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-1.step": "0e963fbf024d8650a179211e703de295ac05050cfecce577289a51a4d41b3ec6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-1-washer.step": "8b2b360051a8a3b279751d630867f5ec6aa0a8a3bbc3ca166137c46591753fb6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-2.step": "0a5e0afdd936c942d0dc7e69dec7b662ef2fa57cae90dafcb1d89c698f662e4f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-2-washer.step": "b4510337c8ef0764da26f650c2b4797d17cc1ea991e9931c9fc8bb2f09d509f6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-3.step": "f8c4c3dbad51a4b3bf7f7112a7216bcbcde4c8be294ade936bb35325cad76fa1",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-3-washer.step": "9a7cde3dba0d8ea3238f2634365832c0cf95b6f442f1b17f1c3b2bffea04aff0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-4.step": "982e4033ae34abbb1693e8ab6d28584cc3036976b8ac2e86679392ba5c31bbc0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-4-washer.step": "2a581b56a90f48927101ded91414e5cae38c43d71daba9f8c5367b4d6bf14353",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-5.step": "caf35cc719ac8ced0ec76cf6708164f8f5dbde2782d0d351143a5af09a9ae779",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-5-washer.step": "6dcc840de03150cec4d39193f7527e26fed1c46ec5393b3ce404bf82fc314b6b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-6.step": "70b8ab4cc1b59b61c6f989f3c96e82eb784a2d14704b17b5c177bc9e97fadb1c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-6-washer.step": "3047405f29414c06b726ce0a96d0b3779861283e25213b5936602dc59ef4e23d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-7.step": "d9bff9c7ce60ad1e92da9f9f41442978dd691f6fe4b787fa1bf57258afea08f9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-7-washer.step": "80d8615046b48c20d0d6e2678961beb92d7c0cc656b9f225ad0410f1ddf9513f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-8.step": "206fced41c66daf43f7f7e9533535c92f361febf5372a7a9d3f8a675df56b25f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-8-washer.step": "d8fdeb848c702084cdda193a23f4d3e93ffd30a22505adb7816d9c487061e1e3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-9.step": "4f09fc5ebafca40d8605b61a03ae036d5861402099082f4272bca22e70cd80c6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-9-washer.step": "77c689d3904d1db44ac159174a7aaf570c199d4e3e3133982168fde478a6ba4a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-10.step": "a0da28f70cd06d91a22c4c36c45b2246eab266043d5684f2575c49715e85d658",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-fixed-10-washer.step": "180373eaac9eae6b45eea0a7686dd6fe84e116f3d9a013df0a5f2cb5f0321043",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-1.step": "3423bbbf32f889fb0f82a8d8b7f03eb2d7b13e7a0ade443e42884bb32a822fbc",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-1-washer.step": "ce1334f5d4700d20dd8277b44c063a7182721d24e366466b2114b440e7656138",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-2.step": "15312c99bc7f97fe5b0d7309599dc2e46b20275489c4c73c4abb65fedb590479",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-2-washer.step": "fa99e406b4fdcb951c2fe82a0a97ad001b7e85f8784471dd0cdef6754916bb01",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-3.step": "9eea278be337fd53206bb6ef7aeebb9b8e99ae8213e4614ab224782d0938ede2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-3-washer.step": "4f2c54b51f62f806efe90cc162c03d3d1f842bb1c71bc27ad6aacb745facb8f2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-4.step": "5f2d2cb208d8c8b5cbba04a4b0bfcb373f1193ae290f5dbcbcfc3c322ff40491",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-4-washer.step": "75e7dcac40997a472ab14af75844e07abd19a2e3f53183cc4cb868dd1f040b7c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-5.step": "932e1d5207b1d86d33eb28ce037fdba8f6f0cfabf18b02188413c096664af517",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-5-washer.step": "bd2950b4e92454e7fda67fe75f1931c7b80f6e569d0cbed5bd2579a47a60a464",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-6.step": "d7f60f08c78e39ddc74ef7bb11e9c95b2381369165374810b91733b30433905a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-6-washer.step": "89eaa3093424c8ff11576ea7611ac8c539f80f81b82f27d8a3ad98f2421b3c90",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-7.step": "a0dd229d65067c44211cc5d7e12008d0dd28d80669463966f18282ac9e2eb3b0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-7-washer.step": "f39a8e09f552cc36ae3eafb5e1f464191130609abf67134e70d054253fd0ff5f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-8.step": "5ccae09937cb5c040e16c48487c5951370c4ed1cf515a2a7925350f9ef06efc2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-8-washer.step": "e78e617061f0e261011568bd724a706c566b07d8c3c1c52880c7946856bfe189",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-9.step": "e2798ca19e47e2b370e9aeba8e9e9078b4fc90709799bc773d6e0cb4a3c5d19b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J4-output-9-washer.step": "c4fc3a8693c0e74953c562e2c12fc84aed71513cbfd9473d0ac5137aef19a537",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-1.step": "e0762cd1d0afc9fb4d0422435af58f8d07adb1e7aefa324402a825de88a35cfe",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-1-washer.step": "d1e78b6e4971ad5f729c4d340cc1f2ab5f51ef590dd63fe211a59b40b830b9b7",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-2.step": "fff31e41a110414aa140012f66abc4d584b46e15c3e5d04e2095e8b7cd8d0fd3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-2-washer.step": "6dcc7eeedccfa548c5c97bf64e5d02494ed7fd79a3376c12221ad9882aedcdf2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-3.step": "7d89e9e860ac1a6e7b281c90cdd89059f059b71dab231524ae5619446fec5ec5",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-3-washer.step": "1342c746e460f3bf6fa96122867bba5a63247d0a3c62e33655c4ffb406c0b9e8",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-4.step": "f70270300ab0b01813ab3beb1f37dde2ee8ae21badde365f427a3ee63a7bfe50",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-4-washer.step": "2833c123a5329e2fc7f8dcfe4dbe6462ccfc486769c097044c4115da8332c991",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-5.step": "be2340398e7623298b59588e8a659fc733a0966ec23ac04b06784f471c68698c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-5-washer.step": "85c69db35418d6240f998e6d7bda6738ef5a193c9cfa276acb14cb678bf5d4a0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-6.step": "e1313369dc0016e889b5ad99ab60dc932fbb290c37dbcf196cc465c89559f5d3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-fixed-6-washer.step": "0ce86ddf5b76673e8d210e4882ce55375a838679b51f170b5d83182db1ba0e9a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-1.step": "d3f7089a2a75810686bf10d0183a376216192824df2889e5fb58515ab331c471",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-1-washer.step": "ce18b90453f2de36f9536772640041be7a526a838a593b35cea030a2c0b990ac",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-2.step": "53d516650accce5f2a20da42f106e1f2dcc56ab7f2be4169e47b37648858c94d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-2-washer.step": "e7fe4f63337b70b476565a7dfed1bd9e65002af9214175ead8e2b62c41b5be89",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-3.step": "52098ecdcb3e1cf9f14360a790653838ca4d6723347183c26f42acdbec5f68cd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-3-washer.step": "28f98e69608444cf76c1148f36dba754858a0d8b5b3e59848233bf74f0d2a463",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-4.step": "2a6a34c4f1a89732e5624e63de1c2b06e887a123ad2de2bcd8f30f258511e70d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-4-washer.step": "a505069a5e84f94ebba624907d670785942f642fccfe4f418badd75f735b9274",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-5.step": "b146a200bff308d0dcd7986fb950b8b4a1da2334c786c44a09be10c2c3232a5f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-5-washer.step": "5a78d9084227763965bae69c4cac21e15d1bc66191be3a4a2573175c977e505d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-6.step": "e81c74f15786a8f8067c15c434482ff71ad5e476cb7bc23390df3951de3941b6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J5-output-6-washer.step": "dfb1bfcdbf5dd98b85a4533098ad5869112d53259a2a5a0f18fc18405a20b0a1",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-1.step": "658a190d19438e7293b1d920e8e638aea335bab624d8a6e236b15ab4a0ece6e9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-1-washer.step": "5799aade0aed3c76771c42744ec736583b7febfcfb0b0151974b3080e6422ce9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-2.step": "fc2d45c842d0a0267b806121d181540be3a92d4556aa7218c6b9f67c792a67f6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-2-washer.step": "4358f0e52863a283be3955f90e35797779b2dabf1efbe0d4920f3137661480ba",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-3.step": "ef146dac1f818a543dee5b2fbd246ba3d343f011e7223e9b630861d7edc5d701",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-3-washer.step": "cad9ac7fdbbac3779b45f061306539c7ab54aa6df070b6584c3b24377fced366",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-4.step": "bb80cf9f6d41f10d07ad651499f1b23b47f4b97c32578d3806608a047b3837be",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-4-washer.step": "e54cc11cb031a245535265a4a70bb23cb4f690d1f67481b6a70ffc3632cf0ebd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-5.step": "10da0ab829eae342c3e31e66b2ec7f2832ed9ca6d9192837484f9fbe63c14cab",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-5-washer.step": "4cc03edbad19bee7880f4ae7564f83f345cb99af8838d854c9101f2481add436",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-6.step": "4150f0e9601b3d3c4af03975386616bf7249b14ac7158a2dc268c5bdd59fa917",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-fixed-6-washer.step": "44ab12f67061118d5131b3bf09ab4fb129613314ca754da889f2b1a4624fe4d3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-1.step": "3dc9d2338cd977061ddc01be3de8f37b81cf0d7ef947913c620c92321ab6d18e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-1-washer.step": "196e7794a473f4bbaf3ea449e8e64d206c02c43c0410775d006365f687de3b86",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-2.step": "d5c07978090c91e7b1b02804cab162042a9ba87c417441644ebcef75974f1e20",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-2-washer.step": "a7fbb6b26e94e8ea77fcdfacf185416f813b3b7ee378961311a16014d5b44fe2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-3.step": "2517d00f2d500aa1e87ccfd8576532ed9cc95688832f4e860b3cc1e13ba2f33e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-3-washer.step": "c23ade9978735f595a9f478fffc30cb6df48e0d232e8fb1006155bfb15aa4766",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-4.step": "b9361ce602c8a8e6a0b02febb2eb50a9300f8c1f0123277c0988ad4e949cbe3e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-4-washer.step": "45f5f91eba56b5d16c1493573ce7e4d5ef1329021efb541913a8d1239cf1090b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-5.step": "79d4573df8a9a073a60bd909f339d7c13e5820f70fddaefdfdc64a72b9bf3e67",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-5-washer.step": "581bfb65767d883aca5deafd1044fc53be666f7d5380e12b1019bfc66957e874",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-6.step": "e9f6bd5b644de9e913accd63b210354aa6589c42046f5875e92b0890a8fe3863",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J6-output-6-washer.step": "660ef76698b18c3383e96c25cc4e1adf46d1e6dff85d81c39fed43eca521663c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-1.step": "b74d17f3f0bf95c3631682399777c0f3226bc73e7ffc64a91b0832f4cfc5756b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-1-washer.step": "7f42ca63e4cb4b1099d90f304c034e72e3020dff505957af65fc8ad793e0317f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-2.step": "975ceee6f75c7ad7386439a4fe642633b0f59464fc60d7b105205a21071cb55f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-2-washer.step": "2348ab219cdd83dffe1a85dc30670701b52fc932561c10f5d5a2073b814aaefd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-3.step": "2202800e6c3d1f15d2f10a15af2398e3e17287598e779b9edb80caa25d40fdb2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-3-washer.step": "0035d593ca484744fe996d056718cae2f0dffb147e256caf1e37e8e928aa6eff",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-4.step": "7fd30f410d6dcb0ed82fcdd1d453f067c49cae911ca288c8e059a626e1625901",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-4-washer.step": "0273a151e4fdef40c32f44cb6a2213f4e86ecd90c83a260d8c08a28259ff13f3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-5.step": "318cab68f555eba0f231c445339852db0e22459c0535219658d6524ffd79b6f7",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-5-washer.step": "74f59d35e1896423ae6d997a8a772bfabfcc44bf03e1002a9eb0cf6af7c983fb",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-6.step": "37944a518be413cfc51fa2f55f6218b18f11ac2bf0d7f6a5d7f08f582e0cb669",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-fixed-6-washer.step": "26f8c08b349667533e86242ac01b9a70d9e80d0d7aed2b30cc7c26f0444759e5",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-1.step": "d50b920f91972a527e697febc69ed743c6ab186b291fa3f85ca1b10463c64abe",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-1-washer.step": "98d9c57a0e536b49c41b088ac8b434a00d22f721804ac10569a0bf4f0736ece9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-2.step": "04e35a8be8de032f3a376b774bf3c3cd62aec6c9b389fd12a8b6e436a3e70820",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-2-washer.step": "31d87b4c28c4c48366ee2e6f01575a38cd29bf5122ca0d8ab1c172429bf9e38a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-3.step": "f88b203411b884db749907e6ea8d4ab83ab3f8af13f89a4347dbcfda21dee160",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-3-washer.step": "37fa21f7b8b71f3600620c71aaa578e2cc682275ff1304cc7962da77c8a0059c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-4.step": "a6c47e5fb19e378e3981f4714399476d38c7c242bdb39ab163fc8926085f8b2a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-4-washer.step": "d901fc1c3291257e66f303e01c18f386030c6e28a8c2badadd19ce239e88ef14",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-5.step": "ba741631b035a57898f051cda36345f2ddc64a892e480f979c82d7366110252e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-5-washer.step": "3c2f2b73853e72dc22031905a109d70e2594c2c06fd2e80e18b736c50e0ec7f9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-6.step": "8892d20ce92e2e4ceabcae0d13f884f65e5317aa7e54c80f61bbee4bcd247a29",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-output-6-washer.step": "4b9a10254daaa069b312f00f836275c9832be37145fd7f37398df53316c2e34c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-1-M4.step": "c28e5125dbbd3d112e2e182c4f198c5fc8f5973d238b1c7025f07be76cdf3254",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-1-M4-washer.step": "d6f3c7fec758da3dbd0fdcbc95e3c273cdabe430ab14c5d4dbdf5b43e362cb0e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-1-rear-washer.step": "fc249068e2d2de78a4c9f22c576d203aa382df53d36f46dd9e1f0c4c13ba5f81",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-1-nut.step": "f5eae6ac983d9b78be96e53e9e85cfee0caf1f8845fffc9636221d4676aa10bf",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-1-crush-spacer.step": "8ffc300ff9a523dcddcbea45c14554a46d858627e17ac6f263eb15905e98ca80",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-2-M4.step": "1bf65bef7eca0fc14e5296788beb074873e07d3cd6b5a59eaf24704b548cd89f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-2-M4-washer.step": "b8a0d26da8a0e0c67a00f566f3d09e19b8e45479dc4e15835fb5d6f97b0b5bfb",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-2-rear-washer.step": "62037ad04e757b7e0f10263738c306f773d4351d5cc45c3c300e5705bf5697e3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-2-nut.step": "6e3b9a9f2cfe7d2f4010c0928bcccb2dc3a43d0586a53d45ee9c25f989066b45",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-2-crush-spacer.step": "fc80d43fdaa2532f3f7775e084abae73c9498295215d5ef59d7cccd00f002b9a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-3-M4.step": "cb3473e1234d48bbcd373f2bf753d38edcc7a9742e0bc8b76497514991ae9c9f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-3-M4-washer.step": "f327eae809dcfbf9c3feedfd79f4c08dc37b521a1d6bdd8c58f14b8a1c249c7f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-3-rear-washer.step": "24728557114d4e27b9054cbf2e6c63c53aca59bfa93e6a219248c43101d0ec64",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-3-nut.step": "d7588d2944276f196b94554fb896e726c1cf770bc2145ff7b0abab7588eaa664",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-3-crush-spacer.step": "c30ae954f9c6c5d4eea80704fdac48f9d0d191a4d5dec7b3ccdd23c0fd1f5e58",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-4-M4.step": "5c3b7e6c795fafa97fa9f3a4141fe297cd814d0bf668f5bf0f12c99cc5b664ef",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-4-M4-washer.step": "e79ef27c1287d1cc93cef68001fe33f5e3f6113cf73ce10b6f825aed8be22c88",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-4-rear-washer.step": "c972e07baf78afcf65e35226d54f3380049ff3885daa934f15aee153967d9bc4",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-4-nut.step": "21335bdba6c9f6c7a84d9634176872506d2bf9c59d31f66041fc2af9d4bbf6c0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-3-4-crush-spacer.step": "8e5ec79a638bdb18181101dcdbebc77fffe68f6206295611720015da33bdc235",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-1-M4.step": "169223bf8259ac6273fb3239bdbba91c28dd92e4884ce8d829da990cb9319bb3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-1-M4-washer.step": "534d79363beb718566c68be9558a2c8437b054427e80dadd9bbe23639f6b9bc7",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-1-rear-washer.step": "8b8c95bab430c02570ed3c89f30b64d89847c06cc19d6cf750106258f92a6447",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-1-nut.step": "669972b769c6f691416a7bec98f5c568f0850ee1c6770de9e5a09045a6e0a45d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-1-crush-spacer.step": "e89be3d5fdd81cf9b132c24f965ed13554ad5e7f1d15a0e2e92634a7fdce3ef9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-2-M4.step": "e9fec2e8fb1829a456ca7c3862f17033e2619e69e91f7dd079afa9e2171fb3b7",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-2-M4-washer.step": "ccdc321495f1a44274e1d8bba190b1b90e1e522920f0acf09a639a16abd4fc09",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-2-rear-washer.step": "6ed8484b9f0ee34f5403d4a841d88cb6ea6d153585535d751b8e2ef281abfb63",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-2-nut.step": "ecbcc8ce5c6ce26f34e83dc77d5d41cf1875954c1d422b348b2b55b8d63d3c7f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-2-crush-spacer.step": "c66f0a0a15f63014bbcfc1b0d029f798628f17dc8cf847e5b58ac788859131d9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-3-M4.step": "7cfd7d987d5a2c15cd15c33755230b4bbdf3ad6a3efe1144f68cefa3c342bcb0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-3-M4-washer.step": "b6fc294c001c822366543b2534fbd85a6f99bcbe071a678d3c3de2b61ffc7931",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-3-rear-washer.step": "a49a869b56d8bf538d7525a90b77fec6b1319252ef2399ec55598b30b7f0c8fa",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-3-nut.step": "d6ffea9c0fae29951e173e945614bf2b921516a3dbe0e49d0dbeeeeb3fd426a1",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-3-crush-spacer.step": "0a5836fab96dd0872f37fd6d06bfb1024e8fc9c3db85059012fad36651ceb5e0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-4-M4.step": "00547a8b7cfd3a2c7a41837e3b067a43819834662a0b8469db4da94ef9d69aac",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-4-M4-washer.step": "c36ae3807a1a501e5f0f645f3ffdc622dd3a22a0ab64e6bfcf660a292ef38bb6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-4-rear-washer.step": "4a7f71a3b20566397ad8430b7a28d19612707d01e56a34dd619ba75b1cf78b87",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-4-nut.step": "69e18e71e51bda2ae6192b8ec9162c3d4bdfd1fa0ae82877f9dceef8be3fb57d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-4-crush-spacer.step": "f46e88f03e319a5b881e1c64bef48cf38e7e86f486ab70b316d18c2b6f4c87d2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-1.step": "6afea6a8ef707a2b5cbc8f47e357e86b9a18ff0a23f217fd80606b1746f95522",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-1-washer.step": "917af996721bbc6cb49d7e175c163ee5ddbe34b57738a1ce6827193655a31ce6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-rear-washer-1.step": "7a6f3a73fce78193c826cbdcc422e98fb09732431ae15826d13cc2add5cbed04",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-nut-1.step": "a50955ed282e7951a6bd64b846b16bc0aad42845789a72fa300221419595b797",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-2.step": "310bf2b9390bc0020abba7ba3ab7ec4d1cf19fab217428820b4883eda8f81ebb",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-2-washer.step": "26d5820a2404b2efe87e781086c03be56148cfdf586b03a82d024e91eab4ca5a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-rear-washer-2.step": "bcaa89c47fb1459a2d2efa32a0df06e832999441945eb697130cb25ba3d1151c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-nut-2.step": "2c624f586d4d5c882ffe005ee256d2b4e6cbf7b04ab3b78ad904e690163efd2f",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-3.step": "9f02c76671157353bd0a6a73a5813382717b8198287c54d18e33313c6af976f2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-3-washer.step": "572fe796738bc53935572e7da27b4a7eb49cbb62f2a0145a05fa966de0379904",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-rear-washer-3.step": "40cce2859af4869a3e76628245f8ee6da587b8df723f5bf4aadb516b9baac178",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-nut-3.step": "25e0550ed47775f80d1848cb525d4c7f7a344f52e6d63a3d696c793ae44a9457",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-4.step": "1f9bc0cbcd11124b7bed5926fba6883d1530533d796244d040154f9eed8f823b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-4-washer.step": "63138dfdfd41add878acea76e103b91322d868ccd5c696159bd57a65c7f25b99",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-rear-washer-4.step": "0ca30af898627a7b91e90eb3c28caa1019da8956e490707ec88bc8fc7de542ab",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-nut-4.step": "827601243fd198152355554b098074849243a202d7e9c889e68de4c67b60763e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-5.step": "68bc6de8074416898722f6ce6be8064eec8103d5ac87a35f3df57058958debc6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-5-washer.step": "23fa789cb9e581ac8f8514142c19b3cbcf8180ba0b94e222495b9e0488093bee",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-rear-washer-5.step": "e9a70bfd254b57b848257384257e16e83284fafe6c5ffde766c4c81d18d6df2a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-nut-5.step": "6cd8ec2eb0c74566a08234d1cc9b3089149f5cd561ef5975707b7fc29a8e66c6",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-6.step": "855d1f1b9335c5c057e85cc49c202843a9e94f790418d1102e5c1ee40ed8d88b",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-M3-6-washer.step": "4478c512177c8f8189263ec27936f4a8eb1ca4ae1eb7e9add7bf02c5981cab91",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-rear-washer-6.step": "2935414c22442a435c46dff9d6bbc2e0610fea5ac731d04d34176029b65a9a81",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-cage-nut-6.step": "41be7a2dac56e0c0c5489b303ac1cc59e5e2fc9e5907f39556790cf0b658ce29",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-dowel.step": "9b3f609d5991f6ed963a39a6609211e261ee634a76bef84e0d2d4839e73e2ad9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-M4-1.step": "43eedf23a686c9d211c9ea9ae4df64d983c2a1ebccef10a18242d7f096ed9efd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-M4-1-washer.step": "9714561933fa3f431dd9c7bad0d956f29879b9608815693def250f9700d2942c",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-nut-1.step": "42060c7810807f3fe48301bffe73e7db06677957fd278f69cd8bdc9b24446e05",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-M4-2.step": "99930556f11fafc4d8473378e7d1e332708bf21f443f1ac249034b653749dce2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-M4-2-washer.step": "aed49ad12d03357436aff9714110e406357a8f6cce79868a649f6e19c0079c18",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-nut-2.step": "bb013096f67271fd02de289eefcfc1b30fb43c78ac7dbfc70868f680c4ab3cc0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-M4-3.step": "c27548a3c90749050e9722dbf5db4e6c810bc4fd8f7cfeb84e64ea898a665e41",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-M4-3-washer.step": "93c4202cba602bfec2a66c9e47b952979480c1d9830dfeaf7c47df67ea96f53e",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-core-nut-3.step": "f497c980f81b58d66e0a3a18265aa6ff831fdfa17e2a0a26b67c4417054ff4cd",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-front-1.step": "83b9a519b339d3b1977d26d2c63c09e13549b67df30e41b194d3d4f94b730756",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-front-1-washer.step": "ab519db413728152ae236089f9256c4ee3e3f65d6ec24aa33d414b77d9f0be92",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-front-nut-1.step": "9b5de698c8d6c2faac5547ef01ca7f85c5ca382dd1535e444d41cacab257fd74",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-front-2.step": "c30e0c57fb495867f0aec2005a0e2aad131892b85b96887cc243cd566ac6a60d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-front-2-washer.step": "b7f1e26654d9988d608fe0afcf3c4d78d146f32794c15c80c18930a99d77445d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-front-nut-2.step": "84354e19630111d77200e27fc189a043186e729b26c84c9a51f89e1c4636f4a0",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-rear-1.step": "bbecd43420b67cfbfec0277644a21f0f8546569e77ca0b9e26e042be7964bccb",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-rear-1-washer.step": "ba90268c777b016fbdbe5e8a44a1399c825e460e1626635564202b354d7eb63d",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-rear-nut-1.step": "7e3f4681fd1b7d5f84d468aca9c2b72c8a0692b657dbd91bb06e87b2c767eabb",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-rear-2.step": "c78f3f2ef80c0755b906864105489d23fc92352ab54dc02f4444a801a50ba16a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-rear-2-washer.step": "e4c7c8678db5a541fb04bf5d90a5d9de7cd168d668aee8247fb5ec938012cca1",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-roof-rear-nut-2.step": "bd745160f9c9a0a509c238f48bb9705e6eef78bb28528aee6256799fac617325",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-panel-1.step": "23fbcc6974f1bfdd8d3dc420faf7b65f3708bf85edb397d7931e594da86156a2",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-panel-1-washer.step": "76c3a6670370841dcdb0c7d7998e97ba7199a1589661059234bbd868c47c75d9",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-panel-nut-1.step": "2ab8085fc919c71c1031c6cccfd7ef5144fa92dc29bce09eeb4338a8a0f78d12",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-panel-2.step": "19d1c5ea5c4bb2bd921bf9414d5ff6bc702959810f4042d35cc4c354acbde6a3",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-panel-2-washer.step": "83257632954288b25b2ff62796f496d1afc9db284debf1c2cfed8ffb41e6a3a1",
+    "engineering/arm_a16/build/hardware01/step/A16-H-IF-panel-nut-2.step": "f92e857c81ed3b9f99f395bbfd6dc62b0e368b27ee3cf58cec059608363da477",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-6807-1.step": "4115fa6d0a6e15f886012b22bd06ab21836317c8927913f85c07b6c5a321294a",
+    "engineering/arm_a16/build/hardware01/step/A16-H-J7-6807-2.step": "8d5ff77175b8690e22c4558e6b432029e4d63e0e8f9d9f34ca5c961112d5436c",
+    "engineering/arm_a16/build/covers02/manifest.json": "7c9d2e0dc8afca0eb8a817eb9e0b00b18c7db7500c3b554327bf70a60d930603",
+    "engineering/arm_a16/build/covers02/step/A16-C02-fore-dorsal.step": "dd76d58b0ed94c85b6277829184ae1dc33f5d9b0bb3004a31a772563044f1583",
+    "engineering/arm_a16/build/covers02/step/A16-C02-fore-ventral.step": "7f1840faea2c47421456848b633b5336eaf862e1a2d759a0285a099410c16d92",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J1-cowl-a.step": "6e41fbdc62f8d21b3be67e459a4de0d8b4c233c0ae5a60f201f85ded81fb275a",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J1-cowl-b.step": "0b391fdd94d049a8e4626abc1e00bdde53a1c50c9d46bfd05728cf5305902341",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J2-cowl-a.step": "863202c614733db87cff84c73152a4b30d2aee179220de0f54d8801b01c5c765",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J2-cowl-b.step": "58a4b136ae256e8ede1f4d44263e7d3755d16ec39a53aff0a4b380a152bdd9a4",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J3-cowl-a.step": "a6e29f7696d99d05560f64216fc183e1e5e36629168e481db5445fe6ce6d3bdc",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J3-cowl-b.step": "5683b493159d32e80c96b1a296c7a076b7f2376b42dd9b35a6f389f40dd30868",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J5-cowl-a.step": "1593d6663a1ea9846ea77a818e6036b4cea89fd9d308ae0eaf146fb4d17e3319",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J5-cowl-b.step": "98da19a0ddb81c85e531453df422522f68b117473c700a8974dc18185e81054c",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J6-cowl-a.step": "4d9662733176d2e62175ef11d197ef9b25f5d13ac1d59e17946baba4a4f57db0",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J6-cowl-b.step": "58d376bd5019ef7a9f14372dd934c350502c7930e9d2b58d31308b0bc885b2c3",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J7-cowl-a.step": "d6915f66bccf8d751e9e045beca381272d5f4f350186f0130c0571df274901b2",
+    "engineering/arm_a16/build/covers02/step/A16-C02-J7-cowl-b.step": "5d250399e0a7019683a67b7476e0d2d7655331cb108f4a6fb9bce79601077a21",
+    "engineering/arm_a16/build/covers02/step/A16-C02-upper-dorsal.step": "17e8e533da55292f264e84df07db49f7fde83c9ed1dff302809b08f2ec8e6807",
+    "engineering/arm_a16/build/covers02/step/A16-C02-elbow-dorsal.step": "7df56c580e12410dbd415c2536a3824b982d6120cf7fb38797070d582fd63000",
+    "engineering/arm_a16/build/covers02/step/A16-C02-upper-ventral.step": "4b371dfa6c5863eb4e80893f15a90a6ecc65fa7d870d79cd438900bf28dcf9e2",
+    "engineering/arm_a16/build/covers02/step/A16-C02-elbow-ventral.step": "ec038f15d2b98e3cd5f54b06a391cffde5cb56a5cffb122db4d5c573b2d063c3",
+    "engineering/arm_a16/build/routing01/manifest.json": "aa1d1d4faa829b5470dbd8154587c61c7c6efd2d711e3a2820dc228ef2f8c46a"
+  },
+  "vendor_audit_sha256": "c2d7e3a6263c4b4b66c1786b80a1afcd202c4574df01fd045dd218c4503b2a75",
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
+  },
+  "parts": [
+    {
+      "id": "A16-C03-root-front-holder",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "printed_structure",
+      "material": "PETG supported dimensional fit",
+      "note": "Replacement R102 only: four additionalD3.5 atR62,20/160/200/340deg. X+/-58.2609 lies outside S101 foot+/-55, allowing an outward hex-key access allocation. Native mounts/slots/datums unchanged; old R102 is not simultaneously installed.",
+      "solid_count": 1,
+      "volume_mm3": 57413.716314821126,
+      "mass_kg": 0.07291541971982282,
+      "density_assumption_kg_mm3": 1.27e-06,
+      "com_mm": [
+        1.7751503094107255e-12,
+        -5.148981407914173e-13,
+        0.5000000000000001
+      ],
+      "bbox_size_mm": [
+        134.0,
+        134.0,
+        6.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          105.37499093330902,
+          1.6474478664235257,
+          4.036744014628077e-17
+        ],
+        [
+          1.6474478664235257,
+          105.710691574216,
+          8.831173276650071e-17
+        ],
+        [
+          4.036744014628077e-17,
+          8.831173276650071e-17,
+          210.6481899892061
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-root-cowl-a",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Existing A continuous root outline retained. Two straight3mm internal tabs per half, D3.5 clearance. Print upright with brim and internal support under tabs; slicer and physical retention not qualified.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 76470.07461804526,
+      "mass_kg": 0.09711699476491746,
+      "com_mm": [
+        -6.701061698499207e-12,
+        49.01814965746947,
+        -30.280643802974883
+      ],
+      "bbox_size_mm": [
+        146.9750002,
+        79.06743170363579,
+        119.18366573934969
+      ]
+    },
+    {
+      "id": "A16-C03-root-cowl-b",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Existing A continuous root outline retained. Two straight3mm internal tabs per half, D3.5 clearance. Print upright with brim and internal support under tabs; slicer and physical retention not qualified.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 75688.9636809096,
+      "mass_kg": 0.09612498387475518,
+      "com_mm": [
+        -6.90489744712046e-12,
+        -47.90247929033182,
+        -30.27840102993764
+      ],
+      "bbox_size_mm": [
+        146.9750002,
+        74.7302635568147,
+        119.08862416893574
+      ]
+    },
+    {
+      "id": "A16-C03-H-M3-1",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4762 M3x16",
+      "solid_count": 1,
+      "volume_mm3": 177.60639539048506,
+      "mass_kg": 0.0013942102038153076,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        58.26094248872631,
+        21.20524888619146,
+        2.917196615098526
+      ],
+      "bbox_size_mm": [
+        5.5,
+        5.5,
+        19.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.04938194145621049,
+          2.059054698867565e-15,
+          2.859798192871618e-16
+        ],
+        [
+          2.059054698867565e-15,
+          0.04938194145620409,
+          1.0009293675050664e-16
+        ],
+        [
+          2.859798192871618e-16,
+          1.0009293675050664e-16,
+          0.0030642415910356793
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-M3-1-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Purchased washer OD7 /hole3.2 /th0.5",
+      "solid_count": 1,
+      "volume_mm3": 15.221016406642548,
+      "mass_kg": 0.00011948497879214398,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        58.260942488726315,
+        21.205248886191463,
+        7.25
+      ],
+      "bbox_size_mm": [
+        7.0,
+        7.0,
+        0.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.00044428875613746084,
+          -5.719303533721388e-17,
+          1.0723694125727604e-16
+        ],
+        [
+          -5.719303533721388e-17,
+          0.00044428875613738224,
+          1.0723694125727604e-17
+        ],
+        [
+          1.0723694125727604e-16,
+          1.0723694125727604e-17,
+          0.0008835989714918648
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-tab-spacer-1",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Purchased washer OD7 /hole3.2 /th0.5",
+      "solid_count": 1,
+      "volume_mm3": 15.221016406642548,
+      "mass_kg": 0.00011948497879214398,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        58.260942488726315,
+        21.205248886191463,
+        3.7500000000000004
+      ],
+      "bbox_size_mm": [
+        7.0,
+        7.0,
+        0.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.000444288756137468,
+          -5.719303533721388e-17,
+          -3.574564708575868e-18
+        ],
+        [
+          -5.719303533721388e-17,
+          0.00044428875613738224,
+          -1.429825883430347e-17
+        ],
+        [
+          -3.574564708575868e-18,
+          -1.429825883430347e-17,
+          0.0008835989714918648
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-nut-1",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4032 nut M3; AF5.5, envelope height2.4; thread helix omitted",
+      "solid_count": 1,
+      "volume_mm3": 45.90884398536531,
+      "mass_kg": 0.00036038442528511767,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        58.260942488726315,
+        21.20524888619146,
+        -3.7000000000000006
+      ],
+      "bbox_size_mm": [
+        6.350852961085877,
+        5.5000000000000036,
+        2.400000000000001
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.0011346106520138855,
+          2.2835180579374595e-16,
+          4.2815963586327366e-17
+        ],
+        [
+          2.2835180579374595e-16,
+          0.0011346106520147704,
+          -0.0
+        ],
+        [
+          4.2815963586327366e-17,
+          -0.0,
+          0.001923252255754904
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-M3-2",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4762 M3x16",
+      "solid_count": 1,
+      "volume_mm3": 177.60639539048506,
+      "mass_kg": 0.0013942102038153076,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -58.26094248872631,
+        21.205248886191466,
+        2.917196615098527
+      ],
+      "bbox_size_mm": [
+        5.5,
+        5.5,
+        19.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.04938194145621118,
+          -0.0,
+          8.579394578614854e-17
+        ],
+        [
+          -0.0,
+          0.049381941456214155,
+          1.429899096435809e-17
+        ],
+        [
+          8.579394578614854e-17,
+          1.429899096435809e-17,
+          0.003064241591047576
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-M3-2-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Purchased washer OD7 /hole3.2 /th0.5",
+      "solid_count": 1,
+      "volume_mm3": 15.221016406642548,
+      "mass_kg": 0.00011948497879214398,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -58.26094248872633,
+        21.20524888619147,
+        7.25
+      ],
+      "bbox_size_mm": [
+        7.0,
+        7.0,
+        0.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.00044428875613744664,
+          8.578955300582085e-17,
+          -1.143860706744278e-16
+        ],
+        [
+          8.578955300582085e-17,
+          0.00044428875613732516,
+          1.0723694125727606e-17
+        ],
+        [
+          -1.143860706744278e-16,
+          1.0723694125727606e-17,
+          0.0008835989714917505
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-tab-spacer-2",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Purchased washer OD7 /hole3.2 /th0.5",
+      "solid_count": 1,
+      "volume_mm3": 15.221016406642548,
+      "mass_kg": 0.00011948497879214398,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -58.26094248872633,
+        21.20524888619147,
+        3.7500000000000004
+      ],
+      "bbox_size_mm": [
+        7.0,
+        7.0,
+        0.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.0004442887561374538,
+          8.578955300582085e-17,
+          -2.144738825145521e-17
+        ],
+        [
+          8.578955300582085e-17,
+          0.00044428875613732516,
+          3.5745647085758686e-18
+        ],
+        [
+          -2.144738825145521e-17,
+          3.5745647085758686e-18,
+          0.0008835989714917505
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-nut-2",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4032 nut M3; AF5.5, envelope height2.4; thread helix omitted",
+      "solid_count": 1,
+      "volume_mm3": 45.90884398536531,
+      "mass_kg": 0.00036038442528511767,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -58.26094248872633,
+        21.205248886191473,
+        -3.7000000000000006
+      ],
+      "bbox_size_mm": [
+        6.350852961085877,
+        5.5000000000000036,
+        2.400000000000001
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.0011346106520134325,
+          -1.6555505920046635e-15,
+          2.56895781517965e-16
+        ],
+        [
+          -1.6555505920046635e-15,
+          0.0011346106520083803,
+          -6.065594841396396e-17
+        ],
+        [
+          2.56895781517965e-16,
+          -6.065594841396396e-17,
+          0.0019232522557480597
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-M3-3",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4762 M3x16",
+      "solid_count": 1,
+      "volume_mm3": 177.60639539048506,
+      "mass_kg": 0.0013942102038153076,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -58.26094248872631,
+        -21.205248886191452,
+        2.917196615098527
+      ],
+      "bbox_size_mm": [
+        5.5,
+        5.5,
+        19.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.04938194145621188,
+          6.863515662891886e-16,
+          -2.573818373584457e-16
+        ],
+        [
+          6.863515662891886e-16,
+          0.04938194145619952,
+          1.4298990964358094e-17
+        ],
+        [
+          -2.573818373584457e-16,
+          1.4298990964358094e-17,
+          0.0030642415910338496
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-M3-3-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Purchased washer OD7 /hole3.2 /th0.5",
+      "solid_count": 1,
+      "volume_mm3": 15.221016406642548,
+      "mass_kg": 0.00011948497879214398,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -58.26094248872633,
+        -21.20524888619145,
+        7.25
+      ],
+      "bbox_size_mm": [
+        7.0,
+        7.0,
+        0.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.0004442887561374256,
+          1.143860706744279e-16,
+          -5.719303533721395e-17
+        ],
+        [
+          1.143860706744279e-16,
+          0.00044428875613681076,
+          -3.574564708575872e-18
+        ],
+        [
+          -5.719303533721395e-17,
+          -3.574564708575872e-18,
+          0.0008835989714911794
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-tab-spacer-3",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Purchased washer OD7 /hole3.2 /th0.5",
+      "solid_count": 1,
+      "volume_mm3": 15.221016406642548,
+      "mass_kg": 0.00011948497879214398,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -58.26094248872633,
+        -21.20524888619145,
+        3.7500000000000004
+      ],
+      "bbox_size_mm": [
+        7.0,
+        7.0,
+        0.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.00044428875613743276,
+          1.143860706744279e-16,
+          -1.0723694125727615e-17
+        ],
+        [
+          1.143860706744279e-16,
+          0.00044428875613675356,
+          -1.787282354287936e-18
+        ],
+        [
+          -1.0723694125727615e-17,
+          -1.787282354287936e-18,
+          0.0008835989714911794
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-nut-3",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4032 nut M3; AF5.5, envelope height2.4; thread helix omitted",
+      "solid_count": 1,
+      "volume_mm3": 45.9088439853653,
+      "mass_kg": 0.0003603844252851176,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        -58.260942488726336,
+        -21.205248886191463,
+        -3.700000000000001
+      ],
+      "bbox_size_mm": [
+        6.350852961085877,
+        5.5000000000000036,
+        2.400000000000001
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.0011346106520134893,
+          2.854397572421833e-16,
+          -4.2815963586327495e-17
+        ],
+        [
+          2.854397572421833e-16,
+          0.001134610652018199,
+          7.492793627607312e-17
+        ],
+        [
+          -4.2815963586327495e-17,
+          7.492793627607312e-17,
+          0.0019232522557581068
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-M3-4",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4762 M3x16",
+      "solid_count": 1,
+      "volume_mm3": 177.60639539048506,
+      "mass_kg": 0.0013942102038153076,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        58.260942488726315,
+        -21.205248886191452,
+        2.9171966150985247
+      ],
+      "bbox_size_mm": [
+        5.5,
+        5.5,
+        19.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.04938194145621084,
+          -1.1439192771486473e-15,
+          2.859798192871618e-16
+        ],
+        [
+          -1.1439192771486473e-15,
+          0.04938194145620409,
+          -7.149495482179045e-17
+        ],
+        [
+          2.859798192871618e-16,
+          -7.149495482179045e-17,
+          0.0030642415910356793
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-M3-4-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Purchased washer OD7 /hole3.2 /th0.5",
+      "solid_count": 1,
+      "volume_mm3": 15.221016406642548,
+      "mass_kg": 0.00011948497879214398,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        58.260942488726315,
+        -21.20524888619145,
+        7.25
+      ],
+      "bbox_size_mm": [
+        7.0,
+        7.0,
+        0.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.00044428875613747516,
+          2.859651766860694e-17,
+          1.0723694125727604e-16
+        ],
+        [
+          2.859651766860694e-17,
+          0.00044428875613738224,
+          -3.574564708575868e-18
+        ],
+        [
+          1.0723694125727604e-16,
+          -3.574564708575868e-18,
+          0.0008835989714918648
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-tab-spacer-4",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Purchased washer OD7 /hole3.2 /th0.5",
+      "solid_count": 1,
+      "volume_mm3": 15.221016406642548,
+      "mass_kg": 0.00011948497879214398,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        58.260942488726315,
+        -21.20524888619145,
+        3.7500000000000004
+      ],
+      "bbox_size_mm": [
+        7.0,
+        7.0,
+        0.5
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.0004442887561374823,
+          2.859651766860694e-17,
+          -3.574564708575868e-18
+        ],
+        [
+          2.859651766860694e-17,
+          0.00044428875613738224,
+          7.149129417151736e-18
+        ],
+        [
+          -3.574564708575868e-18,
+          7.149129417151736e-18,
+          0.0008835989714918648
+        ]
+      ]
+    },
+    {
+      "id": "A16-C03-H-nut-4",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4032 nut M3; AF5.5, envelope height2.4; thread helix omitted",
+      "solid_count": 1,
+      "volume_mm3": 45.9088439853653,
+      "mass_kg": 0.0003603844252851176,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        58.26094248872633,
+        -21.20524888619146,
+        -3.700000000000002
+      ],
+      "bbox_size_mm": [
+        6.350852961085877,
+        5.5000000000000036,
+        2.400000000000001
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.0011346106520141422,
+          1.3130228833140388e-15,
+          4.281596358632736e-17
+        ],
+        [
+          1.3130228833140388e-15,
+          0.0011346106520147702,
+          -1.070399089658184e-17
+        ],
+        [
+          4.281596358632736e-17,
+          -1.070399089658184e-17,
+          0.0019232522557553603
+        ]
+      ]
+    }
+  ],
+  "replaces_only": [
+    "A16-C02-J1-cowl-a",
+    "A16-C02-J1-cowl-b",
+    "A16-R102-J1-front-holder"
+  ],
+  "mount_radius_mm": 62,
+  "mount_angles_deg": [
+    20,
+    160,
+    200,
+    340
+  ],
+  "holes_diameter_mm": 3.5,
+  "tab_z_mm": [
+    4,
+    7
+  ],
+  "tab_thickness_mm": 3,
+  "whole_base_nominal_bounds": {
+    "product_count": 216,
+    "base_top_z_mm": 74.00000095367432,
+    "module_bottom_z_mm": 75.19999989999815,
+    "vertical_gap_mm": 1.1999989463238308,
+    "scope": "Conservative world-Z separation against canonical source-manifest product bounds, not base-shell BREP or tolerance/physical qualification."
+  },
+  "hardware_BOM": {
+    "ISO4762_M3x16": 4,
+    "DIN125_M3_washer_OD7_ID3.2_H0.5": 8,
+    "ISO4032_M3_AF5.5_H2.4": 4
+  },
+  "rear_thread_tip_z_mm": -8.5,
+  "nut_bottom_z_mm": -4.9,
+  "checks": [
+    {
+      "pose": "idle",
+      "bbox_pairs": 153,
+      "new_exact_checks": 153
+    },
+    {
+      "pose": "attention",
+      "bbox_pairs": 135,
+      "new_exact_checks": 0
+    },
+    {
+      "pose": "reference",
+      "bbox_pairs": 135,
+      "new_exact_checks": 0
+    }
+  ],
+  "collisions": [],
+  "scoped_clear": true,
+  "tool_access": {
+    "pose": "reference",
+    "J1_deg": 0,
+    "empty_space_diameter_mm": 3.2,
+    "shaft_z_mm": [
+      10.6,
+      30.5
+    ],
+    "outward_leg_mm": 30,
+    "collisions": [],
+    "scoped_clear": true,
+    "actual_tool_selected": false,
+    "socket_and_insertion_qualified": false
+  },
+  "assembly_order": "Nut below R102, half-mm washer above R102, two tabs per cowl, head washer then M3x16. Preassemble R102 nuts before fitting cowls. Motor outputs and B06 interface untouched.",
+  "scope": "Root replacement plate/two covers plus16 purchased envelopes vs current full core, other covers,352 existing hardware,14 exact external motor partitions, B06 load flange and two root space allocations;3 named static poses. No complete base shell, real plugs or motion path.",
+  "physical_assembly_qualified": false,
+  "retention_strength_qualified": false,
+  "thermal_qualified": false,
+  "production_release": false
+}

@@ -302,40 +302,114 @@
       ]
     ]
   },
-  "report_sha256": {
-    "root01/manifest.json": "03407990554696d00cea63bb83b54b0ca42166c79e8da587b843642ac76c9fca",
-    "root01/review.json": "919cff728d84dfd2ccfc89991d38138f717bbb248855fa4c7a0b5ee993eac7e2",
-    "skeleton01/manifest.json": "8c5cd7ccfc472f944d13d629507950ffab2a69f916c4f1362402e85dc4b6d42e",
-    "skeleton01/review.json": "4fbeae6ceaccd1371f4e986196cfc1815596a84ab7da26fcc44203240c77b34a",
-    "hardware01/manifest.json": "7ae73d2ae4091ec3b0812b5ba930bc79ffa8a79038cde0ac4bea7a42d114c783",
-    "hardware01/review.json": "72726b29aa02865eb495b6243d87a10d3af3d062eb327c4811588264fe26786a",
-    "covers02/manifest.json": "7c9d2e0dc8afca0eb8a817eb9e0b00b18c7db7500c3b554327bf70a60d930603",
-    "covers02/review.json": "22a37bdd68ed7eed16d0ba2a1581cf2ff2c15b874234ebbe566cc4940bb26e85",
-    "covers02/review-hardware.json": "60f02bf49e51ebd6658cb05707142a76ee3aab0ac57309c6ffb508162a9a8526",
-    "routing01/manifest.json": "aa1d1d4faa829b5470dbd8154587c61c7c6efd2d711e3a2820dc228ef2f8c46a",
-    "gravity.json": "f019e4b9040c074692457e464b6a3b2ab0bc4f77e4f7e14b40dae3d128110e0a",
-    "shoulder02.json": "0ea9c5267119455a860e543a06e275058b46b88a303c0372cad39a430d9e1d8f",
-    "manufacture01/print-audit.json": "477238a5cc3c9c48cdfb6e695bb142df48c6cb12ed4ec0cfe2f3f7c579f40bfa",
-    "native-audit.json": "218ffeb521077a4401a24f662fc299b95eb693da1fc29c344d8a1bcb019960d7"
+  "source_sha256": {
+    "engineering/arm_a16/build/root-cover03/manifest.json": "7a36c6f26c0ad2b6d9dfe14fc73444e5f3f24f9f549f465e4d9ce45ded26f5f3",
+    "engineering/arm_a16/build/root-cover03/step/A16-C03-root-front-holder.step": "b5aadc6397d775ce98224c32503ce323182debb5145f8ed02fd409380d452adc",
+    "engineering/arm_a16/build/root-cover03/step/A16-C03-root-cowl-a.step": "4688a057da97b93a5eba34c17baa86f98511de76333c8e034a0f6232daf65f91",
+    "engineering/arm_a16/build/root-cover03/step/A16-C03-root-cowl-b.step": "f1cb600b6ff0a4f3c58400d5ac03768f96bb76cd6619e89f71c4f768f5521f19"
   },
-  "checked_source_hashes": 1276,
-  "archives": [
+  "print_parts": [
     {
-      "path": "engineering/arm_a16/build/root01/A16-root-supported-fit.zip",
-      "sha256": "c94f3dc5b03843d0e5ec679bdc04f85ed9d652e9b4f5ab927d18a0a576c2ec54",
-      "verified_members": 21
+      "id": "A16-C03-root-front-holder",
+      "source_sha256": "cd29c1431562de0b88b2f4d8f28446ed6e7fe07e03e77dcb59727881e8f50099",
+      "print_sha256": "d1669ad0cf0ee01380701771909fb33f6cba5371df07cd7883126ba397d1e7d9",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        2.5
+      ],
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        134.0,
+        133.8650665283203,
+        6.0
+      ],
+      "orientation": "Holder flat; each cowl upright with external brim, internal supports under tabs. Supports and slicing not qualified."
     },
     {
-      "path": "engineering/arm_a16/build/manufacture01/A16-core-supported-fit.zip",
-      "sha256": "b5ade4719cbc6dc9fa664d9c52ee97f0d7f0f3d56fe61d8346893b57f2bc87a9",
-      "verified_members": 44
+      "id": "A16-C03-root-cowl-a",
+      "source_sha256": "0346d9045e911937c44e82f9e58cb9e8d7d6e49dc910f5de9c510a79880d1fb6",
+      "print_sha256": "390db5db4fb9d385d8c26ca8b0e0fcc35fbc79237d24547f04cb3d8a2ddaaf62",
+      "translation_mm": [
+        -0.0,
+        -39.17499923706055,
+        89.80000305175781
+      ],
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        146.0,
+        77.8499984741211,
+        118.30000305175781
+      ],
+      "orientation": "Holder flat; each cowl upright with external brim, internal supports under tabs. Supports and slicing not qualified."
+    },
+    {
+      "id": "A16-C03-root-cowl-b",
+      "source_sha256": "57536a099c34f4ca5874ae4ffd37446c5439dd009ae7a2bf1b944f10984931b0",
+      "print_sha256": "67a9e03b34711c2d052110541e763867091d7d64372933980de8828dab9d89d7",
+      "translation_mm": [
+        -0.0,
+        37.04499816894531,
+        89.80000305175781
+      ],
+      "rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "size_mm": [
+        146.0,
+        73.58999633789062,
+        118.30000305175781
+      ],
+      "orientation": "Holder flat; each cowl upright with external brim, internal supports under tabs. Supports and slicing not qualified."
     }
   ],
-  "digital_issue_current": true,
-  "scope": "Current CAD/report/native/image provenance and archive integrity only. Not a manufacturing or hardware acceptance test.",
-  "physical_print_fit_qualified": false,
-  "connected_harness_qualified": false,
-  "continuous_motion_qualified": false,
-  "thermal_payload_qualified": false,
+  "hardware_count": 16,
+  "scope": "Closed mesh,250mm bed envelope, proper translation, nominal BREP orthographics and purchased BOM. Slicer and physical assembly unqualified.",
   "production_release": false
 }

@@ -9,9 +9,10 @@ H=[]
 def add(id,s,owner,frame,note):
     e=g.add(id,s,owner,role='hardware',material='purchased steel, nominal dimensional envelope; do not print',note=note,frame=frame,mass=s.Volume()*7.85e-6)
     assert e['solid_count']==1;return e
-def washer(id,p,n,d,owner,frame,th,outer):
-    return add(id,g.ring(p,n,outer/2,d/2+.2,th),owner,frame,f'Purchased washer OD{outer} /hole{d+.4} /th{th}')
-def bolt(id,p,n,d,length,grip,owner,frame,w=.8,od=None,motor=None,depth=None,button=False):
+def washer(id,p,n,d,owner,frame,th,outer,hole=None):
+    inner=d+.4 if hole is None else hole
+    return add(id,g.ring(p,n,outer/2,inner/2,th),owner,frame,f'Purchased washer OD{outer} /hole{inner} /th{th}')
+def bolt(id,p,n,d,length,grip,owner,frame,w=.8,od=None,motor=None,depth=None,button=False,washer_hole=None):
     p=np.array(p,float);n=np.array(n,float);outer,height={3:(5.5,3),4:(7,4),5:(8.5,5),6:(10,6)}[d]
     if button:outer,height=5.7,1.65
     start=p+n*(grip+w-length);bearing=p+n*(grip+w)
@@ -20,7 +21,7 @@ def bolt(id,p,n,d,length,grip,owner,frame,w=.8,od=None,motor=None,depth=None,but
     tool=cq.Workplane(g.plane(bearing+n*(height+.1),-n)).polygon(6,af/math.cos(math.pi/6)).extrude(min(height-.3,af/2)+.1).val();s=s.cut(tool)
     e=add(id,s,owner,frame,f'ISO4762 M{d}x{length}' if not button else f'ISO7380-1 M{d}x{length}; hexsocketAF{af}')
     outer_washer=od if od is not None else {3:7,4:9,5:9,6:12}[d]
-    washer(id+'-washer',p+n*grip,n,d,owner,frame,w,outer_washer)
+    washer(id+'-washer',p+n*grip,n,d,owner,frame,w,outer_washer,hole=washer_hole)
     entry=dict(id=id,frame=frame,owner=owner,p_mm=p.tolist(),n=n.tolist(),diameter_mm=d,length_mm=length,plate_grip_mm=grip,washer_mm=w,washer_outer_mm=outer_washer,head_diameter_mm=outer,head_height_mm=height,motor=motor,source_blind_depth_mm=depth,engagement_mm=length-grip-w)
     if motor:
         assert 0<entry['engagement_mm']
