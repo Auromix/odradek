@@ -1,0 +1,206 @@
+{
+  "revision": "A14-QUAL01-DOMAIN",
+  "layout_source_sha256": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559",
+  "sample_count": 4099,
+  "mass_scope": "catalogue nominal motors plus3kg at flange centre, frame/shell/hardware/harness all excluded",
+  "maxima": [
+    {
+      "joint": "J1",
+      "holding_Nm": -0.0,
+      "abs_holding_Nm": 0.0,
+      "bending_Nm": 18.910361313376903,
+      "force_N": [
+        0.0,
+        0.0,
+        -73.19241
+      ],
+      "moment_Nm": [
+        -4.317106320000001,
+        18.410984710880562,
+        0.0
+      ],
+      "q_deg": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "catalog_zero_speed_reference_Nm": 13,
+      "exceeds_reference": false
+    },
+    {
+      "joint": "J2",
+      "holding_Nm": -31.55656275,
+      "abs_holding_Nm": 31.55656275,
+      "bending_Nm": 2.94498162,
+      "force_N": [
+        0.0,
+        0.0,
+        -59.26221
+      ],
+      "moment_Nm": [
+        -2.94498162,
+        31.55656275,
+        0.0
+      ],
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "catalog_zero_speed_reference_Nm": 28.5,
+      "exceeds_reference": true
+    },
+    {
+      "joint": "J3",
+      "holding_Nm": 14.130894660573931,
+      "abs_holding_Nm": 14.130894660573931,
+      "bending_Nm": 18.699415162773516,
+      "force_N": [
+        0.0,
+        0.0,
+        -50.43321
+      ],
+      "moment_Nm": [
+        -22.691579996939335,
+        -5.868774027043774,
+        0.0
+      ],
+      "q_deg": [
+        67.265625,
+        85.12574302697757,
+        -60.896,
+        -88.44023323615161,
+        14.95867768595042,
+        12.699135184342296,
+        9.763891715855905
+      ],
+      "catalog_zero_speed_reference_Nm": 13,
+      "exceeds_reference": true
+    },
+    {
+      "joint": "J4",
+      "holding_Nm": -14.40927135,
+      "abs_holding_Nm": 14.40927135,
+      "bending_Nm": 2.94498162,
+      "force_N": [
+        0.0,
+        0.0,
+        -41.60421
+      ],
+      "moment_Nm": [
+        -2.94498162,
+        14.40927135,
+        0.0
+      ],
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "catalog_zero_speed_reference_Nm": 13,
+      "exceeds_reference": true
+    },
+    {
+      "joint": "J5",
+      "holding_Nm": -6.712492499999999,
+      "abs_holding_Nm": 6.712492499999999,
+      "bending_Nm": 0.0,
+      "force_N": [
+        0.0,
+        0.0,
+        -35.5122
+      ],
+      "moment_Nm": [
+        0.0,
+        6.712492499999999,
+        0.0
+      ],
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "catalog_zero_speed_reference_Nm": 8,
+      "exceeds_reference": false
+    },
+    {
+      "joint": "J6",
+      "holding_Nm": 4.048648860232783,
+      "abs_holding_Nm": 4.048648860232783,
+      "bending_Nm": 0.007269340373127591,
+      "force_N": [
+        0.0,
+        0.0,
+        -32.4711
+      ],
+      "moment_Nm": [
+        -3.4166252493880394,
+        2.1721607541841355,
+        0.0
+      ],
+      "q_deg": [
+        83.96484375,
+        55.69120560890107,
+        74.27199999999999,
+        -58.45272802998751,
+        36.9571750563486,
+        -36.509225867441614,
+        31.746387136169346
+      ],
+      "catalog_zero_speed_reference_Nm": 3.6,
+      "exceeds_reference": true
+    },
+    {
+      "joint": "J7",
+      "holding_Nm": -3.3306690738754696e-15,
+      "abs_holding_Nm": 3.3306690738754696e-15,
+      "bending_Nm": 3.1021592443902493,
+      "force_N": [
+        0.0,
+        0.0,
+        -29.43
+      ],
+      "moment_Nm": [
+        -1.4606068458717285,
+        -2.7367900210554197,
+        0.0
+      ],
+      "q_deg": [
+        106.9921875,
+        87.9240969364426,
+        27.42400000000002,
+        33.309037900874614,
+        -26.694214876033072,
+        46.12653618570779,
+        77.03032770201506
+      ],
+      "catalog_zero_speed_reference_Nm": 3.6,
+      "exceeds_reference": false
+    }
+  ],
+  "max_virtual_work_error_Nm": 9.286118540785537e-10,
+  "selection_frozen": false,
+  "production_release": false,
+  "limitations": [
+    "Unfiltered joint-domain samples; witnesses are not collision-qualified configurations or paths.",
+    "Sample maxima are lower bounds on the unfiltered mathematical domain, not global upper bounds or allowable workspace.",
+    "Diagnostic geometry and motor centres retained from A11. Supplier heat boundary and enclosed thermal derating remain unconfirmed.",
+    "No drive friction, inertia, acceleration, vibration, off-centre payload, harness or operating temperature qualification."
+  ]
+}
