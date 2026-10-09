@@ -9,7 +9,7 @@ def main():
         'skeleton01/review.json','hardware01/manifest.json','hardware01/review.json',
         'covers02/manifest.json','covers02/review.json','covers02/review-hardware.json',
         'routing01/manifest.json','gravity.json','shoulder02.json',
-        'manufacture01/print-audit.json','native-audit.json']
+        'manufacture01/print-audit.json','native-audit.json','base-independent-check.json']
     records={};checked=0
     for name in paths:
         path=c.OUT/name;d=json.loads(path.read_text());assert d['layout']==c.L,name

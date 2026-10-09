@@ -1,4 +1,12 @@
 {
+  "pass": true,
+  "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+  "arm_native_sha256": "f2836b4e6bd3decb64986afd5603b910057fb17a97fcbed2251041efbc47d0ea",
+  "base_meshes_checked": 221,
+  "world_vertices_and_polygon_indices_unchanged": true,
+  "changed_or_missing_objects": [],
+  "method": "Read-only reopen both native files with automatic script execution disabled; compare world-space mesh vertices and polygon indices.",
+  "limits": "Mesh identity only; not assembly, dynamic collision, wiring, load or manufacturing qualification.",
   "layout": {
     "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
     "units": "mm",
@@ -6,7 +14,7 @@
     "joints": [
       {
         "id": "J1",
-        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "name": "底部转向",
         "model": "RS03",
         "axis": [
           0,
@@ -34,7 +42,7 @@
       },
       {
         "id": "J2",
-        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "name": "肩部俯仰",
         "model": "RS04",
         "axis": [
           0,
@@ -63,7 +71,7 @@
       },
       {
         "id": "J3",
-        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "name": "上臂旋转",
         "model": "RS04",
         "axis": [
           1,
@@ -91,7 +99,7 @@
       },
       {
         "id": "J4",
-        "name": "\u8098\u90e8\u56de\u6298",
+        "name": "肘部回折",
         "model": "RS04",
         "axis": [
           0,
@@ -119,7 +127,7 @@
       },
       {
         "id": "J5",
-        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "name": "腕部俯仰",
         "model": "RS10P",
         "axis": [
           0,
@@ -148,7 +156,7 @@
       },
       {
         "id": "J6",
-        "name": "\u8155\u90e8\u6a2a\u6446",
+        "name": "腕部横摆",
         "model": "RS10P",
         "axis": [
           0,
@@ -176,7 +184,7 @@
       },
       {
         "id": "J7",
-        "name": "\u6574\u5934\u65cb\u8f6c",
+        "name": "整头旋转",
         "model": "RS00",
         "axis": [
           1,
@@ -302,41 +310,11 @@
       ]
     ]
   },
-  "report_sha256": {
-    "root01/manifest.json": "03407990554696d00cea63bb83b54b0ca42166c79e8da587b843642ac76c9fca",
-    "root01/review.json": "919cff728d84dfd2ccfc89991d38138f717bbb248855fa4c7a0b5ee993eac7e2",
-    "skeleton01/manifest.json": "8c5cd7ccfc472f944d13d629507950ffab2a69f916c4f1362402e85dc4b6d42e",
-    "skeleton01/review.json": "4fbeae6ceaccd1371f4e986196cfc1815596a84ab7da26fcc44203240c77b34a",
-    "hardware01/manifest.json": "7ae73d2ae4091ec3b0812b5ba930bc79ffa8a79038cde0ac4bea7a42d114c783",
-    "hardware01/review.json": "72726b29aa02865eb495b6243d87a10d3af3d062eb327c4811588264fe26786a",
-    "covers02/manifest.json": "7c9d2e0dc8afca0eb8a817eb9e0b00b18c7db7500c3b554327bf70a60d930603",
-    "covers02/review.json": "22a37bdd68ed7eed16d0ba2a1581cf2ff2c15b874234ebbe566cc4940bb26e85",
-    "covers02/review-hardware.json": "60f02bf49e51ebd6658cb05707142a76ee3aab0ac57309c6ffb508162a9a8526",
-    "routing01/manifest.json": "aa1d1d4faa829b5470dbd8154587c61c7c6efd2d711e3a2820dc228ef2f8c46a",
-    "gravity.json": "f019e4b9040c074692457e464b6a3b2ab0bc4f77e4f7e14b40dae3d128110e0a",
-    "shoulder02.json": "0ea9c5267119455a860e543a06e275058b46b88a303c0372cad39a430d9e1d8f",
-    "manufacture01/print-audit.json": "477238a5cc3c9c48cdfb6e695bb142df48c6cb12ed4ec0cfe2f3f7c579f40bfa",
-    "native-audit.json": "218ffeb521077a4401a24f662fc299b95eb693da1fc29c344d8a1bcb019960d7",
-    "base-independent-check.json": "2b3e3af149a69999423a845f37b0cb2df16952e0f714f40175aaf6a597b05408"
+  "source_sha256": {
+    "../odradek/engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "work/arm-a16/actual-motors.blend": "f2836b4e6bd3decb64986afd5603b910057fb17a97fcbed2251041efbc47d0ea"
   },
-  "checked_source_hashes": 1278,
-  "archives": [
-    {
-      "path": "engineering/arm_a16/build/root01/A16-root-supported-fit.zip",
-      "sha256": "c94f3dc5b03843d0e5ec679bdc04f85ed9d652e9b4f5ab927d18a0a576c2ec54",
-      "verified_members": 21
-    },
-    {
-      "path": "engineering/arm_a16/build/manufacture01/A16-core-supported-fit.zip",
-      "sha256": "b5ade4719cbc6dc9fa664d9c52ee97f0d7f0f3d56fe61d8346893b57f2bc87a9",
-      "verified_members": 44
-    }
-  ],
-  "digital_issue_current": true,
-  "scope": "Current CAD/report/native/image provenance and archive integrity only. Not a manufacturing or hardware acceptance test.",
-  "physical_print_fit_qualified": false,
-  "connected_harness_qualified": false,
-  "continuous_motion_qualified": false,
-  "thermal_payload_qualified": false,
+  "independent_evidence_sha256": "65c5b54ef4fa20bd24a5fe2bf7d4f34f6f90ca9a8cdb3a4e87d31ca739a18753",
+  "independent_evidence_origin": "Base-design conversation read-only native reopen",
   "production_release": false
 }
