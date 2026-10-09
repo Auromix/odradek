@@ -1,0 +1,149 @@
+{
+  "revision": "TOOL-IF01",
+  "mechanical": {
+    "frame": "J7.rotor",
+    "body_flange_plane_x_mm": 65.7,
+    "receiver_front_x_mm": 76.7,
+    "receiver_thickness_mm": 11,
+    "flange_OD_mm": 60,
+    "fasteners": "3 M4x20 + 0.8 washer + rear M4 nut on PCD45",
+    "angle_start_deg": 30,
+    "pilot": {
+      "male_OD_mm": 18,
+      "male_length_mm": 2,
+      "female_ID_mm": 18.3,
+      "female_depth_mm": 2.2
+    },
+    "unique_clock_pin": {
+      "centre_yz_mm": [
+        24,
+        0
+      ],
+      "pin": "D3x6",
+      "male_bore_mm": 3.1,
+      "female_bore_mm": 3.3,
+      "retention": "Physical prototype measurement/bonding; future metal fit separate"
+    },
+    "load_path": "Tool receiver -> three M4 clamp stations / piloted flange -> journal / external bearings -> carrier; no qualification from print",
+    "independent_of_J7_motor_screws": true
+  },
+  "ports": [
+    {
+      "id": "PWR",
+      "y": -28.5,
+      "z": 41,
+      "opening": [
+        14,
+        16
+      ],
+      "budget": [
+        40,
+        12,
+        13
+      ],
+      "candidate": "Molex Micro-Fit 3.0 4-circuit family",
+      "function": "Tool supply; voltage, current, contacts and pinout not released",
+      "budget_origin_mm": [
+        86.7,
+        -34.5,
+        34.5
+      ],
+      "frame": "J7.rotor",
+      "budget_kind": "Design allocation only; no exact supplier fit qualification",
+      "unplug_budget_dx_mm": 25,
+      "latch_access": "Lid removed; open-top probe budget above Z55.5",
+      "part_number_frozen": false
+    },
+    {
+      "id": "CTRL",
+      "y": -9.5,
+      "z": 40.5,
+      "opening": [
+        18,
+        18
+      ],
+      "budget": [
+        48,
+        16,
+        16
+      ],
+      "candidate": "Replaceable locking CAN insert or RJ45-size EtherCAT insert",
+      "function": "Control only; protocol/PN/pinout not frozen; not ordinary LAN",
+      "budget_origin_mm": [
+        82.7,
+        -17.5,
+        32.5
+      ],
+      "frame": "J7.rotor",
+      "budget_kind": "Design allocation only; no exact supplier fit qualification",
+      "unplug_budget_dx_mm": 25,
+      "latch_access": "Lid removed; open-top probe budget above Z55.5",
+      "part_number_frozen": false
+    },
+    {
+      "id": "CAM_UP",
+      "y": 9.5,
+      "z": 41,
+      "opening": [
+        14,
+        16
+      ],
+      "budget": [
+        56,
+        12,
+        14
+      ],
+      "candidate": "Independent 50-ohm GMSL coax assembly",
+      "function": "Upper fisheye video/return control; PoC conditional on actual camera chain",
+      "budget_origin_mm": [
+        78.7,
+        3.5,
+        34.0
+      ],
+      "frame": "J7.rotor",
+      "budget_kind": "Design allocation only; no exact supplier fit qualification",
+      "unplug_budget_dx_mm": 25,
+      "latch_access": "Lid removed; open-top probe budget above Z55.5",
+      "part_number_frozen": false
+    },
+    {
+      "id": "CAM_DOWN",
+      "y": 26.5,
+      "z": 41,
+      "opening": [
+        14,
+        16
+      ],
+      "budget": [
+        56,
+        12,
+        14
+      ],
+      "candidate": "Independent 50-ohm GMSL coax assembly",
+      "function": "Lower fisheye video/return control; PoC conditional on actual camera chain",
+      "budget_origin_mm": [
+        78.7,
+        20.5,
+        34.0
+      ],
+      "frame": "J7.rotor",
+      "budget_kind": "Design allocation only; no exact supplier fit qualification",
+      "unplug_budget_dx_mm": 25,
+      "latch_access": "Lid removed; open-top probe budget above Z55.5",
+      "part_number_frozen": false
+    }
+  ],
+  "service": {
+    "cover_removal": "+Z",
+    "connector_panel_removal": "+Z after cover removal",
+    "unplug": "+X, 25mm design budget",
+    "per_port_strain_relief": "Two 2x8 tie windows downstream of the connector budget; use selected cable saddle later",
+    "local_camera_bend_and_roll": "Not solved: do not assume tight bend or hollow RS00",
+    "power": "Separate from motor 48V bus unless matched converter/head is validated; tool supply voltage/current pending",
+    "video": "Two independent coax channels; never on CAN/RJ45 control contacts; PoC only with compatible source/camera",
+    "control": "CAN or EtherCAT chosen with actual head electronics; different removable inserts; no arbitrary RJ45 pinout or STO claim",
+    "hotplug": false,
+    "live_wiring_released": false,
+    "exact_connector_retention_released": false
+  }
+}
