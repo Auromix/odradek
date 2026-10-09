@@ -16,8 +16,8 @@ def inputs():
     paths+=sorted((HERE/'build/load-frame/step').glob('B06-*.step'))
     paths+=sorted((HERE/'build/standalone-test/step').glob('*.step'))
     io=HERE.parent/'electronics/base-io-b05';light=HERE.parent/'electronics/base-light-b06'
-    paths+=[io/'base-io-b05/sch/base-rear-interface01/base-rear-interface01.esch2',io/'base-io-b05/pcb/base-rear-interface01.epcb2',io/'base-io-b05/pcb/PCB1.epcb2',io/'base-io-b05/sch/Schematic1/P1.esch2',light/'pin-nets.json']
-    paths+=sorted((io/'manufacturing/b06-io-prototype').glob('*'))+sorted((light/'manufacturing').glob('*'))
+    paths+=[io/'base-io-b05/base-io-b05.eprj3',io/'local5v/package-envelopes.json',io/'base-io-b05/sch/base-rear-interface01/base-rear-interface01.esch2',io/'base-io-b05/pcb/base-rear-interface01.epcb2',io/'base-io-b05/pcb/PCB1.epcb2',io/'base-io-b05/sch/Schematic1/P1.esch2',light/'pin-nets.json']
+    paths+=sorted((io/'manufacturing/b06-io-local5v').glob('*'))+sorted((light/'manufacturing').glob('*'))
     return {str(p.relative_to(HERE.parent)):sha(p) for p in paths if p.is_file()}
 def acceptable(v,rule):
     if 'equals' in rule:return type(v)==type(rule['equals']) and v==rule['equals']

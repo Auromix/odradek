@@ -3,7 +3,7 @@
   "length_unit": "mm",
   "module": "standalone_test_fixture",
   "arm_reference_included": false,
-  "interface_contract_sha256": "9ecc6b64e64054b16cc54efdc3cfc5076662c53829b4df5fb315fdfd4964873a",
+  "interface_contract_sha256": "12b239db2907f900d303f927872a30ae30fbc3dc2cfd2118dedd657c1cc4376a",
   "scope": "Five printed shell/scaffold parts plus original metal chassis/clamp/shelf CAD; routed IO PCB; integration candidate, not complete manufacturing release",
   "parameters": {
     "schema": "odradek.b06.compact.v5",
@@ -6170,6 +6170,333 @@
       "print_stl": null
     },
     {
+      "id": "IO-LOCAL5V-U1",
+      "name": "就地供电 U1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -17.999999225139618,
+          6.250000558793545,
+          25.600001215934753
+        ],
+        "max": [
+          -6.000000052154064,
+          15.250000171363354,
+          43.60000044107437
+        ],
+        "size": [
+          11.999999172985554,
+          8.999999612569809,
+          17.999999225139618
+        ]
+      },
+      "stl": "../exterior/stl/IO-LOCAL5V-U1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "RECOM R-78HB-0.5 manufacturer dimensions plus 0.5mm package tolerance",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-F1",
+      "name": "就地供电 F1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -44.2500002682209,
+          6.500000134110451,
+          25.600001215934753
+        ],
+        "max": [
+          -37.7500019967556,
+          9.50000062584877,
+          28.79999950528145
+        ],
+        "size": [
+          6.4999982714653015,
+          3.0000004917383194,
+          3.199998289346695
+        ]
+      },
+      "stl": "../exterior/stl/IO-LOCAL5V-F1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "2410 fuse package conservative clearance envelope",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-D1",
+      "name": "就地供电 D1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -25.849999859929085,
+          1.449999981559813,
+          25.600001215934753
+        ],
+        "max": [
+          -20.150000229477882,
+          4.550000187009573,
+          28.4000001847744
+        ],
+        "size": [
+          5.699999630451202,
+          3.10000020544976,
+          2.7999989688396454
+        ]
+      },
+      "stl": "../exterior/stl/IO-LOCAL5V-D1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "SMA package including terminals, conservative envelope",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-C1",
+      "name": "就地供电 C1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -23.69999885559082,
+          5.450000520795584,
+          25.599999353289604
+        ],
+        "max": [
+          -18.300000578165054,
+          11.549999937415123,
+          28.10000069439411
+        ],
+        "size": [
+          5.399998277425766,
+          6.099999416619539,
+          2.5000013411045074
+        ]
+      },
+      "stl": "../exterior/stl/IO-LOCAL5V-C1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "TDK C5750X7S2A106K230KB max dimensions; rotation90",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-C2",
+      "name": "就地供电 C2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -12.900000438094139,
+          2.9000001959502697,
+          25.600001215934753
+        ],
+        "max": [
+          -11.099999770522118,
+          5.100000184029341,
+          27.10000053048134
+        ],
+        "size": [
+          1.8000006675720215,
+          2.199999988079071,
+          1.499999314546585
+        ]
+      },
+      "stl": "../exterior/stl/IO-LOCAL5V-C2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "0805 conservative envelope; rotation90",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-R1",
+      "name": "就地供电 R1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -8.900000713765621,
+          2.9000001959502697,
+          25.600001215934753
+        ],
+        "max": [
+          -7.100000511854887,
+          5.100000184029341,
+          26.399999856948853
+        ],
+        "size": [
+          1.8000002019107342,
+          2.199999988079071,
+          0.7999986410140991
+        ]
+      },
+      "stl": "../exterior/stl/IO-LOCAL5V-R1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "0805 conservative envelope; rotation90",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-J7",
+      "name": "就地供电 J7",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -28.4000001847744,
+          -3.9499998092651367,
+          25.600001215934753
+        ],
+        "max": [
+          -21.000001579523087,
+          1.349999918602407,
+          30.09999915957451
+        ],
+        "size": [
+          7.399998605251312,
+          5.299999727867544,
+          4.499997943639755
+        ]
+      },
+      "stl": "../exterior/stl/IO-LOCAL5V-J7.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "JST GH header and SMT anchors conservative envelope",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-J7-MATE-RESERVE",
+      "name": "灯线 GH 插头装配预算",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -28.700001537799835,
+          -4.800000227987766,
+          30.100002884864807
+        ],
+        "max": [
+          -20.70000022649765,
+          2.199999988079071,
+          40.10000079870224
+        ],
+        "size": [
+          8.000001311302185,
+          7.000000216066837,
+          9.999997913837433
+        ]
+      },
+      "stl": "../exterior/stl/IO-LOCAL5V-J7-MATE-RESERVE.stl",
+      "assembly_role": "routing",
+      "notes": [
+        "8x7x10mm planning reserve, not a supplier mate/wire model; qualified cable route pending"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "routing",
+      "print_stl": null
+    },
+    {
       "id": "REF-IO-J2-PLUG",
       "name": "插头与释放区 REF-IO-J2-PLUG",
       "category": "component",
@@ -8559,7 +8886,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "2cdd432afe41fb97d56129c2ddbd91504f335f138040909daae95acb701f5f30",
+      "step_sha256": "ebfea790dfbd8081eb60d04ef83bc45173a25abd1490ffc938c7847fa62f5769",
       "stl_sha256": "dabf567e52b2feacb7627a28c3c9ca4564a7cd6a4c8fae22ed83b69924fa6fe8"
     },
     {
@@ -8691,7 +9018,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "eaf2ba3ecf27273f3557ff3383a2610c702797781e19fd81cf168a1890c78114",
+      "step_sha256": "1f1295e8fc00f101eee6b64c1a0bd14696162709e2d0d35fc13895e3d5460766",
       "stl_sha256": "15ea6215e597cb0451d10b5ee16a23591387858a07e71cad07f1515bef812c9b"
     },
     {
@@ -8726,7 +9053,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "1ba24e416bfa0c7691b299fd9616b8ebc6210b9e88c761e1a4074fb42aa2a408",
+      "step_sha256": "4aef5c777bfd809abf9abbfecd079bc6c37dc55aff98eeb406db805e47f4ec40",
       "stl_sha256": "e7017e1b07b1cc7d596640ec39cea789fdac138f768f9a959322bf5f309bef27"
     },
     {
@@ -8764,7 +9091,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "804322314663a6f13ef57f86e98a7412bc5543c7887a5c160c2e0392dd57e041",
+      "step_sha256": "cfc35b2fcab6da9c7b5739a80e3af35fd0338848f1474655907240a174396b9c",
       "stl_sha256": "cd2b59a1a70d207d30ba346e2d01e9965a90046685dd0953210af94fab69d13f"
     },
     {
@@ -8799,7 +9126,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "72eea886ebb2b53d5b522e70e547cb1e6f4ff97edc87fbec85772f45cf7a9aac",
+      "step_sha256": "1a722b375e7291a97c0c57237e180d79ec78e5896555539a25b666417103ff54",
       "stl_sha256": "4c237a1ead6c642f3a89e199c619bd17a72a161ad1930cbbeaaf4b1237ac1996"
     },
     {
@@ -8837,7 +9164,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "8b62efa30321476c1fe3f8242f0f36dcc741cdda9f464a9e8fc3e085f6e9df96",
+      "step_sha256": "62947120592b8afbf26e203caa898759eef141db15a731824423a0f70da07696",
       "stl_sha256": "b19f8748acb7e4f657b78f029efad411db849f350d5d2895f509c49498c65a7f"
     },
     {
@@ -8872,7 +9199,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "8d97d9427e44ffc1719b692d631c03cd0bb90232c52518b12d6f2f3eef5f8c0e",
+      "step_sha256": "5b889a3615a38ad99fd5c5028b94b461a193be13209021d136ff63645bc64589",
       "stl_sha256": "4bf1a6775c0bf2d48cae553195edd383b9648a0b9b4cc16d3b91134d73ea368a"
     },
     {
@@ -8910,7 +9237,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "4f3472ec333dedb34626833bc0120ea2316fb99851c2cc6d5485c599ab23b9a3",
+      "step_sha256": "4936e1679f804aad8ff33a57107f1ddcc7aae5406e02fb5b117c9267a0dd1cad",
       "stl_sha256": "c419957b9ac9eb62a20e54c16442ff8b748fd99b931dc0bd394f5bd2d1229acc"
     },
     {
@@ -8945,7 +9272,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "ed8943f8addafb8e3eb4e63bc2770a17e51ef6fb8a0627eb89eccab0f3fb0f59",
+      "step_sha256": "2a662e60bb0f5e1810b063d0ce6c8f1552663b2978b49cbf7e3adf18e8fcd2ae",
       "stl_sha256": "ec23c4d031911edb1f0808b06be9594efa8c2f850cc631b5001ce584cefc3e02"
     },
     {
@@ -8983,7 +9310,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "fb988a94f43766ffd8ee594d8a0a9badc4a05fddac151bf849ae0c9bd78d05e3",
+      "step_sha256": "851ef93c0f4665ae4c9b2b4aebb51b356e52a4cd29ab8cee95f0a9eeb0d1482a",
       "stl_sha256": "2e17277eb3e6338ace613c224ed2a5cb6ed8955377c33bdf7c54a9e93da38b0c"
     },
     {
@@ -9018,7 +9345,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "57bafb57765f07f8a6aea2919c2d557bfcfe3bdf0be4a214be471ad704f55e12",
+      "step_sha256": "f547304c7ef30313d176084363d393e937fe2179373131950ecb081f57629907",
       "stl_sha256": "3a7b1e6291f754b1fa2ec2392c5d22f636baa5a8fee3bf8919f64d3ffe16ec99"
     },
     {
@@ -9056,7 +9383,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "5bf5da06df11e880bd8e4689fc50cb1b2df2c551cc7f5c7f9cf8cded5e43b23b",
+      "step_sha256": "ee2c851ae38a9274a990b68a1bc56073ae8eff6690fd45aa0eefb3d235f4fa7b",
       "stl_sha256": "e0cc6a2b388796561139b68fc7270835e207c4c1a72b54b8b595105856c806bd"
     },
     {
@@ -9091,7 +9418,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "15a466faebb5dab22376bf819368e09fded04d3230b78bc16cabba0744ff7161",
+      "step_sha256": "820b2121c3aba11a757235204cb6c8c29d37497cd00550042fd5760a461a5af0",
       "stl_sha256": "fe6daf0787d63f865c0ec2d10464a73be63678e95508fc6d738125d86837c624"
     },
     {
@@ -9129,7 +9456,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "5e08cacdb716fcd4712842553c81fd67fe3a686235a519df194f08e74b4ba3d8",
+      "step_sha256": "522f89ea6fb42aeba3f36ed5370b7ad93a46aab3df88caf49516611bbfe3c06f",
       "stl_sha256": "12744953daf8a37abca709a2d3ba3c03215c724817667af3307756f7f3b96cc5"
     },
     {
@@ -9164,7 +9491,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "f077f453c0ac253430212005eb697c7794c22c1255f479357c15ddc059111f87",
+      "step_sha256": "0b3b7df0bd47b83b4adaffae19dec1ebe7fd2be5c23954454acd534f6142138b",
       "stl_sha256": "0868587c1c561ec9b1c153f9496e0e30dfb210941bdae481b4c6a7481dc6d0ec"
     },
     {
@@ -9202,7 +9529,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "433799712f65bc2ffb8996246d355263a2633e68dea4518b9a98c00727c5bbe0",
+      "step_sha256": "e2b070e2ea5f7a647b2612e931e33611cead90890a3e861d065917076e61c49e",
       "stl_sha256": "6a56bfc553eeb0da818fdb3a6d2438861cb745037ef6e4081ac3eda8af13ca3a"
     },
     {
@@ -9237,7 +9564,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "9839707818b97a6607ca320b93e150cfd215f753e3f01494871287aa42374542",
+      "step_sha256": "81f4e6a58d807368416402297186be857a5cb43819d408ba0393d3de20062472",
       "stl_sha256": "53c21fc08be31d2f311385bfebd07523181b3e50e6f6af620dd8518ec0aedccb"
     },
     {
@@ -9275,7 +9602,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "b16070f029d7ec877beaafd2d13adb931467092d139cd6145bc57a1b29f12a95",
+      "step_sha256": "f67634867f6e13faaaa31f674522c0347004a62e55cc7c7339910cf82c852687",
       "stl_sha256": "d890068f047198709275f264a0238cd9ad60e5221819aff3e0897c86275cfe5a"
     },
     {
@@ -9310,7 +9637,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "2ffa98ce1e44b5219b8091dd90e431d4562dc898a1e9a3f116487bdb044a02d4",
+      "step_sha256": "2906422b399fe641e438738a59ba314dac854f7b2b744d1f004be31794799e37",
       "stl_sha256": "b89ca70f091b4d7b88bda2c13bd921519fd42d076b02f7a6151c8331e653c8dc"
     },
     {
@@ -9348,7 +9675,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "80259fbcdfceb97421b08cb46b07a5b2362956d22ceb0c4f765cc57ad85ee08a",
+      "step_sha256": "c4b1fb2d215a6585b3f2405a80ec661bfe50f89bf36006dd1048edf9966991f9",
       "stl_sha256": "668a70c7d9761eb14e4f3a447c2ac824b963291ac4af8370083995a87ad9f3a7"
     },
     {
@@ -9383,7 +9710,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "6d5619d05f7e19b86733af6a21b1e31b3f7d52e2b32413afb10fee81513382d7",
+      "step_sha256": "51cd37629250057e2b1740db50969d6d4eb8a648ee14d6a022bd5ae5a2bda15f",
       "stl_sha256": "3cfe3ee7ae27febaf8776314b8b6df59eef3ae73693c7d022b5eceffd7eddfbe"
     },
     {
@@ -9421,7 +9748,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "4c3a4d8f84ec52e295edfa3382aba41a6cce2dffb57cdd787556c185e5d3e466",
+      "step_sha256": "20519fa04b1eeb64a84fba8bbe8f9c45a6d8199f6450586039f8a60bff0ff95a",
       "stl_sha256": "999b44632f45f370683bb643beed49da1cab34729cc0ec451cbe536122e110f8"
     },
     {
@@ -9456,7 +9783,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "7f493e2f2d313ee0e81266675d9f29e4c764cf8ffff290baaf4b2b67ebe2f101",
+      "step_sha256": "1ac3d275240a850b5b2d3ad3b0261507ff4b7c19740cd70216345e5244caf6ab",
       "stl_sha256": "196b53a3707862d397010442b77cc9cbfa845b9451b72b19c1a4d44d3f5043f2"
     },
     {
@@ -9494,7 +9821,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "0d1e0750a28864b30f40bbda5a07eb45b4967a320bb3827719caa0689fd01bc0",
+      "step_sha256": "f3cefd41fe56892d6e6fefa09adfd5f2baa38d914202e7cae633fb2876084b03",
       "stl_sha256": "6f562cf4a78918981533821308633c5bf907f61313447c477c7bd498782797c8"
     },
     {
@@ -9529,7 +9856,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "c4dabb5ec16df274608304f0823f9b8547e37f651382df8dce175b968e55a9be",
+      "step_sha256": "1970fc04ea9d861b9ac9e4632e15ec946b616efb8530d76f00b9bfee885f6959",
       "stl_sha256": "fb3637c4f1b10b0bcadd6816883ac7ec8bb24219065712cee81629062cada75e"
     },
     {
@@ -9567,7 +9894,7 @@
         ]
       },
       "prototype_status": "独立试验工装候选；装置自身须先校验",
-      "step_sha256": "3c36038bfe804c6859bbc73f8d94f1a5fab12c079f156e765531a77766d64c7c",
+      "step_sha256": "67fababd817f786ae2f4db98cef12a25be346212abc24020bc9f2c69706c078a",
       "stl_sha256": "4706685057a2697bd28ad260dd1e3bf16ce96ae5552fc1ce261f96e9d0c4e5d9"
     }
   ],

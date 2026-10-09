@@ -3,7 +3,7 @@
 
 这是 Auromix/odradek 唯一当前底座源。外观、装配与接口板继续在同一仓库收敛，B04/B05保留为历史。**当前尚不是完整底座的制造放行包**；缺口见下方，不用几何检查替代载荷、真实插头或电气测试。
 
-默认建模与验证不读取机械臂文件，机械臂仅为可选集成参考。[接口定义](interface-contract.json)固定法兰/供电/通讯边界；[独立验证方案](standalone-validation.md)、[20项验证计划](validation-plan.json)和[生产资格状态](build/qualification/qualification-status.json)覆盖不装臂时的完整底座检查。当前实物记录全部未测，生产状态BLOCKED。
+默认建模与验证不读取机械臂文件，机械臂仅为可选集成参考。[接口定义](interface-contract.json)固定法兰/供电/通讯边界；[独立验证方案](standalone-validation.md)、[21项验证计划](validation-plan.json)和[生产资格状态](build/qualification/qualification-status.json)覆盖不装臂时的完整底座检查。当前实物记录全部未测，生产状态BLOCKED。
 
 主罩维持约239×224×71 mm，前鼻、双翼与颈台一体；五件打印件适配256×256×256 mm打印空间，床边检查余量每侧5 mm。颈口Ø136，轴心XY(0,75)，Z0桌面，+Y朝桌内。主视觉面不新增固定孔。为承力底板增加后部下沿退出口，后盖保留四个独立接口窗。
 
@@ -62,4 +62,4 @@
 
 CC-BY-NC-4.0；Odradek / Auromix contributors。
 
-2026-10-09供电修订：前灯目标由底座板就地产生5V，经内部短GH线连接；现有原生IO板尚未实现该电源/控制功能，既有PCB打样文件仅对应当前被动接口板。见制造定义中的转换器候选和验证条件。
+2026-10-09供电修订：前灯目标由底座板就地产生5V，经内部短GH线连接；原生IO板现已加入就地5V供电，当前导出在b06-io-local5v；PWM控制仍未实现。新增元件按独立底座装配包络验证，实物供电、浪涌、温升及EMI待测。

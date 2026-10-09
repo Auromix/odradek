@@ -485,6 +485,36 @@
           "max": 0
         }
       }
+    },
+    {
+      "id": "P04",
+      "module": "local_lamp_supply",
+      "arm_required": false,
+      "method": "Independent current-limited48V supply, electronic load and calibrated oscilloscope; no arm or camera needed",
+      "conditions": "43.2/48/52.8V; LED off with470ohm bleed then100mA external5V load; cold/hot start and load steps; record waveform, actual effective input capacitance, temperature and fault/inrush evidence; external supply limited; no PWM controller qualification inferred",
+      "metrics": {
+        "input_voltage_cases": {
+          "equals": 3
+        },
+        "minimum_output_V": {
+          "min": 4.75
+        },
+        "maximum_output_V": {
+          "max": 5.25
+        },
+        "effective_C1_at_52_8V_uF": {
+          "min": 3.3
+        },
+        "startup_or_reset_failures": {
+          "max": 0
+        },
+        "rail_ripple_pp_mV": {
+          "max": 100
+        },
+        "fault_and_inrush_review_signed": {
+          "equals": true
+        }
+      }
     }
   ]
 }

@@ -15,16 +15,17 @@ files += [p for p in E.iterdir() if p.is_file() and p.suffix in ('.blend','.json
 for folder in (E/'print-parts',E/'slice-review',B/'build/load-frame',B/'build/standalone-test',B/'build/qualification'):
     files += [p for p in folder.rglob('*') if p.is_file() and '__pycache__' not in p.parts]
 io=ROOT/'engineering/electronics/base-io-b05';lamp=ROOT/'engineering/electronics/base-light-b06'
-for folder in (io/'base-io-b05',io/'manufacturing/b06-io-prototype',lamp/'manufacturing'):
+for folder in (io/'base-io-b05',io/'manufacturing/b06-io-local5v',io/'local5v',lamp/'manufacturing'):
     files += [p for p in folder.rglob('*') if p.is_file() and p.suffix not in ('.bak','.zipbak') and '.history' not in p.parts]
-files += [io/'reports/b06-native-bom-final.json',io/'reports/b06-routed-audit.json',lamp/'pin-nets.json',lamp/'README.md']
+files += [io/'reports/b06-local5v-reopened.json',io/'reports/b06-local5v-sch-reopened.json',io/'reports/b06-local5v-fit.json',io/'reports/b06-routed-audit.json',lamp/'pin-nets.json',lamp/'README.md']
 files=sorted(set(files));assert all(p.is_file() for p in files)
 readme='''B06-COMPACT-07-DFM / CURRENT ENGINEERING REVIEW ASSETS
-NOT A PRODUCTION OR POWERED-OPERATION RELEASE. Physical tests: 0/20.
+NOT A PRODUCTION OR POWERED-OPERATION RELEASE. Physical tests: 0/21.
 No arm model is required. Product print parts: five; test fixture is separate metal hardware.
 Start: engineering/base_b06/standalone-validation.md and interface-contract.json.
 Models: native Blender, structural STEP, five printable STL, standalone fixture STEP.
-Two native JLCEDA PCBs and fabrication candidates included. No current/GMSL rating inferred.
+Two native JLCEDA PCBs and fabrication candidates included. Local48V-to-5V supply
+is implemented in IO board. Program lamp PWM is pending. No current/GMSL rating inferred.
 Offline 3D viewers embed meshes. Reference Orca 3MF includes P1S G-code:
 select the actual printer and reslice before use; never run reference G-code blindly.
 This asset packet is for review/fit preparation; editable generators live in the same repository.

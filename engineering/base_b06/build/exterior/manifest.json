@@ -3,7 +3,7 @@
   "length_unit": "mm",
   "module": "standalone_base",
   "arm_reference_included": false,
-  "interface_contract_sha256": "9ecc6b64e64054b16cc54efdc3cfc5076662c53829b4df5fb315fdfd4964873a",
+  "interface_contract_sha256": "12b239db2907f900d303f927872a30ae30fbc3dc2cfd2118dedd657c1cc4376a",
   "scope": "Five printed shell/scaffold parts plus original metal chassis/clamp/shelf CAD; routed IO PCB; integration candidate, not complete manufacturing release",
   "parameters": {
     "schema": "odradek.b06.compact.v5",
@@ -6167,6 +6167,333 @@
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-U1",
+      "name": "就地供电 U1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -17.999999225139618,
+          6.250000558793545,
+          25.600001215934753
+        ],
+        "max": [
+          -6.000000052154064,
+          15.250000171363354,
+          43.60000044107437
+        ],
+        "size": [
+          11.999999172985554,
+          8.999999612569809,
+          17.999999225139618
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-U1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "RECOM R-78HB-0.5 manufacturer dimensions plus 0.5mm package tolerance",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-F1",
+      "name": "就地供电 F1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -44.2500002682209,
+          6.500000134110451,
+          25.600001215934753
+        ],
+        "max": [
+          -37.7500019967556,
+          9.50000062584877,
+          28.79999950528145
+        ],
+        "size": [
+          6.4999982714653015,
+          3.0000004917383194,
+          3.199998289346695
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-F1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "2410 fuse package conservative clearance envelope",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-D1",
+      "name": "就地供电 D1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -25.849999859929085,
+          1.449999981559813,
+          25.600001215934753
+        ],
+        "max": [
+          -20.150000229477882,
+          4.550000187009573,
+          28.4000001847744
+        ],
+        "size": [
+          5.699999630451202,
+          3.10000020544976,
+          2.7999989688396454
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-D1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "SMA package including terminals, conservative envelope",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-C1",
+      "name": "就地供电 C1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -23.69999885559082,
+          5.450000520795584,
+          25.599999353289604
+        ],
+        "max": [
+          -18.300000578165054,
+          11.549999937415123,
+          28.10000069439411
+        ],
+        "size": [
+          5.399998277425766,
+          6.099999416619539,
+          2.5000013411045074
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-C1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "TDK C5750X7S2A106K230KB max dimensions; rotation90",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-C2",
+      "name": "就地供电 C2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -12.900000438094139,
+          2.9000001959502697,
+          25.600001215934753
+        ],
+        "max": [
+          -11.099999770522118,
+          5.100000184029341,
+          27.10000053048134
+        ],
+        "size": [
+          1.8000006675720215,
+          2.199999988079071,
+          1.499999314546585
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-C2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "0805 conservative envelope; rotation90",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-R1",
+      "name": "就地供电 R1",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -8.900000713765621,
+          2.9000001959502697,
+          25.600001215934753
+        ],
+        "max": [
+          -7.100000511854887,
+          5.100000184029341,
+          26.399999856948853
+        ],
+        "size": [
+          1.8000002019107342,
+          2.199999988079071,
+          0.7999986410140991
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-R1.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "0805 conservative envelope; rotation90",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-J7",
+      "name": "就地供电 J7",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -28.4000001847744,
+          -3.9499998092651367,
+          25.600001215934753
+        ],
+        "max": [
+          -21.000001579523087,
+          1.349999918602407,
+          30.09999915957451
+        ],
+        "size": [
+          7.399998605251312,
+          5.299999727867544,
+          4.499997943639755
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-J7.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "JST GH header and SMT anchors conservative envelope",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-J7-MATE-RESERVE",
+      "name": "灯线 GH 插头装配预算",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -28.700001537799835,
+          -4.800000227987766,
+          30.100002884864807
+        ],
+        "max": [
+          -20.70000022649765,
+          2.199999988079071,
+          40.10000079870224
+        ],
+        "size": [
+          8.000001311302185,
+          7.000000216066837,
+          9.999997913837433
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-J7-MATE-RESERVE.stl",
+      "assembly_role": "routing",
+      "notes": [
+        "8x7x10mm planning reserve, not a supplier mate/wire model; qualified cable route pending"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "routing",
       "print_stl": null
     },
     {

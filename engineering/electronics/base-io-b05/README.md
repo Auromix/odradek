@@ -1,3 +1,9 @@
+# 当前版本说明 · 2026-10-09 就地5V修订
+
+当前原生工程已加入7个供电元件；制造导出以[ b06-io-local5v ](manufacturing/b06-io-local5v/)为准。供电及装配说明见[就地电源模块](local5v/README.md)，当前检查入口为`check_routed.py`。程序灯效仍未接控制器，整套底座尚未生产放行。
+
+以下记录是此次供电修订前的历史基线，供对照；其中6元件、48焊盘、217段线、16过孔及prototype制造包不代表当前板。
+
 # BASE-IO-B05 嘉立创 EDA 迁移工作包
 
 CC-BY-NC-4.0；Required Notice: Odradek — Auromix contributors.

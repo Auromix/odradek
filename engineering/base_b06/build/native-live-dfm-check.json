@@ -1,5 +1,5 @@
 {
-  "revision": "B06-COMPACT-07-DFM",
+  "revision": "B06-COMPACT-07-DFM-local5v",
   "session": "999432ab-7e1d-44bb-a8b8-636e41e767dd",
   "native_IO": {
     "ok": true,
@@ -65,12 +65,45 @@
           "ref": "J6",
           "manufacturerId": "74651173",
           "addIntoBom": true
+        },
+        {
+          "ref": "U1",
+          "manufacturerId": "R-78HB5.0-0.5",
+          "addIntoBom": true
+        },
+        {
+          "ref": "F1",
+          "manufacturerId": "0451.500MRL",
+          "addIntoBom": true
+        },
+        {
+          "ref": "D1",
+          "manufacturerId": "S1B-13-F",
+          "addIntoBom": true
+        },
+        {
+          "ref": "C1",
+          "manufacturerId": "C5750X7S2A106K230KB",
+          "addIntoBom": true
+        },
+        {
+          "ref": "C2",
+          "manufacturerId": "CC0805KKX7R9BB105",
+          "addIntoBom": true
+        },
+        {
+          "ref": "R1",
+          "manufacturerId": "RC0805FR-07470RL",
+          "addIntoBom": true
+        },
+        {
+          "ref": "J7",
+          "manufacturerId": "BM03B-GHS-TBT(LF)(SN)",
+          "addIntoBom": true
         }
       ],
-      "local_converter_present": false
-    },
-    "logs": [],
-    "durationMs": 550
+      "local_converter_present": true
+    }
   },
   "native_lamp": {
     "ok": true,
@@ -140,7 +173,7 @@
       ]
     },
     "logs": [],
-    "durationMs": 1699
+    "durationMs": 2292
   },
-  "scope": "Read-only native reopened DRC and manufacturer-part verification. Local5V converter/control target NOT implemented."
+  "scope": "Current read-only native DRC and MPN audit. IO local5V implemented; PWM pending; physical release false."
 }

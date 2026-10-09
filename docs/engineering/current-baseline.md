@@ -2,7 +2,7 @@
 
 ## 当前底座与本体同源
 
-底座当前候选以[B06-COMPACT-04](../../engineering/base_b06/README.md)为准，所有模块在Auromix/odradek同一仓库内协作，遵循[底座同源规则](base-authority.md)。外罩239×224×71 mm、五件打印结构；固定A11根部及I/O输入的静态检查已有独立报告，完整新臂身、承载桌夹、电控和实物试装尚未联合验证。以下R4/R5整机与旧底座仍是各自历史研究，不构成第二套当前底座。
+底座当前候选以[B06-COMPACT-07-DFM](../../engineering/base_b06/README.md)为准，所有模块在Auromix/odradek同一仓库内协作，遵循[底座同源规则](base-authority.md)。外罩239×224×71 mm、五件打印结构；固定A11根部及I/O输入的静态检查已有独立报告，完整新臂身、承载桌夹、电控和实物试装尚未联合验证。以下R4/R5整机与旧底座仍是各自历史研究，不构成第二套当前底座。
 
 **主末端路线已因新要求切换：发光面正常夹持，空载全闭→全开→全闭≤1秒，接触后限力。** 见[FAST-GRASP01](fast-grasp-requirements01.md)。P16无法满足该节拍，单个中央隐藏驱动、四瓣mimic联动及发光承力面正在重选。七轴本体研究继续；下列 **SHOULDER-RAISE01 + HEAD-INTEGRATED03 + FPL01 + HEAD-CTRL02** 是仍可复现的历史完整几何基线，不是满足新要求的采购/运行配置。已确认2kg净工件另计头重、约700mm臂展、GMSL／GMSL2相机链路。
 

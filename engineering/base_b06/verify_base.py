@@ -28,6 +28,7 @@ def main():
     for source in (HERE.parent/'electronics/base-light-b06/audit.py',HERE.parent/'electronics/base-io-b05/check_routed.py'):
         run('native manufacturing audit '+source.parent.name,[py,source])
     for folder in (E,HERE/'build/standalone-test'):run('3D viewer '+folder.name,[py,HERE/'viewer.py','--build-dir',folder])
+    run('local5V body/driver integration',[py,HERE.parent/'electronics/base-io-b05/local5v/check_fit.py'])
     run('evidence validator self-check',[py,HERE/'test_qualification.py'])
     record=HERE/'build/qualification/unmeasured-template.json'
     if not record.exists():run('unmeasured test record',[py,HERE/'qualification.py','init'])

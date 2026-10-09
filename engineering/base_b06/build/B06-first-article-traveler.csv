@@ -1,5 +1,5 @@
 ﻿id,stage,part,design_requirement,inspection,measured_value,instrument,operator,date,result,evidence
-FAI-01,incoming,All parts,Material/lot/MPN; 5 product prints; PCB child BOM quantities6/12,Record certificates/lot labels and visual condition,,,,,NOT_MEASURED,
+FAI-01,incoming,All parts,Material/lot/MPN; 5 product prints; PCB child BOM quantities13/12,Record certificates/lot labels and visual condition,,,,,NOT_MEASURED,
 FAI-02,weld_before_finish,W01,Four seams z5; leg5.0..5.5 provisional envelope; 140mm each,WPS signoff and actual weld profile/end termination inspection,,,,,NOT_MEASURED,
 FAI-03,postweld,B06-101,Deck upper datum Z17; flatness<=0.15 candidate,"Surface plate/indicator; measure after welding, machining and finish",,,,,NOT_MEASURED,
 FAI-04,postweld,W01,M12 axes / upper-lower plane relationship to CAD,CMM + thread gauges; record full measured coordinates; tolerance allocation not released,,,,,NOT_MEASURED,
@@ -16,5 +16,5 @@ FAI-14,assembly,Cover and IO,Tool paths + real nuts/plug latches + rear cover re
 FAI-15,optical,Lamp,5V independent bench supply <=100mA initial; PWM1kHz,Check off/dim/breath/flash and LED-to-lens gap; never connect48V to lamp,,,,,NOT_MEASURED,
 FAI-16,shelf,Tray,"180x150x50 budget,3kg target; inward extraction",Restrained standalone test; actual clamp retention and vent/cable clearance,,,,,NOT_MEASURED,
 FAI-17,test_fixture,T01/T02,Fixture dimensional/fastener/rated apparatus qualification,No150Nm loading before fixture and equipment review,,,,,NOT_MEASURED,
-FAI-18,qualification,Base only,20 independent tests per validation-plan.json,Real operator/reviewer/calibrated instrument/files; qualification.py binds this version,,,,,NOT_MEASURED,
+FAI-18,qualification,Base only,21 independent tests per validation-plan.json,Real operator/reviewer/calibrated instrument/files; qualification.py binds this version,,,,,NOT_MEASURED,
 FAI-19,release,All documents,Current BOM/STEP/STL/PDF/native-PCB/harness/process hashes agree,Accountable review signature and repeat-build records; no automatic production approval,,,,,NOT_MEASURED,

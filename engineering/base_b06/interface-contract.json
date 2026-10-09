@@ -99,7 +99,7 @@
       "connect_to_48V": false,
       "product_supply_location": "Local base PCB48V-to5V; user selected no separate5V supply lead to desk box",
       "product_internal_connection": "Short internal GH3-core:5V/PWM/GND",
-      "local_converter_implemented_in_current_native_PCB": false,
+      "local_converter_implemented_in_current_native_PCB": true,
       "pwm_control_implementation": "Required; not implemented by passive EtherCAT straight-through; local programmable circuit / command path still to define",
       "converter_candidate": {
         "part": "RECOM R-78HB5.0-0.5",
@@ -116,8 +116,9 @@
         ],
         "minimum_load_mA": 10,
         "source": "https://recom-power.com/pdf/Innoline/R-78HB-0.5.pdf",
-        "status": "Selection candidate; no native PCB or MCAD incorporation yet"
-      }
+        "status": "Native local supply fabrication candidate; body fit and DRC/exports checked; physical rail/inrush/EMI/thermal unqualified"
+      },
+      "base_header": "IO J7:1=LAMP5V,2=PWM_RESERVED,3=RETURN48"
     }
   },
   "module_boundary": {
@@ -128,7 +129,7 @@
       "passive IO PCB",
       "dual coax bracket",
       "PWM lamp PCB",
-      "Required local5V lamp supply and PWM circuit (not implemented in current native PCB)"
+      "Local5V lamp supply implemented; PWM controller/command path still pending"
     ],
     "external_equipment": [
       "48V protection and current-limited supply",

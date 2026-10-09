@@ -2,8 +2,8 @@
   "revision": "B06-COMPACT-07-DFM",
   "production_released": false,
   "arm_required": false,
-  "bom_lines": 70,
-  "native_IO_component_quantity": 6,
+  "bom_lines": 74,
+  "native_IO_component_quantity": 13,
   "native_lamp_component_quantity": 12,
   "first_article_steps": 19,
   "procurement_rule": "Populated PCBA parent OR its bare board/component children; never both",
@@ -21,9 +21,6 @@
     "H-ECAT",
     "H-RF",
     "H-LAMP",
-    "LOCAL-5V-CONVERTER",
-    "LOCAL-5V-CIN",
-    "LOCAL-5V-BLEED",
     "LIGHT-SHIM",
     "CABLE-RESTRAINT",
     "FINISH"
@@ -40,10 +37,10 @@
     "tolerances_and_retention_qualified": false
   },
   "sources_sha256": {
-    "electronics/base-io-b05/manufacturing/b06-io-prototype/B06-IO-Native-BOM.csv": "ad61e9b2437e1440bfcc7c18af0d57bc19da92adb3e4f4ea57f13a1f9d24db24",
+    "electronics/base-io-b05/manufacturing/b06-io-local5v/B06-IO-LOCAL5V-BOM.csv": "0e0cb24b095c15717741756ffd628dee19d858881c5aa7d0d5285ebceec1e073",
     "electronics/base-light-b06/manufacturing/bom.csv": "2bb8ea4adb6daf73d6b32129b5fffb86fa86f5b5a55e14a7d9bcbcb92bbaa331",
-    "base_b06/manufacturing.md": "35fd95148d302dd8e9c033d02955c510940e38e471a70c24ce6d051bab6f1c4c",
-    "base_b06/build/B06-mechanical-bom.csv": "4ba88a206ba1952e7b4f8f732c74e80aacbc68d04deedea343187d2fe491f4bd"
+    "base_b06/manufacturing.md": "7d04cc15be17b2e6d93d48e5ab14ed2f209d0adfe8e5c72e5251c7300bd8cc41",
+    "base_b06/build/B06-mechanical-bom.csv": "35081ed723b421c6471742d063e5be3e4633b376a6f472065134748183fe1f4c"
   },
   "digital_definition_check": "Native BOM child counts, unique IDs and source hashes only; open items are NOT qualified"
 }

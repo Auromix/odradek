@@ -8,7 +8,7 @@ import csv,json,hashlib
 from pathlib import Path
 HERE=Path(__file__).resolve().parent;OUT=HERE/'build';ELEC=HERE.parent/'electronics'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-io=ELEC/'base-io-b05/manufacturing/b06-io-prototype/B06-IO-Native-BOM.csv'
+io=ELEC/'base-io-b05/manufacturing/b06-io-local5v/B06-IO-LOCAL5V-BOM.csv'
 lamp=ELEC/'base-light-b06/manufacturing/bom.csv'
 rows=[]
 for r in csv.DictReader((OUT/'B06-mechanical-bom.csv').open(encoding='utf-8-sig')):
@@ -16,7 +16,7 @@ for r in csv.DictReader((OUT/'B06-mechanical-bom.csv').open(encoding='utf-8-sig'
         kind='assembly_parent' if r['category']=='electronics' else r['category'],
         specification=r['specification'],manufacturer_part='',source=r['cad_files'],
         status='RFQ_CANDIDATE',open_item=r['notes']))
-for parent,path,n in [('PCB-B06-IO',io,6),('PCB-B06-LIGHT',lamp,12)]:
+for parent,path,n in [('PCB-B06-IO',io,13),('PCB-B06-LIGHT',lamp,12)]:
     native=list(csv.DictReader(path.open(encoding='utf-8-sig'),delimiter='\t'))
     assert sum(int(r['Quantity']) for r in native)==n
     for r in native:
@@ -38,10 +38,7 @@ extras=[
  ('H-BOND',1,'assembly','harness_open','J6 to metal frame and external protective-bond boundary','','Topology/length/cross section and low resistance acceptance not frozen'),
  ('H-ECAT',1,'assembly','harness_open','Internal shielded Ethernet J2 to module boundary; two-ended base loopback test','','Exact cable/plug/length; shield termination and fixed bend radius to be checked'),
  ('H-RF',2,'assembly','harness_open','50ohm coax from bulkhead to module-side test connector','','Connector family/length/route/minimum bend/channel budget/PoC unknown'),
- ('H-LAMP',1,'assembly','harness_open','Internal short lead only: base board to JST GH 1=5V 2=PWM 3=GND','GHR-03V-S + 3xSSHL-002T-P0.2','No separate desk-box5V lead; local converter and PWM circuit pending; actual length/colors/crimp/route unknown'),
- ('LOCAL-5V-CONVERTER',1,'pcs','power_candidate','PCB mounted non-isolated DC/DC 9..72V input,5V/500mA;11.5x8.5x17.5mm','R-78HB5.0-0.5','Candidate only; not present on current native IO PCB; footprint, protection, output tolerance and thermal/EMI check pending'),
- ('LOCAL-5V-CIN',1,'pcs','power_open','3.3uF/100V input capacitor per converter >50V application','','Exact capacitor/derating/ripple and placement pending'),
- ('LOCAL-5V-BLEED',1,'pcs','power_open','470ohm1%,>=0.125W:10.0..11.3mA at4.75..5.25V minimum-load candidate','','Required if no other always-on10mA load; not fitted on current native PCB'),
+ ('H-LAMP',1,'assembly','harness_open','Internal short lead only: base board to JST GH 1=5V 2=PWM 3=GND','GHR-03V-S + 3xSSHL-002T-P0.2','No separate desk-box5V lead; local converter fitted; PWM controller and actual harness pending; actual length/colors/crimp/route unknown'),
  ('LIGHT-SHIM',2,'pcs','optical_open','Soft optical-support pad; current nominal support gap at least0.4mm','','Material/thickness/compression/translucency measured on actual printed lens'),
  ('CABLE-RESTRAINT',1,'set','consumable_open','Rounded ties / saddles at existing carrier ears; wire boots and insulated separation','','Count/position/tool and pull-force criteria after actual harness route'),
  ('FINISH',1,'operation','finish_open','Deburr, corrosion protection; mask bond faces/threads/datum seats','','Coating and weld preparation agreed with supplier; no coating in conductive bond interface'),
@@ -53,7 +50,7 @@ assert len({r['id'] for r in rows})==len(rows)
 with (OUT/'B06-manufacturing-bom.csv').open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 checks=[
- ('FAI-01','incoming','All parts','Material/lot/MPN; 5 product prints; PCB child BOM quantities6/12','Record certificates/lot labels and visual condition'),
+ ('FAI-01','incoming','All parts','Material/lot/MPN; 5 product prints; PCB child BOM quantities13/12','Record certificates/lot labels and visual condition'),
  ('FAI-02','weld_before_finish','W01','Four seams z5; leg5.0..5.5 provisional envelope; 140mm each','WPS signoff and actual weld profile/end termination inspection'),
  ('FAI-03','postweld','B06-101','Deck upper datum Z17; flatness<=0.15 candidate','Surface plate/indicator; measure after welding, machining and finish'),
  ('FAI-04','postweld','W01','M12 axes / upper-lower plane relationship to CAD','CMM + thread gauges; record full measured coordinates; tolerance allocation not released'),
@@ -70,14 +67,14 @@ checks=[
  ('FAI-15','optical','Lamp','5V independent bench supply <=100mA initial; PWM1kHz','Check off/dim/breath/flash and LED-to-lens gap; never connect48V to lamp'),
  ('FAI-16','shelf','Tray','180x150x50 budget,3kg target; inward extraction','Restrained standalone test; actual clamp retention and vent/cable clearance'),
  ('FAI-17','test_fixture','T01/T02','Fixture dimensional/fastener/rated apparatus qualification','No150Nm loading before fixture and equipment review'),
- ('FAI-18','qualification','Base only','20 independent tests per validation-plan.json','Real operator/reviewer/calibrated instrument/files; qualification.py binds this version'),
+ ('FAI-18','qualification','Base only','21 independent tests per validation-plan.json','Real operator/reviewer/calibrated instrument/files; qualification.py binds this version'),
  ('FAI-19','release','All documents','Current BOM/STEP/STL/PDF/native-PCB/harness/process hashes agree','Accountable review signature and repeat-build records; no automatic production approval'),
 ]
 traveler=[dict(id=id,stage=st,part=p,design_requirement=req,inspection=ins,measured_value='',instrument='',operator='',date='',result='NOT_MEASURED',evidence='') for id,st,p,req,ins in checks]
 with (OUT/'B06-first-article-traveler.csv').open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.DictWriter(f,fieldnames=list(traveler[0]));w.writeheader();w.writerows(traveler)
 definition={'revision':'B06-COMPACT-07-DFM','production_released':False,'arm_required':False,
- 'bom_lines':len(rows),'native_IO_component_quantity':6,'native_lamp_component_quantity':12,
+ 'bom_lines':len(rows),'native_IO_component_quantity':13,'native_lamp_component_quantity':12,
  'first_article_steps':len(traveler),'procurement_rule':'Populated PCBA parent OR its bare board/component children; never both',
  'open_definition_items':[r['id'] for r in rows if r['status']=='DEFINITION_OPEN'],
  'stud_stack_screen':{'thread_height_min_mm':2.8,'lug_nominal_mm':.79,'ordinary_nut_nominal_mm':2.4,

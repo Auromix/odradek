@@ -1,10 +1,17 @@
 {
   "date": "2026-10-09",
   "native_reopened_DRC": 0,
-  "lines": 217,
-  "vias": 16,
-  "pads_unchanged": true,
-  "power_copper_unchanged": true,
+  "lines": 275,
+  "planned_lines_before_native_splitting": 261,
+  "route_union_matches_plan": true,
+  "vias": 22,
+  "pads": 66,
+  "legacy_pads_unchanged": true,
+  "legacy_copper_unchanged": true,
+  "U1_PTH_diameter_mm": 1.1,
+  "U1_land_mm": 1.6,
+  "local_supply_native_implemented": true,
+  "PWM_implemented": false,
   "trace_length_mm": {
     "ETH_1": 68.50249584768939,
     "ETH_2": 68.502495621716,
@@ -159,8 +166,10 @@
     "Gerber_BottomSilkscreenLayer.GBO",
     "Gerber_TopSolderMaskLayer.GTS",
     "Gerber_BottomSolderMaskLayer.GBS",
+    "Gerber_TopPasteMaskLayer.GTP",
     "Gerber_TopAssemblyLayer.GTA",
     "Gerber_BoardOutlineLayer.GKO",
+    "Gerber_DocumentLayer.GDL",
     "Gerber_InnerLayer1.G1",
     "Gerber_InnerLayer2.G2",
     "Gerber_DrillDrawingLayer.GDD",
@@ -180,9 +189,9 @@
   ],
   "release": "PCB fabrication candidate only; base assembly release remains blocked",
   "hashes": {
-    "base-io-b05/pcb/base-rear-interface01.epcb2": "51e5418dddd1e9c97c2e0718883aaf3d657e9b800817e73fb0774c6813f563b2",
-    "reports/b06-data-reopened.json": "f3394c1168e34f483da09e659d6ac7066507f2b08e222c883162b9aee50aa9b5",
-    "manufacturing/b06-io-prototype/B06-IO-PROTOTYPE-Gerber.zip": "33fab00fc8d83148ca28b65c63209d92f049e915e2052b5890408bf566c450f5",
-    "manufacturing/b06-io-prototype/B06-IO-PROTOTYPE-IPC356.ipc": "5b2c6707ba8cb249b90fb205df73a349cdeefeae70d8557d1186798a41718747"
+    "base-io-b05/pcb/base-rear-interface01.epcb2": "2eb2dc52a84146582876028f526343f50c084557d6087d7f547dc29601a4649f",
+    "reports/b06-local5v-reopened.json": "b692a0d88a642c8f62388288815b3ac1d662fb786a40bf6807fd691b461ba04a",
+    "manufacturing/b06-io-local5v/B06-IO-LOCAL5V-Gerber.zip": "abc51d93cecdb87f080c8e4d4d1da8bd286df06df5d3452797ed917f8e0eaf95",
+    "manufacturing/b06-io-local5v/B06-IO-LOCAL5V-IPC356.ipc": "02236d80b795a51a4c8d1a1d9cde01fdabedcc7a0785b24b7612db895a27633f"
   }
 }

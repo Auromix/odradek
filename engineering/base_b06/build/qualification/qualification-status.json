@@ -339,13 +339,32 @@
         "Instrument/calibration record missing",
         "Measured evidence missing"
       ]
+    },
+    {
+      "id": "P04",
+      "module": "local_lamp_supply",
+      "arm_required": false,
+      "status": "NOT_QUALIFIED",
+      "reasons": [
+        "Missing/failing metric input_voltage_cases",
+        "Missing/failing metric minimum_output_V",
+        "Missing/failing metric maximum_output_V",
+        "Missing/failing metric effective_C1_at_52_8V_uF",
+        "Missing/failing metric startup_or_reset_failures",
+        "Missing/failing metric rail_ripple_pp_mV",
+        "Missing/failing metric fault_and_inrush_review_signed",
+        "Operator/reviewer missing",
+        "Test date missing/invalid",
+        "Instrument/calibration record missing",
+        "Measured evidence missing"
+      ]
     }
   ],
   "limits": [
     "Evidence/file consistency and numeric criteria only; no proof of record authenticity or independent certification",
     "Even all PASS requires accountable release review; this script does not authorize manufacture or operation"
   ],
-  "configuration_fingerprint": "b9ac0965651fb2ce0474c576b61b1c0bc9846948ff08a2da1018de50707e2203",
-  "record_sha256": "ca16d1a1385922c0c174cd702fb26bfcfe3217482c85ecdac607953ba202ca30",
-  "validation_plan_sha256": "14c7969be45bcb912bad4ab660b9006541186decd9243d4f7fea183c6bd9e1a0"
+  "configuration_fingerprint": "7ef152ebe1bbadac3d4c6616f8ec97b9475c0191b0b888c5b4f5b82968734932",
+  "record_sha256": "ac539f0e6beabb9c6dcd6808a03e875814744d283d449feec3b14d3fa59e564a",
+  "validation_plan_sha256": "a26b800cbf962631fafcad40bf1bf4b0c6cdc348e8d4d6f3b40fcd23cedc7e06"
 }

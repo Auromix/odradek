@@ -192,6 +192,17 @@ def native_context():
         o=mesh_object(p['id'],[(v[0],v[1]+dy,v[2]+4) for v in p['vertices_mm']],p['triangles'],'03_Exterior_mount_carriers')
         add(o,p['id'],'electronics','support' if 'PCB' not in p['id'] else 'armor',
             [f'Full-size owned MCAD; additional Y shift{dy} and Z+4; '+io['source_sha256'],*p.get('notes',[])],False,'electronics')
+    power_spec=HERE.parent/'electronics/base-io-b05/local5v/package-envelopes.json'
+    local=json.loads(power_spec.read_text())
+    for p in local['parts']:
+        u,v=p['center_uv'];w,d,h=p['size_mm'];x,y,z=58-u,30-v,p['body_z0']
+        o=box('IO-LOCAL5V-'+p['designator'],((x-w/2,y-d/2,z),(x+w/2,y+d/2,z+h)))
+        add(o,'就地供电 '+p['designator'],'electronics','support',
+            [p['source'],'Conservative package-body envelope; actual solder, plug and wire clearances need samples'],False,'electronics')
+    o=box('IO-LOCAL5V-J7-MATE-RESERVE',((-28.7,-4.8,30.1),(-20.7,2.2,40.1)))
+    o.hide_render=True
+    add(o,'灯线 GH 插头装配预算','routing','support',
+        ['8x7x10mm planning reserve, not a supplier mate/wire model; qualified cable route pending'],False,'routing')
     # Separate conservative plug/latch reserve. Coax route remains direct cable.
     for name,bounds in [('REF-IO-J2-PLUG',((-15,30,23),(15,70,47.9))),
                         ('REF-REAR-PLUGS',((-56,-80,22),(56,-40,44)))]:

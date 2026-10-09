@@ -20,7 +20,7 @@ def solid(k):
     if s.status()!=manifold3d.Error.NoError:invalid.append(dict(id=k,error=str(s.status())))
     solids[k]=s;return s
 printed=[k for k,p in data.items() if p.get('print_stl')]
-refs=[k for k,p in data.items() if p['assembly_role'] in ('structure','electronics','fasteners') or k=='LIGHT-MATED-GH-RESERVE']
+refs=[k for k,p in data.items() if p['assembly_role'] in ('structure','electronics','fasteners') or k in ('LIGHT-MATED-GH-RESERVE','IO-LOCAL5V-J7-MATE-RESERVE')]
 pairs=[]
 for a,b in [*itertools.combinations(printed,2),*itertools.product(printed,refs)]:
     aa,bb=meshes[a].bounds,meshes[b].bounds
