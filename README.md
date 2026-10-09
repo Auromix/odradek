@@ -8,7 +8,7 @@
 
 **塑料先行路线（2026-10-09已确认）：** 先打印结构和外罩，受支撑无载验证，再独立设计加工金属骨架。[J7 FIT01局部模块](engineering/arm_a13/j7-fit01/README.md)修正旧轴颈一体法兰导致的轴承装入阻碍，提供分体法兰、减材轴承座、六件装配件与六个配合小样、Blender、STEP/STL及尺寸工作图；整臂A12造型和约700 mm长版仍保留。此模块不构成整臂制造或3 kg负载放行。
 
-**工具接口补充（2026-10-09）：** [TOOL-IF01](engineering/arm_a13/tool-if01/README.md)在J7核心上增加工具侧定位止口、防错销、可拆接收板和独立检修仓，为末端供电、控制及上下两路GMSL分别预留配对、拔出和锁扣操作空间。试配包含10件装配件及3个止口小样；359项局部实体检查通过。连接器料号、面板保持结构、电气针脚、动态线束和完整四瓣头适配仍待落实，不构成可通电接口或整臂放行。
+**当前工具接口（2026-10-09）：** [TOOL-IF02](engineering/arm_a13/tool-if02/README.md)将旧突出小仓改为端面Ø54凹腔、外圈Ø76定位和可拆背部检修盖。保留RS00与原J7核心，两路GMSL采用原厂具体HFM壳体尺寸作空间检查，供电/控制使用可换嵌件预算；工具侧试验杯用于验证后腔，不是最终四瓣头。工具平面前移44.3 mm，整臂TCP/负载与动态线束须后续重算。本轮是受支撑、无载、不通电的局部塑料试配；[TOOL-IF01](engineering/arm_a13/tool-if01/README.md)作为历史方案保留。
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
