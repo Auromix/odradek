@@ -11,3 +11,7 @@ engineering/electronics/**/*.svg -diff whitespace=-blank-at-eol
 # Native JLCEDA exports contain fixed-width padding and terminal blank records.
 engineering/electronics/base-light-b06/manufacturing/*.ipc -text whitespace=-blank-at-eol,-blank-at-eof
 engineering/electronics/base-light-b06/manufacturing/*.csv -text whitespace=cr-at-eol,-blank-at-eof
+# Preserve terminal empty TSV fields and mandatory fixed-width IPC padding.
+engineering/electronics/base-io-b05/controller/eco-review.tsv -text whitespace=-blank-at-eol,-blank-at-eof
+engineering/electronics/base-io-b05/manufacturing/b06-io-control01/*.ipc -text whitespace=-blank-at-eol,-blank-at-eof
+engineering/electronics/base-io-b05/manufacturing/b06-io-control01/*.csv -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
