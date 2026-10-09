@@ -6,6 +6,8 @@
 
 **制造目标补充（2026-10-09）：** 用户要求整臂可制造且造型优雅。新增[A13制造重构前置审查](engineering/arm_a13/README.md)：当前A12按现有账本/外罩体积估算约9.11 kg，3 kg中心法兰负载水平伸展时J2静态需求约38.95 N·m。需要收敛外罩质量、承力结构、关节包装与热条件；审查不构成新模型或制造放行。
 
+**塑料先行路线（2026-10-09已确认）：** 先打印结构和外罩，受支撑无载验证，再独立设计加工金属骨架。[J7 FIT01局部模块](engineering/arm_a13/j7-fit01/README.md)修正旧轴颈一体法兰导致的轴承装入阻碍，提供分体法兰、减材轴承座、六件装配件与六个配合小样、Blender、STEP/STL及尺寸工作图；整臂A12造型和约700 mm长版仍保留。此模块不构成整臂制造或3 kg负载放行。
+
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
 [中文说明](README.zh-CN.md) · [Design brief](docs/design-brief.md) · [Comparison](docs/concept-comparison.md) · [Nickname candidates](docs/nickname-candidates.md) · [Roadmap](docs/roadmap.md)

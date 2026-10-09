@@ -1,0 +1,158 @@
+{
+  "axis": "+X",
+  "motor_model": "RS00",
+  "fixed_plane_x_mm": 25.3,
+  "output_plane_x_mm": 25.7,
+  "housing_span_x_mm": [
+    33.3,
+    54.2
+  ],
+  "bearing_seats": [
+    {
+      "span_x_mm": [
+        36.2,
+        43.2
+      ],
+      "nominal_ID_mm": 47.2
+    },
+    {
+      "span_x_mm": [
+        47.2,
+        54.2
+      ],
+      "nominal_ID_mm": 47.2
+    }
+  ],
+  "outer_ring_stop_span_x_mm": [
+    43.2,
+    47.2
+  ],
+  "outer_ring_stop_ID_mm": 44.8,
+  "rear_seat_relief_span_x_mm": [
+    33.3,
+    36.2
+  ],
+  "journal_OD_mm": 34.95,
+  "inner_stop_span_x_mm": [
+    34.2,
+    36.2
+  ],
+  "inner_spacer_span_x_mm": [
+    54.2,
+    57.7
+  ],
+  "retainer_span_x_mm": [
+    54.2,
+    56.7
+  ],
+  "flange_span_x_mm": [
+    57.7,
+    65.7
+  ],
+  "nominal_retainer_rotor_gap_mm": 1.0,
+  "detachable_flange_pilot": {
+    "male_OD_mm": 20.0,
+    "male_length_mm": 2.0,
+    "female_ID_mm": 20.2,
+    "female_depth_mm": 2.2,
+    "physical_fit_required": true,
+    "uses_original_six_M3x40_output_bolts": true
+  },
+  "six_cartridge_bolts": {
+    "PCD_mm": 70,
+    "angle_start_deg": 30,
+    "diameter_mm": 3.5
+  },
+  "fixed_hole_centres_mm": [
+    [
+      25.299999999999997,
+      -25.0,
+      0.0
+    ],
+    [
+      25.299999999999997,
+      -12.5,
+      21.65064
+    ],
+    [
+      25.299999999999997,
+      -12.5,
+      -21.65064
+    ],
+    [
+      25.299999999999997,
+      12.5,
+      21.65064
+    ],
+    [
+      25.299999999999997,
+      12.5,
+      -21.65064
+    ],
+    [
+      25.299999999999997,
+      25.0,
+      0.0
+    ]
+  ],
+  "output_hole_centres_mm": [
+    [
+      25.7,
+      -11.69134,
+      6.75
+    ],
+    [
+      25.7,
+      -11.69134,
+      -6.75
+    ],
+    [
+      25.7,
+      0.0,
+      13.5
+    ],
+    [
+      25.7,
+      0.0,
+      -13.5
+    ],
+    [
+      25.7,
+      11.69134,
+      6.75
+    ],
+    [
+      25.7,
+      11.69134,
+      -6.75
+    ]
+  ],
+  "end_flange": {
+    "OD_mm": 60,
+    "PCD_mm": 45,
+    "count": 3,
+    "clearance_mm": 4.5,
+    "angle_start_deg": 30
+  },
+  "fixed_motor_screw": {
+    "size": "M3x12 button",
+    "nominal_engagement_mm": 3.5,
+    "usable_front_thread_depth": "unverified: measure before installation"
+  },
+  "output_motor_screw": {
+    "size": "M3x40 socket",
+    "nominal_engagement_mm": 4.0,
+    "source_blind_depth_mm": 5.0,
+    "actual_bottoming_check": "required"
+  },
+  "bearing": {
+    "part": "6807",
+    "size_mm": [
+      35,
+      47,
+      7
+    ],
+    "quantity": 2,
+    "physical_axial_shimming": "measure endplay; avoid deformation preload"
+  }
+}
