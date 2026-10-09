@@ -8,6 +8,8 @@ from pathlib import Path
 from mathutils import Vector
 HERE=Path(__file__).resolve().parent;OUT=Path(bpy.data.filepath).parent
 D=json.loads((OUT/'manifest.json').read_text())
+if D['revision'] != 'B06-COMPACT-02':
+    raise RuntimeError('This historical partial rebuild is only for COMPACT-02. Use blender_compact.py for the current rear service module.')
 M=.001;CENTER=(0,75);INNER_RADIUS=84;WALL=3;SEGMENTS=240
 SCENE=bpy.context.scene;PARAMETERS=D['parameters']
 COLLECTIONS={c.name:c for c in bpy.data.collections}

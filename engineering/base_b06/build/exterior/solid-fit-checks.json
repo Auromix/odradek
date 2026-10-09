@@ -1,6 +1,6 @@
 {
-  "revision": "B06-COMPACT-02",
-  "manifest_sha256": "17bff2160b481deb9b86a2ae8d4c9b50e676af0e13671632c975d2c10618a068",
+  "revision": "B06-COMPACT-03",
+  "manifest_sha256": "947b72ebca42d649c1acdfd123ce9d1f081c39a494cf90608933e2711c5d4348",
   "scope": "Static closed STL solid intersections; cosmetic parts vs frozen root and I/O meshes",
   "engine": "manifold3d",
   "numerical_volume_threshold_mm3": 0.01,
@@ -491,7 +491,28 @@
     {
       "a": "B06-307-LOWER-CARRIER",
       "b": "IO-BRI01_PCB",
-      "volume_mm3": 0.00026524971199326644,
+      "volume_mm3": 0.0005363326551839131,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_shell_reference",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_spring_reservation_-8.65",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J1_spring_reservation_7.5",
+      "volume_mm3": 0.0,
       "intersection_status": "Error.NoError",
       "penetration_over_0_01mm3": false
     },
@@ -561,6 +582,27 @@
     {
       "a": "B06-307-LOWER-CARRIER",
       "b": "IO-J1_tail_9",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_shell_reference",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_spring_reservation_-8.65",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J2_spring_reservation_7.5",
       "volume_mm3": 0.0,
       "intersection_status": "Error.NoError",
       "penetration_over_0_01mm3": false
@@ -637,6 +679,13 @@
     },
     {
       "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J3_header_reference",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
       "b": "IO-J3_tail_0",
       "volume_mm3": 0.0,
       "intersection_status": "Error.NoError",
@@ -679,6 +728,20 @@
     },
     {
       "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J4_M3_stud",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J4_lug_nut_reservation",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
       "b": "IO-J4_tail_0",
       "volume_mm3": 0.0,
       "intersection_status": "Error.NoError",
@@ -701,6 +764,20 @@
     {
       "a": "B06-307-LOWER-CARRIER",
       "b": "IO-J4_tail_3",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J5_M3_stud",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J5_lug_nut_reservation",
       "volume_mm3": 0.0,
       "intersection_status": "Error.NoError",
       "penetration_over_0_01mm3": false
@@ -735,6 +812,20 @@
     },
     {
       "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J6_M3_stud",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-J6_lug_nut_reservation",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
       "b": "IO-J6_tail_0",
       "volume_mm3": 0.0,
       "intersection_status": "Error.NoError",
@@ -757,6 +848,55 @@
     {
       "a": "B06-307-LOWER-CARRIER",
       "b": "IO-J6_tail_3",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-BRI01_COAX_LEDGE",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-X1_132170_reference",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-X1_fixed_flange",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-X1_nut_washer_reservation",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-X2_132170_reference",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-X2_fixed_flange",
+      "volume_mm3": 0.0,
+      "intersection_status": "Error.NoError",
+      "penetration_over_0_01mm3": false
+    },
+    {
+      "a": "B06-307-LOWER-CARRIER",
+      "b": "IO-X2_nut_washer_reservation",
       "volume_mm3": 0.0,
       "intersection_status": "Error.NoError",
       "penetration_over_0_01mm3": false

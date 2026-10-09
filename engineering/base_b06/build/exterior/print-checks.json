@@ -1,6 +1,6 @@
 {
   "schema": "odradek.print-checks.v1",
-  "checked_at_utc": "2026-10-08T07:47:43.912372+00:00",
+  "checked_at_utc": "2026-10-09T04:57:47.932812+00:00",
   "scope": "mesh integrity and per-instance print-bed envelope only; not manufacturing or load release",
   "script_sha256": "93c87f2a77470376bbb73a7543d782ae6efb689d14cec6c067688be353c1321b",
   "python": "3.12.14",
@@ -147,36 +147,36 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b06/build/exterior/print-parts/B06-304-REAR-LID.stl",
-      "sha256": "f73e72d6d5dc2d74946f8e192eee87849e8228fd2fbb14a543d07d9db10fa2fd",
+      "sha256": "39fa01e3ce3d145698548d0b8da925daf46be1e6353f4054cab785f6756d98bc",
       "instances": [
         {
           "name": "B06-304-REAR-LID",
-          "vertices_before_weld": 24930,
-          "vertices_after_weld": 4153,
-          "faces": 8310,
+          "vertices_before_weld": 29928,
+          "vertices_after_weld": 4978,
+          "faces": 9976,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 23208.064522983095,
-          "surface_area_mm2": 15976.89155991553,
+          "signed_volume_mm3": 17834.24528494894,
+          "surface_area_mm2": 14844.121138508273,
           "bbox_mm": [
             [
               7.450580596923828e-06,
-              4.0978193283081055e-05,
+              4.470348358154297e-05,
               0.0
             ],
             [
               133.20001220703125,
-              16.488040924072266,
+              16.48804473876953,
               46.279998779296875
             ]
           ],
           "size_mm": [
             133.20000475645065,
-            16.487999945878983,
+            16.48800003528595,
             46.279998779296875
           ],
           "usable_bed_mm": [
@@ -229,7 +229,7 @@
       "whole_file_arrangement": {
         "size_mm": [
           133.20000475645065,
-          16.487999945878983,
+          16.48800003528595,
           46.279998779296875
         ],
         "usable_bed_mm": [
@@ -407,37 +407,37 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b06/build/exterior/print-parts/B06-307-LOWER-CARRIER.stl",
-      "sha256": "c5ff19b60d26128843450b43d9b184460cbfb60de57621fcedee40f22263cffc",
+      "sha256": "cdc8a4b91905b06edc6dd25117938300fd1581c044aaf4d7e8d64514164bacf9",
       "instances": [
         {
           "name": "B06-307-LOWER-CARRIER",
-          "vertices_before_weld": 17598,
-          "vertices_after_weld": 2933,
-          "faces": 5866,
+          "vertices_before_weld": 39198,
+          "vertices_after_weld": 6509,
+          "faces": 13066,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 42839.434886239316,
-          "surface_area_mm2": 26729.10609757441,
+          "signed_volume_mm3": 49627.931363388234,
+          "surface_area_mm2": 31298.899180218596,
           "bbox_mm": [
             [
-              0.00048428773880004883,
+              0.0004917383193969727,
               0.0003427267074584961,
-              7.2177499532699585e-06
+              8.847564458847046e-06
             ],
             [
               178.9084930419922,
               190.99835205078125,
-              17.00000762939453
+              31.000009536743164
             ]
           ],
           "size_mm": [
-            178.9080087542534,
+            178.9080013036728,
             190.9980093240738,
-            17.000000411644578
+            31.000000689178705
           ],
           "usable_bed_mm": [
             246.0,
@@ -488,9 +488,9 @@
       "input_units": "assumed mm; STL has no unit",
       "whole_file_arrangement": {
         "size_mm": [
-          178.9080087542534,
+          178.9080013036728,
           190.9980093240738,
-          17.000000411644578
+          31.000000689178705
         ],
         "usable_bed_mm": [
           246.0,

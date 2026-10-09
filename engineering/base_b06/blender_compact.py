@@ -9,6 +9,7 @@ HERE = Path(__file__).resolve().parent
 exec(compile((HERE/'geometry.py').read_text(), str(HERE/'geometry.py'), 'exec'), globals())
 MOUNTS = [(-87,36),(87,36),(-72,125),(72,125)]
 REAR_MOUNTS = [(-60,-29),(60,-29)]
+REAR_SCREW_Z = 29
 DESCRIPTORS, PAYLOAD = [], {}
 
 def cylinder(name,x,y,r,z0,z1,n=64):
@@ -20,6 +21,38 @@ def cylinder(name,x,y,r,z0,z1,n=64):
 def hexagon(name,x,y,af,z0,z1):
     r=af/math.sqrt(3)
     return contour_prism(name,[(x+r*math.cos(math.pi/6+i*math.pi/3),y+r*math.sin(math.pi/6+i*math.pi/3)) for i in range(6)],(z0,z1))
+
+def along_y(o,x,z):
+    # Local cylinder/hex axial Z becomes global +Y. Keep millimetre datums.
+    coords=[(o.matrix_world @ v.co)/M for v in o.data.vertices]
+    o.location=(0,0,0);o.rotation_euler=(0,0,0);o.scale=(1,1,1)
+    for v,(a,b,c) in zip(o.data.vertices,coords):
+        v.co=Vector((x+a,c,z-b))*M
+    return o
+
+def rear_bore(name,x,r,y0,y1):
+    return along_y(cylinder(name,0,0,r,y0,y1),x,REAR_SCREW_Z)
+
+def rear_hex(name,x,af,y0,y1):
+    return along_y(hexagon(name,0,0,af,y0,y1),x,REAR_SCREW_Z)
+
+def rear_hardware(index,x):
+    s=rear_bore('HW-REAR-M3-'+str(index),x,1.5,-34.5,-24.5)
+    boolean(s,rear_bore('Rear button head',x,2.85,-36.15,-34.4),'UNION')
+    boolean(s,rear_hex('Rear 2mm hex socket',x,2,-36.2,-35.1),'DIFFERENCE')
+    add(s,'M3×10 后向检修螺钉','fasteners','hardware',['Rear-facing axis +Y; loosen from behind without underside tool access; simplified standard hardware'],False,'fasteners')
+    n=rear_hex('HW-REAR-NUT-'+str(index),x,5.5,-28.6,-26.2)
+    boolean(n,rear_bore('Nut thread envelope',x,1.5,-30,-25),'DIFFERENCE')
+    add(n,'后盖底架内藏M3螺母','fasteners','nut',['Nut stays in lower carrier, not in removable lid'],False,'fasteners')
+
+def pcb_hardware(index,x,y):
+    s=cylinder('HW-PCB-M3-'+str(index),x,y,1.5,11.6,21.7)
+    boolean(s,cylinder('PCB button head',x,y,2.85,21.6,23.25),'UNION')
+    boolean(s,hexagon('PCB 2mm hex socket',x,y,2,22.2,23.3),'DIFFERENCE')
+    add(s,'PCB M3×10上装固定','fasteners','hardware',['Underhead datum Z21.6; shaft end Z11.6; buy standard screw, not print'],False,'fasteners')
+    n=hexagon('HW-PCB-NUT-'+str(index),x,y,5.5,11.4,13.8)
+    boolean(n,cylinder('PCB nut thread envelope',x,y,1.5,11,14),'DIFFERENCE')
+    add(n,'PCB柱内藏M3螺母','fasteners','nut',['Side insertion before board fit; DIN934 nominal envelope; threads omitted'],False,'fasteners')
 
 def beam(name,p,q,width=12,z0=3,z1=7):
     dx,dy=q[0]-p[0],q[1]-p[1];length=math.hypot(dx,dy)
@@ -156,30 +189,56 @@ def main():
     add(retainer,'灯窗内藏压条','cover_support','support',['Two M2x6 screws into hidden cover pilot bosses; 0.3mm seat allowance; central pad nominal minimum0.4mm below sampled lens underside; compliant optical shim to be trial-fitted; physical fit coupon required'])
     lid=copy_mesh(master,'B06-304-REAR-LID')
     boolean(lid,box('Rear lid partition',((-66.6,-80,-10),(66.6,-22.4,100))),'INTERSECT')
-    boolean(lid,rounded_rect_prism('Cable egress',((-54,-8),(54,18)),(-80,-25),4,'XZ'),'DIFFERENCE')
-    tree=BVHTree.FromObject(lid,bpy.context.evaluated_depsgraph_get())
-    for x,y in REAR_MOUNTS:
-        hit,_,_,_=tree.ray_cast(Vector((x*M,y*M,.2)),Vector((0,0,-1)))
-        if hit is None:raise ValueError('Rear post misses lid')
-        boss(lid,x,y,hit.z/M-1)
-    add(lid,'独立后部检修盖','rear_lid','rear',['0.8mm partition seam; two bottom M3 fixings; bottom cable throat 108x18mm',
-         'Lift after unplugging cables; paired full-size I/O remains under main cover'])
+    # Separate connector apertures replace the large open-bottom cable throat.
+    # These are access windows; they do not transfer plug torque to the FR4.
+    for name,rect in [('RJ45 latch access',((27,18),(49,40))),
+                      ('48V locking plug access',((-52,18),(-25,40)))]:
+        boolean(lid,rounded_rect_prism(name,rect,(-80,-20),2,'XZ'),'DIFFERENCE')
+    for x in (-10,10):
+        o=along_y(cylinder('Coax coupling access',0,0,7.4,-80,-20),x,31)
+        boolean(lid,o,'DIFFERENCE')
+    for x,_ in REAR_MOUNTS:
+        boolean(lid,rear_bore('Integral rear screw seat',x,4.5,-36,-31.8),'UNION')
+        boolean(lid,rear_bore('Rear screw clearance',x,1.7,-50,-20),'DIFFERENCE')
+        boolean(lid,rear_bore('Recessed button head',x,3.2,-50,-34.5),'DIFFERENCE')
+    add(lid,'后向拆卸接口检修盖','rear_lid','rear',['0.8mm partition seam; two rear-facing M3x10; nuts retained in lower carrier',
+         'RJ45 22x22 latch window; 48V 27x22 access window; two coax coupling windows diameter14.8',
+         'Unplug first, pull rearward before lifting; physical plug/latch fit still needs samples'])
     carrier=cylinder('B06-307-LOWER-CARRIER',0,75,84,3,7)
     boolean(carrier,cylinder('Load chassis reservation',0,75,78,2,8),'DIFFERENCE')
     boolean(carrier,box('PCB mounting shelf',((-63,-20,3),(63,40,7))),'UNION')
     for x,y in MOUNTS+REAR_MOUNTS:
         r=math.hypot(x,y-75);q=(x*81/r,75+(y-75)*81/r)
         boolean(carrier,beam('Underside fixing bridge',(x,y),q),'UNION')
-        boolean(carrier,cylinder('Bottom fastener clearance',x,y,1.7,2,8),'DIFFERENCE')
+        if (x,y) in MOUNTS:
+            boolean(carrier,cylinder('Bottom fastener clearance',x,y,1.7,2,8),'DIFFERENCE')
+        else:
+            boolean(carrier,box('Rear service upright',((x-5,-31,6),(x+5,-23,34))),'UNION')
+            boolean(carrier,rear_bore('Rear upright clearance',x,1.7,-32,-22),'DIFFERENCE')
+            boolean(carrier,rear_hex('Rear captive M3 nut',x,5.8,-28.8,-26),'DIFFERENCE')
+            boolean(carrier,box('Top nut insertion',((x-2.9,-28.8,29),(x+2.9,-26,35))),'DIFFERENCE')
     for x in (-52,52):
         for y in (-10,34):
-            boolean(carrier,cylinder('Full-size PCB standoff',x,y,3.2,6,20),'UNION')
-            boolean(carrier,cylinder('PCB M3 pilot',x,y,1.25,12,21),'DIFFERENCE')
+            boolean(carrier,cylinder('PCB captive-nut standoff',x,y,4.5,6,20),'UNION')
+            boolean(carrier,cylinder('PCB M3 clearance',x,y,1.7,10,21),'DIFFERENCE')
+            boolean(carrier,hexagon('PCB M3 nut pocket',x,y,5.8,11.2,14),'DIFFERENCE')
+            sign=1 if x>0 else -1
+            lo,hi=sorted([x,x+sign*6])
+            boolean(carrier,box('PCB side nut entry',((lo,y-2.9,11.2),(hi,y+2.9,14))),'DIFFERENCE')
+    for side in (-1,1):
+        lo,hi=sorted([side*61,side*69])
+        boolean(carrier,box('Integral harness tie ear',((lo,3,6),(hi,21,13))),'UNION')
+        sx=side*65
+        for y in (5,14):
+            boolean(carrier,box('Cable tie pass slot',((sx-1.1,y,5),(sx+1.1,y+5,14))),'DIFFERENCE')
     add(carrier,'一体底部外罩／接口板安装架','cover_support','support',
         ['Ø156 centre clearance for future chassis; DOES NOT carry arm load',
-         'PCB 116x56 retained; four board holes x±52,y-10/34 at Z20; M3 pilot holes',
+         'PCB 116x56 retained; four board holes x±52,y-10/34 at Z20; M3 clearance and captive nut pockets; no plastic threads',
+         'Two integrated side harness tie ears; 2.2x5mm slots for narrow ties; cable strain reaction and real bend radius need bench validation',
          'Main hidden posts start Z7.8; carrier top Z7; nominal Z gap0.8'])
-    for k,(x,y) in enumerate(MOUNTS+REAR_MOUNTS,1):hardware(k,x,y)
+    for k,(x,y) in enumerate(MOUNTS,1):hardware(k,x,y)
+    for k,(x,_) in enumerate(REAR_MOUNTS,1):rear_hardware(k,x)
+    for k,(x,y) in enumerate([(x,y) for x in (-52,52) for y in (-10,34)],1):pcb_hardware(k,x,y)
     native_context()
     # Save shape-only and integrated review modes from the same native solids.
     move_collection(master,'90_Construction_native_loft');source.hide_set(True);master.hide_set(True);master.hide_render=True
@@ -188,7 +247,7 @@ def main():
     camera,target=render_setup();SCENE.cycles.samples=20
     SCENE.render.resolution_x=1440;SCENE.render.resolution_y=1080
     point_camera(camera,(.30,.43,.29),target,.32)
-    manifest=dict(revision='B06-COMPACT-02',length_unit='mm',module='compact_integration_candidate',
+    manifest=dict(revision='B06-COMPACT-03',length_unit='mm',module='compact_integration_candidate',
         scope=PARAMETERS['prototype_scope'],parameters=PARAMETERS,parts=DESCRIPTORS,
         review_status='紧凑一体底座 · 无动力试装候选',not_verified=['load chassis and clamp','dynamic collisions','physical fit','PCB routing','thermal','slicing/supports'])
     for name in ('exterior-manifest.json','manifest.json'):(OUT/name).write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

@@ -1,6 +1,6 @@
 # Odradek
 
-Current base: [B06-COMPACT-02](engineering/base_b06/README.md), the approved compact one-piece nose, wings and neck. [Shared base authority](docs/engineering/base-authority.md) applies to all arm-body work in Auromix/odradek; B04/B05 are historical references.
+Current base candidate: [B06-COMPACT-03](engineering/base_b06/README.md), retaining the approved one-piece nose, wings and neck with revised rear service access and PCB mounting. [Shared base authority](docs/engineering/base-authority.md) applies to all arm-body work in Auromix/odradek; B04/B05 are historical references.
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 

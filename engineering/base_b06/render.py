@@ -21,6 +21,9 @@ modes(True,False)
 view('front-three-quarter',(.30,.43,.29),(0,.075,.037),.32)
 view('top',(0,.075,.85),(0,.075,.037),.32)
 view('rear',(-.30,-.35,.24),(0,.075,.037),.32)
+for p in D['parts']:
+    if p['assembly_role']=='electronics':bpy.data.objects[p['id']].hide_render=False
+view('rear-interfaces',(-.13,-.35,.16),(0,.015,.028),.23)
 modes(False,True)
 view('internal-fit',(.30,.43,.34),(0,.065,.085),.34)
 modes(True,True)

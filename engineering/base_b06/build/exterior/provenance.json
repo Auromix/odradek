@@ -1,21 +1,24 @@
 {
-  "revision": "B06-COMPACT-02",
-  "manifest_sha256": "17bff2160b481deb9b86a2ae8d4c9b50e676af0e13671632c975d2c10618a068",
+  "revision": "B06-COMPACT-03",
+  "manifest_sha256": "947b72ebca42d649c1acdfd123ce9d1f081c39a494cf90608933e2711c5d4348",
   "frozen_inputs": {
-    "inputs/root-snapshot.json": "42a0366a201978a9eccd9e087ddc144f78a2526de5c7aa9bb8175e6934e4509d",
-    "inputs/io-snapshot.json": "d2f0a05ce534dcdead092e220196af9ff89be414a20298248196f67ee3aaca3f"
+    "inputs/io-snapshot.json": "d2f0a05ce534dcdead092e220196af9ff89be414a20298248196f67ee3aaca3f",
+    "inputs/root-snapshot.json": "42a0366a201978a9eccd9e087ddc144f78a2526de5c7aa9bb8175e6934e4509d"
   },
   "generator_sha256": {
-    "blender_compact.py": "e71b2b1b891600101e4aa03031525d66d00ff31ece9e763dbd99478a7bc07b29",
+    "blender_compact.py": "fb525d2039bee811688b54f882080e8311dc22a25da78ce7eb6b46814baf7a00",
     "check_fit.py": "440d8ca83eab81c62833c6f901a400aff88aa9640cfc63b1834bd8284f59a95f",
+    "check_service.py": "632ab60dfdd19cdf2baa874800d132f13df451d71702119c7715553ff9e12a73",
     "check_solids.py": "2729898fea31e6ff3ed481654138af7eeaa6d9b388709d9502243fa2686081b3",
-    "geometry.py": "aec6696bf381e4b40f2de5d9e969be1b589b37344ee2bcfec7a335e17ea284f6",
+    "geometry.py": "e121718681a43c847117e0055e196c8fc65b56bb5d8e4371260f2560e93fe679",
+    "package.py": "a0e82859cfd7cb5f1e19406b357fde2f6b6c3ae6609b2eb5b3f7601dcaacddba",
     "refresh_lens.py": "51920ea5bb032268e46f6f77d230d1b4393e79e7ecbc96022558d0463b8bc141",
-    "refresh_rear.py": "e632c637c5004a2c33828bb9593ecb8bf0ff6fde8e54c32906399f90a3a5de01",
-    "render.py": "313519107205e74b55e9500582395c3f43f937850b86dcb771d233479fba7aa4",
-    "viewer.py": "7317fc480b9ac5556e90dfc8c37a9af23a743fe5375b5fac5ae25880cd28e418",
-    "viewer-template.html": "9351b4f82023650e7a5222ce97e123debad056361d6ee2768e849fe0028ec835"
+    "refresh_rear.py": "c9ac270a68100a26338cb1e0d86d4f668ce2f56aa2299dd0fdb7369555b9f493",
+    "render.py": "52826faef1604ac3647727a7f821e79c4d275aa4f08fd6f66c69f48f780ab501",
+    "viewer-template.html": "9351b4f82023650e7a5222ce97e123debad056361d6ee2768e849fe0028ec835",
+    "viewer.py": "712bb837cbeb5210adf9b9a25670ce061d038315d8b201313d0a35fede0f2692"
   },
+  "native_blend_sha256": "86812642f0597b7e024515db6ee6df84cb1a91052140f90cd3f5074446a6ce4c",
   "print_parts": [
     "print-parts/B06-301-MAIN-SHIELD.stl",
     "print-parts/B06-306-LIGHT-LENS.stl",
@@ -23,19 +26,27 @@
     "print-parts/B06-304-REAR-LID.stl",
     "print-parts/B06-307-LOWER-CARRIER.stl"
   ],
-  "validation": {
-    "print_mesh_pass": true,
-    "static_closed_solid_pass": true,
-    "solid_pairs": 108,
-    "root_tool_rays": 128,
-    "root_tool_rays_blocked": 0
-  },
-  "status": "Unpowered geometric fit candidate; not a load, clamp, PCB or manufacturing release",
   "print_stl_sha256": {
     "print-parts/B06-301-MAIN-SHIELD.stl": "d8c52864b713b3c896ce4b1eae07fc9b1ae0e2129e0fcdc576ac6ada3ccf0dc4",
     "print-parts/B06-306-LIGHT-LENS.stl": "fac33537aca348c208b33dbd8138c2c10c2d33ed0173e77fb45390697bda58da",
     "print-parts/B06-308-LENS-RETAINER.stl": "fd624b53c8d80a9f5dd0a60cc6ccdce45d99624e05aa410b49074ee123b48837",
-    "print-parts/B06-304-REAR-LID.stl": "f73e72d6d5dc2d74946f8e192eee87849e8228fd2fbb14a543d07d9db10fa2fd",
-    "print-parts/B06-307-LOWER-CARRIER.stl": "c5ff19b60d26128843450b43d9b184460cbfb60de57621fcedee40f22263cffc"
-  }
+    "print-parts/B06-304-REAR-LID.stl": "39fa01e3ce3d145698548d0b8da925daf46be1e6353f4054cab785f6756d98bc",
+    "print-parts/B06-307-LOWER-CARRIER.stl": "cdc8a4b91905b06edc6dd25117938300fd1581c044aaf4d7e8d64514164bacf9"
+  },
+  "report_sha256": {
+    "print-checks.json": "196bad4fde6bc868c15b2dab46fde16f4fe42d3eb3466f6d671a47e80f0db9f1",
+    "solid-fit-checks.json": "67e2a59bcb933ad8bc3bbeb711657561f0ab26bb8cd6b31aac09fdd3eade20fc",
+    "fit-checks.json": "c5db8536953bf963e8087c37bee44364869158623e7d0d468aa0824eddc4d2b5",
+    "service-checks.json": "20d0f9eca399132db34461a38ac24b75f603324f984235cfcd848e714d418bdc"
+  },
+  "validation": {
+    "print_mesh_pass": true,
+    "static_closed_solid_pass": true,
+    "solid_pairs": 128,
+    "root_tool_rays": 128,
+    "root_tool_rays_blocked": 0,
+    "lid_extraction_samples": 13,
+    "pcb_datum_pass": true
+  },
+  "status": "Unpowered geometric fit candidate; not a load, clamp, routed PCB or manufacturing release"
 }

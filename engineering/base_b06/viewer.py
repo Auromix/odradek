@@ -60,7 +60,7 @@ def explode_vector(part, role, bbox):
         return vector.tolist()
     center = (np.asarray(bbox["min"]) + np.asarray(bbox["max"])) / 2
     if role == "rear_lid":
-        return [85, -85, 65]
+        return [0, -75, 35]
     if role == "cover_support":
         return [float(np.sign(center[0])*35),0,-25]
     if role == "cover":

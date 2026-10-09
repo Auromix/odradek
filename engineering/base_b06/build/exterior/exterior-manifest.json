@@ -1,10 +1,10 @@
 {
-  "revision": "B06-COMPACT-02",
+  "revision": "B06-COMPACT-03",
   "length_unit": "mm",
   "module": "compact_integration_candidate",
   "scope": "Five printed cosmetic/PCB locating parts; A11 root snapshot and connector envelopes; no load chassis or PCB release",
   "parameters": {
-    "schema": "odradek.b06.compact.v2",
+    "schema": "odradek.b06.compact.v3",
     "length_unit": "mm",
     "center_xy": [
       0.0,
@@ -115,7 +115,7 @@
       240,
       230
     ],
-    "fastening": "Four underside M3x10 screws with captive M3 nuts; rear lid two bottom M3x10; lamp two M2x6"
+    "fastening": "Four underside M3x10 captive nuts; rear lid two rear-facing M3x10 into carrier nuts; PCB four captive M3 nuts; lamp two M2x6"
   },
   "parts": [
     {
@@ -260,7 +260,7 @@
     },
     {
       "id": "B06-304-REAR-LID",
-      "name": "独立后部检修盖",
+      "name": "后向拆卸接口检修盖",
       "category": "custom",
       "quantity": 1,
       "material": "PETG / ASA fit-prototype candidate; appearance finish only",
@@ -275,25 +275,25 @@
       "bbox": {
         "min": [
           -66.6000097990036,
-          -38.88804093003273,
+          -38.88804465532303,
           3.000000026077032
         ],
         "max": [
           66.6000097990036,
-          -22.400015965104103,
-          49.280036240816116
+          -22.400017827749252,
+          49.280039966106415
         ],
         "size": [
           133.2000195980072,
-          16.488024964928627,
-          46.280036214739084
+          16.488026827573776,
+          46.28003994002938
         ]
       },
       "stl": "stl/B06-304-REAR-LID.stl",
       "print_stl": "print-parts/B06-304-REAR-LID.stl",
       "print_translation_mm": [
         66.6000097990036,
-        38.88804093003273,
+        38.88804465532303,
         -3.000000026077032
       ],
       "viewer_group": "cover",
@@ -301,8 +301,9 @@
       "wall_nominal_mm": 3.0,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "0.8mm partition seam; two bottom M3 fixings; bottom cable throat 108x18mm",
-        "Lift after unplugging cables; paired full-size I/O remains under main cover"
+        "0.8mm partition seam; two rear-facing M3x10; nuts retained in lower carrier",
+        "RJ45 22x22 latch window; 48V 27x22 access window; two coax coupling windows diameter14.8",
+        "Unplug first, pull rearward before lifting; physical plug/latch fit still needs samples"
       ]
     },
     {
@@ -321,27 +322,27 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -89.45448696613312,
+          -89.45449441671371,
           -31.99833631515503,
-          2.999997930601239
+          2.9999963007867336
         ],
         "max": [
-          89.45447206497192,
+          89.45449441671371,
           159.00011360645294,
-          20.00000700354576
+          34.000009298324585
         ],
         "size": [
-          178.90895903110504,
+          178.90898883342743,
           190.99844992160797,
-          17.000009072944522
+          31.00001299753785
         ]
       },
       "stl": "stl/B06-307-LOWER-CARRIER.stl",
       "print_stl": "print-parts/B06-307-LOWER-CARRIER.stl",
       "print_translation_mm": [
-        89.45448696613312,
+        89.45449441671371,
         31.99833631515503,
-        -2.999997930601239
+        -2.9999963007867336
       ],
       "viewer_group": "cover_support",
       "assembly_role": "cover_support",
@@ -349,7 +350,8 @@
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
         "Ø156 centre clearance for future chassis; DOES NOT carry arm load",
-        "PCB 116x56 retained; four board holes x±52,y-10/34 at Z20; M3 pilot holes",
+        "PCB 116x56 retained; four board holes x±52,y-10/34 at Z20; M3 clearance and captive nut pockets; no plastic threads",
+        "Two integrated side harness tie ears; 2.2x5mm slots for narrow ties; cable strain reaction and real bend radius need bench validation",
         "Main hidden posts start Z7.8; carrier top Z7; nominal Z gap0.8"
       ]
     },
@@ -674,8 +676,8 @@
       "print_stl": null
     },
     {
-      "id": "HW-M3-5",
-      "name": "M3×10 底部固定螺钉",
+      "id": "HW-REAR-M3-1",
+      "name": "M3×10 后向检修螺钉",
       "category": "component",
       "quantity": 1,
       "material": "Integration reference only",
@@ -689,33 +691,33 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -62.85000592470169,
-          -31.850002706050873,
-          5.349999293684959
+          -62.849998474121094,
+          -36.1500084400177,
+          26.15000493824482
         ],
         "max": [
-          -57.15000629425049,
-          -26.15000307559967,
-          17.000000923871994
+          -57.15000256896019,
+          -24.500004947185516,
+          31.850002706050873
         ],
         "size": [
-          5.699999630451202,
-          5.699999630451202,
-          11.650001630187035
+          5.699995905160904,
+          11.650003492832184,
+          5.699997767806053
         ]
       },
-      "stl": "stl/HW-M3-5.stl",
+      "stl": "stl/HW-REAR-M3-1.stl",
       "assembly_role": "fasteners",
       "notes": [
-        "Nominal standard hardware; simplified threads; buy, do not print"
+        "Rear-facing axis +Y; loosen from behind without underside tool access; simplified standard hardware"
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "fasteners",
       "print_stl": null
     },
     {
-      "id": "HW-NUT-5",
-      "name": "M3 内藏螺母",
+      "id": "HW-REAR-NUT-1",
+      "name": "后盖底架内藏M3螺母",
       "category": "component",
       "quantity": 1,
       "material": "Integration reference only",
@@ -729,33 +731,33 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -62.74999678134918,
-          -32.17542916536331,
-          10.000000707805157
+          -62.75000423192978,
+          -28.600001707673073,
+          25.82457661628723
         ],
         "max": [
-          -57.2500042617321,
-          -25.824574753642082,
-          12.400001287460327
+          -57.2500079870224,
+          -26.200002059340477,
+          32.17543289065361
         ],
         "size": [
-          5.499992519617081,
-          6.3508544117212296,
-          2.4000005796551704
+          5.499996244907379,
+          2.399999648332596,
+          6.350856274366379
         ]
       },
-      "stl": "stl/HW-NUT-5.stl",
+      "stl": "stl/HW-REAR-NUT-1.stl",
       "assembly_role": "fasteners",
       "notes": [
-        "DIN934 nominal dimensions; thread omitted"
+        "Nut stays in lower carrier, not in removable lid"
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "fasteners",
       "print_stl": null
     },
     {
-      "id": "HW-M3-6",
-      "name": "M3×10 底部固定螺钉",
+      "id": "HW-REAR-M3-2",
+      "name": "M3×10 后向检修螺钉",
       "category": "component",
       "quantity": 1,
       "material": "Integration reference only",
@@ -769,33 +771,33 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          57.15000629425049,
-          -31.850002706050873,
-          5.349999293684959
+          57.15000256896019,
+          -36.1500084400177,
+          26.15000493824482
         ],
         "max": [
-          62.85000592470169,
-          -26.15000307559967,
-          17.000000923871994
+          62.849998474121094,
+          -24.500004947185516,
+          31.850002706050873
         ],
         "size": [
-          5.699999630451202,
-          5.699999630451202,
-          11.650001630187035
+          5.699995905160904,
+          11.650003492832184,
+          5.699997767806053
         ]
       },
-      "stl": "stl/HW-M3-6.stl",
+      "stl": "stl/HW-REAR-M3-2.stl",
       "assembly_role": "fasteners",
       "notes": [
-        "Nominal standard hardware; simplified threads; buy, do not print"
+        "Rear-facing axis +Y; loosen from behind without underside tool access; simplified standard hardware"
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "fasteners",
       "print_stl": null
     },
     {
-      "id": "HW-NUT-6",
-      "name": "M3 内藏螺母",
+      "id": "HW-REAR-NUT-2",
+      "name": "后盖底架内藏M3螺母",
       "category": "component",
       "quantity": 1,
       "material": "Integration reference only",
@@ -809,25 +811,345 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          57.2500042617321,
-          -32.17542916536331,
-          10.000000707805157
+          57.2500079870224,
+          -28.600001707673073,
+          25.82457661628723
         ],
         "max": [
-          62.74999678134918,
-          -25.824574753642082,
-          12.400001287460327
+          62.75000423192978,
+          -26.200002059340477,
+          32.17543289065361
         ],
         "size": [
-          5.499992519617081,
-          6.3508544117212296,
-          2.4000005796551704
+          5.499996244907379,
+          2.399999648332596,
+          6.350856274366379
         ]
       },
-      "stl": "stl/HW-NUT-6.stl",
+      "stl": "stl/HW-REAR-NUT-2.stl",
       "assembly_role": "fasteners",
       "notes": [
-        "DIN934 nominal dimensions; thread omitted"
+        "Nut stays in lower carrier, not in removable lid"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-PCB-M3-1",
+      "name": "PCB M3×10上装固定",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -54.85000088810921,
+          -12.850002385675907,
+          11.600002646446228
+        ],
+        "max": [
+          -49.150001257658005,
+          -7.1500008925795555,
+          23.250000551342964
+        ],
+        "size": [
+          5.699999630451202,
+          5.700001493096352,
+          11.649997904896736
+        ]
+      },
+      "stl": "stl/HW-PCB-M3-1.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Underhead datum Z21.6; shaft end Z11.6; buy standard screw, not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-PCB-NUT-1",
+      "name": "PCB柱内藏M3螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -54.750002920627594,
+          -13.175426982343197,
+          11.400001123547554
+        ],
+        "max": [
+          -49.250002950429916,
+          -6.824573967605829,
+          13.80000077188015
+        ],
+        "size": [
+          5.499999970197678,
+          6.350853014737368,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/HW-PCB-NUT-1.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Side insertion before board fit; DIN934 nominal envelope; threads omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-PCB-M3-2",
+      "name": "PCB M3×10上装固定",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -54.85000088810921,
+          31.150002032518387,
+          11.600002646446228
+        ],
+        "max": [
+          -49.150001257658005,
+          36.85000166296959,
+          23.250000551342964
+        ],
+        "size": [
+          5.699999630451202,
+          5.699999630451202,
+          11.649997904896736
+        ]
+      },
+      "stl": "stl/HW-PCB-M3-2.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Underhead datum Z21.6; shaft end Z11.6; buy standard screw, not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-PCB-NUT-2",
+      "name": "PCB柱内藏M3螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -54.750002920627594,
+          30.824575573205948,
+          11.400001123547554
+        ],
+        "max": [
+          -49.250002950429916,
+          37.17542812228203,
+          13.80000077188015
+        ],
+        "size": [
+          5.499999970197678,
+          6.35085254907608,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/HW-PCB-NUT-2.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Side insertion before board fit; DIN934 nominal envelope; threads omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-PCB-M3-3",
+      "name": "PCB M3×10上装固定",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          49.150001257658005,
+          -12.850002385675907,
+          11.600002646446228
+        ],
+        "max": [
+          54.85000088810921,
+          -7.1500008925795555,
+          23.250000551342964
+        ],
+        "size": [
+          5.699999630451202,
+          5.700001493096352,
+          11.649997904896736
+        ]
+      },
+      "stl": "stl/HW-PCB-M3-3.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Underhead datum Z21.6; shaft end Z11.6; buy standard screw, not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-PCB-NUT-3",
+      "name": "PCB柱内藏M3螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          49.250002950429916,
+          -13.175426982343197,
+          11.400001123547554
+        ],
+        "max": [
+          54.750002920627594,
+          -6.824573967605829,
+          13.80000077188015
+        ],
+        "size": [
+          5.499999970197678,
+          6.350853014737368,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/HW-PCB-NUT-3.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Side insertion before board fit; DIN934 nominal envelope; threads omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-PCB-M3-4",
+      "name": "PCB M3×10上装固定",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          49.150001257658005,
+          31.150002032518387,
+          11.600002646446228
+        ],
+        "max": [
+          54.85000088810921,
+          36.85000166296959,
+          23.250000551342964
+        ],
+        "size": [
+          5.699999630451202,
+          5.699999630451202,
+          11.649997904896736
+        ]
+      },
+      "stl": "stl/HW-PCB-M3-4.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Underhead datum Z21.6; shaft end Z11.6; buy standard screw, not print"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-PCB-NUT-4",
+      "name": "PCB柱内藏M3螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          49.250002950429916,
+          30.824575573205948,
+          11.400001123547554
+        ],
+        "max": [
+          54.750002920627594,
+          37.17542812228203,
+          13.80000077188015
+        ],
+        "size": [
+          5.499999970197678,
+          6.35085254907608,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/HW-PCB-NUT-4.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Side insertion before board fit; DIN934 nominal envelope; threads omitted"
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "fasteners",

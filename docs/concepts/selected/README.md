@@ -34,3 +34,5 @@
 ![最新用户提供的 B 盾形参考](base-shield-current-reference.png)
 
 最新约束以此图的短宽盾形、后置环台、肩部大曲面及简约琥珀灯窗为准。[B05原生模型](../../../engineering/base_b05/README.md)保留为历史比较。用户已确认[B06-COMPACT-02](../../../engineering/base_b06/README.md)的紧凑一体方向与本轮外观；此后的底座修改遵循[同源规则](../../engineering/base-authority.md)，不另建并行底座。外观确认仍不等于制造放行。
+
+2026-10-09：主罩已确认的外形不变，当前同源候选更新到[B06-COMPACT-03](../../../engineering/base_b06/README.md)，集中细化后部接口窗、检修固定和PCB底架。
