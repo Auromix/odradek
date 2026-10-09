@@ -1,0 +1,71 @@
+{
+  "stage": "B06 native power routing only",
+  "date": "2026-10-09",
+  "rules_unchanged": true,
+  "pads_unchanged": true,
+  "native_line_count": 34,
+  "width_per_outer_layer_mm": 2.4,
+  "top_bottom_geometry_equal": true,
+  "power_pad_coverage": {
+    "VIN48/L1": {
+      "pad_count": 7,
+      "one_connected_region": true
+    },
+    "VIN48/L2": {
+      "pad_count": 7,
+      "one_connected_region": true
+    },
+    "RETURN48/L1": {
+      "pad_count": 7,
+      "one_connected_region": true
+    },
+    "RETURN48/L2": {
+      "pad_count": 7,
+      "one_connected_region": true
+    }
+  },
+  "DC_pole_outer_copper_min_gap_mm": 4.58490895396787,
+  "centerline_header_to_nearest_stud_mm": {
+    "VIN48": 23.5103,
+    "RETURN48": 23.234444067727836
+  },
+  "estimate": {
+    "assumed_outer_copper_um": 35,
+    "assumed_equal_current_share": true,
+    "copper_resistivity_ohm_m": 1.724e-08,
+    "trace_loop_resistance_ohm": 0.004796901117426358,
+    "at_10A": {
+      "drop_V": 0.04796901117426358,
+      "loss_W": 0.47969011174263576
+    },
+    "at_20A": {
+      "drop_V": 0.09593802234852716,
+      "loss_W": 1.918760446970543
+    },
+    "exclusions": [
+      "pad spreading",
+      "PTH barrels",
+      "connector/contact resistance",
+      "wire/lug resistance",
+      "temperature coefficient",
+      "unequal sharing"
+    ],
+    "is_current_rating": false
+  },
+  "native_drc": [
+    {
+      "name": "Connection Error",
+      "count": 16
+    }
+  ],
+  "release": "NOT FOR FABRICATION OR POWER-UP",
+  "remaining": [
+    "RJ45 differential routing",
+    "native physical stack not read back",
+    "impedance qualification",
+    "thermal/current test",
+    "actual plug/latch/cable fit"
+  ],
+  "pcb_sha256": "f2eaacac149194479aa92e7d2b070d704f50842d57fec9d3b03e2d17520c15f4",
+  "readback_sha256": "142d89565991604601387f2b20074eada788d73d6b9c1d62ab1d503e5819d825"
+}
