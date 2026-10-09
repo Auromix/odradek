@@ -1,0 +1,986 @@
+{
+  "revision": "A14-QUAL01",
+  "target": "3kg bare flange centre; long arm; J7 tool datum X110",
+  "sources": {
+    "layout": {
+      "path": "engineering/arm_a11/build/manifest.json",
+      "sha256": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559"
+    },
+    "motor_catalog": {
+      "url": "https://raw.githubusercontent.com/RobStride/Product_Information/main/%E7%81%B5%E8%B6%B3%E6%97%B6%E4%BB%A3RS%E7%B3%BB%E5%88%97%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC%E4%BB%8B%E7%BB%8D%282026.09.17%29.pdf",
+      "sha256": "76c85c3c11f15bf3adc1676d6a4b8c931ffd9c18cec41221f8ea5a8b54e22ea1",
+      "version": "2026.09.17",
+      "table_pages": {
+        "RS00": 5,
+        "RS03": 21,
+        "RS04": 25,
+        "RS06": 33
+      }
+    }
+  },
+  "catalog_stall_table_Nm": [
+    13,
+    28.5,
+    13,
+    13,
+    8,
+    3.6,
+    3.6
+  ],
+  "cases": {
+    "idle": {
+      "q_deg": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "axes": [
+        {
+          "joint": "J1",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 18.993878779330952,
+          "force_N": [
+            0.0,
+            0.0,
+            -73.83987
+          ],
+          "moment_Nm": [
+            -4.34008134,
+            18.491379749659096,
+            0.0
+          ]
+        },
+        {
+          "joint": "J2",
+          "holding_Nm": -18.491379749659096,
+          "abs_holding_Nm": 18.491379749659096,
+          "bending_Nm": 2.94863094,
+          "force_N": [
+            0.0,
+            0.0,
+            -59.71347
+          ],
+          "moment_Nm": [
+            -2.94863094,
+            18.491379749659096,
+            0.0
+          ]
+        },
+        {
+          "joint": "J3",
+          "holding_Nm": 2.7708067357390167,
+          "abs_holding_Nm": 2.7708067357390167,
+          "bending_Nm": 18.518860102598406,
+          "force_N": [
+            0.0,
+            0.0,
+            -50.68827
+          ],
+          "moment_Nm": [
+            -2.94863094,
+            18.491379749659096,
+            0.0
+          ]
+        },
+        {
+          "joint": "J4",
+          "holding_Nm": -2.2967060346618244,
+          "abs_holding_Nm": 2.2967060346618244,
+          "bending_Nm": 2.94863094,
+          "force_N": [
+            0.0,
+            0.0,
+            -41.66307
+          ],
+          "moment_Nm": [
+            -2.94863094,
+            2.2967060346618244,
+            0.0
+          ]
+        },
+        {
+          "joint": "J5",
+          "holding_Nm": -6.717642749999997,
+          "abs_holding_Nm": 6.717642749999997,
+          "bending_Nm": 0.0,
+          "force_N": [
+            0.0,
+            0.0,
+            -35.571059999999996
+          ],
+          "moment_Nm": [
+            0.0,
+            6.717642749999997,
+            0.0
+          ]
+        },
+        {
+          "joint": "J6",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 4.049813249999998,
+          "force_N": [
+            0.0,
+            0.0,
+            -32.50053
+          ],
+          "moment_Nm": [
+            0.0,
+            4.049813249999998,
+            0.0
+          ]
+        },
+        {
+          "joint": "J7",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 3.2372999999999994,
+          "force_N": [
+            0.0,
+            0.0,
+            -29.43
+          ],
+          "moment_Nm": [
+            0.0,
+            3.2372999999999994,
+            0.0
+          ]
+        }
+      ],
+      "flange_mm": [
+        423.3838503422653,
+        62.0,
+        255.25627946273613
+      ],
+      "total_mass_kg": 8.447
+    },
+    "attention": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "axes": [
+        {
+          "joint": "J1",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 24.79945088458705,
+          "force_N": [
+            0.0,
+            0.0,
+            -73.83987
+          ],
+          "moment_Nm": [
+            -4.34008134,
+            24.416724967514156,
+            0.0
+          ]
+        },
+        {
+          "joint": "J2",
+          "holding_Nm": -24.416724967514156,
+          "abs_holding_Nm": 24.416724967514156,
+          "bending_Nm": 2.94863094,
+          "force_N": [
+            0.0,
+            0.0,
+            -59.71347
+          ],
+          "moment_Nm": [
+            -2.94863094,
+            24.416724967514156,
+            0.0
+          ]
+        },
+        {
+          "joint": "J3",
+          "holding_Nm": 2.848158777141012,
+          "abs_holding_Nm": 2.848158777141012,
+          "bending_Nm": 24.428648635152726,
+          "force_N": [
+            0.0,
+            0.0,
+            -50.68827
+          ],
+          "moment_Nm": [
+            -2.94863094,
+            24.416724967514156,
+            0.0
+          ]
+        },
+        {
+          "joint": "J4",
+          "holding_Nm": -7.7699478793236025,
+          "abs_holding_Nm": 7.7699478793236025,
+          "bending_Nm": 2.94863094,
+          "force_N": [
+            0.0,
+            0.0,
+            -41.66307
+          ],
+          "moment_Nm": [
+            -2.94863094,
+            7.7699478793236025,
+            0.0
+          ]
+        },
+        {
+          "joint": "J5",
+          "holding_Nm": -6.431525385744298,
+          "abs_holding_Nm": 6.431525385744298,
+          "bending_Nm": 0.0,
+          "force_N": [
+            0.0,
+            0.0,
+            -35.571059999999996
+          ],
+          "moment_Nm": [
+            0.0,
+            6.431525385744298,
+            0.0
+          ]
+        },
+        {
+          "joint": "J6",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 3.9118192098226663,
+          "force_N": [
+            0.0,
+            0.0,
+            -32.50053
+          ],
+          "moment_Nm": [
+            0.0,
+            3.9118192098226663,
+            0.0
+          ]
+        },
+        {
+          "joint": "J7",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 3.126991677445601,
+          "force_N": [
+            0.0,
+            0.0,
+            -29.43
+          ],
+          "moment_Nm": [
+            0.0,
+            3.126991677445601,
+            0.0
+          ]
+        }
+      ],
+      "flange_mm": [
+        563.3841173273697,
+        62.0,
+        544.5399091136449
+      ],
+      "total_mass_kg": 8.447
+    },
+    "reference": {
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "axes": [
+        {
+          "joint": "J1",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 31.955422187741824,
+          "force_N": [
+            0.0,
+            0.0,
+            -73.83987
+          ],
+          "moment_Nm": [
+            -4.34008134,
+            31.659322500000002,
+            0.0
+          ]
+        },
+        {
+          "joint": "J2",
+          "holding_Nm": -31.659322500000002,
+          "abs_holding_Nm": 31.659322500000002,
+          "bending_Nm": 2.94863094,
+          "force_N": [
+            0.0,
+            0.0,
+            -59.71347
+          ],
+          "moment_Nm": [
+            -2.94863094,
+            31.659322500000002,
+            0.0
+          ]
+        },
+        {
+          "joint": "J3",
+          "holding_Nm": 2.94863094,
+          "abs_holding_Nm": 2.94863094,
+          "bending_Nm": 31.659322500000002,
+          "force_N": [
+            0.0,
+            0.0,
+            -50.68827
+          ],
+          "moment_Nm": [
+            -2.94863094,
+            31.659322500000002,
+            0.0
+          ]
+        },
+        {
+          "joint": "J4",
+          "holding_Nm": -14.425310699999999,
+          "abs_holding_Nm": 14.425310699999999,
+          "bending_Nm": 2.94863094,
+          "force_N": [
+            0.0,
+            0.0,
+            -41.66307
+          ],
+          "moment_Nm": [
+            -2.94863094,
+            14.425310699999999,
+            0.0
+          ]
+        },
+        {
+          "joint": "J5",
+          "holding_Nm": -6.717642749999999,
+          "abs_holding_Nm": 6.717642749999999,
+          "bending_Nm": 0.0,
+          "force_N": [
+            0.0,
+            0.0,
+            -35.571059999999996
+          ],
+          "moment_Nm": [
+            0.0,
+            6.717642749999999,
+            0.0
+          ]
+        },
+        {
+          "joint": "J6",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 4.049813250000001,
+          "force_N": [
+            0.0,
+            0.0,
+            -32.50053
+          ],
+          "moment_Nm": [
+            0.0,
+            4.049813250000001,
+            0.0
+          ]
+        },
+        {
+          "joint": "J7",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 3.2372999999999994,
+          "force_N": [
+            0.0,
+            0.0,
+            -29.43
+          ],
+          "moment_Nm": [
+            0.0,
+            3.2372999999999994,
+            0.0
+          ]
+        }
+      ],
+      "flange_mm": [
+        735.0,
+        62.0,
+        220.0
+      ],
+      "total_mass_kg": 8.447
+    },
+    "J6_horizontal_axis_diagnostic": {
+      "q_deg": [
+        0,
+        90,
+        90,
+        0,
+        0,
+        0,
+        0
+      ],
+      "axes": [
+        {
+          "joint": "J1",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 31.68094809722665,
+          "force_N": [
+            0.0,
+            0.0,
+            -73.83987
+          ],
+          "moment_Nm": [
+            -1.1703722400000003,
+            31.659322500000002,
+            0.0
+          ]
+        },
+        {
+          "joint": "J2",
+          "holding_Nm": -31.659322500000002,
+          "abs_holding_Nm": 31.659322500000002,
+          "bending_Nm": 0.2210781599999998,
+          "force_N": [
+            0.0,
+            0.0,
+            -59.71347
+          ],
+          "moment_Nm": [
+            0.2210781599999998,
+            31.659322500000002,
+            0.0
+          ]
+        },
+        {
+          "joint": "J3",
+          "holding_Nm": -0.2210781599999998,
+          "abs_holding_Nm": 0.2210781599999998,
+          "bending_Nm": 31.659322500000002,
+          "force_N": [
+            0.0,
+            0.0,
+            -50.68827
+          ],
+          "moment_Nm": [
+            0.2210781599999998,
+            31.659322500000002,
+            0.0
+          ]
+        },
+        {
+          "joint": "J4",
+          "holding_Nm": -8.832955287730532e-16,
+          "abs_holding_Nm": 8.832955287730532e-16,
+          "bending_Nm": 14.42700469066131,
+          "force_N": [
+            0.0,
+            0.0,
+            -41.66307
+          ],
+          "moment_Nm": [
+            0.2210781599999998,
+            14.425310699999999,
+            0.0
+          ]
+        },
+        {
+          "joint": "J5",
+          "holding_Nm": -4.113369845801461e-16,
+          "abs_holding_Nm": 4.113369845801461e-16,
+          "bending_Nm": 6.721279615479223,
+          "force_N": [
+            0.0,
+            0.0,
+            -35.571059999999996
+          ],
+          "moment_Nm": [
+            0.22107816,
+            6.717642749999999,
+            0.0
+          ]
+        },
+        {
+          "joint": "J6",
+          "holding_Nm": 4.049813250000001,
+          "abs_holding_Nm": 4.049813250000001,
+          "bending_Nm": 2.4797954168785204e-16,
+          "force_N": [
+            0.0,
+            0.0,
+            -32.50053
+          ],
+          "moment_Nm": [
+            0.0,
+            4.049813250000001,
+            0.0
+          ]
+        },
+        {
+          "joint": "J7",
+          "holding_Nm": -0.0,
+          "abs_holding_Nm": 0.0,
+          "bending_Nm": 3.2372999999999994,
+          "force_N": [
+            0.0,
+            0.0,
+            -29.43
+          ],
+          "moment_Nm": [
+            0.0,
+            3.2372999999999994,
+            0.0
+          ]
+        }
+      ],
+      "flange_mm": [
+        735.0,
+        3.796405077356795e-15,
+        282.0
+      ],
+      "total_mass_kg": 8.447
+    }
+  },
+  "reference_contributions": [
+    {
+      "id": "J1_motor",
+      "mass_kg": 0.92,
+      "gravity_drive_signed_Nm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "J2_motor",
+      "mass_kg": 1.44,
+      "gravity_drive_signed_Nm": [
+        -0.0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "J3_motor",
+      "mass_kg": 0.92,
+      "gravity_drive_signed_Nm": [
+        -0.0,
+        -0.0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "J4_motor",
+      "mass_kg": 0.92,
+      "gravity_drive_signed_Nm": [
+        -0.0,
+        -3.068568000000001,
+        -0.0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "J5_motor",
+      "mass_kg": 0.621,
+      "gravity_drive_signed_Nm": [
+        -0.0,
+        -3.19830525,
+        0.74322522,
+        -1.12702185,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "J6_motor",
+      "mass_kg": 0.313,
+      "gravity_drive_signed_Nm": [
+        -0.0,
+        -1.8423180000000001,
+        0.19037286,
+        -0.7983377999999999,
+        -0.23028974999999988,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "J7_motor",
+      "mass_kg": 0.313,
+      "gravity_drive_signed_Nm": [
+        -0.0,
+        -1.91908125,
+        0.19037286,
+        -0.8751010499999999,
+        -0.30705299999999996,
+        -0.0,
+        0
+      ]
+    },
+    {
+      "id": "zero_mass_no_structure",
+      "mass_kg": 0,
+      "gravity_drive_signed_Nm": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "external_flange_load",
+      "mass_kg": 3,
+      "gravity_drive_signed_Nm": [
+        -0.0,
+        -21.63105,
+        1.82466,
+        -11.624849999999999,
+        -6.180299999999999,
+        -0.0,
+        -0.0
+      ]
+    }
+  ],
+  "reference_lower_bound_proof": {
+    "J2": {
+      "demand_Nm": 31.659322500000002,
+      "catalog_stall_table_Nm": 28.5,
+      "same_sign_motor_payload_terms": true,
+      "exceeds_catalog": true,
+      "mass_scope": "motors and3kg point payload only; no frame, shell, hardware, connectors or harness"
+    },
+    "J4": {
+      "demand_Nm": 14.425310699999999,
+      "catalog_stall_table_Nm": 13,
+      "same_sign_motor_payload_terms": true,
+      "exceeds_catalog": true,
+      "mass_scope": "motors and3kg point payload only; no frame, shell, hardware, connectors or harness"
+    }
+  },
+  "catalog_nominal_reference": {
+    "q_deg": [
+      0,
+      90,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "axes": [
+      {
+        "joint": "J1",
+        "holding_Nm": -0.0,
+        "abs_holding_Nm": 0.0,
+        "bending_Nm": 31.85049543685108,
+        "force_N": [
+          0.0,
+          0.0,
+          -73.19241
+        ],
+        "moment_Nm": [
+          -4.317106320000001,
+          31.55656275,
+          0.0
+        ]
+      },
+      {
+        "joint": "J2",
+        "holding_Nm": -31.55656275,
+        "abs_holding_Nm": 31.55656275,
+        "bending_Nm": 2.94498162,
+        "force_N": [
+          0.0,
+          0.0,
+          -59.26221
+        ],
+        "moment_Nm": [
+          -2.94498162,
+          31.55656275,
+          0.0
+        ]
+      },
+      {
+        "joint": "J3",
+        "holding_Nm": 2.94498162,
+        "abs_holding_Nm": 2.94498162,
+        "bending_Nm": 31.55656275,
+        "force_N": [
+          0.0,
+          0.0,
+          -50.43321
+        ],
+        "moment_Nm": [
+          -2.94498162,
+          31.55656275,
+          0.0
+        ]
+      },
+      {
+        "joint": "J4",
+        "holding_Nm": -14.40927135,
+        "abs_holding_Nm": 14.40927135,
+        "bending_Nm": 2.94498162,
+        "force_N": [
+          0.0,
+          0.0,
+          -41.60421
+        ],
+        "moment_Nm": [
+          -2.94498162,
+          14.40927135,
+          0.0
+        ]
+      },
+      {
+        "joint": "J5",
+        "holding_Nm": -6.712492499999999,
+        "abs_holding_Nm": 6.712492499999999,
+        "bending_Nm": 0.0,
+        "force_N": [
+          0.0,
+          0.0,
+          -35.5122
+        ],
+        "moment_Nm": [
+          0.0,
+          6.712492499999999,
+          0.0
+        ]
+      },
+      {
+        "joint": "J6",
+        "holding_Nm": -0.0,
+        "abs_holding_Nm": 0.0,
+        "bending_Nm": 4.0490775,
+        "force_N": [
+          0.0,
+          0.0,
+          -32.4711
+        ],
+        "moment_Nm": [
+          0.0,
+          4.0490775,
+          0.0
+        ]
+      },
+      {
+        "joint": "J7",
+        "holding_Nm": -0.0,
+        "abs_holding_Nm": 0.0,
+        "bending_Nm": 3.2372999999999994,
+        "force_N": [
+          0.0,
+          0.0,
+          -29.43
+        ],
+        "moment_Nm": [
+          0.0,
+          3.2372999999999994,
+          0.0
+        ]
+      }
+    ],
+    "flange_mm": [
+      735.0,
+      62.0,
+      220.0
+    ],
+    "total_mass_kg": 8.361
+  },
+  "documented_minima_without_RS06_reference": {
+    "q_deg": [
+      0,
+      90,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "axes": [
+      {
+        "joint": "J1",
+        "holding_Nm": -0.0,
+        "abs_holding_Nm": 0.0,
+        "bending_Nm": 28.477747226373722,
+        "force_N": [
+          0.0,
+          0.0,
+          -66.45294000000001
+        ],
+        "moment_Nm": [
+          -3.5509060800000003,
+          28.255497750000004,
+          0.0
+        ]
+      },
+      {
+        "joint": "J2",
+        "holding_Nm": -28.255497750000004,
+        "abs_holding_Nm": 28.255497750000004,
+        "bending_Nm": 2.19810708,
+        "force_N": [
+          0.0,
+          0.0,
+          -52.71894000000001
+        ],
+        "moment_Nm": [
+          -2.19810708,
+          28.255497750000004,
+          0.0
+        ]
+      },
+      {
+        "joint": "J3",
+        "holding_Nm": 2.19810708,
+        "abs_holding_Nm": 2.19810708,
+        "bending_Nm": 28.255497750000004,
+        "force_N": [
+          0.0,
+          0.0,
+          -44.08614000000001
+        ],
+        "moment_Nm": [
+          -2.19810708,
+          28.255497750000004,
+          0.0
+        ]
+      },
+      {
+        "joint": "J4",
+        "holding_Nm": -13.26621015,
+        "abs_holding_Nm": 13.26621015,
+        "bending_Nm": 2.19810708,
+        "force_N": [
+          0.0,
+          0.0,
+          -35.453340000000004
+        ],
+        "moment_Nm": [
+          -2.19810708,
+          13.26621015,
+          0.0
+        ]
+      },
+      {
+        "joint": "J5",
+        "holding_Nm": -6.707342249999999,
+        "abs_holding_Nm": 6.707342249999999,
+        "bending_Nm": 0.0,
+        "force_N": [
+          0.0,
+          0.0,
+          -35.453340000000004
+        ],
+        "moment_Nm": [
+          0.0,
+          6.707342249999999,
+          0.0
+        ]
+      },
+      {
+        "joint": "J6",
+        "holding_Nm": -0.0,
+        "abs_holding_Nm": 0.0,
+        "bending_Nm": 4.0483417500000005,
+        "force_N": [
+          0.0,
+          0.0,
+          -32.44167
+        ],
+        "moment_Nm": [
+          0.0,
+          4.0483417500000005,
+          0.0
+        ]
+      },
+      {
+        "joint": "J7",
+        "holding_Nm": -0.0,
+        "abs_holding_Nm": 0.0,
+        "bending_Nm": 3.2372999999999994,
+        "force_N": [
+          0.0,
+          0.0,
+          -29.43
+        ],
+        "moment_Nm": [
+          0.0,
+          3.2372999999999994,
+          0.0
+        ]
+      }
+    ],
+    "flange_mm": [
+      735.0,
+      62.0,
+      220.0
+    ],
+    "total_mass_kg": 7.654
+  },
+  "budget_motor_masses_kg": {
+    "J1": 0.92,
+    "J2": 1.44,
+    "J3": 0.92,
+    "J4": 0.92,
+    "J5": 0.621,
+    "J6": 0.313,
+    "J7": 0.313
+  },
+  "catalog_nominal_masses_kg": {
+    "RS00": 0.31,
+    "RS03": 0.9,
+    "RS04": 1.42,
+    "RS06": 0.621
+  },
+  "J6_horizontal_payload_only_Nm": [
+    0.0,
+    21.63105,
+    1.1172820142661047e-16,
+    7.118167671534054e-16,
+    3.784342306385193e-16,
+    3.97305,
+    0.0
+  ],
+  "max_virtual_work_error_Nm": 2.1172450459516767e-09,
+  "selection_frozen": false,
+  "production_release": false,
+  "limits": [
+    "Catalog stall rows are test-condition references, not guaranteed compact closed-housing capacities. RS04 stall figure has no explicit heatsink label next to its table; confirm conditions.",
+    "Named straight pose diagnostic only; no whole-workspace upper bound or validated collision-free path. The lower bound is conditional on the specified motor masses, centres and same-direction downstream additions, not a universal physical impossibility.",
+    "Neither nominal motors nor the existing budget meet J2/J4. Documented mass minima with RS06 artificially omitted still fail J4, but do not independently disprove J2. New counterbalance mechanisms/layouts require new analysis.",
+    "No supplier contacted, motor changed or load target reduced."
+  ]
+}
