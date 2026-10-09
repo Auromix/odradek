@@ -15,7 +15,7 @@ def solid(k):
   if s.status()!=md.Error.NoError:raise ValueError(k)
   cache[k]=s
  return cache[k]
-actual=[k for k,p in parts.items() if p['category'] in ('metal','hardware')]
+actual=[k for k,p in parts.items() if p['category'] in ('metal','hardware') or p['assembly_role']=='fasteners']
 refs=[k for k,p in parts.items() if p['assembly_role'] in ('electronics','routing') or k.startswith('REF-P00') or k.startswith('REF-S00')]
 checked=[]
 for a,b in itertools.product(actual,refs):
@@ -62,6 +62,9 @@ for i,(x,y) in enumerate([(-87,36),(87,36),(-72,125),(72,125)],1):
  path('COVER-M3-'+str(i),x,y,-30,3.85,4,'Before tabletop fitting',allids)
 for x in (-60,60):
  path('REAR-M3-'+str(x),x,32,-80,-36.15,4,'External plugs absent',allids,axis='Y')
+for x in (-23,23):
+ path('LIGHT-M2-'+str(x),x,163.5,5,40.073,3,'Cover upside down before load frame/desk assembly',
+      [k for k in allids if k.startswith(('B06-301','B06-306','B06-308','LIGHT-NATIVE'))])
 result={'revision':D['revision'],'manifest_sha256':hashlib.sha256(mf.read_bytes()).hexdigest(),'pairs':checked,
  'interferences':failures,'bare_root_driver_paths':tools,'assembly_driver_paths':assembly_tools,'pass':not failures and all(not p['collisions'] for p in tools+assembly_tools),
  'limits':['Original owned supplier-size abstractions, not complete vendor MCAD.',

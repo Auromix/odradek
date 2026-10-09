@@ -115,20 +115,42 @@ def lamp_retainer(surface,lens):
     tree=BVHTree.FromObject(surface,bpy.context.evaluated_depsgraph_get())
     hit,_,_,_=tree.ray_cast(Vector((23*M,163.5*M,.2)),Vector((0,0,-1)))
     z=hit.z/M
-    bar=box('B06-308-LENS-RETAINER',((-27,162,z-12.3),(27,165,z-10.3)))
+    bar=box('B06-308-LENS-RETAINER',((-27,162,z-12),(27,165,z-10)))
     lt=BVHTree.FromObject(lens,bpy.context.evaluated_depsgraph_get())
     # Use the lowest underside over the entire pad footprint, not just its
     # centre. The lamp is sloped; a centre sample could pierce its lower edge.
-    heights=[]
-    for r in (0,.675,1.35):
-        for k in range(64):
-            a=k*math.tau/64
-            low,_,_,_=lt.ray_cast(Vector((r*math.cos(a)*M,(164.5+r*math.sin(a))*M,0)),Vector((0,0,1)))
-            if low is None:raise ValueError('Support pad misses lens')
-            heights.append(low.z/M)
-    boolean(bar,cylinder('Lens central support pad',0,164.5,1.35,z-11,min(heights)-.4),'UNION')
+    for x in (-17,17):
+        heights=[]
+        for r in (0,.675,1.35):
+            for k in range(64):
+                a=k*math.tau/64
+                low,_,_,_=lt.ray_cast(Vector(((x+r*math.cos(a))*M,(164.5+r*math.sin(a))*M,0)),Vector((0,0,1)))
+                if low is None:raise ValueError('Support pad misses lens')
+                heights.append(low.z/M)
+        boolean(bar,cylinder('Lens support through PCB NPTH',x,164.5,1.35,z-11,min(heights)-.4),'UNION')
     for x in (-23,23):boolean(bar,cylinder('M2 clamp-bar hole',x,163.5,1.2,z-14,z-5),'DIFFERENCE')
     return bar
+
+def light_context():
+    snap=json.loads((HERE/'inputs/light-snapshot.json').read_text())
+    for p in snap['parts']:
+        o=mesh_object(p['id'],p['vertices_mm'],p['triangles'],'03_Exterior_mount_carriers')
+        o['ExactCAD']=True
+        add(o,'原生立创灯板实体 '+p['id'],'electronics','support',
+            ['Actual native STEP; '+snap['source_sha256'],'Geometry mode: '+p['geometry_mode'],*snap['limits']],False,'electronics')
+    # Nominal JST mating envelope, deliberately separate from library geometry.
+    # Mated height7.3mm from board top; actual wiring still requires a sample.
+    o=box('LIGHT-MATED-GH-RESERVE',((-8.7,155.875,49.723),(-1.7,160.125,52.973)))
+    o.hide_render=True
+    add(o,'GH插合高度预留','routing','support',['JST GH mated height7.3mm; approximate housing XY; no wire swept volume'],False,'routing')
+    for i,x in enumerate((-23,23),1):
+        s=cylinder('HW-LIGHT-M2-'+str(i),x,163.5,1,42.073,50.073)
+        boolean(s,cylinder('M2 socket head',x,163.5,1.9,40.073,42.073),'UNION')
+        boolean(s,hexagon('M2 AF1.5 socket',x,163.5,1.5,40,41.1),'DIFFERENCE')
+        add(s,'M2×8内六角螺钉','fasteners','hardware',['Standard envelope; underside tool access; threads omitted'],False,'fasteners')
+        n=hexagon('HW-LIGHT-NUT-'+str(i),x,163.5,4,47.073,48.673)
+        boolean(n,cylinder('M2 nut bore',x,163.5,1,47,49),'DIFFERENCE')
+        add(n,'DIN934 M2内藏螺母','fasteners','nut',['AF4 x1.6; internal forward insertion; thread omitted'],False,'fasteners')
 
 def native_context():
     root=json.loads((HERE/'inputs/root-snapshot.json').read_text())
@@ -181,6 +203,9 @@ def main():
     # Sample the actual continuous surface for the lens before cutting the window.
     lens=light_lens(cover);lens.name='B06-306-LIGHT-LENS'
     boolean(cover,rounded_rect_prism('Amber window',((-19,162),(19,168)),(-10,100),2.7),'DIFFERENCE')
+    # Actual native board corners require an internal relief. Cut the shell
+    # before adding bosses so the board-top locating faces remain intact.
+    boolean(cover,box('Native light PCB clearance',((-25.5,154,43.573),(25.5,169,46.173))),'DIFFERENCE')
     from mathutils.bvhtree import BVHTree
     tree=BVHTree.FromObject(cover,bpy.context.evaluated_depsgraph_get())
     for x,y in MOUNTS:
@@ -191,8 +216,13 @@ def main():
     for x in (-23,23):
         hit,_,_,_=tree.ray_cast(Vector((x*M,163.5*M,.2)),Vector((0,0,-1)))
         z=hit.z/M
-        boolean(cover,conformal_post(cover,x,163.5,3.8,z-10,1),'UNION')
-        boolean(cover,cylinder('Lens pilot hole',x,163.5,.8,z-11,z-5),'DIFFERENCE')
+        # Narrow locating foot clears the real R4 model near the left boss.
+        # Upper nut support remains full width; the foot carries optical parts only.
+        boolean(cover,conformal_post(cover,x,163.5,3.8,z-6.8,1),'UNION')
+        boolean(cover,cylinder('Lamp narrow locating foot',x,163.5,2.5,z-8.4,z-6.7),'UNION')
+        boolean(cover,cylinder('Lamp M2 clearance',x,163.5,1.2,z-11,z-3),'DIFFERENCE')
+        boolean(cover,hexagon('Lamp M2 captive pocket',x,163.5,4.3,z-7,z-5.1),'DIFFERENCE')
+        boolean(cover,box('Lamp nut insertion',((x-2.15,155,z-7),(x+2.15,163.5,z-5.1))),'DIFFERENCE')
     boolean(cover,box('RJ45 upper spring clearance',((29,-23,24),(48,-18.4,42.0))),'DIFFERENCE')
     retainer=lamp_retainer(cover,lens)
     boolean(cover,box('Metal chassis rear exit',((-70.8,-80,2),(70.8,-34,18))),'DIFFERENCE')
@@ -200,8 +230,8 @@ def main():
         ['3mm nominal wall; four concealed underside M3 captive-nut fixings',
          'Integral ID136 neck, Z74 top; lower swept four-petal shoulders with continuous chine; no cosmetic top screw holes',
          'A11 root snapshot required; old A10 waist is not compatible without redesign'])
-    add(lens,'琥珀透光灯窗','cover','lens',['Curved closed optical blank; retained from inside by a separate screw bar; optical PCB pending'])
-    add(retainer,'灯窗内藏压条','cover_support','support',['Two M2x6 screws into hidden cover pilot bosses; 0.3mm seat allowance; central pad nominal minimum0.4mm below sampled lens underside; compliant optical shim to be trial-fitted; physical fit coupon required'])
+    add(lens,'琥珀透光灯窗','cover','lens',['Curved optical blank above three native amber LEDs; translucent print needs optical sample'])
+    add(retainer,'灯窗／灯板内藏压条','cover_support','support',['Two M2x8 into captive DIN934 M2 nuts; PCB50x14 seated Z44.073..45.673; two pins through D3.2 NPTH, minimum0.4mm below lens; compliant shims need physical trial'])
     lid=copy_mesh(master,'B06-304-REAR-LID')
     boolean(lid,box('Rear lid partition',((-66.6,-80,-10),(66.6,-22.4,100))),'INTERSECT')
     boolean(lid,box('Metal chassis rear exit',((-70.8,-80,2),(70.8,-20,18))),'DIFFERENCE')
@@ -239,6 +269,7 @@ def main():
     for k,(x,_) in enumerate(REAR_MOUNTS,1):rear_hardware(k,x)
     for k,(x,y) in enumerate([(x,y) for x in (-52,52) for y in (-20,24)],1):pcb_hardware(k,x,y)
     native_context()
+    light_context()
     # Save shape-only and integrated review modes from the same native solids.
     move_collection(master,'90_Construction_native_loft');source.hide_set(True);master.hide_set(True);master.hide_render=True
     refs=[bpy.data.objects[d['id']] for d in DESCRIPTORS if not d.get('print_stl') and d['assembly_role'] in ('structure','electronics','routing','environment')]
@@ -246,7 +277,7 @@ def main():
     camera,target=render_setup();SCENE.cycles.samples=20
     SCENE.render.resolution_x=1440;SCENE.render.resolution_y=1080
     point_camera(camera,(.30,.43,.29),target,.32)
-    manifest=dict(revision='B06-COMPACT-04',length_unit='mm',module='compact_integration_candidate',
+    manifest=dict(revision='B06-COMPACT-05-LIGHT',length_unit='mm',module='compact_integration_candidate',
         scope=PARAMETERS['prototype_scope'],parameters=PARAMETERS,parts=DESCRIPTORS,
         review_status='紧凑一体底座 · 无动力试装候选',not_verified=['load chassis and clamp','dynamic collisions','physical fit','PCB signal integrity','thermal','slicing/supports'])
     for name in ('exterior-manifest.json','manifest.json'):(OUT/name).write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

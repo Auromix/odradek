@@ -5,12 +5,13 @@ import json,hashlib,zipfile
 HERE=Path(__file__).resolve().parent; OUT=HERE/'build/exterior'
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 manifest=json.loads((OUT/'manifest.json').read_text()); mh=digest(OUT/'manifest.json')
-reports={name:json.loads((OUT/name).read_text()) for name in ('print-checks.json','solid-fit-checks.json','fit-checks.json','service-checks.json','hardware-integration-checks.json')}
+reports={name:json.loads((OUT/name).read_text()) for name in ('print-checks.json','solid-fit-checks.json','fit-checks.json','service-checks.json','hardware-integration-checks.json','light-fit-checks.json','slice-review-checks.json')}
 assert reports['print-checks.json']['mesh_and_envelope_pass']
 assert reports['hardware-integration-checks.json']['pass']
+assert reports['light-fit-checks.json']['pass'] and reports['slice-review-checks.json']['pass_']
 assert reports['solid-fit-checks.json']['static_solid_interference_pass']
 assert reports['service-checks.json']['sampled_extraction_pass'] and reports['service-checks.json']['pcb_datum_pass']
-for name in ('solid-fit-checks.json','fit-checks.json','service-checks.json','hardware-integration-checks.json'):
+for name in ('solid-fit-checks.json','fit-checks.json','service-checks.json','hardware-integration-checks.json','light-fit-checks.json','slice-review-checks.json'):
     assert reports[name]['manifest_sha256']==mh, f'Stale report {name}'
 prints=[p['print_stl'] for p in manifest['parts'] if p.get('print_stl')]
 assert len(prints)==5
@@ -28,15 +29,15 @@ provenance={'revision':manifest['revision'],'manifest_sha256':mh,
  'lid_extraction_samples':len(reports['service-checks.json']['lid_extraction_samples']),'pcb_datum_pass':True},
  'status':'Unpowered integrated geometry candidate; routed IO PCB exported separately; complete base manufacturing release pending'}
 (OUT/'provenance.json').write_text(json.dumps(provenance,ensure_ascii=False,indent=2)+'\n')
-readme='''B06-COMPACT-04 · 无动力试装包 · STL单位mm
+readme='''B06-COMPACT-05-LIGHT · 无动力试装包 · STL单位mm
 五件打印件；采购件/接口板/机械臂承载结构不包含在打印包。
 256×256×256mm床，每侧5mm检查余量；支撑、brim和打印补偿需切片检查。
 后盖两颗背向M3×10，主罩四颗底面M3×10；PCB四颗M3×10。
-DIN934 M3螺母10颗；灯窗两颗M2×6、柔性垫片另配。
+DIN934 M3螺母10颗；灯板/灯窗两颗M2×8、DIN934 M2螺母2颗；灯窗软垫需试样。
 先装内藏螺母，再装灯窗、板子、根座和主罩，最后连接后盖。
 后盖检修先断电拔线、退出两颗背向螺钉，再向后退出40mm后抬起。
 此路径只做离散采样；维护时须留后部工作空间，贴墙安装不能据此保证原位拆盖。
-IO板已完成原生布线及Gerber导出；LED板、完整线束和载荷/电气验证仍未完成。禁止以本包作为整套底座制造、通电或带载放行。
+IO板及独立PWM灯板已完成原生布线/Gerber导出；完整线束、插头释放和载荷/电气验证仍未完成。禁止以本包作为整套底座制造、通电或带载放行。
 CC-BY-NC-4.0 · Odradek - Auromix contributors
 '''
 (OUT/'PRINT-README.txt').write_text(readme)

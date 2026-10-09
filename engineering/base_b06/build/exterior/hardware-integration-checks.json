@@ -1,7 +1,27 @@
 {
-  "revision": "B06-COMPACT-04",
-  "manifest_sha256": "56225d1ef0be0fc7d3c82bae0bc5a7c7a29737996a910ab26940d98bd5ffe7d1",
+  "revision": "B06-COMPACT-05-LIGHT",
+  "manifest_sha256": "cb9821829ba72e524dbcd6ba1294f07cb89b4973c167562c9eb2b04c61e66dcc",
   "pairs": [
+    {
+      "a": "HW-PCB-M3-1",
+      "b": "IO-BRI01_PCB",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "HW-PCB-M3-2",
+      "b": "IO-BRI01_PCB",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "HW-PCB-M3-3",
+      "b": "IO-BRI01_PCB",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "HW-PCB-M3-4",
+      "b": "IO-BRI01_PCB",
+      "intersection_mm3": 0.0
+    },
     {
       "a": "B06-104-LOAD-FLANGE",
       "b": "REF-P00-root-open",
@@ -145,6 +165,16 @@
     {
       "a": "HW-COAX-M3-1",
       "b": "IO-BRI01_PCB",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "HW-LIGHT-M2-1",
+      "b": "LIGHT-NATIVE-01",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "HW-LIGHT-M2-2",
+      "b": "LIGHT-NATIVE-01",
       "intersection_mm3": 0.0
     }
   ],
@@ -450,6 +480,28 @@
         -36.15
       ],
       "stage": "External plugs absent",
+      "collisions": []
+    },
+    {
+      "id": "LIGHT-M2--23",
+      "diameter_mm": 3,
+      "axis": "Z",
+      "range_mm": [
+        5,
+        40.073
+      ],
+      "stage": "Cover upside down before load frame/desk assembly",
+      "collisions": []
+    },
+    {
+      "id": "LIGHT-M2-23",
+      "diameter_mm": 3,
+      "axis": "Z",
+      "range_mm": [
+        5,
+        40.073
+      ],
+      "stage": "Cover upside down before load frame/desk assembly",
       "collisions": []
     }
   ],

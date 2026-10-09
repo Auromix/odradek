@@ -1,6 +1,6 @@
 # Odradek
 
-Current base candidate: [B06-COMPACT-03](engineering/base_b06/README.md), retaining the approved one-piece nose, wings and neck with revised rear service access and PCB mounting. [Shared base authority](docs/engineering/base-authority.md) applies to all arm-body work in Auromix/odradek; B04/B05 are historical references.
+Current base candidate: [B06-COMPACT-05-LIGHT](engineering/base_b06/README.md), retaining the approved one-piece nose, wings and neck, with the native PWM lamp board and five reference-sliced print parts. [Shared base authority](docs/engineering/base-authority.md) applies to all arm-body work in Auromix/odradek; B04/B05 are historical references.
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 
@@ -8,7 +8,7 @@ Current base candidate: [B06-COMPACT-03](engineering/base_b06/README.md), retain
 
 **Selected appearance directions:** the [dedicated selected-design folder](docs/concepts/selected/README.md) contains only the four-petal open silhouette and option B shield-shaped base. Other proposals and comparisons remain in the [research artwork directory](docs/concepts/README.md). Selection is not a manufacturing release.
 
-**Current base work:** refine the single B06 source and integrate the arm against it. The approximately 239×224×71 mm exterior has five printed parts and underside fixings. The hidden desk clamp, inward controller cradle and electrical manufacturing checks remain separate unfinished modules; old B03/B04 hardware is not an approved fit for B06.
+**Current base work:** refine the single B06 source and integrate the arm against it. The approximately 239×224×71 mm exterior has five printed parts and underside fixings. The hidden clamp/inward box shelf have original CAD; IO and PWM lamp boards have native manufacturing exports. Prototype cables, actual connector release, fit and load qualification remain unfinished; this is not a complete base manufacturing release.
 
 **2026-09-28 checkpoint:** preserve the current research and drafts without adding complexity. The preferred head uses positive single-input synchronization and permits one opposed petal pair to carry the grasp. Passive differential studies remain comparisons. [Saved scope and draft status](docs/engineering/checkpoint-2026-09-28.md).
 

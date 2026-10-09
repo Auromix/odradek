@@ -34,3 +34,14 @@ for p in D['parts']:
     if p['assembly_role']=='environment':bpy.data.objects[p['id']].hide_render=False
 bpy.data.objects['Render backdrop only'].hide_render=True
 view('clamp-and-shelf',(.43,-.46,.10),(0,.11,-.060),.62)
+
+# Detail view of the actual native lamp models and current fixing hardware.
+for p in D['parts']:
+    bpy.data.objects[p['id']].hide_render=not (p['id'].startswith(('LIGHT-NATIVE','HW-LIGHT')) or p['id']=='B06-308-LENS-RETAINER')
+bpy.data.objects['Render backdrop only'].hide_render=False
+pcb=bpy.data.objects['LIGHT-NATIVE-01']
+mat=bpy.data.materials.new('Light PCB green / presentation only');mat.use_nodes=True
+shader=mat.node_tree.nodes.get('Principled BSDF');shader.inputs['Base Color'].default_value=(.01,.09,.04,1)
+shader.inputs['Metallic'].default_value=0;shader.inputs['Roughness'].default_value=.6
+pcb.data.materials.clear();pcb.data.materials.append(mat)
+view('light-board-mount',(.055,.208,.090),(0,.162,.047),.085)

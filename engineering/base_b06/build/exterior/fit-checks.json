@@ -1,6 +1,6 @@
 {
-  "revision": "B06-COMPACT-04",
-  "manifest_sha256": "56225d1ef0be0fc7d3c82bae0bc5a7c7a29737996a910ab26940d98bd5ffe7d1",
+  "revision": "B06-COMPACT-05-LIGHT",
+  "manifest_sha256": "cb9821829ba72e524dbcd6ba1294f07cb89b4973c167562c9eb2b04c61e66dcc",
   "scope": "Reference pose surface contacts and sampled tool rays; solid-fit-checks.json governs penetration",
   "pairs": [
     {
@@ -24,7 +24,7 @@
     {
       "a": "B06-301-MAIN-SHIELD",
       "b": "B06-307-LOWER-CARRIER",
-      "triangle_pairs": 1758,
+      "triangle_pairs": 1753,
       "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
     },
     {
@@ -628,6 +628,450 @@
       "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
     },
     {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-01",
+      "triangle_pairs": 2284,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-02",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-03",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-04",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-05",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-06",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-07",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-08",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-09",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-10",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-11",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-12",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-13",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-14",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-15",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-16",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-17",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-18",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-19",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-20",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-21",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-22",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-23",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-24",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-25",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-26",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-27",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-28",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-29",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-30",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-31",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-32",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-33",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-34",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-35",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-36",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-37",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-38",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-39",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-40",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-41",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-42",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-43",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-44",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-01",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-03",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-04",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-05",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-07",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-08",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-09",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-11",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-12",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-13",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-24",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-25",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-26",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-27",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-28",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-29",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-30",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-31",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-32",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-33",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-34",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-35",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-36",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-37",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-38",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-39",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-40",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-41",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-42",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-308-LENS-RETAINER",
+      "b": "LIGHT-NATIVE-43",
+      "triangle_pairs": 0,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
       "a": "B06-304-REAR-LID",
       "b": "IO-BRI01_PCB",
       "triangle_pairs": 0,
@@ -1212,7 +1656,13 @@
     {
       "a": "B06-301-MAIN-SHIELD",
       "b": "B06-307-LOWER-CARRIER",
-      "triangle_pairs": 1758,
+      "triangle_pairs": 1753,
+      "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
+    },
+    {
+      "a": "B06-301-MAIN-SHIELD",
+      "b": "LIGHT-NATIVE-01",
+      "triangle_pairs": 2284,
       "interpretation": "Surface contact only; use independent closed-solid volume check to distinguish contact from penetration"
     },
     {

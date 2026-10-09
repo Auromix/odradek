@@ -2,7 +2,7 @@
 
 ## 当前底座唯一入口
 
-[B06-COMPACT-03](base_b06/README.md)是当前底座候选；沿用已确认的主罩外观；前鼻、双翼和颈台一体，五件打印结构。所有本体模块遵循[底座同源规则](../docs/engineering/base-authority.md)，读取同一模型，不在本体目录维护可编辑的替代底座。B04/B05与下文R4底座只作历史研究。
+[B06-COMPACT-05-LIGHT](base_b06/README.md)是当前底座候选；沿用已确认的主罩外观；前鼻、双翼和颈台一体，五件打印结构，增加独立PWM灯板与隐藏M2固定，实际切片检查完成。所有本体模块遵循[底座同源规则](../docs/engineering/base-authority.md)，读取同一模型，不在本体目录维护可编辑的替代底座。B04/B05与下文R4底座只作历史研究。
 
 新增原创工程研究源稿、参数及模型按 CC BY-NC 4.0 共享。历史 Apache / PolyForm 授权继续有效；CC 缺少软件专用条款的限制见 [LICENSING.md](../LICENSING.md)。依赖库保留各自许可，不打包重新许可。
 

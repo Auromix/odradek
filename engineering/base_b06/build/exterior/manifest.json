@@ -1,10 +1,10 @@
 {
-  "revision": "B06-COMPACT-04",
+  "revision": "B06-COMPACT-05-LIGHT",
   "length_unit": "mm",
   "module": "compact_integration_candidate",
   "scope": "Five printed shell/scaffold parts plus original metal chassis/clamp/shelf CAD; routed IO PCB; integration candidate, not complete manufacturing release",
   "parameters": {
-    "schema": "odradek.b06.compact.v4",
+    "schema": "odradek.b06.compact.v5",
     "length_unit": "mm",
     "center_xy": [
       0.0,
@@ -115,7 +115,7 @@
       240,
       230
     ],
-    "fastening": "Four underside M3x10 captive nuts; rear lid two rear-facing M3x10 into carrier nuts; PCB four captive M3 nuts; lamp two M2x6"
+    "fastening": "Four underside M3x10 captive nuts; rear lid two rear-facing M3x10 into carrier nuts; PCB four captive M3 nuts; lamp two M2x8 and DIN934 M2 captive nuts"
   },
   "parts": [
     {
@@ -209,12 +209,12 @@
       "wall_nominal_mm": 3.0,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Curved closed optical blank; retained from inside by a separate screw bar; optical PCB pending"
+        "Curved optical blank above three native amber LEDs; translucent print needs optical sample"
       ]
     },
     {
       "id": "B06-308-LENS-RETAINER",
-      "name": "灯窗内藏压条",
+      "name": "灯窗／灯板内藏压条",
       "category": "custom",
       "quantity": 1,
       "material": "PETG / ASA fit-prototype candidate; appearance finish only",
@@ -229,33 +229,33 @@
       "bbox": {
         "min": [
           -27.000000700354576,
-          162.00004518032074,
-          41.772857308387756
+          162.00006008148193,
+          42.07287356257439
         ],
         "max": [
           27.000000700354576,
-          165.85004329681396,
-          52.13522911071777
+          165.85005819797516,
+          50.974518060684204
         ],
         "size": [
           54.00000140070915,
           3.849998116493225,
-          10.362371802330017
+          8.901644498109818
         ]
       },
       "stl": "stl/B06-308-LENS-RETAINER.stl",
       "print_stl": "print-parts/B06-308-LENS-RETAINER.stl",
       "print_translation_mm": [
         27.000000700354576,
-        -162.00004518032074,
-        -41.772857308387756
+        -162.00006008148193,
+        -42.07287356257439
       ],
       "viewer_group": "cover_support",
       "assembly_role": "cover_support",
       "wall_nominal_mm": null,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Two M2x6 screws into hidden cover pilot bosses; 0.3mm seat allowance; central pad nominal minimum0.4mm below sampled lens underside; compliant optical shim to be trial-fitted; physical fit coupon required"
+        "Two M2x8 into captive DIN934 M2 nuts; PCB50x14 seated Z44.073..45.673; two pins through D3.2 NPTH, minimum0.4mm below lens; compliant shims need physical trial"
       ]
     },
     {
@@ -6925,6 +6925,2098 @@
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "routing",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-01",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-01",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -24.987300857901573,
+          154.5126736164093,
+          44.07300055027008
+        ],
+        "max": [
+          24.987399578094482,
+          168.4872955083847,
+          45.67304998636246
+        ],
+        "size": [
+          49.974700435996056,
+          13.974621891975403,
+          1.6000494360923767
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-01.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-02",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-02",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -12.404974550008774,
+          161.1899882555008,
+          45.67304998636246
+        ],
+        "max": [
+          -11.6049749776721,
+          161.44998371601105,
+          46.12305015325546
+        ],
+        "size": [
+          0.7999995723366737,
+          0.2599954605102539,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-02.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-03",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-03",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -12.404974550008774,
+          161.45998239517212,
+          46.11305147409439
+        ],
+        "max": [
+          -11.6049749776721,
+          162.5399887561798,
+          46.12305015325546
+        ],
+        "size": [
+          0.7999995723366737,
+          1.0800063610076904,
+          0.009998679161071777
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-03.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-04",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-04",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -12.404974550008774,
+          162.54998743534088,
+          45.67304998636246
+        ],
+        "max": [
+          -11.6049749776721,
+          162.80998289585114,
+          46.12305015325546
+        ],
+        "size": [
+          0.7999995723366737,
+          0.2599954605102539,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-04.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-05",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-05",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -12.404974550008774,
+          161.19998693466187,
+          45.68305239081383
+        ],
+        "max": [
+          -11.594974435865879,
+          162.79998421669006,
+          46.11305147409439
+        ],
+        "size": [
+          0.8100001141428947,
+          1.5999972820281982,
+          0.42999908328056335
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-05.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-06",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-06",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -0.404949183575809,
+          161.1899882555008,
+          45.67304998636246
+        ],
+        "max": [
+          0.39505079621449113,
+          161.44998371601105,
+          46.12305015325546
+        ],
+        "size": [
+          0.7999999797903001,
+          0.2599954605102539,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-06.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-07",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-07",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -0.404949183575809,
+          161.45998239517212,
+          46.11305147409439
+        ],
+        "max": [
+          0.39505079621449113,
+          162.5399887561798,
+          46.12305015325546
+        ],
+        "size": [
+          0.7999999797903001,
+          1.0800063610076904,
+          0.009998679161071777
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-07.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-08",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-08",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -0.404949183575809,
+          162.54998743534088,
+          45.67304998636246
+        ],
+        "max": [
+          0.39505079621449113,
+          162.80998289585114,
+          46.12305015325546
+        ],
+        "size": [
+          0.7999999797903001,
+          0.2599954605102539,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-08.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-09",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-09",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -0.404949183575809,
+          161.19998693466187,
+          45.68305239081383
+        ],
+        "max": [
+          0.4050508141517639,
+          162.79998421669006,
+          46.11305147409439
+        ],
+        "size": [
+          0.8099999977275729,
+          1.5999972820281982,
+          0.42999908328056335
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-09.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-10",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-10",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          11.595074087381363,
+          161.1899882555008,
+          45.67304998636246
+        ],
+        "max": [
+          12.395073659718037,
+          161.44998371601105,
+          46.12305015325546
+        ],
+        "size": [
+          0.7999995723366737,
+          0.2599954605102539,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-10.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-11",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-11",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          11.595074087381363,
+          161.45998239517212,
+          46.11305147409439
+        ],
+        "max": [
+          12.395073659718037,
+          162.5399887561798,
+          46.12305015325546
+        ],
+        "size": [
+          0.7999995723366737,
+          1.0800063610076904,
+          0.009998679161071777
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-11.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-12",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-12",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          11.595074087381363,
+          162.54998743534088,
+          45.67304998636246
+        ],
+        "max": [
+          12.395073659718037,
+          162.80998289585114,
+          46.12305015325546
+        ],
+        "size": [
+          0.7999995723366737,
+          0.2599954605102539,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-12.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-13",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-13",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          11.595074087381363,
+          161.19998693466187,
+          45.68305239081383
+        ],
+        "max": [
+          12.405073270201683,
+          162.79998421669006,
+          46.11305147409439
+        ],
+        "size": [
+          0.8099991828203201,
+          1.5999972820281982,
+          0.42999908328056335
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-13.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-14",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-14",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          0.19005080685019493,
+          159.6049815416336,
+          45.67304998636246
+        ],
+        "max": [
+          0.4500508075580001,
+          160.4049801826477,
+          46.12305015325546
+        ],
+        "size": [
+          0.26000000070780516,
+          0.7999986410140991,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-14.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-15",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-15",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          0.4600507963914424,
+          159.6049815416336,
+          46.11305147409439
+        ],
+        "max": [
+          1.5400508418679237,
+          160.4049801826477,
+          46.12305015325546
+        ],
+        "size": [
+          1.0800000454764813,
+          0.7999986410140991,
+          0.009998679161071777
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-15.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-16",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-16",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          1.5500508015975356,
+          159.6049815416336,
+          45.67304998636246
+        ],
+        "max": [
+          1.8100508023053408,
+          160.4049801826477,
+          46.12305015325546
+        ],
+        "size": [
+          0.26000000070780516,
+          0.7999986410140991,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-16.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-17",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-17",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          0.20005079568363726,
+          159.59498286247253,
+          45.68305239081383
+        ],
+        "max": [
+          1.800050842575729,
+          160.4049801826477,
+          46.11305147409439
+        ],
+        "size": [
+          1.6000000468920916,
+          0.8099973201751709,
+          0.42999908328056335
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-17.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-18",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-18",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          7.190065924078226,
+          159.6049815416336,
+          45.67304998636246
+        ],
+        "max": [
+          7.450066041201353,
+          160.4049801826477,
+          46.12305015325546
+        ],
+        "size": [
+          0.260000117123127,
+          0.7999986410140991,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-18.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-19",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-19",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          7.460066117346287,
+          159.6049815416336,
+          46.11305147409439
+        ],
+        "max": [
+          8.540065959095955,
+          160.4049801826477,
+          46.12305015325546
+        ],
+        "size": [
+          1.0799998417496681,
+          0.7999986410140991,
+          0.009998679161071777
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-19.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-20",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-20",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          8.550066500902176,
+          159.6049815416336,
+          45.67304998636246
+        ],
+        "max": [
+          8.810065686702728,
+          160.4049801826477,
+          46.12305015325546
+        ],
+        "size": [
+          0.25999918580055237,
+          0.7999986410140991,
+          0.45000016689300537
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-20.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-21",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-21",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          7.20006600022316,
+          159.59498286247253,
+          45.68305239081383
+        ],
+        "max": [
+          8.800066076219082,
+          160.4049801826477,
+          46.11305147409439
+        ],
+        "size": [
+          1.600000075995922,
+          0.8099973201751709,
+          0.42999908328056335
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-21.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-22",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-22",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -21.324990317225456,
+          159.8498821258545,
+          45.67304998636246
+        ],
+        "max": [
+          -18.67499016225338,
+          161.14988923072815,
+          46.623051166534424
+        ],
+        "size": [
+          2.6500001549720764,
+          1.3000071048736572,
+          0.9500011801719666
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-22.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-23",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-23",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -19.800053909420967,
+          166.59946739673615,
+          45.67251354455948
+        ],
+        "max": [
+          -18.199920654296875,
+          167.40058362483978,
+          46.473585069179535
+        ],
+        "size": [
+          1.600133255124092,
+          0.8011162281036377,
+          0.8010715246200562
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-23.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: conservative_native_BREP_bounding_box",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-24",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-24",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -12.999974191188812,
+          164.3649935722351,
+          45.67304998636246
+        ],
+        "max": [
+          -10.99997479468584,
+          165.62499105930328,
+          46.793051064014435
+        ],
+        "size": [
+          1.9999993965029716,
+          1.2599974870681763,
+          1.1200010776519775
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-24.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-25",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-25",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -0.9999491740018129,
+          164.3649935722351,
+          45.67304998636246
+        ],
+        "max": [
+          1.0000508045777678,
+          165.62499105930328,
+          46.793051064014435
+        ],
+        "size": [
+          1.9999999785795808,
+          1.2599974870681763,
+          1.1200010776519775
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-25.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-26",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-26",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          11.00007351487875,
+          164.3649935722351,
+          45.67304998636246
+        ],
+        "max": [
+          13.000073842704296,
+          165.62499105930328,
+          46.793051064014435
+        ],
+        "size": [
+          2.0000003278255463,
+          1.2599974870681763,
+          1.1200010776519775
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-26.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-27",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-27",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.35152293741703,
+          162.0532125234604,
+          45.72214558720589
+        ],
+        "max": [
+          6.648624315857887,
+          164.9467498064041,
+          46.71991616487503
+        ],
+        "size": [
+          1.297101378440857,
+          2.8935372829437256,
+          0.9977705776691437
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-27.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-28",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-28",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          6.648538634181023,
+          162.35202550888062,
+          45.67250981926918
+        ],
+        "max": [
+          7.250607013702393,
+          162.7522110939026,
+          46.271078288555145
+        ],
+        "size": [
+          0.6020683795213699,
+          0.40018558502197266,
+          0.598568469285965
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-28.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: conservative_native_BREP_bounding_box",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-29",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-29",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          6.648538634181023,
+          164.2477959394455,
+          45.67250981926918
+        ],
+        "max": [
+          7.250607013702393,
+          164.64798152446747,
+          46.271078288555145
+        ],
+        "size": [
+          0.6020683795213699,
+          0.40018558502197266,
+          0.598568469285965
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-29.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: conservative_native_BREP_bounding_box",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-30",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-30",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          4.749540239572525,
+          163.29985857009888,
+          45.67250981926918
+        ],
+        "max": [
+          5.351608619093895,
+          163.70004415512085,
+          46.271078288555145
+        ],
+        "size": [
+          0.6020683795213699,
+          0.40018558502197266,
+          0.598568469285965
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-30.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: conservative_native_BREP_bounding_box",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-31",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-31",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.564869847148657,
+          164.3742322921753,
+          46.71991616487503
+        ],
+        "max": [
+          5.6257471442222595,
+          164.40634429454803,
+          46.72091454267502
+        ],
+        "size": [
+          0.060877297073602676,
+          0.0321120023727417,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-31.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-32",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-32",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.563843064010143,
+          164.4088327884674,
+          46.71991616487503
+        ],
+        "max": [
+          5.626773927360773,
+          164.4544154405594,
+          46.72091454267502
+        ],
+        "size": [
+          0.0629308633506298,
+          0.04558265209197998,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-32.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-33",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-33",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.564869847148657,
+          164.46658968925476,
+          46.71991616487503
+        ],
+        "max": [
+          5.6257471442222595,
+          164.49934244155884,
+          46.72091454267502
+        ],
+        "size": [
+          0.060877297073602676,
+          0.03275275230407715,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-33.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-34",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-34",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.564869847148657,
+          164.5108312368393,
+          46.71991616487503
+        ],
+        "max": [
+          5.6257471442222595,
+          164.56040740013123,
+          46.72091454267502
+        ],
+        "size": [
+          0.060877297073602676,
+          0.04957616329193115,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-34.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-35",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-35",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.564869847148657,
+          164.56377506256104,
+          46.71991616487503
+        ],
+        "max": [
+          5.6257471442222595,
+          164.61855173110962,
+          46.72091454267502
+        ],
+        "size": [
+          0.060877297073602676,
+          0.054776668548583984,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-35.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-36",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-36",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.661445204168558,
+          164.3742322921753,
+          46.71991616487503
+        ],
+        "max": [
+          5.7223220355808735,
+          164.40698504447937,
+          46.72091454267502
+        ],
+        "size": [
+          0.06087683141231537,
+          0.03275275230407715,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-36.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-37",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-37",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.677847191691399,
+          164.41427171230316,
+          46.71991616487503
+        ],
+        "max": [
+          5.723349284380674,
+          164.44921493530273,
+          46.72091454267502
+        ],
+        "size": [
+          0.04550209268927574,
+          0.034943222999572754,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-37.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-38",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-38",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.677847191691399,
+          164.45954144001007,
+          46.71991616487503
+        ],
+        "max": [
+          5.723349284380674,
+          164.48891162872314,
+          46.72091454267502
+        ],
+        "size": [
+          0.04550209268927574,
+          0.02937018871307373,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-38.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-39",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-39",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.67884324118495,
+          164.4928753376007,
+          46.71991616487503
+        ],
+        "max": [
+          5.7428013533353806,
+          164.53461349010468,
+          46.72091454267502
+        ],
+        "size": [
+          0.06395811215043068,
+          0.041738152503967285,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-39.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-40",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-40",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.661445204168558,
+          164.54283893108368,
+          46.71991616487503
+        ],
+        "max": [
+          5.7223220355808735,
+          164.57557678222656,
+          46.72091454267502
+        ],
+        "size": [
+          0.06087683141231537,
+          0.0327378511428833,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-40.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-41",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-41",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.661445204168558,
+          164.5870804786682,
+          46.71991616487503
+        ],
+        "max": [
+          5.7223220355808735,
+          164.63664174079895,
+          46.72091454267502
+        ],
+        "size": [
+          0.06087683141231537,
+          0.049561262130737305,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-41.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-42",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-42",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.661445204168558,
+          164.64000940322876,
+          46.71991616487503
+        ],
+        "max": [
+          5.7223220355808735,
+          164.69478607177734,
+          46.72091454267502
+        ],
+        "size": [
+          0.06087683141231537,
+          0.054776668548583984,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-42.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-43",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-43",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          5.548536311835051,
+          164.0482395887375,
+          46.71991616487503
+        ],
+        "max": [
+          5.751099903136492,
+          164.32438790798187,
+          46.72091454267502
+        ],
+        "size": [
+          0.2025635913014412,
+          0.27614831924438477,
+          0.000998377799987793
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-43.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-NATIVE-44",
+      "name": "原生立创灯板实体 LIGHT-NATIVE-44",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -8.699959143996239,
+          155.19198775291443,
+          45.67304998636246
+        ],
+        "max": [
+          -1.6999593935906887,
+          160.15198826789856,
+          49.73305016756058
+        ],
+        "size": [
+          6.99999975040555,
+          4.960000514984131,
+          4.06000018119812
+        ]
+      },
+      "stl": "stl/LIGHT-NATIVE-44.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Actual native STEP; b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+        "Geometry mode: native_STEP_tessellation",
+        "Library STEP geometry, not supplier-certified models; solder, crimp and cable omitted.",
+        "No automatic model generation was enabled for the native export."
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "LIGHT-MATED-GH-RESERVE",
+      "name": "GH插合高度预留",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -8.700000122189522,
+          155.87501227855682,
+          49.72299933433533
+        ],
+        "max": [
+          -1.6999999061226845,
+          160.1250022649765,
+          52.973002195358276
+        ],
+        "size": [
+          7.000000216066837,
+          4.249989986419678,
+          3.250002861022949
+        ]
+      },
+      "stl": "stl/LIGHT-MATED-GH-RESERVE.stl",
+      "assembly_role": "routing",
+      "notes": [
+        "JST GH mated height7.3mm; approximate housing XY; no wire swept volume"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "routing",
+      "print_stl": null
+    },
+    {
+      "id": "HW-LIGHT-M2-1",
+      "name": "M2×8内六角螺钉",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -24.900004267692566,
+          161.6000235080719,
+          40.07300361990929
+        ],
+        "max": [
+          -21.100003272294998,
+          165.40002822875977,
+          50.073008984327316
+        ],
+        "size": [
+          3.8000009953975677,
+          3.800004720687866,
+          10.00000536441803
+        ]
+      },
+      "stl": "stl/HW-LIGHT-M2-1.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Standard envelope; underside tool access; threads omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-LIGHT-NUT-1",
+      "name": "DIN934 M2内藏螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -25.00000037252903,
+          161.19059920310974,
+          47.07299917936325
+        ],
+        "max": [
+          -21.000001579523087,
+          165.80940783023834,
+          48.673003911972046
+        ],
+        "size": [
+          3.9999987930059433,
+          4.618808627128601,
+          1.6000047326087952
+        ]
+      },
+      "stl": "stl/HW-LIGHT-NUT-1.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "AF4 x1.6; internal forward insertion; thread omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-LIGHT-M2-2",
+      "name": "M2×8内六角螺钉",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          21.100003272294998,
+          161.6000235080719,
+          40.07300361990929
+        ],
+        "max": [
+          24.900004267692566,
+          165.40002822875977,
+          50.073008984327316
+        ],
+        "size": [
+          3.8000009953975677,
+          3.800004720687866,
+          10.00000536441803
+        ]
+      },
+      "stl": "stl/HW-LIGHT-M2-2.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "Standard envelope; underside tool access; threads omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
+      "print_stl": null
+    },
+    {
+      "id": "HW-LIGHT-NUT-2",
+      "name": "DIN934 M2内藏螺母",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.18000000715255737,
+        0.20999999344348907,
+        0.25,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          21.000001579523087,
+          161.19059920310974,
+          47.07299917936325
+        ],
+        "max": [
+          25.00000037252903,
+          165.80940783023834,
+          48.673003911972046
+        ],
+        "size": [
+          3.9999987930059433,
+          4.618808627128601,
+          1.6000047326087952
+        ]
+      },
+      "stl": "stl/HW-LIGHT-NUT-2.stl",
+      "assembly_role": "fasteners",
+      "notes": [
+        "AF4 x1.6; internal forward insertion; thread omitted"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "fasteners",
       "print_stl": null
     }
   ],

@@ -24,7 +24,7 @@ SEGMENTS = 240
 INNER_RADIUS = 84.
 WALL = 3.
 PARAMETERS = {
- "schema":"odradek.b06.compact.v4", "length_unit":"mm", "center_xy":CENTER,
+ "schema":"odradek.b06.compact.v5", "length_unit":"mm", "center_xy":CENTER,
  "wall_nominal_mm":WALL,
  "outer_half_control_points":[[0,-38],[76,-38],[97,-26],[114,-3],[119,15],[118,25],[108,38],[98,48],[96,63],[95,79],[98,89],[103,103],[105,117],[101,128],[86,145],[57,171],[25,182],[0,185]],
  "inner_body_radius_mm":84, "collar_radius_mm":[68,84], "collar_top_z_mm":[74,60],
@@ -32,7 +32,7 @@ PARAMETERS = {
  "shoulder_profile":{"root_z_mm":60,"radial_drop":0.8,"chine_fraction":0.51,"chine_blend":[0.49,0.53],"petal_ridge_height_mm":2.8},
  "prototype_scope":"Five printed shell/scaffold parts plus original metal chassis/clamp/shelf CAD; routed IO PCB; integration candidate, not complete manufacturing release",
  "printer_volume_mm":[256,256,256], "outer_limit_xy_mm":[240,230],
- "fastening":"Four underside M3x10 captive nuts; rear lid two rear-facing M3x10 into carrier nuts; PCB four captive M3 nuts; lamp two M2x6",
+ "fastening":"Four underside M3x10 captive nuts; rear lid two rear-facing M3x10 into carrier nuts; PCB four captive M3 nuts; lamp two M2x8 and DIN934 M2 captive nuts",
 }
 
 

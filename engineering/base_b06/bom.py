@@ -23,13 +23,15 @@ for p in M['parts']:
  'specification':'FDM; 0.4 nozzle target; final slicing/fit coupon required','cad_files':'exterior/'+p['print_stl'],
  'notes':'Printed locating/cosmetic component, no arm load','status':'Mesh and bed checked; slicing/physical fit not qualified'})
 extra=[('HW-COVER-PCB-REAR-M3',10,'ISO7380-1 M3x10, AF2, head D5.7x1.65'),('HW-COVER-PCB-REAR-NUT',10,'DIN934 M3 nut AF5.5 x2.4'),
+ ('HW-LIGHT-M2',2,'ISO4762 M2x8, AF1.5, head D3.8x2'),('HW-LIGHT-NUT',2,'DIN934 M2 AF4 x1.6'),
  ('SHELF-STRAP',1,'20mm hook/loop strap, minimum600mm; trim to box after installation')]
 for id,q,s in extra:rows.append({'id':id,'quantity':q,'category':'purchase','material':'steel' if id.startswith('HW') else 'textile','specification':s,'cad_files':'','notes':'Current model / confirmed box budget','status':'Supplier selection and first article fit required'})
 rows.append({'id':'PCB-B06-IO', 'quantity':1,'category':'electronics','material':'FR4 1.6mm 4-layer','specification':'Native JLCEDA project + B06-IO-PROTOTYPE-Gerber.zip','cad_files':'../electronics/base-io-b05/manufacturing/b06-io-prototype/', 'notes':'Refer original BRI01 component list; BOM not automatically migrated by this script','status':'Board candidate; complete electrical assembly release pending'})
+rows.append({'id':'PCB-B06-LIGHT', 'quantity':1,'category':'electronics','material':'FR4 1.6mm 2-layer','specification':'50x14; independent 5V PWM; 12 SMT parts; native BOM/pick-place','cad_files':'../electronics/base-light-b06/manufacturing/', 'notes':'JST GH: 1=5V,2=PWM,3=GND; DO NOT CONNECT48V','status':'Native DRC/exports passed; harness, mount and optical prototype not qualified'})
 with (OUT/'B06-mechanical-bom.csv').open('w',newline='',encoding='utf-8-sig') as f:
  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 meta={'revision':M['revision'],'cad_manifest_sha256':hashlib.sha256((F/'manifest.json').read_bytes()).hexdigest(),
  'exterior_manifest_sha256':hashlib.sha256((OUT/'exterior/manifest.json').read_bytes()).hexdigest(),'line_count':len(rows),
- 'not_included':['LED PCB, LED mounting hardware and light control wiring','Final external/internal Ethernet/GMSL/power/ground harness','Final external box electronics','Root motor and arm-root mating parts themselves'],
+ 'not_included':['Light harness and optical support shims','Final external/internal Ethernet/GMSL/power/ground harness','Final external box electronics','Root motor and arm-root mating parts themselves'],
  'release':'Mechanical procurement planning only; NOT complete base BOM or order approval'}
 (OUT/'B06-bom-provenance.json').write_text(json.dumps(meta,indent=2)+'\n');print('BOM',len(rows),'lines')
