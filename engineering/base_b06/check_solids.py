@@ -20,7 +20,7 @@ def solid(k):
     if s.status()!=manifold3d.Error.NoError:invalid.append(dict(id=k,error=str(s.status())))
     solids[k]=s;return s
 printed=[k for k,p in data.items() if p.get('print_stl')]
-refs=[k for k,p in data.items() if p['assembly_role'] in ('structure','electronics')]
+refs=[k for k,p in data.items() if p['assembly_role'] in ('structure','electronics','fasteners')]
 pairs=[]
 for a,b in [*itertools.combinations(printed,2),*itertools.product(printed,refs)]:
     aa,bb=meshes[a].bounds,meshes[b].bounds
@@ -41,3 +41,5 @@ report=dict(revision=D['revision'],manifest_sha256=hashlib.sha256(MF.read_bytes(
                     'No motion, deflection, thermal, cables or clamp/load-path validation.'])
 (OUT/'solid-fit-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print('SOLID_CHECK',report['static_solid_interference_pass'],'pairs',len(pairs),'invalid',len(invalid),flush=True)
+
+if not report['static_solid_interference_pass']:raise SystemExit(1)

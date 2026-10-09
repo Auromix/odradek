@@ -42,7 +42,7 @@ report=dict(revision=D['revision'],manifest_sha256=hashlib.sha256((OUT/'manifest
             surface_pairs_present=[p for p in pairs if p['triangle_pairs']],
             limits=['BVH contacts alone cannot distinguish touching from volume interference.',
                     'Expected PCB/post face contact can yield triangle pairs; read each pair.',
-                    'No flange support, clamp load, motion clearance, plug latch or physical printing verification.'])
+                    'Metal load path is now present; no load/deflection, plug latch or physical printing verification.'])
 (OUT/'fit-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 print('SURFACE_PAIRS',len(report['surface_pairs_present']),flush=True)
 for p in report['surface_pairs_present']:print(p['a'],p['b'],p['triangle_pairs'],flush=True)

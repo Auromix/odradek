@@ -1,0 +1,2968 @@
+{
+  "revision": "B06-LOAD-01",
+  "datum": "Z0 desk, axis XY(0,75), +Y toward desk interior",
+  "desk_thickness_mm": [
+    15,
+    60
+  ],
+  "desk_model_mm": 30,
+  "posts_mm": [
+    [
+      -60,
+      75
+    ],
+    [
+      60,
+      75
+    ],
+    [
+      -38,
+      120
+    ],
+    [
+      38,
+      120
+    ]
+  ],
+  "parts": [
+    {
+      "id": "B06-101-LOAD-DECK",
+      "material": "S355",
+      "process": "CNC profile and drill/counterbore; weld assembly B06-W01",
+      "notes": [
+        "15 mm finished thickness; rear Y-59, table rear edge Y-45; corners deburr R0.5",
+        "Datum A upper Z17; flatness0.15 after welding; no polymer carries arm preload"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            0,
+            75,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 56,
+          "depth_mm": 15,
+          "callout": "D56 THRU; harness passage"
+        },
+        {
+          "entry_mm": [
+            -60,
+            75,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 8.5,
+          "depth_mm": 15,
+          "callout": "D8.5 THRU"
+        },
+        {
+          "entry_mm": [
+            -60,
+            75,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 14.5,
+          "depth_mm": 8.5,
+          "callout": "BOTTOM CBORE D14.5 x8.5; M8x20 ISO4762; underhead Z10.5"
+        },
+        {
+          "entry_mm": [
+            60,
+            75,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 8.5,
+          "depth_mm": 15,
+          "callout": "D8.5 THRU"
+        },
+        {
+          "entry_mm": [
+            60,
+            75,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 14.5,
+          "depth_mm": 8.5,
+          "callout": "BOTTOM CBORE D14.5 x8.5; M8x20 ISO4762; underhead Z10.5"
+        },
+        {
+          "entry_mm": [
+            -38,
+            120,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 8.5,
+          "depth_mm": 15,
+          "callout": "D8.5 THRU"
+        },
+        {
+          "entry_mm": [
+            -38,
+            120,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 14.5,
+          "depth_mm": 8.5,
+          "callout": "BOTTOM CBORE D14.5 x8.5; M8x20 ISO4762; underhead Z10.5"
+        },
+        {
+          "entry_mm": [
+            38,
+            120,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 8.5,
+          "depth_mm": 15,
+          "callout": "D8.5 THRU"
+        },
+        {
+          "entry_mm": [
+            38,
+            120,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 14.5,
+          "depth_mm": 8.5,
+          "callout": "BOTTOM CBORE D14.5 x8.5; M8x20 ISO4762; underhead Z10.5"
+        },
+        {
+          "entry_mm": [
+            -52,
+            -20,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.6,
+          "depth_mm": 15,
+          "callout": "D3.6 THRU; clearance for PCB screw tip, no electrical board contact"
+        },
+        {
+          "entry_mm": [
+            -52,
+            24,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.6,
+          "depth_mm": 15,
+          "callout": "D3.6 THRU; clearance for PCB screw tip, no electrical board contact"
+        },
+        {
+          "entry_mm": [
+            52,
+            -20,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.6,
+          "depth_mm": 15,
+          "callout": "D3.6 THRU; clearance for PCB screw tip, no electrical board contact"
+        },
+        {
+          "entry_mm": [
+            52,
+            24,
+            2
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.6,
+          "depth_mm": 15,
+          "callout": "D3.6 THRU; clearance for PCB screw tip, no electrical board contact"
+        },
+        {
+          "entry_mm": [
+            62,
+            15,
+            17
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 12,
+          "callout": "M6x1-6H; full thread9; drill12; dedicated chassis bonding point"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -70.0,
+          -59.0,
+          2.0
+        ],
+        [
+          70.00000000000135,
+          151.0,
+          17.0
+        ]
+      ],
+      "volume_mm3": 369031.83142579114,
+      "step": "step/B06-101-LOAD-DECK.step",
+      "stl": "stl/B06-101-LOAD-DECK.stl"
+    },
+    {
+      "id": "B06-102-REAR-WEB",
+      "material": "S355",
+      "process": "CNC plate profile/drill/tap; weld B06-W01",
+      "notes": [
+        "8 mm thickness; top Z2; rear Y-59; F6 continuous fillet welds at upper and lower plate joints",
+        "Front fillet ends at Y-45, clear of desk; machine datums after weld/stress relief; no weld in desk pad seat"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            -70,
+            -55,
+            -80
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 16,
+          "callout": "M6x1-6H; full thread13; drill16; shelf hanger"
+        },
+        {
+          "entry_mm": [
+            -70,
+            -55,
+            -67
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 16,
+          "callout": "M6x1-6H; full thread13; drill16; shelf hanger"
+        },
+        {
+          "entry_mm": [
+            70,
+            -55,
+            -80
+          ],
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 16,
+          "callout": "M6x1-6H; full thread13; drill16; shelf hanger"
+        },
+        {
+          "entry_mm": [
+            70,
+            -55,
+            -67
+          ],
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 16,
+          "callout": "M6x1-6H; full thread13; drill16; shelf hanger"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -70.0,
+          -59.0,
+          -90.0
+        ],
+        [
+          70.0,
+          -51.0,
+          2.0
+        ]
+      ],
+      "volume_mm3": 101783.36293856411,
+      "step": "step/B06-102-REAR-WEB.step",
+      "stl": "stl/B06-102-REAR-WEB.stl"
+    },
+    {
+      "id": "B06-103-LOWER-JAW",
+      "material": "S355",
+      "process": "CNC profile/drill/tap; weld B06-W01",
+      "notes": [
+        "14 mm finished thickness; two full steel threaded legs",
+        "M12 thrust screws turn from BELOW with AF6 key; no side knob hidden behind the box"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            -45,
+            50,
+            -104
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 10.2,
+          "depth_mm": 14,
+          "callout": "M12x1.75-6H THRU; deburr both entries0.5; DIN6332 M12x100"
+        },
+        {
+          "entry_mm": [
+            45,
+            50,
+            -104
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 10.2,
+          "depth_mm": 14,
+          "callout": "M12x1.75-6H THRU; deburr both entries0.5; DIN6332 M12x100"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -70.0,
+          -59.0,
+          -104.0
+        ],
+        [
+          70.0,
+          75.0,
+          -90.0
+        ]
+      ],
+      "volume_mm3": 183352.0409022436,
+      "step": "step/B06-103-LOWER-JAW.step",
+      "stl": "stl/B06-103-LOWER-JAW.stl"
+    },
+    {
+      "id": "B06-104-LOAD-FLANGE",
+      "material": "6061-T651",
+      "process": "CNC turn/mill + drill/tap; clear anodize, mask datums",
+      "notes": [
+        "OD160/ID56 x12; upper mating datum Z58 flatness0.1; 8xM6 PCD120 phase22.5deg",
+        "Bottom open cable pocket X\u00b117/Y28..83/Z46..48; breaks into central bore",
+        "No motor interface added: this mates to the frozen A11 root-foot pattern"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            55.43277195067721,
+            97.96100594190538,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 12,
+          "callout": "M6x1-6H THRU; PCD120, 22.5deg + k45deg"
+        },
+        {
+          "entry_mm": [
+            22.96100594190539,
+            130.4327719506772,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 12,
+          "callout": "M6x1-6H THRU; PCD120, 22.5deg + k45deg"
+        },
+        {
+          "entry_mm": [
+            -22.961005941905384,
+            130.4327719506772,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 12,
+          "callout": "M6x1-6H THRU; PCD120, 22.5deg + k45deg"
+        },
+        {
+          "entry_mm": [
+            -55.43277195067721,
+            97.9610059419054,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 12,
+          "callout": "M6x1-6H THRU; PCD120, 22.5deg + k45deg"
+        },
+        {
+          "entry_mm": [
+            -55.432771950677214,
+            52.038994058094616,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 12,
+          "callout": "M6x1-6H THRU; PCD120, 22.5deg + k45deg"
+        },
+        {
+          "entry_mm": [
+            -22.96100594190537,
+            19.567228049322786,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 12,
+          "callout": "M6x1-6H THRU; PCD120, 22.5deg + k45deg"
+        },
+        {
+          "entry_mm": [
+            22.961005941905402,
+            19.5672280493228,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 12,
+          "callout": "M6x1-6H THRU; PCD120, 22.5deg + k45deg"
+        },
+        {
+          "entry_mm": [
+            55.432771950677214,
+            52.03899405809463,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 5,
+          "depth_mm": 12,
+          "callout": "M6x1-6H THRU; PCD120, 22.5deg + k45deg"
+        },
+        {
+          "entry_mm": [
+            -60,
+            75,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 8.5,
+          "depth_mm": 12,
+          "callout": "D8.5 THRU"
+        },
+        {
+          "entry_mm": [
+            -60,
+            75,
+            58
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 14.5,
+          "depth_mm": 8.5,
+          "callout": "TOP CBORE D14.5 x8.5; M8x16 ISO4762; underhead Z49.5"
+        },
+        {
+          "entry_mm": [
+            60,
+            75,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 8.5,
+          "depth_mm": 12,
+          "callout": "D8.5 THRU"
+        },
+        {
+          "entry_mm": [
+            60,
+            75,
+            58
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 14.5,
+          "depth_mm": 8.5,
+          "callout": "TOP CBORE D14.5 x8.5; M8x16 ISO4762; underhead Z49.5"
+        },
+        {
+          "entry_mm": [
+            -38,
+            120,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 8.5,
+          "depth_mm": 12,
+          "callout": "D8.5 THRU"
+        },
+        {
+          "entry_mm": [
+            -38,
+            120,
+            58
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 14.5,
+          "depth_mm": 8.5,
+          "callout": "TOP CBORE D14.5 x8.5; M8x16 ISO4762; underhead Z49.5"
+        },
+        {
+          "entry_mm": [
+            38,
+            120,
+            46
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 8.5,
+          "depth_mm": 12,
+          "callout": "D8.5 THRU"
+        },
+        {
+          "entry_mm": [
+            38,
+            120,
+            58
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 14.5,
+          "depth_mm": 8.5,
+          "callout": "TOP CBORE D14.5 x8.5; M8x16 ISO4762; underhead Z49.5"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -80.0,
+          -5.0,
+          46.0
+        ],
+        [
+          80.0,
+          155.0,
+          58.0
+        ]
+      ],
+      "volume_mm3": 202007.91686992475,
+      "step": "step/B06-104-LOAD-FLANGE.step",
+      "stl": "stl/B06-104-LOAD-FLANGE.stl"
+    },
+    {
+      "id": "B06-105-POST-1",
+      "material": "6061-T651",
+      "process": "Turn + through drill/tap",
+      "notes": [
+        "Four identical OD18 x29 spacers; ends parallel0.05",
+        "M8 full through thread; top bolt engagement12.5, bottom13.5 mm; nominal tip gap3.0 mm"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            -60,
+            75,
+            17
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 6.8,
+          "depth_mm": 29,
+          "callout": "M8x1.25-6H THRU; ends chamfer0.5"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -69.0,
+          66.0,
+          17.0
+        ],
+        [
+          -51.0,
+          84.0,
+          46.0
+        ]
+      ],
+      "volume_mm3": 6326.413622092984,
+      "step": "step/B06-105-POST-1.step",
+      "stl": "stl/B06-105-POST-1.stl"
+    },
+    {
+      "id": "B06-105-POST-2",
+      "material": "6061-T651",
+      "process": "Turn + through drill/tap",
+      "notes": [
+        "Four identical OD18 x29 spacers; ends parallel0.05",
+        "M8 full through thread; top bolt engagement12.5, bottom13.5 mm; nominal tip gap3.0 mm"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            60,
+            75,
+            17
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 6.8,
+          "depth_mm": 29,
+          "callout": "M8x1.25-6H THRU; ends chamfer0.5"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          51.0,
+          66.0,
+          17.0
+        ],
+        [
+          69.0,
+          84.0,
+          46.0
+        ]
+      ],
+      "volume_mm3": 6326.413622092984,
+      "step": "step/B06-105-POST-2.step",
+      "stl": "stl/B06-105-POST-2.stl"
+    },
+    {
+      "id": "B06-105-POST-3",
+      "material": "6061-T651",
+      "process": "Turn + through drill/tap",
+      "notes": [
+        "Four identical OD18 x29 spacers; ends parallel0.05",
+        "M8 full through thread; top bolt engagement12.5, bottom13.5 mm; nominal tip gap3.0 mm"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            -38,
+            120,
+            17
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 6.8,
+          "depth_mm": 29,
+          "callout": "M8x1.25-6H THRU; ends chamfer0.5"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -47.0,
+          111.0,
+          17.0
+        ],
+        [
+          -29.0,
+          129.0,
+          46.0
+        ]
+      ],
+      "volume_mm3": 6326.413622092984,
+      "step": "step/B06-105-POST-3.step",
+      "stl": "stl/B06-105-POST-3.stl"
+    },
+    {
+      "id": "B06-105-POST-4",
+      "material": "6061-T651",
+      "process": "Turn + through drill/tap",
+      "notes": [
+        "Four identical OD18 x29 spacers; ends parallel0.05",
+        "M8 full through thread; top bolt engagement12.5, bottom13.5 mm; nominal tip gap3.0 mm"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            38,
+            120,
+            17
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 6.8,
+          "depth_mm": 29,
+          "callout": "M8x1.25-6H THRU; ends chamfer0.5"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          29.0,
+          111.0,
+          17.0
+        ],
+        [
+          47.0,
+          129.0,
+          46.0
+        ]
+      ],
+      "volume_mm3": 6326.413622092984,
+      "step": "step/B06-105-POST-4.step",
+      "stl": "stl/B06-105-POST-4.stl"
+    },
+    {
+      "id": "B06-106-DESK-PAD",
+      "material": "silicone",
+      "process": "Cut 2 mm solid silicone, nominal60A; bond to deck",
+      "notes": [
+        "Friction and desk-surface compression require bench test"
+      ],
+      "features": [],
+      "category": "soft",
+      "bbox_mm": [
+        [
+          -70.0,
+          -45.0,
+          0.0
+        ],
+        [
+          70.00000000000135,
+          151.0,
+          2.0
+        ]
+      ],
+      "volume_mm3": 44375.758426540575,
+      "step": "step/B06-106-DESK-PAD.step",
+      "stl": "stl/B06-106-DESK-PAD.stl"
+    },
+    {
+      "id": "B06-107-SPREADER--1",
+      "material": "6061-T651",
+      "process": "CNC flat plate; R2 edge breaks",
+      "notes": [
+        "Foot bears directly on metal at (X\u00b145,Y50); swivel foot retained by its supplied retaining spring",
+        "Place spreader during installation; pad must cover the entire contact footprint"
+      ],
+      "features": [],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -80.0,
+          5.0,
+          -40.0
+        ],
+        [
+          -10.0,
+          95.0,
+          -32.0
+        ]
+      ],
+      "volume_mm3": 50400.0,
+      "step": "step/B06-107-SPREADER--1.step",
+      "stl": "stl/B06-107-SPREADER--1.stl"
+    },
+    {
+      "id": "B06-108-PRESS-PAD--1",
+      "material": "silicone",
+      "process": "Cut 2 mm solid silicone60A; bond to spreader",
+      "notes": [],
+      "features": [],
+      "category": "soft",
+      "bbox_mm": [
+        [
+          -80.0,
+          5.0,
+          -32.0
+        ],
+        [
+          -10.0,
+          95.0,
+          -30.0
+        ]
+      ],
+      "volume_mm3": 12600.0,
+      "step": "step/B06-108-PRESS-PAD--1.step",
+      "stl": "stl/B06-108-PRESS-PAD--1.stl"
+    },
+    {
+      "id": "HW-DIN6311--1",
+      "material": "steel",
+      "process": "Purchase Ganter DIN6311-25-S",
+      "notes": [
+        "D25 x13; inverted flat face at spreader underside; snap ring supplied",
+        "Bore represented as conservative cylindrical clearance, supplier swivel seat omitted; sample fit required"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -57.5,
+          37.5,
+          -53.0
+        ],
+        [
+          -32.5,
+          62.5,
+          -40.0
+        ]
+      ],
+      "volume_mm3": 4211.226412320778,
+      "step": "step/HW-DIN6311--1.step",
+      "stl": "stl/HW-DIN6311--1.stl"
+    },
+    {
+      "id": "HW-DIN6332--1",
+      "material": "steel",
+      "process": "Purchase Ganter DIN6332-M12-100-SK; AF6",
+      "notes": [
+        "Length100 includes thrust pin; thread portion conservatively90; thread class5.8",
+        "Thrust seat approximation, not machining geometry; verify supplier seat/pin retention",
+        "Tighten from BELOW; do not print hardware"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -51.0,
+          44.0,
+          -143.3
+        ],
+        [
+          -39.0,
+          56.0,
+          -43.3
+        ]
+      ],
+      "volume_mm3": 10431.99970591538,
+      "step": "step/HW-DIN6332--1.step",
+      "stl": "stl/HW-DIN6332--1.stl"
+    },
+    {
+      "id": "B06-107-SPREADER-1",
+      "material": "6061-T651",
+      "process": "CNC flat plate; R2 edge breaks",
+      "notes": [
+        "Foot bears directly on metal at (X\u00b145,Y50); swivel foot retained by its supplied retaining spring",
+        "Place spreader during installation; pad must cover the entire contact footprint"
+      ],
+      "features": [],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          10.0,
+          5.0,
+          -40.0
+        ],
+        [
+          80.0,
+          95.0,
+          -32.0
+        ]
+      ],
+      "volume_mm3": 50400.0,
+      "step": "step/B06-107-SPREADER-1.step",
+      "stl": "stl/B06-107-SPREADER-1.stl"
+    },
+    {
+      "id": "B06-108-PRESS-PAD-1",
+      "material": "silicone",
+      "process": "Cut 2 mm solid silicone60A; bond to spreader",
+      "notes": [],
+      "features": [],
+      "category": "soft",
+      "bbox_mm": [
+        [
+          10.0,
+          5.0,
+          -32.0
+        ],
+        [
+          80.0,
+          95.0,
+          -30.0
+        ]
+      ],
+      "volume_mm3": 12600.0,
+      "step": "step/B06-108-PRESS-PAD-1.step",
+      "stl": "stl/B06-108-PRESS-PAD-1.stl"
+    },
+    {
+      "id": "HW-DIN6311-1",
+      "material": "steel",
+      "process": "Purchase Ganter DIN6311-25-S",
+      "notes": [
+        "D25 x13; inverted flat face at spreader underside; snap ring supplied",
+        "Bore represented as conservative cylindrical clearance, supplier swivel seat omitted; sample fit required"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          32.5,
+          37.5,
+          -53.0
+        ],
+        [
+          57.5,
+          62.5,
+          -40.0
+        ]
+      ],
+      "volume_mm3": 4211.226412320778,
+      "step": "step/HW-DIN6311-1.step",
+      "stl": "stl/HW-DIN6311-1.stl"
+    },
+    {
+      "id": "HW-DIN6332-1",
+      "material": "steel",
+      "process": "Purchase Ganter DIN6332-M12-100-SK; AF6",
+      "notes": [
+        "Length100 includes thrust pin; thread portion conservatively90; thread class5.8",
+        "Thrust seat approximation, not machining geometry; verify supplier seat/pin retention",
+        "Tighten from BELOW; do not print hardware"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          39.0,
+          44.0,
+          -143.3
+        ],
+        [
+          51.0,
+          56.0,
+          -43.3
+        ]
+      ],
+      "volume_mm3": 10431.99970591538,
+      "step": "step/HW-DIN6332-1.step",
+      "stl": "stl/HW-DIN6332-1.stl"
+    },
+    {
+      "id": "B06-201-HANGER--1",
+      "material": "6061-T651",
+      "process": "CNC profile from8 mm plate + drill/tap",
+      "notes": [
+        "Inward cantilever height20 mm; remove hanger independently of desk clamp; deburr R0.5"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            -78,
+            -55,
+            -80
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "model_diameter_mm": 6.6,
+          "depth_mm": 8,
+          "callout": "D6.6 THRU; M6x20 + washer"
+        },
+        {
+          "entry_mm": [
+            -78,
+            -55,
+            -67
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "model_diameter_mm": 6.6,
+          "depth_mm": 8,
+          "callout": "D6.6 THRU; M6x20 + washer"
+        },
+        {
+          "entry_mm": [
+            -74,
+            120,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 3.3,
+          "depth_mm": 12,
+          "callout": "M4x0.7-6H; full thread9; drill12; tray attachment"
+        },
+        {
+          "entry_mm": [
+            -74,
+            270,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 3.3,
+          "depth_mm": 12,
+          "callout": "M4x0.7-6H; full thread9; drill12; tray attachment"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -78.0,
+          -63.0,
+          -177.0
+        ],
+        [
+          -70.0,
+          290.0,
+          -57.0
+        ]
+      ],
+      "volume_mm3": 71155.86819696783,
+      "step": "step/B06-201-HANGER--1.step",
+      "stl": "stl/B06-201-HANGER--1.stl"
+    },
+    {
+      "id": "B06-201-HANGER-1",
+      "material": "6061-T651",
+      "process": "CNC profile from8 mm plate + drill/tap",
+      "notes": [
+        "Inward cantilever height20 mm; remove hanger independently of desk clamp; deburr R0.5"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            78,
+            -55,
+            -80
+          ],
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "model_diameter_mm": 6.6,
+          "depth_mm": 8,
+          "callout": "D6.6 THRU; M6x20 + washer"
+        },
+        {
+          "entry_mm": [
+            78,
+            -55,
+            -67
+          ],
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "model_diameter_mm": 6.6,
+          "depth_mm": 8,
+          "callout": "D6.6 THRU; M6x20 + washer"
+        },
+        {
+          "entry_mm": [
+            74,
+            120,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 3.3,
+          "depth_mm": 12,
+          "callout": "M4x0.7-6H; full thread9; drill12; tray attachment"
+        },
+        {
+          "entry_mm": [
+            74,
+            270,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 3.3,
+          "depth_mm": 12,
+          "callout": "M4x0.7-6H; full thread9; drill12; tray attachment"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          70.0,
+          -63.0,
+          -177.0
+        ],
+        [
+          78.0,
+          290.0,
+          -57.0
+        ]
+      ],
+      "volume_mm3": 71155.86819696781,
+      "step": "step/B06-201-HANGER-1.step",
+      "stl": "stl/B06-201-HANGER-1.stl"
+    },
+    {
+      "id": "B06-202-TRAY",
+      "material": "6061-T651",
+      "process": "CNC profile + drill/tap",
+      "notes": [
+        "Confirmed maximum box180x150x50 mm/3 kg; footprint X\u00b190,Y120..270; slides +Y",
+        "20 mm hook/loop straps secure vertically; front stop removable; ventilation not covered by this mechanical budget"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            -74,
+            120,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 4.5,
+          "depth_mm": 5,
+          "callout": "D4.5 THRU; M4x10 ISO7380-1; NO washer"
+        },
+        {
+          "entry_mm": [
+            -74,
+            120,
+            -152
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 8.4,
+          "depth_mm": 3,
+          "callout": "TOP CBORE D8.4 x3; head top Z-152.8 below box seat; floor2 mm"
+        },
+        {
+          "entry_mm": [
+            -74,
+            270,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 4.5,
+          "depth_mm": 5,
+          "callout": "D4.5 THRU; M4x10 ISO7380-1; NO washer"
+        },
+        {
+          "entry_mm": [
+            -74,
+            270,
+            -152
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 8.4,
+          "depth_mm": 3,
+          "callout": "TOP CBORE D8.4 x3; head top Z-152.8 below box seat; floor2 mm"
+        },
+        {
+          "entry_mm": [
+            74,
+            120,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 4.5,
+          "depth_mm": 5,
+          "callout": "D4.5 THRU; M4x10 ISO7380-1; NO washer"
+        },
+        {
+          "entry_mm": [
+            74,
+            120,
+            -152
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 8.4,
+          "depth_mm": 3,
+          "callout": "TOP CBORE D8.4 x3; head top Z-152.8 below box seat; floor2 mm"
+        },
+        {
+          "entry_mm": [
+            74,
+            270,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 4.5,
+          "depth_mm": 5,
+          "callout": "D4.5 THRU; M4x10 ISO7380-1; NO washer"
+        },
+        {
+          "entry_mm": [
+            74,
+            270,
+            -152
+          ],
+          "axis": [
+            0,
+            0,
+            -1
+          ],
+          "model_diameter_mm": 8.4,
+          "depth_mm": 3,
+          "callout": "TOP CBORE D8.4 x3; head top Z-152.8 below box seat; floor2 mm"
+        },
+        {
+          "callout": "4x24 vertical strap slot R2 THRU",
+          "entry_mm": [
+            -96,
+            197,
+            -157
+          ]
+        },
+        {
+          "callout": "4x24 vertical strap slot R2 THRU",
+          "entry_mm": [
+            96,
+            197,
+            -157
+          ]
+        },
+        {
+          "entry_mm": [
+            -88,
+            112.5,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.3,
+          "depth_mm": 5,
+          "callout": "M4x0.7-6H THRU; stop M4x20"
+        },
+        {
+          "entry_mm": [
+            88,
+            112.5,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.3,
+          "depth_mm": 5,
+          "callout": "M4x0.7-6H THRU; stop M4x20"
+        },
+        {
+          "entry_mm": [
+            -88,
+            282.5,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.3,
+          "depth_mm": 5,
+          "callout": "M4x0.7-6H THRU; stop M4x20"
+        },
+        {
+          "entry_mm": [
+            88,
+            282.5,
+            -157
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.3,
+          "depth_mm": 5,
+          "callout": "M4x0.7-6H THRU; stop M4x20"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -100.0,
+          100.0,
+          -157.0
+        ],
+        [
+          100.0,
+          290.0,
+          -152.0
+        ]
+      ],
+      "volume_mm3": 188111.02973848625,
+      "step": "step/B06-202-TRAY.step",
+      "stl": "stl/B06-202-TRAY.stl"
+    },
+    {
+      "id": "B06-203-STOP-BACK",
+      "material": "6061-T651",
+      "process": "Mill/drill",
+      "notes": [
+        "Front stop removes before box slides toward +Y"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            -88,
+            112.5,
+            -152
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 4.5,
+          "depth_mm": 12,
+          "callout": "D4.5 THRU; M4x20"
+        },
+        {
+          "entry_mm": [
+            88,
+            112.5,
+            -152
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 4.5,
+          "depth_mm": 12,
+          "callout": "D4.5 THRU; M4x20"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -95.0,
+          110.0,
+          -152.0
+        ],
+        [
+          95.0,
+          115.0,
+          -140.0
+        ]
+      ],
+      "volume_mm3": 11018.296492588841,
+      "step": "step/B06-203-STOP-BACK.step",
+      "stl": "stl/B06-203-STOP-BACK.stl"
+    },
+    {
+      "id": "B06-203-STOP-FRONT",
+      "material": "6061-T651",
+      "process": "Mill/drill",
+      "notes": [
+        "Front stop removes before box slides toward +Y"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            -88,
+            282.5,
+            -152
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 4.5,
+          "depth_mm": 12,
+          "callout": "D4.5 THRU; M4x20"
+        },
+        {
+          "entry_mm": [
+            88,
+            282.5,
+            -152
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 4.5,
+          "depth_mm": 12,
+          "callout": "D4.5 THRU; M4x20"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -95.0,
+          280.0,
+          -152.0
+        ],
+        [
+          95.0,
+          285.0,
+          -140.0
+        ]
+      ],
+      "volume_mm3": 11018.296492588841,
+      "step": "step/B06-203-STOP-FRONT.step",
+      "stl": "stl/B06-203-STOP-FRONT.stl"
+    },
+    {
+      "id": "B06-309-COAX-BRACKET",
+      "material": "6061-T651",
+      "process": "CNC mill original RF bulkhead bracket",
+      "notes": [
+        "Base2 mm at PCB top Z25.6; rear panel4.5 mm Y-19..-14.5; flange bearing face Y-16, internal fillet R1",
+        "H5/H6 mounting centres X\u00b110,Y-8; coax axes X\u00b110,Z35; mounts independent of cosmetic rear lid",
+        "Fixed coax rear datum retained at Y-16, separate from RJ45/power PCB shift; bond to chassis via J6 lug"
+      ],
+      "features": [
+        {
+          "entry_mm": [
+            -10,
+            -8,
+            25.6
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.6,
+          "depth_mm": 2,
+          "callout": "D3.6 THRU; M3x8 + washer0.5 + nut below PCB"
+        },
+        {
+          "entry_mm": [
+            -10,
+            -19,
+            35
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "model_diameter_mm": 6.8,
+          "depth_mm": 4.5,
+          "callout": "D6.8 round THRU; external flange captured in hex pocket"
+        },
+        {
+          "entry_mm": [
+            -10,
+            -19,
+            35
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "model_diameter_mm": 9.8,
+          "depth_mm": 3,
+          "callout": "AF9.8 rear HEX pocket depth3, six R1.05 corner reliefs; flange seat Y-16; source nominal AF9.5"
+        },
+        {
+          "entry_mm": [
+            10,
+            -8,
+            25.6
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "model_diameter_mm": 3.6,
+          "depth_mm": 2,
+          "callout": "D3.6 THRU; M3x8 + washer0.5 + nut below PCB"
+        },
+        {
+          "entry_mm": [
+            10,
+            -19,
+            35
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "model_diameter_mm": 6.8,
+          "depth_mm": 4.5,
+          "callout": "D6.8 round THRU; external flange captured in hex pocket"
+        },
+        {
+          "entry_mm": [
+            10,
+            -19,
+            35
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "model_diameter_mm": 9.8,
+          "depth_mm": 3,
+          "callout": "AF9.8 rear HEX pocket depth3, six R1.05 corner reliefs; flange seat Y-16; source nominal AF9.5"
+        }
+      ],
+      "category": "metal",
+      "bbox_mm": [
+        [
+          -20.0,
+          -19.0,
+          25.6
+        ],
+        [
+          20.0,
+          0.0,
+          42.0
+        ]
+      ],
+      "volume_mm3": 3148.753579156355,
+      "step": "step/B06-309-COAX-BRACKET.step",
+      "stl": "stl/B06-309-COAX-BRACKET.stl"
+    },
+    {
+      "id": "B06-307-LOWER-CARRIER",
+      "material": "PETG",
+      "process": "FDM print; exported exact CAD geometry",
+      "notes": [
+        "Printed PCB/cover locating scaffold only; no arm or clamp load",
+        "Board bottom Z24; side-insert nuts Z19.2..21.6; rear screw axis Z32",
+        "Retain 1mm nut-pocket floor and >=2.2mm roof; verify print fit coupon"
+      ],
+      "features": [],
+      "category": "printed",
+      "bbox_mm": [
+        [
+          -89.45433542455746,
+          -31.0,
+          3.0
+        ],
+        [
+          89.45433542455746,
+          159.0,
+          37.0
+        ]
+      ],
+      "volume_mm3": 20695.078566957513,
+      "step": "step/B06-307-LOWER-CARRIER.step",
+      "stl": "stl/B06-307-LOWER-CARRIER.stl"
+    },
+    {
+      "id": "HW-M8-TOP-1",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M8x16; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -66.5,
+          68.5,
+          33.5
+        ],
+        [
+          -53.5,
+          81.5,
+          57.5
+        ]
+      ],
+      "volume_mm3": 1703.9860806438896,
+      "step": "step/HW-M8-TOP-1.step",
+      "stl": "stl/HW-M8-TOP-1.stl"
+    },
+    {
+      "id": "HW-M8-BOTTOM-1",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M8x20; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -66.5,
+          68.5,
+          2.499999999999999
+        ],
+        [
+          -53.5,
+          81.5,
+          30.5
+        ]
+      ],
+      "volume_mm3": 1905.0480104736366,
+      "step": "step/HW-M8-BOTTOM-1.step",
+      "stl": "stl/HW-M8-BOTTOM-1.stl"
+    },
+    {
+      "id": "HW-M8-TOP-2",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M8x16; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          53.5,
+          68.5,
+          33.5
+        ],
+        [
+          66.5,
+          81.5,
+          57.5
+        ]
+      ],
+      "volume_mm3": 1703.9860806438894,
+      "step": "step/HW-M8-TOP-2.step",
+      "stl": "stl/HW-M8-TOP-2.stl"
+    },
+    {
+      "id": "HW-M8-BOTTOM-2",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M8x20; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          53.5,
+          68.5,
+          2.499999999999999
+        ],
+        [
+          66.5,
+          81.5,
+          30.5
+        ]
+      ],
+      "volume_mm3": 1905.0480104736366,
+      "step": "step/HW-M8-BOTTOM-2.step",
+      "stl": "stl/HW-M8-BOTTOM-2.stl"
+    },
+    {
+      "id": "HW-M8-TOP-3",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M8x16; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -44.5,
+          113.5,
+          33.5
+        ],
+        [
+          -31.5,
+          126.5,
+          57.5
+        ]
+      ],
+      "volume_mm3": 1703.9860806438899,
+      "step": "step/HW-M8-TOP-3.step",
+      "stl": "stl/HW-M8-TOP-3.stl"
+    },
+    {
+      "id": "HW-M8-BOTTOM-3",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M8x20; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -44.5,
+          113.5,
+          2.499999999999999
+        ],
+        [
+          -31.5,
+          126.5,
+          30.5
+        ]
+      ],
+      "volume_mm3": 1905.0480104736369,
+      "step": "step/HW-M8-BOTTOM-3.step",
+      "stl": "stl/HW-M8-BOTTOM-3.stl"
+    },
+    {
+      "id": "HW-M8-TOP-4",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M8x16; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          31.5,
+          113.5,
+          33.5
+        ],
+        [
+          44.5,
+          126.5,
+          57.5
+        ]
+      ],
+      "volume_mm3": 1703.9860806438896,
+      "step": "step/HW-M8-TOP-4.step",
+      "stl": "stl/HW-M8-TOP-4.stl"
+    },
+    {
+      "id": "HW-M8-BOTTOM-4",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M8x20; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          31.5,
+          113.5,
+          2.499999999999999
+        ],
+        [
+          44.5,
+          126.5,
+          30.5
+        ]
+      ],
+      "volume_mm3": 1905.0480104736366,
+      "step": "step/HW-M8-BOTTOM-4.step",
+      "stl": "stl/HW-M8-BOTTOM-4.stl"
+    },
+    {
+      "id": "HW-ROOT-WASHER-1",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          49.43277195067721,
+          91.96100594190538,
+          66.0
+        ],
+        [
+          61.43277195067721,
+          103.96100594190538,
+          67.6
+        ]
+      ],
+      "volume_mm3": 129.48388281035673,
+      "step": "step/HW-ROOT-WASHER-1.step",
+      "stl": "stl/HW-ROOT-WASHER-1.stl"
+    },
+    {
+      "id": "HW-ROOT-M6-1",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          50.43277195067721,
+          92.96100594190538,
+          47.599999999999994
+        ],
+        [
+          60.43277195067721,
+          102.96100594190538,
+          73.6
+        ]
+      ],
+      "volume_mm3": 952.288098815649,
+      "step": "step/HW-ROOT-M6-1.step",
+      "stl": "stl/HW-ROOT-M6-1.stl"
+    },
+    {
+      "id": "HW-ROOT-WASHER-2",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          16.96100594190539,
+          124.43277195067719,
+          66.0
+        ],
+        [
+          28.96100594190539,
+          136.4327719506772,
+          67.6
+        ]
+      ],
+      "volume_mm3": 129.4838828103568,
+      "step": "step/HW-ROOT-WASHER-2.step",
+      "stl": "stl/HW-ROOT-WASHER-2.stl"
+    },
+    {
+      "id": "HW-ROOT-M6-2",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          17.96100594190539,
+          125.43277195067719,
+          47.599999999999994
+        ],
+        [
+          27.96100594190539,
+          135.4327719506772,
+          73.6
+        ]
+      ],
+      "volume_mm3": 952.2880988156492,
+      "step": "step/HW-ROOT-M6-2.step",
+      "stl": "stl/HW-ROOT-M6-2.stl"
+    },
+    {
+      "id": "HW-ROOT-WASHER-3",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -28.961005941905384,
+          124.43277195067719,
+          66.0
+        ],
+        [
+          -16.961005941905384,
+          136.4327719506772,
+          67.6
+        ]
+      ],
+      "volume_mm3": 129.48388281035682,
+      "step": "step/HW-ROOT-WASHER-3.step",
+      "stl": "stl/HW-ROOT-WASHER-3.stl"
+    },
+    {
+      "id": "HW-ROOT-M6-3",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -27.961005941905384,
+          125.43277195067719,
+          47.599999999999994
+        ],
+        [
+          -17.961005941905384,
+          135.4327719506772,
+          73.6
+        ]
+      ],
+      "volume_mm3": 952.288098815649,
+      "step": "step/HW-ROOT-M6-3.step",
+      "stl": "stl/HW-ROOT-M6-3.stl"
+    },
+    {
+      "id": "HW-ROOT-WASHER-4",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -61.43277195067721,
+          91.9610059419054,
+          66.0
+        ],
+        [
+          -49.43277195067721,
+          103.9610059419054,
+          67.6
+        ]
+      ],
+      "volume_mm3": 129.48388281035673,
+      "step": "step/HW-ROOT-WASHER-4.step",
+      "stl": "stl/HW-ROOT-WASHER-4.stl"
+    },
+    {
+      "id": "HW-ROOT-M6-4",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -60.43277195067721,
+          92.9610059419054,
+          47.599999999999994
+        ],
+        [
+          -50.43277195067721,
+          102.9610059419054,
+          73.6
+        ]
+      ],
+      "volume_mm3": 952.2880988156489,
+      "step": "step/HW-ROOT-M6-4.step",
+      "stl": "stl/HW-ROOT-M6-4.stl"
+    },
+    {
+      "id": "HW-ROOT-WASHER-5",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -61.432771950677214,
+          46.038994058094616,
+          66.0
+        ],
+        [
+          -49.432771950677214,
+          58.038994058094616,
+          67.6
+        ]
+      ],
+      "volume_mm3": 129.48388281035673,
+      "step": "step/HW-ROOT-WASHER-5.step",
+      "stl": "stl/HW-ROOT-WASHER-5.stl"
+    },
+    {
+      "id": "HW-ROOT-M6-5",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -60.432771950677214,
+          47.038994058094616,
+          47.599999999999994
+        ],
+        [
+          -50.432771950677214,
+          57.038994058094616,
+          73.6
+        ]
+      ],
+      "volume_mm3": 952.2880988156488,
+      "step": "step/HW-ROOT-M6-5.step",
+      "stl": "stl/HW-ROOT-M6-5.stl"
+    },
+    {
+      "id": "HW-ROOT-WASHER-6",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -28.96100594190537,
+          13.567228049322786,
+          66.0
+        ],
+        [
+          -16.96100594190537,
+          25.567228049322786,
+          67.6
+        ]
+      ],
+      "volume_mm3": 129.4838828103568,
+      "step": "step/HW-ROOT-WASHER-6.step",
+      "stl": "stl/HW-ROOT-WASHER-6.stl"
+    },
+    {
+      "id": "HW-ROOT-M6-6",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -27.96100594190537,
+          14.567228049322786,
+          47.599999999999994
+        ],
+        [
+          -17.96100594190537,
+          24.567228049322786,
+          73.6
+        ]
+      ],
+      "volume_mm3": 952.2880988156488,
+      "step": "step/HW-ROOT-M6-6.step",
+      "stl": "stl/HW-ROOT-M6-6.stl"
+    },
+    {
+      "id": "HW-ROOT-WASHER-7",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          16.961005941905402,
+          13.5672280493228,
+          66.0
+        ],
+        [
+          28.961005941905402,
+          25.5672280493228,
+          67.6
+        ]
+      ],
+      "volume_mm3": 129.4838828103568,
+      "step": "step/HW-ROOT-WASHER-7.step",
+      "stl": "stl/HW-ROOT-WASHER-7.stl"
+    },
+    {
+      "id": "HW-ROOT-M6-7",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          17.961005941905402,
+          14.5672280493228,
+          47.599999999999994
+        ],
+        [
+          27.961005941905402,
+          24.5672280493228,
+          73.6
+        ]
+      ],
+      "volume_mm3": 952.2880988156489,
+      "step": "step/HW-ROOT-M6-7.step",
+      "stl": "stl/HW-ROOT-M6-7.stl"
+    },
+    {
+      "id": "HW-ROOT-WASHER-8",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          49.432771950677214,
+          46.03899405809463,
+          66.0
+        ],
+        [
+          61.432771950677214,
+          58.03899405809463,
+          67.6
+        ]
+      ],
+      "volume_mm3": 129.4838828103567,
+      "step": "step/HW-ROOT-WASHER-8.step",
+      "stl": "stl/HW-ROOT-WASHER-8.stl"
+    },
+    {
+      "id": "HW-ROOT-M6-8",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          50.432771950677214,
+          47.03899405809463,
+          47.599999999999994
+        ],
+        [
+          60.432771950677214,
+          57.03899405809463,
+          73.6
+        ]
+      ],
+      "volume_mm3": 952.2880988156488,
+      "step": "step/HW-ROOT-M6-8.step",
+      "stl": "stl/HW-ROOT-M6-8.stl"
+    },
+    {
+      "id": "HW-HANGER-WASHER--1-1",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -79.6,
+          -61.0,
+          -86.0
+        ],
+        [
+          -78.0,
+          -49.0,
+          -74.0
+        ]
+      ],
+      "volume_mm3": 129.48388281035668,
+      "step": "step/HW-HANGER-WASHER--1-1.step",
+      "stl": "stl/HW-HANGER-WASHER--1-1.stl"
+    },
+    {
+      "id": "HW-HANGER-M6--1-1",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -85.6,
+          -60.0,
+          -85.0
+        ],
+        [
+          -59.599999999999994,
+          -50.0,
+          -75.0
+        ]
+      ],
+      "volume_mm3": 952.288098815649,
+      "step": "step/HW-HANGER-M6--1-1.step",
+      "stl": "stl/HW-HANGER-M6--1-1.stl"
+    },
+    {
+      "id": "HW-HANGER-WASHER--1-2",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -79.6,
+          -61.0,
+          -73.0
+        ],
+        [
+          -78.0,
+          -49.0,
+          -61.0
+        ]
+      ],
+      "volume_mm3": 129.48388281035668,
+      "step": "step/HW-HANGER-WASHER--1-2.step",
+      "stl": "stl/HW-HANGER-WASHER--1-2.stl"
+    },
+    {
+      "id": "HW-HANGER-M6--1-2",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -85.6,
+          -60.0,
+          -72.0
+        ],
+        [
+          -59.599999999999994,
+          -50.0,
+          -62.0
+        ]
+      ],
+      "volume_mm3": 952.288098815649,
+      "step": "step/HW-HANGER-M6--1-2.step",
+      "stl": "stl/HW-HANGER-M6--1-2.stl"
+    },
+    {
+      "id": "HW-HANGER-WASHER-1-1",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          78.0,
+          -61.0,
+          -86.0
+        ],
+        [
+          79.6,
+          -49.0,
+          -74.0
+        ]
+      ],
+      "volume_mm3": 129.48388281035668,
+      "step": "step/HW-HANGER-WASHER-1-1.step",
+      "stl": "stl/HW-HANGER-WASHER-1-1.stl"
+    },
+    {
+      "id": "HW-HANGER-M6-1-1",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          59.599999999999994,
+          -60.0,
+          -85.0
+        ],
+        [
+          85.6,
+          -50.0,
+          -75.0
+        ]
+      ],
+      "volume_mm3": 952.2880988156488,
+      "step": "step/HW-HANGER-M6-1-1.step",
+      "stl": "stl/HW-HANGER-M6-1-1.stl"
+    },
+    {
+      "id": "HW-HANGER-WASHER-1-2",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          78.0,
+          -61.0,
+          -73.0
+        ],
+        [
+          79.6,
+          -49.0,
+          -61.0
+        ]
+      ],
+      "volume_mm3": 129.48388281035673,
+      "step": "step/HW-HANGER-WASHER-1-2.step",
+      "stl": "stl/HW-HANGER-WASHER-1-2.stl"
+    },
+    {
+      "id": "HW-HANGER-M6-1-2",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          59.599999999999994,
+          -60.0,
+          -72.0
+        ],
+        [
+          85.6,
+          -50.0,
+          -62.0
+        ]
+      ],
+      "volume_mm3": 952.2880988156489,
+      "step": "step/HW-HANGER-M6-1-2.step",
+      "stl": "stl/HW-HANGER-M6-1-2.stl"
+    },
+    {
+      "id": "HW-TRAY-M4-1",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M4x10; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -77.8,
+          116.2,
+          -165.0
+        ],
+        [
+          -70.2,
+          123.8,
+          -152.79999999999998
+        ]
+      ],
+      "volume_mm3": 217.72571951650855,
+      "step": "step/HW-TRAY-M4-1.step",
+      "stl": "stl/HW-TRAY-M4-1.stl"
+    },
+    {
+      "id": "HW-TRAY-M4-2",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M4x10; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -77.8,
+          266.2,
+          -165.0
+        ],
+        [
+          -70.2,
+          273.8,
+          -152.79999999999998
+        ]
+      ],
+      "volume_mm3": 217.7257195165089,
+      "step": "step/HW-TRAY-M4-2.step",
+      "stl": "stl/HW-TRAY-M4-2.stl"
+    },
+    {
+      "id": "HW-TRAY-M4-3",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M4x10; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          70.2,
+          116.2,
+          -165.0
+        ],
+        [
+          77.8,
+          123.8,
+          -152.79999999999998
+        ]
+      ],
+      "volume_mm3": 217.72571951650855,
+      "step": "step/HW-TRAY-M4-3.step",
+      "stl": "stl/HW-TRAY-M4-3.stl"
+    },
+    {
+      "id": "HW-TRAY-M4-4",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M4x10; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          70.2,
+          266.2,
+          -165.0
+        ],
+        [
+          77.8,
+          273.8,
+          -152.79999999999998
+        ]
+      ],
+      "volume_mm3": 217.7257195165089,
+      "step": "step/HW-TRAY-M4-4.step",
+      "stl": "stl/HW-TRAY-M4-4.stl"
+    },
+    {
+      "id": "HW-STOP-M4-BACK--88",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M4x20; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -91.8,
+          108.7,
+          -160.0
+        ],
+        [
+          -84.2,
+          116.3,
+          -137.79999999999998
+        ]
+      ],
+      "volume_mm3": 343.3894256601002,
+      "step": "step/HW-STOP-M4-BACK--88.step",
+      "stl": "stl/HW-STOP-M4-BACK--88.stl"
+    },
+    {
+      "id": "HW-STOP-M4-BACK-88",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M4x20; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          84.2,
+          108.7,
+          -160.0
+        ],
+        [
+          91.8,
+          116.3,
+          -137.79999999999998
+        ]
+      ],
+      "volume_mm3": 343.3894256601002,
+      "step": "step/HW-STOP-M4-BACK-88.step",
+      "stl": "stl/HW-STOP-M4-BACK-88.stl"
+    },
+    {
+      "id": "HW-STOP-M4-FRONT--88",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M4x20; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -91.8,
+          278.7,
+          -160.0
+        ],
+        [
+          -84.2,
+          286.3,
+          -137.79999999999998
+        ]
+      ],
+      "volume_mm3": 343.38942566010087,
+      "step": "step/HW-STOP-M4-FRONT--88.step",
+      "stl": "stl/HW-STOP-M4-FRONT--88.stl"
+    },
+    {
+      "id": "HW-STOP-M4-FRONT-88",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M4x20; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          84.2,
+          278.7,
+          -160.0
+        ],
+        [
+          91.8,
+          286.3,
+          -137.79999999999998
+        ]
+      ],
+      "volume_mm3": 343.38942566010087,
+      "step": "step/HW-STOP-M4-FRONT-88.step",
+      "stl": "stl/HW-STOP-M4-FRONT-88.stl"
+    },
+    {
+      "id": "HW-COAX-TOP-WASHER--1",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -13.5,
+          -11.5,
+          27.6
+        ],
+        [
+          -6.5,
+          -4.5,
+          28.1
+        ]
+      ],
+      "volume_mm3": 15.221016406642551,
+      "step": "step/HW-COAX-TOP-WASHER--1.step",
+      "stl": "stl/HW-COAX-TOP-WASHER--1.stl"
+    },
+    {
+      "id": "HW-COAX-BOTTOM-WASHER--1",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -13.5,
+          -11.5,
+          23.5
+        ],
+        [
+          -6.5,
+          -4.5,
+          24.0
+        ]
+      ],
+      "volume_mm3": 15.221016406642551,
+      "step": "step/HW-COAX-BOTTOM-WASHER--1.step",
+      "stl": "stl/HW-COAX-BOTTOM-WASHER--1.stl"
+    },
+    {
+      "id": "HW-COAX-M3--1",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M3x8; head envelope D5.7 x1.65; hex AF2",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -12.85,
+          -10.85,
+          20.1
+        ],
+        [
+          -7.15,
+          -5.15,
+          29.750000000000004
+        ]
+      ],
+      "volume_mm3": 94.93743622487311,
+      "step": "step/HW-COAX-M3--1.step",
+      "stl": "stl/HW-COAX-M3--1.stl"
+    },
+    {
+      "id": "HW-COAX-NUT--1",
+      "material": "steel",
+      "process": "Purchase DIN934 M3 nut; nominal unthreaded bore envelope",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          -12.75,
+          -11.175426480542942,
+          21.1
+        ],
+        [
+          -7.25,
+          -4.824573519457058,
+          23.5
+        ]
+      ],
+      "volume_mm3": 45.90884398536535,
+      "step": "step/HW-COAX-NUT--1.step",
+      "stl": "stl/HW-COAX-NUT--1.stl"
+    },
+    {
+      "id": "HW-COAX-TOP-WASHER-1",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          6.5,
+          -11.5,
+          27.6
+        ],
+        [
+          13.5,
+          -4.5,
+          28.1
+        ]
+      ],
+      "volume_mm3": 15.221016406642555,
+      "step": "step/HW-COAX-TOP-WASHER-1.step",
+      "stl": "stl/HW-COAX-TOP-WASHER-1.stl"
+    },
+    {
+      "id": "HW-COAX-BOTTOM-WASHER-1",
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          6.5,
+          -11.5,
+          23.5
+        ],
+        [
+          13.5,
+          -4.5,
+          24.0
+        ]
+      ],
+      "volume_mm3": 15.221016406642555,
+      "step": "step/HW-COAX-BOTTOM-WASHER-1.step",
+      "stl": "stl/HW-COAX-BOTTOM-WASHER-1.stl"
+    },
+    {
+      "id": "HW-COAX-M3-1",
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "notes": [
+        "M3x8; head envelope D5.7 x1.65; hex AF2",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          7.15,
+          -10.85,
+          20.1
+        ],
+        [
+          12.85,
+          -5.15,
+          29.750000000000004
+        ]
+      ],
+      "volume_mm3": 94.93743622487311,
+      "step": "step/HW-COAX-M3-1.step",
+      "stl": "stl/HW-COAX-M3-1.stl"
+    },
+    {
+      "id": "HW-COAX-NUT-1",
+      "material": "steel",
+      "process": "Purchase DIN934 M3 nut; nominal unthreaded bore envelope",
+      "notes": [],
+      "features": [],
+      "category": "hardware",
+      "bbox_mm": [
+        [
+          7.25,
+          -11.175426480542942,
+          21.1
+        ],
+        [
+          12.75,
+          -4.824573519457058,
+          23.5
+        ]
+      ],
+      "volume_mm3": 45.90884398536535,
+      "step": "step/HW-COAX-NUT-1.step",
+      "stl": "stl/HW-COAX-NUT-1.stl"
+    },
+    {
+      "id": "REF-DESK",
+      "material": "none",
+      "process": "Environment only",
+      "notes": [],
+      "features": [],
+      "category": "environment",
+      "bbox_mm": [
+        [
+          -400.0,
+          -45.0,
+          -30.0
+        ],
+        [
+          400.0,
+          655.0,
+          0.0
+        ]
+      ],
+      "volume_mm3": 16800000.0,
+      "step": "step/REF-DESK.step",
+      "stl": "stl/REF-DESK.stl"
+    },
+    {
+      "id": "REF-BOX",
+      "material": "none",
+      "process": "Confirmed clearance budget only",
+      "notes": [],
+      "features": [],
+      "category": "environment",
+      "bbox_mm": [
+        [
+          -90.0,
+          120.0,
+          -152.0
+        ],
+        [
+          90.0,
+          270.0,
+          -102.0
+        ]
+      ],
+      "volume_mm3": 1350000.0,
+      "step": "step/REF-BOX.step",
+      "stl": "stl/REF-BOX.stl"
+    }
+  ],
+  "release": "Candidate; integrated clearance, drawings, load and physical fit checks pending"
+}

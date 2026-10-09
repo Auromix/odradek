@@ -1,6 +1,10 @@
-ODRADEK B06-COMPACT-02 refined exterior fit candidate. Units: mm. 5 printable parts only.
-Main cover approx239x224x71mm. Bed256x256x256mm, checked with5mm XY edge margin.
-PETG/ASA candidate. Slicer orientation/supports, physical dimensions and M3 nut pockets need trials.
-Do not mount a powered/load-bearing arm on the cosmetic carrier.
-M3x10 underside cover/lid fixings, M2x6 optical retaining bar. Optical soft shim and lamp PCB pending.
-Reference A11 root / motor / I/O component STLs are not included. No manufacturing or load release.
+B06-COMPACT-04 · 无动力试装包 · STL单位mm
+五件打印件；采购件/接口板/机械臂承载结构不包含在打印包。
+256×256×256mm床，每侧5mm检查余量；支撑、brim和打印补偿需切片检查。
+后盖两颗背向M3×10，主罩四颗底面M3×10；PCB四颗M3×10。
+DIN934 M3螺母10颗；灯窗两颗M2×6、柔性垫片另配。
+先装内藏螺母，再装灯窗、板子、根座和主罩，最后连接后盖。
+后盖检修先断电拔线、退出两颗背向螺钉，再向后退出40mm后抬起。
+此路径只做离散采样；维护时须留后部工作空间，贴墙安装不能据此保证原位拆盖。
+IO板已完成原生布线及Gerber导出；LED板、完整线束和载荷/电气验证仍未完成。禁止以本包作为整套底座制造、通电或带载放行。
+CC-BY-NC-4.0 · Odradek - Auromix contributors

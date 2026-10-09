@@ -1,6 +1,6 @@
 {
   "schema": "odradek.print-checks.v1",
-  "checked_at_utc": "2026-10-09T04:57:47.932812+00:00",
+  "checked_at_utc": "2026-10-09T08:16:20.643673+00:00",
   "scope": "mesh integrity and per-instance print-bed envelope only; not manufacturing or load release",
   "script_sha256": "93c87f2a77470376bbb73a7543d782ae6efb689d14cec6c067688be353c1321b",
   "python": "3.12.14",
@@ -17,36 +17,36 @@
   "files": [
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b06/build/exterior/print-parts/B06-301-MAIN-SHIELD.stl",
-      "sha256": "d8c52864b713b3c896ce4b1eae07fc9b1ae0e2129e0fcdc576ac6ada3ccf0dc4",
+      "sha256": "9c8a733c3ad0d510d4c68826b8b3e70305af8549ba245d973d7d14c2e69a7ddf",
       "instances": [
         {
           "name": "B06-301-MAIN-SHIELD",
-          "vertices_before_weld": 161256,
-          "vertices_after_weld": 26866,
-          "faces": 53752,
+          "vertices_before_weld": 160452,
+          "vertices_after_weld": 26732,
+          "faces": 53484,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 171080.08965322794,
-          "surface_area_mm2": 117769.3345147532,
+          "signed_volume_mm3": 171426.38974571414,
+          "surface_area_mm2": 117791.13345837314,
           "bbox_mm": [
             [
-              -0.0015795230865478516,
-              0.0036284327507019043,
+              0.0,
+              0.0,
               0.0
             ],
             [
-              238.77842712402344,
+              238.77684020996094,
               223.66363525390625,
               71.0
             ]
           ],
           "size_mm": [
-            238.78000664710999,
-            223.66000682115555,
+            238.77684020996094,
+            223.66363525390625,
             71.0
           ],
           "usable_bed_mm": [
@@ -98,8 +98,8 @@
       "input_units": "assumed mm; STL has no unit",
       "whole_file_arrangement": {
         "size_mm": [
-          238.78000664710999,
-          223.66000682115555,
+          238.77684020996094,
+          223.66363525390625,
           71.0
         ],
         "usable_bed_mm": [
@@ -147,37 +147,37 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b06/build/exterior/print-parts/B06-304-REAR-LID.stl",
-      "sha256": "39fa01e3ce3d145698548d0b8da925daf46be1e6353f4054cab785f6756d98bc",
+      "sha256": "b880f656f326ec672e5fc43802d6387c7d6ad2fb6e05487e0c5ba89a8bdb541e",
       "instances": [
         {
           "name": "B06-304-REAR-LID",
-          "vertices_before_weld": 29928,
-          "vertices_after_weld": 4978,
-          "faces": 9976,
+          "vertices_before_weld": 14328,
+          "vertices_after_weld": 2377,
+          "faces": 4776,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 17834.24528494894,
-          "surface_area_mm2": 14844.121138508273,
+          "signed_volume_mm3": 13620.464845999893,
+          "surface_area_mm2": 11994.407142090964,
           "bbox_mm": [
             [
-              7.450580596923828e-06,
-              4.470348358154297e-05,
-              0.0
+              0.0,
+              5.587935447692871e-05,
+              -9.313225746154785e-06
             ],
             [
               133.20001220703125,
-              16.48804473876953,
-              46.279998779296875
+              16.488056182861328,
+              31.90399169921875
             ]
           ],
           "size_mm": [
-            133.20000475645065,
-            16.48800003528595,
-            46.279998779296875
+            133.20001220703125,
+            16.48800030350685,
+            31.904001012444496
           ],
           "usable_bed_mm": [
             246.0,
@@ -228,9 +228,9 @@
       "input_units": "assumed mm; STL has no unit",
       "whole_file_arrangement": {
         "size_mm": [
-          133.20000475645065,
-          16.48800003528595,
-          46.279998779296875
+          133.20001220703125,
+          16.48800030350685,
+          31.904001012444496
         ],
         "usable_bed_mm": [
           246.0,
@@ -277,7 +277,7 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b06/build/exterior/print-parts/B06-306-LIGHT-LENS.stl",
-      "sha256": "fac33537aca348c208b33dbd8138c2c10c2d33ed0173e77fb45390697bda58da",
+      "sha256": "2e9472ad67373c4031bfd6073d1f0e3469d1b6bbe47d5eda5844aec86e3b777c",
       "instances": [
         {
           "name": "B06-306-LIGHT-LENS",
@@ -290,24 +290,24 @@
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 393.79643298680963,
-          "surface_area_mm2": 681.562294457661,
+          "signed_volume_mm3": 393.7983080682229,
+          "surface_area_mm2": 681.5643666344049,
           "bbox_mm": [
             [
               0.0,
               0.0,
-              -0.000391155481338501
+              0.0
             ],
             [
               37.400001525878906,
               5.39998722076416,
-              6.280608654022217
+              6.280958652496338
             ]
           ],
           "size_mm": [
             37.400001525878906,
             5.39998722076416,
-            6.280999809503555
+            6.280958652496338
           ],
           "usable_bed_mm": [
             246.0,
@@ -360,7 +360,7 @@
         "size_mm": [
           37.400001525878906,
           5.39998722076416,
-          6.280999809503555
+          6.280958652496338
         ],
         "usable_bed_mm": [
           246.0,
@@ -407,37 +407,37 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b06/build/exterior/print-parts/B06-307-LOWER-CARRIER.stl",
-      "sha256": "cdc8a4b91905b06edc6dd25117938300fd1581c044aaf4d7e8d64514164bacf9",
+      "sha256": "cf9b0a3cdb3999ffb06a3c690aaf79985b9c9a1db1ae5de2d0992bb3a2c54266",
       "instances": [
         {
           "name": "B06-307-LOWER-CARRIER",
-          "vertices_before_weld": 39198,
-          "vertices_after_weld": 6509,
-          "faces": 13066,
+          "vertices_before_weld": 34572,
+          "vertices_after_weld": 5720,
+          "faces": 11524,
           "coincident_vertex_weld_precision_mm": 1e-08,
           "watertight": true,
           "winding_consistent": true,
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 49627.931363388234,
-          "surface_area_mm2": 31298.899180218596,
+          "signed_volume_mm3": 20694.22651094505,
+          "surface_area_mm2": 19735.681123654707,
           "bbox_mm": [
             [
-              0.0004917383193969727,
-              0.0003427267074584961,
-              8.847564458847046e-06
+              0.0,
+              0.0,
+              0.0
             ],
             [
-              178.9084930419922,
-              190.99835205078125,
-              31.000009536743164
+              178.90867614746094,
+              190.0,
+              34.0
             ]
           ],
           "size_mm": [
-            178.9080013036728,
-            190.9980093240738,
-            31.000000689178705
+            178.90867614746094,
+            190.0,
+            34.0
           ],
           "usable_bed_mm": [
             246.0,
@@ -488,9 +488,9 @@
       "input_units": "assumed mm; STL has no unit",
       "whole_file_arrangement": {
         "size_mm": [
-          178.9080013036728,
-          190.9980093240738,
-          31.000000689178705
+          178.90867614746094,
+          190.0,
+          34.0
         ],
         "usable_bed_mm": [
           246.0,
@@ -537,7 +537,7 @@
     },
     {
       "path": "/Users/hermanye/Documents/Codex/2026-09-27/wo-x/outputs/odradek/engineering/base_b06/build/exterior/print-parts/B06-308-LENS-RETAINER.stl",
-      "sha256": "fd624b53c8d80a9f5dd0a60cc6ccdce45d99624e05aa410b49074ee123b48837",
+      "sha256": "3fbcd6d98ec97838d508b93102af3018328597086736d23be6aee01c31c43a52",
       "instances": [
         {
           "name": "B06-308-LENS-RETAINER",
@@ -550,8 +550,8 @@
           "face_connected_components": 1,
           "degenerate_faces": 0,
           "duplicate_faces": 0,
-          "signed_volume_mm3": 354.8075825756801,
-          "surface_area_mm2": 638.5593108378521,
+          "signed_volume_mm3": 354.8134827596298,
+          "surface_area_mm2": 638.561020228392,
           "bbox_mm": [
             [
               0.0,
@@ -561,13 +561,13 @@
             [
               54.0,
               3.8499979972839355,
-              10.36199951171875
+              10.362371444702148
             ]
           ],
           "size_mm": [
             54.0,
             3.8499979972839355,
-            10.36199951171875
+            10.362371444702148
           ],
           "usable_bed_mm": [
             246.0,
@@ -620,7 +620,7 @@
         "size_mm": [
           54.0,
           3.8499979972839355,
-          10.36199951171875
+          10.362371444702148
         ],
         "usable_bed_mm": [
           246.0,

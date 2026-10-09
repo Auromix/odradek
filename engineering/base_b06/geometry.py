@@ -24,13 +24,13 @@ SEGMENTS = 240
 INNER_RADIUS = 84.
 WALL = 3.
 PARAMETERS = {
- "schema":"odradek.b06.compact.v3", "length_unit":"mm", "center_xy":CENTER,
+ "schema":"odradek.b06.compact.v4", "length_unit":"mm", "center_xy":CENTER,
  "wall_nominal_mm":WALL,
  "outer_half_control_points":[[0,-38],[76,-38],[97,-26],[114,-3],[119,15],[118,25],[108,38],[98,48],[96,63],[95,79],[98,89],[103,103],[105,117],[101,128],[86,145],[57,171],[25,182],[0,185]],
  "inner_body_radius_mm":84, "collar_radius_mm":[68,84], "collar_top_z_mm":[74,60],
  "design_intent":"Compact four-petal manta armor; low swept shoulders, crisp collar lip and continuous outward-sloping chine; integral nose/wings/neck; concealed fixings",
  "shoulder_profile":{"root_z_mm":60,"radial_drop":0.8,"chine_fraction":0.51,"chine_blend":[0.49,0.53],"petal_ridge_height_mm":2.8},
- "prototype_scope":"Five printed cosmetic/PCB locating parts; A11 root snapshot and connector envelopes; no load chassis or PCB release",
+ "prototype_scope":"Five printed shell/scaffold parts plus original metal chassis/clamp/shelf CAD; routed IO PCB; integration candidate, not complete manufacturing release",
  "printer_volume_mm":[256,256,256], "outer_limit_xy_mm":[240,230],
  "fastening":"Four underside M3x10 captive nuts; rear lid two rear-facing M3x10 into carrier nuts; PCB four captive M3 nuts; lamp two M2x6",
 }
@@ -101,39 +101,11 @@ def mesh_object(name, vertices_mm, faces, collection="01_Exterior_fit_parts"):
 
 
 def recalc(obj):
-    bm = bmesh.new()
-    bm.from_mesh(obj.data)
-    # Boolean caps may retain a flattened tetrahedron attached along a
-    # non-manifold edge. Remove only four-face/four-vertex fragments whose
-    # shortest altitude is below the declared 10 micrometre construction grid.
-    unseen=set(bm.faces)
-    fragments=[]
-    while unseen:
-        face=unseen.pop(); component={face}; pending=[face]
-        while pending:
-            current=pending.pop()
-            for edge in current.edges:
-                if len(edge.link_faces)!=2: continue
-                for adjacent in edge.link_faces:
-                    if adjacent in unseen:
-                        unseen.remove(adjacent); component.add(adjacent); pending.append(adjacent)
-        vertices={v for f in component for v in f.verts}
-        if len(component)==1 and len(vertices)==3:
-            # A zero-volume triangle sheet may attach to a solid along an
-            # edge with three incident faces; it has no manifold neighbour.
-            fragments.extend(component)
-        if len(component)==4 and len(vertices)==4:
-            origin=next(iter(vertices)).co
-            volume=abs(sum((f.verts[0].co-origin).dot((f.verts[1].co-origin).cross(f.verts[2].co-origin))/6 for f in component))
-            largest_area=max(f.calc_area() for f in component)
-            if largest_area and 3*volume/largest_area < .01*M:
-                fragments.extend(component)
-    obj["Submicrometre Boolean cap faces removed"]=len(fragments)
-    if fragments: bmesh.ops.delete(bm,geom=fragments,context="FACES")
-    bmesh.ops.recalc_face_normals(bm, faces=list(bm.faces))
-    bm.to_mesh(obj.data)
-    bm.free()
-    obj.data.update()
+    # Preserve all native Boolean topology. Removing small disconnected faces
+    # here can open otherwise closed caps far from a subsequent operation.
+    bm=bmesh.new();bm.from_mesh(obj.data)
+    bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+    bm.to_mesh(obj.data);bm.free();obj.data.update()
 
 
 def smoothstep(lo, hi, value):
@@ -201,7 +173,7 @@ def profile_height(fraction,x,y):
     z=crown_at(fraction)*(1-blend)+apron*blend
     # Back connector chamber stays full height despite the lower appearance.
     rear=(1-smoothstep(2,35,y))*(1-smoothstep(64,99,abs(x)))
-    lifted=max(z,44)+max(0.,3-abs(z-44))**2/12
+    lifted=max(z,49)+max(0.,3-abs(z-49))**2/12
     return z*(1-rear)+lifted*rear
 
 
@@ -354,10 +326,10 @@ def bevel_and_shade(obj, width=.35):
         polygon.use_smooth = True
 
 
-def finalize_mesh(obj):
+def finalize_caps(obj):
     # Native construction cleanup at 10 micrometre, far below prototype fit
     # allowances. This runs before export; the independent checker never repairs.
-    cleanup_mm = .01 if obj.name == "B06-301-MAIN-SHIELD" else .001
+    cleanup_mm = .001 if obj.name == "B06-301-MAIN-SHIELD" else .001
     bm = bmesh.new()
     bm.from_mesh(obj.data)
     # Snap construction vertices to the same 10 micrometre grid before welding.
@@ -446,6 +418,44 @@ def finalize_mesh(obj):
     for polygon in obj.data.polygons:
         polygon.use_smooth = True
     obj["Construction cleanup tolerance mm"] = cleanup_mm
+    # Final construction stage uses Manifold in millimetres, before writing
+    # any deliverable STL. It removes redundant collinear cap triangulation
+    # within 0.001mm; no failed export is read or repaired.
+    import os,subprocess
+    runtime=os.environ.get('ODRADEK_CAD_PYTHON',str(HERE.parents[3]/'work/r4-runtime/venv/bin/python'))
+    payload={'vertices_mm':[[float(c/M) for c in v.co] for v in obj.data.vertices],
+             'triangles':[list(t.vertices) for t in obj.data.loop_triangles]}
+    if not payload['triangles']:
+        obj.data.calc_loop_triangles();payload['triangles']=[list(t.vertices) for t in obj.data.loop_triangles]
+    result=subprocess.run([runtime,str(HERE/'cap_tessellate.py')],input=json.dumps(payload),text=True,capture_output=True,check=True)
+    data=json.loads(result.stdout)
+    obj.data.clear_geometry()
+    obj.data.from_pydata([[c*M for c in v] for v in data['vertices_mm']],[],data['triangles'])
+    obj.data.update();recalc(obj)
+    obj['Cap simplification tolerance mm']=.001
+    obj['Native cap simplification volume delta mm3']=data['volume_delta_mm3']
+    obj.data.set_sharp_from_angle(angle=math.radians(27))
+    for polygon in obj.data.polygons:polygon.use_smooth=True
+
+
+def finalize_mesh(obj):
+    if obj.get("ExactCAD"):
+        recalc(obj);return
+    if obj.name in ("B06-304-REAR-LID","B06-307-LOWER-CARRIER"):
+        return finalize_caps(obj)
+    # Cleanup in the native source only; no grid snapping or face-sheet deletion.
+    # Planar caps are dissolved/retriangulated, preserving closed boundaries.
+    bm=bmesh.new();bm.from_mesh(obj.data)
+    bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-8*M)
+    for _ in range(3):
+        bmesh.ops.dissolve_limit(bm,angle_limit=1e-6,verts=list(bm.verts),edges=list(bm.edges),delimit={'NORMAL'})
+        bmesh.ops.dissolve_degenerate(bm,dist=.001*M,edges=list(bm.edges))
+        bmesh.ops.triangulate(bm,faces=list(bm.faces))
+    bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+    bm.to_mesh(obj.data);bm.free();obj.data.update()
+    obj.data.set_sharp_from_angle(angle=math.radians(27))
+    for polygon in obj.data.polygons:polygon.use_smooth=True
+    obj['Construction cleanup tolerance mm']=.001
 
 
 def material(name, color, metallic=.65, roughness=.29, emission=0):

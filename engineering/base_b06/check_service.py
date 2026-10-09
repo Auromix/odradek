@@ -28,11 +28,11 @@ for shift in [[0,-y,0] for y in (0,1,2,4,8,12,20,30,40)]+[[0,-40,z] for z in (5,
     samples.append({'translation_mm':shift,'collisions':collisions})
 eda_path=HERE.parent/'electronics/base-io-b05/reports/b06-native-fit-readback.json'
 eda=json.loads(eda_path.read_text())['value']
-targets={'H1':[52,34,20],'H2':[-52,34,20],'H3':[-52,-10,20],'H4':[52,-10,20]}
+targets={'H1':[52,24,24],'H2':[-52,24,24],'H3':[-52,-20,24],'H4':[52,-20,24]}
 mounts=[]
 for c in eda['components']:
     if c['ref'] not in targets:continue
-    position=[58-c['u_mm'],40-c['v_mm'],20]
+    position=[58-c['u_mm'],30-c['v_mm'],24]
     delta=float(np.linalg.norm(np.array(position)-targets[c['ref']]))
     mounts.append({'ref':c['ref'],'eda_mm':[c['u_mm'],c['v_mm']],'assembly_mm':position,'target_mm':targets[c['ref']],'error_mm':delta})
 result={'revision':D['revision'],'manifest_sha256':hashlib.sha256((OUT/'manifest.json').read_bytes()).hexdigest(),

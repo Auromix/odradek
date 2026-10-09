@@ -1,24 +1,30 @@
 {
-  "revision": "B06-COMPACT-03",
-  "manifest_sha256": "947b72ebca42d649c1acdfd123ce9d1f081c39a494cf90608933e2711c5d4348",
+  "revision": "B06-COMPACT-04",
+  "manifest_sha256": "56225d1ef0be0fc7d3c82bae0bc5a7c7a29737996a910ab26940d98bd5ffe7d1",
   "frozen_inputs": {
     "inputs/io-snapshot.json": "d2f0a05ce534dcdead092e220196af9ff89be414a20298248196f67ee3aaca3f",
     "inputs/root-snapshot.json": "42a0366a201978a9eccd9e087ddc144f78a2526de5c7aa9bb8175e6934e4509d"
   },
   "generator_sha256": {
-    "blender_compact.py": "fb525d2039bee811688b54f882080e8311dc22a25da78ce7eb6b46814baf7a00",
-    "check_fit.py": "440d8ca83eab81c62833c6f901a400aff88aa9640cfc63b1834bd8284f59a95f",
-    "check_service.py": "632ab60dfdd19cdf2baa874800d132f13df451d71702119c7715553ff9e12a73",
-    "check_solids.py": "2729898fea31e6ff3ed481654138af7eeaa6d9b388709d9502243fa2686081b3",
-    "geometry.py": "e121718681a43c847117e0055e196c8fc65b56bb5d8e4371260f2560e93fe679",
-    "package.py": "a0e82859cfd7cb5f1e19406b357fde2f6b6c3ae6609b2eb5b3f7601dcaacddba",
+    "blender_compact.py": "110ce0af4a49a3549bc51a03fecbc0f98bae4a779ccdf3a7dc7f051d3c8d2492",
+    "bom.py": "faa7aea0f77fa72cd6975ac74a8ac378d6957f533d7692c92ef17ba87f33c125",
+    "cap_tessellate.py": "a9cf392c959add8cf0fc46710780fec6935d8a8da5d69d4824b3b91876fe0631",
+    "check_fit.py": "30b70ee6c9867a4cc2265dc0383e9c535b2d3619f33cef3360f379393a349238",
+    "check_integrated_hardware.py": "9309467b3f21b7894162d14000eeec39b7a6e95952b9ec0d5491c8d9d52406d0",
+    "check_load_frame.py": "6379e778460b9de1fdb68efae0203298f82118aa097fbcf5b372da7cfb6d7af7",
+    "check_service.py": "73239a8e91d76c7df7d0c2741a5eb11764027a439d3a026c52b727257781a624",
+    "check_solids.py": "c365e1ca26118b78735820a7ec6ba855601deab7b6c974d6308cdd9c74119f62",
+    "draw_load_frame.py": "56dcf4a56afd6cc499287f6ae923223dbc28f6f0d0d1451ceb5f4762a4e2a4d5",
+    "geometry.py": "ab1cba421f947ae8cb0218be086a84ecc608eed98b71e0d9aead90fb3cdb96dd",
+    "load_frame.py": "6578b653ebe184d2a67cac4c2068938cece5b948d4f3f85c0580e0189daf8297",
+    "package.py": "72be5a347c24de1b16a2cd862015350a68b0366746cea8b8ad05b4e35ef349b8",
     "refresh_lens.py": "51920ea5bb032268e46f6f77d230d1b4393e79e7ecbc96022558d0463b8bc141",
     "refresh_rear.py": "c9ac270a68100a26338cb1e0d86d4f668ce2f56aa2299dd0fdb7369555b9f493",
-    "render.py": "52826faef1604ac3647727a7f821e79c4d275aa4f08fd6f66c69f48f780ab501",
-    "viewer-template.html": "9351b4f82023650e7a5222ce97e123debad056361d6ee2768e849fe0028ec835",
+    "render.py": "b62eda4a14f42b3310102de3bb3eb397eec19a56fc794fc7f8dd761d78767e48",
+    "viewer-template.html": "5e5389760b415bea2ba9ca49d0f804aef4296ac6cae9f6f8a037aa5ed85ef9b7",
     "viewer.py": "712bb837cbeb5210adf9b9a25670ce061d038315d8b201313d0a35fede0f2692"
   },
-  "native_blend_sha256": "86812642f0597b7e024515db6ee6df84cb1a91052140f90cd3f5074446a6ce4c",
+  "native_blend_sha256": "cd88f054c21adac171d4aa2c897120e63a5a1daf1fd855eb1cfaf4fbffb38ec5",
   "print_parts": [
     "print-parts/B06-301-MAIN-SHIELD.stl",
     "print-parts/B06-306-LIGHT-LENS.stl",
@@ -27,26 +33,27 @@
     "print-parts/B06-307-LOWER-CARRIER.stl"
   ],
   "print_stl_sha256": {
-    "print-parts/B06-301-MAIN-SHIELD.stl": "d8c52864b713b3c896ce4b1eae07fc9b1ae0e2129e0fcdc576ac6ada3ccf0dc4",
-    "print-parts/B06-306-LIGHT-LENS.stl": "fac33537aca348c208b33dbd8138c2c10c2d33ed0173e77fb45390697bda58da",
-    "print-parts/B06-308-LENS-RETAINER.stl": "fd624b53c8d80a9f5dd0a60cc6ccdce45d99624e05aa410b49074ee123b48837",
-    "print-parts/B06-304-REAR-LID.stl": "39fa01e3ce3d145698548d0b8da925daf46be1e6353f4054cab785f6756d98bc",
-    "print-parts/B06-307-LOWER-CARRIER.stl": "cdc8a4b91905b06edc6dd25117938300fd1581c044aaf4d7e8d64514164bacf9"
+    "print-parts/B06-301-MAIN-SHIELD.stl": "9c8a733c3ad0d510d4c68826b8b3e70305af8549ba245d973d7d14c2e69a7ddf",
+    "print-parts/B06-306-LIGHT-LENS.stl": "2e9472ad67373c4031bfd6073d1f0e3469d1b6bbe47d5eda5844aec86e3b777c",
+    "print-parts/B06-308-LENS-RETAINER.stl": "3fbcd6d98ec97838d508b93102af3018328597086736d23be6aee01c31c43a52",
+    "print-parts/B06-304-REAR-LID.stl": "b880f656f326ec672e5fc43802d6387c7d6ad2fb6e05487e0c5ba89a8bdb541e",
+    "print-parts/B06-307-LOWER-CARRIER.stl": "cf9b0a3cdb3999ffb06a3c690aaf79985b9c9a1db1ae5de2d0992bb3a2c54266"
   },
   "report_sha256": {
-    "print-checks.json": "196bad4fde6bc868c15b2dab46fde16f4fe42d3eb3466f6d671a47e80f0db9f1",
-    "solid-fit-checks.json": "67e2a59bcb933ad8bc3bbeb711657561f0ab26bb8cd6b31aac09fdd3eade20fc",
-    "fit-checks.json": "c5db8536953bf963e8087c37bee44364869158623e7d0d468aa0824eddc4d2b5",
-    "service-checks.json": "20d0f9eca399132db34461a38ac24b75f603324f984235cfcd848e714d418bdc"
+    "print-checks.json": "c772744d06d25072c62c40520fcc64e2ae0df8661b446d62101a14862e82b110",
+    "solid-fit-checks.json": "ec9f298b5505e91e2d2d6d8d874a0842aa2897bf41f7110844914d658b2f9743",
+    "fit-checks.json": "fcbc168f715a1aa49f567ca4d836e5d8049dc5b4344009b8af0c1b847977665a",
+    "service-checks.json": "57962584803dd5408458622525b77482c849c5eada3bf7c200f42473f27abf04",
+    "hardware-integration-checks.json": "d7d38c2d11d3e77d723bcb1a4aba3a5ddd0324f2b91d19a91b374bec7d18739d"
   },
   "validation": {
     "print_mesh_pass": true,
     "static_closed_solid_pass": true,
-    "solid_pairs": 128,
+    "solid_pairs": 239,
     "root_tool_rays": 128,
     "root_tool_rays_blocked": 0,
     "lid_extraction_samples": 13,
     "pcb_datum_pass": true
   },
-  "status": "Unpowered geometric fit candidate; not a load, clamp, routed PCB or manufacturing release"
+  "status": "Unpowered integrated geometry candidate; routed IO PCB exported separately; complete base manufacturing release pending"
 }

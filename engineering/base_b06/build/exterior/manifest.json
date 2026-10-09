@@ -1,10 +1,10 @@
 {
-  "revision": "B06-COMPACT-03",
+  "revision": "B06-COMPACT-04",
   "length_unit": "mm",
   "module": "compact_integration_candidate",
-  "scope": "Five printed cosmetic/PCB locating parts; A11 root snapshot and connector envelopes; no load chassis or PCB release",
+  "scope": "Five printed shell/scaffold parts plus original metal chassis/clamp/shelf CAD; routed IO PCB; integration candidate, not complete manufacturing release",
   "parameters": {
-    "schema": "odradek.b06.compact.v3",
+    "schema": "odradek.b06.compact.v4",
     "length_unit": "mm",
     "center_xy": [
       0.0,
@@ -105,7 +105,7 @@
       ],
       "petal_ridge_height_mm": 2.8
     },
-    "prototype_scope": "Five printed cosmetic/PCB locating parts; A11 root snapshot and connector envelopes; no load chassis or PCB release",
+    "prototype_scope": "Five printed shell/scaffold parts plus original metal chassis/clamp/shelf CAD; routed IO PCB; integration candidate, not complete manufacturing release",
     "printer_volume_mm": [
       256,
       256,
@@ -275,26 +275,26 @@
       "bbox": {
         "min": [
           -66.6000097990036,
-          -38.88804465532303,
-          3.000000026077032
+          -38.888055831193924,
+          18.000008538365364
         ],
         "max": [
           66.6000097990036,
-          -22.400017827749252,
-          49.280039966106415
+          -22.40002155303955,
+          49.90358650684357
         ],
         "size": [
           133.2000195980072,
-          16.488026827573776,
-          46.28003994002938
+          16.488034278154373,
+          31.903577968478203
         ]
       },
       "stl": "stl/B06-304-REAR-LID.stl",
       "print_stl": "print-parts/B06-304-REAR-LID.stl",
       "print_translation_mm": [
         66.6000097990036,
-        38.88804465532303,
-        -3.000000026077032
+        38.888055831193924,
+        -18.000008538365364
       ],
       "viewer_group": "cover",
       "assembly_role": "rear_lid",
@@ -322,37 +322,36 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -89.45449441671371,
-          -31.99833631515503,
-          2.9999963007867336
+          -89.45433795452118,
+          -30.99999949336052,
+          3.000000026077032
         ],
         "max": [
-          89.45449441671371,
-          159.00011360645294,
-          34.000009298324585
+          89.45433795452118,
+          158.9999943971634,
+          37.00000047683716
         ],
         "size": [
-          178.90898883342743,
-          190.99844992160797,
-          31.00001299753785
+          178.90867590904236,
+          189.9999938905239,
+          34.000000450760126
         ]
       },
       "stl": "stl/B06-307-LOWER-CARRIER.stl",
       "print_stl": "print-parts/B06-307-LOWER-CARRIER.stl",
       "print_translation_mm": [
-        89.45449441671371,
-        31.99833631515503,
-        -2.9999963007867336
+        89.45433795452118,
+        30.99999949336052,
+        -3.000000026077032
       ],
       "viewer_group": "cover_support",
       "assembly_role": "cover_support",
       "wall_nominal_mm": null,
       "prototype_status": "外罩紧固试装候选；实物装配、整机集成及强度尚未验证",
       "notes": [
-        "Ø156 centre clearance for future chassis; DOES NOT carry arm load",
-        "PCB 116x56 retained; four board holes x±52,y-10/34 at Z20; M3 clearance and captive nut pockets; no plastic threads",
-        "Two integrated side harness tie ears; 2.2x5mm slots for narrow ties; cable strain reaction and real bend radius need bench validation",
-        "Main hidden posts start Z7.8; carrier top Z7; nominal Z gap0.8"
+        "Original exact BREP source load_frame.make_carrier; STEP also provided",
+        "Polymer scaffold DOES NOT carry arm load; steel deck top Z17",
+        "PCB116x56 at Z24; holes x±52,y-20/24; rear fastener axis Z32"
       ]
     },
     {
@@ -373,17 +372,17 @@
         "min": [
           -89.85001593828201,
           33.15000608563423,
-          5.349999293684959
+          3.849999513477087
         ],
         "max": [
           -84.15000885725021,
           38.850005716085434,
-          17.000000923871994
+          15.49999974668026
         ],
         "size": [
           5.700007081031799,
           5.699999630451202,
-          11.650001630187035
+          11.650000233203173
         ]
       },
       "stl": "stl/HW-M3-1.stl",
@@ -453,17 +452,17 @@
         "min": [
           84.15000885725021,
           33.15000608563423,
-          5.349999293684959
+          3.849999513477087
         ],
         "max": [
           89.85001593828201,
           38.850005716085434,
-          17.000000923871994
+          15.49999974668026
         ],
         "size": [
           5.700007081031799,
           5.699999630451202,
-          11.650001630187035
+          11.650000233203173
         ]
       },
       "stl": "stl/HW-M3-2.stl",
@@ -533,17 +532,17 @@
         "min": [
           -74.85001534223557,
           122.1499964594841,
-          5.349999293684959
+          3.849999513477087
         ],
         "max": [
           -69.15000826120377,
           127.8499960899353,
-          17.000000923871994
+          15.49999974668026
         ],
         "size": [
           5.700007081031799,
           5.699999630451202,
-          11.650001630187035
+          11.650000233203173
         ]
       },
       "stl": "stl/HW-M3-3.stl",
@@ -613,17 +612,17 @@
         "min": [
           69.15000826120377,
           122.1499964594841,
-          5.349999293684959
+          3.849999513477087
         ],
         "max": [
           74.85001534223557,
           127.8499960899353,
-          17.000000923871994
+          15.49999974668026
         ],
         "size": [
           5.700007081031799,
           5.699999630451202,
-          11.650001630187035
+          11.650000233203173
         ]
       },
       "stl": "stl/HW-M3-4.stl",
@@ -692,18 +691,18 @@
       "bbox": {
         "min": [
           -62.849998474121094,
-          -36.1500084400177,
-          26.15000493824482
+          -36.1500047147274,
+          29.15000542998314
         ],
         "max": [
           -57.15000256896019,
-          -24.500004947185516,
-          31.850002706050873
+          -24.500003084540367,
+          34.85000878572464
         ],
         "size": [
           5.699995905160904,
-          11.650003492832184,
-          5.699997767806053
+          11.650001630187035,
+          5.700003355741501
         ]
       },
       "stl": "stl/HW-REAR-M3-1.stl",
@@ -733,17 +732,17 @@
         "min": [
           -62.75000423192978,
           -28.600001707673073,
-          25.82457661628723
+          28.82457710802555
         ],
         "max": [
           -57.2500079870224,
           -26.200002059340477,
-          32.17543289065361
+          35.17542779445648
         ],
         "size": [
           5.499996244907379,
           2.399999648332596,
-          6.350856274366379
+          6.350850686430931
         ]
       },
       "stl": "stl/HW-REAR-NUT-1.stl",
@@ -772,18 +771,18 @@
       "bbox": {
         "min": [
           57.15000256896019,
-          -36.1500084400177,
-          26.15000493824482
+          -36.1500047147274,
+          29.15000542998314
         ],
         "max": [
           62.849998474121094,
-          -24.500004947185516,
-          31.850002706050873
+          -24.500003084540367,
+          34.85000878572464
         ],
         "size": [
           5.699995905160904,
-          11.650003492832184,
-          5.699997767806053
+          11.650001630187035,
+          5.700003355741501
         ]
       },
       "stl": "stl/HW-REAR-M3-2.stl",
@@ -813,17 +812,17 @@
         "min": [
           57.2500079870224,
           -28.600001707673073,
-          25.82457661628723
+          28.82457710802555
         ],
         "max": [
           62.75000423192978,
           -26.200002059340477,
-          32.17543289065361
+          35.17542779445648
         ],
         "size": [
           5.499996244907379,
           2.399999648332596,
-          6.350856274366379
+          6.350850686430931
         ]
       },
       "stl": "stl/HW-REAR-NUT-2.stl",
@@ -852,24 +851,24 @@
       "bbox": {
         "min": [
           -54.85000088810921,
-          -12.850002385675907,
-          11.600002646446228
+          -22.850003093481064,
+          15.60000330209732
         ],
         "max": [
           -49.150001257658005,
-          -7.1500008925795555,
-          23.250000551342964
+          -17.15000346302986,
+          27.250004932284355
         ],
         "size": [
           5.699999630451202,
-          5.700001493096352,
-          11.649997904896736
+          5.699999630451202,
+          11.650001630187035
         ]
       },
       "stl": "stl/HW-PCB-M3-1.stl",
       "assembly_role": "fasteners",
       "notes": [
-        "Underhead datum Z21.6; shaft end Z11.6; buy standard screw, not print"
+        "Underhead datum Z25.6; shaft end Z15.6; buy standard screw, not print"
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "fasteners",
@@ -892,17 +891,17 @@
       "bbox": {
         "min": [
           -54.750002920627594,
-          -13.175426982343197,
-          11.400001123547554
+          -23.175427690148354,
+          19.200000911951065
         ],
         "max": [
           -49.250002950429916,
-          -6.824573967605829,
-          13.80000077188015
+          -16.824575141072273,
+          21.60000056028366
         ],
         "size": [
           5.499999970197678,
-          6.350853014737368,
+          6.35085254907608,
           2.399999648332596
         ]
       },
@@ -932,24 +931,24 @@
       "bbox": {
         "min": [
           -54.85000088810921,
-          31.150002032518387,
-          11.600002646446228
+          21.150000393390656,
+          15.60000330209732
         ],
         "max": [
           -49.150001257658005,
-          36.85000166296959,
-          23.250000551342964
+          26.850000023841858,
+          27.250004932284355
         ],
         "size": [
           5.699999630451202,
           5.699999630451202,
-          11.649997904896736
+          11.650001630187035
         ]
       },
       "stl": "stl/HW-PCB-M3-2.stl",
       "assembly_role": "fasteners",
       "notes": [
-        "Underhead datum Z21.6; shaft end Z11.6; buy standard screw, not print"
+        "Underhead datum Z25.6; shaft end Z15.6; buy standard screw, not print"
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "fasteners",
@@ -972,17 +971,17 @@
       "bbox": {
         "min": [
           -54.750002920627594,
-          30.824575573205948,
-          11.400001123547554
+          20.824573934078217,
+          19.200000911951065
         ],
         "max": [
           -49.250002950429916,
-          37.17542812228203,
-          13.80000077188015
+          27.175428345799446,
+          21.60000056028366
         ],
         "size": [
           5.499999970197678,
-          6.35085254907608,
+          6.3508544117212296,
           2.399999648332596
         ]
       },
@@ -1012,24 +1011,24 @@
       "bbox": {
         "min": [
           49.150001257658005,
-          -12.850002385675907,
-          11.600002646446228
+          -22.850003093481064,
+          15.60000330209732
         ],
         "max": [
           54.85000088810921,
-          -7.1500008925795555,
-          23.250000551342964
+          -17.15000346302986,
+          27.250004932284355
         ],
         "size": [
           5.699999630451202,
-          5.700001493096352,
-          11.649997904896736
+          5.699999630451202,
+          11.650001630187035
         ]
       },
       "stl": "stl/HW-PCB-M3-3.stl",
       "assembly_role": "fasteners",
       "notes": [
-        "Underhead datum Z21.6; shaft end Z11.6; buy standard screw, not print"
+        "Underhead datum Z25.6; shaft end Z15.6; buy standard screw, not print"
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "fasteners",
@@ -1052,17 +1051,17 @@
       "bbox": {
         "min": [
           49.250002950429916,
-          -13.175426982343197,
-          11.400001123547554
+          -23.175427690148354,
+          19.200000911951065
         ],
         "max": [
           54.750002920627594,
-          -6.824573967605829,
-          13.80000077188015
+          -16.824575141072273,
+          21.60000056028366
         ],
         "size": [
           5.499999970197678,
-          6.350853014737368,
+          6.35085254907608,
           2.399999648332596
         ]
       },
@@ -1092,24 +1091,24 @@
       "bbox": {
         "min": [
           49.150001257658005,
-          31.150002032518387,
-          11.600002646446228
+          21.150000393390656,
+          15.60000330209732
         ],
         "max": [
           54.85000088810921,
-          36.85000166296959,
-          23.250000551342964
+          26.850000023841858,
+          27.250004932284355
         ],
         "size": [
           5.699999630451202,
           5.699999630451202,
-          11.649997904896736
+          11.650001630187035
         ]
       },
       "stl": "stl/HW-PCB-M3-4.stl",
       "assembly_role": "fasteners",
       "notes": [
-        "Underhead datum Z21.6; shaft end Z11.6; buy standard screw, not print"
+        "Underhead datum Z25.6; shaft end Z15.6; buy standard screw, not print"
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "fasteners",
@@ -1132,17 +1131,17 @@
       "bbox": {
         "min": [
           49.250002950429916,
-          30.824575573205948,
-          11.400001123547554
+          20.824573934078217,
+          19.200000911951065
         ],
         "max": [
           54.750002920627594,
-          37.17542812228203,
-          13.80000077188015
+          27.175428345799446,
+          21.60000056028366
         ],
         "size": [
           5.499999970197678,
-          6.35085254907608,
+          6.3508544117212296,
           2.399999648332596
         ]
       },
@@ -1171,18 +1170,18 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -62.99799680709839,
-          12.389999814331532,
+          -62.997765839099884,
+          12.390096671879292,
           161.89999878406525
         ],
         "max": [
-          62.99799680709839,
+          62.997765839099884,
           137.9999965429306,
           169.90000009536743
         ],
         "size": [
-          125.99599361419678,
-          125.60999672859907,
+          125.99553167819977,
+          125.60989987105131,
           8.000001311302185
         ]
       },
@@ -1211,17 +1210,17 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -69.93000209331512,
+          -69.92951780557632,
           4.999999888241291,
           57.999998331069946
         ],
         "max": [
-          69.93000209331512,
+          69.92951780557632,
           144.99999582767487,
           161.89999878406525
         ],
         "size": [
-          139.86000418663025,
+          139.85903561115265,
           139.99999593943357,
           103.9000004529953
         ]
@@ -1251,19 +1250,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -76.49999856948853,
+          -76.49990171194077,
           75.19999891519547,
-          75.10299980640411
+          75.1025378704071
         ],
         "max": [
-          76.49999856948853,
+          76.49990171194077,
           152.99999713897705,
           172.0000058412552
         ],
         "size": [
-          152.99999713897705,
+          152.99980342388153,
           77.79999822378159,
-          96.89700603485107
+          96.89746797084808
         ]
       },
       "stl": "stl/REF-S00-waist-A.stl",
@@ -1291,19 +1290,19 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -76.49999856948853,
+          -76.49990171194077,
           -3.000000026077032,
-          75.10299980640411
+          75.1025378704071
         ],
         "max": [
-          76.49999856948853,
+          76.49990171194077,
           74.79999959468842,
           172.0000058412552
         ],
         "size": [
-          152.99999713897705,
+          152.99980342388153,
           77.79999962076545,
-          96.89700603485107
+          96.89746797084808
         ]
       },
       "stl": "stl/REF-S00-waist-B.stl",
@@ -1356,44 +1355,3003 @@
       "print_stl": null
     },
     {
-      "id": "REF-LOAD-FLANGE",
-      "name": "Ø160 / PCD120八M6承载接口空间",
-      "category": "component",
+      "id": "B06-101-LOAD-DECK",
+      "name": "B06-101-LOAD-DECK",
+      "category": "metal",
       "quantity": 1,
-      "material": "Integration reference only",
-      "process": "Original project mesh or declared envelope; do not print",
+      "material": "S355",
+      "process": "CNC profile and drill/counterbore; weld assembly B06-W01",
       "color": [
-        0.07199999690055847,
-        0.08399999886751175,
-        0.09600000083446503,
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
         1.0
       ],
       "color_space": "linear",
       "bbox": {
         "min": [
-          -80.00006526708603,
-          -5.00006228685379,
+          -70.00000029802322,
+          -59.00000035762787,
+          2.0000000949949026
+        ],
+        "max": [
+          70.00000029802322,
+          150.97641944885254,
+          17.000000923871994
+        ],
+        "size": [
+          140.00000059604645,
+          209.9764198064804,
+          15.000000828877091
+        ]
+      },
+      "stl": "stl/B06-101-LOAD-DECK.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "15 mm finished thickness; rear Y-59, table rear edge Y-45; corners deburr R0.5",
+        "Datum A upper Z17; flatness0.15 after welding; no polymer carries arm preload"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-101-LOAD-DECK.step"
+    },
+    {
+      "id": "B06-102-REAR-WEB",
+      "name": "B06-102-REAR-WEB",
+      "category": "metal",
+      "quantity": 1,
+      "material": "S355",
+      "process": "CNC plate profile/drill/tap; weld B06-W01",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -70.00000029802322,
+          -59.00000035762787,
+          -90.00000357627869
+        ],
+        "max": [
+          70.00000029802322,
+          -50.999999046325684,
+          2.0000000949949026
+        ],
+        "size": [
+          140.00000059604645,
+          8.000001311302185,
+          92.00000367127359
+        ]
+      },
+      "stl": "stl/B06-102-REAR-WEB.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "8 mm thickness; top Z2; rear Y-59; F6 continuous fillet welds at upper and lower plate joints",
+        "Front fillet ends at Y-45, clear of desk; machine datums after weld/stress relief; no weld in desk pad seat"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-102-REAR-WEB.step"
+    },
+    {
+      "id": "B06-103-LOWER-JAW",
+      "name": "B06-103-LOWER-JAW",
+      "category": "metal",
+      "quantity": 1,
+      "material": "S355",
+      "process": "CNC profile/drill/tap; weld B06-W01",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -70.00000029802322,
+          -59.00000035762787,
+          -104.00000214576721
+        ],
+        "max": [
+          70.00000029802322,
+          75.00000298023224,
+          -90.00000357627869
+        ],
+        "size": [
+          140.00000059604645,
+          134.0000033378601,
+          13.999998569488525
+        ]
+      },
+      "stl": "stl/B06-103-LOWER-JAW.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "14 mm finished thickness; two full steel threaded legs",
+        "M12 thrust screws turn from BELOW with AF6 key; no side knob hidden behind the box"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-103-LOWER-JAW.step"
+    },
+    {
+      "id": "B06-104-LOAD-FLANGE",
+      "name": "B06-104-LOAD-FLANGE",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "CNC turn/mill + drill/tap; clear anodize, mask datums",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -79.99999821186066,
+          -4.975134506821632,
           46.00000008940697
         ],
         "max": [
-          80.00006526708603,
-          155.00006079673767,
-          58.000002056360245
+          79.99999821186066,
+          154.97513115406036,
+          57.999998331069946
         ],
         "size": [
-          160.00013053417206,
-          160.00012308359146,
+          159.9999964237213,
+          159.950265660882,
+          11.99999824166298
+        ]
+      },
+      "stl": "stl/B06-104-LOAD-FLANGE.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "OD160/ID56 x12; upper mating datum Z58 flatness0.1; 8xM6 PCD120 phase22.5deg",
+        "Bottom open cable pocket X±17/Y28..83/Z46..48; breaks into central bore",
+        "No motor interface added: this mates to the frozen A11 root-foot pattern"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-104-LOAD-FLANGE.step"
+    },
+    {
+      "id": "B06-105-POST-1",
+      "name": "B06-105-POST-1",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "Turn + through drill/tap",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -68.9999982714653,
+          66.00280106067657,
+          17.000000923871994
+        ],
+        "max": [
+          -50.999999046325684,
+          83.9971974492073,
+          46.00000008940697
+        ],
+        "size": [
+          17.999999225139618,
+          17.99439638853073,
+          28.999999165534973
+        ]
+      },
+      "stl": "stl/B06-105-POST-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Four identical OD18 x29 spacers; ends parallel0.05",
+        "M8 full through thread; top bolt engagement12.5, bottom13.5 mm; nominal tip gap3.0 mm"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-105-POST-1.step"
+    },
+    {
+      "id": "B06-105-POST-2",
+      "name": "B06-105-POST-2",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "Turn + through drill/tap",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          50.999999046325684,
+          66.00280106067657,
+          17.000000923871994
+        ],
+        "max": [
+          68.9999982714653,
+          83.9971974492073,
+          46.00000008940697
+        ],
+        "size": [
+          17.999999225139618,
+          17.99439638853073,
+          28.999999165534973
+        ]
+      },
+      "stl": "stl/B06-105-POST-2.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Four identical OD18 x29 spacers; ends parallel0.05",
+        "M8 full through thread; top bolt engagement12.5, bottom13.5 mm; nominal tip gap3.0 mm"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-105-POST-2.step"
+    },
+    {
+      "id": "B06-105-POST-3",
+      "name": "B06-105-POST-3",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "Turn + through drill/tap",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -46.99999839067459,
+          111.00280284881592,
+          17.000000923871994
+        ],
+        "max": [
+          -28.999999165534973,
+          128.99720668792725,
+          46.00000008940697
+        ],
+        "size": [
+          17.999999225139618,
+          17.994403839111328,
+          28.999999165534973
+        ]
+      },
+      "stl": "stl/B06-105-POST-3.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Four identical OD18 x29 spacers; ends parallel0.05",
+        "M8 full through thread; top bolt engagement12.5, bottom13.5 mm; nominal tip gap3.0 mm"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-105-POST-3.step"
+    },
+    {
+      "id": "B06-105-POST-4",
+      "name": "B06-105-POST-4",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "Turn + through drill/tap",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          28.999999165534973,
+          111.00280284881592,
+          17.000000923871994
+        ],
+        "max": [
+          46.99999839067459,
+          128.99720668792725,
+          46.00000008940697
+        ],
+        "size": [
+          17.999999225139618,
+          17.994403839111328,
+          28.999999165534973
+        ]
+      },
+      "stl": "stl/B06-105-POST-4.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Four identical OD18 x29 spacers; ends parallel0.05",
+        "M8 full through thread; top bolt engagement12.5, bottom13.5 mm; nominal tip gap3.0 mm"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-105-POST-4.step"
+    },
+    {
+      "id": "B06-106-DESK-PAD",
+      "name": "B06-106-DESK-PAD",
+      "category": "soft",
+      "quantity": 1,
+      "material": "silicone",
+      "process": "Cut 2 mm solid silicone, nominal60A; bond to deck",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -70.00000029802322,
+          -45.00000178813934,
+          0.0
+        ],
+        "max": [
+          70.00000029802322,
+          150.97641944885254,
+          2.0000000949949026
+        ],
+        "size": [
+          140.00000059604645,
+          195.97642123699188,
+          2.0000000949949026
+        ]
+      },
+      "stl": "stl/B06-106-DESK-PAD.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Friction and desk-surface compression require bench test"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-106-DESK-PAD.step"
+    },
+    {
+      "id": "B06-107-SPREADER--1",
+      "name": "B06-107-SPREADER--1",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "CNC flat plate; R2 edge breaks",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -79.99999821186066,
+          4.999999888241291,
+          -39.99999910593033
+        ],
+        "max": [
+          -9.999999776482582,
+          94.9999988079071,
+          -32.00000151991844
+        ],
+        "size": [
+          69.99999843537807,
+          89.99999891966581,
+          7.999997586011887
+        ]
+      },
+      "stl": "stl/B06-107-SPREADER--1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Foot bears directly on metal at (X±45,Y50); swivel foot retained by its supplied retaining spring",
+        "Place spreader during installation; pad must cover the entire contact footprint"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-107-SPREADER--1.step"
+    },
+    {
+      "id": "B06-108-PRESS-PAD--1",
+      "name": "B06-108-PRESS-PAD--1",
+      "category": "soft",
+      "quantity": 1,
+      "material": "silicone",
+      "process": "Cut 2 mm solid silicone60A; bond to spreader",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -79.99999821186066,
+          4.999999888241291,
+          -32.00000151991844
+        ],
+        "max": [
+          -9.999999776482582,
+          94.9999988079071,
+          -29.999999329447746
+        ],
+        "size": [
+          69.99999843537807,
+          89.99999891966581,
+          2.0000021904706955
+        ]
+      },
+      "stl": "stl/B06-108-PRESS-PAD--1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-108-PRESS-PAD--1.step"
+    },
+    {
+      "id": "HW-DIN6311--1",
+      "name": "HW-DIN6311--1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase Ganter DIN6311-25-S",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -57.500001043081284,
+          37.50388324260712,
+          -52.99999937415123
+        ],
+        "max": [
+          -32.499998807907104,
+          62.496118247509,
+          -39.99999910593033
+        ],
+        "size": [
+          25.00000223517418,
+          24.992235004901886,
+          13.000000268220901
+        ]
+      },
+      "stl": "stl/HW-DIN6311--1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "D25 x13; inverted flat face at spreader underside; snap ring supplied",
+        "Bore represented as conservative cylindrical clearance, supplier swivel seat omitted; sample fit required"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-DIN6311--1.step"
+    },
+    {
+      "id": "HW-DIN6332--1",
+      "name": "HW-DIN6332--1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase Ganter DIN6332-M12-100-SK; AF6",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -50.999999046325684,
+          44.00186613202095,
+          -143.29999685287476
+        ],
+        "max": [
+          -39.000000804662704,
+          55.99813535809517,
+          -43.299999088048935
+        ],
+        "size": [
+          11.99999824166298,
+          11.996269226074219,
+          99.99999776482582
+        ]
+      },
+      "stl": "stl/HW-DIN6332--1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Length100 includes thrust pin; thread portion conservatively90; thread class5.8",
+        "Thrust seat approximation, not machining geometry; verify supplier seat/pin retention",
+        "Tighten from BELOW; do not print hardware"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-DIN6332--1.step"
+    },
+    {
+      "id": "B06-107-SPREADER-1",
+      "name": "B06-107-SPREADER-1",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "CNC flat plate; R2 edge breaks",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          9.999999776482582,
+          4.999999888241291,
+          -39.99999910593033
+        ],
+        "max": [
+          79.99999821186066,
+          94.9999988079071,
+          -32.00000151991844
+        ],
+        "size": [
+          69.99999843537807,
+          89.99999891966581,
+          7.999997586011887
+        ]
+      },
+      "stl": "stl/B06-107-SPREADER-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Foot bears directly on metal at (X±45,Y50); swivel foot retained by its supplied retaining spring",
+        "Place spreader during installation; pad must cover the entire contact footprint"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-107-SPREADER-1.step"
+    },
+    {
+      "id": "B06-108-PRESS-PAD-1",
+      "name": "B06-108-PRESS-PAD-1",
+      "category": "soft",
+      "quantity": 1,
+      "material": "silicone",
+      "process": "Cut 2 mm solid silicone60A; bond to spreader",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          9.999999776482582,
+          4.999999888241291,
+          -32.00000151991844
+        ],
+        "max": [
+          79.99999821186066,
+          94.9999988079071,
+          -29.999999329447746
+        ],
+        "size": [
+          69.99999843537807,
+          89.99999891966581,
+          2.0000021904706955
+        ]
+      },
+      "stl": "stl/B06-108-PRESS-PAD-1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-108-PRESS-PAD-1.step"
+    },
+    {
+      "id": "HW-DIN6311-1",
+      "name": "HW-DIN6311-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase Ganter DIN6311-25-S",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          32.499998807907104,
+          37.50388324260712,
+          -52.99999937415123
+        ],
+        "max": [
+          57.500001043081284,
+          62.496118247509,
+          -39.99999910593033
+        ],
+        "size": [
+          25.00000223517418,
+          24.992235004901886,
+          13.000000268220901
+        ]
+      },
+      "stl": "stl/HW-DIN6311-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "D25 x13; inverted flat face at spreader underside; snap ring supplied",
+        "Bore represented as conservative cylindrical clearance, supplier swivel seat omitted; sample fit required"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-DIN6311-1.step"
+    },
+    {
+      "id": "HW-DIN6332-1",
+      "name": "HW-DIN6332-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase Ganter DIN6332-M12-100-SK; AF6",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          39.000000804662704,
+          44.00186613202095,
+          -143.29999685287476
+        ],
+        "max": [
+          50.999999046325684,
+          55.99813535809517,
+          -43.299999088048935
+        ],
+        "size": [
+          11.99999824166298,
+          11.996269226074219,
+          99.99999776482582
+        ]
+      },
+      "stl": "stl/HW-DIN6332-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Length100 includes thrust pin; thread portion conservatively90; thread class5.8",
+        "Thrust seat approximation, not machining geometry; verify supplier seat/pin retention",
+        "Tighten from BELOW; do not print hardware"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-DIN6332-1.step"
+    },
+    {
+      "id": "B06-201-HANGER--1",
+      "name": "B06-201-HANGER--1",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "CNC profile from8 mm plate + drill/tap",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -78.00000160932541,
+          -63.00000101327896,
+          -177.0000010728836
+        ],
+        "max": [
+          -70.00000029802322,
+          289.99999165534973,
+          -57.00000002980232
+        ],
+        "size": [
+          8.000001311302185,
+          352.9999926686287,
+          120.00000104308128
+        ]
+      },
+      "stl": "stl/B06-201-HANGER--1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Inward cantilever height20 mm; remove hanger independently of desk clamp; deburr R0.5"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-201-HANGER--1.step"
+    },
+    {
+      "id": "B06-201-HANGER-1",
+      "name": "B06-201-HANGER-1",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "CNC profile from8 mm plate + drill/tap",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          70.00000029802322,
+          -63.00000101327896,
+          -177.0000010728836
+        ],
+        "max": [
+          78.00000160932541,
+          289.99999165534973,
+          -57.00000002980232
+        ],
+        "size": [
+          8.000001311302185,
+          352.9999926686287,
+          120.00000104308128
+        ]
+      },
+      "stl": "stl/B06-201-HANGER-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Inward cantilever height20 mm; remove hanger independently of desk clamp; deburr R0.5"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-201-HANGER-1.step"
+    },
+    {
+      "id": "B06-202-TRAY",
+      "name": "B06-202-TRAY",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "CNC profile + drill/tap",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -100.00000149011612,
+          100.00000149011612,
+          -157.00000524520874
+        ],
+        "max": [
+          100.00000149011612,
+          289.99999165534973,
+          -151.99999511241913
+        ],
+        "size": [
+          200.00000298023224,
+          189.9999901652336,
+          5.000010132789612
+        ]
+      },
+      "stl": "stl/B06-202-TRAY.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Confirmed maximum box180x150x50 mm/3 kg; footprint X±90,Y120..270; slides +Y",
+        "20 mm hook/loop straps secure vertically; front stop removable; ventilation not covered by this mechanical budget"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-202-TRAY.step"
+    },
+    {
+      "id": "B06-203-STOP-BACK",
+      "name": "B06-203-STOP-BACK",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "Mill/drill",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -94.9999988079071,
+          109.99999940395355,
+          -151.99999511241913
+        ],
+        "max": [
+          94.9999988079071,
+          115.00000208616257,
+          -140.00000059604645
+        ],
+        "size": [
+          189.9999976158142,
+          5.000002682209015,
+          11.99999451637268
+        ]
+      },
+      "stl": "stl/B06-203-STOP-BACK.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Front stop removes before box slides toward +Y"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-203-STOP-BACK.step"
+    },
+    {
+      "id": "B06-203-STOP-FRONT",
+      "name": "B06-203-STOP-FRONT",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "Mill/drill",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -94.9999988079071,
+          280.0000011920929,
+          -151.99999511241913
+        ],
+        "max": [
+          94.9999988079071,
+          284.9999964237213,
+          -140.00000059604645
+        ],
+        "size": [
+          189.9999976158142,
+          4.999995231628418,
+          11.99999451637268
+        ]
+      },
+      "stl": "stl/B06-203-STOP-FRONT.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Front stop removes before box slides toward +Y"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-203-STOP-FRONT.step"
+    },
+    {
+      "id": "B06-309-COAX-BRACKET",
+      "name": "B06-309-COAX-BRACKET",
+      "category": "metal",
+      "quantity": 1,
+      "material": "6061-T651",
+      "process": "CNC mill original RF bulkhead bracket",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -19.999999552965164,
+          -18.99999938905239,
+          25.600001215934753
+        ],
+        "max": [
+          19.999999552965164,
+          0.0,
+          41.999999433755875
+        ],
+        "size": [
+          39.99999910593033,
+          18.99999938905239,
+          16.39999821782112
+        ]
+      },
+      "stl": "stl/B06-309-COAX-BRACKET.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Base2 mm at PCB top Z25.6; rear panel4.5 mm Y-19..-14.5; flange bearing face Y-16, internal fillet R1",
+        "H5/H6 mounting centres X±10,Y-8; coax axes X±10,Z35; mounts independent of cosmetic rear lid",
+        "Fixed coax rear datum retained at Y-16, separate from RJ45/power PCB shift; bond to chassis via J6 lug"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-309-COAX-BRACKET.step"
+    },
+    {
+      "id": "HW-M8-TOP-1",
+      "name": "HW-M8-TOP-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -66.50000065565109,
+          68.5020238161087,
+          33.50000083446503
+        ],
+        "max": [
+          -53.50000038743019,
+          81.49797469377518,
+          57.500001043081284
+        ],
+        "size": [
+          13.000000268220901,
+          12.995950877666473,
+          24.000000208616257
+        ]
+      },
+      "stl": "stl/HW-M8-TOP-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M8x16; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-M8-TOP-1.step"
+    },
+    {
+      "id": "HW-M8-BOTTOM-1",
+      "name": "HW-M8-BOTTOM-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -66.50000065565109,
+          68.5020238161087,
+          2.4999999441206455
+        ],
+        "max": [
+          -53.50000038743019,
+          81.49797469377518,
+          30.500000342726707
+        ],
+        "size": [
+          13.000000268220901,
+          12.995950877666473,
+          28.000000398606062
+        ]
+      },
+      "stl": "stl/HW-M8-BOTTOM-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M8x20; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-M8-BOTTOM-1.step"
+    },
+    {
+      "id": "HW-M8-TOP-2",
+      "name": "HW-M8-TOP-2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          53.50000038743019,
+          68.5020238161087,
+          33.50000083446503
+        ],
+        "max": [
+          66.50000065565109,
+          81.49797469377518,
+          57.500001043081284
+        ],
+        "size": [
+          13.000000268220901,
+          12.995950877666473,
+          24.000000208616257
+        ]
+      },
+      "stl": "stl/HW-M8-TOP-2.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M8x16; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-M8-TOP-2.step"
+    },
+    {
+      "id": "HW-M8-BOTTOM-2",
+      "name": "HW-M8-BOTTOM-2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          53.50000038743019,
+          68.5020238161087,
+          2.4999999441206455
+        ],
+        "max": [
+          66.50000065565109,
+          81.49797469377518,
+          30.500000342726707
+        ],
+        "size": [
+          13.000000268220901,
+          12.995950877666473,
+          28.000000398606062
+        ]
+      },
+      "stl": "stl/HW-M8-BOTTOM-2.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M8x20; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-M8-BOTTOM-2.step"
+    },
+    {
+      "id": "HW-M8-TOP-3",
+      "name": "HW-M8-TOP-3",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -44.50000077486038,
+          113.50201815366745,
+          33.50000083446503
+        ],
+        "max": [
+          -31.50000050663948,
+          126.49798393249512,
+          57.500001043081284
+        ],
+        "size": [
+          13.000000268220901,
+          12.995965778827667,
+          24.000000208616257
+        ]
+      },
+      "stl": "stl/HW-M8-TOP-3.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M8x16; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-M8-TOP-3.step"
+    },
+    {
+      "id": "HW-M8-BOTTOM-3",
+      "name": "HW-M8-BOTTOM-3",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -44.50000077486038,
+          113.50201815366745,
+          2.4999999441206455
+        ],
+        "max": [
+          -31.50000050663948,
+          126.49798393249512,
+          30.500000342726707
+        ],
+        "size": [
+          13.000000268220901,
+          12.995965778827667,
+          28.000000398606062
+        ]
+      },
+      "stl": "stl/HW-M8-BOTTOM-3.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M8x20; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-M8-BOTTOM-3.step"
+    },
+    {
+      "id": "HW-M8-TOP-4",
+      "name": "HW-M8-TOP-4",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          31.50000050663948,
+          113.50201815366745,
+          33.50000083446503
+        ],
+        "max": [
+          44.50000077486038,
+          126.49798393249512,
+          57.500001043081284
+        ],
+        "size": [
+          13.000000268220901,
+          12.995965778827667,
+          24.000000208616257
+        ]
+      },
+      "stl": "stl/HW-M8-TOP-4.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M8x16; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-M8-TOP-4.step"
+    },
+    {
+      "id": "HW-M8-BOTTOM-4",
+      "name": "HW-M8-BOTTOM-4",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          31.50000050663948,
+          113.50201815366745,
+          2.4999999441206455
+        ],
+        "max": [
+          44.50000077486038,
+          126.49798393249512,
+          30.500000342726707
+        ],
+        "size": [
+          13.000000268220901,
+          12.995965778827667,
+          28.000000398606062
+        ]
+      },
+      "stl": "stl/HW-M8-BOTTOM-4.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M8x20; head envelope D13 x8; hex AF6",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-M8-BOTTOM-4.step"
+    },
+    {
+      "id": "HW-ROOT-WASHER-1",
+      "name": "HW-ROOT-WASHER-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          49.432773143053055,
+          91.96286648511887,
+          65.99999964237213
+        ],
+        "max": [
+          61.43277511000633,
+          103.95914316177368,
+          67.59999692440033
+        ],
+        "size": [
+          12.000001966953278,
+          11.996276676654816,
+          1.5999972820281982
+        ]
+      },
+      "stl": "stl/HW-ROOT-WASHER-1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-WASHER-1.step"
+    },
+    {
+      "id": "HW-ROOT-M6-1",
+      "name": "HW-ROOT-M6-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          50.43277516961098,
+          92.96256303787231,
+          47.599997371435165
+        ],
+        "max": [
+          60.43277308344841,
+          102.95944660902023,
+          73.60000163316727
+        ],
+        "size": [
+          9.999997913837433,
+          9.996883571147919,
+          26.0000042617321
+        ]
+      },
+      "stl": "stl/HW-ROOT-M6-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-M6-1.step"
+    },
+    {
+      "id": "HW-ROOT-WASHER-2",
+      "name": "HW-ROOT-WASHER-2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          16.961006447672844,
+          124.43464249372482,
+          65.99999964237213
+        ],
+        "max": [
+          28.961006551980972,
+          136.43090426921844,
+          67.59999692440033
+        ],
+        "size": [
+          12.000000104308128,
+          11.996261775493622,
+          1.5999972820281982
+        ]
+      },
+      "stl": "stl/HW-ROOT-WASHER-2.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-WASHER-2.step"
+    },
+    {
+      "id": "HW-ROOT-M6-2",
+      "name": "HW-ROOT-M6-2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          17.961006611585617,
+          125.43432414531708,
+          47.599997371435165
+        ],
+        "max": [
+          27.9610063880682,
+          135.4312151670456,
+          73.60000163316727
+        ],
+        "size": [
+          9.999999776482582,
+          9.996891021728516,
+          26.0000042617321
+        ]
+      },
+      "stl": "stl/HW-ROOT-M6-2.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-M6-2.step"
+    },
+    {
+      "id": "HW-ROOT-WASHER-3",
+      "name": "HW-ROOT-WASHER-3",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -28.961006551980972,
+          124.43464249372482,
+          65.99999964237213
+        ],
+        "max": [
+          -16.961006447672844,
+          136.43090426921844,
+          67.59999692440033
+        ],
+        "size": [
+          12.000000104308128,
+          11.996261775493622,
+          1.5999972820281982
+        ]
+      },
+      "stl": "stl/HW-ROOT-WASHER-3.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-WASHER-3.step"
+    },
+    {
+      "id": "HW-ROOT-M6-3",
+      "name": "HW-ROOT-M6-3",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -27.9610063880682,
+          125.43432414531708,
+          47.599997371435165
+        ],
+        "max": [
+          -17.961006611585617,
+          135.4312151670456,
+          73.60000163316727
+        ],
+        "size": [
+          9.999999776482582,
+          9.996891021728516,
+          26.0000042617321
+        ]
+      },
+      "stl": "stl/HW-ROOT-M6-3.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-M6-3.step"
+    },
+    {
+      "id": "HW-ROOT-WASHER-4",
+      "name": "HW-ROOT-WASHER-4",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -61.43277511000633,
+          91.96286648511887,
+          65.99999964237213
+        ],
+        "max": [
+          -49.432773143053055,
+          103.95914316177368,
+          67.59999692440033
+        ],
+        "size": [
+          12.000001966953278,
+          11.996276676654816,
+          1.5999972820281982
+        ]
+      },
+      "stl": "stl/HW-ROOT-WASHER-4.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-WASHER-4.step"
+    },
+    {
+      "id": "HW-ROOT-M6-4",
+      "name": "HW-ROOT-M6-4",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -60.43277308344841,
+          92.96256303787231,
+          47.599997371435165
+        ],
+        "max": [
+          -50.43277516961098,
+          102.95944660902023,
+          73.60000163316727
+        ],
+        "size": [
+          9.999997913837433,
+          9.996883571147919,
+          26.0000042617321
+        ]
+      },
+      "stl": "stl/HW-ROOT-M6-4.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-M6-4.step"
+    },
+    {
+      "id": "HW-ROOT-WASHER-5",
+      "name": "HW-ROOT-WASHER-5",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -61.43277511000633,
+          46.0408590734005,
+          65.99999964237213
+        ],
+        "max": [
+          -49.432773143053055,
+          58.037128299474716,
+          67.59999692440033
+        ],
+        "size": [
+          12.000001966953278,
+          11.996269226074219,
+          1.5999972820281982
+        ]
+      },
+      "stl": "stl/HW-ROOT-WASHER-5.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-WASHER-5.step"
+    },
+    {
+      "id": "HW-ROOT-M6-5",
+      "name": "HW-ROOT-M6-5",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -60.43277308344841,
+          47.04054817557335,
+          47.599997371435165
+        ],
+        "max": [
+          -50.43277516961098,
+          57.03744292259216,
+          73.60000163316727
+        ],
+        "size": [
+          9.999997913837433,
+          9.996894747018814,
+          26.0000042617321
+        ]
+      },
+      "stl": "stl/HW-ROOT-M6-5.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-M6-5.step"
+    },
+    {
+      "id": "HW-ROOT-WASHER-6",
+      "name": "HW-ROOT-WASHER-6",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -28.961006551980972,
+          13.569092378020287,
+          65.99999964237213
+        ],
+        "max": [
+          -16.961006447672844,
+          25.565363466739655,
+          67.59999692440033
+        ],
+        "size": [
+          12.000000104308128,
+          11.996271088719368,
+          1.5999972820281982
+        ]
+      },
+      "stl": "stl/HW-ROOT-WASHER-6.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-WASHER-6.step"
+    },
+    {
+      "id": "HW-ROOT-M6-6",
+      "name": "HW-ROOT-M6-6",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -27.9610063880682,
+          14.568781480193138,
+          47.599997371435165
+        ],
+        "max": [
+          -17.961006611585617,
+          24.565674364566803,
+          73.60000163316727
+        ],
+        "size": [
+          9.999999776482582,
+          9.996892884373665,
+          26.0000042617321
+        ]
+      },
+      "stl": "stl/HW-ROOT-M6-6.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-M6-6.step"
+    },
+    {
+      "id": "HW-ROOT-WASHER-7",
+      "name": "HW-ROOT-WASHER-7",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          16.961006447672844,
+          13.569092378020287,
+          65.99999964237213
+        ],
+        "max": [
+          28.961006551980972,
+          25.565363466739655,
+          67.59999692440033
+        ],
+        "size": [
+          12.000000104308128,
+          11.996271088719368,
+          1.5999972820281982
+        ]
+      },
+      "stl": "stl/HW-ROOT-WASHER-7.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-WASHER-7.step"
+    },
+    {
+      "id": "HW-ROOT-M6-7",
+      "name": "HW-ROOT-M6-7",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          17.961006611585617,
+          14.568781480193138,
+          47.599997371435165
+        ],
+        "max": [
+          27.9610063880682,
+          24.565674364566803,
+          73.60000163316727
+        ],
+        "size": [
+          9.999999776482582,
+          9.996892884373665,
+          26.0000042617321
+        ]
+      },
+      "stl": "stl/HW-ROOT-M6-7.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-M6-7.step"
+    },
+    {
+      "id": "HW-ROOT-WASHER-8",
+      "name": "HW-ROOT-WASHER-8",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          49.432773143053055,
+          46.0408590734005,
+          65.99999964237213
+        ],
+        "max": [
+          61.43277511000633,
+          58.037128299474716,
+          67.59999692440033
+        ],
+        "size": [
+          12.000001966953278,
+          11.996269226074219,
+          1.5999972820281982
+        ]
+      },
+      "stl": "stl/HW-ROOT-WASHER-8.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-WASHER-8.step"
+    },
+    {
+      "id": "HW-ROOT-M6-8",
+      "name": "HW-ROOT-M6-8",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          50.43277516961098,
+          47.04054817557335,
+          47.599997371435165
+        ],
+        "max": [
+          60.43277308344841,
+          57.03744292259216,
+          73.60000163316727
+        ],
+        "size": [
+          9.999997913837433,
+          9.996894747018814,
+          26.0000042617321
+        ]
+      },
+      "stl": "stl/HW-ROOT-M6-8.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-ROOT-M6-8.step"
+    },
+    {
+      "id": "HW-HANGER-WASHER--1-1",
+      "name": "HW-HANGER-WASHER--1-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -79.59999889135361,
+          -60.998134315013885,
+          -86.0000029206276
+        ],
+        "max": [
+          -78.00000160932541,
+          -49.00186508893967,
+          -74.00000095367432
+        ],
+        "size": [
+          1.5999972820281982,
+          11.996269226074219,
           12.000001966953278
         ]
       },
-      "stl": "stl/REF-LOAD-FLANGE.stl",
+      "stl": "stl/HW-HANGER-WASHER--1-1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-HANGER-WASHER--1-1.step"
+    },
+    {
+      "id": "HW-HANGER-M6--1-1",
+      "name": "HW-HANGER-M6--1-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -85.59999614953995,
+          -59.99844893813133,
+          -85.00000089406967
+        ],
+        "max": [
+          -59.59999933838844,
+          -50.00155419111252,
+          -75.00000298023224
+        ],
+        "size": [
+          25.999996811151505,
+          9.996894747018814,
+          9.999997913837433
+        ]
+      },
+      "stl": "stl/HW-HANGER-M6--1-1.stl",
       "assembly_role": "structure",
       "notes": [
-        "Mating-plane Z58. Thread minor bore is nominal; no manufacturing drawing or support chassis released."
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
       ],
-      "prototype_status": "集成参考；未经采购或实物验证",
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
       "viewer_group": "structure",
-      "print_stl": null
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-HANGER-M6--1-1.step"
+    },
+    {
+      "id": "HW-HANGER-WASHER--1-2",
+      "name": "HW-HANGER-WASHER--1-2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -79.59999889135361,
+          -60.998134315013885,
+          -72.9999989271164
+        ],
+        "max": [
+          -78.00000160932541,
+          -49.00186508893967,
+          -61.000000685453415
+        ],
+        "size": [
+          1.5999972820281982,
+          11.996269226074219,
+          11.99999824166298
+        ]
+      },
+      "stl": "stl/HW-HANGER-WASHER--1-2.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-HANGER-WASHER--1-2.step"
+    },
+    {
+      "id": "HW-HANGER-M6--1-2",
+      "name": "HW-HANGER-M6--1-2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -85.59999614953995,
+          -59.99844893813133,
+          -71.99999690055847
+        ],
+        "max": [
+          -59.59999933838844,
+          -50.00155419111252,
+          -61.99999898672104
+        ],
+        "size": [
+          25.999996811151505,
+          9.996894747018814,
+          9.999997913837433
+        ]
+      },
+      "stl": "stl/HW-HANGER-M6--1-2.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-HANGER-M6--1-2.step"
+    },
+    {
+      "id": "HW-HANGER-WASHER-1-1",
+      "name": "HW-HANGER-WASHER-1-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          78.00000160932541,
+          -60.998134315013885,
+          -86.0000029206276
+        ],
+        "max": [
+          79.59999889135361,
+          -49.00186508893967,
+          -74.00000095367432
+        ],
+        "size": [
+          1.5999972820281982,
+          11.996269226074219,
+          12.000001966953278
+        ]
+      },
+      "stl": "stl/HW-HANGER-WASHER-1-1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-HANGER-WASHER-1-1.step"
+    },
+    {
+      "id": "HW-HANGER-M6-1-1",
+      "name": "HW-HANGER-M6-1-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          59.59999933838844,
+          -59.99844893813133,
+          -85.00000089406967
+        ],
+        "max": [
+          85.59999614953995,
+          -50.00155419111252,
+          -75.00000298023224
+        ],
+        "size": [
+          25.999996811151505,
+          9.996894747018814,
+          9.999997913837433
+        ]
+      },
+      "stl": "stl/HW-HANGER-M6-1-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-HANGER-M6-1-1.step"
+    },
+    {
+      "id": "HW-HANGER-WASHER-1-2",
+      "name": "HW-HANGER-WASHER-1-2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          78.00000160932541,
+          -60.998134315013885,
+          -72.9999989271164
+        ],
+        "max": [
+          79.59999889135361,
+          -49.00186508893967,
+          -61.000000685453415
+        ],
+        "size": [
+          1.5999972820281982,
+          11.996269226074219,
+          11.99999824166298
+        ]
+      },
+      "stl": "stl/HW-HANGER-WASHER-1-2.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-HANGER-WASHER-1-2.step"
+    },
+    {
+      "id": "HW-HANGER-M6-1-2",
+      "name": "HW-HANGER-M6-1-2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          59.59999933838844,
+          -59.99844893813133,
+          -71.99999690055847
+        ],
+        "max": [
+          85.59999614953995,
+          -50.00155419111252,
+          -61.99999898672104
+        ],
+        "size": [
+          25.999996811151505,
+          9.996894747018814,
+          9.999997913837433
+        ]
+      },
+      "stl": "stl/HW-HANGER-M6-1-2.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M6x20; head envelope D10 x6; hex AF5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-HANGER-M6-1-2.step"
+    },
+    {
+      "id": "HW-TRAY-M4-1",
+      "name": "HW-TRAY-M4-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -77.80000567436218,
+          116.20117723941803,
+          -165.00000655651093
+        ],
+        "max": [
+          -70.19999623298645,
+          123.79881739616394,
+          -152.80000865459442
+        ],
+        "size": [
+          7.600009441375732,
+          7.597640156745911,
+          12.199997901916504
+        ]
+      },
+      "stl": "stl/HW-TRAY-M4-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M4x10; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-TRAY-M4-1.step"
+    },
+    {
+      "id": "HW-TRAY-M4-2",
+      "name": "HW-TRAY-M4-2",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -77.80000567436218,
+          266.2011682987213,
+          -165.00000655651093
+        ],
+        "max": [
+          -70.19999623298645,
+          273.7988233566284,
+          -152.80000865459442
+        ],
+        "size": [
+          7.600009441375732,
+          7.5976550579071045,
+          12.199997901916504
+        ]
+      },
+      "stl": "stl/HW-TRAY-M4-2.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M4x10; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-TRAY-M4-2.step"
+    },
+    {
+      "id": "HW-TRAY-M4-3",
+      "name": "HW-TRAY-M4-3",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          70.19999623298645,
+          116.20117723941803,
+          -165.00000655651093
+        ],
+        "max": [
+          77.80000567436218,
+          123.79881739616394,
+          -152.80000865459442
+        ],
+        "size": [
+          7.600009441375732,
+          7.597640156745911,
+          12.199997901916504
+        ]
+      },
+      "stl": "stl/HW-TRAY-M4-3.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M4x10; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-TRAY-M4-3.step"
+    },
+    {
+      "id": "HW-TRAY-M4-4",
+      "name": "HW-TRAY-M4-4",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          70.19999623298645,
+          266.2011682987213,
+          -165.00000655651093
+        ],
+        "max": [
+          77.80000567436218,
+          273.7988233566284,
+          -152.80000865459442
+        ],
+        "size": [
+          7.600009441375732,
+          7.5976550579071045,
+          12.199997901916504
+        ]
+      },
+      "stl": "stl/HW-TRAY-M4-4.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M4x10; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-TRAY-M4-4.step"
+    },
+    {
+      "id": "HW-STOP-M4-BACK--88",
+      "name": "HW-STOP-M4-BACK--88",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -91.80000424385071,
+          108.7011769413948,
+          -159.9999964237213
+        ],
+        "max": [
+          -84.19999480247498,
+          116.29881709814072,
+          -137.80000805854797
+        ],
+        "size": [
+          7.600009441375732,
+          7.597640156745911,
+          22.19998836517334
+        ]
+      },
+      "stl": "stl/HW-STOP-M4-BACK--88.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M4x20; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-STOP-M4-BACK--88.step"
+    },
+    {
+      "id": "HW-STOP-M4-BACK-88",
+      "name": "HW-STOP-M4-BACK-88",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          84.19999480247498,
+          108.7011769413948,
+          -159.9999964237213
+        ],
+        "max": [
+          91.80000424385071,
+          116.29881709814072,
+          -137.80000805854797
+        ],
+        "size": [
+          7.600009441375732,
+          7.597640156745911,
+          22.19998836517334
+        ]
+      },
+      "stl": "stl/HW-STOP-M4-BACK-88.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M4x20; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-STOP-M4-BACK-88.step"
+    },
+    {
+      "id": "HW-STOP-M4-FRONT--88",
+      "name": "HW-STOP-M4-FRONT--88",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -91.80000424385071,
+          278.70118618011475,
+          -159.9999964237213
+        ],
+        "max": [
+          -84.19999480247498,
+          286.29884123802185,
+          -137.80000805854797
+        ],
+        "size": [
+          7.600009441375732,
+          7.5976550579071045,
+          22.19998836517334
+        ]
+      },
+      "stl": "stl/HW-STOP-M4-FRONT--88.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M4x20; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-STOP-M4-FRONT--88.step"
+    },
+    {
+      "id": "HW-STOP-M4-FRONT-88",
+      "name": "HW-STOP-M4-FRONT-88",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          84.19999480247498,
+          278.70118618011475,
+          -159.9999964237213
+        ],
+        "max": [
+          91.80000424385071,
+          286.29884123802185,
+          -137.80000805854797
+        ],
+        "size": [
+          7.600009441375732,
+          7.5976550579071045,
+          22.19998836517334
+        ]
+      },
+      "stl": "stl/HW-STOP-M4-FRONT-88.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M4x20; head envelope D7.6 x2.2; hex AF2.5",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-STOP-M4-FRONT-88.step"
+    },
+    {
+      "id": "HW-COAX-TOP-WASHER--1",
+      "name": "HW-COAX-TOP-WASHER--1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -13.500000350177288,
+          -11.498912237584591,
+          27.59999968111515
+        ],
+        "max": [
+          -6.500000134110451,
+          -4.501087591052055,
+          28.10000069439411
+        ],
+        "size": [
+          7.000000216066837,
+          6.9978246465325356,
+          0.5000010132789612
+        ]
+      },
+      "stl": "stl/HW-COAX-TOP-WASHER--1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-COAX-TOP-WASHER--1.step"
+    },
+    {
+      "id": "HW-COAX-BOTTOM-WASHER--1",
+      "name": "HW-COAX-BOTTOM-WASHER--1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -13.500000350177288,
+          -11.498912237584591,
+          23.499999195337296
+        ],
+        "max": [
+          -6.500000134110451,
+          -4.501087591052055,
+          24.000000208616257
+        ],
+        "size": [
+          7.000000216066837,
+          6.9978246465325356,
+          0.5000010132789612
+        ]
+      },
+      "stl": "stl/HW-COAX-BOTTOM-WASHER--1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-COAX-BOTTOM-WASHER--1.step"
+    },
+    {
+      "id": "HW-COAX-M3--1",
+      "name": "HW-COAX-M3--1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -12.850000523030758,
+          -10.849114507436752,
+          20.100001245737076
+        ],
+        "max": [
+          -7.149999961256981,
+          -5.150886252522469,
+          29.750000685453415
+        ],
+        "size": [
+          5.700000561773777,
+          5.698228254914284,
+          9.649999439716339
+        ]
+      },
+      "stl": "stl/HW-COAX-M3--1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M3x8; head envelope D5.7 x1.65; hex AF2",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-COAX-M3--1.step"
+    },
+    {
+      "id": "HW-COAX-NUT--1",
+      "name": "HW-COAX-NUT--1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase DIN934 M3 nut; nominal unthreaded bore envelope",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -12.749999761581421,
+          -11.17542665451765,
+          21.0999995470047
+        ],
+        "max": [
+          -7.249999791383743,
+          -4.824573639780283,
+          23.499999195337296
+        ],
+        "size": [
+          5.499999970197678,
+          6.350853014737368,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/HW-COAX-NUT--1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-COAX-NUT--1.step"
+    },
+    {
+      "id": "HW-COAX-TOP-WASHER-1",
+      "name": "HW-COAX-TOP-WASHER-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          6.500000134110451,
+          -11.498912237584591,
+          27.59999968111515
+        ],
+        "max": [
+          13.500000350177288,
+          -4.501087591052055,
+          28.10000069439411
+        ],
+        "size": [
+          7.000000216066837,
+          6.9978246465325356,
+          0.5000010132789612
+        ]
+      },
+      "stl": "stl/HW-COAX-TOP-WASHER-1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-COAX-TOP-WASHER-1.step"
+    },
+    {
+      "id": "HW-COAX-BOTTOM-WASHER-1",
+      "name": "HW-COAX-BOTTOM-WASHER-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase ISO7089 washer",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          6.500000134110451,
+          -11.498912237584591,
+          23.499999195337296
+        ],
+        "max": [
+          13.500000350177288,
+          -4.501087591052055,
+          24.000000208616257
+        ],
+        "size": [
+          7.000000216066837,
+          6.9978246465325356,
+          0.5000010132789612
+        ]
+      },
+      "stl": "stl/HW-COAX-BOTTOM-WASHER-1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-COAX-BOTTOM-WASHER-1.step"
+    },
+    {
+      "id": "HW-COAX-M3-1",
+      "name": "HW-COAX-M3-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase standard screw; strength class8.8 minimum for load-path screws",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          7.149999961256981,
+          -10.849114507436752,
+          20.100001245737076
+        ],
+        "max": [
+          12.850000523030758,
+          -5.150886252522469,
+          29.750000685453415
+        ],
+        "size": [
+          5.700000561773777,
+          5.698228254914284,
+          9.649999439716339
+        ]
+      },
+      "stl": "stl/HW-COAX-M3-1.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "M3x8; head envelope D5.7 x1.65; hex AF2",
+        "Threads and chamfers omitted; dimensions are maximum planning envelopes, NOT hardware manufacturing STLs"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-COAX-M3-1.step"
+    },
+    {
+      "id": "HW-COAX-NUT-1",
+      "name": "HW-COAX-NUT-1",
+      "category": "hardware",
+      "quantity": 1,
+      "material": "steel",
+      "process": "Purchase DIN934 M3 nut; nominal unthreaded bore envelope",
+      "color": [
+        0.01600000075995922,
+        0.020999999716877937,
+        0.027000000700354576,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          7.249999791383743,
+          -11.17542665451765,
+          21.0999995470047
+        ],
+        "max": [
+          12.749999761581421,
+          -4.824573639780283,
+          23.499999195337296
+        ],
+        "size": [
+          5.499999970197678,
+          6.350853014737368,
+          2.399999648332596
+        ]
+      },
+      "stl": "stl/HW-COAX-NUT-1.stl",
+      "assembly_role": "structure",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/HW-COAX-NUT-1.step"
+    },
+    {
+      "id": "ENV-DESK",
+      "name": "REF-DESK",
+      "category": "environment",
+      "quantity": 1,
+      "material": "none",
+      "process": "Environment only",
+      "color": [
+        0.1899999976158142,
+        0.0949999988079071,
+        0.04500000178813934,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -400.0000059604645,
+          -45.00000178813934,
+          -29.999999329447746
+        ],
+        "max": [
+          400.0000059604645,
+          654.9999713897705,
+          0.0
+        ],
+        "size": [
+          800.000011920929,
+          699.9999731779099,
+          29.999999329447746
+        ]
+      },
+      "stl": "stl/ENV-DESK.stl",
+      "assembly_role": "environment",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "environment",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/REF-DESK.step"
+    },
+    {
+      "id": "ENV-BOX",
+      "name": "REF-BOX",
+      "category": "environment",
+      "quantity": 1,
+      "material": "none",
+      "process": "Confirmed clearance budget only",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -90.00000357627869,
+          119.99999731779099,
+          -151.99999511241913
+        ],
+        "max": [
+          90.00000357627869,
+          270.00001072883606,
+          -101.99999809265137
+        ],
+        "size": [
+          180.00000715255737,
+          150.00001341104507,
+          49.99999701976776
+        ]
+      },
+      "stl": "stl/ENV-BOX.stl",
+      "assembly_role": "environment",
+      "notes": [],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "environment",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/REF-BOX.step"
     },
     {
       "id": "IO-BRI01_PCB",
@@ -1412,13 +4370,13 @@
       "bbox": {
         "min": [
           -57.999998331069946,
-          -16.00000075995922,
-          19.999999552965164
+          -26.000000536441803,
+          24.000000208616257
         ],
         "max": [
           57.999998331069946,
-          39.99999910593033,
-          21.60000056028366
+          29.999999329447746,
+          25.600001215934753
         ],
         "size": [
           115.99999666213989,
@@ -1429,7 +4387,7 @@
       "stl": "stl/IO-BRI01_PCB.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1455,24 +4413,24 @@
       "bbox": {
         "min": [
           30.500000342726707,
-          -16.00000075995922,
-          21.60000056028366
+          -26.000000536441803,
+          25.600001215934753
         ],
         "max": [
           45.499999076128006,
-          -2.5500000920146704,
-          36.29999980330467
+          -12.549999170005322,
+          40.300000458955765
         ],
         "size": [
           14.999998733401299,
-          13.45000066794455,
+          13.450001366436481,
           14.699999243021011
         ]
       },
       "stl": "stl/IO-J1_shell_reference.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1498,24 +4456,24 @@
       "bbox": {
         "min": [
           29.349999502301216,
-          -14.999999664723873,
-          22.600000724196434
+          -25.00000037252903,
+          26.599999517202377
         ],
         "max": [
           30.500000342726707,
-          -7.499999832361937,
-          37.43999823927879
+          -17.500000074505806,
+          41.439998894929886
         ],
         "size": [
           1.1500008404254913,
-          7.499999832361937,
-          14.83999751508236
+          7.500000298023224,
+          14.839999377727509
         ]
       },
       "stl": "stl/IO-J1_spring_reservation_-8.65.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1541,24 +4499,24 @@
       "bbox": {
         "min": [
           45.499999076128006,
-          -14.999999664723873,
-          22.600000724196434
+          -25.00000037252903,
+          26.599999517202377
         ],
         "max": [
           46.6499999165535,
-          -7.499999832361937,
-          37.43999823927879
+          -17.500000074505806,
+          41.439998894929886
         ],
         "size": [
           1.1500008404254913,
-          7.499999832361937,
-          14.83999751508236
+          7.500000298023224,
+          14.839999377727509
         ]
       },
       "stl": "stl/IO-J1_spring_reservation_7.5.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1584,24 +4542,24 @@
       "bbox": {
         "min": [
           34.20000150799751,
-          -9.870000183582306,
-          18.300000578165054
+          -19.869860261678696,
+          22.299999371170998
         ],
         "max": [
           34.66000035405159,
-          -9.410000406205654,
-          21.60000056028366
+          -19.410140812397003,
+          25.600001215934753
         ],
         "size": [
           0.45999884605407715,
-          0.45999977737665176,
-          3.2999999821186066
+          0.4597194492816925,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_0.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1627,24 +4585,24 @@
       "bbox": {
         "min": [
           35.22000089287758,
-          -5.869999993592501,
-          18.300000578165054
+          -15.869859606027603,
+          22.299999371170998
         ],
         "max": [
           35.679999738931656,
-          -5.410000216215849,
-          21.60000056028366
+          -15.410141088068485,
+          25.600001215934753
         ],
         "size": [
           0.45999884605407715,
-          0.45999977737665176,
-          3.2999999821186066
+          0.4597185179591179,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_1.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1670,24 +4628,24 @@
       "bbox": {
         "min": [
           36.240000277757645,
-          -9.870000183582306,
-          18.300000578165054
+          -19.869860261678696,
+          22.299999371170998
         ],
         "max": [
           36.69999912381172,
-          -9.410000406205654,
-          21.60000056028366
+          -19.410140812397003,
+          25.600001215934753
         ],
         "size": [
           0.45999884605407715,
-          0.45999977737665176,
-          3.2999999821186066
+          0.4597194492816925,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_2.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1713,24 +4671,24 @@
       "bbox": {
         "min": [
           37.25999966263771,
-          -5.869999993592501,
-          18.300000578165054
+          -15.869859606027603,
+          22.299999371170998
         ],
         "max": [
-          37.71999850869179,
-          -5.410000216215849,
-          21.60000056028366
+          37.720002233982086,
+          -15.410141088068485,
+          25.600001215934753
         ],
         "size": [
-          0.45999884605407715,
-          0.45999977737665176,
-          3.2999999821186066
+          0.4600025713443756,
+          0.4597185179591179,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_3.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1756,24 +4714,24 @@
       "bbox": {
         "min": [
           38.27999904751778,
-          -9.870000183582306,
-          18.300000578165054
+          -19.869860261678696,
+          22.299999371170998
         ],
         "max": [
           38.74000161886215,
-          -9.410000406205654,
-          21.60000056028366
+          -19.410140812397003,
+          25.600001215934753
         ],
         "size": [
           0.4600025713443756,
-          0.45999977737665176,
-          3.2999999821186066
+          0.4597194492816925,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_4.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1799,24 +4757,24 @@
       "bbox": {
         "min": [
           39.29999843239784,
-          -5.869999993592501,
-          18.300000578165054
+          -15.869859606027603,
+          22.299999371170998
         ],
         "max": [
-          39.76000100374222,
-          -5.410000216215849,
-          21.60000056028366
+          39.75999727845192,
+          -15.410141088068485,
+          25.600001215934753
         ],
         "size": [
-          0.4600025713443756,
-          0.45999977737665176,
-          3.2999999821186066
+          0.45999884605407715,
+          0.4597185179591179,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_5.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1842,24 +4800,24 @@
       "bbox": {
         "min": [
           40.32000154256821,
-          -9.870000183582306,
-          18.300000578165054
+          -19.869860261678696,
+          22.299999371170998
         ],
         "max": [
           40.780000388622284,
-          -9.410000406205654,
-          21.60000056028366
+          -19.410140812397003,
+          25.600001215934753
         ],
         "size": [
           0.45999884605407715,
-          0.45999977737665176,
-          3.2999999821186066
+          0.4597194492816925,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_6.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1885,24 +4843,24 @@
       "bbox": {
         "min": [
           41.34000092744827,
-          -5.869999993592501,
-          18.300000578165054
+          -15.869859606027603,
+          22.299999371170998
         ],
         "max": [
           41.79999977350235,
-          -5.410000216215849,
-          21.60000056028366
+          -15.410141088068485,
+          25.600001215934753
         ],
         "size": [
           0.45999884605407715,
-          0.45999977737665176,
-          3.2999999821186066
+          0.4597185179591179,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_7.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1927,25 +4885,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          45.170001685619354,
-          -12.21999991685152,
-          18.300000578165054
+          45.169997960329056,
+          -22.219860926270485,
+          22.299999371170998
         ],
         "max": [
           45.63000053167343,
-          -11.760000139474869,
-          21.60000056028366
+          -21.760139614343643,
+          25.600001215934753
         ],
         "size": [
-          0.45999884605407715,
-          0.45999977737665176,
-          3.2999999821186066
+          0.4600025713443756,
+          0.45972131192684174,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_8.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -1971,24 +4929,24 @@
       "bbox": {
         "min": [
           30.37000074982643,
-          -12.21999991685152,
-          18.300000578165054
+          -22.219860926270485,
+          22.299999371170998
         ],
         "max": [
           30.82999959588051,
-          -11.760000139474869,
-          21.60000056028366
+          -21.760139614343643,
+          25.600001215934753
         ],
         "size": [
           0.45999884605407715,
-          0.45999977737665176,
-          3.2999999821186066
+          0.45972131192684174,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J1_tail_9.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2014,24 +4972,24 @@
       "bbox": {
         "min": [
           -7.499999832361937,
-          26.55000053346157,
-          21.60000056028366
+          16.54999889433384,
+          25.600001215934753
         ],
         "max": [
           7.499999832361937,
-          39.99999910593033,
-          36.29999980330467
+          29.999999329447746,
+          40.300000458955765
         ],
         "size": [
           14.999999664723873,
-          13.449998572468758,
+          13.450000435113907,
           14.699999243021011
         ]
       },
       "stl": "stl/IO-J2_shell_reference.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2057,24 +5015,24 @@
       "bbox": {
         "min": [
           7.499999832361937,
-          31.50000050663948,
-          22.600000724196434
+          21.5000007301569,
+          26.599999517202377
         ],
         "max": [
-          8.65000020712614,
-          39.000000804662704,
-          37.43999823927879
+          8.649999275803566,
+          28.999999165534973,
+          41.439998894929886
         ],
         "size": [
-          1.150000374764204,
-          7.500000298023224,
-          14.83999751508236
+          1.1499994434416294,
+          7.499998435378075,
+          14.839999377727509
         ]
       },
       "stl": "stl/IO-J2_spring_reservation_-8.65.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2099,25 +5057,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -8.65000020712614,
-          31.50000050663948,
-          22.600000724196434
+          -8.649999275803566,
+          21.5000007301569,
+          26.599999517202377
         ],
         "max": [
           -7.499999832361937,
-          39.000000804662704,
-          37.43999823927879
+          28.999999165534973,
+          41.439998894929886
         ],
         "size": [
-          1.150000374764204,
-          7.500000298023224,
-          14.83999751508236
+          1.1499994434416294,
+          7.499998435378075,
+          14.839999377727509
         ]
       },
       "stl": "stl/IO-J2_spring_reservation_7.5.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2142,25 +5100,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          3.3400000538676977,
-          33.410001546144485,
-          18.300000578165054
+          3.339999821037054,
+          23.410141468048096,
+          22.299999371170998
         ],
         "max": [
           3.800000064074993,
-          33.87000039219856,
-          21.60000056028366
+          23.86985719203949,
+          25.600001215934753
         ],
         "size": [
-          0.4600000102072954,
-          0.45999884605407715,
-          3.2999999821186066
+          0.46000024303793907,
+          0.45971572399139404,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_0.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2186,24 +5144,24 @@
       "bbox": {
         "min": [
           2.319999970495701,
-          29.410000890493393,
-          18.300000578165054
+          19.410140812397003,
+          22.299999371170998
         ],
         "max": [
           2.7799999807029963,
-          29.86999973654747,
-          21.60000056028366
+          19.869858399033546,
+          25.600001215934753
         ],
         "size": [
           0.4600000102072954,
-          0.45999884605407715,
-          3.2999999821186066
+          0.4597175866365433,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_1.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2229,24 +5187,24 @@
       "bbox": {
         "min": [
           1.3000000035390258,
-          33.410001546144485,
-          18.300000578165054
+          23.410141468048096,
+          22.299999371170998
         ],
         "max": [
           1.7600000137463212,
-          33.87000039219856,
-          21.60000056028366
+          23.86985719203949,
+          25.600001215934753
         ],
         "size": [
           0.4600000102072954,
-          0.45999884605407715,
-          3.2999999821186066
+          0.45971572399139404,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_2.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2272,24 +5230,24 @@
       "bbox": {
         "min": [
           0.2800000074785203,
-          29.410000890493393,
-          18.300000578165054
+          19.410140812397003,
+          22.299999371170998
         ],
         "max": [
           0.7399999885819852,
-          29.86999973654747,
-          21.60000056028366
+          19.869858399033546,
+          25.600001215934753
         ],
         "size": [
           0.45999998110346496,
-          0.45999884605407715,
-          3.2999999821186066
+          0.4597175866365433,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_3.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2315,24 +5273,24 @@
       "bbox": {
         "min": [
           -0.7399999885819852,
-          33.410001546144485,
-          18.300000578165054
+          23.410141468048096,
+          22.299999371170998
         ],
         "max": [
           -0.2800000074785203,
-          33.87000039219856,
-          21.60000056028366
+          23.86985719203949,
+          25.600001215934753
         ],
         "size": [
           0.45999998110346496,
-          0.45999884605407715,
-          3.2999999821186066
+          0.45971572399139404,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_4.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2358,24 +5316,24 @@
       "bbox": {
         "min": [
           -1.7600000137463212,
-          29.410000890493393,
-          18.300000578165054
+          19.410140812397003,
+          22.299999371170998
         ],
         "max": [
           -1.3000000035390258,
-          29.86999973654747,
-          21.60000056028366
+          19.869858399033546,
+          25.600001215934753
         ],
         "size": [
           0.4600000102072954,
-          0.45999884605407715,
-          3.2999999821186066
+          0.4597175866365433,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_5.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2401,24 +5359,24 @@
       "bbox": {
         "min": [
           -2.7799999807029963,
-          33.410001546144485,
-          18.300000578165054
+          23.410141468048096,
+          22.299999371170998
         ],
         "max": [
           -2.319999970495701,
-          33.87000039219856,
-          21.60000056028366
+          23.86985719203949,
+          25.600001215934753
         ],
         "size": [
           0.4600000102072954,
-          0.45999884605407715,
-          3.2999999821186066
+          0.45971572399139404,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_6.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2444,24 +5402,24 @@
       "bbox": {
         "min": [
           -3.800000064074993,
-          29.410000890493393,
-          18.300000578165054
+          19.410140812397003,
+          22.299999371170998
         ],
         "max": [
-          -3.3400000538676977,
-          29.86999973654747,
-          21.60000056028366
+          -3.339999821037054,
+          19.869858399033546,
+          25.600001215934753
         ],
         "size": [
-          0.4600000102072954,
-          0.45999884605407715,
-          3.2999999821186066
+          0.46000024303793907,
+          0.4597175866365433,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_7.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2487,24 +5445,24 @@
       "bbox": {
         "min": [
           -7.6299998909235,
-          35.760000348091125,
-          18.300000578165054
+          25.760140269994736,
+          22.299999371170998
         ],
         "max": [
           -7.170000113546848,
-          36.2199991941452,
-          21.60000056028366
+          26.21985599398613,
+          25.600001215934753
         ],
         "size": [
           0.45999977737665176,
-          0.45999884605407715,
-          3.2999999821186066
+          0.45971572399139404,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_8.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2530,24 +5488,24 @@
       "bbox": {
         "min": [
           7.170000113546848,
-          35.760000348091125,
-          18.300000578165054
+          25.760140269994736,
+          22.299999371170998
         ],
         "max": [
           7.6299998909235,
-          36.2199991941452,
-          21.60000056028366
+          26.21985599398613,
+          25.600001215934753
         ],
         "size": [
           0.45999977737665176,
-          0.45999884605407715,
-          3.2999999821186066
+          0.45971572399139404,
+          3.300001844763756
         ]
       },
       "stl": "stl/IO-J2_tail_9.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2573,24 +5531,24 @@
       "bbox": {
         "min": [
           -47.520000487565994,
-          -16.00000075995922,
-          21.60000056028366
+          -26.000000536441803,
+          25.600001215934753
         ],
         "max": [
           -29.479999095201492,
-          13.249999843537807,
-          35.89000180363655
+          3.2500000670552254,
+          39.889998733997345
         ],
         "size": [
           18.040001392364502,
           29.25000060349703,
-          14.29000124335289
+          14.289997518062592
         ]
       },
       "stl": "stl/IO-J3_header_reference.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2616,13 +5574,13 @@
       "bbox": {
         "min": [
           -42.70999878644943,
-          3.2999999821186066,
-          16.599999740719795
+          -6.70000072568655,
+          20.600000396370888
         ],
         "max": [
           -41.91000014543533,
-          4.30000014603138,
-          21.60000056028366
+          -5.700000561773777,
+          25.600001215934753
         ],
         "size": [
           0.7999986410140991,
@@ -2633,7 +5591,7 @@
       "stl": "stl/IO-J3_tail_0.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2659,24 +5617,24 @@
       "bbox": {
         "min": [
           -42.70999878644943,
-          5.840000230818987,
-          16.599999740719795
+          -4.1600000113248825,
+          20.600000396370888
         ],
         "max": [
           -41.91000014543533,
-          6.839999929070473,
-          21.60000056028366
+          -3.1599998474121094,
+          25.600001215934753
         ],
         "size": [
           0.7999986410140991,
-          0.9999996982514858,
+          1.0000001639127731,
           5.000000819563866
         ]
       },
       "stl": "stl/IO-J3_tail_1.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2702,24 +5660,24 @@
       "bbox": {
         "min": [
           -42.70999878644943,
-          10.92000026255846,
-          16.599999740719795
+          0.9199981577694416,
+          20.600000396370888
         ],
         "max": [
           -41.91000014543533,
-          11.920000426471233,
-          21.60000056028366
+          1.919998205266893,
+          25.600001215934753
         ],
         "size": [
           0.7999986410140991,
-          1.0000001639127731,
+          1.0000000474974513,
           5.000000819563866
         ]
       },
       "stl": "stl/IO-J3_tail_2.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2745,13 +5703,13 @@
       "bbox": {
         "min": [
           -35.08999943733215,
-          3.2999999821186066,
-          16.599999740719795
+          -6.70000072568655,
+          20.600000396370888
         ],
         "max": [
           -34.290000796318054,
-          4.30000014603138,
-          21.60000056028366
+          -5.700000561773777,
+          25.600001215934753
         ],
         "size": [
           0.7999986410140991,
@@ -2762,7 +5720,7 @@
       "stl": "stl/IO-J3_tail_3.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2788,24 +5746,24 @@
       "bbox": {
         "min": [
           -35.08999943733215,
-          5.840000230818987,
-          16.599999740719795
+          -4.1600000113248825,
+          20.600000396370888
         ],
         "max": [
           -34.290000796318054,
-          6.839999929070473,
-          21.60000056028366
+          -3.1599998474121094,
+          25.600001215934753
         ],
         "size": [
           0.7999986410140991,
-          0.9999996982514858,
+          1.0000001639127731,
           5.000000819563866
         ]
       },
       "stl": "stl/IO-J3_tail_4.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2831,24 +5789,24 @@
       "bbox": {
         "min": [
           -35.08999943733215,
-          10.92000026255846,
-          16.599999740719795
+          0.9199981577694416,
+          20.600000396370888
         ],
         "max": [
           -34.290000796318054,
-          11.920000426471233,
-          21.60000056028366
+          1.919998205266893,
+          25.600001215934753
         ],
         "size": [
           0.7999986410140991,
-          1.0000001639127731,
+          1.0000000474974513,
           5.000000819563866
         ]
       },
       "stl": "stl/IO-J3_tail_5.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2874,13 +5832,13 @@
       "bbox": {
         "min": [
           -46.50000110268593,
-          24.49999935925007,
-          22.099999710917473
+          14.499999582767487,
+          26.100000366568565
         ],
         "max": [
           -39.500001817941666,
-          31.50000050663948,
-          30.09999915957451
+          21.5000007301569,
+          34.0999998152256
         ],
         "size": [
           6.999999284744263,
@@ -2891,7 +5849,7 @@
       "stl": "stl/IO-J4_M3_stud.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2917,13 +5875,13 @@
       "bbox": {
         "min": [
           -48.00000041723251,
-          24.49999935925007,
-          25.100000202655792
+          14.499999582767487,
+          29.100000858306885
         ],
         "max": [
           -37.99999877810478,
-          35.00000014901161,
-          33.59999880194664
+          25.00000037252903,
+          37.59999945759773
         ],
         "size": [
           10.000001639127731,
@@ -2934,7 +5892,7 @@
       "stl": "stl/IO-J4_lug_nut_reservation.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -2960,24 +5918,24 @@
       "bbox": {
         "min": [
           -40.665000677108765,
-          30.334999784827232,
-          19.099999219179153
+          20.33500000834465,
+          23.099999874830246
         ],
         "max": [
           -39.46499899029732,
-          31.53499960899353,
-          21.60000056028366
+          21.535003557801247,
+          25.600001215934753
         ],
         "size": [
           1.2000016868114471,
-          1.199999824166298,
+          1.2000035494565964,
           2.5000013411045074
         ]
       },
       "stl": "stl/IO-J4_tail_0.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3003,13 +5961,13 @@
       "bbox": {
         "min": [
           -40.665000677108765,
-          24.46500025689602,
-          19.099999219179153
+          14.465000480413437,
+          23.099999874830246
         ],
         "max": [
           -39.46499899029732,
-          25.665000081062317,
-          21.60000056028366
+          15.665000304579735,
+          25.600001215934753
         ],
         "size": [
           1.2000016868114471,
@@ -3020,7 +5978,7 @@
       "stl": "stl/IO-J4_tail_1.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3046,24 +6004,24 @@
       "bbox": {
         "min": [
           -46.53500020503998,
-          30.334999784827232,
-          19.099999219179153
+          20.33500000834465,
+          23.099999874830246
         ],
         "max": [
           -45.33499851822853,
-          31.53499960899353,
-          21.60000056028366
+          21.535003557801247,
+          25.600001215934753
         ],
         "size": [
           1.2000016868114471,
-          1.199999824166298,
+          1.2000035494565964,
           2.5000013411045074
         ]
       },
       "stl": "stl/IO-J4_tail_2.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3089,13 +6047,13 @@
       "bbox": {
         "min": [
           -46.53500020503998,
-          24.46500025689602,
-          19.099999219179153
+          14.465000480413437,
+          23.099999874830246
         ],
         "max": [
           -45.33499851822853,
-          25.665000081062317,
-          21.60000056028366
+          15.665000304579735,
+          25.600001215934753
         ],
         "size": [
           1.2000016868114471,
@@ -3106,7 +6064,7 @@
       "stl": "stl/IO-J4_tail_3.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3132,13 +6090,13 @@
       "bbox": {
         "min": [
           -30.500000342726707,
-          24.49999935925007,
-          22.099999710917473
+          14.499999582767487,
+          26.100000366568565
         ],
         "max": [
           -23.499999195337296,
-          31.50000050663948,
-          30.09999915957451
+          21.5000007301569,
+          34.0999998152256
         ],
         "size": [
           7.000001147389412,
@@ -3149,7 +6107,7 @@
       "stl": "stl/IO-J5_M3_stud.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3175,13 +6133,13 @@
       "bbox": {
         "min": [
           -32.00000151991844,
-          24.49999935925007,
-          25.100000202655792
+          14.499999582767487,
+          29.100000858306885
         ],
         "max": [
           -21.99999988079071,
-          35.00000014901161,
-          33.59999880194664
+          25.00000037252903,
+          37.59999945759773
         ],
         "size": [
           10.000001639127731,
@@ -3192,7 +6150,7 @@
       "stl": "stl/IO-J5_lug_nut_reservation.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3217,25 +6175,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -24.664999917149544,
-          30.334999784827232,
-          19.099999219179153
+          -24.665001779794693,
+          20.33500000834465,
+          23.099999874830246
         ],
         "max": [
           -23.465000092983246,
-          31.53499960899353,
-          21.60000056028366
+          21.535003557801247,
+          25.600001215934753
         ],
         "size": [
-          1.199999824166298,
-          1.199999824166298,
+          1.2000016868114471,
+          1.2000035494565964,
           2.5000013411045074
         ]
       },
       "stl": "stl/IO-J5_tail_0.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3260,17 +6218,17 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -24.664999917149544,
-          24.46500025689602,
-          19.099999219179153
+          -24.665001779794693,
+          14.465000480413437,
+          23.099999874830246
         ],
         "max": [
           -23.465000092983246,
-          25.665000081062317,
-          21.60000056028366
+          15.665000304579735,
+          25.600001215934753
         ],
         "size": [
-          1.199999824166298,
+          1.2000016868114471,
           1.199999824166298,
           2.5000013411045074
         ]
@@ -3278,7 +6236,7 @@
       "stl": "stl/IO-J5_tail_1.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3304,24 +6262,24 @@
       "bbox": {
         "min": [
           -30.534999445080757,
-          30.334999784827232,
-          19.099999219179153
+          20.33500000834465,
+          23.099999874830246
         ],
         "max": [
           -29.33499962091446,
-          31.53499960899353,
-          21.60000056028366
+          21.535003557801247,
+          25.600001215934753
         ],
         "size": [
           1.199999824166298,
-          1.199999824166298,
+          1.2000035494565964,
           2.5000013411045074
         ]
       },
       "stl": "stl/IO-J5_tail_2.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3347,13 +6305,13 @@
       "bbox": {
         "min": [
           -30.534999445080757,
-          24.46500025689602,
-          19.099999219179153
+          14.465000480413437,
+          23.099999874830246
         ],
         "max": [
           -29.33499962091446,
-          25.665000081062317,
-          21.60000056028366
+          15.665000304579735,
+          25.600001215934753
         ],
         "size": [
           1.199999824166298,
@@ -3364,7 +6322,7 @@
       "stl": "stl/IO-J5_tail_3.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3390,24 +6348,24 @@
       "bbox": {
         "min": [
           12.500000186264515,
-          16.499999910593033,
-          22.099999710917473
+          6.500000134110451,
+          26.100000366568565
         ],
         "max": [
           19.500000402331352,
-          23.499999195337296,
-          30.09999915957451
+          13.500000350177288,
+          34.0999998152256
         ],
         "size": [
           7.000000216066837,
-          6.999999284744263,
+          7.000000216066837,
           7.999999448657036
         ]
       },
       "stl": "stl/IO-J6_M3_stud.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3433,13 +6391,13 @@
       "bbox": {
         "min": [
           10.999999940395355,
-          16.499999910593033,
-          25.100000202655792
+          6.500000134110451,
+          29.100000858306885
         ],
         "max": [
           20.999999716877937,
-          27.000000700354576,
-          33.59999880194664
+          17.000000923871994,
+          37.59999945759773
         ],
         "size": [
           9.999999776482582,
@@ -3450,7 +6408,7 @@
       "stl": "stl/IO-J6_lug_nut_reservation.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3476,24 +6434,24 @@
       "bbox": {
         "min": [
           18.334999680519104,
-          22.335000336170197,
-          19.099999219179153
+          12.334998697042465,
+          23.099999874830246
         ],
         "max": [
           19.534999504685402,
-          23.535000160336494,
-          21.60000056028366
+          13.534999452531338,
+          25.600001215934753
         ],
         "size": [
           1.199999824166298,
-          1.199999824166298,
+          1.2000007554888725,
           2.5000013411045074
         ]
       },
       "stl": "stl/IO-J6_tail_0.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3519,24 +6477,24 @@
       "bbox": {
         "min": [
           18.334999680519104,
-          16.465000808238983,
-          19.099999219179153
+          6.4650001004338264,
+          23.099999874830246
         ],
         "max": [
           19.534999504685402,
-          17.66500063240528,
-          21.60000056028366
+          7.665000855922699,
+          25.600001215934753
         ],
         "size": [
           1.199999824166298,
-          1.199999824166298,
+          1.2000007554888725,
           2.5000013411045074
         ]
       },
       "stl": "stl/IO-J6_tail_1.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3562,24 +6520,24 @@
       "bbox": {
         "min": [
           12.46500015258789,
-          22.335000336170197,
-          19.099999219179153
+          12.334998697042465,
+          23.099999874830246
         ],
         "max": [
           13.664999976754189,
-          23.535000160336494,
-          21.60000056028366
+          13.534999452531338,
+          25.600001215934753
         ],
         "size": [
           1.199999824166298,
-          1.199999824166298,
+          1.2000007554888725,
           2.5000013411045074
         ]
       },
       "stl": "stl/IO-J6_tail_2.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3605,67 +6563,24 @@
       "bbox": {
         "min": [
           12.46500015258789,
-          16.465000808238983,
-          19.099999219179153
+          6.4650001004338264,
+          23.099999874830246
         ],
         "max": [
           13.664999976754189,
-          17.66500063240528,
-          21.60000056028366
+          7.665000855922699,
+          25.600001215934753
         ],
         "size": [
           1.199999824166298,
-          1.199999824166298,
+          1.2000007554888725,
           2.5000013411045074
         ]
       },
       "stl": "stl/IO-J6_tail_3.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
-        "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
-        "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
-        "Replace this whole module using a verified JLCEDA native export before fabrication."
-      ],
-      "prototype_status": "集成参考；未经采购或实物验证",
-      "viewer_group": "electronics",
-      "print_stl": null
-    },
-    {
-      "id": "IO-BRI01_COAX_LEDGE",
-      "name": "IO-BRI01_COAX_LEDGE",
-      "category": "component",
-      "quantity": 1,
-      "material": "Integration reference only",
-      "process": "Original project mesh or declared envelope; do not print",
-      "color": [
-        0.02199999988079071,
-        0.029999999329447746,
-        0.03999999910593033,
-        1.0
-      ],
-      "color_space": "linear",
-      "bbox": {
-        "min": [
-          -21.99999988079071,
-          -16.00000075995922,
-          21.60000056028366
-        ],
-        "max": [
-          21.99999988079071,
-          6.000000052154064,
-          39.99999910593033
-        ],
-        "size": [
-          43.99999976158142,
-          22.000000812113285,
-          18.399998545646667
-        ]
-      },
-      "stl": "stl/IO-BRI01_COAX_LEDGE.stl",
-      "assembly_role": "electronics",
-      "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift-10 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3690,25 +6605,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          6.827000062912703,
+          6.826932542026043,
           -23.499999195337296,
-          27.824999764561653
+          31.825002282857895
         ],
         "max": [
-          13.172999955713749,
-          -1.39999995008111,
-          34.175001084804535
+          13.173066079616547,
+          -1.4000015798956156,
+          38.17499801516533
         ],
         "size": [
-          6.345999892801046,
-          22.099999245256186,
-          6.350001320242882
+          6.346133537590504,
+          22.09999761544168,
+          6.349995732307434
         ]
       },
       "stl": "stl/IO-X1_132170_reference.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift0 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3733,25 +6648,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          4.515000153332949,
-          -17.69999973475933,
-          26.249999180436134
+          4.5151724480092525,
+          -17.70000159740448,
+          30.249999836087227
         ],
         "max": [
-          15.484999865293503,
+          15.484827570617199,
           -16.00000075995922,
-          35.750001668930054
+          39.74999859929085
         ],
         "size": [
-          10.969999711960554,
-          1.6999989748001099,
-          9.50000248849392
+          10.969655122607946,
+          1.700000837445259,
+          9.499998763203621
         ]
       },
       "stl": "stl/IO-X1_fixed_flange.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift0 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3776,25 +6691,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          5.381000228226185,
+          5.381198134273291,
           -14.499999582767487,
-          27.000000700354576
+          30.99999949336052
         ],
         "max": [
-          14.619000256061554,
+          14.61880188435316,
           -12.000000104308128,
-          35.00000014901161
+          39.000000804662704
         ],
         "size": [
-          9.238000027835369,
+          9.23760375007987,
           2.499999478459358,
-          7.999999448657036
+          8.000001311302185
         ]
       },
       "stl": "stl/IO-X1_nut_washer_reservation.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift0 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3819,25 +6734,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -13.172999955713749,
+          -13.173067942261696,
           -23.499999195337296,
-          27.824999764561653
+          31.825002282857895
         ],
         "max": [
-          -6.827000062912703,
-          -1.39999995008111,
-          34.175001084804535
+          -6.826934404671192,
+          -1.4000015798956156,
+          38.17499801516533
         ],
         "size": [
-          6.345999892801046,
-          22.099999245256186,
-          6.350001320242882
+          6.346133537590504,
+          22.09999761544168,
+          6.349995732307434
         ]
       },
       "stl": "stl/IO-X2_132170_reference.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift0 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3862,25 +6777,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -15.484999865293503,
-          -17.69999973475933,
-          26.249999180436134
+          -15.484827570617199,
+          -17.70000159740448,
+          30.249999836087227
         ],
         "max": [
-          -4.515000153332949,
+          -4.5151724480092525,
           -16.00000075995922,
-          35.750001668930054
+          39.74999859929085
         ],
         "size": [
-          10.969999711960554,
-          1.6999989748001099,
-          9.50000248849392
+          10.969655122607946,
+          1.700000837445259,
+          9.499998763203621
         ]
       },
       "stl": "stl/IO-X2_fixed_flange.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift0 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3905,25 +6820,25 @@
       "color_space": "linear",
       "bbox": {
         "min": [
-          -14.619000256061554,
+          -14.61880188435316,
           -14.499999582767487,
-          27.000000700354576
+          30.99999949336052
         ],
         "max": [
-          -5.381000228226185,
+          -5.381198134273291,
           -12.000000104308128,
-          35.00000014901161
+          39.000000804662704
         ],
         "size": [
-          9.238000027835369,
+          9.23760375007987,
           2.499999478459358,
-          7.999999448657036
+          8.000001311302185
         ]
       },
       "stl": "stl/IO-X2_nut_washer_reservation.stl",
       "assembly_role": "electronics",
       "notes": [
-        "Full-size owned MCAD from B05 frame, Y-36; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
+        "Full-size owned MCAD; additional Y shift0 and Z+4; caf71c4e11812ce8f2accb505f60ec5d0bc8eccfdd7ffd8a01d39f11081e42d2",
         "CANDIDATE REFERENCE ONLY: X=58-u;Y=76-v;Z=20+w.",
         "J2 moved to u58 and J6 to u42,v20; old PCB drill/copper layout is NOT regenerated here.",
         "Replace this whole module using a verified JLCEDA native export before fabrication."
@@ -3949,13 +6864,13 @@
       "bbox": {
         "min": [
           -14.999999664723873,
-          39.99999910593033,
-          18.99999938905239
+          30.000001192092896,
+          23.000000044703484
         ],
         "max": [
           14.999999664723873,
-          79.99999821186066,
-          43.89999806880951
+          70.00000029802322,
+          47.8999987244606
         ],
         "size": [
           29.999999329447746,
@@ -3989,13 +6904,13 @@
       "bbox": {
         "min": [
           -56.0000017285347,
-          -70.00000029802322,
-          17.999999225139618
+          -79.99999821186066,
+          21.99999988079071
         ],
         "max": [
           56.0000017285347,
-          -30.000001192092896,
-          39.99999910593033
+          -39.99999910593033,
+          43.99999976158142
         ],
         "size": [
           112.0000034570694,
@@ -4018,7 +6933,7 @@
     "load chassis and clamp",
     "dynamic collisions",
     "physical fit",
-    "PCB routing",
+    "PCB signal integrity",
     "thermal",
     "slicing/supports"
   ]

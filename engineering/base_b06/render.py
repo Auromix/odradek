@@ -14,7 +14,7 @@ def view(name,position,target,scale):
 def modes(showcover,showcontext):
     for p in D['parts']:
         o=bpy.data.objects[p['id']]
-        if p['assembly_role']=='routing':o.hide_render=True
+        if p['assembly_role'] in ('routing','environment'):o.hide_render=True
         elif p['assembly_role'] in ('structure','electronics'):o.hide_render=not showcontext
         elif p['assembly_role'] in ('cover','rear_lid'):o.hide_render=not showcover
 modes(True,False)
@@ -28,3 +28,9 @@ modes(False,True)
 view('internal-fit',(.30,.43,.34),(0,.065,.085),.34)
 modes(True,True)
 view('root-integrated',(.30,.43,.34),(0,.075,.080),.34)
+
+# All review contexts are native budget solids; nothing is saved back to geometry.
+for p in D['parts']:
+    if p['assembly_role']=='environment':bpy.data.objects[p['id']].hide_render=False
+bpy.data.objects['Render backdrop only'].hide_render=True
+view('clamp-and-shelf',(.43,-.46,.10),(0,.11,-.060),.62)
