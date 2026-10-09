@@ -1,0 +1,978 @@
+{
+  "revision": "A16-SKELETON01",
+  "layout": {
+    "id": "A16-CONVENTIONAL02-FLAT-WRIST",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "底部转向",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "肩部俯仰",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          91.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "上臂旋转",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -10,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "肘部回折",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "腕部俯仰",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "腕部横摆",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "整头旋转",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
+  },
+  "parts": [
+    {
+      "id": "A16-S101-root-to-shoulder-L",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "Conventional L bracket; flat8mm foot and8mm annular face. Supported print; metal welded/bent/milled redesign requires strength validation.",
+      "solid_count": 1,
+      "volume_mm3": 175330.14661519846,
+      "mass_kg": 0.20162966860747825,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        -1.001517111924195e-13,
+        37.96019198846165,
+        67.84425438693746
+      ],
+      "bbox_size_mm": [
+        134.0,
+        101.50000000000001,
+        151.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          621.5792369642979,
+          6.239777654611031e-13,
+          -1.3486748091374643e-07
+        ],
+        [
+          6.239777654611031e-13,
+          676.6860020305976,
+          -160.55010851131544
+        ],
+        [
+          -1.3486748091374643e-07,
+          -160.55010851131544,
+          449.8482989860135
+        ]
+      ]
+    },
+    {
+      "id": "A16-S102-shoulder-cross-adapter",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "Native J2 output to native J3 front ring; no gear/cam. Bolt access recut after unions.",
+      "solid_count": 1,
+      "volume_mm3": 107124.64024661404,
+      "mass_kg": 0.12319333628360615,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        20.81938575032771,
+        13.38536497750039,
+        1.1364288017044611e-10
+      ],
+      "bbox_size_mm": [
+        70.35000020000001,
+        142.0000002,
+        134.0000002
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          397.51068414099865,
+          60.413288423906096,
+          0.00047209862648012776
+        ],
+        [
+          60.413288423906096,
+          178.49033559186583,
+          0.0011084093351080334
+        ],
+        [
+          0.00047209862648012776,
+          0.0011084093351080334,
+          300.05849490956194
+        ]
+      ]
+    },
+    {
+      "id": "A16-S103-upper-proximal-socket",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "220mm stock20x40x2 tube beginsX50. Fit gap0.2 per side;2xM4 transverse clamp through tube; output bolts before tube.",
+      "solid_count": 1,
+      "volume_mm3": 55786.214290246025,
+      "mass_kg": 0.06415414643378294,
+      "density_assumption_kg_mm3": 1.1500000000000002e-06,
+      "com_mm": [
+        39.596900046230125,
+        -0.35488147795990804,
+        -0.03383632819515934
+      ],
+      "bbox_size_mm": [
+        47.15000009999999,
+        70.0,
+        70.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          33.33951094115494,
+          0.31080338205845215,
+          -0.11672249043008838
+        ],
+        [
+          0.31080338205845215,
+          26.63147530402812,
+          0.12147406914211625
+        ],
+        [
+          -0.11672249043008838,
+          0.12147406914211625,
+          23.070525810868848
+        ]
+      ]
+    },
+    {
+      "id": "A16-S104-upper-distal-socket",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "Tube endsX270; offset end socket joins native J4 front annulus. Tool channels open with tube removed.",
+      "solid_count": 1,
+      "volume_mm3": 127238.49842191664,
+      "mass_kg": 0.14632427318520413,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        306.0172040857942,
+        23.79239151884695,
+        1.7402541186009407e-15
+      ],
+      "bbox_size_mm": [
+        162.0,
+        49.35,
+        134.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          162.94795111563602,
+          -46.19960925052243,
+          1.3491355692684734e-07
+        ],
+        [
+          -46.19960925052243,
+          485.1960018724395,
+          -4.454125676750432e-15
+        ],
+        [
+          1.3491355692684734e-07,
+          -4.454125676750432e-15,
+          370.8657861530391
+        ]
+      ]
+    },
+    {
+      "id": "A16-S105-upper-stock-tube",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "purchased_structure",
+      "material": "6061-T6 stock rectangular tube20x40x2, saw cut220mm; drill4xD4.5 on side centreline",
+      "note": "Catalogue material assumption only, not strength certification. Tube is purchased metal in supported fit.",
+      "solid_count": 1,
+      "volume_mm3": 49025.530995059205,
+      "mass_kg": 0.13236893368665986,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        159.9948094594841,
+        -1.366430261290051e-15,
+        3.3234089849696836e-16
+      ],
+      "bbox_size_mm": [
+        220.0,
+        20.0,
+        40.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          34.89245928007815,
+          -2.011914293451221e-15,
+          -2.312490186412843e-18
+        ],
+        [
+          -2.011914293451221e-15,
+          556.8441926568908,
+          3.3527379098633077e-16
+        ],
+        [
+          -2.312490186412843e-18,
+          3.3527379098633077e-16,
+          538.9218583728273
+        ]
+      ]
+    },
+    {
+      "id": "A16-S106-fore-proximal-socket",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "Ordinary elbow L/socket; tube centreY62. Bolt J4 output before installing tube.",
+      "solid_count": 1,
+      "volume_mm3": 67289.99730992841,
+      "mass_kg": 0.07738349690641767,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        5.7087938929915225,
+        42.85651685955772,
+        -0.07296155206727037
+      ],
+      "bbox_size_mm": [
+        75.0,
+        48.15,
+        70.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          35.72903834856796,
+          -9.295213444653035,
+          0.05801791805049668
+        ],
+        [
+          -9.295213444653035,
+          46.60212213160419,
+          0.18127550869548983
+        ],
+        [
+          0.05801791805049668,
+          0.18127550869548983,
+          39.26160917243014
+        ]
+      ]
+    },
+    {
+      "id": "A16-S107-fore-distal-socket",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "Offset tube socket to native RS10P J5 fixed ring. No redundant gears.",
+      "solid_count": 1,
+      "volume_mm3": 61026.67290851326,
+      "mass_kg": 0.07018067384479025,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        107.8833177822833,
+        84.8211914572929,
+        -7.758250315976084e-14
+      ],
+      "bbox_size_mm": [
+        167.5,
+        55.5,
+        65.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          36.83605296312189,
+          -40.11736303449442,
+          -4.688483324193019e-13
+        ],
+        [
+          -40.11736303449442,
+          184.57303512326934,
+          -7.584806620793701e-14
+        ],
+        [
+          -4.688483324193019e-13,
+          -7.584806620793701e-14,
+          193.99710623207528
+        ]
+      ]
+    },
+    {
+      "id": "A16-S108-fore-stock-tube",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "purchased_structure",
+      "material": "6061-T6 stock rectangular tube20x40x2, saw cut55mm; drill4xD4.5",
+      "note": "Fore axis spacing185 unchanged; fixed rear spine completes span outside wrist pitch sweep.",
+      "solid_count": 1,
+      "volume_mm3": 12065.530995059227,
+      "mass_kg": 0.03257693368665991,
+      "density_assumption_kg_mm3": 2.7e-06,
+      "com_mm": [
+        47.478909423460514,
+        62.00000000000005,
+        6.246052406845249e-17
+      ],
+      "bbox_size_mm": [
+        55.0,
+        20.0,
+        40.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          8.680424643288719,
+          -1.2069598887658726e-13,
+          -1.0707788898416065e-19
+        ],
+        [
+          -1.2069598887658726e-13,
+          14.78060217681323,
+          1.0730316466888149e-14
+        ],
+        [
+          -1.0707788898416065e-19,
+          1.0730316466888149e-14,
+          10.258911031591817
+        ]
+      ]
+    },
+    {
+      "id": "A16-S109-wrist-pitch-yaw-L",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "One L bracket, native J5 output/J6 front ring; open screw access; not a new joint module.",
+      "solid_count": 1,
+      "volume_mm3": 34552.53555461393,
+      "mass_kg": 0.03973541588780602,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        25.080395375948644,
+        19.394036617491604,
+        -20.277448207585145
+      ],
+      "bbox_size_mm": [
+        108.0,
+        69.0,
+        56.8
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          25.457012830645894,
+          14.87152436369178,
+          12.380672191564674
+        ],
+        [
+          14.87152436369178,
+          48.75223115916823,
+          -7.26821502705588
+        ],
+        [
+          12.380672191564674,
+          -7.26821502705588,
+          53.51628398373516
+        ]
+      ]
+    },
+    {
+      "id": "A16-S110-wrist-yaw-roll-L",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "role": "printed_structure",
+      "material": "PA12 fit prototype",
+      "note": "J7 front ring/cartridge planes retained;6x cage through boltsPCD70; annular screw-head sweep relief, no extra mechanism.",
+      "solid_count": 1,
+      "volume_mm3": 83148.3337852458,
+      "mass_kg": 0.09562058385303268,
+      "density_assumption_kg_mm3": 1.15e-06,
+      "com_mm": [
+        66.9720812545194,
+        -4.793392567205338e-14,
+        -24.31169860345853
+      ],
+      "bbox_size_mm": [
+        128.3,
+        84.0,
+        90.30000000000001
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          89.59156093067504,
+          -1.1060881561078756e-14,
+          -57.774167815943144
+        ],
+        [
+          -1.1060881561078756e-14,
+          234.07534074334913,
+          4.73386734432452e-14
+        ],
+        [
+          -57.774167815943144,
+          4.73386734432452e-14,
+          198.61303965377743
+        ]
+      ]
+    },
+    {
+      "id": "A13-J7-101-bearing-housing",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "printed_structure",
+      "material": "PA12/PETG supported fit only",
+      "note": "Unchanged valid A13 STEP, no topology cleanup; new arm context, qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 66391.67659795734,
+      "mass_kg": 0.08431742927940582,
+      "com_mm": [
+        43.885488484008896,
+        2.8622400160863002e-12,
+        3.3898909883299077e-12
+      ],
+      "bbox_size_mm": [
+        20.900000000000006,
+        83.9822070712202,
+        83.99060055206297
+      ]
+    },
+    {
+      "id": "A13-J7-102-bearing-retainer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "printed_structure",
+      "material": "PA12/PETG supported fit only",
+      "note": "Unchanged valid A13 STEP, no topology cleanup; new arm context, qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 7146.613517852218,
+      "mass_kg": 0.009076199167672317,
+      "com_mm": [
+        55.44645513177739,
+        2.144425970499609e-12,
+        1.6723861196380204e-13
+      ],
+      "bbox_size_mm": [
+        2.5,
+        80.44444444444444,
+        84.0
+      ]
+    },
+    {
+      "id": "A13-J7-103-output-journal",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "role": "printed_structure",
+      "material": "PA12/PETG supported fit only",
+      "note": "Unchanged valid A13 STEP, no topology cleanup; new arm context, qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 29605.391346717322,
+      "mass_kg": 0.037598847010331,
+      "com_mm": [
+        42.00992461683323,
+        1.2660405896393352e-16,
+        5.302371574406274e-14
+      ],
+      "bbox_size_mm": [
+        34.0,
+        36.99585976698012,
+        36.991719997244815
+      ]
+    },
+    {
+      "id": "A13-J7-104-inner-spacer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "role": "printed_structure",
+      "material": "PA12/PETG supported fit only",
+      "note": "Unchanged valid A13 STEP, no topology cleanup; new arm context, qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 376.5709304133361,
+      "mass_kg": 0.0004782450816249368,
+      "com_mm": [
+        55.94999999999997,
+        -1.7934381146839117e-12,
+        1.123580153189992e-15
+      ],
+      "bbox_size_mm": [
+        3.5,
+        36.991719997244815,
+        36.99585976698012
+      ]
+    },
+    {
+      "id": "A13-IF-107-piloted-flange",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "role": "printed_structure",
+      "material": "PA12/PETG supported fit only",
+      "note": "Unchanged valid A13 STEP, no topology cleanup; new arm context, qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 20217.50899493181,
+      "mass_kg": 0.025676236423563398,
+      "com_mm": [
+        61.88103586431536,
+        -0.02687931027283618,
+        8.497419585342378e-13
+      ],
+      "bbox_size_mm": [
+        10.0,
+        59.9932861086164,
+        59.9865729685051
+      ]
+    },
+    {
+      "id": "A13-IF-301-recessed-carrier",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "role": "printed_structure",
+      "material": "PA12/PETG supported fit only",
+      "note": "Unchanged valid A13 STEP, no topology cleanup; new arm context, qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 102185.71845797198,
+      "mass_kg": 0.1297758624416244,
+      "com_mm": [
+        81.9800183125407,
+        0.9179493120812685,
+        -3.287008704346824
+      ],
+      "bbox_size_mm": [
+        46.30000000000001,
+        88.0,
+        88.0
+      ]
+    },
+    {
+      "id": "A13-IF-302-dorsal-cover",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "role": "printed_structure",
+      "material": "PA12/PETG supported fit only",
+      "note": "Unchanged valid A13 STEP, no topology cleanup; new arm context, qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 6645.147577232143,
+      "mass_kg": 0.00843933742308482,
+      "com_mm": [
+        91.75991121199456,
+        -1.0504317299936362e-09,
+        34.58114993690922
+      ],
+      "bbox_size_mm": [
+        29.10000000000001,
+        77.0759320683162,
+        24.00000000000113
+      ]
+    },
+    {
+      "id": "A13-IF-303-face-insert",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "role": "printed_structure",
+      "material": "PA12/PETG supported fit only",
+      "note": "Unchanged valid A13 STEP, no topology cleanup; new arm context, qualification pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 4515.209487060808,
+      "mass_kg": 0.0057343160485672255,
+      "com_mm": [
+        104.49999999999997,
+        -0.5846904794941165,
+        -0.7830600130806875
+      ],
+      "bbox_size_mm": [
+        3.0,
+        65.99647007384532,
+        52.0
+      ]
+    }
+  ],
+  "retained": [
+    {
+      "id": "A13-J7-101-bearing-housing",
+      "source": "engineering/arm_a13/wrist-route01/build/step/A13-J7-101-bearing-housing.step",
+      "source_sha256": "cfa25d13341237a6a0efbcdd81b0a2ffecc75d7310baab801178f71b3cf497ac"
+    },
+    {
+      "id": "A13-J7-102-bearing-retainer",
+      "source": "engineering/arm_a13/wrist-route01/build/step/A13-J7-102-bearing-retainer.step",
+      "source_sha256": "eb87eaca2be00607076e04015d35d6885c50d7e17df72ffeb6c0dbd7a8d1582e"
+    },
+    {
+      "id": "A13-J7-103-output-journal",
+      "source": "engineering/arm_a13/wrist-route01/build/step/A13-J7-103-output-journal.step",
+      "source_sha256": "06e985a75ede4e12223c240463832fc74690ee422381150be507a8501d16fbb0"
+    },
+    {
+      "id": "A13-J7-104-inner-spacer",
+      "source": "engineering/arm_a13/wrist-route01/build/step/A13-J7-104-inner-spacer.step",
+      "source_sha256": "edbd983066063fcb01777220aa2220f82d81b8a3a3a2f2444c0a51733275517a"
+    },
+    {
+      "id": "A13-IF-107-piloted-flange",
+      "source": "engineering/arm_a13/wrist-route01/build/step/A13-IF-107-piloted-flange.step",
+      "source_sha256": "300de7429924e9a09948397a48a4307fc51d02958c383513c5c4d26cc7d3ff99"
+    },
+    {
+      "id": "A13-IF-301-recessed-carrier",
+      "source": "engineering/arm_a13/wrist-route01/build/step/A13-IF-301-recessed-carrier.step",
+      "source_sha256": "2186ae8a5f4f2f30a31f84847edb8c4b7fc932960e4cd4213049e352db1861a8"
+    },
+    {
+      "id": "A13-IF-302-dorsal-cover",
+      "source": "engineering/arm_a13/wrist-route01/build/step/A13-IF-302-dorsal-cover.step",
+      "source_sha256": "990caf7c49523f9747d3f504afed467b664fe3c44e83c9e2c8b54a334ed9a913"
+    },
+    {
+      "id": "A13-IF-303-face-insert",
+      "source": "engineering/arm_a13/wrist-route01/build/step/A13-IF-303-face-insert.step",
+      "source_sha256": "ece3c97977b80e64309b9c346f377b2ef85c8e24c52f78315700233bcea437f2"
+    }
+  ],
+  "excluded_tool_side_dummies": [
+    "A13-IF-304-tool-pocket",
+    "A13-IF-305-tool-pocket-cover"
+  ],
+  "manufacturing_scope": "Only supported, unpowered, unloaded bracket/tube/cartridge fit. Brackets are ordinary flange plates and tube sockets, not decorative mesh proxies.",
+  "nominal_motor_bolt_plan": {
+    "RS04_fixed": "M4x12 /8 grip /.8washer /3.2 insertion /5 minimum source depth",
+    "RS04_output": "M5x16 /10 grip /1washer /5 insertion /6.5 minimum source depth",
+    "RS10P_fixed": "M4x12 /8 grip /.8washer /3.2 insertion /4.5 source depth",
+    "RS10P_output": "M4x14 /10 grip /.8washer /3.2 insertion /5 source depth",
+    "RS00_fixed": "M3x12 button /8 grip /.5washer /3.5 insertion; actual front usable depth must be measured"
+  },
+  "hardware_and_tool_access_qualified": false,
+  "whole_arm_collision_qualified": false,
+  "harness_qualified": false,
+  "production_release": false
+}

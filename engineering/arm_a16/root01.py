@@ -36,8 +36,8 @@ def main():
     p=holes(p,[(x,y) for x in [-38,38] for y in [-28,28]],5.6,20,10)
     g.add('A16-R103-J1-output-pedestal',p,1,frame='J1.rotor',note='One-piece lathe/mill geometry; print flat on output face for unloaded fit. D70x20 stem, D120x10 upper plate; six recessed M4x25.')
     for k,(x,y) in enumerate(cols,1):
-        p=g.ring([x,y,66],[0,0,1],6,2.75,96.5)
-        g.add(f'A16-R104-spacer-{k}',p,0,role='purchased_structure',material='stock steel tube OD12 ID5.5, cut length96.5 +0/-0.1mm',frame='world',mass=p.Volume()*7.85e-6,note='Purchase metal spacer for prototype as well; do not print as a loaded column. Tube covers captive nut and bears on plate around the pocket.')
+        p=g.ring([x,y,66],[0,0,1],6,3,96.5)
+        g.add(f'A16-R104-spacer-{k}',p,0,role='purchased_structure',material='stock steel precision tube OD12 ID6 (wall3), cut length96.5 +0/-0.1mm',frame='world',mass=p.Volume()*7.85e-6,note='Purchase metal spacer for prototype as well; do not print as a loaded column. Tube covers captive nut and bears on plate around the pocket.')
     hardware=[dict(part='M6x20 ISO4762 + DIN125 washer',qty=8,interface='B06/R101',grip_mm=8,washer_mm=1.6,engagement_mm=10.4,minimum_source_depth_mm=None,note='Base has THRU thread; underside tip clearance needs assembled verification.'),
       dict(part='M4x12 ISO4762 + washer0.8',qty=8,interface='RS03 front/R102',grip_mm=6,washer_mm=.8,engagement_mm=5.2,minimum_source_depth_mm=8),
       dict(part='M4x25 ISO4762 + washer0.8',qty=6,interface='RS03 output/R103',grip_mm=20,washer_mm=.8,engagement_mm=4.2,minimum_source_depth_mm=6),
@@ -51,7 +51,7 @@ def main():
     result=dict(revision='A16-ROOT01',layout=c.L,base_context=context,parts=summary,hardware=hardware,
       simple_structure='Two flat annular plates, four stock tube spacers, one coaxial pedestal, ordinary bolts.',
       theoretical_mating_checks={'adapter_neck_radial_gap_mm':1,'plate_to_B06_bore_mm':0,'static_holder_rotor_radial_gap_mm':1.2,'motor_rear_to_adapter_top_mm':42.4,'columns_to_RS03_max_envelope_radial_gap_mm':1,'column_screw_tip_above_base_mm':1.5,'fixed_front_holes_corrected_axial_span_raw_mm':[26,34.5]},
-      print_process={'material':'PETG or PA12 for supported fit; coupons before full prints','nozzle_mm':.4,'layer_mm':.2,'perimeters':5,'top_bottom_layers':6,'infill_percent':35,'orientation':'R101/R102 flat; R103 output contact plane flat','support':'No designed supports required; drill/ream holes after coupon review. Keep mating faces clear of brim.'},
+      print_process={'material':'PETG or PA12 for supported fit; coupons before full prints','nozzle_mm':.4,'layer_mm':.2,'perimeters':5,'top_bottom_layers':6,'infill_percent':35,'orientation':'R101/R102 flat; R103 broad upper plate down, motor contact face up','support':'R103 is inverted to avoid25mm peripheral overhang.2.5mm internal counterbore ledges need slicer/bridge check and final drilling. Keep mating faces clear of brim.'},
       acceptance='Supported unpowered no-payload dimensional/assembly validation only; metal stock spacers. Neither PETG nor nominal metal density makes this a3kg-rated product.',
       assembly_qualified=False,wiring_qualified=False,loads_qualified=False,production_release=False)
     (OUT/'manifest.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')

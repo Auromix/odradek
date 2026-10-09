@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC-BY-NC-4.0
 """Dimensioned A3 root FIT drawings and separate bed-space STL package."""
-import json, math, hashlib, zipfile
+import json, math, hashlib, zipfile,numpy as np
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
 from reportlab.lib.pagesizes import A3,landscape
@@ -14,10 +14,13 @@ def main():
     rows=[]
     for p in D['parts']:
         if p['role']!='printed_structure':continue
-        s=O/'stl'/(p['id']+'.stl');m=trimesh.load(s,force='mesh');t=-m.bounds[0];t[:2]=-(m.bounds[0,:2]+m.bounds[1,:2])/2
+        s=O/'stl'/(p['id']+'.stl');m=trimesh.load(s,force='mesh')
+        rotation=np.diag([-1,1,-1]) if p['id']=='A16-R103-J1-output-pedestal' else np.eye(3)
+        m.vertices=m.vertices@rotation.T
+        t=-m.bounds[0];t[:2]=-(m.bounds[0,:2]+m.bounds[1,:2])/2
         m.apply_translation(t);target=P/s.name;m.export(target)
         assert m.is_watertight and abs(m.bounds[0,2])<1e-6
-        rows.append(dict(id=p['id'],object_stl_sha256=c.sha(s),bed_stl_sha256=c.sha(target),T_bed_translation_mm=t.tolist(),unit='mm',bed_dimensions_mm=m.extents.tolist()))
+        rows.append(dict(id=p['id'],object_stl_sha256=c.sha(s),bed_stl_sha256=c.sha(target),R_bed_from_object=rotation.tolist(),T_bed_translation_mm=t.tolist(),unit='mm',bed_dimensions_mm=m.extents.tolist()))
     (O/'print-bed-transforms.json').write_text(json.dumps(rows,indent=2)+'\n')
     pdf=canvas.Canvas(str(O/'A16-ROOT01-fit-drawings.pdf'),pagesize=landscape(A3));pdf.setTitle('A16 ROOT01 - dimensional fit issue, not load release')
     def line(x,y,a,b):pdf.line(x*mm,y*mm,a*mm,b*mm)
@@ -86,10 +89,10 @@ def main():
     pdf.rect(227*mm,80*mm,70*mm,20*mm);pdf.rect(202*mm,100*mm,120*mm,10*mm)
     dimension(340,80,340,100,'20');dimension(354,100,354,110,'10')
     text(195,66,'M4x25 +0.8 washer:20 grip /4.2 insertion /source blind depth6')
-    text(195,54,'Overall30; D70 +/-0.15 stem /D120 upper plate. Print A flat; coupon fit first.')
+    text(195,54,'Overall30; D70 +/-0.15 stem /D120 plate. Print upper plate DOWN; motor face UP.')
     pdf.showPage()
     sheet('A16-R104 SPACERS / ASSEMBLY STACK','Purchased steel spacers; do not print as loaded columns. Four equal lengths; saw-cut then square/deburr.')
-    circle(80,185,6);circle(80,185,2.75);dimension(65,168,95,168,'OD12 / ID5.5')
+    circle(80,185,6);circle(80,185,3);dimension(65,168,95,168,'OD12 / ID6 (wall3)')
     pdf.rect(150*mm,180*mm,96.5*mm,12*mm);dimension(150,165,246.5,165,'96.5 +0/-0.1')
     text(25,140,'4x spacers at PCD120 cardinal phase.4x M5x110 +washer1.0 + nut4.7 in upper-entry pockets.',11)
     text(25,126,'Nominal stack: holder6 + spacer96.5 + pocket roof gap0.3 + washer1 + nut4.7 + tip1.5 =110.',10)

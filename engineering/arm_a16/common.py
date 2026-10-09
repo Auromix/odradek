@@ -15,14 +15,15 @@ sys.path.insert(0,str(ROOT/'engineering/arm_a08'))
 import build as cad
 SRC=json.loads((ROOT/'docs/engineering/sources/arm-a05-mechanical-sources.json').read_text())
 L=copy.deepcopy(json.loads((ROOT/'engineering/arm_a15/shoulder01/build/study.json').read_text())['layout'])
-L['id']='A16-CONVENTIONAL01'
+L['id']='A16-CONVENTIONAL02-FLAT-WRIST'
 L['joints'][0].update(offset=[0,0,165],motor_center=[0,0,-28.3],length_mm=56.6)
 L['joints'][1].update(length_mm=55.7)
+L['joints'][1]['offset']=[0,0,114]
 L['joints'][2].update(motor_center=[1.5,0,0])
 L['joints'][3].update(motor_center=[0,1.5,0])
-L['joints'][4].update(motor_center=[0,60.3,0])
-L['joints'][5].update(motor_center=[0,0,76.6])
-L['joints'][6].update(length_mm=51.4)
+L['joints'][4].update(motor_center=[0,70.3,0])
+L['joints'][5].update(motor_center=[0,0,0],offset=[55,0,0])
+L['joints'][6].update(length_mm=51.4,offset=[75,0,0])
 L['mass_assumption']='2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.'
 L['root_transform_mm']=[[0,-1,0,0],[1,0,0,75],[0,0,1,0],[0,0,0,1]]
 L['status']='supported unpowered fit prototype; entire assembly and load qualification pending'

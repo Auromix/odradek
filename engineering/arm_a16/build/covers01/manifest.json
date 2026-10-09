@@ -1,0 +1,744 @@
+{
+  "revision": "A16-COVERS01",
+  "layout": {
+    "id": "A16-CONVENTIONAL02-FLAT-WRIST",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          91.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -10,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "id": "A16-C-upper-dorsal",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Dimensional2.6mm normal-wall C-section;0.5mm split seam. Attachment design, motor motion and dynamic wiring pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 61154.92745342171,
+      "mass_kg": 0.07766675786584556,
+      "com_mm": [
+        165.58038720562243,
+        8.891870932353175e-15,
+        21.948076054330304
+      ],
+      "bbox_size_mm": [
+        240.33676480672398,
+        90.33676480672389,
+        57.46459085925231
+      ]
+    },
+    {
+      "id": "A16-C-upper-ventral",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Dimensional2.6mm normal-wall C-section;0.5mm split seam. Attachment design, motor motion and dynamic wiring pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 60373.91985637909,
+      "mass_kg": 0.07667487821760144,
+      "com_mm": [
+        165.55259799500575,
+        -1.1036664364878819e-15,
+        -21.440431777898493
+      ],
+      "bbox_size_mm": [
+        240.33676480672386,
+        90.336764806724,
+        54.31442161970268
+      ]
+    },
+    {
+      "id": "A16-C-fore-dorsal",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Dimensional2.6mm normal-wall C-section;0.5mm split seam. Attachment design, motor motion and dynamic wiring pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 38047.97530361893,
+      "mass_kg": 0.04832092863559603,
+      "com_mm": [
+        74.10222906362826,
+        76.94454064697217,
+        22.680158741197708
+      ],
+      "bbox_size_mm": [
+        142.59903631443473,
+        94.76177858515466,
+        47.71135163523672
+      ]
+    },
+    {
+      "id": "A16-C-fore-ventral",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Dimensional2.6mm normal-wall C-section;0.5mm split seam. Attachment design, motor motion and dynamic wiring pending.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 37591.086308968,
+      "mass_kg": 0.047740679612389356,
+      "com_mm": [
+        74.06107357253187,
+        76.93375156822165,
+        -22.156987766534655
+      ],
+      "bbox_size_mm": [
+        142.59903631443532,
+        94.76177858515496,
+        44.71653497058998
+      ]
+    },
+    {
+      "id": "A16-C-J1-cowl-a",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 60943.64878704236,
+      "mass_kg": 0.0773984339595438,
+      "com_mm": [
+        4.780456403638934e-15,
+        49.04170315659386,
+        -43.419734609272474
+      ],
+      "bbox_size_mm": [
+        146.9750002,
+        79.0676613545228,
+        96.23756375658343
+      ]
+    },
+    {
+      "id": "A16-C-J1-cowl-b",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 60315.51087471957,
+      "mass_kg": 0.07660069881089385,
+      "com_mm": [
+        -9.527628604350694e-17,
+        -47.923246497582504,
+        -43.42136520738666
+      ],
+      "bbox_size_mm": [
+        146.9750002,
+        74.73049849996555,
+        96.15490477320132
+      ]
+    },
+    {
+      "id": "A16-C-J2-cowl-a",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 41025.15350983328,
+      "mass_kg": 0.052101944957488266,
+      "com_mm": [
+        -0.35359705912559525,
+        89.78133130597762,
+        46.61016769293572
+      ],
+      "bbox_size_mm": [
+        143.3000002,
+        68.86583599789503,
+        77.21411179056213
+      ]
+    },
+    {
+      "id": "A16-C-J2-cowl-b",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 41410.67097000385,
+      "mass_kg": 0.05259155213190488,
+      "com_mm": [
+        7.65620233691142e-15,
+        90.18260210460657,
+        -45.92068726687644
+      ],
+      "bbox_size_mm": [
+        143.3000002,
+        68.82883239108621,
+        72.97642916200466
+      ]
+    },
+    {
+      "id": "A16-C-J3-cowl-a",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 41025.15350983273,
+      "mass_kg": 0.052101944957487566,
+      "com_mm": [
+        3.0686686940226617,
+        -0.3535970591258135,
+        46.610167692935526
+      ],
+      "bbox_size_mm": [
+        68.86583599789503,
+        143.3000002,
+        77.21411179056213
+      ]
+    },
+    {
+      "id": "A16-C-J3-cowl-b",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 41410.67097000388,
+      "mass_kg": 0.05259155213190492,
+      "com_mm": [
+        2.6673978953935014,
+        1.9263547463851478e-14,
+        -45.92068726687641
+      ],
+      "bbox_size_mm": [
+        68.8288323910862,
+        143.3000002,
+        72.97642916200466
+      ]
+    },
+    {
+      "id": "A16-C-J4-cowl-a",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 41025.15350961631,
+      "mass_kg": 0.052101944957212716,
+      "com_mm": [
+        -0.35359705488792387,
+        3.0686686940415293,
+        -46.610167691449575
+      ],
+      "bbox_size_mm": [
+        143.3000002,
+        68.86583599789503,
+        77.21411179056213
+      ]
+    },
+    {
+      "id": "A16-C-J4-cowl-b",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 41410.670970003885,
+      "mass_kg": 0.05259155213190493,
+      "com_mm": [
+        9.468134168458352e-15,
+        2.667397895393498,
+        45.92068726687644
+      ],
+      "bbox_size_mm": [
+        143.3000002,
+        68.8288323910862,
+        72.97642916200466
+      ]
+    },
+    {
+      "id": "A16-C-J5-cowl-a",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 23465.336028210964,
+      "mass_kg": 0.02980097675582792,
+      "com_mm": [
+        9.392055542240192e-15,
+        70.04977297492142,
+        23.648346805892047
+      ],
+      "bbox_size_mm": [
+        74.9750002,
+        76.68673976127636,
+        40.39113942573567
+      ]
+    },
+    {
+      "id": "A16-C-J5-cowl-b",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 23216.838953319628,
+      "mass_kg": 0.029485385470715924,
+      "com_mm": [
+        5.415028652659881e-15,
+        70.0486412105245,
+        -23.098388903531117
+      ],
+      "bbox_size_mm": [
+        74.9750002,
+        76.66868819345889,
+        38.169155924361334
+      ]
+    },
+    {
+      "id": "A16-C-J6-cowl-a",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 22600.40092035031,
+      "mass_kg": 0.02870250916884489,
+      "com_mm": [
+        -4.299329779428375e-15,
+        -22.147989620886868,
+        0.05940421420157094
+      ],
+      "bbox_size_mm": [
+        74.4200002,
+        34.79133660593435,
+        76.68668260629283
+      ]
+    },
+    {
+      "id": "A16-C-J6-cowl-b",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 22377.947520724916,
+      "mass_kg": 0.02841999335132064,
+      "com_mm": [
+        3.3535303076253285e-15,
+        21.629505167405235,
+        0.051971729520019494
+      ],
+      "bbox_size_mm": [
+        74.5250002,
+        32.85800013333843,
+        76.6685853529227
+      ]
+    },
+    {
+      "id": "A16-C-J7-cowl-a",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 33129.9046985864,
+      "mass_kg": 0.04207497896720472,
+      "com_mm": [
+        15.801617829960469,
+        5.068737226392058e-15,
+        28.00820284952981
+      ],
+      "bbox_size_mm": [
+        93.36908464382097,
+        97.2500002,
+        53.82002843581961
+      ]
+    },
+    {
+      "id": "A16-C-J7-cowl-b",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "role": "printed_cover",
+      "material": "PETG supported fit",
+      "note": "Fixed split cowl around actual source casing; rear open for service. Source radial cable exit reserved on RS04; other exact mating plugs and airflow need hardware confirmation.",
+      "solid_count": 1,
+      "watertight": true,
+      "volume_mm3": 32780.842589940075,
+      "mass_kg": 0.041631670089223895,
+      "com_mm": [
+        15.804005373397965,
+        3.2436345736160833e-15,
+        -27.360971035138807
+      ],
+      "bbox_size_mm": [
+        93.33171141376178,
+        97.2500002,
+        50.85340737879238
+      ]
+    }
+  ],
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
+  },
+  "style": "Chosen A continuous graphite carapace; curved spine, hard section ridges and quiet bronze seams. Manta base retained byte-identical; four-petal head remains a separate module.",
+  "attachment_qualified": false,
+  "collision_qualified": false,
+  "production_release": false
+}

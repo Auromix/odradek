@@ -1,0 +1,358 @@
+{
+  "revision": "A16-SKELETON01",
+  "layout": {
+    "id": "A16-CONVENTIONAL02-FLAT-WRIST",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          91.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -10,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "source_sha256": {
+    "engineering/arm_a16/build/root01/manifest.json": "b0415e60e3a21801abf991722bef120a44576d9b0f0a4605ef27ed2981c6de54",
+    "engineering/arm_a16/build/root01/step/A16-R101-base-adapter.step": "298d81865065fd232c8e7b04101a4b932c59f856191e24fac9fdaa9d53058e2b",
+    "engineering/arm_a16/build/root01/step/A16-R102-J1-front-holder.step": "49b0f97fb8e996cee408112198e3291d316f36564ec07b7aa264f9e5c8331462",
+    "engineering/arm_a16/build/root01/step/A16-R103-J1-output-pedestal.step": "ba35165246ee20fb19b92b030df223f06a255f3b06e2f08c88013a7ea8a32f36",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-1.step": "0a7ba9ec441f361bd8b4c8f0ffe4652a029f10bfb4e99b08795f1ded31142713",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-2.step": "8f5409298362cf73cefcaa732ecf85dd87aae59c80c5437241733bdaffc4f1e9",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-3.step": "c4cc6308e999cc04c51a24f9c4eaa037032eb1b12d72dc2e89e96299fad735b7",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-4.step": "1e9ec3dd80d2a36d5ceb68fec32f220c390b644c7bb7e9359f3b4273ece3a7ed",
+    "engineering/arm_a16/build/skeleton01/manifest.json": "9178c8d55f5d3850181a94ef89ccf687044e17f93df3bd3d8c428ef0925bf5d3",
+    "engineering/arm_a16/build/skeleton01/step/A16-S101-root-to-shoulder-L.step": "cc2c8fc5288914f33feca943f9e99577a8121d1c716a4a4b5b13c96b5d5f1b70",
+    "engineering/arm_a16/build/skeleton01/step/A16-S102-shoulder-cross-adapter.step": "27da1e4657ad5c1c89f0863f75d2985c0aabd8832fa8a059417396aa0ed25413",
+    "engineering/arm_a16/build/skeleton01/step/A16-S103-upper-proximal-socket.step": "badae63c357f94a80061fada9adb19a3e4efb6a823e7f0a0bbfc135d1cbe1dc9",
+    "engineering/arm_a16/build/skeleton01/step/A16-S104-upper-distal-socket.step": "7f6be692a72e979442f572a72b051477443459b501885f365e4c08991112a9d9",
+    "engineering/arm_a16/build/skeleton01/step/A16-S105-upper-stock-tube.step": "8b8cc340ca7309c8578d1f6062a83c0ad39f0f75500283ea123efb88251619c3",
+    "engineering/arm_a16/build/skeleton01/step/A16-S106-fore-proximal-socket.step": "50f2ec3332fb98ba2bb80df9d63433b3d44ceb66e83478e3c072befa62387ea1",
+    "engineering/arm_a16/build/skeleton01/step/A16-S107-fore-distal-socket.step": "d56c7ba029556f3199e86f6e7bd6bf6c261d784954f6be441a4642c35ad3c657",
+    "engineering/arm_a16/build/skeleton01/step/A16-S108-fore-stock-tube.step": "753a205b10b921fc7608ff6fee49f3b9bc517f4419297b9842dcad64d82754b5",
+    "engineering/arm_a16/build/skeleton01/step/A16-S109-wrist-pitch-yaw-L.step": "07c38392feb228435b7d2cbb08cbb5a0fb856d37b7cfd648693ff102d8d66b45",
+    "engineering/arm_a16/build/skeleton01/step/A16-S110-wrist-yaw-roll-L.step": "fb4f5034c2e2383436ef818a5ca1b01689bf5dbdd9e224501eaa6fc2710de508",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-101-bearing-housing.step": "cfa25d13341237a6a0efbcdd81b0a2ffecc75d7310baab801178f71b3cf497ac",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-102-bearing-retainer.step": "eb87eaca2be00607076e04015d35d6885c50d7e17df72ffeb6c0dbd7a8d1582e",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-103-output-journal.step": "06e985a75ede4e12223c240463832fc74690ee422381150be507a8501d16fbb0",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-104-inner-spacer.step": "edbd983066063fcb01777220aa2220f82d81b8a3a3a2f2444c0a51733275517a",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-107-piloted-flange.step": "300de7429924e9a09948397a48a4307fc51d02958c383513c5c4d26cc7d3ff99",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-301-recessed-carrier.step": "2186ae8a5f4f2f30a31f84847edb8c4b7fc932960e4cd4213049e352db1861a8",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-302-dorsal-cover.step": "990caf7c49523f9747d3f504afed467b664fe3c44e83c9e2c8b54a334ed9a913",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-303-face-insert.step": "ece3c97977b80e64309b9c346f377b2ef85c8e24c52f78315700233bcea437f2"
+  },
+  "vendor_audit_sha256": "28b974ab3af3f840571b4142b9c664df402c181e15f369abaa03e3dceff34305",
+  "checks": [
+    {
+      "pose": "idle",
+      "positive_bbox_pairs": 53,
+      "part_count": 39
+    },
+    {
+      "pose": "attention",
+      "positive_bbox_pairs": 66,
+      "part_count": 39
+    },
+    {
+      "pose": "reference",
+      "positive_bbox_pairs": 44,
+      "part_count": 39
+    }
+  ],
+  "collisions": [],
+  "scoped_clear": true,
+  "scope": "Root, new bracket/tube core, unchanged J7 cartridge,14 exact supplier external partitions;3 named static configurations. No fasteners, covers, wires, base shell or motion interpolation.",
+  "whole_motion_qualified": false,
+  "production_release": false
+}
