@@ -56,7 +56,7 @@
         "length_mm": 55.7,
         "motor_center": [
           0,
-          91.35,
+          94.35,
           0
         ],
         "mass_kg": 1.42,
@@ -306,15 +306,19 @@
   "sources": [
     {
       "path": "engineering/arm_a16/build/root01/manifest.json",
-      "sha256": "b0415e60e3a21801abf991722bef120a44576d9b0f0a4605ef27ed2981c6de54"
+      "sha256": "94e5795e3725f2d245b5d271d79feef9312f971fb1f445be8613564b4c484ffe"
     },
     {
       "path": "engineering/arm_a16/build/skeleton01/manifest.json",
-      "sha256": "9178c8d55f5d3850181a94ef89ccf687044e17f93df3bd3d8c428ef0925bf5d3"
+      "sha256": "cf119168771009a32396bde13db156bcd6c699152a7e9280edaad29e94107ae1"
     },
     {
       "path": "engineering/arm_a16/build/covers01/manifest.json",
-      "sha256": "13a0c47f91b484233b13bd5298e4ed5271e9733d6236a17029371b6cc8762900"
+      "sha256": "9bc9817816761ef4606b61699a48c952b47b92ad04d39666eab0c63cd25fa1f1"
+    },
+    {
+      "path": "engineering/arm_a16/build/hardware01/manifest.json",
+      "sha256": "4df86be3ef7486753566a758f7a33e94b44e0faa46c6585022cf81c05dbfe79a"
     }
   ],
   "prototype_CAD_and_allowance_ledger": [
@@ -406,11 +410,11 @@
       "id": "A16-S101-root-to-shoulder-L",
       "owner": 1,
       "frame": "J1.rotor",
-      "mass_kg": 0.20162966860747825,
+      "mass_kg": 0.2046656686074781,
       "com_mm": [
-        -1.001517111924195e-13,
-        37.96019198846165,
-        67.84425438693746
+        -9.540053439078919e-14,
+        39.854105252575714,
+        67.34221045833016
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -418,11 +422,11 @@
       "id": "A16-S102-shoulder-cross-adapter",
       "owner": 2,
       "frame": "J2.rotor",
-      "mass_kg": 0.12319333628360615,
+      "mass_kg": 0.12379222960467583,
       "com_mm": [
-        20.81938575032771,
-        13.38536497750039,
-        1.1364288017044611e-10
+        20.867742956132815,
+        14.596961268807584,
+        1.7193688025663452e-15
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -442,11 +446,11 @@
       "id": "A16-S104-upper-distal-socket",
       "owner": 3,
       "frame": "J3.rotor",
-      "mass_kg": 0.14632427318520413,
+      "mass_kg": 0.141768688187158,
       "com_mm": [
-        306.0172040857942,
-        23.79239151884695,
-        1.7402541186009407e-15
+        307.62146220783666,
+        23.759037049267608,
+        -7.082538207814685e-16
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -478,11 +482,11 @@
       "id": "A16-S107-fore-distal-socket",
       "owner": 4,
       "frame": "J4.rotor",
-      "mass_kg": 0.07018067384479025,
+      "mass_kg": 0.06679592447189835,
       "com_mm": [
-        107.8833177822833,
-        84.8211914572929,
-        -7.758250315976084e-14
+        109.84162531979686,
+        84.56445160777757,
+        -7.603339235151458e-14
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -502,11 +506,11 @@
       "id": "A16-S109-wrist-pitch-yaw-L",
       "owner": 5,
       "frame": "J5.rotor",
-      "mass_kg": 0.03973541588780602,
+      "mass_kg": 0.03358978088263424,
       "com_mm": [
-        25.080395375948644,
-        19.394036617491604,
-        -20.277448207585145
+        25.818126375939872,
+        18.14095337562636,
+        -18.74871149769836
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -514,11 +518,11 @@
       "id": "A16-S110-wrist-yaw-roll-L",
       "owner": 6,
       "frame": "J6.rotor",
-      "mass_kg": 0.09562058385303268,
+      "mass_kg": 0.09561910052275689,
       "com_mm": [
-        66.9720812545194,
-        -4.793392567205338e-14,
-        -24.31169860345853
+        66.97156889546581,
+        -4.207562380391237e-14,
+        -24.31147722629747
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -694,11 +698,11 @@
       "id": "A16-C-J2-cowl-a",
       "owner": 1,
       "frame": "J2.fixed",
-      "mass_kg": 0.052101944957488266,
+      "mass_kg": 0.0521019449574873,
       "com_mm": [
-        -0.35359705912559525,
-        89.78133130597762,
-        46.61016769293572
+        -0.353597059125877,
+        92.78133130597733,
+        46.61016769293544
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
@@ -709,7 +713,7 @@
       "mass_kg": 0.05259155213190488,
       "com_mm": [
         7.65620233691142e-15,
-        90.18260210460657,
+        93.18260210460657,
         -45.92068726687644
       ],
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
@@ -835,16 +839,4228 @@
       "mass_kind": "prototype uniform printed CAD or purchased stock material"
     },
     {
-      "id": "undeveloped_allowance_2_0.02",
+      "id": "A16-H-base-M6-1",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.007713402055392617,
+      "com_mm": [
+        55.4327719506772,
+        22.96100594190539,
+        63.02208832975889
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-1-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0010164484800613005,
+      "com_mm": [
+        55.4327719506772,
+        22.961005941905388,
+        66.8
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-2",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.007713402055392619,
+      "com_mm": [
+        22.961005941905395,
+        55.432771950677214,
+        63.02208832975891
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-2-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0010164484800613005,
+      "com_mm": [
+        22.96100594190538,
+        55.43277195067722,
+        66.80000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-3",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.007713402055392617,
+      "com_mm": [
+        -22.961005941905384,
+        55.432771950677214,
+        63.02208832975891
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-3-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0010164484800613005,
+      "com_mm": [
+        -22.961005941905402,
+        55.43277195067722,
+        66.80000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-4",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.007713402055392617,
+      "com_mm": [
+        -55.4327719506772,
+        22.96100594190539,
+        63.02208832975889
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-4-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0010164484800613003,
+      "com_mm": [
+        -55.43277195067722,
+        22.9610059419054,
+        66.8
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-5",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.007713402055392619,
+      "com_mm": [
+        -55.43277195067723,
+        -22.96100594190538,
+        63.02208832975891
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-5-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0010164484800613005,
+      "com_mm": [
+        -55.43277195067723,
+        -22.96100594190538,
+        66.8
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-6",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.007713402055392617,
+      "com_mm": [
+        -22.961005941905366,
+        -55.43277195067722,
+        63.02208832975892
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-6-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0010164484800613005,
+      "com_mm": [
+        -22.961005941905384,
+        -55.43277195067722,
+        66.80000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-7",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.007713402055392617,
+      "com_mm": [
+        22.961005941905402,
+        -55.432771950677214,
+        63.02208832975891
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-7-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0010164484800613005,
+      "com_mm": [
+        22.96100594190539,
+        -55.4327719506772,
+        66.8
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-8",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.007713402055392619,
+      "com_mm": [
+        55.432771950677214,
+        -22.961005941905377,
+        63.022088329758894
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-base-M6-8-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0010164484800613005,
+      "com_mm": [
+        55.432771950677214,
+        -22.96100594190538,
+        66.8
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-M5-1",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.01896447920015129,
+      "com_mm": [
+        59.99999999999999,
+        -1.77942645716787e-17,
+        120.57616061641941
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-M5-1-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0004367552062763405,
+      "com_mm": [
+        60.0,
+        1.5593318243544423e-16,
+        168.99999999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-nut-1",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0013204968344843991,
+      "com_mm": [
+        59.99999999999999,
+        9.255523555525957e-16,
+        63.349999999999994
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-M5-2",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.01896447920015129,
+      "com_mm": [
+        0.0,
+        59.99999999999999,
+        120.57616061641939
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-M5-2-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0004367552062763405,
+      "com_mm": [
+        -9.833599015152904e-15,
+        60.0,
+        168.99999999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-nut-2",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0013204968344843976,
+      "com_mm": [
+        -5.543981956788842e-16,
+        60.0,
+        63.349999999999994
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-M5-3",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.01896447920015129,
+      "com_mm": [
+        -59.99999999999999,
+        5.402519512944066e-17,
+        120.57616061641939
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-M5-3-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0004367552062763405,
+      "com_mm": [
+        -60.00000000000001,
+        1.9354661071184703e-16,
+        168.99999999999994
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-nut-3",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0013204968344843991,
+      "com_mm": [
+        -60.0,
+        7.56592905440936e-16,
+        63.349999999999994
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-M5-4",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.01896447920015129,
+      "com_mm": [
+        0.0,
+        -59.99999999999999,
+        120.57616061641939
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-M5-4-washer",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0004367552062763405,
+      "com_mm": [
+        -9.833599015152904e-15,
+        -60.0,
+        168.99999999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-column-nut-4",
+      "owner": 0,
+      "frame": "world",
+      "mass_kg": 0.0013204968344843976,
+      "com_mm": [
+        -5.543981956788842e-16,
+        -60.0,
+        63.349999999999994
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-M5-1",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.006633728034811351,
+      "com_mm": [
+        -38.0,
+        -28.000000000000007,
+        29.25245646666011
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-M5-1-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0004367552062763404,
+      "com_mm": [
+        -38.000000000000014,
+        -27.999999999999996,
+        38.50000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-rear-washer-1",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0004367552062763404,
+      "com_mm": [
+        -38.000000000000014,
+        -27.999999999999996,
+        19.5
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-nut-1",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0013204968344843991,
+      "com_mm": [
+        -37.99999999999999,
+        -27.999999999999986,
+        16.65
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-M5-2",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.006633728034811351,
+      "com_mm": [
+        -38.0,
+        28.0,
+        29.25245646666011
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-M5-2-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0004367552062763404,
+      "com_mm": [
+        -38.000000000000014,
+        27.999999999999996,
+        38.50000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-rear-washer-2",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0004367552062763404,
+      "com_mm": [
+        -38.000000000000014,
+        27.999999999999996,
+        19.5
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-nut-2",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0013204968344843991,
+      "com_mm": [
+        -37.99999999999999,
+        27.999999999999996,
+        16.65
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-M5-3",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.006633728034811351,
+      "com_mm": [
+        37.99999999999999,
+        -28.0,
+        29.25245646666011
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-M5-3-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0004367552062763404,
+      "com_mm": [
+        37.99999999999999,
+        -27.999999999999996,
+        38.50000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-rear-washer-3",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0004367552062763404,
+      "com_mm": [
+        37.99999999999999,
+        -27.999999999999996,
+        19.5
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-nut-3",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0013204968344843991,
+      "com_mm": [
+        37.99999999999999,
+        -27.999999999999986,
+        16.65
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-M5-4",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.006633728034811351,
+      "com_mm": [
+        37.99999999999999,
+        28.0,
+        29.25245646666011
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-M5-4-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0004367552062763404,
+      "com_mm": [
+        37.99999999999999,
+        27.999999999999996,
+        38.50000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-rear-washer-4",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0004367552062763404,
+      "com_mm": [
+        37.99999999999999,
+        27.999999999999996,
+        19.5
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-shoulder-foot-nut-4",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0013204968344843991,
+      "com_mm": [
+        37.99999999999999,
+        27.999999999999996,
+        16.65
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-1",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        -45.27009999999999,
+        -18.751489999999993,
+        2.1334266444930554
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-1-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.00030402700073262144,
+      "com_mm": [
+        -45.27010000000001,
+        -18.75149,
+        3.900000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-2",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        -45.2701,
+        18.751490000000004,
+        2.133426644493056
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-2-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.00030402700073262155,
+      "com_mm": [
+        -45.2701,
+        18.751489999999997,
+        3.899999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-3",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        -18.751490000000004,
+        -45.2701,
+        2.1334266444930563
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-3-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -18.751490000000008,
+        -45.2701,
+        3.900000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-4",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        -18.75149,
+        45.27009999999999,
+        2.133426644493056
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-4-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.00030402700073262155,
+      "com_mm": [
+        -18.75149000000001,
+        45.2701,
+        3.900000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-5",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        18.751489999999997,
+        -45.27009999999999,
+        2.133426644493056
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-5-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        18.751489999999997,
+        -45.2701,
+        3.900000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-6",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        18.751489999999997,
+        45.27009999999999,
+        2.133426644493056
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-6-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        18.751489999999997,
+        45.2701,
+        3.900000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-7",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        45.270100000000006,
+        -18.751489999999993,
+        2.1334266444930554
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-7-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.00030402700073262144,
+      "com_mm": [
+        45.2701,
+        -18.75149,
+        3.900000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-8",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.002300388683909893,
+      "com_mm": [
+        45.2701,
+        18.751489999999997,
+        2.133426644493056
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-fixed-8-washer",
+      "owner": 0,
+      "frame": "J1.fixed",
+      "mass_kg": 0.00030402700073262155,
+      "com_mm": [
+        45.270099999999985,
+        18.751489999999997,
+        3.899999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-1",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.003582786805105245,
+      "com_mm": [
+        -13.14627,
+        -7.59,
+        12.787152003832508
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-1-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -13.146270000000003,
+        -7.59,
+        20.4
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-2",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.003582786805105245,
+      "com_mm": [
+        -13.14627,
+        7.589999999999999,
+        12.787152003832508
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-2-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -13.146270000000003,
+        7.589999999999999,
+        20.39999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-3",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.003582786805105245,
+      "com_mm": [
+        -1.0119341469187447e-16,
+        -15.179999999999998,
+        12.787152003832505
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-3-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0003040270007326216,
+      "com_mm": [
+        -6.8339843901948785e-15,
+        -15.179999999999998,
+        20.4
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-4",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.003582786805105245,
+      "com_mm": [
+        -1.6346628527148951e-16,
+        15.179999999999998,
+        12.787152003832505
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-4-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -6.14599938447056e-15,
+        15.18,
+        20.4
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-5",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.003582786805105245,
+      "com_mm": [
+        13.14627,
+        -7.59,
+        12.787152003832505
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-5-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0003040270007326217,
+      "com_mm": [
+        13.146269999999992,
+        -7.590000000000001,
+        20.4
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-6",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.003582786805105246,
+      "com_mm": [
+        13.14627,
+        7.589999999999999,
+        12.787152003832503
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J1-output-6-washer",
+      "owner": 1,
+      "frame": "J1.rotor",
+      "mass_kg": 0.0003040270007326217,
+      "com_mm": [
+        13.146269999999992,
+        7.590000000000001,
+        20.4
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-1",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        -51.19407,
+        61.866573355506944,
+        13.71741
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-1-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        -51.194070000000025,
+        60.1,
+        13.717410000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-2",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        -49.47975999999999,
+        61.866573355506944,
+        -18.993499999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-2-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        -49.479760000000006,
+        60.1,
+        -18.993500000000004
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-3",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        -33.35398,
+        61.86657335550697,
+        41.18874000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-3-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        -33.35398000000001,
+        60.1,
+        41.18874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-4",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        -28.86587000000001,
+        61.866573355506944,
+        -44.44954000000002
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-4-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        -28.86587000000002,
+        60.1,
+        -44.449540000000006
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-5",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        -2.7738100000000006,
+        61.86657335550696,
+        52.92737
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-5-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.00030402700073262117,
+      "com_mm": [
+        -2.773810000000008,
+        60.09999999999999,
+        52.927369999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-6",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        2.7738100000000006,
+        61.86657335550696,
+        -52.92737000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-6-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.00030402700073262117,
+      "com_mm": [
+        2.773809999999992,
+        60.1,
+        -52.92737000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-7",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        28.865869999999997,
+        61.86657335550694,
+        44.44953999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-7-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        28.865869999999997,
+        60.1,
+        44.449540000000006
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-8",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        33.35397999999999,
+        61.866573355506944,
+        -41.18873999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-8-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        33.35397999999999,
+        60.1,
+        -41.18874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-9",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        49.479759999999985,
+        61.86657335550694,
+        18.993499999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-9-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        49.47976,
+        60.1,
+        18.9935
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-10",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        51.19407,
+        61.866573355506944,
+        -13.717409999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-fixed-10-washer",
+      "owner": 1,
+      "frame": "J2.fixed",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        51.19407,
+        60.1,
+        -13.717410000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-1",
       "owner": 2,
       "frame": "J2.rotor",
-      "mass_kg": 0.02,
+      "mass_kg": 0.004475846580876863,
       "com_mm": [
-        30,
-        30,
-        0
+        -17.38666,
+        60.35830978465373,
+        -4.65874
       ],
-      "mass_kind": "stated allowance, not CAD or supplier confirmation"
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-1-washer",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.00031961307020561124,
+      "com_mm": [
+        -17.386660000000017,
+        57.50000000000001,
+        -4.658739999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-2",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        -17.38666,
+        60.35830978465373,
+        4.658740000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-2-washer",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.00031961307020561124,
+      "com_mm": [
+        -17.386660000000017,
+        57.50000000000001,
+        4.658739999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-3",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        -12.727919999999997,
+        60.35830978465373,
+        -12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-3-washer",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.0003196130702056111,
+      "com_mm": [
+        -12.727920000000012,
+        57.50000000000001,
+        -12.727920000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-4",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        -4.658740000000001,
+        60.35830978465371,
+        17.386659999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-4-washer",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.00031961307020561124,
+      "com_mm": [
+        -4.658740000000011,
+        57.5,
+        17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-5",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        4.658740000000001,
+        60.35830978465373,
+        -17.386660000000003
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-5-washer",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.00031961307020561113,
+      "com_mm": [
+        4.658739999999988,
+        57.50000000000001,
+        -17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-6",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        4.658740000000002,
+        60.35830978465373,
+        17.386659999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-6-washer",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.00031961307020561113,
+      "com_mm": [
+        4.658739999999987,
+        57.49999999999999,
+        17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-7",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        12.727919999999997,
+        60.35830978465373,
+        -12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-7-washer",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.00031961307020561097,
+      "com_mm": [
+        12.727919999999989,
+        57.49999999999999,
+        -12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-8",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        12.727919999999997,
+        60.35830978465373,
+        12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-8-washer",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.0003196130702056111,
+      "com_mm": [
+        12.727919999999987,
+        57.50000000000001,
+        12.727920000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-9",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        17.386659999999996,
+        60.35830978465373,
+        -4.658739999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J2-output-9-washer",
+      "owner": 2,
+      "frame": "J2.rotor",
+      "mass_kg": 0.00031961307020561124,
+      "com_mm": [
+        17.386659999999992,
+        57.50000000000001,
+        -4.658739999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-1",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        33.98342664449306,
+        -51.19407,
+        13.71741
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-1-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        35.74999999999999,
+        -51.19407000000001,
+        13.717409999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-2",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        33.98342664449306,
+        -49.47975999999999,
+        -18.993500000000004
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-2-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        35.74999999999999,
+        -49.47976,
+        -18.9935
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-3",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        33.983426644493065,
+        -33.35398,
+        41.18873999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-3-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        35.75,
+        -33.353980000000014,
+        41.18874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-4",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.002300388683909893,
+      "com_mm": [
+        33.98342664449307,
+        -28.865870000000005,
+        -44.44954
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-4-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        35.75,
+        -28.865870000000015,
+        -44.449540000000006
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-5",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        33.983426644493065,
+        -2.77381,
+        52.92737000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-5-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.00030402700073262117,
+      "com_mm": [
+        35.75,
+        -2.773810000000008,
+        52.92737000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-6",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        33.983426644493065,
+        2.77381,
+        -52.92737
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-6-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.00030402700073262117,
+      "com_mm": [
+        35.75,
+        2.7738099999999926,
+        -52.92737000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-7",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.002300388683909893,
+      "com_mm": [
+        33.983426644493065,
+        28.865870000000005,
+        44.449540000000006
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-7-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        35.75,
+        28.865869999999997,
+        44.449540000000006
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-8",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        33.98342664449305,
+        33.35397999999999,
+        -41.18874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-8-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        35.75,
+        33.35397999999999,
+        -41.18874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-9",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        33.983426644493065,
+        49.47976,
+        18.9935
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-9-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        35.75000000000001,
+        49.47976,
+        18.993500000000004
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-10",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        33.983426644493065,
+        51.194069999999996,
+        -13.71741
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-fixed-10-washer",
+      "owner": 2,
+      "frame": "J3.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        35.74999999999999,
+        51.19406999999998,
+        -13.717409999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-1",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        35.49169021534628,
+        -17.386659999999992,
+        -4.658739999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-1-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0003196130702056113,
+      "com_mm": [
+        38.35,
+        -17.386660000000017,
+        -4.65874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-2",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        35.491690215346274,
+        -17.386659999999992,
+        4.65874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-2-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0003196130702056113,
+      "com_mm": [
+        38.35,
+        -17.386660000000017,
+        4.65874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-3",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        35.491690215346274,
+        -12.727919999999997,
+        -12.727919999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-3-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0003196130702056111,
+      "com_mm": [
+        38.349999999999994,
+        -12.727920000000012,
+        -12.727920000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-4",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        35.491690215346274,
+        -4.65874,
+        17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-4-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.00031961307020561124,
+      "com_mm": [
+        38.349999999999994,
+        -4.658740000000012,
+        17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-5",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        35.491690215346274,
+        4.65874,
+        -17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-5-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.00031961307020561113,
+      "com_mm": [
+        38.35,
+        4.658739999999988,
+        -17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-6",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        35.49169021534628,
+        4.65874,
+        17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-6-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.00031961307020561113,
+      "com_mm": [
+        38.349999999999994,
+        4.658739999999987,
+        17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-7",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        35.491690215346274,
+        12.727919999999997,
+        -12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-7-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.00031961307020561097,
+      "com_mm": [
+        38.349999999999994,
+        12.727919999999989,
+        -12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-8",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        35.491690215346274,
+        12.727920000000001,
+        12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-8-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0003196130702056111,
+      "com_mm": [
+        38.34999999999998,
+        12.727919999999987,
+        12.727919999999997
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-9",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        35.491690215346274,
+        17.38666,
+        -4.658739999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J3-output-9-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0003196130702056113,
+      "com_mm": [
+        38.35,
+        17.386659999999992,
+        -4.658739999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-1",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        -51.194069999999996,
+        33.98342664449305,
+        -13.717409999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-1-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        -51.19407000000002,
+        35.75,
+        -13.717410000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-2",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        -49.479759999999985,
+        33.98342664449306,
+        18.993499999999994
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-2-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        -49.479760000000006,
+        35.75,
+        18.9935
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-3",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        -33.35398,
+        33.98342664449307,
+        -41.18874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-3-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        -33.35398000000001,
+        35.74999999999999,
+        -41.188739999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-4",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        -28.86587000000001,
+        33.98342664449307,
+        44.44954000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-4-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        -28.865870000000015,
+        35.75,
+        44.449540000000006
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-5",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        -2.77381,
+        33.983426644493065,
+        -52.92737
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-5-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0003040270007326213,
+      "com_mm": [
+        -2.773810000000007,
+        35.74999999999999,
+        -52.92737
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-6",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        2.77381,
+        33.983426644493065,
+        52.92737000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-6-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0003040270007326213,
+      "com_mm": [
+        2.773809999999993,
+        35.74999999999999,
+        52.92737
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-7",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.002300388683909893,
+      "com_mm": [
+        28.865870000000005,
+        33.983426644493065,
+        -44.44954
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-7-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        28.86586999999999,
+        35.75,
+        -44.44953999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-8",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        33.35397999999999,
+        33.983426644493065,
+        41.18873999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-8-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.00030402700073262117,
+      "com_mm": [
+        33.35397999999999,
+        35.75,
+        41.18874000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-9",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        49.47975999999999,
+        33.98342664449306,
+        -18.9935
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-9-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        49.47976,
+        35.75,
+        -18.9935
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-10",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        51.194069999999996,
+        33.98342664449305,
+        13.717409999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-fixed-10-washer",
+      "owner": 3,
+      "frame": "J4.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        51.194069999999996,
+        35.75,
+        13.717410000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-1",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        -17.386659999999996,
+        35.49169021534628,
+        4.658740000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-1-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00031961307020561124,
+      "com_mm": [
+        -17.38666000000002,
+        38.35000000000001,
+        4.658740000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-2",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        -17.386659999999992,
+        35.49169021534628,
+        -4.65874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-2-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00031961307020561124,
+      "com_mm": [
+        -17.38666000000002,
+        38.35000000000001,
+        -4.65874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-3",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        -12.727920000000001,
+        35.491690215346274,
+        12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-3-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0003196130702056111,
+      "com_mm": [
+        -12.727920000000012,
+        38.349999999999994,
+        12.727920000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-4",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        -4.65874,
+        35.491690215346274,
+        -17.386659999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-4-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00031961307020561124,
+      "com_mm": [
+        -4.658740000000012,
+        38.349999999999994,
+        -17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-5",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        4.65874,
+        35.491690215346274,
+        17.386659999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-5-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0003196130702056112,
+      "com_mm": [
+        4.6587399999999874,
+        38.349999999999994,
+        17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-6",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        4.658740000000002,
+        35.49169021534628,
+        -17.38666
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-6-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00031961307020561113,
+      "com_mm": [
+        4.658739999999987,
+        38.349999999999994,
+        -17.386660000000003
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-7",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004475846580876863,
+      "com_mm": [
+        12.727919999999997,
+        35.491690215346274,
+        12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-7-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00031961307020561097,
+      "com_mm": [
+        12.727919999999989,
+        38.349999999999994,
+        12.72792
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-8",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        12.727920000000001,
+        35.49169021534628,
+        -12.727920000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-8-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0003196130702056111,
+      "com_mm": [
+        12.727919999999987,
+        38.349999999999994,
+        -12.727920000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-9",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004475846580876862,
+      "com_mm": [
+        17.386659999999996,
+        35.491690215346274,
+        4.658739999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J4-output-9-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00031961307020561124,
+      "com_mm": [
+        17.386659999999992,
+        38.35,
+        4.65874
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-1",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        25.499999999999996,
+        34.86657335550695,
+        1.9397627939071433e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-1-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.0003040270007326213,
+      "com_mm": [
+        25.499999999999996,
+        33.099999999999994,
+        1.4084906347614766e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-2",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        12.750000000000004,
+        34.86657335550695,
+        -22.08364779650318
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-2-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        12.749999999999996,
+        33.1,
+        -22.08364779650318
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-3",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        -12.749999999999998,
+        34.86657335550696,
+        -22.083647796503186
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-3-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        -12.750000000000002,
+        33.1,
+        -22.083647796503183
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-4",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        -25.5,
+        34.86657335550695,
+        -2.921767708322635e-15
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-4-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.0003040270007326213,
+      "com_mm": [
+        -25.500000000000014,
+        33.099999999999994,
+        -3.0699499368663137e-15
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-5",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        -12.75000000000001,
+        34.86657335550696,
+        22.08364779650318
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-5-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.0003040270007326213,
+      "com_mm": [
+        -12.750000000000018,
+        33.1,
+        22.083647796503183
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-6",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.0023003886839098914,
+      "com_mm": [
+        12.750000000000005,
+        34.86657335550696,
+        22.08364779650319
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-fixed-6-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        12.749999999999996,
+        33.1,
+        22.08364779650318
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-1",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        13.500000000000002,
+        32.22230668016796,
+        -7.816115824987553e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-1-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.0003040270007326216,
+      "com_mm": [
+        13.499999999999995,
+        29.599999999999998,
+        5.4344628711963984e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-2",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        6.750000000000001,
+        32.22230668016796,
+        -11.69134295108992
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-2-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.00030402700073262155,
+      "com_mm": [
+        6.749999999999996,
+        29.599999999999998,
+        -11.69134295108992
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-3",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.0024976807025553303,
+      "com_mm": [
+        -6.749999999999998,
+        32.22230668016797,
+        -11.691342951089927
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-3-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -6.7500000000000036,
+        29.599999999999998,
+        -11.69134295108992
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-4",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        -13.500000000000002,
+        32.222306680167954,
+        -1.524142585872573e-15
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-4-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.0003040270007326217,
+      "com_mm": [
+        -13.500000000000007,
+        29.600000000000005,
+        -1.5349451947053748e-15
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-5",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        -6.750000000000005,
+        32.22230668016796,
+        11.691342951089919
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-5-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -6.750000000000011,
+        29.599999999999998,
+        11.691342951089919
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-6",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        6.750000000000001,
+        32.22230668016796,
+        11.69134295108992
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J5-output-6-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        6.749999999999997,
+        29.599999999999998,
+        11.69134295108992
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-1",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        25.5,
+        8.394571044373056e-17,
+        -35.43342664449305
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-1-washer",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        25.49999999999999,
+        -2.0647255246746342e-16,
+        -37.19999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-2",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        12.750000000000002,
+        22.08364779650318,
+        -35.433426644493046
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-2-washer",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        12.749999999999998,
+        22.083647796503183,
+        -37.2
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-3",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.002300388683909893,
+      "com_mm": [
+        -12.749999999999995,
+        22.08364779650318,
+        -35.433426644493046
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-3-washer",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        -12.750000000000004,
+        22.083647796503186,
+        -37.2
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-4",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        -25.5,
+        3.224383694983792e-15,
+        -35.433426644493046
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-4-washer",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        -25.500000000000007,
+        2.975093410520191e-15,
+        -37.19999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-5",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.002300388683909892,
+      "com_mm": [
+        -12.750000000000012,
+        -22.083647796503183,
+        -35.43342664449305
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-5-washer",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        -12.750000000000021,
+        -22.083647796503183,
+        -37.2
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-6",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.0023003886839098927,
+      "com_mm": [
+        12.750000000000002,
+        -22.083647796503183,
+        -35.43342664449305
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-fixed-6-washer",
+      "owner": 5,
+      "frame": "J6.fixed",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        12.749999999999998,
+        -22.083647796503183,
+        -37.2
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-1",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        13.5,
+        6.210508423218919e-17,
+        -38.07769331983204
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-1-washer",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        13.499999999999991,
+        -1.5870403412163573e-16,
+        -40.699999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-2",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        6.750000000000001,
+        11.691342951089919,
+        -38.07769331983204
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-2-washer",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        6.749999999999995,
+        11.691342951089919,
+        -40.69999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-3",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        -6.7499999999999964,
+        11.691342951089922,
+        -38.07769331983204
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-3-washer",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        -6.750000000000006,
+        11.691342951089922,
+        -40.699999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-4",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        -13.500000000000002,
+        1.7034194009137998e-15,
+        -38.07769331983204
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-4-washer",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        -13.500000000000007,
+        1.4586453957747726e-15,
+        -40.699999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-5",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0024976807025553303,
+      "com_mm": [
+        -6.750000000000006,
+        -11.69134295108992,
+        -38.07769331983204
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-5-washer",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        -6.7500000000000115,
+        -11.691342951089917,
+        -40.69999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-6",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        6.750000000000001,
+        -11.691342951089917,
+        -38.07769331983204
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J6-output-6-washer",
+      "owner": 6,
+      "frame": "J6.rotor",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        6.749999999999997,
+        -11.691342951089922,
+        -40.699999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-1",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.000969183902173088,
+      "com_mm": [
+        29.92688633857595,
+        -25.000000000000004,
+        2.1581664467433985e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-1-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        33.55000000000001,
+        -25.00000000000001,
+        4.9796375865775296e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-2",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0009691839021730882,
+      "com_mm": [
+        29.92688633857595,
+        -12.5,
+        21.65064
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-2-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        33.55,
+        -12.500000000000005,
+        21.650640000000003
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-3",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0009691839021730882,
+      "com_mm": [
+        29.92688633857595,
+        -12.5,
+        -21.650639999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-3-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        33.55,
+        -12.500000000000005,
+        -21.65064
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-4",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0009691839021730882,
+      "com_mm": [
+        29.92688633857595,
+        12.5,
+        21.65064
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-4-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        33.55,
+        12.499999999999993,
+        21.650640000000003
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-5",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0009691839021730882,
+      "com_mm": [
+        29.92688633857595,
+        12.500000000000002,
+        -21.650639999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-5-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        33.550000000000004,
+        12.499999999999995,
+        -21.65064
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-6",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0009691839021730882,
+      "com_mm": [
+        29.92688633857595,
+        25.000000000000004,
+        6.474499340230194e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-fixed-6-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        33.55000000000001,
+        24.999999999999996,
+        4.9796375865775296e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-1",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00272593132967202,
+      "com_mm": [
+        45.67700547704107,
+        -11.69134,
+        6.75
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-1-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        61.45000000000001,
+        -11.691340000000006,
+        6.750000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-2",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00272593132967202,
+      "com_mm": [
+        45.67700547704107,
+        -11.69134,
+        -6.75
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-2-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758187,
+      "com_mm": [
+        61.45,
+        -11.691340000000004,
+        -6.750000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-3",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.002725931329672021,
+      "com_mm": [
+        45.677005477041064,
+        -8.817598763943055e-17,
+        13.499999999999998
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-3-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        61.45000000000001,
+        -5.0139798397240615e-15,
+        13.500000000000002
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-4",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.002725931329672021,
+      "com_mm": [
+        45.677005477041064,
+        -8.817598763943055e-17,
+        -13.499999999999998
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-4-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        61.45,
+        -4.953570444064736e-15,
+        -13.5
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-5",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00272593132967202,
+      "com_mm": [
+        45.67700547704108,
+        11.691340000000002,
+        6.75
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-5-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        61.45000000000001,
+        11.691339999999995,
+        6.750000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-6",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00272593132967202,
+      "com_mm": [
+        45.67700547704107,
+        11.69134,
+        -6.75
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-output-6-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758187,
+      "com_mm": [
+        61.45,
+        11.691339999999999,
+        -6.750000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-1-M4",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004569246898332439,
+      "com_mm": [
+        60.00000000000001,
+        2.040319867574616,
+        -3.9062965778469326e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-1-M4-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        59.999999999999986,
+        14.399999999999995,
+        -7.536659039359506e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-1-rear-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        59.999999999999986,
+        -14.399999999999995,
+        -1.3953222188657233e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-1-nut",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0007503061191774876,
+      "com_mm": [
+        59.99999999999999,
+        -16.400000000000002,
+        -3.8563769811047264e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-1-crush-spacer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004315762907868976,
+      "com_mm": [
+        60.0,
+        0.0,
+        -1.222161526773953e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-2-M4",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004569246898332438,
+      "com_mm": [
+        72.0,
+        2.0403198675746173,
+        -1.1596817965483083e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-2-M4-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.00030402700073262155,
+      "com_mm": [
+        72.00000000000001,
+        14.4,
+        -1.5411020307664353e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-2-rear-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.00030402700073262155,
+      "com_mm": [
+        72.00000000000001,
+        -14.4,
+        -2.1827583456962084e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-2-nut",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0007503061191774887,
+      "com_mm": [
+        72.00000000000001,
+        -16.4,
+        5.238632585777798e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-2-crush-spacer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0043157629078689795,
+      "com_mm": [
+        72.0,
+        0.0,
+        -4.167424607815257e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-3-M4",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004569246898332437,
+      "com_mm": [
+        250.00000000000003,
+        2.040319867574617,
+        -1.2817535646060253e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-3-M4-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.00030402700073262176,
+      "com_mm": [
+        249.99999999999994,
+        14.399999999999999,
+        -1.0867057378666372e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-3-rear-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0003040270007326217,
+      "com_mm": [
+        250.0,
+        -14.399999999999999,
+        -1.2217912778518528e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-3-nut",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0007503061191774888,
+      "com_mm": [
+        250.0,
+        -16.4,
+        6.2143424243705585e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-3-crush-spacer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004315762907868976,
+      "com_mm": [
+        250.00000000000006,
+        2.0678653929007255e-16,
+        -1.1309987646741776e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-4-M4",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004569246898332447,
+      "com_mm": [
+        262.00000000000006,
+        2.0403198675746186,
+        4.882870722308656e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-4-M4-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0003040270007326221,
+      "com_mm": [
+        262.00000000000006,
+        14.4,
+        -9.076969311187725e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-4-rear-washer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0003040270007326221,
+      "com_mm": [
+        262.0,
+        -14.4,
+        -1.0427824711039875e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-4-nut",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.0007503061191774855,
+      "com_mm": [
+        262.0,
+        -16.400000000000002,
+        5.726487505074203e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-3-4-crush-spacer",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "mass_kg": 0.004315762907868986,
+      "com_mm": [
+        262.0,
+        2.0678653929007208e-16,
+        -1.5353405871120706e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-1-M4",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0045692468983324405,
+      "com_mm": [
+        27.000000000000004,
+        64.04031986757461,
+        -3.662153041731498e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-1-M4-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0003040270007326213,
+      "com_mm": [
+        26.99999999999999,
+        76.39999999999999,
+        -1.498547661418287e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-1-rear-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        26.999999999999996,
+        47.60000000000001,
+        -1.2621479664441601e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-1-nut",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0007503061191774871,
+      "com_mm": [
+        27.0,
+        45.599999999999994,
+        6.38857632411928e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-1-crush-spacer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004315762907868977,
+      "com_mm": [
+        26.999999999999986,
+        61.99999999999999,
+        -2.078596694374867e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-2-M4",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00456924689833244,
+      "com_mm": [
+        37.0,
+        64.0403198675746,
+        -2.8686865493563404e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-2-M4-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        36.99999999999999,
+        76.39999999999999,
+        -7.604201809352128e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-2-rear-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00030402700073262106,
+      "com_mm": [
+        37.0,
+        47.60000000000001,
+        -1.0531055175698465e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-2-nut",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0007503061191774872,
+      "com_mm": [
+        36.99999999999999,
+        45.59999999999999,
+        6.597657003817728e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-2-crush-spacer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004315762907868976,
+      "com_mm": [
+        36.99999999999999,
+        62.00000000000001,
+        -1.222161526773953e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-3-M4",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00456924689833244,
+      "com_mm": [
+        59.99999999999999,
+        64.0403198675746,
+        -3.1128300854717736e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-3-M4-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        59.99999999999998,
+        76.39999999999998,
+        -4.722376956334194e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-3-rear-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00030402700073262117,
+      "com_mm": [
+        59.99999999999999,
+        47.6,
+        -7.649230322680533e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-3-nut",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0007503061191774876,
+      "com_mm": [
+        59.99999999999999,
+        45.60000000000001,
+        -4.63462173331562e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-3-crush-spacer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004315762907868976,
+      "com_mm": [
+        60.0,
+        62.00000000000001,
+        -1.222161526773953e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-4-M4",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.004569246898332438,
+      "com_mm": [
+        70.0,
+        64.04031986757461,
+        -1.2207176805771666e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-4-M4-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        69.99999999999999,
+        76.39999999999999,
+        -1.2596738224639054e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-4-rear-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.00030402700073262106,
+      "com_mm": [
+        70.0,
+        47.600000000000016,
+        -1.5523591590985393e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-4-nut",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0007503061191774887,
+      "com_mm": [
+        70.00000000000001,
+        45.6,
+        6.098186491204755e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-tube-4-4-crush-spacer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "mass_kg": 0.0043157629078689795,
+      "com_mm": [
+        70.0,
+        62.00000000000001,
+        -4.167424607815257e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-1",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.002725931329672021,
+      "com_mm": [
+        41.17700547704107,
+        30.31088913245535,
+        17.499999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-1-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758188,
+      "com_mm": [
+        56.949999999999996,
+        30.310889132455348,
+        17.499999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-rear-washer-1",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758188,
+      "com_mm": [
+        25.049999999999997,
+        30.310889132455348,
+        17.499999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-nut-1",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00036038442528511794,
+      "com_mm": [
+        23.599999999999998,
+        30.310889132455348,
+        17.500000000000004
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-2",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0027259313296720206,
+      "com_mm": [
+        41.17700547704107,
+        2.1959598709178747e-15,
+        35.0
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-2-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758181,
+      "com_mm": [
+        56.95000000000001,
+        -3.0657768297107974e-15,
+        35.00000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-rear-washer-2",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        25.049999999999997,
+        -2.642911060095514e-15,
+        35.0
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-nut-2",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00036038442528511805,
+      "com_mm": [
+        23.599999999999998,
+        2.0107143015664793e-15,
+        34.99999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-3",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.002725931329672021,
+      "com_mm": [
+        41.17700547704107,
+        -30.310889132455358,
+        17.499999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-3-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758185,
+      "com_mm": [
+        56.95000000000001,
+        -30.31088913245536,
+        17.499999999999993
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-rear-washer-3",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758187,
+      "com_mm": [
+        25.05,
+        -30.310889132455358,
+        17.499999999999993
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-nut-3",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00036038442528511805,
+      "com_mm": [
+        23.59999999999999,
+        -30.310889132455348,
+        17.499999999999993
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-4",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.002725931329672021,
+      "com_mm": [
+        41.17700547704107,
+        -30.31088913245535,
+        -17.5
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-4-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        56.95,
+        -30.310889132455358,
+        -17.500000000000004
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-rear-washer-4",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        25.049999999999997,
+        -30.310889132455355,
+        -17.500000000000004
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-nut-4",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0003603844252851179,
+      "com_mm": [
+        23.6,
+        -30.31088913245536,
+        -17.50000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-5",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0027259313296720206,
+      "com_mm": [
+        41.17700547704108,
+        -6.418610946242573e-15,
+        -35.0
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-5-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758181,
+      "com_mm": [
+        56.94999999999999,
+        -1.1462682826357118e-14,
+        -35.0
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-rear-washer-5",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0001154158309075818,
+      "com_mm": [
+        25.050000000000004,
+        -1.1311659337208806e-14,
+        -35.0
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-nut-5",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00036038442528511805,
+      "com_mm": [
+        23.599999999999998,
+        -6.7885752731877944e-15,
+        -35.0
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-6",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0027259313296720206,
+      "com_mm": [
+        41.17700547704107,
+        30.31088913245534,
+        -17.50000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-M3-6-washer",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        56.95,
+        30.31088913245534,
+        -17.50000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-rear-washer-6",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        25.049999999999997,
+        30.310889132455337,
+        -17.50000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-cage-nut-6",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.0003603844252851179,
+      "com_mm": [
+        23.6,
+        30.310889132455344,
+        -17.500000000000014
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-dowel",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0003329302814641783,
+      "com_mm": [
+        65.7,
+        24.0,
+        -5.235480957141592e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-M4-1",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0030895567584916478,
+      "com_mm": [
+        71.79994287213724,
+        19.485571585149874,
+        11.25
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-M4-1-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.000286468011073177,
+      "com_mm": [
+        77.10000000000001,
+        19.48557158514986,
+        11.249999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-nut-1",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0007503061191774871,
+      "com_mm": [
+        59.30000000000002,
+        19.48557158514987,
+        11.249999999999998
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-M4-2",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.003089556758491647,
+      "com_mm": [
+        71.79994287213724,
+        -19.485571585149877,
+        11.25
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-M4-2-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0002864680110731771,
+      "com_mm": [
+        77.1,
+        -19.485571585149877,
+        11.249999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-nut-2",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0007503061191774872,
+      "com_mm": [
+        59.300000000000004,
+        -19.485571585149863,
+        11.249999999999998
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-M4-3",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0030895567584916465,
+      "com_mm": [
+        71.79994287213722,
+        -4.235327603898678e-15,
+        -22.499999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-M4-3-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0002864680110731771,
+      "com_mm": [
+        77.10000000000001,
+        -1.238829455819507e-14,
+        -22.5
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-core-nut-3",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0007503061191774874,
+      "com_mm": [
+        59.3,
+        -4.747142567387718e-15,
+        -22.499999999999996
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-front-1",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0010612799223511291,
+      "com_mm": [
+        108.55772488590179,
+        -14.0,
+        32.99999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-front-1-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        110.25,
+        -14.000000000000007,
+        33.0
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-front-nut-1",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0003603844252851182,
+      "com_mm": [
+        104.40000000000002,
+        -14.0,
+        33.0
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-front-2",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0010612799223511291,
+      "com_mm": [
+        108.55772488590179,
+        14.0,
+        32.99999999999999
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-front-2-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        110.25,
+        13.999999999999995,
+        33.0
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-front-nut-2",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00036038442528511815,
+      "com_mm": [
+        104.39999999999999,
+        13.999999999999998,
+        33.00000000000001
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-rear-1",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0008582071416850289,
+      "com_mm": [
+        83.99999999999999,
+        -10.000000000000002,
+        37.54848057824733
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-rear-1-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758184,
+      "com_mm": [
+        84.0,
+        -10.0,
+        40.249999999999986
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-rear-nut-1",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00036038442528511745,
+      "com_mm": [
+        83.99999999999999,
+        -10.000000000000002,
+        35.200000000000024
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-rear-2",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0008582071416850288,
+      "com_mm": [
+        84.0,
+        10.0,
+        37.54848057824734
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-rear-2-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758185,
+      "com_mm": [
+        83.99999999999999,
+        9.999999999999998,
+        40.25
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-roof-rear-nut-2",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00036038442528511756,
+      "com_mm": [
+        84.00000000000001,
+        10.0,
+        35.200000000000024
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-panel-1",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0011722566828391886,
+      "com_mm": [
+        107.70023609531127,
+        -29.0,
+        -8.326743600951951e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-panel-1-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        110.25,
+        -29.000000000000014,
+        4.979637586577529e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-panel-nut-1",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.000360384425285118,
+      "com_mm": [
+        99.89999999999999,
+        -28.999999999999993,
+        2.1764885268754803e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-panel-2",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.0011722566828391886,
+      "com_mm": [
+        107.70023609531127,
+        29.0,
+        -8.326743600951951e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-panel-2-washer",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.00011541583090758183,
+      "com_mm": [
+        110.25,
+        29.0,
+        2.6341569939656403e-17
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-IF-panel-nut-2",
+      "owner": 7,
+      "frame": "J7.rotor",
+      "mass_kg": 0.000360384425285118,
+      "com_mm": [
+        99.89999999999999,
+        28.99999999999999,
+        -6.747114433313989e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-6807-1",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.04246710701343074,
+      "com_mm": [
+        39.70000000000001,
+        -1.375214545847799e-13,
+        -9.301140637156588e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
+    },
+    {
+      "id": "A16-H-J7-6807-2",
+      "owner": 6,
+      "frame": "J7.fixed",
+      "mass_kg": 0.04246710701343074,
+      "com_mm": [
+        50.70000000000001,
+        -1.375214545847799e-13,
+        -9.301140637156588e-16
+      ],
+      "mass_kind": "nominal purchased steel CAD envelope"
     },
     {
       "id": "undeveloped_allowance_3_0.1",
@@ -854,7 +5070,7 @@
       "com_mm": [
         170,
         0,
-        0
+        11
       ],
       "mass_kind": "stated allowance, not CAD or supplier confirmation"
     },
@@ -866,39 +5082,15 @@
       "com_mm": [
         92.5,
         62,
-        0
+        11
       ],
       "mass_kind": "stated allowance, not CAD or supplier confirmation"
     },
     {
-      "id": "undeveloped_allowance_5_0.07",
-      "owner": 5,
-      "frame": "J5.rotor",
-      "mass_kg": 0.07,
-      "com_mm": [
-        40,
-        0,
-        0
-      ],
-      "mass_kind": "stated allowance, not CAD or supplier confirmation"
-    },
-    {
-      "id": "undeveloped_allowance_6_0.04",
-      "owner": 6,
-      "frame": "J6.rotor",
-      "mass_kg": 0.04,
-      "com_mm": [
-        50,
-        0,
-        0
-      ],
-      "mass_kind": "stated allowance, not CAD or supplier confirmation"
-    },
-    {
-      "id": "undeveloped_allowance_7_0.04",
+      "id": "undeveloped_allowance_7_0.06",
       "owner": 7,
       "frame": "J7.rotor",
-      "mass_kg": 0.04,
+      "mass_kg": 0.06,
       "com_mm": [
         65,
         0,
@@ -920,17 +5112,18 @@
     }
   ],
   "motor_catalogue_mass_kg": 6.39,
-  "own_CAD_mass_kg": 2.8404402980696455,
-  "remaining_allowance_kg": 0.6,
+  "own_CAD_mass_kg": 2.8299877386843284,
+  "nominal_hardware_envelope_mass_kg": 0.7367661917433164,
+  "remaining_allowance_kg": 0.49,
   "unfiltered_sample_count": 4099,
   "loaded3kg_sampled_abs_max_Nm": [
     0.0,
-    42.30185618912776,
-    17.722391785108208,
-    18.041583069541353,
-    8.701076919954218,
-    6.295841117576094,
-    0.0017718515537754084
+    43.6087450649092,
+    18.218555546262323,
+    18.524394146402702,
+    8.950962365928046,
+    6.486738215064354,
+    0.0013478250184027058
   ],
   "catalogue_zero_speed_reference_Nm": [
     13,
@@ -941,15 +5134,15 @@
     9.5,
     3.6
   ],
-  "proposed_gas_spring_order_F1_N": 293.7520938778427,
-  "proposed_force_envelope_worst_shoulder_Nm": 29.656888280553588,
-  "virtual_work_max_error_Nm": 5.183316886814282e-09,
+  "proposed_gas_spring_order_F1_N": 303.6778508941796,
+  "proposed_force_envelope_worst_shoulder_Nm": 30.482002959433107,
+  "virtual_work_max_error_Nm": 4.5006371962585945e-09,
   "geometry_qualified_workspace": false,
   "selection_frozen": false,
   "production_release": false,
   "limits": [
     "These masses are the actual uniform plastic CAD plus purchased tube assumptions, not a metal skeleton mass model. Density substitution does not qualify metal manufacture.",
-    "Hardware/harness and moving spring mount remain an explicit0.6kg allowance. Internal motor CG and mass split are unmeasured midpoint proxies.",
+    "352 nominal steel hardware envelopes are summed conservatively, including two solid-ring bearing envelopes. Actual hardware and sliced part masses must be weighed. Harness/connector0.24kg and moving spring/mount0.25kg remain explicit allowances. Internal motor CG and mass split are unmeasured midpoint proxies.",
     "Gas force progression1..1.6,F1+/-10%,0..50C,friction+/-30N are proposed procurement/test assumptions, not supplier guarantees.",
     "No static torque value proves thermal holding, dynamics, brake/fall behavior, enclosure cooling, bearing reactions, material strength or continuous collision/cable clearance. Plastic fit remains unpowered and unloaded."
   ]

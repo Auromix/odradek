@@ -1,0 +1,906 @@
+{
+  "layout": {
+    "id": "A16-CONVENTIONAL02-FLAT-WRIST",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          94.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -10,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "source_sha256": {
+    "engineering/arm_a16/build/root01/manifest.json": "94e5795e3725f2d245b5d271d79feef9312f971fb1f445be8613564b4c484ffe",
+    "engineering/arm_a16/build/root01/step/A16-R101-base-adapter.step": "28ef4e1772bcd7a5ba170bd7ba728a978b5f4fe61a4c08953c5ee023a06574c4",
+    "engineering/arm_a16/build/root01/step/A16-R102-J1-front-holder.step": "1e7b017c51775d7c1cfc883381a637cd017f335086991d3346d14aac352e262e",
+    "engineering/arm_a16/build/root01/step/A16-R103-J1-output-pedestal.step": "caa76f462ce5d089fb7c820722e81328f6ea9a2059ea7a217ddda8d53abf43e7",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-1.step": "f02ac5485321184fc933f6690ad077e7919ff58d1ee39c319a3bf941d9eefaf8",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-2.step": "5e3ece90ef9099fce86f955defeb408c9730d4c758832e6d2909867ba1721318",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-3.step": "c7202076188d3728d3b96696f742634aeeab280cfe532ae071067ee0626846ed",
+    "engineering/arm_a16/build/root01/step/A16-R104-spacer-4.step": "0e0d01fad9cab828746c23fd11342665973873799b91a6aebabceec6ab49f5c7",
+    "engineering/arm_a16/build/skeleton01/manifest.json": "cf119168771009a32396bde13db156bcd6c699152a7e9280edaad29e94107ae1",
+    "engineering/arm_a16/build/skeleton01/step/A16-S101-root-to-shoulder-L.step": "5f87cbca0ac74ab48b9c2940acc673f95540a33aabd294b4722805a0c908bdd1",
+    "engineering/arm_a16/build/skeleton01/step/A16-S102-shoulder-cross-adapter.step": "1dc6b484042deaebf1e1150b43bbeb2abb382ac50bff72a9fb9f3da8cf729004",
+    "engineering/arm_a16/build/skeleton01/step/A16-S103-upper-proximal-socket.step": "2f52b8614319eaf2ac1fa12137e257e07aa059c4442a7c1e30603b6befb02222",
+    "engineering/arm_a16/build/skeleton01/step/A16-S104-upper-distal-socket.step": "93699955e97eb4af45c380c8dab608533bbf08b988496ca25183061bb7c183c0",
+    "engineering/arm_a16/build/skeleton01/step/A16-S105-upper-stock-tube.step": "e6caea4841245f8bf1bc4fa1aa82165b006a770dbd81bc0cd14c726682e89f53",
+    "engineering/arm_a16/build/skeleton01/step/A16-S106-fore-proximal-socket.step": "481dccd9c00efdf4b9261035417a615fd0515043f6e72f69bbdbfaa3752b7986",
+    "engineering/arm_a16/build/skeleton01/step/A16-S107-fore-distal-socket.step": "ef0d6fd851c681661b693df4b9c46bde42f537b69adf6a0109c1b7c86cf963d6",
+    "engineering/arm_a16/build/skeleton01/step/A16-S108-fore-stock-tube.step": "5f55269ff9602a873a4be682b682295195612a42024adeaad4b0d7d4e4f1656e",
+    "engineering/arm_a16/build/skeleton01/step/A16-S109-wrist-pitch-yaw-L.step": "4e7b507c01fb2391d29c4cf873b6a0e1e7c391d65c8fc2c655c40ab66bb9db01",
+    "engineering/arm_a16/build/skeleton01/step/A16-S110-wrist-yaw-roll-L.step": "41f27c07bd9091032d53943512bb14985742da9206a092799f40ae12e01237b3",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-101-bearing-housing.step": "cfa25d13341237a6a0efbcdd81b0a2ffecc75d7310baab801178f71b3cf497ac",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-102-bearing-retainer.step": "eb87eaca2be00607076e04015d35d6885c50d7e17df72ffeb6c0dbd7a8d1582e",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-103-output-journal.step": "06e985a75ede4e12223c240463832fc74690ee422381150be507a8501d16fbb0",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-104-inner-spacer.step": "edbd983066063fcb01777220aa2220f82d81b8a3a3a2f2444c0a51733275517a",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-107-piloted-flange.step": "300de7429924e9a09948397a48a4307fc51d02958c383513c5c4d26cc7d3ff99",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-301-recessed-carrier.step": "2186ae8a5f4f2f30a31f84847edb8c4b7fc932960e4cd4213049e352db1861a8",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-302-dorsal-cover.step": "990caf7c49523f9747d3f504afed467b664fe3c44e83c9e2c8b54a334ed9a913",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-303-face-insert.step": "ece3c97977b80e64309b9c346f377b2ef85c8e24c52f78315700233bcea437f2",
+    "engineering/arm_a16/build/covers01/manifest.json": "9bc9817816761ef4606b61699a48c952b47b92ad04d39666eab0c63cd25fa1f1",
+    "engineering/arm_a16/build/covers01/step/A16-C-upper-dorsal.step": "49a3eb24f5dc16a6cc96abab4d9c12fc278ab9663ef8fed8f3a7bc58bcf851a5",
+    "engineering/arm_a16/build/covers01/step/A16-C-upper-ventral.step": "ab56846cef6d64cf83139473de757cd629939f0407894e564044b391566b86b4",
+    "engineering/arm_a16/build/covers01/step/A16-C-fore-dorsal.step": "1ba15066cad6705317a2a120f3973769b3e069c14de3066cc06ae914a464b151",
+    "engineering/arm_a16/build/covers01/step/A16-C-fore-ventral.step": "d06bd1ffeef591905573f1d24a14b75cd52ed8569177bd77ba9506082b9eef27",
+    "engineering/arm_a16/build/covers01/step/A16-C-J1-cowl-a.step": "7a95765e1c3863ebdffd3468e015f1aeeadf9ac36c9e5eca161092dacae066d1",
+    "engineering/arm_a16/build/covers01/step/A16-C-J1-cowl-b.step": "84026b77e4dd35abdc8eb6161a0081e6b058d42e9e94914f2710626e2e157b9e",
+    "engineering/arm_a16/build/covers01/step/A16-C-J2-cowl-a.step": "e846ac0847fa00126c05b59f00c325a9ad88e40ce2309d9229c0f7f018fcd7a2",
+    "engineering/arm_a16/build/covers01/step/A16-C-J2-cowl-b.step": "ab14bd3bc3cb174e1a9e22134bae59eea4a7efb2ea406c2b4f1ec5a5ef6a64d7",
+    "engineering/arm_a16/build/covers01/step/A16-C-J3-cowl-a.step": "d5caac0553f9b7cad7b3f707a09c23aaac03122e18a951269eaac039d8b0fda8",
+    "engineering/arm_a16/build/covers01/step/A16-C-J3-cowl-b.step": "8ac7165927d6611406cea9124609f03dd4ab2beb112c42597fea5dae8b5a3e24",
+    "engineering/arm_a16/build/covers01/step/A16-C-J4-cowl-a.step": "e86a1dae16fa04ff15305ea430863633a38d65dd521c60cc210a4a08da1fc97d",
+    "engineering/arm_a16/build/covers01/step/A16-C-J4-cowl-b.step": "ee7bacc623d5b208dbff18cd7299b72126dd6e7ddef5613439507adcba12ed17",
+    "engineering/arm_a16/build/covers01/step/A16-C-J5-cowl-a.step": "f2d92e257528a387a90014275d0ea596c43e41c2f06a1d3867a59fdc880bf4b8",
+    "engineering/arm_a16/build/covers01/step/A16-C-J5-cowl-b.step": "78d70512ad54350a0c140bab12583b58793fc2832d3f8a265d57b5a49a8705d3",
+    "engineering/arm_a16/build/covers01/step/A16-C-J6-cowl-a.step": "b9204ecd475c9b8eddc0d5397d748dd4775a57ce4e80b1844aea5d6a43074c38",
+    "engineering/arm_a16/build/covers01/step/A16-C-J6-cowl-b.step": "6748d45402f2989baba3963131451e00de936de91a1c6f060656a91086ad4877",
+    "engineering/arm_a16/build/covers01/step/A16-C-J7-cowl-a.step": "26f649248893de48685620462b9bacd500436ebedae356927522e5ec398027a0",
+    "engineering/arm_a16/build/covers01/step/A16-C-J7-cowl-b.step": "3970699718e5e35a8050bc3118b4e908562881abf5dedfaf5a3088c42d0dd069"
+  },
+  "vendor_audit_sha256": "e49d476f13d2299b57671f15416bb4e2926703345aadb6969cf5eba2f7928027",
+  "checks": [
+    {
+      "pose": "idle",
+      "positive_bbox_pairs": 167,
+      "new_exact_checks": 167
+    },
+    {
+      "pose": "attention",
+      "positive_bbox_pairs": 141,
+      "new_exact_checks": 46
+    },
+    {
+      "pose": "reference",
+      "positive_bbox_pairs": 110,
+      "new_exact_checks": 30
+    }
+  ],
+  "collisions": [
+    {
+      "pose": "idle",
+      "a": "A16-C-upper-dorsal",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 1190.5160252309174
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-upper-ventral",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 1196.7037793803943
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 575.0923831111559
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S106-fore-proximal-socket",
+      "volume_mm3": 473.2341710015153
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 2.8566462907957892
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S109-wrist-pitch-yaw-L",
+      "volume_mm3": 0.9369295174118535
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-dorsal",
+      "b": "J4-stator",
+      "volume_mm3": 608.682517956266
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-dorsal",
+      "b": "J4-external-output",
+      "volume_mm3": 23.839837768290643
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 522.7918897605846
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S106-fore-proximal-socket",
+      "volume_mm3": 497.2043200144575
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 5.368066044964394
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S109-wrist-pitch-yaw-L",
+      "volume_mm3": 466.4032566032986
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S110-wrist-yaw-roll-L",
+      "volume_mm3": 691.2115723483521
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "J4-stator",
+      "volume_mm3": 613.5895805415513
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "J4-external-output",
+      "volume_mm3": 23.93689822323692
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "J6-stator",
+      "volume_mm3": 1103.2559413877345
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J2-cowl-b",
+      "b": "A16-S101-root-to-shoulder-L",
+      "volume_mm3": 2426.405561152294
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J3-cowl-a",
+      "b": "A16-S101-root-to-shoulder-L",
+      "volume_mm3": 127.8278429320799
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J3-cowl-a",
+      "b": "A16-S102-shoulder-cross-adapter",
+      "volume_mm3": 1072.1832676841398
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J3-cowl-b",
+      "b": "A16-S101-root-to-shoulder-L",
+      "volume_mm3": 630.8503227118906
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J3-cowl-b",
+      "b": "A16-S102-shoulder-cross-adapter",
+      "volume_mm3": 1035.807699622211
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J4-cowl-a",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 3047.362499999691
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J4-cowl-b",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 3047.3624999996196
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J5-cowl-a",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 244.40000000000057
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J5-cowl-b",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 244.39999999999924
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J6-cowl-b",
+      "b": "A16-S109-wrist-pitch-yaw-L",
+      "volume_mm3": 336.38868820562504
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-J7-cowl-b",
+      "b": "A16-S110-wrist-yaw-roll-L",
+      "volume_mm3": 1235.0639900607482
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-upper-dorsal",
+      "b": "A16-C-fore-dorsal",
+      "volume_mm3": 17.88741541819903
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-upper-dorsal",
+      "b": "A16-C-J4-cowl-b",
+      "volume_mm3": 633.1200968554937
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-upper-ventral",
+      "b": "A16-C-J4-cowl-a",
+      "volume_mm3": 815.220345120751
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-C-J5-cowl-a",
+      "volume_mm3": 102.87151506073928
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-C-J6-cowl-b",
+      "volume_mm3": 61.60087784835829
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-C-J5-cowl-b",
+      "volume_mm3": 104.04134898688501
+    },
+    {
+      "pose": "idle",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-C-J6-cowl-b",
+      "volume_mm3": 203.41632950654866
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-upper-dorsal",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 1190.5160252309174
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-upper-ventral",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 1196.7037793803943
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 575.0923832016529
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S106-fore-proximal-socket",
+      "volume_mm3": 473.2341710015153
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 2.8566462907957892
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-dorsal",
+      "b": "J4-stator",
+      "volume_mm3": 620.546481325408
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-dorsal",
+      "b": "J4-external-output",
+      "volume_mm3": 23.839837768290643
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 522.7918865871557
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S106-fore-proximal-socket",
+      "volume_mm3": 497.2043200144575
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 5.368066044964394
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-ventral",
+      "b": "J4-stator",
+      "volume_mm3": 602.243948817488
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-ventral",
+      "b": "J4-external-output",
+      "volume_mm3": 23.93689822323692
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J2-cowl-b",
+      "b": "A16-S101-root-to-shoulder-L",
+      "volume_mm3": 2426.405561152294
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J3-cowl-a",
+      "b": "A16-S101-root-to-shoulder-L",
+      "volume_mm3": 127.82784293208591
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J3-cowl-a",
+      "b": "A16-S102-shoulder-cross-adapter",
+      "volume_mm3": 1072.1832676841398
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J3-cowl-b",
+      "b": "A16-S101-root-to-shoulder-L",
+      "volume_mm3": 127.58666554012137
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J3-cowl-b",
+      "b": "A16-S102-shoulder-cross-adapter",
+      "volume_mm3": 1035.807699622211
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J4-cowl-a",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 3047.362499999691
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J4-cowl-b",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 3047.3624999996196
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J5-cowl-a",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 244.40000000000057
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J5-cowl-b",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 244.39999999999924
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J6-cowl-b",
+      "b": "A16-S109-wrist-pitch-yaw-L",
+      "volume_mm3": 336.38868820562504
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-J7-cowl-b",
+      "b": "A16-S110-wrist-yaw-roll-L",
+      "volume_mm3": 1235.0639900607482
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-upper-dorsal",
+      "b": "A16-C-J4-cowl-b",
+      "volume_mm3": 633.1200968554937
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-upper-ventral",
+      "b": "A16-C-J4-cowl-a",
+      "volume_mm3": 815.220345120751
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-C-J5-cowl-a",
+      "volume_mm3": 102.87151506073928
+    },
+    {
+      "pose": "attention",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-C-J5-cowl-b",
+      "volume_mm3": 104.04134898688501
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-upper-dorsal",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 1190.5160252309174
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-upper-ventral",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 1196.7037793803943
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 575.0923821032178
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S106-fore-proximal-socket",
+      "volume_mm3": 473.2341710015153
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 2.8566462907957892
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-dorsal",
+      "b": "J4-stator",
+      "volume_mm3": 593.8686943438973
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-dorsal",
+      "b": "J4-external-output",
+      "volume_mm3": 23.839837768290643
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 522.7918867063651
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S106-fore-proximal-socket",
+      "volume_mm3": 497.2043200144575
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 5.368066044964394
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-ventral",
+      "b": "J4-stator",
+      "volume_mm3": 612.1830922986409
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-ventral",
+      "b": "J4-external-output",
+      "volume_mm3": 23.93689822323692
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J2-cowl-b",
+      "b": "A16-S101-root-to-shoulder-L",
+      "volume_mm3": 2426.405561152294
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J3-cowl-a",
+      "b": "A16-S101-root-to-shoulder-L",
+      "volume_mm3": 122.40857031500961
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J3-cowl-a",
+      "b": "A16-S102-shoulder-cross-adapter",
+      "volume_mm3": 1072.1832676841398
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J3-cowl-b",
+      "b": "A16-S101-root-to-shoulder-L",
+      "volume_mm3": 119.63450886200455
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J3-cowl-b",
+      "b": "A16-S102-shoulder-cross-adapter",
+      "volume_mm3": 1035.807699622211
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J4-cowl-a",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 3047.362499999691
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J4-cowl-b",
+      "b": "A16-S104-upper-distal-socket",
+      "volume_mm3": 3047.3624999996196
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J5-cowl-a",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 244.40000000000057
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J5-cowl-b",
+      "b": "A16-S107-fore-distal-socket",
+      "volume_mm3": 244.39999999999924
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J6-cowl-b",
+      "b": "A16-S109-wrist-pitch-yaw-L",
+      "volume_mm3": 336.38868820562504
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-J7-cowl-b",
+      "b": "A16-S110-wrist-yaw-roll-L",
+      "volume_mm3": 1235.0639900607482
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-upper-dorsal",
+      "b": "A16-C-J4-cowl-b",
+      "volume_mm3": 633.1200968554937
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-upper-ventral",
+      "b": "A16-C-J4-cowl-a",
+      "volume_mm3": 815.220345120751
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-dorsal",
+      "b": "A16-C-J5-cowl-a",
+      "volume_mm3": 102.87151506073928
+    },
+    {
+      "pose": "reference",
+      "a": "A16-C-fore-ventral",
+      "b": "A16-C-J5-cowl-b",
+      "volume_mm3": 104.04134898688501
+    }
+  ],
+  "scoped_clear": false,
+  "scope": "18 closed shell CAD candidates vs root,core and exact supplier partitions plus shell-to-shell;3 named poses. No hardware, wires, source plugs, complete base shell or path qualification.",
+  "same_frame_overlap_allowed": false,
+  "rigid_pair_reuse": "Only identical relative rigid frame matrix and unchanged source pair; no old-layout volume reuse.",
+  "production_release": false
+}

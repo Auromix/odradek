@@ -19,6 +19,7 @@ L['id']='A16-CONVENTIONAL02-FLAT-WRIST'
 L['joints'][0].update(offset=[0,0,165],motor_center=[0,0,-28.3],length_mm=56.6)
 L['joints'][1].update(length_mm=55.7)
 L['joints'][1]['offset']=[0,0,114]
+L['joints'][1]['motor_center']=[0,94.35,0]
 L['joints'][2].update(motor_center=[1.5,0,0])
 L['joints'][3].update(motor_center=[0,1.5,0])
 L['joints'][4].update(motor_center=[0,70.3,0])

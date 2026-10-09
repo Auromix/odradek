@@ -28,7 +28,24 @@ def add(id,s,owner,**kw):
     # Some valid inherited STEP loses validity under OCC same-domain cleanup.
     # Preserve the valid original topology rather than forcing that cleanup.
     if not s.isValid():s=s.fix()
-    p=g.add(id,s,owner,**kw);assert p['solid_count']==1;return p
+    cleaned=s.clean()
+    if cleaned.isValid():s=cleaned
+    assert s.isValid() and len(s.Solids())==1,id
+    mesh=None
+    for tol in [.15,.06,.02]:
+        vv,tt=s.tessellate(tol,.12)
+        for digits in [5,6,4]:
+            m=trimesh.Trimesh([v.toTuple() for v in vv],tt,process=True);m.merge_vertices(digits_vertex=digits)
+            m.update_faces(m.nondegenerate_faces());m.update_faces(m.unique_faces());m.remove_unreferenced_vertices()
+            if m.is_watertight and m.is_winding_consistent and m.volume>0:mesh=m;break
+        if mesh is not None:break
+    assert mesh is not None,id+' non-watertight export after refined tessellation'
+    for directory in ['step','stl']:(O/directory).mkdir(exist_ok=True)
+    cq.exporters.export(s,str(O/'step'/(id+'.step')));mesh.export(O/'stl'/(id+'.stl'))
+    bb=s.BoundingBox()
+    p=dict(id=id,owner=owner,frame=kw.get('frame') or g.local_frame(owner),role=kw.get('role','printed_structure'),material=kw.get('material','PA12 fit prototype'),note=kw.get('note',''),
+        solid_count=1,watertight=True,volume_mm3=s.Volume(),mass_kg=kw.get('mass',s.Volume()*g.DENSITY),com_mm=list(s.Center().toTuple()),bbox_size_mm=[bb.xlen,bb.ylen,bb.zlen],vertices_mm=mesh.vertices.tolist(),triangles=mesh.faces.tolist())
+    g.PARTS.append(p);g.SHAPES[id]=s;print('CORE_PART',id,flush=True);return p
 def socket(s,x0,x1,y=0):
     return s.cut(box([x0,y-10.2,-20.2],[x1-x0,20.4,40.4])).clean()
 def clamp_holes(s,xs,y):
@@ -43,11 +60,11 @@ def main():
     c.base_context();g.PARTS.clear();g.SHAPES.clear()
     # Root-to-shoulder L bracket: flat foot plus a vertical annular plate.
     a=I[1];fixed=vec(a['fixed_mm'])+[0,0,114]
-    foot=box([-55,-36,30],[110,101.5,8])
+    foot=box([-55,-36,30],[110,104.5,8])
     for x in [-38,38]:
         for y in [-28,28]:foot=g.drill(foot,[x,y,29.9],[0,0,1],5.6,8.2)
     ring=holder(1).translate((0,0,114))
-    tail=box([-55,57.5,35],[110,8,79])
+    tail=box([-55,60.5,35],[110,8,79])
     tail=tail.cut(g.cyl(fixed-vec(a['n'])*.1,a['n'],40,8.2))
     s=foot.fuse(ring,tail).clean();s=mount(s,1,'fixed_front_fasteners',fixed,8)
     add('A16-S101-root-to-shoulder-L',s,1,note='Conventional L bracket; flat8mm foot and8mm annular face. Supported print; metal welded/bent/milled redesign requires strength validation.')
@@ -66,6 +83,9 @@ def main():
     p=vec(I[3]['fixed_mm'])+[340,0,0]
     s=holder(3).translate((340,0,0)).fuse(box([245,-14,-24],[33,49.35,48])).clean();s=socket(s,244.9,270)
     s=mount(s,3,'fixed_front_fasteners',p,8);s=long_tools(s,3,'fixed_front_fasteners',p,8,30);s=clamp_holes(s,[250,262],0)
+    # D10 is exactly tangent to the X245 socket edge at the first clamp;
+    # D11 makes an intentional open scallop instead of a zero-width lip.
+    for x in [250,262]:s=g.drill(s,[x,14,0],[0,1,0],11,36)
     add('A16-S104-upper-distal-socket',s,3,note='Tube endsX270; offset end socket joins native J4 front annulus. Tool channels open with tube removed.')
     s=box([50,-10,-20],[220,20,40]).cut(box([49.9,-8,-18],[220.2,16,36]))
     for x in [60,72,250,262]:s=g.drill(s,[x,-11,0],[0,1,0],4.5,22)
@@ -77,15 +97,18 @@ def main():
     p=vec(I[4]['fixed_mm'])+[185,62,0]
     s=holder(4).translate((185,62,0)).fuse(box([50,48,-24],[31,28,48]),box([63,72,-12],[18,31.5,24]),box([63,95.5,-12],[100,8,24])).clean();s=socket(s,49.9,75,62)
     s=mount(s,4,'fixed_front_fasteners',p,8);s=long_tools(s,4,'fixed_front_fasteners',p,8,35);s=clamp_holes(s,[60,70],62)
+    for x in [60,70]:s=g.drill(s,[x,76,0],[0,1,0],11,40)
     add('A16-S107-fore-distal-socket',s,4,note='Offset tube socket to native RS10P J5 fixed ring. No redundant gears.')
     s=box([20,52,-20],[55,20,40]).cut(box([19.9,54,-18],[55.2,16,36]))
     for x in [27,37,60,70]:s=g.drill(s,[x,51,0],[0,1,0],4.5,22)
     add('A16-S108-fore-stock-tube',s,4,role='purchased_structure',material='6061-T6 stock rectangular tube20x40x2, saw cut55mm; drill4xD4.5',mass=s.Volume()*2.70e-6,note='Fore axis spacing185 unchanged; fixed rear spine completes span outside wrist pitch sweep.')
     # Simple L cross carrier for the two native25:1 wrist actuators.
     p=vec(I[5]['fixed_mm'])+[55,0,0]
-    j6ring=holder(5).intersect(box([-40,-29,-45],[80,58,30]))
-    s=output(4).fuse(j6ring.translate((55,0,0)),box([-15,22,-36.8],[33,10,22.8]),box([15,27,-36.8],[73,5,8])).clean()
+    j6ring=holder(5).intersect(box([-40,-27.5,-45],[80,55,30]))
+    join=box([-15,22,-20],[33,10,6]).intersect(g.cyl([0,32,0],[0,-1,0],20,10))
+    s=output(4).fuse(j6ring.translate((55,0,0)),box([-15,22,-36.8],[33,5,22.8]),box([15,22,-36.8],[73,5,8]),join).clean()
     s=mount(s,4,'output_fasteners',I[4]['out_mm'],10)
+    s=long_tools(s,4,'output_fasteners',I[4]['out_mm'],10,25)
     s=mount(s,5,'fixed_front_fasteners',p,8);s=long_tools(s,5,'fixed_front_fasteners',p,8,38)
     add('A16-S109-wrist-pitch-yaw-L',s,5,note='One L bracket, native J5 output/J6 front ring; open screw access; not a new joint module.')
     # Reuse J7 cartridge; replace only its input support for native RS10P.
@@ -98,6 +121,7 @@ def main():
     s=mount(s,6,'fixed_front_fasteners',p,8)
     for k in range(6):
         t=np.radians(30+60*k);s=g.drill(s,[100.2,35*np.cos(t),35*np.sin(t)],[1,0,0],3.5,8.2)
+        s=g.drill(s,[99.7,35*np.cos(t),35*np.sin(t)],[1,0,0],8,.6)
     add('A16-S110-wrist-yaw-roll-L',s,6,note='J7 front ring/cartridge planes retained;6x cage through boltsPCD70; annular screw-head sweep relief, no extra mechanism.')
     old=c.ROOT/'engineering/arm_a13/wrist-route01/build'
     D=json.loads((old/'integration-parts.json').read_text());retained=[]
@@ -124,6 +148,10 @@ def main():
       nominal_motor_bolt_plan={'RS04_fixed':'M4x12 /8 grip /.8washer /3.2 insertion /5 minimum source depth','RS04_output':'M5x16 /10 grip /1washer /5 insertion /6.5 minimum source depth','RS10P_fixed':'M4x12 /8 grip /.8washer /3.2 insertion /4.5 source depth','RS10P_output':'M4x14 /10 grip /.8washer /3.2 insertion /5 source depth','RS00_fixed':'M3x12 button /8 grip /.5washer /3.5 insertion; actual front usable depth must be measured'},
       hardware_and_tool_access_qualified=False,whole_arm_collision_qualified=False,harness_qualified=False,production_release=False)
     (O/'manifest.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');(O/'meshes.json').write_text(json.dumps(g.PARTS,separators=(',',':'))+'\n')
+    ids={p['id'] for p in g.PARTS}
+    for directory in ['step','stl']:
+        for stale in (O/directory).glob('*'):
+            if stale.is_file() and stale.stem not in ids:stale.unlink()
     print('SKELETON_PARTS',len(parts),flush=True)
 
 if __name__=='__main__':main()

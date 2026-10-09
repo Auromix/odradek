@@ -4,7 +4,7 @@ import json,sys,shutil,itertools, numpy as np, cadquery as cq
 import common as c
 
 DATUMS=[([0,0,0],[1,0,0],[0,1,0],[0,0,1]),
- ([0,65,0],[1,0,0],[0,0,1],[0,-1,0]),
+ ([0,68,0],[1,0,0],[0,0,1],[0,-1,0]),
  ([27.85,0,0],[0,1,0],[0,0,1],[1,0,0]),
  ([0,27.85,0],[1,0,0],[0,0,-1],[0,1,0]),
  ([0,40,0],[1,0,0],[0,0,1],[0,-1,0]),
@@ -37,6 +37,9 @@ def run():
     expected={s['local_filename']:s for s in c.SRC['sources']}
     a15=json.loads((c.ROOT/'engineering/arm_a15/robstride01/sources.json').read_text())
     expected.update({s['local_filename']:s for s in a15['sources']})
+    current=json.loads((c.OUT/'vendor-audit.json').read_text()) if '--joint' in sys.argv else None
+    current_meshes=json.loads((cache/'meshes.json').read_text()) if current else None
+    only=sys.argv[sys.argv.index('--joint')+1] if current else None
     original=c.CACHE/'vendor-original01'
     if '--reposition' in sys.argv:
         if not original.exists():
@@ -49,6 +52,10 @@ def run():
         j=inf['joint'];m=inf['model'];filename=inf['model_source']['step_file']
         path=c.ROOT/('work/arm-a15/robstride' if m=='RS10P' else 'work/arm-a05/vendor')/filename
         assert c.sha(path)==expected[filename]['sha256']
+        if current and j!=only:
+            existing=next(x for x in current['motors'] if x['joint']==j);assert existing['interface']==inf
+            for tag,hash in existing['cache_step_sha256'].items():assert c.sha(cache/(j+'-'+tag+'.step'))==hash
+            records.append(existing);meshes.extend(x for x in current_meshes if x['id'].startswith(j+'-supplier-'));continue
         if previous:
             prior=next(x for x in previous['motors'] if x['joint']==j)
             assert prior['source_sha256']==c.sha(path)

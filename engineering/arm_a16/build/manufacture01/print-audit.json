@@ -1,0 +1,913 @@
+{
+  "revision": "A16-CORE-FIT01",
+  "layout": {
+    "id": "A16-CONVENTIONAL02-FLAT-WRIST",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          94.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -10,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "source_sha256": {
+    "engineering/arm_a16/build/root01/manifest.json": "94e5795e3725f2d245b5d271d79feef9312f971fb1f445be8613564b4c484ffe",
+    "engineering/arm_a16/build/skeleton01/manifest.json": "cf119168771009a32396bde13db156bcd6c699152a7e9280edaad29e94107ae1",
+    "engineering/arm_a16/build/hardware01/manifest.json": "4df86be3ef7486753566a758f7a33e94b44e0faa46c6585022cf81c05dbfe79a",
+    "engineering/arm_a16/build/skeleton01/step/A16-S101-root-to-shoulder-L.step": "5f87cbca0ac74ab48b9c2940acc673f95540a33aabd294b4722805a0c908bdd1",
+    "engineering/arm_a16/build/skeleton01/step/A16-S102-shoulder-cross-adapter.step": "1dc6b484042deaebf1e1150b43bbeb2abb382ac50bff72a9fb9f3da8cf729004",
+    "engineering/arm_a16/build/skeleton01/step/A16-S103-upper-proximal-socket.step": "2f52b8614319eaf2ac1fa12137e257e07aa059c4442a7c1e30603b6befb02222",
+    "engineering/arm_a16/build/skeleton01/step/A16-S104-upper-distal-socket.step": "93699955e97eb4af45c380c8dab608533bbf08b988496ca25183061bb7c183c0",
+    "engineering/arm_a16/build/skeleton01/step/A16-S105-upper-stock-tube.step": "e6caea4841245f8bf1bc4fa1aa82165b006a770dbd81bc0cd14c726682e89f53",
+    "engineering/arm_a16/build/skeleton01/step/A16-S106-fore-proximal-socket.step": "481dccd9c00efdf4b9261035417a615fd0515043f6e72f69bbdbfaa3752b7986",
+    "engineering/arm_a16/build/skeleton01/step/A16-S107-fore-distal-socket.step": "ef0d6fd851c681661b693df4b9c46bde42f537b69adf6a0109c1b7c86cf963d6",
+    "engineering/arm_a16/build/skeleton01/step/A16-S108-fore-stock-tube.step": "5f55269ff9602a873a4be682b682295195612a42024adeaad4b0d7d4e4f1656e",
+    "engineering/arm_a16/build/skeleton01/step/A16-S109-wrist-pitch-yaw-L.step": "4e7b507c01fb2391d29c4cf873b6a0e1e7c391d65c8fc2c655c40ab66bb9db01",
+    "engineering/arm_a16/build/skeleton01/step/A16-S110-wrist-yaw-roll-L.step": "41f27c07bd9091032d53943512bb14985742da9206a092799f40ae12e01237b3",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-101-bearing-housing.step": "cfa25d13341237a6a0efbcdd81b0a2ffecc75d7310baab801178f71b3cf497ac",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-102-bearing-retainer.step": "eb87eaca2be00607076e04015d35d6885c50d7e17df72ffeb6c0dbd7a8d1582e",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-103-output-journal.step": "06e985a75ede4e12223c240463832fc74690ee422381150be507a8501d16fbb0",
+    "engineering/arm_a16/build/skeleton01/step/A13-J7-104-inner-spacer.step": "edbd983066063fcb01777220aa2220f82d81b8a3a3a2f2444c0a51733275517a",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-107-piloted-flange.step": "300de7429924e9a09948397a48a4307fc51d02958c383513c5c4d26cc7d3ff99",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-301-recessed-carrier.step": "2186ae8a5f4f2f30a31f84847edb8c4b7fc932960e4cd4213049e352db1861a8",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-302-dorsal-cover.step": "990caf7c49523f9747d3f504afed467b664fe3c44e83c9e2c8b54a334ed9a913",
+    "engineering/arm_a16/build/skeleton01/step/A13-IF-303-face-insert.step": "ece3c97977b80e64309b9c346f377b2ef85c8e24c52f78315700233bcea437f2"
+  },
+  "print_parts": [
+    {
+      "id": "A16-S101-root-to-shoulder-L",
+      "source_stl_sha256": "862ff641d153786950e9cb254e95b0524ee9af8569e4d5399f9a9954e9f2bda8",
+      "print_stl_sha256": "7a0dba1d3f95f9df65b847bb4fe1b9cd858f647b98a0b19cdfaa68012e0896b9",
+      "R_bed_from_cad": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        66.9959945678711,
+        180.9701690673828,
+        36.0
+      ],
+      "size_mm": [
+        133.9919891357422,
+        150.9701690673828,
+        104.5
+      ],
+      "roundtrip_error_mm": 4.4136803180371345e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A16-S102-shoulder-cross-adapter",
+      "source_stl_sha256": "2667f164cb27fa64993be3589fa418e517582f9a5f16f9fc06c933b3896371d6",
+      "print_stl_sha256": "dced88b4118a0bb27341791cd05d88028e84d8adbb0b43dddda423cddb4f6a37",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        66.9927978515625,
+        76.97002410888672,
+        35.349998474121094
+      ],
+      "size_mm": [
+        133.985595703125,
+        144.97003173828125,
+        70.34608459472656
+      ],
+      "roundtrip_error_mm": 2.143131846440256e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A16-S103-upper-proximal-socket",
+      "source_stl_sha256": "1fd890a2a11e16319aabe8ad00daa3398d16c6bb844ec8cf705bbc4cade5bb21",
+      "print_stl_sha256": "ba12ce685c31925762007fbd4a3a3b915650c83b4032ecf186edcfa5db666348",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        35.0,
+        34.9960823059082,
+        -27.850000381469727
+      ],
+      "size_mm": [
+        69.98433685302734,
+        69.9921646118164,
+        47.150001525878906
+      ],
+      "roundtrip_error_mm": 2.220446049250313e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A16-S104-upper-distal-socket",
+      "source_stl_sha256": "8abdc73e72de1ff8c668ebca488c9456c1f33d575c66c12571a1f182f57d0755",
+      "print_stl_sha256": "ac99cfd4209f4387a8f7334d5b13632af451da9e16bf34872988fa85ef12f4bb",
+      "R_bed_from_cad": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        -245.0,
+        66.99609375,
+        35.349998474121094
+      ],
+      "size_mm": [
+        161.97018432617188,
+        133.9921875,
+        49.349998474121094
+      ],
+      "roundtrip_error_mm": 1.2916205301147037e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A16-S106-fore-proximal-socket",
+      "source_stl_sha256": "b6652655592820f8c0e2b9a4feb1c75dbc36799a7fe7fe9f7adf9326649d7b2f",
+      "print_stl_sha256": "75ca95c1ea1e6b80d324d502e17d335a3bacee150beb8be84dda1b32afcbb987",
+      "R_bed_from_cad": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        34.9960823059082,
+        34.984336853027344,
+        76.0
+      ],
+      "size_mm": [
+        74.99607849121094,
+        69.98433685302734,
+        48.150001525878906
+      ],
+      "roundtrip_error_mm": 1.7763568394002505e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A16-S107-fore-distal-socket",
+      "source_stl_sha256": "1ddf10b261a6f0055138d36d24181bd47d000387006b3dc67139dd9dbd1a5a40",
+      "print_stl_sha256": "0dc8575df6602411a74ff9d397346ac31a567794c44d672a0e54b8c44001f95c",
+      "R_bed_from_cad": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        -50.0,
+        32.499732971191406,
+        103.5
+      ],
+      "size_mm": [
+        167.48565673828125,
+        64.99946594238281,
+        55.5
+      ],
+      "roundtrip_error_mm": 2.341424165216619e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A16-S109-wrist-pitch-yaw-L",
+      "source_stl_sha256": "60d1802a1c1c0ae55b0ae64d135fa25174d0c4da728dc805ca1c7f32768ce2ca",
+      "print_stl_sha256": "8225fd7ce9e55648b577d8bc0ee8478a08dbc8d2f724d767e635c661eb0d15f9",
+      "R_bed_from_cad": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        19.999895095825195,
+        36.79999923706055,
+        40.0
+      ],
+      "size_mm": [
+        107.99989318847656,
+        56.79117965698242,
+        67.5
+      ],
+      "roundtrip_error_mm": 2.5717582580799545e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A16-S110-wrist-yaw-roll-L",
+      "source_stl_sha256": "3f48b95fc0a9dc2d3f9fec5f003bf1b9fec74b36e94b011515c4c5acfd2b7467",
+      "print_stl_sha256": "bbadfa48ba5ce61185cf6792566209172927e726be21da524884ea99701c1474",
+      "R_bed_from_cad": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "translation_mm": [
+        20.0,
+        41.99665451049805,
+        48.29999923706055
+      ],
+      "size_mm": [
+        128.3000030517578,
+        83.9933090209961,
+        90.28125762939453
+      ],
+      "roundtrip_error_mm": 3.34244113777641e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A13-J7-101-bearing-housing",
+      "source_stl_sha256": "af72736c2500bff1d9cb1c9a0d7bde3ad03685ffb9c3dac79cdfa0814e0bab6c",
+      "print_stl_sha256": "5be6c2af23b08e37fe14834dfd5951a06a2216fb73135f92e9a310d7b3126b58",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        41.99530029296875,
+        41.982208251953125,
+        -33.29999923706055
+      ],
+      "size_mm": [
+        83.9906005859375,
+        83.98220825195312,
+        20.900001525878906
+      ],
+      "roundtrip_error_mm": 3.535854546776588e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A13-J7-102-bearing-retainer",
+      "source_stl_sha256": "a3672ca818033a15869167708325bba4b9bc125e45f792de3778051c8454b88a",
+      "print_stl_sha256": "789afee07262bf227ec02718be358980925646e2abc08611d3fb6b112484a591",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        42.0,
+        40.22222137451172,
+        -54.20000076293945
+      ],
+      "size_mm": [
+        84.0,
+        80.44444274902344,
+        2.5
+      ],
+      "roundtrip_error_mm": 3.4228271055696848e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A13-J7-103-output-journal",
+      "source_stl_sha256": "89865025f8330ca4e2e740fc08eb76713abcf3435a7559fd6efdb1f2686512f4",
+      "print_stl_sha256": "f956526eda7c9f305fec1708f580f115eeea908ced05b371c643f2cbf5fe84c9",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        18.5,
+        18.4979305267334,
+        -25.700000762939453
+      ],
+      "size_mm": [
+        36.991722106933594,
+        36.9958610534668,
+        34.0
+      ],
+      "roundtrip_error_mm": 1.1034200795092836e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A13-J7-104-inner-spacer",
+      "source_stl_sha256": "d09991b4579ae40ca034aeeccd325d7dec60d746bd4a89f1772b7a98f1d9f122",
+      "print_stl_sha256": "e63f8a57c6e49d862c5ff502cb0567bd1710f8218ffb20287d7f638c7b3de6e9",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        18.4979305267334,
+        18.49172019958496,
+        -54.20000076293945
+      ],
+      "size_mm": [
+        36.9958610534668,
+        36.991722106933594,
+        3.5
+      ],
+      "roundtrip_error_mm": 5.492201334666286e-16,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A13-IF-107-piloted-flange",
+      "source_stl_sha256": "2258b6affa7a0453a18952eb3e5ef22546f4c45cd7cb050f6ab21c5273fa9fe7",
+      "print_stl_sha256": "830522613b80e7a8edd1acff9ae30b0e3bfc8f9f39202142596fb3f24407015f",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        30.0,
+        29.99664306640625,
+        -57.70000076293945
+      ],
+      "size_mm": [
+        59.986572265625,
+        59.9932861328125,
+        9.999996185302734
+      ],
+      "roundtrip_error_mm": 1.348349397086758e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A13-IF-301-recessed-carrier",
+      "source_stl_sha256": "369958c25f0e43b64ff4c9affb216f4969610d69f761191698e6a1a11941c035",
+      "print_stl_sha256": "abb6f7d2366e4756cea64355d821f2943ec2ee26016959ed06a779afdf145677",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        44.0,
+        44.0,
+        -65.69999694824219
+      ],
+      "size_mm": [
+        88.0,
+        88.0,
+        46.30000305175781
+      ],
+      "roundtrip_error_mm": 3.5233356115744064e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A13-IF-302-dorsal-cover",
+      "source_stl_sha256": "7a4799a594087ab2327cb093457aaea48c806fef7a50d39ae25eaec724ca49c6",
+      "print_stl_sha256": "61a115a090dee7cbe0201b5fde1ce8c3f708113a6e01d86909420a7d8a96c058",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        44.0,
+        38.537967681884766,
+        -76.69999694824219
+      ],
+      "size_mm": [
+        24.0,
+        77.07593536376953,
+        29.100006103515625
+      ],
+      "roundtrip_error_mm": 2.9366767806578153e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    },
+    {
+      "id": "A13-IF-303-face-insert",
+      "source_stl_sha256": "bf39d424ab79974fe40adbae43788f7a5d9199b5ba8f917df0e7a5b348dc811b",
+      "print_stl_sha256": "56b492d6b0abf6aa2cc13f11f6c974e208b7f8a5050182cac887475b7ed97d33",
+      "R_bed_from_cad": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "translation_mm": [
+        26.0,
+        32.998233795166016,
+        -103.0
+      ],
+      "size_mm": [
+        52.0,
+        65.99646759033203,
+        3.0
+      ],
+      "roundtrip_error_mm": 3.5258796750314847e-15,
+      "orientation": "Deliberate assembly-flat/bore orientation; unsupported roofs and bridges require slicer inspection. Not sliced or physically printed."
+    }
+  ],
+  "stock_tubes": [
+    {
+      "id": "S105",
+      "length_mm": 220,
+      "hole_x_from_cut_end_mm": [
+        10,
+        22,
+        200,
+        212
+      ],
+      "through_width_mm": 20,
+      "hole_diameter_mm": 4.5,
+      "dxf_sha256": "b749b176e1016c4f6bd1b692e4c0ce69a86110f0359a0ed3fc48eefea5151a80"
+    },
+    {
+      "id": "S108",
+      "length_mm": 55,
+      "hole_x_from_cut_end_mm": [
+        7,
+        17,
+        40,
+        50
+      ],
+      "through_width_mm": 20,
+      "hole_diameter_mm": 4.5,
+      "dxf_sha256": "998928ee163588926e642229d21a4afb2ec2ea81908014ec9e449e036a7622be"
+    }
+  ],
+  "hardware_parts": 352,
+  "bolt_count": 146,
+  "exclusions": [
+    "18 cosmetic cover candidates: attachment/collision/connected wiring pending.",
+    "Motors, stock tubes, steel spacers and hardware are purchased, never printed.",
+    "External tool-side dummy cups and full flower head excluded."
+  ],
+  "scope": "Closed STL, proper rotation/inverse,250mm bed fit, dimensional all-edge BREP orthographics, native hole table, tube DXF and nominal BOM. Slicer/physical fit/load/metal production not qualified.",
+  "physical_assembly_qualified": false,
+  "production_release": false
+}

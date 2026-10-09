@@ -11,9 +11,11 @@ def load(p):
 BOUNDS={}
 def bounds(s):
     key=s.hashCode()
-    if key not in BOUNDS:
-        b=Bnd_Box();BRepBndLib.Add_s(s.wrapped,b,False);BOUNDS[key]=b.Get()
-    return BOUNDS[key]
+    bucket=BOUNDS.setdefault(key,[])
+    for shape,value in bucket:
+        if shape.wrapped.IsSame(s.wrapped):return value
+    b=Bnd_Box();BRepBndLib.Add_s(s.wrapped,b,False);value=b.Get()
+    bucket.append((s,value));return value
 def overlap(a,b):
     x=bounds(a);y=bounds(b)
     return not any(x[k+3]<=y[k]+1e-5 or y[k+3]<=x[k]+1e-5 for k in range(3))
