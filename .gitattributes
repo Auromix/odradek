@@ -8,3 +8,6 @@
 *.csv -text whitespace=cr-at-eol
 engineering/generated/**/*.svg -diff whitespace=-blank-at-eol
 engineering/electronics/**/*.svg -diff whitespace=-blank-at-eol
+# Native JLCEDA exports contain fixed-width padding and terminal blank records.
+engineering/electronics/base-light-b06/manufacturing/*.ipc -text whitespace=-blank-at-eol,-blank-at-eof
+engineering/electronics/base-light-b06/manufacturing/*.csv -text whitespace=cr-at-eol,-blank-at-eof

@@ -1,0 +1,88 @@
+{
+  "pass_": true,
+  "board_mm": [
+    50,
+    14,
+    1.6
+  ],
+  "native_schematic_drc": 0,
+  "native_pcb_drc": 0,
+  "components": 12,
+  "native_lines": 45,
+  "native_vias": 8,
+  "pin_map_exact": true,
+  "bom_component_count": 12,
+  "npth": [
+    {
+      "x": 2,
+      "y": -5,
+      "d": 2.4
+    },
+    {
+      "x": 48,
+      "y": -5,
+      "d": 2.4
+    },
+    {
+      "x": 8,
+      "y": -4,
+      "d": 3.2
+    },
+    {
+      "x": 42,
+      "y": -4,
+      "d": 3.2
+    }
+  ],
+  "archive_crc_pass": true,
+  "archive_entries": [
+    "Gerber_TopLayer.GTL",
+    "Gerber_BottomLayer.GBL",
+    "Gerber_TopSilkscreenLayer.GTO",
+    "Gerber_BottomSilkscreenLayer.GBO",
+    "Gerber_TopSolderMaskLayer.GTS",
+    "Gerber_BottomSolderMaskLayer.GBS",
+    "Gerber_TopPasteMaskLayer.GTP",
+    "Gerber_BoardOutlineLayer.GKO",
+    "Gerber_DocumentLayer.GDL",
+    "Gerber_DrillDrawingLayer.GDD",
+    "Drill_PTH_Through.DRL",
+    "Drill_NPTH_Through.DRL",
+    "Drill_PTH_Through_Via.DRL",
+    "FlyingProbeTesting.json",
+    "PCB下单必读.txt"
+  ],
+  "manufacturing_sha256": {
+    "B06-LIGHT-PWM-Gerber.zip": "c7ae3cc0aaed63645f7a78111042e7b3b6d4b147de9be1a84ffd197a6383d291",
+    "B06-LIGHT-PWM.step": "b06e871861681d013d3c85b2795c521b7eccb1ade6a2c788961b238e50585cd8",
+    "bom.csv": "2bb8ea4adb6daf73d6b32129b5fffb86fa86f5b5a55e14a7d9bcbcb92bbaa331",
+    "ipc356.ipc": "8674e4bcc873e80bb3204969719e35feced50ab696dcb6dae636b99b72000e8c",
+    "netlist.enet": "620e857fa890d6d3334faa14e0213a4f2ea87bcab841787c05520deb9b47c395",
+    "pick-place.csv": "3a38271581b2ac75a81d694588e470a658399242bb1a90d265a3be19f21d4ec2"
+  },
+  "native_source_sha256": {
+    "pcb/PCB1.epcb2": "90a215402897b3fdc08985a7cfbd2b95fa53c51644044df63d7c241a0cc1bcac",
+    "sch/Schematic1/P1.esch2": "1aafd89ee655fedd5ee2f980cd14926673d682d726366aab362919f99231c365"
+  },
+  "electrical_screen": {
+    "supply_V": [
+      4.75,
+      5.25
+    ],
+    "pwm_V": [
+      3.3,
+      5
+    ],
+    "nominal_total_LED_mA": 16.595744680851062,
+    "absolute_resistor_limited_total_mA": 33.849129593810446,
+    "maximum_resistor_power_mW": 59.23597678916828,
+    "resistor_rating_mW": 100,
+    "gate_V_at_3_3V": 3.2312499999999997
+  },
+  "limits": [
+    "Native DRC and exported data consistency, not physical PCB assembly qualification.",
+    "Typical LED/drop assumptions only; brightness, derating, temperature and EMC need prototypes.",
+    "External regulated/current-limited 5V and PWM source not selected; never attach to 48V.",
+    "Rear auxiliary lead/interface decision pending; no full harness release."
+  ]
+}
