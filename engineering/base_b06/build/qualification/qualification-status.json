@@ -12,7 +12,7 @@
     "DEF-RATINGS: Continuous/peak48V current, PoC and GMSL mode fixed and protection/fuse coordination reviewed; connector current is not PCB current rating; local48V-to5V/PWM supply design, native PCB layout, branch protection, transient/ripple and low-load regulation qualification required",
     "DEF-PRINT-OPTICS: Actual PETG/transparent material/process, shrink compensation, captive nuts, lamp shim and optical recipe",
     "DEF-FIXTURE: Loading apparatus inspected and calibrated, rated load-pin/clevis/lifting accessory, restraint and stiffness known",
-    "DEF-RELEASE: Complete drawings/BOM/harness/native PCB version frozen, first-article and repeat-build review approved"
+    "DEF-RELEASE: Complete drawings/BOM/harness/native PCB version frozen, first-article and repeat-build review approved; close native schematic warnings and complete actual connector-model review"
   ],
   "tests": [
     {
@@ -236,6 +236,13 @@
         "Missing/failing metric duration_h",
         "Missing/failing metric missed_or_stuck_sequences",
         "Missing/failing metric optical_or_mount_damage_events",
+        "Missing/failing metric controller_3V3_min_V",
+        "Missing/failing metric controller_3V3_max_V",
+        "Missing/failing metric pwm_frequency_min_Hz",
+        "Missing/failing metric pwm_frequency_max_Hz",
+        "Missing/failing metric reset_flash_events",
+        "Missing/failing metric uart_contract_pass",
+        "Missing/failing metric watchdog_reset_verified",
         "Operator/reviewer missing",
         "Test date missing/invalid",
         "Instrument/calibration record missing",
@@ -364,7 +371,7 @@
     "Evidence/file consistency and numeric criteria only; no proof of record authenticity or independent certification",
     "Even all PASS requires accountable release review; this script does not authorize manufacture or operation"
   ],
-  "configuration_fingerprint": "7ef152ebe1bbadac3d4c6616f8ec97b9475c0191b0b888c5b4f5b82968734932",
-  "record_sha256": "ac539f0e6beabb9c6dcd6808a03e875814744d283d449feec3b14d3fa59e564a",
-  "validation_plan_sha256": "a26b800cbf962631fafcad40bf1bf4b0c6cdc348e8d4d6f3b40fcd23cedc7e06"
+  "configuration_fingerprint": "65ffc157f72eec0831b0741cef73929bf648fd339aee36afe48c07b67c26d291",
+  "record_sha256": "1147cce64e2c3bcb43973fa46ef99e6df380894c0b1b6b6c31741fa683d08205",
+  "validation_plan_sha256": "8e0c721f4386ffef46d22cf07f13cb5e1bf0a80d845ed7213a3c9c8080b80541"
 }

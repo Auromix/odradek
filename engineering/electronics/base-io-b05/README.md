@@ -1,6 +1,6 @@
 # 当前版本说明 · 2026-10-09 就地5V修订
 
-当前原生工程已加入7个供电元件；制造导出以[ b06-io-local5v ](manufacturing/b06-io-local5v/)为准。供电及装配说明见[就地电源模块](local5v/README.md)，当前检查入口为`check_routed.py`。程序灯效仍未接控制器，整套底座尚未生产放行。
+当前原生工程包含7个供电元件和13个新增控制器元件；见[CONTROL-01 状态与独立调试](controller/README.md)。当前保存复开后的严格PCB DRC为0，26个实际元件，制造文件以 [b06-io-control01](manufacturing/b06-io-control01/) 为准。检查入口 `controller/check_native.py` 和 `check_routed.py`。旧13元件导出只用于追溯；整套底座尚未生产放行。
 
 以下记录是此次供电修订前的历史基线，供对照；其中6元件、48焊盘、217段线、16过孔及prototype制造包不代表当前板。
 
@@ -13,6 +13,10 @@ CC-BY-NC-4.0；Required Notice: Odradek — Auromix contributors.
 `migration-input/kicad/` 保留源格式副本。`reports/migration-status.json` 和 `reports/native-relocation-readback.json` 记录当前状态与实际 API 读回；原 KiCad ERC/DRC 结果不能继承到嘉立创 EDA。
 
 PCB 原生坐标以 mil 为 API 单位、Y 向负方向。J2 已移动到 (58,0) mm，J6 到 (42,20) mm；实际 48 个焊盘中 38 个电气焊盘有网络，10 个机械焊盘无网络。板框仍为 116×56 mm。
+
+## 历史阶段：初始无源通路
+
+以下是初始217线阶段的记录，不是当前控制器版数量。
 
 **接口板已完成数字布线与制造导出，整套底座仍未放行。** 2026-10-09先完成48V双外层2.4 mm铜线，再完成8条数据网络、16个过孔和四组等长补偿。保存关闭并重开后，原生DRC为 **0项**；48个焊盘保持不变，34段供电铜线保持不变，整板现为217段线。[实际重开读回](reports/b06-data-reopened.json)及[独立审计](reports/b06-routed-audit.json)记录当前版本。初始83项候选错误未通过放宽规则解决：修正交叉、安装孔禁布区、同网重复钻孔，再重建覆铜并补偿长度。
 

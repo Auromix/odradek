@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-09",
+  "host_tests_pass": true,
+  "sanitizers": [
+    "undefined",
+    "bounds"
+  ],
+  "cross_target": "thumb-freestanding-eabi cortex_m0plus",
+  "compiler": "ziglang 0.15.2",
+  "flash_origin": "0x8000000",
+  "flash_bytes": 1936,
+  "flash_budget_bytes": 32768,
+  "RAM_static_bytes": 12,
+  "RAM_budget_bytes": 8192,
+  "stack_reserve_bytes": 1024,
+  "entry": "0x800029d",
+  "vector_stack": "0x20002000",
+  "reset_vector_matches_entry": true,
+  "sources_sha256": {
+    "framing.c": "213dc6eae40f5835f587148e0298d9f5c630a2e092e10ee82a41b2ee37cf9446",
+    "effects.c": "dd0c3f63a2803bb5f98a1c788d5daf221024da46f4e5832277a15e420f8a2354",
+    "main.c": "10ec42d67ae18e3d6fa7a9dd0119fcc82beb64649d4e6eaaf4de598e47883eff",
+    "test_effects.c": "b312314f10cb3fe9cc48ca6ce796b5c323fc46a283e1b8f08971e910c8d33362",
+    "effects.h": "d59bc443c343281f9d2d62d2a051d5aa94caf7c3ba12b53ca6e53defbeb6e7e9",
+    "framing.h": "89adcd554ebb77d2b8518c5247eb146dc7c5e91db01bfd3db7ab268acf6cfc85",
+    "startup.S": "13f814d6b4902c6feae78f02caa11165f55e704a1c3cc30096137605b6e425d9",
+    "linker.ld": "ae3bbd3b5683e5eea1f07cc9c3b714e7f57f5fb7b656baf99a345f093ad3e07f",
+    "build.py": "60a4071524cda9faa19d77760e1b75e5e409ea84828ba7a7c12cde62c987f1e5",
+    "vendor/cmsis_compiler.h": "b51963d271c1571ca3463654c76aa7ea50c4eac5d0a2710df10414ac64d9e0f8",
+    "vendor/cmsis_gcc.h": "43bfd1fe69fbbc2ca70aaf7d43cc3e20f16e0c7f66e1bdef9b51af6dc14b2617",
+    "vendor/cmsis_version.h": "184c19fd3ee73632edf35a0b4d49cd48be75fbf49e6ccb19d9db05fa83bea4b3",
+    "vendor/core_cm0plus.h": "a09fa9c6b8b21d1920bce15b98aa56182b027e9278cca0b154812bac2aea3cfa",
+    "vendor/mpu_armv7.h": "29206b52ee02290ed6f5a5415ebd4187de802cf176d9b3cb844390d8e5571372",
+    "vendor/stm32g030xx.h": "9af2b7c64ebe6cbe486f8a5672c7e6f2f08c23cd5d24962c138205b1a49b833b",
+    "vendor/system_stm32g0xx.h": "20ee999e4431472a7c351e2412537aa0ef7f5f5e499a21a92c1d4cc21f84ebf1"
+  },
+  "outputs_sha256": {
+    "controller.elf": "effd976aba0107235f8da380803c5bb7ace586bd144fe678d77088f2cd9c854c",
+    "controller.bin": "6754ad682e930234211563247536d521329284e1b3a450447ac0101025b27407",
+    "controller.hex": "019c7cdfb223898b48b0796655d97eaaf9807d8d66ee1eccdc5f21856413d625"
+  },
+  "limits": [
+    "No board connected or flashed",
+    "PWM, clocks, watchdog timing, UART electrical levels and SWD require physical tests",
+    "Programmed modes continue autonomously after UART disconnection; reset returns OFF; no stored mode"
+  ],
+  "address_sanitizer_status": "Unavailable on this host: runtime initialization deadlocked before main; no ASan pass claimed",
+  "production_released": false
+}

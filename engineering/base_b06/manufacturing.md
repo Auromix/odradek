@@ -38,17 +38,17 @@ J6是机壳接地边界，不等同于J5电源返回。金属上板有专用M6�
 
 所有线束要形成两端定义、线色、截面、实测长度、压接工具、夹持位置、最小弯曲半径和检验方法的单独图纸。当前BOM明确列出五类线束，而不是宣称它们已选型完成。背部端口不会自动成为普通PC网口：RJ45保持专用EtherCAT边界，双同轴GMSL接外部接收设备。不能接48V到RJ45或灯板。
 
-灯板GH三芯顺序1=5V、2=PWM、3=GND；底座IO J7同顺序。48V由底座板的F1、D1、U1就地产生5V，再经内部短线接灯板。J7.2仍为未连接PWM预留，供电完成不代表灯效控制完成；被动EtherCAT直通口不产生PWM。本轮不增加外置5V线。光学软垫压缩、透光及耐温需实测。
+灯板GH三芯顺序1=5V、2=PWM、3=GND；底座IO J7同顺序。48V由底座板的F1、D1、U1就地产生5V，再经内部短线接灯板。J7.2现接STM32灯控候选；固件编译和软件测试通过不代表实板灯效已验证，被动EtherCAT直通口不产生PWM。不增加外置5V线。光学软垫压缩、透光及耐温需实测。
 
 ### 就地5V电源打样候选
 
-同一个原生立创工程已加入7个元件：RECOM R-78HB5.0-0.5、Littelfuse0451.500MRL、DiodesS1B-13-F、TDKC5750X7S2A106K230KB、YageoCC0805KKX7R9BB105/RC0805FR-07470RL、JSTBM03B-GHS-TBT(LF)(SN)。见[当前原生制造导出](../electronics/base-io-b05/manufacturing/b06-io-local5v/)及[就地电源说明](../electronics/base-io-b05/local5v/README.md)。旧b06-io-prototype导出只供历史对照。
+同一个原生立创工程已加入7个元件：RECOM R-78HB5.0-0.5、Littelfuse0451.500MRL、DiodesS1B-13-F、TDKC5750X7S2A106K230KB、YageoCC0805KKX7R9BB105/RC0805FR-07470RL、JSTBM03B-GHS-TBT(LF)(SN)。见[当前原生制造导出](../electronics/base-io-b05/manufacturing/b06-io-control01/)及[就地电源说明](../electronics/base-io-b05/local5v/README.md)。旧b06-io-prototype导出只供历史对照。
 
 超过50V输入的有效电容必须满足厂家3.3µF/100V要求。所选10µF/100V X7S电容仍需核对52.8V直流偏压、负容差、温度及老化后的最低有效电容，不可只用标称10µF认定满足。F1用于输入支路，D1用于反接隔离；均未证明热插拔浪涌、反接、输出故障及熔断配合。首轮以5V输出100mA限流预算进行板级测试，不能继承模块500mA额定能力为整板能力。
 
 厂家建议最小10mA负载。灯关闭时不能假定LED维持这个负载，候选470Ω/1%/至少0.125W泄放电阻在4.75V最低输出下约10.01mA，5.25V最高输出下功耗约59.3mW；后续若常开控制电路已满足负载可取消，须重新核算。输出允许范围、启动、纹波、EMI和温升在实际低负载下实测；模块额定值不是整板放行。
 
-程序控制电路及命令路径仍未实现；被动EtherCAT直通不能直接抽出PWM。控制方案需要兼容已有专用EtherCAT通路和隐藏接线仓；新增元件与接口须同步原生PCB和装配模型。
+同一原生IO板已增加13个控制器元件和UART/SWD接口，详见[CONTROL-01](../electronics/base-io-b05/controller/README.md)。当前32个原生器件含6个安装孔、26个实际元件；旧13元件Gerber为历史导出。现已重建铺铜、保存复开，严格DRC为0；当前26元件Gerber/BOM/坐标/IPC356保存在 `b06-io-control01`，源指纹与原生板绑定。物理板级验证及整机放行仍未完成。UART线经隐藏接线仓，供电不另走桌下。
 
 ## 放行顺序
 

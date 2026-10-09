@@ -100,7 +100,7 @@
       "product_supply_location": "Local base PCB48V-to5V; user selected no separate5V supply lead to desk box",
       "product_internal_connection": "Short internal GH3-core:5V/PWM/GND",
       "local_converter_implemented_in_current_native_PCB": true,
-      "pwm_control_implementation": "Required; not implemented by passive EtherCAT straight-through; local programmable circuit / command path still to define",
+      "pwm_control_implementation": "Local STM32G030F6P6 candidate with USART2 command input, TIM3 PWM and SWD; digital firmware tests passed; current IO PCB DRC and physical validation not complete",
       "converter_candidate": {
         "part": "RECOM R-78HB5.0-0.5",
         "input_V": [
@@ -116,9 +116,18 @@
         ],
         "minimum_load_mA": 10,
         "source": "https://recom-power.com/pdf/Innoline/R-78HB-0.5.pdf",
-        "status": "Native local supply fabrication candidate; body fit and DRC/exports checked; physical rail/inrush/EMI/thermal unqualified"
+        "status": "Local supply candidate retained; current controller board changed, old DRC/exports are historical; physical rail/inrush/EMI/thermal unqualified"
       },
-      "base_header": "IO J7:1=LAMP5V,2=PWM_RESERVED,3=RETURN48"
+      "base_header": "IO J7:1=LAMP5V,2=LAMP_PWM,3=RETURN48",
+      "controller": {
+        "revision": "B06-CONTROL-01",
+        "command_header": "J8:1=RETURN48,2=TX from base,3=RX into base",
+        "debug_header": "J9:1=RETURN48,2=3V3 reference only,3=SWDIO,4=SWCLK,5=NRST",
+        "uart": "3.3V TTL, nominal 115200 8N1, request then ACK; internal GH3 harness",
+        "pwm": "PA6 / TIM3_CH1, nominal 1kHz, reset OFF",
+        "firmware": "../electronics/base-io-b05/controller/firmware/",
+        "production_qualified": false
+      }
     }
   },
   "module_boundary": {
@@ -129,7 +138,7 @@
       "passive IO PCB",
       "dual coax bracket",
       "PWM lamp PCB",
-      "Local5V lamp supply implemented; PWM controller/command path still pending"
+      "Local5V supply and STM32 lamp controller candidate; PCB DRC0; physical validation pending"
     ],
     "external_equipment": [
       "48V protection and current-limited supply",

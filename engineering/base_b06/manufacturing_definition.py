@@ -1,14 +1,14 @@
 # SPDX-License-Identifier: CC-BY-NC-4.0
 """Controlled RFQ/first-article definition; never a physical production release.
 
-Electronics children come from native exports, not a second hand-maintained BOM.
+Electronics children come from native exports or explicit blocked native readback.
 Open harness parts have explicit unknown lengths and cannot become purchase-ready.
 """
 import csv,json,hashlib
 from pathlib import Path
 HERE=Path(__file__).resolve().parent;OUT=HERE/'build';ELEC=HERE.parent/'electronics'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-io=ELEC/'base-io-b05/manufacturing/b06-io-local5v/B06-IO-LOCAL5V-BOM.csv'
+io=ELEC/'base-io-b05/manufacturing/b06-io-control01/B06-IO-CONTROL01-BOM.csv'
 lamp=ELEC/'base-light-b06/manufacturing/bom.csv'
 rows=[]
 for r in csv.DictReader((OUT/'B06-mechanical-bom.csv').open(encoding='utf-8-sig')):
@@ -16,14 +16,23 @@ for r in csv.DictReader((OUT/'B06-mechanical-bom.csv').open(encoding='utf-8-sig'
         kind='assembly_parent' if r['category']=='electronics' else r['category'],
         specification=r['specification'],manufacturer_part='',source=r['cad_files'],
         status='RFQ_CANDIDATE',open_item=r['notes']))
-for parent,path,n in [('PCB-B06-IO',io,13),('PCB-B06-LIGHT',lamp,12)]:
-    native=list(csv.DictReader(path.open(encoding='utf-8-sig'),delimiter='\t'))
+for parent,path,n in [('PCB-B06-IO',io,26),('PCB-B06-LIGHT',lamp,12)]:
+    if path.suffix=='.json':
+        readback=json.loads(path.read_text());assert readback['ok']
+        for name,expected in readback['source_sha256'].items():assert sha(ELEC/'base-io-b05'/name)==expected
+        native=[{'Quantity':1,'Designator':c['designator'],'Manufacturer Part':c['manufacturerId'],
+                 'Value':c['otherProperty'].get('Value',''),'Comment':c['name']}
+                for c in readback['value']['components'] if c['addIntoBom']]
+        status='NATIVE_LAYOUT_CANDIDATE_NOT_ORDER_READY'
+    else:
+        native=list(csv.DictReader(path.open(encoding='utf-8-sig'),delimiter='\t'))
+        status='NATIVE_BOM_VERIFIED'
     assert sum(int(r['Quantity']) for r in native)==n
     for r in native:
         assert r['Manufacturer Part'] and r['Designator']
         rows.append(dict(id=parent+'/'+r['Designator'],parent=parent,quantity=r['Quantity'],unit='pcs',kind='component_child',
             specification=r['Value'] or r['Comment'],manufacturer_part=r['Manufacturer Part'],
-            source=str(path.relative_to(HERE.parent)),status='NATIVE_BOM_VERIFIED',
+            source=str(path.relative_to(HERE.parent)),status=status,
             open_item='Supplier availability/lot and PCBA process must be confirmed; buy either populated parent or children'))
 extras=[
  ('W01',1,'operation','weld_process','Four continuous 140mm fillets; z5, proposed leg5.0..5.5; postweld datum machining','','WPS, bead profile, end allowance, distortion and joint strength unqualified'),
@@ -38,7 +47,9 @@ extras=[
  ('H-BOND',1,'assembly','harness_open','J6 to metal frame and external protective-bond boundary','','Topology/length/cross section and low resistance acceptance not frozen'),
  ('H-ECAT',1,'assembly','harness_open','Internal shielded Ethernet J2 to module boundary; two-ended base loopback test','','Exact cable/plug/length; shield termination and fixed bend radius to be checked'),
  ('H-RF',2,'assembly','harness_open','50ohm coax from bulkhead to module-side test connector','','Connector family/length/route/minimum bend/channel budget/PoC unknown'),
- ('H-LAMP',1,'assembly','harness_open','Internal short lead only: base board to JST GH 1=5V 2=PWM 3=GND','GHR-03V-S + 3xSSHL-002T-P0.2','No separate desk-box5V lead; local converter fitted; PWM controller and actual harness pending; actual length/colors/crimp/route unknown'),
+ ('H-LAMP',1,'assembly','harness_open','Internal short lead only: base board to JST GH 1=5V 2=PWM 3=GND','GHR-03V-S + 3xSSHL-002T-P0.2','No separate desk-box5V lead; local converter/controller candidate; actual length/colors/crimp/route unknown'),
+ ('H-UART',1,'assembly','harness_open','J8 internal GH3 UART to external box;3.3V TX/RX/GND','GHR-03V-S + 3xSSHL-002T-P0.2','No power pin; actual controller/isolation/length/clamps/route unknown'),
+ ('H-SWD',1,'assembly','harness_open','J9 GH5 service lead: GND/3V3 ref/SWDIO/SWCLK/NRST','GHR-05V-S + 5xSSHL-002T-P0.2','Service accessory;3V3 reference only; no backfeed; length/route/actual debug connector pending'),
  ('LIGHT-SHIM',2,'pcs','optical_open','Soft optical-support pad; current nominal support gap at least0.4mm','','Material/thickness/compression/translucency measured on actual printed lens'),
  ('CABLE-RESTRAINT',1,'set','consumable_open','Rounded ties / saddles at existing carrier ears; wire boots and insulated separation','','Count/position/tool and pull-force criteria after actual harness route'),
  ('FINISH',1,'operation','finish_open','Deburr, corrosion protection; mask bond faces/threads/datum seats','','Coating and weld preparation agreed with supplier; no coating in conductive bond interface'),
@@ -50,7 +61,7 @@ assert len({r['id'] for r in rows})==len(rows)
 with (OUT/'B06-manufacturing-bom.csv').open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 checks=[
- ('FAI-01','incoming','All parts','Material/lot/MPN; 5 product prints; PCB child BOM quantities13/12','Record certificates/lot labels and visual condition'),
+ ('FAI-01','incoming','All parts','Material/lot/MPN; 5 product prints; PCB child quantities26/12; use CONTROL01 current exports only','Record certificates/lot labels and visual condition'),
  ('FAI-02','weld_before_finish','W01','Four seams z5; leg5.0..5.5 provisional envelope; 140mm each','WPS signoff and actual weld profile/end termination inspection'),
  ('FAI-03','postweld','B06-101','Deck upper datum Z17; flatness<=0.15 candidate','Surface plate/indicator; measure after welding, machining and finish'),
  ('FAI-04','postweld','W01','M12 axes / upper-lower plane relationship to CAD','CMM + thread gauges; record full measured coordinates; tolerance allocation not released'),
@@ -74,7 +85,8 @@ traveler=[dict(id=id,stage=st,part=p,design_requirement=req,inspection=ins,measu
 with (OUT/'B06-first-article-traveler.csv').open('w',encoding='utf-8-sig',newline='') as f:
     w=csv.DictWriter(f,fieldnames=list(traveler[0]));w.writeheader();w.writerows(traveler)
 definition={'revision':'B06-COMPACT-07-DFM','production_released':False,'arm_required':False,
- 'bom_lines':len(rows),'native_IO_component_quantity':13,'native_lamp_component_quantity':12,
+ 'bom_lines':len(rows),'native_IO_component_quantity':26,'native_lamp_component_quantity':12,
+ 'IO_source_kind':'Native JLCEDA CONTROL01 manufacturing BOM export','IO_fabrication_released':False,
  'first_article_steps':len(traveler),'procurement_rule':'Populated PCBA parent OR its bare board/component children; never both',
  'open_definition_items':[r['id'] for r in rows if r['status']=='DEFINITION_OPEN'],
  'stud_stack_screen':{'thread_height_min_mm':2.8,'lug_nominal_mm':.79,'ordinary_nut_nominal_mm':2.4,

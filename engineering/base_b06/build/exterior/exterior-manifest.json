@@ -3,7 +3,7 @@
   "length_unit": "mm",
   "module": "standalone_base",
   "arm_reference_included": false,
-  "interface_contract_sha256": "12b239db2907f900d303f927872a30ae30fbc3dc2cfd2118dedd657c1cc4376a",
+  "interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
   "scope": "Five printed shell/scaffold parts plus original metal chassis/clamp/shelf CAD; routed IO PCB; integration candidate, not complete manufacturing release",
   "parameters": {
     "schema": "odradek.b06.compact.v5",
@@ -6457,6 +6457,539 @@
       "print_stl": null
     },
     {
+      "id": "IO-LOCAL5V-U2",
+      "name": "就地供电 U2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          34.64999794960022,
+          11.699999682605267,
+          25.599999353289604
+        ],
+        "max": [
+          41.349999606609344,
+          18.300000578165054,
+          26.80000104010105
+        ],
+        "size": [
+          6.700001657009125,
+          6.600000895559788,
+          1.2000016868114471
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-U2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for STM32G030F6P6; rotate 0 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-U3",
+      "name": "就地供电 U3",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          26.400001719594,
+          10.400000028312206,
+          25.600001215934753
+        ],
+        "max": [
+          29.600000008940697,
+          13.60000018030405,
+          27.10000053048134
+        ],
+        "size": [
+          3.199998289346695,
+          3.200000151991844,
+          1.499999314546585
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-U3.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for AP2112K-3.3TRG1; rotate 0 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-C3",
+      "name": "就地供电 C3",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          38.40000182390213,
+          8.599999360740185,
+          25.600001215934753
+        ],
+        "max": [
+          39.59999978542328,
+          10.400000028312206,
+          26.399999856948853
+        ],
+        "size": [
+          1.1999979615211487,
+          1.8000006675720215,
+          0.7999986410140991
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-C3.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for CC0603KRX7R8BB104; rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-C4",
+      "name": "就地供电 C4",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          39.09999877214432,
+          5.400000140070915,
+          25.600001215934753
+        ],
+        "max": [
+          40.89999943971634,
+          7.600000128149986,
+          27.10000053048134
+        ],
+        "size": [
+          1.8000006675720215,
+          2.199999988079071,
+          1.499999314546585
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-C4.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for CC0805KKX7R9BB105; rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-C5",
+      "name": "就地供电 C5",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          26.000000536441803,
+          4.200000315904617,
+          25.599999353289604
+        ],
+        "max": [
+          28.00000086426735,
+          7.799999788403511,
+          27.400000020861626
+        ],
+        "size": [
+          2.0000003278255463,
+          3.5999994724988937,
+          1.8000006675720215
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-C5.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for T491A106K016AT; rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-C6",
+      "name": "就地供电 C6",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          27.9999990016222,
+          14.200001023709774,
+          25.599999353289604
+        ],
+        "max": [
+          29.999999329447746,
+          17.800001427531242,
+          27.400000020861626
+        ],
+        "size": [
+          2.0000003278255463,
+          3.6000004038214684,
+          1.8000006675720215
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-C6.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for T491A106K016AT; rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-C7",
+      "name": "就地供电 C7",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          43.40000078082085,
+          9.099999442696571,
+          25.600001215934753
+        ],
+        "max": [
+          44.599998742341995,
+          10.900000110268593,
+          26.399999856948853
+        ],
+        "size": [
+          1.1999979615211487,
+          1.8000006675720215,
+          0.7999986410140991
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-C7.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for CC0603KRX7R8BB104; rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-R2",
+      "name": "就地供电 R2",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          43.40000078082085,
+          6.100000347942114,
+          25.600001215934753
+        ],
+        "max": [
+          44.599998742341995,
+          7.900000549852848,
+          26.399999856948853
+        ],
+        "size": [
+          1.1999979615211487,
+          1.8000002019107342,
+          0.7999986410140991
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-R2.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for RC0603FR-0710KL; rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-R3",
+      "name": "就地供电 R3",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          31.400002539157867,
+          8.099999278783798,
+          25.600001215934753
+        ],
+        "max": [
+          32.600000500679016,
+          9.89999994635582,
+          26.399999856948853
+        ],
+        "size": [
+          1.1999979615211487,
+          1.8000006675720215,
+          0.7999986410140991
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-R3.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for RC0603FR-071KL; rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-R4",
+      "name": "就地供电 R4",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          48.39999973773956,
+          7.100000511854887,
+          25.600001215934753
+        ],
+        "max": [
+          49.59999769926071,
+          8.900000713765621,
+          26.399999856948853
+        ],
+        "size": [
+          1.1999979615211487,
+          1.8000002019107342,
+          0.7999986410140991
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-R4.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for RC0603FR-0710KL; rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-R5",
+      "name": "就地供电 R5",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          48.39999973773956,
+          4.100000020116568,
+          25.600001215934753
+        ],
+        "max": [
+          49.59999769926071,
+          5.8999997563660145,
+          26.399999856948853
+        ],
+        "size": [
+          1.1999979615211487,
+          1.7999997362494469,
+          0.7999986410140991
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-R5.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for RC0603FR-0710KL; rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-J8",
+      "name": "就地供电 J8",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          46.049997210502625,
+          9.999999776482582,
+          25.600001215934753
+        ],
+        "max": [
+          51.95000022649765,
+          18.000001087784767,
+          30.09999915957451
+        ],
+        "size": [
+          5.900003015995026,
+          8.000001311302185,
+          4.499997943639755
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-J8.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for BM03B-GHS-TBT(LF)(SN); rotate 90 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-J9",
+      "name": "就地供电 J9",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          32.00000151991844,
+          22.25000038743019,
+          25.600001215934753
+        ],
+        "max": [
+          41.999999433755875,
+          27.75000035762787,
+          30.09999915957451
+        ],
+        "size": [
+          9.999997913837433,
+          5.499999970197678,
+          4.499997943639755
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-J9.stl",
+      "assembly_role": "electronics",
+      "notes": [
+        "Conservative body/SMT-terminal envelope for BM05B-GHS-TBT(LF)(SN)(N); rotate 0 deg; excludes mating plug and cable",
+        "Conservative package-body envelope; actual solder, plug and wire clearances need samples"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "electronics",
+      "print_stl": null
+    },
+    {
       "id": "IO-LOCAL5V-J7-MATE-RESERVE",
       "name": "灯线 GH 插头装配预算",
       "category": "component",
@@ -6491,6 +7024,88 @@
       "assembly_role": "routing",
       "notes": [
         "8x7x10mm planning reserve, not a supplier mate/wire model; qualified cable route pending"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "routing",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-J8-MATE-RESERVE",
+      "name": "J8-MATE-RESERVE",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          43.99999976158142,
+          9.999999776482582,
+          30.100002884864807
+        ],
+        "max": [
+          53.999997675418854,
+          18.000001087784767,
+          40.10000079870224
+        ],
+        "size": [
+          9.999997913837433,
+          8.000001311302185,
+          9.999997913837433
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-J8-MATE-RESERVE.stl",
+      "assembly_role": "routing",
+      "notes": [
+        "Conservative plug/latch planning reserve; remove plugs before screwdriver access",
+        "Not a supplier mate model or full wire bend qualification"
+      ],
+      "prototype_status": "集成参考；未经采购或实物验证",
+      "viewer_group": "routing",
+      "print_stl": null
+    },
+    {
+      "id": "IO-LOCAL5V-J9-MATE-RESERVE",
+      "name": "J9-MATE-RESERVE",
+      "category": "component",
+      "quantity": 1,
+      "material": "Integration reference only",
+      "process": "Original project mesh or declared envelope; do not print",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          30.99999949336052,
+          20.999999716877937,
+          30.100002884864807
+        ],
+        "max": [
+          43.0000014603138,
+          29.000001028180122,
+          40.10000079870224
+        ],
+        "size": [
+          12.000001966953278,
+          8.000001311302185,
+          9.999997913837433
+        ]
+      },
+      "stl": "stl/IO-LOCAL5V-J9-MATE-RESERVE.stl",
+      "assembly_role": "routing",
+      "notes": [
+        "Conservative plug/latch planning reserve; remove plugs before screwdriver access",
+        "Not a supplier mate model or full wire bend qualification"
       ],
       "prototype_status": "集成参考；未经采购或实物验证",
       "viewer_group": "routing",

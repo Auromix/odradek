@@ -2,9 +2,11 @@
   "revision": "B06-COMPACT-07-DFM",
   "production_released": false,
   "arm_required": false,
-  "bom_lines": 74,
-  "native_IO_component_quantity": 13,
+  "bom_lines": 83,
+  "native_IO_component_quantity": 26,
   "native_lamp_component_quantity": 12,
+  "IO_source_kind": "Native JLCEDA CONTROL01 manufacturing BOM export",
+  "IO_fabrication_released": false,
   "first_article_steps": 19,
   "procurement_rule": "Populated PCBA parent OR its bare board/component children; never both",
   "open_definition_items": [
@@ -21,6 +23,8 @@
     "H-ECAT",
     "H-RF",
     "H-LAMP",
+    "H-UART",
+    "H-SWD",
     "LIGHT-SHIM",
     "CABLE-RESTRAINT",
     "FINISH"
@@ -37,10 +41,10 @@
     "tolerances_and_retention_qualified": false
   },
   "sources_sha256": {
-    "electronics/base-io-b05/manufacturing/b06-io-local5v/B06-IO-LOCAL5V-BOM.csv": "0e0cb24b095c15717741756ffd628dee19d858881c5aa7d0d5285ebceec1e073",
+    "electronics/base-io-b05/manufacturing/b06-io-control01/B06-IO-CONTROL01-BOM.csv": "a4b96a558849bee5b6d50d41585c44902e1370fc2e3f5dcf2b0d08ca18524293",
     "electronics/base-light-b06/manufacturing/bom.csv": "2bb8ea4adb6daf73d6b32129b5fffb86fa86f5b5a55e14a7d9bcbcb92bbaa331",
-    "base_b06/manufacturing.md": "7d04cc15be17b2e6d93d48e5ab14ed2f209d0adfe8e5c72e5251c7300bd8cc41",
-    "base_b06/build/B06-mechanical-bom.csv": "35081ed723b421c6471742d063e5be3e4633b376a6f472065134748183fe1f4c"
+    "base_b06/manufacturing.md": "06d28673b58036569d1cdaaca13874afce0b933d2665a80f1b5e0c8843ae1795",
+    "base_b06/build/B06-mechanical-bom.csv": "36f01181c56b641155d6f34f0e67b3c82c8c94770c222392307d4fb089bb087f"
   },
   "digital_definition_check": "Native BOM child counts, unique IDs and source hashes only; open items are NOT qualified"
 }

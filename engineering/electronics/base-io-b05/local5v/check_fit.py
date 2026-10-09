@@ -4,16 +4,20 @@
 Conservative maximum package envelopes. Does not qualify wiring, connector
 latches, printed tolerances, thermal performance or solder process.
 """
-import json,hashlib,itertools
+import json,hashlib,itertools,argparse
 from pathlib import Path
 import numpy as np,trimesh,manifold3d as md
 HERE=Path(__file__).resolve().parent;R=HERE.parent
 BASE=R.parents[1]/'base_b06';E=BASE/'build/exterior'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 spec=json.loads((HERE/'package-envelopes.json').read_text())
-native_path=R/'reports/b06-local5v-reopened.json'
+parser=argparse.ArgumentParser()
+parser.add_argument('--geometry-only',action='store_true',help='Candidate package fit only; never PCB/manufacturing qualification')
+args=parser.parse_args()
+native_path=R/'controller/native-readback.json'
 native=json.loads(native_path.read_text())
-assert native['ok'] and native['verification']['native_reopened'] and not native['value']['drc']
+assert native['ok'] and native['verification']['native_reopened']
+if not args.geometry_only:assert not native['value']['drc'], 'Current controller PCB DRC unresolved; manufacturing audit blocked'
 for name,expected in native['source_sha256'].items():assert sha(R/name)==expected
 component_by_ref={c['designator']:c for c in native['value']['components']}
 for p in spec['parts']:
@@ -31,6 +35,9 @@ for p in spec['parts']:
     u,v=p['center_uv'];size=p['size_mm'];m=trimesh.creation.box(size)
     m.apply_translation((58-u,30-v,p['body_z0']+size[2]/2))
     packages[p['designator']]=solid(m);meshes[p['designator']]=m
+for p in spec.get('mate_reservations',[]):
+    lo,hi=np.array(p['bounds_xyz_mm']);m=trimesh.creation.box(hi-lo)
+    m.apply_translation((lo+hi)/2);packages[p['id']]=solid(m);meshes[p['id']]=m
 checks=[]
 for a,b in itertools.combinations(packages,2):
     checks.append({'a':a,'b':b,'intersection_mm3':(packages[a]^packages[b]).volume()})
@@ -48,12 +55,14 @@ tools=[]
 for u,v in [(6,6),(110,6),(110,50),(6,50),(48,38),(68,38)]:
     m=trimesh.creation.cylinder(radius=3.5,height=35,sections=48)
     m.apply_translation((58-u,30-v,43.1));s=solid(m)
-    hits=[d for d in packages if (s^packages[d]).volume()>.01]
+    hits=[d for d in packages if d not in {p['id'] for p in spec.get('mate_reservations',[])} and (s^packages[d]).volume()>.01]
     tools.append({'center_uv':[u,v],'diameter_mm':7,'range_z_mm':[25.6,60.6],'package_collisions':hits})
 report={'pass':not fail and all(not t['package_collisions'] for t in tools),'arm_required':False,
+    'scope':'Package body and screwdriver geometry only',
+    'pcb_drc_pass':not native['value']['drc'],'manufacturing_released':False,
     'checks':checks,'interferences':fail,'driver_paths':tools,
     'hashes':{str(p.relative_to(R.parents[2])):sha(p) for p in [HERE/'package-envelopes.json',E/'manifest.json',native_path]},
     'limits':['Body envelopes only; full mating plug, wire bend, thermal and manufacturing tolerances unqualified','Standalone branch not energized; physical production release false']}
-(R/'reports/b06-local5v-fit.json').write_text(json.dumps(report,indent=2)+'\n')
+(R/'reports/b06-controller-fit.json').write_text(json.dumps(report,indent=2)+'\n')
 print('LOCAL5V_BASE_FIT',report['pass'],'pairs',len(checks));print('INTERFERENCES',fail)
 if not report['pass']:raise SystemExit(1)

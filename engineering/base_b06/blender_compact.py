@@ -203,6 +203,11 @@ def native_context():
     o.hide_render=True
     add(o,'灯线 GH 插头装配预算','routing','support',
         ['8x7x10mm planning reserve, not a supplier mate/wire model; qualified cable route pending'],False,'routing')
+    for p in local.get('mate_reservations',[]):
+        o=box('IO-LOCAL5V-'+p['id'],p['bounds_xyz_mm']);o.hide_render=True
+        add(o,p['id'],'routing','support',
+            ['Conservative plug/latch planning reserve; remove plugs before screwdriver access',
+             'Not a supplier mate model or full wire bend qualification'],False,'routing')
     # Separate conservative plug/latch reserve. Coax route remains direct cable.
     for name,bounds in [('REF-IO-J2-PLUG',((-15,30,23),(15,70,47.9))),
                         ('REF-REAR-PLUGS',((-56,-80,22),(56,-40,44)))]:

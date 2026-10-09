@@ -1,0 +1,248 @@
+{
+  "revision": "B06-CONTROL-01",
+  "date": "2026-10-09",
+  "status": "Saved and reopened native PCB DRC0; current CONTROL01 manufacturing export; firmware digital tests passed; physical production not released",
+  "specs": [
+    {
+      "ref": "U2",
+      "part": "STM32G030F6P6",
+      "uuid": "ab27a57f1a1a4b84bdb6fbb83a16a8c2",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 20,
+      "v": 15,
+      "rotation": 0,
+      "sch_x": 1550,
+      "sch_y": -810
+    },
+    {
+      "ref": "U3",
+      "part": "AP2112K-3.3TRG1",
+      "uuid": "96423716b14e4b449901f431653f1108",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 30,
+      "v": 18,
+      "rotation": 0,
+      "sch_x": 1100,
+      "sch_y": -760
+    },
+    {
+      "ref": "C3",
+      "part": "CC0603KRX7R8BB104",
+      "uuid": "3bd39859af694505ab6fccd091e26d04",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 19,
+      "v": 20.5,
+      "rotation": 90,
+      "sch_x": 1450,
+      "sch_y": -1040
+    },
+    {
+      "ref": "C4",
+      "part": "CC0805KKX7R9BB105",
+      "uuid": "bf579cce8b8c4c2abcab285bf1ff247a",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 18,
+      "v": 23.5,
+      "rotation": 90,
+      "sch_x": 1600,
+      "sch_y": -1040
+    },
+    {
+      "ref": "C5",
+      "part": "T491A106K016AT",
+      "uuid": "fc7f8425534942eab141df3a7698cdde",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 31,
+      "v": 24,
+      "rotation": 90,
+      "sch_x": 1000,
+      "sch_y": -940
+    },
+    {
+      "ref": "C6",
+      "part": "T491A106K016AT",
+      "uuid": "fc7f8425534942eab141df3a7698cdde",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 29,
+      "v": 14,
+      "rotation": 90,
+      "sch_x": 1200,
+      "sch_y": -940
+    },
+    {
+      "ref": "C7",
+      "part": "CC0603KRX7R8BB104",
+      "uuid": "3bd39859af694505ab6fccd091e26d04",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 14,
+      "v": 20,
+      "rotation": 90,
+      "sch_x": 1800,
+      "sch_y": -1040
+    },
+    {
+      "ref": "R2",
+      "part": "RC0603FR-0710KL",
+      "uuid": "9b698a84139c4c4b998625f003a0615f",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 14,
+      "v": 23,
+      "rotation": 90,
+      "sch_x": 1800,
+      "sch_y": -930
+    },
+    {
+      "ref": "R3",
+      "part": "RC0603FR-071KL",
+      "uuid": "3a88329dfeba4ae2b7e97c1498192bee",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 26,
+      "v": 21,
+      "rotation": 90,
+      "sch_x": 2000,
+      "sch_y": -850
+    },
+    {
+      "ref": "R4",
+      "part": "RC0603FR-0710KL",
+      "uuid": "9b698a84139c4c4b998625f003a0615f",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 9,
+      "v": 22,
+      "rotation": 90,
+      "sch_x": 2100,
+      "sch_y": -1030
+    },
+    {
+      "ref": "R5",
+      "part": "RC0603FR-0710KL",
+      "uuid": "9b698a84139c4c4b998625f003a0615f",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 9,
+      "v": 25,
+      "rotation": 90,
+      "sch_x": 2250,
+      "sch_y": -1030
+    },
+    {
+      "ref": "J8",
+      "part": "BM03B-GHS-TBT(LF)(SN)",
+      "uuid": "fa20194ac1624d79b3182946f68bae4b",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 9,
+      "v": 16,
+      "rotation": 90,
+      "sch_x": 2350,
+      "sch_y": -850
+    },
+    {
+      "ref": "J9",
+      "part": "BM05B-GHS-TBT(LF)(SN)(N)",
+      "uuid": "78e2bbcdd64d481281e429a7e2319564",
+      "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+      "u": 21,
+      "v": 5,
+      "rotation": 0,
+      "sch_x": 2350,
+      "sch_y": -650
+    }
+  ],
+  "nets": {
+    "U2": {
+      "4": "CTRL3V3",
+      "5": "RETURN48",
+      "6": "CTRL_NRST",
+      "9": "MCU_TX",
+      "10": "MCU_RX",
+      "13": "MCU_PWM",
+      "18": "CTRL_SWDIO",
+      "19": "CTRL_SWCLK"
+    },
+    "U3": {
+      "1": "LAMP5V",
+      "2": "RETURN48",
+      "3": "LAMP5V",
+      "5": "CTRL3V3"
+    },
+    "C3": {
+      "1": "RETURN48",
+      "2": "CTRL3V3"
+    },
+    "C4": {
+      "1": "RETURN48",
+      "2": "CTRL3V3"
+    },
+    "C5": {
+      "1": "LAMP5V",
+      "2": "RETURN48"
+    },
+    "C6": {
+      "1": "CTRL3V3",
+      "2": "RETURN48"
+    },
+    "C7": {
+      "1": "RETURN48",
+      "2": "CTRL_NRST"
+    },
+    "R2": {
+      "1": "CTRL3V3",
+      "2": "CTRL_NRST"
+    },
+    "R3": {
+      "1": "MCU_PWM",
+      "2": "LAMP_PWM"
+    },
+    "R4": {
+      "1": "UART_TX",
+      "2": "MCU_TX"
+    },
+    "R5": {
+      "1": "UART_RX",
+      "2": "MCU_RX"
+    },
+    "J8": {
+      "1": "RETURN48",
+      "2": "UART_TX",
+      "3": "UART_RX",
+      "4": "RETURN48",
+      "5": "RETURN48"
+    },
+    "J9": {
+      "1": "RETURN48",
+      "2": "CTRL3V3",
+      "3": "CTRL_SWDIO",
+      "4": "CTRL_SWCLK",
+      "5": "CTRL_NRST",
+      "6": "RETURN48",
+      "7": "RETURN48"
+    }
+  },
+  "firmware_pin_contract": {
+    "PWM": {
+      "gpio": "PA6",
+      "package_pin": 13,
+      "alternate_function": 1,
+      "timer": "TIM3_CH1"
+    },
+    "TX": {
+      "gpio": "PA2",
+      "package_pin": 9,
+      "alternate_function": 1,
+      "peripheral": "USART2"
+    },
+    "RX": {
+      "gpio": "PA3",
+      "package_pin": 10,
+      "alternate_function": 1,
+      "peripheral": "USART2"
+    },
+    "SWDIO": {
+      "gpio": "PA13",
+      "package_pin": 18
+    },
+    "SWCLK": {
+      "gpio": "PA14",
+      "package_pin": 19
+    }
+  }
+}

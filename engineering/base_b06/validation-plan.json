@@ -47,7 +47,7 @@
     {
       "id": "DEF-RELEASE",
       "closed": false,
-      "needed": "Complete drawings/BOM/harness/native PCB version frozen, first-article and repeat-build review approved"
+      "needed": "Complete drawings/BOM/harness/native PCB version frozen, first-article and repeat-build review approved; close native schematic warnings and complete actual connector-model review"
     }
   ],
   "tests": [
@@ -346,7 +346,7 @@
       "id": "L02",
       "module": "lamp",
       "arm_required": false,
-      "method": "Run programmed breath/flash sequences under closed cover for8h, then service and inspect PCB/lens",
+      "method": "Run programmed breath/flash sequences under closed cover for8h, then service and inspect PCB/lens; verify STM32 firmware hash, UART ACK/error/timeout behavior, nominal1kHz duty, reset-off and watchdog reset on the real board",
       "conditions": "Final assembled base uses local48V-to5V supply and implemented programmable PWM; no arm dependency or separate desk-box5V lead; temporary external PWM only verifies lamp subassembly and does not qualify complete base",
       "metrics": {
         "duration_h": {
@@ -357,6 +357,27 @@
         },
         "optical_or_mount_damage_events": {
           "max": 0
+        },
+        "controller_3V3_min_V": {
+          "min": 3.2
+        },
+        "controller_3V3_max_V": {
+          "max": 3.4
+        },
+        "pwm_frequency_min_Hz": {
+          "min": 950
+        },
+        "pwm_frequency_max_Hz": {
+          "max": 1050
+        },
+        "reset_flash_events": {
+          "max": 0
+        },
+        "uart_contract_pass": {
+          "equals": true
+        },
+        "watchdog_reset_verified": {
+          "equals": true
         }
       }
     },
