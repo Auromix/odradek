@@ -8,7 +8,9 @@
 
 **塑料先行路线（2026-10-09已确认）：** 先打印结构和外罩，受支撑无载验证，再独立设计加工金属骨架。[J7 FIT01局部模块](engineering/arm_a13/j7-fit01/README.md)修正旧轴颈一体法兰导致的轴承装入阻碍，提供分体法兰、减材轴承座、六件装配件与六个配合小样、Blender、STEP/STL及尺寸工作图；整臂A12造型和约700 mm长版仍保留。此模块不构成整臂制造或3 kg负载放行。
 
-**当前工具接口（2026-10-09）：** [TOOL-IF02](engineering/arm_a13/tool-if02/README.md)将旧突出小仓改为端面Ø54凹腔、外圈Ø76定位和可拆背部检修盖。保留RS00与原J7核心，两路GMSL采用原厂具体HFM壳体尺寸作空间检查，供电/控制使用可换嵌件预算；工具侧试验杯用于验证后腔，不是最终四瓣头。工具平面前移44.3 mm，整臂TCP/负载与动态线束须后续重算。本轮是受支撑、无载、不通电的局部塑料试配；[TOOL-IF01](engineering/arm_a13/tool-if01/README.md)作为历史方案保留。
+**工具接口上一阶段（2026-10-09）：** [TOOL-IF02](engineering/arm_a13/tool-if02/README.md)将旧突出小仓改为端面Ø54凹腔、外圈Ø76定位和可拆背部检修盖。保留RS00与原J7核心，两路GMSL采用原厂具体HFM壳体尺寸作空间检查，供电/控制使用可换嵌件预算；工具侧试验杯用于验证后腔，不是最终四瓣头。工具平面前移44.3 mm，整臂TCP/负载与动态线束须后续重算。本轮是受支撑、无载、不通电的局部塑料试配；[TOOL-IF01](engineering/arm_a13/tool-if01/README.md)作为历史方案保留。
+
+**当前整腕集成（2026-10-09）：** [WRIST-ROUTE01](engineering/arm_a13/wrist-route01/README.md)将J7核心和凹腔接口装回长版整臂，并用108支架替换105，修正J6中间角度的固定螺钉头干涉。73个离散整腕姿态通过所列模块检查；工具基准更新为J7局部X110。[新版交互预览](docs/viewers/arm-body-a13-wrist-route01/index.html)、Blender与14件局部打印包同时提供。动态GMSL线束仍未通过，直连侧边路线被否定；整臂制造与3 kg均未放行。旧105及历史TOOL-IF02包不再作为当前打印来源。
 
 **A 7-DOF desktop arm with a detachable four-petal luminous gripper, expressing attention through orientation, opening, and light.**
 

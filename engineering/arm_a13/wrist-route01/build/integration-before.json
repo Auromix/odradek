@@ -1,0 +1,2383 @@
+{
+  "revision": "WRIST-ROUTE01",
+  "source_hashes": {
+    "engineering/arm_a11/build/manifest.json": "3b9a2291509e0666eeb8d9e73c320538a4235337ffa10af1d1915665a819b559",
+    "engineering/arm_a12/wrist02/build/manifest.json": "ca6c98e8db000fe31195a80778c73312b1b43f5e026a18901517664e0e3d0bb6",
+    "engineering/arm_a13/j7-fit01/build/manifest.json": "fbd76ac0a8e304170f8573eec471cf92cf62f39b269e88916379eb60a6855831",
+    "engineering/arm_a13/tool-if01/build/manifest.json": "2d4420b5d2fec80f76b66618d525ffad1c792f036a63480d8d01995eab1d3271",
+    "engineering/arm_a13/tool-if02/build/manifest.json": "707b8db25b24bdca87a638a8c095cc9d01ab5e1574655d4136802af51c3443dc",
+    "engineering/arm_a11/build/step/ROOT-M6-1.step": "8a792c007814474052b73552bcf24b5ab2a945854ad422579dce9641bb8732f5",
+    "engineering/arm_a11/build/step/ROOT-M6-1-washer.step": "53fa35611779a507d99a9d67bfe537f04fcfff02c927c6958ada7f0366fe2b9d",
+    "engineering/arm_a11/build/step/ROOT-M6-2.step": "c263ac4d688025531ef736c5c5529874c10cae6227fcc04d060ec5c639af4714",
+    "engineering/arm_a11/build/step/ROOT-M6-2-washer.step": "a9c0812fe2258557402bf84ce54eb3ff60d27177cccd67a55022ebd35f5cfac0",
+    "engineering/arm_a11/build/step/ROOT-M6-3.step": "b32bb308b150aea3c405c3176d07c75bbeae93086151fd77d03c4265d04a38e9",
+    "engineering/arm_a11/build/step/ROOT-M6-3-washer.step": "c866155485e12b49773b86353c029c1476b9d82b6679e2852ff49fb27f0180bd",
+    "engineering/arm_a11/build/step/ROOT-M6-4.step": "70608f36e8c5fa14280882a2b8f262d7a0bb5a112e81e8e57d7d968624fbbecb",
+    "engineering/arm_a11/build/step/ROOT-M6-4-washer.step": "9904246436e5cffabb167c43f1d8bea4eecbab6b19e93066c9547ef607d61fff",
+    "engineering/arm_a11/build/step/ROOT-M6-5.step": "5017733c4ef388c6eab31f1f6b4080b428128396d25cf5d5e72a8f4f811320e1",
+    "engineering/arm_a11/build/step/ROOT-M6-5-washer.step": "c01057ce553adfd348c0a0d63dfe163863462168d7398306be50c4d9a5f5d349",
+    "engineering/arm_a11/build/step/ROOT-M6-6.step": "f73ce720caa8389c515997dbfe4d0fa247a094513999df5d9d772e4f229de75b",
+    "engineering/arm_a11/build/step/ROOT-M6-6-washer.step": "b98286a703448c9eff627be15783b07d936ef2dcbfbccb3b403d261c32ba1dfa",
+    "engineering/arm_a11/build/step/ROOT-M6-7.step": "6e94aa1b89817212a097836342f1d86d132e7d50e48bc1a442e28b3f8902bd9e",
+    "engineering/arm_a11/build/step/ROOT-M6-7-washer.step": "ab3d78e60bd638d93a569ae18a9e0057f823336f9c63616dfca54f28000461b3",
+    "engineering/arm_a11/build/step/ROOT-M6-8.step": "85f6c5d20bbfdc7685ba65a0bc199cc09a02bffc0fde2088fe59df71d9485b9f",
+    "engineering/arm_a11/build/step/ROOT-M6-8-washer.step": "ce74fd1746d7fea5a5f821eb6082c894062b80e571385107754e4723f761eb5a",
+    "engineering/arm_a11/build/step/ROOT-M4-1.step": "5811b9203e944e91cffa24ed35d51a0e23fac0e11254996b73eee88fdb7a7deb",
+    "engineering/arm_a11/build/step/ROOT-M4-1-washer.step": "8e1f172a017979d72bf20b41aa74b6ad8278703225148fbae16c69dc1dec115c",
+    "engineering/arm_a11/build/step/ROOT-insert-1.step": "150e3256ecdc828d488f338018c08c2443ba32190a487508b07bcacf99ac6906",
+    "engineering/arm_a11/build/step/ROOT-M4-2.step": "169cfad965a6b0b6e921ad9fc766a807caa889265fa98eca54fd7f9a4585cca2",
+    "engineering/arm_a11/build/step/ROOT-M4-2-washer.step": "524f05db22515bb8332e0b8ea4807b953974c0c7c3cab5faf085ebcc507d93b6",
+    "engineering/arm_a11/build/step/ROOT-insert-2.step": "8188434c459a5c2ea607870772f5c638ee6d0015dccbf37ff7ce4996e33aff3c",
+    "engineering/arm_a11/build/step/ROOT-M4-3.step": "c698074af3afb267d34b8c93635995a458d54760eb86258ffd0f876def77e7ef",
+    "engineering/arm_a11/build/step/ROOT-M4-3-washer.step": "45188ace3f9bc2549507092bd7631822c1a9ef61ed09a0d8bc2f98930a924874",
+    "engineering/arm_a11/build/step/ROOT-insert-3.step": "65d0089e75d20e8c4df25a86bf6ab5a2164552ecfb060e0a709d86f320b75229",
+    "engineering/arm_a11/build/step/ROOT-M4-4.step": "ccb676f29d9d40ddadbeb70f01228557e6f48a1db835cc264838d1b4f71d86b2",
+    "engineering/arm_a11/build/step/ROOT-M4-4-washer.step": "6e610dcdacc5de03bd2da0f6712f3ad8a89f6d7e5c0be1d0e478cb3413c724e1",
+    "engineering/arm_a11/build/step/ROOT-insert-4.step": "ff2be7639c4ce41735ba969bc520dbd426dd9b792985b8c4066bc6916b34905e",
+    "engineering/arm_a11/build/step/T3-crush-sleeve-1.step": "73b1d5f31070e665ccf4c2ae1bce14b5e9bb50dccc26e94ba3b5be17e59bf463",
+    "engineering/arm_a11/build/step/T3-M4-1.step": "17d825ae3091f62020c9957002e27a6991547af08214b544cc1da84872dbdcfc",
+    "engineering/arm_a11/build/step/T3-M4-1-washer.step": "9c8fc6fb295aa632589b31c42fb6aa5c4e2eae712ca5ef9d88771378f42bd692",
+    "engineering/arm_a11/build/step/T3-nut-1.step": "c6376a3c9eda00e76468a94d864476926a909c1261acbd264e1ab154e533eaf0",
+    "engineering/arm_a11/build/step/T3-nut-washer-1.step": "4adaecf20451d47a244cc1582f3363abe3a4114312a953d52757b75b412a5884",
+    "engineering/arm_a11/build/step/T3-crush-sleeve-2.step": "caf695ac66749fed571684c3760e079ba29a30360c1d7a38accfa7d66ab85b7c",
+    "engineering/arm_a11/build/step/T3-M4-2.step": "5130f79993ed3f014bf0846bf78ecefde0e98f21567102086406a750253bc4b2",
+    "engineering/arm_a11/build/step/T3-M4-2-washer.step": "f0fb76503a079f3e70800a8a991dee25706f5d4d8c50dc5e7b6f7a7de59f7643",
+    "engineering/arm_a11/build/step/T3-nut-2.step": "0b9dc32a6a9abb69aa32557d7d1a6668466116f10fa1f315b4f6d227762492ee",
+    "engineering/arm_a11/build/step/T3-nut-washer-2.step": "4d1c3811915e6e3f59c29c186cc73bf4bf47f6512c9c450c329ad59cd56b4903",
+    "engineering/arm_a11/build/step/T3-crush-sleeve-3.step": "f9cfb5d053631785f4335b94840dc05dfe7dd7b157736f3ee722c7ecf77f4f30",
+    "engineering/arm_a11/build/step/T3-M4-3.step": "a56742dce1de3a81c2b56c71ad8a407a0325a9c10bb561f92eb45c0da00b5b79",
+    "engineering/arm_a11/build/step/T3-M4-3-washer.step": "ab1e06876227a829dd527324dff172a855e0ac9ca359582a72d16671ff252b9a",
+    "engineering/arm_a11/build/step/T3-nut-3.step": "01328993d9c0ba978afc856468f6dae5c19320606dad8f1e62877c1907961384",
+    "engineering/arm_a11/build/step/T3-nut-washer-3.step": "9ceb723fa8b8d64e3d4cc244a9362a4dfca0da46c258fe087a76e81ba42e9dba",
+    "engineering/arm_a11/build/step/T3-crush-sleeve-4.step": "844beb940df43a28ddd046efcb9022002d8475155096aadc8426f5431ed64a8d",
+    "engineering/arm_a11/build/step/T3-M4-4.step": "223c0b1a9316713277ad4ab7b1ff5d79bf690d490176dac4993cef87f90ca03e",
+    "engineering/arm_a11/build/step/T3-M4-4-washer.step": "92b3ec96c8a19d1d7dc10d8c9994936e1db0f7a34ff06df91e1809d796c9a5ed",
+    "engineering/arm_a11/build/step/T3-nut-4.step": "f240a3ad7a8c27b7784449887e843ad710307f2ba2ec533bad98781cdd3de947",
+    "engineering/arm_a11/build/step/T3-nut-washer-4.step": "15319502c213204e69b91e7ed1cdecb68b886cea4ddff6b443070f040e1e184f",
+    "engineering/arm_a11/build/step/T03-stock-tube.step": "c502161d7318d1bc52ca88afcf529ead0b6428df5b3b0a821dbb35a8f84039db",
+    "engineering/arm_a11/build/step/S03-prox--1-nut.step": "3a848acdcccabc1321eb5ee9fee9b4a0f055de8514f051b2d27dc00ae327bc2e",
+    "engineering/arm_a11/build/step/S03-prox-1-nut.step": "7e35089eb800e021f6c3f8b8b6f9b6413194886c8bd35622fba93bd54fb85f6e",
+    "engineering/arm_a11/build/step/S03-dist--1-nut.step": "cdf61c7ed1362aa7fcfb69bc3184524022095fbc9fec0cfd7fcf30a8cfd0fb00",
+    "engineering/arm_a11/build/step/S03-dist-1-nut.step": "03cefa1e33cf38c3615c09e795dd1c2cb96b05b935aff9368e51aa1c7d0204f6",
+    "engineering/arm_a11/build/step/S03-prox--1-M3.step": "5acbe160141182f35000717e922589ea71de3a87d7dff31bf0f89f4403f614f6",
+    "engineering/arm_a11/build/step/S03-prox--1-M3-washer.step": "b9f852a90ea93ee504e8ef061f89d22df664527de907b2d2ac43e2cdbeaf7b19",
+    "engineering/arm_a11/build/step/S03-prox-1-M3.step": "2c352cf88c4ade7ded1f5c8ee697f953f10ccf3e3617d4f747cbe04f4c7ee7e7",
+    "engineering/arm_a11/build/step/S03-prox-1-M3-washer.step": "15aeb33f4617f705bdc7f2bfdadfccd4a210ca7dca7531d39159537eda4fd9e4",
+    "engineering/arm_a11/build/step/S03-dist--1-M3.step": "6bae5cd795b733c175d836a73126ec696c60520ecde4db91ff40751f5f038b80",
+    "engineering/arm_a11/build/step/S03-dist--1-M3-washer.step": "15b29f995d32225defeca63800a32d1b8fdaee677c3a0f7678295d54fa098e6a",
+    "engineering/arm_a11/build/step/S03-dist-1-M3.step": "d8ac35c9ce3fa0846a086ecf5e1955e9dbf7b66778e5a9c93b045d49fbdac556",
+    "engineering/arm_a11/build/step/S03-dist-1-M3-washer.step": "2f12230243cbbe4e8edda3efd5a2c508853854ff85cd1269c158191a15c962e4",
+    "engineering/arm_a11/build/step/T4-crush-sleeve-1.step": "c2ebe3c32ae352f75c92d157f5e410680e2596d3cfbc65889605a3eb1311f283",
+    "engineering/arm_a11/build/step/T4-M4-1.step": "d1561738f8535019d17d7e1a6709b0a87746ace2c003cdc55728642573da3848",
+    "engineering/arm_a11/build/step/T4-M4-1-washer.step": "6645e2f6197df212cec65e105ad7cb7d1881ecf531aa2413190f323e54a45084",
+    "engineering/arm_a11/build/step/T4-nut-1.step": "1a0755e173ab6c189e624885de47e216c0d5bcf936dc4d6d6ed324842b4f1851",
+    "engineering/arm_a11/build/step/T4-nut-washer-1.step": "96a502fb005e6dfd32a09c1ff2c922470cbafed4be02df2ae3cb776e7a1a7208",
+    "engineering/arm_a11/build/step/T4-crush-sleeve-2.step": "a59fa5b192b455202ebc8a30646a4bfc58d78dcdc6c104273b4c1b996f3bd77e",
+    "engineering/arm_a11/build/step/T4-M4-2.step": "4ae1eca4e72aebac0ad121f49691e3a6f6a36c8de83807cfee570ba4945eff41",
+    "engineering/arm_a11/build/step/T4-M4-2-washer.step": "bc5ced4517e2df7d70d7e1a80722d3fbd102af53fab21b796fb801cd3d53e070",
+    "engineering/arm_a11/build/step/T4-nut-2.step": "e67089f021092d26e2d6402650ddb7a49f61781c1c4e5959164b15f1030e03c3",
+    "engineering/arm_a11/build/step/T4-nut-washer-2.step": "4c957829af4b617b48146931ce00ecd38847d21337bc03d9d7433c6d0365ad6b",
+    "engineering/arm_a11/build/step/T4-crush-sleeve-3.step": "8fee0e3f73459169b0a658e714c7b490bb89538335c6ed04d4fc22548ab29acb",
+    "engineering/arm_a11/build/step/T4-M4-3.step": "f7ee0c634c2d76fbbf78d9b59dc8ec5b57934dbc0431acd32405ab3eddb5cd7a",
+    "engineering/arm_a11/build/step/T4-M4-3-washer.step": "7b702506c4bd62b87824baaf148b9d5b0eb81127cacdd44c8e6a618b895e38ee",
+    "engineering/arm_a11/build/step/T4-nut-3.step": "6c1810af8aed25afb308c704d9c216b1da53492510b2f245202639c19e8c767d",
+    "engineering/arm_a11/build/step/T4-nut-washer-3.step": "9eda0bd7395265df45109e5add664249543bf2be586be2e088cd48a180eef565",
+    "engineering/arm_a11/build/step/T4-crush-sleeve-4.step": "466880ceffcc00863d032c8e143350b5d2eb2791f664c80a2d7725696ed60da9",
+    "engineering/arm_a11/build/step/T4-M4-4.step": "cd40b8134d17b882ffa9aac610ea100bce181c76b496bafba962e07ca4d7c13e",
+    "engineering/arm_a11/build/step/T4-M4-4-washer.step": "1c6c04595656c5ba0eb81aa3308e2a517847e666cf5615d83c1632b5440ef1d9",
+    "engineering/arm_a11/build/step/T4-nut-4.step": "4fc7cac133d0a84f256c156ba94b1273ea035f8a741d5c36c2aba265113fd3ab",
+    "engineering/arm_a11/build/step/T4-nut-washer-4.step": "547ead75288f3d5b595646893808d15b938dd7422cc2bd19111cdcc01384293f",
+    "engineering/arm_a11/build/step/T04-stock-tube.step": "347c1ff16fb6d37cfcde40aa974212ee4a39b3a06d1dbad3c0ada3ceaec79a2b",
+    "engineering/arm_a11/build/step/S04-prox--1-nut.step": "7932fe40eddf2a63322974f2770e69e903f47186a350070cee3d9e7760a67b38",
+    "engineering/arm_a11/build/step/S04-prox-1-nut.step": "fdf49bbe2dad52cef55aa5298fe4d5aaaec66cf82b9885a0892612953f8f5552",
+    "engineering/arm_a11/build/step/S04-dist--1-nut.step": "383efc3735cfddb86a537ca931417f85377b2e45fa2189616961bc0467be9840",
+    "engineering/arm_a11/build/step/S04-dist-1-nut.step": "e32c6121de05168328a1c0c577467ceec9ee0bd05f56b6971f863459cde07d31",
+    "engineering/arm_a11/build/step/S04-prox--1-M3.step": "3b3720e1a68f775469fbdf9c20f6478c82d20c368446e176b6e14f4a529f976f",
+    "engineering/arm_a11/build/step/S04-prox--1-M3-washer.step": "19d6f8803c1e865270a3b0db15bac2fcf182bcb6b841fbd795038143eff0e99b",
+    "engineering/arm_a11/build/step/S04-prox-1-M3.step": "5f89debc088559833c2351fc18e058ff9b5c44216f43b7b18114efa8b25131c5",
+    "engineering/arm_a11/build/step/S04-prox-1-M3-washer.step": "4d1f340b2725d73fc052a94930940ef2ed33507a60fb172267ec78c230c7aa8d",
+    "engineering/arm_a11/build/step/S04-dist--1-M3.step": "08e4872b1c3d6ed94fe1be83045401a6f89def7e1b3011589ac7802a8eab1031",
+    "engineering/arm_a11/build/step/S04-dist--1-M3-washer.step": "4397140726662bb24fcb8e7b6cb111c2b3dcfa105b0fd2a2d8fb9f9d4374cd29",
+    "engineering/arm_a11/build/step/S04-dist-1-M3.step": "aa0b4c5e692fb81f603cbf660db9dfb78e72222c884415dbc0e7d085ce78461b",
+    "engineering/arm_a11/build/step/S04-dist-1-M3-washer.step": "cb7ee498fb73c12855bbbac8e794689e632f7580ab1a8181adb2567b7e7af642",
+    "engineering/arm_a11/build/step/J1-fixed-1.step": "450d86c35128219b22e5ca8cbb6fe1daeaa8ec797180efa45818315ca34ee439",
+    "engineering/arm_a11/build/step/J1-fixed-1-washer.step": "3127a43fbcadbff625b5b1af0ca44b20af1d2aa3fbb55fb349334bebb9358ecc",
+    "engineering/arm_a11/build/step/J1-fixed-2.step": "04a7592b36395745eb1642761454d2e17bfecd95723a5651f5d836e0f423a430",
+    "engineering/arm_a11/build/step/J1-fixed-2-washer.step": "b4c945f2a2d52635755f8c7ee23e118a1126404d916c0748d48d17332dcc79ab",
+    "engineering/arm_a11/build/step/J1-fixed-3.step": "39fb662057faaf6e67aca5a96f784eafb17380eb1461d9fe07b339bb24c38b74",
+    "engineering/arm_a11/build/step/J1-fixed-3-washer.step": "c2bb79724566a909f24bf566f87cc689bcb4476d2c87bfaee83846bd3435daee",
+    "engineering/arm_a11/build/step/J1-fixed-4.step": "e9d5d005851edfcc534eb97e08db1e99fa0122f29f82baff8f1c155dce7e14bf",
+    "engineering/arm_a11/build/step/J1-fixed-4-washer.step": "897e6d5411fc5b69571b7e92e264ade6c3082e842d9a834a2a509d2f9cf91964",
+    "engineering/arm_a11/build/step/J1-fixed-5.step": "48e6ea4150b55544a2d7c1e69a86c645bf1470e066d8213decb68870b7014aa2",
+    "engineering/arm_a11/build/step/J1-fixed-5-washer.step": "8d62d0066b33d258b1d94ea6d5fb45ebadbc7e43eae08df9364248825d83e4cd",
+    "engineering/arm_a11/build/step/J1-fixed-6.step": "9a1739a9fc3f6fc0d9b315d2c3436281c3a5311e0567478d3f2f6c9a9474d3ac",
+    "engineering/arm_a11/build/step/J1-fixed-6-washer.step": "86555c7fe197994811d0dcbb1f948de7ee58ac348bc3ee884c79a07b381b95e4",
+    "engineering/arm_a11/build/step/J1-fixed-7.step": "08d124ddabbe8cc19c3d24e47ad094a8cfb68e910cdfe71f52ce27e837d120f4",
+    "engineering/arm_a11/build/step/J1-fixed-7-washer.step": "73ca96644061ee8618c593b72d3555c4f75f69fc3cc52805fbaaddf3662ec746",
+    "engineering/arm_a11/build/step/J1-fixed-8.step": "ffb01abeb2a54ebccc27e560edf5f1b694163c4bf0541f10b44184f65ea134f3",
+    "engineering/arm_a11/build/step/J1-fixed-8-washer.step": "9d3b435ed673bea103bcb3734a013a0877c7c0abbf393caddc1cd8ed48033230",
+    "engineering/arm_a11/build/step/J1-output-1.step": "382f945677b9b3813b42f46363d737970e4c4e39289baf331c416171666131c5",
+    "engineering/arm_a11/build/step/J1-output-1-washer.step": "1c6211bb7e212e946a835ddf9dadb0b10ecd9d7f1a11c852b3494f3aff739bb7",
+    "engineering/arm_a11/build/step/J1-output-2.step": "4959bf14f424727d9ad252a31d66e24f3fb962483478a45421fe56acbd01f704",
+    "engineering/arm_a11/build/step/J1-output-2-washer.step": "200b40104e60d1accab79b72cdd5feb49a036db4801d36b34263de0269deca65",
+    "engineering/arm_a11/build/step/J1-output-3.step": "759a7a1f2a0a5dbc33307e9dbe6c657b67d0fdfb813b9489d9f85816f66fdcb8",
+    "engineering/arm_a11/build/step/J1-output-3-washer.step": "3040a08aaae25bc69cc6c0606cbafaf5de18237fd289e707eab4fa2471cab2d4",
+    "engineering/arm_a11/build/step/J1-output-4.step": "6aeeb0ed741e057b1740ec0702c404aab8403258cac9123ae578fe0cbd1b2fe6",
+    "engineering/arm_a11/build/step/J1-output-4-washer.step": "d35ed12646c8a026ed5ac05c48321faaf061c4fa86b31412986c54da42511935",
+    "engineering/arm_a11/build/step/J1-output-5.step": "6cfa2568a782ade78734555724069f247734e8fe6c64a4708fca382c00c4d289",
+    "engineering/arm_a11/build/step/J1-output-5-washer.step": "4b7d2554c0ed7d2c408fb925e398e7aa8da4f14e47169143f8e6372902d1a7c8",
+    "engineering/arm_a11/build/step/J1-output-6.step": "b626d62e1557a81a19cf7e8ee8364ace653d0141cc169d315055543e229f6624",
+    "engineering/arm_a11/build/step/J1-output-6-washer.step": "95572ae8835f9c1b0355a2c88d86246a461a924b20906eb40a3379c85de300eb",
+    "engineering/arm_a11/build/step/J2-fixed-1.step": "ecc9df8f216af5db757cfc93bfd7139b8d5c19f59783f70adf980e5e9e972578",
+    "engineering/arm_a11/build/step/J2-fixed-1-washer.step": "68faac62b906d1c707884beb0bcd52175c224095687f51732f0ca6fbabe0beda",
+    "engineering/arm_a11/build/step/J2-fixed-2.step": "99c066d221050d1680e5d2b8c03d61aff0f6b58f6494d47dc3d8ffdb8b134aaa",
+    "engineering/arm_a11/build/step/J2-fixed-2-washer.step": "2ea860f8f5212b3fda8f8538e6bc4c658c5e96a3f0f11f8f26db87e8a6a48c0c",
+    "engineering/arm_a11/build/step/J2-fixed-3.step": "8b7da4150fa8c63d9bf9cbaeede708b22ff42f75e5a4e103f5ac137dcdf9737c",
+    "engineering/arm_a11/build/step/J2-fixed-3-washer.step": "2a8e6009c1beb091da1d94ea26cd719037a9273845bb140014247d728a88fe9e",
+    "engineering/arm_a11/build/step/J2-fixed-4.step": "4064f2e62a2bc054006fef52505c497fa73094ab57560428dc89e4f339c7c8ba",
+    "engineering/arm_a11/build/step/J2-fixed-4-washer.step": "5e3b3a4f914d0f41c550da6d6c305ff237141b33977a4c2e76de507dd8afa6e4",
+    "engineering/arm_a11/build/step/J2-fixed-5.step": "c1b84620b5a6de3ab25981812279ac64602b989b988bf40d7a1516b4e64b6b96",
+    "engineering/arm_a11/build/step/J2-fixed-5-washer.step": "ac5f2f9929c83932e6e083a07323e8149f5b5c4a9abbe74cec47352f0c87a857",
+    "engineering/arm_a11/build/step/J2-fixed-6.step": "83e758df6bd87b065216be0f99b1d7230b8c362826a3e2160e9f9325b844e70f",
+    "engineering/arm_a11/build/step/J2-fixed-6-washer.step": "c2de9d1cd57728b4a860c084bf574c99fe11738d9205bd7a600aeaeb541df01a",
+    "engineering/arm_a11/build/step/J2-fixed-7.step": "fa80ac9c134295f00d51378285bad65f76e323221a32cb94e931899c4f0b2bb2",
+    "engineering/arm_a11/build/step/J2-fixed-7-washer.step": "dec7dfd28aba4610e1b6936c0b90b7680eede27ca04df1dcecf901cfec6d1033",
+    "engineering/arm_a11/build/step/J2-fixed-8.step": "e8b35c76902b718ffc7bac3a69663754e9cbdb6ad4e9aa53b2b375926ec42c19",
+    "engineering/arm_a11/build/step/J2-fixed-8-washer.step": "bb33cdcd401b126d37c2b9f4fab74a93af3fdd6fda825f3de2846f18c97ff0c6",
+    "engineering/arm_a11/build/step/J2-fixed-9.step": "86659eda92043f8680ecaf507a23dc5824f11cace77036422f24407a54ca009d",
+    "engineering/arm_a11/build/step/J2-fixed-9-washer.step": "4bfda122279103cb4212b89dc1df961e944df789f9771ec0cf678994a9f81421",
+    "engineering/arm_a11/build/step/J2-fixed-10.step": "00fd986b7fd957c40f4f397b7f8ba3aaa20db03114430d94469b6989ffb5c9e7",
+    "engineering/arm_a11/build/step/J2-fixed-10-washer.step": "d9ee9ae93f137c97abd9f7dae51b60b51c5301121c312496cbaa0338d5e69e98",
+    "engineering/arm_a11/build/step/J2-output-1.step": "64a8270147fba79d937113f55986494eb2cd4dd3f7287d45de0dd6082d75d70c",
+    "engineering/arm_a11/build/step/J2-output-1-washer.step": "924199cbf7b255a88c5b26bf4f85c7fbe8b5895bcb746304868f5f131183e4cc",
+    "engineering/arm_a11/build/step/J2-output-2.step": "2e28e7388ff6034ed65723f38713c1120c95d379c199412cff00fbc078e5af18",
+    "engineering/arm_a11/build/step/J2-output-2-washer.step": "49b9927f19936b2b74ee166ec94233de733cc13534fecf4f19de7e446bf7106f",
+    "engineering/arm_a11/build/step/J2-output-3.step": "35535e512be44030d64caceb3b5d21681f8b64a8d076ad51a0d46b94a977f86c",
+    "engineering/arm_a11/build/step/J2-output-3-washer.step": "049f05a2394365e6ee779dadcf63373795571124f7bb3753f7ec0947b6dc8b6c",
+    "engineering/arm_a11/build/step/J2-output-4.step": "77c63b8a85e197d13cc05c802bac6ad822dd46152ff6f6633c3c35f25e1ac765",
+    "engineering/arm_a11/build/step/J2-output-4-washer.step": "8fe9d7c3640481598f745edf69acb5f5701711b7f7c875adc7fd2d8c22bee27f",
+    "engineering/arm_a11/build/step/J2-output-5.step": "991d551aa33366fcdc43308c0511a16d5f7f1c8733d2220d6ea07989b1d4c30f",
+    "engineering/arm_a11/build/step/J2-output-5-washer.step": "2f93bb2e026e5f31cefc8a25bd922fb921b1ce403c2254de770334d02b8d4fa8",
+    "engineering/arm_a11/build/step/J2-output-6.step": "b450345ef7170b3237ef141286bb6a56f4423b072a1d6d55e45051f0ea9eccdb",
+    "engineering/arm_a11/build/step/J2-output-6-washer.step": "5be33db77321564392119c00074eb2cc56f914d56db89e5625c177d7a61bb63d",
+    "engineering/arm_a11/build/step/J2-output-7.step": "f7e890744154809ffa339467ed0b0d7513d6415309ed0c8d770eb6c4b6c551a7",
+    "engineering/arm_a11/build/step/J2-output-7-washer.step": "28cff61f48ef003cf87fd78340e5146561105bac78924b41f86ff47462ebccd5",
+    "engineering/arm_a11/build/step/J2-output-8.step": "caa35a277d0e015f13751be2f6e18c862d329b4bdb8ee929014ef666f65685c0",
+    "engineering/arm_a11/build/step/J2-output-8-washer.step": "08545a7dedb3c4dbf8bba7930656f58375a0f443ced55eb25bee6e8553d0800f",
+    "engineering/arm_a11/build/step/J2-output-9.step": "d51405f145bc9ed1ef368ed5463065483800ee260c493c570883d7069f880988",
+    "engineering/arm_a11/build/step/J2-output-9-washer.step": "ed733def9f7185c513ebb8d01cf5d65fed33eaf25ea8110fde109029ca7731b2",
+    "engineering/arm_a11/build/step/J3-fixed-1.step": "f44a32982db9c61f8225c97a378b82791bc540ce8f127b9c48341ede9e373d77",
+    "engineering/arm_a11/build/step/J3-fixed-1-washer.step": "95ffee2f10072168f25993bd2ff420f55e8425aa375ba996e1f60e8aaef9ca03",
+    "engineering/arm_a11/build/step/J3-fixed-2.step": "947480625da5e9fa148cb0c00bd5ec5b8a3e6ee56f26ff179fe2b0525595f286",
+    "engineering/arm_a11/build/step/J3-fixed-2-washer.step": "f0a9dcc92f11c0f18609cc9a444f51d59facb3f2b3b257834eda0a9360342756",
+    "engineering/arm_a11/build/step/J3-fixed-3.step": "6f63ea4f6c27d41f081ecda5cb0cc0e09ac37d33e2f5adac8f9dc23affbadd38",
+    "engineering/arm_a11/build/step/J3-fixed-3-washer.step": "7d0ff30aa523ceacf0ab33b63e7b1b907b4945b78e8c7c8ec0fba6cba5d27593",
+    "engineering/arm_a11/build/step/J3-fixed-4.step": "6be452bc71a519fa2f0926d10060a59aade3ba0855a1814812e03fd29d34d330",
+    "engineering/arm_a11/build/step/J3-fixed-4-washer.step": "1d678e6855a2fa65188955ea055bb4f5e89c56f02e3f8d4ae6976f7835cebcb9",
+    "engineering/arm_a11/build/step/J3-fixed-5.step": "d6b61b641c012afcf11be2305dfa8565134aee9387eefff70727fabf6e4ebf86",
+    "engineering/arm_a11/build/step/J3-fixed-5-washer.step": "867593d643a4bdc3383e804f3f2b1754f4289deb30b1cd497e04c5d02b41465a",
+    "engineering/arm_a11/build/step/J3-fixed-6.step": "431d7d56e2eb28254549869696084a14a6a843e51013e6afc0341a1d8008c8d8",
+    "engineering/arm_a11/build/step/J3-fixed-6-washer.step": "0657a73f3c58ffb093e1f8317030ff6a51d7a3cfede06d0d9be68c6329da8d51",
+    "engineering/arm_a11/build/step/J3-fixed-7.step": "9cdadeefc647a4fa7468d41a6232a622e6e2f66f8dbe61bb47960fa3e5d439c2",
+    "engineering/arm_a11/build/step/J3-fixed-7-washer.step": "84622348dc69cf1e7f148579ad705530556db953a3ef81aecbc8df1c8b1a4391",
+    "engineering/arm_a11/build/step/J3-fixed-8.step": "b35ded015224a9a31d2c588e181e7b43ab9a4290d8092425774990c8d77ab753",
+    "engineering/arm_a11/build/step/J3-fixed-8-washer.step": "2b349ba75f9b1b016b75dc1489c6cbc5d3f1d1a5ad442b092a87f3e71913d42b",
+    "engineering/arm_a11/build/step/J3-output-1.step": "e6dfd803926aed3be89ec09b4791e64b5504d3a0733933a02194a4bc251a3602",
+    "engineering/arm_a11/build/step/J3-output-1-washer.step": "d929867fca09e713bbe3a1342fb006651a18ea090a26bd714228634f09a90e5e",
+    "engineering/arm_a11/build/step/J3-output-2.step": "823fe8df913ed976a4df62866be0a6143f9a96dee01f0bb95fb5866f3d520a07",
+    "engineering/arm_a11/build/step/J3-output-2-washer.step": "a0d4c2ac0af35662520cec3f735dde372b1fb054d347b3d3011ef6c087ddf3a0",
+    "engineering/arm_a11/build/step/J3-output-3.step": "b5f5a993b541366190134742036a7d172201ace0fe329228c10cd95952b28c8f",
+    "engineering/arm_a11/build/step/J3-output-3-washer.step": "a0c7972108b29d3009e0706dee727c58f98efbb222cdc1255ae91b66bc31dd07",
+    "engineering/arm_a11/build/step/J3-output-4.step": "9b4d101be11eb9029c5fb5a13a00d74c3885f2fdd9bce3b0b6b66dd5fab0f7eb",
+    "engineering/arm_a11/build/step/J3-output-4-washer.step": "0775392d212d6dc49ba93ba22803335f8c30ecf8c9fc1ddb5c3e161d758749e9",
+    "engineering/arm_a11/build/step/J3-output-5.step": "c45f7e17b7538fd0a44273682db4eb584e6ef0536641f4b9bb23ff156eb8d04a",
+    "engineering/arm_a11/build/step/J3-output-5-washer.step": "44fad600b942ffe6f3b2bfd1dc6bc7baf1aa751fec622907afbab416cbe315bc",
+    "engineering/arm_a11/build/step/J3-output-6.step": "f9b8e53c8d53050316b606f5083b474ff6f9567f8d26300a0653c8eac09a3832",
+    "engineering/arm_a11/build/step/J3-output-6-washer.step": "dbcbffd529cf4c9a737d2c49cde49291ad71e31b6cdd995cf8b5605578497cb6",
+    "engineering/arm_a11/build/step/J4-fixed-1.step": "816a3161b5f2a5fe75b7614bc85282a47e707d5a2d644f395e7ccdbe9201b873",
+    "engineering/arm_a11/build/step/J4-fixed-1-washer.step": "eea62498cf1bb2feb54a9dfc71a33b2eacaf6abba562462e28cf13971159a6c1",
+    "engineering/arm_a11/build/step/J4-fixed-2.step": "38642d7c16c4d20ab4d077c8c8eaf8ae7da0c5763c1cd7bb5897bd62208726ce",
+    "engineering/arm_a11/build/step/J4-fixed-2-washer.step": "89c82c4b26e6ed79bd2f2b46d327ac7dc2972e13a0fd0bb5413092c40d908f0c",
+    "engineering/arm_a11/build/step/J4-fixed-3.step": "8c68605012d3d2d03e7d0aa2c4a33ad22ae683573862814e2d589a52cf6db703",
+    "engineering/arm_a11/build/step/J4-fixed-3-washer.step": "e84372b3a1face3a9e9026208df146676bbae340945881f44195f652a07ef203",
+    "engineering/arm_a11/build/step/J4-fixed-4.step": "533c86f5c7f5eb5555e32cb822fa91ec8b0f82eac33b9b808284a4e19c5d3aa5",
+    "engineering/arm_a11/build/step/J4-fixed-4-washer.step": "16f6af7df339c8e45fb24e6b0aa496980a57fbc1a3ee6a5a70eaf040b2c4da95",
+    "engineering/arm_a11/build/step/J4-fixed-5.step": "3a02a0d83d4190291f1d35e0fdc4e9f1b67ed4ae3516d9621e920ab6bccde164",
+    "engineering/arm_a11/build/step/J4-fixed-5-washer.step": "c064e14f7eaf9b0d8e1f1cf82da9fb9237f46a5261c6dd5bf31097ef895dfe84",
+    "engineering/arm_a11/build/step/J4-fixed-6.step": "145a4c6aca17a507fea2e98dd3c9a1ecb390b9dc547da0d408352bcfda40f797",
+    "engineering/arm_a11/build/step/J4-fixed-6-washer.step": "6958bd5419e27e2790f49fdb811d9660dc8d7ed1223496ca17d124076c4033b3",
+    "engineering/arm_a11/build/step/J4-fixed-7.step": "bd5080222403651b5dec33e7fe7ad8e17b8e0c9659c137fc6f7cf445863d18e9",
+    "engineering/arm_a11/build/step/J4-fixed-7-washer.step": "b33dbf43ea2e7e514252a42c85d24d1383cc9f5fcfad14012827a665cf36ee35",
+    "engineering/arm_a11/build/step/J4-fixed-8.step": "c9f635f751ee73533c387e25ad73d9c62ccdc926c259d15079847a64b080ee4e",
+    "engineering/arm_a11/build/step/J4-fixed-8-washer.step": "dd05b3c1db86f4f0613b817b8b3b5c9d623a72253b70ce75c0fabd70087790df",
+    "engineering/arm_a11/build/step/J4-output-1.step": "d7c4be35d9813be80706b48eb2ce96c3eda65a0a9d1b0dab74eba3db6a748d29",
+    "engineering/arm_a11/build/step/J4-output-1-washer.step": "3138994ae1155590201bc84352007cddd161712387aa1569e171579a03450bdf",
+    "engineering/arm_a11/build/step/J4-output-2.step": "1b4a493cc20a15b533ed3115cb384beb231a224e78d2ee340c768dc6cd375680",
+    "engineering/arm_a11/build/step/J4-output-2-washer.step": "7d55acfa6880bd7bb5fd58309e93d4fe579d0d31b2ccb897e15d7d29d32ce1af",
+    "engineering/arm_a11/build/step/J4-output-3.step": "2049d6dfbdd7aa080914f75a1f50c595abec7671dbb59e8e3ba1d445d2dc24bb",
+    "engineering/arm_a11/build/step/J4-output-3-washer.step": "c204f24750bd5586e899b6f2ee7b8921d60b3652bc386a89bdbdaf48d82f61ea",
+    "engineering/arm_a11/build/step/J4-output-4.step": "302e36d73cdd8b170cec60ef00362030b0ac89c6f439699abe1580c0b1df1b90",
+    "engineering/arm_a11/build/step/J4-output-4-washer.step": "cf70618ff8a355ddff34faf02725fc9491c7eee80ac4c213e3ec1f303f44d5b0",
+    "engineering/arm_a11/build/step/J4-output-5.step": "2955b23bbfb5c88960cf76972686d94db7c6293206368bc8122cbec80b8b160b",
+    "engineering/arm_a11/build/step/J4-output-5-washer.step": "47259ad98df76e571e4fbf584d2934e60ebd7b79fc647e22b55207dcd81d6f51",
+    "engineering/arm_a11/build/step/J4-output-6.step": "c8e0db81e086858412514d378334dcb98675501314d1239b36cf09b0635249e5",
+    "engineering/arm_a11/build/step/J4-output-6-washer.step": "15a7bef05641627124ac31a300a529f8e6e2848aa8c4c09653b7ba49d2bc15ce",
+    "engineering/arm_a11/build/step/J5-fixed-1.step": "b43d98a70976e91014f3980e68fd73f2fab842cc95841e0dcb1c1dbca15b1937",
+    "engineering/arm_a11/build/step/J5-fixed-1-washer.step": "0535b6e250937ce9676bbd2bc13db9cba51a05c92d5644f088de303efd0a10c5",
+    "engineering/arm_a11/build/step/J5-fixed-2.step": "eba9a68389c05d0e4470bddf667d28634b8aee599c70cc7e1f4b6379c22c08f8",
+    "engineering/arm_a11/build/step/J5-fixed-2-washer.step": "cce678785ba990756a903403093ee419002f2c16373dae7f06eee6d0efc9f00e",
+    "engineering/arm_a11/build/step/J5-fixed-3.step": "a636bd98ff5491a054208754779d7e7c2d931fe730c2c521a3969723a802de6d",
+    "engineering/arm_a11/build/step/J5-fixed-3-washer.step": "c123ab7804f9fa59063447d1ad0d0b09f5eede8281d33630ec90d79c7f6da900",
+    "engineering/arm_a11/build/step/J5-fixed-4.step": "443a74afed7bbba1808ea77fdec1757349c186333b95155578330eb907f1a320",
+    "engineering/arm_a11/build/step/J5-fixed-4-washer.step": "8361e33cf2680e5589043e00b9a602c68d79d4576fec43a7ba213809b701026b",
+    "engineering/arm_a11/build/step/J5-fixed-5.step": "ddc39cee8d0630131d5e7296210899a462b57f7f0439c5503a08815bc894eabc",
+    "engineering/arm_a11/build/step/J5-fixed-5-washer.step": "d5adcb2e93e5203237873d1f72a811f8b4790c9f91870c7b7fb264e081066714",
+    "engineering/arm_a11/build/step/J5-fixed-6.step": "30db5d37ac5e7c4545939715c153275d4722871c2236f1d64ea31e9e66680bf8",
+    "engineering/arm_a11/build/step/J5-fixed-6-washer.step": "7f0713bfdfc8ebae331b612311fb5aaa72667b2db0eeabfd7817cefdbafe0b40",
+    "engineering/arm_a11/build/step/J5-fixed-7.step": "f67903206630940f65842137548d14f5b73ba4d0fefb092247e0fcf6b9f59717",
+    "engineering/arm_a11/build/step/J5-fixed-7-washer.step": "6673f40826a8475f8b9b71f5d97de242177972a8ec7376beb629fa16af7967b3",
+    "engineering/arm_a11/build/step/J5-fixed-8.step": "01df3d78b181e9df120448f61c2b78cfce26b6f3f4de45391e8a4d28759d3cab",
+    "engineering/arm_a11/build/step/J5-fixed-8-washer.step": "0078d21178cce1463a9f108c028b1ab04817007e505692f54328c58d50f943e4",
+    "engineering/arm_a11/build/step/J5-output-1.step": "4c70a2c03d3c5dae132e12ede3660b7bcad1ea4558c920f1b012c16c777f978d",
+    "engineering/arm_a11/build/step/J5-output-1-washer.step": "af8eeb463101501b3cb6525e31a06017e0e8416d106887bd32e6d24e9ed23297",
+    "engineering/arm_a11/build/step/J5-output-2.step": "b9e4f25a7d8bfe72f6fae2ad04ad77aba6772ce75b57d9f41d6099e4e4062e4b",
+    "engineering/arm_a11/build/step/J5-output-2-washer.step": "dde0f0f032ae1e3e486d5c24a47898d12a8cb7dab6f1b72af41d86d1b3431d38",
+    "engineering/arm_a11/build/step/J5-output-3.step": "dcdeb24c3c1d124a2ddfd516d4bd3993eb4d8f6ec3ef3e94cde3c0fbc03f9109",
+    "engineering/arm_a11/build/step/J5-output-3-washer.step": "dd7ceff35ed8c60011032c755a4da6c5e0846d87a6dd1b6ac85e8760e1696d06",
+    "engineering/arm_a11/build/step/J5-output-4.step": "2d47f25d7bc1ccb10de2878666e5dd427eecaaef0c1254b68ae7b62913d06e6c",
+    "engineering/arm_a11/build/step/J5-output-4-washer.step": "8380f89fc9049b8f1a2b43e53408e20fceb6a9b56d6dfbe1c72f931674798d80",
+    "engineering/arm_a11/build/step/J5-output-5.step": "3ea38fbb30dfe33b2c62a76c62ab177116c73fea34699ccc49992358ffd7de84",
+    "engineering/arm_a11/build/step/J5-output-5-washer.step": "968d6bd67776a659a9b20d71acafb14b1ccd77bc6a7f4e9aa0398122357f1802",
+    "engineering/arm_a11/build/step/J5-output-6.step": "3dc236449ba639978f3f15fa35a4f463e4bef6391592aa7eae0b67e300e69328",
+    "engineering/arm_a11/build/step/J5-output-6-washer.step": "6cf5fde2d681f47be020af41a29fe5e5e2cde491cff9ce26c395e28a4508f5ed",
+    "engineering/arm_a11/build/step/J6-fixed-1.step": "2c52c5e6407f1729a117fc9e849706f09ae0da01937a418d3aa44bcae1f327e5",
+    "engineering/arm_a11/build/step/J6-fixed-1-washer.step": "ef101d40cdb83f544f1f008a761aa22149515856789a2966ec76b6f55e083a09",
+    "engineering/arm_a11/build/step/J6-fixed-2.step": "2e6625a6ceee6988f9cdbddc9bc8ab66fc2e71456a7af8d6101a6630f1a650bd",
+    "engineering/arm_a11/build/step/J6-fixed-2-washer.step": "5090ec7e2846dd65cebfd463ed54042666b88cd33c3b0b4280e0c5080b8d69c3",
+    "engineering/arm_a11/build/step/J6-fixed-3.step": "b70f3987e0765310755e842bef0409eee9cb363666a66201507373893481b72a",
+    "engineering/arm_a11/build/step/J6-fixed-3-washer.step": "ac1fc68e4d0f7669209e8135eee20c72cbb45cb4049af101204a4c75687c2428",
+    "engineering/arm_a11/build/step/J6-fixed-4.step": "be3a2430d692fc6c33948afa5920759808712d6206a694339d4d33c9f54e6cb0",
+    "engineering/arm_a11/build/step/J6-fixed-4-washer.step": "6e508e43b56891336da07034513fb5d6afca51de0248d67a5724520a152f9565",
+    "engineering/arm_a11/build/step/J6-fixed-5.step": "7997409b851f57a74c2e6458b3a214ca08d84f5eed1132b1cf73e2960b020e76",
+    "engineering/arm_a11/build/step/J6-fixed-5-washer.step": "389d4411de3e3909bdb53587f5d9b81259c62ddb592311a99febcf279c518f57",
+    "engineering/arm_a11/build/step/J6-fixed-6.step": "3cba752e166afaccadb42c60adae09c1d0e63a5147fcf93f7b0fdd33b44f40b7",
+    "engineering/arm_a11/build/step/J6-fixed-6-washer.step": "ff901a099fe6199c3c88c34be4dca3cba3232b1d560102ceacad837b3f87f13e",
+    "engineering/arm_a11/build/step/J6-output-1.step": "32afc9fbbd06b1b90cbf348dbcfd11f6e4e58140c08d0538492b8af8a48f1c4f",
+    "engineering/arm_a11/build/step/J6-output-1-washer.step": "e1fca304a5d83d98becef73088756f5555609032148eead947b6c9befa8a09b3",
+    "engineering/arm_a11/build/step/J6-output-2.step": "65232c9be4f92f44be49e93ac7ccdf79aab9f5895621a6ddaa39c212b057ffbd",
+    "engineering/arm_a11/build/step/J6-output-2-washer.step": "b9013a15ba164eb47c5135b23b8b28ff4123f4e8bb26bf9dd4ff6c606e7c65ae",
+    "engineering/arm_a11/build/step/J6-output-3.step": "96d04c4b495364fc2b573f2c8a4a54cc194b5c0322a05593ff1db04a4dcad229",
+    "engineering/arm_a11/build/step/J6-output-3-washer.step": "3fd26b5592bccee272bd64e1606a61521b127db0a2a4bc2c7c55b2002aaa0345",
+    "engineering/arm_a11/build/step/J6-output-4.step": "8a420d34f997a5fac83a4e7b1abaca616644626aa88475d6669f95cdb91807cf",
+    "engineering/arm_a11/build/step/J6-output-4-washer.step": "12954c152e83c514e81ad31b857103a88fafe65884b2582f12c9b1f1c921a51c",
+    "engineering/arm_a11/build/step/J6-output-5.step": "3e52ccd4a8f832e201dea29b4fc640d36845224c2bed4b1fe021e8e736e735bb",
+    "engineering/arm_a11/build/step/J6-output-5-washer.step": "0397f3578f32110c7de8bf0f29f0a30a0482b52555b2d1910fe6d38adffd9aa6",
+    "engineering/arm_a11/build/step/J6-output-6.step": "071a3e8f4478e3dc198056d20ef10b0450b6da8ee160165f14f29f81f20268a1",
+    "engineering/arm_a11/build/step/J6-output-6-washer.step": "6be03aca6e6c9c0574d1e3ee3ba3ed2146e168605d8fc210f5b6db2235563749",
+    "engineering/arm_a11/build/step/S00-45--1-M3.step": "054be3328f3550921927b06aac905f64cda1f934540d6514056afed4cd6bb759",
+    "engineering/arm_a11/build/step/S00-45--1-M3-washer.step": "64947601fe22351e842c531ba4403a5bf6227b9050d40f770809ab3f3f3ce2b9",
+    "engineering/arm_a11/build/step/S00-45--1-nut.step": "8badcfd2b2abac91db3f399b83c95e5c8f549e888160dce8fc7e38efae3fd15f",
+    "engineering/arm_a11/build/step/S00-45--1-rear-washer.step": "43fe981608a3dc9c27e086c92552e610b6f01eefa80a28a4947d78a4cfdafad6",
+    "engineering/arm_a11/build/step/S00-45-1-M3.step": "478b55cb9b1efd7466901fb18946aa9e6e80d116523de73cc9f8e2366eef8218",
+    "engineering/arm_a11/build/step/S00-45-1-M3-washer.step": "a3d18bb20fb4f0ea46a4e28dc7e3801289af34cfaa8cfb181c33b8e4485a5abb",
+    "engineering/arm_a11/build/step/S00-45-1-nut.step": "4bde4b7dac49bc5357c24e61f64c8ce1ad70dc8b45e6b1683b5a118891dbdf6d",
+    "engineering/arm_a11/build/step/S00-45-1-rear-washer.step": "d646552ad49fc83da5dc2a537d4beced1ddc6c5ebc8cbd5ecb312c254a7b8c68",
+    "engineering/arm_a11/build/step/S00-120--1-M3.step": "1527ded1eec25b433ec507df856e6cdda870aa6848781a26eff97aa523733aba",
+    "engineering/arm_a11/build/step/S00-120--1-M3-washer.step": "427c4ad0b5da0b8ddf7050ecf4fdad982edd77d2ac8d86cbf0b27f7b94d2a196",
+    "engineering/arm_a11/build/step/S00-120--1-nut.step": "bcee0ea16c43637f630b0279dbbed34d971652b17ca707e95d48dab0a12d997b",
+    "engineering/arm_a11/build/step/S00-120--1-rear-washer.step": "eeb7b4091a331360b6caa4827adec52ea607123c96623cc8026ad0cd55005f84",
+    "engineering/arm_a11/build/step/S00-120-1-M3.step": "0bc92bfb02962d1d80be2656ca2ac577a57397fa0bbcf3cd2a1e6d3613f3588e",
+    "engineering/arm_a11/build/step/S00-120-1-M3-washer.step": "4665fcf87987d813c89e2e8025c8b5baa11f01d272f705089f0fdde005c5a458",
+    "engineering/arm_a11/build/step/S00-120-1-nut.step": "f2746dc3dfa9271f68215de8f5323bef7ec7801e11ac5e7afd66d93641312598",
+    "engineering/arm_a11/build/step/S00-120-1-rear-washer.step": "88a31c644ecf0f84f518eb966c75cf7343c4fda45bc90e339516d7315e98e8d7",
+    "engineering/arm_a11/build/step/J2-armour--1-M3.step": "4749db9b08a1646088628e49786a79765eb41d643dfc6b6bb2709e4dbad96376",
+    "engineering/arm_a11/build/step/J2-armour--1-M3-washer.step": "f9c9d05045906aefece10266d3d6de6f14b36063c37e2e54e2acccd162249aba",
+    "engineering/arm_a11/build/step/J2-armour--1-nut.step": "a07e2e0e1c55173c43859d6aac7d3d5ad21d301d25a911ea2f9f00142ce92c9d",
+    "engineering/arm_a11/build/step/J2-armour--1-rear-washer.step": "9be848441cd360cf8db97769a760162ee9d960c5ee22a0274bfc020afc74ed44",
+    "engineering/arm_a11/build/step/J2-armour-1-M3.step": "f2cc187bfbe95bb5e179b1c57763ca45f758d04bd568d7e23542f0a394efd880",
+    "engineering/arm_a11/build/step/J2-armour-1-M3-washer.step": "57b8aab7d573a36cdfc3736658a7313656c467b53726231a836e0f146867ce8d",
+    "engineering/arm_a11/build/step/J2-armour-1-nut.step": "112d9abc8e950b8b5324ca6f78cdd1436be3cc8aad55581c8dcb00ffb84e2130",
+    "engineering/arm_a11/build/step/J2-armour-1-rear-washer.step": "faa3c5c15430d2894db6890ae56b50aa9d5720e35bc5dfd918e1f64dcb004140",
+    "engineering/arm_a11/build/step/J3-armour--1-M3.step": "cee064258cbcf215844b8924e1308228ccb59810dfc0c2100526d8ca6a2dacdc",
+    "engineering/arm_a11/build/step/J3-armour--1-M3-washer.step": "188d8f1cec2844b2ce45ffeb34317a9dda5bd673bddc17b4cd05b53cce4d75fb",
+    "engineering/arm_a11/build/step/J3-armour--1-nut.step": "6344d83c478e32a060ff57205a8406c16b018e2cceea6a02ff8aaef6fa86f1e1",
+    "engineering/arm_a11/build/step/J3-armour--1-rear-washer.step": "98fdc71b9eb0ad7fa788cf101903ccff7695de2fe0807a621253eb5b941fdda3",
+    "engineering/arm_a11/build/step/J3-armour-1-M3.step": "82af20ad2a8c234fb9a3279b37bf7f5ea9bdd7303ee55bb0eb3704baad8236bd",
+    "engineering/arm_a11/build/step/J3-armour-1-M3-washer.step": "ae755013d13e522be3c46a239d88502a9d43ac5020f00fc36ed4fc1e0f509a78",
+    "engineering/arm_a11/build/step/J3-armour-1-nut.step": "b1e9b4116049492e7a8c5c5ed5e8736cb2e4a46ff75021e7b32138a8d0b8793e",
+    "engineering/arm_a11/build/step/J3-armour-1-rear-washer.step": "0c9e118a740b175a17c9a0dd685897fdae43500b90f11ee2669dcb16e0415f05",
+    "engineering/arm_a11/build/step/J4-armour--1-M3.step": "e6b20a039cf8cf70d77562f7e7e7ac6108ba369689c98b7b438e08b665ca3e52",
+    "engineering/arm_a11/build/step/J4-armour--1-M3-washer.step": "5267467de70a2d57d0cdea90222909bdf261578c5b3bffa66c6250b2ed7443a9",
+    "engineering/arm_a11/build/step/J4-armour--1-nut.step": "f88526470cc93f7decf52d457b7e27b34f160de3a13fed6fff051ec6f02d56b2",
+    "engineering/arm_a11/build/step/J4-armour--1-rear-washer.step": "13087497373ee4432ec74a0d8841434e4e625c892b1fd4882f79a88074394b9d",
+    "engineering/arm_a11/build/step/J4-armour-1-M3.step": "8f1942f0abff710262269c98e147f9b074e39ee52e3d917d38f7487447354ea7",
+    "engineering/arm_a11/build/step/J4-armour-1-M3-washer.step": "533d9a00ccd01ff8d5e44007d6991c87a9a02d70831eab723f69df5d59458cac",
+    "engineering/arm_a11/build/step/J4-armour-1-nut.step": "dffb45348309822056934da869aafcc8a6e72e36974e7112250182e91a274179",
+    "engineering/arm_a11/build/step/J4-armour-1-rear-washer.step": "46019b3f3742db0bd444888a42d09774811191fa05c78349a13d87d254576f03",
+    "engineering/arm_a11/build/step/J5-armour--1-M3.step": "7b81c982da72aaad78c9269f9bbc13cd08216860c7333b6b047ff3c73cb3aaf2",
+    "engineering/arm_a11/build/step/J5-armour--1-M3-washer.step": "f572f266f784def2331ac9c6d0ccbfe9b614631aba1856194b7058d2d9c61141",
+    "engineering/arm_a11/build/step/J5-armour--1-nut.step": "38aedbe3585429971203bb70692139262546c9c43fb0e530ee8312ddd200acf7",
+    "engineering/arm_a11/build/step/J5-armour--1-rear-washer.step": "b57f4f99b4ad1889d783b242a62508c201b0935ee066ec6410b0a56186a74123",
+    "engineering/arm_a11/build/step/J5-armour-1-M3.step": "a70bc4425bf32f4347d98f8b1aa74deefe7614ab77ea6629b21e262329285c1f",
+    "engineering/arm_a11/build/step/J5-armour-1-M3-washer.step": "190afdfcb4226e1f17f696f07f7bed75a1a18389f4ca95b75ef872e9a62df264",
+    "engineering/arm_a11/build/step/J5-armour-1-nut.step": "b9b9220ae36d27513d4c6b2c0a752e47135f72138d853ac3b4bfc92dbb457553",
+    "engineering/arm_a11/build/step/J5-armour-1-rear-washer.step": "64284901543626b5ce2e3e0a29578fcf9c55e0f16c53c09bada4678e66839098",
+    "engineering/arm_a11/build/step/J6-armour--1-M3.step": "6944f1d6e195da877b066cc81ccca97c7455eeaa162c33a013c4110be263995b",
+    "engineering/arm_a11/build/step/J6-armour--1-M3-washer.step": "f55808c30142bc7b94783da4d883ad6d4b28acdfe21935829cefd3f3f45ce4d1",
+    "engineering/arm_a11/build/step/J6-armour--1-nut.step": "2daa007da5667cebe96312f6d208d594f4381c7a637c483dfbe5dd6c8dd80c49",
+    "engineering/arm_a11/build/step/J6-armour--1-rear-washer.step": "1207a28f9d7ac175be4d8579d7ae6ff1149d637cb54022110e859411d3babdac",
+    "engineering/arm_a11/build/step/J6-armour-1-M3.step": "3983cdf73fa34a625b59a2c909e01483bbc0a190bbb377de8d8f04346c8a9d15",
+    "engineering/arm_a11/build/step/J6-armour-1-M3-washer.step": "7fac544087065f2305b9f44ce7f43ef9b7d6ec0bf3c829defd33aeb82ba801b0",
+    "engineering/arm_a11/build/step/J6-armour-1-nut.step": "a72d2a783d443af7753d5ccae9e7556b53007f7e46512d319b5daf550a468fb8",
+    "engineering/arm_a11/build/step/J6-armour-1-rear-washer.step": "dd86e70eeffe45691b0e7d77b0fa98b896fce3c28ba026873b2373e9bb9fb355",
+    "engineering/arm_a11/build/step/J7-armour--1-M3.step": "f91b4eb8195f87e3b2eead598b32747166b294ed2a8c679d06efd66e10861ec9",
+    "engineering/arm_a11/build/step/J7-armour--1-M3-washer.step": "cc22e35495154faecf9c64c9c7d98e960041c14406a13914acdf0dbe55384f2e",
+    "engineering/arm_a11/build/step/J7-armour--1-nut.step": "35823f3a249551d15b97490c8072d69893395d5e4ae9924fa227d8b5c73c8b12",
+    "engineering/arm_a11/build/step/J7-armour--1-rear-washer.step": "59acd72ae2d1c22f0e1b69814b22f78b7e2e6934bb232c6ede9a46d9f839d221",
+    "engineering/arm_a11/build/step/J7-armour-1-M3.step": "a71808516b49190b52d2d92f4415b5b40676e378ce2408a318428a1fa7562577",
+    "engineering/arm_a11/build/step/J7-armour-1-M3-washer.step": "6c33af46d7ee6163a01f2938fbfe7f42e0330a8a0c411ce1736605478a4d0533",
+    "engineering/arm_a11/build/step/J7-armour-1-nut.step": "c1139887b916e8fd55ae6edd865ff2c50196ab4b0ba37599cdcc10f56e88a0f6",
+    "engineering/arm_a11/build/step/J7-armour-1-rear-washer.step": "d4afcbb876a8a2c98089d6451e8b4b6a63b54445dacf20e570fc5cc335f3b7dd",
+    "engineering/arm_a11/build/step/P00-J1-top-ring.step": "65bfd212f106fb966449c473c5b5b04663e3f3bbcb152ade86d608ff54ef76f3",
+    "engineering/arm_a11/build/step/P03-distal-socket.step": "b0123b294886d271016b5a3b7d52a4287bc4408014ea82f478b17be270316625",
+    "engineering/arm_a11/build/step/P04-distal-socket.step": "18b5f37c7061817bc726d45c39ea6b94a69b4f85f40a16980fdcc4dfcccab870",
+    "engineering/arm_a11/build/step/P05-wrist-pitch-to-yaw.step": "7282c3ee04ad56cdfc26ee30afc7c8f64dca63e5e1cb38be4f482a93f2c90a64",
+    "engineering/arm_a11/build/step/P02-cross-shoulder.step": "4ec9474de121dbd543577e262d8ea458d4fd23290c119264b417c6b7e0673289",
+    "engineering/arm_a11/build/step/P03-proximal-socket.step": "e1b2e037c61422dc8830d940dcf04c540c2c4bc1b0f65a1f47a5e023cf47c4d4",
+    "engineering/arm_a11/build/step/P04-proximal-socket.step": "c6f4e27675b20891f530545913b3f4a0b0993870e8c4578a56e00c8fae44579a",
+    "engineering/arm_a11/build/step/S01-44-M3.step": "db5e5c032902603deb07df705c6bee364c7d661c35d2f4d1bafb51b0b78fd47f",
+    "engineering/arm_a11/build/step/S01-44-M3-washer.step": "7e4e2c25792998bbb03d04ff6f1a5c7c95aaa2ede394e4914387e83fce9f37e1",
+    "engineering/arm_a11/build/step/S01-44-nut.step": "dc4daa4b96e40c4270265f828800320164d39581d7f9a855e51cfcf8eacde6c9",
+    "engineering/arm_a11/build/step/S01-44-nut-washer.step": "b12e66887d626190adf32455772e88af2b2e870db7e3fd48d025f0e9d3b8b14c",
+    "engineering/arm_a11/build/step/S01-70-M3.step": "5db19e0a60e8a64eb66886240c1a9db5d48ea513067de2be77a979bdae90c5a3",
+    "engineering/arm_a11/build/step/S01-70-M3-washer.step": "9c405f8c0f2782eb8a7bb852fe27067cdbaf7c18a24e4f413d2948f952eec594",
+    "engineering/arm_a11/build/step/S01-70-nut.step": "9fd1a247fb0a72519fa7310ad47cb6f2e5a7b893d3f85e9c39cd5cfb6c33d790",
+    "engineering/arm_a11/build/step/S01-70-nut-washer.step": "37c562b143b1e162e2cb98724f09fb92c9601f6e6bb90476c2af7ab0bfc26c9c",
+    "engineering/arm_a11/build/step/P01-shoulder-monobloc.step": "b5ae15077ff1830496c082902198e7bfa1f8777fbc51d207cba3487bda340e19",
+    "engineering/arm_a11/build/step/P00-root-open.step": "8d90581d5149a9b91e66a3c0b3c418250c7280fef7b5bef41e2cb4d716b3fa6f",
+    "engineering/arm_a12/wrist02/build/step/A12-WR02-J5-shield-A.step": "36ff321811dd9cbb4922fca99429cfe13948c0a9605e651235438f9a75be03e6",
+    "engineering/arm_a12/wrist02/build/step/A12-WR02-J5-shield-B.step": "66c492380467a19fcba1c7fe30b86dde55d9e6ed7da65f25b703c0e933f8e2be",
+    "engineering/arm_a12/wrist02/build/step/A12-WR02-J6-shield-A.step": "19b7f8a95982ff703ef811ad28ddecd67c2460b2a941343b5a01383eceb0ca66",
+    "engineering/arm_a12/wrist02/build/step/A12-WR02-J6-shield-B.step": "8745de72acdb738de7b87bc8eb8c40eeebd2ed470a1c77b021a57fb414085299",
+    "engineering/arm_a12/wrist02/build/step/A12-WR02-J7-shield-A.step": "a3fac8262b0cf27ee484fdde682154d0e965f00904632ad18e19f0fcc3f79201",
+    "engineering/arm_a12/wrist02/build/step/A12-WR02-J7-shield-B.step": "19263ed0600d750ec1ad2b4fe4a4cb8b74b1ea923ae1f3b7165ee048e042e487",
+    "work/arm-a10/vendor/J1-stator.step": "059a995c71460d17f755d04c33b956eed1ddc1f3e26d1a27a94e59d268af860d",
+    "work/arm-a10/vendor/J1-external-output.step": "7d65802ad3f996c1734cfa17556003c3e08b0155fd7c61686bc3972c9512afa8",
+    "work/arm-a10/vendor/J2-stator.step": "3a5cb3eb926636dd2d4a64a6e7e90a663822e3408f9acafb256e517f6c83643e",
+    "work/arm-a10/vendor/J2-external-output.step": "87d581c4a2f24ebbcb9b950bea6739e175383ae829a9c4df6bb5e3154e7b5c1c",
+    "work/arm-a10/vendor/J3-stator.step": "03a38f6270f38931fa2b4281dcfb597cd8f222a9f4d226d1412c6eca65f52715",
+    "work/arm-a10/vendor/J3-external-output.step": "f8bdea305d578cf5bd2a9b2f094ec13233c7613f5c3373643935bccd47e2c7d0",
+    "work/arm-a10/vendor/J4-stator.step": "83479a6bf303ed0f0f88a35942435ba06d004679a44155fa7cd333f046036e01",
+    "work/arm-a10/vendor/J4-external-output.step": "45cb0322737d8c18cdfc6b43b9c179a4f2a5fbbc77b46bc8227a63e7ced2ffe6",
+    "work/arm-a10/vendor/J5-stator.step": "b84f392a788ab04f3c9f4c71a8280a0e28a41bdaaaf92fd30a18e384dc4dc405",
+    "work/arm-a10/vendor/J5-external-output.step": "873056a5d73d6c95d3b1d0207c48df570254467f9e9e8e106f2e8ab7e3b973bf",
+    "work/arm-a10/vendor/J6-stator.step": "30b987dc9f3ed5555b458714cb90ebb1c47b2206540b0092deb0e8e6df5ece9f",
+    "work/arm-a10/vendor/J6-external-output.step": "00d62ebcfe4ae54d2706477a66249953747e49f934b4c84e1d361aff97c866b3",
+    "work/arm-a10/vendor/J7-stator.step": "09bda188d9d950601032629b721fdc50a3ff758026e5375e566dc9c99bfb98e1",
+    "work/arm-a10/vendor/J7-external-output.step": "78cc40133893a6ec8ebdcc15632cc1ecdc3111a3114030cca88e912a9230034b",
+    "engineering/arm_a13/j7-fit01/build/step/A13-J7-101-bearing-housing.step": "cfa25d13341237a6a0efbcdd81b0a2ffecc75d7310baab801178f71b3cf497ac",
+    "engineering/arm_a13/j7-fit01/build/step/A13-J7-102-bearing-retainer.step": "eb87eaca2be00607076e04015d35d6885c50d7e17df72ffeb6c0dbd7a8d1582e",
+    "engineering/arm_a13/j7-fit01/build/step/A13-J7-103-output-journal.step": "06e985a75ede4e12223c240463832fc74690ee422381150be507a8501d16fbb0",
+    "engineering/arm_a13/j7-fit01/build/step/A13-J7-104-inner-spacer.step": "edbd983066063fcb01777220aa2220f82d81b8a3a3a2f2444c0a51733275517a",
+    "engineering/arm_a13/j7-fit01/build/step/A13-J7-105-carrier.step": "0f2978f69cc7668149a21f48130d5a5d2dab2c093a84625312ef613d0aa91902",
+    "engineering/arm_a13/tool-if01/build/step/A13-IF-107-piloted-flange.step": "300de7429924e9a09948397a48a4307fc51d02958c383513c5c4d26cc7d3ff99",
+    "engineering/arm_a13/tool-if02/build/step/A13-IF-301-recessed-carrier.step": "2186ae8a5f4f2f30a31f84847edb8c4b7fc932960e4cd4213049e352db1861a8",
+    "engineering/arm_a13/tool-if02/build/step/A13-IF-302-dorsal-cover.step": "990caf7c49523f9747d3f504afed467b664fe3c44e83c9e2c8b54a334ed9a913",
+    "engineering/arm_a13/tool-if02/build/step/A13-IF-303-face-insert.step": "ece3c97977b80e64309b9c346f377b2ef85c8e24c52f78315700233bcea437f2",
+    "engineering/arm_a13/tool-if02/build/step/A13-IF-304-tool-pocket.step": "d614e00c245460af77e94486aa6377e68c780c0fc2e7d515d6b1cf791aadaf60",
+    "engineering/arm_a13/tool-if02/build/step/A13-IF-305-tool-pocket-cover.step": "d39415999d25fe9c8204a60c2d5e05058a407108e35ecf029211d970d42f9aea"
+  },
+  "new_module_parts": 11,
+  "target_parts": 367,
+  "checks": {
+    "idle": {
+      "q_deg": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 46,
+      "reused_relative_transform_pairs": 0,
+      "disjoint_bbox_pairs": 3991
+    },
+    "attention": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 11,
+      "reused_relative_transform_pairs": 43,
+      "disjoint_bbox_pairs": 3983
+    },
+    "reference": {
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 43,
+      "disjoint_bbox_pairs": 3994
+    },
+    "J5_-90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        -90,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 49,
+      "disjoint_bbox_pairs": 3988
+    },
+    "J5_0": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        0,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 49,
+      "disjoint_bbox_pairs": 3988
+    },
+    "J5_130": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        130,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 11,
+      "reused_relative_transform_pairs": 47,
+      "disjoint_bbox_pairs": 3979
+    },
+    "J6_-60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -60,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 20,
+      "reused_relative_transform_pairs": 39,
+      "disjoint_bbox_pairs": 3978
+    },
+    "J6_60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        60,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 30,
+      "reused_relative_transform_pairs": 39,
+      "disjoint_bbox_pairs": 3968
+    },
+    "J7_-90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        -90
+      ],
+      "overlaps": [],
+      "exact_new_checks": 9,
+      "reused_relative_transform_pairs": 44,
+      "disjoint_bbox_pairs": 3984
+    },
+    "J7_90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        90
+      ],
+      "overlaps": [],
+      "exact_new_checks": 10,
+      "reused_relative_transform_pairs": 44,
+      "disjoint_bbox_pairs": 3983
+    },
+    "intermediate_J5_-60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        -60,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 54,
+      "disjoint_bbox_pairs": 3983
+    },
+    "intermediate_J5_-30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        -30,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 5,
+      "reused_relative_transform_pairs": 51,
+      "disjoint_bbox_pairs": 3981
+    },
+    "intermediate_J5_30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        30,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 54,
+      "disjoint_bbox_pairs": 3983
+    },
+    "intermediate_J5_60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        60,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 6,
+      "reused_relative_transform_pairs": 51,
+      "disjoint_bbox_pairs": 3980
+    },
+    "intermediate_J5_90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        90,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 49,
+      "disjoint_bbox_pairs": 3988
+    },
+    "intermediate_J5_110": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        110,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 56,
+      "disjoint_bbox_pairs": 3981
+    },
+    "intermediate_J6_-40": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -40,
+        0
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374034999706296,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.374034999712379,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 29,
+      "reused_relative_transform_pairs": 42,
+      "disjoint_bbox_pairs": 3966
+    },
+    "intermediate_J6_-20": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -20,
+        0
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374055636572738,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.37405563657426,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 17,
+      "reused_relative_transform_pairs": 38,
+      "disjoint_bbox_pairs": 3982
+    },
+    "intermediate_J6_20": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        20,
+        0
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.374055636574365,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.37405563657498,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 17,
+      "reused_relative_transform_pairs": 39,
+      "disjoint_bbox_pairs": 3981
+    },
+    "intermediate_J6_40": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        40,
+        0
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.37403499970233,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.374034999701841,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 29,
+      "reused_relative_transform_pairs": 48,
+      "disjoint_bbox_pairs": 3960
+    },
+    "intermediate_J7_-45": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        -45
+      ],
+      "overlaps": [],
+      "exact_new_checks": 10,
+      "reused_relative_transform_pairs": 44,
+      "disjoint_bbox_pairs": 3983
+    },
+    "intermediate_J7_45": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        45
+      ],
+      "overlaps": [],
+      "exact_new_checks": 10,
+      "reused_relative_transform_pairs": 44,
+      "disjoint_bbox_pairs": 3983
+    },
+    "coupled_low": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        -30,
+        -30,
+        45
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 19.006635554218573,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 19.006635554217837,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 25,
+      "reused_relative_transform_pairs": 41,
+      "disjoint_bbox_pairs": 3971
+    },
+    "coupled_high": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        90,
+        30,
+        -45
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 19.00663555421888,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 19.00663555421979,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 22,
+      "reused_relative_transform_pairs": 40,
+      "disjoint_bbox_pairs": 3975
+    },
+    "grid_J6_-60_J7_-90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -60,
+        -90
+      ],
+      "overlaps": [],
+      "exact_new_checks": 3,
+      "reused_relative_transform_pairs": 56,
+      "disjoint_bbox_pairs": 3978
+    },
+    "grid_J6_-60_J7_-60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -60,
+        -60
+      ],
+      "overlaps": [],
+      "exact_new_checks": 12,
+      "reused_relative_transform_pairs": 47,
+      "disjoint_bbox_pairs": 3978
+    },
+    "grid_J6_-60_J7_-30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -60,
+        -30
+      ],
+      "overlaps": [],
+      "exact_new_checks": 12,
+      "reused_relative_transform_pairs": 47,
+      "disjoint_bbox_pairs": 3978
+    },
+    "grid_J6_-60_J7_0": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -60,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 59,
+      "disjoint_bbox_pairs": 3978
+    },
+    "grid_J6_-60_J7_30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -60,
+        30
+      ],
+      "overlaps": [],
+      "exact_new_checks": 12,
+      "reused_relative_transform_pairs": 47,
+      "disjoint_bbox_pairs": 3978
+    },
+    "grid_J6_-60_J7_60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -60,
+        60
+      ],
+      "overlaps": [],
+      "exact_new_checks": 11,
+      "reused_relative_transform_pairs": 47,
+      "disjoint_bbox_pairs": 3979
+    },
+    "grid_J6_-60_J7_90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -60,
+        90
+      ],
+      "overlaps": [],
+      "exact_new_checks": 2,
+      "reused_relative_transform_pairs": 56,
+      "disjoint_bbox_pairs": 3979
+    },
+    "grid_J6_-40_J7_-90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -40,
+        -90
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374034999706296,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.374034999712379,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 3,
+      "reused_relative_transform_pairs": 68,
+      "disjoint_bbox_pairs": 3966
+    },
+    "grid_J6_-40_J7_-60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -40,
+        -60
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374034999706296,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.374034999712379,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 3,
+      "reused_relative_transform_pairs": 68,
+      "disjoint_bbox_pairs": 3966
+    },
+    "grid_J6_-40_J7_-30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -40,
+        -30
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374034999706296,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.374034999712379,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 3,
+      "reused_relative_transform_pairs": 68,
+      "disjoint_bbox_pairs": 3966
+    },
+    "grid_J6_-40_J7_0": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -40,
+        0
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374034999706296,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.374034999712379,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 71,
+      "disjoint_bbox_pairs": 3966
+    },
+    "grid_J6_-40_J7_30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -40,
+        30
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374034999706296,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.374034999712379,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 3,
+      "reused_relative_transform_pairs": 68,
+      "disjoint_bbox_pairs": 3966
+    },
+    "grid_J6_-40_J7_60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -40,
+        60
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374034999706296,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.374034999712379,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 4,
+      "reused_relative_transform_pairs": 67,
+      "disjoint_bbox_pairs": 3966
+    },
+    "grid_J6_-40_J7_90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -40,
+        90
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374034999706296,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.374034999712379,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 3,
+      "reused_relative_transform_pairs": 67,
+      "disjoint_bbox_pairs": 3967
+    },
+    "grid_J6_-20_J7_-90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -20,
+        -90
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374055636572738,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.37405563657426,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 55,
+      "disjoint_bbox_pairs": 3982
+    },
+    "grid_J6_-20_J7_-60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -20,
+        -60
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374055636572738,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.37405563657426,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 55,
+      "disjoint_bbox_pairs": 3982
+    },
+    "grid_J6_-20_J7_-30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -20,
+        -30
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374055636572738,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.37405563657426,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 55,
+      "disjoint_bbox_pairs": 3982
+    },
+    "grid_J6_-20_J7_0": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -20,
+        0
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374055636572738,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.37405563657426,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 55,
+      "disjoint_bbox_pairs": 3982
+    },
+    "grid_J6_-20_J7_30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -20,
+        30
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374055636572738,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.37405563657426,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 55,
+      "disjoint_bbox_pairs": 3982
+    },
+    "grid_J6_-20_J7_60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -20,
+        60
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374055636572738,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.37405563657426,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 55,
+      "disjoint_bbox_pairs": 3982
+    },
+    "grid_J6_-20_J7_90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        -20,
+        90
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-2",
+          "volume_mm3": 12.374055636572738,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-5",
+          "volume_mm3": 12.37405563657426,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 54,
+      "disjoint_bbox_pairs": 3983
+    },
+    "grid_J6_0_J7_-90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        -90
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 53,
+      "disjoint_bbox_pairs": 3984
+    },
+    "grid_J6_0_J7_-60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        -60
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 54,
+      "disjoint_bbox_pairs": 3983
+    },
+    "grid_J6_0_J7_-30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        -30
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 54,
+      "disjoint_bbox_pairs": 3983
+    },
+    "grid_J6_0_J7_0": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 54,
+      "disjoint_bbox_pairs": 3983
+    },
+    "grid_J6_0_J7_30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        30
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 54,
+      "disjoint_bbox_pairs": 3983
+    },
+    "grid_J6_0_J7_60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        60
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 54,
+      "disjoint_bbox_pairs": 3983
+    },
+    "grid_J6_0_J7_90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        90
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 54,
+      "disjoint_bbox_pairs": 3983
+    },
+    "grid_J6_20_J7_-90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        20,
+        -90
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.374055636574365,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.37405563657498,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 55,
+      "disjoint_bbox_pairs": 3982
+    },
+    "grid_J6_20_J7_-60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        20,
+        -60
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.374055636574365,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.37405563657498,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 56,
+      "disjoint_bbox_pairs": 3981
+    },
+    "grid_J6_20_J7_-30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        20,
+        -30
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.374055636574365,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.37405563657498,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 56,
+      "disjoint_bbox_pairs": 3981
+    },
+    "grid_J6_20_J7_0": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        20,
+        0
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.374055636574365,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.37405563657498,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 56,
+      "disjoint_bbox_pairs": 3981
+    },
+    "grid_J6_20_J7_30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        20,
+        30
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.374055636574365,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.37405563657498,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 56,
+      "disjoint_bbox_pairs": 3981
+    },
+    "grid_J6_20_J7_60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        20,
+        60
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.374055636574365,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.37405563657498,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 56,
+      "disjoint_bbox_pairs": 3981
+    },
+    "grid_J6_20_J7_90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        20,
+        90
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.374055636574365,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.37405563657498,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 56,
+      "disjoint_bbox_pairs": 3981
+    },
+    "grid_J6_40_J7_-90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        40,
+        -90
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.37403499970233,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.374034999701841,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 76,
+      "disjoint_bbox_pairs": 3961
+    },
+    "grid_J6_40_J7_-60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        40,
+        -60
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.37403499970233,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.374034999701841,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 77,
+      "disjoint_bbox_pairs": 3960
+    },
+    "grid_J6_40_J7_-30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        40,
+        -30
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.37403499970233,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.374034999701841,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 77,
+      "disjoint_bbox_pairs": 3960
+    },
+    "grid_J6_40_J7_0": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        40,
+        0
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.37403499970233,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.374034999701841,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 77,
+      "disjoint_bbox_pairs": 3960
+    },
+    "grid_J6_40_J7_30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        40,
+        30
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.37403499970233,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.374034999701841,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 77,
+      "disjoint_bbox_pairs": 3960
+    },
+    "grid_J6_40_J7_60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        40,
+        60
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.37403499970233,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.374034999701841,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 77,
+      "disjoint_bbox_pairs": 3960
+    },
+    "grid_J6_40_J7_90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        40,
+        90
+      ],
+      "overlaps": [
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-3",
+          "volume_mm3": 12.37403499970233,
+          "method": "common"
+        },
+        {
+          "a": "A13-J7-105-carrier",
+          "b": "J6-fixed-4",
+          "volume_mm3": 12.374034999701841,
+          "method": "common"
+        }
+      ],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 77,
+      "disjoint_bbox_pairs": 3960
+    },
+    "grid_J6_60_J7_-90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        60,
+        -90
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 68,
+      "disjoint_bbox_pairs": 3969
+    },
+    "grid_J6_60_J7_-60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        60,
+        -60
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 68,
+      "disjoint_bbox_pairs": 3969
+    },
+    "grid_J6_60_J7_-30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        60,
+        -30
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 69,
+      "disjoint_bbox_pairs": 3968
+    },
+    "grid_J6_60_J7_0": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        60,
+        0
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 69,
+      "disjoint_bbox_pairs": 3968
+    },
+    "grid_J6_60_J7_30": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        60,
+        30
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 69,
+      "disjoint_bbox_pairs": 3968
+    },
+    "grid_J6_60_J7_60": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        60,
+        60
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 69,
+      "disjoint_bbox_pairs": 3968
+    },
+    "grid_J6_60_J7_90": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        60,
+        90
+      ],
+      "overlaps": [],
+      "exact_new_checks": 0,
+      "reused_relative_transform_pairs": 69,
+      "disjoint_bbox_pairs": 3968
+    }
+  },
+  "hardware_box_screen": {
+    "idle": [],
+    "attention": [],
+    "reference": [],
+    "J5_-90": [],
+    "J5_0": [],
+    "J5_130": [],
+    "J6_-60": [],
+    "J6_60": [],
+    "J7_-90": [],
+    "J7_90": [],
+    "intermediate_J5_-60": [],
+    "intermediate_J5_-30": [],
+    "intermediate_J5_30": [],
+    "intermediate_J5_60": [],
+    "intermediate_J5_90": [],
+    "intermediate_J5_110": [],
+    "intermediate_J6_-40": [],
+    "intermediate_J6_-20": [],
+    "intermediate_J6_20": [],
+    "intermediate_J6_40": [],
+    "intermediate_J7_-45": [],
+    "intermediate_J7_45": [],
+    "coupled_low": [],
+    "coupled_high": [],
+    "grid_J6_-60_J7_-90": [],
+    "grid_J6_-60_J7_-60": [],
+    "grid_J6_-60_J7_-30": [],
+    "grid_J6_-60_J7_0": [],
+    "grid_J6_-60_J7_30": [],
+    "grid_J6_-60_J7_60": [],
+    "grid_J6_-60_J7_90": [],
+    "grid_J6_-40_J7_-90": [],
+    "grid_J6_-40_J7_-60": [],
+    "grid_J6_-40_J7_-30": [],
+    "grid_J6_-40_J7_0": [],
+    "grid_J6_-40_J7_30": [],
+    "grid_J6_-40_J7_60": [],
+    "grid_J6_-40_J7_90": [],
+    "grid_J6_-20_J7_-90": [],
+    "grid_J6_-20_J7_-60": [],
+    "grid_J6_-20_J7_-30": [],
+    "grid_J6_-20_J7_0": [],
+    "grid_J6_-20_J7_30": [],
+    "grid_J6_-20_J7_60": [],
+    "grid_J6_-20_J7_90": [],
+    "grid_J6_0_J7_-90": [],
+    "grid_J6_0_J7_-60": [],
+    "grid_J6_0_J7_-30": [],
+    "grid_J6_0_J7_0": [],
+    "grid_J6_0_J7_30": [],
+    "grid_J6_0_J7_60": [],
+    "grid_J6_0_J7_90": [],
+    "grid_J6_20_J7_-90": [],
+    "grid_J6_20_J7_-60": [],
+    "grid_J6_20_J7_-30": [],
+    "grid_J6_20_J7_0": [],
+    "grid_J6_20_J7_30": [],
+    "grid_J6_20_J7_60": [],
+    "grid_J6_20_J7_90": [],
+    "grid_J6_40_J7_-90": [],
+    "grid_J6_40_J7_-60": [],
+    "grid_J6_40_J7_-30": [],
+    "grid_J6_40_J7_0": [],
+    "grid_J6_40_J7_30": [],
+    "grid_J6_40_J7_60": [],
+    "grid_J6_40_J7_90": [],
+    "grid_J6_60_J7_-90": [],
+    "grid_J6_60_J7_-60": [],
+    "grid_J6_60_J7_-30": [],
+    "grid_J6_60_J7_0": [],
+    "grid_J6_60_J7_30": [],
+    "grid_J6_60_J7_60": [],
+    "grid_J6_60_J7_90": []
+  },
+  "all_sampled_owned_geometry_clear": false,
+  "hardware_box_screen_clear": true,
+  "direct_chord_probes": [
+    {
+      "J7_deg": -90,
+      "start_fixed_mm": [
+        -18.0,
+        -40.0,
+        0.0
+      ],
+      "end_rotor_mm": [
+        77.5,
+        -2.204364238465236e-15,
+        36.0
+      ],
+      "length_mm": 109.61865717112211,
+      "obstacle_hits": [
+        {
+          "obstacle": "A13-J7-101-bearing-housing",
+          "volume_mm3": 176.71354883835016
+        },
+        {
+          "obstacle": "A13-J7-102-bearing-retainer",
+          "volume_mm3": 21.658799640672342
+        },
+        {
+          "obstacle": "A13-J7-105-carrier",
+          "volume_mm3": 69.3081588504549
+        },
+        {
+          "obstacle": "actual-J7-stator",
+          "volume_mm3": 49.63406699736734
+        }
+      ],
+      "geometric_chord_only": true,
+      "physical_constant_length_route": false
+    },
+    {
+      "J7_deg": -60,
+      "start_fixed_mm": [
+        -18.0,
+        -40.0,
+        0.0
+      ],
+      "end_rotor_mm": [
+        77.5,
+        -18.000000000000004,
+        31.17691453623979
+      ],
+      "length_mm": 102.84089653440405,
+      "obstacle_hits": [
+        {
+          "obstacle": "A13-J7-101-bearing-housing",
+          "volume_mm3": 165.0498605969388
+        },
+        {
+          "obstacle": "A13-J7-102-bearing-retainer",
+          "volume_mm3": 20.31850999757803
+        },
+        {
+          "obstacle": "A13-J7-105-carrier",
+          "volume_mm3": 54.731427139651984
+        }
+      ],
+      "geometric_chord_only": true,
+      "physical_constant_length_route": false
+    },
+    {
+      "J7_deg": -30,
+      "start_fixed_mm": [
+        -18.0,
+        -40.0,
+        0.0
+      ],
+      "end_rotor_mm": [
+        77.5,
+        -31.176914536239792,
+        17.999999999999996
+      ],
+      "length_mm": 97.58123199212447,
+      "obstacle_hits": [
+        {
+          "obstacle": "A13-J7-101-bearing-housing",
+          "volume_mm3": 161.1842046066851
+        },
+        {
+          "obstacle": "A13-J7-102-bearing-retainer",
+          "volume_mm3": 19.105826589737358
+        },
+        {
+          "obstacle": "A13-J7-105-carrier",
+          "volume_mm3": 61.697303198778606
+        }
+      ],
+      "geometric_chord_only": true,
+      "physical_constant_length_route": false
+    },
+    {
+      "J7_deg": 0,
+      "start_fixed_mm": [
+        -18.0,
+        -40.0,
+        0.0
+      ],
+      "end_rotor_mm": [
+        77.5,
+        -36.0,
+        0.0
+      ],
+      "length_mm": 95.5837329256396,
+      "obstacle_hits": [
+        {
+          "obstacle": "A13-J7-101-bearing-housing",
+          "volume_mm3": 45.325764429064336
+        },
+        {
+          "obstacle": "A13-J7-105-carrier",
+          "volume_mm3": 60.43435229074073
+        }
+      ],
+      "geometric_chord_only": true,
+      "physical_constant_length_route": false
+    },
+    {
+      "J7_deg": 30,
+      "start_fixed_mm": [
+        -18.0,
+        -40.0,
+        0.0
+      ],
+      "end_rotor_mm": [
+        77.5,
+        -31.176914536239792,
+        -17.999999999999996
+      ],
+      "length_mm": 97.58123199212447,
+      "obstacle_hits": [
+        {
+          "obstacle": "A13-J7-101-bearing-housing",
+          "volume_mm3": 161.18420460668
+        },
+        {
+          "obstacle": "A13-J7-105-carrier",
+          "volume_mm3": 61.69730319870031
+        }
+      ],
+      "geometric_chord_only": true,
+      "physical_constant_length_route": false
+    },
+    {
+      "J7_deg": 60,
+      "start_fixed_mm": [
+        -18.0,
+        -40.0,
+        0.0
+      ],
+      "end_rotor_mm": [
+        77.5,
+        -18.000000000000004,
+        -31.17691453623979
+      ],
+      "length_mm": 102.84089653440405,
+      "obstacle_hits": [
+        {
+          "obstacle": "A13-J7-101-bearing-housing",
+          "volume_mm3": 165.04861305210204
+        },
+        {
+          "obstacle": "A13-J7-102-bearing-retainer",
+          "volume_mm3": 20.318491483313533
+        },
+        {
+          "obstacle": "A13-J7-105-carrier",
+          "volume_mm3": 54.73073093078063
+        }
+      ],
+      "geometric_chord_only": true,
+      "physical_constant_length_route": false
+    },
+    {
+      "J7_deg": 90,
+      "start_fixed_mm": [
+        -18.0,
+        -40.0,
+        0.0
+      ],
+      "end_rotor_mm": [
+        77.5,
+        -2.204364238465236e-15,
+        -36.0
+      ],
+      "length_mm": 109.61865717112211,
+      "obstacle_hits": [
+        {
+          "obstacle": "A13-J7-101-bearing-housing",
+          "volume_mm3": 176.7105702150827
+        },
+        {
+          "obstacle": "A13-J7-102-bearing-retainer",
+          "volume_mm3": 21.658799640707034
+        },
+        {
+          "obstacle": "A13-J7-105-carrier",
+          "volume_mm3": 69.30815885040104
+        },
+        {
+          "obstacle": "actual-J7-stator",
+          "volume_mm3": 49.638849769441954
+        }
+      ],
+      "geometric_chord_only": true,
+      "physical_constant_length_route": false
+    }
+  ],
+  "payload_shift_only": {
+    "reference": {
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "old_flange_world_mm": [
+        690.7,
+        62.0,
+        220.0
+      ],
+      "new_flange_world_mm": [
+        735.0,
+        62.0,
+        220.0
+      ],
+      "old_payload_gravity_Nm": [
+        0.0,
+        20.320359465000003,
+        -1.8240369,
+        10.317576465000002,
+        4.874885715000002,
+        0.0,
+        0.0
+      ],
+      "new_payload_gravity_Nm": [
+        0.0,
+        21.62366325,
+        -1.8240369,
+        11.620880249999999,
+        6.178189499999999,
+        0.0,
+        0.0
+      ],
+      "delta_payload_gravity_Nm": [
+        0.0,
+        1.303303784999997,
+        0.0,
+        1.303303784999997,
+        1.303303784999997,
+        0.0,
+        0.0
+      ]
+    },
+    "attention": {
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "old_flange_world_mm": [
+        520.5936032227639,
+        62.0,
+        533.0742254156032
+      ],
+      "new_flange_world_mm": [
+        563.3841173273697,
+        62.0,
+        544.5399091136449
+      ],
+      "old_payload_gravity_Nm": [
+        0.0,
+        15.315837777133554,
+        -1.7618843498142507,
+        5.653891342668308,
+        4.70877801232615,
+        0.0,
+        0.0
+      ],
+      "new_payload_gravity_Nm": [
+        0.0,
+        16.57473256256535,
+        -1.7618843498142507,
+        6.912786128100104,
+        5.967672797757946,
+        0.0,
+        0.0
+      ],
+      "delta_payload_gravity_Nm": [
+        0.0,
+        1.2588947854317976,
+        0.0,
+        1.2588947854317967,
+        1.2588947854317967,
+        0.0,
+        0.0
+      ]
+    },
+    "idle": {
+      "q_deg": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "old_flange_world_mm": [
+        379.0838503422653,
+        62.0,
+        255.25627946273616
+      ],
+      "new_flange_world_mm": [
+        423.3838503422653,
+        62.0,
+        255.25627946273616
+      ],
+      "old_payload_gravity_Nm": [
+        0.0,
+        11.152627922876928,
+        -1.7140340149712041,
+        1.7530865504541955,
+        4.874885714999998,
+        0.0,
+        0.0
+      ],
+      "new_payload_gravity_Nm": [
+        0.0,
+        12.455931707876926,
+        -1.7140340149712041,
+        3.056390335454196,
+        6.1781894999999984,
+        0.0,
+        0.0
+      ],
+      "delta_payload_gravity_Nm": [
+        0.0,
+        1.3033037849999989,
+        0.0,
+        1.3033037850000004,
+        1.3033037850000007,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "nominal_tool_plane_J7_mm": [
+    110,
+    0,
+    0
+  ],
+  "old_tool_plane_J7_mm": [
+    65.7,
+    0,
+    0
+  ],
+  "scope": "Integrated owned J7 core and IF02 vs retained upstream BREP and six wrist shields; discrete samples. Hardware additions: conservative box screen only.",
+  "limitations": [
+    "No full arm qualification, continuous sweep or physical print trial",
+    "No assembled electrical/dynamic harness route",
+    "CG03 500 mm pure twist length is a necessary screen for chosen independent anchors, not a universal minimum",
+    "Payload shift excludes all added structure/connector masses, inertia, friction and thermal capacity"
+  ]
+}

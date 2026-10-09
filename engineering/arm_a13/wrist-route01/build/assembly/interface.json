@@ -1,0 +1,160 @@
+{
+  "revision": "TOOL-IF02",
+  "ports": [
+    {
+      "id": "PWR",
+      "yz": [
+        -10,
+        11
+      ],
+      "opening": [
+        12,
+        14
+      ],
+      "kind": "Allocation; Micro-Fit family drawing not dimension-released",
+      "budget": [
+        40,
+        12,
+        13
+      ],
+      "wire_exit_budget_origin_mm": [
+        122,
+        -10,
+        11
+      ]
+    },
+    {
+      "id": "CTRL",
+      "yz": [
+        10,
+        10
+      ],
+      "opening": [
+        16,
+        16
+      ],
+      "kind": "Allocation only; change insert for selected protocol",
+      "budget": [
+        48,
+        16,
+        16
+      ],
+      "wire_exit_budget_origin_mm": [
+        130,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "CAM_UP",
+      "yz": [
+        -9,
+        -12
+      ],
+      "opening": [
+        11.6,
+        11.6
+      ],
+      "kind": "HFM single, coded A proposed; chain and retention pending",
+      "sum_full_housing_lengths_mm": 45.03,
+      "mating_reference_verified": false,
+      "wire_exit_budget_origin_mm": [
+        127.03,
+        -9,
+        -12
+      ]
+    },
+    {
+      "id": "CAM_DOWN",
+      "yz": [
+        9,
+        -12
+      ],
+      "opening": [
+        11.6,
+        11.6
+      ],
+      "kind": "HFM single, coded C proposed; chain and retention pending",
+      "sum_full_housing_lengths_mm": 45.03,
+      "mating_reference_verified": false,
+      "wire_exit_budget_origin_mm": [
+        127.03,
+        9,
+        -12
+      ]
+    }
+  ],
+  "connectors": [
+    {
+      "part_number": "AMK21A-103Z5-y",
+      "source_url": "https://products.rosenberger.com/_ocassets/db/AMK21A-103Z5-Y.pdf",
+      "source_sha256": "78c12701e0d4b6fbfd4e76ec35d84a0d6bdf2398fbe92956b112e70d5c232f5f",
+      "nominal_full_body_dimensions_mm": [
+        19.8,
+        9.6,
+        21.8
+      ],
+      "geometry": "Conservative full housing box, no original supplier mesh",
+      "complete_mating_datum": false,
+      "retention_released": false
+    },
+    {
+      "part_number": "AMS11A-103Z5-y",
+      "source_url": "https://products.rosenberger.com/_ocassets/db/AMS11A-103Z5-Y.pdf",
+      "source_sha256": "17ffbdab5e539f4a151b6efae79a2ae4f19815bc53d19d8821d7ee7ab420e519",
+      "nominal_full_body_dimensions_mm": [
+        25.23,
+        9.1,
+        10.55
+      ],
+      "geometry": "Conservative full housing box, no original supplier mesh",
+      "complete_mating_datum": false,
+      "retention_released": false
+    }
+  ],
+  "mechanical": {
+    "motor": "RS00 unchanged",
+    "axis": "+X",
+    "original_motor_attachment_unchanged": true,
+    "core_interface_plane_x_mm": 65.7,
+    "tool_interface_plane_x_mm": 110,
+    "outer_tool_pilot": {
+      "OD_mm": 76,
+      "ID_mm": 54,
+      "length_mm": 2,
+      "mating_outer_bore_mm": 76.3,
+      "depth_mm": 2.2
+    },
+    "tool_bolts": "4 M4x35 with 0.8 washer, PCD72, 45+90k deg; all dummy cup layers included",
+    "core_bolts": "Original 3 M4x20, PCD45, 30+120k; nominal 0.8 mm tip clearance to original retainer",
+    "centre_opening_mm": 54,
+    "body_front_x_mm": 112,
+    "dummy_tool_front_x_mm": 136,
+    "max_nominal_outer_diameter_mm": 88,
+    "hollow_motor": false,
+    "tool_index_key": {
+      "pin": "D3x8",
+      "yz_mm": [
+        0,
+        31
+      ],
+      "male_bore_mm": 3.1,
+      "female_bore_mm": 3.3,
+      "retention": "Measured/bonded trial; no released press fit"
+    }
+  },
+  "service": {
+    "sequence": [
+      "Remove four tool M4 and slide dummy tool cup +X",
+      "Unplug manually; connectors are not blind-mate qualified",
+      "Remove two front axial and two rear vertical M3 cover screws, lift dorsal cover +Z",
+      "Remove two M3 face-insert screws and withdraw insert +X"
+    ],
+    "rear_side_entry": "X70..85, Y-46..-24, Z+/-7; placeholder passage after motor; no dynamic route claimed",
+    "camera_wire": "Straight OD3.1 exits only; no R75 dynamic bend inside wrist",
+    "power_control_voltage_pinout_pending": true,
+    "live_power": false,
+    "head_rear_pocket_required": "Dummy tool cup represents needed space, not final petal head geometry",
+    "control_insert": "CAN-size reference allocation; EtherCAT/RJ45 module must be rechecked with actual PN before adoption"
+  }
+}
