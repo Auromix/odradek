@@ -11,7 +11,7 @@ from datetime import date
 HERE=Path(__file__).resolve().parent;OUT=HERE/'build/qualification';OUT.mkdir(parents=True,exist_ok=True)
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def inputs():
-    paths=[HERE/'interface-contract.json',HERE/'validation-plan.json',HERE/'build/exterior/manifest.json',HERE/'build/standalone-test/fixture-manifest.json']
+    paths=[HERE/'interface-contract.json',HERE/'validation-plan.json',HERE/'build/exterior/manifest.json',HERE/'build/standalone-test/fixture-manifest.json',HERE/'manufacturing.md',HERE/'build/B06-manufacturing-bom.csv',HERE/'build/B06-first-article-traveler.csv',HERE/'build/manufacturing-definition.json']
     paths+=sorted((HERE/'build/exterior/print-parts').glob('*.stl'))
     paths+=sorted((HERE/'build/load-frame/step').glob('B06-*.step'))
     paths+=sorted((HERE/'build/standalone-test/step').glob('*.step'))

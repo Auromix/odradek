@@ -8,8 +8,8 @@
     "Missing base serial number",
     "DEF-WELD: Approved WPS, post-weld datum/thread inspection and weld quality record for B06-W01",
     "DEF-CONNECTORS: Actual Phoenix mate/RJ45 latch/SMA/ground lug/cable samples; fit, release, bend and strain-relief geometry checked",
-    "DEF-HARNESS: Final power/ground/RJ45/dual coax/5V-PWM harness lengths, routing, clamps and crimp inspection; rear auxiliary route pending",
-    "DEF-RATINGS: Continuous/peak48V current, PoC and GMSL mode fixed and protection/fuse coordination reviewed; connector current is not PCB current rating",
+    "DEF-HARNESS: Final power/ground/RJ45/dual coax and INTERNAL5V-PWM harness lengths, routing, clamps/crimp inspection; no dedicated desk-box5V lead",
+    "DEF-RATINGS: Continuous/peak48V current, PoC and GMSL mode fixed and protection/fuse coordination reviewed; connector current is not PCB current rating; local48V-to5V/PWM supply design, native PCB layout, branch protection, transient/ripple and low-load regulation qualification required",
     "DEF-PRINT-OPTICS: Actual PETG/transparent material/process, shrink compensation, captive nuts, lamp shim and optical recipe",
     "DEF-FIXTURE: Loading apparatus inspected and calibrated, rated load-pin/clevis/lifting accessory, restraint and stiffness known",
     "DEF-RELEASE: Complete drawings/BOM/harness/native PCB version frozen, first-article and repeat-build review approved"
@@ -218,6 +218,9 @@
         "Missing/failing metric brightness_monotonic",
         "Missing/failing metric power_on_flash_events",
         "Missing/failing metric max_temperature_rise_C",
+        "Missing/failing metric local_5V_min_measured_V",
+        "Missing/failing metric local_5V_max_measured_V",
+        "Missing/failing metric local_supply_used",
         "Operator/reviewer missing",
         "Test date missing/invalid",
         "Instrument/calibration record missing",
@@ -342,7 +345,7 @@
     "Evidence/file consistency and numeric criteria only; no proof of record authenticity or independent certification",
     "Even all PASS requires accountable release review; this script does not authorize manufacture or operation"
   ],
-  "configuration_fingerprint": "6552ea5b02c5a63e8e8a6e11d2e3691dddbcbc0bfb4e27a4bd4c581f941a6e41",
-  "record_sha256": "3c9f1ea767e76c30ca1b99fd026803a658a5e12b815699080194652b0d01ba74",
-  "validation_plan_sha256": "5ee5621368b914d0866ee29b90bcf45e44090d770e24f7db7da92c36671a956b"
+  "configuration_fingerprint": "b9ac0965651fb2ce0474c576b61b1c0bc9846948ff08a2da1018de50707e2203",
+  "record_sha256": "ca16d1a1385922c0c174cd702fb26bfcfe3217482c85ecdac607953ba202ca30",
+  "validation_plan_sha256": "14c7969be45bcb912bad4ab660b9006541186decd9243d4f7fea183c6bd9e1a0"
 }

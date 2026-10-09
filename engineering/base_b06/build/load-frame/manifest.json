@@ -1,5 +1,5 @@
 {
-  "revision": "B06-LOAD-02-STANDALONE",
+  "revision": "B06-LOAD-03-WELD",
   "arm_required": false,
   "datum": "Z0 desk, axis XY(0,75), +Y toward desk interior",
   "desk_thickness_mm": [
@@ -268,8 +268,8 @@
       "material": "S355",
       "process": "CNC plate profile/drill/tap; weld B06-W01",
       "notes": [
-        "8 mm thickness; top Z2; rear Y-59; F6 continuous fillet welds at upper and lower plate joints",
-        "Front fillet ends at Y-45, clear of desk; machine datums after weld/stress relief; no weld in desk pad seat"
+        "8 mm thickness; top Z2; rear Y-59; Four z5 continuous fillets; leg5.0..5.5 clearance envelope at upper and lower plate joints",
+        "Front fillet nominal toe Y-46, maximum envelope Y-45.5; nominal desk edgeY-45; machine datums after weld/stress relief; no weld in desk pad seat"
       ],
       "features": [
         {
@@ -1723,6 +1723,110 @@
       "volume_mm3": 20695.078566957513,
       "step": "step/B06-307-LOWER-CARRIER.step",
       "stl": "stl/B06-307-LOWER-CARRIER.stl"
+    },
+    {
+      "id": "B06-W01-UPPER-FRONT",
+      "material": "S355",
+      "process": "W01 weld seam; NOT a separately purchased or machined component",
+      "notes": [
+        "Nominal fillet leg5.0; proposed process range5.0..5.5, concave/flat profile within modeled keepout",
+        "Length140; weld procedure, end craters, inspection and distortion control require fabricator qualification"
+      ],
+      "features": [],
+      "category": "weld",
+      "bbox_mm": [
+        [
+          -70.0,
+          -51.0,
+          -3.0
+        ],
+        [
+          70.0,
+          -46.0,
+          2.0
+        ]
+      ],
+      "volume_mm3": 1750.0000000000002,
+      "step": "step/B06-W01-UPPER-FRONT.step",
+      "stl": "stl/B06-W01-UPPER-FRONT.stl"
+    },
+    {
+      "id": "B06-W01-LOWER-FRONT",
+      "material": "S355",
+      "process": "W01 weld seam; NOT a separately purchased or machined component",
+      "notes": [
+        "Nominal fillet leg5.0; proposed process range5.0..5.5, concave/flat profile within modeled keepout",
+        "Length140; weld procedure, end craters, inspection and distortion control require fabricator qualification"
+      ],
+      "features": [],
+      "category": "weld",
+      "bbox_mm": [
+        [
+          -70.0,
+          -51.0,
+          -90.0
+        ],
+        [
+          70.0,
+          -46.0,
+          -85.0
+        ]
+      ],
+      "volume_mm3": 1750.0000000000002,
+      "step": "step/B06-W01-LOWER-FRONT.step",
+      "stl": "stl/B06-W01-LOWER-FRONT.stl"
+    },
+    {
+      "id": "B06-W01-UPPER-REAR",
+      "material": "S355",
+      "process": "W01 weld seam; NOT a separately purchased or machined component",
+      "notes": [
+        "Nominal fillet leg5.0; proposed process range5.0..5.5, concave/flat profile within modeled keepout",
+        "Length140; weld procedure, end craters, inspection and distortion control require fabricator qualification"
+      ],
+      "features": [],
+      "category": "weld",
+      "bbox_mm": [
+        [
+          -70.0,
+          -64.0,
+          -3.0
+        ],
+        [
+          70.0,
+          -59.0,
+          2.0
+        ]
+      ],
+      "volume_mm3": 1750.0000000000002,
+      "step": "step/B06-W01-UPPER-REAR.step",
+      "stl": "stl/B06-W01-UPPER-REAR.stl"
+    },
+    {
+      "id": "B06-W01-LOWER-REAR",
+      "material": "S355",
+      "process": "W01 weld seam; NOT a separately purchased or machined component",
+      "notes": [
+        "Nominal fillet leg5.0; proposed process range5.0..5.5, concave/flat profile within modeled keepout",
+        "Length140; weld procedure, end craters, inspection and distortion control require fabricator qualification"
+      ],
+      "features": [],
+      "category": "weld",
+      "bbox_mm": [
+        [
+          -70.0,
+          -64.0,
+          -90.0
+        ],
+        [
+          70.0,
+          -59.0,
+          -85.0
+        ]
+      ],
+      "volume_mm3": 1750.0000000000002,
+      "step": "step/B06-W01-LOWER-REAR.step",
+      "stl": "stl/B06-W01-LOWER-REAR.stl"
     },
     {
       "id": "HW-M8-TOP-1",

@@ -19,7 +19,7 @@ for folder in (io/'base-io-b05',io/'manufacturing/b06-io-prototype',lamp/'manufa
     files += [p for p in folder.rglob('*') if p.is_file() and p.suffix not in ('.bak','.zipbak') and '.history' not in p.parts]
 files += [io/'reports/b06-native-bom-final.json',io/'reports/b06-routed-audit.json',lamp/'pin-nets.json',lamp/'README.md']
 files=sorted(set(files));assert all(p.is_file() for p in files)
-readme='''B06-COMPACT-06-STANDALONE / CURRENT ENGINEERING REVIEW ASSETS
+readme='''B06-COMPACT-07-DFM / CURRENT ENGINEERING REVIEW ASSETS
 NOT A PRODUCTION OR POWERED-OPERATION RELEASE. Physical tests: 0/20.
 No arm model is required. Product print parts: five; test fixture is separate metal hardware.
 Start: engineering/base_b06/standalone-validation.md and interface-contract.json.
@@ -31,7 +31,7 @@ This asset packet is for review/fit preparation; editable generators live in the
 Seven definition gates remain open; all physical measurements are blank.
 CC-BY-NC-4.0 / Auromix contributors.
 '''
-manifest={'revision':'B06-COMPACT-06-STANDALONE','arm_required':False,'production_released':False,
+manifest={'revision':'B06-COMPACT-07-DFM','arm_required':False,'production_released':False,
     'files':{str(p.relative_to(ROOT)):sha(p) for p in files}}
 out=B/'build/B06-standalone-engineering-review.zip'
 with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED) as z:

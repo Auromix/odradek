@@ -6,7 +6,7 @@ from collections import defaultdict
 HERE=Path(__file__).resolve().parent;OUT=HERE/'build';F=OUT/'load-frame'
 D=json.loads((F/'manifest.json').read_text());groups=defaultdict(list)
 for p in D['parts']:
- if p['category']=='environment':continue
+ if p['category'] in ('environment','weld'):continue
  if p['id'].startswith('HW-ROOT-'):continue # Mating-module / test-fixture screws, not base product hardware.
  if p['category']=='hardware':key=(p['category'],p['process'],tuple(p['notes']),round(p['volume_mm3'],3))
  elif p['id'].startswith('B06-105-POST-'):key=('custom','B06-105-POST')
@@ -27,7 +27,7 @@ extra=[('HW-COVER-PCB-REAR-M3',10,'ISO7380-1 M3x10, AF2, head D5.7x1.65'),('HW-C
  ('HW-LIGHT-M2',2,'ISO4762 M2x8, AF1.5, head D3.8x2'),('HW-LIGHT-NUT',2,'DIN934 M2 AF4 x1.6'),
  ('SHELF-STRAP',1,'20mm hook/loop strap, minimum600mm; trim to box after installation')]
 for id,q,s in extra:rows.append({'id':id,'quantity':q,'category':'purchase','material':'steel' if id.startswith('HW') else 'textile','specification':s,'cad_files':'','notes':'Current model / confirmed box budget','status':'Supplier selection and first article fit required'})
-rows.append({'id':'PCB-B06-IO', 'quantity':1,'category':'electronics','material':'FR4 1.6mm 4-layer','specification':'Native JLCEDA project + B06-IO-PROTOTYPE-Gerber.zip','cad_files':'../electronics/base-io-b05/manufacturing/b06-io-prototype/', 'notes':'Refer original BRI01 component list; BOM not automatically migrated by this script','status':'Board candidate; complete electrical assembly release pending'})
+rows.append({'id':'PCB-B06-IO', 'quantity':1,'category':'electronics','material':'FR4 1.6mm 4-layer','specification':'Native JLCEDA project + B06-IO-PROTOTYPE-Gerber.zip','cad_files':'../electronics/base-io-b05/manufacturing/b06-io-prototype/', 'notes':'Assembly parent; six native component lines in current B06-IO-Native-BOM.csv; do not buy both populated PCBA and separate components','status':'Board candidate; complete electrical assembly release pending'})
 rows.append({'id':'PCB-B06-LIGHT', 'quantity':1,'category':'electronics','material':'FR4 1.6mm 2-layer','specification':'50x14; independent 5V PWM; 12 SMT parts; native BOM/pick-place','cad_files':'../electronics/base-light-b06/manufacturing/', 'notes':'JST GH: 1=5V,2=PWM,3=GND; DO NOT CONNECT48V','status':'Native DRC/exports passed; harness, mount and optical prototype not qualified'})
 with (OUT/'B06-mechanical-bom.csv').open('w',newline='',encoding='utf-8-sig') as f:
  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)

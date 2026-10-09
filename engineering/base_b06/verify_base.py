@@ -4,12 +4,13 @@
 Digital checks only. Stops on failures, never marks physical tests complete.
 Existing actual Orca slices must match new print meshes or this command fails.
 """
-import argparse,subprocess,sys,json,hashlib
+import argparse,subprocess,sys,json,hashlib,os
 from pathlib import Path
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[3]
 def run(name,args):
     print('BASE CHECK:',name,flush=True)
-    subprocess.run([str(x) for x in args],check=True,cwd=ROOT)
+    env=dict(os.environ,ODRADEK_CAD_PYTHON=sys.executable)
+    subprocess.run([str(x) for x in args],check=True,cwd=ROOT,env=env)
 def main():
     p=argparse.ArgumentParser();p.add_argument('--blender',type=Path,required=True);p.add_argument('--render',action='store_true');a=p.parse_args()
     blender=a.blender.resolve();assert blender.is_file()
@@ -22,7 +23,7 @@ def main():
     for name in ('check_interface_contract','check_solids','check_integrated_hardware','check_service','check_fixture_fit'):
         run(name,[py,HERE/(name+'.py')])
     run('native blend and light checks',[blender,'--background',E/'ODR-BASE-B06-COMPACT.blend','--python-exit-code','1','--python',HERE/'check_fit.py','--python',HERE/'check_light_blender.py'])
-    for name in ('slice_review','bom','package','draw_fixture','draw_load_frame'):
+    for name in ('slice_review','bom','manufacturing_definition','package','draw_fixture','draw_load_frame'):
         run(name,[py,HERE/(name+'.py')])
     for source in (HERE.parent/'electronics/base-light-b06/audit.py',HERE.parent/'electronics/base-io-b05/check_routed.py'):
         run('native manufacturing audit '+source.parent.name,[py,source])

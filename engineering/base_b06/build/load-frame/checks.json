@@ -1,7 +1,7 @@
 {
-  "revision": "B06-LOAD-02-STANDALONE",
+  "revision": "B06-LOAD-03-WELD",
   "arm_required": false,
-  "cad_source_sha256": "76056fcaee5468284438c18ff0cb18c2a1fa4a539d346e825a7422681a53d894",
+  "cad_source_sha256": "eaaf0801b0d6469c8fe6188bfd38bd291df43ee80c431884e487d883649de3bd",
   "desk_samples": [
     {
       "desk_mm": 15,
@@ -424,6 +424,81 @@
       "foot_to_jaw_gap_mm": 7
     }
   ],
+  "maximum_weld_envelope_checks": [
+    {
+      "desk_mm": 15,
+      "seam": "UPPER-FRONT",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 15,
+      "seam": "LOWER-FRONT",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 15,
+      "seam": "UPPER-REAR",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 15,
+      "seam": "LOWER-REAR",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 30,
+      "seam": "UPPER-FRONT",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 30,
+      "seam": "LOWER-FRONT",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 30,
+      "seam": "UPPER-REAR",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 30,
+      "seam": "LOWER-REAR",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 60,
+      "seam": "UPPER-FRONT",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 60,
+      "seam": "LOWER-FRONT",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 60,
+      "seam": "UPPER-REAR",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    },
+    {
+      "desk_mm": 60,
+      "seam": "LOWER-REAR",
+      "maximum_leg_mm": 5.5,
+      "collisions": []
+    }
+  ],
+  "front_to_nominal_desk_edge_clearance_mm": 0.5,
   "masses": [
     {
       "id": "B06-101-LOAD-DECK",
@@ -520,6 +595,22 @@
     {
       "id": "B06-307-LOWER-CARRIER",
       "mass_kg": 0.02628274978003604
+    },
+    {
+      "id": "B06-W01-UPPER-FRONT",
+      "mass_kg": 0.013737500000000001
+    },
+    {
+      "id": "B06-W01-LOWER-FRONT",
+      "mass_kg": 0.013737500000000001
+    },
+    {
+      "id": "B06-W01-UPPER-REAR",
+      "mass_kg": 0.013737500000000001
+    },
+    {
+      "id": "B06-W01-LOWER-REAR",
+      "mass_kg": 0.013737500000000001
     },
     {
       "id": "HW-M8-TOP-1",
@@ -650,7 +741,7 @@
       "mass_kg": 0.000360384425285118
     }
   ],
-  "total_modeled_mass_kg": 7.48505441857547,
+  "total_modeled_mass_kg": 7.54000441857547,
   "screening": {
     "assumed_loads": {
       "overturning_Nm": 150,
@@ -670,7 +761,7 @@
   },
   "exact_static_clearance_pass": true,
   "limits": [
-    "Exact nominal BREP only; threads, supplier swivels and weld beads simplified/omitted.",
+    "Exact nominal BREP only; threads, supplier swivels simplified; nominal weld beads included, actual profiles unqualified.",
     "Bolts/washers included as purchase envelopes; root mesh and plug/tool actuation remain separate integration tests.",
     "15/30/60mm sampled; continuous installation, assembly and table-load tests pending."
   ]

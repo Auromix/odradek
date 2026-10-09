@@ -99,6 +99,18 @@ def make_hardware(mating_hardware=False):
   r=5.5/math.sqrt(3);n=cq.Workplane('XY').polyline([(x+r*math.cos(math.pi/6+i*math.pi/3),-8+r*math.sin(math.pi/6+i*math.pi/3)) for i in range(6)]).close().extrude(2.4).translate((0,0,21.1)).val().cut(cyl(x,-8,21.1,1.5,2.4))
   add(f'HW-COAX-NUT-{side}',n,'steel','Purchase DIN934 M3 nut; nominal unthreaded bore envelope',category='hardware')
 
+def weld_bead(side,z,up,leg=5.0):
+ # W01 four continuous fillets. Profiles are clearance approximations, not
+ # metallurgical penetration models or proof of an approved weld procedure.
+ y=-51 if side=='FRONT' else -59;dy=leg if side=='FRONT' else -leg
+ return cq.Workplane('YZ').polyline([(y,z),(y+dy,z),(y,z+(leg if up else -leg))]).close().extrude(140).translate((-70,0,0)).val()
+def add_welds():
+ for side in ('FRONT','REAR'):
+  for label,z,up in [('UPPER',2,False),('LOWER',-90,True)]:
+   add('B06-W01-'+label+'-'+side,weld_bead(side,z,up),'S355',
+       'W01 weld seam; NOT a separately purchased or machined component',
+       ['Nominal fillet leg5.0; proposed process range5.0..5.5, concave/flat profile within modeled keepout',
+        'Length140; weld procedure, end craters, inspection and distortion control require fabricator qualification'],category='weld')
 def make(desk=30,mating_hardware=False):
  PARTS.clear()
  # 15 mm top plate + 2 mm desk protection. Flat pad seats, rear weld lands.
@@ -113,7 +125,7 @@ def make(desk=30,mating_hardware=False):
   for y in [-20,24]:hole(d,x,y,2,3.6,15,'D3.6 THRU; clearance for PCB screw tip, no electrical board contact')
  hole(d,62,15,17,5,12,'M6x1-6H; full thread9; drill12; dedicated chassis bonding point',axis=(0,0,-1))
  web=add('B06-102-REAR-WEB',box(-70,-59,-90,140,8,92),'S355','CNC plate profile/drill/tap; weld B06-W01',
-         ['8 mm thickness; top Z2; rear Y-59; F6 continuous fillet welds at upper and lower plate joints','Front fillet ends at Y-45, clear of desk; machine datums after weld/stress relief; no weld in desk pad seat'])
+         ['8 mm thickness; top Z2; rear Y-59; Four z5 continuous fillets; leg5.0..5.5 clearance envelope at upper and lower plate joints','Front fillet nominal toe Y-46, maximum envelope Y-45.5; nominal desk edgeY-45; machine datums after weld/stress relief; no weld in desk pad seat'])
  for sign in [-1,1]:
   for z in [-80,-67]:hole(web,sign*70,-55,z,5,16,'M6x1-6H; full thread13; drill16; shelf hanger',axis=(-sign,0,0))
  jaw_shape=box(-70,-59,-104,140,134,14).cut(box(-25,-35,-105,50,112,16))
@@ -195,6 +207,7 @@ def make(desk=30,mating_hardware=False):
   p['features'].append({'entry_mm':[x,-19,35],'axis':[0,1,0],'model_diameter_mm':9.8,'depth_mm':3,'callout':'AF9.8 rear HEX pocket depth3, six R1.05 corner reliefs; flange seat Y-16; source nominal AF9.5'})
  add('B06-307-LOWER-CARRIER',make_carrier(),'PETG','FDM print; exported exact CAD geometry',
      ['Printed PCB/cover locating scaffold only; no arm or clamp load','Board bottom Z24; side-insert nuts Z19.2..21.6; rear screw axis Z32','Retain 1mm nut-pocket floor and >=2.2mm roof; verify print fit coupon'],category='printed')
+ add_welds()
  make_hardware(mating_hardware)
  add('REF-DESK',box(-400,-45,-desk,800,700,desk),'none','Environment only',category='environment')
  add('REF-BOX',box(-90,120,-152,180,150,50),'none','Confirmed clearance budget only',category='environment')
@@ -217,7 +230,7 @@ def build():
  for folder,extension in [('step','*.step'),('stl','*.stl')]:
   for path in (OUT/folder).glob(extension):
    if path.stem not in active:path.unlink()
- report={'revision':'B06-LOAD-02-STANDALONE','arm_required':False,'datum':'Z0 desk, axis XY(0,75), +Y toward desk interior','desk_thickness_mm':[15,60],'desk_model_mm':30,'posts_mm':POSTS,'parts':manifest,'release':'Candidate; drawings, loads and physical fit qualification pending'}
+ report={'revision':'B06-LOAD-03-WELD','arm_required':False,'datum':'Z0 desk, axis XY(0,75), +Y toward desk interior','desk_thickness_mm':[15,60],'desk_model_mm':30,'posts_mm':POSTS,'parts':manifest,'release':'Candidate; drawings, loads and physical fit qualification pending'}
  (OUT/'manifest.json').write_text(json.dumps(report,indent=2)+'\n')
  print('LOAD_FRAME_BUILT',len(parts),flush=True)
 if __name__=='__main__':build()

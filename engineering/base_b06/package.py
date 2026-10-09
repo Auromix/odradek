@@ -33,7 +33,7 @@ provenance={'revision':manifest['revision'],'manifest_sha256':mh,
  'lid_extraction_samples':len(reports['service-checks.json']['lid_extraction_samples']),'pcb_datum_pass':True},
  'status':'Unpowered integrated geometry candidate; routed IO PCB exported separately; complete base manufacturing release pending'}
 (OUT/'provenance.json').write_text(json.dumps(provenance,ensure_ascii=False,indent=2)+'\n')
-readme='''B06-COMPACT-06-STANDALONE · 独立底座无动力试装包 · STL单位mm
+readme='''B06-COMPACT-07-DFM · 独立底座无动力试装包 · STL单位mm
 五件打印件；采购件/接口板/机械臂承载结构不包含在打印包。
 256×256×256mm床，每侧5mm检查余量；支撑、brim和打印补偿需切片检查。
 后盖两颗背向M3×10，主罩四颗底面M3×10；PCB四颗M3×10。

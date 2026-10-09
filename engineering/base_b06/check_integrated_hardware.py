@@ -15,7 +15,7 @@ def solid(k):
   if s.status()!=md.Error.NoError:raise ValueError(k)
   cache[k]=s
  return cache[k]
-actual=[k for k,p in parts.items() if p['category'] in ('metal','hardware') or p['assembly_role']=='fasteners']
+actual=[k for k,p in parts.items() if p['category'] in ('metal','hardware','weld') or p['assembly_role']=='fasteners']
 refs=[k for k,p in parts.items() if p['assembly_role'] in ('electronics','routing') or k.startswith('REF-P00') or k.startswith('REF-S00')]
 checked=[]
 for a,b in itertools.product(actual,refs):

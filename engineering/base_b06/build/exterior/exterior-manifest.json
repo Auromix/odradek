@@ -1,9 +1,9 @@
 {
-  "revision": "B06-COMPACT-06-STANDALONE",
+  "revision": "B06-COMPACT-07-DFM",
   "length_unit": "mm",
   "module": "standalone_base",
   "arm_reference_included": false,
-  "interface_contract_sha256": "7867a5cc0e1a6ee1827814ce13deea546bf64c010d751060d5d8b260c9685f70",
+  "interface_contract_sha256": "9ecc6b64e64054b16cc54efdc3cfc5076662c53829b4df5fb315fdfd4964873a",
   "scope": "Five printed shell/scaffold parts plus original metal chassis/clamp/shelf CAD; routed IO PCB; integration candidate, not complete manufacturing release",
   "parameters": {
     "schema": "odradek.b06.compact.v5",
@@ -1232,8 +1232,8 @@
       "stl": "stl/B06-102-REAR-WEB.stl",
       "assembly_role": "structure",
       "notes": [
-        "8 mm thickness; top Z2; rear Y-59; F6 continuous fillet welds at upper and lower plate joints",
-        "Front fillet ends at Y-45, clear of desk; machine datums after weld/stress relief; no weld in desk pad seat"
+        "8 mm thickness; top Z2; rear Y-59; Four z5 continuous fillets; leg5.0..5.5 clearance envelope at upper and lower plate joints",
+        "Front fillet nominal toe Y-46, maximum envelope Y-45.5; nominal desk edgeY-45; machine datums after weld/stress relief; no weld in desk pad seat"
       ],
       "prototype_status": "工程集成候选；加工图与载荷检查未完成",
       "viewer_group": "structure",
@@ -2114,6 +2114,174 @@
       "viewer_group": "structure",
       "print_stl": null,
       "manufacturing_step": "../load-frame/step/B06-309-COAX-BRACKET.step"
+    },
+    {
+      "id": "B06-W01-UPPER-FRONT",
+      "name": "B06-W01-UPPER-FRONT",
+      "category": "weld",
+      "quantity": 1,
+      "material": "S355",
+      "process": "W01 weld seam; NOT a separately purchased or machined component",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -70.00000029802322,
+          -50.999999046325684,
+          -3.000000026077032
+        ],
+        "max": [
+          70.00000029802322,
+          -46.00000008940697,
+          2.0000000949949026
+        ],
+        "size": [
+          140.00000059604645,
+          4.999998956918716,
+          5.000000121071935
+        ]
+      },
+      "stl": "stl/B06-W01-UPPER-FRONT.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Nominal fillet leg5.0; proposed process range5.0..5.5, concave/flat profile within modeled keepout",
+        "Length140; weld procedure, end craters, inspection and distortion control require fabricator qualification"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-W01-UPPER-FRONT.step"
+    },
+    {
+      "id": "B06-W01-LOWER-FRONT",
+      "name": "B06-W01-LOWER-FRONT",
+      "category": "weld",
+      "quantity": 1,
+      "material": "S355",
+      "process": "W01 weld seam; NOT a separately purchased or machined component",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -70.00000029802322,
+          -50.999999046325684,
+          -90.00000357627869
+        ],
+        "max": [
+          70.00000029802322,
+          -46.00000008940697,
+          -85.00000089406967
+        ],
+        "size": [
+          140.00000059604645,
+          4.999998956918716,
+          5.000002682209015
+        ]
+      },
+      "stl": "stl/B06-W01-LOWER-FRONT.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Nominal fillet leg5.0; proposed process range5.0..5.5, concave/flat profile within modeled keepout",
+        "Length140; weld procedure, end craters, inspection and distortion control require fabricator qualification"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-W01-LOWER-FRONT.step"
+    },
+    {
+      "id": "B06-W01-UPPER-REAR",
+      "name": "B06-W01-UPPER-REAR",
+      "category": "weld",
+      "quantity": 1,
+      "material": "S355",
+      "process": "W01 weld seam; NOT a separately purchased or machined component",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -70.00000029802322,
+          -64.00000303983688,
+          -3.000000026077032
+        ],
+        "max": [
+          70.00000029802322,
+          -59.00000035762787,
+          2.0000000949949026
+        ],
+        "size": [
+          140.00000059604645,
+          5.000002682209015,
+          5.000000121071935
+        ]
+      },
+      "stl": "stl/B06-W01-UPPER-REAR.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Nominal fillet leg5.0; proposed process range5.0..5.5, concave/flat profile within modeled keepout",
+        "Length140; weld procedure, end craters, inspection and distortion control require fabricator qualification"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-W01-UPPER-REAR.step"
+    },
+    {
+      "id": "B06-W01-LOWER-REAR",
+      "name": "B06-W01-LOWER-REAR",
+      "category": "weld",
+      "quantity": 1,
+      "material": "S355",
+      "process": "W01 weld seam; NOT a separately purchased or machined component",
+      "color": [
+        0.02199999988079071,
+        0.029999999329447746,
+        0.03999999910593033,
+        1.0
+      ],
+      "color_space": "linear",
+      "bbox": {
+        "min": [
+          -70.00000029802322,
+          -64.00000303983688,
+          -90.00000357627869
+        ],
+        "max": [
+          70.00000029802322,
+          -59.00000035762787,
+          -85.00000089406967
+        ],
+        "size": [
+          140.00000059604645,
+          5.000002682209015,
+          5.000002682209015
+        ]
+      },
+      "stl": "stl/B06-W01-LOWER-REAR.stl",
+      "assembly_role": "structure",
+      "notes": [
+        "Nominal fillet leg5.0; proposed process range5.0..5.5, concave/flat profile within modeled keepout",
+        "Length140; weld procedure, end craters, inspection and distortion control require fabricator qualification"
+      ],
+      "prototype_status": "工程集成候选；加工图与载荷检查未完成",
+      "viewer_group": "structure",
+      "print_stl": null,
+      "manufacturing_step": "../load-frame/step/B06-W01-LOWER-REAR.step"
     },
     {
       "id": "HW-M8-TOP-1",

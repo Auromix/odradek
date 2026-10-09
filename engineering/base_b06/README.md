@@ -1,5 +1,5 @@
 <!-- SPDX-License-Identifier: CC-BY-NC-4.0 -->
-# B06 当前底座：COMPACT-06-STANDALONE 独立验证候选
+# B06 当前底座：COMPACT-07-DFM 独立验证候选
 
 这是 Auromix/odradek 唯一当前底座源。外观、装配与接口板继续在同一仓库收敛，B04/B05保留为历史。**当前尚不是完整底座的制造放行包**；缺口见下方，不用几何检查替代载荷、真实插头或电气测试。
 
@@ -9,13 +9,15 @@
 
 ## 当前文件
 
+- [制造定义](manufacturing.md)、[分层制造BOM](build/B06-manufacturing-bom.csv)、[19步首件流转表](build/B06-first-article-traveler.csv)：纳入焊接、PCBA混合装配、端子叠层与未关闭线束，状态与实际证据分开记录。
+
 - [Blender 总装](build/exterior/ODR-BASE-B06-COMPACT.blend)、[离线3D查看器](build/exterior/index.html)。本地预览通过HTTP打开。
 - [独立试验工装3D](build/standalone-test/index.html)、[工装STEP总装](build/standalone-test/B06-standalone-fixture.step)、[工装加工评审图](build/standalone-test/drawings/B06-standalone-fixture-review.pdf)。这套工装不属于产品五件打印件，装置本身仍须校验后才能加载。
 - [五件打印STL包](build/exterior/B06-print-fit.zip)、[打印件目录](build/exterior/print-parts/)。这个ZIP只包含打印件及当前几何报告，不含完整制造BOM。
 - [机械BOM](build/B06-mechanical-bom.csv)与[装配顺序](assembly.md)：37行备料规划，含灯板及其隐藏紧固件，尚缺最终线束、光学垫片与外置盒电气项。
 - [原生PWM灯板](../electronics/base-light-b06/README.md)、[灯板制造审计](../electronics/base-light-b06/reports/manufacturing-audit.json)、[灯板安装检查](build/exterior/light-fit-checks.json)。
 - [实际切片评审](build/exterior/slice-review-checks.json)、[五件参考3MF](build/exterior/slice-review/)；参考P1S配置，实际打印机必须重新切片。
-- [精确结构STEP总装](build/load-frame/B06-load-frame.step)、[分件STEP](build/load-frame/step/)、[结构清单](build/load-frame/manifest.json)。58个有效单实体，包含环境和采购件包络；机械臂安装螺钉不再计入底座本体。螺纹用底孔加明确加工注释表示。
+- [精确结构STEP总装](build/load-frame/B06-load-frame.step)、[分件STEP](build/load-frame/step/)、[结构清单](build/load-frame/manifest.json)。62个有效单实体（新增四条名义焊缝），包含环境和采购件包络；机械臂安装螺钉不再计入底座本体。螺纹用底孔加明确加工注释表示。
 - [加工评审图PDF](build/load-frame/drawings/B06-load-frame-review.pdf)：从实际BREP生成的投影、包络、孔位表及加工注释，尚未作为全套制造图放行。
 - [原生嘉立创接口板](../electronics/base-io-b05/README.md)：布线、叠层修正、原生复开DRC0及真实Gerber/IPC356导出已完成。原生目录沿用B05命名，不代表采用旧底座。
 
@@ -49,7 +51,7 @@
 ## 完整底座打样放行仍须完成
 
 1. 已补齐承力/盒架/同轴支架紧固件、加工孔位/螺纹/沉孔注释、装配次序和直线工具检查；仍需焊接工艺与实物工具/公差复核。
-2. 已建立50×14独立PWM灯板，原生制造导出及引脚网络审计通过；当前隐藏M2安装和GH插合空间进行同版装配检查。灯窗软垫、透光样件、5V/PWM控制器和辅助线束仍需关闭；严禁直接接48V。LED板原生STEP部分有效BREP在三角化时接缝不闭合，这些子实体明确以其原生BREP包围盒作保守干涉检查，不把替代包络当作原厂精确模型。
+2. 已建立50×14独立PWM灯板，原生制造导出及引脚网络审计通过；当前隐藏M2安装和GH插合空间进行同版装配检查。灯窗软垫、透光样件、板上48V→5V/PWM控制电路和内部短线仍需关闭；严禁直接接48V。LED板原生STEP部分有效BREP在三角化时接缝不闭合，这些子实体明确以其原生BREP包围盒作保守干涉检查，不把替代包络当作原厂精确模型。
 3. 真实电源插头/RJ45锁扣/双同轴接头与线材的插合、释放、弯曲和应变释放；现有保守包络不是采购闭环。
 4. 切片及小样配合公差检查、完整制造BOM、当前PDF尺寸/孔表与STEP/STL/PCB指纹一致性。
 5. 完整无动力打样装配文件放行；样件回来后按独立流程做桌夹防滑/桌面压力、通电温升/保护和链路测试。制造文件放行与带载运行放行分开。
@@ -59,3 +61,5 @@
 用含CadQuery、trimesh、manifold3d、numpy、scipy、shapely、reportlab及svglib的Python运行`verify_base.py --blender /绝对路径/Blender`；添加`--render`生成评审图片。重建默认拒绝读取臂身文件并记录输入哈希。现有切片需与实际STL的顶点及三角面匹配，不匹配即停止。机械臂参考通过`blender_compact.py -- --with-arm-root --no-render`输出到单独`build/arm-integration/`；它不是第二份底座源。修改后重新生成受影响报告及指纹，实物记录版本失配后不可沿用。
 
 CC-BY-NC-4.0；Odradek / Auromix contributors。
+
+2026-10-09供电修订：前灯目标由底座板就地产生5V，经内部短GH线连接；现有原生IO板尚未实现该电源/控制功能，既有PCB打样文件仅对应当前被动接口板。见制造定义中的转换器候选和验证条件。

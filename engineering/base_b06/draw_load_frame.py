@@ -17,11 +17,11 @@ parts=cad.make(30)
 # Symmetric mirrored hangers both shown; purchased hardware listed, not machined.
 selected=[]
 for p in parts:
- if p['category'] in ('environment','hardware','printed'):continue
+ if p['category'] in ('environment','hardware','printed','weld'):continue
  if p['id'].startswith('B06-105-POST-') and not p['id'].endswith('-1'):continue
  if p['id'].endswith('--1') and ('SPREADER' in p['id'] or 'PRESS-PAD' in p['id']):continue
  selected.append(p)
-REV='B06-LOAD-02-STANDALONE'
+REV='B06-LOAD-03-WELD'
 W,H=landscape(A3);c=canvas.Canvas(str(OUT/'B06-load-frame-review.pdf'),pagesize=(W,H))
 c.setTitle('B06 load frame - coordinated engineering review')
 def text(x,y,s,size=9):c.setFont('Helvetica',size);c.drawString(x*mm,y*mm,s)
@@ -69,9 +69,9 @@ y=252
 notes=[
  'W01 consists of B06-101 deck, B06-102 rear web, B06-103 lower jaw; STEP assembly gives nominal position.',
  'Web top Z2 touches deck bottom Z2; web bottom Z-90 touches jaw top Z-90. NO overlapping plates.',
- 'Continuous steel fillet weld, leg size z6 (nominal throat 4.24), both accessible sides of each plate joint.',
- 'Do not weld desk pad face, clamp threaded bores or shelf tapped holes. Keep front upper fillet within Y-51..-45.',
- 'Weld beads NOT represented by CAD solids; welding procedure, inspection and distortion control pending.',
+ 'Four continuous steel fillets z5 (nominal throat3.54), leg5.0..5.5, flat/concave profile within maximum modeled envelope.',
+ 'Do not weld desk pad face, clamp threaded bores or shelf tapped holes. Front toe nominalY-46 / maximumY-45.5; tabletop rear datumY-45.',
+ 'Nominal weld beads are separate CAD seam solids, not machined parts. Maximum5.5 envelope clearance checked; WPS remains pending.',
  'Fixture assembly; weld sequence/stress relief agreed with fabricator; machine designated datums after weld.',
  'Bought clamp screws: 2x Ganter DIN6332-M12-100-SK (AF6); feet: 2x DIN6311-25-S with snap ring.',
  'Foot flat D25 face points UP to aluminium spreader. Supplier swivel bore/pin seat is envelope only; sample fit required.',

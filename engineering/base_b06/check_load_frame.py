@@ -46,13 +46,28 @@ screen={'assumed_loads':{'overturning_Nm':150,'vertical_N':500,'lateral_N':100,'
  'shelf_3kg_each_side_force_N':3*9.81/2,'shelf_cantilever_assumed_mm':315,
  'shelf_simple_beam_deflection_mm':(3*9.81/2)*315**3/(3*69000*(8*20**3/12)),
  'status':'Screen only; no certified material, actual weld/desk strength, friction, deflection model or operating-load qualification'}
-report={'revision':'B06-LOAD-02-STANDALONE','arm_required':False,'cad_source_sha256':hashlib.sha256(Path(cad.__file__).read_bytes()).hexdigest(),
- 'desk_samples':results,'masses':masses,'total_modeled_mass_kg':sum(m['mass_kg'] for m in masses),
+# Check maximum permitted bead envelope against nominal desk and all
+# unrelated metal/soft/printed/hardware parts at every sampled desk thickness.
+weld_checks=[]
+for desk in (15,30,60):
+ ps=cad.make(desk)
+ for side in ('FRONT','REAR'):
+  for label,z,up in [('UPPER',2,False),('LOWER',-90,True)]:
+   shape=cad.weld_bead(side,z,up,5.5);hits=[]
+   for p in ps:
+    if p['id'].startswith(('B06-W01-','B06-101','B06-102','B06-103')):continue
+    v=shape.intersect(p['shape']).Volume()
+    if v>.001:hits.append({'part':p['id'],'volume_mm3':v})
+   weld_checks.append({'desk_mm':desk,'seam':label+'-'+side,'maximum_leg_mm':5.5,'collisions':hits})
+assert all(not c['collisions'] for c in weld_checks),weld_checks
+report={'revision' :'B06-LOAD-03-WELD','arm_required':False,'cad_source_sha256':hashlib.sha256(Path(cad.__file__).read_bytes()).hexdigest(),
+ 'desk_samples':results,'maximum_weld_envelope_checks':weld_checks,'front_to_nominal_desk_edge_clearance_mm':0.5,'masses':masses,'total_modeled_mass_kg':sum(m['mass_kg'] for m in masses),
  'screening':screen,'exact_static_clearance_pass':all(not p['interferences'] for p in results),
- 'limits':['Exact nominal BREP only; threads, supplier swivels and weld beads simplified/omitted.',
+ 'limits':['Exact nominal BREP only; threads, supplier swivels simplified; nominal weld beads included, actual profiles unqualified.',
  'Bolts/washers included as purchase envelopes; root mesh and plug/tool actuation remain separate integration tests.',
  '15/30/60mm sampled; continuous installation, assembly and table-load tests pending.']}
 (OUT/'checks.json').write_text(json.dumps(report,indent=2)+'\n')
 print('LOAD_CHECK',report['exact_static_clearance_pass'],'MASS_KG',round(report['total_modeled_mass_kg'],3))
 for r in results:
  for p in r['interferences']:print(r['desk_mm'],p)
+if not report['exact_static_clearance_pass']:raise SystemExit('FAIL: unapproved structural interference')

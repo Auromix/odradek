@@ -281,7 +281,7 @@ def main():
     camera,target=render_setup();SCENE.cycles.samples=20
     SCENE.render.resolution_x=1440;SCENE.render.resolution_y=1080
     point_camera(camera,(.30,.43,.29),target,.32)
-    manifest=dict(revision='B06-COMPACT-06-STANDALONE'+('-ARM-REF' if WITH_ARM_ROOT else ''),length_unit='mm',module='arm_integration_reference' if WITH_ARM_ROOT else 'standalone_base',
+    manifest=dict(revision='B06-COMPACT-07-DFM'+('-ARM-REF' if WITH_ARM_ROOT else ''),length_unit='mm',module='arm_integration_reference' if WITH_ARM_ROOT else 'standalone_base',
         arm_reference_included=WITH_ARM_ROOT,
         interface_contract_sha256=__import__('hashlib').sha256((HERE/'interface-contract.json').read_bytes()).hexdigest(),
         scope=PARAMETERS['prototype_scope'],parameters=PARAMETERS,parts=DESCRIPTORS,

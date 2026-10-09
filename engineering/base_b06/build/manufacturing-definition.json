@@ -1,0 +1,49 @@
+{
+  "revision": "B06-COMPACT-07-DFM",
+  "production_released": false,
+  "arm_required": false,
+  "bom_lines": 70,
+  "native_IO_component_quantity": 6,
+  "native_lamp_component_quantity": 12,
+  "first_article_steps": 19,
+  "procurement_rule": "Populated PCBA parent OR its bare board/component children; never both",
+  "open_definition_items": [
+    "W01",
+    "EXT-48V-MATE",
+    "RF-BULKHEAD",
+    "POWER-M3-LUG",
+    "BOND-M3-LUG",
+    "STUD-HALF-NUT",
+    "FRAME-BOND-LUG",
+    "FRAME-BOND-SCREW",
+    "H-POWER",
+    "H-BOND",
+    "H-ECAT",
+    "H-RF",
+    "H-LAMP",
+    "LOCAL-5V-CONVERTER",
+    "LOCAL-5V-CIN",
+    "LOCAL-5V-BLEED",
+    "LIGHT-SHIM",
+    "CABLE-RESTRAINT",
+    "FINISH"
+  ],
+  "stud_stack_screen": {
+    "thread_height_min_mm": 2.8,
+    "lug_nominal_mm": 0.79,
+    "ordinary_nut_nominal_mm": 2.4,
+    "ordinary_stack_nominal_mm": 3.19,
+    "ordinary_stack_full_engagement_feasible": false,
+    "thin_nut_candidate_mm": 1.8,
+    "candidate_nominal_stack_mm": 2.59,
+    "candidate_gap_to_min_thread_mm": 0.21,
+    "tolerances_and_retention_qualified": false
+  },
+  "sources_sha256": {
+    "electronics/base-io-b05/manufacturing/b06-io-prototype/B06-IO-Native-BOM.csv": "ad61e9b2437e1440bfcc7c18af0d57bc19da92adb3e4f4ea57f13a1f9d24db24",
+    "electronics/base-light-b06/manufacturing/bom.csv": "2bb8ea4adb6daf73d6b32129b5fffb86fa86f5b5a55e14a7d9bcbcb92bbaa331",
+    "base_b06/manufacturing.md": "35fd95148d302dd8e9c033d02955c510940e38e471a70c24ce6d051bab6f1c4c",
+    "base_b06/build/B06-mechanical-bom.csv": "4ba88a206ba1952e7b4f8f732c74e80aacbc68d04deedea343187d2fe491f4bd"
+  },
+  "digital_definition_check": "Native BOM child counts, unique IDs and source hashes only; open items are NOT qualified"
+}

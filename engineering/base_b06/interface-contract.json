@@ -1,9 +1,16 @@
 {
   "schema": "odradek.base.interface.v1",
-  "revision": "B06-IF-01",
+  "revision": "B06-IF-02-LOCAL-LAMP-POWER",
   "length_unit": "mm",
   "status": "engineering candidate; physical qualification pending",
-  "datum": {"table_top_z": 0, "axis_xy": [0,75], "positive_y": "desk interior"},
+  "datum": {
+    "table_top_z": 0,
+    "axis_xy": [
+      0,
+      75
+    ],
+    "positive_y": "desk interior"
+  },
   "mechanical": {
     "base_mating_plane_z": 58,
     "flange_outer_diameter": 160,
@@ -17,23 +24,130 @@
     "cover_neck_top_z": 74,
     "arm_required_to_build_or_test_base": false,
     "counterpart_envelope": "Adapter OD134 fits from above; existing arm OD140 root must be fitted from below before cover closure",
-    "candidate_loads_at_plane": {"axial_N":500,"horizontal_N":100,"bending_Nm":150,"torsion_Nm":40},
+    "candidate_loads_at_plane": {
+      "axial_N": 500,
+      "horizontal_N": 100,
+      "bending_Nm": 150,
+      "torsion_Nm": 40
+    },
     "loads_qualified": false,
-    "desk_thickness_mm": [15,60],
-    "shelf_box_budget_mm": [180,150,50],
+    "desk_thickness_mm": [
+      15,
+      60
+    ],
+    "shelf_box_budget_mm": [
+      180,
+      150,
+      50
+    ],
     "shelf_box_budget_kg": 3
   },
   "electrical": {
-    "ethercat": {"external":"J1, Würth615008160221","internal":"J2, same part","map":"1..8 straight through; shields CHASSIS","base_function":"passive 8P8C interconnect only","master_or_slave_inside_base":false,"protocol_validation":"external master + standalone slave, no arm"},
-    "power": {"nominal_V":48,"header":"Phoenix1720466","mate":"Phoenix1718481","pin_map":{"J3.1":"VIN48 -> J4","J3.2":"RETURN48 -> J5"},"current_rating_A":null,"protection_location":"external box or current-limited bench; no local protection fitted","hot_plug_allowed":false},
-    "coax": {"ports":["CAM-A","CAM-B"],"bulkhead":"Amphenol132170, SMA female/female, 50ohm","function":"two independent passive coax paths; no GMSL decoder or camera required for RF bench qualification","poc_voltage_current_rating":null},
-    "chassis":{"terminal":"J6","distinct_from_48V_return":true,"protective_earth_classification":"not yet defined; CHASSIS is not an established PE claim"},
-    "lamp": {"header":"BM03B-GHS-TBT(LF)(SN)","housing":"GHR-03V-S","contact":"SSHL-002T-P0.2","map":{"1":"5V_IN","2":"PWM_IN","3":"GND"},"regulated_supply_V":[4.75,5.25],"bench_branch_limit_mA":100,"pwm_logic_V":[3.3,5],"proposed_pwm_Hz":1000,"rear_auxiliary_route":"pending user choice; bench harness is temporary, not product harness","connect_to_48V":false}
+    "ethercat": {
+      "external": "J1, Würth615008160221",
+      "internal": "J2, same part",
+      "map": "1..8 straight through; shields CHASSIS",
+      "base_function": "passive 8P8C interconnect only",
+      "master_or_slave_inside_base": false,
+      "protocol_validation": "external master + standalone slave, no arm"
+    },
+    "power": {
+      "nominal_V": 48,
+      "header": "Phoenix1720466",
+      "mate": "Phoenix1718481",
+      "pin_map": {
+        "J3.1": "VIN48 -> J4",
+        "J3.2": "RETURN48 -> J5"
+      },
+      "current_rating_A": null,
+      "protection_location": "external box or current-limited bench; no local protection fitted",
+      "hot_plug_allowed": false
+    },
+    "coax": {
+      "ports": [
+        "CAM-A",
+        "CAM-B"
+      ],
+      "bulkhead": "Amphenol132170, SMA female/female, 50ohm",
+      "function": "two independent passive coax paths; no GMSL decoder or camera required for RF bench qualification",
+      "poc_voltage_current_rating": null
+    },
+    "chassis": {
+      "terminal": "J6",
+      "distinct_from_48V_return": true,
+      "protective_earth_classification": "not yet defined; CHASSIS is not an established PE claim"
+    },
+    "lamp": {
+      "header": "BM03B-GHS-TBT(LF)(SN)",
+      "housing": "GHR-03V-S",
+      "contact": "SSHL-002T-P0.2",
+      "map": {
+        "1": "5V_IN",
+        "2": "PWM_IN",
+        "3": "GND"
+      },
+      "regulated_supply_V": [
+        4.75,
+        5.25
+      ],
+      "bench_branch_limit_mA": 100,
+      "pwm_logic_V": [
+        3.3,
+        5
+      ],
+      "proposed_pwm_Hz": 1000,
+      "connect_to_48V": false,
+      "product_supply_location": "Local base PCB48V-to5V; user selected no separate5V supply lead to desk box",
+      "product_internal_connection": "Short internal GH3-core:5V/PWM/GND",
+      "local_converter_implemented_in_current_native_PCB": false,
+      "pwm_control_implementation": "Required; not implemented by passive EtherCAT straight-through; local programmable circuit / command path still to define",
+      "converter_candidate": {
+        "part": "RECOM R-78HB5.0-0.5",
+        "input_V": [
+          9,
+          72
+        ],
+        "output_V": 5,
+        "output_max_A": 0.5,
+        "package_mm": [
+          11.5,
+          8.5,
+          17.5
+        ],
+        "minimum_load_mA": 10,
+        "source": "https://recom-power.com/pdf/Innoline/R-78HB-0.5.pdf",
+        "status": "Selection candidate; no native PCB or MCAD incorporation yet"
+      }
+    }
   },
   "module_boundary": {
-    "base_owned":["metal clamp/load frame","shell/lid/lens/carrier","inward box shelf","passive IO PCB","dual coax bracket","PWM lamp PCB"],
-    "external_equipment":["48V protection and current-limited supply","5V/PWM source","EtherCAT master and standalone slave","GMSL serializer/receiver bench or calibrated RF analyser","calibrated loads and restraint fixture"],
-    "arm_exchange_only":["mating flange","mass/CoM/inertia","six-axis load envelope","cable bundle and service keep-outs"],
-    "not_base_acceptance":["arm kinematics/trajectory","motor bus selection","camera optical calibration","whole robot dynamic payload qualification"]
+    "base_owned": [
+      "metal clamp/load frame",
+      "shell/lid/lens/carrier",
+      "inward box shelf",
+      "passive IO PCB",
+      "dual coax bracket",
+      "PWM lamp PCB",
+      "Required local5V lamp supply and PWM circuit (not implemented in current native PCB)"
+    ],
+    "external_equipment": [
+      "48V protection and current-limited supply",
+      "Temporary5V/PWM source for lamp-board-only bench test; final integrated test uses local base supply",
+      "EtherCAT master and standalone slave",
+      "GMSL serializer/receiver bench or calibrated RF analyser",
+      "calibrated loads and restraint fixture"
+    ],
+    "arm_exchange_only": [
+      "mating flange",
+      "mass/CoM/inertia",
+      "six-axis load envelope",
+      "cable bundle and service keep-outs"
+    ],
+    "not_base_acceptance": [
+      "arm kinematics/trajectory",
+      "motor bus selection",
+      "camera optical calibration",
+      "whole robot dynamic payload qualification"
+    ]
   }
 }
