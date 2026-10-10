@@ -1,0 +1,131 @@
+{
+  "revision": "A19-CURRENT-LOAD27",
+  "source_assembly_sha256": "4e76c049091d411b66d972eefcb2f9b3385bfe493a923923636e2e41323e844d",
+  "source_root_manifest_sha256": "f979363cf995c70cbc769b21c7f8773bd72a1c99a8e34e958de3a9b0d0359353",
+  "sample_count": 4099,
+  "payload_kg": 3,
+  "mount_origin_J1_rotor_mm": [
+    0.0,
+    68.5,
+    114.0
+  ],
+  "gravity_load_cases": [
+    {
+      "id": "current-gravity-pose-0",
+      "q_deg": [
+        0.0,
+        110.0,
+        0.0,
+        -145.0,
+        125.0,
+        0.0,
+        0.0
+      ],
+      "force_N": [
+        0.0,
+        0.0,
+        -119.96273383063132
+      ],
+      "moment_Nmm": [
+        3798.5261981129274,
+        29629.755957093494,
+        0.0
+      ],
+      "J2_virtual_work_error_Nm": 0.0
+    },
+    {
+      "id": "current-gravity-pose-2",
+      "q_deg": [
+        0.0,
+        90.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_N": [
+        0.0,
+        0.0,
+        -119.96273383063132
+      ],
+      "moment_Nmm": [
+        3798.5261981129274,
+        48149.2073602041,
+        0.0
+      ],
+      "J2_virtual_work_error_Nm": 4.973799150320701e-14
+    },
+    {
+      "id": "current-gravity-pose-777",
+      "q_deg": [
+        90.703125,
+        11.435756744398716,
+        -98.016,
+        84.62099125364429,
+        18.26446280991736,
+        19.035047792444246,
+        22.806838998575216
+      ],
+      "force_N": [
+        0.0,
+        0.0,
+        -119.96273383063132
+      ],
+      "moment_Nmm": [
+        29063.73059988879,
+        9013.458851396155,
+        0.0
+      ],
+      "J2_virtual_work_error_Nm": 1.7763568394002505e-15
+    },
+    {
+      "id": "current-gravity-pose-853",
+      "q_deg": [
+        70.078125,
+        81.39460448102423,
+        -53.216,
+        29.11078717201167,
+        -8.84297520661157,
+        -4.342284934000908,
+        -69.37309179727254
+      ],
+      "force_N": [
+        0.0,
+        0.0,
+        -119.96273383063132
+      ],
+      "moment_Nmm": [
+        12857.22256555851,
+        46903.77741629584,
+        0.0
+      ],
+      "J2_virtual_work_error_Nm": 1.4210854715202004e-14
+    }
+  ],
+  "material": {
+    "candidate": "6061-T651 certified plate; no weld",
+    "E_MPa": 68300,
+    "poisson_assumption": 0.33,
+    "density_kg_mm3": 2.7e-06,
+    "typical_E_source": "https://online.kaiseraluminum.com/depot/PublicProductInformation/Document/1015/Kaiser_Aluminum_6061_Sheet_Coil_and_Plate.pdf",
+    "minimum_strength_certificate_required": true
+  },
+  "passive_assist_lower_bound": {
+    "J2_deg": -7,
+    "raw_min_Nm": -17.723558758460133,
+    "raw_max_Nm": 24.580331283651212,
+    "ideal_assist_midpoint_Nm": -3.4283862625955397,
+    "minimum_possible_worst_residual_Nm": 21.151945021055674
+  },
+  "assist_extra_full_moving_allowance_kg": 0.3,
+  "unfiltered_other_joint_samples": 4099,
+  "ideal_torque_is_real_hardware": false,
+  "production_release": false,
+  "limits": [
+    "This load set updates wrist/root own assembly mass, but all structure remains prototype plastic-density budget.",
+    "Any J2-only passive torque cannot beat half the sample torque interval, even with ideal unrestricted force. This is a lower bound, not a realizable spring.",
+    "Actual passively assisted design needs measured force/hysteresis/temperature, linkage geometry and bracket loads; no spring is selected by this table.",
+    "No dynamic, braking, collision stop, metal-mass update or physical qualification."
+  ]
+}

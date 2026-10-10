@@ -1,0 +1,50 @@
+{
+  "target_mesh_size_mm": 4,
+  "mesh_sha256": "bdecf4644df7b12fbd2799552e0141d2055aa9def96e4320bd10cf17f18fb6e0",
+  "vertices": 12552,
+  "tetrahedra": 48177,
+  "quadratic_displacement_DOFs": 245742,
+  "geometric_mesh": "straight-sided tetrahedra from exact BREP boundary tessellation; displacement quadratic, not quadratic geometry",
+  "metal_root_self_weight_wrench_N_Nmm": [
+    0.0,
+    0.0,
+    -5.725045986565462,
+    145.12472297099274,
+    -0.5019524475144229,
+    0.0
+  ],
+  "cases": [
+    {
+      "case": "current-gravity-pose-0",
+      "maximum_all_dof_displacement_mm": 0.08417172912754611,
+      "strain_energy_Nmm": 7.243054334122881,
+      "max_quadrature_VM_MPa": 51.79324880379274,
+      "reaction_balance_max_abs": 4.908406481263228e-08,
+      "free_residual_norm_ratio": 4.0765832891797504e-10
+    },
+    {
+      "case": "current-gravity-pose-2",
+      "maximum_all_dof_displacement_mm": 0.11882618163726531,
+      "strain_energy_Nmm": 17.916590021982493,
+      "max_quadrature_VM_MPa": 81.6147935192165,
+      "reaction_balance_max_abs": 9.930317901307717e-09,
+      "free_residual_norm_ratio": 3.8548542224018925e-10
+    },
+    {
+      "case": "current-gravity-pose-777",
+      "maximum_all_dof_displacement_mm": 0.7819341369583802,
+      "strain_energy_Nmm": 79.18749007782962,
+      "max_quadrature_VM_MPa": 121.061190047951,
+      "reaction_balance_max_abs": 3.495185248467859e-07,
+      "free_residual_norm_ratio": 2.461956675480074e-09
+    },
+    {
+      "case": "current-gravity-pose-853",
+      "maximum_all_dof_displacement_mm": 0.32744053600866785,
+      "strain_energy_Nmm": 29.223461218224717,
+      "max_quadrature_VM_MPa": 118.16815820221329,
+      "reaction_balance_max_abs": 2.48607516347977e-07,
+      "free_residual_norm_ratio": 8.591024670324506e-10
+    }
+  ]
+}

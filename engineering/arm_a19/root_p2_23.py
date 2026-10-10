@@ -33,15 +33,21 @@ def solve(size,d):
             return dot(force,v)
         loads.append(asm(traction,fb))
     B=np.array(loads).T;G=np.column_stack([wrench(F) for F in loads]);results=[]
+    body_load=np.zeros(basis.N)
+    if d.get('include_metal_root_self_weight',False):
+        @LinearForm
+        def self_weight(v,w):return -9.81*d['material']['density_kg_mm3']*v[2]
+        body_load=asm(self_weight,basis)
     for case in d['gravity_load_cases']:
         target=np.r_[case['force_N'],case['moment_Nmm']];F=B@np.linalg.solve(G,target);assert np.max(abs(wrench(F)-target))<1e-7
-        u=np.zeros(basis.N);u[free]=lu.solve(F[free]);R=K@u-F;balance=np.max(abs(wrench(R)+target));residual=np.linalg.norm(R[free])/np.linalg.norm(F);assert balance<1e-5 and residual<1e-7
+        F+=body_load;total_target=target+wrench(body_load)
+        u=np.zeros(basis.N);u[free]=lu.solve(F[free]);R=K@u-F;balance=np.max(abs(wrench(R)+total_target));residual=np.linalg.norm(R[free])/np.linalg.norm(F);assert balance<1e-5 and residual<1e-7
         grad=basis.interpolate(u).grad;eps=(grad+grad.swapaxes(0,1))/2;stress=2*mu*eps+lam*np.eye(3)[:,:,None,None]*np.einsum('iieq->eq',eps)
         dev=stress-np.eye(3)[:,:,None,None]*np.einsum('iieq->eq',stress)[None,None]/3;vm=np.sqrt(1.5*np.sum(dev*dev,axis=(0,1)))
         energy=float(np.sum(.5*np.sum(stress*eps,axis=(0,1))*basis.dx));matrix_energy=float(.5*u@(K@u));assert abs(energy-matrix_energy)/matrix_energy<1e-8
         disp=np.linalg.norm(np.column_stack([u[z] for z in components]),axis=1)
         results.append(dict(case=case['id'],maximum_all_dof_displacement_mm=float(max(disp)),strain_energy_Nmm=energy,max_quadrature_VM_MPa=float(vm.max()),reaction_balance_max_abs=float(balance),free_residual_norm_ratio=float(residual)))
-    return dict(target_mesh_size_mm=size,mesh_sha256=c.sha(path),vertices=int(m.nvertices),tetrahedra=int(m.nelements),quadratic_displacement_DOFs=int(basis.N),geometric_mesh='straight-sided tetrahedra from exact BREP boundary tessellation; displacement quadratic, not quadratic geometry',cases=results)
+    return dict(target_mesh_size_mm=size,mesh_sha256=c.sha(path),vertices=int(m.nvertices),tetrahedra=int(m.nelements),quadratic_displacement_DOFs=int(basis.N),geometric_mesh='straight-sided tetrahedra from exact BREP boundary tessellation; displacement quadratic, not quadratic geometry',metal_root_self_weight_wrench_N_Nmm=wrench(body_load).tolist(),cases=results)
 
 def main():
     path=OUT/'manifest.json';d=json.loads(path.read_text());linear=json.loads((OUT/'linear-fea18.json').read_text());assert linear['source_manifest_sha256']==c.sha(path)

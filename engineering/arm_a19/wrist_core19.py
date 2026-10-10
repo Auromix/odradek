@@ -48,9 +48,13 @@ def main():
         # upstream covers removed; no sculpted motor/cable shortcuts.
         s=g.drill(s,fixed+off+delta+n*8,n,9.5,28)
     mounts=[]
-    for angle in [45,135,225,315]:
+    for angle in [145,165,185,195]:
         t=math.radians(angle);q=fixed+off+np.array([57*math.cos(t),0,57*math.sin(t)])
-        s=g.drill(s,q-n*.1,n,3.5,8.2);mounts.append(dict(angle_deg=angle,p_mm=q.tolist(),normal=n.tolist(),radius_mm=57))
+        # Continue through adjacent socket material, not only the annular
+        # eight-millimetre plate. Flat seat clears the actual spacer envelope.
+        s=g.drill(s,q-n*4.1,n,3.5,20.2)
+        s=g.drill(s,q+n*8,n,7.4,4.2)
+        mounts.append(dict(angle_deg=angle,p_mm=q.tolist(),normal=n.tolist(),radius_mm=57))
     add('A19-S19-fore-spine-RS03-ring',s,4,'J4.rotor',note='Stock tube/socket and C06 fore shell seats retained; native RS03 eight M4 holes and R57 cover stations; no plastic tapped load threads.')
     # Keep actual J6 flange/support pads and move it20mm. A straight L leg
     # connects a native D70 output plate to that unchanged J6 mount.
@@ -92,10 +96,12 @@ def main():
     for pold in rows:
         if pold.get('intentional_heatset_target')=='A16-C05-J6-mount-plate':
             oldshape=load(pold['id']);entry=add(pold['id']+'-X75',oldshape.translate((20,0,0)),pold['owner'],pold['frame'],'hardware')
+            entry.update(mass_kg=pold['mass_kg'],material=pold['material'],note=pold.get('note',''))
             entry['intentional_heatset_target']='A19-S19-RS03-to-J6-L';z=dict(pold['heatset_zone_mm']);z['p']=(np.array(z['p'])+[20,0,0]).tolist();entry['heatset_zone_mm']=z
             replaced.append(pold['id']);heatsets.append(entry['id'])
         elif pold['id'].startswith('A16-C05-H-J6-'):
             entry=add(pold['id']+'-X75',load(pold['id']).translate((20,0,0)),pold['owner'],pold['frame'],'hardware')
+            entry.update(mass_kg=pold['mass_kg'],material=pold['material'],note=pold.get('note',''))
             replaced.append(pold['id'])
     # Small real clearance cut in the adjacent forearm dorsal skin. It has
     # no motor-scaling or render-only masking; retain its fixing seats.
@@ -103,7 +109,22 @@ def main():
     obstacle=load('A16-C06-fore-spine-and-J5-ring')
     obstacle=w.r.load(OUT/'step/A19-S19-fore-spine-RS03-ring.step')
     for delta in [(0,0,0),(.5,0,0),(-.5,0,0),(0,.5,0),(0,-.5,0),(0,0,.5),(0,0,-.5)]:cover=cover.cut(obstacle.translate(delta)).fix()
+    cover=cover.cut(box([119,-100,-100],[200,300,200])).fix()
     add('A19-C19-fore-dorsal',cover,4,'J4.rotor','printed_cover',note='Same A17 exterior and cover fixings; local RS03 bracket clearance reserve0.5mm axis offsets, not a full tolerance qualification.')
+    replaced.append(oldcover)
+    oldcover='A17-C06-fore-ventral';cover=load(oldcover).cut(box([119,-100,-100],[200,300,200])).fix()
+    # Inner relief for actual yaw-roll carrier at the positive J5 limit;
+    # retain outer skin and original85/95mm support seats where feasible.
+    carrier=load('A16-S110-wrist-yaw-roll-L')
+    carrier_row=next(p for p in rows if p['id']=='A16-S110-wrist-yaw-roll-L')
+    for angle in [115,120,125,130]:
+        q=L['poses']['reference'].copy();q[4]=angle;F=w.f.frames(L,q)
+        obstacle=c.transform(carrier,np.linalg.inv(F['J4.rotor'])@F[carrier_row['frame']])
+        for delta in [(0,0,0),(.5,0,0),(-.5,0,0),(0,.5,0),(0,-.5,0),(0,0,.5),(0,0,-.5)]:
+            before=cover.Volume();candidate=cover.cut(obstacle.translate(delta)).fix()
+            assert candidate.Volume()<=before+1e-3
+            cover=candidate
+    add('A19-C19-fore-ventral',cover,4,'J4.rotor','printed_cover',note='Preserve both C06 support stations; cosmetic endX119 leaves1mm planar gap to the larger J5 carapace envelope startingX120.')
     replaced.append(oldcover)
     budget=[dict(id=p['id'],owner=p['owner'],frame=p['frame'],mass_kg=p['mass_kg'],com_mm=p['com_mm']) for p in rows if p['id'] not in replaced]
     budget.extend(dict(id=p['id'],owner=p['owner'],frame=p['frame'],mass_kg=p['mass_kg'],com_mm=p['com_mm']) for p in parts)
@@ -111,6 +132,7 @@ def main():
     q=np.array(list(L['poses'].values())+[[j['limits_deg'][0]+w.f.rs.halton(k,b)*(j['limits_deg'][1]-j['limits_deg'][0]) for j,b in zip(L['joints'],[2,3,5,7,11,13,17])] for k in range(1,4097)],float)
     t=w.f.torque(L,q,3,budget)
     report=dict(revision='A19-WRIST-CORE19',layout=L,base_context=c.base_context(),source_assembly_sha256=c.sha(source),motor_interface=inf,parts=parts,replaces_only=sorted(set(replaced)),cover_mounts=mounts,screw_stacks=screws,refreshed_J6_heatsets=heatsets,sampled_static_max_Nm=np.max(abs(t),axis=0).tolist(),static_sample_count=len(q),undeveloped_cowl_allowance_kg=.15,motor_zero_speed_reference_Nm=[13,28.5,28.5,28.5,13,9.5,3.6],scope='Core-only candidate. Missing J5 cowls/mount hardware; old J6 cover hardware must move with new local seats. All changed-part collision/tool/print checks pending.',production_release=False)
+    for mesh,entry in zip(meshes,parts):mesh.update(entry)
     (OUT/'manifest.json').write_text(json.dumps(report,indent=2)+'\n');(OUT/'meshes.json').write_text(json.dumps(meshes,separators=(',',':'))+'\n')
     print('WRIST19',len(parts),report['sampled_static_max_Nm'],flush=True)
 if __name__=='__main__':main()
