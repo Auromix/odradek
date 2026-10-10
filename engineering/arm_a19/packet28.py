@@ -29,6 +29,18 @@ def main():
         elif p['role']=='purchased_structure':shutil.copy2(source,PACK/'step-stock-parts'/source.name)
     for name in ['manifest.json','review20.json','native-audit26.json','assembly-ledger.csv','load27.json','J2-ideal-passive-limit27.csv','tool31.json','root32.json']:
         shutil.copy2(OUT/name,PACK/name)
+    for name,flag,checker in [('tools37.json','nominal_staged_all_clear','tools37.py'),('paths38.json','all_sampled_paths_clear','paths38.py')]:
+        if (OUT/name).exists():
+            proof=json.loads((OUT/name).read_text());assert proof[flag] and proof['source_assembly_sha256']==c.sha(path)
+            assert proof['source_checker_sha256']==c.sha(HERE/checker)
+            if name=='paths38.json':assert proof['source_tools37_sha256']==c.sha(OUT/'tools37.json')
+            shutil.copy2(OUT/name,PACK/name)
+    if (OUT/'full-review35.json').exists():
+        proof=json.loads((OUT/'full-review35.json').read_text());assert proof['sampled_all_arm_pairs_clear']
+        assert proof['source_sha256'][str(path.relative_to(ROOT))]==c.sha(path) and proof['source_checker_sha256']==c.sha(HERE/'full_review35.py')
+        for source,digest in proof['source_sha256'].items():assert c.sha(ROOT/source)==digest
+        shutil.copy2(OUT/'full-review35.json',PACK/'full-review35.json')
+    if (OUT/'paths38.json').exists():shutil.copy2(HERE/'assembly38.md',PACK/'assembly-stages38.md')
     shutil.copy2(HERE/'harness29.md',PACK/'harness-current.md')
     public=ROOT/native['public_native_path'];assert c.sha(public)==native['public_native_sha256'];shutil.copy2(public,PACK/public.name)
     for name,digest in native['images'].items():
@@ -82,6 +94,11 @@ tool31的18个直线内六角入口在列明的装配阶段无几何相交，仍
 当前仅用于外部支撑、断电、无载装配试配。不是金属生产放行版。实际螺纹／预紧、材料与制造公差、散热、断电保持、电气PCB、GMSL链路和寿命测试未放行。
 ''')
     with (PACK/'README.md').open('a') as fp:
+        if (PACK/'tools37.json').exists():
+            fp.write('\n[常规结构装配顺序38](assembly-stages38.md)说明J1／J3紧固后装骨架、J7轴承从两端预装及接口仓后装。109个电机螺钉名义工具轴，以及五条局部装入／三条台面预装路径在报告列出的有限采样无相交；不含真实工具手柄、连续装入、公差、预紧或带线束装配。\n')
+        if (PACK/'full-review35.json').exists():
+            proof=json.loads((PACK/'full-review35.json').read_text())
+            fp.write(f'\n追加整臂全零件检查35：562项自有件和14个实际电机分区，在{len(proof["checks"])}个有限姿态检查全部零件对，含旧件之间。{proof["exact_distinct_pairs"]}个不同精确相交计算，未发现大于0.08 mm³非许可相交。仅显式螺纹区／热熔配合区扣除，不删除整个零件对；仍不包含底座内件、连续扫掠、公差、真实线束或实物资格。\n')
         if (PACK/'drawings/47-current-part-fit-drawings.pdf').exists():
             fp.write('\n[47页当前名义零件工作图](drawings/47-current-part-fit-drawings.pdf)包含41打印件和6采购结构件；当前孔表与STEP同源，各视图标明CAD坐标与比例，不是金属GD&T发行图。\n')
         if (PACK/'calibration-coupons/manifest.json').exists():
