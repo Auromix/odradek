@@ -1,6 +1,12 @@
 # A16 常规结构路线
 
-**当前试配阶段：** [首件检查](first-sample.md)、 [装配说明](assembly01.md)、[16件本体打印包](build/manufacture01/A16-core-supported-fit.zip)、[18页尺寸工作图](build/manufacture01/A16-core-fit-drawings.pdf)、[紧固件清单](build/manufacture01/hardware-BOM.csv)。根部、骨架加352个名义采购件的三个代表静态姿态检查通过；18件外罩候选也通过同三个姿态的骨架/原厂实体/名义紧固件检查，但外罩安装件未设计；完整走线和3 kg持续负载未放行。尚非整臂生产版本。
+**当前收敛试配资料：** [整臂打印试装包](../../manufacturing/selected/arm-body-a16-fit/A16-complete-body-supported-fit.zip)、[41页打印件工作图](../../manufacturing/selected/arm-body-a16-fit/drawings/41-print-part-fit-drawings.pdf)、[逐段装配](assembly07.md)、[制造放行缺口](release-gates07.md)、[走线边界](harness-boundary07.md)。C03根部、C04肩肘、C05腕部、C06长罩已合并，当前41件打印件、6件金属管材/隔套、494个名义紧固/采购小件。全部外罩现有普通固定结构；三个代表静态姿态和模块预留工具空间检查通过。**只允许外部支撑、断电、空载试装；完整运动、线束和3 kg承载仍未放行。**
+
+完整实际电机Blender保存在本地`work/arm-a16/actual-motors-modules.blend`；公开[自有件Blender](../../manufacturing/selected/arm-body-a16-fit/A16-body-own-parts.blend)不含原厂电机再分发实体。底座读取同一B06源，不改几何、尺寸和协议。
+
+[整合检查](build/assembly07-audit.json)核对41件贴床文件、41+3页当前工作图、541件自有/采购包络、36条罩固定轴线及归档哈希。[运动采样](build/motion07.json)记录修正J6固定点与J7罩裙后26个有限配置通过；不代表全连续运动或任意滑条组合合格。
+
+下面R01/C02说明及其16件骨架包属于历史模块来源；当前装配以整臂试装包的`replacement_chain`为准，不重复安装已替换旧件。
 
 全灵足链候选：J1 RS03；J2/J3/J4 RS04；J5/J6 RS10P；J7 RS00。RS10P 原生减速比25，不叠加传动级。长版轴距340 /185 mm保持，法兰中心净外载目标3 kg。当前仍是制造数据逐模块构建和**有支撑、断电、空载的试装验证**，没有整臂生产发布。
 

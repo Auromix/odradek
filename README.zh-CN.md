@@ -1,6 +1,8 @@
 # Odradek
 
-**2026-10-08：保留长版，A10外观已被用户否定。当前选择[A11三组风格候选](docs/concepts/exploration/arm-body-a11-style-study/README.md)，共用另一个会话的魔鬼鱼底座；[A10机械试装文件](engineering/arm_a10/README.md)与[查看器](docs/viewers/arm-body-a10/index.html)保留作机械输入。裸法兰总外负载目标3 kg，尚未通过实物承载、热与线束验证。**
+**当前臂身（2026-10-10）：** [A16常规结构与完整外罩固定](engineering/arm_a16/README.md)保留340/185mm长版、全灵足关节、已选A连续甲壳和同源B06魔鬼鱼底座。[收敛整臂试装包](manufacturing/selected/arm-body-a16-fit/A16-complete-body-supported-fit.zip)包含41件贴床STL、当前自有STEP、41页打印件及3页管材工作图、BOM、装配/首件记录、运动学和自有件Blender。J6固定点与J7罩裙干涉已修正，26个有限运动采样通过。**当前仅允许外部支撑、断电、空载试装；3kg肩部保持、完整动态线束和金属生产资格仍未通过。** 历史包不与当前替换清单混装。
+
+**2026-10-08历史：保留长版，A10外观被用户否定。当时提供[A11三组风格候选](docs/concepts/exploration/arm-body-a11-style-study/README.md)，共用另一个会话的魔鬼鱼底座；[A10机械试装文件](engineering/arm_a10/README.md)与[查看器](docs/viewers/arm-body-a10/index.html)保留作历史机械输入。**
 
 **2026-10-03 arm body / 本体更新：** [A09直管与平板重做](docs/arm-body-redesign-a09.md) · [七轴查看器](docs/viewers/arm-body-a09/index.html)。当前本体目标为裸臂法兰总外负载3 kg，不装四瓣头；A08外观被否定，A09是加工与比例提案，尚非承载发布版。
 

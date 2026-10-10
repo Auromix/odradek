@@ -7,7 +7,13 @@ sys.path.insert(0,str(c.ROOT/'engineering/arm_a15/robstride01'));import study as
 
 def main():
     budget=[];sources=[]
-    for name in ['root01','skeleton01','covers02','hardware01']:
+    moduled='--modules' in sys.argv
+    if moduled:
+        from assembly_sources import collect
+        rows,source_map,_=collect(last='skins06')
+        sources=[dict(path=p,sha256=digest) for p,digest in source_map.items()]
+        budget=[dict(id=x['id'],owner=x['owner'],frame=x['frame'],mass_kg=x['mass_kg'],com_mm=x['com_mm'],mass_kind='nominal purchased hardware CAD envelope' if x['role']=='hardware' else 'prototype uniform printed CAD or purchased stock material') for x in rows]
+    for name in ([] if moduled else ['root01','skeleton01','covers02','hardware01']):
         p=c.OUT/name/'manifest.json';D=json.loads(p.read_text());sources.append(dict(path=str(p.relative_to(c.ROOT)),sha256=c.sha(p)))
         assert D['layout']==c.L
         budget += [dict(id=x['id'],owner=x['owner'],frame=x['frame'],mass_kg=x['mass_kg'],com_mm=x['com_mm'],mass_kind='nominal purchased steel CAD envelope' if name=='hardware01' else 'prototype uniform printed CAD or purchased stock material') for x in D['parts']]
@@ -52,7 +58,9 @@ def main():
        '352 nominal steel hardware envelopes are summed conservatively, including two solid-ring bearing envelopes. Actual hardware and sliced part masses must be weighed. Harness/connector0.24kg and moving spring/mount0.25kg remain explicit allowances. Internal motor CG and mass split are unmeasured midpoint proxies.',
        'Gas force progression1..1.6,F1+/-10%,0..50C,friction+/-30N are proposed procurement/test assumptions, not supplier guarantees.',
        'No static torque value proves thermal holding, dynamics, brake/fall behavior, enclosure cooling, bearing reactions, material strength or continuous collision/cable clearance. Plastic fit remains unpowered and unloaded.'])
-    (c.OUT/'gravity.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+    result['assembly_modules_included']=moduled
+    if moduled:result['limits'][1]='All current module hardware envelopes, including brass inserts and conservative solid-ring bearings; sliced parts and real purchased hardware must be weighed. Wires0.24kg and moving spring/mount0.25kg remain allowances.'
+    (c.OUT/('gravity-modules.json' if moduled else 'gravity.json')).write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     print('CAD_MASS',result['own_CAD_mass_kg'],'RAW3',maxima,'SPRING_ASSUMPTION',opt.x,worst(opt.x),'VIRTUALWORK',max(errors),flush=True)
 
 if __name__=='__main__':main()

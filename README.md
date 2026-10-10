@@ -1,6 +1,6 @@
 # Odradek
 
-**最新本体阶段（2026-10-10）：** [A16常规结构试配](engineering/arm_a16/README.md)使用全灵足原生关节、常规法兰/连接板/标准管和分体外罩，保持340/185 mm长版与3 kg法兰中心目标，读取同一份当前B06底座。已生成[本体16件打印与STEP试配包](engineering/arm_a16/build/manufacture01/A16-core-supported-fit.zip)、18页工作图、管件DXF和紧固件BOM。三个代表静态姿态的骨架及名义紧固件检查通过。**外罩、连通线束、持续负载和整臂生产资格未放行**；下文A11–A15各保留其历史或研究范围。
+**最新本体阶段（2026-10-10）：** [A16完整外罩固定试配](engineering/arm_a16/README.md)使用全灵足原生关节、常规法兰/连接板/标准管、分体鞍座和外罩，保持340/185 mm长版与3 kg法兰中心目标，读取同一份当前B06底座。[收敛整臂试装包](manufacturing/selected/arm-body-a16-fit/A16-complete-body-supported-fit.zip)独立收录41件贴床STL、当前自有STEP、41页打印件＋3页管材工作图、完整BOM、装配/首件检查、运动学和[自有件Blender](manufacturing/selected/arm-body-a16-fit/A16-body-own-parts.blend)。全部外罩已有普通固定结构；修正J6横摆干涉后，26个有限运动采样通过。**仅外部支撑、断电、空载打印试装；3 kg肩部保持、完整线束、金属骨架与生产资格未放行。** 下文A11–A15及旧A16骨架包保留其历史或研究范围，当前装配按收敛包替换清单。
 
 **最新供应商决策（2026-10-09）：** 本体七个关节统一使用灵足RobStride，不采用脉塔MYACTUATOR。[A15-RS01](engineering/arm_a15/robstride01/README.md)保留长版与法兰中心3 kg目标，提供独立质量预算、空载/满载重力及理想肩部补偿筛查；RS02/RS10P原厂STEP已取得并按原尺度导入本机Blender检查场景。新版总装、真实补偿和生产资格尚未冻结。
 

@@ -1,14 +1,23 @@
 # SPDX-License-Identifier: CC-BY-NC-4.0
 """Local-only exact-source interactive viewer; cannot imply motion qualification."""
 from pathlib import Path
-import json,hashlib
+import json,hashlib,sys
 ROOT=Path(__file__).resolve().parents[2];HERE=Path(__file__).parent
-data=json.loads((ROOT/'work/arm-a16/viewer-data.json').read_text())
+MODULED='--modules' in sys.argv
+data=json.loads((ROOT/('work/arm-a16/viewer-modules-data.json' if MODULED else 'work/arm-a16/viewer-data.json')).read_text())
+if MODULED:
+    colors={'printed_structure':[.055,.08,.095,1],'supplier_reference':[.08,.10,.12,1]}
+    for p in data['long']['parts']:
+        if p['role'] in colors:p['color']=colors[p['role']]
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-native=json.loads((HERE/'build/native-audit.json').read_text())
+native=json.loads((HERE/'build'/('native-modules-audit.json' if MODULED else 'native-audit.json')).read_text())
 assert data['long']['layout']==native['layout']
 assert data['long']['sha256']==native['native_sha256']==sha(ROOT/native['native_path'])
 for source in native['source_files']:assert sha(ROOT/source['path'])==source['sha256']
+if MODULED:
+    motion=json.loads((HERE/'build/motion07.json').read_text())
+    assert motion['layout']==data['long']['layout'] and motion['sampled_clear']
+    for relative,digest in motion['source_sha256'].items():assert sha(ROOT/relative)==digest
 data['long']['known_conflicts']=[]
 for name in ['skeleton01','hardware01','covers02']:
     review=HERE/'build'/name/'review.json'
@@ -26,7 +35,7 @@ for pose in {x['pose'] for x in R['collisions']}:
     data['long']['known_conflicts'].append(dict(q=data['long']['layout']['poses'][pose],joint=rows[0]['a']+' / '+rows[0]['b'],angle=''))
 script=(ROOT/'engineering/arm_a12/wrist02/build_viewer.py').read_text()
 script=script.replace("ROOT=Path(__file__).resolve().parents[3]","ROOT=Path(__file__).resolve().parents[2]")
-script=script.replace("OUT=ROOT/'work/arm-a12/wrist02/viewer-actual' if ACTUAL else ROOT/'docs/viewers/arm-body-a12-wrist02'","OUT=ROOT/'work/arm-a16/viewer-actual'")
+script=script.replace("OUT=ROOT/'work/arm-a12/wrist02/viewer-actual' if ACTUAL else ROOT/'docs/viewers/arm-body-a12-wrist02'","OUT=ROOT/'work/arm-a16/"+('viewer-modules' if MODULED else 'viewer-actual')+"'")
 line="data=json.loads((ROOT/'work/arm-a12/wrist02/actual-viewer.json' if ACTUAL else ROOT/'work/arm-a12/wrist02/public-viewer.json').read_text())"
 assert line in script;script=script.replace(line,'data=MODEL')
 script=script.replace("root.position.set(0,.075,.0346)","root.position.set(0,.075,0)")
@@ -42,5 +51,13 @@ t=t.replace("document.getElementById('status').textContent='腕部 CAD 试配初
 t=t.replace('ODRADEK / A12','ODRADEK / A16').replace('Odradek A12','Odradek A16').replace('长版 · 691 mm','长版 · 340 /185 mm轴距')
 cover_state='外罩已检出干涉，正在修正。' if any(x['pose'] for x in json.loads((HERE/'build/covers02/review.json').read_text())['collisions']+R['collisions']) else '外罩也通过上述三个配置的骨架/原厂外形/名义采购件检查；外罩安装耳与螺钉尚未设计。'
 t=t.replace('仅根部36对静态实体检查通过；整臂紧固件、外罩、动态线束和载荷尚未放行。','根部及骨架/名义紧固件在三个代表静态姿态通过；'+cover_state+'动态线束和载荷未放行。')
+if MODULED:
+    for name in ['root-cover03','cowls04','wrist05','skins06']:
+        path=HERE/'build'/name/'review.json';d=json.loads(path.read_text()) if path.exists() else json.loads((path.parent/'manifest.json').read_text())
+        assert d['scoped_clear'] and d['tool_access']['scoped_clear'],name
+        for relative,digest in d['source_sha256'].items():assert sha(ROOT/relative)==digest
+    t=t.replace('外罩也通过上述三个配置的骨架/原厂外形/名义采购件检查；外罩安装耳与螺钉尚未设计。','全部外罩现有普通螺钉固定件；根部、肩肘、腕部、长罩按明确替换清单合并。模块分别通过三个静态配置及预留工具空间检查；实际装配、连续运动与动态线束仍需验证。')
+    t=t.replace('A16 常规结构整合','A16 全外罩固定整合').replace('A16结构/外罩候选；当前姿态尚未完整验证','26个有限采样通过；任意滑条组合、线束和载荷仍未验证')
+    t=t.replace('实际装配、连续运动与动态线束仍需验证。','修正J6固定点与J7罩裙后，收拢至互动、J7滚转、J6横摆共26个有限采样通过；实际装配、完整连续运动与动态线束仍需验证。')
 (out/'index.html').write_text(t)
 print('A16_VIEWER',out,flush=True)

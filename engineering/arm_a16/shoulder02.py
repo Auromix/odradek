@@ -6,7 +6,8 @@ import common as c
 sys.path.insert(0,str(c.ROOT/'engineering/arm_a15/robstride01'));import study as rs
 
 def main():
-    D=json.loads((c.OUT/'gravity.json').read_text());assert D['layout']==c.L
+    moduled='--modules' in sys.argv;gravityfile=c.OUT/('gravity-modules.json' if moduled else 'gravity.json')
+    D=json.loads(gravityfile.read_text());assert D['layout']==c.L
     for src in D['sources']:assert c.sha(c.ROOT/src['path'])==src['sha256']
     budget=D['prototype_CAD_and_allowance_ledger'];named=list(c.L['poses'].values())
     q=np.array(named+[[j['limits_deg'][0]+rs.halton(k,b)*(j['limits_deg'][1]-j['limits_deg'][0]) for j,b in zip(c.L['joints'],[2,3,5,7,11,13,17])] for k in range(1,4097)],float)
@@ -46,7 +47,7 @@ def main():
         derivative=(fk_length(plus)-fk_length(minus))/(2*np.radians(h))
         lever_errors.append(abs(derivative+lever[i]))
     assert max(length_errors)<1e-9 and max(lever_errors)<1e-8
-    record=dict(revision='A16-SHOULDER02-CONVENTIONAL-PINS',layout=c.L,gravity_sha256=c.sha(c.OUT/'gravity.json'),
+    record=dict(revision='A16-SHOULDER02-CONVENTIONAL-PINS',layout=c.L,gravity_path=str(gravityfile.relative_to(c.ROOT)),gravity_sha256=c.sha(gravityfile),
       sample_count=len(q),payload_cases_kg=[0,3],a_mm=a,b_mm=b,fixed_pin_x_mm=fx,candidate_F1_N=F,
       aligned_pin_comparison=dict(a_mm=float(simple.x[0]),b_mm=float(simple.x[1]),F1_N=float(simple.x[2]),worst_Nm=float(simple.fun)),
       fixed_pin_J1_rotor_mm=[fx,-80,c.L['joints'][1]['offset'][2]-b],moving_pin_J2_rotor_mm=[a,-80,0],
@@ -62,6 +63,6 @@ def main():
        'Full-interval pin-eye length clearance only. Body diameter15, rod6, eye/pin hardware and brackets still require source geometry and physical trial.',
        'Enclosed motor thermal holding capacity, actual COM, spring hysteresis and power-loss holding remain unqualified. No load or production release.'],
       production_release=False,selection_frozen=False)
-    (c.OUT/'shoulder02.json').write_text(json.dumps(record,indent=2)+'\n');print('SIMPLE_PINS',a,b,F,'WORST',record['assumed_force_envelope_worst_shoulder_Nm'],'LENGTH',record['analytic_eye_length_full_J2_interval_mm'],flush=True)
+    (c.OUT/('shoulder02-modules.json' if moduled else 'shoulder02.json')).write_text(json.dumps(record,indent=2)+'\n');print('SIMPLE_PINS',a,b,F,'WORST',record['assumed_force_envelope_worst_shoulder_Nm'],'LENGTH',record['analytic_eye_length_full_J2_interval_mm'],flush=True)
 
 if __name__=='__main__':main()
