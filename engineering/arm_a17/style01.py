@@ -8,6 +8,8 @@ from pathlib import Path
 import sys,json,hashlib
 import cadquery as cq
 import numpy as np
+from OCP.BRepOffsetAPI import BRepOffsetAPI_ThruSections
+from OCP.Approx import Approx_ChordLength
 
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
@@ -34,23 +36,55 @@ def wire(q,ry,rz,cu=0,cy=0,inset=0):
     return w
 
 def curved(stations,cy,sign,ruled=False):
-    outer=[];inner=[]
+    if len(stations)==6 and stations[0][0]==-91:
+        # Root transition: same base gap/real motor; neck narrows above the
+        # front holder. The rotating shoulder foot begins atq30, above this.
+        stations=list(stations);stations[-1]=(28.5,65,64)
+    sections=[]
     for s in stations:
         q,ry,rz=s[:3];cu=s[3] if len(s)>3 else 0
-        outer.append(wire(q,ry,rz,cu,cy))
-        inner.append(wire(q,ry,rz,cu,cy,2.6))
+        outer=wire(q,ry,rz,cu,cy);inner=wire(q,ry,rz,cu,cy,2.6)
+        # One closed C-section constrains inner and outer faces together.
+        # Independent inner loft seam/edge compatibility previously produced
+        # an inward fold despite a valid solid and watertight STL.
+        slab=cq.Solid.extrudeLinear(outer,[inner],cq.Vector(.05,0,0))
+        half=cq.Solid.makeBox(700,500,220,c.cad.V([-150,cy-250,.25 if sign==1 else -220.25]))
+        slab=slab.intersect(half).fix()
+        faces=[f for f in slab.Faces() if f.BoundingBox().xlen<1e-5 and abs(f.BoundingBox().xmin-q)<1e-5]
+        assert len(faces)==1,(q,len(faces))
+        assert len(faces[0].Wires())==1
+        sections.append(faces[0].outerWire())
     # Keep ruled axial surfaces for motor cowls: smooth circumferential
     # blends without loft overshoot into source motors/adjacent joints.
     # Upper long skins use continuous axial lofts. The folding forearm keeps
     # its bounded ruled axial sections; its circumferential blends are curved.
     smooth=not ruled or len(stations)>5
-    solid=cq.Solid.makeLoft(outer,ruled=not smooth).cut(cq.Solid.makeLoft(inner,ruled=not smooth)).fix()
-    half=cq.Solid.makeBox(700,500,220,c.cad.V([-150,cy-250,.25 if sign==1 else -220.25]))
-    return solid.intersect(half).fix()
+    if not smooth:return cq.Solid.makeLoft(sections,ruled=True).fix()
+    # Default degree8 fits can fold inward between widely spaced sections.
+    # Bound degree and parameterise by chord length; verify physical core
+    # clearances separately rather than assuming station values suffice.
+    api=BRepOffsetAPI_ThruSections(True,False,1e-6)
+    api.SetMaxDegree(3);api.SetParType(Approx_ChordLength)
+    for w in sections:api.AddWire(w.wrapped)
+    api.Build();return cq.Shape.cast(api.Shape()).fix()
 
 def cap(station,sign):
     q,ry,rz=station
     solid=cq.Solid.extrudeLinear(wire(q,ry,rz),[],cq.Vector(2.6,0,0))
+    # Shallow convex rear face replaces the flat box-like pod end. Retain
+    # the service opening through the full dome, at identical clocking.
+    depth=min(ry,rz)*.10
+    dome=cq.Solid.makeLoft([wire(q-depth,ry*.18,rz*.18),wire(q-depth*.80,ry*.60,rz*.60),
+      wire(q-depth*.35,ry*.90,rz*.90),wire(q,ry,rz)],ruled=False)
+    solid=solid.fuse(dome).clean().fix()
+    # Hollow the convex face rather than carrying a solid decorative lump.
+    # Axial/radial nominal offset2.6; true normal minimum still needs audit.
+    inner=cq.Solid.makeLoft([wire(q-depth+2.6,max(ry*.18-2.6,1),max(rz*.18-2.6,1)),
+      wire(q-depth*.80+2.6,ry*.60-2.6,rz*.60-2.6),
+      wire(q-depth*.35+2.6,ry*.90-2.6,rz*.90-2.6),
+      wire(q+2.7,ry-2.6,rz-2.6)],ruled=False)
+    solid=solid.cut(inner).fix()
+    solid=solid.cut(cq.Solid.makeBox(depth+2.8,20,14,c.cad.V([q-depth-.1,-10,-7]))).fix()
     half=cq.Solid.makeBox(700,500,220,c.cad.V([-150,-250,.25 if sign==1 else -220.25]))
     return solid.intersect(half).fix()
 
@@ -67,7 +101,7 @@ def main():
     current=[p for p in rows if p['role']=='printed_cover']
     assert len(current)==18
     skin.skin=curved;raw.endcap=cap;raw.O=RAW;skin.O=RAW;c.cad.OUT=RAW
-    if '--reuse-raw' not in sys.argv:raw.main()
+    raw.main()
     c.cad.PARTS.clear();skin.O=OUT;c.cad.OUT=OUT
     remap={};stats=[]
     for p in current:

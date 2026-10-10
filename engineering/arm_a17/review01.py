@@ -42,7 +42,12 @@ def main():
             p,s=world[i];t,w=world[j]
             rel=np.linalg.inv(F[p['frame']])@F[t['frame']]
             key=(p['id'],t['id'],tuple(np.round(rel,8).flat))
-            if key not in cache:cache[key]=r.common_volume(s,w);fresh+=1
+            if key not in cache:
+                # Supplier partitions contain many disjoint source solids.
+                # The existing exact per-solid bbox/common routine prunes
+                # them efficiently without a costly all-compound distance.
+                if fresh%50==0:print('A17_PAIR',name,p['id'],t['id'],flush=True)
+                cache[key]=r.common_volume(s,w);fresh+=1
             if cache[key]>.08:
                 hit=dict(sample=name,a=p['id'],b=t['id'],volume_mm3=cache[key]);hits.append(hit);count+=1
                 print('A17_HIT',hit,flush=True)

@@ -52,7 +52,7 @@ def pose(q):
 scene['Revision']='A17-MANTA-CARAPACE01';scene['Production qualified']=False
 scene['Interface']='IF08 contact+dual coax proposal; not installed in native arm.'
 scene['Appearance']='Physical corner blends in STEP, inherited real mounting features. No smaller motors, hidden geometry or base replacement.'
-scene.render.engine='CYCLES';scene.cycles.samples=32
+scene.render.engine='CYCLES';scene.cycles.samples=16;scene.cycles.use_denoising=True
 scene.render.resolution_x=1600;scene.render.resolution_y=1200;scene.render.resolution_percentage=100
 cam=scene.camera;cam.data.type='ORTHO'
 views=[('attention-side',L['poses']['attention'],(-1.2,.50,.70),(0,.34,.34),1.08),

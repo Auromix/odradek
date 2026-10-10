@@ -1,763 +1,7 @@
 {
   "revision": "A17-MANTA-CARAPACE01",
-  "layout": {
-    "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
-    "units": "mm",
-    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
-    "joints": [
-      {
-        "id": "J1",
-        "name": "\u5e95\u90e8\u8f6c\u5411",
-        "model": "RS03",
-        "axis": [
-          0,
-          0,
-          1
-        ],
-        "offset": [
-          0,
-          0,
-          165
-        ],
-        "zero_deg": 0,
-        "limits_deg": [
-          -120,
-          120
-        ],
-        "diameter_mm": 106,
-        "length_mm": 56.6,
-        "motor_center": [
-          0,
-          0,
-          -28.3
-        ],
-        "mass_kg": 0.9
-      },
-      {
-        "id": "J2",
-        "name": "\u80a9\u90e8\u4fef\u4ef0",
-        "model": "RS04",
-        "axis": [
-          0,
-          1,
-          0
-        ],
-        "offset": [
-          0,
-          0,
-          114
-        ],
-        "zero_deg": -90,
-        "limits_deg": [
-          -60,
-          110
-        ],
-        "diameter_mm": 120,
-        "length_mm": 55.7,
-        "motor_center": [
-          0,
-          94.35,
-          0
-        ],
-        "mass_kg": 1.42,
-        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
-      },
-      {
-        "id": "J3",
-        "name": "\u4e0a\u81c2\u65cb\u8f6c",
-        "model": "RS04",
-        "axis": [
-          1,
-          0,
-          0
-        ],
-        "offset": [
-          0,
-          -15,
-          0
-        ],
-        "zero_deg": 0,
-        "limits_deg": [
-          -100,
-          100
-        ],
-        "diameter_mm": 120,
-        "length_mm": 55.7,
-        "motor_center": [
-          1.5,
-          0,
-          0
-        ],
-        "mass_kg": 1.42
-      },
-      {
-        "id": "J4",
-        "name": "\u8098\u90e8\u56de\u6298",
-        "model": "RS04",
-        "axis": [
-          0,
-          1,
-          0
-        ],
-        "offset": [
-          340,
-          0,
-          0
-        ],
-        "zero_deg": 0,
-        "limits_deg": [
-          -145,
-          135
-        ],
-        "diameter_mm": 120,
-        "length_mm": 55.7,
-        "motor_center": [
-          0,
-          1.5,
-          0
-        ],
-        "mass_kg": 1.42
-      },
-      {
-        "id": "J5",
-        "name": "\u8155\u90e8\u4fef\u4ef0",
-        "model": "RS10P",
-        "axis": [
-          0,
-          1,
-          0
-        ],
-        "offset": [
-          185,
-          62,
-          0
-        ],
-        "zero_deg": 0,
-        "limits_deg": [
-          -90,
-          130
-        ],
-        "diameter_mm": 57,
-        "length_mm": 60.6,
-        "motor_center": [
-          0,
-          70.3,
-          0
-        ],
-        "mass_kg": 0.46,
-        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
-      },
-      {
-        "id": "J6",
-        "name": "\u8155\u90e8\u6a2a\u6446",
-        "model": "RS10P",
-        "axis": [
-          0,
-          0,
-          1
-        ],
-        "offset": [
-          55,
-          0,
-          0
-        ],
-        "zero_deg": 0,
-        "limits_deg": [
-          -60,
-          60
-        ],
-        "diameter_mm": 57,
-        "length_mm": 60.6,
-        "motor_center": [
-          0,
-          0,
-          0
-        ],
-        "mass_kg": 0.46
-      },
-      {
-        "id": "J7",
-        "name": "\u6574\u5934\u65cb\u8f6c",
-        "model": "RS00",
-        "axis": [
-          1,
-          0,
-          0
-        ],
-        "offset": [
-          75,
-          0,
-          0
-        ],
-        "zero_deg": 0,
-        "limits_deg": [
-          -90,
-          90
-        ],
-        "diameter_mm": 57,
-        "length_mm": 51.4,
-        "motor_center": [
-          0,
-          0,
-          0
-        ],
-        "mass_kg": 0.31
-      }
-    ],
-    "poses": {
-      "idle": [
-        0,
-        110,
-        0,
-        -145,
-        125,
-        0,
-        0
-      ],
-      "attention": [
-        0,
-        75,
-        0,
-        -65,
-        65,
-        0,
-        0
-      ],
-      "reference": [
-        0,
-        90,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
-    "cable_assumptions": {
-      "bundle_diameter_mm": 12,
-      "coax_channels": 2,
-      "compact_dynamic_radius_target_mm": 35,
-      "verified_CG03_dynamic_radius_mm": 75,
-      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
-      "compact_cable_material_selected": false,
-      "notes": [
-        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
-        "No motor is assumed to have a through bore.",
-        "Joint limits are packaging exploration targets, not cable-life certified limits."
-      ]
-    },
-    "flange_from_J7_mm": [
-      110,
-      0,
-      0
-    ],
-    "flange_payload_kg": 3,
-    "tube_sections_mm": {
-      "upper": [
-        20,
-        40,
-        2
-      ],
-      "forearm": [
-        20,
-        40,
-        2
-      ]
-    },
-    "comparison_variant": {
-      "upper_joint_offset_mm": 340,
-      "forearm_joint_offset_mm": 185,
-      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
-    },
-    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
-    "pedestal": {
-      "mount_plane_z_mm": 58,
-      "adapter_od_mm": 134,
-      "bore_mm": 56,
-      "J1_axis_z_mm": 165
-    },
-    "root_transform_mm": [
-      [
-        0,
-        -1,
-        0,
-        0
-      ],
-      [
-        1,
-        0,
-        0,
-        75
-      ],
-      [
-        0,
-        0,
-        1,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        1
-      ]
-    ]
-  },
-  "base_context": {
-    "base_revision": "B06-COMPACT-07-DFM",
-    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
-    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
-    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
-    "base_priority": true,
-    "canonical_checkout": "../odradek",
-    "base_sources": {
-      "interface": {
-        "path": "engineering/base_b06/interface-contract.json",
-        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
-      },
-      "manifest": {
-        "path": "engineering/base_b06/build/exterior/manifest.json",
-        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
-      },
-      "native": {
-        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
-        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
-      },
-      "load_frame": {
-        "path": "engineering/base_b06/build/load-frame/manifest.json",
-        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
-      },
-      "flange_step": {
-        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
-        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
-      }
-    },
-    "integration_status": {
-      "source_sync": "fingerprints verified; native inclusion checked separately",
-      "assembly": "pending",
-      "wiring": "pending",
-      "loads": "pending"
-    }
-  },
-  "parts": [
-    {
-      "id": "A17-C03-root-cowl-a",
-      "owner": 0,
-      "frame": "J1.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 75710.11677283086,
-      "mass_kg": 0.09615184830149519,
-      "com_mm": [
-        2.3396500699257687e-08,
-        48.7149329019258,
-        -30.734391442996184
-      ],
-      "bbox_size_mm": [
-        147.41857728027185,
-        78.72276381874212,
-        119.52667476384579
-      ]
-    },
-    {
-      "id": "A17-C03-root-cowl-b",
-      "owner": 0,
-      "frame": "J1.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 74877.5625838406,
-      "mass_kg": 0.09509450448147755,
-      "com_mm": [
-        7.39690260948749e-07,
-        -47.6050522280343,
-        -30.733221501051865
-      ],
-      "bbox_size_mm": [
-        147.41791445389953,
-        74.50986104116447,
-        119.4279955024553
-      ]
-    },
-    {
-      "id": "A17-C04-J2-cowl-a",
-      "owner": 1,
-      "frame": "J2.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 64707.98556631236,
-      "mass_kg": 0.0821791416692167,
-      "com_mm": [
-        -0.22068912545546432,
-        103.71237062434952,
-        41.42304333587234
-      ],
-      "bbox_size_mm": [
-        143.591675394588,
-        79.33937011057236,
-        77.70926430806138
-      ]
-    },
-    {
-      "id": "A17-C04-J2-cowl-b",
-      "owner": 1,
-      "frame": "J2.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 61241.17616004733,
-      "mass_kg": 0.0777762937232601,
-      "com_mm": [
-        3.7837407650582106e-07,
-        105.69996634382147,
-        -39.48235427818655
-      ],
-      "bbox_size_mm": [
-        143.59084273893694,
-        79.0476550446188,
-        73.67206698765533
-      ]
-    },
-    {
-      "id": "A17-C04-J3-cowl-a",
-      "owner": 2,
-      "frame": "J3.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 61821.439557401114,
-      "mass_kg": 0.07851322823789941,
-      "com_mm": [
-        -9.745618636422227,
-        -1.2558579307246065,
-        41.661883187939424
-      ],
-      "bbox_size_mm": [
-        78.82865549026161,
-        141.10505471295443,
-        77.51118289461782
-      ]
-    },
-    {
-      "id": "A17-C04-J3-cowl-b",
-      "owner": 2,
-      "frame": "J3.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 59145.624739238425,
-      "mass_kg": 0.07511494341883279,
-      "com_mm": [
-        -11.341452517355432,
-        -1.0712300938463546,
-        -39.92931319451679
-      ],
-      "bbox_size_mm": [
-        78.54843828810266,
-        141.10209469408548,
-        73.49786654365153
-      ]
-    },
-    {
-      "id": "A17-C04-J4-cowl-a",
-      "owner": 3,
-      "frame": "J3.rotor",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 61613.34692049909,
-      "mass_kg": 0.07824895058903383,
-      "com_mm": [
-        343.3319736618537,
-        -9.639134624871918,
-        -42.78011080762583
-      ],
-      "bbox_size_mm": [
-        137.10363917694264,
-        90.16232310785665,
-        77.77293820093507
-      ]
-    },
-    {
-      "id": "A17-C04-J4-cowl-b",
-      "owner": 3,
-      "frame": "J3.rotor",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 61455.86709403167,
-      "mass_kg": 0.07804895120942022,
-      "com_mm": [
-        343.3901780938507,
-        -9.646861677082692,
-        42.13362078070166
-      ],
-      "bbox_size_mm": [
-        137.02148107724082,
-        90.16428041159784,
-        73.7635593741249
-      ]
-    },
-    {
-      "id": "A17-C05-J5-cowl-a",
-      "owner": 4,
-      "frame": "J5.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 28540.150246322133,
-      "mass_kg": 0.03624599081282911,
-      "com_mm": [
-        0.4523883454432969,
-        76.76306153062812,
-        22.735116977610428
-      ],
-      "bbox_size_mm": [
-        74.70135178559318,
-        83.32957599815855,
-        40.137141298696925
-      ]
-    },
-    {
-      "id": "A17-C05-J5-cowl-b",
-      "owner": 4,
-      "frame": "J5.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 27960.223731806112,
-      "mass_kg": 0.03550948413939376,
-      "com_mm": [
-        0.4617714308404565,
-        76.9656414575285,
-        -22.151752738970902
-      ],
-      "bbox_size_mm": [
-        74.69519141187246,
-        80.23098501467227,
-        38.12177651398847
-      ]
-    },
-    {
-      "id": "A17-C05-J6-cowl-a",
-      "owner": 5,
-      "frame": "J6.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 27734.284790497564,
-      "mass_kg": 0.03522254168393191,
-      "com_mm": [
-        -0.5111997542446143,
-        -20.93428886289801,
-        6.019049421658112
-      ],
-      "bbox_size_mm": [
-        74.07091276822048,
-        35.18434663839497,
-        83.17083627327179
-      ]
-    },
-    {
-      "id": "A17-C05-J6-cowl-b",
-      "owner": 5,
-      "frame": "J6.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 26552.795978544324,
-      "mass_kg": 0.033722050892751286,
-      "com_mm": [
-        -0.5014288586130367,
-        20.320720085546352,
-        7.025687340005946
-      ],
-      "bbox_size_mm": [
-        74.11006327676658,
-        33.37350807751707,
-        83.03637854591338
-      ]
-    },
-    {
-      "id": "A17-C05-J7-cowl-a",
-      "owner": 6,
-      "frame": "J7.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 40540.10827824527,
-      "mass_kg": 0.051485937513371494,
-      "com_mm": [
-        12.108518910793459,
-        -6.434729622811691e-08,
-        26.964667651752457
-      ],
-      "bbox_size_mm": [
-        101.83316287217974,
-        96.9437970952115,
-        53.09679132846466
-      ]
-    },
-    {
-      "id": "A17-C05-J7-cowl-b",
-      "owner": 6,
-      "frame": "J7.fixed",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 31326.364894143822,
-      "mass_kg": 0.03978448341556265,
-      "com_mm": [
-        18.22921035860017,
-        2.1423068543067704e-08,
-        -25.59632448191608
-      ],
-      "bbox_size_mm": [
-        100.34755674072404,
-        96.90872648586088,
-        49.04617417723743
-      ]
-    },
-    {
-      "id": "A17-C06-upper-dorsal",
-      "owner": 3,
-      "frame": "J3.rotor",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 61006.0515422044,
-      "mass_kg": 0.07747768545859958,
-      "com_mm": [
-        167.0873529819905,
-        0.5170254186315756,
-        22.178075315846346
-      ],
-      "bbox_size_mm": [
-        230.62512414392052,
-        85.31528943379644,
-        50.36210505126523
-      ]
-    },
-    {
-      "id": "A17-C06-upper-ventral",
-      "owner": 3,
-      "frame": "J3.rotor",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 60241.862600213055,
-      "mass_kg": 0.07650716550227057,
-      "com_mm": [
-        167.2024702921703,
-        0.5363814511144992,
-        -21.700845776029553
-      ],
-      "bbox_size_mm": [
-        230.6492521424682,
-        84.91468992865128,
-        50.8561906235029
-      ]
-    },
-    {
-      "id": "A17-C06-fore-dorsal",
-      "owner": 4,
-      "frame": "J4.rotor",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 21383.877436765815,
-      "mass_kg": 0.027157524344692582,
-      "com_mm": [
-        88.94283317441679,
-        86.69705056525652,
-        23.020516992426625
-      ],
-      "bbox_size_mm": [
-        88.43969800067575,
-        71.60496988783389,
-        40.46883028651274
-      ]
-    },
-    {
-      "id": "A17-C06-fore-ventral",
-      "owner": 4,
-      "frame": "J4.rotor",
-      "role": "printed_cover",
-      "material": "PETG supported fit",
-      "note": "Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.",
-      "solid_count": 1,
-      "watertight": true,
-      "volume_mm3": 13245.325207350192,
-      "mass_kg": 0.01682156301333474,
-      "com_mm": [
-        72.97307096369317,
-        86.27149905228723,
-        -24.298180522969947
-      ],
-      "bbox_size_mm": [
-        55.79067459103161,
-        70.07529423687521,
-        38.30287760175978
-      ]
-    }
-  ],
-  "replaces_only": [
-    "A16-C03-root-cowl-a",
-    "A16-C03-root-cowl-b",
-    "A16-C04-J2-cowl-a",
-    "A16-C04-J2-cowl-b",
-    "A16-C04-J3-cowl-a",
-    "A16-C04-J3-cowl-b",
-    "A16-C04-J4-cowl-a",
-    "A16-C04-J4-cowl-b",
-    "A16-C05-J5-cowl-a",
-    "A16-C05-J5-cowl-b",
-    "A16-C05-J6-cowl-a",
-    "A16-C05-J6-cowl-b",
-    "A16-C05-J7-cowl-a",
-    "A16-C05-J7-cowl-b",
-    "A16-C06-upper-dorsal",
-    "A16-C06-upper-ventral",
-    "A16-C06-fore-dorsal",
-    "A16-C06-fore-ventral"
-  ],
-  "source_sha256": {
+  "manifest_sha256": "57e403fa5a39aafe9f582db6b377eb761abb904012f395d8dac9f61ba6a0c025",
+  "sources": {
     "engineering/arm_a16/build/root01/manifest.json": "03407990554696d00cea63bb83b54b0ca42166c79e8da587b843642ac76c9fca",
     "engineering/arm_a16/build/root01/step/A16-R101-base-adapter.step": "55756b0e5229b30a81daa8d13c3cfab6d4c4c5d63874ef3b0b123c052104cdae",
     "engineering/arm_a16/build/root01/step/A16-R102-J1-front-holder.step": "548c8be7233c2759301e5ba529ad7262427e680024a238031a10fdcf61890a05",
@@ -1338,174 +582,340 @@
     "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-radial-1-C06.step": "f747c550957ea00a8a5619999eff810a8901ba47ef4db7ed71e939211ed5cc56",
     "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-radial-2-C06.step": "0ebdc3e09e779dbb3df9bdd23929fe7c0648da15f8950c3be41052f8b411100d"
   },
-  "remap": {
-    "A16-C03-root-cowl-a": "A17-C03-root-cowl-a",
-    "A16-C03-root-cowl-b": "A17-C03-root-cowl-b",
-    "A16-C04-J2-cowl-a": "A17-C04-J2-cowl-a",
-    "A16-C04-J2-cowl-b": "A17-C04-J2-cowl-b",
-    "A16-C04-J3-cowl-a": "A17-C04-J3-cowl-a",
-    "A16-C04-J3-cowl-b": "A17-C04-J3-cowl-b",
-    "A16-C04-J4-cowl-a": "A17-C04-J4-cowl-a",
-    "A16-C04-J4-cowl-b": "A17-C04-J4-cowl-b",
-    "A16-C05-J5-cowl-a": "A17-C05-J5-cowl-a",
-    "A16-C05-J5-cowl-b": "A17-C05-J5-cowl-b",
-    "A16-C05-J6-cowl-a": "A17-C05-J6-cowl-a",
-    "A16-C05-J6-cowl-b": "A17-C05-J6-cowl-b",
-    "A16-C05-J7-cowl-a": "A17-C05-J7-cowl-a",
-    "A16-C05-J7-cowl-b": "A17-C05-J7-cowl-b",
-    "A16-C06-upper-dorsal": "A17-C06-upper-dorsal",
-    "A16-C06-upper-ventral": "A17-C06-upper-ventral",
-    "A16-C06-fore-dorsal": "A17-C06-fore-dorsal",
-    "A16-C06-fore-ventral": "A17-C06-fore-ventral"
+  "layout": {
+    "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          94.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -15,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
   },
-  "change_stats": [
-    {
-      "old": "A16-C03-root-cowl-a",
-      "new": "A17-C03-root-cowl-a",
-      "old_volume_mm3": 76470.07461805134,
-      "new_volume_mm3": 75710.11677283086,
-      "transferred_addition_mm3": 656.4689884948228,
-      "transferred_cut_mm3": 757.2942376604793
-    },
-    {
-      "old": "A16-C03-root-cowl-b",
-      "new": "A17-C03-root-cowl-b",
-      "old_volume_mm3": 75688.96368092252,
-      "new_volume_mm3": 74877.5625838406,
-      "transferred_addition_mm3": 656.4689884946833,
-      "transferred_cut_mm3": 749.5612573409084
-    },
-    {
-      "old": "A16-C04-J2-cowl-a",
-      "new": "A17-C04-J2-cowl-a",
-      "old_volume_mm3": 61791.76028264509,
-      "new_volume_mm3": 64707.98556631236,
-      "transferred_addition_mm3": 2886.967774554862,
-      "transferred_cut_mm3": 0.0
-    },
-    {
-      "old": "A16-C04-J2-cowl-b",
-      "new": "A17-C04-J2-cowl-b",
-      "old_volume_mm3": 58432.003899986885,
-      "new_volume_mm3": 61241.17616004733,
-      "transferred_addition_mm3": 2954.5200428368044,
-      "transferred_cut_mm3": 0.0
-    },
-    {
-      "old": "A16-C04-J3-cowl-a",
-      "new": "A17-C04-J3-cowl-a",
-      "old_volume_mm3": 58904.65064087187,
-      "new_volume_mm3": 61821.439557401114,
-      "transferred_addition_mm3": 1044.446130489803,
-      "transferred_cut_mm3": 0.0
-    },
-    {
-      "old": "A16-C04-J3-cowl-b",
-      "new": "A17-C04-J3-cowl-b",
-      "old_volume_mm3": 56334.11928656801,
-      "new_volume_mm3": 59145.624739238425,
-      "transferred_addition_mm3": 977.7133612783568,
-      "transferred_cut_mm3": 0.0
-    },
-    {
-      "old": "A16-C04-J4-cowl-a",
-      "new": "A17-C04-J4-cowl-a",
-      "old_volume_mm3": 58711.78657747507,
-      "new_volume_mm3": 61613.34692049909,
-      "transferred_addition_mm3": 2488.4869485720806,
-      "transferred_cut_mm3": 0.0
-    },
-    {
-      "old": "A16-C04-J4-cowl-b",
-      "new": "A17-C04-J4-cowl-b",
-      "old_volume_mm3": 58648.85004696756,
-      "new_volume_mm3": 61455.86709403167,
-      "transferred_addition_mm3": 2403.551346069923,
-      "transferred_cut_mm3": 0.0
-    },
-    {
-      "old": "A16-C05-J5-cowl-a",
-      "new": "A17-C05-J5-cowl-a",
-      "old_volume_mm3": 27892.80663862245,
-      "new_volume_mm3": 28540.150246322133,
-      "transferred_addition_mm3": 514.3276966514892,
-      "transferred_cut_mm3": 0.0
-    },
-    {
-      "old": "A16-C05-J5-cowl-b",
-      "new": "A17-C05-J5-cowl-b",
-      "old_volume_mm3": 27359.239540089176,
-      "new_volume_mm3": 27960.223731806112,
-      "transferred_addition_mm3": 444.6181456108327,
-      "transferred_cut_mm3": 80.25172344764822
-    },
-    {
-      "old": "A16-C05-J6-cowl-a",
-      "new": "A17-C05-J6-cowl-a",
-      "old_volume_mm3": 27142.502559792618,
-      "new_volume_mm3": 27734.284790497564,
-      "transferred_addition_mm3": 525.1905611810744,
-      "transferred_cut_mm3": 5.989702567311753
-    },
-    {
-      "old": "A16-C05-J6-cowl-b",
-      "new": "A17-C05-J6-cowl-b",
-      "old_volume_mm3": 26003.966460422158,
-      "new_volume_mm3": 26552.795978544324,
-      "transferred_addition_mm3": 516.5010600451033,
-      "transferred_cut_mm3": 5.989702567311744
-    },
-    {
-      "old": "A16-C05-J7-cowl-a",
-      "new": "A17-C05-J7-cowl-a",
-      "old_volume_mm3": 39952.13520571247,
-      "new_volume_mm3": 40540.10827824527,
-      "transferred_addition_mm3": 478.726749883638,
-      "transferred_cut_mm3": 51.199489212531006
-    },
-    {
-      "old": "A16-C05-J7-cowl-b",
-      "new": "A17-C05-J7-cowl-b",
-      "old_volume_mm3": 31767.751593831064,
-      "new_volume_mm3": 31326.364894143822,
-      "transferred_addition_mm3": 257.78313798777236,
-      "transferred_cut_mm3": 2991.9747778742753
-    },
-    {
-      "old": "A16-C06-upper-dorsal",
-      "new": "A17-C06-upper-dorsal",
-      "old_volume_mm3": 62336.544229308965,
-      "new_volume_mm3": 61006.0515422044,
-      "transferred_addition_mm3": 106.45930550364656,
-      "transferred_cut_mm3": 52.04576161963542
-    },
-    {
-      "old": "A16-C06-upper-ventral",
-      "new": "A17-C06-upper-ventral",
-      "old_volume_mm3": 61630.22365145471,
-      "new_volume_mm3": 60241.862600213055,
-      "transferred_addition_mm3": 111.87704771783831,
-      "transferred_cut_mm3": 50.92883382287378
-    },
-    {
-      "old": "A16-C06-fore-dorsal",
-      "new": "A17-C06-fore-dorsal",
-      "old_volume_mm3": 21470.678451799668,
-      "new_volume_mm3": 21383.877436765815,
-      "transferred_addition_mm3": 328.3294108049376,
-      "transferred_cut_mm3": 70.61162546543909
-    },
-    {
-      "old": "A16-C06-fore-ventral",
-      "new": "A17-C06-fore-ventral",
-      "old_volume_mm3": 13307.787771604348,
-      "new_volume_mm3": 13245.325207350192,
-      "transferred_addition_mm3": 306.2034011498454,
-      "transferred_cut_mm3": 72.56077788297145
-    }
+  "own_CAD_and_nominal_hardware_mass_kg": 3.886758204851819,
+  "catalogue_motor_mass_kg": 6.39,
+  "undeveloped_allowance_kg": 0.49,
+  "estimated_bare_mass_kg": 10.766758204851818,
+  "external_flange_load_kg": 3,
+  "flange_J7_local_mm": [
+    110,
+    0,
+    0
   ],
-  "intent": "Manta base: blended sections, restrained hard dorsal ridge, continuous taper. Same Lingzu motors/long reach/base load interfaces. No new mechanical transmission.",
-  "prototype_release": false,
+  "sampled_abs_max_Nm": [
+    0.0,
+    44.05527266901764,
+    18.32385829531194,
+    18.634365961953787,
+    8.979879076265654,
+    6.4995501665435675,
+    0.0013478250184026895
+  ],
+  "catalogue_zero_speed_reference_Nm": [
+    13,
+    28.5,
+    28.5,
+    28.5,
+    9.5,
+    9.5,
+    3.6
+  ],
+  "sample_count": 4099,
+  "virtual_work_max_error_Nm": 7.383700761920409e-09,
+  "raw_shoulder_screen_pass": false,
   "production_release": false,
-  "scope": "Development candidate; old A16 issue unchanged. All A16 collision/mass reports invalid for this candidate until rerun."
+  "limitations": "Uniform prototype CAD, nominal hardware envelopes, unmeasured motor-CG proxies and0.49kg unfinished allowances.4099 unfiltered configurations are not a certified reachable workspace. No gas-spring/bracket, thermal, dynamic, metal strength or3kg rating qualified."
 }

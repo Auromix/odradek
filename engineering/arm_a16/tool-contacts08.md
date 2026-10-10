@@ -23,7 +23,7 @@ TOOL_V+ 的电压暂不冻结；24 V 是可评估选项，不能把48 V电机母
 
 ## 器件依据与相机口
 
-触点试样候选：[Harwin P70-1010045R](https://www.harwin.com/products/P70-1010045R)，原厂说明自由高度5 mm、工作高度4 mm、单针额定2 A、外形Ø2 mm；[技术图纸](https://content.harwin.com/asset/41705223-9cb7-4049-8762-809076ae4035/DRG-02618-Technical-Drawing-Datasheet-P70-10X-pdf.pdf)。工作高度4 mm不是允许压缩行程4 mm。PCB焊盘、压缩力、止挡及接触板镀层必须按图纸和实物确认。触点压缩硬止挡由机械定位面决定，不用电触点当止挡。
+信号触点／低功率试样候选：[Harwin P70-1010045R](https://www.harwin.com/products/P70-1010045R)，原厂说明自由高度5 mm、工作高度4 mm、单针额定2 A、外形Ø2 mm；[技术图纸](https://content.harwin.com/asset/41705223-9cb7-4049-8762-809076ae4035/DRG-02618-Technical-Drawing-Datasheet-P70-10X-pdf.pdf)。**它不是已经选定的完整夹爪功率触点**；实际电机、灯板和DC/DC的峰值电流确定后，功率位可改为更大电流的弹性触点，并随之调整阵列间距和面板。工作高度4 mm不是允许压缩行程4 mm。PCB焊盘、压缩力、止挡及接触板镀层必须按图纸和实物确认。触点压缩硬止挡由机械定位面决定，不用电触点当止挡。
 
 相机采用两个独立50 Ω屏蔽同轴插接位，优先沿用当前HFM空间方案：[Rosenberger HFM](https://rna.rosenberger.com/product/hfm-high-speed-fakra-mini/)。已有原厂名义包络AMK21A-103Z5-y／AMS11A-103Z5-y可作为空间输入，A/C防误插编码仍需冻结实际料号。不要把GMSL2视频走普通弹簧触点阵列；其传输通道需要保持阻抗、回流和屏蔽连续性。相机与解串器、PoC、同轴线材、插拔次数及双路误码仍未选定／验证，HFM家族能力不证明本项目完整链路合格。
 
