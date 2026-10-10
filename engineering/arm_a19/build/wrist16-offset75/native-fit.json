@@ -1,0 +1,1948 @@
+{
+  "revision": "A19-RS03-NATIVE-FIT16",
+  "layout": {
+    "id": "A19-J5-RS03-FIT16-J6X75",
+    "units": "mm",
+    "status": "candidate; exact changed-part review required; not production",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          94.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -15,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS03",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          68.3,
+          0
+        ],
+        "mass_kg": 0.9,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          75.0,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
+  },
+  "assembly_source_sha256": "628982d4a5cbd0d4f16ae6480c8fe9412ddd8aed3de6488cbb0a6ae6c4f45738",
+  "motor": {
+    "source_raw_sha256": "8eccaf6291e395d8622300396289df898ab18a1648193a5cd327cfbd2bf72500",
+    "source_url": "https://raw.githubusercontent.com/RobStride/Product_Information/3f0cae4986e175337c7b03d891b899247b1f2933/%E4%BA%A7%E5%93%81%E8%B5%84%E6%96%99/RS03/RS03.stp",
+    "linear_scale": 1,
+    "interface": {
+      "joint": "J5",
+      "model": "RS03",
+      "out_mm": [
+        0,
+        40,
+        0
+      ],
+      "u": [
+        1,
+        0,
+        0
+      ],
+      "v": [
+        0,
+        0,
+        1
+      ],
+      "n": [
+        0,
+        -1,
+        0
+      ],
+      "fixed_mm": [
+        0.0,
+        42.5,
+        0.0
+      ],
+      "model_source": {
+        "status": "Verified source dimensions and geometric interface candidates; not manufacturing release",
+        "manual_pdf_page": 6,
+        "connector_pdf_page": 10,
+        "step_file": "RS03.stp",
+        "step_solid_count": 23,
+        "step_face_count": 1998,
+        "step_axis": {
+          "origin_raw_mm": [
+            0,
+            0,
+            0
+          ],
+          "direction_raw": [
+            0,
+            0,
+            1
+          ],
+          "method": "Largest-area analytic cylinder, then matched to housing symmetry, hole PCDs and 2D. Max-radius inference was rejected for RS04 because a tiny remote cylinder had radius203.55mm."
+        },
+        "step_bbox_raw_mm": {
+          "min": [
+            -49.2701,
+            -49.2701,
+            -19.1
+          ],
+          "max": [
+            50.25,
+            49.2701,
+            37.5
+          ],
+          "size": [
+            99.5201,
+            98.54019,
+            56.6
+          ]
+        },
+        "sampled_step_max_radial_extent_mm": 52.9989,
+        "interface_frame": {
+          "definition": "+Z points out of output; origin at candidate output contact plane; +X raw+X and +Y sign*rawY. This is a mechanical display frame, not an encoder zero.",
+          "T_raw_from_interface_mm": [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              37.5
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ]
+          ],
+          "output_face_raw_z_mm": 37.5,
+          "housing_front_raw_z_mm": 35.0,
+          "housing_rear_flange_raw_z_mm": -4.5,
+          "rear_cover_extreme_raw_z_mm": -19.1,
+          "output_to_housing_front_mm": 2.5,
+          "output_to_housing_rear_flange_mm": 42.0,
+          "output_to_rear_cover_extreme_mm": 56.6,
+          "step_axial_bounds_interface_mm": [
+            -56.6,
+            0.0
+          ]
+        },
+        "output_fasteners": {
+          "pcd_measured_mm": 30.36,
+          "measured_cylinder_radius_mm": 2.0,
+          "raw_step_axial_span_mm": [
+            31.9,
+            37.5
+          ],
+          "count": 6,
+          "raw_step_xy_mm": [
+            [
+              -13.14627,
+              -7.59
+            ],
+            [
+              -13.14627,
+              7.59
+            ],
+            [
+              0.0,
+              -15.18
+            ],
+            [
+              -0.0,
+              15.18
+            ],
+            [
+              13.14627,
+              -7.59
+            ],
+            [
+              13.14627,
+              7.59
+            ]
+          ],
+          "note": "Cylinder is geometric evidence only. Thread designation/depth comes from 2D, not cylinder diameter; screw access and preload unverified.",
+          "drawing": "6 x M4 blind depth 6 mm; PCD 30.36 +/-0.2"
+        },
+        "fixed_front_fasteners": {
+          "pcd_measured_mm": 98.0,
+          "measured_cylinder_radius_mm": 1.65,
+          "raw_step_axial_span_mm": [
+            -1.5,
+            7.0
+          ],
+          "count": 8,
+          "raw_step_xy_mm": [
+            [
+              -45.2701,
+              -18.75149
+            ],
+            [
+              -45.2701,
+              18.75149
+            ],
+            [
+              -18.75149,
+              -45.2701
+            ],
+            [
+              -18.75149,
+              45.2701
+            ],
+            [
+              18.75149,
+              -45.2701
+            ],
+            [
+              18.75149,
+              45.2701
+            ],
+            [
+              45.2701,
+              -18.75149
+            ],
+            [
+              45.2701,
+              18.75149
+            ]
+          ],
+          "note": "Cylinder is geometric evidence only. Thread designation/depth comes from 2D, not cylinder diameter; screw access and preload unverified.",
+          "drawing": "8 x M4 depth 8 mm; PCD 98 +/-0.2"
+        },
+        "pilot_or_location": "Drawing diameter 70 mm, upper 0 / lower -0.1; output protrusion 2.5 mm",
+        "connectors": {
+          "official_connector_names": [
+            "XT30APW-M.G.B board side / XT30UW-F.G.B cable side",
+            "GH1.25-2PWT board side / GH1.25-T cable side"
+          ],
+          "rear_electronics_zone_raw_z_mm": [
+            -19.1,
+            -4.5
+          ],
+          "verified_mating_connector_center_raw_mm": null,
+          "verified_mated_plug_envelope_mm": null,
+          "status": "Connector family verified from manual; exact plug placement/clocking and service insertion space not fully dimensioned. Do not invent a bolt hole or route through the shaft."
+        },
+        "through_bore": {
+          "usable_through_bore_confirmed": false,
+          "nominal_diameter_mm": null,
+          "note": "No usable continuous central cable passage specification found in these manuals. STEP center-axis absence of material at sample points cannot establish a routable passage through the encoder/driver/caps. Use an external-to-motor route inside the arm cover."
+        },
+        "viewer_recommendation": {
+          "outer_cylinder_diameter_mm": 106.0,
+          "conservative_total_axial_extent_mm": 57.0,
+          "output_disc_diameter_mm": 70.0,
+          "build_method": "Rebuild simple original cylinder/ear/face/bolt-pattern envelopes from cited facts; do not redistribute manufacturer tessellation. Add separately labelled provisional connector/service-loop keepout.",
+          "through_axis_cable_route_allowed": false
+        },
+        "limitations": [
+          "3 x diameter 4 (+0.1/0) equally spaced blind locating holes, depth 7 mm, shown on output PCD 30.36.",
+          "106 mm is a conservative circumscribed envelope over the eight housing ears; axis-aligned STEP XY bounds are smaller because the ears are clocked.",
+          "Raw STEP output clocking is not verified encoder zero."
+        ]
+      },
+      "T_joint_from_raw_mm": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          77.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "cache_sha256": {
+      "J5-stator.step": "0e5aa458bbbd5585a6cf261a7ca77d6e310572a414a4cbeffde32aaf80c566c8",
+      "J5-external-output.step": "86e2019f9cc0559404ae61f9a10e6c666f6e39cbc1f0b19be08803d0c9d994c1"
+    }
+  },
+  "excluded_for_reconstruction": [
+    "A16-H-J5-fixed-1",
+    "A16-H-J5-fixed-1-washer",
+    "A16-H-J5-fixed-2",
+    "A16-H-J5-fixed-2-washer",
+    "A16-H-J5-fixed-3",
+    "A16-H-J5-fixed-3-washer",
+    "A16-H-J5-fixed-4",
+    "A16-H-J5-fixed-4-washer",
+    "A16-H-J5-fixed-5",
+    "A16-H-J5-fixed-5-washer",
+    "A16-H-J5-fixed-6",
+    "A16-H-J5-fixed-6-washer",
+    "A16-H-J5-output-1",
+    "A16-H-J5-output-1-washer",
+    "A16-H-J5-output-2",
+    "A16-H-J5-output-2-washer",
+    "A16-H-J5-output-3",
+    "A16-H-J5-output-3-washer",
+    "A16-H-J5-output-4",
+    "A16-H-J5-output-4-washer",
+    "A16-H-J5-output-5",
+    "A16-H-J5-output-5-washer",
+    "A16-H-J5-output-6",
+    "A16-H-J5-output-6-washer",
+    "A16-C05-H-J5-1",
+    "A16-C05-H-J5-1-washer",
+    "A16-C05-H-J5-spacer-1",
+    "A16-C05-H-J5-2",
+    "A16-C05-H-J5-2-washer",
+    "A16-C05-H-J5-spacer-2",
+    "A16-C05-H-J5-radial-1",
+    "A16-C05-H-J5-radial-1-washer",
+    "A16-C05-H-J5-radial-2",
+    "A16-C05-H-J5-radial-2-washer",
+    "A16-C06-fore-spine-and-J5-ring",
+    "A16-C05-H-J5-insert-1-C06",
+    "A16-C05-H-J5-insert-2-C06",
+    "A16-C05-H-J5-insert-radial-1-C06",
+    "A16-C05-H-J5-insert-radial-2-C06",
+    "A17-C05-J5-cowl-a",
+    "A17-C05-J5-cowl-b"
+  ],
+  "checks": [
+    {
+      "name": "idle",
+      "q_deg": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "attention",
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "reference",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--145.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -145.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "J4--135.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -135.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--125.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -125.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--115.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -115.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--105.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -105.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--95.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -95.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--85.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -85.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--75.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -75.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "J4--65.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -65.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--55.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -55.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--45.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -45.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--35.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -35.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--25.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -25.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--15.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -15.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4--5.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        -5.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-5.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        5.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-15.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        15.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-25.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        25.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-35.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        35.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-45.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        45.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-55.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        55.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-65.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        65.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-75.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        75.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-85.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        85.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-95.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        95.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-105.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        105.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-115.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        115.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-125.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        125.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J4-135.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        135.0,
+        0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5--90.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        -90.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5--80.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        -80.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "J5--70.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        -70.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "J5--60.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        -60.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5--50.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        -50.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5--40.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        -40.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5--30.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        -30.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5--20.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        -20.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5--10.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        -10.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-0.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-10.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        10.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "J5-20.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        20.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "J5-30.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        30.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-40.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        40.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-50.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        50.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-60.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        60.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-70.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        70.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-80.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        80.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-90.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        90.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-100.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        100.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "J5-110.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        110.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "J5-120.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        120.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J5-130.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        130.0,
+        0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6--60.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        -60.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6--50.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        -50.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6--40.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        -40.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6--30.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        -30.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6--20.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        -20.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6--10.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        -10.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6-0.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6-10.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        10.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6-20.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        20.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6-30.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        30.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6-40.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        40.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6-50.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        50.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "J6-60.000",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        60.0,
+        0
+      ],
+      "new_exact_pairs": 0
+    },
+    {
+      "name": "coupled-1",
+      "q_deg": [
+        0.0,
+        -3.3333333333333357,
+        -60.0,
+        -105.0,
+        -70.0,
+        -50.76923076923077,
+        -79.41176470588235
+      ],
+      "new_exact_pairs": 7
+    },
+    {
+      "name": "coupled-2",
+      "q_deg": [
+        -60.0,
+        53.33333333333333,
+        -20.0,
+        -65.0,
+        -50.0,
+        -41.53846153846153,
+        -68.82352941176471
+      ],
+      "new_exact_pairs": 10
+    },
+    {
+      "name": "coupled-3",
+      "q_deg": [
+        60.0,
+        -41.111111111111114,
+        20.000000000000014,
+        -25.0,
+        -30.000000000000007,
+        -32.30769230769231,
+        -58.23529411764706
+      ],
+      "new_exact_pairs": 14
+    },
+    {
+      "name": "coupled-4",
+      "q_deg": [
+        -90.0,
+        15.555555555555557,
+        60.0,
+        15.0,
+        -10.0,
+        -23.076923076923073,
+        -47.64705882352941
+      ],
+      "new_exact_pairs": 4
+    },
+    {
+      "name": "coupled-5",
+      "q_deg": [
+        30.0,
+        72.2222222222222,
+        -92.0,
+        54.99999999999997,
+        10.000000000000014,
+        -13.846153846153847,
+        -37.05882352941176
+      ],
+      "new_exact_pairs": 7
+    },
+    {
+      "name": "coupled-6",
+      "q_deg": [
+        -30.0,
+        -22.22222222222222,
+        -51.99999999999999,
+        95.0,
+        29.999999999999986,
+        -4.615384615384613,
+        -26.470588235294123
+      ],
+      "new_exact_pairs": 11
+    },
+    {
+      "name": "coupled-7",
+      "q_deg": [
+        90.0,
+        34.44444444444444,
+        -12.0,
+        -139.28571428571428,
+        50.0,
+        4.615384615384627,
+        -15.882352941176478
+      ],
+      "new_exact_pairs": 6
+    },
+    {
+      "name": "coupled-8",
+      "q_deg": [
+        -105.0,
+        91.11111111111111,
+        28.00000000000003,
+        -99.28571428571429,
+        70.0,
+        13.846153846153854,
+        -5.294117647058826
+      ],
+      "new_exact_pairs": 9
+    },
+    {
+      "name": "coupled-9",
+      "q_deg": [
+        15.0,
+        -53.7037037037037,
+        68.00000000000003,
+        -59.28571428571428,
+        90.0,
+        23.07692307692308,
+        5.294117647058826
+      ],
+      "new_exact_pairs": 6
+    },
+    {
+      "name": "coupled-10",
+      "q_deg": [
+        -45.0,
+        2.962962962962962,
+        -84.0,
+        -19.285714285714292,
+        110.00000000000003,
+        32.30769230769231,
+        15.882352941176478
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "coupled-11",
+      "q_deg": [
+        75.0,
+        59.62962962962963,
+        -43.99999999999999,
+        20.714285714285722,
+        -88.18181818181819,
+        41.53846153846155,
+        26.47058823529413
+      ],
+      "new_exact_pairs": 4
+    },
+    {
+      "name": "coupled-12",
+      "q_deg": [
+        -75.0,
+        -34.81481481481482,
+        -3.999999999999986,
+        60.714285714285694,
+        -68.18181818181819,
+        50.769230769230774,
+        37.058823529411754
+      ],
+      "new_exact_pairs": 4
+    },
+    {
+      "name": "coupled-13",
+      "q_deg": [
+        45.0,
+        21.851851851851848,
+        36.0,
+        100.7142857142857,
+        -48.18181818181818,
+        -59.289940828402365,
+        47.64705882352939
+      ],
+      "new_exact_pairs": 2
+    },
+    {
+      "name": "coupled-14",
+      "q_deg": [
+        -15.0,
+        78.5185185185185,
+        76.0,
+        -133.57142857142858,
+        -28.181818181818194,
+        -50.05917159763314,
+        58.235294117647044
+      ],
+      "new_exact_pairs": 11
+    },
+    {
+      "name": "coupled-15",
+      "q_deg": [
+        105.0,
+        -15.925925925925931,
+        -76.0,
+        -93.57142857142858,
+        -8.181818181818187,
+        -40.828402366863905,
+        68.8235294117647
+      ],
+      "new_exact_pairs": 2
+    },
+    {
+      "name": "coupled-16",
+      "q_deg": [
+        -112.5,
+        40.74074074074073,
+        -36.0,
+        -53.571428571428584,
+        11.818181818181827,
+        -31.59763313609467,
+        79.41176470588235
+      ],
+      "new_exact_pairs": 12
+    },
+    {
+      "name": "coupled-17",
+      "q_deg": [
+        7.5,
+        97.40740740740739,
+        4.0,
+        -13.571428571428584,
+        31.8181818181818,
+        -22.366863905325445,
+        -89.37716262975779
+      ],
+      "new_exact_pairs": 3
+    },
+    {
+      "name": "coupled-18",
+      "q_deg": [
+        -52.5,
+        -47.407407407407405,
+        44.00000000000003,
+        26.428571428571445,
+        51.81818181818181,
+        -13.136094674556212,
+        -78.78892733564014
+      ],
+      "new_exact_pairs": 11
+    },
+    {
+      "name": "coupled-19",
+      "q_deg": [
+        67.5,
+        9.259259259259252,
+        84.0,
+        66.42857142857142,
+        71.81818181818181,
+        -3.9053254437869853,
+        -68.20069204152249
+      ],
+      "new_exact_pairs": 11
+    },
+    {
+      "name": "coupled-20",
+      "q_deg": [
+        -82.5,
+        65.92592592592592,
+        -68.0,
+        106.42857142857142,
+        91.81818181818181,
+        5.325443786982262,
+        -57.61245674740485
+      ],
+      "new_exact_pairs": 7
+    },
+    {
+      "name": "coupled-21",
+      "q_deg": [
+        37.5,
+        -28.51851851851852,
+        -28.0,
+        -127.85714285714286,
+        111.81818181818184,
+        14.556213017751489,
+        -47.0242214532872
+      ],
+      "new_exact_pairs": 2
+    },
+    {
+      "name": "coupled-22",
+      "q_deg": [
+        -22.5,
+        28.148148148148138,
+        12.000000000000014,
+        -87.85714285714286,
+        -86.36363636363636,
+        23.786982248520715,
+        -36.43598615916955
+      ],
+      "new_exact_pairs": 8
+    },
+    {
+      "name": "coupled-23",
+      "q_deg": [
+        97.5,
+        84.81481481481481,
+        52.00000000000003,
+        -47.85714285714286,
+        -66.36363636363636,
+        33.017751479289956,
+        -25.847750865051907
+      ],
+      "new_exact_pairs": 3
+    },
+    {
+      "name": "coupled-24",
+      "q_deg": [
+        -97.5,
+        -9.629629629629633,
+        92.00000000000003,
+        -7.857142857142861,
+        -46.36363636363636,
+        42.24852071005918,
+        -15.259515570934255
+      ],
+      "new_exact_pairs": 7
+    },
+    {
+      "name": "coupled-25",
+      "q_deg": [
+        22.5,
+        47.03703703703704,
+        -98.4,
+        32.14285714285711,
+        -26.363636363636367,
+        51.47928994082841,
+        -4.671280276816617
+      ],
+      "new_exact_pairs": 9
+    },
+    {
+      "name": "coupled-26",
+      "q_deg": [
+        -37.5,
+        103.7037037037037,
+        -58.4,
+        72.14285714285711,
+        -6.36363636363636,
+        -58.57988165680473,
+        5.916955017301049
+      ],
+      "new_exact_pairs": 16
+    },
+    {
+      "name": "coupled-27",
+      "q_deg": [
+        82.5,
+        -57.901234567901234,
+        -18.39999999999999,
+        112.14285714285711,
+        13.63636363636364,
+        -49.349112426035504,
+        16.5051903114187
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "coupled-28",
+      "q_deg": [
+        -67.5,
+        -1.2345679012345698,
+        21.600000000000023,
+        -122.14285714285714,
+        33.63636363636361,
+        -40.11834319526627,
+        27.093425605536353
+      ],
+      "new_exact_pairs": 6
+    },
+    {
+      "name": "coupled-29",
+      "q_deg": [
+        52.5,
+        55.43209876543209,
+        61.60000000000002,
+        -82.14285714285715,
+        53.636363636363654,
+        -30.88757396449704,
+        37.68166089965398
+      ],
+      "new_exact_pairs": 11
+    },
+    {
+      "name": "coupled-30",
+      "q_deg": [
+        -7.5,
+        -39.01234567901235,
+        -90.4,
+        -42.14285714285715,
+        73.63636363636363,
+        -21.65680473372781,
+        48.269896193771615
+      ],
+      "new_exact_pairs": 11
+    },
+    {
+      "name": "coupled-31",
+      "q_deg": [
+        112.5,
+        17.654320987654316,
+        -50.39999999999999,
+        -2.142857142857139,
+        93.63636363636365,
+        -12.426035502958577,
+        58.85813148788927
+      ],
+      "new_exact_pairs": 1
+    },
+    {
+      "name": "coupled-32",
+      "q_deg": [
+        -116.25,
+        74.32098765432099,
+        -10.399999999999991,
+        37.85714285714283,
+        113.63636363636365,
+        -3.1952662721893432,
+        69.44636678200692
+      ],
+      "new_exact_pairs": 5
+    }
+  ],
+  "hits": [],
+  "sampled_clear": true,
+  "scope": "Changed native J5 only vs A18 own parts except explicitly removed old J5 module plus twelve unchanged supplier partitions. No new brackets/cowls/wires or continuous motion.",
+  "production_release": false
+}
