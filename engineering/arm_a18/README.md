@@ -20,6 +20,8 @@
 
 原厂依据：[SUSPA16-1](https://www.suspa.com/global/products/gas-struts/gas-struts-type-16-1)、[SUSPA16-2](https://www.suspa.com/global/products/gas-struts/gas-struts-type-16-2/)。16-2目录给出的80–750 N是F1范围，不能当作整个行程恒定力。灵足目录中的带散热板转速额定值、峰值与零速参考不能相互替代：[官方资料库](https://github.com/RobStride/Product_Information/blob/main/README.md)。20%静态余量是工程筛选目标，也不是生产级热／动态／疲劳证明。
 
+`spring_acceptance11.py`进一步反推171个J2角度的实际工作推力窗口，保留4099组其他关节、0／3 kg工况；正弦／余弦重建对直接重算误差约7.82e-14 Nm。60°时眼距208.075 mm，所需推力约799–1167 N；90°时194.801 mm，约787–1167 N。这是厂家实测力曲线应满足的需求，不是已经采购／确认的气弹簧参数。见[supplier-verification11.md](supplier-verification11.md)和`build/spring-required-force11.csv`。根部转子助力支座经过静止支撑区的装配仍未验证，数值销位不允许直接冻结加工。
+
 ## 可制造性工作边界
 
 IF09已完成实际名义CAD：臂侧可替换触点面板、工具侧压缩距离量规、两块PCB机械包络、十焊盘／十工作高度针包络及四套M2.5紧固件，共32个模型项。**只有两件塑料件可打印**，其他模型项是PCB、采购件或名义包络。旧面板两M3固定点、工具Ø76定位／四M4／唯一销及两相机窗口保持原坐标。
