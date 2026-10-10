@@ -1,0 +1,2150 @@
+{
+  "revision": "A19-WRIST-CORE19",
+  "layout": {
+    "id": "A19-J5-RS03-FIT16-J6X75",
+    "units": "mm",
+    "status": "candidate; exact changed-part review required; not production",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          94.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -15,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS03",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          68.3,
+          0
+        ],
+        "mass_kg": 0.9,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          75.0,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
+  },
+  "source_assembly_sha256": "628982d4a5cbd0d4f16ae6480c8fe9412ddd8aed3de6488cbb0a6ae6c4f45738",
+  "motor_interface": {
+    "joint": "J5",
+    "model": "RS03",
+    "out_mm": [
+      0,
+      40,
+      0
+    ],
+    "u": [
+      1,
+      0,
+      0
+    ],
+    "v": [
+      0,
+      0,
+      1
+    ],
+    "n": [
+      0,
+      -1,
+      0
+    ],
+    "fixed_mm": [
+      0.0,
+      42.5,
+      0.0
+    ],
+    "model_source": {
+      "status": "Verified source dimensions and geometric interface candidates; not manufacturing release",
+      "manual_pdf_page": 6,
+      "connector_pdf_page": 10,
+      "step_file": "RS03.stp",
+      "step_solid_count": 23,
+      "step_face_count": 1998,
+      "step_axis": {
+        "origin_raw_mm": [
+          0,
+          0,
+          0
+        ],
+        "direction_raw": [
+          0,
+          0,
+          1
+        ],
+        "method": "Largest-area analytic cylinder, then matched to housing symmetry, hole PCDs and 2D. Max-radius inference was rejected for RS04 because a tiny remote cylinder had radius203.55mm."
+      },
+      "step_bbox_raw_mm": {
+        "min": [
+          -49.2701,
+          -49.2701,
+          -19.1
+        ],
+        "max": [
+          50.25,
+          49.2701,
+          37.5
+        ],
+        "size": [
+          99.5201,
+          98.54019,
+          56.6
+        ]
+      },
+      "sampled_step_max_radial_extent_mm": 52.9989,
+      "interface_frame": {
+        "definition": "+Z points out of output; origin at candidate output contact plane; +X raw+X and +Y sign*rawY. This is a mechanical display frame, not an encoder zero.",
+        "T_raw_from_interface_mm": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            37.5
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "output_face_raw_z_mm": 37.5,
+        "housing_front_raw_z_mm": 35.0,
+        "housing_rear_flange_raw_z_mm": -4.5,
+        "rear_cover_extreme_raw_z_mm": -19.1,
+        "output_to_housing_front_mm": 2.5,
+        "output_to_housing_rear_flange_mm": 42.0,
+        "output_to_rear_cover_extreme_mm": 56.6,
+        "step_axial_bounds_interface_mm": [
+          -56.6,
+          0.0
+        ]
+      },
+      "output_fasteners": {
+        "pcd_measured_mm": 30.36,
+        "measured_cylinder_radius_mm": 2.0,
+        "raw_step_axial_span_mm": [
+          31.9,
+          37.5
+        ],
+        "count": 6,
+        "raw_step_xy_mm": [
+          [
+            -13.14627,
+            -7.59
+          ],
+          [
+            -13.14627,
+            7.59
+          ],
+          [
+            0.0,
+            -15.18
+          ],
+          [
+            -0.0,
+            15.18
+          ],
+          [
+            13.14627,
+            -7.59
+          ],
+          [
+            13.14627,
+            7.59
+          ]
+        ],
+        "note": "Cylinder is geometric evidence only. Thread designation/depth comes from 2D, not cylinder diameter; screw access and preload unverified.",
+        "drawing": "6 x M4 blind depth 6 mm; PCD 30.36 +/-0.2"
+      },
+      "fixed_front_fasteners": {
+        "pcd_measured_mm": 98.0,
+        "measured_cylinder_radius_mm": 1.65,
+        "raw_step_axial_span_mm": [
+          -1.5,
+          7.0
+        ],
+        "count": 8,
+        "raw_step_xy_mm": [
+          [
+            -45.2701,
+            -18.75149
+          ],
+          [
+            -45.2701,
+            18.75149
+          ],
+          [
+            -18.75149,
+            -45.2701
+          ],
+          [
+            -18.75149,
+            45.2701
+          ],
+          [
+            18.75149,
+            -45.2701
+          ],
+          [
+            18.75149,
+            45.2701
+          ],
+          [
+            45.2701,
+            -18.75149
+          ],
+          [
+            45.2701,
+            18.75149
+          ]
+        ],
+        "note": "Cylinder is geometric evidence only. Thread designation/depth comes from 2D, not cylinder diameter; screw access and preload unverified.",
+        "drawing": "8 x M4 depth 8 mm; PCD 98 +/-0.2"
+      },
+      "pilot_or_location": "Drawing diameter 70 mm, upper 0 / lower -0.1; output protrusion 2.5 mm",
+      "connectors": {
+        "official_connector_names": [
+          "XT30APW-M.G.B board side / XT30UW-F.G.B cable side",
+          "GH1.25-2PWT board side / GH1.25-T cable side"
+        ],
+        "rear_electronics_zone_raw_z_mm": [
+          -19.1,
+          -4.5
+        ],
+        "verified_mating_connector_center_raw_mm": null,
+        "verified_mated_plug_envelope_mm": null,
+        "status": "Connector family verified from manual; exact plug placement/clocking and service insertion space not fully dimensioned. Do not invent a bolt hole or route through the shaft."
+      },
+      "through_bore": {
+        "usable_through_bore_confirmed": false,
+        "nominal_diameter_mm": null,
+        "note": "No usable continuous central cable passage specification found in these manuals. STEP center-axis absence of material at sample points cannot establish a routable passage through the encoder/driver/caps. Use an external-to-motor route inside the arm cover."
+      },
+      "viewer_recommendation": {
+        "outer_cylinder_diameter_mm": 106.0,
+        "conservative_total_axial_extent_mm": 57.0,
+        "output_disc_diameter_mm": 70.0,
+        "build_method": "Rebuild simple original cylinder/ear/face/bolt-pattern envelopes from cited facts; do not redistribute manufacturer tessellation. Add separately labelled provisional connector/service-loop keepout.",
+        "through_axis_cable_route_allowed": false
+      },
+      "limitations": [
+        "3 x diameter 4 (+0.1/0) equally spaced blind locating holes, depth 7 mm, shown on output PCD 30.36.",
+        "106 mm is a conservative circumscribed envelope over the eight housing ears; axis-aligned STEP XY bounds are smaller because the ears are clocked.",
+        "Raw STEP output clocking is not verified encoder zero."
+      ]
+    },
+    "T_joint_from_raw_mm": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0,
+        77.5
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "parts": [
+    {
+      "id": "A19-S19-fore-spine-RS03-ring",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "printed_structure",
+      "material": "PETG/PA12 supported fit",
+      "volume_mm3": 99525.44211594037,
+      "mass_kg": 0.12639731148724426,
+      "com_mm": [
+        141.5300743625302,
+        91.2900835133316,
+        0.0206033203258467
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-S19-fore-spine-RS03-ring.step",
+      "step_sha256": "42c30ed62fbf80f4570ed104808b177c2ed5174c62bd88beead569f0404d089f",
+      "note": "Stock tube/socket and C06 fore shell seats retained; native RS03 eight M4 holes and R57 cover stations; no plastic tapped load threads.",
+      "print_rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "print_translation_mm": [
+        -50.0,
+        60.98218369178289,
+        104.5
+      ],
+      "print_size_mm": [
+        196.0,
+        121.96436738356579,
+        56.5
+      ],
+      "print_stl_sha256": "247496f7866a364e19d85f34b3b70341aebd48e6a4a40821dcefe7161855cbd1"
+    },
+    {
+      "id": "A19-S19-RS03-to-J6-L",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "printed_structure",
+      "material": "PETG/PA12 supported fit",
+      "volume_mm3": 58263.15059852168,
+      "mass_kg": 0.07399420126012253,
+      "com_mm": [
+        18.12356199164046,
+        25.921586949177257,
+        -10.056835197394621
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-S19-RS03-to-J6-L.step",
+      "step_sha256": "2a992e328faa65476c4297c23fca522018889ff7f6757c7d983dcc9dfb86707b",
+      "note": "Native D70 output contact plate, ordinary straight L legs; J6 moves55\u219275mm. J6 four heat-set pilots remain unchanged locally.",
+      "print_rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "print_translation_mm": [
+        34.98912137002858,
+        36.8,
+        40.0
+      ],
+      "print_size_mm": [
+        142.98912137002858,
+        71.8,
+        67.5
+      ],
+      "print_stl_sha256": "ffcdaa8a8b0cce9af2016c3870823866008126adb343ca9d2d99659911c07c1f"
+    },
+    {
+      "id": "A19-H19-J5-fixed-1",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 318.1758856758383,
+      "mass_kg": 0.0024976807025553303,
+      "com_mm": [
+        -45.27009999999999,
+        36.72230668016796,
+        -18.75149
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-1.step",
+      "step_sha256": "1a550baa91cb81b639ef82ecfcdc28b3346f7c9faa2b11030399bdd6c7789a3d",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          -45.2701,
+          42.5,
+          -18.75149
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-fixed-1-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345492,
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        -45.27010000000001,
+        34.1,
+        -18.751490000000004
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-1-washer.step",
+      "step_sha256": "8aa932adb3d3bf6201638b27ae50af23fc70635866b185439b03ae53dd0cb041",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-fixed-2",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 318.1758856758383,
+      "mass_kg": 0.0024976807025553303,
+      "com_mm": [
+        -45.27009999999999,
+        36.722306680167954,
+        18.751490000000004
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-2.step",
+      "step_sha256": "aa0e0622d23dac836f560f791a9ce789f21d7b70754a9bc5cbb7bb500985da25",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          -45.2701,
+          42.5,
+          18.75149
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-fixed-2-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345492,
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        -45.270100000000006,
+        34.099999999999994,
+        18.75149
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-2-washer.step",
+      "step_sha256": "df0b8622432765b05d5a26327324c4d57372ccba65ca22ba223435295ada6b8d",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-fixed-3",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 318.1758856758384,
+      "mass_kg": 0.002497680702555331,
+      "com_mm": [
+        -18.75149,
+        36.72230668016797,
+        -45.27009999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-3.step",
+      "step_sha256": "3351e4b4efcea5ed27b8775264ed8650504ca247159644cba041fa2dfbc70d2a",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          -18.75149,
+          42.5,
+          -45.2701
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-fixed-3-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345495,
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        -18.751490000000008,
+        34.099999999999994,
+        -45.27009999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-3-washer.step",
+      "step_sha256": "50144bb0c47ed5a666126219612dcfb1e6fd5f4c9122f5806d58ff846eb9c593",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-fixed-4",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 318.1758856758384,
+      "mass_kg": 0.002497680702555331,
+      "com_mm": [
+        -18.751490000000004,
+        36.72230668016797,
+        45.2701
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-4.step",
+      "step_sha256": "9aa2bb138d771bbf3aba52341e7842c447fd30acd11556a62a28527e6d998e16",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          -18.75149,
+          42.5,
+          45.2701
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-fixed-4-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.729554233454934,
+      "mass_kg": 0.0003040270007326212,
+      "com_mm": [
+        -18.75149000000001,
+        34.099999999999994,
+        45.27009999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-4-washer.step",
+      "step_sha256": "0a16909cfbee8b7494e5671023d42b659ea675fd61f54e0e93b7545ee8237fc3",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-fixed-5",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 318.1758856758384,
+      "mass_kg": 0.002497680702555331,
+      "com_mm": [
+        18.75149,
+        36.72230668016797,
+        -45.27009999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-5.step",
+      "step_sha256": "a699d648c161d6c9d9042488e7e15c006e0b95254867d67a09e68d288889c35c",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          18.75149,
+          42.5,
+          -45.2701
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-fixed-5-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345495,
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        18.751489999999993,
+        34.099999999999994,
+        -45.27009999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-5-washer.step",
+      "step_sha256": "f9f6c6c26d03c8fa527d59dbb3f71f953dc659d349b71a553a61379c348e739c",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-fixed-6",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 318.1758856758384,
+      "mass_kg": 0.002497680702555331,
+      "com_mm": [
+        18.751490000000004,
+        36.72230668016797,
+        45.27009999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-6.step",
+      "step_sha256": "ec6442895bc75ae2e6fd0d9516ecdab07f2a0001c1593e25f40b6c0204bbe5c8",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          18.75149,
+          42.5,
+          45.2701
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-fixed-6-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345495,
+      "mass_kg": 0.00030402700073262133,
+      "com_mm": [
+        18.751489999999993,
+        34.099999999999994,
+        45.27009999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-6-washer.step",
+      "step_sha256": "a46b1f9a040f036a47a6e5eccd011ec875901e302863cebe10daef4c1721367a",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-fixed-7",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 318.1758856758383,
+      "mass_kg": 0.0024976807025553303,
+      "com_mm": [
+        45.27009999999999,
+        36.72230668016796,
+        -18.75149
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-7.step",
+      "step_sha256": "250c497784a7dba00629d5cb413db077b26cdff77761a9d47bd9920d0b6b3003",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          45.2701,
+          42.5,
+          -18.75149
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-fixed-7-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345492,
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        45.2701,
+        34.1,
+        -18.751490000000004
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-7-washer.step",
+      "step_sha256": "bc0ac849c975ae9e1d5c725ef639c2c195e7def1330d4f1ae47364b9f40c5203",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-fixed-8",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 318.17588567583834,
+      "mass_kg": 0.0024976807025553307,
+      "com_mm": [
+        45.270099999999985,
+        36.722306680167954,
+        18.75149
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-8.step",
+      "step_sha256": "0fb25b759847948246e3874cef4a181d853b75f53ebad670c9cfe736fed3a8c5",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          45.2701,
+          42.5,
+          18.75149
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-fixed-8-washer",
+      "owner": 4,
+      "frame": "J5.fixed",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345492,
+      "mass_kg": 0.0003040270007326211,
+      "com_mm": [
+        45.2701,
+        34.099999999999994,
+        18.75149
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-fixed-8-washer.step",
+      "step_sha256": "15f848730c9138eee39df3e3e19b701de5a0ac18a21b4909bc6f87e5dadba72e",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-output-1",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 343.3086269045567,
+      "mass_kg": 0.00269497272120077,
+      "com_mm": [
+        -13.146269999999996,
+        33.09916278902413,
+        -7.589999999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-1.step",
+      "step_sha256": "199198d721682a580f56fd440641879e6aa4e71279fc8c93991f60a4f5a59d4b",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          -13.14627,
+          40.0,
+          -7.59
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-output-1-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345499,
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -13.146270000000005,
+        29.600000000000005,
+        -7.59
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-1-washer.step",
+      "step_sha256": "b866860910c973b9ef540d8dc576763454b19471e94e405d04318df31ff9dd8a",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-output-2",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 343.3086269045567,
+      "mass_kg": 0.00269497272120077,
+      "com_mm": [
+        -13.146269999999996,
+        33.09916278902412,
+        7.589999999999998
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-2.step",
+      "step_sha256": "fe3337bf9778edee3b9810bcaaab9ba9eb8dd27fb699659726cfae00e0917070",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          -13.14627,
+          40.0,
+          7.59
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-output-2-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345499,
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -13.146270000000005,
+        29.600000000000005,
+        7.59
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-2-washer.step",
+      "step_sha256": "82a1f4869623c7b2b36b2efb8491d659ed834f4d66eec54b45a9e5af9350a5d3",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-output-3",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 343.3086269045566,
+      "mass_kg": 0.002694972721200769,
+      "com_mm": [
+        1.52259822959501e-16,
+        33.099162789024135,
+        -15.180000000000003
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-3.step",
+      "step_sha256": "358bcc60fdbaaf5cc473d64bc912d26cc474c2081a559d0e78206bf37b2cb0d3",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          0.0,
+          40.0,
+          -15.18
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-output-3-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345499,
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -6.535857554381006e-15,
+        29.599999999999998,
+        -15.179999999999998
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-3-washer.step",
+      "step_sha256": "15eb30abf5cf39f9b93f72e0b35672e2c2ee0061e4babe5a5a85b08bc22e362c",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-output-4",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 343.3086269045567,
+      "mass_kg": 0.00269497272120077,
+      "com_mm": [
+        1.9442836591935293e-16,
+        33.09916278902413,
+        15.179999999999998
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-4.step",
+      "step_sha256": "da54a2e7130b1d2fb365e9ec63ce3fb951c7b09f44aae2b02dc679f7f420fd0c",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          0.0,
+          40.0,
+          15.18
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-output-4-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.72955423345499,
+      "mass_kg": 0.00030402700073262165,
+      "com_mm": [
+        -5.710275547511826e-15,
+        29.599999999999998,
+        15.180000000000003
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-4-washer.step",
+      "step_sha256": "c9090fd71702a4f6ce40dd98fdb7cc60d9ebbbf7bbbb51c5b8915216cf59e1c6",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-output-5",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 343.3086269045567,
+      "mass_kg": 0.00269497272120077,
+      "com_mm": [
+        13.146269999999996,
+        33.09916278902413,
+        -7.589999999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-5.step",
+      "step_sha256": "d669524e460db7c727e1f7a49ef9f7678fd1f2db94c85838cae3d6032636177b",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          13.14627,
+          40.0,
+          -7.59
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-output-5-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.729554233455,
+      "mass_kg": 0.0003040270007326217,
+      "com_mm": [
+        13.146269999999996,
+        29.600000000000005,
+        -7.590000000000001
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-5-washer.step",
+      "step_sha256": "50e6282167ef5f3fe1c13891792a2bf1cda0ff61c5488a294a702e060f14c211",
+      "note": ""
+    },
+    {
+      "id": "A19-H19-J5-output-6",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 343.3086269045567,
+      "mass_kg": 0.00269497272120077,
+      "com_mm": [
+        13.146269999999996,
+        33.09916278902412,
+        7.589999999999998
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-6.step",
+      "step_sha256": "6c6451d0d5c864af579d184934d5149e43d3957adc9ab126d741d6ee07470d30",
+      "note": "",
+      "intentional_thread_motor": "J5",
+      "thread_zone_mm": {
+        "p": [
+          13.14627,
+          40.0,
+          7.59
+        ],
+        "n": [
+          0,
+          -1,
+          0
+        ],
+        "depth": 5.2,
+        "diameter": 4.02
+      }
+    },
+    {
+      "id": "A19-H19-J5-output-6-washer",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 38.729554233455005,
+      "mass_kg": 0.00030402700073262176,
+      "com_mm": [
+        13.146269999999992,
+        29.600000000000005,
+        7.590000000000001
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-H19-J5-output-6-washer.step",
+      "step_sha256": "7b135964c2b1e0c8721cf4530007ecbd215e1219f52b51e5a6201932de90bd52",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-1-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 121.05772762587306,
+      "mass_kg": 0.0009503031618631034,
+      "com_mm": [
+        52.72613639262395,
+        -22.273863607370004,
+        -39.68192865127478
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-1-X75.step",
+      "step_sha256": "45465a254bafe7b78984e014821187e09b81c08049c531f63f115ef0e954a077",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-1-washer-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 15.221016406642882,
+      "mass_kg": 0.00011948497879214661,
+      "com_mm": [
+        52.726136392624056,
+        -22.27386360737,
+        -40.54999999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-1-washer-X75.step",
+      "step_sha256": "4c243227ccadb7f7407a9a82bece928bcf9b852b36ec0d9ab96cd81bf4e12a30",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-spacer-1-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 15.221016406642882,
+      "mass_kg": 0.00011948497879214661,
+      "com_mm": [
+        52.726136392624056,
+        -22.27386360737,
+        -37.04999999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-spacer-1-X75.step",
+      "step_sha256": "037e4468edef97adacbd65ad63d3d7350855581b59b0018369b5c4432c2bb94e",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-insert-1-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 54.43751750140498,
+      "mass_kg": 0.0004273345123860291,
+      "com_mm": [
+        52.726136392624056,
+        -22.27386360737,
+        -33.95
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-insert-1-X75.step",
+      "step_sha256": "43007a477db2f458482860c1e6ebbc698548677c3f5a481f05906d576f3e0657",
+      "note": "",
+      "intentional_heatset_target": "A19-S19-RS03-to-J6-L",
+      "heatset_zone_mm": {
+        "p": [
+          52.72613639262376,
+          -22.27386360737625,
+          -31.1
+        ],
+        "n": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "length": 5.7,
+        "outer_diameter": 4.62,
+        "pilot_diameter": 3.98
+      }
+    },
+    {
+      "id": "A16-C05-H-J6-2-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 121.0577276258735,
+      "mass_kg": 0.0009503031618631069,
+      "com_mm": [
+        44.57333647189393,
+        -8.152799920728995,
+        -39.6819286512748
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-2-X75.step",
+      "step_sha256": "40fcd3faa00c5fed0e87ab571fe669db8638dcc43ce63a99236be22a548feb39",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-2-washer-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 15.22101640664288,
+      "mass_kg": 0.0001194849787921466,
+      "com_mm": [
+        44.57333647189406,
+        -8.152799920729,
+        -40.55
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-2-washer-X75.step",
+      "step_sha256": "28167c8c8f4f8594f9e5d6b9ecc5c59ec65b46c17cac762c7b97ad14f5336e19",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-spacer-2-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 15.22101640664288,
+      "mass_kg": 0.0001194849787921466,
+      "com_mm": [
+        44.57333647189406,
+        -8.152799920729,
+        -37.050000000000004
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-spacer-2-X75.step",
+      "step_sha256": "66a5a287d133c13354052d29c94e1a7c5e9d62ca933c56016ef82e3519f8fb6e",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-insert-2-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 54.43751750140498,
+      "mass_kg": 0.0004273345123860291,
+      "com_mm": [
+        44.573336471894045,
+        -8.152799920729004,
+        -33.95
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-insert-2-X75.step",
+      "step_sha256": "b444af973d5999a4be2bb39ec74e8f588c36b1fab6056e14fc911647bba675f9",
+      "note": "",
+      "intentional_heatset_target": "A19-S19-RS03-to-J6-L",
+      "heatset_zone_mm": {
+        "p": [
+          44.57333647189435,
+          -8.152799920729413,
+          -31.1
+        ],
+        "n": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "length": 5.7,
+        "outer_diameter": 4.62,
+        "pilot_diameter": 3.98
+      }
+    },
+    {
+      "id": "A16-C05-H-J6-3-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 121.05772762587353,
+      "mass_kg": 0.0009503031618631071,
+      "com_mm": [
+        44.573336471893924,
+        8.152799920729004,
+        -39.6819286512748
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-3-X75.step",
+      "step_sha256": "e48da9a32af050a25ac213df841e7e7de1fad768c3eb0c3f1d95aaf53fd8301d",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-3-washer-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 15.221016406642882,
+      "mass_kg": 0.00011948497879214661,
+      "com_mm": [
+        44.573336471894066,
+        8.152799920728999,
+        -40.550000000000004
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-3-washer-X75.step",
+      "step_sha256": "f09c0aa69c5cd383d51bc1dd13dfe37ccc28c350919db3bc4266573e8ead947f",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-spacer-3-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 15.221016406642882,
+      "mass_kg": 0.00011948497879214661,
+      "com_mm": [
+        44.573336471894066,
+        8.152799920728999,
+        -37.04999999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-spacer-3-X75.step",
+      "step_sha256": "fa26d42c113e4de7626f26ab49ebafbf91ed52abf393c318bfb3d6c2213d0950",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-insert-3-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 54.43751750140498,
+      "mass_kg": 0.0004273345123860291,
+      "com_mm": [
+        44.573336471894045,
+        8.152799920729002,
+        -33.95
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-insert-3-X75.step",
+      "step_sha256": "f8ed999a359bcba4a0810d79d7629700a5ca841b09c44768e1bb7551f1915084",
+      "note": "",
+      "intentional_heatset_target": "A19-S19-RS03-to-J6-L",
+      "heatset_zone_mm": {
+        "p": [
+          44.57333647189435,
+          8.152799920729406,
+          -31.1
+        ],
+        "n": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "length": 5.7,
+        "outer_diameter": 4.62,
+        "pilot_diameter": 3.98
+      }
+    },
+    {
+      "id": "A16-C05-H-J6-4-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 121.05772762587304,
+      "mass_kg": 0.0009503031618631033,
+      "com_mm": [
+        52.72613639262395,
+        22.273863607376008,
+        -39.68192865127479
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-4-X75.step",
+      "step_sha256": "2e84f7bb82d9e15148da076c4862cf6092794a3a9937014de3eab062c458473c",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-4-washer-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 15.221016406642882,
+      "mass_kg": 0.00011948497879214661,
+      "com_mm": [
+        52.726136392624056,
+        22.273863607376,
+        -40.54999999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-4-washer-X75.step",
+      "step_sha256": "060093ce7db2106cfe7a304a0a5ed0c0132f9f0d7d382685c5e4fdd54586711e",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-spacer-4-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 15.221016406642882,
+      "mass_kg": 0.00011948497879214661,
+      "com_mm": [
+        52.726136392624056,
+        22.273863607376,
+        -37.04999999999999
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-spacer-4-X75.step",
+      "step_sha256": "0664ba39dd4c807c0fec3d373532e7a7d212a363df0df7a84c0518e4ac72c3fb",
+      "note": ""
+    },
+    {
+      "id": "A16-C05-H-J6-insert-4-X75",
+      "owner": 5,
+      "frame": "J5.rotor",
+      "role": "hardware",
+      "material": "purchased steel nominal envelope",
+      "volume_mm3": 54.43751750140498,
+      "mass_kg": 0.0004273345123860291,
+      "com_mm": [
+        52.726136392624056,
+        22.273863607376,
+        -33.95
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A16-C05-H-J6-insert-4-X75.step",
+      "step_sha256": "52510a91d4bf8da7ccfb6345449969af2b9e74b869a6b3cba71cbebbb82185b0",
+      "note": "",
+      "intentional_heatset_target": "A19-S19-RS03-to-J6-L",
+      "heatset_zone_mm": {
+        "p": [
+          52.726136392623744,
+          22.273863607376246,
+          -31.1
+        ],
+        "n": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "length": 5.7,
+        "outer_diameter": 4.62,
+        "pilot_diameter": 3.98
+      }
+    },
+    {
+      "id": "A19-C19-fore-dorsal",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "printed_cover",
+      "material": "PETG/PA12 supported fit",
+      "volume_mm3": 21330.594895860893,
+      "mass_kg": 0.027089855517743334,
+      "com_mm": [
+        88.90923073375792,
+        86.66412187857777,
+        23.013290464316402
+      ],
+      "step_path": "engineering/arm_a19/build/wrist-core19/step/A19-C19-fore-dorsal.step",
+      "step_sha256": "bdb6a8989833b10878a2c1f7b483e5a025302f80eabdb6aec621d5b1f6656509",
+      "note": "Same A17 exterior and cover fixings; local RS03 bracket clearance reserve0.5mm axis offsets, not a full tolerance qualification.",
+      "print_rotation": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      ],
+      "print_translation_mm": [
+        -46.0,
+        -0.25,
+        116.0
+      ],
+      "print_size_mm": [
+        87.0,
+        39.185560097753935,
+        70.5
+      ],
+      "print_stl_sha256": "0145eaa7a9f3206abcb13b8eb232b0bae764bc4c92817672445f18849c23d45f"
+    }
+  ],
+  "replaces_only": [
+    "A16-C05-H-J5-1",
+    "A16-C05-H-J5-1-washer",
+    "A16-C05-H-J5-2",
+    "A16-C05-H-J5-2-washer",
+    "A16-C05-H-J5-insert-1-C06",
+    "A16-C05-H-J5-insert-2-C06",
+    "A16-C05-H-J5-insert-radial-1-C06",
+    "A16-C05-H-J5-insert-radial-2-C06",
+    "A16-C05-H-J5-radial-1",
+    "A16-C05-H-J5-radial-1-washer",
+    "A16-C05-H-J5-radial-2",
+    "A16-C05-H-J5-radial-2-washer",
+    "A16-C05-H-J5-spacer-1",
+    "A16-C05-H-J5-spacer-2",
+    "A16-C05-H-J6-1",
+    "A16-C05-H-J6-1-washer",
+    "A16-C05-H-J6-2",
+    "A16-C05-H-J6-2-washer",
+    "A16-C05-H-J6-3",
+    "A16-C05-H-J6-3-washer",
+    "A16-C05-H-J6-4",
+    "A16-C05-H-J6-4-washer",
+    "A16-C05-H-J6-insert-1",
+    "A16-C05-H-J6-insert-2",
+    "A16-C05-H-J6-insert-3",
+    "A16-C05-H-J6-insert-4",
+    "A16-C05-H-J6-spacer-1",
+    "A16-C05-H-J6-spacer-2",
+    "A16-C05-H-J6-spacer-3",
+    "A16-C05-H-J6-spacer-4",
+    "A16-C05-J6-mount-plate",
+    "A16-C06-fore-spine-and-J5-ring",
+    "A16-H-J5-fixed-1",
+    "A16-H-J5-fixed-1-washer",
+    "A16-H-J5-fixed-2",
+    "A16-H-J5-fixed-2-washer",
+    "A16-H-J5-fixed-3",
+    "A16-H-J5-fixed-3-washer",
+    "A16-H-J5-fixed-4",
+    "A16-H-J5-fixed-4-washer",
+    "A16-H-J5-fixed-5",
+    "A16-H-J5-fixed-5-washer",
+    "A16-H-J5-fixed-6",
+    "A16-H-J5-fixed-6-washer",
+    "A16-H-J5-output-1",
+    "A16-H-J5-output-1-washer",
+    "A16-H-J5-output-2",
+    "A16-H-J5-output-2-washer",
+    "A16-H-J5-output-3",
+    "A16-H-J5-output-3-washer",
+    "A16-H-J5-output-4",
+    "A16-H-J5-output-4-washer",
+    "A16-H-J5-output-5",
+    "A16-H-J5-output-5-washer",
+    "A16-H-J5-output-6",
+    "A16-H-J5-output-6-washer",
+    "A17-C05-J5-cowl-a",
+    "A17-C05-J5-cowl-b",
+    "A17-C06-fore-dorsal"
+  ],
+  "cover_mounts": [
+    {
+      "angle_deg": 45,
+      "p_mm": [
+        225.30508652763322,
+        104.5,
+        40.30508652763321
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "radius_mm": 57
+    },
+    {
+      "angle_deg": 135,
+      "p_mm": [
+        144.6949134723668,
+        104.5,
+        40.305086527633215
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "radius_mm": 57
+    },
+    {
+      "angle_deg": 225,
+      "p_mm": [
+        144.69491347236678,
+        104.5,
+        -40.30508652763321
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "radius_mm": 57
+    },
+    {
+      "angle_deg": 315,
+      "p_mm": [
+        225.3050865276332,
+        104.5,
+        -40.305086527633215
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "radius_mm": 57
+    }
+  ],
+  "screw_stacks": [
+    {
+      "id": "A19-H19-J5-fixed-1",
+      "description": "ISO4762 M4x14",
+      "mount_origin_mm": [
+        -45.2701,
+        42.5,
+        -18.75149
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 8,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 8
+    },
+    {
+      "id": "A19-H19-J5-fixed-2",
+      "description": "ISO4762 M4x14",
+      "mount_origin_mm": [
+        -45.2701,
+        42.5,
+        18.75149
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 8,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 8
+    },
+    {
+      "id": "A19-H19-J5-fixed-3",
+      "description": "ISO4762 M4x14",
+      "mount_origin_mm": [
+        -18.75149,
+        42.5,
+        -45.2701
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 8,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 8
+    },
+    {
+      "id": "A19-H19-J5-fixed-4",
+      "description": "ISO4762 M4x14",
+      "mount_origin_mm": [
+        -18.75149,
+        42.5,
+        45.2701
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 8,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 8
+    },
+    {
+      "id": "A19-H19-J5-fixed-5",
+      "description": "ISO4762 M4x14",
+      "mount_origin_mm": [
+        18.75149,
+        42.5,
+        -45.2701
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 8,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 8
+    },
+    {
+      "id": "A19-H19-J5-fixed-6",
+      "description": "ISO4762 M4x14",
+      "mount_origin_mm": [
+        18.75149,
+        42.5,
+        45.2701
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 8,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 8
+    },
+    {
+      "id": "A19-H19-J5-fixed-7",
+      "description": "ISO4762 M4x14",
+      "mount_origin_mm": [
+        45.2701,
+        42.5,
+        -18.75149
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 8,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 8
+    },
+    {
+      "id": "A19-H19-J5-fixed-8",
+      "description": "ISO4762 M4x14",
+      "mount_origin_mm": [
+        45.2701,
+        42.5,
+        18.75149
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 8,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 8
+    },
+    {
+      "id": "A19-H19-J5-output-1",
+      "description": "ISO4762 M4x16",
+      "mount_origin_mm": [
+        -13.14627,
+        40.0,
+        -7.59
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 10,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 6
+    },
+    {
+      "id": "A19-H19-J5-output-2",
+      "description": "ISO4762 M4x16",
+      "mount_origin_mm": [
+        -13.14627,
+        40.0,
+        7.59
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 10,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 6
+    },
+    {
+      "id": "A19-H19-J5-output-3",
+      "description": "ISO4762 M4x16",
+      "mount_origin_mm": [
+        0.0,
+        40.0,
+        -15.18
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 10,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 6
+    },
+    {
+      "id": "A19-H19-J5-output-4",
+      "description": "ISO4762 M4x16",
+      "mount_origin_mm": [
+        0.0,
+        40.0,
+        15.18
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 10,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 6
+    },
+    {
+      "id": "A19-H19-J5-output-5",
+      "description": "ISO4762 M4x16",
+      "mount_origin_mm": [
+        13.14627,
+        40.0,
+        -7.59
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 10,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 6
+    },
+    {
+      "id": "A19-H19-J5-output-6",
+      "description": "ISO4762 M4x16",
+      "mount_origin_mm": [
+        13.14627,
+        40.0,
+        7.59
+      ],
+      "normal": [
+        0,
+        -1,
+        0
+      ],
+      "grip_mm": 10,
+      "washer_mm": 0.8,
+      "insertion_mm": 5.2,
+      "source_depth_mm": 6
+    }
+  ],
+  "refreshed_J6_heatsets": [
+    "A16-C05-H-J6-insert-1-X75",
+    "A16-C05-H-J6-insert-2-X75",
+    "A16-C05-H-J6-insert-3-X75",
+    "A16-C05-H-J6-insert-4-X75"
+  ],
+  "sampled_static_max_Nm": [
+    0.0,
+    48.29488498311582,
+    20.415326134823122,
+    20.655078765108456,
+    9.891563861788848,
+    6.50620636185568,
+    0.001571475237716156
+  ],
+  "static_sample_count": 4099,
+  "undeveloped_cowl_allowance_kg": 0.15,
+  "motor_zero_speed_reference_Nm": [
+    13,
+    28.5,
+    28.5,
+    28.5,
+    13,
+    9.5,
+    3.6
+  ],
+  "scope": "Core-only candidate. Missing J5 cowls/mount hardware; old J6 cover hardware must move with new local seats. All changed-part collision/tool/print checks pending.",
+  "production_release": false
+}
