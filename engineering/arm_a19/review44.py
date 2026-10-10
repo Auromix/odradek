@@ -12,7 +12,15 @@ def main():
  current=OUT/'manifest.json';d=json.loads(current.read_text());oldpath=BASE/'assembly25-v25.json';old=json.loads(oldpath.read_text());fullpath=BASE/'full-review35-v25.json';basefull=json.loads(fullpath.read_text());changedpath=BASE/'review20-v25.json';basechanged=json.loads(changedpath.read_text());hardwarepath=HERE/'build/hardware43/manifest.json';h=json.loads(hardwarepath.read_text())
  assert basefull['source_sha256'][str(current.relative_to(ROOT))]==c.sha(oldpath)==h['source_baseline_assembly_sha256']
  assert basechanged['source_sha256'][str(current.relative_to(ROOT))]==c.sha(oldpath)
- assert d['layout']==old['layout']==basefull['layout']==basechanged['layout']
+ assert old['layout']==basefull['layout']==basechanged['layout']
+ # The RS03 STEP was always used; only the unused catalogue diameter was
+ # corrected from the old RS10P display value. No kinematic field may differ.
+ expected=json.loads(json.dumps(old['layout']))
+ if d['layout']['joints'][4]['diameter_mm']!=expected['joints'][4]['diameter_mm']:
+  assert expected['joints'][4]['model']==d['layout']['joints'][4]['model']=='RS03'
+  assert expected['joints'][4]['diameter_mm']==57 and d['layout']['joints'][4]['diameter_mm']==106
+  expected['joints'][4]['diameter_mm']=106
+ assert d['layout']==expected
  oldmaps={p['id']:p for p in old['parts']};newmaps={p['id']:p for p in d['parts']};changed={p['id']for p in h['parts']};removed=set(h['replaces_only']);unchanged=set(oldmaps)-removed
  assert unchanged==set(newmaps)-changed and not(removed&set(newmaps))
  for id in unchanged:
