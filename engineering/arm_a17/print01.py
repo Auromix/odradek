@@ -20,6 +20,11 @@ def main():
     d=json.loads((OUT/'manifest.json').read_text());review=json.loads((OUT/'review.json').read_text())
     assert review['sampled_clear'] and review['table_plane_sampled_clear'],'Failed geometry must not be issued'
     for f,h in review['source_sha256'].items():assert sha(ROOT/f)==h
+    for name in ['native-audit.json','physics.json']:
+        audit=json.loads((OUT/name).read_text())
+        assert audit['manifest_sha256']==sha(OUT/'manifest.json'),(name,'stale manifest')
+    native=json.loads((OUT/'native-audit.json').read_text())
+    for name,h in native['images'].items():assert sha(OUT/(name+'.png'))==h
     PACK.mkdir(parents=True,exist_ok=True)
     for name in ['step','print-bed']:(PACK/name).mkdir(exist_ok=True)
     pdf=canvas.Canvas(str(PACK/'18-cover-fit-drawings.pdf'),pagesize=landscape(A3));bed=[]
@@ -49,6 +54,7 @@ def main():
         curves=[np.array([e.positionAt(float(q)).toTuple() for q in np.linspace(0,1,2 if e.geomType()=='LINE' else 60)]) for e in shape.Edges()]
         pdf.setLineWidth(.15*mm);pdf.rect(10*mm,10*mm,400*mm,277*mm)
         txt(16,276,p['id'],15);txt(16,263,'mm | REPLACEMENT FIT DRAWING | supported, unpowered, unloaded',10)
+        txt(16,253,'STEP local frame: '+p['frame']+'; orthographic coordinates use this frame.',9)
         for k,(label,axes) in enumerate([('XY',(0,1)),('XZ',(0,2)),('YZ',(1,2))]):
             span=(hi-lo)[list(axes)];scale=min(112/max(span[0],1),132/max(span[1],1),1);origin=np.array([18+131*k,104])
             txt(origin[0],247,label+'; all edges, hidden included',8)
@@ -72,7 +78,7 @@ def main():
             for m in src['mounts']:writer.writerow([name,m['joint'],m['k'],m['frame'],*m['p_mm'],*m['n']])
         for angle in [20,160,200,340]:
             a=np.radians(angle);writer.writerow(['root-cover03','J1',angle,'J1.fixed',62*np.cos(a),62*np.sin(a),0,0,0,1])
-    for name in ['manifest.json','review.json','native-audit.json']:
+    for name in ['manifest.json','review.json','native-audit.json','physics.json']:
         shutil.copy2(OUT/name,PACK/name)
     for file in OUT.glob('*.png'):shutil.copy2(file,PACK/file.name)
     note='''# A17 连续甲壳替换试配件
@@ -86,6 +92,8 @@ STEP为原装配坐标；print-bed为毫米贴床STL，变换见print-audit。�
 review只证明指定26个有限姿态的精确几何检查，详见范围和继承的旧件SHA。外观、有限样本和闭合网格不证明3kg负载、实际工具可达、热、线束及金属强度。IF08触点+双相机端口仍是独立提案，未装进此模型。
 
 18-cover-fit-drawings为名义试配投影，全部边包括隐藏边。完整形状依STEP，安装轴依inherited-mounts和原模块说明；生产公差、金属GD&T和实物验收均未发行。
+
+physics记录当前质量与静态筛选。肩部原始重力需求仍超过电机零速参考；本包不准许无支撑通电动作或3kg载荷试验。
 '''
     (PACK/'README.md').write_text(note)
     audit=dict(revision=d['revision'],source_manifest_sha256=sha(OUT/'manifest.json'),source_review_sha256=sha(OUT/'review.json'),print_parts=bed,print_count=len(bed),production_release=False,physical_fit_qualified=False)

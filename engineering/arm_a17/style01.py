@@ -36,6 +36,11 @@ def wire(q,ry,rz,cu=0,cy=0,inset=0):
     return w
 
 def curved(stations,cy,sign,ruled=False):
+    if len(stations)==7 and stations[0][0]==46 and cy==0:
+        # Local shoulder in the skin clears the existing200mm saddle/clamp.
+        # Functional fixing seat height stays in the old C06 mount ledger.
+        stations=[(46,42,40),(78,28,32),(123,23,28),(185,24,29),
+          (200,26,31),(215,28,32),(235,40,33),(248,42,36),(282,45,49)]
     if len(stations)==6 and stations[0][0]==-91:
         # Root transition: same base gap/real motor; neck narrows above the
         # front holder. The rotating shoulder foot begins atq30, above this.
@@ -71,6 +76,11 @@ def curved(stations,cy,sign,ruled=False):
 def cap(station,sign):
     q,ry,rz=station
     solid=cq.Solid.extrudeLinear(wire(q,ry,rz),[],cq.Vector(2.6,0,0))
+    if q==-60 and ry==33 and rz==33:
+        # Compact J7 rear face is adjacent to the J6 yaw sweep. Retain a
+        # flush cap here instead of the dome used on the larger joints.
+        half=cq.Solid.makeBox(700,500,220,c.cad.V([-150,-250,.25 if sign==1 else -220.25]))
+        return solid.intersect(half).fix()
     # Shallow convex rear face replaces the flat box-like pod end. Retain
     # the service opening through the full dome, at identical clocking.
     depth=min(ry,rz)*.10
@@ -94,6 +104,44 @@ def baseline_id(id):
     for a in ['C04','C05','C06']:
         if '-'+a+'-' in id:return id.replace('-'+a+'-','-C02-')
     raise ValueError(id)
+
+def plate_clearance(part,id):
+    # New loft stations also move the skin around the fixed J4 socket.
+    # Transfer a physical clearance volume, not only the material that had
+    # been removed from the old cover. All four parts share J3.rotor.
+    if not (id.startswith(('A16-C04-J4-cowl-','A17-C04-J4-cowl-',
+                          'A16-C06-upper-','A17-C06-upper-'))):return part
+    file=c.OUT/'cowls04/step/A16-C04-J4-mount-plate.step'
+    plate=cq.importers.importStep(str(file)).val()
+    part=part.cut(plate).fix()
+    for axis in range(3):
+        for sign in [-1,1]:
+            delta=[0.,0.,0.];delta[axis]=sign*.25
+            part=part.cut(plate.translate(tuple(delta))).fix()
+    return part.clean().fix()
+
+def trim_existing():
+    """Repair a generated CAD batch without rerunning unchanged lofts."""
+    d=json.loads((OUT/'manifest.json').read_text())
+    prior=c.sha(OUT/'manifest.json')
+    meshes=json.loads((OUT/'meshes.json').read_text())
+    assert len(meshes)==18 and d['layout']==c.L
+    c.cad.PARTS.clear();skin.O=OUT;c.cad.OUT=OUT
+    history=[]
+    for p in d['parts']:
+        file=OUT/'step'/(p['id']+'.step');digest=c.sha(file)
+        original=cq.importers.importStep(str(file)).val()
+        new=plate_clearance(original,p['id'])
+        assert new.isValid() and len(new.Solids())==1,(p['id'],len(new.Solids()))
+        skin.export(p['id'],new,p['owner'],frame=p['frame'],note=p['note']+' J4 fixed socket axial clearance cuts at +/-0.25mm, no change to mounting datums.')
+        history.append(dict(id=p['id'],prior_step_sha256=digest,removed_mm3=original.Volume()-new.Volume()))
+    rows=c.cad.PARTS
+    (OUT/'meshes.json').write_text(json.dumps(rows,separators=(',',':'))+'\n')
+    d['parts']=[{k:v for k,v in p.items() if k not in ['vertices_mm','triangles']} for p in rows]
+    d['socket_clearance_repair']=dict(prior_manifest_sha256=prior,parts=history,
+        note='Actual unchanged J4 mount plate cut from both upper and elbow skins. Six +/-0.25mm axis translations reserve clearance; not a global normal-gap or tolerance qualification.')
+    (OUT/'manifest.json').write_text(json.dumps(d,indent=2)+'\n')
+    print('A17_TRIM_EXISTING_DONE',len(rows),flush=True)
 
 def main():
     context=c.base_context()
@@ -122,7 +170,18 @@ def main():
             for mount in ledger:
                 if mount['joint']!=section or not mount['k'].endswith('-'+label):continue
                 point=np.array(mount['p_mm'],float);n=np.array(mount['n'],float)
-                new=new.fuse(c.cad.cyl(point,n,4,grip)).clean().fix()
+                radius=4;length=grip
+                if section=='upper':
+                    # Wider straight boss joins the raised skin; original
+                    # 4mm screw seat remains recessed at its old datum.
+                    # A finite local footprint avoids a tolerance-degenerate
+                    # Boolean against the curved ridge. Use a conservative
+                    # outer height within the actual boss footprint.
+                    probe=new.intersect(c.cad.cyl([point[0],point[1],-100],[0,0,1],1,200))
+                    assert probe.Volume()>1e-6,(id,mount['k'],'empty seat probe')
+                    bound=probe.BoundingBox();outer=bound.zmax if n[2]>0 else -bound.zmin
+                    length=max(grip,outer-abs(point[2]));radius=6
+                new=new.fuse(c.cad.cyl(point,n,radius,length)).clean().fix()
                 new=c.cad.drill(new,point-n*.1,n,3.5,15)
                 new=new.cut(c.cad.cyl(point+n*grip,n,3.7,8)).fix()
         elif id.startswith('A16-C05-J7-cowl-'):
@@ -144,6 +203,7 @@ def main():
         else:
             if minus.Volume()>1e-6:new=new.cut(minus,tol=1e-5).fix()
             if plus.Volume()>1e-6:new=new.fuse(plus,tol=1e-5).clean().fix()
+        new=plate_clearance(new,id)
         assert new.isValid() and len(new.Solids())==1,(id,len(new.Solids()))
         nid=id.replace('A16-','A17-',1)
         skin.export(nid,new,p['owner'],frame=p['frame'],note='Rounded CAD section with unchanged C03-C06 mounting features and reliefs. Nominal section2.6mm; global wall, physical fit, mass and motion require fresh validation. Appearance development candidate, not production.')
@@ -159,4 +219,6 @@ def main():
     (OUT/'manifest.json').write_text(json.dumps(d,indent=2)+'\n')
     print('A17_CURVED_CAD',len(parts),flush=True)
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    if '--trim-existing' in sys.argv:trim_existing()
+    else:main()
