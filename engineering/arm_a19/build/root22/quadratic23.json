@@ -1,0 +1,128 @@
+{
+  "revision": "A19-ROOT23-P2-SCREEN",
+  "source_manifest_sha256": "f979363cf995c70cbc769b21c7f8773bd72a1c99a8e34e958de3a9b0d0359353",
+  "material": {
+    "candidate": "6061-T651 certified plate; no weld",
+    "E_MPa": 68300,
+    "poisson_assumption": 0.33,
+    "density_kg_mm3": 2.7e-06,
+    "typical_E_source": "https://online.kaiseraluminum.com/depot/PublicProductInformation/Document/1015/Kaiser_Aluminum_6061_Sheet_Coil_and_Plate.pdf",
+    "minimum_strength_certificate_required": true
+  },
+  "meshes": [
+    {
+      "target_mesh_size_mm": 4,
+      "mesh_sha256": "bdecf4644df7b12fbd2799552e0141d2055aa9def96e4320bd10cf17f18fb6e0",
+      "vertices": 12552,
+      "tetrahedra": 48177,
+      "quadratic_displacement_DOFs": 245742,
+      "geometric_mesh": "straight-sided tetrahedra from exact BREP boundary tessellation; displacement quadratic, not quadratic geometry",
+      "cases": [
+        {
+          "case": "gravity-pose-0",
+          "maximum_all_dof_displacement_mm": 0.08769935107851666,
+          "strain_energy_Nmm": 6.454209229138145,
+          "max_quadrature_VM_MPa": 47.150976390852556,
+          "reaction_balance_max_abs": 1.851731212809682e-08,
+          "free_residual_norm_ratio": 4.3669190118996776e-10
+        },
+        {
+          "case": "gravity-pose-2",
+          "maximum_all_dof_displacement_mm": 0.11663248778975649,
+          "strain_energy_Nmm": 15.358209769247946,
+          "max_quadrature_VM_MPa": 77.17371921824171,
+          "reaction_balance_max_abs": 1.2641976354643703e-07,
+          "free_residual_norm_ratio": 3.947266486091223e-10
+        },
+        {
+          "case": "gravity-pose-777",
+          "maximum_all_dof_displacement_mm": 0.7141117549433139,
+          "strain_energy_Nmm": 66.06144732717868,
+          "max_quadrature_VM_MPa": 110.41756279667423,
+          "reaction_balance_max_abs": 4.517576870110789e-07,
+          "free_residual_norm_ratio": 2.5329652413591947e-09
+        },
+        {
+          "case": "gravity-pose-853",
+          "maximum_all_dof_displacement_mm": 0.3092562933268545,
+          "strain_energy_Nmm": 25.333317791353686,
+          "max_quadrature_VM_MPa": 109.82940065274781,
+          "reaction_balance_max_abs": 2.690534976099374e-07,
+          "free_residual_norm_ratio": 8.800137748266926e-10
+        }
+      ]
+    },
+    {
+      "target_mesh_size_mm": 3,
+      "mesh_sha256": "cd5448b4bad77f35ce3b3d3572aad59c4233cfd8344a26becb5cc241be80a4dc",
+      "vertices": 20713,
+      "tetrahedra": 82770,
+      "quadratic_displacement_DOFs": 412182,
+      "geometric_mesh": "straight-sided tetrahedra from exact BREP boundary tessellation; displacement quadratic, not quadratic geometry",
+      "cases": [
+        {
+          "case": "gravity-pose-0",
+          "maximum_all_dof_displacement_mm": 0.08805893601400969,
+          "strain_energy_Nmm": 6.51661322023099,
+          "max_quadrature_VM_MPa": 70.58105075777458,
+          "reaction_balance_max_abs": 4.294633981771767e-08,
+          "free_residual_norm_ratio": 6.054251358996442e-10
+        },
+        {
+          "case": "gravity-pose-2",
+          "maximum_all_dof_displacement_mm": 0.11726624658915129,
+          "strain_energy_Nmm": 15.509877604144716,
+          "max_quadrature_VM_MPa": 111.7019407182127,
+          "reaction_balance_max_abs": 6.359914550557733e-08,
+          "free_residual_norm_ratio": 5.549521532134359e-10
+        },
+        {
+          "case": "gravity-pose-777",
+          "maximum_all_dof_displacement_mm": 0.71761128037481,
+          "strain_energy_Nmm": 66.39442634676135,
+          "max_quadrature_VM_MPa": 119.6371210546442,
+          "reaction_balance_max_abs": 3.3111427910625935e-07,
+          "free_residual_norm_ratio": 3.3391135274616613e-09
+        },
+        {
+          "case": "gravity-pose-853",
+          "maximum_all_dof_displacement_mm": 0.3102623377354012,
+          "strain_energy_Nmm": 25.502489625347504,
+          "max_quadrature_VM_MPa": 124.87086547222542,
+          "reaction_balance_max_abs": 2.0593608067789553e-07,
+          "free_residual_norm_ratio": 1.2079066182727005e-09
+        }
+      ]
+    }
+  ],
+  "refinement": [
+    {
+      "case": "gravity-pose-0",
+      "displacement_change_fraction": 0.004083457645182295,
+      "energy_change_fraction": 0.009576138552938837
+    },
+    {
+      "case": "gravity-pose-2",
+      "displacement_change_fraction": 0.005404443459465426,
+      "energy_change_fraction": 0.009778789927796712
+    },
+    {
+      "case": "gravity-pose-777",
+      "displacement_change_fraction": 0.004876631021837212,
+      "energy_change_fraction": 0.005015165246606705
+    },
+    {
+      "case": "gravity-pose-853",
+      "displacement_change_fraction": 0.0032425605243929343,
+      "energy_change_fraction": 0.006633541919988654
+    }
+  ],
+  "boundary": "Same four rigid bottom washer patches. Consistent surface integration of linear traction fields on motor annulus, coefficient solve imposes exact six-component wrench. All quadratic edge DOFs included in clamp/load integration.",
+  "production_release": false,
+  "limits": [
+    "Static A18 gravity load cases only; new J5, spring attachment, collisions, dynamics and fatigue not included.",
+    "Do not use maximum singular support-edge stress as a converged material acceptance. T4 refinement and integral checks are reported, not production qualification.",
+    "Actual print and metal samples, material certificate, fastener preload/contact, machined tolerances and load testing are required.",
+    "Refinement is not a bolt/contact/preload or foundation validation; singular peak stress not accepted as yield/fatigue qualification."
+  ]
+}

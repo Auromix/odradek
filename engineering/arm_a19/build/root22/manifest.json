@@ -1,0 +1,576 @@
+{
+  "revision": "A19-ROOT17-CNC-CANDIDATE",
+  "layout": {
+    "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
+    "units": "mm",
+    "status": "supported unpowered fit prototype; entire assembly and load qualification pending",
+    "joints": [
+      {
+        "id": "J1",
+        "name": "\u5e95\u90e8\u8f6c\u5411",
+        "model": "RS03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          0,
+          0,
+          165
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -120,
+          120
+        ],
+        "diameter_mm": 106,
+        "length_mm": 56.6,
+        "motor_center": [
+          0,
+          0,
+          -28.3
+        ],
+        "mass_kg": 0.9
+      },
+      {
+        "id": "J2",
+        "name": "\u80a9\u90e8\u4fef\u4ef0",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          0,
+          0,
+          114
+        ],
+        "zero_deg": -90,
+        "limits_deg": [
+          -60,
+          110
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          94.35,
+          0
+        ],
+        "mass_kg": 1.42,
+        "limit_status": "Reduced for shoulder bridge. Discrete samples and named paths only."
+      },
+      {
+        "id": "J3",
+        "name": "\u4e0a\u81c2\u65cb\u8f6c",
+        "model": "RS04",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          0,
+          -15,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -100,
+          100
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          1.5,
+          0,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J4",
+        "name": "\u8098\u90e8\u56de\u6298",
+        "model": "RS04",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          340,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -145,
+          135
+        ],
+        "diameter_mm": 120,
+        "length_mm": 55.7,
+        "motor_center": [
+          0,
+          1.5,
+          0
+        ],
+        "mass_kg": 1.42
+      },
+      {
+        "id": "J5",
+        "name": "\u8155\u90e8\u4fef\u4ef0",
+        "model": "RS10P",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "offset": [
+          185,
+          62,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          130
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          70.3,
+          0
+        ],
+        "mass_kg": 0.46,
+        "limit_status": "Reduced from historical -100/+145 due compact wrist and forearm conflict. Exploration limits, not qualified combined domain."
+      },
+      {
+        "id": "J6",
+        "name": "\u8155\u90e8\u6a2a\u6446",
+        "model": "RS10P",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "offset": [
+          55,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -60,
+          60
+        ],
+        "diameter_mm": 57,
+        "length_mm": 60.6,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.46
+      },
+      {
+        "id": "J7",
+        "name": "\u6574\u5934\u65cb\u8f6c",
+        "model": "RS00",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "offset": [
+          75,
+          0,
+          0
+        ],
+        "zero_deg": 0,
+        "limits_deg": [
+          -90,
+          90
+        ],
+        "diameter_mm": 57,
+        "length_mm": 51.4,
+        "motor_center": [
+          0,
+          0,
+          0
+        ],
+        "mass_kg": 0.31
+      }
+    ],
+    "poses": {
+      "idle": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "attention": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "reference": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "cable_assumptions": {
+      "bundle_diameter_mm": 12,
+      "coax_channels": 2,
+      "compact_dynamic_radius_target_mm": 35,
+      "verified_CG03_dynamic_radius_mm": 75,
+      "compact_cable_candidate": "Times Microwave PT-047, 50 ohm, OD 1.651 mm, catalog dynamic radius 19.05 mm",
+      "compact_cable_material_selected": false,
+      "notes": [
+        "Routes are reservation envelopes, not a validated flexible-harness simulation.",
+        "No motor is assumed to have a through bore.",
+        "Joint limits are packaging exploration targets, not cable-life certified limits."
+      ]
+    },
+    "flange_from_J7_mm": [
+      110,
+      0,
+      0
+    ],
+    "flange_payload_kg": 3,
+    "tube_sections_mm": {
+      "upper": [
+        20,
+        40,
+        2
+      ],
+      "forearm": [
+        20,
+        40,
+        2
+      ]
+    },
+    "comparison_variant": {
+      "upper_joint_offset_mm": 340,
+      "forearm_joint_offset_mm": 185,
+      "purpose": "longer silhouette only; load and collision feasibility are compared separately"
+    },
+    "mass_assumption": "2026.09.17 catalogue nominal motor masses; geometric midpoint COM proxies, not measured internal mass split.",
+    "pedestal": {
+      "mount_plane_z_mm": 58,
+      "adapter_od_mm": 134,
+      "bore_mm": 56,
+      "J1_axis_z_mm": 165
+    },
+    "root_transform_mm": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        75
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
+  },
+  "part_id": "A19-S22-shoulder-foot-12mm-R6",
+  "source_assembly_sha256": "628982d4a5cbd0d4f16ae6480c8fe9412ddd8aed3de6488cbb0a6ae6c4f45738",
+  "source_step_sha256": "258675ac6fa79152e2fb32389eed6d5d6496adf6d68bd68913e6c83b6a48ebac",
+  "step_sha256": "77e0c1a5ea389a546f54ad8774eeecd41112abc68a444b659351f9220133f711",
+  "step_path": "engineering/arm_a19/build/root22/A19-S22-shoulder-foot-12mm-R6.step",
+  "fit_stl_sha256": "eb3830eebb19de9fa7b651dbffa195c9e42734dbde06c3aba3f98cadc4c932ff",
+  "volume_mm3": 215709.09485266794,
+  "nominal_6061_mass_kg": 0.5824145561022035,
+  "plastic_nominal_mass_kg": 0.27395055046288824,
+  "com_mm": [
+    -0.08923884587234819,
+    43.132574716826724,
+    73.34696026390878
+  ],
+  "bbox_mm": [
+    -67.02539299794549,
+    -36.00000010000158,
+    29.99868240952635,
+    67.02539299794556,
+    68.52940092873655,
+    181.02940092873655
+  ],
+  "print_translation_mm": [
+    66.99599206920894,
+    36.0,
+    -30.0
+  ],
+  "print_rotation": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "print_size_mm": [
+    133.99198413841793,
+    104.5,
+    151.0
+  ],
+  "internal_root_radius_mm": 6,
+  "remaining_native_and_cover_holes_unchanged": true,
+  "mount_origin_J1_rotor_mm": [
+    0.0,
+    68.5,
+    114.0
+  ],
+  "sample_count": 4099,
+  "gravity_load_cases": [
+    {
+      "id": "gravity-pose-0",
+      "q_deg": [
+        0.0,
+        110.0,
+        0.0,
+        -145.0,
+        125.0,
+        0.0,
+        0.0
+      ],
+      "force_N": [
+        0.0,
+        0.0,
+        -114.29729093303004
+      ],
+      "moment_Nmm": [
+        4036.594666181934,
+        27515.102658182735,
+        0.0
+      ],
+      "fixed_J2_weight_axis_moment_Nm": -0.00017791429218335,
+      "J2_gravity_torque_audit_error_Nm": 3.552713678800501e-15
+    },
+    {
+      "id": "gravity-pose-2",
+      "q_deg": [
+        0.0,
+        90.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "force_N": [
+        0.0,
+        0.0,
+        -114.29729093303004
+      ],
+      "moment_Nmm": [
+        4036.594666181934,
+        44265.1926221033,
+        0.0
+      ],
+      "fixed_J2_weight_axis_moment_Nm": -0.00017791429218335,
+      "J2_gravity_torque_audit_error_Nm": 1.4210854715202004e-14
+    },
+    {
+      "id": "gravity-pose-777",
+      "q_deg": [
+        90.703125,
+        11.435756744398716,
+        -98.016,
+        84.62099125364429,
+        18.26446280991736,
+        19.035047792444246,
+        22.806838998575216
+      ],
+      "force_N": [
+        0.0,
+        0.0,
+        -114.29729093303004
+      ],
+      "moment_Nmm": [
+        26583.210423501303,
+        8223.326767752204,
+        0.0
+      ],
+      "fixed_J2_weight_axis_moment_Nm": -0.0001779142921833518,
+      "J2_gravity_torque_audit_error_Nm": 5.329070518200751e-15
+    },
+    {
+      "id": "gravity-pose-853",
+      "q_deg": [
+        70.078125,
+        81.39460448102423,
+        -53.216,
+        29.11078717201167,
+        -8.84297520661157,
+        -4.342284934000908,
+        -69.37309179727254
+      ],
+      "force_N": [
+        0.0,
+        0.0,
+        -114.29729093303004
+      ],
+      "moment_Nmm": [
+        12149.749936705983,
+        43090.76096068775,
+        0.0
+      ],
+      "fixed_J2_weight_axis_moment_Nm": -0.00017791429218335254,
+      "J2_gravity_torque_audit_error_Nm": 7.105427357601002e-15
+    }
+  ],
+  "material": {
+    "candidate": "6061-T651 certified plate; no weld",
+    "E_MPa": 68300,
+    "poisson_assumption": 0.33,
+    "density_kg_mm3": 2.7e-06,
+    "typical_E_source": "https://online.kaiseraluminum.com/depot/PublicProductInformation/Document/1015/Kaiser_Aluminum_6061_Sheet_Coil_and_Plate.pdf",
+    "minimum_strength_certificate_required": true
+  },
+  "machining": "Single piece with ordinary D12 inside-root cutter fillet; billet and setups are proposed, not vendor DFM approved. Native blind motor threads remain in motor. Preserve all mounting centres.",
+  "production_release": false,
+  "limits": [
+    "Gravity loads only; no motor peak/stops, spring support loads, contact/slip/preload or fatigue.",
+    "These are A18 masses. New J5 variant requires fresh loads before integration.",
+    "R6 adds material; collision review required before manufacturing pack integration."
+  ],
+  "ordinary_triangular_webs": null,
+  "parts": [
+    {
+      "id": "A19-S22-shoulder-foot-12mm-R6",
+      "frame": "J1.rotor",
+      "owner": 1,
+      "role": "printed_structure",
+      "step_path": "engineering/arm_a19/build/root22/A19-S22-shoulder-foot-12mm-R6.step",
+      "mass_kg": 0.27395055046288824,
+      "com_mm": [
+        -0.08923884587234819,
+        43.132574716826724,
+        73.34696026390878
+      ]
+    },
+    {
+      "id": "A19-C22-J2-cowl-b",
+      "frame": "J2.fixed",
+      "owner": 1,
+      "role": "printed_cover",
+      "step_path": "engineering/arm_a19/build/root22/A19-C22-J2-cowl-b.step",
+      "step_sha256": "3469a012d72c5ff132996a4de3e032653518ab5eeb02e449dc22fb594e144695",
+      "mass_kg": 0.07652771828978601,
+      "com_mm": [
+        6.177727511096469e-07,
+        106.47412775059234,
+        -39.03458010047854
+      ],
+      "print_rotation": [
+        [
+          -1.0,
+          -0.0,
+          -1.2246467991473532e-16
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          1.2246467991473532e-16,
+          0.0,
+          -1.0
+        ]
+      ],
+      "print_translation_mm": [
+        71.0,
+        -56.5,
+        -0.2499999999999913
+      ],
+      "print_stl_sha256": "2523d1af996008bb7357efc374cd57a3728166de1e327f4dc40cbc09538da5d6"
+    }
+  ],
+  "replaces_only": [
+    "A16-C04-J2-mount-plate",
+    "A17-C04-J2-cowl-b"
+  ],
+  "fixed_plate_thickness_mm": 12,
+  "native_fixed_bolt_stack": "Original M4x12,8mm grip underD9.8 depth4 counterbore,.8mm washer,3.2mm insertion,5mm minimum drawing depth; heads stay at original axial station.",
+  "native_head_counterbores_mm": {
+    "diameter": 9.8,
+    "depth": 4,
+    "count": 10
+  }
+}

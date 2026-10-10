@@ -1,0 +1,461 @@
+{
+  "revision": "A19-ROOT18-LINEAR-SCREEN",
+  "source_manifest_sha256": "f979363cf995c70cbc769b21c7f8773bd72a1c99a8e34e958de3a9b0d0359353",
+  "step_sha256": "77e0c1a5ea389a546f54ad8774eeecd41112abc68a444b659351f9220133f711",
+  "material": {
+    "candidate": "6061-T651 certified plate; no weld",
+    "E_MPa": 68300,
+    "poisson_assumption": 0.33,
+    "density_kg_mm3": 2.7e-06,
+    "typical_E_source": "https://online.kaiseraluminum.com/depot/PublicProductInformation/Document/1015/Kaiser_Aluminum_6061_Sheet_Coil_and_Plate.pdf",
+    "minimum_strength_certificate_required": true
+  },
+  "meshes": [
+    {
+      "vertices": 12552,
+      "tetrahedra": 48177,
+      "DOFs": 37656,
+      "volume_mm3": 216145.50483503207,
+      "support_nodes": 162,
+      "support_patch_facets": [
+        53,
+        51,
+        50,
+        58
+      ],
+      "load_nodes": 1607,
+      "load_area_mm2": 8909.004832466215,
+      "cases": [
+        {
+          "case": "gravity-pose-0",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            4036.594666181934,
+            27515.102658182735,
+            0.0
+          ],
+          "max_displacement_mm": 0.06751051606446483,
+          "mount_max_displacement_mm": 0.06636771883020462,
+          "max_T4_cell_VM_MPa": 22.945799097224093,
+          "max_VM_outside_support_10mm_MPa": 13.833292797546457,
+          "cell_VM_99_percentile_MPa": 6.754932185354133,
+          "strain_energy_Nmm": 4.975603554428579,
+          "reaction_wrench_N_Nmm": [
+            -2.8089813379734924e-11,
+            3.875819347162244e-10,
+            114.29729093287132,
+            -4036.594666183293,
+            -27515.10265818365,
+            -1.2085207406244911e-08
+          ],
+          "reaction_balance_max_abs": 1.2085207406244911e-08,
+          "free_residual_norm_ratio": 6.117791761675739e-11
+        },
+        {
+          "case": "gravity-pose-2",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            4036.594666181934,
+            44265.1926221033,
+            0.0
+          ],
+          "max_displacement_mm": 0.08934905826756367,
+          "mount_max_displacement_mm": 0.08690049246837472,
+          "max_T4_cell_VM_MPa": 37.56916329077496,
+          "max_VM_outside_support_10mm_MPa": 21.981914138617995,
+          "cell_VM_99_percentile_MPa": 10.477271099445764,
+          "strain_energy_Nmm": 11.805273487994718,
+          "reaction_wrench_N_Nmm": [
+            6.900607527547386e-10,
+            2.582665356553698e-10,
+            114.29729093297502,
+            -4036.5946661872313,
+            -44265.19262208207,
+            -4.20684752515114e-10
+          ],
+          "reaction_balance_max_abs": 2.1231244318187237e-08,
+          "free_residual_norm_ratio": 5.5656545295758726e-11
+        },
+        {
+          "case": "gravity-pose-777",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            26583.210423501303,
+            8223.326767752204,
+            0.0
+          ],
+          "max_displacement_mm": 0.5447378000683257,
+          "mount_max_displacement_mm": 0.5447378000683257,
+          "max_T4_cell_VM_MPa": 53.07690459023921,
+          "max_VM_outside_support_10mm_MPa": 35.66820938473629,
+          "cell_VM_99_percentile_MPa": 19.6068192307359,
+          "strain_energy_Nmm": 50.808328407819516,
+          "reaction_wrench_N_Nmm": [
+            7.826914963638489e-10,
+            9.82879334247373e-10,
+            114.29729093356497,
+            -26583.210423473924,
+            -8223.326767742952,
+            -1.0673801510476454e-07
+          ],
+          "reaction_balance_max_abs": 1.0673801510476454e-07,
+          "free_residual_norm_ratio": 3.4455174888887e-10
+        },
+        {
+          "case": "gravity-pose-853",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            12149.749936705983,
+            43090.76096068775,
+            0.0
+          ],
+          "max_displacement_mm": 0.2355416969747439,
+          "mount_max_displacement_mm": 0.2355416969747439,
+          "max_T4_cell_VM_MPa": 53.017897503291174,
+          "max_VM_outside_support_10mm_MPa": 27.547178903758557,
+          "cell_VM_99_percentile_MPa": 12.52198120317523,
+          "strain_energy_Nmm": 19.45495502035584,
+          "reaction_wrench_N_Nmm": [
+            4.252492210098927e-10,
+            2.414591928008127e-10,
+            114.29729093286265,
+            -12149.749936671436,
+            -43090.760960682564,
+            1.2526735178318928e-09
+          ],
+          "reaction_balance_max_abs": 3.4546246752142906e-08,
+          "free_residual_norm_ratio": 1.224891589947265e-10
+        }
+      ],
+      "target_mesh_size_mm": 4,
+      "volume_relative_error": 0.002023141317533243
+    },
+    {
+      "vertices": 20713,
+      "tetrahedra": 82770,
+      "DOFs": 62139,
+      "volume_mm3": 216055.4245708291,
+      "support_nodes": 259,
+      "support_patch_facets": [
+        78,
+        96,
+        85,
+        95
+      ],
+      "load_nodes": 2475,
+      "load_area_mm2": 8883.974719990763,
+      "cases": [
+        {
+          "case": "gravity-pose-0",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            4036.594666181934,
+            27515.102658182735,
+            0.0
+          ],
+          "max_displacement_mm": 0.07231746251394089,
+          "mount_max_displacement_mm": 0.07107522935950426,
+          "max_T4_cell_VM_MPa": 30.015706852714583,
+          "max_VM_outside_support_10mm_MPa": 14.719735371700907,
+          "cell_VM_99_percentile_MPa": 7.031547861493673,
+          "strain_energy_Nmm": 5.335391279617317,
+          "reaction_wrench_N_Nmm": [
+            2.4641181845464e-10,
+            -1.6765211270091442e-11,
+            114.29729093288333,
+            -4036.594666174219,
+            -27515.102658171665,
+            7.847722901177421e-10
+          ],
+          "reaction_balance_max_abs": 1.1070369509980083e-08,
+          "free_residual_norm_ratio": 9.082247490088283e-11
+        },
+        {
+          "case": "gravity-pose-2",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            4036.594666181934,
+            44265.1926221033,
+            0.0
+          ],
+          "max_displacement_mm": 0.09596636439981372,
+          "mount_max_displacement_mm": 0.09331143726637173,
+          "max_T4_cell_VM_MPa": 47.48149507194437,
+          "max_VM_outside_support_10mm_MPa": 23.32146966045834,
+          "cell_VM_99_percentile_MPa": 10.979411135000177,
+          "strain_energy_Nmm": 12.67727047226957,
+          "reaction_wrench_N_Nmm": [
+            5.783139042116633e-11,
+            -3.4693986497715995e-11,
+            114.29729093267501,
+            -4036.5946661736907,
+            -44265.19262212256,
+            -3.5618650097910266e-09
+          ],
+          "reaction_balance_max_abs": 1.925945980474353e-08,
+          "free_residual_norm_ratio": 8.106862286172359e-11
+        },
+        {
+          "case": "gravity-pose-777",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            26583.210423501303,
+            8223.326767752204,
+            0.0
+          ],
+          "max_displacement_mm": 0.5876468012479492,
+          "mount_max_displacement_mm": 0.5876468012479492,
+          "max_T4_cell_VM_MPa": 53.34864739914453,
+          "max_VM_outside_support_10mm_MPa": 37.30507763303194,
+          "cell_VM_99_percentile_MPa": 19.982447466242093,
+          "strain_energy_Nmm": 54.582357305122095,
+          "reaction_wrench_N_Nmm": [
+            8.66071758307894e-10,
+            7.303314329155857e-10,
+            114.29729093421467,
+            -26583.210423413657,
+            -8223.326767721255,
+            -1.8775516812684375e-08
+          ],
+          "reaction_balance_max_abs": 8.764618542045355e-08,
+          "free_residual_norm_ratio": 5.197026386183801e-10
+        },
+        {
+          "case": "gravity-pose-853",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            12149.749936705983,
+            43090.76096068775,
+            0.0
+          ],
+          "max_displacement_mm": 0.2538622833515777,
+          "mount_max_displacement_mm": 0.2538622833515777,
+          "max_T4_cell_VM_MPa": 54.02586456594341,
+          "max_VM_outside_support_10mm_MPa": 25.601386627436813,
+          "cell_VM_99_percentile_MPa": 12.79767005864441,
+          "strain_energy_Nmm": 20.889026175718335,
+          "reaction_wrench_N_Nmm": [
+            -5.154470272895349e-10,
+            -5.436735121835408e-10,
+            114.29729093315045,
+            -12149.749936717804,
+            -43090.760960700616,
+            2.0542626907891416e-09
+          ],
+          "reaction_balance_max_abs": 1.2863893061876297e-08,
+          "free_residual_norm_ratio": 1.8132701758453606e-10
+        }
+      ],
+      "target_mesh_size_mm": 3,
+      "volume_relative_error": 0.001605540639803427
+    },
+    {
+      "vertices": 42618,
+      "tetrahedra": 182147,
+      "DOFs": 127854,
+      "volume_mm3": 215907.8951418723,
+      "support_nodes": 321,
+      "support_patch_facets": [
+        113,
+        124,
+        108,
+        124
+      ],
+      "load_nodes": 4746,
+      "load_area_mm2": 8887.840031793392,
+      "cases": [
+        {
+          "case": "gravity-pose-0",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            4036.594666181934,
+            27515.102658182735,
+            0.0
+          ],
+          "max_displacement_mm": 0.0801423167426594,
+          "mount_max_displacement_mm": 0.0788427168626334,
+          "max_T4_cell_VM_MPa": 32.52196791301496,
+          "max_VM_outside_support_10mm_MPa": 16.69126374165198,
+          "cell_VM_99_percentile_MPa": 7.099807687224561,
+          "strain_energy_Nmm": 5.8517499483747315,
+          "reaction_wrench_N_Nmm": [
+            2.22953508120699e-10,
+            -1.0479624355208938e-09,
+            114.29729093287038,
+            -4036.5946661337266,
+            -27515.102658194046,
+            1.3118738792042863e-08
+          ],
+          "reaction_balance_max_abs": 4.8207311920123175e-08,
+          "free_residual_norm_ratio": 1.9433096999034982e-10
+        },
+        {
+          "case": "gravity-pose-2",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            4036.594666181934,
+            44265.1926221033,
+            0.0
+          ],
+          "max_displacement_mm": 0.10644006242103018,
+          "mount_max_displacement_mm": 0.1036325159345734,
+          "max_T4_cell_VM_MPa": 51.40184983777741,
+          "max_VM_outside_support_10mm_MPa": 26.787504152959944,
+          "cell_VM_99_percentile_MPa": 10.96089603065198,
+          "strain_energy_Nmm": 13.91754797085595,
+          "reaction_wrench_N_Nmm": [
+            -4.98373188078313e-10,
+            -2.732758985410574e-10,
+            114.29729093271605,
+            -4036.5946661569683,
+            -44265.19262212013,
+            -1.461349147994676e-08
+          ],
+          "reaction_balance_max_abs": 2.496562956366688e-08,
+          "free_residual_norm_ratio": 1.744314586251702e-10
+        },
+        {
+          "case": "gravity-pose-777",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            26583.210423501303,
+            8223.326767752204,
+            0.0
+          ],
+          "max_displacement_mm": 0.6436174969222955,
+          "mount_max_displacement_mm": 0.6436174969222955,
+          "max_T4_cell_VM_MPa": 62.81203738571103,
+          "max_VM_outside_support_10mm_MPa": 43.71120510302768,
+          "cell_VM_99_percentile_MPa": 20.71113597064923,
+          "strain_energy_Nmm": 59.70539144162792,
+          "reaction_wrench_N_Nmm": [
+            -8.141277434942983e-10,
+            2.5515553186864013e-09,
+            114.29729093343646,
+            -26583.210423446195,
+            -8223.326767770626,
+            1.1942250905766618e-07
+          ],
+          "reaction_balance_max_abs": 1.1942250905766618e-07,
+          "free_residual_norm_ratio": 1.0572398955359632e-09
+        },
+        {
+          "case": "gravity-pose-853",
+          "force_N": [
+            0.0,
+            0.0,
+            -114.29729093303004
+          ],
+          "moment_Nmm": [
+            12149.749936705983,
+            43090.76096068775,
+            0.0
+          ],
+          "max_displacement_mm": 0.28006955596474464,
+          "mount_max_displacement_mm": 0.28006955596474464,
+          "max_T4_cell_VM_MPa": 66.02551564280478,
+          "max_VM_outside_support_10mm_MPa": 30.178199259171954,
+          "cell_VM_99_percentile_MPa": 13.519523839458182,
+          "strain_energy_Nmm": 22.996869320109084,
+          "reaction_wrench_N_Nmm": [
+            -6.347889561846426e-10,
+            -1.1682109707503453e-09,
+            114.2972909329796,
+            -12149.749936641132,
+            -43090.76096073383,
+            -1.952008442138587e-08
+          ],
+          "reaction_balance_max_abs": 6.485061021521688e-08,
+          "free_residual_norm_ratio": 3.8404919471529355e-10
+        }
+      ],
+      "target_mesh_size_mm": 2,
+      "volume_relative_error": 0.0009216129219777557
+    }
+  ],
+  "refinement": [
+    {
+      "from_mm": 4,
+      "to_mm": 3,
+      "mount_displacement_change_fraction": [
+        0.06623278703032634,
+        0.0687048124625493,
+        0.07301835233085638,
+        0.07216742138674193
+      ],
+      "energy_change_fraction": [
+        0.06743417798863745,
+        0.06878428492807415,
+        0.06914375053838903,
+        0.06865189134711688
+      ]
+    },
+    {
+      "from_mm": 3,
+      "to_mm": 2,
+      "mount_displacement_change_fraction": [
+        0.0985187701821885,
+        0.09959305315638295,
+        0.08696266950788584,
+        0.09357415704428065
+      ],
+      "energy_change_fraction": [
+        0.08824004328838897,
+        0.08911609294852685,
+        0.08580521813535803,
+        0.09165783024855448
+      ]
+    }
+  ],
+  "boundary": "Four bottom washer patches fully fixed to ideal rigid support; whole annular motor face loaded by area-weighted least-norm wrench. No bolt preload/contact/slip, foundation flexibility or anisotropy.",
+  "production_release": false,
+  "limits": [
+    "Static A18 gravity load cases only; new J5, spring attachment, collisions, dynamics and fatigue not included.",
+    "Do not use maximum singular support-edge stress as a converged material acceptance. T4 refinement and integral checks are reported, not production qualification.",
+    "Actual print and metal samples, material certificate, fastener preload/contact, machined tolerances and load testing are required."
+  ]
+}
