@@ -1,0 +1,620 @@
+{
+  "revision": "A19-ORDINARY-ELBOW-HARDWARE43",
+  "source_baseline_assembly_sha256": "4e76c049091d411b66d972eefcb2f9b3385bfe493a923923636e2e41323e844d",
+  "source_sha256": {
+    "engineering/arm_a16/build/cowls04/step/A16-C04-H-J4-1.step": "3e82c0f3a6a4fb7d39d0bec0cdef541999baa37ca8ee8d680ddccb8661dd0eaa",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-1-M4.step": "169223bf8259ac6273fb3239bdbba91c28dd92e4884ce8d829da990cb9319bb3",
+    "engineering/arm_a16/build/cowls04/step/A16-C04-H-J4-2.step": "4a30ce1fbd8d966030890340fc899972adabc7facc7b95a73f08abb76c7a81c4",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-2-M4.step": "e9fec2e8fb1829a456ca7c3862f17033e2619e69e91f7dd079afa9e2171fb3b7",
+    "engineering/arm_a16/build/cowls04/step/A16-C04-H-J4-3.step": "c2bcb5ec7c233b16256e37e2ca6b158a52c8831d43f9920279376dc1efc7f554",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-3-M4.step": "7cfd7d987d5a2c15cd15c33755230b4bbdf3ad6a3efe1144f68cefa3c342bcb0",
+    "engineering/arm_a16/build/cowls04/step/A16-C04-H-J4-4.step": "3386b8f634f16edfe2bf87bd85334b54762f09a0f33ea7ea20f5e39d1bb413c4",
+    "engineering/arm_a16/build/hardware01/step/A16-H-tube-4-4-M4.step": "00547a8b7cfd3a2c7a41837e3b067a43819834662a0b8469db4da94ef9d69aac"
+  },
+  "replaces_only": [
+    "A16-C04-H-J4-1",
+    "A16-H-tube-4-1-M4",
+    "A16-C04-H-J4-2",
+    "A16-H-tube-4-2-M4",
+    "A16-C04-H-J4-3",
+    "A16-H-tube-4-3-M4",
+    "A16-C04-H-J4-4",
+    "A16-H-tube-4-4-M4"
+  ],
+  "parts": [
+    {
+      "id": "A19-H43-J4-cover-button-1",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO7380-1 M3x16; nominal headD5.7 H1.65 AF2. Original washer, nut and16mm thread stack unchanged; cosmetic only. Actual supplier dimensions/torque pending.",
+      "solid_count": 1,
+      "volume_mm3": 151.73725135658674,
+      "mass_kg": 0.0011911374231492059,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        385.254833995939,
+        33.58986806873662,
+        -45.25483399593903
+      ],
+      "bbox_size_mm": [
+        5.7000000000000455,
+        17.65,
+        5.700000000000003
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.03766178175618557,
+          -5.1246532136870064e-14,
+          1.9766519538507026e-13
+        ],
+        [
+          -5.1246532136870064e-14,
+          0.0023229032458476073,
+          -1.2582853872892203e-14
+        ],
+        [
+          1.9766519538507026e-13,
+          -1.2582853872892203e-14,
+          0.03766178176055205
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-J4-cover-button-1.step",
+      "step_sha256": "d9aa2d1d5d1231c392e6c5aa9a0dd80e338e399f47f20de4fd57949428237673"
+    },
+    {
+      "id": "A19-H43-tube4-1-M4",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4762 M4x35, original bolt moved0.8mm outward by one additional DIN125 M4 washer; original washer retained.",
+      "solid_count": 1,
+      "volume_mm3": 582.0696685773999,
+      "mass_kg": 0.0045692468983324405,
+      "density_assumption_kg_mm3": 7.849999999999745e-06,
+      "com_mm": [
+        27.0,
+        64.84031986757475,
+        6.203076893852668e-14
+      ],
+      "bbox_size_mm": [
+        7.0,
+        39.0,
+        7.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.6784306518022952,
+          2.8368511382624922e-14,
+          -4.31565869304203e-18
+        ],
+        [
+          2.8368511382624922e-14,
+          0.014173062907433216,
+          -1.2071907885386916e-18
+        ],
+        [
+          -4.31565869304203e-18,
+          -1.2071907885386916e-18,
+          0.6784306518022842
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-tube4-1-M4.step",
+      "step_sha256": "a31e19eda040718b4e18b9dd75847fb7bed854d04bdb3e8f12cbf9f28462e8c5"
+    },
+    {
+      "id": "A19-H43-tube4-1-M4-extra-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Additional DIN125 M4 washer OD9 ID4.4 H0.8; under bolt head, not inside tube. Original tube crush sleeve and rear washer/nut remain.",
+      "solid_count": 1,
+      "volume_mm3": 38.72955423345494,
+      "mass_kg": 0.0003040270007326213,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        26.99999999999999,
+        77.19999999999999,
+        -1.498547661418287e-16
+      ],
+      "bbox_size_mm": [
+        9.0,
+        0.7999999999999972,
+        9.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.0019206651158015543,
+          -3.202809978883985e-15,
+          -2.2489969624789882e-18
+        ],
+        [
+          -3.202809978883985e-15,
+          0.003808900684830652,
+          1.162627171464304e-16
+        ],
+        [
+          -2.2489969624789882e-18,
+          1.162627171464304e-16,
+          0.0019206651158013256
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-tube4-1-M4-extra-washer.step",
+      "step_sha256": "82e2ad98d994e35a872e66d76cbe421afcba8b697de260e432dd390725239e40"
+    },
+    {
+      "id": "A19-H43-J4-cover-button-2",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO7380-1 M3x16; nominal headD5.7 H1.65 AF2. Original washer, nut and16mm thread stack unchanged; cosmetic only. Actual supplier dimensions/torque pending.",
+      "solid_count": 1,
+      "volume_mm3": 151.73725135658674,
+      "mass_kg": 0.0011911374231492059,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        294.7451660040609,
+        33.58986806873662,
+        -45.25483399593904
+      ],
+      "bbox_size_mm": [
+        5.7000000000000455,
+        17.65,
+        5.700000000000003
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.03766178175623088,
+          -1.2811633034217364e-13,
+          1.8302332906024806e-13
+        ],
+        [
+          -1.2811633034217364e-13,
+          0.0023229032436952253,
+          8.007270646385852e-15
+        ],
+        [
+          1.8302332906024806e-13,
+          8.007270646385852e-15,
+          0.03766178175838461
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-J4-cover-button-2.step",
+      "step_sha256": "dc8157fc01e9972ccd9afa9283100b417e7df76b92eabdae01a001b33e1d36a4"
+    },
+    {
+      "id": "A19-H43-tube4-2-M4",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4762 M4x35, original bolt moved0.8mm outward by one additional DIN125 M4 washer; original washer retained.",
+      "solid_count": 1,
+      "volume_mm3": 582.0696685773997,
+      "mass_kg": 0.00456924689833244,
+      "density_assumption_kg_mm3": 7.849999999999745e-06,
+      "com_mm": [
+        37.0,
+        64.84031986757475,
+        6.203076893852669e-14
+      ],
+      "bbox_size_mm": [
+        7.0,
+        39.0,
+        7.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.6784306518022988,
+          2.562317157140315e-14,
+          -2.17830917638448e-18
+        ],
+        [
+          2.562317157140315e-14,
+          0.014173062907429094,
+          4.048530795532594e-17
+        ],
+        [
+          -2.17830917638448e-18,
+          4.048530795532594e-17,
+          0.6784306518022841
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-tube4-2-M4.step",
+      "step_sha256": "38a504e958fd590b04c279049f3e6d13392cfdf66d315d45dbc7d6d4736b7ef2"
+    },
+    {
+      "id": "A19-H43-tube4-2-M4-extra-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Additional DIN125 M4 washer OD9 ID4.4 H0.8; under bolt head, not inside tube. Original tube crush sleeve and rear washer/nut remain.",
+      "solid_count": 1,
+      "volume_mm3": 38.72955423345492,
+      "mass_kg": 0.0003040270007326211,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        36.99999999999999,
+        77.19999999999999,
+        -7.604201809352128e-17
+      ],
+      "bbox_size_mm": [
+        9.0,
+        0.7999999999999972,
+        9.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.0019206651157937752,
+          1.0294746360698519e-15,
+          1.1933833219776733e-18
+        ],
+        [
+          1.0294746360698519e-15,
+          0.0038089006848307074,
+          1.2847953673896935e-16
+        ],
+        [
+          1.1933833219776733e-18,
+          1.2847953673896935e-16,
+          0.0019206651157937752
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-tube4-2-M4-extra-washer.step",
+      "step_sha256": "99295713a828d39bbb261ea4783be2c8895ba5fba1634dc1153f9b861f1b5003"
+    },
+    {
+      "id": "A19-H43-J4-cover-button-3",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO7380-1 M3x16; nominal headD5.7 H1.65 AF2. Original washer, nut and16mm thread stack unchanged; cosmetic only. Actual supplier dimensions/torque pending.",
+      "solid_count": 1,
+      "volume_mm3": 151.73725135658674,
+      "mass_kg": 0.0011911374231492059,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        294.7451660040608,
+        33.58986806873662,
+        45.25483399593903
+      ],
+      "bbox_size_mm": [
+        5.7000000000000455,
+        17.65,
+        5.700000000000003
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.037661781756228134,
+          -2.2877916132531006e-13,
+          -2.9649779307760186e-13
+        ],
+        [
+          -2.2877916132531006e-13,
+          0.002322903245071561,
+          -8.236049807711162e-15
+        ],
+        [
+          -2.9649779307760186e-13,
+          -8.236049807711162e-15,
+          0.03766178175976095
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-J4-cover-button-3.step",
+      "step_sha256": "26210d32431e3b7ca1a401ab841a08a795caad62d86fa489f9aa01b0610d9ebb"
+    },
+    {
+      "id": "A19-H43-tube4-3-M4",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4762 M4x35, original bolt moved0.8mm outward by one additional DIN125 M4 washer; original washer retained.",
+      "solid_count": 1,
+      "volume_mm3": 582.0696685773996,
+      "mass_kg": 0.00456924689833244,
+      "density_assumption_kg_mm3": 7.849999999999747e-06,
+      "com_mm": [
+        60.00000000000001,
+        64.84031986757475,
+        6.187817922845456e-14
+      ],
+      "bbox_size_mm": [
+        7.0,
+        39.0,
+        7.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.6784306518023201,
+          4.02649838979192e-14,
+          3.4108225736207573e-18
+        ],
+        [
+          4.02649838979192e-14,
+          0.014173062907376004,
+          4.0485307955325935e-17
+        ],
+        [
+          3.4108225736207573e-18,
+          4.0485307955325935e-17,
+          0.6784306518022506
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-tube4-3-M4.step",
+      "step_sha256": "9fcb94c3f89bffdd707b5183cc3f64887d238b096fb2ad89d01dddda2c4c5acf"
+    },
+    {
+      "id": "A19-H43-tube4-3-M4-extra-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Additional DIN125 M4 washer OD9 ID4.4 H0.8; under bolt head, not inside tube. Original tube crush sleeve and rear washer/nut remain.",
+      "solid_count": 1,
+      "volume_mm3": 38.729554233454934,
+      "mass_kg": 0.0003040270007326212,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        59.99999999999998,
+        77.19999999999999,
+        -4.722376956334194e-17
+      ],
+      "bbox_size_mm": [
+        9.0,
+        0.7999999999999972,
+        9.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.001920665115785769,
+          2.5164935548374167e-15,
+          -4.207560542386187e-18
+        ],
+        [
+          2.5164935548374167e-15,
+          0.003808900684830023,
+          2.447422538853998e-16
+        ],
+        [
+          -4.207560542386187e-18,
+          2.447422538853998e-16,
+          0.0019206651157850827
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-tube4-3-M4-extra-washer.step",
+      "step_sha256": "5a084fb04ec9475ea955b8d437cd0c5dc07442d58b8aaccab8cc4e1e09ec669d"
+    },
+    {
+      "id": "A19-H43-J4-cover-button-4",
+      "owner": 3,
+      "frame": "J3.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO7380-1 M3x16; nominal headD5.7 H1.65 AF2. Original washer, nut and16mm thread stack unchanged; cosmetic only. Actual supplier dimensions/torque pending.",
+      "solid_count": 1,
+      "volume_mm3": 151.73725135658668,
+      "mass_kg": 0.0011911374231492054,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        385.254833995939,
+        33.58986806873663,
+        45.25483399593905
+      ],
+      "bbox_size_mm": [
+        5.7000000000000455,
+        17.65,
+        5.700000000000003
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.03766178175619868,
+          -1.7753262918844196e-13,
+          -1.9034426222265941e-13
+        ],
+        [
+          -1.7753262918844196e-13,
+          0.0023229032441784247,
+          6.40581651710873e-15
+        ],
+        [
+          -1.9034426222265941e-13,
+          6.40581651710873e-15,
+          0.03766178175885344
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-J4-cover-button-4.step",
+      "step_sha256": "2d55ef21a2eb0c95c7c5bed18ffaad8b0e1334a059951153eef1c5b2b3961533"
+    },
+    {
+      "id": "A19-H43-tube4-4-M4",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "ISO4762 M4x35, original bolt moved0.8mm outward by one additional DIN125 M4 washer; original washer retained.",
+      "solid_count": 1,
+      "volume_mm3": 582.0696685773999,
+      "mass_kg": 0.004569246898332438,
+      "density_assumption_kg_mm3": 7.84999999999974e-06,
+      "com_mm": [
+        70.0,
+        64.84031986757476,
+        6.18110397560228e-14
+      ],
+      "bbox_size_mm": [
+        7.0,
+        39.0,
+        7.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.6784306518023621,
+          -2.928362465303206e-14,
+          -4.267251822455798e-18
+        ],
+        [
+          -2.928362465303206e-14,
+          0.014173062907478455,
+          -6.6839658762427405e-18
+        ],
+        [
+          -4.267251822455798e-18,
+          -6.6839658762427405e-18,
+          0.6784306518024023
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-tube4-4-M4.step",
+      "step_sha256": "ea5773db2bf0987d42a6f9cafc5776e468751037a867e278df554879d572d78b"
+    },
+    {
+      "id": "A19-H43-tube4-4-M4-extra-washer",
+      "owner": 4,
+      "frame": "J4.rotor",
+      "role": "hardware",
+      "material": "purchased steel, nominal dimensional envelope; do not print",
+      "note": "Additional DIN125 M4 washer OD9 ID4.4 H0.8; under bolt head, not inside tube. Original tube crush sleeve and rear washer/nut remain.",
+      "solid_count": 1,
+      "volume_mm3": 38.72955423345492,
+      "mass_kg": 0.0003040270007326211,
+      "density_assumption_kg_mm3": 7.85e-06,
+      "com_mm": [
+        69.99999999999999,
+        77.19999999999999,
+        -1.2596738224639054e-16
+      ],
+      "bbox_size_mm": [
+        9.0,
+        0.7999999999999972,
+        9.0
+      ],
+      "watertight": true,
+      "inertia_kg_mm2": [
+        [
+          0.001920665115807732,
+          -6.634392099116829e-15,
+          6.974124686627729e-18
+        ],
+        [
+          -6.634392099116829e-15,
+          0.003808900684830482,
+          2.4330498099216e-16
+        ],
+        [
+          6.974124686627729e-18,
+          2.4330498099216e-16,
+          0.0019206651158070456
+        ]
+      ],
+      "step_path": "engineering/arm_a19/build/hardware43/step/A19-H43-tube4-4-M4-extra-washer.step",
+      "step_sha256": "26e4ab53824e96903c74e2fd6e3df46dff39857d380bdaa3b6325e5ec328ba88"
+    }
+  ],
+  "stacks": [
+    {
+      "id": "A19-H43-J4-cover-button-1",
+      "diameter_mm": 3,
+      "length_mm": 16,
+      "grip_and_head_washer_mm": 12,
+      "nut_height_mm": 2.4,
+      "thread_beyond_nut_mm": 1.6,
+      "head_height_mm": 1.65,
+      "head_diameter_mm": 5.7,
+      "hex_AF_mm": 2
+    },
+    {
+      "id": "A19-H43-tube4-1-M4",
+      "diameter_mm": 4,
+      "length_mm": 35,
+      "plate_grip_mm": 28,
+      "total_head_washer_mm": 1.6,
+      "rear_washer_mm": 0.8,
+      "nut_height_mm": 3.2,
+      "thread_beyond_nut_mm": 1.4
+    },
+    {
+      "id": "A19-H43-J4-cover-button-2",
+      "diameter_mm": 3,
+      "length_mm": 16,
+      "grip_and_head_washer_mm": 12,
+      "nut_height_mm": 2.4,
+      "thread_beyond_nut_mm": 1.6,
+      "head_height_mm": 1.65,
+      "head_diameter_mm": 5.7,
+      "hex_AF_mm": 2
+    },
+    {
+      "id": "A19-H43-tube4-2-M4",
+      "diameter_mm": 4,
+      "length_mm": 35,
+      "plate_grip_mm": 28,
+      "total_head_washer_mm": 1.6,
+      "rear_washer_mm": 0.8,
+      "nut_height_mm": 3.2,
+      "thread_beyond_nut_mm": 1.4
+    },
+    {
+      "id": "A19-H43-J4-cover-button-3",
+      "diameter_mm": 3,
+      "length_mm": 16,
+      "grip_and_head_washer_mm": 12,
+      "nut_height_mm": 2.4,
+      "thread_beyond_nut_mm": 1.6,
+      "head_height_mm": 1.65,
+      "head_diameter_mm": 5.7,
+      "hex_AF_mm": 2
+    },
+    {
+      "id": "A19-H43-tube4-3-M4",
+      "diameter_mm": 4,
+      "length_mm": 35,
+      "plate_grip_mm": 28,
+      "total_head_washer_mm": 1.6,
+      "rear_washer_mm": 0.8,
+      "nut_height_mm": 3.2,
+      "thread_beyond_nut_mm": 1.4
+    },
+    {
+      "id": "A19-H43-J4-cover-button-4",
+      "diameter_mm": 3,
+      "length_mm": 16,
+      "grip_and_head_washer_mm": 12,
+      "nut_height_mm": 2.4,
+      "thread_beyond_nut_mm": 1.6,
+      "head_height_mm": 1.65,
+      "head_diameter_mm": 5.7,
+      "hex_AF_mm": 2
+    },
+    {
+      "id": "A19-H43-tube4-4-M4",
+      "diameter_mm": 4,
+      "length_mm": 35,
+      "plate_grip_mm": 28,
+      "total_head_washer_mm": 1.6,
+      "rear_washer_mm": 0.8,
+      "nut_height_mm": 3.2,
+      "thread_beyond_nut_mm": 1.4
+    }
+  ],
+  "print_parts_changed": false,
+  "axes_or_limits_changed": false,
+  "production_release": false,
+  "scope": "Four standard cosmetic M3 button screws and four additional ordinaryM4 washers with translated originalM4 bolts. Nominal stack only; current all-pair collision and actual tool checks must be revised before publication as current assembly."
+}

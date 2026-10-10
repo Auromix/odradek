@@ -12,7 +12,8 @@ def main():
     OUT.mkdir(parents=True,exist_ok=True)
     oldpath=ROOT/'engineering/arm_a18/build/assembly12.json';old=json.loads(oldpath.read_text())
     paths=[HERE/'build/root22/manifest.json',HERE/'build/wrist-core19/manifest.json',HERE/'build/wrist-shell21/manifest.json']
-    modules=[json.loads(p.read_text()) for p in paths];root,core,shell=modules;L=core['layout']
+    if (HERE/'build/hardware43/manifest.json').exists():paths.append(HERE/'build/hardware43/manifest.json')
+    modules=[json.loads(p.read_text()) for p in paths];root,core,shell=modules[:3];L=core['layout']
     assert shell['layout']==L and shell['source_core_sha256']==c.sha(paths[1])
     removed=sum([d['replaces_only'] for d in modules],[]);assert len(removed)==len(set(removed))
     assert set(removed)<=set(p['id'] for p in old['parts'])
