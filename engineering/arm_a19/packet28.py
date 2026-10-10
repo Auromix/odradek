@@ -81,6 +81,11 @@ tool31的18个直线内六角入口在列明的装配阶段无几何相交，仍
 
 当前仅用于外部支撑、断电、无载装配试配。不是金属生产放行版。实际螺纹／预紧、材料与制造公差、散热、断电保持、电气PCB、GMSL链路和寿命测试未放行。
 ''')
+    with (PACK/'README.md').open('a') as fp:
+        if (PACK/'drawings/47-current-part-fit-drawings.pdf').exists():
+            fp.write('\n[47页当前名义零件工作图](drawings/47-current-part-fit-drawings.pdf)包含41打印件和6采购结构件；当前孔表与STEP同源，各视图标明CAD坐标与比例，不是金属GD&T发行图。\n')
+        if (PACK/'calibration-coupons/manifest.json').exists():
+            fp.write('\n[7件小型校准夹具](calibration-coupons/README.md)独立存放，验证孔径、管套、薄耳座及实际电机配合面；不是机身替换件，不计入41件打印清单。\n')
     hashes={str(p.relative_to(PACK)):c.sha(p) for p in PACK.rglob('*') if p.is_file() and p.name!='SHA256SUMS.json'}
     (PACK/'SHA256SUMS.json').write_text(json.dumps(hashes,indent=2)+'\n');print('PACK28',len(audits),len(hardware),len(hashes),flush=True)
 if __name__=='__main__':main()
