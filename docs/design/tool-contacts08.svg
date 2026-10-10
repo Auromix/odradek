@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700">
 <defs><style>text{font-family:Arial,sans-serif;fill:#24323a}.title{font-size:25px;font-weight:bold}.note{font-size:15px}.small{font-size:12px}.line{stroke:#84919a;stroke-width:1;fill:none}</style></defs>
-<rect width="1100" height="700" fill="#f3f3ed"/>
-<text x="45" y="55" class="title">IF08 / CONTACTS + TWO SHIELDED CAMERA PORTS</text>
-<text x="45" y="84" class="note">Layout proposal · manual tool change · unpowered fit first</text>
+<rect width="1400" height="700" fill="#f3f3ed"/>
+<text x="45" y="55" class="title">IF08 / 触点供电与控制 + 双路相机同轴口</text>
+<text x="45" y="84" class="note">布局提案 · 手动拆换 · 先断电试配</text>
 <g transform="translate(330,350)">
 <circle r="220" fill="#273943"/><circle r="190" fill="#84949c"/><circle r="135" fill="#17252d"/>
 <circle r="190" class="line" stroke-dasharray="4 6"/><circle r="180" class="line" stroke-dasharray="4 6"/>
@@ -13,26 +13,26 @@
 <g fill="#090f15" stroke="#748b99" stroke-width="3"><rect x="-74" y="31" width="58" height="58" rx="7"/><rect x="16" y="31" width="58" height="58" rx="7"/></g>
 <g fill="#334d5b" stroke="#ba9a61" stroke-width="2"><circle cx="-45" cy="60" r="13"/><circle cx="45" cy="60" r="13"/></g>
 <path d="M0,-80 V-112 H245 M74,60 H245 M155,128 H245 M0,-155 H245" fill="none" stroke="#83969d" stroke-width="1.5"/>
-<text x="252" y="-149" class="small">Unique clock key</text>
-<text x="252" y="-106" class="small">10 contacts / 4 mm column pitch</text>
-<text x="252" y="65" class="small">Two GMSL2 coax ports</text>
-<text x="252" y="134" class="small">4 × M4 / PCD72 / 45° start</text>
+<text x="252" y="-149" class="small">唯一方向定位销</text>
+<text x="252" y="-106" class="small">十触点 / 列间距 4 mm</text>
+<text x="252" y="65" class="small">两路 GMSL2 屏蔽同轴口</text>
+<text x="252" y="134" class="small">4 × M4 / PCD72 / 起始 45°</text>
 <path d="M-135,240 H135 M-135,230 V250 M135,230 V250" class="line"/>
-<text x="-96" y="269" class="note">Ø54 central space</text>
+<text x="-96" y="269" class="note">Ø54 中央接口空间</text>
 </g>
-<g transform="translate(680,155)">
-<text class="title">Separate the three jobs</text>
-<text y="42" class="note">1. Pilot + screws: locate and carry load</text>
-<text y="72" class="note">2. Contacts: power, CAN, ID, presence</text>
-<text y="102" class="note">3. Coax: shielding and GMSL2 video</text>
-<text y="159" class="note">Arm side: recessed flat contact pads</text>
-<text y="189" class="note">Tool side: replaceable spring-pin board</text>
-<text y="219" class="note">Pin free / working height: 5 / 4 mm</text>
-<text y="249" class="note">Hard stop comes from the pilot faces</text>
-<text y="306" class="note">No automatic coax blind mating</text>
-<text y="336" class="note">No unlimited J7 roll</text>
-<text y="366" class="note">Voltage / tool current remain to be frozen</text>
-<text y="396" class="note">Default: power off before changing tool</text>
+<g transform="translate(900,155)">
+<text class="title">三种功能，各自承担</text>
+<text y="42" class="note">1. 法兰、定位销、螺钉：定位与承载</text>
+<text y="72" class="note">2. 触点：供电、CAN、识别、在位检测</text>
+<text y="102" class="note">3. 同轴口：屏蔽与 GMSL2 视频</text>
+<text y="159" class="note">臂侧：后退的平面镀金接触板</text>
+<text y="189" class="note">工具侧：可更换弹簧针板</text>
+<text y="219" class="note">试样弹簧针自由 / 工作高度：5 / 4 mm</text>
+<text y="249" class="note">机械定位面控制压缩止挡</text>
+<text y="306" class="note">首版同轴手动插接，不设自动盲插</text>
+<text y="336" class="note">保留 J7 转角限制</text>
+<text y="366" class="note">工具电压与峰值电流尚待冻结</text>
+<text y="396" class="note">默认断电拆换</text>
 </g>
-<text x="45" y="665" class="small">Nominal planning layout only. Actual PCB, connector code, compression force, insertion access and tolerances require new CAD + physical verification.</text>
+<text x="45" y="665" class="small">名义布局草案。实际 PCB、连接器编码、压缩力、插拔空间与公差需要新 CAD 和实物验证；尚未装入当前臂身模型。</text>
 </svg>
