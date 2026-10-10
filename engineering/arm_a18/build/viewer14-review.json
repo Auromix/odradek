@@ -1,0 +1,112 @@
+{
+  "revision": "A18-VIEWER14-QA",
+  "assembly_sha256": "628982d4a5cbd0d4f16ae6480c8fe9412ddd8aed3de6488cbb0a6ae6c4f45738",
+  "viewer_html_sha256": "7dd69739cfb8b5cdbc1c0fc5058e61ffb5b2d3f431edc44704d25f3506c5e287",
+  "source_audit_sha256": "f440cd02ad27a343919d4d694ac13a08b5c1c787db7a6426ffcd2d6e002f8728",
+  "screenshot_sha256": "62722bdbc1ce1d074512ed1e718f1fb63c1023e9bc14e9a4fe65a52aee5c25fc",
+  "browser": "Codex in-app browser, localhost HTTP, 2026-10-10",
+  "slider_count": 7,
+  "all_sliders_updated_visible_UI": true,
+  "pose_buttons_checked": [
+    "idle",
+    "attention",
+    "reference"
+  ],
+  "cover_toggle_visually_checked": true,
+  "console_error_count": 0,
+  "checks": [
+    {
+      "name": "attention",
+      "q_deg": [
+        0,
+        75,
+        0,
+        -65,
+        65,
+        0,
+        0
+      ],
+      "observed_visible_UI_flange_mm": [
+        -47.0,
+        667.36,
+        611.3
+      ],
+      "independent_FK_flange_mm": [
+        -47.0,
+        667.3618921160418,
+        611.3044804667204
+      ],
+      "max_error_mm": 0.004480466720451659
+    },
+    {
+      "name": "idle",
+      "q_deg": [
+        0,
+        110,
+        0,
+        -145,
+        125,
+        0,
+        0
+      ],
+      "observed_visible_UI_flange_mm": [
+        -47.0,
+        528.38,
+        314.26
+      ],
+      "independent_FK_flange_mm": [
+        -47.0,
+        528.3838503422653,
+        314.25627946273613
+      ],
+      "max_error_mm": 0.0038503422653093367
+    },
+    {
+      "name": "reference",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "observed_visible_UI_flange_mm": [
+        -47.0,
+        840.0,
+        279.0
+      ],
+      "independent_FK_flange_mm": [
+        -47.0,
+        840.0,
+        279.0
+      ],
+      "max_error_mm": 0.0
+    },
+    {
+      "name": "mixed",
+      "q_deg": [
+        23,
+        55,
+        35,
+        -85,
+        68,
+        24,
+        42
+      ],
+      "observed_visible_UI_flange_mm": [
+        -76.85,
+        373.37,
+        838.23
+      ],
+      "independent_FK_flange_mm": [
+        -76.84568432321028,
+        373.3748578445427,
+        838.2301750274022
+      ],
+      "max_error_mm": 0.004857844542698331
+    }
+  ],
+  "mechanical_qualification": false
+}

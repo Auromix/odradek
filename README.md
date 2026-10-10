@@ -1,8 +1,8 @@
 # Odradek
 
-**当前工程推进（2026-10-10）：** [A18承载与触点接口](engineering/arm_a18/README.md)延续全灵足、340/185 mm长版、3 kg裸法兰总负载与同源B06底座。[IF09独立试配包](manufacturing/candidates/arm-a18-contact09/README.md)已包含触点面板、工具侧距离量规、两件贴床STL／STEP、两页名义图、针位表及真实电机Blender集成核对；电气PCB与同轴保持未放行。[A17曲面罩](engineering/arm_a17/README.md)保留独立候选范围。肩部新助力比较仍缺静态设计余量，新增[实际力曲线需求与供应商核对单](engineering/arm_a18/supplier-verification11.md)，不能把当前数字几何或打印件称作生产版。
+**当前工程推进（2026-10-10）：** [A18当前整臂](engineering/arm_a18/README.md)延续全灵足、340/185 mm长版、3 kg裸法兰目标和同源B06底座。[统一整臂试配包](manufacturing/candidates/arm-body-a18-unified-fit/README.md)合并41件当前打印件、6件采购管材／隔套、触点接口、4件J3／J4前罩、当前装配指引、自有件Blender及实际CAD渲染。新前罩通过159个有限姿态的改变零件对检查，其余旧件只继承原26配置；不能扩为全域验证。当前裸臂估算10.857kg，3kg负载的J2原始静态筛选44.265Nm；肩部助力力曲线需求已按新质量更新，真实支座、散热、动态线束、金属骨架与实物验证仍未放行。**仅支撑、断电、无载试配，尚非生产版。**
 
-**最新本体阶段（2026-10-10）：** [A16完整外罩固定试配](engineering/arm_a16/README.md)使用全灵足原生关节、常规法兰/连接板/标准管、分体鞍座和外罩，保持340/185 mm长版与3 kg法兰中心目标，读取同一份当前B06底座。[收敛整臂试装包](manufacturing/selected/arm-body-a16-fit/A16-complete-body-supported-fit.zip)独立收录41件贴床STL、当前自有STEP、41页打印件＋3页管材工作图、完整BOM、装配/首件检查、运动学和[自有件Blender](manufacturing/selected/arm-body-a16-fit/A16-body-own-parts.blend)。全部外罩已有普通固定结构；修正J6横摆干涉后，26个有限运动采样通过。**仅外部支撑、断电、空载打印试装；3 kg肩部保持、完整线束、金属骨架与生产资格未放行。** 下文A11–A15及旧A16骨架包保留其历史或研究范围，当前装配按收敛包替换清单。
+**A16历史完整试配阶段（2026-10-10）：** [A16完整外罩固定试配](engineering/arm_a16/README.md)使用全灵足原生关节、常规法兰/连接板/标准管、分体鞍座和外罩，保持340/185 mm长版与3 kg法兰中心目标，读取同一份当前B06底座。[收敛整臂试装包](manufacturing/selected/arm-body-a16-fit/A16-complete-body-supported-fit.zip)独立收录41件贴床STL、当前自有STEP、41页打印件＋3页管材工作图、完整BOM、装配/首件检查、运动学和[自有件Blender](manufacturing/selected/arm-body-a16-fit/A16-body-own-parts.blend)。全部外罩已有普通固定结构；修正J6横摆干涉后，26个有限运动采样通过。**仅外部支撑、断电、空载打印试装；3 kg肩部保持、完整线束、金属骨架与生产资格未放行。** 下文A11–A15及旧A16骨架包保留其历史或研究范围，当前装配按收敛包替换清单。
 
 **最新供应商决策（2026-10-09）：** 本体七个关节统一使用灵足RobStride，不采用脉塔MYACTUATOR。[A15-RS01](engineering/arm_a15/robstride01/README.md)保留长版与法兰中心3 kg目标，提供独立质量预算、空载/满载重力及理想肩部补偿筛查；RS02/RS10P原厂STEP已取得并按原尺度导入本机Blender检查场景。新版总装、真实补偿和生产资格尚未冻结。
 
