@@ -38,8 +38,12 @@ def main(module):
                 pdf.drawPath(path)
             txt(origin[0],99,f'Overall{span[0]:.3f} x{span[1]:.3f}; scale{scale:.3f}',8)
         txt(16,84,'STEP defines complete nominal geometry; native holes retained. mount-table.csv lists added centres/axes.')
-        txt(16,74,'RS04:4xD3.5 atR64,45/135/225/315deg; plate8, spacer0.5, ear3, head washer0.5.')
-        txt(16,64,'RS04:4xM3x16 per joint,2 per cover half;8xOD7/ID3.2/H0.5 washers and4xAF5.5/H2.4 nuts.')
+        if module=='cowls04':
+            txt(16,74,'RS04:4xD3.5 atR64,45/135/225/315deg; plate8, spacer0.5, ear3, head washer0.5.')
+            txt(16,64,'RS04:4xM3x16 per joint,2 per cover half;8xOD7/ID3.2/H0.5 washers and4xAF5.5/H2.4 nuts.')
+        else:
+            txt(16,74,'Heat-set pilotsD4.0; genuine ruthexRX-M3x5.7 /RX-M3Sx4.0,maximumOD4.6. Calibrate first.')
+            txt(16,64,'See mount-table.csv: exact fixing centre/axis andmanifest for screw length, insert length and grip.')
         txt(16,54,'Replacement parts only: never stack old bracket or old cowl. Base and motor native datums unchanged.')
         txt(16,44,'Trial printed linear +/-0.2 after coupon calibration; inspect washer seating and de-support internal ears.')
         txt(16,34,'Source dimensions, thread engagement and hardware envelopes do not certify plastic retention or metal GD&T.')
@@ -62,6 +66,21 @@ manifest.json的replaces_only明确旧件移除清单。安装新件时不得保
 通过低位、互动和参考三个静态姿态的本模块/当前骨架/名义采购件/14份原厂实体干涉检查。另检查参考姿态中D3.2×25mm轴向工具空包络；它不代表实际六角匙插入、横柄操作或连续运动合格。须由首件逐颗确认工具可达、螺母/垫圈落座、打印耳根强度、拆罩顺序及手动全过程。
 
 fit-drawings.pdf为名义试配正投影，全边包括隐藏边；外形尺寸取精确BREP包围盒，轮廓曲线采样仅用于画图。完整名义几何以STEP为准，新增孔坐标见mount-table.csv。3kg负载、封闭壳体温升和后续金属骨架尚未放行。
+'''
+    if module!='cowls04':
+        note='''# 紧凑外罩模块试配包
+
+仅用于有支撑、断电、空载试配。print-bed/为毫米贴床STL，STEP保留原装配坐标。名义贴床变换已检查；需要切片、固定耳及内部屋面的支撑、实际打印和去毛刺。不得按此包运行3kg载荷。
+
+manifest.json的replaces_only逐项移除旧件；安装时不得堆叠同源旧板或旧罩。mount-table.csv列出原装配坐标的孔中心/轴线。完整名义尺寸以STEP及manifest为准，fit-drawings.pdf为全边投影工作图，包含隐藏边，尚非金属GD&T生产图。
+
+采用普通M3螺钉、垫圈和ruthex黄铜热熔螺母。RX-M3x5.7长5.7，RX-M3Sx4.0长4，最大外径4.6，厂家建议底孔4.0、最小壁厚1.6。依据厂家2022-08-15资料，采购时核对当前SKU；先用同批材料打印小样试验，不能直接套用金属螺纹的拧紧扭矩。模型只允许指定螺母与指定打印孔之间的局部热熔过盈环；没有整对实体碰撞豁免。实际热熔过程、拔出强度和预紧保持尚未合格。
+
+装配顺序见manifest的assembly。把轴承、轴和电机移走后再热熔，避免损伤精密件；螺母平齐入座，逐颗核对螺钉旋入与底部余量。罩内普通直柱/固定耳承担外壳固定，不是额外传动。需要实物验证拆罩、工具插入和全过程人工试动。
+
+review.json只证明三个代表静态姿态和列出的工具空包络。它不证明实际六角匙、连续路径、源插头、整套底座壳体、动态线束、温升或3kg负载。整个臂身仍未获得生产放行。
+
+原厂螺母资料：https://www.igo3d.com/mediafiles/Sonstiges/Ruthex/ruthex_Datenblatt_RX-Serie.pdf
 '''
     (O/'README.md').write_text(note)
     audit=dict(layout=c.L,source_sha256=sources,print_parts=bed,print_count=len(bed),scope='Closed single-component meshes,250mm bed, proper rigid transforms, exact BREP dimension spans; slicing and physical fit unqualified',production_release=False)
