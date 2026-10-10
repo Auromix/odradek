@@ -1,11 +1,13 @@
 # SPDX-License-Identifier: CC-BY-NC-4.0
 """Local-only viewer export from current actual native assembly."""
 from pathlib import Path
-import json,hashlib,struct
+import json,hashlib,struct,sys
 import bpy
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1];OUT=HERE/'build/assembly25';CACHE=ROOT/'work/arm-a19'
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
-a=json.loads((OUT/'manifest.json').read_text());n=json.loads((OUT/'native-audit26.json').read_text());native=ROOT/n['native_path'];assert sha(native)==n['native_sha256'] and n['assembly_sha256']==sha(OUT/'manifest.json')
+sys.path.insert(0,str(HERE));import binding50 as binding
+binding.validate()
+a=json.loads((OUT/'manifest.json').read_text());n=json.loads((OUT/'native-audit26.json').read_text());native=ROOT/n['native_path'];assert sha(native)==n['native_sha256'] and binding.assembly_compatible(n['assembly_sha256'])
 for path,h in a['source_manifests_sha256'].items():assert sha(ROOT/path)==h
 for p in a['parts']:assert sha(ROOT/p['step_path'])==p['step_sha256']
 bpy.ops.wm.open_mainfile(filepath=str(native),use_scripts=False)

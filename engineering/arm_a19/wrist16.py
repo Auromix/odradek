@@ -13,7 +13,7 @@ from vendor import interfaces
 from hardware01 import points
 c=f.c;g=c.cad;OUT=HERE/'build/wrist16';CACHE=ROOT/'work/arm-a19/vendor16'
 L=copy.deepcopy(c.L);L['id']='A19-J5-RS03-FIT16'
-L['joints'][4].update(model='RS03',mass_kg=.9,length_mm=56.6,motor_center=[0,68.3,0])
+L['joints'][4].update(model='RS03',mass_kg=.9,diameter_mm=106,length_mm=56.6,motor_center=[0,68.3,0])
 L['status']='candidate; exact changed-part review required; not production'
 if '--J6-x' in sys.argv:
     value=float(sys.argv[sys.argv.index('--J6-x')+1]);L['joints'][5]['offset']=[value,0,0]

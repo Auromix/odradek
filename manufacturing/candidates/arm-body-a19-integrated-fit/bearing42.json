@@ -1,0 +1,201 @@
+{
+  "revision": "A19-J7-IDEAL-BEARING-SCREEN42",
+  "source_assembly_sha256": "36010c324fb8571a41c895911090cf794320905b2efc5a0eab356be23ea657fe",
+  "source_checker_sha256": "67ae15feb9b88f14bad652a2d2c5fccfd9c690e64ed2b22eb7553949075e0130",
+  "bearing_centres_J7_mm": [
+    [
+      39.7,
+      0.0,
+      0.0
+    ],
+    [
+      50.7,
+      0.0,
+      0.0
+    ]
+  ],
+  "spacing_mm": 11.0,
+  "payload_kg": 3,
+  "payload_point_J7_mm": [
+    110,
+    0,
+    0
+  ],
+  "included_rotor_own_and_allowance_kg": 0.3103679367263297,
+  "basis": [
+    {
+      "gravity_unit": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "external_force_N": [
+        32.4747094592853,
+        0.0,
+        0.0
+      ],
+      "moment_about_A_Nmm": [
+        0.0,
+        0.9652261481407665,
+        -1.2402570208724595
+      ],
+      "reaction_A_radial_N": [
+        0.0,
+        -0.11275063826113269,
+        -0.08774783164916058
+      ],
+      "reaction_B_radial_N": [
+        0.0,
+        0.11275063826113269,
+        0.08774783164916058
+      ],
+      "unallocated_axial_N": 32.4747094592853,
+      "motor_roll_torque_Nm": -0.0
+    },
+    {
+      "gravity_unit": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "external_force_N": [
+        0.0,
+        32.4747094592853,
+        0.0
+      ],
+      "moment_about_A_Nmm": [
+        -0.9652261481407665,
+        0.0,
+        2164.7787421858397
+      ],
+      "reaction_A_radial_N": [
+        0.0,
+        164.32335801215467,
+        -0.0
+      ],
+      "reaction_B_radial_N": [
+        0.0,
+        -196.79806747143996,
+        0.0
+      ],
+      "unallocated_axial_N": 0.0,
+      "motor_roll_torque_Nm": 0.0009652261481407665
+    },
+    {
+      "gravity_unit": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "external_force_N": [
+        0.0,
+        0.0,
+        32.4747094592853
+      ],
+      "moment_about_A_Nmm": [
+        1.2402570208724595,
+        -2164.7787421858397,
+        0.0
+      ],
+      "reaction_A_radial_N": [
+        0.0,
+        0.0,
+        164.32335801215467
+      ],
+      "reaction_B_radial_N": [
+        0.0,
+        -0.0,
+        -196.79806747143996
+      ],
+      "unallocated_axial_N": 0.0,
+      "motor_roll_torque_Nm": -0.0012402570208724594
+    }
+  ],
+  "results": [
+    {
+      "bearing": "rear-A",
+      "max_over_any_gravity_orientation_N": 164.3234201225715,
+      "gravity_unit": [
+        0.0008694556741374308,
+        -0.7891724821582581,
+        -0.6141710164530766
+      ],
+      "reaction_N": [
+        0.0,
+        -129.67957035071439,
+        -100.92272011015797
+      ],
+      "reaction_map_N": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.11275063826113269,
+          164.32335801215467,
+          0.0
+        ],
+        [
+          -0.08774783164916058,
+          -0.0,
+          164.32335801215467
+        ]
+      ],
+      "catalogue_C0r_N": 4100,
+      "radial_only_C0r_to_force_ratio": 24.950795187574258,
+      "combined_static_equivalent_calculated": false
+    },
+    {
+      "bearing": "front-B",
+      "max_over_any_gravity_orientation_N": 196.79811933268525,
+      "gravity_unit": [
+        0.0007259821918202128,
+        -0.7891725724803058,
+        -0.6141710867459278
+      ],
+      "reaction_N": [
+        0.0,
+        155.30771902054457,
+        120.86774667179586
+      ],
+      "reaction_map_N": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.11275063826113269,
+          -196.79806747143996,
+          -0.0
+        ],
+        [
+          0.08774783164916058,
+          0.0,
+          -196.79806747143996
+        ]
+      ],
+      "catalogue_C0r_N": 4100,
+      "radial_only_C0r_to_force_ratio": 20.833532423493292,
+      "combined_static_equivalent_calculated": false
+    }
+  ],
+  "maximum_unallocated_axial_N": 32.47470945928529,
+  "motor_roll_torque_max_Nm": 0.001571591230211625,
+  "catalogue": {
+    "manufacturer": "NSK",
+    "model": "6807",
+    "ID_OD_width_mm": [
+      35,
+      47,
+      7
+    ],
+    "Cr_N": 5400,
+    "C0r_N": 4100,
+    "url": "https://www.nsk.com/my-en/engineering/products/bearings/ball-bearings/deep-groove-ball-bearings/single-row-deep-groove-ball-bearings/6807-apn.html"
+  },
+  "actual_steel_bearing_selected": false,
+  "production_release": false,
+  "scope": "Ideal rigid two-support static radial load path, all external radial forces assigned to added pair and axial force left unallocated. No actual load sharing with RS00, clearance/preload, combined equivalent load, life, plastic seat stiffness/creep, metal fit, dynamics or off-centre workpiece. Radial catalogue ratio is not safety factor or capacity approval."
+}
