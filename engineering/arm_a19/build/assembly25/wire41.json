@@ -1,0 +1,71 @@
+{
+  "revision": "A19-GMSL-CABLE-SCREEN41",
+  "source_assembly_sha256": "36010c324fb8571a41c895911090cf794320905b2efc5a0eab356be23ea657fe",
+  "source_checker_sha256": "c8eb39e656d7c6cfc826f66c6702fac51756aada160d859e3204b16eec9ccd75",
+  "cable": {
+    "manufacturer": "HUBER+SUHNER",
+    "part_number": "22510043",
+    "identifier": "RG_178_B/U",
+    "OD_mm": 1.8,
+    "OD_tolerance_mm": 0.1,
+    "impedance_ohm": 50,
+    "impedance_tolerance_ohm": 2,
+    "frequency_max_GHz": 3,
+    "static_radius_mm": 10,
+    "repeated_radius_mm": 18,
+    "dynamic_radius_original_text": "<27mm, interpretation and life not verified",
+    "conductor_DC_ohm_km": 742,
+    "shield_DC_ohm_km": 53,
+    "web_extra_DC_value_conflicts_with_PDF": true
+  },
+  "source_pdf_sha256": "da60bc5658264d2f6f70d86c78a94c21461fda2319bcd2b7ab5ca9c548f2e446",
+  "source_pdf_date": "2026-03-12",
+  "source_url": "https://www.hubersuhner.com/Asset/eyJpZGVudGlmaWVyIjoxMTY0NDksInR5cGUiOiJhc3NldCJ9/5uPHdE9YtZiMGuxL/H%2BS_RG_178_BU_EN.PDF",
+  "channel_spec_url": "https://www.analog.com/media/en/technical-documentation/user-guides/gmsl2-channel-specification-user-guide.pdf",
+  "module_cable_loss_limit_dB": {
+    "GMSL2_3Gbps_at_1_5GHz": 15.5,
+    "GMSL2_6Gbps_at_3GHz": 17
+  },
+  "module_applied_band_max_GHz": {
+    "GMSL2_3Gbps": 2,
+    "GMSL2_6Gbps": 3.5
+  },
+  "assumed_lengths": [
+    {
+      "length_assumption_m": 1.5,
+      "nominal_bare_cable_loss_dB": {
+        "1.5": 2.9869338722215595,
+        "3": 4.4521797628535875
+      },
+      "nominal_cable_loop_DC_ohm": 1.1925,
+      "cable_mass_two_channels_kg": 0.0252
+    },
+    {
+      "length_assumption_m": 2.4,
+      "nominal_bare_cable_loss_dB": {
+        "1.5": 4.779094195554495,
+        "3": 7.123487620565741
+      },
+      "nominal_cable_loop_DC_ohm": 1.908,
+      "cable_mass_two_channels_kg": 0.040319999999999995
+    },
+    {
+      "length_assumption_m": 3.0,
+      "nominal_bare_cable_loss_dB": {
+        "1.5": 5.973867744443119,
+        "3": 8.904359525707175
+      },
+      "nominal_cable_loop_DC_ohm": 2.385,
+      "cable_mass_two_channels_kg": 0.0504
+    }
+  ],
+  "assembly_length_selected": false,
+  "actual_loss_measured": false,
+  "dynamic_life_verified": false,
+  "torsion_verified": false,
+  "connector_crimp_verified": false,
+  "PoC_current_selected": false,
+  "purchase_selected": false,
+  "production_release": false,
+  "scope": "Nominal bare-cable arithmetic only, no connector/PCB/PoC/passive loss or impedance/return-loss/ripple/crosstalk measurement. Lengths are scenarios, not released cuts.3GHz cable catalogue does not qualify6Gbps full3.5GHz applied band."
+}
