@@ -12,7 +12,7 @@ from module_review import review
 O=c.OUT/'wrist05';O.mkdir(exist_ok=True);g=c.cad
 INSERT_SOURCE='https://www.igo3d.com/mediafiles/Sonstiges/Ruthex/ruthex_Datenblatt_RX-Serie.pdf'
 SPECS=[('J5','A16-S107-fore-distal-socket',4,'J4.rotor',[185,62,0],[75,105]),
-       ('J6','A16-S109-wrist-pitch-yaw-L',5,'J5.rotor',[55,0,0],[45,135,225,315])]
+       ('J6','A16-S109-wrist-pitch-yaw-L',5,'J5.rotor',[55,0,0],[135,165,195,225])]
 
 def insert(id,p,n,owner,frame,length,target):
     s=g.ring(p,n,2.3,1.5,length)
@@ -64,6 +64,11 @@ def main():
                     part=part.cut(g.cyl(rp+direction*(exterior-32.5),direction,3.7,6)).fix()
             for delta in h.points(inf,'fixed_front_fasteners'):
                 part=g.drill(part,p+delta+n*(front-.1),n,9.8,7.5)
+            if joint=='J6':
+                for pt in points:
+                    # 0.3mm radial service clearance around the ordinary
+                    # fixed D8 boss; stops before the0.5mm spacer/ear plane.
+                    part=part.cut(g.cyl(pt+n*(back-.1),n,4.3,8.3)).clean().fix()
             skin.export('A16-C05-'+joint+'-cowl-'+label,part,owner,frame=joint+'.fixed',note='Two straight3mm ears per split cowl; local wall patch, native washer/headD9.8 access reliefs. M3x8 into ordinary brass heat-set inserts. Heat-set pullout and actual tool access unqualified.')
         for k,pt in enumerate(points,1):
             q=pt+off
@@ -87,6 +92,11 @@ def main():
     g.add(newhousing,housing,6,frame='J7.fixed',role='printed_structure',material='PETG supported fit',mass=housing.Volume()*1.27e-6,note='Original bearing seats/cage bolts unchanged; fourD4.0x4.0 radial heat-set pilots atX39/49,Y0,Z+/-42. RX-M3Sx4.0; physical bearing/pullout checks pending.')
     for k,(label,sign,outer,length) in enumerate([('a',1,50.6,12),('b',-1,47.84,10)],1):
         oldid='A16-C02-J7-cowl-'+label;replacements.add(oldid);part=r.load(c.OUT/'covers02/step'/(oldid+'.step'));n=np.array([0,0,sign],float)
+        # Ordinary round rear clearance: J6 origin isX-75 in this frame.
+        # This cuts cosmetic material, never source motor, cage or bearing.
+        # Keeps the J7 lower skirt outside the fixed J6 front ring/cowl over
+        # yaw; finite samples must still verify the resulting assembly.
+        part=part.cut(g.cyl([-75,0,-55],[0,0,1],46,55)).clean().fix()
         for j,x in enumerate([39,49],1):
             p=np.array([x,0,42*sign],float);key=str(k)+'-'+str(j)
             boss=g.cyl(p+n*.05,n,4,outer-42-.05);part=part.fuse(boss).clean().fix();part=g.drill(part,p-n*.1,n,3.5,outer-42+.3)
@@ -94,7 +104,7 @@ def main():
             insert(f'A16-C05-H-J7-insert-{key}',p-n*4,n,6,'J7.fixed',4,newhousing)
             tools.append(('J7-'+key,'J7.fixed',g.cyl(p+n*(outer-42+3.6),n,1.6,25)))
             mounts.append(dict(joint='J7',k=key,frame='J7.fixed',p_mm=p.tolist(),n=n.tolist(),radius_mm=42,angle_deg=90 if sign==1 else 270,pilot_diameter_mm=4,insert_length_mm=4,bolt='M3x'+str(length),engagement_mm=length-(outer-42)-.5))
-        skin.export('A16-C05-J7-cowl-'+label,part,6,frame='J7.fixed',note='Original silhouette; two radialM3 fixings per half into standard short brass inserts, with integral straightD8 supports. No added bearing/gear/axis change.')
+        skin.export('A16-C05-J7-cowl-'+label,part,6,frame='J7.fixed',note='Original silhouette with ordinary rearR46 circular relief about J6 axis, Z-55..0; two radialM3 fixings per half into standard short brass inserts. No motor, bearing, gear or axis change.')
     parts=[{k:v for k,v in p.items() if k not in ['vertices_mm','triangles']} for p in g.PARTS];ids={p['id'] for p in parts}
     for sub in ['step','stl']:
         for f in (O/sub).glob('*'):

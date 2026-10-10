@@ -1,4 +1,5 @@
 {
+  "revision": "A16-SELECTED-MOTION07",
   "layout": {
     "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
     "units": "mm",
@@ -301,6 +302,42 @@
         1
       ]
     ]
+  },
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
   },
   "source_sha256": {
     "engineering/arm_a16/build/root01/manifest.json": "03407990554696d00cea63bb83b54b0ca42166c79e8da587b843642ac76c9fca",
@@ -780,61 +817,111 @@
     "engineering/arm_a16/build/cowls04/step/A16-C04-H-J4-4-washer.step": "e7fea1a7830c4ca79726bb61ed5ad3824e59288283794570ce3ee9e253ce4a54",
     "engineering/arm_a16/build/cowls04/step/A16-C04-H-J4-spacer-4.step": "9c7da95385cf952e7714e8bfc15031b5efc2a13c7e0f19242b0a0b2d498d2e6e",
     "engineering/arm_a16/build/cowls04/step/A16-C04-H-J4-nut-4.step": "5f759846a17d7ce1f0d647fc0e6045d5385a6930fabc4d0cb03257aa8af6d6ac",
-    "engineering/arm_a16/build/wrist05/manifest.json": "3338643bcb785d25399dacba112fdc7bdd4180036155ece75194a852a787868c",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J5-mount-plate.step": "451bf4d309d33817772601ebc3a6afb9796d033693edda8b610d23f6561a3e0b",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J5-cowl-a.step": "dc4a3fda1c89116e6191d5b5fbc25f4aafae12f600de367e0ec27d8b1c9c93f6",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J5-cowl-b.step": "3033669a37391f684a64ccee4e1c36e87ec69c9c09599a5181342d0051ad42c5",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-1.step": "aeb5ae9ee26d139c850c4ffb83ca3f15b2e0ba931a359266054073a5d7a69766",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-1-washer.step": "5a2846544c1f28d17439741ddffe9b1aa99b75f73a0fad188a41e66ebea28a6b",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-spacer-1.step": "43ab32b6deb8dc0d5251ef1c73f0c25c146db59ddff95641a075b8611b481b8c",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-insert-1.step": "f1022e59cf9c4fe476e95cd22f83f6678501f38b8761a12a5825f0a46ee5f280",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-2.step": "425b4458fc5422bf37bbf0ac00d6402d84759f6f7467cb3afcf68475c1ada784",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-2-washer.step": "636a8a79fe992f76c5159e255011ff8813a12b2ef1e2294438f3757d5333583b",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-spacer-2.step": "38491545f62e18265683b66d77cb4250ec5a83f2b2e2b9e46c20e86877342028",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-insert-2.step": "06ad82a68c16bb60e3d1d1b2075443c862b17a34865be9f651afaee5a7369bb6",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-radial-1.step": "ce72205c7e65938f4d443d0a1b1f9ea284e246cfa502f3323a6e76150ada75ee",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-radial-1-washer.step": "b4a0e91c0e52a358e47810f3304bafc95fd0d97fbd9954cae38c8a4c8c46c2b7",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-insert-radial-1.step": "979a163e57658107c16445b9612f51889b5437be13966253f54744d4e4324c6e",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-radial-2.step": "9a42bbfdc7b99dd1ff2fb732a50ecc53e242d275f9eb20a3008e4d5723835cb2",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-radial-2-washer.step": "977b5c1b92985d54b2de6773413280575cd61ae9b407022ebf6d34ba4e7a4afe",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-insert-radial-2.step": "aede1040619ff6d112b7a3039c5820f1ed40276a567a7dc6ef5c20a55d667135",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J6-mount-plate.step": "99e124e9541c43dd755599a2ae9e7fbf2419bb2459a2438ed42b54c923768abe",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J6-cowl-a.step": "e6fb94d3dba236601bcf55e5d0d4ed3a216294990989c8ca6679df82aea5b491",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J6-cowl-b.step": "5951c7338a61b63a031cc16de299010bb737d21346736470de5da9c037696022",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-1.step": "914a335d1b726ee4f7877e5df6da434e0d7a5f96e2f5fe0ca25ca565f2e74aa5",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-1-washer.step": "7df325e3a88fcd64f05232a5950f6060d1d92b04b948b2312f10b108ae0ee323",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-spacer-1.step": "33ede3ba6b330089c6c8f930020f409a974c2eb00edc7564cf32387aec0e5be3",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-insert-1.step": "365d292635de2cfb33088eb26428207a0595610db0992307163e0e54682ba60f",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-2.step": "5660daa66fa8bf3ab061d231382f21757b2fa74be5f571d626004ab8850fd02f",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-2-washer.step": "4332b37c76e31fc36629138710711373cd37a61972ae56b4a528d1adee8e5168",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-spacer-2.step": "b16f9348141f2efc0fcbb7d19a271a7b3306fdbcbfcc3b002de61fae9b72aaa5",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-insert-2.step": "f9115cdc180326c8308d42236e3b0624ee9e5ec84ff4230289ff99064de4fdab",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-3.step": "5701f253c01aed0f78cb4af27425a719cb1afd46b20630774b74dd007bf53818",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-3-washer.step": "09ca693db218876cd4c4992033bebb5580f1f94eb7b893fdcd4c9eb6d8a50f6c",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-spacer-3.step": "2814cb982eb3dd78bdabed1bd379467cc335b927b1f297f893fcf43b39982955",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-insert-3.step": "ee7034426e3e95b0a1740ab336ac1ef22f3a645a5563845ff7271d7cdf6b789d",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-4.step": "af145d2f68cdc66d81a7f2130bf383067800ee7fb8d7757087f01a70384ad0f3",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-4-washer.step": "cca3c8dc922041ec5f988840c7e0d9798ea125da6e6ca2d6715f8a5453d1827a",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-spacer-4.step": "00f36e7a91b6120621ad22927f3b0dc11bb6f530df45a4e95c63dd410c55afdf",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-insert-4.step": "b320a1b50b6a0badaa0d606a108cfe2ac2ebf3f187bbf83cea028f92d784f44a",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J7-bearing-housing.step": "7025082a70d267536bc92edf7aae39549d51ad11ef0d03e0b0b7ccc1e2154223",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-1-1.step": "b23cae4eab4fa658b839152a67f4c6d0d6c6ae2eddd540974019d346be2a1c44",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-1-1-washer.step": "213d224a74614016de509b272f811c74ed7be644dab86d14095388708f59f82a",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-insert-1-1.step": "0a790faa3e4fea725a6a801bfbfa2fc3a8b16579bbd81cd587c78ab5f6a5c5de",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-1-2.step": "a1b9e024034b2ea8bac4179ef25e43c0e6a8f869fd4e8b58a998b1d7460c0122",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-1-2-washer.step": "51544984a60cd9c1d375b12583228290454d1ae3ab893cf36a0d60f59ba5f102",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-insert-1-2.step": "26506d2b7364b850d69dff75fdd10e0919366c320fb865489d12d8172245f10e",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J7-cowl-a.step": "374a51aa5336ca04e60a8cf40b02a4d29f3e97f26428c54077aad6576b052c9f",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-1.step": "9f3522e10cea1fee92d412df2968d80f71a009e4e108dcee4c4685bef972046e",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-1-washer.step": "211c8b0b7541b7265ae9b65b26cf3a079fea575d6f47f288e901f9aa2cb092d7",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-insert-2-1.step": "5bdad43c6ce7f0ea9a75425c67be7101ac275cb36d877eb3ea070a0d7cac0964",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-2.step": "f33cae4fa1c25d4ce6f5d44488be6ab518220657acffefbe6d9ac0faf4a3177f",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-2-washer.step": "564cd430870200f515871e6ecbef95259b4551a7cd9f2194375c96d6ff6048b6",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-insert-2-2.step": "04a04be5263868b68f5b8051db64effdbbb3be1ae239fe9221e8727023af57eb",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J7-cowl-b.step": "9a85fdcbf83a28d48f964fa2d1eb6aeb27ed7876ea0ac3419207ff0b2d352594"
+    "engineering/arm_a16/build/wrist05/manifest.json": "223711b58cb57c15861ed461f685ac2878f0be1ad7f7f1208b6de574a97d6f6a",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J5-mount-plate.step": "eaae2aab51a891866b1e14a4c17d174321598d0fcfb90899d5b503d291d389c1",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J5-cowl-a.step": "d651978f674b85b0ee7d0f4a24e75d1e3400c6192753460fbaef8d2e98c1e3d9",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J5-cowl-b.step": "4b18a226791f142b5a723215c2e64f9172354ab079c7c9c6560158a0b44718e9",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-1.step": "c6e7e31a1f3ed95ef0ab86dbe9068aa160e23bcc174d65f88ed160581dd5abad",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-1-washer.step": "7c93197081f55b55dc52caa835318383d3cbb354f77164630291d8836d3b1677",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-spacer-1.step": "d51d17a1406084579d0269a93948ca117ac75e1d4e4e19c82fe0dea69c497175",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-insert-1.step": "0e259f120321915a544c58da441a205b0652cb6849fd4e3a693b939fe1a0d3b9",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-2.step": "80b99eb30ae6c67a3092908f1355cffb3268e6dd3610fd72c28bc55d9a38e031",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-2-washer.step": "89f648f797f06775115fa3005e51019fb112ddc814325ce0c1d10f13d5698f24",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-spacer-2.step": "18ebf57908eba36ce8e54e726a615b37f2843a4383e5d6713f76d5c594f261c9",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-insert-2.step": "47dfa29a7d0becb8c20d3334bce315d6a4133cdfdda6a15b85328e13de44a00d",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-radial-1.step": "5a3613140ce6dcd74aade75dc1b1941f177c99bd9895b8ad7c630dec31b96864",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-radial-1-washer.step": "820edcae9ef76bc712abcf395367922297f01113aea43a80c66b815fb41f2023",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-insert-radial-1.step": "70b8a6a7d8b97cc6cbf6b53b0cba84970c6c0230a96c896de8104f4b8425dc16",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-radial-2.step": "d27daf7837b403c0eaa82fb09876b357840ec01c1e52dc7b32bbd81dfa35f3c9",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-radial-2-washer.step": "d490418250b73eea8b407335a62490e78d1fe4a887c77235146bd93ea44f8974",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J5-insert-radial-2.step": "206dd4b40b77efb45ea3a90e5a6b5f0be4fa526c18cfee1364385bc3c26c015c",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J6-mount-plate.step": "0595d9d3575b74eec2233eef4925ccec5029a80dd63869492799dec8761edf80",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J6-cowl-a.step": "3e36408798bf1ccc52099099e2b6e3d95832d37e80ee70f75ae1b0daff1ed296",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J6-cowl-b.step": "5df02463768672dcedfbd2dd7cacdae7bc0087aabecfbe7cdf19c787c324c51a",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-1.step": "a9574baef530476a735bd2cd81ba76d12fc0af83f4814b547e312db655538223",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-1-washer.step": "0f96ac53dd616ba99c509503bd15e42c9ab33a70062e6e1fe64d9628ef1a8b41",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-spacer-1.step": "43960f20909e38c45083a8130ee729960c80a3c9bbfa4294ce7f4005faf681b2",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-insert-1.step": "52b210cfd485c97a11e52f6755504e0bf0dae51704f7798836569b6eb94b264e",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-2.step": "949b03418d398af810dbca47574a2d29fbed34ac1122dfc960df82fa8af7965b",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-2-washer.step": "e61d7017ee232f84ae5e14e92c397342677d0e6ecf84790086bdc5b9621dde9b",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-spacer-2.step": "b998c5ba69f782eb623dc00db9d419ed0d8908e68b86946e40dccc023b1874bf",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-insert-2.step": "baa5543797445ff509384feecd85a886f74cc3f91b9589f3e3946e698c41f559",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-3.step": "92c14ed0c57014f6d6fab26599a0574e63bbfab9537a7ae69a91e3fc9367e295",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-3-washer.step": "ebaeadad1a7003eb54ae1992e8965f880ee2ffe920c7d3e1c626211d0a7c878c",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-spacer-3.step": "c134091d4791b0f02b38c18b814ca98dec12ab3d78397aafaa7dd88a93caf2a0",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-insert-3.step": "757de61a280277718e1d98f28fa2d23d9383de2c06d4dfc08f3958b6e9e9b323",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-4.step": "b02e46a281cdaff9bafb64f847a7424117fd6a5fbaaed5296a6c3284d89003f3",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-4-washer.step": "56cf0b435778cee98d5f8c08682ad0f3ad86a28b3d374c015838bc582c101b4a",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-spacer-4.step": "9dde5cbfd02ea608855437020a773b9eeb2079665fae955e15e1819f63d08410",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J6-insert-4.step": "7be7a1af8ebe6b79aea493eb8d3bd6816fae7c31d838ac2f594e7a1d38e1e791",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J7-bearing-housing.step": "3e5763cb5d6d9e0c156f01715db1f45ddcd3c08ffe3a4587be517783ffe4a752",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-1-1.step": "5dc2e52edce1b7c1dd3e01978b21f95b1eecc2a903261b6e04b7efe55058321a",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-1-1-washer.step": "86278323c9c68fdda9042c49d8e30eb67f4cede6beab93b81df56275737a1a3b",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-insert-1-1.step": "dcc860d2d0e9a45026c2f4b08168d3bb7c9d5cec831a7b38aa4fa1e40e1cf755",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-1-2.step": "1bf584ad02ef1781331600e196f37f4503e76556377ce05919ce4a80d9d8af14",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-1-2-washer.step": "2cb434a04d143093ae14aedda7bf9353e73939e6975925e2e78ac6c5c34f9103",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-insert-1-2.step": "918f8543eaf4ba62120e790e4a7988deb70765ebea653455297ca7cb2e47536e",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J7-cowl-a.step": "2753a2d815022be178cbb7a07cb0e0886886732ff80e21de874e04865b3c5c1a",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-1.step": "f9d939d8cb1ab2288b5c52641eef16b621d239427f57458ab5726e1144f3f07f",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-1-washer.step": "df315640289101550a4bf7f0d904b8c84e1698929d2e27816f28c2e2992b7d56",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-insert-2-1.step": "b15142d83b966b67666eb48904198c966fc2a0f9555fac1e6599bd8f08ce5620",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-2.step": "e4a04bb5f967ccf572c0fcc209935aedb7c3b2c134dde9f0a68451f892bbf8df",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-2-washer.step": "7303216dee59f65fb7a7f68eb89e14d5dce74d509e2886b9d040882b20920753",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-insert-2-2.step": "a9425e7f4746adf08bcbb8d36d0e0cbc423d57bf1fba3b6b300d685640e32ef7",
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J7-cowl-b.step": "2cad01878726b23b6ab3834950c3409ef4a459516a084d7855ad778e702a4eed",
+    "engineering/arm_a16/build/skins06/manifest.json": "f4881aac975b354edfd95a0d43ec81ba9800ea245c4320016827e38ed5eba752",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-saddle-115-dorsal.step": "0baa3b1f1e04996ff6f6d9f5405e37e018a278b2d5d5fa679d2aafca7f338721",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-115-dorsal.step": "f8b1d31b587a8d29f07038318a0364d0c8afda52155703191f895071232303c2",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-115-dorsal-washer.step": "56feee109a7ae0c8e9d64413b756275268f20cc2f618b05f7d18e557865cbf2e",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-insert-115-dorsal.step": "9ab199def20b254a5716ca0043766ac216ed419965caefcd7aac22f984bd0251",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-saddle-115-ventral.step": "01910062337909ab8aabbcd072ec36cdaf7d2ee414458e104cb888720b1a0928",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-115-ventral.step": "0d684973bd3f4a1dbe6ebe284cf50a543dfbd900953da31f1d6bfbf0021b7b26",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-115-ventral-washer.step": "e3f0149dc3347b77120460f3f01687ffb5ec60dd2b832417ee552b51db94e9fc",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-insert-115-ventral.step": "1e377b0fd112711f49be20fe17485c0d2c77b6bff6fd748807792c5695692c97",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-115-1.step": "f42a7648a23cb045bd34a941c9793b781c7cbb1c254d054534a976eb460adc1c",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-115-1-washer.step": "fb4bf97907cf4fb821f72173f6f0a76060740d2c6cab6424a57158dab877e6e8",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-nut-115-1.step": "9b1b8c34854b8520548d5f27d83712eb3ed5e858cb8e47872e289fbe3b2540de",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-115-2.step": "4971dc257313da14a43754406a37a6271c4f5183d8294ac9d68b9c0b71b79393",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-115-2-washer.step": "6a1b9cc9384681b1815d18c32515d874adb49b11be56b0b725b23b36f386b69e",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-nut-115-2.step": "085a41d8b15e3ac289a085ab8f451e0fafa9e8d64cba11ee8b35ac61c1c16d0f",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-saddle-200-dorsal.step": "17460446fa4f4fe17642ff173724ef4fcd972f96d226a3105b6e5cd5b245bee8",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-200-dorsal.step": "a137df2f062054474811e27cfe29b6edef00507c08b28b2a4a064e3c37c265f2",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-200-dorsal-washer.step": "b1262cb3fedae1e705c2a023e7ca394e279af7de851654158d0d3c828213ea9f",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-insert-200-dorsal.step": "82b1409344bb2d228ea6e8b32afa03915bd5739eafc80a783e6d90bb8ff44b44",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-saddle-200-ventral.step": "2fbfd05af657c29b57b3e91de5a77adf7884eda8a42049e71f25cb6e3e8a2414",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-200-ventral.step": "8fd95f2273272177f5a80774572d5a2f5555680526ce1b83edd92f92be43514c",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-200-ventral-washer.step": "6daee859d5fbb95baceab683e36a8ecd44b58b7641f4f0cff05bc7f8c8f9c065",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-insert-200-ventral.step": "e5d36e726cacc976b41b494d9179693d9b4f006ab39e75a92aad4d4e20351f06",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-200-1.step": "9666d85ceb1969bf490255c98df409c4fbc98ab4b12b56cbf53cbaeb951926b9",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-200-1-washer.step": "2fe5eda1d97ba09bc6f3e737eff3634d32a5a0294f91d769c3fdab903a8a161a",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-nut-200-1.step": "b81aae8a383a8639533c8fbed34ef7068c1cc666da028e0c62adbe0625cffc01",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-200-2.step": "f871038286ff7c2b0e32de52fd3d3f5f5481af7f46ab03f2d4a7ecd5c9c371b5",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-200-2-washer.step": "ea454b53ac5b15d4e791329c119b080ab09948077c52f8032c219f336322c877",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-nut-200-2.step": "741e90e423a06b20aadbfa3a44311d85d868aa0fbdf65fb389e99cf53e7cc090",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-dorsal.step": "a82c1302205d5051edfdce5562c119fb768b5f6cb87ba9876e81f50aa4b73313",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-ventral.step": "ff431eb8d0ae0ecccf073be245fa6e9e82686664401a62ddc244c75555f82cee",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-85-dorsal.step": "a8ee16f678ee7c72acd0ddee14ed5511229def744b7e24bb305f03630c547e46",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-85-dorsal-washer.step": "e08926f6eab37c232b1153f254b74d0f0fe3997ae038ec84b1c78f49a218e077",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-insert-85-dorsal.step": "fd644e770d638db75841192d87b482d23c89c2a2b7ae8d1f42b8be649f6ea63f",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-85-ventral.step": "22fa7551357f9e6f93a0df857e23c0bd4229ebdfc5dbcc53e5c741fe4b1d6d88",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-85-ventral-washer.step": "062d0aabd1af5275951df9309beb779e242ca7ffc1ac9106440fe3df026d4398",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-insert-85-ventral.step": "b6344c888091c730782af203baef367b1a0e5ec34990c36e3d2aa4267e53020c",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-95-dorsal.step": "c6eccb3adefb953befafc7b04f84b81a0aea6bec59b4daf8f31eb1d5f2a889af",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-95-dorsal-washer.step": "bf5143b8ca79af5878fbaeab9e65a6b28794fb891ded88f46b7f4813a6de65c9",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-insert-95-dorsal.step": "1ace17f8fae14bb3e4cfad2851bd238da4794c1fcd070feadb8fe13f6b9883ca",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-95-ventral.step": "233802a859289a9eeab96de5721c3413011daf2988a053b2b3d320cefc114f71",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-95-ventral-washer.step": "9e1cb06a22f6883dd52b5cca92493a9e82a5bd02d59dce4730b2bd7fb961bf7c",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-insert-95-ventral.step": "4aa24e7a78f1d4831a2cebf87ed4f4d6b1feabe209e7ed4b88a75d1d48e83282",
+    "engineering/arm_a16/build/skins06/step/A16-C06-fore-spine-and-J5-ring.step": "03ec09979b8bfefba33b50ff78315b9b068d1fb151ca3c3d1fce3bbb45ed7da7",
+    "engineering/arm_a16/build/skins06/step/A16-C06-fore-dorsal.step": "0b4f7b00e45b27fe9186e4939ff1f0eb551ad375d34cae84404968f73a03ce0c",
+    "engineering/arm_a16/build/skins06/step/A16-C06-fore-ventral.step": "a54139c84a479e696bd975182bba31527c1f86e2d054ad55531afabee5ed121b",
+    "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-1-C06.step": "10567e8837e985445046ac0112861eebbe28be5c9776c2fa2d6feee975abb736",
+    "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-2-C06.step": "29a53649f63594600fe0cf19989ecd7dde2b3e15543babc67abcac36e6f74ef1",
+    "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-radial-1-C06.step": "f1bbcc4cf5c3ba98192c32b5967a62fb0e0cbf9b53ef0a8c4543df7158e0db2d",
+    "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-radial-2-C06.step": "291f9f59b0a19adb706c37f0c93d2392f336b1da08a4eeb08b06b177b782a447",
+    "engineering/arm_a16/build/vendor-audit.json": "c2d7e3a6263c4b4b66c1786b80a1afcd202c4574df01fd045dd218c4503b2a75"
   },
-  "vendor_audit_sha256": "c2d7e3a6263c4b4b66c1786b80a1afcd202c4574df01fd045dd218c4503b2a75",
-  "replacements": [
+  "replacement_chain": [
     {
       "module": "root-cover03",
       "remove": "A16-C02-J1-cowl-a"
@@ -918,35 +1005,491 @@
     {
       "module": "wrist05",
       "remove": "A16-S109-wrist-pitch-yaw-L"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C02-upper-dorsal"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C02-upper-ventral"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-J5-mount-plate"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C02-fore-dorsal"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C02-fore-ventral"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-H-J5-insert-1"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-H-J5-insert-2"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-H-J5-insert-radial-1"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-H-J5-insert-radial-2"
     }
   ],
   "checks": [
     {
-      "pose": "idle",
-      "bbox_pairs": 458,
-      "new_exact_checks": 458
+      "sample": "idle-attention-00",
+      "q_deg": [
+        0.0,
+        110.0,
+        0.0,
+        -145.0,
+        125.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2406,
+      "new_exact_checks": 2399,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
     },
     {
-      "pose": "attention",
-      "bbox_pairs": 508,
-      "new_exact_checks": 182
+      "sample": "idle-attention-01",
+      "q_deg": [
+        0.0,
+        107.08333333333333,
+        0.0,
+        -138.33333333333331,
+        120.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2410,
+      "new_exact_checks": 496,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
     },
     {
-      "pose": "reference",
-      "bbox_pairs": 387,
-      "new_exact_checks": 62
+      "sample": "idle-attention-02",
+      "q_deg": [
+        0.0,
+        104.16666666666667,
+        0.0,
+        -131.66666666666669,
+        115.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2367,
+      "new_exact_checks": 414,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-03",
+      "q_deg": [
+        0.0,
+        101.25,
+        0.0,
+        -125.0,
+        110.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2347,
+      "new_exact_checks": 394,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-04",
+      "q_deg": [
+        0.0,
+        98.33333333333334,
+        0.0,
+        -118.33333333333334,
+        105.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2305,
+      "new_exact_checks": 363,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-05",
+      "q_deg": [
+        0.0,
+        95.41666666666666,
+        0.0,
+        -111.66666666666666,
+        100.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2267,
+      "new_exact_checks": 334,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-06",
+      "q_deg": [
+        0.0,
+        92.5,
+        0.0,
+        -105.0,
+        95.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2232,
+      "new_exact_checks": 305,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-07",
+      "q_deg": [
+        0.0,
+        89.58333333333333,
+        0.0,
+        -98.33333333333334,
+        90.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2232,
+      "new_exact_checks": 305,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-08",
+      "q_deg": [
+        0.0,
+        86.66666666666667,
+        0.0,
+        -91.66666666666666,
+        85.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2263,
+      "new_exact_checks": 285,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-09",
+      "q_deg": [
+        0.0,
+        83.75,
+        0.0,
+        -85.0,
+        80.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2289,
+      "new_exact_checks": 283,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-10",
+      "q_deg": [
+        0.0,
+        80.83333333333333,
+        0.0,
+        -78.33333333333333,
+        75.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2346,
+      "new_exact_checks": 301,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-11",
+      "q_deg": [
+        0.0,
+        77.91666666666667,
+        0.0,
+        -71.66666666666667,
+        70.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2384,
+      "new_exact_checks": 314,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-12",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2420,
+      "new_exact_checks": 327,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7--90",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        -90.0
+      ],
+      "bbox_pair_count": 2418,
+      "new_exact_checks": 171,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7--67.5",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        -67.5
+      ],
+      "bbox_pair_count": 2431,
+      "new_exact_checks": 182,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7--45",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        -45.0
+      ],
+      "bbox_pair_count": 2435,
+      "new_exact_checks": 172,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7--22.5",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        -22.5
+      ],
+      "bbox_pair_count": 2432,
+      "new_exact_checks": 170,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7-22.5",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        22.5
+      ],
+      "bbox_pair_count": 2434,
+      "new_exact_checks": 167,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7-45",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        45.0
+      ],
+      "bbox_pair_count": 2439,
+      "new_exact_checks": 173,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7-67.5",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        67.5
+      ],
+      "bbox_pair_count": 2433,
+      "new_exact_checks": 170,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7-90",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        90.0
+      ],
+      "bbox_pair_count": 2420,
+      "new_exact_checks": 168,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J6--60",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        -60.0,
+        0.0
+      ],
+      "bbox_pair_count": 2610,
+      "new_exact_checks": 258,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J6--30",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        -30.0,
+        0.0
+      ],
+      "bbox_pair_count": 2612,
+      "new_exact_checks": 148,
+      "collision_count": 1,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J6-30",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        30.0,
+        0.0
+      ],
+      "bbox_pair_count": 2614,
+      "new_exact_checks": 96,
+      "collision_count": 2,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J6-60",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        60.0,
+        0.0
+      ],
+      "bbox_pair_count": 2613,
+      "new_exact_checks": 104,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "reference",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bbox_pair_count": 1983,
+      "new_exact_checks": 262,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
     }
   ],
-  "collisions": [],
-  "scoped_clear": true,
-  "tool_access": {
-    "pose": "reference",
-    "space_count": 12,
-    "collisions": [],
-    "scoped_clear": true,
-    "actual_tools_and_insertion_qualified": false
-  },
-  "heatset_press_allowance": "Only designated insert versus designated printed pilot: local annulus betweenD3.98 andD4.62 for actual insert length. No whole-pair waiver. Insertion/pullout remains unqualified.",
-  "scope": "New module vs explicitly replaced current whole body and14 exact external motor partitions;3 named static poses. Empty tool spaces only. Base shell, dynamic cables, physical fit and continuous motion excluded.",
+  "collisions": [
+    {
+      "sample": "attention-J6--30",
+      "a": "A16-C05-J6-cowl-a",
+      "b": "A16-C05-J7-cowl-b",
+      "volume_mm3": 4.091098085536814
+    },
+    {
+      "sample": "attention-J6-30",
+      "a": "A16-C05-J6-mount-plate",
+      "b": "A16-C05-J7-cowl-b",
+      "volume_mm3": 1.8799426585354473
+    },
+    {
+      "sample": "attention-J6-30",
+      "a": "A16-C05-J6-cowl-b",
+      "b": "A16-C05-J7-cowl-b",
+      "volume_mm3": 3.5431633533809035
+    }
+  ],
+  "sampled_clear": false,
+  "body_min_z_mm": 47.5999999,
+  "table_plane_sampled_clear": true,
+  "checked_part_count": 556,
+  "sample_count": 26,
+  "tolerance_mm3": 0.08,
+  "allowances": "Only designated motor thread engagement cylinder and designated heat-set pilot annulus; identical actuator external partitions not treated as independent parts. No whole added-part pair waiver.",
+  "scope": "13 finite samples along straight joint interpolation idle to attention,8 J7 and4 J6 independent attention samples,1 reference;541 own parts+14 actuator partitions+B06 load flange. Full B06 shell, camera/head, wires, actual tolerance, tools and swept volume excluded.",
+  "whole_motion_qualified": false,
+  "connected_harness_qualified": false,
   "production_release": false
 }

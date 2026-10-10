@@ -1,4 +1,5 @@
 {
+  "revision": "A16-SELECTED-MOTION07",
   "layout": {
     "id": "A16-CONVENTIONAL03-SHOULDER-GAP",
     "units": "mm",
@@ -301,6 +302,42 @@
         1
       ]
     ]
+  },
+  "base_context": {
+    "base_revision": "B06-COMPACT-07-DFM",
+    "base_native_sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b",
+    "base_manifest_sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333",
+    "base_interface_contract_sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040",
+    "base_priority": true,
+    "canonical_checkout": "../odradek",
+    "base_sources": {
+      "interface": {
+        "path": "engineering/base_b06/interface-contract.json",
+        "sha256": "9fffb296a7ca437edc082921e154dedf7f942f2a185339b79ae1de040d281040"
+      },
+      "manifest": {
+        "path": "engineering/base_b06/build/exterior/manifest.json",
+        "sha256": "04518d5100f6918922c51315ca64db2b5acb8592869d825e5dcf0e8149447333"
+      },
+      "native": {
+        "path": "engineering/base_b06/build/exterior/ODR-BASE-B06-COMPACT.blend",
+        "sha256": "2611250b6d938b5f66c05c8f49f9f9d2539f72972e0b68a2fe22764115dbe80b"
+      },
+      "load_frame": {
+        "path": "engineering/base_b06/build/load-frame/manifest.json",
+        "sha256": "56836ccb4c7e3ef24fa8863df769c85b2e1c0d26d9479b65933d39c1c8d44f9a"
+      },
+      "flange_step": {
+        "path": "engineering/base_b06/build/load-frame/step/B06-104-LOAD-FLANGE.step",
+        "sha256": "53bc4d2ae9edd8e7ce021530c631cfce0088aea8563b581e6b3e703f81e83df2"
+      }
+    },
+    "integration_status": {
+      "source_sync": "fingerprints verified; native inclusion checked separately",
+      "assembly": "pending",
+      "wiring": "pending",
+      "loads": "pending"
+    }
   },
   "source_sha256": {
     "engineering/arm_a16/build/root01/manifest.json": "03407990554696d00cea63bb83b54b0ca42166c79e8da587b843642ac76c9fca",
@@ -831,10 +868,60 @@
     "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-2.step": "f33cae4fa1c25d4ce6f5d44488be6ab518220657acffefbe6d9ac0faf4a3177f",
     "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-2-2-washer.step": "564cd430870200f515871e6ecbef95259b4551a7cd9f2194375c96d6ff6048b6",
     "engineering/arm_a16/build/wrist05/step/A16-C05-H-J7-insert-2-2.step": "04a04be5263868b68f5b8051db64effdbbb3be1ae239fe9221e8727023af57eb",
-    "engineering/arm_a16/build/wrist05/step/A16-C05-J7-cowl-b.step": "9a85fdcbf83a28d48f964fa2d1eb6aeb27ed7876ea0ac3419207ff0b2d352594"
+    "engineering/arm_a16/build/wrist05/step/A16-C05-J7-cowl-b.step": "9a85fdcbf83a28d48f964fa2d1eb6aeb27ed7876ea0ac3419207ff0b2d352594",
+    "engineering/arm_a16/build/skins06/manifest.json": "f4881aac975b354edfd95a0d43ec81ba9800ea245c4320016827e38ed5eba752",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-saddle-115-dorsal.step": "a4cff578d59c92f4978b6c883bcab5f7cf6ea56d50560f240a0d11a9b2583d63",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-115-dorsal.step": "cd748d203224a9f430b74c53894b6834fc510bf89682bc996a81138533f87927",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-115-dorsal-washer.step": "2c2c59440e3660f13cf2d285737999542221cc7037792a91fe525cbd11758c11",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-insert-115-dorsal.step": "3823b93c74539bd0ccc9581b5768b2abf2aed8068bd7af642bf682f85e2198b9",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-saddle-115-ventral.step": "b39f681903deddc94776441967cb0265567671d88031300e128b359c21e56810",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-115-ventral.step": "f3e1c6d66f2dc978b9e3e85e087f2c5854dad5146beeaf562d905b90d885d0ea",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-115-ventral-washer.step": "61306971eb70163fe9b15bbad8f6da62fe6d08bfc870b79999bb76743b575779",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-insert-115-ventral.step": "606c1ad357794e55823180f6f4b1704913f462639166c45b1473336ac5af702f",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-115-1.step": "468c9d94f893839e7dcb0773d652738d61020b1b3830fae1a1586e56bc808ec5",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-115-1-washer.step": "3a5be8002effea2e5581165938bec35b6310e28b869bcdf034b39801be27e9aa",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-nut-115-1.step": "1f45a8d90a6f43b17c6180f17a8dd92802eddfb77219808a582dc541a92d7852",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-115-2.step": "0b3edb59c49b5aa873cb36d3fd95885f8569f00106a95da7014b5717b638db40",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-115-2-washer.step": "a81356184b9bb37f399bd87b4eb6493c9af811a60e32c30690b186c4f148a001",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-nut-115-2.step": "454c03d3ba1a17aa576e976bc74fc7963389ef41c451f4bd333bc2703c3140a0",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-saddle-200-dorsal.step": "912a160ba42ca7dd4f94532a600655916531277459378160d83f898d9da905f4",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-200-dorsal.step": "c4f6e940830109a741ae1a3266aada66001b3704dc1b938acc12142ba779b6c7",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-200-dorsal-washer.step": "3d7b6dc4ac28ff0cf0f23104055f9ba2737f1764dfa85d2a1ae92f6bfe90694a",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-insert-200-dorsal.step": "e2d0983576e29b9d5032d5cddf2d55e48ed4a20faf4962cca0536b27701d3ff0",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-saddle-200-ventral.step": "60bf126522a8e17dd46b8e9ea3d6e4ea7d07cb51fbe434c20dc338e2726e197d",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-200-ventral.step": "a4bafa0b1405bc4c96dbd29964e5416718b8d29749561c7605e667092d6c28f0",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-200-ventral-washer.step": "13673230a7d82f2cc2468cc0bc8af3ad521445227347e5367d0f95852cd321e6",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-upper-insert-200-ventral.step": "6c5a5651aad5642a5df4cb1af6319c42724cc16d46c4d8c8f16cd49592e30eeb",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-200-1.step": "59e98b654bbe4ae60d7dec030c74d571fd9c31ca2941edb880c7c5a5828c745f",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-200-1-washer.step": "8661abc826d891468f9497eb9ebe7a3285747c2e7e6f815d08f16eb58fea596e",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-nut-200-1.step": "0d79f1b11c96a0f2c155f533d5f15b6cee3b3e44f35cbef30309661f4f36beab",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-200-2.step": "b4d7dc0ffaf62ff2c6f5630c4b32c1e97347f1b1a2ba91ace3b6410e6e68aba9",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-200-2-washer.step": "daee364a8d4eb1e09f5b78cb0f1e884003330c28b685dd6d90275718539c7d5b",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-saddle-nut-200-2.step": "964009e8033d8d93199f12dadee6e6fa8a98028e1edbcdba8174a543bc13cf2d",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-dorsal.step": "8bae0088be4bd5cdc2783526da8e7fca0a3930069c86a4c3e03725ff6905b281",
+    "engineering/arm_a16/build/skins06/step/A16-C06-upper-ventral.step": "f4e0de677737953efd6b3680b2afe982d1d65fe80b25101b8a16524e072446ff",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-85-dorsal.step": "d2fa028ee8573803811dc203f4e73cac9fae001f6d6aae3c757e81c643151757",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-85-dorsal-washer.step": "426d0475f7b3a905c99df6b09bd4c148ae6be50056ec9b5935f00e98fb051031",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-insert-85-dorsal.step": "7ae35724076bcad285b2269603ac707e1e794eea11490a7a539ffb3f73d65d4d",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-85-ventral.step": "60805fc60e851d4cdd4989bd3354e6dc79fd1474a3052817609a695dd51f8bad",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-85-ventral-washer.step": "524e0a69fac3b9eb0c6a2e566f132c3d762b9a2fa6ae6daa2f24f441c65c454c",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-insert-85-ventral.step": "fd7d52baca81111591c4668b8baf69aae34ff7ca2997d42b3e6522558cc18deb",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-95-dorsal.step": "8a67dec7465defe68c6b2eaf198aa1ef17ca1fde4e294efa065e1baa47da348f",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-95-dorsal-washer.step": "0772ce35371fd1f1ab728270b8991814eedea541dd6259cfaa18ebb8dd0c8cf9",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-insert-95-dorsal.step": "ad397ccda1d9f1efe69306ee7e50effd252b5ef5ab177ff547851514bb18b5f4",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-95-ventral.step": "e92196eb0ff1fe66e07ccc633b1e05054fbdb1030e946854eefc45b9c1ad2ec2",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-95-ventral-washer.step": "c8ed9dd16b6c0a1c659d12b06aa1a862aceaff7a5c66568b63209c5cd19541ae",
+    "engineering/arm_a16/build/skins06/step/A16-C06-H-fore-insert-95-ventral.step": "4c9d18f0c78d86cb1c91b432b65ffe65d170d65d7a7ee2621562a25d1c04b891",
+    "engineering/arm_a16/build/skins06/step/A16-C06-fore-spine-and-J5-ring.step": "bddeef6fdda4ee263ca667200620ec377c63f5ca9533ce047ec558a5d4d911b5",
+    "engineering/arm_a16/build/skins06/step/A16-C06-fore-dorsal.step": "b0f0b5dae27d776ebe9bf9a04b235b94db325f7cd58bd23bb6dba373a0a46f04",
+    "engineering/arm_a16/build/skins06/step/A16-C06-fore-ventral.step": "ac3d8ceaa56042dc461b7a9fb6b89d216d2428baedf3a63b8be82291e3b09802",
+    "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-1-C06.step": "ad814b89f4da06bb4c4c32115cedc61cd27fc73d342e2d6734972d9a57071454",
+    "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-2-C06.step": "cb377c1f02759293a7553ef6fcc8bc73ae980dbec4d2c1669a99cf4a1a1e59fe",
+    "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-radial-1-C06.step": "f747c550957ea00a8a5619999eff810a8901ba47ef4db7ed71e939211ed5cc56",
+    "engineering/arm_a16/build/skins06/step/A16-C05-H-J5-insert-radial-2-C06.step": "0ebdc3e09e779dbb3df9bdd23929fe7c0648da15f8950c3be41052f8b411100d",
+    "engineering/arm_a16/build/vendor-audit.json": "c2d7e3a6263c4b4b66c1786b80a1afcd202c4574df01fd045dd218c4503b2a75"
   },
-  "vendor_audit_sha256": "c2d7e3a6263c4b4b66c1786b80a1afcd202c4574df01fd045dd218c4503b2a75",
-  "replacements": [
+  "replacement_chain": [
     {
       "module": "root-cover03",
       "remove": "A16-C02-J1-cowl-a"
@@ -918,35 +1005,472 @@
     {
       "module": "wrist05",
       "remove": "A16-S109-wrist-pitch-yaw-L"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C02-upper-dorsal"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C02-upper-ventral"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-J5-mount-plate"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C02-fore-dorsal"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C02-fore-ventral"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-H-J5-insert-1"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-H-J5-insert-2"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-H-J5-insert-radial-1"
+    },
+    {
+      "module": "skins06",
+      "remove": "A16-C05-H-J5-insert-radial-2"
     }
   ],
   "checks": [
     {
-      "pose": "idle",
-      "bbox_pairs": 458,
-      "new_exact_checks": 458
+      "sample": "idle-attention-00",
+      "q_deg": [
+        0.0,
+        110.0,
+        0.0,
+        -145.0,
+        125.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2406,
+      "new_exact_checks": 2399,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
     },
     {
-      "pose": "attention",
-      "bbox_pairs": 508,
-      "new_exact_checks": 182
+      "sample": "idle-attention-01",
+      "q_deg": [
+        0.0,
+        107.08333333333333,
+        0.0,
+        -138.33333333333331,
+        120.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2410,
+      "new_exact_checks": 496,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
     },
     {
-      "pose": "reference",
-      "bbox_pairs": 387,
-      "new_exact_checks": 62
+      "sample": "idle-attention-02",
+      "q_deg": [
+        0.0,
+        104.16666666666667,
+        0.0,
+        -131.66666666666669,
+        115.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2367,
+      "new_exact_checks": 414,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-03",
+      "q_deg": [
+        0.0,
+        101.25,
+        0.0,
+        -125.0,
+        110.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2347,
+      "new_exact_checks": 394,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-04",
+      "q_deg": [
+        0.0,
+        98.33333333333334,
+        0.0,
+        -118.33333333333334,
+        105.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2305,
+      "new_exact_checks": 363,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-05",
+      "q_deg": [
+        0.0,
+        95.41666666666666,
+        0.0,
+        -111.66666666666666,
+        100.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2267,
+      "new_exact_checks": 334,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-06",
+      "q_deg": [
+        0.0,
+        92.5,
+        0.0,
+        -105.0,
+        95.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2232,
+      "new_exact_checks": 305,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-07",
+      "q_deg": [
+        0.0,
+        89.58333333333333,
+        0.0,
+        -98.33333333333334,
+        90.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2232,
+      "new_exact_checks": 305,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-08",
+      "q_deg": [
+        0.0,
+        86.66666666666667,
+        0.0,
+        -91.66666666666666,
+        85.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2263,
+      "new_exact_checks": 285,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-09",
+      "q_deg": [
+        0.0,
+        83.75,
+        0.0,
+        -85.0,
+        80.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2289,
+      "new_exact_checks": 283,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-10",
+      "q_deg": [
+        0.0,
+        80.83333333333333,
+        0.0,
+        -78.33333333333333,
+        75.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2346,
+      "new_exact_checks": 301,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-11",
+      "q_deg": [
+        0.0,
+        77.91666666666667,
+        0.0,
+        -71.66666666666667,
+        70.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2384,
+      "new_exact_checks": 314,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "idle-attention-12",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        0.0
+      ],
+      "bbox_pair_count": 2420,
+      "new_exact_checks": 327,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7--90",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        -90.0
+      ],
+      "bbox_pair_count": 2418,
+      "new_exact_checks": 171,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7--67.5",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        -67.5
+      ],
+      "bbox_pair_count": 2431,
+      "new_exact_checks": 182,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7--45",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        -45.0
+      ],
+      "bbox_pair_count": 2435,
+      "new_exact_checks": 172,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7--22.5",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        -22.5
+      ],
+      "bbox_pair_count": 2432,
+      "new_exact_checks": 170,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7-22.5",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        22.5
+      ],
+      "bbox_pair_count": 2434,
+      "new_exact_checks": 167,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7-45",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        45.0
+      ],
+      "bbox_pair_count": 2439,
+      "new_exact_checks": 173,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7-67.5",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        67.5
+      ],
+      "bbox_pair_count": 2433,
+      "new_exact_checks": 170,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J7-90",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        0.0,
+        90.0
+      ],
+      "bbox_pair_count": 2420,
+      "new_exact_checks": 168,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J6--60",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        -60.0,
+        0.0
+      ],
+      "bbox_pair_count": 2610,
+      "new_exact_checks": 258,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J6--30",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        -30.0,
+        0.0
+      ],
+      "bbox_pair_count": 2612,
+      "new_exact_checks": 148,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J6-30",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        30.0,
+        0.0
+      ],
+      "bbox_pair_count": 2614,
+      "new_exact_checks": 96,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "attention-J6-60",
+      "q_deg": [
+        0.0,
+        75.0,
+        0.0,
+        -65.0,
+        65.0,
+        60.0,
+        0.0
+      ],
+      "bbox_pair_count": 2613,
+      "new_exact_checks": 104,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
+    },
+    {
+      "sample": "reference",
+      "q_deg": [
+        0,
+        90,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "bbox_pair_count": 1983,
+      "new_exact_checks": 262,
+      "collision_count": 0,
+      "body_min_z_mm": 47.5999999
     }
   ],
   "collisions": [],
-  "scoped_clear": true,
-  "tool_access": {
-    "pose": "reference",
-    "space_count": 12,
-    "collisions": [],
-    "scoped_clear": true,
-    "actual_tools_and_insertion_qualified": false
-  },
-  "heatset_press_allowance": "Only designated insert versus designated printed pilot: local annulus betweenD3.98 andD4.62 for actual insert length. No whole-pair waiver. Insertion/pullout remains unqualified.",
-  "scope": "New module vs explicitly replaced current whole body and14 exact external motor partitions;3 named static poses. Empty tool spaces only. Base shell, dynamic cables, physical fit and continuous motion excluded.",
+  "sampled_clear": true,
+  "body_min_z_mm": 47.5999999,
+  "table_plane_sampled_clear": true,
+  "checked_part_count": 556,
+  "sample_count": 26,
+  "tolerance_mm3": 0.08,
+  "allowances": "Only designated motor thread engagement cylinder and designated heat-set pilot annulus; identical actuator external partitions not treated as independent parts. No whole added-part pair waiver.",
+  "scope": "13 finite samples along straight joint interpolation idle to attention,8 J7 and4 J6 independent attention samples,1 reference;541 own parts+14 actuator partitions+B06 load flange. Full B06 shell, camera/head, wires, actual tolerance, tools and swept volume excluded.",
+  "whole_motion_qualified": false,
+  "connected_harness_qualified": false,
   "production_release": false
 }
